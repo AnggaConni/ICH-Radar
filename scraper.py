@@ -828,12 +828,12 @@ def enrich_incomplete_items(api_key, inventory):
             "thumbnail_url": "{item.get('thumbnail_url')}",
             "source_urls": ["<old_url>", "<new_found_url>"],
             "scraped_at": "{datetime.now().isoformat()}Z",
-            "location": { 
-                "country": "...", 
-                "provinces": ["..."],
-                "lat": null, 
-                "lng": null 
-            },
+            "location": {{ 
+                        "country": "...", 
+                        "provinces": ["..."],
+                        "lat": null, 
+                        "lng": null 
+        }},
             "resume_analisa": {{ "description": "...", "cultural_significance": "...", "gemini_tags": ["..."] }},
             "resume_tata_cara": {{ "type": "crafting_process/culinary_recipe/ritual_sequence", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
             "shared_heritage_detection": {{ "is_shared": true, "confidence_score": 0.95, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
@@ -892,12 +892,12 @@ def discover_new_items(api_key, inventory):
             "thumbnail_url": "",
             "source_urls": ["url1"],
             "scraped_at": "{datetime.now().isoformat()}Z",
-            "location": { 
-                "country": "...", 
-                "provinces": ["..."],
-                "lat": null, 
-                "lng": null 
-            },
+            "location": {{ 
+                        "country": "...", 
+                        "provinces": ["..."],
+                        "lat": null, 
+                        "lng": null 
+        }},
             "resume_analisa": {{ "description": "...", "cultural_significance": "...", "gemini_tags": ["..."] }},
             "resume_tata_cara": {{ "type": "...", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
             "shared_heritage_detection": {{ "is_shared": true/false, "confidence_score": 0.0-1.0, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
