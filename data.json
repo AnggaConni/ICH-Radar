@@ -245,16 +245,134 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2d42af22",
+      "element_name": "Hadza Hunter-Gatherer Practices",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "Image depicting Hadza people hunting with bows and arrows or gathering wild foods.",
+      "source_urls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0mDIJi2PalHihByIDuWU6aiUdS91LgsVwaApUWA78wNqhycgswYv8aR7C1eoYjydOkyhjq4-s1KPgur2xOiQly-fM5o-BMu9EQ91CUz1xjgBuHd6NGvoH6Ew0xWGk7RWYUdf2N6oJYCiDQ6wXSaeIyp-q5E7WEbTEcRCi9CLa1e1n7aT72cHFuy8QJ-4eDbDQhoxkFnWaA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZnSbFq2wHrYXYVXOrw9lGekpLphP74RFIMQ4LY5PPOFaqI78cfLuXJnZv9cdIoDMYL__etOxDIJFf81Dx8qSmGjRcbSxuQGRMVf8KfxMvOQB1WjlAxKthCqkmfvOZLUofBriNX9KMnqhzABpZdevcyTj5BP4WuLAYex5ZaaN9Cw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHfemz_qBPFsI8DeqQFda0ptg9AFqVPBNpvQcHHYIwC7fRjizFyWqsgL67UiqW_5-NCNVW8GybjIp1I8QWAbcrgCH8hbdGWY-Q-6pGMVr9IyE1t3YSSRAuTBBpKnwfNKMK_QSPdzv-Ac-CUeo=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyV9jNj9X8iVguQ_YdhbawgC1EONuNbSURDsE1xNd4r5lubcWaSPPPO0i-QnYYJulfVgG2fdi8V7aCt1gFxSbysCPZUFH1bPh_8RQKcTydkGrV7uTO-jnO7yzsMvVlOT8mV4DK8afTAWnKJJOeYf88pWhA154ZBLSw6h3_hQ1rjV_US9gKk3blyxXVWThFg816nFYgM38ZZNJm3V8ooePqiIE=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHo71EVPhqFsNUOgzb5oY2IgiAhZnTl_fMLOxU04fptrEfKp1vvsG5YWTf80D9uBmvEThOVYPUxtMH572c6voCnXTpPoqKW0Zt4kbF7oMXXYRGQoPqrRUTjIg4rWSUpD-MOAf0KCBCm7laF7lbw1bM0zpwfssNBIThpMPvb_RurHDnKOm8V_2mVxJXpAeh4hVS1S2BG3GV4Hr8ZvEbwgmKb",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNwT-ua0RwKELFzvIHOOfX0LMlLEKHD-fr4mQc4b_FUn-EkXWe7GBV3s_GDZBX2QwfnKZcO4QVf8YAb0Qz-XEFRgKkQ7nyBmcF22eqBXtsEvkVFnqoR-FIOTudbzSZP2RAyAyzzw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFc4S9ZUYOszZbMCPtAPN6rmDmRYA0D2NMtVpCYo90LIKBFFIDoCn-VAxu08wyT4LhxibQGJf8TdTn01RRb4borfc7zw6HyNHey0_YwpLtE9DpWUsM_t9IcS3cySnNO9ZGLu88v",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE329INmXif0U8wKxPjjx0T_WptQqAyJwrO8SJkAZErKEQnW7QrBsXrIi74SXFYRGd42tyM-nt07zMyZZQv6Vd6N6oVrwmeXDyZHM1-X0N6sURAas6zyhTuKW0ErExhZi4Tz9Ozbtl-NN2_6gWWtVDWRCDxJsJg3jxEZgWR7xT6DBA46oN3ziSbVf-71e5WqiyeD66uGgca4AGQSyojwFbopuVbZARNmj4h5OnMSkF-2P9e",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVbYR9aV8yG69yPmQ7vgELPB7n-KE5xc4q2t-G1XYS9u2ILDUPhyoQIhUu_bRUa9G1qB4sXOP5gvCLip5p0YdXo9Q_MNrhvLc_8SM8ftaLkPYq2uuDUA7fIk3mw5oLlQAUm3O90G5MvAnxVzu6edMA4Ol9YTyI5K9k6bXMxn_MOgn4pYHkabsQdUQybjD3-gS6TQ==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE64H6K-l_6HA6_y1Wp59ZV3fYuSAiMMUnjVeUJhOpReT2t3wWQE6qfQ3FJxtk3MbqZnxcQHe1vQaTpElyWZRtPYHJYTJgDJ8WJuhUiwfRMGd0J8okBGxBJmFXPXMAj1QsKfcteXA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZzlNBJ84Iyagoqtly95dHiprqys1ykp9j5nE8Rk9-7lJuxE8RJKRUROFIgf9Ongdk8pnnNqh0M90o_SE6mYLcTQgnm45rG93YXDPWq4epmSntj2tYNLAfpZdiQB0wo3rhrjKyzX8WgmIVZi-gvvEmvI1j",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHUZG5kqKj9ZBeDuOp2RdnJNNcXt7ov4SD0v0evYnmA_DMRS5FQ2Q5oeo-SSWSzxF-iYwSLKvy34d6PL5ZYl8_rt2YJL3H8PzlqkeA_Uw7MN_IPwWY-b_SBxrlo9chBX7F1EWvloYQrla51D4pqV_DFE8IB5nvk1cAFNL827XpsvPKKWuuLE0_RbI=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFc8ddbed-5yWvJR52ck7NHkKsAcnoI7MFNjzNk5ABJ4X5iu6oegFg8wUC1gzca5-w1rFoZvRJN4FlwWqkIDgtTj9ny8jmXTWdAmrzBbkpekKejdu4XM_-IBA3A01eWwY3-uVjK",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJfm80XJx3P-IJ5ptcO7b0oBkqaa6JuY4MdPory4u6D0Ob0aLqySwv2JoquBh68cdu_gDtikedZs1FS_TfOaBa_K1_byfoZDuHqdUrDXMtvUxa3kLfUQY1trwcw3MggQhr4Zo8baf0s__he301IxfmeU5P3gv-xvg=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIAIekAbvE_Z-pgBp_5oLBfyLSJlglzvkoUJdinfFNa8NRJ7WADdVgubfzBw-ag4P9DeoHlCKFaF3IbLgz6nkundvbjfevsrOnIkqAXUW3X9ZTBn7OjdfePcE-eKzBTDyWNhM=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQNL4bBriCgtb8yMV7lDDDfjCsGc8ZlEvZJavp5Mb1ZhbTctgVg-um3fKQu9xfD06xxrAwG94xNznl4BpCLujQ9zZ188C6joQSQ3nxQHhtCtCGS6UOBrvbs1rsenp8eNLEcv3FKw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESzw0y8UgFV_bYibEzOGHpNUn3-praMrWcA7fU4P-h2hpkGgEKRKTKKT4gZxWegdRbpNtjH4OzDUdT_wlUCDahN42lR0thXJWRPUa3TIJM-ZSlaG9cwVSYZGpHR0MRI9NP3r-RLQ=="
+      ],
+      "scraped_at": "2026-03-13T05:45:31.757013Z",
+      "location": {
+        "country": "Tanzania",
+        "provinces": [
+          "Arusha Region",
+          "Shinyanga Region",
+          "Singida Region"
+        ]
+      },
+      "resume_analisa": {
+        "description": "The Hadza, also known as Hadzabe, are one of the last true hunter-gatherer tribes in Tanzania, maintaining a traditional lifestyle largely unchanged for thousands of years. They are a semi-nomadic people, living in egalitarian bands typically comprising 20 to 30 individuals. Their survival is entirely dependent on hunting wild animals, gathering honey, and foraging for a variety of wild plants, including tubers, berries, and baobab fruit. The Hadza possess a profound ecological knowledge of their environment and practice sustainable living, which is crucial for their continued existence.",
+        "cultural_significance": "The Hadza hunter-gatherer practices represent an ancient human lifeway, offering invaluable insights into sustainable living and environmental stewardship. Their hunting and gathering activities are not merely a means of survival but form the core of their cultural identity, influencing their social structure and daily routines. Food acquired through these methods is shared communally among all members of the band, reinforcing community bonds. The Hadza also possess a unique click language, distinct from other regional languages.",
+        "gemini_tags": [
+          "Hunter-gatherer",
+          "Indigenous",
+          "Tanzania",
+          "Traditional Knowledge",
+          "Sustainable Living",
+          "Foraging",
+          "Hunting",
+          "Hadzabe",
+          "East Africa",
+          "Survival Skills",
+          "Traditional Tools",
+          "Poison Arrows",
+          "Honey Gathering",
+          "Egalitarian Society"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hunting and Gathering Techniques",
+        "materials_and_tools": [
+          "Bows (made from local flexible wood, e.g., matiako tree)",
+          "Arrows (wood shafts, guinea fowl or hornbill feathers, animal ligaments for fletching)",
+          "Arrowheads (wood, iron, or bone, often barbed)",
+          "Poison (from sapwood/twigs of Desert Rose plant, Adenium coetaneum)",
+          "Digging sticks (carved from local hardwood)",
+          "Grass baskets",
+          "Leather pouches",
+          "Honey axe (long wooden shaft with sharp blade)",
+          "Smoking torches (dried bark, leaves, plant resin)"
+        ],
+        "step_by_step": [
+          "**Bow and Arrow Making (Men):**",
+          "1. Harvest flexible wood, such as from the matiako tree, for bows and straight wood for arrow shafts.",
+          "2. Peel bark from arrow shafts, often using teeth.",
+          "3. Allow bows and arrows to dry for several days.",
+          "4. Straighten arrow shafts by heating them over hot coals and using teeth for precision.",
+          "5. Attach feathers (e.g., from guinea fowl or hornbills) to the arrow shafts using animal ligaments to ensure stable flight.",
+          "6. Secure arrowheads, made from wood, iron, or bone, to the tips of the shafts; these are often barbed to ensure they remain in the prey.",
+          "7. **Poison Preparation:** Harvest sapwood or twigs from the Desert Rose plant. Crush the branches or pound the sapwood/twigs into a pulp. Boil the sap or pulp in water until it reduces to a bubbly, sticky, brownish-black tar-like substance. This concentrated poison can be stored and reheated over coals to make it malleable for application.",
+          "8. Carefully apply the prepared poison behind the barb of the arrow tip, adjusting the amount based on the size and resilience of the target animal (e.g., a larger quantity for baboons). The applied poison is then wrapped with leather for protection, as it is fragile and susceptible to damage from moisture or impact.",
+          "**Hunting (Men):**",
+          "1. Hadza men typically hunt individually or in pairs, though larger groups may form for hunting bigger game like baboons.",
+          "2. Track animals by meticulously observing environmental signs such as footprints, droppings, and broken branches.",
+          "3. Employ various hunting techniques, including stalking (often by younger hunters) and ambush hunting (favored by prime-age men, especially during the dry season near waterholes or berry bushes).",
+          "4. For baboon hunts, hunters locate night roosting places (e.g., rocky hills or large trees), then strategically surround and startle the troop, shooting them with bows and arrows as they attempt to flee.",
+          "5. Shoot prey using bows equipped with poisoned arrows.",
+          "6. Smaller game is often consumed immediately in the bush, while larger kills are brought back to the camp for communal sharing.",
+          "**Gathering (Women):**",
+          "1. Women typically forage in small groups.",
+          "2. Utilize digging sticks, carved from local hardwoods, to extract edible roots and tubers from the ground.",
+          "3. Collect fruits, such as baobab fruit and seasonal berries, as well as edible leaves, directly by hand.",
+          "4. Transport gathered foods back to camp using grass baskets and leather pouches.",
+          "5. All gathered food is shared among the community members.",
+          "**Honey Gathering (Men):**",
+          "1. Honey hunters are often guided by honeyguide birds, communicating through a series of calls and responses.",
+          "2. Locate wild beehives, which are frequently found high in baobab trees or hidden underground.",
+          "3. For hives in trees, pointed sticks are driven into the trunk to create makeshift ladders for climbing.",
+          "4. Use smoking torches, made from dried bark, leaves, and plant resin, to calm the bees before approaching the hive.",
+          "5. Employ a honey axe to carefully open the hive chambers without causing excessive damage.",
+          "6. Harvest the honeycomb.",
+          "7. A portion of the wax and larvae is intentionally left behind as a reward for the guiding honeyguide bird.",
+          "8. The collected honey is then brought back to the camp to be shared with the community."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Uganda",
+            "element_name": "Batwa Forest Traditions",
+            "relationship_reason": "Both the Hadza and Batwa are indigenous forest-dwelling groups in East Africa, possessing deep ecological knowledge and traditional survival skills, including identifying medicinal plants and reading animal signs."
+          },
+          {
+            "country": "Botswana",
+            "element_name": "Kua Bow and Arrow Hunting",
+            "relationship_reason": "A comparison study mentions similarities in bow and arrow hunting techniques between the Hadza and the Kua people, another Southern African hunter-gatherer group, indicating shared traditional hunting methods."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T05:30:19.514947Z",
-    "total_ich_elements": 3,
-    "complete_records": 2,
+    "generated_at": "2026-03-13T05:46:13.601040Z",
+    "total_ich_elements": 4,
+    "complete_records": 3,
     "incomplete_records": 1,
     "categories_breakdown": {
       "Traditional Craftsmanship": 2,
-      "Social Practices & Rituals": 1
+      "Social Practices & Rituals": 2
     }
   }
 }
