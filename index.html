@@ -597,58 +597,76 @@
     }
 
     // --- DYNAMIC MAP LOGIC ---
-      async function getCoords(locationName) {
-        if (!locationName) return null;
+     // 1. Buat variabel antrean global di luar fungsi
+let nominatimQueue = Promise.resolve();
+
+async function getCoords(locationName) {
+  if (!locationName) return null;
+  
+  let searchQuery = locationName;
+  let countryOnly = locationName;
+
+  if (locationName.includes('(') && locationName.includes(')')) {
+    countryOnly = locationName.split('(')[0].trim();
+    const province = locationName.split('(')[1].replace(')', '').trim();
+    searchQuery = `${province}, ${countryOnly}`; 
+  }
+
+  const key = searchQuery.toLowerCase();
+  
+  // Jika sudah ada di memori, kembalikan instan (tidak perlu antre)
+  if (geoCache.has(key)) return geoCache.get(key);
+
+  // 2. Masukkan request baru ke dalam antrean Promise
+  return new Promise((resolve) => {
+    nominatimQueue = nominatimQueue.then(async () => {
+      try {
+        // JEDA 1.5 DETIK (Penting agar tidak diblokir Nominatim)
+        await new Promise(r => setTimeout(r, 1500));
         
-        let searchQuery = locationName;
-        let countryOnly = locationName; // Menyimpan nama negara murni untuk fallback
+        // Identitas aplikasi (wajib untuk Nominatim)
+        const emailParam = "&email=app@dashboard.local"; 
 
-        // Cek apakah ada format spesifik "Negara (Provinsi)"
-        if (locationName.includes('(') && locationName.includes(')')) {
-          countryOnly = locationName.split('(')[0].trim();
-          const province = locationName.split('(')[1].replace(')', '').trim();
-          searchQuery = `${province}, ${countryOnly}`; 
-        }
+        console.log(`Mengambil koordinat: ${searchQuery}...`);
+        let response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(searchQuery)}&limit=1${emailParam}`);
+        let data = await response.json();
 
-        const key = searchQuery.toLowerCase();
-        if (geoCache.has(key)) return geoCache.get(key);
-
-        try {
-          // 1. Coba cari koordinat spesifik (Provinsi, Negara) ATAU murni (Negara)
-          let response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(searchQuery)}&limit=1`);
-          let data = await response.json();
-
-          // Jika berhasil ditemukan, kembalikan koordinatnya
+        if (data && data.length > 0) {
+          const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
+          geoCache.set(key, coords);
+          resolve(coords);
+          return; // Selesai untuk antrean ini
+        } 
+        
+        // JIKA GAGAL, FALLBACK KE NEGARA
+        if (searchQuery !== countryOnly) {
+          console.warn(`Provinsi tidak ditemukan, mencoba ke negara asal: ${countryOnly}`);
+          
+          // JEDA LAGI 1.5 DETIK sebelum request fallback
+          await new Promise(r => setTimeout(r, 1500)); 
+          
+          response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(countryOnly)}&limit=1${emailParam}`);
+          data = await response.json();
+          
           if (data && data.length > 0) {
             const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
-            geoCache.set(key, coords);
-            return coords;
-          } 
-          
-          // 2. SISTEM FALLBACK: Jika pencarian Provinsi GAGAL, otomatis coba cari Negaranya saja
-          if (searchQuery !== countryOnly) {
-            console.warn(`Titik spesifik tidak ditemukan untuk ${searchQuery}, mencoba memetakan ke negara asal: ${countryOnly}`);
-            
-            response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(countryOnly)}&limit=1`);
-            data = await response.json();
-            
-            if (data && data.length > 0) {
-              const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
-              // Simpan ke cache menggunakan key awal agar pencarian berikutnya untuk string yang sama langsung instan
-              geoCache.set(key, coords); 
-              return coords;
-            }
+            geoCache.set(key, coords); 
+            resolve(coords);
+            return;
           }
-          
-        } catch (error) {
-          console.warn(`Geocoding failed for ${searchQuery}.`, error);
         }
         
-        // 3. JARING PENGAMAN: Jika API mati atau limit, berikan koordinat acak agar aplikasi tidak crash
-        const fallbackCoords = [ (Math.random() * 40 - 20), (Math.random() * 100 + 40) ];
-        geoCache.set(key, fallbackCoords);
-        return fallbackCoords;
+      } catch (error) {
+        console.warn(`Gagal mengambil data untuk ${searchQuery}.`, error);
       }
+      
+      // JARING PENGAMAN (Koordinat acak agar tidak error)
+      const fallbackCoords = [ (Math.random() * 40 - 20), (Math.random() * 100 + 40) ];
+      geoCache.set(key, fallbackCoords);
+      resolve(fallbackCoords);
+    });
+  });
+}
 
       function initMap() {
         // Mengubah fokus ke tengah (koordinat 20, 0) dan zoom out ke level 2
