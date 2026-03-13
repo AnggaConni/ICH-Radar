@@ -721,58 +721,29 @@
         setTimeout(() => { map.invalidateSize(); }, 500);
       }
 
-    async function drawMapElements(data) {
-      if(!map) return;
-      if(markersLayer) map.removeLayer(markersLayer);
-      
-      // MENGUBAH L.layerGroup() MENJADI L.markerClusterGroup()
-      markersLayer = L.markerClusterGroup({
-        chunkedLoading: true, // Sangat bagus untuk performa data besar
-        spiderfyOnMaxZoom: true
-      });
-      
-      map.addLayer(markersLayer);
+// VERSI BARU drawMapElements yang JAUH LEBIH CEPAT
+async function drawMapElements(data) {
+  if(!map) return;
+  if(markersLayer) map.removeLayer(markersLayer);
+  
+  markersLayer = L.markerClusterGroup({ chunkedLoading: true });
+  map.addLayer(markersLayer);
 
-      const defaultIcon = L.divIcon({
-        className: 'custom-div-icon',
-        html: `<div class="w-4 h-4 bg-brand-accent rounded-full shadow-[0_0_10px_#00ffcc]"></div>`,
-        iconSize: [16, 16],
-        iconAnchor: [8, 8]
-      });
+  data.forEach(item => {
+    // Ambil koordinat langsung dari JSON (Hasil kerja Python)
+    const lat = item.location?.lat;
+    const lng = item.location?.lng;
 
-      const relatedIcon = L.divIcon({
-        className: 'custom-div-icon',
-        html: `<div class="w-3 h-3 bg-brand-secondary rounded-full shadow-[0_0_8px_#facc15]"></div>`,
-        iconSize: [12, 12],
-        iconAnchor: [6, 6]
-      });
-
-      for (const item of data) {
-        const mainCountry = item.location?.country;
-        const mainCoords = await getCoords(mainCountry);
-
-        if (mainCoords) {
-          L.marker(mainCoords, {icon: defaultIcon})
-           .bindPopup(`<strong class="font-display text-brand-900">${item.element_name}</strong><br><span class="text-gray-600">${mainCountry}</span>`)
-           .addTo(markersLayer);
-
-          if (item.shared_heritage_detection?.is_shared && item.shared_heritage_detection.related_elements) {
-            for (const rel of item.shared_heritage_detection.related_elements) {
-              const relCoords = await getCoords(rel.country);
-              if (relCoords) {
-                L.marker(relCoords, {icon: relatedIcon})
-                 .bindPopup(`<strong class="font-display text-brand-900">${rel.element_name}</strong><br><span class="text-gray-600">${rel.country} (Shared with ${mainCountry})</span>`)
-                 .addTo(markersLayer);
-
-                L.polyline([mainCoords, relCoords], {
-                  className: 'glowing-line'
-                }).addTo(markersLayer);
-              }
-            }
-          }
-        }
-      }
+    if (lat && lng) {
+      const coords = [lat, lng];
+      L.marker(coords, {icon: defaultIcon})
+       .bindPopup(`<strong>${item.element_name}</strong>`)
+       .addTo(markersLayer);
+       
+      // Lakukan hal yang sama untuk shared heritage jika ada koordinatnya
     }
+  });
+}
 
     // --- FILTER & SORT LOGIC ---
     function applyFilters() {
