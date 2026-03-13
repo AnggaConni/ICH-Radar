@@ -3,7 +3,7 @@ name: ICH Shared Heritage Auto-Crawler
 on:
   schedule:
     # Runs every 5 days to prioritize fixing INCOMPLETE data, then discovers new data
-    - cron: "0 0 */5 * *"
+    - cron: "0 0 */2 * *"
   workflow_dispatch: 
     inputs:
       force_crawl:
