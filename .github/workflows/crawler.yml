@@ -1,13 +1,13 @@
-name: Artifact Radar Auto-Crawler
+name: ICH Shared Heritage Auto-Crawler
 
 on:
   schedule:
-    # Berjalan tiap hari, tapi Python script akan menahannya jika belum 8 hari
+    # Runs daily to prioritize fixing INCOMPLETE data, then discovers new data
     - cron: "0 0 * * *"
   workflow_dispatch: 
     inputs:
       force_crawl:
-        description: 'Force crawl now (bypass 8-day schedule)?'
+        description: 'Force crawl now?'
         required: true
         default: 'false'
         type: choice
@@ -57,6 +57,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new data to commit."
           else
-            git commit -m "Incremental update: Added new artifact intelligence [skip ci]"
+            git commit -m "ICH Update: Enriched incomplete data & discovered new heritage [skip ci]"
             git push origin main
           fi
