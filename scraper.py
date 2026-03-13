@@ -701,6 +701,23 @@ def generate_id(name):
     return "ich-" + hashlib.md5(name.lower().encode()).hexdigest()[:8]
 
 # ======================================================================
+# DATA AUDIT (Check for missing thumbnails)
+# ======================================================================
+
+def audit_inventory(inventory):
+    """Scans inventory and marks items with missing images as INCOMPLETE."""
+    audited_count = 0
+    for item in inventory:
+        thumb = item.get("thumbnail_url", "")
+        # Jika gambar kosong, N/A, atau rusak, paksa turunkan statusnya
+        if not thumb or thumb == "N/A" or "placeholder" in thumb.lower():
+            if item.get("completion_status") == "COMPLETE":
+                item["completion_status"] = "INCOMPLETE"
+                log.info(f"Audit: Marked '{item.get('element_name')}' as INCOMPLETE due to missing thumbnail.")
+                audited_count += 1
+    return audited_count
+
+# ======================================================================
 # CORE: GEMINI AI INTERACTION
 # ======================================================================
 
@@ -754,6 +771,10 @@ def enrich_incomplete_items(api_key, inventory):
         element_name = item.get("element_name")
         current_sources = item.get("source_urls", [])
         
+        # Deteksi apakah item ini masuk antrean karena gambarnya hilang
+        needs_image = not item.get("thumbnail_url") or item.get("thumbnail_url") == "N/A"
+        image_instruction = "Crucially, this record lacks a valid image. You MUST find a new source URL (like a news article, official site, or Wikipedia) that contains a clear, high-quality image of this heritage." if needs_image else ""
+        
         log.info(f"Enriching: {element_name}")
         
         prompt = f"""
@@ -763,10 +784,9 @@ def enrich_incomplete_items(api_key, inventory):
         Please use Google Search to find the missing information (e.g., specific step-by-step crafting process, authentic recipe, or detailed history). 
         You can search through local news, community blogs, and social media.
         Find AT LEAST ONE NEW source URL to add to the existing ones.
+        {image_instruction}
         
-        IMPORTANT INSTRUCTIONS:
-        1. The element DOES NOT need to be officially recognized by UNESCO. It can be a local tradition, unregistered heritage, rare recipe, or community practice found on local blogs or regional news. 
-        2. DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
+        IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
         
         Respond ONLY with a JSON object representing the UPDATED element.
         Ensure ALL output data values and keys are strictly in ENGLISH.
@@ -886,6 +906,9 @@ def main():
         db = load_db()
         inventory = db.get("inventory", [])
         
+        # PHASE 0: Audit Data (Downgrade status if image is missing)
+        audited = audit_inventory(inventory)
+        
         # PHASE 1: Enrich Incomplete Data First
         enriched = enrich_incomplete_items(api_key, inventory)
         
@@ -895,9 +918,9 @@ def main():
         db["inventory"] = inventory
         
         # Save if there's any modification
-        if enriched > 0 or discovered > 0:
+        if audited > 0 or enriched > 0 or discovered > 0:
             save_db(db)
-            log.info(f"✅ Run Complete. Enriched: {enriched}, Discovered: {discovered}. Total DB: {len(inventory)}")
+            log.info(f"✅ Run Complete. Audited: {audited}, Enriched: {enriched}, Discovered: {discovered}. Total DB: {len(inventory)}")
         else:
             log.info("Run Complete. No new data added or enriched.")
 
