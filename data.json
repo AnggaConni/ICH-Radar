@@ -1471,17 +1471,192 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2d00544f",
+      "element_name": "Khatamkari (Persian Marquetry)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.indrastra.com/2022/09/the-art-of-khatam-kari-story-of.html&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.indrastra.com/2022/09/the-art-of-khatam-kari-story-of.html",
+        "https://tehranoffers.com/persian-khatamkari/",
+        "https://iraniansouvenirs.com/khatam/",
+        "https://narcishostel.com/khatam-kari/",
+        "https://irandoostan.com/khatam-kari-marquetry/",
+        "https://www.iran-daily.com/news/312061/Khatam-kari-timeless-artistry-of-Persian-marquetry",
+        "https://packtoiran.com/khatam-kari/",
+        "https://persiada.com/blog/khatamkari-wood-inlaying-artistic-heritage/",
+        "https://www.toirantour.com/iranian-handicrafts/khatamkari/",
+        "https://persiada.com/what-is-persian-khatamkari/"
+      ],
+      "scraped_at": "2026-03-13T08:26:34.347385Z",
+      "location": {
+        "country": "Iran",
+        "provinces": [
+          "Isfahan",
+          "Shiraz",
+          "Tehran",
+          "Kerman",
+          "Mashhad",
+          "Qom",
+          "Rey"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Khatamkari, also known as Persian marquetry, is a revered Iranian art form that involves adorning the surface of wooden or metallic objects with meticulously crafted geometric patterns. This intricate inlay technique uses delicate pieces of wood, bone, metal, and sometimes shell or ivory, arranged to create mesmerizing mosaics of shapes, often forming star patterns, polygons, and tessellations.",
+        "cultural_significance": "Beyond its technical and aesthetic appeal, Khatamkari holds deep cultural and symbolic meaning, reflecting Persian philosophical and spiritual concepts such as the quest for harmony, balance, and unity. The geometric patterns often evoke the cosmos, symbolizing the order and beauty of the universe, and in Islamic art, they serve as a reminder of the divine. Khatamkari embodies the Persian ideal of craftsmanship as a form of devotion and is recognized by UNESCO as an intangible cultural heritage.",
+        "gemini_tags": [
+          "Persian handicraft",
+          "Marquetry",
+          "Inlay art",
+          "Geometric patterns",
+          "Traditional craft",
+          "Iranian art",
+          "Cultural heritage",
+          "Woodworking",
+          "Metalworking",
+          "Bone inlay",
+          "Islamic art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Inlay / Marquetry",
+        "materials_and_tools": [
+          "High-quality woods (walnut, rosewood, ebony, teak, maple, jujube, betel, buxus)",
+          "Bone (camel bone, cow bone, horse bone, ivory)",
+          "Metals (brass, silver, copper, gold)",
+          "Sometimes shell",
+          "Rosin",
+          "Natural adhesives (glue)",
+          "Specialized tools for cutting and shaping"
+        ],
+        "step_by_step": [
+          "**Design Preparation**: Meticulously plan intricate geometric patterns, often consisting of hundreds of tiny triangles, stars, and polygons, on paper.",
+          "**Material Selection and Preparation**: Select high-quality woods, bone, and metals. These materials are cut into thin, elongated rods or strips, typically triangular or polygonal in cross-section. Bone is carefully cleaned, processed, and often dyed in vibrant colors.",
+          "**Bundle Formation (Shamseh/Sticks)**: The prepared rods and strips are meticulously arranged and glued together in a precise order to form a larger geometric pattern. This creates cylindrical or prismatic bundles, sometimes referred to as 'shamseh' (sunburst) or 'sticks'.",
+          "**Slicing**: Once the bundles are dried, they are sliced crosswise into paper-thin veneers, often measuring around 1 mm in width. Each slice contains a miniature version of the intricate design.",
+          "**Inlaying**: These thin veneers are then carefully affixed to a chosen base surface, such as wooden boxes, frames, doors, or furniture, using natural adhesives. This stage requires intense focus and dexterity to ensure each fragment fits perfectly within the overall composition.",
+          "**Sanding and Polishing**: After all the inlays are securely in place, the entire surface is meticulously sanded and polished to create a seamless, smooth, and lustrous finish.",
+          "**Lacquering (Optional)**: In some cases, a lacquer coating is applied to the finished piece to enhance its durability, protect the intricate design, and further increase its shine."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Italy",
+            "element_name": "Cosmati workshops (marble inlays)",
+            "relationship_reason": "Produced intricate marble inlays with designs that share a visual kinship with Khatamkari, demonstrating similar geometric inlay work in architectural and decorative arts."
+          },
+          {
+            "country": "Byzantine Empire",
+            "element_name": "Geometric inlay work (prototypes)",
+            "relationship_reason": "Scholars suggest that Khatamkari may have evolved from prototypes developed during Byzantine times, where similar geometric inlay work was employed in architectural and decorative arts."
+          },
+          {
+            "country": "India, Syria, Lebanon",
+            "element_name": "Similar inlay handicrafts",
+            "relationship_reason": "Similar inlay handicrafts can be found in these countries, although the art of Khatamkari originated and was refined to high standards of excellence in Iran."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-680a4062",
+      "element_name": "Chicha de Año from Magdalena de Cao",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://elbrujo.pe/wp-content/uploads/2023/07/chicha-de-ano-magdalena-de-cao.jpg",
+      "source_urls": [
+        "https://elbrujo.pe/6-bebidas-tradicionales-y-deliciosas-de-peru-que-debes-probar/",
+        "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/",
+        "https://www.youtube.com/watch?v=R91K-87g68g",
+        "https://chichacasanova.com/",
+        "https://www.notyouraverageamerican.com/chicha-in-ecuador/",
+        "https://www.peruvianrecipes.wiki/recipes/chicha-de-jora/",
+        "https://elbrujo.pe/noticias/la-chicha-del-ano-tradicion-e-historia-en-una-bebida/",
+        "https://www.mycolombianrecipes.com/chicha-de-maiz-corn-drink/",
+        "https://www.academia.edu/35478051/La_producci%C3%B3n_de_la_Chicha_de_A%C3%B1o_como_recurso_de_desarrollo_en_el_distrito_de_Magdalena_de_Cao_",
+        "https://www.anchoamagazine.com/the-lost-drink-an-introduction-to-chicha",
+        "https://www.kuodatravel.com/chicha-peru/",
+        "https://www.ancient-origins.net/ancient-places-americas/chicha-de-jora-0019623",
+        "https://es.wikipedia.org/wiki/Chicha",
+        "https://www.nmai.si.edu/magazine/all-issues/2019/persistence-chicha",
+        "https://eatperu.com/chicha-morada-recipe/"
+      ],
+      "scraped_at": "2026-03-13T08:26:59.089771Z",
+      "location": {
+        "country": "Peru",
+        "provinces": [
+          "La Libertad"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Chicha de Año is a traditional fermented alcoholic beverage originating from Magdalena de Cao, a district in the Ascope province of the La Libertad region in Peru. It is primarily made from jora corn (germinated corn), chancaca (raw sugarcane), and raw sugar. The drink is characterized by its sweet flavor, often compared to cherry liqueur, and a precise alcohol content. Its name, 'Chicha de Año' (Chicha of the Year), refers to the extensive twelve-month maceration period required for its preparation.",
+        "cultural_significance": "Chicha de Año holds significant cultural and economic importance for the community of Magdalena de Cao, representing a living ancestral legacy passed down through generations. In 2015, the Regional Government of La Libertad officially declared Chicha de Año a flagship product and regional heritage, recognizing its value. This beverage is a testament to the cultural syncretism between Andean traditions and European influences, combining indigenous germinated corn with sugarcane-derived chancaca introduced by Europeans. It symbolizes the continuity of corn-based beverage consumption and strengthens the local identity of the people of Magdalena de Cao. Beyond its cultural role, Chicha de Año also serves as an important economic and tourist attraction for the district.",
+        "gemini_tags": [
+          "Fermented Beverage",
+          "Traditional Peruvian Drink",
+          "Corn-based Alcohol",
+          "Magdalena de Cao",
+          "Cultural Heritage",
+          "Andean-European Syncretism",
+          "Regional Product",
+          "Slow Fermentation"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Fermentation",
+        "materials_and_tools": [
+          "Jora corn (germinated corn)",
+          "Chancaca (raw sugarcane)",
+          "Raw sugar",
+          "Water",
+          "Large cooking pots",
+          "Storage containers for maceration"
+        ],
+        "step_by_step": [
+          "Gather the main ingredients: jora corn, chancaca, and raw sugar.",
+          "Cook the jora corn and chancaca with water in large pots. (Specific details on toasting, boiling duration, and water absorption are often family secrets, though general chicha de jora recipes suggest toasting grains, boiling for several hours, and sweetening).",
+          "Initiate a long maceration process, which traditionally lasts for approximately twelve months.",
+          "During the maceration period, the chicha is typically transferred between different containers, and any sediment (known as 'concho') is removed to facilitate proper fermentation and maturation.",
+          "After the year-long maceration, the Chicha de Año is ready to be bottled for consumption."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Ecuador",
+            "element_name": "Chicha de Jora",
+            "relationship_reason": "Shared tradition of fermented corn beverages, with regional variations in preparation and ingredients."
+          },
+          {
+            "country": "Bolivia",
+            "element_name": "Chicha de Jora",
+            "relationship_reason": "Shared tradition of fermented corn beverages, with regional variations in preparation and ingredients."
+          },
+          {
+            "country": "Colombia",
+            "element_name": "Chicha de Maíz",
+            "relationship_reason": "Shared tradition of fermented corn beverages, with regional variations in preparation and ingredients."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T07:56:33.457359Z",
-    "total_ich_elements": 17,
-    "complete_records": 15,
-    "incomplete_records": 2,
+    "generated_at": "2026-03-13T08:27:36.102726Z",
+    "total_ich_elements": 19,
+    "complete_records": 16,
+    "incomplete_records": 3,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 9,
+      "Traditional Craftsmanship": 10,
       "Social Practices & Rituals": 3,
-      "Culinary Traditions": 2,
+      "Culinary Traditions": 3,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 2
     }
