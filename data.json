@@ -1213,19 +1213,277 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0f32e75e",
+      "element_name": "Sardana",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//danceus.org/folk-dance/sardana-dance-traditional-circle-dance-of-catalonia/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://danceus.org/folk-dance/sardana-dance-traditional-circle-dance-of-catalonia/",
+        "https://en.wikipedia.org/wiki/Sardana",
+        "https://www.barcelonayellow.com/bcn-info/sardana-dance",
+        "https://www.britannica.com/art/sardana",
+        "https://spanishtrails.com/blog/folk-and-sardana-the-music-and-dance-that-define-catalonias-identity/"
+      ],
+      "scraped_at": "2026-03-13T07:54:59.639596Z",
+      "location": {
+        "country": "Spain",
+        "provinces": [
+          "Catalonia",
+          "Empordà",
+          "Girona"
+        ]
+      },
+      "resume_analisa": {
+        "description": "The Sardana is a graceful and symbolic circle dance that embodies Catalan unity, pride, and community spirit. It is a Catalan musical genre and dance performed in a circle following a set of steps. Dancers hold hands in a closed circle and perform precise steps to the rhythm of a live cobla band. It is more than a dance; it's a cultural statement, with the circle formation symbolizing equality and solidarity.",
+        "cultural_significance": "The Sardana symbolizes unity and national pride for the Catalans. It is a fundamental element of Catalan identity and a symbol of community prayer and working together. It was promoted as a symbol of identity, especially during the dictatorship, when it was used as a pretext for repression.",
+        "gemini_tags": [
+          "Traditional Dance",
+          "Circle Dance",
+          "Catalan Culture",
+          "Spain",
+          "Community Practice",
+          "Performing Arts",
+          "Symbolic Dance"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Dance",
+        "materials_and_tools": [
+          "Cobla band (orchestra of 11 people, including flabiol, tamborí, tibles, tenores, trompetes, fiscorns, trombé, and contrabaix)",
+          "Dancers (sardanistes)"
+        ],
+        "step_by_step": [
+          "Dancers form a closed circle, alternating men and women when possible, holding hands at shoulder height, resting gently on each other's fingers.",
+          "The dance alternates between two types of steps: 'curts' (short steps) and 'llargs' (long steps).",
+          "Curts are usually 2 to 4 steps per measure.",
+          "Llargs are slower, wider steps that involve subtle kicks and pivots.",
+          "The steps are meticulously counted as two- or three-step movements taken sideways within the circle.",
+          "The direction of the steps is alternated.",
+          "Hands stay at hip or shoulder level depending on the step structure.",
+          "The precise combination of long and short steps is determined by a leader, who signals the steps with a hand squeeze passed around the circle.",
+          "The music is first slow and then picks up speed.",
+          "It is acceptable to join a circle that has already started, provided one knows how to dance."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Spain (Catalonia)",
+            "element_name": "Contrapás",
+            "relationship_reason": "The Sardana developed from the contrapás, a similar dance with a broken circle."
+          },
+          {
+            "country": "Ancient Greece / Mediterranean",
+            "element_name": "Circle dances",
+            "relationship_reason": "Circle dances have been documented in the Mediterranean area since the time of Ancient Greece, suggesting ancient roots for the Sardana."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c88576fc",
+      "element_name": "Barro Negro Pottery",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.friendsofoaxacanfolkart.org/wp-content/uploads/2019/06/Black-ceramics-1.jpeg",
+      "source_urls": [
+        "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/",
+        "https://en.wikipedia.org/wiki/Barro_negro_pottery",
+        "https://lolomercadito.com/blogs/artisanal-crafts-and-techniques/barro-negro-ancestral-tradition-and-masterful-craftsmanship",
+        "https://www.atacamahome.com/blogs/news/barro-negro-pottery-oaxaca",
+        "https://www.nationalgeographic.com/travel/article/mexico-oaxaca-day-of-the-dead-pottery",
+        "https://www.viaventure.com/blog/oaxaca-barro-negro",
+        "https://www.velasmagazine.com/the-alchemy-of-earth-exploring-the-enduring-elegance-of-mexican-barro/",
+        "https://vivamexico.com/blogs/mexican-art/mexican-black-clay-ceramic-art-barro-negro",
+        "https://elranchosupply.com/blogs/news/how-oaxacan-black-pottery-barro-negro-is-made",
+        "https://allensapproach.wordpress.com/2012/06/02/history-and-culture-oaxaca-black-clay-pottery/"
+      ],
+      "scraped_at": "2026-03-13T07:55:22.248401Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "Oaxaca"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Barro Negro pottery, meaning \"black clay,\" is a distinctive style of ceramics originating from Oaxaca, Mexico, particularly from the town of San Bartolo Coyotepec. It is renowned for its unique black color, metallic-like sheen, and intricate designs. The craft boasts an ancient history, tracing its origins back approximately 2,500 years to the Zapotec and Mixtec civilizations of the region, where early examples were primarily utilitarian items with a matte gray finish. A significant transformation occurred in the 1950s when Doña Rosa Real Mateo de Nieto, a master potter, innovated a technique involving polishing the clay before firing, which resulted in the now-iconic glossy black surface. While the shiny version gained international acclaim and is largely decorative, the traditional matte gray pottery is still produced for practical uses, such as storing mezcal.",
+        "cultural_significance": "Barro Negro pottery is deeply embedded in the cultural identity and heritage of the Indigenous Zapotec and Mixtec peoples of Oaxaca. It represents centuries of ancestral knowledge, artistic skill, and a profound connection to the natural environment, particularly the unique local clay. Artisans often infuse their creations with narratives reflecting their history, customs, religious beliefs, and indigenous legends. The tradition is meticulously passed down through generations within families, ensuring its continuity and vitality. Beyond its artistic value, Barro Negro is also recognized for its sustainable practices, offering an eco-friendly alternative to modern materials.",
+        "gemini_tags": [
+          "Indigenous Craft",
+          "Mexican Pottery",
+          "Oaxacan Art",
+          "Black Clay",
+          "Zapotec Culture",
+          "Mixtec Culture",
+          "Traditional Craftsmanship",
+          "Ceramics",
+          "Folk Art",
+          "Mesoamerican Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Pottery Making",
+        "materials_and_tools": [
+          "Special black clay (sourced locally in San Bartolo Coyotepec, Oaxaca)",
+          "Water",
+          "Potter's wheel (traditional, often handmade from clay or using balanced plates)",
+          "Carving instruments (e.g., small deer's horn, metal pieces)",
+          "Curved quartz stone (for burnishing)",
+          "Petates (woven straw mats, for filtering clay)",
+          "Well-insulated room or shaded area (for drying)",
+          "Underground pits or above-ground wood-fired kilns",
+          "Pine needles or other organic material (e.g., sawdust, for low-oxygen firing)",
+          "Vegetable oil (optional, for burnishing)",
+          "Rags or towels"
+        ],
+        "step_by_step": [
+          "**1. Clay Mining:** The process begins with men from San Bartolo Coyotepec mining the unique brown/beige clay from local deposits. Traditionally, women are not permitted in the mines.",
+          "**2. Clay Preparation:** The extracted clay is spread under the sun to dry for at least two days. It is then moistened and meticulously filtered to remove impurities like gravel and sand, sometimes by walking on it over petates. Finally, the purified clay is shaped into manageable blocks.",
+          "**3. Shaping:** Artisans shape the clay entirely by hand, without the use of molds or modern machinery. Large pieces, such as *cantaros*, are often built from the base upwards by incrementally adding clay. Traditional methods include molding on plates balanced on rocks that are spun by hand, or using handmade potter's wheels.",
+          "**4. Initial Drying:** The freshly shaped pottery pieces are placed in a well-insulated room or a shaded area to dry slowly, protecting them from sudden temperature fluctuations. This drying phase can last up to three weeks, or approximately fifteen days.",
+          "**5. Burnishing (for shiny finish):** If a glossy black finish is desired, the piece is burnished when it is almost dry. The surface is lightly moistened (sometimes with water, followed by an optional application of vegetable oil) and then vigorously rubbed with a curved quartz stone. This burnishing compacts the clay's surface, aligning its non-plastic particles, which is crucial for achieving the metallic sheen and dark color during firing. This step can take up to an hour and a half.",
+          "**6. Decorative Accents:** During the drying or burnishing stage, artisans may add decorative elements such as clay flowers, small handles, or intricate carved designs.",
+          "**7. Firing:** The pottery is fired in underground pits or above-ground wood-fired kilns, reaching temperatures typically between 700 and 900 °C (1300-1650°F). To achieve the characteristic glossy black, the firing process is often conducted at slightly lower temperatures and in a low-oxygen environment. This low-oxygen atmosphere is sometimes created by adding organic materials like pine needles or sawdust, which induces carbonization and results in the deep black color. The firing process can extend for an entire day.",
+          "**8. Cooling & Completion:** After firing, the burnished pieces emerge with their distinctive shiny black appearance, while unpolished pieces retain their traditional gray matte finish. The entire creation process, from shaping to firing, can take approximately 28 days."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Mexico",
+            "element_name": "Red Clay Pottery of San Marcos Tlapazola (Oaxaca)",
+            "relationship_reason": "Both are traditional pottery styles from Oaxaca, utilizing local clay and ancestral techniques passed down through generations, though they differ in clay type, color, and specific firing methods."
+          },
+          {
+            "country": "Mexico",
+            "element_name": "General Mesoamerican Indigenous Pottery",
+            "relationship_reason": "Barro Negro pottery's origins date back 2,500 years, with archaeological evidence found at sites like Monte Albán, a significant Mesoamerican center. This demonstrates a shared ancient heritage of clay work and its cultural importance across various indigenous civilizations in Mesoamerica."
+          },
+          {
+            "country": "Various Indigenous cultures globally",
+            "element_name": "Traditional hand-built pottery",
+            "relationship_reason": "The fundamental techniques of hand-building pottery (without modern machinery) and utilizing natural firing methods are common practices across numerous indigenous pottery traditions worldwide, reflecting universal human ingenuity in working with natural materials."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c01d788f",
+      "element_name": "Sindhi Ajrak",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.independenturdu.com/node/78766&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.independenturdu.com/node/78766",
+        "https://ruralhandmade.com/blogs/news/a-complete-guide-to-ajrakh-and-the-process-of-ajrakh-making",
+        "https://www.express.pk/story/1471349",
+        "https://www.24newshd.tv/04-Dec-2022/165509",
+        "https://www.humsub.com.pk/444270/sindhi-topi-ajrak-day/",
+        "https://www.ajrakh.com/blogs/news/ajrakh-printing-techniques-a-step-by-step-guide",
+        "https://www.youtube.com/watch?v=kYv_z-X68nE",
+        "https://www.houseofwanderingsilk.com/blogs/news/textile-guide-ajrakh",
+        "https://www.rva.org.pk/urdu/ajrak-a-qadeem-tehzeeb/",
+        "https://medium.com/@directcreate/ajrakh-cloth-printing-d56b0058e3fc",
+        "https://kalantir.com/blogs/news/ajrakh-block-print",
+        "https://ur.wikipedia.org/wiki/%D8%B3%D8%B1%D8%A7%D8%A6%DB%8C%DA%A9%DB%8C_%D8%A7%D8%AC%D8%B1%DA%A9_(%D8%B3%D8%AC%D8%B1%DA%A9)",
+        "https://matatraders.com/blogs/news/the-art-of-ajrakh-traditional-block-printing-process-explained",
+        "https://ur.wikipedia.org/wiki/%D8%A7%D8%AC%D8%B1%DA%A9",
+        "https://www.dawn.com/news/567296/craftsmanship-the-making-of-ajrak",
+        "https://www.scribd.com/document/683116812/Ajrak-History-and-Craft-Techniques",
+        "https://wenews.pk/urdu/19-Jan-2024/10444"
+      ],
+      "scraped_at": "2026-03-13T07:55:57.947248Z",
+      "location": {
+        "country": "Pakistan",
+        "provinces": [
+          "Sindh"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Sindhi Ajrak is a traditional block-printed shawl or cloth, a profound symbol of Sindhi culture. It is characterized by its deep crimson red and indigo blue background, adorned with symmetrical patterns and intricate geometric designs, often featuring unprinted sparkling white motifs. Traditionally crafted from pure cotton fabric, Ajrak is known for its unique properties, believed to be cooling in hot weather and warming in cold. The authenticity of a traditional Ajrak is often recognized by its double-sided printing, where the design appears identical on both sides.",
+        "cultural_significance": "Ajrak holds immense cultural significance, serving as a powerful symbol of Sindhi identity, pride, and respect. Its origins are deeply rooted in the Indus Valley Civilization, with archaeological evidence, such as the 'King Priest' statue from Mohenjo-Daro, suggesting its presence over five millennia ago. Beyond its aesthetic appeal, Ajrak is an integral part of daily life and special occasions in Sindh. It is worn by men as turbans and shawls, and by women as part of their attire, and is also used as bedsheets. Gifting an Ajrak is a cherished gesture of goodwill and honor, frequently extended to guests and dignitaries, signifying deep respect and hospitality. The craft embodies centuries of artisanal skill and sustainable practices, connecting the people of Sindh to their rich historical roots.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Textile Art",
+          "Sindhi Culture",
+          "Block Printing",
+          "Natural Dyes",
+          "Cultural Heritage",
+          "Pakistan"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Hand Block Printing and Resist Dyeing",
+        "materials_and_tools": [
+          "Pure cotton fabric",
+          "Mustard oil (or Eruca Sativa oil)",
+          "Soap",
+          "Soda",
+          "Khara oil (alkaline oil)",
+          "Camel dung (or cow dung powder)",
+          "Water",
+          "Natural dyes (Indigo for blue, Madder root/Manjeed plant branches for red, Rusty iron/Ferrous sulphate for black, Pomegranate rind/Turmeric for yellow/green)",
+          "Gum (Ghadvi gum, Acacia gum, Samunda gum)",
+          "Multani Mitti (Fuller's earth)",
+          "Lime",
+          "Alum",
+          "Molasses",
+          "Rice paste",
+          "Fennel",
+          "Hand-carved wooden blocks",
+          "Copper vat"
+        ],
+        "step_by_step": [
+          "**Fabric Preparation (Saaj/Scouring):** The pure cotton fabric is thoroughly washed multiple times to remove any impurities and make it more absorbent.",
+          "**Oil Treatment (Teeli Ajrak):** The cleaned fabric is soaked in mustard oil (or Eruca Sativa oil) for 7-8 days or up to two weeks. This process strengthens the fabric, making it heavier and more durable, and is known as 'Teeli Ajrak'.",
+          "**Boiling and Softening:** The oiled fabric is then boiled overnight in a furnace with a mixture of soap, soda, and khara oil (alkaline oil) to further clean and soften it.",
+          "**Dung Treatment:** The fabric is wrapped in camel dung (ghassi) to enhance its softness and remove any remaining starch or sizing. (Some sources also mention camel dung being used later as a bleaching agent).",
+          "**Washing and Drying:** After the dung treatment, the fabric is thoroughly washed with water and then dried under strong sunlight. This step is crucial and dependent on weather conditions.",
+          "**First Printing (Chhar/Kiryana/Rekh):** The initial layer of printing is applied using hand-carved wooden blocks. This step, sometimes called 'Chhar', 'Kiryana', or 'Rekh', outlines the design, often using a black dye or a resist paste. For the black color, old iron is soaked in water for 8-10 days to extract rust.",
+          "**Resist Application (Kharrh/Kut):** A resist paste, known as 'Kharrh', is prepared from ingredients like rice paste, alum, molasses, Fuller's earth (Multani Mitti), fennel, and gum. This paste is meticulously applied to areas of the fabric intended to remain white or to be dyed red, thereby protecting them from the subsequent indigo dye. Powdered camel dung and ground rice husks can also be sprinkled over the resist.",
+          "**Indigo Dyeing (Rangai/Indigo Dip):** The fabric is immersed in a vat of indigo dye. This dyeing process involves repeated dipping and exposure to air, allowing the indigo to oxidize and develop its characteristic deep blue hue.",
+          "**Washing off Resist (Vicharnu):** Following indigo dyeing, the fabric undergoes thorough washing to remove the resist paste and any excess dye. This step reveals the intricate white patterns that contrast beautifully with the blue background.",
+          "**Red Dyeing (Rang/Alizarin Dyeing):** The fabric is then boiled in a solution, typically containing alizarin (derived from madder root or Manjeed plant branches), to develop the rich red color in the un-resisted areas. Other natural ingredients like gum, sagwan, pomegranate peels, and henna may also be used to achieve the red shades.",
+          "**Final Drying and Bleaching (Tapano/Tapaai):** The dyed cloth is spread out in the sun and regularly sprinkled with water. This process, sometimes extended over three days, helps to naturally bleach the white areas and intensify the other colors. A solution of camel dung can also be applied during this stage to aid in bleaching.",
+          "**Finishing:** Once the artisans are satisfied with the colors and patterns, the Ajraks are folded while slightly damp and stacked. This pressing technique helps to smooth the fabric, eliminating the need for ironing."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Kachchhi Ajrakh",
+            "relationship_reason": "Ajrakh is an ancient hand block printing craft with roots in the Indus Valley Civilization, practiced by the Khatri community in both the Sindh region of Pakistan and the Kutch (Kachchh) region of Gujarat, India. The techniques, motifs, and cultural significance are shared, with regional variations."
+          },
+          {
+            "country": "India",
+            "element_name": "Barmeri Ajrakh",
+            "relationship_reason": "Ajrakh is an ancient hand block printing craft with roots in the Indus Valley Civilization, practiced by the Khatri community in both the Sindh region of Pakistan and the Barmer region of Rajasthan, India. The techniques, motifs, and cultural significance are shared, with regional variations."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T07:19:43.687384Z",
-    "total_ich_elements": 14,
-    "complete_records": 12,
+    "generated_at": "2026-03-13T07:56:33.457359Z",
+    "total_ich_elements": 17,
+    "complete_records": 15,
     "incomplete_records": 2,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 7,
+      "Traditional Craftsmanship": 9,
       "Social Practices & Rituals": 3,
       "Culinary Traditions": 2,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 1
+      "Performing Arts": 2
     }
   }
 }
