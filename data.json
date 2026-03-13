@@ -87,15 +87,59 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b0f059df",
+      "element_name": "Thanaka Face Painting",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS2QTg9ef42kvZPVZZe_QbhidLUQ8u06_7gNW-EQH1uNwsgAVh_dLRcdjGlaug5OPQvvyV79f13t7MvMlNtuMU-oxoVfMKc3Til5nSeIIy2QCSWhZij0FSdfy2u5oSySQfC2Su3JTAyTFBbusxiLqS5HsoVri4c0FWB5f7dttFgg%3D%3D&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS2QTg9ef42kvZPVZZe_QbhidLUQ8u06_7gNW-EQH1uNwsgAVh_dLRcdjGlaug5OPQvvyV79f13t7MvMlNtuMU-oxoVfMKc3Til5nSeIIy2QCSWhZij0FSdfy2u5oSySQfC2Su3JTAyTFBbusxiLqS5HsoVri4c0FWB5f7dttFgg==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuesEtxol6C1qf23Q1lX3cOZ4_p9a8UHIliKhgDsO4pHKBOwYykscz-Ci8KQ1JuViskJOnnSLcPCye5enAB8YgE36MoLR43oYwXESO0aRtKnUggvQDOMVAq-v1kvn72khUzqyX8vYvaSUu_5ZSS0Ez",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGaf_aY3IugpvfULIs1QHEutEoMduAVnF2ZQ1JjJv5qvy-RycrF6tniljeJtazH3PNvn8wZAZgztkIMAGwQDxVF0LFpGff0rcAJNlAaye_KDuc-IjHwDhrDPUPWiznbbr_0MPYfJpBlc8RHRC3Bh3euBI0klHaoqO_AbCm6LM=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgeY6gaBusZ3rWGe6Q-SqsKBUOZsgqFyDJmvKMfYz2NycSew2KZXE2sfQcIXwDyQYXETTZsn70aMu0d0u-LVXuncaee4It6zaHCaA5WWR9o93nFJIgpWNi8Cvvy81My5OkJlZN3IVElx3FKVv5mYt_heKa6pY="
+      ],
+      "scraped_at": "2026-03-13T05:28:12.334524Z",
+      "location": {
+        "country": "Myanmar",
+        "provinces": []
+      },
+      "resume_analisa": {
+        "description": "Thanaka is a pale yellow paste applied to the faces of women and children in Myanmar. It is derived from the bark of a medicinal tree, primarily found in the hill country of Myanmar. The paste is applied in various patterns, ranging from streaks along the cheekbones to full face masks extending from chin to forehead.",
+        "cultural_significance": "Thanaka is deeply integral to Myanmar's identity and has been used by its people for approximately 2000 years. It symbolizes purification and is valued for its cosmetic, health, and religious benefits. Myanmar is actively working to register Thanaka as an intangible cultural heritage with UNESCO to protect its cultural ownership, especially as Thanaka-based products are now produced in other countries like Thailand. The practice of applying Thanaka to the face is considered unique to Myanmar, even though the Thanaka tree grows in other Southeast Asian countries.",
+        "gemini_tags": [
+          "Face painting",
+          "Traditional cosmetic",
+          "Myanmar culture",
+          "Natural beauty",
+          "Sun protection",
+          "Ritual",
+          "Herbal remedy"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Thailand",
+            "element_name": "Thanaka-based products",
+            "relationship_reason": "While the traditional practice of applying Thanaka to the face is unique to Myanmar, Thailand has started producing Thanaka-based commercial products."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T05:15:06.509257Z",
-    "total_ich_elements": 1,
+    "generated_at": "2026-03-13T05:28:26.444929Z",
+    "total_ich_elements": 2,
     "complete_records": 1,
-    "incomplete_records": 0,
+    "incomplete_records": 1,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 1
+      "Traditional Craftsmanship": 1,
+      "Social Practices & Rituals": 1
     }
   }
 }
