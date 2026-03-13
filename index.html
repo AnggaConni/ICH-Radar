@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artifact Radar — Global Monitor</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind, Chart.js, & Leaflet -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <style>
+    /* ── Variables ── */
+    :root {
+      --bg:        #f5f3ee;
+      --surface:   #ffffff;
+      --border:    #e4dfd4;
+      --text:      #1c1814;
+      --muted:     #8a7f72;
+      --amber:     #d97706;
+      --amber-lt:  #fef3c7;
+      --crimson:   #dc2626;
+      --crimson-lt:#fee2e2;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Instrument Sans', sans-serif;
+    }
+    h1, h2, h3, .syne-font { font-family: 'Syne', sans-serif; }
+    .mono-font { font-family: 'DM Mono', monospace; }
+    
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+    }
+    .card:hover {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+      transform: translateY(-2px);
+    }
+    .badge-high { background: var(--crimson-lt); color: var(--crimson); }
+    .badge-medium { background: var(--amber-lt); color: var(--amber); }
+    .badge-info { background: #e0f2fe; color: #0284c7; }
+    
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+
+    /* Custom Leaflet Popup */
+    .leaflet-popup-content-wrapper {
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    .leaflet-popup-content { margin: 16px; font-family: 'Instrument Sans', sans-serif; }
+  </style>
+</head>
+<body class="flex h-screen overflow-hidden">
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="w-80 bg-white border-r border-[#e4dfd4] flex flex-col justify-between hidden lg:flex z-20 shrink-0">
+    <div class="h-20 flex items-center px-6 border-b border-[#e4dfd4] shrink-0">
+      <div class="bg-[#1c1814] text-[#f5f3ee] p-1.5 px-2.5 rounded-md syne-font font-bold text-lg mr-3">AR</div>
+      <div>
+        <h1 class="text-lg font-bold tracking-tight syne-font leading-tight">Artifact Radar</h1>
+        <p class="text-[10px] mono-font text-[#8a7f72] uppercase tracking-widest" id="build-tag">v5.1 · CRAWLED</p>
+      </div>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto p-6">
+      <p class="text-[10px] mono-font font-bold text-[#8a7f72] uppercase tracking-widest mb-4">Navigation</p>
+      
+      <!-- Nav Tabs -->
+      <nav class="space-y-2 mb-8">
+        <a href="#" id="tab-dashboard" onclick="switchTab('dashboard')" class="flex items-center gap-3 px-3 py-2.5 bg-[#f5f3ee] text-[#1c1814] rounded-lg font-semibold text-sm transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+          Global Monitor
+        </a>
+        <a href="#" id="tab-map" onclick="switchTab('map')" class="flex items-center gap-3 px-3 py-2.5 text-[#8a7f72] hover:bg-[#f5f3ee] hover:text-[#1c1814] rounded-lg font-semibold text-sm transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+          Map Source <span class="text-[10px] ml-1 opacity-50">(Geo-Intel)</span>
+        </a>
+      </nav>
+
+      <div class="border-t border-[#e4dfd4] pt-6">
+        <p class="text-[10px] mono-font font-bold text-[#8a7f72] uppercase tracking-widest mb-4">Live Analytics</p>
+        <div class="mb-8">
+          <p class="text-xs font-semibold text-[#1c1814] mb-2">Market Risk Profile</p>
+          <div class="relative h-40 w-full"><canvas id="radarChart"></canvas></div>
+        </div>
+        <div class="mb-8">
+          <p class="text-xs font-semibold text-[#1c1814] mb-2">Platform Breakdown</p>
+          <div class="relative h-36 w-full"><canvas id="barChart"></canvas></div>
+        </div>
+        <div class="mb-4">
+          <p class="text-xs font-semibold text-[#1c1814] mb-2">Provenance Tracking</p>
+          <div class="relative h-36 w-full flex justify-center"><canvas id="provChart"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-6 border-t border-[#e4dfd4] bg-[#fcfbf9] shrink-0">
+      <p class="text-[10px] mono-font font-bold text-[#8a7f72] uppercase tracking-widest mb-2">System Status</p>
+      <div class="flex items-center gap-2">
+        <div class="w-2 h-2 rounded-full bg-[#16a34a] animate-pulse"></div>
+        <p class="text-xs font-semibold text-[#1c1814]">AI Engine Active</p>
+      </div>
+      <p id="last-update-sidebar" class="text-[10px] text-[#8a7f72] mt-1.5">Last crawl: -</p>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main class="flex-1 flex flex-col h-screen overflow-hidden relative">
+    
+    <header class="h-16 bg-white border-b border-[#e4dfd4] flex items-center justify-between px-4 lg:hidden shrink-0 z-10">
+      <div class="flex items-center">
+        <div class="bg-[#1c1814] text-[#f5f3ee] p-1 px-2 rounded syne-font font-bold text-sm mr-2">AR</div>
+        <h1 class="text-lg font-bold syne-font">Artifact Radar</h1>
+      </div>
+      <button onclick="switchTab('dashboard')" class="text-xs font-bold mr-2">Grid</button>
+      <button onclick="switchTab('map')" class="text-xs font-bold">Map</button>
+    </header>
+
+    <!-- SECTION: DASHBOARD (Default) -->
+    <div id="section-dashboard" class="flex-1 overflow-y-auto p-4 md:p-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
+          <div>
+            <h2 class="text-3xl font-extrabold syne-font tracking-tight">Intelligence Feed</h2>
+            <p class="text-sm text-[#8a7f72] mt-1">Real-time monitoring of global antiquities market.</p>
+          </div>
+
+        <div class="flex items-center gap-3">
+          <button onclick="openInfoModal()" class="text-xs mono-font font-bold text-[#1c1814] bg-[#f5f3ee] hover:bg-[#e4dfd4] px-4 py-2 rounded-full border border-[#e4dfd4] transition-colors shadow-sm flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            How to Use
+          </button>
+          
+          <div class="text-xs mono-font font-medium text-[#8a7f72] bg-white px-4 py-2 rounded-full border border-[#e4dfd4] shadow-sm hidden sm:block">
+            Updates automatically every 8 days
+          </div>
+        </div>
+
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 mb-10">
+          <div class="card p-5 rounded-2xl">
+            <p class="text-[10px] font-bold text-[#8a7f72] uppercase tracking-widest mono-font">Total Listings</p>
+            <p id="stat-total" class="text-4xl font-extrabold mt-2 syne-font">0</p>
+          </div>
+          <div class="card p-5 rounded-2xl border-b-4 border-b-[#dc2626] bg-[#fef2f2]">
+            <p class="text-[10px] font-bold text-[#dc2626] uppercase tracking-widest mono-font">High Risk</p>
+            <p id="stat-risk" class="text-4xl font-extrabold mt-2 syne-font text-[#dc2626]">0</p>
+          </div>
+          <div class="card p-5 rounded-2xl border-b-4 border-b-[#d97706]">
+            <p class="text-[10px] font-bold text-[#d97706] uppercase tracking-widest mono-font">Medium Risk</p>
+            <p id="stat-medium" class="text-4xl font-extrabold mt-2 syne-font text-[#d97706]">0</p>
+          </div>
+          <div class="card p-5 rounded-2xl">
+            <p class="text-[10px] font-bold text-[#8a7f72] uppercase tracking-widest mono-font">Total Platforms</p>
+            <p id="stat-platforms" class="text-4xl font-extrabold mt-2 syne-font text-[#1c1814]">0</p>
+          </div>
+        </div>
+
+        <!-- Grid Cards -->
+        <div id="cards-grid" class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 pb-10">
+          <div class="col-span-full py-20 text-center">
+            <div class="inline-block w-8 h-8 border-4 border-[#e4dfd4] border-t-[#1c1814] rounded-full animate-spin mb-4"></div>
+            <p class="text-[#8a7f72] mono-font animate-pulse">Fetching global intelligence database...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: MAP SOURCE -->
+    <div id="section-map" class="hidden flex-1 flex-col relative bg-[#e5e3df]">
+      <div class="absolute top-6 left-6 z-[1000] bg-white/90 backdrop-blur px-6 py-4 rounded-2xl border border-white/20 shadow-lg pointer-events-none">
+        <h2 class="text-xl font-extrabold syne-font tracking-tight text-[#1c1814]">Geospatial Origin Intel</h2>
+        <p class="text-xs text-[#8a7f72] mt-1 font-medium">Tracking suspected origins of intercepted artifacts</p>
+      </div>
+      <!-- Map Container -->
+      <div id="map" class="w-full h-full z-0"></div>
+    </div>
+
+     <!-- SECTION: GUIDE HOW TO USE -->
+    <div id="info-modal" class="fixed inset-0 z-[2000] hidden flex items-center justify-center">
+  <div class="absolute inset-0 bg-[#1c1814]/40 backdrop-blur-sm" onclick="closeInfoModal()"></div>
+  
+  <div class="bg-white w-full max-w-2xl mx-4 rounded-2xl shadow-2xl relative z-10 flex flex-col max-h-[85vh] animate-[fadeIn_0.2s_ease-out]">
+    
+    <div class="p-6 border-b border-[#e4dfd4] flex justify-between items-center">
+      <h3 class="text-xl font-extrabold syne-font text-[#1c1814]">About This Intelligence Feed</h3>
+      <button onclick="closeInfoModal()" class="text-[#8a7f72] hover:text-[#dc2626] transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    
+    <div class="p-6 overflow-y-auto text-sm text-[#1c1814] space-y-5">
+      <p>Welcome to <b>Artifact Radar</b>. This system monitors the global antiquities market to identify potentially illicit trafficking of cultural artifacts.</p>
+      
+      <div>
+        <h4 class="font-bold text-[#1c1814] mono-font text-xs uppercase tracking-widest">Risk Scoring Methodology</h4>
+        <ul class="list-none space-y-2 mt-2">
+          <li class="flex items-start gap-2">
+            <span class="w-2 h-2 rounded-full bg-[#dc2626] mt-1.5 shrink-0"></span>
+            <span><b class="text-[#dc2626]">High Risk (8-10):</b> Unprovenanced items from conflict zones or regions with strong export bans.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="w-2 h-2 rounded-full bg-[#d97706] mt-1.5 shrink-0"></span>
+            <span><b class="text-[#d97706]">Medium Risk (4-7):</b> Items with vague ownership history or unverified Certificates of Authenticity (COAs).</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pt-4 border-t border-[#e4dfd4]">
+        <h4 class="font-bold text-[#1c1814] mono-font text-xs uppercase tracking-widest mb-2">System Architecture</h4>
+        <p class="text-[#8a7f72] leading-relaxed mb-4">
+          Unlike traditional scrapers that get blocked, Artifact Radar v5.1 delegates the search process entirely to Google's infrastructure via AI Tool Grounding, utilizing direct REST API calls for maximum stability. This advanced approach ensures that even search results and listings that actively block traditional crawlers can still be detected and analyzed by the AI.
+        </p>
+
+        <div class="bg-[#fcfbf9] border border-[#e4dfd4] border-l-4 border-l-[#d97706] p-4 rounded-r-lg mb-4">
+          <p class="text-xs text-[#1c1814] leading-relaxed">
+            <b class="text-[#d97706] mono-font uppercase tracking-widest block mb-1">Important Note</b>
+            If a listing's thumbnail on the dashboard displays an <i>"Image Unavailable"</i> or blocked message, it serves as visual proof that the host website actively blocks standard scrapers—yet our Python engine still successfully bypassed it to extract the core intelligence. (We are robots, lol)
+          </p>
+        </div>
+
+        <pre class="bg-[#1c1814] text-[#f5f3ee] p-4 rounded-xl text-[10px] sm:text-xs mono-font overflow-x-auto leading-relaxed shadow-inner">
+GitHub Actions (Daily Cron)
+        │
+        ▼
+  scraper.py (8-Day Interval Guard)
+        │
+        ├──► Gemini 2.5 Flash REST API + Google Search Tool
+        │      ├── Scans global keywords (eBay, FB, Forums)
+        │      └── Extracts strict JSON (Risk, Origin, etc.)
+        │
+        ├──► Microlink.io API
+        │      └── Generates & backfills missing screenshots
+        │
+        ▼
+  data.json & history.json
+        │
+        ▼
+  Git Commit ──► GitHub Pages ──► Interactive Dashboard</pre>
+      </div>
+
+    </div>
+    
+    <div class="p-6 border-t border-[#e4dfd4] bg-[#fcfbf9] rounded-b-2xl shrink-0">
+      <button onclick="closeInfoModal()" class="w-full bg-[#1c1814] text-[#f5f3ee] py-3 rounded-xl font-bold mono-font text-xs uppercase tracking-widest hover:bg-[#8a7f72] transition-colors">
+        Acknowledge
+      </button>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+  </main>
+
+  <script>
+    Chart.defaults.font.family = "'DM Mono', monospace";
+    Chart.defaults.color = '#8a7f72';
+    Chart.defaults.scale.grid.color = '#f5f3ee';
+    
+    let radarChartObj, barChartObj, provChartObj;
+    let globalListings = [];
+    let map;
+
+
+    // --- MODAL CONTROL ---
+    function openInfoModal() {
+      document.getElementById('info-modal').classList.remove('hidden');
+    }
+
+    function closeInfoModal() {
+      document.getElementById('info-modal').classList.add('hidden');
+    }
+
+    // --- TAB SWITCH LOGIC ---
+    function switchTab(tabName) {
+      const secDash = document.getElementById('section-dashboard');
+      const secMap = document.getElementById('section-map');
+      const tabDash = document.getElementById('tab-dashboard');
+      const tabMap = document.getElementById('tab-map');
+
+      const activeClasses = ['bg-[#f5f3ee]', 'text-[#1c1814]'];
+      const inactiveClasses = ['text-[#8a7f72]', 'hover:bg-[#f5f3ee]', 'hover:text-[#1c1814]'];
+
+      if (tabName === 'dashboard') {
+        secDash.classList.remove('hidden');
+        secMap.classList.add('hidden');
+        tabDash.classList.add(...activeClasses);
+        tabDash.classList.remove(...inactiveClasses);
+        tabMap.classList.remove(...activeClasses);
+        tabMap.classList.add(...inactiveClasses);
+      } else {
+        secDash.classList.add('hidden');
+        secMap.classList.remove('hidden');
+        tabMap.classList.add(...activeClasses);
+        tabMap.classList.remove(...inactiveClasses);
+        tabDash.classList.remove(...activeClasses);
+        tabDash.classList.add(...inactiveClasses);
+        
+        // Fix Leaflet rendering issue when unhiding
+        if(map) { setTimeout(() => { map.invalidateSize(); }, 200); }
+      }
+    }
+
+
+    // --- GEOCODER (AI String -> Lat/Lng) ---
+    function getApproximateCoordinates(regionStr) {
+      if(!regionStr) return null;
+      const r = regionStr.toLowerCase();
+      // Memberikan koordinat tengah peradaban berdasarkan keyword AI
+      if (r.includes('java') || r.includes('majapahit') || r.includes('indonesia')) return [-7.25, 112.75]; // Jawa Timur
+      if (r.includes('khmer') || r.includes('cambodia') || r.includes('angkor')) return [13.41, 103.86]; // Siem Reap
+      if (r.includes('egypt') || r.includes('pharao')) return [26.82, 30.80]; // Mesir
+      if (r.includes('mesopotamia') || r.includes('iraq') || r.includes('sumerian') || r.includes('babylon')) return [33.22, 43.67]; // Iraq
+      if (r.includes('roman') || r.includes('italy') || r.includes('etruscan')) return [41.90, 12.49]; // Roma
+      if (r.includes('greek') || r.includes('greece') || r.includes('mycenae')) return [37.98, 23.72]; // Athena
+      if (r.includes('china') || r.includes('han ') || r.includes('ming ') || r.includes('qing ')) return [34.34, 108.93]; // Xi'an
+      if (r.includes('japan') || r.includes('jomon') || r.includes('edo ')) return [35.01, 135.76]; // Kyoto
+      if (r.includes('india') || r.includes('chola') || r.includes('gandhara')) return [20.59, 78.96]; // Central India
+      if (r.includes('maya') || r.includes('mexico') || r.includes('aztec')) return [19.43, -99.13]; // Mexico
+      if (r.includes('inca') || r.includes('peru') || r.includes('moche')) return [-9.19, -75.01]; // Peru
+      if (r.includes('southeast asia')) return [15.87, 100.99]; // Umum SEA
+      if (r.includes('middle east')) return [33.88, 35.86]; // Lebanon/Syria area
+      if (r.includes('africa')) return [9.08, 8.67]; // Afrika Tengah
+      if (r.includes('europe')) return [48.85, 2.35]; // Eropa
+      return null;
+    }
+
+    // --- PLATFORM CATEGORIZER ---
+    function categorizePlatform(platformStr) {
+      if (!platformStr) return 'Unknown';
+      const p = platformStr.toLowerCase();
+      
+      // Kategori 1: E-Commerce & Marketplaces
+      if (p.includes('ebay') || p.includes('etsy') || p.includes('tokopedia') || p.includes('shopee') || p.includes('bukalapak') || p.includes('amazon') || p.includes('alibaba')) {
+        return 'E-Commerce';
+      }
+      // Kategori 2: Auctions & Specialist Houses
+      if (p.includes('auction') || p.includes('sotheby') || p.includes('christie') || p.includes('catawiki') || p.includes('heritage')) {
+        return 'Auctions';
+      }
+      // Kategori 3: Social Media & Video
+      if (p.includes('youtube') || p.includes('facebook') || p.includes('instagram') || p.includes('tiktok') || p.includes('twitter') || p.includes('reddit')) {
+        return 'Social Media';
+      }
+      // Kategori 4: News, Blogs & Media
+      if (p.includes('asumsi') || p.includes('news') || p.includes('kompas') || p.includes('bbc') || p.includes('article') || p.includes('blog') || p.includes('journal')) {
+        return 'News & Media';
+      }
+      // Kategori 5: Forums & Communities
+      if (p.includes('forum') || p.includes('board') || p.includes('community')) {
+        return 'Forums';
+      }
+      
+      return 'Other Web Sources';
+    }
+
+    // --- MAP INITIALIZATION & MARKER PLOTTING ---
+    function initMap(listings) {
+      if(map) return; // Prevent re-init
+      
+      // Menggunakan base layer warna terang agar senada dengan UI Dashboard
+      map = L.map('map', { zoomControl: false }).setView([20, 0], 2);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap &copy; CARTO',
+        subdomains: 'abcd',
+        maxZoom: 10
+      }).addTo(map);
+
+      // Add Zoom Control di kanan bawah
+      L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+      listings.forEach(item => {
+        const coords = getApproximateCoordinates(item.origin_region || item.keyword_trigger);
+        if (coords) {
+          // Tambahkan sedikit jitter/acak posisi agar pin dari region yang sama tidak numpuk 100%
+          const jitterLat = coords[0] + (Math.random() - 0.5) * 2.0; 
+          const jitterLng = coords[1] + (Math.random() - 0.5) * 2.0;
+          
+          const isHigh = item.risk_score >= 8;
+          const markerColor = isHigh ? '#dc2626' : (item.risk_score >= 4 ? '#d97706' : '#16a34a');
+
+          // Buat lingkaran marker custom
+          const circleMarker = L.circleMarker([jitterLat, jitterLng], {
+            radius: isHigh ? 8 : 6,
+            fillColor: markerColor,
+            color: '#ffffff',
+            weight: 2,
+            opacity: 1,
+            fillOpacity: 0.8
+          }).addTo(map);
+
+          const priceStr = item.price_usd ? `$${item.price_usd.toLocaleString()}` : 'TBA';
+          
+          // Template Popup
+          const popupContent = `
+            <div class="p-1 min-w-[200px]">
+              <div class="text-[9px] font-bold text-white bg-[${markerColor}] inline-block px-1.5 py-0.5 rounded uppercase tracking-widest mb-2 mono-font" style="background-color: ${markerColor}">
+                RISK: ${item.risk_score}/10
+              </div>
+              <h4 class="font-bold text-[#1c1814] text-sm leading-tight mb-1">${item.original_title || 'Unknown Artifact'}</h4>
+              <p class="text-[10px] text-[#8a7f72] mono-font mb-3">${item.platform} · <b>${priceStr}</b></p>
+              <a href="${item.url}" target="_blank" class="block text-center w-full bg-[#1c1814] text-white text-[10px] py-1.5 rounded uppercase mono-font font-bold hover:bg-[#dc2626]">Open Source</a>
+            </div>
+          `;
+          circleMarker.bindPopup(popupContent);
+        }
+      });
+    }
+
+    // --- DATA LOADING ---
+    function normalise(raw) {
+      if (Array.isArray(raw)) return { listings: raw, summary: {} };
+      return raw;
+    }
+
+    async function loadData() {
+      try {
+        const [dataResp, histResp] = await Promise.all([
+          fetch('data.json'), 
+          fetch('history.json').catch(() => null)
+        ]);
+
+        const raw = await dataResp.json();
+        const { listings, summary } = normalise(raw);
+        globalListings = listings;
+
+        // --- STATS ---
+        let highCount = 0, medCount = 0, lowCount = 0;
+        let provYes = 0, provNo = 0;
+        const platformCounts = {};
+
+        listings.forEach(item => {
+          const score = item.risk_score || 0;
+          if (score >= 8) highCount++; else if (score >= 4) medCount++; else lowCount++;
+          if (item.provenance_flag) provYes++; else provNo++;
+
+        // Hitung berdasarkan kategori, bukan nama domain spesifik
+        let rawPlat = item.platform || item.source_name || 'Unknown';
+        let category = categorizePlatform(rawPlat);
+        platformCounts[category] = (platformCounts[category] || 0) + 1;
+        });
+
+        document.getElementById('stat-total').textContent = summary.total_listings || listings.length || 0;
+        document.getElementById('stat-risk').textContent = summary.high_risk_count || highCount || 0;
+        document.getElementById('stat-medium').textContent = summary.medium_risk_count || medCount || 0;
+        
+        const sortedPlatforms = Object.entries(platformCounts).sort((a, b) => b[1] - a[1]);
+        document.getElementById('stat-platforms').textContent = sortedPlatforms.length;
+
+        if (histResp) {
+          try {
+            const hist = await histResp.json();
+            const d = new Date(hist.last_crawl_date);
+            const str = d.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
+            document.getElementById('last-update-sidebar').textContent = `Last crawl: ${str}`;
+            document.getElementById('build-tag').textContent = `v5.1 · ${str}`;
+          } catch(e) {}
+        }
+
+        // --- RENDER CHARTS ---
+        if (radarChartObj) radarChartObj.destroy();
+        radarChartObj = new Chart(document.getElementById('radarChart'), {
+          type: 'radar',
+          data: {
+            labels: ['High Risk', 'Medium Risk', 'Low/Info', 'No Prov.', 'Verified'],
+            datasets: [{
+              label: 'Listings', data: [highCount, medCount, lowCount, provNo, provYes],
+              backgroundColor: 'rgba(220, 38, 38, 0.15)', borderColor: '#dc2626',
+              pointBackgroundColor: '#dc2626', borderWidth: 1.5, pointRadius: 2
+            }]
+          },
+          options: {
+            responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } },
+            scales: { r: { angleLines: { color: '#e4dfd4' }, grid: { color: '#e4dfd4' }, pointLabels: { font: { size: 9 }, color: '#1c1814' }, ticks: { display: false } } }
+          }
+        });
+
+        const topPlatforms = sortedPlatforms.slice(0, 6);
+        if (barChartObj) barChartObj.destroy();
+        barChartObj = new Chart(document.getElementById('barChart'), {
+          type: 'bar',
+          data: {
+            labels: topPlatforms.map(p => p[0]),
+            datasets: [{ data: topPlatforms.map(p => p[1]), backgroundColor: '#1c1814', borderRadius: 4, barThickness: 12 }]
+          },
+          options: {
+            indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } },
+            scales: { x: { display: false, grid: { display: false } }, y: { grid: { display: false }, border: { display: false }, ticks: { font: { size: 10 }, color: '#1c1814' } } }
+          }
+        });
+
+        if (provChartObj) provChartObj.destroy();
+        provChartObj = new Chart(document.getElementById('provChart'), {
+          type: 'doughnut',
+          data: {
+            labels: ['No Prov.', 'Provenanced'],
+            datasets: [{ data: [provNo, provYes], backgroundColor: ['#dc2626', '#16a34a'], borderWidth: 0, hoverOffset: 4 }]
+          },
+          options: {
+            responsive: true, maintainAspectRatio: false, cutout: '70%',
+            plugins: { legend: { position: 'right', labels: { boxWidth: 10, font: { size: 10 }, padding: 10 } } }
+          }
+        });
+
+        // --- RENDER GRID ---
+        const grid = document.getElementById('cards-grid');
+        grid.innerHTML = '';
+
+        if (listings.length === 0) {
+            grid.innerHTML = `<div class="col-span-full text-center py-20 text-[#8a7f72] mono-font">No data recorded yet.</div>`;
+        } else {
+            listings.sort((a, b) => new Date(b.scraped_at) - new Date(a.scraped_at));
+            listings.forEach(item => {
+              const score = item.risk_score || 0;
+              let badgeClass = 'badge-info';
+              if (score >= 8) badgeClass = 'badge-high'; else if (score >= 4) badgeClass = 'badge-medium';
+
+              const price = item.price_usd ? `$${item.price_usd.toLocaleString()}` : 'TBA';
+              const title = item.original_title || item.item_name || 'Unknown Artifact';
+              const platform = item.platform || item.source_name || 'Unknown Source';
+              const region = item.origin_region || 'Unknown Origin';
+              const provFlag = item.provenance_flag ? '<span class="text-[#16a34a]">✓ Provenance</span>' : '<span class="text-[#dc2626]">⚠ No Provenance</span>';
+
+              // Fallback image if screenshot_url is missing or "N/A"
+              const imgUrl = (item.screenshot_url && item.screenshot_url !== "N/A") 
+                ? item.screenshot_url 
+                : "https://placehold.co/600x400/e4dfd4/8a7f72?text=No+Screenshot+Available";
+
+              grid.innerHTML += `
+                <div class="card rounded-2xl flex flex-col justify-between overflow-hidden bg-white">
+                  <!-- Thumbnail Header -->
+                  <div class="h-40 w-full overflow-hidden border-b border-[#e4dfd4] relative bg-[#f5f3ee]">
+                    <img src="${imgUrl}" alt="Source Screenshot" class="object-cover w-full h-full" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e4dfd4/8a7f72?text=Image+Unavailable';" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1c1814]/40 to-transparent"></div>
+                    <span class="absolute bottom-3 left-4 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-widest mono-font ${badgeClass} shadow-sm border border-white/20">
+                      ${item.status || 'INFO'}
+                    </span>
+                  </div>
+                  
+                  <div class="p-6">
+                    <div class="flex justify-between items-center mb-4">
+                      <span class="text-[11px] font-bold text-[#8a7f72] uppercase tracking-widest mono-font truncate pr-2">${platform}</span>
+                      <span class="text-[11px] font-bold text-[#1c1814] mono-font shrink-0">RISK: ${score}/10</span>
+                    </div>
+                    
+                    <h3 class="font-bold text-lg mb-4 leading-snug text-[#1c1814]">${title}</h3>
+                    
+                    <div class="bg-[#f5f3ee] p-4 rounded-xl border border-[#e4dfd4] mb-5">
+                      <div class="flex justify-between items-end mb-3 pb-3 border-b border-[#e4dfd4]">
+                        <div>
+                          <p class="text-[10px] text-[#8a7f72] uppercase tracking-widest mono-font mb-1">Origin</p>
+                          <p class="text-xs font-semibold">${region}</p>
+                        </div>
+                        <div class="text-right">
+                          <p class="text-[10px] text-[#8a7f72] uppercase tracking-widest mono-font mb-1">Est. Value</p>
+                          <p class="text-sm font-extrabold syne-font">${price}</p>
+                        </div>
+                      </div>
+                      
+                      <p class="text-[10px] font-bold text-[#8a7f72] uppercase tracking-widest mono-font mb-1">Provenance</p>
+                      <p class="text-xs font-semibold mb-3">${provFlag}</p>
+                      
+                      <p class="text-[10px] font-bold text-[#8a7f72] uppercase tracking-widest mono-font mb-1">AI Analysis</p>
+                      <p class="text-xs leading-relaxed text-[#1c1814]">"${item.reason}"</p>
+                    </div>
+                  </div>
+                  
+                  <a href="${item.url || '#'}" target="_blank" class="w-full text-center bg-[#1c1814] text-[#f5f3ee] text-xs font-bold py-4 uppercase tracking-widest mono-font hover:bg-[#dc2626] transition-colors">
+                    Inspect Source →
+                  </a>
+                </div>
+              `;
+            });
+        }
+
+        // --- INIT MAP ---
+        initMap(listings);
+
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    window.onload = loadData;
+  </script>
+</body>
+</html>
