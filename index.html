@@ -79,14 +79,21 @@
 
     /* ── Leaflet popup dark theme ── */
     .leaflet-popup-content-wrapper {
-      background:#1f1f1f !important;
-      color:#f5f5f5 !important;
-      border:1px solid #333 !important;
-      border-radius:10px !important;
+      background:#1f1f1f !important; color:#f5f5f5 !important;
+      border:1px solid #333 !important; border-radius:10px !important;
       box-shadow:0 4px 20px rgba(0,0,0,0.6) !important;
     }
     .leaflet-popup-tip { background:#1f1f1f !important; }
     .leaflet-popup-content { margin:10px 14px !important; font-size:13px; line-height:1.5; }
+    /* ── Rich grouped-node popup ── */
+    .ich-popup .leaflet-popup-content-wrapper {
+      background:#141414 !important; border:1px solid #2a2a2a !important;
+      border-radius:12px !important;
+      box-shadow:0 0 0 1px rgba(0,255,204,.15), 0 6px 30px rgba(0,0,0,.8) !important;
+      padding:0 !important;
+    }
+    .ich-popup .leaflet-popup-content { margin:12px 14px !important; }
+    .ich-popup .leaflet-popup-tip-container { display:none; }
 
     .modal-blur { backdrop-filter: blur(8px); }
 
@@ -534,11 +541,23 @@
       <span class="${isComplete ? 'text-brand-accent' : 'text-red-400'} text-[10px] border border-current px-1 rounded ml-1">${latest?.completion_status}</span>`;
   }
 
+  // ── Pagination safety note ──
+  // Only `itemsPerPage` DOM cards exist at any time on a fresh filter (append=false).
+  // Clicking "Load More" appends one page's worth of cards.
+  // At 2 items/day, after 1 year ≈ 730 items → max ~730 cards if the user clicks
+  // Load More all the way down, which is a trivially small DOM.
+  // The JSON payload at that scale is < 3 MB, also lightweight.
+  // No virtual scrolling needed until ~5 000+ items.
   function renderGrid(data, append = false) {
     const grid = document.getElementById('inventory-grid');
     const loadMoreContainer = document.getElementById('load-more-container');
     const dict = i18n[currentLang];
-    if (!append) grid.innerHTML = '';
+
+    if (!append) {
+      // Explicitly remove child nodes (faster than innerHTML='' on large DOMs)
+      while (grid.firstChild) grid.removeChild(grid.firstChild);
+    }
+
     if (data.length === 0) {
       grid.innerHTML = `<div class="col-span-full text-center text-gray-500 py-10">${dict.emptyGrid}</div>`;
       if (loadMoreContainer) loadMoreContainer.classList.add('hidden');
@@ -596,14 +615,67 @@
     setTimeout(() => map.invalidateSize(), 500);
   }
 
-  const mainIcon = L.divIcon({
-    className: '', html: '<div class="marker-main"></div>',
-    iconSize: [14, 14], iconAnchor: [7, 7], popupAnchor: [0, -10]
-  });
+  // Build a dynamic main icon that shows a count badge when > 1 item shares a location
+  function makeMainIcon(count) {
+    const showBadge = count > 1;
+    return L.divIcon({
+      className : '',
+      html: `<div style="position:relative;width:${showBadge?20:14}px;height:${showBadge?20:14}px">
+               <div class="marker-main" style="width:${showBadge?20:14}px;height:${showBadge?20:14}px"></div>
+               ${showBadge ? `<span style="
+                 position:absolute;top:-6px;right:-8px;
+                 background:#00ffcc;color:#0a0a0a;
+                 font-size:9px;font-weight:800;font-family:monospace;
+                 border-radius:999px;min-width:16px;height:16px;
+                 display:flex;align-items:center;justify-content:center;
+                 padding:0 3px;line-height:1;
+                 box-shadow:0 0 6px #00ffcc;
+               ">${count}</span>` : ''}
+             </div>`,
+      iconSize   : [showBadge ? 20 : 14, showBadge ? 20 : 14],
+      iconAnchor : [showBadge ? 10 : 7,  showBadge ? 10 : 7],
+      popupAnchor: [0, showBadge ? -14 : -10]
+    });
+  }
+
   const relatedIcon = L.divIcon({
     className: '', html: '<div class="marker-related"></div>',
     iconSize: [10, 10], iconAnchor: [5, 5], popupAnchor: [0, -8]
   });
+
+  // Build the popup HTML for a group of items sharing one coordinate
+  function buildGroupPopup(items) {
+    const country = items[0].location.country;
+    const rows = items.map(item => {
+      const isShared   = item.shared_heritage_detection?.is_shared;
+      const isComplete = item.completion_status === 'COMPLETE';
+      const statusDot  = isComplete
+        ? '<span style="color:#00ffcc;font-size:9px">●</span>'
+        : '<span style="color:#f87171;font-size:9px">●</span>';
+      const sharedTag  = isShared
+        ? '<span style="background:#facc15;color:#0a0a0a;font-size:8px;font-weight:700;padding:1px 4px;border-radius:3px;margin-left:4px">SHARED</span>'
+        : '';
+      return `<div style="padding:6px 0;border-bottom:1px solid #2a2a2a;display:flex;align-items:flex-start;gap:6px">
+                <span style="margin-top:3px">${statusDot}</span>
+                <div>
+                  <div style="font-weight:700;font-size:12px;color:#f5f5f5;line-height:1.3">
+                    ${item.element_name}${sharedTag}
+                  </div>
+                  <div style="font-size:10px;color:#888;margin-top:2px">${item.category}</div>
+                </div>
+              </div>`;
+    }).join('');
+
+    return `<div style="min-width:220px;max-width:260px">
+              <div style="font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#aaa;margin-bottom:6px;font-weight:600">
+                📍 ${country} — ${items.length} element${items.length > 1 ? 's' : ''}
+              </div>
+              ${rows}
+              <div style="font-size:9px;color:#555;margin-top:6px;text-align:right">
+                ● complete &nbsp; ● incomplete
+              </div>
+            </div>`;
+  }
 
   function drawMapElements(data) {
     if (!map) return;
@@ -612,49 +684,79 @@
     if (linesLayer)   { map.removeLayer(linesLayer);   linesLayer = null; }
     if (markersLayer) { map.removeLayer(markersLayer); markersLayer = null; }
 
-    // Polylines must NOT be inside MarkerClusterGroup (clustering breaks SVG animation)
+    // Polylines go on a plain layer so CSS animations work
     linesLayer   = L.layerGroup().addTo(map);
     markersLayer = L.markerClusterGroup({ chunkedLoading: true, maxClusterRadius: 40 });
     map.addLayer(markersLayer);
 
-    // Track which related-country markers were already drawn
+    // ── Step 1: Group main ICH items by coordinate key ──
+    // Round to 4 dp so items with the same JSON lat/lng always share a key,
+    // while truly different locations never collide.
+    const locationGroups = new Map(); // key → { coords, items[] }
+    data.forEach(item => {
+      const lat = item.location?.lat;
+      const lng = item.location?.lng;
+      if (!lat || !lng) return;
+      const key = `${lat.toFixed(4)},${lng.toFixed(4)}`;
+      if (!locationGroups.has(key)) locationGroups.set(key, { coords: [lat, lng], items: [] });
+      locationGroups.get(key).items.push(item);
+    });
+
+    // ── Step 2: One marker per coordinate group ──
+    locationGroups.forEach(({ coords, items }) => {
+      L.marker(coords, { icon: makeMainIcon(items.length) })
+        .bindPopup(buildGroupPopup(items), { maxWidth: 280, className: 'ich-popup' })
+        .addTo(markersLayer);
+    });
+
+    // ── Step 3: Shared-heritage connection lines + related markers ──
+    // Deduplicate both lines and related markers across all items
+    const drawnLines   = new Set();
     const drawnRelated = new Set();
 
     data.forEach(item => {
       const lat = item.location?.lat;
       const lng = item.location?.lng;
       if (!lat || !lng) return;
+      if (!item.shared_heritage_detection?.is_shared) return;
 
       const mainCoords = [lat, lng];
 
-      // ── Main marker ──
-      L.marker(mainCoords, { icon: mainIcon })
-        .bindPopup(`<strong>${item.element_name}</strong><br><span style="color:#aaa">${item.location.country}</span>`)
-        .addTo(markersLayer);
+      item.shared_heritage_detection.related_elements.forEach(rel => {
+        const relCoords = coordsForCountry(rel.country);
+        if (!relCoords) return;
 
-      // ── Shared heritage connections ──
-      if (item.shared_heritage_detection?.is_shared) {
-        item.shared_heritage_detection.related_elements.forEach(rel => {
-          const relCoords = coordsForCountry(rel.country);
-          if (!relCoords) return;
+        // ── Related marker (once per country+element) ──
+        const relKey = `${rel.country}||${rel.element_name}`;
+        if (!drawnRelated.has(relKey)) {
+          drawnRelated.add(relKey);
+          L.marker(relCoords, { icon: relatedIcon })
+            .bindPopup(
+              `<div style="min-width:180px">
+                 <div style="font-weight:700;font-size:12px;color:#f5f5f5">${rel.element_name}</div>
+                 <div style="font-size:10px;color:#facc15;margin:3px 0">${rel.country}</div>
+                 <div style="font-size:10px;color:#aaa;font-style:italic">${rel.relationship_reason}</div>
+               </div>`,
+              { maxWidth: 240, className: 'ich-popup' }
+            )
+            .addTo(markersLayer);
+        }
 
-          // Related-country marker (draw once per country)
-          const relKey = rel.country + '||' + rel.element_name;
-          if (!drawnRelated.has(relKey)) {
-            drawnRelated.add(relKey);
-            L.marker(relCoords, { icon: relatedIcon })
-              .bindPopup(`<strong>${rel.element_name}</strong><br><span style="color:#aaa">${rel.country}</span><br><em style="color:#ccc;font-size:11px">${rel.relationship_reason}</em>`)
-              .addTo(markersLayer);
-          }
+        // ── Connection line (once per unique main↔related pair) ──
+        const lineKey = [
+          `${lat.toFixed(4)},${lng.toFixed(4)}`,
+          `${relCoords[0].toFixed(4)},${relCoords[1].toFixed(4)}`
+        ].sort().join('↔');
 
-          // Animated glowing connection line
+        if (!drawnLines.has(lineKey)) {
+          drawnLines.add(lineKey);
           L.polyline([mainCoords, relCoords], {
             className : 'glowing-line',
             weight    : 1.8,
             opacity   : 0.85
           }).addTo(linesLayer);
-        });
-      }
+        }
+      });
     });
   }
 
