@@ -1,9 +1,9 @@
 """
 =======================================================================
-  ARTIFACT RADAR v5.1 — Global Intelligence Engine
+  ICH SHARED HERITAGE RADAR v6.0 — Global Intelligence Engine
   AI Engine : Google Gemini 2.5 Flash (Google Search Grounding)
-  Mode      : Full English, Global Scope, 8-Day Interval
-  Feature   : Auto-Backfill Missing Screenshots
+  Mode      : 2-Phase (Enrichment of Incomplete Data -> Discovery)
+  Feature   : Multi-source merging, Anti-Redundancy, Heritage Linking
 =======================================================================
 """
 
@@ -14,7 +14,7 @@ import logging
 import random
 import re
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
 import requests
 
 # ── Logging Configuration ──
@@ -23,230 +23,518 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[logging.StreamHandler()]
 )
-log = logging.getLogger("ArtifactRadar")
+log = logging.getLogger("ICH_Radar")
 
 # ── File Paths ──
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
 HISTORY_FILE = os.path.join(BASE_DIR, "history.json")
 DATA_FILE    = os.path.join(BASE_DIR, "data.json")
-SCRIPT_FILE  = os.path.abspath(__file__)
 
 # ======================================================================
-# GLOBAL KEYWORD DATABASE (Full English)
+# GLOBAL KEYWORD DATABASE FOR DISCOVERY (Multi-Language)
 # ======================================================================
 KEYWORDS = [
-# ══════════════════════════════════════════════════════
-# SOUTHEAST ASIA
-# ══════════════════════════════════════════════════════
-"majapahit artifact for sale", "khmer ancient statue sale", "srivijaya gold artifact",
-"angkor wat style antiquity", "ayutthaya bronze buddha sale", "champa stone carving authentic",
-"dong son bronze drum auction", "ban chiang pottery for sale", "prehistoric indonesian artifact",
-"borobudur temple stone fragment", "prambanan relief fragment sale", "khmer temple sculpture fragment",
-# — new —
-"khmer sandstone deity sale", "thai bronze deity authentic", "lao buddha image antique",
-"burmese lacquerware antique auction", "vietnamese cham artifact sale", "ancient cambodia sculpture buy",
-"java hindu statue authentic", "bali ceremonial artifact sale", "philippine gold artifact precolonial",
-"brunei sultanate artifact", "sulawesi ancient artifact", "borneo tribal artifact auction",
-"pyu kingdom artifact myanmar", "dvaravati buddha sale", "funan period artifact",
-"sukhothai buddha image sale", "lopburi artifact auction", "mon kingdom bronze sale",
+    # ─────────────────────────────────────────────
+    # ENGLISH (Global / General)
+    # ─────────────────────────────────────────────
+    "Intangible Cultural Heritage examples",
+    "UNESCO 2003 Convention elements",
+    "Living Heritage practices",
+    "Traditional craftsmanship UNESCO",
+    "Oral traditions and expressions heritage",
+    "Performing arts intangible heritage",
+    "ICH inventory documentation",
+    "UNESCO Representative List ICH",
+    "Urgent Safeguarding List ICH",
+    "Traditional knowledge indigenous communities",
+    "Ritual practices cultural heritage",
+    "Festive events cultural heritage",
+    "Traditional music instruments heritage",
+    "Ancestral knowledge safeguarding",
+    "Community-based heritage preservation",
+    "Intangible heritage digital inventory",
+    "Folk arts and traditions documentation",
+    "Customary practices cultural safeguarding",
+    "Social practices rituals UNESCO",
+    "Nature knowledge universe heritage",
+    "Traditional food preparation heritage",
+    "Healing practices traditional medicine heritage",
+    "Storytelling oral heritage",
+    "Traditional dance heritage documentation",
 
-# ══════════════════════════════════════════════════════
-# EAST ASIA
-# ══════════════════════════════════════════════════════
-"han dynasty artifact sale", "tang dynasty ceramic authentic", "song dynasty porcelain auction",
-"ming dynasty porcelain antique", "qing dynasty jade carving", "ancient chinese bronze vessel",
-"jomon pottery authentic", "yayoi bronze bell dotaku", "kofun haniwa figure",
-"ancient chinese burial figurine", "tang sancai pottery authentic", "song celadon bowl sale",
-# — new —
-"shang dynasty oracle bone sale", "zhou dynasty bronze ritual vessel", "warring states jade belt hook",
-"han jade burial suit fragment", "tang dynasty horse ceramic", "yuan dynasty blue white porcelain",
-"ancient chinese silk fragment", "chinese neolithic pottery sale", "liangzhu jade cong authentic",
-"sanxingdui bronze mask sale", "goryeo celadon korea auction", "silla gold crown artifact",
-"baekje bronze mirror sale", "joseon dynasty artifact", "goguryeo tomb artifact",
-"ancient korean bronze dagger", "ryukyu kingdom artifact sale", "ainu artifact authentic japan",
-"nanban lacquerware antique", "edo period sword tsuba auction",
+    # ─────────────────────────────────────────────
+    # INDONESIAN / MALAY
+    # ─────────────────────────────────────────────
+    "Warisan Budaya Takbenda",
+    "Warisan Kebudayaan Tak Ketara",
+    "Inventaris Warisan Budaya",
+    "Pelestarian tradisi lisan",
+    "Kesenian tradisional warisan budaya",
+    "Pengetahuan tradisional masyarakat adat",
+    "Upacara adat warisan budaya",
+    "Keterampilan kerajinan tradisional",
+    "Seni pertunjukan warisan budaya takbenda",
+    "Praktik sosial budaya takbenda UNESCO",
 
-# ══════════════════════════════════════════════════════
-# MIDDLE EAST & EGYPT
-# ══════════════════════════════════════════════════════
-"ancient egyptian ushabti for sale", "pharaonic sarcophagus fragment", "egyptian faience amulet authentic",
-"sumerian cuneiform tablet private sale", "babylonian cylinder seal authentic",
-"akkadian bronze artifact", "luristan bronze antiquity", "ancient persian rhyton",
-"mesopotamian clay tablet cuneiform", "palmyra relief fragment sale",
-# — new —
-"ancient egyptian canopic jar sale", "egyptian shabtis collection auction", "cartouche stele fragment",
-"ptolemaic egyptian artifact", "coptic textile fragment sale", "meroitic nubian artifact",
-"ancient nubian gold jewelry", "phoenician glass vessel sale", "canaanite bronze figurine",
-"ugarit ivory carving sale", "assyrian lamassu fragment", "neo-babylonian amulet sale",
-"achaemenid persian seal authentic", "sassanid silver plate sale", "parthian coin hoard",
-"nabataean artifact sale", "south arabian bronze artifact", "yemeni pre-islamic artifact",
-"minean sabaean inscription fragment", "syrian mosaic fragment sale", "levantine bronze age artifact",
-"dead sea scroll fragment private", "ancient hebrew inscription stone",
+    # ─────────────────────────────────────────────
+    # SPANISH (Latin America & Spain)
+    # ─────────────────────────────────────────────
+    "Patrimonio Cultural Inmaterial UNESCO",
+    "Patrimonio vivo tradiciones",
+    "Prácticas y saberes tradicionales",
+    "Inventario patrimonio inmaterial",
+    "Expresiones culturales tradicionales",
+    "Conocimientos ancestrales indígenas",
+    "Artesanía tradicional patrimonio vivo",
+    "Rituales y fiestas patrimonio UNESCO",
+    "Salvaguardia patrimonio cultural inmaterial",
+    "Tradiciones orales patrimonio vivo",
+    "Música y danza tradicional patrimonio",
+    "Medicina tradicional saberes ancestrales",
 
-# ══════════════════════════════════════════════════════
-# MEDITERRANEAN (GRECO-ROMAN)
-# ══════════════════════════════════════════════════════
-"ancient greek amphora sale", "roman marble bust fragment authentic", "etruscan bronze antiquity",
-"attic red figure pottery", "roman legionary gladius authentic", "byzantine icon antique",
-"mycenaean artifact for sale", "minoan pottery fragment",
-"roman bronze figurine authentic", "ancient greek kylix pottery",
-# — new —
-"greek geometric period pottery sale", "corinthian helmet authentic", "spartan bronze artifact",
-"hellenistic gold jewelry sale", "roman gold aureus coin", "roman mosaic tesserae fragment",
-"pompeii artifact for sale", "roman glass unguentarium sale", "etruscan bucchero pottery",
-"villanovan bronze artifact", "magna graecia pottery authentic", "sicilian greek coin auction",
-"roman oil lamp collection sale", "ancient greek terracotta figurine", "cycladic idol authentic",
-"thracian gold treasure sale", "illyrian helmet authentic", "celtic torque authentic auction",
-"dacian gold bracelet sale", "scythian gold pectoral fragment",
+    # ─────────────────────────────────────────────
+    # FRENCH (Francophone Africa, France, Canada)
+    # ─────────────────────────────────────────────
+    "Patrimoine culturel immatériel",
+    "Traditions et expressions orales UNESCO",
+    "Pratiques sociales rituels et événements festifs",
+    "Inventaire patrimoine immatériel",
+    "Savoir-faire artisanal traditionnel",
+    "Connaissances sur la nature et l'univers",
+    "Sauvegarde du patrimoine vivant",
+    "Arts du spectacle patrimoine immatériel",
+    "Pratiques culturelles communautaires UNESCO",
+    "Expressions culturelles traditionnelles",
 
-# ══════════════════════════════════════════════════════
-# THE AMERICAS (PRE-COLUMBIAN)
-# ══════════════════════════════════════════════════════
-"mayan jade artifact sale", "aztec stone sculpture authentic", "inca gold antiquity",
-"moche ceramic vessel", "nazca textile fragment", "pre-columbian pottery authentic",
-"chavin stone carving", "tairona gold ornament sale",
-"olmec jade mask authentic", "pre columbian artifact auction",
-# — new —
-"mayan stela fragment sale", "mayan codex page authentic", "zapotec funerary urn sale",
-"mixtec gold pendant auction", "teotihuacan mask sale", "veracruz hacha artifact",
-"totonac smiling figurine sale", "huastec stone sculpture", "west mexico shaft tomb figure",
-"colima dog figurine authentic", "chimu silver vessel sale", "wari textile fragment",
-"tiwanaku puma figure sale", "paracas embroidered textile", "sipan gold artifact lord",
-"mississippian gorget artifact sale", "hopewell burial artifact", "anasazi pottery authentic",
-"cahokia copper artifact sale", "pueblo pottery ancient authentic", "northwest coast totem fragment",
-"caribbean taino artifact sale", "florida archaic artifact", "amazonian burial urn ancient",
+    # ─────────────────────────────────────────────
+    # CHINESE — MANDARIN (China, Taiwan, Diaspora)
+    # ─────────────────────────────────────────────
+    "非物质文化遗产",          # Fēi wùzhí wénhuà yíchǎn
+    "联合国教科文组织 传统手工艺",
+    "口头传统和表现形式",       # Oral traditions and expressions
+    "表演艺术非遗",            # Performing arts ICH
+    "社会实践仪式节庆活动",     # Social practices, rituals, festive events
+    "传统知识与实践",           # Traditional knowledge and practices
+    "无形文化遗产保护",         # ICH safeguarding
+    "民间艺术传统技艺",         # Folk art and traditional skills
+    "非遗数字化记录",           # Digital documentation of ICH
 
-# ══════════════════════════════════════════════════════
-# SOUTH ASIA & SILK ROAD
-# ══════════════════════════════════════════════════════
-"indus valley seal authentic", "gandhara buddha sculpture sale", "chola bronze statue",
-"pala empire sculpture", "scythian gold ornament", "bactrian camel artifact authentic",
-"sogdian silver vessel sale", "kushan coin hoard",
-"ancient silk road artifact", "central asian burial artifact",
-# — new —
-"mathura red sandstone sculpture sale", "amaravati relief fragment", "hoysala temple sculpture sale",
-"vijayanagara bronze artifact", "kerala temple bronze antique", "odisha temple sculpture fragment",
-"mughal jade artifact sale", "rajput artifact authentic", "ancient indian coin hoard sale",
-"harappan terracotta figurine", "mauryan artifact authentic", "gupta period gold coin",
-"nepali gilt bronze buddha", "tibetan thangka antique authentic", "tibetan ritual object sale",
-"himalayan bronze artifact", "bactrian gold hoard private", "parthian artifact sale",
-"oxus treasure type artifact", "kushan buddha fragment sale", "bukhara artifact authentic",
-"samarkand artifact antique", "khwarezm artifact sale", "ancient afghanistan artifact",
+    # ─────────────────────────────────────────────
+    # CHINESE — CANTONESE
+    # ─────────────────────────────────────────────
+    "非物質文化遺產",          # Traditional Chinese (Cantonese/Hong Kong/Taiwan)
+    "口頭傳統及表達方式",
+    "傳統工藝技術",
+    "表演藝術非遺",
 
-# ══════════════════════════════════════════════════════
-# AFRICA (SUB-SAHARAN)
-# ══════════════════════════════════════════════════════
-"benin bronze head sale", "ife bronze figure authentic", "nok terracotta figure sale",
-"yoruba artifact auction", "akan goldweight collection", "ashanti gold artifact sale",
-"dogon mask artifact authentic", "mali empire artifact sale", "african tribal artifact auction",
-"kongo kingdom artifact", "zulu ceremonial artifact sale", "ethiopian artifact antique",
-"aksumite coin hoard", "great zimbabwe artifact", "ancient mali gold artifact",
-"sao civilization terracotta", "west african brass casting sale", "igbo ukwu bronze authentic",
+    # ─────────────────────────────────────────────
+    # JAPANESE
+    # ─────────────────────────────────────────────
+    "無形文化遺産",            # Mukei bunka isan
+    "伝統的工芸技術 ユネスコ",
+    "口承による伝統及び表現",   # Oral traditions and expressions
+    "社会的慣習 儀式 祭礼行事",
+    "自然及び万物に関する知識と慣習",
+    "伝統芸能 無形文化遺産",
+    "民俗芸能 無形文化",
+    "無形文化遺産 保護条約",
+    "伝統文化 デジタルアーカイブ",
 
-# ══════════════════════════════════════════════════════
-# EUROPE (PREHISTORIC & EARLY MEDIEVAL)
-# ══════════════════════════════════════════════════════
-"viking artifact sale authentic", "anglo-saxon brooch auction", "roman britain artifact sale",
-"iron age celtic artifact", "bronze age hoard fragment sale", "neolithic stone tool authentic",
-"merovingian gold fibula sale", "visigoth artifact auction", "carolingian artifact sale",
-"medieval pilgrim badge authentic", "illuminated manuscript page sale", "viking sword authentic",
-"migration period artifact sale", "hunnic artifact authentic", "avar gold artifact sale",
-"slavic ancient artifact", "prehistoric cave bear tooth sale", "mesolithic flint tool",
+    # ─────────────────────────────────────────────
+    # KOREAN
+    # ─────────────────────────────────────────────
+    "무형문화유산",            # Muhyeong munhwa yusan
+    "전통 지식과 관습",
+    "구전 전통 및 표현",
+    "공연예술 무형유산",
+    "전통 공예 기술 유네스코",
+    "사회적 관행 의식 및 축제",
+    "무형문화재 보호",
+    "전통 생활 문화 기록",
 
-# ══════════════════════════════════════════════════════
-# OCEANIA & PACIFIC
-# ══════════════════════════════════════════════════════
-"aboriginal artifact for sale", "maori taonga artifact", "papua new guinea tribal artifact",
-"polynesian artifact authentic auction", "melanesian artifact sale", "easter island artifact",
-"hawaiian feather artifact", "fijian artifact authentic", "micronesian artifact sale",
-"torres strait islander artifact",
+    # ─────────────────────────────────────────────
+    # ARABIC (Middle East & North Africa)
+    # ─────────────────────────────────────────────
+    "التراث الثقافي غير المادي",       # Al-turath al-thaqafi ghayr al-madi
+    "التقاليد وأشكال التعبير الشفهي",
+    "الممارسات الاجتماعية والطقوس",
+    "الحرف التقليدية اليدوية اليونسكو",
+    "الموسيقى التقليدية التراث",
+    "المعارف التقليدية والممارسات",
+    "صون التراث الثقافي غير المادي",
+    "فنون الأداء التراثية",
+    "التراث الشفهي والموروث الثقافي",
+    "قوائم جرد التراث غير المادي",
 
-# ══════════════════════════════════════════════════════
-# PLATFORM-SPECIFIC SEARCH PATTERNS
-# ══════════════════════════════════════════════════════
-# Marketplace / classifieds
-"ancient artifact ebay listing", "etsy ancient artifact seller",
-"craigslist ancient relic sale", "facebook marketplace antiquity",
-"catawiki antiquity lot auction", "liveauctioneers antiquity no provenance",
-"invaluable ancient artifact listing", "bonhams ancient art sale",
-"christies antiquities private sale", "sothebys antiquity auction lot",
-"worthpoint ancient artifact value", "ruby lane ancient artifact",
-"1stdibs antiquity listing", "chairish ancient artifact",
-"ancient artifact alibaba seller", "taobao antique artifact sale",
-"mercari ancient artifact sale", "vinted antique artifact listing",
+    # ─────────────────────────────────────────────
+    # PORTUGUESE (Brazil, Portugal, Lusophone Africa)
+    # ─────────────────────────────────────────────
+    "Patrimônio Cultural Imaterial",
+    "Saberes e práticas tradicionais",
+    "Inventário patrimônio imaterial",
+    "Expressões culturais tradicionais",
+    "Conhecimentos ancestrais indígenas",
+    "Artesanato tradicional patrimônio",
+    "Rituais e festas patrimônio UNESCO",
+    "Tradições orais patrimônio imaterial",
+    "Salvaguarda patrimônio cultural vivo",
+    "Artes do espetáculo patrimônio imaterial",
 
-# Forums / communities
-"ancient artifact reddit found", "treasure net forum ancient find sale",
-"metal detecting forum ancient find",  "artifact hunters forum sale",
-"antiquities collectors forum", "ancient coins forum sale",
-"numismatic ancient coin forum", "artifact identification forum sell",
-"history forum artifact found sale", "collectors weekly ancient artifact",
+    # ─────────────────────────────────────────────
+    # RUSSIAN (Eastern Europe & Central Asia)
+    # ─────────────────────────────────────────────
+    "Нематериальное культурное наследие",
+    "Традиционные ремесла ЮНЕСКО",
+    "Устные традиции и формы выражения",
+    "Исполнительские искусства наследие",
+    "Обычаи обряды и праздники UNESCO",
+    "Традиционные знания и практики",
+    "Охрана нематериального наследия",
+    "Народное искусство традиции",
+    "Цифровой реестр культурного наследия",
 
-# Social media patterns
-"ancient artifact instagram sale", "telegram antiquities channel",
-"whatsapp artifact dealer group", "tiktok ancient artifact found",
-"youtube artifact found unearthed", "pinterest ancient artifact collection",
-"discord antiquity server", "artifact dealer facebook group",
+    # ─────────────────────────────────────────────
+    # HINDI (South Asia — India)
+    # ─────────────────────────────────────────────
+    "अमूर्त सांस्कृतिक विरासत",
+    "पारंपरिक शिल्प कौशल",
+    "मौखिक परंपराएं और अभिव्यक्तियां",
+    "लोक कला और परंपरा",
+    "सामाजिक प्रथाएं और अनुष्ठान",
+    "पारंपरिक ज्ञान संरक्षण",
+    "युनेस्को अमूर्त धरोहर सूची",
+    "सांस्कृतिक विरासत डिजिटल संग्रह",
 
-# Dark/encrypted market signals
-"antiquity tor market sale", "artifact escrow payment anonymous",
-"antiquity bitcoin payment accepted", "crypto payment ancient artifact",
-"artifact shipped discreetly", "no questions asked ancient object",
+    # ─────────────────────────────────────────────
+    # URDU (Pakistan & South Asia)
+    # ─────────────────────────────────────────────
+    "غیر محسوس ثقافتی ورثہ",
+    "روایتی دستکاری یونیسکو",
+    "زبانی روایات اور اظہار",
+    "ثقافتی ورثہ تحفظ",
+    "لوک فنون اور روایات",
 
-# ══════════════════════════════════════════════════════
-# LOOTING & TRAFFICKING INTELLIGENCE
-# ══════════════════════════════════════════════════════
-"illegal antiquities trafficking news", "artifact smuggling investigation report",
-"stolen archaeological artifact alert", "looted antiquity returned to museum",
-"artifact found metal detector sale", "ancient relic no provenance sale",
-"repatriation of stolen cultural heritage", "black market antiquities discussion",
-# — new —
-"INTERPOL stolen artifact database", "UNESCO cultural property theft",
-"art loss register antiquity match", "carabinieri TPC artifact seizure",
-"homeland security artifact trafficking", "ICE HSI cultural property seizure",
-"FBI art crime team artifact", "customs seized antiquity auction",
-"looted artifact repatriated news", "archaeological site looted report",
-"conflict antiquity ISIS daesh sale", "war zone artifact smuggling route",
-"conflict zone cultural heritage looting", "mali timbuktu manuscript theft",
-"afghan artifact looted kabul", "iraq museum stolen artifact",
-"libyan artifact smuggling route", "syrian artifact trafficking network",
-"yemen artifact stolen sale", "haiti artifact looted earthquake",
-"ukraine cultural property looted", "occupied territory artifact removal",
+    # ─────────────────────────────────────────────
+    # BENGALI (Bangladesh & West Bengal)
+    # ─────────────────────────────────────────────
+    "অস্পষ্ট সাংস্কৃতিক ঐতিহ্য",
+    "ঐতিহ্যবাহী শিল্পকলা সংরক্ষণ",
+    "মৌখিক ঐতিহ্য এবং প্রকাশনা",
+    "লোকশিল্প ও ঐতিহ্য ইউনেস্কো",
+    "সামাজিক রীতি আচার অনুষ্ঠান",
 
-# ══════════════════════════════════════════════════════
-# SELLER CAMOUFLAGE & OBFUSCATION TERMS
-# ══════════════════════════════════════════════════════
-"ancient object found in field", "metal detector ancient find sale",
-"old stone statue unknown origin", "burial artifact excavation find",
-"ancient relic estate sale", "unknown ancient artifact identification",
-# — new —
-"inherited ancient artifact sell", "grandmother collection ancient object",
-"estate lot ancient artifacts", "antique curiosity cabinet contents",
-"old object attic find identification", "flea market ancient find",
-"barn find ancient artifact", "car boot ancient object sale",
-"garage sale ancient object", "auction house unknown ancient object",
-"no papers ancient artifact", "document missing provenance artifact",
-"export certificate needed artifact", "old find possibly ancient",
-"pre-1970 artifact collection sale", "pre-1973 UNESCO cutoff artifact",
-"family heirloom ancient relic sell", "deaccessioned museum artifact sale",
-"legitimate provenance ancient object buy", "old collection cleanup sale",
-"private collector downsizing antiquity", "bulk lot ancient artifacts",
-"mixed ancient artifact lot auction", "ancient object fragment sale cheap",
-"genuine ancient artifact no reserve",
+    # ─────────────────────────────────────────────
+    # TAMIL (South India & Sri Lanka)
+    # ─────────────────────────────────────────────
+    "அருவமான கலாச்சார பாரம்பரியம்",
+    "பாரம்பரிய கைவினை யுனெஸ்கோ",
+    "வாய்மொழி மரபுகள் மற்றும் வெளிப்பாடுகள்",
+    "நாட்டுப்புறக் கலைகள் பாரம்பரியம்",
 
-# ══════════════════════════════════════════════════════
-# PROVENANCE-EVASION & LEGAL GREY-ZONE LANGUAGE
-# ══════════════════════════════════════════════════════
-"pre-ban ivory artifact sale", "antique ivory carving authentic",
-"ancient artifact export permit included", "artifact COA certificate authenticity",
-"thermoluminescence tested artifact sale", "TL test certificate ancient pottery",
-"Oxford authentication artifact sale", "ancient artifact customs cleared",
-"art loss register checked artifact", "no stolen property artifact guarantee",
-"artifact legally imported collection", "swiss collection artifact provenance",
-"london trade artifact authentic", "old european collection antiquity",
-"japanese private collection artifact", "belgium collection ancient artifact",
-"ancient artifact sold as is", "mineral specimen artifact disguised",
-"ethnographic object not antiquity listed"
+    # ─────────────────────────────────────────────
+    # TURKISH
+    # ─────────────────────────────────────────────
+    "Somut Olmayan Kültürel Miras",
+    "Geleneksel el sanatları UNESCO",
+    "Sözlü gelenekler ve anlatımlar",
+    "Toplumsal uygulamalar ritüeller",
+    "Geleneksel bilgi ve uygulamalar",
+    "Yaşayan miras belgeleme",
+    "UNESCO kültürel miras envanteri",
+
+    # ─────────────────────────────────────────────
+    # PERSIAN / FARSI (Iran, Afghanistan, Tajikistan)
+    # ─────────────────────────────────────────────
+    "میراث فرهنگی ناملموس",
+    "سنت‌های شفاهی و بیان",
+    "صنایع دستی سنتی یونسکو",
+    "دانش و عملکردهای سنتی",
+    "میراث زنده فرهنگی",
+    "آداب و رسوم فرهنگی میراث",
+
+    # ─────────────────────────────────────────────
+    # SWAHILI (East Africa)
+    # ─────────────────────────────────────────────
+    "Urithi wa utamaduni usiohamishika",
+    "Mila na desturi za jadi UNESCO",
+    "Sanaa za jadi urithi wa utamaduni",
+    "Maarifa ya jadi na mazoea",
+    "Hifadhi ya urithi wa utamaduni",
+    "Tamaduni simulizi Afrika Mashariki",
+
+    # ─────────────────────────────────────────────
+    # HAUSA (West Africa — Nigeria, Niger, Ghana)
+    # ─────────────────────────────────────────────
+    "Al'adun gargajiya UNESCO",
+    "Tarihin al'adu marasa abu",
+    "Kiyaye al'adun gargajiya",
+
+    # ─────────────────────────────────────────────
+    # YORUBA (Nigeria & West Africa)
+    # ─────────────────────────────────────────────
+    "Aṣà ìjìnlẹ̀ àti ohun-ìní àṣà",
+    "Ìmọ̀ àṣà àti àṣà ìbílẹ̀",
+    "Ìtọ́jú ohun-ìní àṣà tí kò ní ara",
+
+    # ─────────────────────────────────────────────
+    # AMHARIC (Ethiopia)
+    # ─────────────────────────────────────────────
+    "ቅርስ ሥነ ጥበብ ባህል",
+    "ቁሳዊ ያልሆነ ባህላዊ ቅርስ",
+    "ባህላዊ ዕደ ጥበብ ዩኔስኮ",
+    "የቃል ወጎች እና አገላለጽ",
+
+    # ─────────────────────────────────────────────
+    # VIETNAMESE
+    # ─────────────────────────────────────────────
+    "Di sản văn hóa phi vật thể",
+    "Nghề thủ công truyền thống UNESCO",
+    "Truyền thống truyền miệng và biểu đạt",
+    "Thực hành xã hội lễ hội văn hóa",
+    "Bảo tồn di sản sống",
+    "Kiến thức truyền thống bản địa",
+
+    # ─────────────────────────────────────────────
+    # THAI
+    # ─────────────────────────────────────────────
+    "มรดกภูมิปัญญาทางวัฒนธรรม",
+    "หัตถกรรมพื้นบ้าน ยูเนสโก",
+    "ประเพณีและนิทานพื้นบ้าน",
+    "ภูมิปัญญาท้องถิ่น การอนุรักษ์",
+    "ศิลปะการแสดงพื้นบ้าน มรดก",
+
+    # ─────────────────────────────────────────────
+    # TAGALOG / FILIPINO
+    # ─────────────────────────────────────────────
+    "Di-materyal na pamana ng kultura",
+    "Tradisyonal na kaalaman at kasanayan",
+    "Katutubong sining at kultura UNESCO",
+    "Pagsasalin ng oral na tradisyon",
+    "Pangangalaga ng pamana ng kultura",
+
+    # ─────────────────────────────────────────────
+    # GERMAN (Germany, Austria, Switzerland)
+    # ─────────────────────────────────────────────
+    "Immaterielles Kulturerbe UNESCO",
+    "Mündliche Überlieferungen und Ausdrucksformen",
+    "Traditionelles Handwerk Kulturerbe",
+    "Soziale Praktiken und Rituale UNESCO",
+    "Lebendiges Erbe Dokumentation",
+    "Traditionelles Wissen indigene Gemeinschaften",
+    "Immaterielles Erbe Inventar",
+
+    # ─────────────────────────────────────────────
+    # ITALIAN
+    # ─────────────────────────────────────────────
+    "Patrimonio culturale immateriale UNESCO",
+    "Tradizioni e espressioni orali",
+    "Artigianato tradizionale patrimonio",
+    "Pratiche sociali rituali eventi festivi",
+    "Salvaguardia patrimonio vivente",
+    "Conoscenze tradizionali comunità locali",
+
+    # ─────────────────────────────────────────────
+    # DUTCH (Netherlands, Belgium, Suriname)
+    # ─────────────────────────────────────────────
+    "Immaterieel cultureel erfgoed UNESCO",
+    "Mondelinge tradities en uitdrukkingen",
+    "Traditioneel ambachtelijk erfgoed",
+    "Sociale praktijken rituelen en feesten",
+    "Levend erfgoed documentatie",
+
+    # ─────────────────────────────────────────────
+    # POLISH
+    # ─────────────────────────────────────────────
+    "Niematerialne dziedzictwo kulturowe",
+    "Tradycyjne rzemiosło UNESCO",
+    "Ustne tradycje i wyrazy kultury",
+    "Praktyki społeczne obrzędy i uroczystości",
+    "Ochrona żywego dziedzictwa",
+
+    # ─────────────────────────────────────────────
+    # UKRAINIAN
+    # ─────────────────────────────────────────────
+    "Нематеріальна культурна спадщина",
+    "Традиційні ремесла ЮНЕСКО",
+    "Усні традиції та форми вираження",
+    "Охорона живої культурної спадщини",
+
+    # ─────────────────────────────────────────────
+    # ROMANIAN
+    # ─────────────────────────────────────────────
+    "Patrimoniu cultural imaterial UNESCO",
+    "Tradiții și expresii orale",
+    "Meșteșuguri tradiționale patrimoniu",
+    "Practici sociale ritualuri sărbători",
+
+    # ─────────────────────────────────────────────
+    # GREEK
+    # ─────────────────────────────────────────────
+    "Άυλη πολιτιστική κληρονομιά UNESCO",
+    "Προφορικές παραδόσεις και εκφράσεις",
+    "Παραδοσιακές τέχνες και χειροτεχνία",
+    "Κοινωνικές πρακτικές τελετουργίες",
+
+    # ─────────────────────────────────────────────
+    # CZECH
+    # ─────────────────────────────────────────────
+    "Nehmotné kulturní dědictví UNESCO",
+    "Ústní tradice a výrazové formy",
+    "Tradiční řemesla kulturní dědictví",
+
+    # ─────────────────────────────────────────────
+    # HUNGARIAN
+    # ─────────────────────────────────────────────
+    "Szellemi kulturális örökség UNESCO",
+    "Hagyományos kézműves tudás",
+    "Szóbeli hagyományok és kifejezések",
+
+    # ─────────────────────────────────────────────
+    # HEBREW (Israel)
+    # ─────────────────────────────────────────────
+    "מורשת תרבותית בלתי מוחשית",
+    "מסורות בעל פה ואמנויות ביצוע",
+    "מלאכת יד מסורתית אונסקו",
+
+    # ─────────────────────────────────────────────
+    # BURMESE / MYANMAR
+    # ─────────────────────────────────────────────
+    "အကာအကွယ်မဲ့ ယဉ်ကျေးမှုအမွေ",
+    "ရိုးရာလက်မှုပညာ ယူနက်စကို",
+    "နှုတ်ဆိုဆင်ခြင် ရိုးရာထုံးစံ",
+
+    # ─────────────────────────────────────────────
+    # KHMER (Cambodia)
+    # ─────────────────────────────────────────────
+    "បេតិកភណ្ឌវប្បធម៌អរូបី",
+    "សិល្បៈប្រពៃណី និងចំណេះដឹងខ្មែរ",
+
+    # ─────────────────────────────────────────────
+    # MONGOLIAN
+    # ─────────────────────────────────────────────
+    "Биет бус соёлын өв",
+    "Уламжлалт гар урлал ЮНЕСКО",
+    "Аман уламжлал болон илэрхийлэл",
+
+    # ─────────────────────────────────────────────
+    # KAZAKH / CENTRAL ASIAN (Uzbek, Kyrgyz)
+    # ─────────────────────────────────────────────
+    "Материалдық емес мәдени мұра",
+    "Дәстүрлі қолөнер ЮНЕСКО",
+    "Nomoddiy madaniy meros UNESCO",       # Uzbek
+    "Материалдык эмес маданий мурас",     # Kyrgyz
+
+    # ─────────────────────────────────────────────
+    # GEORGIAN
+    # ─────────────────────────────────────────────
+    "არამატერიალური კულტურული მემკვიდრეობა",
+    "ტრადიციული ხელოსნობა UNESCO",
+
+    # ─────────────────────────────────────────────
+    # ARMENIAN
+    # ─────────────────────────────────────────────
+    "Անշոշափելի մշակութային ժառանգություն",
+    "Ավանդական արհեստներ ՅՈՒՆԵՍԿՕ",
+
+    # ─────────────────────────────────────────────
+    # AZERBAIJANI
+    # ─────────────────────────────────────────────
+    "Qeyri-maddi mədəni irs UNESCO",
+    "Ənənəvi sənətkarlıq mədəni irs",
+
+    # ─────────────────────────────────────────────
+    # NEPALI
+    # ─────────────────────────────────────────────
+    "अमूर्त सांस्कृतिक सम्पदा",
+    "पारम्परिक शिल्पकला यूनेस्को",
+    "मौखिक परम्परा र अभिव्यक्ति",
+
+    # ─────────────────────────────────────────────
+    # SINHALA (Sri Lanka)
+    # ─────────────────────────────────────────────
+    "අස්පෘශ්‍ය සංස්කෘතික උරුමය",
+    "සාම්ප්‍රදායික ශිල්ප UNESCO",
+
+    # ─────────────────────────────────────────────
+    # WOLOF / FRENCH CREOLE (Senegal & West Africa)
+    # ─────────────────────────────────────────────
+    "Patrimoine culturel immatériel Sénégal",
+    "Traditions orales Afrique de l'Ouest",
+    "Savoir-faire artisanal Afrique",
+
+    # ─────────────────────────────────────────────
+    # QUECHUA / AYMARA (Andean — Peru, Bolivia, Ecuador)
+    # ─────────────────────────────────────────────
+    "Patrimonio cultural andino inmaterial",
+    "Saberes ancestrales quechua aymara",
+    "Rituales y ceremonias indígenas andinas",
+
+    # ─────────────────────────────────────────────
+    # NAHUATL / MAYA (Mesoamerica — Mexico, Guatemala)
+    # ─────────────────────────────────────────────
+    "Patrimonio cultural indígena mesoamericano",
+    "Tradiciones orales mayas guatemaltecas",
+    "Saberes ancestrales nahuatl Mexico",
+
+    # ─────────────────────────────────────────────
+    # GUARANÍ (Paraguay & South America)
+    # ─────────────────────────────────────────────
+    "Teko porã rembiapokue UNESCO",
+    "Patrimonio cultural inmaterial guaraní",
+
+    # ─────────────────────────────────────────────
+    # MĀORI / PACIFIC ISLANDER (New Zealand, Pacific)
+    # ─────────────────────────────────────────────
+    "Māori cultural heritage taonga",
+    "Pacific intangible cultural heritage",
+    "Traditional Pacific navigation knowledge",
+    "Indigenous Pacific oral traditions",
+
+    # ─────────────────────────────────────────────
+    # ABORIGINAL / TORRES STRAIT ISLANDER (Australia)
+    # ─────────────────────────────────────────────
+    "Aboriginal intangible cultural heritage Australia",
+    "Indigenous Australian oral traditions",
+    "Dreamtime stories cultural heritage",
+    "First Nations traditional knowledge Australia",
+
+    # ─────────────────────────────────────────────
+    # DOMAIN-SPECIFIC CROSS-LANGUAGE SEARCHES
+    # ─────────────────────────────────────────────
+    # Music & Performing Arts
+    "traditional music UNESCO heritage",
+    "folk dance intangible heritage",
+    "chanting ritual heritage documentation",
+    "traditional theater heritage",
+
+    # Food & Gastronomy
+    "traditional cuisine UNESCO heritage",
+    "gastronomía tradicional patrimonio inmaterial",
+    "cuisine traditionnelle patrimoine UNESCO",
+    "传统饮食文化 非遗",
+
+    # Medicine & Healing
+    "traditional medicine knowledge heritage",
+    "medicina tradicional patrimonio inmaterial",
+    "médecine traditionnelle patrimoine",
+    "традиционная медицина наследие",
+
+    # Agricultural / Ecological Knowledge
+    "traditional ecological knowledge heritage",
+    "indigenous farming practices heritage UNESCO",
+    "知識伝統農業 文化遺産",
+
+    # Textile & Weaving
+    "traditional weaving textile heritage",
+    "tissage artisanal patrimoine UNESCO",
+    "tejido tradicional patrimonio",
+    "伝統的織物 無形文化遺産",
+
+    # Festivals & Ceremonies
+    "traditional festival ceremony heritage",
+    "fiesta tradicional patrimonio vivo",
+    "fête traditionnelle patrimoine immatériel",
+    "伝統的祭り 文化遺産",
 ]
 
 # ======================================================================
@@ -258,165 +546,204 @@ def load_db():
         try:
             with open(DATA_FILE, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                if isinstance(data, list):
-                    log.info("Migrating old list format to structured JSON...")
-                    return {"summary": {}, "listings": data}
+                # Migration from old v5 'listings' to v6 'inventory'
+                if "listings" in data:
+                    log.info("Migrating old database schema to ICH format...")
+                    return {"summary": {}, "inventory": []}
+                if "inventory" not in data:
+                    data["inventory"] = []
                 return data
         except Exception as e:
-            log.warning(f"Old database corrupted, starting fresh: {e}")
+            log.warning(f"Database corrupted, starting fresh: {e}")
             
-    return {"summary": {}, "listings": []}
+    return {"summary": {}, "inventory": []}
 
-def get_hash(path):
-    try:
-        h = hashlib.md5()
-        with open(path, "rb") as f: h.update(f.read())
-        return h.hexdigest()
-    except: return "none"
+def save_db(db):
+    db["summary"] = calculate_summary(db["inventory"])
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(db, f, indent=2, ensure_ascii=False)
 
-def check_schedule():
-    """Run automatically every 8 days, or immediately if FORCE_CRAWL is true."""
-    if os.environ.get("FORCE_CRAWL") == "true": 
-        log.info("FORCE_CRAWL is active. Bypassing schedule.")
-        return True
-        
-    if not os.path.exists(HISTORY_FILE): return True
-    try:
-        with open(HISTORY_FILE) as f:
-            h = json.load(f)
-        last = datetime.fromisoformat(h.get("last_crawl_date"))
-        
-        # 8-DAY INTERVAL CHECK
-        days_passed = (datetime.now() - last).days
-        if days_passed >= 8:
-            log.info(f"{days_passed} days have passed. Executing scheduled crawl.")
-            return True
-        else:
-            log.info(f"Only {days_passed} days passed since last crawl. Waiting for 8-day mark.")
-            return False
-    except: return True
-
-def calculate_summary(listings):
-    high_risk = [x for x in listings if x.get("risk_score", 0) >= 8]
-    medium_risk = [x for x in listings if 4 <= x.get("risk_score", 0) <= 7]
+def calculate_summary(inventory):
+    complete = len([x for x in inventory if x.get("completion_status") == "COMPLETE"])
+    incomplete = len(inventory) - complete
     
-    platforms = {}
-    for item in listings:
-        plat = item.get("platform", "Unknown")
-        platforms[plat] = platforms.get(plat, 0) + 1
+    categories = {}
+    for item in inventory:
+        cat = item.get("category", "Unknown")
+        categories[cat] = categories.get(cat, 0) + 1
         
-    top_high_risk = sorted(high_risk, key=lambda x: x.get("risk_score", 0), reverse=True)[:5]
-    
     return {
         "generated_at": datetime.now().isoformat() + "Z",
-        "total_listings": len(listings),
-        "high_risk_count": len(high_risk),
-        "medium_risk_count": len(medium_risk),
-        "alerts_by_platform": platforms,
-        "top_high_risk": top_high_risk
+        "total_ich_elements": len(inventory),
+        "complete_records": complete,
+        "incomplete_records": incomplete,
+        "categories_breakdown": categories
     }
 
 def get_screenshot_url(url):
-    """Generates a dynamic screenshot URL using a free API service."""
     if not url or url.lower() == "n/a":
         return "N/A"
     encoded_url = requests.utils.quote(url)
     return f"https://api.microlink.io/?url={encoded_url}&screenshot=true&meta=false&embed=screenshot.url"
 
+def generate_id(name):
+    return "ich-" + hashlib.md5(name.lower().encode()).hexdigest()[:8]
+
 # ======================================================================
-# CORE: DIRECT REST API AI ANALYZER
+# CORE: GEMINI AI INTERACTION
 # ======================================================================
 
-def run_ai_search(api_key, existing_urls, target):
-    log.info(f"Targeting keyword: {target}")
-    
+def call_gemini(api_key, prompt):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
-    
-    prompt = f"""
-    Use Google Search to find real marketplace listings, auctions, or news regarding: "{target}".
-    Identify marketplace listings (eBay, Facebook, auction houses), theft news, or collector forums.
-    
-    Output the result STRICTLY as a JSON Array of objects.
-    Ignore these already captured URLs: {list(existing_urls)[:5]}
-    
-    Mandatory JSON Structure:
-    [
-      {{
-        "original_title": "Original title of the item or news article",
-        "platform": "Website Name (e.g., eBay, BBC, Facebook, Sotheby's)",
-        "url": "Full URL",
-        "price_usd": 0,
-        "status": "HIGH RISK | MEDIUM RISK | INFO ONLY", 
-        "risk_score": 9,
-        "origin_region": "Origin of the artifact (e.g., Southeast Asia, Middle East, Unknown)",
-        "provenance_flag": false,
-        "keyword_trigger": "{target}",
-        "reason": "Detailed reasoning regarding its provenance, risk, or price",
-        "scraped_at": "{datetime.now().isoformat()}Z",
-        "screenshot_url": ""
-      }}
-    ]
-    """
     
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "tools": [{"googleSearch": {}}],
         "generationConfig": {
-            "temperature": 0.7,
+            "temperature": 0.4, # Lower temperature for strictly formatted output
             "maxOutputTokens": 8192
-        },
-        "safetySettings": [
-            {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
-            {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
-            {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
-            {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}
-        ]
+        }
     }
     
     try:
         response = requests.post(url, json=payload, headers={'Content-Type': 'application/json'})
-        
         if response.status_code != 200:
-            log.error(f"Google API Error ({response.status_code}): {response.text}")
-            return []
+            log.error(f"Google API Error: {response.text}")
+            return None
 
         data = response.json()
+        text = data['candidates'][0]['content']['parts'][0]['text']
         
-        try:
-            text = data['candidates'][0]['content']['parts'][0]['text']
-        except (KeyError, IndexError):
-            log.error("Empty or rejected API response.")
-            return []
-            
-        log.info(f"Raw AI Output: {text[:150]}...")
-        
-        # BULLETPROOF JSON EXTRACTOR
+        # Extract JSON from Markdown code blocks
         clean_text = text.replace('```json', '').replace('```', '')
-        clean_text = re.sub(r'\[\d+\]', '', clean_text)
+        start_idx = clean_text.find('[') if '[' in clean_text else clean_text.find('{')
+        end_idx = clean_text.rfind(']') if clean_text.rfind(']') > clean_text.rfind('}') else clean_text.rfind('}')
         
-        start_idx = clean_text.find('[')
-        end_idx = clean_text.rfind(']')
-        
-        if start_idx != -1 and end_idx != -1 and start_idx < end_idx:
-            json_str = clean_text[start_idx:end_idx+1]
-            try:
-                data = json.loads(json_str)
-                return data
-            except json.JSONDecodeError as e:
-                log.error(f"JSON Parse Error: {e}")
-                return []
-        else:
-            log.warning("AI did not provide a valid JSON Array.")
-            return []
-            
+        if start_idx != -1 and end_idx != -1:
+            return json.loads(clean_text[start_idx:end_idx+1])
+        return None
     except Exception as e:
-        log.error(f"AI Search Failed for '{target}': {e}")
-        return []
+        log.error(f"Gemini API failure: {e}")
+        return None
+
+# ======================================================================
+# PHASE 1: ENRICHMENT (Fixing Incomplete Data)
+# ======================================================================
+
+def enrich_incomplete_items(api_key, inventory):
+    incomplete_items = [item for item in inventory if item.get("completion_status") != "COMPLETE"]
+    if not incomplete_items:
+        log.info("No incomplete items found. Enrichment phase skipped.")
+        return 0
+    
+    log.info(f"Found {len(incomplete_items)} incomplete items. Starting enrichment...")
+    enriched_count = 0
+    
+    # Process up to 3 incomplete items per run to save quota
+    for item in incomplete_items[:3]:
+        element_name = item.get("element_name")
+        current_sources = item.get("source_urls", [])
+        
+        log.info(f"Enriching: {element_name}")
+        
+        prompt = f"""
+        You are a Cultural Heritage expert. I have an incomplete record for the Intangible Cultural Heritage: "{element_name}".
+        Current known sources: {current_sources}.
+        
+        Please use Google Search to find the missing information (e.g., specific step-by-step crafting process, authentic recipe, or detailed history). 
+        Find AT LEAST ONE NEW source URL to add to the existing ones.
+        
+        Respond ONLY with a JSON object representing the UPDATED element.
+        Ensure the output data values are in INDONESIAN, but keep keys in English.
+        If you find the missing data, change "completion_status" to "COMPLETE".
+        
+        Required JSON Structure:
+        {{
+            "id": "{item.get('id')}",
+            "element_name": "{element_name}",
+            "category": "{item.get('category', 'Traditional Craftsmanship')}",
+            "thumbnail_url": "{item.get('thumbnail_url')}",
+            "source_urls": ["<old_url>", "<new_found_url>"],
+            "scraped_at": "{datetime.now().isoformat()}Z",
+            "location": {{ "country": "...", "provinces": ["..."] }},
+            "resume_analisa": {{ "description": "...", "cultural_significance": "...", "gemini_tags": ["..."] }},
+            "resume_tata_cara": {{ "type": "crafting_process/culinary_recipe/ritual_sequence", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
+            "shared_heritage_detection": {{ "is_shared": true, "confidence_score": 0.95, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
+            "completion_status": "COMPLETE"
+        }}
+        """
+        
+        updated_item = call_gemini(api_key, prompt)
+        if updated_item and isinstance(updated_item, dict) and "resume_tata_cara" in updated_item:
+            # Merge logic
+            index = inventory.index(item)
+            inventory[index] = updated_item
+            enriched_count += 1
+            log.info(f"Successfully enriched {element_name} from multiple sources.")
+        
+        time.sleep(4) # Rate limit safety
+        
+    return enriched_count
+
+# ======================================================================
+# PHASE 2: DISCOVERY (Finding New Data)
+# ======================================================================
+
+def discover_new_items(api_key, inventory):
+    existing_names = [i.get("element_name", "").lower() for i in inventory]
+    target = random.choice(KEYWORDS)
+    log.info(f"Discovery Phase Targeting: {target}")
+    
+    prompt = f"""
+    Use Google Search to find detailed information about the Intangible Cultural Heritage using this keyword/concept: "{target}".
+    Ignore these already known elements: {existing_names[:10]}...
+    
+    Analyze the element, its location, its shared heritage connections with other countries, and its process/recipe.
+    Output the data values in INDONESIAN, but keep all JSON keys strictly in English.
+    If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
+    If you find all information, set "completion_status" to "COMPLETE".
+    
+    Output strictly as a JSON ARRAY containing ONE object with this structure:
+    [
+      {{
+        "id": "will_be_generated",
+        "element_name": "...",
+        "category": "Culinary Traditions | Traditional Craftsmanship | Performing Arts | Oral Traditions",
+        "thumbnail_url": "",
+        "source_urls": ["url1"],
+        "scraped_at": "{datetime.now().isoformat()}Z",
+        "location": {{ "country": "...", "provinces": ["..."] }},
+        "resume_analisa": {{ "description": "...", "cultural_significance": "...", "gemini_tags": ["..."] }},
+        "resume_tata_cara": {{ "type": "...", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
+        "shared_heritage_detection": {{ "is_shared": true/false, "confidence_score": 0.0-1.0, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
+        "completion_status": "COMPLETE or INCOMPLETE"
+      }}
+    ]
+    """
+    
+    new_items = call_gemini(api_key, prompt)
+    discovered_count = 0
+    
+    if isinstance(new_items, list):
+        for item in new_items:
+            name = item.get("element_name", "Unknown")
+            if name.lower() not in existing_names:
+                item["id"] = generate_id(name)
+                # Ensure thumbnail
+                if not item.get("thumbnail_url") and item.get("source_urls"):
+                    item["thumbnail_url"] = get_screenshot_url(item["source_urls"][0])
+                
+                inventory.append(item)
+                discovered_count += 1
+                log.info(f"Discovered new element: {name} (Status: {item.get('completion_status')})")
+                
+    return discovered_count
+
+# ======================================================================
+# MAIN EXECUTION
+# ======================================================================
 
 def main():
-    if not check_schedule():
-        return
-    
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not api_key:
         log.error("GEMINI_API_KEY not found or empty!")
@@ -424,60 +751,22 @@ def main():
 
     try:
         db = load_db()
-        listings = db.get("listings", [])
+        inventory = db.get("inventory", [])
         
-        # ── BACKFILL MISSING SCREENSHOTS FOR OLD DATA ──
-        # Fungsi ini mengecek apakah data lama sudah punya screenshot_url
-        backfill_count = 0
-        for item in listings:
-            if not item.get("screenshot_url") or item.get("screenshot_url") == "":
-                url = item.get("url")
-                if url and url.lower() != "n/a":
-                    item["screenshot_url"] = get_screenshot_url(url)
-                else:
-                    item["screenshot_url"] = "N/A"
-                backfill_count += 1
-        if backfill_count > 0:
-            log.info(f"Successfully backfilled screenshots for {backfill_count} old records.")
-
-        existing_urls = {i.get('url') for i in listings if i.get('url')}
+        # PHASE 1: Enrich Incomplete Data First
+        enriched = enrich_incomplete_items(api_key, inventory)
         
-        # Pick 3 random global keywords per run
-        targets = random.sample(KEYWORDS, min(len(KEYWORDS), 3))
+        # PHASE 2: Discover New Data
+        discovered = discover_new_items(api_key, inventory)
         
-        count = 0
-        for target in targets:
-            new_items = run_ai_search(api_key, existing_urls, target)
-            
-            if isinstance(new_items, list):
-                for item in new_items:
-                    link = item.get('url')
-                    if link and link not in existing_urls:
-                        item['scraped_at'] = datetime.now().isoformat() + "Z"
-                        item['keyword_trigger'] = target
-                        item['screenshot_url'] = get_screenshot_url(link)
-                        listings.append(item)
-                        existing_urls.add(link)
-                        count += 1
-            
-            # PENAMBAHAN DELAY: Jeda 3 detik antar request agar tidak diblokir Google karena rate limit (Error 429)
-            time.sleep(3)
-
-        db["listings"] = listings
-        db["summary"] = calculate_summary(listings)
-
-        # Update file jika ada data baru ATAU jika ada proses backfill data lama
-        if count > 0 or backfill_count > 0 or not db["summary"].get("generated_at"):
-            with open(DATA_FILE, "w", encoding="utf-8") as f:
-                json.dump(db, f, indent=2, ensure_ascii=False)
-
-        with open(HISTORY_FILE, "w") as f:
-            json.dump({
-                "last_crawl_date": datetime.now().isoformat(),
-                "script_hash": get_hash(SCRIPT_FILE)
-            }, f, indent=2)
-            
-        log.info(f"✅ Run Complete. Added {count} new items. Total Database: {len(listings)} items.")
+        db["inventory"] = inventory
+        
+        # Save if there's any modification
+        if enriched > 0 or discovered > 0:
+            save_db(db)
+            log.info(f"✅ Run Complete. Enriched: {enriched}, Discovered: {discovered}. Total DB: {len(inventory)}")
+        else:
+            log.info("Run Complete. No new data added or enriched.")
 
     except Exception as e:
         log.error(f"Fatal Error during main execution: {e}")
