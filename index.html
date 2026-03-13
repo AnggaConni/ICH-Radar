@@ -626,16 +626,19 @@
       return fallbackCoords;
     }
 
-    function initMap() {
-      map = L.map('map').setView([10, 110], 3);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap &copy; CARTO',
-        subdomains: 'abcd',
-        maxZoom: 20
-      }).addTo(map);
-
-      // Map starts empty, populated asynchronously by applyFilters() -> drawMapElements()
-    }
+      function initMap() {
+        // Mengubah fokus ke tengah (koordinat 20, 0) dan zoom out ke level 2
+        map = L.map('map').setView([20, 0], 2); 
+        
+        // ATAU, jika ingin titik tengahnya tetap di ASEAN tapi pandangannya lebih luas:
+        // map = L.map('map').setView([10, 110], 2);
+        
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO',
+          subdomains: 'abcd',
+          maxZoom: 20
+        }).addTo(map);
+      }
 
     async function drawMapElements(data) {
       if(!map) return;
