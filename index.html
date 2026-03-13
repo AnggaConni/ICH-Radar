@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
   
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
   <!-- Tailwind CSS & Leaflet -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -157,6 +161,16 @@
         <!-- Injected via JS -->
       </div>
     </div>
+
+    <div id="inventory-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+      
+      <div id="load-more-container" class="w-full flex justify-center mt-6 hidden">
+        <button id="btn-load-more" onclick="loadMoreItems()" class="bg-brand-800 border border-brand-700 hover:border-brand-accent px-6 py-2 rounded-full text-sm font-bold transition-all text-brand-accent">
+          Load More
+        </button>
+      </div>
+
   </main>
 
   <!-- Modal Component (Hidden by default) -->
@@ -379,6 +393,8 @@
     let filteredData = [];
     let map = null;
     let markersLayer = null;
+    let currentPage = 1;
+    const itemsPerPage = 9;
 
     // --- INITIALIZATION ---
     async function init() {
@@ -538,17 +554,29 @@
       }
     }
 
-    function renderGrid(data) {
+    function renderGrid(data, append = false) {
       const grid = document.getElementById('inventory-grid');
+      // Ambil elemen tombol load more
+      const loadMoreContainer = document.getElementById('load-more-container');
       const dict = i18n[currentLang];
-      grid.innerHTML = '';
+      
+      if (!append) {
+        grid.innerHTML = ''; // Kosongkan grid jika ini pencarian/filter baru
+      }
 
       if (data.length === 0) {
         grid.innerHTML = `<div class="col-span-full text-center text-gray-500 py-10">${dict.emptyGrid}</div>`;
+        if (loadMoreContainer) loadMoreContainer.classList.add('hidden');
         return;
       }
 
-      data.forEach((item, index) => {
+      // Hitung data mana saja yang akan ditampilkan di halaman ini
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
+      const itemsToShow = data.slice(startIndex, endIndex);
+
+      // Loop hanya untuk item yang masuk dalam perhitungan halaman saat ini
+      itemsToShow.forEach((item, index) => {
         const isComplete = item.completion_status === 'COMPLETE';
         const isShared = item.shared_heritage_detection?.is_shared;
         
@@ -594,7 +622,21 @@
         `;
         grid.appendChild(card);
       });
+
+      // Tampilkan atau sembunyikan tombol Load More
+      if (loadMoreContainer) {
+        if (endIndex < data.length) {
+          loadMoreContainer.classList.remove('hidden');
+        } else {
+          loadMoreContainer.classList.add('hidden');
+        }
+      }
     }
+    function loadMoreItems() {
+      currentPage++;
+      renderGrid(filteredData, true); // true = tambahkan ke bawah, jangan di-reset
+    }
+
 
     // --- DYNAMIC MAP LOGIC ---
      // 1. Buat variabel antrean global di luar fungsi
@@ -682,10 +724,17 @@ async function getCoords(locationName) {
         }).addTo(map);
       }
 
-    async function drawMapElements(data) {
+async function drawMapElements(data) {
       if(!map) return;
       if(markersLayer) map.removeLayer(markersLayer);
-      markersLayer = L.layerGroup().addTo(map);
+      
+      // MENGUBAH L.layerGroup() MENJADI L.markerClusterGroup()
+      markersLayer = L.markerClusterGroup({
+        chunkedLoading: true, // Sangat bagus untuk performa data besar
+        spiderfyOnMaxZoom: true
+      });
+      
+      map.addLayer(markersLayer);
 
       const defaultIcon = L.divIcon({
         className: 'custom-div-icon',
@@ -755,9 +804,9 @@ async function getCoords(locationName) {
       });
 
       filteredData = result;
-      renderGrid(filteredData);
+      currentPage = 1; // RESET HALAMAN SETIAP KALI FILTER BERUBAH
+      renderGrid(filteredData, false);
       
-      // Async map rendering
       drawMapElements(filteredData);
     }
 
