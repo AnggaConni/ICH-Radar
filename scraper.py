@@ -654,7 +654,7 @@ def enrich_incomplete_items(api_key, inventory):
         Find AT LEAST ONE NEW source URL to add to the existing ones.
         
         Respond ONLY with a JSON object representing the UPDATED element.
-        Ensure the output data values are in INDONESIAN, but keep keys in English.
+        Ensure ALL output data values and keys are strictly in ENGLISH.
         If you find the missing data, change "completion_status" to "COMPLETE".
         
         Required JSON Structure:
@@ -699,7 +699,7 @@ def discover_new_items(api_key, inventory):
     Ignore these already known elements: {existing_names[:10]}...
     
     Analyze the element, its location, its shared heritage connections with other countries, and its process/recipe.
-    Output the data values in INDONESIAN, but keep all JSON keys strictly in English.
+    Output ALL data values strictly in ENGLISH, and keep all JSON keys strictly in English.
     If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
     If you find all information, set "completion_status" to "COMPLETE".
     
