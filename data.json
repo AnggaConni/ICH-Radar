@@ -19,7 +19,9 @@
         "provinces": [
           "Tochigi Prefecture",
           "Ibaraki Prefecture"
-        ]
+        ],
+        "lat": 36.5657,
+        "lng": 139.8836
       },
       "resume_analisa": {
         "description": "Yuki-tsumugi is a high-quality silk fabric produced using traditional methods, known for being lightweight, warm, and having a uniquely soft texture. The fabric uses hand-spun thread made from raw silk, kasuri (ikat) patterns that are hand-tied, and is woven on a traditional loom called 'jibata'.",
@@ -78,7 +80,7 @@
           "**6. Inspection (Kensa):**",
           "   *   Inspect the fabric quality.",
           "**7. Final Finishing (Seiri-shiage):**",
-          "   *   **Starch Removal (Nori-nuki):** Soak the woven fabric in hot water overnight to remove the starch, then wring and dry it. This restores the fabric’s original soft texture."
+          "   *   **Starch Removal (Nori-nuki):** Soak the woven fabric in hot water overnight to remove the starch, then wring and dry it. This restores the fabric's original soft texture."
         ]
       },
       "shared_heritage_detection": {
@@ -102,7 +104,9 @@
       "scraped_at": "2026-03-13T05:28:12.334524Z",
       "location": {
         "country": "Myanmar",
-        "provinces": []
+        "provinces": [],
+        "lat": 19.7633,
+        "lng": 96.0785
       },
       "resume_analisa": {
         "description": "Thanaka is a pale yellow paste applied to the faces of women and children in Myanmar. It is derived from the bark of a medicinal tree, primarily found in the hill country of Myanmar. The paste is applied in various patterns, ranging from streaks along the cheekbones to full face masks extending from chin to forehead.",
@@ -117,7 +121,24 @@
           "Herbal remedy"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "Traditional Cosmetic Application",
+        "materials_and_tools": [
+          "Thanaka wood (bark or branches of Limonia acidissima, Hesperethusa crenulata, or related species)",
+          "Kyauk pyin (flat circular grinding stone, traditionally made of sandstone)",
+          "Small amount of water",
+          "Fingers or a small brush for application"
+        ],
+        "step_by_step": [
+          "**1. Selecting the Thanaka Wood:** Choose a piece of thanaka wood, typically a branch or section of bark from a thanaka tree. Wood from older trees (20–30 years) is considered to produce a finer paste with a more pleasant fragrance.",
+          "**2. Moistening the Stone:** Place a small amount of cool water on the surface of the kyauk pyin (grinding stone) to act as a lubricant and help the paste form.",
+          "**3. Grinding the Paste:** Hold the thanaka stick upright and rub it in a firm, circular motion against the wet surface of the kyauk pyin. Continue grinding until a smooth, creamy, pale yellow paste of the desired consistency is produced. The paste should be neither too watery nor too thick.",
+          "**4. Collecting the Paste:** Once enough paste has accumulated on the stone, gather it with a finger or small brush.",
+          "**5. Applying to the Face:** Apply the thanaka paste directly to the cheeks, forehead, nose, or entire face using fingertips or a small brush. Common decorative patterns include circular 'sun' motifs on the cheeks, leaf shapes, or a uniform coating across the face.",
+          "**6. Allowing to Dry:** The paste is left on the skin to dry, where it forms a light, slightly matte coating. It is typically worn throughout the day, providing a cooling sensation, sun protection, and skin-conditioning benefits.",
+          "**7. Daily Renewal:** The application is repeated fresh each day, as thanaka paste does not keep indefinitely once ground. It is a daily ritual for many women and children across Myanmar."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": false,
         "confidence_score": 0.9,
@@ -129,7 +150,7 @@
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-ec6118ad",
@@ -142,10 +163,7 @@
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPam-wwREJcUMBFfLm-G7mStk2QacmCu6NwIaK3dyFgXXPCtGmNzATbKsR0HpLYnaaDXhkki9gh8WTuQK7xTQvRBEe0wQp5aWWkG76naxNO_YKI6uTkXPbxZo39QgOiZa8_AKoB5fEISnb1_Kmsqdk51HTPA==",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgLRq3NE-vpLuyPeyzWt-g-riInMbVdk5wBJjC1zcXILs9qWxfPCb8lPdGyN3HkaaxqPfvV7Gsc4uIXD4Xz_mY8fZkEVRNiXqctbOT4yri6JHL1xs8LkORwVox47So4cod4ihUJnq9kLsZT7EqqSG7F8otpZlfXIpKLyvXM-3fBKE6Gh9WQyIqCIRXdRD_Um4yj14OxwVdcckLONR0f3UTXD6WmDymQdhE9h1T0aBCF1uXCDkY",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzs8Dx4Uu3fSphFwLW0-LaHniSD2cwUp-pR1yY0pV5BKkVLxqF7DmxPIsPlfL5VHx_U4iWHdJ9diUxruer1T28OUza5ahIfD_Y_8dbDJFtLNIa8Ydu5lZfS_lEsCXjCYVMQx0-RHTkysOcinaCcL_PK082M0HlNTZqtzqSLZVM1X2Udw0Y0FLWjXs=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPvWpVqrGi8gBcL9vOzX4PhOJZ-mJzGDqdYRuiyyGWajZQXFamshdMYDyY2BYxoQo25R4cbiiElFHFF7ZRxX4yOSzi5PBnGQKzS42VQv2I9VQoW0D8AORbtHZz2b52OBjS6TdKrYD--1Yos5-iq4i8MVvWWA==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlo-PBOMy47hzEkwcZTj86n9I7RU-1fV7I7eVjIU6NCIlr_l3IfcqOorrZY-FdwGJgJ3swuoEH4X-X-nHZzexCWTGTv8IdTS2T_WoOmaoRAj_dg_ch-qwoqD5jtYzMipamar86gj54vtMc5SX3dAOMU4l16EzyaG8bQY0G5m_a1vQehypF48QRdtvUDYcLtdn4F7Zb-H-m0y6Lyg3mNi9kO7KpK7GLWjjZ3yLkaOWlNg-VAxTIFuadyVaE55c",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHUUIm0SWtuePxVEwsIWhrXctCslBhdTxcKvmoZz1QzWg7ppwoiV71MoHALdesWAf3tcx40Tkf_eGVplnPLVGA1QUL41wQd9V50sjyw4eLMqZhfzaPehiewp4KBphgFKuc-Xb3Af-t7EHLrzd4t",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaFX5Xl2zXcTzTGvm21Iz88l71NuT0sefNkW76L2YhXyglMVQcXhQLN8_GFA-JQK0QvOg7h9IOnoT6F4UJIUK6nMaqIZz4dxSyQGfsYk5KRnXGbql9EjqTbKPa6XmwTHtH4T109ZVRH0AZwBqG2_8xC66JsL5S49oy8h1ZvhGzHajNY2eXHYp1eX-UzRDq5FXZJGvpfK9t1i5yqBYtvKQUekHRywPZ6GrrlgFi1zSwJVS1xXSu8LMXm8mkXWztwt91iqCp4MHYxA7v-u0yVgaNATiyWeZ74vjmM4zZvq6zwsl9HabBl66uOgGRBlxq4Vnt-oIWDqx2bDtRw=="
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPvWpVqrGi8gBcL9vOzX4PhOJZ-mJzGDqdYRuiyyGWajZQXFamshdMYDyY2BYxoQo25R4cbiiElFHFF7ZRxX4yOSzi5PBnGQKzS42VQv2I9VQoW0D8AORbtHZz2b52OBjS6TdKrYD--1Yos5-iq4i8MVvWWA=="
       ],
       "scraped_at": "2026-03-13T05:29:56.351077Z",
       "location": {
@@ -155,7 +173,9 @@
           "Chiang Mai",
           "Sukhothai",
           "Nan"
-        ]
+        ],
+        "lat": 15.8700,
+        "lng": 100.9925
       },
       "resume_analisa": {
         "description": "Thai silk is a world-renowned product celebrated for its luxury, beauty, natural sheen, vibrant colors, and durable quality. It holds significant cultural value, with the entire process from sericulture (silkworm cultivation) to weaving being a traditional knowledge passed down through generations. The creation of Thai silk is a labor-intensive craft involving several intricate steps, culminating in the weaving of fabric on traditional handlooms.",
@@ -252,23 +272,7 @@
       "category": "Social Practices & Rituals",
       "thumbnail_url": "Image depicting Hadza people hunting with bows and arrows or gathering wild foods.",
       "source_urls": [
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0mDIJi2PalHihByIDuWU6aiUdS91LgsVwaApUWA78wNqhycgswYv8aR7C1eoYjydOkyhjq4-s1KPgur2xOiQly-fM5o-BMu9EQ91CUz1xjgBuHd6NGvoH6Ew0xWGk7RWYUdf2N6oJYCiDQ6wXSaeIyp-q5E7WEbTEcRCi9CLa1e1n7aT72cHFuy8QJ-4eDbDQhoxkFnWaA==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZnSbFq2wHrYXYVXOrw9lGekpLphP74RFIMQ4LY5PPOFaqI78cfLuXJnZv9cdIoDMYL__etOxDIJFf81Dx8qSmGjRcbSxuQGRMVf8KfxMvOQB1WjlAxKthCqkmfvOZLUofBriNX9KMnqhzABpZdevcyTj5BP4WuLAYex5ZaaN9Cw==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHfemz_qBPFsI8DeqQFda0ptg9AFqVPBNpvQcHHYIwC7fRjizFyWqsgL67UiqW_5-NCNVW8GybjIp1I8QWAbcrgCH8hbdGWY-Q-6pGMVr9IyE1t3YSSRAuTBBpKnwfNKMK_QSPdzv-Ac-CUeo=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyV9jNj9X8iVguQ_YdhbawgC1EONuNbSURDsE1xNd4r5lubcWaSPPPO0i-QnYYJulfVgG2fdi8V7aCt1gFxSbysCPZUFH1bPh_8RQKcTydkGrV7uTO-jnO7yzsMvVlOT8mV4DK8afTAWnKJJOeYf88pWhA154ZBLSw6h3_hQ1rjV_US9gKk3blyxXVWThFg816nFYgM38ZZNJm3V8ooePqiIE=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHo71EVPhqFsNUOgzb5oY2IgiAhZnTl_fMLOxU04fptrEfKp1vvsG5YWTf80D9uBmvEThOVYPUxtMH572c6voCnXTpPoqKW0Zt4kbF7oMXXYRGQoPqrRUTjIg4rWSUpD-MOAf0KCBCm7laF7lbw1bM0zpwfssNBIThpMPvb_RurHDnKOm8V_2mVxJXpAeh4hVS1S2BG3GV4Hr8ZvEbwgmKb",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNwT-ua0RwKELFzvIHOOfX0LMlLEKHD-fr4mQc4b_FUn-EkXWe7GBV3s_GDZBX2QwfnKZcO4QVf8YAb0Qz-XEFRgKkQ7nyBmcF22eqBXtsEvkVFnqoR-FIOTudbzSZP2RAyAyzzw==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFc4S9ZUYOszZbMCPtAPN6rmDmRYA0D2NMtVpCYo90LIKBFFIDoCn-VAxu08wyT4LhxibQGJf8TdTn01RRb4borfc7zw6HyNHey0_YwpLtE9DpWUsM_t9IcS3cySnNO9ZGLu88v",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE329INmXif0U8wKxPjjx0T_WptQqAyJwrO8SJkAZErKEQnW7QrBsXrIi74SXFYRGd42tyM-nt07zMyZZQv6Vd6N6oVrwmeXDyZHM1-X0N6sURAas6zyhTuKW0ErExhZi4Tz9Ozbtl-NN2_6gWWtVDWRCDxJsJg3jxEZgWR7xT6DBA46oN3ziSbVf-71e5WqiyeD66uGgca4AGQSyojwFbopuVbZARNmj4h5OnMSkF-2P9e",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVbYR9aV8yG69yPmQ7vgELPB7n-KE5xc4q2t-G1XYS9u2ILDUPhyoQIhUu_bRUa9G1qB4sXOP5gvCLip5p0YdXo9Q_MNrhvLc_8SM8ftaLkPYq2uuDUA7fIk3mw5oLlQAUm3O90G5MvAnxVzu6edMA4Ol9YTyI5K9k6bXMxn_MOgn4pYHkabsQdUQybjD3-gS6TQ==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE64H6K-l_6HA6_y1Wp59ZV3fYuSAiMMUnjVeUJhOpReT2t3wWQE6qfQ3FJxtk3MbqZnxcQHe1vQaTpElyWZRtPYHJYTJgDJ8WJuhUiwfRMGd0J8okBGxBJmFXPXMAj1QsKfcteXA==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZzlNBJ84Iyagoqtly95dHiprqys1ykp9j5nE8Rk9-7lJuxE8RJKRUROFIgf9Ongdk8pnnNqh0M90o_SE6mYLcTQgnm45rG93YXDPWq4epmSntj2tYNLAfpZdiQB0wo3rhrjKyzX8WgmIVZi-gvvEmvI1j",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHUZG5kqKj9ZBeDuOp2RdnJNNcXt7ov4SD0v0evYnmA_DMRS5FQ2Q5oeo-SSWSzxF-iYwSLKvy34d6PL5ZYl8_rt2YJL3H8PzlqkeA_Uw7MN_IPwWY-b_SBxrlo9chBX7F1EWvloYQrla51D4pqV_DFE8IB5nvk1cAFNL827XpsvPKKWuuLE0_RbI=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFc8ddbed-5yWvJR52ck7NHkKsAcnoI7MFNjzNk5ABJ4X5iu6oegFg8wUC1gzca5-w1rFoZvRJN4FlwWqkIDgtTj9ny8jmXTWdAmrzBbkpekKejdu4XM_-IBA3A01eWwY3-uVjK",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJfm80XJx3P-IJ5ptcO7b0oBkqaa6JuY4MdPory4u6D0Ob0aLqySwv2JoquBh68cdu_gDtikedZs1FS_TfOaBa_K1_byfoZDuHqdUrDXMtvUxa3kLfUQY1trwcw3MggQhr4Zo8baf0s__he301IxfmeU5P3gv-xvg=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIAIekAbvE_Z-pgBp_5oLBfyLSJlglzvkoUJdinfFNa8NRJ7WADdVgubfzBw-ag4P9DeoHlCKFaF3IbLgz6nkundvbjfevsrOnIkqAXUW3X9ZTBn7OjdfePcE-eKzBTDyWNhM=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQNL4bBriCgtb8yMV7lDDDfjCsGc8ZlEvZJavp5Mb1ZhbTctgVg-um3fKQu9xfD06xxrAwG94xNznl4BpCLujQ9zZ188C6joQSQ3nxQHhtCtCGS6UOBrvbs1rsenp8eNLEcv3FKw==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESzw0y8UgFV_bYibEzOGHpNUn3-praMrWcA7fU4P-h2hpkGgEKRKTKKT4gZxWegdRbpNtjH4OzDUdT_wlUCDahN42lR0thXJWRPUa3TIJM-ZSlaG9cwVSYZGpHR0MRI9NP3r-RLQ=="
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0mDIJi2PalHihByIDuWU6aiUdS91LgsVwaApUWA78wNqhycgswYv8aR7C1eoYjydOkyhjq4-s1KPgur2xOiQly-fM5o-BMu9EQ91CUz1xjgBuHd6NGvoH6Ew0xWGk7RWYUdf2N6oJYCiDQ6wXSaeIyp-q5E7WEbTEcRCi9CLa1e1n7aT72cHFuy8QJ-4eDbDQhoxkFnWaA=="
       ],
       "scraped_at": "2026-03-13T05:45:31.757013Z",
       "location": {
@@ -277,7 +281,9 @@
           "Arusha Region",
           "Shinyanga Region",
           "Singida Region"
-        ]
+        ],
+        "lat": -4.0333,
+        "lng": 35.0000
       },
       "resume_analisa": {
         "description": "The Hadza, also known as Hadzabe, are one of the last true hunter-gatherer tribes in Tanzania, maintaining a traditional lifestyle largely unchanged for thousands of years. They are a semi-nomadic people, living in egalitarian bands typically comprising 20 to 30 individuals. Their survival is entirely dependent on hunting wild animals, gathering honey, and foraging for a variety of wild plants, including tubers, berries, and baobab fruit. The Hadza possess a profound ecological knowledge of their environment and practice sustainable living, which is crucial for their continued existence.",
@@ -382,7 +388,9 @@
           "Arizona",
           "New Mexico",
           "Utah"
-        ]
+        ],
+        "lat": 36.5018,
+        "lng": -110.0668
       },
       "resume_analisa": {
         "description": "Blue Cornmeal Dumplings, known as kʼíneeshbízhii in the Navajo-Diné culture, are a traditional food crafted from blue cornmeal and juniper ash. They are typically prepared during the colder months, specifically autumn and winter. The dumplings are culturally significant for their flat or oval shape, as creating them in a round or spherical form is believed to invoke hail, a belief linked to private ceremonial practices. This dish is often served hot and can be eaten with fried bread or in a stew. The use of juniper ash not only enhances flavor but also increases the calcium content of the dish.",
@@ -447,22 +455,7 @@
       "source_urls": [
         "https://eatwelltraveloften.com.au/the-story-of-the-bunya/",
         "https://www.diegobonetto.com/beautiful-bunyas",
-        "https://www.slq.qld.gov.au/blog/bountiful-bunyas-charismatic-tree-fascinating-history",
-        "https://www.auzi.com/bunya-festival-brings-indigenous-tradition-back-to-the-southern-downs/",
-        "https://jerrycolebywilliams.com/2015/02/15/bunya-prehistoric-plant-ancient-australian-food-tradition/",
-        "https://www.studytoowoomba.qld.gov.au/embracing-the-rare-beauty-of-bunya-nut-season-in-toowoomba/",
-        "https://parks.des.qld.gov.au/parks/bunya-mountains/culture-history",
-        "https://www.australianfoodtimeline.com.au/1902-last-bunya-nut-gathering/",
-        "https://bunyamountains.com.au/about-the-bunya-mountains/",
-        "https://www.researchgate.net/publication/379904797_Not_All_Edible_Nuts_Are_Eaten_Evidence_for_Continued_Aboriginal_Cultural_Use_and_Dispersal_of_Bunya_Pine_Araucaria_bidwillii_in_Southern_But_Not_in_Northern_Queensland",
-        "https://www.botanicgardens.org.au/news/genomic-research-highlights-indigenous-ecological-knowledge-bunya-pine",
-        "https://ilsc.gov.au/new-bunya-mountain-base-paves-way-for-aboriginal-groups-to-gather-in-ancient-tradition/",
-        "https://qaaﬁ.uq.edu.au/article/2024/04/bringing-new-life-ancient-nut",
-        "https://www.bunyapeoples.org.au/bonye-buru-booburrgan-ngmmunge",
-        "https://en.wikipedia.org/wiki/Araucaria_bidwillii",
-        "https://en.wikipedia.org/wiki/Bunya_Mountains_National_Park",
-        "https://magpiepublishers.com.au/aboriginal-songlines/",
-        "https://www.slowfood.com/ark-of-taste-products/bunya-nuts/"
+        "https://www.slq.qld.gov.au/blog/bountiful-bunyas-charismatic-tree-fascinating-history"
       ],
       "scraped_at": "2026-03-13T06:11:15.454911Z",
       "location": {
@@ -470,7 +463,9 @@
         "provinces": [
           "Queensland",
           "New South Wales"
-        ]
+        ],
+        "lat": -26.8883,
+        "lng": 151.5729
       },
       "resume_analisa": {
         "description": "The Bunya Nut Festival, also known as Bunya Gathering or 'Bonye Bonye Festival', is a traditional and culturally significant event for various Aboriginal peoples in Australia, primarily centered around the Bunya Mountains and Blackall Ranges in South-West Queensland. Historically, it occurred every three to four years, coinciding with the bumper harvest of the Bunya pine (Araucaria bidwillii) nuts. This gathering was a crucial time for numerous language groups and tribes, some traveling hundreds of kilometers along ancient songlines, to come together for feasting, trade, cultural exchange, and social practices. The festival was largely disrupted by European colonization in the late 19th and early 20th centuries due to displacement and logging. However, modern revivals, such as the Bunya Dreaming Festival, aim to continue the spirit of these gatherings, promoting reconciliation and cultural recognition.",
@@ -528,30 +523,16 @@
       "source_urls": [
         "https://gw2.ru/en/khokhloma-all-you-need-to-know-about-the-gold-painted-tableware/",
         "https://antiquevintage.co/the-timeless-beauty-of-russian-khokhloma-painting-exploring-the-techniques-behind-hand-painted-wooden-spoons/",
-        "https://ru.wikipedia.org/wiki/%D0%A5%D0%BE%D1%85%D0%BB%D0%BE%D0%BC%D0%B0",
-        "https://vuzlit.ru/852655/tehnologiya_izgotovleniya_hohlomy",
-        "https://en.wikipedia.org/wiki/Khokhloma",
-        "https://sima-land.ru/blogs/hobbi/hohloma-ot-istokov-do-sovremennosti/",
-        "https://monetnik.ru/blog/khokhlomskaya-rospis",
-        "https://stuartking.co.uk/khokhloma-ware-folk-art-for-the-masses/",
-        "https://maisonrusse.com/blogs/news/the-art-of-khokhloma",
-        "https://www.culture.ru/s/traditions/hohloma/",
-        "https://www.culture.ru/s/traditions/hohloma-proishozhdenie-i-znachenie-ponyatiya/",
-        "https://www.mapp.ru/o-traditsiyah-iskusstva-narodnogo-hudozhestvennogo-promysla-hohlomskoy-rospisi-ego-hudozhestvenno-stilevyh-osobennostyah-ob-izdeliyah-ao-hohlomskaya-rospis/",
-        "https://livingheritage.ru/objects/hohlomskaya-rospis/",
-        "https://gcnt.ru/wp-content/uploads/2021/08/%D0%A5%D0%BE%D1%85%D0%BB%D0%BE%D0%BC%D1%81%D0%BA%D0%B0%D1%8F-%D1%80%D0%BE%D1%81%D0%BF%D0%B8%D1%81%D1%8C.pdf",
-        "https://xn--80aa3akc1a.xn--p1ai/articles/zolotoe-nasledie-iskusstvo-i-tehnologiya-hohlomskoy-rospisi",
-        "https://gcnt.ru/wp-content/uploads/2021/08/%D0%A5%D0%BE%D1%85%D0%BB%D0%BE%D0%BC%D1%81%D0%BA%D0%B0%D1%8F-%D1%80%D0%BE%D1%81%D0%BF%D0%B8%D1%81%D1%8C-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D0%BE-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8E-%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B8-%D0%B4%D0%B5%D0%BA%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D1%85.pdf",
-        "https://bridgetomoscow.com/khokhloma",
-        "https://pandia.ru/text/78/200/58362.php",
-        "https://steemit.com/drawing/@yurche/draw-khokhloma-step-by-step-practice-of-ornamental-art"
+        "https://en.wikipedia.org/wiki/Khokhloma"
       ],
       "scraped_at": "2026-03-13T06:23:40.375196Z",
       "location": {
         "country": "Russia",
         "provinces": [
           "Nizhny Novgorod Oblast"
-        ]
+        ],
+        "lat": 56.2965,
+        "lng": 43.9361
       },
       "resume_analisa": {
         "description": "Khokhloma painting is a traditional Russian folk craft renowned for its decorative painting on wooden tableware and furniture. It emerged in the 17th century in the Trans-Volga region, particularly around the village of Khokhloma in what is now Nizhny Novgorod Oblast. The style is characterized by its vibrant red, black, and gold colors, typically applied to a dark background. The intricate designs often feature lush floral motifs, such as berries (rowanberries and strawberries), leaves, and grasses, with occasional depictions of birds or animals. A distinctive feature of Khokhloma is its unique 'golden' effect, achieved without the use of real gold, through a specialized lacquering and baking process.",
@@ -611,16 +592,16 @@
         "https://hungarianconservative.com/articles/culture_society/winter-flowers-matyo-embroidery-tard-mezokovesd-szentistvan-kisjanko-bori/",
         "https://www.rferl.org/a/hungary-matyo-embroidery-economic-lifeline/32544136.html",
         "https://ich.unesco.org/en/RL/folk-art-of-the-matyo-embroidery-of-a-traditional-community-00717",
-        "https://www.hungarikum.hu/en/matyo-folk-art-embroidery-culture-traditional-community",
-        "https://www.folkcostume.blogspot.com/2014/06/costume-and-embroidery-of-mezokovesd.html",
-        "https://www.scribd.com/document/329525790/Hungarian-Embroidery-Styles-and-Motifs"
+        "https://www.hungarikum.hu/en/matyo-folk-art-embroidery-culture-traditional-community"
       ],
       "scraped_at": "2026-03-13T06:24:15.132623Z",
       "location": {
         "country": "Hungary",
         "provinces": [
           "Borsod-Abaúj-Zemplén (Mezőkövesd, Tard, Szentistván)"
-        ]
+        ],
+        "lat": 47.8142,
+        "lng": 20.5683
       },
       "resume_analisa": {
         "description": "Matyó embroidery is a vibrant and intricate traditional folk art originating from the Roman Catholic Matyó community in northeastern Hungary, specifically in and around the towns of Mezőkövesd, Tard, and Szentistván. Characterized by rich, colorful floral motifs, the most iconic being the \"Matyó rose\" (a stylized peony), it evolved from earlier white-on-white embroidery in the mid-19th century to incorporate a wide palette of colors, influenced by men's furrier embroidery. This unique embroidery adorns traditional festive clothing, such as shirts, aprons, and home textiles, and its patterns are also applied in contemporary fashion and interior decoration.",
@@ -638,7 +619,29 @@
           "European Folk Art"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "Traditional Hand Embroidery",
+        "materials_and_tools": [
+          "Base fabric (traditionally linen or cotton; also hemp cloth for older pieces)",
+          "Embroidery threads (traditionally white cotton or silk; later dyed in vibrant colors including red, black, blue, green, yellow, and pink)",
+          "Embroidery needle",
+          "Embroidery hoop or frame (keret) to keep the fabric taut",
+          "Scissors",
+          "Pattern templates (transferred onto fabric with charcoal, pencil, or by tracing through paper)",
+          "Thimble"
+        ],
+        "step_by_step": [
+          "**1. Design Selection and Pattern Transfer:** The embroiderer selects a traditional Matyó pattern, most commonly featuring the iconic 'Matyó rose' (a stylized, layered peony), tulips, buds, leaves, and curling stems. The design is transferred onto the base fabric using a pattern template, either traced freehand by experienced embroiderers or copied through paper onto the fabric surface.",
+          "**2. Fabric Preparation:** The base fabric (linen or cotton) is cut to the desired size — typically for a garment section such as a collar, sleeve cuff, apron, or decorative panel. The fabric is secured in an embroidery hoop or frame to maintain consistent tension throughout the stitching process.",
+          "**3. Thread Preparation:** Embroidery threads are selected and prepared. Traditionally, natural fibers dyed with local plant-based dyes were used. Matyó embroidery is known for its rich, densely packed color palette; threads are often divided into individual strands to achieve fine detail.",
+          "**4. Outlining:** The primary design elements are first outlined using a fine stem stitch or chain stitch in a dark contrasting thread (often black or deep red), defining the shapes of the flowers, leaves, and decorative elements.",
+          "**5. Filling with Satin Stitch:** The main embroidery technique used in Matyó work is satin stitch (lapos öltés), where parallel stitches are laid closely together to completely fill in the outlined motifs. Flowers and leaves are filled with smoothly packed stitches that create a slightly raised, lustrous surface.",
+          "**6. Adding Detail Stitches:** Additional detail is added using a variety of supplementary stitches, including French knots (for the textured centers of flowers and berries), chain stitch (for stems and curling tendrils), and cross stitch (for border patterns and geometric accents).",
+          "**7. Layering and Shading Colors:** A hallmark of mature Matyó embroidery is the dense layering of colors within a single motif — typically working from the outer petals inward and transitioning through multiple hues to create a sense of depth and three-dimensionality. Red, black, and white are the traditional color trio, though modern pieces incorporate the full spectrum.",
+          "**8. Background Filling (optional):** In some compositions, the background areas between motifs are also filled with fine stitching, creating a rich, all-over texture that is characteristic of the most elaborate ceremonial Matyó pieces.",
+          "**9. Finishing:** Once the embroidery is complete, the piece is removed from the hoop, the back of the work is neatened by securing any loose thread ends, and the fabric is lightly pressed. The finished piece is then sewn onto its intended garment or textile item."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
         "confidence_score": 0.8,
@@ -660,7 +663,7 @@
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-eee8675e",
@@ -670,8 +673,6 @@
       "source_urls": [
         "https://www.gazeta-antropologia.es/?p=5969",
         "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
-        "https://www.youtube.com/watch?v=0k7b2L_9z7g",
-        "https://www.milenio.com/estados/metepec-municipio-con-artesanos-de-talla-mundial",
         "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
       ],
       "scraped_at": "2026-03-13T06:37:37.240842Z",
@@ -679,7 +680,9 @@
         "country": "Mexico",
         "provinces": [
           "State of Mexico"
-        ]
+        ],
+        "lat": 19.2552,
+        "lng": -99.6064
       },
       "resume_analisa": {
         "description": "The Árbol de la Vida (Tree of Life) from Metepec is a distinctive form of Mexican folk art pottery, characterized by intricate hand-sculpted clay candelabras or freestanding sculptures. These pieces typically depict a tree trunk with branching arms adorned with numerous small figures, animals, flowers, and symbolic scenes. While traditionally representing biblical narratives like the Garden of Eden, their themes have expanded over time to include a variety of subjects reflecting Mexican culture, history, and daily life. These sculptures can range significantly in size, from a few millimeters to large public installations that can be several meters tall.",
@@ -738,22 +741,16 @@
       "source_urls": [
         "https://www.mokshaa.com/blogs/news/the-heritage-behind-kanchipuram-silk-stories-woven-in-gold",
         "https://www.vasumatis.com/blogs/news/how-kanjivaram-sarees-are-made",
-        "https://www.pothys.com/blog/kanchipuram-silk-sarees-royalty-woven-in-tradition/",
-        "https://cliosilks.com/blogs/news/how-kanchipuram-silk-sarees-are-made-step-by-step-weaving-process",
-        "https://www.fibre2fashion.com/industry-article/10046/the-weave-of-royalty-kanchipuram-silk-sarees-and-indian-heritage",
-        "https://www.saridhoti.com/blogs/news/the-kanjeevaram-formula",
-        "https://aikyatha.com/blogs/news/traditional-kanchipuram-silk-sarees-7-timeless-reasons",
-        "https://theststudio.com/blogs/news/the-origin-and-journey-of-kanchipuram-sarees",
-        "https://www.easemytrip.com/travel/blog/tamil-nadu-unesco-world-heritage-sites",
-        "https://www.samyakk.com/blogs/sarees/why-kanchipuram-sarees-are-called-the-queen-of-silks",
-        "https://www.deepamsilksbangalore.com/blogs/news/the-history-and-significance-of-south-indian-kanjivaram-sarees"
+        "https://www.pothys.com/blog/kanchipuram-silk-sarees-royalty-woven-in-tradition/"
       ],
       "scraped_at": "2026-03-13T06:38:13.413149Z",
       "location": {
         "country": "India",
         "provinces": [
           "Tamil Nadu"
-        ]
+        ],
+        "lat": 12.8342,
+        "lng": 79.7036
       },
       "resume_analisa": {
         "description": "Kanchipuram silk sarees, also known as Kanjivaram sarees, are celebrated for their luxurious texture, vibrant colors, and intricate zari (gold and silver thread) work, embodying centuries-old weaving traditions. These sarees are more than just garments; they are a significant symbol of South Indian cultural pride and craftsmanship.",
@@ -829,26 +826,16 @@
       "source_urls": [
         "https://www.gob.mx/agricultura/articulos/tejate-la-bebida-de-los-dioses",
         "https://aderezo.mx/bebidas/bienvenida-guelaguetza-animate-a-preparar-tejate-con-esta-receta/",
-        "https://elsabordeoaxaca.com/blogs/noticias/el-tejate-la-bebida-de-los-dioses-de-oaxaca",
-        "https://newworlder.com/origins-tejate/",
-        "https://www.youtube.com/watch?v=R94_0_r_03o",
-        "https://etnofood.com/tejate-oaxacas-ancient-drink/",
-        "https://www.youtube.com/watch?v=n-P_2-tI_oQ",
-        "https://culinariamexicana.com.mx/tejate-la-bebida-de-los-dioses/",
-        "https://grokipedia.org/wiki/Tejate",
-        "https://animalgourmet.com/2014/12/05/receta-del-refrescante-tejate-oaxaqueno/",
-        "https://www.sbs.com.au/food/article/2018/06/28/tejate-oaxacas-ancient-drink",
-        "https://www.youtube.com/watch?v=X07c-nQ72fU",
-        "https://montealban.com.mx/origins-of-chocolate-in-mexico-the-zapotec-cacao-legacy/",
-        "https://www.youtube.com/watch?v=r06lVq4Vf4A",
-        "https://www.youtube.com/watch?v=11XJqX6fX14"
+        "https://elsabordeoaxaca.com/blogs/noticias/el-tejate-la-bebida-de-los-dioses-de-oaxaca"
       ],
       "scraped_at": "2026-03-13T06:38:41.320692Z",
       "location": {
         "country": "Mexico",
         "provinces": [
           "Oaxaca"
-        ]
+        ],
+        "lat": 17.0732,
+        "lng": -96.7266
       },
       "resume_analisa": {
         "description": "Tejate is a traditional, frothy, non-alcoholic Mesoamerican beverage with pre-Hispanic origins, primarily from the Central Valleys of Oaxaca, Mexico. Often referred to as 'the drink of the gods', it is made from nixtamalized maize, toasted cacao beans, ground mamey sapote seeds (pixtle), and rosita de cacao flowers (Quararibea funebris blossoms). Its distinctive feature is a thick, beige foam that forms on its surface, mainly due to the rosita de cacao. The preparation is a labor-intensive, artisanal process, traditionally carried out by women known as 'tejateras'.",
@@ -903,39 +890,18 @@
       "source_urls": [
         "https://couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition",
         "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival",
-        "https://www.tastefrance.com/us/france/articles/la-chandeleur-frances-festive-day-crepes-and-fortune",
-        "https://alpinefrenchschool.com/french-traditions-chandeleur/",
-        "https://www.julietteetchocolat.com/blog/la-fete-de-la-chandeleur-une-celebration-d-origine-paienne-pour-feter-la-crepe",
-        "https://www.babylangues.com/blog/french-tradition-la-chandeleur-le-jour-des-crepes/",
-        "https://www.babylangues.com/blog/crepes-for-la-chandeleur-french-cuisine/",
-        "https://www.jetlaggers.com/why-do-french-people-eat-crepes-for-la-chandeleur/",
-        "https://www.opinelsa.com/blog/a-classic-crepe-recipe-for-la-chandeleur/",
-        "https://www.myparisportraits.com/la-chandeleur-unveiling-the-charm-of-french-crepes-and-superstitions/",
-        "https://www.sochic.sg/magazine/traditional-french-crepes-recipe-for-la-chandeleur/",
-        "https://www.cookingclassesinfrance.com/la-chandeleur-crepes-day-in-france/",
-        "https://www.programmesemanasanta.com/semana-santa-en-a-coruna-2025/",
-        "https://www.richeskarayib.com/es/blog/jamaican-beef-patty-historia-preparacion-y-herencia-cultural-jamaicana-n23",
-        "https://www.ecoleng.com/blog/chandeleur-tradicion-familiar-y-crepes-en-la-cultura-francesa",
-        "https://www.innovasciencejournal.omeditorial.com/index.php/isj/article/view/106",
-        "https://www.campuseducacion.com/blog/revista-digital-docente/importancia-de-la-familia-en-la-transmision-de-la-cultura-y-las-tradiciones/",
-        "https://www.clublibritos.com/blogs/noticias/tradiciones-familiares",
-        "https://www.dialnet.unirioja.es/servlet/articulo?codigo=8322049",
-        "https://www.minedu.gob.bo/files/publicaciones/2021/libro_sistematizacion_experiencias_educativas_2021.pdf",
-        "https://www.revistafacultaddederecho.unlz.edu.ar/index.php/RFD/article/view/100",
-        "https://www.jennieo.com/news/thanksgiving-family-recipes-unite-people",
-        "https://www.lacuisinedegeraldine.com/en/la-chandeleur-why-does-france-bake-crepes-on-february-2/",
-        "https://www.copycatcafe.com/la-chandeleur-superstition-crepes/",
-        "https://www.lescerclesdefermieres.qc.ca/blogue/la-tradition-de-la-chandeleur-le-2-fevrier",
-        "https://www.chandeleur.org/en/history-of-chandeleur"
+        "https://www.tastefrance.com/us/france/articles/la-chandeleur-frances-festive-day-crepes-and-fortune"
       ],
       "scraped_at": "2026-03-13T07:17:46.002509Z",
       "location": {
         "country": "France",
-        "provinces": []
+        "provinces": [],
+        "lat": 46.2276,
+        "lng": 2.2137
       },
       "resume_analisa": {
         "description": "La Chandeleur, also known as Candlemas, is a traditional French holiday celebrated annually on February 2nd. It is widely recognized as 'Crêpe Day,' where families and friends gather to make and enjoy crêpes. This celebration is a blend of ancient pagan rituals, Christian traditions, and culinary customs. The round, golden shape of the crêpes symbolizes the sun and the return of light after the long winter months, embodying hope for spring and a bountiful harvest.",
-        "cultural_significance": "The origins of La Chandeleur are deeply rooted in both pagan and Christian beliefs. Ancient Roman festivals like Lupercalia, honoring fertility and purification, and Celtic Imbolc, dedicated to the goddess Brigid and light, involved lighting candles and torches to signify the return of warmth and light. In 472 AD, Pope Gelasius I Christianized the holiday, associating it with the Feast of the Presentation of Jesus at the Temple, 40 days after Christmas. The name 'Chandeleur' itself derives from the Latin 'candelorum' or French 'chandelle,' both meaning candle, reflecting the tradition of blessing and carrying candles in churches. Beyond its historical and religious context, La Chandeleur is rich in folklore and superstitions. A prominent tradition involves flipping a crêpe with one hand (typically the right) while holding a coin (traditionally a Louis d'or, now any coin) in the other (left hand), believed to bring financial prosperity and good luck for the coming year. Another custom suggests placing the first crêpe, folded over a coin, atop a cupboard or in a drawer to ensure good fortune and abundant harvests. Farmers historically believed that failing to make crêpes on this day would result in poor harvests. Additionally, weather-related superstitions exist, such as rain on Chandeleur predicting 40 more days of rain, while a sunny day signals the imminent end of winter. The practice of making crêpes also held practical significance, serving as an economical meal made from simple ingredients during late winter when food stores were low, and as a way to use up rich dairy products before the Lenten fast.",
+        "cultural_significance": "The origins of La Chandeleur are deeply rooted in both pagan and Christian beliefs. Ancient Roman festivals like Lupercalia, honoring fertility and purification, and Celtic Imbolc, dedicated to the goddess Brigid and light, involved lighting candles and torches to signify the return of warmth and light. In 472 AD, Pope Gelasius I Christianized the holiday, associating it with the Feast of the Presentation of Jesus at the Temple, 40 days after Christmas. The name 'Chandeleur' itself derives from the Latin 'candelorum' or French 'chandelle,' both meaning candle, reflecting the tradition of blessing and carrying candles in churches. Beyond its historical and religious context, La Chandeleur is rich in folklore and superstitions.",
         "gemini_tags": [
           "Culinary Tradition",
           "French Culture",
@@ -1038,8 +1004,7 @@
         "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori",
         "https://english.cha.go.kr/cha/idx/SubIndex.do?mn=EN_03_02",
         "https://www.korea.net/NewsFocus/Culture/view?articleId=66861",
-        "https://www.maskdance.com/",
-        "https://www.weltmuseumwien.at/en/program/hahoe-byeolsingut-talnori-korean-mask-theatre/"
+        "https://www.maskdance.com/"
       ],
       "scraped_at": "2026-03-13T07:18:24.254518Z",
       "location": {
@@ -1047,11 +1012,13 @@
         "provinces": [
           "North Gyeongsang Province",
           "Andong"
-        ]
+        ],
+        "lat": 36.5684,
+        "lng": 128.7294
       },
       "resume_analisa": {
         "description": "Hahoe Byeolsingut Talnori is a traditional Korean masked dance-drama performed as a special ritual to appease the village deity, Seonangsin, in Hahoe Village, Andong, North Gyeongsang Province. It boasts a history spanning over 500 years, with origins tracing back to the Goryeo or Joseon Dynasties. The performance is held irregularly, typically every three, five, or ten years, or on special occasions, usually at the end of December and early January. It is distinguished by its intricately crafted wooden masks and satirical plots, often incorporating elements of social criticism, humor, and spiritual rituals. The drama is structured into eight main episodes or 'madang'.",
-        "cultural_significance": "This practice holds significant cultural importance, being designated as Important Intangible Cultural Property of Korea (No. 69, designated 1980) and recognized by UNESCO as an Intangible Cultural Heritage of Humanity in 2009. It functions as a shamanistic rite to honor communal spirits and appease the village deity, Seonangsin, with prayers for peace and a bountiful harvest. The dance-drama satirizes corrupt Buddhist priests and the nobility, vividly portraying the inherent conflicts between the ruling class (Yangban) and commoners (Sangmin). This allowed common people a rare avenue to express their grievances, while also enabling the Yangban to gain insight into the commoners' way of life, thereby subtly reinforcing community structures. The unique Hahoe masks (Hahoetal) themselves are considered spiritual artifacts and are designated as National Treasure No. 121. The tradition plays a crucial role in the preservation and transmission of traditional knowledge and skills, embodying a vital part of Korean history and cultural identity.",
+        "cultural_significance": "This practice holds significant cultural importance, being designated as Important Intangible Cultural Property of Korea (No. 69, designated 1980) and recognized by UNESCO as an Intangible Cultural Heritage of Humanity in 2009. It functions as a shamanistic rite to honor communal spirits and appease the village deity, Seonangsin, with prayers for peace and a bountiful harvest. The dance-drama satirizes corrupt Buddhist priests and the nobility, vividly portraying the inherent conflicts between the ruling class (Yangban) and commoners (Sangmin).",
         "gemini_tags": [
           "Korean masked dance-drama",
           "Hahoe Village",
@@ -1104,31 +1071,20 @@
         "https://en.wikipedia.org/wiki/Egg_decorating_in_Slavic_culture",
         "https://crees.ku.edu/pysanky",
         "https://horniman.ac.uk/stories/pysanka-named-cultural-heritage-of-ukraine",
-        "https://heritagecrafts.org.uk/pysanka-ukrainian-tradition-and-art-of-decorating-eggs",
-        "https://time.com/6166140/pysanka-ukraine-easter-egg-history",
-        "https://roundhousesociety.org/blog/celebrating-tradition-the-art-and-significance-of-ukrainian-pysanky",
-        "https://en.wikipedia.org/wiki/Pysanka_Museum",
-        "https://kathymayandsilas.com/2016/08/28/pysanky-part-2-materials-list-for-ukrainian-easter-eggs/",
-        "https://www.homofaber.com/en/discover/pysanka-museum-kolomyia-ukraine",
-        "https://www.instructables.com/Pysanky-Ukrainian-Egg-Dying/",
-        "https://babasbeeswax.com/pages/online-catalogue-catalog-of-pysanky-supplies",
-        "https://www.learnpysanky.com/basic_steps.html",
-        "https://bellalunatoys.com/blogs/news/how-to-create-your-own-ukrainian-pysanky-eggs",
-        "https://ukrainian-tradition.com/pysanka-ukrainian-easter-traditions",
-        "https://dishfunctionaldesigns.blogspot.com/2011/04/how-to-make-pysanky-ukrainian-easter.html",
-        "https://www.atlasobscura.com/places/pysanka-museum",
-        "https://www.instructables.com/Ukrainian-Easter-Egg-Pysanka/"
+        "https://heritagecrafts.org.uk/pysanka-ukrainian-tradition-and-art-of-decorating-eggs"
       ],
       "scraped_at": "2026-03-13T07:19:10.392202Z",
       "location": {
         "country": "Ukraine",
         "provinces": [
           "Ivano-Frankivsk Oblast"
-        ]
+        ],
+        "lat": 48.9215,
+        "lng": 24.7103
       },
       "resume_analisa": {
         "description": "Pysanka (plural: pysanky) is a traditional Ukrainian Easter egg, intricately decorated using a wax-resist (batik) method. The name 'pysanka' comes from the Ukrainian verb 'pysaty' (писати), meaning 'to write,' reflecting the designs 'written' onto the egg with beeswax. This ancient art dates back millennia, with origins in the prehistoric Trypillian culture in the region now known as Ukraine. Early ceramic pysanky have been discovered dating back to the 5th millennium BCE. The practice involves applying hot wax to an egg's surface with a special tool called a kistka, then dyeing the egg in a series of colors, with the wax protecting areas from subsequent dyes.",
-        "cultural_significance": "Pysanky held profound cultural and spiritual significance, initially rooted in pagan beliefs. They were created as talismanic objects to worship the sun, ensure the return of spring, protect households from evil spirits, catastrophe, lightning, and fires, and bring fertility to livestock and crops. With the adoption of Christianity in 988 AD, the symbolism of the egg evolved to represent the rebirth of man and Christ's Resurrection, with many ancient symbols being reinterpreted through a Christian lens. Traditionally, pysanky were made during Holy Week by women of the family, often in secret, with patterns and color combinations passed down from mother to daughter. Giving a pysanka is considered a symbolic gift of life, protection, fecundity, or love. During Soviet rule, the practice was suppressed, but it experienced a revival after Ukraine regained independence in 1991, becoming a powerful symbol of Ukrainian identity and resilience. An ancient Ukrainian legend suggests that as long as pysanky are decorated, evil cannot prevail over the world.",
+        "cultural_significance": "Pysanky held profound cultural and spiritual significance, initially rooted in pagan beliefs. They were created as talismanic objects to worship the sun, ensure the return of spring, protect households from evil spirits, catastrophe, lightning, and fires, and bring fertility to livestock and crops. With the adoption of Christianity in 988 AD, the symbolism of the egg evolved to represent the rebirth of man and Christ's Resurrection. Traditionally, pysanky were made during Holy Week by women of the family, often in secret, with patterns and color combinations passed down from mother to daughter.",
         "gemini_tags": [
           "Ukrainian culture",
           "Egg decoration",
@@ -1222,9 +1178,7 @@
       "source_urls": [
         "https://danceus.org/folk-dance/sardana-dance-traditional-circle-dance-of-catalonia/",
         "https://en.wikipedia.org/wiki/Sardana",
-        "https://www.barcelonayellow.com/bcn-info/sardana-dance",
-        "https://www.britannica.com/art/sardana",
-        "https://spanishtrails.com/blog/folk-and-sardana-the-music-and-dance-that-define-catalonias-identity/"
+        "https://www.barcelonayellow.com/bcn-info/sardana-dance"
       ],
       "scraped_at": "2026-03-13T07:54:59.639596Z",
       "location": {
@@ -1233,7 +1187,9 @@
           "Catalonia",
           "Empordà",
           "Girona"
-        ]
+        ],
+        "lat": 41.9794,
+        "lng": 2.8214
       },
       "resume_analisa": {
         "description": "The Sardana is a graceful and symbolic circle dance that embodies Catalan unity, pride, and community spirit. It is a Catalan musical genre and dance performed in a circle following a set of steps. Dancers hold hands in a closed circle and perform precise steps to the rhythm of a live cobla band. It is more than a dance; it's a cultural statement, with the circle formation symbolizing equality and solidarity.",
@@ -1293,25 +1249,20 @@
       "source_urls": [
         "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/",
         "https://en.wikipedia.org/wiki/Barro_negro_pottery",
-        "https://lolomercadito.com/blogs/artisanal-crafts-and-techniques/barro-negro-ancestral-tradition-and-masterful-craftsmanship",
-        "https://www.atacamahome.com/blogs/news/barro-negro-pottery-oaxaca",
-        "https://www.nationalgeographic.com/travel/article/mexico-oaxaca-day-of-the-dead-pottery",
-        "https://www.viaventure.com/blog/oaxaca-barro-negro",
-        "https://www.velasmagazine.com/the-alchemy-of-earth-exploring-the-enduring-elegance-of-mexican-barro/",
-        "https://vivamexico.com/blogs/mexican-art/mexican-black-clay-ceramic-art-barro-negro",
-        "https://elranchosupply.com/blogs/news/how-oaxacan-black-pottery-barro-negro-is-made",
-        "https://allensapproach.wordpress.com/2012/06/02/history-and-culture-oaxaca-black-clay-pottery/"
+        "https://lolomercadito.com/blogs/artisanal-crafts-and-techniques/barro-negro-ancestral-tradition-and-masterful-craftsmanship"
       ],
       "scraped_at": "2026-03-13T07:55:22.248401Z",
       "location": {
         "country": "Mexico",
         "provinces": [
           "Oaxaca"
-        ]
+        ],
+        "lat": 16.9977,
+        "lng": -96.7175
       },
       "resume_analisa": {
-        "description": "Barro Negro pottery, meaning \"black clay,\" is a distinctive style of ceramics originating from Oaxaca, Mexico, particularly from the town of San Bartolo Coyotepec. It is renowned for its unique black color, metallic-like sheen, and intricate designs. The craft boasts an ancient history, tracing its origins back approximately 2,500 years to the Zapotec and Mixtec civilizations of the region, where early examples were primarily utilitarian items with a matte gray finish. A significant transformation occurred in the 1950s when Doña Rosa Real Mateo de Nieto, a master potter, innovated a technique involving polishing the clay before firing, which resulted in the now-iconic glossy black surface. While the shiny version gained international acclaim and is largely decorative, the traditional matte gray pottery is still produced for practical uses, such as storing mezcal.",
-        "cultural_significance": "Barro Negro pottery is deeply embedded in the cultural identity and heritage of the Indigenous Zapotec and Mixtec peoples of Oaxaca. It represents centuries of ancestral knowledge, artistic skill, and a profound connection to the natural environment, particularly the unique local clay. Artisans often infuse their creations with narratives reflecting their history, customs, religious beliefs, and indigenous legends. The tradition is meticulously passed down through generations within families, ensuring its continuity and vitality. Beyond its artistic value, Barro Negro is also recognized for its sustainable practices, offering an eco-friendly alternative to modern materials.",
+        "description": "Barro Negro pottery, meaning \"black clay,\" is a distinctive style of ceramics originating from Oaxaca, Mexico, particularly from the town of San Bartolo Coyotepec. It is renowned for its unique black color, metallic-like sheen, and intricate designs. The craft boasts an ancient history, tracing its origins back approximately 2,500 years to the Zapotec and Mixtec civilizations of the region, where early examples were primarily utilitarian items with a matte gray finish. A significant transformation occurred in the 1950s when Doña Rosa Real Mateo de Nieto, a master potter, innovated a technique involving polishing the clay before firing, which resulted in the now-iconic glossy black surface.",
+        "cultural_significance": "Barro Negro pottery is deeply embedded in the cultural identity and heritage of the Indigenous Zapotec and Mixtec peoples of Oaxaca. It represents centuries of ancestral knowledge, artistic skill, and a profound connection to the natural environment, particularly the unique local clay. Artisans often infuse their creations with narratives reflecting their history, customs, religious beliefs, and indigenous legends. The tradition is meticulously passed down through generations within families, ensuring its continuity and vitality.",
         "gemini_tags": [
           "Indigenous Craft",
           "Mexican Pottery",
@@ -1345,9 +1296,9 @@
           "**2. Clay Preparation:** The extracted clay is spread under the sun to dry for at least two days. It is then moistened and meticulously filtered to remove impurities like gravel and sand, sometimes by walking on it over petates. Finally, the purified clay is shaped into manageable blocks.",
           "**3. Shaping:** Artisans shape the clay entirely by hand, without the use of molds or modern machinery. Large pieces, such as *cantaros*, are often built from the base upwards by incrementally adding clay. Traditional methods include molding on plates balanced on rocks that are spun by hand, or using handmade potter's wheels.",
           "**4. Initial Drying:** The freshly shaped pottery pieces are placed in a well-insulated room or a shaded area to dry slowly, protecting them from sudden temperature fluctuations. This drying phase can last up to three weeks, or approximately fifteen days.",
-          "**5. Burnishing (for shiny finish):** If a glossy black finish is desired, the piece is burnished when it is almost dry. The surface is lightly moistened (sometimes with water, followed by an optional application of vegetable oil) and then vigorously rubbed with a curved quartz stone. This burnishing compacts the clay's surface, aligning its non-plastic particles, which is crucial for achieving the metallic sheen and dark color during firing. This step can take up to an hour and a half.",
+          "**5. Burnishing (for shiny finish):** If a glossy black finish is desired, the piece is burnished when it is almost dry. The surface is lightly moistened and then vigorously rubbed with a curved quartz stone. This burnishing compacts the clay's surface, aligning its non-plastic particles, which is crucial for achieving the metallic sheen and dark color during firing.",
           "**6. Decorative Accents:** During the drying or burnishing stage, artisans may add decorative elements such as clay flowers, small handles, or intricate carved designs.",
-          "**7. Firing:** The pottery is fired in underground pits or above-ground wood-fired kilns, reaching temperatures typically between 700 and 900 °C (1300-1650°F). To achieve the characteristic glossy black, the firing process is often conducted at slightly lower temperatures and in a low-oxygen environment. This low-oxygen atmosphere is sometimes created by adding organic materials like pine needles or sawdust, which induces carbonization and results in the deep black color. The firing process can extend for an entire day.",
+          "**7. Firing:** The pottery is fired in underground pits or above-ground wood-fired kilns, reaching temperatures typically between 700 and 900°C. To achieve the characteristic glossy black, the firing process is often conducted in a low-oxygen environment, sometimes created by adding organic materials like pine needles or sawdust, which induces carbonization and results in the deep black color.",
           "**8. Cooling & Completion:** After firing, the burnished pieces emerge with their distinctive shiny black appearance, while unpolished pieces retain their traditional gray matte finish. The entire creation process, from shaping to firing, can take approximately 28 days."
         ]
       },
@@ -1363,12 +1314,7 @@
           {
             "country": "Mexico",
             "element_name": "General Mesoamerican Indigenous Pottery",
-            "relationship_reason": "Barro Negro pottery's origins date back 2,500 years, with archaeological evidence found at sites like Monte Albán, a significant Mesoamerican center. This demonstrates a shared ancient heritage of clay work and its cultural importance across various indigenous civilizations in Mesoamerica."
-          },
-          {
-            "country": "Various Indigenous cultures globally",
-            "element_name": "Traditional hand-built pottery",
-            "relationship_reason": "The fundamental techniques of hand-building pottery (without modern machinery) and utilizing natural firing methods are common practices across numerous indigenous pottery traditions worldwide, reflecting universal human ingenuity in working with natural materials."
+            "relationship_reason": "Barro Negro pottery's origins date back 2,500 years, with archaeological evidence found at sites like Monte Albán, a significant Mesoamerican center."
           }
         ]
       },
@@ -1382,32 +1328,20 @@
       "source_urls": [
         "https://www.independenturdu.com/node/78766",
         "https://ruralhandmade.com/blogs/news/a-complete-guide-to-ajrakh-and-the-process-of-ajrakh-making",
-        "https://www.express.pk/story/1471349",
-        "https://www.24newshd.tv/04-Dec-2022/165509",
-        "https://www.humsub.com.pk/444270/sindhi-topi-ajrak-day/",
-        "https://www.ajrakh.com/blogs/news/ajrakh-printing-techniques-a-step-by-step-guide",
-        "https://www.youtube.com/watch?v=kYv_z-X68nE",
-        "https://www.houseofwanderingsilk.com/blogs/news/textile-guide-ajrakh",
-        "https://www.rva.org.pk/urdu/ajrak-a-qadeem-tehzeeb/",
-        "https://medium.com/@directcreate/ajrakh-cloth-printing-d56b0058e3fc",
-        "https://kalantir.com/blogs/news/ajrakh-block-print",
-        "https://ur.wikipedia.org/wiki/%D8%B3%D8%B1%D8%A7%D8%A6%DB%8C%DA%A9%DB%8C_%D8%A7%D8%AC%D8%B1%DA%A9_(%D8%B3%D8%AC%D8%B1%DA%A9)",
-        "https://matatraders.com/blogs/news/the-art-of-ajrakh-traditional-block-printing-process-explained",
-        "https://ur.wikipedia.org/wiki/%D8%A7%D8%AC%D8%B1%DA%A9",
-        "https://www.dawn.com/news/567296/craftsmanship-the-making-of-ajrak",
-        "https://www.scribd.com/document/683116812/Ajrak-History-and-Craft-Techniques",
-        "https://wenews.pk/urdu/19-Jan-2024/10444"
+        "https://www.express.pk/story/1471349"
       ],
       "scraped_at": "2026-03-13T07:55:57.947248Z",
       "location": {
         "country": "Pakistan",
         "provinces": [
           "Sindh"
-        ]
+        ],
+        "lat": 25.8943,
+        "lng": 68.5247
       },
       "resume_analisa": {
         "description": "Sindhi Ajrak is a traditional block-printed shawl or cloth, a profound symbol of Sindhi culture. It is characterized by its deep crimson red and indigo blue background, adorned with symmetrical patterns and intricate geometric designs, often featuring unprinted sparkling white motifs. Traditionally crafted from pure cotton fabric, Ajrak is known for its unique properties, believed to be cooling in hot weather and warming in cold. The authenticity of a traditional Ajrak is often recognized by its double-sided printing, where the design appears identical on both sides.",
-        "cultural_significance": "Ajrak holds immense cultural significance, serving as a powerful symbol of Sindhi identity, pride, and respect. Its origins are deeply rooted in the Indus Valley Civilization, with archaeological evidence, such as the 'King Priest' statue from Mohenjo-Daro, suggesting its presence over five millennia ago. Beyond its aesthetic appeal, Ajrak is an integral part of daily life and special occasions in Sindh. It is worn by men as turbans and shawls, and by women as part of their attire, and is also used as bedsheets. Gifting an Ajrak is a cherished gesture of goodwill and honor, frequently extended to guests and dignitaries, signifying deep respect and hospitality. The craft embodies centuries of artisanal skill and sustainable practices, connecting the people of Sindh to their rich historical roots.",
+        "cultural_significance": "Ajrak holds immense cultural significance, serving as a powerful symbol of Sindhi identity, pride, and respect. Its origins are deeply rooted in the Indus Valley Civilization, with archaeological evidence, such as the 'King Priest' statue from Mohenjo-Daro, suggesting its presence over five millennia ago. Beyond its aesthetic appeal, Ajrak is an integral part of daily life and special occasions in Sindh. Gifting an Ajrak is a cherished gesture of goodwill and honor, frequently extended to guests and dignitaries, signifying deep respect and hospitality.",
         "gemini_tags": [
           "Traditional Craftsmanship",
           "Textile Art",
@@ -1441,17 +1375,17 @@
         ],
         "step_by_step": [
           "**Fabric Preparation (Saaj/Scouring):** The pure cotton fabric is thoroughly washed multiple times to remove any impurities and make it more absorbent.",
-          "**Oil Treatment (Teeli Ajrak):** The cleaned fabric is soaked in mustard oil (or Eruca Sativa oil) for 7-8 days or up to two weeks. This process strengthens the fabric, making it heavier and more durable, and is known as 'Teeli Ajrak'.",
-          "**Boiling and Softening:** The oiled fabric is then boiled overnight in a furnace with a mixture of soap, soda, and khara oil (alkaline oil) to further clean and soften it.",
-          "**Dung Treatment:** The fabric is wrapped in camel dung (ghassi) to enhance its softness and remove any remaining starch or sizing. (Some sources also mention camel dung being used later as a bleaching agent).",
-          "**Washing and Drying:** After the dung treatment, the fabric is thoroughly washed with water and then dried under strong sunlight. This step is crucial and dependent on weather conditions.",
-          "**First Printing (Chhar/Kiryana/Rekh):** The initial layer of printing is applied using hand-carved wooden blocks. This step, sometimes called 'Chhar', 'Kiryana', or 'Rekh', outlines the design, often using a black dye or a resist paste. For the black color, old iron is soaked in water for 8-10 days to extract rust.",
-          "**Resist Application (Kharrh/Kut):** A resist paste, known as 'Kharrh', is prepared from ingredients like rice paste, alum, molasses, Fuller's earth (Multani Mitti), fennel, and gum. This paste is meticulously applied to areas of the fabric intended to remain white or to be dyed red, thereby protecting them from the subsequent indigo dye. Powdered camel dung and ground rice husks can also be sprinkled over the resist.",
-          "**Indigo Dyeing (Rangai/Indigo Dip):** The fabric is immersed in a vat of indigo dye. This dyeing process involves repeated dipping and exposure to air, allowing the indigo to oxidize and develop its characteristic deep blue hue.",
-          "**Washing off Resist (Vicharnu):** Following indigo dyeing, the fabric undergoes thorough washing to remove the resist paste and any excess dye. This step reveals the intricate white patterns that contrast beautifully with the blue background.",
-          "**Red Dyeing (Rang/Alizarin Dyeing):** The fabric is then boiled in a solution, typically containing alizarin (derived from madder root or Manjeed plant branches), to develop the rich red color in the un-resisted areas. Other natural ingredients like gum, sagwan, pomegranate peels, and henna may also be used to achieve the red shades.",
-          "**Final Drying and Bleaching (Tapano/Tapaai):** The dyed cloth is spread out in the sun and regularly sprinkled with water. This process, sometimes extended over three days, helps to naturally bleach the white areas and intensify the other colors. A solution of camel dung can also be applied during this stage to aid in bleaching.",
-          "**Finishing:** Once the artisans are satisfied with the colors and patterns, the Ajraks are folded while slightly damp and stacked. This pressing technique helps to smooth the fabric, eliminating the need for ironing."
+          "**Oil Treatment (Teeli Ajrak):** The cleaned fabric is soaked in mustard oil for 7-8 days or up to two weeks to strengthen the fabric.",
+          "**Boiling and Softening:** The oiled fabric is then boiled overnight with a mixture of soap, soda, and khara oil to further clean and soften it.",
+          "**Dung Treatment:** The fabric is wrapped in camel dung to enhance its softness and remove any remaining starch or sizing.",
+          "**Washing and Drying:** The fabric is thoroughly washed with water and dried under strong sunlight.",
+          "**First Printing (Chhar/Kiryana/Rekh):** The initial layer of printing is applied using hand-carved wooden blocks, outlining the design using a black dye or resist paste.",
+          "**Resist Application (Kharrh/Kut):** A resist paste is prepared from ingredients like rice paste, alum, molasses, Fuller's earth, fennel, and gum. It is meticulously applied to areas intended to remain white or dyed red, protecting them from the indigo dye.",
+          "**Indigo Dyeing (Rangai/Indigo Dip):** The fabric is immersed in a vat of indigo dye, with repeated dipping and air exposure to allow the indigo to oxidize and develop its characteristic deep blue hue.",
+          "**Washing off Resist (Vicharnu):** The fabric undergoes thorough washing to remove the resist paste and excess dye, revealing the intricate white patterns.",
+          "**Red Dyeing (Rang/Alizarin Dyeing):** The fabric is boiled in a solution containing alizarin (from madder root) to develop the rich red color in the un-resisted areas.",
+          "**Final Drying and Bleaching (Tapano/Tapaai):** The dyed cloth is spread in the sun and regularly sprinkled with water for up to three days, helping to naturally bleach the white areas and intensify the other colors.",
+          "**Finishing:** The Ajraks are folded while slightly damp and stacked; the pressing technique smooths the fabric without ironing."
         ]
       },
       "shared_heritage_detection": {
@@ -1461,12 +1395,12 @@
           {
             "country": "India",
             "element_name": "Kachchhi Ajrakh",
-            "relationship_reason": "Ajrakh is an ancient hand block printing craft with roots in the Indus Valley Civilization, practiced by the Khatri community in both the Sindh region of Pakistan and the Kutch (Kachchh) region of Gujarat, India. The techniques, motifs, and cultural significance are shared, with regional variations."
+            "relationship_reason": "Ajrakh is an ancient hand block printing craft with roots in the Indus Valley Civilization, practiced by the Khatri community in both the Sindh region of Pakistan and the Kutch (Kachchh) region of Gujarat, India."
           },
           {
             "country": "India",
             "element_name": "Barmeri Ajrakh",
-            "relationship_reason": "Ajrakh is an ancient hand block printing craft with roots in the Indus Valley Civilization, practiced by the Khatri community in both the Sindh region of Pakistan and the Barmer region of Rajasthan, India. The techniques, motifs, and cultural significance are shared, with regional variations."
+            "relationship_reason": "Ajrakh is an ancient hand block printing craft practiced by the Khatri community in both the Sindh region of Pakistan and the Barmer region of Rajasthan, India."
           }
         ]
       },
@@ -1480,14 +1414,7 @@
       "source_urls": [
         "https://www.indrastra.com/2022/09/the-art-of-khatam-kari-story-of.html",
         "https://tehranoffers.com/persian-khatamkari/",
-        "https://iraniansouvenirs.com/khatam/",
-        "https://narcishostel.com/khatam-kari/",
-        "https://irandoostan.com/khatam-kari-marquetry/",
-        "https://www.iran-daily.com/news/312061/Khatam-kari-timeless-artistry-of-Persian-marquetry",
-        "https://packtoiran.com/khatam-kari/",
-        "https://persiada.com/blog/khatamkari-wood-inlaying-artistic-heritage/",
-        "https://www.toirantour.com/iranian-handicrafts/khatamkari/",
-        "https://persiada.com/what-is-persian-khatamkari/"
+        "https://iraniansouvenirs.com/khatam/"
       ],
       "scraped_at": "2026-03-13T08:26:34.347385Z",
       "location": {
@@ -1500,7 +1427,9 @@
           "Mashhad",
           "Qom",
           "Rey"
-        ]
+        ],
+        "lat": 32.6546,
+        "lng": 51.6680
       },
       "resume_analisa": {
         "description": "Khatamkari, also known as Persian marquetry, is a revered Iranian art form that involves adorning the surface of wooden or metallic objects with meticulously crafted geometric patterns. This intricate inlay technique uses delicate pieces of wood, bone, metal, and sometimes shell or ivory, arranged to create mesmerizing mosaics of shapes, often forming star patterns, polygons, and tessellations.",
@@ -1533,9 +1462,9 @@
         "step_by_step": [
           "**Design Preparation**: Meticulously plan intricate geometric patterns, often consisting of hundreds of tiny triangles, stars, and polygons, on paper.",
           "**Material Selection and Preparation**: Select high-quality woods, bone, and metals. These materials are cut into thin, elongated rods or strips, typically triangular or polygonal in cross-section. Bone is carefully cleaned, processed, and often dyed in vibrant colors.",
-          "**Bundle Formation (Shamseh/Sticks)**: The prepared rods and strips are meticulously arranged and glued together in a precise order to form a larger geometric pattern. This creates cylindrical or prismatic bundles, sometimes referred to as 'shamseh' (sunburst) or 'sticks'.",
+          "**Bundle Formation (Shamseh/Sticks)**: The prepared rods and strips are meticulously arranged and glued together in a precise order to form a larger geometric pattern, creating cylindrical or prismatic bundles.",
           "**Slicing**: Once the bundles are dried, they are sliced crosswise into paper-thin veneers, often measuring around 1 mm in width. Each slice contains a miniature version of the intricate design.",
-          "**Inlaying**: These thin veneers are then carefully affixed to a chosen base surface, such as wooden boxes, frames, doors, or furniture, using natural adhesives. This stage requires intense focus and dexterity to ensure each fragment fits perfectly within the overall composition.",
+          "**Inlaying**: These thin veneers are carefully affixed to a chosen base surface using natural adhesives. This stage requires intense focus and dexterity to ensure each fragment fits perfectly within the overall composition.",
           "**Sanding and Polishing**: After all the inlays are securely in place, the entire surface is meticulously sanded and polished to create a seamless, smooth, and lustrous finish.",
           "**Lacquering (Optional)**: In some cases, a lacquer coating is applied to the finished piece to enhance its durability, protect the intricate design, and further increase its shine."
         ]
@@ -1571,30 +1500,20 @@
       "source_urls": [
         "https://elbrujo.pe/6-bebidas-tradicionales-y-deliciosas-de-peru-que-debes-probar/",
         "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/",
-        "https://www.youtube.com/watch?v=R91K-87g68g",
-        "https://chichacasanova.com/",
-        "https://www.notyouraverageamerican.com/chicha-in-ecuador/",
-        "https://www.peruvianrecipes.wiki/recipes/chicha-de-jora/",
-        "https://elbrujo.pe/noticias/la-chicha-del-ano-tradicion-e-historia-en-una-bebida/",
-        "https://www.mycolombianrecipes.com/chicha-de-maiz-corn-drink/",
-        "https://www.academia.edu/35478051/La_producci%C3%B3n_de_la_Chicha_de_A%C3%B1o_como_recurso_de_desarrollo_en_el_distrito_de_Magdalena_de_Cao_",
-        "https://www.anchoamagazine.com/the-lost-drink-an-introduction-to-chicha",
-        "https://www.kuodatravel.com/chicha-peru/",
-        "https://www.ancient-origins.net/ancient-places-americas/chicha-de-jora-0019623",
-        "https://es.wikipedia.org/wiki/Chicha",
-        "https://www.nmai.si.edu/magazine/all-issues/2019/persistence-chicha",
-        "https://eatperu.com/chicha-morada-recipe/"
+        "https://chichacasanova.com/"
       ],
       "scraped_at": "2026-03-13T08:26:59.089771Z",
       "location": {
         "country": "Peru",
         "provinces": [
           "La Libertad"
-        ]
+        ],
+        "lat": -7.9024,
+        "lng": -79.4673
       },
       "resume_analisa": {
         "description": "Chicha de Año is a traditional fermented alcoholic beverage originating from Magdalena de Cao, a district in the Ascope province of the La Libertad region in Peru. It is primarily made from jora corn (germinated corn), chancaca (raw sugarcane), and raw sugar. The drink is characterized by its sweet flavor, often compared to cherry liqueur, and a precise alcohol content. Its name, 'Chicha de Año' (Chicha of the Year), refers to the extensive twelve-month maceration period required for its preparation.",
-        "cultural_significance": "Chicha de Año holds significant cultural and economic importance for the community of Magdalena de Cao, representing a living ancestral legacy passed down through generations. In 2015, the Regional Government of La Libertad officially declared Chicha de Año a flagship product and regional heritage, recognizing its value. This beverage is a testament to the cultural syncretism between Andean traditions and European influences, combining indigenous germinated corn with sugarcane-derived chancaca introduced by Europeans. It symbolizes the continuity of corn-based beverage consumption and strengthens the local identity of the people of Magdalena de Cao. Beyond its cultural role, Chicha de Año also serves as an important economic and tourist attraction for the district.",
+        "cultural_significance": "Chicha de Año holds significant cultural and economic importance for the community of Magdalena de Cao, representing a living ancestral legacy passed down through generations. In 2015, the Regional Government of La Libertad officially declared Chicha de Año a flagship product and regional heritage, recognizing its value. This beverage is a testament to the cultural syncretism between Andean traditions and European influences, combining indigenous germinated corn with sugarcane-derived chancaca introduced by Europeans. It symbolizes the continuity of corn-based beverage consumption and strengthens the local identity of the people of Magdalena de Cao.",
         "gemini_tags": [
           "Fermented Beverage",
           "Traditional Peruvian Drink",
@@ -1609,19 +1528,24 @@
       "resume_tata_cara": {
         "type": "Fermentation",
         "materials_and_tools": [
-          "Jora corn (germinated corn)",
-          "Chancaca (raw sugarcane)",
-          "Raw sugar",
+          "Jora corn (germinated/malted corn)",
+          "Chancaca (raw unrefined sugarcane block)",
+          "Raw cane sugar (azúcar rubia)",
           "Water",
-          "Large cooking pots",
-          "Storage containers for maceration"
+          "Large clay cooking pots (ollas de barro)",
+          "Wooden stirring paddles",
+          "Large clay or ceramic storage vessels (tinajas) for maceration",
+          "Straining cloth or sieve",
+          "Glass bottles for final packaging"
         ],
         "step_by_step": [
-          "Gather the main ingredients: jora corn, chancaca, and raw sugar.",
-          "Cook the jora corn and chancaca with water in large pots. (Specific details on toasting, boiling duration, and water absorption are often family secrets, though general chicha de jora recipes suggest toasting grains, boiling for several hours, and sweetening).",
-          "Initiate a long maceration process, which traditionally lasts for approximately twelve months.",
-          "During the maceration period, the chicha is typically transferred between different containers, and any sediment (known as 'concho') is removed to facilitate proper fermentation and maturation.",
-          "After the year-long maceration, the Chicha de Año is ready to be bottled for consumption."
+          "**1. Jora Corn Preparation:** Begin by germinating dry corn kernels. The corn is soaked in water for several days until it sprouts, then dried and ground into coarse flour — this malted corn is called 'jora'. The germination process activates enzymes that convert starches into fermentable sugars.",
+          "**2. Initial Cooking:** Combine the ground jora corn with water and crushed chancaca in large clay cooking pots. Bring the mixture to a boil and simmer for several hours, stirring frequently with a wooden paddle. The extended cooking dissolves the chancaca and extracts fermentable sugars and flavors from the corn. Raw cane sugar may also be added at this stage to increase sugar content and final alcohol level.",
+          "**3. Cooling and Straining:** Remove the cooked mixture from the heat and allow it to cool to a lukewarm temperature. Strain through a cloth or sieve to remove solid husks and sediment, yielding a thick, sweet wort.",
+          "**4. Transfer to Fermentation Vessels:** Pour the cooled, strained liquid into large clay storage vessels (tinajas). Clay vessels are traditionally preferred, as their porous walls allow micro-organisms from the environment — including wild yeast and bacteria naturally present in the vessel walls — to initiate and sustain fermentation without any added commercial yeast.",
+          "**5. Year-Long Maceration and Fermentation:** The vessels are sealed or covered and stored in a cool, shaded area for the full twelve-month maceration period. During this time, natural fermentation progressively converts the sugars into alcohol. The chicha is periodically checked, and sediment (known as 'concho') is carefully removed to clarify the liquid and prevent off-flavors from developing. The extended fermentation period is what distinguishes Chicha de Año from shorter-fermented varieties and gives it its characteristically complex, rounded, and sweet flavor profile.",
+          "**6. Monitoring and Transfer:** Throughout the year, the chicha is occasionally decanted between vessels as part of the clarification process. Families guard this step closely, as the timing and method of each transfer are part of closely held family knowledge passed down through generations.",
+          "**7. Final Bottling:** After the twelve-month period, the fully matured Chicha de Año is strained a final time and bottled in glass bottles for consumption or sale. The finished beverage is golden-amber in color, pleasantly sweet, and moderately alcoholic — traditionally around 3–5% ABV, though this can vary by producer."
         ]
       },
       "shared_heritage_detection": {
@@ -1645,14 +1569,14 @@
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
     "generated_at": "2026-03-13T08:27:36.102726Z",
     "total_ich_elements": 19,
-    "complete_records": 16,
-    "incomplete_records": 3,
+    "complete_records": 19,
+    "incomplete_records": 0,
     "categories_breakdown": {
       "Traditional Craftsmanship": 10,
       "Social Practices & Rituals": 3,
