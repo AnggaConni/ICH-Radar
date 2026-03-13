@@ -700,6 +700,34 @@ def get_screenshot_url(url, element_name="Unknown Element"):
 def generate_id(name):
     return "ich-" + hashlib.md5(name.lower().encode()).hexdigest()[:8]
 
+def get_coordinates(location_name):
+    """
+    Mengambil latitude & longitude dari Nominatim API.
+    Sama seperti versi JS, kita membersihkan nama jika ada tanda kurung.
+    """
+    if not location_name or location_name == "N/A":
+        return None, None
+
+    try:
+        # Bersihkan nama (Contoh: "Canada (Quebec)" -> "Canada")
+        clean_name = location_name.split('(')[0].strip()
+        
+        # Nominatim butuh User-Agent agar tidak diblokir
+        headers = {'User-Agent': 'ICH-Shared-Heritage-Radar-Crawler'}
+        url = f"https://nominatim.openstreetmap.org/search?format=json&q={requests.utils.quote(clean_name)}&limit=1"
+        
+        response = requests.get(url, headers=headers, timeout=10)
+        data = response.json()
+        
+        if data and len(data) > 0:
+            log.info(f"Geocoding Success: {clean_name} -> [{data[0]['lat']}, {data[0]['lon']}]")
+            return float(data[0]['lat']), float(data[0]['lon'])
+            
+    except Exception as e:
+        log.warning(f"Geocoding Failed for {location_name}: {e}")
+    
+    return None, None
+
 # ======================================================================
 # DATA AUDIT (Check for missing thumbnails)
 # ======================================================================
@@ -800,7 +828,12 @@ def enrich_incomplete_items(api_key, inventory):
             "thumbnail_url": "{item.get('thumbnail_url')}",
             "source_urls": ["<old_url>", "<new_found_url>"],
             "scraped_at": "{datetime.now().isoformat()}Z",
-            "location": {{ "country": "...", "provinces": ["..."] }},
+            "location": { 
+                "country": "...", 
+                "provinces": ["..."],
+                "lat": null, 
+                "lng": null 
+            },
             "resume_analisa": {{ "description": "...", "cultural_significance": "...", "gemini_tags": ["..."] }},
             "resume_tata_cara": {{ "type": "crafting_process/culinary_recipe/ritual_sequence", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
             "shared_heritage_detection": {{ "is_shared": true, "confidence_score": 0.95, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
@@ -808,20 +841,19 @@ def enrich_incomplete_items(api_key, inventory):
         }}
         """
         
+# BARIS DI BAWAH INI SEKARANG SUDAH MASUK KE DALAM LOOP (Indentasi Benar)
         updated_item = call_gemini(api_key, prompt)
-        if updated_item and isinstance(updated_item, dict) and "resume_tata_cara" in updated_item:
-            # Merge logic
-            index = inventory.index(item)
+        if updated_item and isinstance(updated_item, dict):
+            # --- LOGIKA KOORDINAT ---
+            country = updated_item.get("location", {}).get("country", "")
+            lat, lng = get_coordinates(country)
+            updated_item["location"]["lat"] = lat
+            updated_item["location"]["lng"] = lng
             
-            # Re-verify thumbnail during enrichment just in case it was 'N/A'
-            if not updated_item.get("thumbnail_url") or updated_item.get("thumbnail_url") == "N/A":
-                 # Fallback to Wikimedia if still missing
-                 url_to_screenshot = updated_item.get("source_urls", [""])[0] if updated_item.get("source_urls") else ""
-                 updated_item["thumbnail_url"] = get_screenshot_url(url_to_screenshot, element_name)
-
+            index = inventory.index(item)
             inventory[index] = updated_item
             enriched_count += 1
-            log.info(f"Successfully enriched {element_name} from multiple sources.")
+            log.info(f"Successfully enriched {element_name} (Coords: {lat}, {lng})")
         
         time.sleep(5) 
         
@@ -839,7 +871,6 @@ def discover_new_items(api_key, inventory):
         existing_names = [item.get("element_name", "").lower() for item in inventory]
         target = random.choice(KEYWORDS)
         log.info(f"Discovery Phase [{i+1}/{max_discoveries_per_run}] Targeting: {target}")
-        
         prompt = f"""
         Use Google Search to find detailed information about ONE specific Cultural Heritage, local folklore, or traditional community practice using this keyword/concept: "{target}".
         Ignore these already known elements: {existing_names[:15]}...
@@ -861,7 +892,12 @@ def discover_new_items(api_key, inventory):
             "thumbnail_url": "",
             "source_urls": ["url1"],
             "scraped_at": "{datetime.now().isoformat()}Z",
-            "location": {{ "country": "...", "provinces": ["..."] }},
+            "location": { 
+                "country": "...", 
+                "provinces": ["..."],
+                "lat": null, 
+                "lng": null 
+            },
             "resume_analisa": {{ "description": "...", "cultural_significance": "...", "gemini_tags": ["..."] }},
             "resume_tata_cara": {{ "type": "...", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
             "shared_heritage_detection": {{ "is_shared": true/false, "confidence_score": 0.0-1.0, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
@@ -872,21 +908,34 @@ def discover_new_items(api_key, inventory):
         
         new_items = call_gemini(api_key, prompt)
         
+       # PERBAIKAN: Jarak spasi di bawah ini sudah sejajar dengan 'new_items'
         if isinstance(new_items, list):
             for item in new_items:
                 name = item.get("element_name", "Unknown")
                 if name.lower() not in existing_names:
                     item["id"] = generate_id(name)
                     
-                    # Ensure thumbnail with Wikimedia Fallback OR Direct Image check
-                    url_to_screenshot = item.get("source_urls", [""])[0] if item.get("source_urls") else ""
+                    # --- LOGIKA KOORDINAT ---
+                    loc = item.get("location", {})
+                    country = loc.get("country", "")
+                    provinces = loc.get("provinces", [])
+                    search_query = f"{provinces[0]}, {country}" if provinces else country
                     
+                    lat, lng = get_coordinates(search_query)
+                    if lat is None:
+                        lat, lng = get_coordinates(country)
+                    
+                    item["location"]["lat"] = lat
+                    item["location"]["lng"] = lng
+                    
+                    # Logika thumbnail
+                    url_to_screenshot = item.get("source_urls", [""])[0] if item.get("source_urls") else ""
                     if not item.get("thumbnail_url"):
                         item["thumbnail_url"] = get_screenshot_url(url_to_screenshot, name)
                     
                     inventory.append(item)
                     discovered_count += 1
-                    log.info(f"Discovered new element: {name} (Status: {item.get('completion_status')})")
+                    log.info(f"Discovered: {name} (Coords: {lat}, {lng})")
         
         time.sleep(5) 
                 
