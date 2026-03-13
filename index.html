@@ -196,7 +196,8 @@
         sysLastAction: "Latest Discovery:",
         sysStandby: "Monitoring global sources...",
         discoveredLog: "Scraped new item",
-        enrichedLog: "Enriched item data"
+        enrichedLog: "Enriched item data",
+        googleSource: "Google Grounded Source"
       },
       id: {
         title: "Radar <span class='text-brand-accent'>Warisan Budaya</span> ICH",
@@ -227,7 +228,8 @@
         sysLastAction: "Penemuan Terbaru:",
         sysStandby: "Memantau sumber global...",
         discoveredLog: "Menemukan elemen baru",
-        enrichedLog: "Mengumpulkan data tambahan"
+        enrichedLog: "Mengumpulkan data tambahan",
+        googleSource: "Sumber Referensi Google"
       }
     };
 
@@ -251,7 +253,10 @@
           "element_name": "Keris Indonesia",
           "category": "Traditional Craftsmanship",
           "thumbnail_url": "https://images.unsplash.com/photo-1621252179022-d278ec68e7b3?w=800&q=80",
-          "source_urls": ["https://example.com/keris"],
+          "source_urls": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0mDIJi2PalHihByIDuWU6aiUdS91LgsVwaApUWA78wNqhycgswYv8aR7C1eoYjydOkyhjq4-s1KPgur2xOiQly-fM5o-BMu9EQ91CUz1xjgBuHd6NGvoH6Ew0xWGk7RWYUdf2N6oJYCiDQ6wXSaeIyp-q5E7WEbTEcRCi9CLa1e1n7aT72cHFuy8QJ-4eDbDQhoxkFnWaA==",
+            "https://en.wikipedia.org/wiki/Kris"
+          ],
           "scraped_at": new Date(Date.now() - 86400000).toISOString(),
           "location": { "country": "Indonesia", "provinces": ["Jawa", "Bali"] },
           "resume_analisa": {
@@ -342,6 +347,42 @@
       updateScraperTicker();
       initMap();
       setupEventListeners();
+    }
+
+    // --- SMART URL FORMATTER ---
+    function formatSourceLinks(urls, dict) {
+      if (!urls || urls.length === 0) return '-';
+      
+      return urls.map((url, index) => {
+        const isVertexRedirect = url.includes('vertexaisearch.cloud.google.com') || url.includes('grounding-api-redirect');
+        
+        let displayText = '';
+        let iconClass = '';
+        let colorClass = '';
+        let bgClass = 'bg-brand-900';
+
+        if (isVertexRedirect) {
+          displayText = `${dict.googleSource} ${index + 1}`;
+          iconClass = 'ph-google-logo';
+          colorClass = 'text-brand-accent hover:text-white';
+          bgClass = 'bg-brand-900 border border-brand-accent/30';
+        } else {
+          try {
+            // Extract the domain name for direct URLs
+            displayText = new URL(url).hostname.replace(/^www\./, '');
+          } catch(e) {
+            displayText = `Link ${index + 1}`;
+          }
+          iconClass = 'ph-link';
+          colorClass = 'text-blue-400 hover:text-blue-300';
+          bgClass = 'bg-brand-800 border border-brand-700';
+        }
+        
+        return `<a href="${url}" target="_blank" class="w-fit max-w-full flex items-center gap-2 px-3 py-2 rounded-md transition-colors ${bgClass} ${colorClass}" title="${url}">
+                  <i class="ph ${iconClass} text-lg shrink-0"></i> 
+                  <span class="text-xs font-mono truncate">${displayText}</span>
+                </a>`;
+      }).join('');
     }
 
     // --- i18n TRANSLATION LOGIC ---
@@ -632,8 +673,8 @@
             
             <div>
               <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-2">${dict.modalSources}</p>
-              <div class="flex flex-col gap-1">
-                ${(item.source_urls || []).map(url => `<a href="${url}" target="_blank" class="text-xs text-blue-400 hover:text-blue-300 truncate"><i class="ph ph-link mr-1"></i>${url}</a>`).join('')}
+              <div class="flex flex-col gap-2">
+                ${formatSourceLinks(item.source_urls, dict)}
               </div>
             </div>
           </div>
