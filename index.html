@@ -256,16 +256,40 @@
 
     let currentLang = 'en';
 
-    // --- MOCK DATA (Fallback jika data.json gagal dimuat) ---
+    // --- BULLETPROOF IMAGE FALLBACK ---
+    // SVG Data URI that works 100% offline.
+    // Fixed Error: Converted literal single quotes to %22 (URL encoded double quotes) 
+    // to prevent SyntaxError: Unexpected identifier 'http' when injected into the 'onerror' JS attribute.
+    const FALLBACK_IMAGE = "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23141414%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2216%22 fill=%22%23555%22%3EImage Unavailable%3C/text%3E%3C/svg%3E";
+
+    // --- SMART IMAGE PROXY ---
+    function getValidImageUrl(url) {
+      if (!url || url === "N/A" || url.trim() === "") {
+        return FALLBACK_IMAGE;
+      }
+      const cleanUrl = url.trim();
+
+      // Jika URL sudah merupakan API Microlink, biarkan aslinya karena sudah aman
+      if (cleanUrl.includes('api.microlink.io')) {
+        return cleanUrl;
+      }
+
+      // Gunakan layanan proxy gratis `wsrv.nl` (Images.weserv.nl).
+      // Proxy ini otomatis menembus Hotlink Protection (UNESCO) & mengatasi error CORS/Referrer (Wikimedia).
+      // Parameter &w=600 memastikan gambar dikompres agar load Dashboard tetap ringan walau aslinya bergiga-giga.
+      return `https://wsrv.nl/?url=${encodeURIComponent(cleanUrl)}&w=600&fit=cover`;
+    }
+
+    // --- MOCK DATA ---
     const MOCK_DATA = {
       "summary": {
         "generated_at": new Date().toISOString(),
-        "total_ich_elements": 2,
-        "complete_records": 1,
+        "total_ich_elements": 3,
+        "complete_records": 2,
         "incomplete_records": 1,
         "categories_breakdown": {
           "Traditional Craftsmanship": 1,
-          "Culinary Traditions": 1
+          "Culinary Traditions": 2
         }
       },
       "inventory": [
@@ -301,16 +325,41 @@
         },
         {
           "id": "ich-002",
-          "element_name": "UNESCO Test Image",
+          "element_name": "Tejate",
           "category": "Culinary Traditions",
-          "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00028-RL-EN.jpg",
-          "source_urls": ["https://ich.unesco.org"],
+          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Tejate_en_j%C3%ADcara.jpg",
+          "source_urls": ["https://en.wikipedia.org/wiki/Tejate"],
           "scraped_at": new Date().toISOString(),
+          "location": { "country": "Mexico", "provinces": ["Oaxaca"] },
+          "resume_analisa": {
+            "description": "A traditional non-alcoholic maize and cacao beverage originating from pre-Hispanic times.",
+            "cultural_significance": "Often referred to as the 'drink of the gods', playing a central role in indigenous ceremonies and daily life.",
+            "gemini_tags": ["beverage", "cacao", "indigenous"]
+          },
+          "resume_tata_cara": {
+            "type": "culinary_recipe",
+            "materials_and_tools": ["Toasted maize", "Fermented cacao beans", "Mamey pits", "Flor de cacao", "Jícara (bowl)"],
+            "step_by_step": ["1. Toast the maize and cacao beans", "2. Grind ingredients into a thick paste", "3. Knead the paste while slowly adding cold water", "4. Mix until a thick foam forms on top", "5. Serve cold in a jícara"]
+          },
+          "shared_heritage_detection": {
+            "is_shared": false,
+            "confidence_score": 0,
+            "related_elements": []
+          },
+          "completion_status": "COMPLETE"
+        },
+        {
+          "id": "ich-003",
+          "element_name": "UNESCO Test Image",
+          "category": "Social Practices & Rituals",
+          "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00028-RL-EN.jpg",
+          "source_urls": ["https://example.com"],
+          "scraped_at": new Date(Date.now() - 4000000).toISOString(),
           "location": { "country": "Global", "provinces": ["National"] },
           "resume_analisa": {
-            "description": "This tests if UNESCO hotlink protected images load properly.",
-            "cultural_significance": "Hotlink bypass test.",
-            "gemini_tags": ["test", "image"]
+            "description": "This tests if UNESCO hotlink protected images load properly using the wsrv.nl proxy system.",
+            "cultural_significance": "Error handling robustness.",
+            "gemini_tags": ["test", "proxy"]
           },
           "resume_tata_cara": null,
           "shared_heritage_detection": {
@@ -508,10 +557,12 @@
 
         const card = document.createElement('div');
         card.className = "bg-brand-800 border border-brand-700 rounded-xl overflow-hidden hover:border-brand-500 transition-colors group flex flex-col";
-        // NOTE: Added referrerpolicy="no-referrer" to bypass strict image hotlinking blocks (like UNESCO's)
+        
+        const safeImageUrl = getValidImageUrl(item.thumbnail_url);
+        
         card.innerHTML = `
           <div class="h-48 w-full bg-brand-900 relative overflow-hidden">
-            <img src="${item.thumbnail_url || 'https://via.placeholder.com/400x300?text=No+Image'}" referrerpolicy="no-referrer" alt="${item.element_name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" onerror="this.src='https://via.placeholder.com/400x300?text=Image+Not+Found'">
+            <img src="${safeImageUrl}" alt="${item.element_name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
             
             <div class="absolute top-3 right-3 flex gap-2">
               ${isShared ? '<span class="bg-brand-secondary text-brand-900 text-[10px] font-bold px-2 py-1 rounded shadow"><i class="ph-fill ph-link"></i> SHARED</span>' : ''}
@@ -720,11 +771,12 @@
         `;
       }
 
+      const safeImageUrl = getValidImageUrl(item.thumbnail_url);
+
       document.getElementById('modal-body').innerHTML = `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="flex flex-col gap-4">
-            <!-- NOTE: Added referrerpolicy="no-referrer" here as well -->
-            <img src="${item.thumbnail_url || 'https://via.placeholder.com/600x400'}" referrerpolicy="no-referrer" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-lg">
+            <img src="${safeImageUrl}" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-lg" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
             
             <div class="grid grid-cols-2 gap-3">
               <div class="bg-brand-900 p-3 rounded-lg border border-brand-700">
