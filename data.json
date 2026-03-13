@@ -174,7 +174,7 @@
           "Sukhothai",
           "Nan"
         ],
-        "lat": 15.8700,
+        "lat": 15.87,
         "lng": 100.9925
       },
       "resume_analisa": {
@@ -251,7 +251,7 @@
             "country": "Malaysia",
             "element_name": "Kebaya (traditional blouse-dress ensemble)",
             "relationship_reason": "Shared textile traditions and craftsmanship, as Kebaya is often made from silk and recently inscribed on UNESCO's list as a joint nomination."
-          }, 
+          },
           {
             "country": "Singapore",
             "element_name": "Kebaya (traditional blouse-dress ensemble)",
@@ -283,7 +283,7 @@
           "Singida Region"
         ],
         "lat": -4.0333,
-        "lng": 35.0000
+        "lng": 35.0
       },
       "resume_analisa": {
         "description": "The Hadza, also known as Hadzabe, are one of the last true hunter-gatherer tribes in Tanzania, maintaining a traditional lifestyle largely unchanged for thousands of years. They are a semi-nomadic people, living in egalitarian bands typically comprising 20 to 30 individuals. Their survival is entirely dependent on hunting wild animals, gathering honey, and foraging for a variety of wild plants, including tubers, berries, and baobab fruit. The Hadza possess a profound ecological knowledge of their environment and practice sustainable living, which is crucial for their continued existence.",
@@ -1429,7 +1429,7 @@
           "Rey"
         ],
         "lat": 32.6546,
-        "lng": 51.6680
+        "lng": 51.668
       },
       "resume_analisa": {
         "description": "Khatamkari, also known as Persian marquetry, is a revered Iranian art form that involves adorning the surface of wooden or metallic objects with meticulously crafted geometric patterns. This intricate inlay technique uses delicate pieces of wood, bone, metal, and sometimes shell or ivory, arranged to create mesmerizing mosaics of shapes, often forming star patterns, polygons, and tessellations.",
@@ -1570,17 +1570,260 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-9cffa5eb",
+      "element_name": "Teko Porã (Guarani concept of Good Living)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//wheretheleavesfall.com/articles/teko-pora&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://wheretheleavesfall.com/articles/teko-pora",
+        "https://www.lume.ufrgs.br/handle/10183/166802",
+        "https://www.ufrgs.br/ufrgstv/projeto-teko-pora/",
+        "https://www.ihu.unisinos.br/categorias/597624-teko-pora-e-o-caminho-das-belas-palavras-do-povo-guarani-uma-resistencia-ancestral-artigo-de-margot-bremer",
+        "https://www.cultura.gov.py/el-arte-del-buen-vivirarte-teko-pora-rehegua/",
+        "https://ecologiadossaberes.wordpress.com/2016/04/11/teko-pora-praticas-educativas-guarani-para-o-bem-viver-por-cristine-takua/",
+        "https://mandala-lunar.com.br/teko-pora-o-sistema-milenar-educativo-de-equilibrio/",
+        "https://www.revistarebento.unesp.br/index.php/Rebento/article/view/106",
+        "https://www.youtube.com/watch?v=sI917w32b00",
+        "https://www.youtube.com/watch?v=3-wE_1t_n4I",
+        "https://www.youtube.com/watch?v=U_uwE4cH6xo",
+        "https://www.youtube.com/watch?v=1Tx1pfDuPg8"
+      ],
+      "scraped_at": "2026-03-13T09:44:12.628671Z",
+      "location": {
+        "country": "Paraguay",
+        "provinces": [],
+        "lat": -23.3165935,
+        "lng": -58.1693445
+      },
+      "resume_analisa": {
+        "description": "Teko Porã is a profound Guarani concept that translates to 'Good Living' or 'Bem Viver' (in Portuguese). It encompasses a political, cultural, philosophical, and spiritual worldview, emphasizing a harmonious existence with the community (both human and more-than-human) and the environment. It represents a good and beautiful way of being within one's territory, advocating for balance, respect, and interconnectedness in all aspects of life. This ancestral indigenous philosophy contrasts sharply with the Western pursuit of unlimited economic growth and individualism, which often leads to an unbalanced and unsustainable world. Teko Porã is seen as a path of resistance and resilience, encouraging a return to ancestral wisdom and a re-evaluation of human relationships with nature and each other.",
+        "cultural_significance": "The cultural significance of Teko Porã lies in its role as a foundational principle for indigenous communities, particularly the Guarani people, guiding their social, political, and spiritual practices. It promotes a holistic understanding of health and well-being, extending beyond individualistic notions to encompass the health of the community and the planet. Teko Porã is deeply intertwined with indigenous educational practices, which aim to instill values of respect, generosity, and responsibility towards the Earth and all its inhabitants. It serves as a powerful counter-narrative to the destructive impacts of colonialism and modern consumerism, advocating for a sustainable and equitable way of life rooted in ancestral knowledge and a deep reverence for nature. The concept highlights the importance of renewing personal and communal inter-relations, balancing good feelings, good thoughts, and good actions.",
+        "gemini_tags": [
+          "Indigenous Philosophy",
+          "Good Living",
+          "Guarani Culture",
+          "Environmental Harmony",
+          "Community Practices",
+          "Ancestral Wisdom",
+          "Social Philosophy",
+          "Spiritual Concept",
+          "Latin American Indigenous Cultures",
+          "Sustainability",
+          "Holistic Well-being"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Ecuador",
+            "element_name": "Sumak Kawsay",
+            "relationship_reason": "Equivalent concept of 'Good Living' in Quechua, emphasizing a harmonious and balanced life in community with nature."
+          },
+          {
+            "country": "Bolivia",
+            "element_name": "Suma Qamaña",
+            "relationship_reason": "Equivalent concept of 'Good Living' in Aymara, reflecting a similar indigenous worldview of collective well-being and respect for the environment."
+          },
+          {
+            "country": "Chile",
+            "element_name": "Küme Mogen",
+            "relationship_reason": "Equivalent concept of 'Good Living' in Mapuche, sharing the core principles of living in harmony with the land and community."
+          },
+          {
+            "country": "Argentina",
+            "element_name": "Küme Mogen",
+            "relationship_reason": "Equivalent concept of 'Good Living' in Mapuche, sharing the core principles of living in harmony with the land and community."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-0637c01d",
+      "element_name": "Varenyky (Ukrainian Dumplings)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Varenyky_with_sour_cream.jpg/1200px-Varenyky_with_sour_cream.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Varenyky",
+        "https://annasdelights.com/blogs/news/the-history-of-varenyky",
+        "https://www.veselka.com/what-are-varenyky-the-rich-heritage-of-ukrainian-cuisine/",
+        "https://www.homefull-of-recipes.com/ukrainian-varenyky-with-potatoes-and-fried-onions/",
+        "https://rassa.com/recipes/how-to-make-ukrainian-dumplings-varenyky",
+        "https://rimping.com/blog/varenyky",
+        "https://otakoi.com/blogs/news/varenyky-the-story-of-ukraine-in-one-dumpling",
+        "https://thenewbaguette.com/ukrainian-varenyky-potato-filling-fried-onions/",
+        "https://finefoodsblog.com/ukrainian-varenyky-potato-dumplings/",
+        "https://chefspencil.com/potato-varenyky-ukrainian-mashed-potato-dumplings/",
+        "https://www.buffalorising.com/2025/10/from-kyiv-to-the-west-side-the-story-of-varenyky-in-buffalo/",
+        "https://en.wikibooks.org/wiki/Cookbook:Vareniki",
+        "https://recipes.fandom.com/wiki/Varenyky",
+        "https://www.ukrainianfoods.com/ukrainian-dumplings-with-potato-filling-recipe/",
+        "https://thestoriedrecipe.com/vareniki-pierogi-ukrainian-dumplings-with-potato-filling/",
+        "https://www.ukrainianinstitute.org/ukrainian-potato-dumplings/",
+        "https://en.wiktionary.org/wiki/varenyky",
+        "https://hiroko.co.nz/ukrainian-varenyky-dumplings-with-mashed-potato-filling/",
+        "https://smittenkitchen.com/2019/05/potato-vareniki/",
+        "https://alicezaslavsky.com/recipes/potato-vareniki-dumplings/",
+        "https://littlepassports.com/blog/recipes/ukrainian-dumplings-with-potato-filling/",
+        "https://bridgetomoscow.com/varenniki",
+        "https://www.vikalinka.com/potato-bacon-and-caramelised-onion-pierogi-vareniki/",
+        "https://dishesanddesigns.com/varenyky-ukrainian-filled-dumplings/",
+        "https://donyaukraineskitchen.ca/blog/varenyky-the-comforting-dumplings",
+        "https://www.youtube.com/watch?v=s5R_N431Q2s",
+        "https://middleworldadventures.com/deruny-varenyky-kyiv-ukraine/",
+        "https://odessajournal.com/the-magic-of-varenyky/"
+      ],
+      "scraped_at": "2026-03-13T09:44:49.489393Z",
+      "location": {
+        "country": "Ukraine",
+        "provinces": [
+          "Various regions"
+        ],
+        "lat": 49.4871968,
+        "lng": 31.2718321
+      },
+      "resume_analisa": {
+        "description": "Varenyky are traditional Ukrainian dumplings made from unleavened dough and filled with a variety of sweet or savory ingredients, typically boiled and served hot. They are a staple of Ukrainian cuisine, often presented in a half-moon shape.",
+        "cultural_significance": "Varenyky hold deep symbolic meaning in Ukrainian culture, representing fertility, abundance, new beginnings, and growth, often associated with the new moon due to their crescent shape. Their history dates back to the Middle Ages, becoming popular among all social classes. They are a ritual dish, frequently prepared for festive occasions such as Christmas Eve (with mushroom or cabbage fillings), weddings (symbolizing unity and family), harvest celebrations, and Sunday family lunches. The preparation of varenyky is often a communal ritual, with recipes passed down through generations, fostering family bonds and cultural identity. Varenyky have also been featured in Ukrainian folklore, songs, and literature, and are considered a talisman for good fortune and abundant harvests. They are a comfort food that connects generations and serves as an anchor of identity for Ukrainians both within the country and in the diaspora.",
+        "gemini_tags": [
+          "Ukrainian cuisine",
+          "dumplings",
+          "traditional food",
+          "culinary heritage",
+          "folkloric food",
+          "ritual food",
+          "comfort food",
+          "Eastern European cuisine",
+          "family tradition",
+          "symbolic food"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Boiled Dumplings",
+        "materials_and_tools": [
+          "Dough Ingredients: All-purpose flour, salt, warm water, egg (optional), vegetable oil (or butter)",
+          "Common Fillings: Mashed potatoes (often with fried onions), cottage cheese, sour cherries, cabbage, mushrooms, meat (e.g., beef, pork), blueberries, poppy seeds",
+          "Serving Accompaniments: Sour cream (Smetana), fried onions, melted butter, bacon bits/lard",
+          "Tools: Large mixing bowl, rolling pin, round cutter (e.g., glass, cookie cutter), slotted spoon, large pot, skillet"
+        ],
+        "step_by_step": [
+          "1. Prepare the Dough: In a large bowl, combine flour and salt. In a separate bowl, whisk together warm water (and egg/oil/melted butter, if using). Gradually add the wet mixture to the flour, mixing with a fork until a shaggy dough forms. Knead the dough on a lightly floured surface for 3-12 minutes until it becomes smooth and elastic. Cover the dough with plastic wrap or a damp cloth and let it rest for 20-60 minutes.",
+          "2. Prepare the Filling: (For potato filling) Boil or bake potatoes until tender, then mash them. Finely chop onions and sauté them in vegetable oil or butter until golden brown and translucent, or dark brown and crispy depending on preference. Mix the mashed potatoes with the fried onions, seasoning with salt and pepper to taste. Ensure the filling is cooled to room temperature before use.",
+          "3. Shape the Varenyky: Divide the rested dough into manageable portions. On a lightly floured surface, roll out one portion of dough thinly (about 1/8 to 1/16 inch thick). Use a round cutter (e.g., an 8-10 cm diameter cup or cookie cutter) to cut out circles from the rolled dough.",
+          "4. Fill and Seal: Place approximately 1 tablespoon of the prepared filling in the center of each dough circle. Lightly moisten the edges of the dough with water (optional, but aids sealing). Fold the dough circle in half over the filling to form a half-moon shape, then firmly pinch the edges together to seal, ensuring no air pockets.",
+          "5. Cook the Varenyky: Bring a large pot of generously salted water to a rolling boil. Carefully add the varenyky to the boiling water in batches to prevent them from sticking together. Cook for 2-5 minutes after they float to the surface, or until the dough is cooked through.",
+          "6. Serve: Remove the cooked varenyky from the water using a slotted spoon. Serve immediately, often tossed with melted butter or fried onions/bacon bits, and accompanied by a dollop of sour cream."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Poland",
+            "element_name": "Pierogi",
+            "relationship_reason": "Varenyky are closely related to Polish pierogi; both are traditional Eastern European dumplings made from dough with various fillings, typically boiled. Varenyky is often considered the Ukrainian counterpart to pierogi, with some distinctions in dough softness and traditional fillings."
+          },
+          {
+            "country": "Russia",
+            "element_name": "Pelmeni / Vareniki",
+            "relationship_reason": "Varenyky are popular in Russia and share similarities with Russian vareniki and pelmeni, which are also types of stuffed dumplings. Dumpling traditions are widespread across Eastern Europe and Asia."
+          },
+          {
+            "country": "Turkey",
+            "element_name": "Dyush-vara",
+            "relationship_reason": "Varenyky are believed to have been influenced by the Turkish dish Dyush-vara, a dumpling made from lamb fat and garlic."
+          },
+          {
+            "country": "Italy",
+            "element_name": "Ravioli / Tortellini",
+            "relationship_reason": "Varenyky are often compared to Italian ravioli and tortellini as they are all types of filled pasta/dumplings."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-16ef557c",
+      "element_name": "Kānga pirau",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//teara.govt.nz/en/traditional-cooking-and-preserving&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://teara.govt.nz/en/traditional-cooking-and-preserving",
+        "https://www.tepapa.govt.nz/discover-collections/read-watch-play/maori/traditional-maori-food-gathering",
+        "https://christchurchcitylibraries.com/learning/maori/kai/",
+        "https://en.wikipedia.org/wiki/K%C4%81nga_pirau",
+        "https://www.researchgate.net/publication/268307238_Kaanga_Wai_Development_of_a_Modern_Preservation_Process_for_a_Traditional_Maori_Fermented_Food"
+      ],
+      "scraped_at": "2026-03-13T09:45:55.820039Z",
+      "location": {
+        "country": "New Zealand",
+        "provinces": [],
+        "lat": -41.5000831,
+        "lng": 172.8344077
+      },
+      "resume_analisa": {
+        "description": "Kānga pirau, also known as Kānga wai or Kānga kopiro, is a traditional fermented maize (corn) porridge dish highly regarded as a delicacy by many Māori people of New Zealand. The name \"Kānga pirau\" literally translates to \"rotten corn\" in Māori, referring to the pungent aroma that develops during its unique fermentation process. Historically, this fermentation method was also applied to preserve other foods such as fish and crustaceans like crayfish.",
+        "cultural_significance": "This traditional food has been prepared by the Māori since the early 1800s and holds significant cultural value as a cherished delicacy. The distinctive flavor, attributed to the production of n-butyric acid during fermentation, was particularly prized by some Māori. Kānga pirau was traditionally consumed as a porridge or, after drying, used as flour in baking, forming an important part of traditional Māori kai (food).",
+        "gemini_tags": [
+          "Fermentation",
+          "Indigenous food",
+          "Māori cuisine",
+          "Traditional preservation",
+          "Corn",
+          "Porridge",
+          "New Zealand heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Fermentation",
+        "materials_and_tools": [
+          "Whole corn cobs",
+          "Woven baskets (traditionally flax bags)",
+          "Streams of running water or slow-moving swamp water (traditional method)",
+          "Containers (modern preparation)",
+          "Mashing tool (for serving)",
+          "Optional: cream, sugar, egg, butter, cinnamon (for serving/baking)"
+        ],
+        "step_by_step": [
+          "Select whole corn cobs, traditionally an old cultivar known as Kaanga.",
+          "Place the corn cobs into woven baskets, historically flax bags.",
+          "Submerge the baskets containing the corn cobs completely in streams of running water or slow-moving swamp water. In contemporary preparations, corn can be soaked in containers filled with water.",
+          "Allow the corn to soak for an extended period, traditionally 2-3 months, or up to six weeks, until the corn kernels detach and settle to the bottom of the basket.",
+          "Once fermented, the resulting corn is mashed before consumption.",
+          "Kānga pirau is often served with cream and sugar.",
+          "Alternatively, for a confectionary variation, it can be beaten with egg, butter, sugar, and a pinch of cinnamon, then baked in an oven.",
+          "Traditionally, the product was consumed immediately upon completion of the fermentation process."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.3,
+        "related_elements": [
+          {
+            "country": "Various",
+            "element_name": "Fermented porridges/foods (e.g., Boza, Ogi, Poi, Pozol)",
+            "relationship_reason": "Thematic similarity as traditional fermented food products, particularly porridges, are found in diverse cultures globally, sharing the fundamental principle of food fermentation for preservation and unique flavor development."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T08:27:36.102726Z",
-    "total_ich_elements": 19,
-    "complete_records": 19,
-    "incomplete_records": 0,
+    "generated_at": "2026-03-13T09:46:25.545361Z",
+    "total_ich_elements": 22,
+    "complete_records": 21,
+    "incomplete_records": 1,
     "categories_breakdown": {
       "Traditional Craftsmanship": 10,
-      "Social Practices & Rituals": 3,
-      "Culinary Traditions": 3,
+      "Social Practices & Rituals": 4,
+      "Culinary Traditions": 5,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 2
     }
