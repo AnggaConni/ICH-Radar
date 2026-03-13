@@ -35,6 +35,74 @@ DATA_FILE    = os.path.join(BASE_DIR, "data.json")
 # ======================================================================
 KEYWORDS = [
     # ─────────────────────────────────────────────
+    # UNREGISTERED / LOCAL FOLKLORE / COMMUNITY PRACTICES
+    # (Keywords targeting blogs, social media, local news, non-UNESCO)
+    # ─────────────────────────────────────────────
+    "unregistered local heritage traditions",
+    "endangered local folklore practices",
+    "everyday community cultural practices",
+    "forgotten village traditions",
+    "ancestral customs still practiced today",
+    "oral traditions passed down generations",
+    "traditional knowledge from elders",
+    "community rituals preserved by villagers",
+    "local craft traditions handmade methods",
+    "ancient village ceremonies still practiced",
+    "traditional farming knowledge ancestors",
+    "indigenous healing rituals traditional medicine",
+    "traditional food preparation ancestral recipe",
+
+    "tradisi lokal masyarakat adat kampung",
+    "kebiasaan turun temurun warga",
+    "resep rahasia leluhur masakan daerah",
+    "ritual adat lokal yang hampir punah",
+    "cerita rakyat dan mitos lokal",
+    "upacara adat desa yang jarang diketahui",
+    "pengetahuan tradisional masyarakat adat",
+    "kerajinan tangan tradisional desa",
+    "cara memasak tradisional warisan nenek moyang",
+    "ritual panen tradisional masyarakat lokal",
+
+    "prácticas culturales comunitarias no registradas",
+    "tradiciones de pueblos originarios blog",
+    "rituales tradicionales de comunidades indígenas",
+    "recetas ancestrales tradicionales de pueblo",
+    "costumbres heredadas de generaciones",
+
+    "coutumes locales et traditions de village",
+    "rituels traditionnels des communautés locales",
+    "savoir-faire artisanal traditionnel village",
+    "traditions orales transmises par les anciens",
+
+    "民间未注册的传统习俗",
+    "地方传统文化习俗",
+    "民间手工艺传统技艺",
+    "乡村传统节庆习俗",
+    "祖传食谱与传统做法",
+
+    "지역 숨겨진 전통 문화",
+    "마을 전통 의식과 풍습",
+    "전통 수공예 기술 장인",
+    "세대에서 세대로 전해지는 문화",
+
+    "local tribal rituals undocumented",
+    "hidden cultural traditions village",
+    "traditional ceremonies rarely documented",
+    "oral folklore traditions community elders",
+    "traditional crafts handmade ancestral techniques",
+    "forgotten cultural rituals rural communities",
+    "traditional storytelling folklore village",
+    "indigenous cultural practices still alive",
+    "festival desa tahunan",
+    "upacara adat panen",
+    "ritual pernikahan tradisional desa",
+    "cara membuat kerajinan tradisional",
+    "traditional harvest ceremony village",
+    "ancient ritual still practiced village",
+    "how villagers make traditional craft",
+    "ancestral cooking method traditional dish",
+
+    # ─────────────────────────────────────────────
     # ENGLISH (Global / General)
     # ─────────────────────────────────────────────
     "Intangible Cultural Heritage examples",
@@ -203,7 +271,7 @@ KEYWORDS = [
     "सामाजिक प्रथाएं और अनुष्ठान",
     "पारंपरिक ज्ञान संरक्षण",
     "युनेस्को अमूर्त धरोहर सूची",
-    "सांस्कृतिक विरासत डिजिटल संग्रह",
+    "सांस्कृतिक विरासत ডিজিটাল संग्रह",
 
     # ─────────────────────────────────────────────
     # URDU (Pakistan & South Asia)
@@ -647,10 +715,11 @@ def enrich_incomplete_items(api_key, inventory):
         log.info(f"Enriching: {element_name}")
         
         prompt = f"""
-        You are a Cultural Heritage expert. I have an incomplete record for the Intangible Cultural Heritage: "{element_name}".
+        You are a Cultural Heritage expert. I have an incomplete record for the Cultural Heritage practice/tradition: "{element_name}".
         Current known sources: {current_sources}.
         
         Please use Google Search to find the missing information (e.g., specific step-by-step crafting process, authentic recipe, or detailed history). 
+        You can search through local news, community blogs, and social media.
         Find AT LEAST ONE NEW source URL to add to the existing ones.
         
         Respond ONLY with a JSON object representing the UPDATED element.
@@ -695,10 +764,12 @@ def discover_new_items(api_key, inventory):
     log.info(f"Discovery Phase Targeting: {target}")
     
     prompt = f"""
-    Use Google Search to find detailed information about the Intangible Cultural Heritage using this keyword/concept: "{target}".
+    Use Google Search to find detailed information about a Cultural Heritage, local folklore, or traditional community practice using this keyword/concept: "{target}".
     Ignore these already known elements: {existing_names[:10]}...
     
-    Analyze the element, its location, its shared heritage connections with other countries, and its process/recipe.
+    IMPORTANT INSTRUCTION: The element DOES NOT need to be officially recognized by UNESCO. It can be a local tradition, unregistered heritage, rare recipe, or community practice found on local blogs, regional news, or social media records.
+
+    Analyze the element, its location, its shared heritage connections with other countries/regions, and its process/recipe.
     Output ALL data values strictly in ENGLISH, and keep all JSON keys strictly in English.
     If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
     If you find all information, set "completion_status" to "COMPLETE".
@@ -708,7 +779,7 @@ def discover_new_items(api_key, inventory):
       {{
         "id": "will_be_generated",
         "element_name": "...",
-        "category": "Culinary Traditions | Traditional Craftsmanship | Performing Arts | Oral Traditions",
+        "category": "Culinary Traditions | Traditional Craftsmanship | Performing Arts | Oral Traditions | Social Practices & Rituals",
         "thumbnail_url": "",
         "source_urls": ["url1"],
         "scraped_at": "{datetime.now().isoformat()}Z",
