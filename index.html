@@ -314,7 +314,7 @@
             "https://en.wikipedia.org/wiki/Kris"
           ],
           "scraped_at": new Date(Date.now() - 86400000).toISOString(),
-          "location": { "country": "Indonesia", "provinces": ["Jawa", "Bali"] },
+           "location": { "country": "Indonesia", "provinces": ["Jawa"], "lat": -6.2, "lng": 106.8 }, // Tambahkan lat & lng
           "resume_analisa": {
             "description": "Asymmetrical dagger with distinctive blade-patterning achieved through alternating laminations of iron and nickelous meteoritic iron.",
             "cultural_significance": "A symbol of status, spiritual artifact, and heirloom passed down through generations.",
@@ -342,7 +342,7 @@
           "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Tejate_en_j%C3%ADcara.jpg",
           "source_urls": ["https://en.wikipedia.org/wiki/Tejate"],
           "scraped_at": new Date().toISOString(),
-          "location": { "country": "Mexico", "provinces": ["Oaxaca"] },
+          "location": { "country": "Mexico", "provinces": ["Oaxaca"], "lat": 17.0, "lng": -96.7 }, // Tambahkan lat & lng
           "resume_analisa": {
             "description": "A traditional non-alcoholic maize and cacao beverage originating from pre-Hispanic times.",
             "cultural_significance": "Often referred to as the 'drink of the gods', playing a central role in indigenous ceremonies and daily life.",
@@ -723,27 +723,59 @@
 
 // VERSI BARU drawMapElements yang JAUH LEBIH CEPAT
 async function drawMapElements(data) {
-  if(!map) return;
-  if(markersLayer) map.removeLayer(markersLayer);
-  
-  markersLayer = L.markerClusterGroup({ chunkedLoading: true });
-  map.addLayer(markersLayer);
+      if(!map) return;
+      if(markersLayer) map.removeLayer(markersLayer);
+      
+      markersLayer = L.markerClusterGroup({ chunkedLoading: true });
+      map.addLayer(markersLayer);
 
-  data.forEach(item => {
-    // Ambil koordinat langsung dari JSON (Hasil kerja Python)
-    const lat = item.location?.lat;
-    const lng = item.location?.lng;
+      // --- DEFINISIKAN ICON DI SINI ---
+      const defaultIcon = L.divIcon({
+        className: 'custom-div-icon',
+        html: `<div class="w-4 h-4 bg-brand-accent rounded-full shadow-[0_0_10px_#00ffcc]"></div>`,
+        iconSize: [16, 16],
+        iconAnchor: [8, 8]
+      });
 
-    if (lat && lng) {
-      const coords = [lat, lng];
-      L.marker(coords, {icon: defaultIcon})
-       .bindPopup(`<strong>${item.element_name}</strong>`)
-       .addTo(markersLayer);
-       
-      // Lakukan hal yang sama untuk shared heritage jika ada koordinatnya
+      const relatedIcon = L.divIcon({
+        className: 'custom-div-icon',
+        html: `<div class="w-3 h-3 bg-brand-secondary rounded-full shadow-[0_0_8px_#facc15]"></div>`,
+        iconSize: [12, 12],
+        iconAnchor: [6, 6]
+      });
+
+      data.forEach(item => {
+        const lat = item.location?.lat;
+        const lng = item.location?.lng;
+
+        if (lat && lng) {
+          const mainCoords = [lat, lng];
+          
+          // Gambar Marker Utama
+          L.marker(mainCoords, {icon: defaultIcon})
+           .bindPopup(`<strong class="text-brand-900">${item.element_name}</strong><br><span class="text-gray-600">${item.location.country}</span>`)
+           .addTo(markersLayer);
+           
+          // Gambar Garis Shared Heritage (Jika ada data koordinat di relasi)
+          if (item.shared_heritage_detection?.is_shared && item.shared_heritage_detection.related_elements) {
+            item.shared_heritage_detection.related_elements.forEach(rel => {
+              if (rel.lat && rel.lng) {
+                const relCoords = [rel.lat, rel.lng];
+                
+                L.marker(relCoords, {icon: relatedIcon})
+                 .bindPopup(`<strong class="text-brand-900">${rel.element_name}</strong><br><span class="text-gray-600">${rel.country}</span>`)
+                 .addTo(markersLayer);
+
+                L.polyline([mainCoords, relCoords], {
+                  className: 'glowing-line',
+                  weight: 2
+                }).addTo(markersLayer);
+              }
+            });
+          }
+        }
+      });
     }
-  });
-}
 
     // --- FILTER & SORT LOGIC ---
     function applyFilters() {
