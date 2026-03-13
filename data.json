@@ -1,1 +1,101 @@
-{}
+{
+  "inventory": [
+    {
+      "id": "ich-364a4afb",
+      "element_name": "Yuki-tsumugi",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEopcmYFV8BDzDNAJdYd6L6KsucNHYP8tA33jFwuPBLnRKq78Yl9D7tOhN9xuNaRnAttBQ1b3xkYwzec8SnD0FwUJ5LfFKr8MHNUGDG4frzKr_5juaERVYZ23MmOqdeDJQcpUBiQ7a85W-ngKQ0-Dwt19FlLUTB&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEopcmYFV8BDzDNAJdYd6L6KsucNHYP8tA33jFwuPBLnRKq78Yl9D7tOhN9xuNaRnAttBQ1b3xkYwzec8SnD0FwUJ5LfFKr8MHNUGDG4frzKr_5juaERVYZ23MmOqdeDJQcpUBiQ7a85W-ngKQ0-Dwt19FlLUTB",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECBxYOoZnp2HScxM6Qs1IV_Nr4TdDWECQivQGvNjp1cnJyklj1vTpCyoif12dNQR9f3bdocYxUju-TngwP7xKiH3zWGB_mByvaFjuyHb11CNhZ2Jzp4gkeRUndt5aq7WiEmdSQpNEP9sl25yTm9uaQy7y5a6UsVk51mjc=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGB_0YEACMAkWbh4WQfoByfHVJNd3ox5xtMhClsnR_4sPpovxlzJQEJJ_wXqYe4g2IcKKzBwB3BLM0k4ajV3WHS6mM4LrGuv2M-cpJTvchtXs3H1zP8eqP7UPiPzS0g8JVAuhtaGzU=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0NKbzksi8OEosWNDrGn3lX9xcQ5s1QfaaiMBfuedHiwUjYnQ0FousXHVRmNc3fFh7MKMQxL3MEuWl2UMzjAUge2vxA93mk540N4Is-7Qg1pTT7W9LjEIf7JsziiZJDN_xB11455sU5IZL7pV3Lr_8WROqm1AR",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWjSZ0Tw7dCrAYp9xFbX_EEvXaz3cqYElOBJoVCs82Hu4ZJxX7BGzjh9eWafKCUnDNcEJNaKhyFff8Vg3HIiHjMEcVlXkYypCvc7AkZ4KwfIm-xm51-0jLaaBHw_cQ-DU=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEm-9217fpLJsftwThiKDzM22vZSiUW6RyPbjhOD5IplAL3Dg4QIbEvwB9WiWQ3n8f65aYgLjmuqpMP1649TW2tD2MAt5gtIs-nt9OHJIJUYHiEhOQxjcgPJI3UdcJvSMOsMCBb3vkakEIwLN5qXj3QtDswXMpstRZ6_YortPmT_GeyxS_qede5wWxdrLKn2Hk="
+      ],
+      "scraped_at": "2026-03-13T05:14:32.667459Z",
+      "location": {
+        "country": "Jepang",
+        "provinces": [
+          "Prefektur Tochigi",
+          "Prefektur Ibaraki"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Yuki-tsumugi adalah kain sutra berkualitas tinggi yang diproduksi menggunakan metode tradisional, dikenal karena ringan, hangat, dan teksturnya yang lembut unik. Kain ini menggunakan benang yang dipintal tangan dari sutra mentah, pola kasuri (ikat) yang diikat tangan, dan ditenun di alat tenun tradisional yang disebut 'jibata'.",
+        "cultural_significance": "Yuki-tsumugi adalah teknik dan budaya yang sangat dihargai dan harus diwariskan kepada generasi mendatang. Ini ditetapkan sebagai Properti Budaya Takbenda Penting Nasional pada tahun 1956, Produk Kerajinan Tradisional pada tahun 1977, dan terdaftar sebagai Warisan Budaya Takbenda UNESCO pada tahun 2010. Dikatakan dapat diwariskan hingga tiga generasi keluarga karena daya tahannya.",
+        "gemini_tags": [
+          "Kerajinan Tekstil",
+          "Sutra",
+          "Ikat",
+          "Tenun Tradisional",
+          "Jepang",
+          "Warisan Budaya Takbenda UNESCO"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Kerajinan Tekstil",
+        "materials_and_tools": [
+          "Kepompong sutra",
+          "Soda kue",
+          "Air panas",
+          "Alat 'tsukushi'",
+          "Benang katun",
+          "Pewarna",
+          "Alat tenun 'jibata'",
+          "Shuttle (杼)",
+          "Reeds (筬)",
+          "Papan",
+          "Tali",
+          "Tepung terigu (untuk kanji)"
+        ],
+        "step_by_step": [
+          "**1. Pembuatan Benang (Ito-tsumugi):**",
+          "   *   **Merebus Kepompong (Shaken):** Rebus kepompong sutra dalam air panas yang dicampur soda kue.",
+          "   *   **Membuat Sutra Mentah (Mawata-kake):** Angkat pupa dari kepompong yang telah direbus dan bentangkan menjadi bentuk seperti kantung (sutra mentah).",
+          "   *   **Memintal Benang (Ito-tsumugi):** Pintal benang dari sutra mentah menggunakan jari dan alat yang disebut 'tsukushi'. Teknik ini unik di dunia dan membutuhkan waktu 2-3 bulan untuk memintal benang satu gulungan kain kimono.",
+          "   *   **Menggulung Benang ke Kumparan (Kudamaki/Bocchi-age):** Gulung benang yang sudah dipintal ke kumparan.",
+          "   *   **Menggulung Benang ke Untaian (Kase-age):** Gulung benang dari kumparan ke alat penggulung untuk membentuk untaian.",
+          "**2. Pembuatan Desain (Zuan):**",
+          "   *   Buat cetak biru desain untuk pola kain.",
+          "**3. Pewarnaan (Senshoku):**",
+          "   *   **Pewarnaan Dasar:** Warnai benang dengan warna dasar.",
+          "   *   **Pembuatan Kasuri (Kasuri-zukuri/Kasuri-kukuri):** Tandai bagian-bagian benang yang akan diikat untuk pola kasuri berdasarkan desain, lalu ikat dengan benang katun. Ini mencegah bagian yang diikat terwarnai.",
+          "   *   **Pewarnaan Ketuk (Tataki-zome):** Warnai benang kasuri yang sudah diikat dengan cara mengetuk-ngetukkan benang berulang kali ke permukaan untuk memastikan pewarna meresap, terutama di bagian yang diikat rapat.",
+          "   *   **Melepas Ikatan Kasuri (Kasuri-hogushi):** Lepaskan ikatan kasuri setelah proses pewarnaan selesai.",
+          "   *   **Menyelaraskan Pola (E-awase):** Selaraskan pola kasuri benang demi benang.",
+          "**4. Persiapan Menenun (Shita-goshirae):**",
+          "   *   **Menggulung Benang Pakan Kasuri (Yoko-kasuri-ito-taguri):** Gulung benang pakan kasuri ke kumparan. (Pengkanjian tipis diterapkan untuk benang kasuri).",
+          "   *   **Pengkanjian (Norizuke):** Beri kanji pada benang untuk mencegah putus saat menenun.",
+          "   *   **Menggulung Benang Dasar (Kudamaki):** Gulung benang dasar ke kumparan.",
+          "   *   **Membentangkan Benang (Hatanobe):** Bentangkan benang dasar sepanjang kain kimono dan buat 'aya' (keadaan bersilang) untuk dipasang di alat tenun.",
+          "   *   **Penyusunan Lungsin (Seikei):** Atur benang lungsin sesuai panjang dan jumlah yang ditentukan, pisahkan benang atas dan bawah.",
+          "   *   **Memasukkan Benang ke Sisir Tenun (Osa-tooshi):** Masukkan benang lungsin melalui sisir tenun.",
+          "   *   **Menggulung Benang ke Alat Tenun (Hata-maki):** Gulung benang lungsin ke alat tenun.",
+          "   *   **Pengikatan Awal (Mae-musubi/Kake-ito-kake):** Ikat bagian depan dan pasang benang pengangkat untuk alat tenun.",
+          "**5. Menenun (Hata-ori):**",
+          "   *   Tenun kain di alat tenun 'jibata' (alat tenun tradisional). Ini melibatkan penggunaan shuttle untuk melewati benang pakan di antara benang lungsin, menyesuaikan ketegangan dengan tubuh. Menenun pola yang rumit bisa memakan waktu lebih dari setahun.",
+          "**6. Pemeriksaan (Kensa):**",
+          "   *   Periksa kualitas kain.",
+          "**7. Penyelesaian Akhir (Seiri-shiage):**",
+          "   *   **Penghilangan Kanji (Nori-nuki):** Rendam kain yang sudah ditenun dalam air panas semalaman untuk menghilangkan kanji, lalu peras dan keringkan. Ini mengembalikan tekstur lembut asli kain."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    }
+  ],
+  "summary": {
+    "generated_at": "2026-03-13T05:15:06.509257Z",
+    "total_ich_elements": 1,
+    "complete_records": 1,
+    "incomplete_records": 0,
+    "categories_breakdown": {
+      "Traditional Craftsmanship": 1
+    }
+  }
+}
