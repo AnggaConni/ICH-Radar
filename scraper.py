@@ -1,9 +1,9 @@
 """
 =======================================================================
-  ICH SHARED HERITAGE RADAR v6.0 — Global Intelligence Engine
+  ICH SHARED HERITAGE RADAR v6.1 — Global Intelligence Engine
   AI Engine : Google Gemini 2.5 Flash (Google Search Grounding)
   Mode      : 2-Phase (Enrichment of Incomplete Data -> Discovery)
-  Feature   : Multi-source merging, Anti-Redundancy, Heritage Linking
+  Feature   : Quality over Quantity (Iterative Looping), Anti-Redundancy
 =======================================================================
 """
 
@@ -188,14 +188,6 @@ KEYWORDS = [
     "非遗数字化记录",           # Digital documentation of ICH
 
     # ─────────────────────────────────────────────
-    # CHINESE — CANTONESE
-    # ─────────────────────────────────────────────
-    "非物質文化遺產",          # Traditional Chinese (Cantonese/Hong Kong/Taiwan)
-    "口頭傳統及表達方式",
-    "傳統工藝技術",
-    "表演藝術非遺",
-
-    # ─────────────────────────────────────────────
     # JAPANESE
     # ─────────────────────────────────────────────
     "無形文化遺産",            # Mukei bunka isan
@@ -240,369 +232,13 @@ KEYWORDS = [
     "Patrimônio Cultural Imaterial",
     "Saberes e práticas tradicionais",
     "Inventário patrimônio imaterial",
-    "Expressões culturais tradicionais",
+    "Expressões culturales tradicionais",
     "Conhecimentos ancestrais indígenas",
     "Artesanato tradicional patrimônio",
     "Rituais e festas patrimônio UNESCO",
     "Tradições orais patrimônio imaterial",
     "Salvaguarda patrimônio cultural vivo",
-    "Artes do espetáculo patrimônio imaterial",
-
-    # ─────────────────────────────────────────────
-    # RUSSIAN (Eastern Europe & Central Asia)
-    # ─────────────────────────────────────────────
-    "Нематериальное культурное наследие",
-    "Традиционные ремесла ЮНЕСКО",
-    "Устные традиции и формы выражения",
-    "Исполнительские искусства наследие",
-    "Обычаи обряды и праздники UNESCO",
-    "Традиционные знания и практики",
-    "Охрана нематериального наследия",
-    "Народное искусство традиции",
-    "Цифровой реестр культурного наследия",
-
-    # ─────────────────────────────────────────────
-    # HINDI (South Asia — India)
-    # ─────────────────────────────────────────────
-    "अमूर्त सांस्कृतिक विरासत",
-    "पारंपरिक शिल्प कौशल",
-    "मौखिक परंपराएं और अभिव्यक्तियां",
-    "लोक कला और परंपरा",
-    "सामाजिक प्रथाएं और अनुष्ठान",
-    "पारंपरिक ज्ञान संरक्षण",
-    "युनेस्को अमूर्त धरोहर सूची",
-    "सांस्कृतिक विरासत ডিজিটাল संग्रह",
-
-    # ─────────────────────────────────────────────
-    # URDU (Pakistan & South Asia)
-    # ─────────────────────────────────────────────
-    "غیر محسوس ثقافتی ورثہ",
-    "روایتی دستکاری یونیسکو",
-    "زبانی روایات اور اظہار",
-    "ثقافتی ورثہ تحفظ",
-    "لوک فنون اور روایات",
-
-    # ─────────────────────────────────────────────
-    # BENGALI (Bangladesh & West Bengal)
-    # ─────────────────────────────────────────────
-    "অস্পষ্ট সাংস্কৃতিক ঐতিহ্য",
-    "ঐতিহ্যবাহী শিল্পকলা সংরক্ষণ",
-    "মৌখিক ঐতিহ্য এবং প্রকাশনা",
-    "লোকশিল্প ও ঐতিহ্য ইউনেস্কো",
-    "সামাজিক রীতি আচার অনুষ্ঠান",
-
-    # ─────────────────────────────────────────────
-    # TAMIL (South India & Sri Lanka)
-    # ─────────────────────────────────────────────
-    "அருவமான கலாச்சார பாரம்பரியம்",
-    "பாரம்பரிய கைவினை யுனெஸ்கோ",
-    "வாய்மொழி மரபுகள் மற்றும் வெளிப்பாடுகள்",
-    "நாட்டுப்புறக் கலைகள் பாரம்பரியம்",
-
-    # ─────────────────────────────────────────────
-    # TURKISH
-    # ─────────────────────────────────────────────
-    "Somut Olmayan Kültürel Miras",
-    "Geleneksel el sanatları UNESCO",
-    "Sözlü gelenekler ve anlatımlar",
-    "Toplumsal uygulamalar ritüeller",
-    "Geleneksel bilgi ve uygulamalar",
-    "Yaşayan miras belgeleme",
-    "UNESCO kültürel miras envanteri",
-
-    # ─────────────────────────────────────────────
-    # PERSIAN / FARSI (Iran, Afghanistan, Tajikistan)
-    # ─────────────────────────────────────────────
-    "میراث فرهنگی ناملموس",
-    "سنت‌های شفاهی و بیان",
-    "صنایع دستی سنتی یونسکو",
-    "دانش و عملکردهای سنتی",
-    "میراث زنده فرهنگی",
-    "آداب و رسوم فرهنگی میراث",
-
-    # ─────────────────────────────────────────────
-    # SWAHILI (East Africa)
-    # ─────────────────────────────────────────────
-    "Urithi wa utamaduni usiohamishika",
-    "Mila na desturi za jadi UNESCO",
-    "Sanaa za jadi urithi wa utamaduni",
-    "Maarifa ya jadi na mazoea",
-    "Hifadhi ya urithi wa utamaduni",
-    "Tamaduni simulizi Afrika Mashariki",
-
-    # ─────────────────────────────────────────────
-    # HAUSA (West Africa — Nigeria, Niger, Ghana)
-    # ─────────────────────────────────────────────
-    "Al'adun gargajiya UNESCO",
-    "Tarihin al'adu marasa abu",
-    "Kiyaye al'adun gargajiya",
-
-    # ─────────────────────────────────────────────
-    # YORUBA (Nigeria & West Africa)
-    # ─────────────────────────────────────────────
-    "Aṣà ìjìnlẹ̀ àti ohun-ìní àṣà",
-    "Ìmọ̀ àṣà àti àṣà ìbílẹ̀",
-    "Ìtọ́jú ohun-ìní àṣà tí kò ní ara",
-
-    # ─────────────────────────────────────────────
-    # AMHARIC (Ethiopia)
-    # ─────────────────────────────────────────────
-    "ቅርስ ሥነ ጥበብ ባህል",
-    "ቁሳዊ ያልሆነ ባህላዊ ቅርስ",
-    "ባህላዊ ዕደ ጥበብ ዩኔስኮ",
-    "የቃል ወጎች እና አገላለጽ",
-
-    # ─────────────────────────────────────────────
-    # VIETNAMESE
-    # ─────────────────────────────────────────────
-    "Di sản văn hóa phi vật thể",
-    "Nghề thủ công truyền thống UNESCO",
-    "Truyền thống truyền miệng và biểu đạt",
-    "Thực hành xã hội lễ hội văn hóa",
-    "Bảo tồn di sản sống",
-    "Kiến thức truyền thống bản địa",
-
-    # ─────────────────────────────────────────────
-    # THAI
-    # ─────────────────────────────────────────────
-    "มรดกภูมิปัญญาทางวัฒนธรรม",
-    "หัตถกรรมพื้นบ้าน ยูเนสโก",
-    "ประเพณีและนิทานพื้นบ้าน",
-    "ภูมิปัญญาท้องถิ่น การอนุรักษ์",
-    "ศิลปะการแสดงพื้นบ้าน มรดก",
-
-    # ─────────────────────────────────────────────
-    # TAGALOG / FILIPINO
-    # ─────────────────────────────────────────────
-    "Di-materyal na pamana ng kultura",
-    "Tradisyonal na kaalaman at kasanayan",
-    "Katutubong sining at kultura UNESCO",
-    "Pagsasalin ng oral na tradisyon",
-    "Pangangalaga ng pamana ng kultura",
-
-    # ─────────────────────────────────────────────
-    # GERMAN (Germany, Austria, Switzerland)
-    # ─────────────────────────────────────────────
-    "Immaterielles Kulturerbe UNESCO",
-    "Mündliche Überlieferungen und Ausdrucksformen",
-    "Traditionelles Handwerk Kulturerbe",
-    "Soziale Praktiken und Rituale UNESCO",
-    "Lebendiges Erbe Dokumentation",
-    "Traditionelles Wissen indigene Gemeinschaften",
-    "Immaterielles Erbe Inventar",
-
-    # ─────────────────────────────────────────────
-    # ITALIAN
-    # ─────────────────────────────────────────────
-    "Patrimonio culturale immateriale UNESCO",
-    "Tradizioni e espressioni orali",
-    "Artigianato tradizionale patrimonio",
-    "Pratiche sociali rituali eventi festivi",
-    "Salvaguardia patrimonio vivente",
-    "Conoscenze tradizionali comunità locali",
-
-    # ─────────────────────────────────────────────
-    # DUTCH (Netherlands, Belgium, Suriname)
-    # ─────────────────────────────────────────────
-    "Immaterieel cultureel erfgoed UNESCO",
-    "Mondelinge tradities en uitdrukkingen",
-    "Traditioneel ambachtelijk erfgoed",
-    "Sociale praktijken rituelen en feesten",
-    "Levend erfgoed documentatie",
-
-    # ─────────────────────────────────────────────
-    # POLISH
-    # ─────────────────────────────────────────────
-    "Niematerialne dziedzictwo kulturowe",
-    "Tradycyjne rzemiosło UNESCO",
-    "Ustne tradycje i wyrazy kultury",
-    "Praktyki społeczne obrzędy i uroczystości",
-    "Ochrona żywego dziedzictwa",
-
-    # ─────────────────────────────────────────────
-    # UKRAINIAN
-    # ─────────────────────────────────────────────
-    "Нематеріальна культурна спадщина",
-    "Традиційні ремесла ЮНЕСКО",
-    "Усні традиції та форми вираження",
-    "Охорона живої культурної спадщини",
-
-    # ─────────────────────────────────────────────
-    # ROMANIAN
-    # ─────────────────────────────────────────────
-    "Patrimoniu cultural imaterial UNESCO",
-    "Tradiții și expresii orale",
-    "Meșteșuguri tradiționale patrimoniu",
-    "Practici sociale ritualuri sărbători",
-
-    # ─────────────────────────────────────────────
-    # GREEK
-    # ─────────────────────────────────────────────
-    "Άυλη πολιτιστική κληρονομιά UNESCO",
-    "Προφορικές παραδόσεις και εκφράσεις",
-    "Παραδοσιακές τέχνες και χειροτεχνία",
-    "Κοινωνικές πρακτικές τελετουργίες",
-
-    # ─────────────────────────────────────────────
-    # CZECH
-    # ─────────────────────────────────────────────
-    "Nehmotné kulturní dědictví UNESCO",
-    "Ústní tradice a výrazové formy",
-    "Tradiční řemesla kulturní dědictví",
-
-    # ─────────────────────────────────────────────
-    # HUNGARIAN
-    # ─────────────────────────────────────────────
-    "Szellemi kulturális örökség UNESCO",
-    "Hagyományos kézműves tudás",
-    "Szóbeli hagyományok és kifejezések",
-
-    # ─────────────────────────────────────────────
-    # HEBREW (Israel)
-    # ─────────────────────────────────────────────
-    "מורשת תרבותית בלתי מוחשית",
-    "מסורות בעל פה ואמנויות ביצוע",
-    "מלאכת יד מסורתית אונסקו",
-
-    # ─────────────────────────────────────────────
-    # BURMESE / MYANMAR
-    # ─────────────────────────────────────────────
-    "အကာအကွယ်မဲ့ ယဉ်ကျေးမှုအမွေ",
-    "ရိုးရာလက်မှုပညာ ယူနက်စကို",
-    "နှုတ်ဆိုဆင်ခြင် ရိုးရာထုံးစံ",
-
-    # ─────────────────────────────────────────────
-    # KHMER (Cambodia)
-    # ─────────────────────────────────────────────
-    "បេតិកភណ្ឌវប្បធម៌អរូបី",
-    "សិល្បៈប្រពៃណី និងចំណេះដឹងខ្មែរ",
-
-    # ─────────────────────────────────────────────
-    # MONGOLIAN
-    # ─────────────────────────────────────────────
-    "Биет бус соёлын өв",
-    "Уламжлалт гар урлал ЮНЕСКО",
-    "Аман уламжлал болон илэрхийлэл",
-
-    # ─────────────────────────────────────────────
-    # KAZAKH / CENTRAL ASIAN (Uzbek, Kyrgyz)
-    # ─────────────────────────────────────────────
-    "Материалдық емес мәдени мұра",
-    "Дәстүрлі қолөнер ЮНЕСКО",
-    "Nomoddiy madaniy meros UNESCO",       # Uzbek
-    "Материалдык эмес маданий мурас",     # Kyrgyz
-
-    # ─────────────────────────────────────────────
-    # GEORGIAN
-    # ─────────────────────────────────────────────
-    "არამატერიალური კულტურული მემკვიდრეობა",
-    "ტრადიციული ხელოსნობა UNESCO",
-
-    # ─────────────────────────────────────────────
-    # ARMENIAN
-    # ─────────────────────────────────────────────
-    "Անշոշափելի մշակութային ժառանգություն",
-    "Ավանդական արհեստներ ՅՈՒՆԵՍԿՕ",
-
-    # ─────────────────────────────────────────────
-    # AZERBAIJANI
-    # ─────────────────────────────────────────────
-    "Qeyri-maddi mədəni irs UNESCO",
-    "Ənənəvi sənətkarlıq mədəni irs",
-
-    # ─────────────────────────────────────────────
-    # NEPALI
-    # ─────────────────────────────────────────────
-    "अमूर्त सांस्कृतिक सम्पदा",
-    "पारम्परिक शिल्पकला यूनेस्को",
-    "मौखिक परम्परा र अभिव्यक्ति",
-
-    # ─────────────────────────────────────────────
-    # SINHALA (Sri Lanka)
-    # ─────────────────────────────────────────────
-    "අස්පෘශ්‍ය සංස්කෘතික උරුමය",
-    "සාම්ප්‍රදායික ශිල්ප UNESCO",
-
-    # ─────────────────────────────────────────────
-    # WOLOF / FRENCH CREOLE (Senegal & West Africa)
-    # ─────────────────────────────────────────────
-    "Patrimoine culturel immatériel Sénégal",
-    "Traditions orales Afrique de l'Ouest",
-    "Savoir-faire artisanal Afrique",
-
-    # ─────────────────────────────────────────────
-    # QUECHUA / AYMARA (Andean — Peru, Bolivia, Ecuador)
-    # ─────────────────────────────────────────────
-    "Patrimonio cultural andino inmaterial",
-    "Saberes ancestrales quechua aymara",
-    "Rituales y ceremonias indígenas andinas",
-
-    # ─────────────────────────────────────────────
-    # NAHUATL / MAYA (Mesoamerica — Mexico, Guatemala)
-    # ─────────────────────────────────────────────
-    "Patrimonio cultural indígena mesoamericano",
-    "Tradiciones orales mayas guatemaltecas",
-    "Saberes ancestrales nahuatl Mexico",
-
-    # ─────────────────────────────────────────────
-    # GUARANÍ (Paraguay & South America)
-    # ─────────────────────────────────────────────
-    "Teko porã rembiapokue UNESCO",
-    "Patrimonio cultural inmaterial guaraní",
-
-    # ─────────────────────────────────────────────
-    # MĀORI / PACIFIC ISLANDER (New Zealand, Pacific)
-    # ─────────────────────────────────────────────
-    "Māori cultural heritage taonga",
-    "Pacific intangible cultural heritage",
-    "Traditional Pacific navigation knowledge",
-    "Indigenous Pacific oral traditions",
-
-    # ─────────────────────────────────────────────
-    # ABORIGINAL / TORRES STRAIT ISLANDER (Australia)
-    # ─────────────────────────────────────────────
-    "Aboriginal intangible cultural heritage Australia",
-    "Indigenous Australian oral traditions",
-    "Dreamtime stories cultural heritage",
-    "First Nations traditional knowledge Australia",
-
-    # ─────────────────────────────────────────────
-    # DOMAIN-SPECIFIC CROSS-LANGUAGE SEARCHES
-    # ─────────────────────────────────────────────
-    # Music & Performing Arts
-    "traditional music UNESCO heritage",
-    "folk dance intangible heritage",
-    "chanting ritual heritage documentation",
-    "traditional theater heritage",
-
-    # Food & Gastronomy
-    "traditional cuisine UNESCO heritage",
-    "gastronomía tradicional patrimonio inmaterial",
-    "cuisine traditionnelle patrimoine UNESCO",
-    "传统饮食文化 非遗",
-
-    # Medicine & Healing
-    "traditional medicine knowledge heritage",
-    "medicina tradicional patrimonio inmaterial",
-    "médecine traditionnelle patrimoine",
-    "традиционная медицина наследие",
-
-    # Agricultural / Ecological Knowledge
-    "traditional ecological knowledge heritage",
-    "indigenous farming practices heritage UNESCO",
-    "知識伝統農業 文化遺産",
-
-    # Textile & Weaving
-    "traditional weaving textile heritage",
-    "tissage artisanal patrimoine UNESCO",
-    "tejido tradicional patrimonio",
-    "伝統的織物 無形文化遺産",
-
-    # Festivals & Ceremonies
-    "traditional festival ceremony heritage",
-    "fiesta tradicional patrimonio vivo",
-    "fête traditionnelle patrimoine immatériel",
-    "伝統的祭り 文化遺産",
+    "Artes do espetáculo patrimônio imaterial"
 ]
 
 # ======================================================================
@@ -614,7 +250,6 @@ def load_db():
         try:
             with open(DATA_FILE, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                # Migration from old v5 'listings' to v6 'inventory'
                 if "listings" in data:
                     log.info("Migrating old database schema to ICH format...")
                     return {"summary": {}, "inventory": []}
@@ -722,11 +357,11 @@ def enrich_incomplete_items(api_key, inventory):
         You can search through local news, community blogs, and social media.
         Find AT LEAST ONE NEW source URL to add to the existing ones.
         
+        IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
+        
         Respond ONLY with a JSON object representing the UPDATED element.
         Ensure ALL output data values and keys are strictly in ENGLISH.
         If you find the missing data, change "completion_status" to "COMPLETE".
-
-        "IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL (e.g. wikipedia.org, localnews.com, etc)."
         
         Required JSON Structure:
         {{
@@ -752,7 +387,7 @@ def enrich_incomplete_items(api_key, inventory):
             enriched_count += 1
             log.info(f"Successfully enriched {element_name} from multiple sources.")
         
-        time.sleep(4) # Rate limit safety
+        time.sleep(5) # Rate limit safety (Jeda 5 detik antar request)
         
     return enriched_count
 
@@ -761,56 +396,64 @@ def enrich_incomplete_items(api_key, inventory):
 # ======================================================================
 
 def discover_new_items(api_key, inventory):
-    existing_names = [i.get("element_name", "").lower() for i in inventory]
-    target = random.choice(KEYWORDS)
-    log.info(f"Discovery Phase Targeting: {target}")
-    
-    prompt = f"""
-    Use Google Search to find detailed information about a Cultural Heritage, local folklore, or traditional community practice using this keyword/concept: "{target}".
-    Ignore these already known elements: {existing_names[:10]}...
-    
-    IMPORTANT INSTRUCTION: The element DOES NOT need to be officially recognized by UNESCO. It can be a local tradition, unregistered heritage, rare recipe, or community practice found on local blogs, regional news, or social media records.
-
-    Analyze the element, its location, its shared heritage connections with other countries/regions, and its process/recipe.
-    Output ALL data values strictly in ENGLISH, and keep all JSON keys strictly in English.
-    If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
-    If you find all information, set "completion_status" to "COMPLETE".
-    
-    "IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL (e.g. wikipedia.org, localnews.com, etc)."
-
-    Output strictly as a JSON ARRAY containing ONE object with this structure:
-    [
-      {{
-        "id": "will_be_generated",
-        "element_name": "...",
-        "category": "Culinary Traditions | Traditional Craftsmanship | Performing Arts | Oral Traditions | Social Practices & Rituals",
-        "thumbnail_url": "",
-        "source_urls": ["url1"],
-        "scraped_at": "{datetime.now().isoformat()}Z",
-        "location": {{ "country": "...", "provinces": ["..."] }},
-        "resume_analisa": {{ "description": "...", "cultural_significance": "...", "gemini_tags": ["..."] }},
-        "resume_tata_cara": {{ "type": "...", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
-        "shared_heritage_detection": {{ "is_shared": true/false, "confidence_score": 0.0-1.0, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
-        "completion_status": "COMPLETE or INCOMPLETE"
-      }}
-    ]
-    """
-    
-    new_items = call_gemini(api_key, prompt)
     discovered_count = 0
     
-    if isinstance(new_items, list):
-        for item in new_items:
-            name = item.get("element_name", "Unknown")
-            if name.lower() not in existing_names:
-                item["id"] = generate_id(name)
-                # Ensure thumbnail
-                if not item.get("thumbnail_url") and item.get("source_urls"):
-                    item["thumbnail_url"] = get_screenshot_url(item["source_urls"][0])
-                
-                inventory.append(item)
-                discovered_count += 1
-                log.info(f"Discovered new element: {name} (Status: {item.get('completion_status')})")
+    # LOOPING BATCH: Bertanya hingga 3 kali untuk menjaga Kualitas (Quality Over Quantity)
+    # Daripada meminta AI muntahin 5 sekaligus, kita minta 1 per 1 diulang 3x.
+    max_discoveries_per_run = 3 
+    
+    for i in range(max_discoveries_per_run):
+        existing_names = [item.get("element_name", "").lower() for item in inventory]
+        target = random.choice(KEYWORDS)
+        log.info(f"Discovery Phase [{i+1}/{max_discoveries_per_run}] Targeting: {target}")
+        
+        prompt = f"""
+        Use Google Search to find detailed information about ONE specific Cultural Heritage, local folklore, or traditional community practice using this keyword/concept: "{target}".
+        Ignore these already known elements: {existing_names[:15]}...
+        
+        IMPORTANT INSTRUCTIONS:
+        1. The element DOES NOT need to be officially recognized by UNESCO. It can be a local tradition, unregistered heritage, rare recipe, or community practice found on local blogs or regional news.
+        2. DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL (e.g. wikipedia.org, localnews.com, etc).
+        3. Analyze the element, its location, its shared heritage connections with other countries/regions, and its process/recipe.
+        4. Output ALL data values strictly in ENGLISH, and keep all JSON keys strictly in English.
+        5. If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
+        6. If you find all information, set "completion_status" to "COMPLETE".
+        
+        Output strictly as a JSON ARRAY containing ONE highly detailed object with this structure:
+        [
+          {{
+            "id": "will_be_generated",
+            "element_name": "...",
+            "category": "Culinary Traditions | Traditional Craftsmanship | Performing Arts | Oral Traditions | Social Practices & Rituals",
+            "thumbnail_url": "",
+            "source_urls": ["url1"],
+            "scraped_at": "{datetime.now().isoformat()}Z",
+            "location": {{ "country": "...", "provinces": ["..."] }},
+            "resume_analisa": {{ "description": "...", "cultural_significance": "...", "gemini_tags": ["..."] }},
+            "resume_tata_cara": {{ "type": "...", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
+            "shared_heritage_detection": {{ "is_shared": true/false, "confidence_score": 0.0-1.0, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
+            "completion_status": "COMPLETE or INCOMPLETE"
+          }}
+        ]
+        """
+        
+        new_items = call_gemini(api_key, prompt)
+        
+        if isinstance(new_items, list):
+            for item in new_items:
+                name = item.get("element_name", "Unknown")
+                if name.lower() not in existing_names:
+                    item["id"] = generate_id(name)
+                    # Ensure thumbnail
+                    if not item.get("thumbnail_url") and item.get("source_urls"):
+                        item["thumbnail_url"] = get_screenshot_url(item["source_urls"][0])
+                    
+                    inventory.append(item)
+                    discovered_count += 1
+                    log.info(f"Discovered new element: {name} (Status: {item.get('completion_status')})")
+        
+        # Beri jeda 5 detik antar pencarian agar aman dari pemblokiran API (Rate Limits)
+        time.sleep(5) 
                 
     return discovered_count
 
