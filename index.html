@@ -275,7 +275,6 @@
           "category": "Traditional Craftsmanship",
           "thumbnail_url": "https://images.unsplash.com/photo-1621252179022-d278ec68e7b3?w=800&q=80",
           "source_urls": [
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0mDIJi2PalHihByIDuWU6aiUdS91LgsVwaApUWA78wNqhycgswYv8aR7C1eoYjydOkyhjq4-s1KPgur2xOiQly-fM5o-BMu9EQ91CUz1xjgBuHd6NGvoH6Ew0xWGk7RWYUdf2N6oJYCiDQ6wXSaeIyp-q5E7WEbTEcRCi9CLa1e1n7aT72cHFuy8QJ-4eDbDQhoxkFnWaA==",
             "https://en.wikipedia.org/wiki/Kris"
           ],
           "scraped_at": new Date(Date.now() - 86400000).toISOString(),
@@ -302,24 +301,22 @@
         },
         {
           "id": "ich-002",
-          "element_name": "Nasi Goreng",
+          "element_name": "UNESCO Test Image",
           "category": "Culinary Traditions",
-          "thumbnail_url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&q=80",
-          "source_urls": ["https://example.com"],
-          "scraped_at": new Date().toISOString(), // Newer date to test sorting
-          "location": { "country": "Indonesia", "provinces": ["National"] },
+          "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00028-RL-EN.jpg",
+          "source_urls": ["https://ich.unesco.org"],
+          "scraped_at": new Date().toISOString(),
+          "location": { "country": "Global", "provinces": ["National"] },
           "resume_analisa": {
-            "description": "Indonesian meat and vegetable fried rice flavored with sweet soy sauce.",
-            "cultural_significance": "Traditional zero-waste practice using leftover rice.",
-            "gemini_tags": ["comfort food", "fried rice"]
+            "description": "This tests if UNESCO hotlink protected images load properly.",
+            "cultural_significance": "Hotlink bypass test.",
+            "gemini_tags": ["test", "image"]
           },
           "resume_tata_cara": null,
           "shared_heritage_detection": {
-            "is_shared": true,
-            "confidence_score": 0.88,
-            "related_elements": [
-              { "country": "Singapore", "element_name": "Nasi Goreng", "relationship_reason": "Culinary influence in hawker culture" }
-            ]
+            "is_shared": false,
+            "confidence_score": 0,
+            "related_elements": []
           },
           "completion_status": "INCOMPLETE"
         }
@@ -511,9 +508,10 @@
 
         const card = document.createElement('div');
         card.className = "bg-brand-800 border border-brand-700 rounded-xl overflow-hidden hover:border-brand-500 transition-colors group flex flex-col";
+        // NOTE: Added referrerpolicy="no-referrer" to bypass strict image hotlinking blocks (like UNESCO's)
         card.innerHTML = `
           <div class="h-48 w-full bg-brand-900 relative overflow-hidden">
-            <img src="${item.thumbnail_url || 'https://via.placeholder.com/400x300?text=No+Image'}" alt="${item.element_name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" onerror="this.src='https://via.placeholder.com/400x300?text=Image+Not+Found'">
+            <img src="${item.thumbnail_url || 'https://via.placeholder.com/400x300?text=No+Image'}" referrerpolicy="no-referrer" alt="${item.element_name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" onerror="this.src='https://via.placeholder.com/400x300?text=Image+Not+Found'">
             
             <div class="absolute top-3 right-3 flex gap-2">
               ${isShared ? '<span class="bg-brand-secondary text-brand-900 text-[10px] font-bold px-2 py-1 rounded shadow"><i class="ph-fill ph-link"></i> SHARED</span>' : ''}
@@ -725,7 +723,8 @@
       document.getElementById('modal-body').innerHTML = `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="flex flex-col gap-4">
-            <img src="${item.thumbnail_url || 'https://via.placeholder.com/600x400'}" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-lg">
+            <!-- NOTE: Added referrerpolicy="no-referrer" here as well -->
+            <img src="${item.thumbnail_url || 'https://via.placeholder.com/600x400'}" referrerpolicy="no-referrer" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-lg">
             
             <div class="grid grid-cols-2 gap-3">
               <div class="bg-brand-900 p-3 rounded-lg border border-brand-700">
