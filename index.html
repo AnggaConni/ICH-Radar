@@ -35,8 +35,8 @@
               900: '#0a0a0a',
               800: '#141414',
               700: '#1f1f1f',
-              accent: '#00ffcc', // Glowing cyan
-              secondary: '#facc15' // Gold for heritage
+              accent: '#00ffcc',
+              secondary: '#facc15'
             }
           }
         }
@@ -46,25 +46,50 @@
 
   <style>
     body { background-color: #0a0a0a; color: #f5f5f5; }
-    
-    /* Glowing Map Lines Animation */
+
+    /* ── Animated dashed heritage connection lines ── */
     .glowing-line {
       stroke: #00ffcc;
       filter: drop-shadow(0 0 3px #00ffcc) drop-shadow(0 0 8px #00ffcc);
       stroke-dasharray: 8 8;
       animation: dashMove 2s linear infinite;
     }
-    
-    @keyframes dashMove {
-      to { stroke-dashoffset: -16; }
+    @keyframes dashMove { to { stroke-dashoffset: -16; } }
+
+    /* ── Pulsing main marker ── */
+    @keyframes markerPulse {
+      0%   { box-shadow: 0 0 0 0 rgba(0,255,204,0.7); }
+      70%  { box-shadow: 0 0 0 10px rgba(0,255,204,0); }
+      100% { box-shadow: 0 0 0 0 rgba(0,255,204,0); }
+    }
+    .marker-main {
+      width:14px; height:14px;
+      background:#00ffcc;
+      border-radius:50%;
+      border:2px solid #fff;
+      animation: markerPulse 2s infinite;
+    }
+    .marker-related {
+      width:10px; height:10px;
+      background:#facc15;
+      border-radius:50%;
+      border:2px solid #fff;
+      opacity:0.85;
     }
 
-    /* Modal Backdrop Blur */
-    .modal-blur {
-      backdrop-filter: blur(8px);
+    /* ── Leaflet popup dark theme ── */
+    .leaflet-popup-content-wrapper {
+      background:#1f1f1f !important;
+      color:#f5f5f5 !important;
+      border:1px solid #333 !important;
+      border-radius:10px !important;
+      box-shadow:0 4px 20px rgba(0,0,0,0.6) !important;
     }
-    
-    /* Custom Scrollbar for dark theme */
+    .leaflet-popup-tip { background:#1f1f1f !important; }
+    .leaflet-popup-content { margin:10px 14px !important; font-size:13px; line-height:1.5; }
+
+    .modal-blur { backdrop-filter: blur(8px); }
+
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #141414; }
     ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
@@ -80,13 +105,10 @@
         <i class="ph-fill ph-globe-hemisphere-east text-3xl text-brand-accent animate-pulse"></i>
         <h1 class="font-display font-bold text-xl tracking-tight" id="app-title">ICH <span class="text-brand-accent">Shared Heritage</span> Radar</h1>
       </div>
-      
       <div class="flex items-center gap-4">
         <div class="text-xs text-gray-400 font-mono flex items-center gap-1" id="last-updated">
           <i class="ph ph-clock"></i> <span data-i18n="loading">Loading data...</span>
         </div>
-        
-        <!-- Language Toggle -->
         <button onclick="toggleLang()" class="bg-brand-800 border border-brand-700 hover:border-brand-500 px-3 py-1.5 rounded-md text-xs font-bold transition-colors flex items-center gap-2">
           <i class="ph ph-translate text-brand-secondary"></i>
           <span id="lang-label">EN</span>
@@ -95,10 +117,10 @@
     </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- Main -->
   <main class="flex-grow max-w-7xl mx-auto px-6 py-8 w-full flex flex-col gap-8">
-    
-    <!-- Scraper History Status (Terminal Ticker) -->
+
+    <!-- Status Ticker -->
     <div class="bg-brand-900 border border-brand-700 rounded-lg p-3 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs font-mono text-gray-400 shadow-inner">
       <div class="flex items-center gap-2 text-brand-accent whitespace-nowrap">
         <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
@@ -111,837 +133,681 @@
       </div>
     </div>
 
-    <!-- Stats Row -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4" id="stats-container">
-      <!-- Injected via JS -->
-    </div>
+    <!-- Stats -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4" id="stats-container"></div>
 
-    <!-- Map Section -->
+    <!-- Map -->
     <div class="flex flex-col gap-2">
-      <div class="flex items-center gap-2">
-        <i class="ph ph-map-trifold text-xl text-brand-secondary"></i>
-        <h2 class="font-display font-bold text-lg" data-i18n="mapTitle">Heritage Network Map</h2>
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="ph ph-map-trifold text-xl text-brand-secondary"></i>
+          <h2 class="font-display font-bold text-lg" data-i18n="mapTitle">Heritage Network Map</h2>
+        </div>
+        <!-- Map Legend -->
+        <div class="flex items-center gap-4 text-xs text-gray-400">
+          <span class="flex items-center gap-1.5">
+            <span class="inline-block w-3 h-3 rounded-full bg-[#00ffcc]"></span> ICH Element
+          </span>
+          <span class="flex items-center gap-1.5">
+            <span class="inline-block w-3 h-3 rounded-full bg-[#facc15]"></span> Related Heritage
+          </span>
+          <span class="flex items-center gap-1.5">
+            <svg width="24" height="8"><line x1="0" y1="4" x2="24" y2="4" stroke="#00ffcc" stroke-width="2" stroke-dasharray="4 3"/></svg>
+            Connection
+          </span>
+        </div>
       </div>
-      <div id="map" class="w-full h-[400px] rounded-xl border border-brand-700 bg-brand-800 z-10"></div>
+      <div id="map" class="w-full h-[460px] rounded-xl border border-brand-700 bg-brand-800 z-10"></div>
     </div>
 
-    <!-- Inventory Grid Section -->
+    <!-- Directory -->
     <div class="flex flex-col gap-4">
       <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
         <div class="flex items-center gap-2 shrink-0">
           <i class="ph ph-books text-xl text-brand-secondary"></i>
           <h2 class="font-display font-bold text-lg" data-i18n="directoryTitle">Intangible Cultural Heritage Directory</h2>
         </div>
-        
-        <!-- Filters & Sort -->
         <div class="flex flex-wrap items-center gap-3">
-          <!-- Country Filter -->
           <select id="filter-country" class="bg-brand-800 border border-brand-700 text-sm rounded-lg px-3 py-2 text-gray-300 focus:outline-none focus:border-brand-accent transition-colors">
             <option value="all" data-i18n="filterAllCountries">All Countries</option>
-            <!-- Dynamic options injected here -->
           </select>
-
-          <!-- Status Filter -->
           <select id="filter-status" class="bg-brand-800 border border-brand-700 text-sm rounded-lg px-3 py-2 text-gray-300 focus:outline-none focus:border-brand-accent transition-colors">
             <option value="all" data-i18n="filterAll">All Status</option>
             <option value="COMPLETE" data-i18n="filterComplete">Complete Data</option>
             <option value="INCOMPLETE" data-i18n="filterIncomplete">Incomplete Data</option>
             <option value="SHARED" data-i18n="filterShared">Shared Heritage Only</option>
           </select>
-
-          <!-- Sort Order -->
           <select id="sort-order" class="bg-brand-800 border border-brand-700 text-sm rounded-lg px-3 py-2 text-gray-300 focus:outline-none focus:border-brand-accent transition-colors">
             <option value="newest" data-i18n="sortNewest">Newest First</option>
             <option value="oldest" data-i18n="sortOldest">Oldest First</option>
           </select>
         </div>
       </div>
-
-      <div id="inventory-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Injected via JS -->
-      </div>
+      <div id="inventory-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </div>
 
-    
-      <div id="load-more-container" class="w-full flex justify-center mt-6 hidden">
-        <button id="btn-load-more" onclick="loadMoreItems()" class="bg-brand-800 border border-brand-700 hover:border-brand-accent px-6 py-2 rounded-full text-sm font-bold transition-all text-brand-accent">
-          Load More
-        </button>
-      </div>
-
+    <div id="load-more-container" class="w-full flex justify-center mt-6 hidden">
+      <button id="btn-load-more" onclick="loadMoreItems()" class="bg-brand-800 border border-brand-700 hover:border-brand-accent px-6 py-2 rounded-full text-sm font-bold transition-all text-brand-accent">
+        Load More
+      </button>
+    </div>
   </main>
 
-  <!-- Modal Component (Hidden by default) -->
+  <!-- Modal -->
   <div id="item-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden modal-blur bg-black/60 p-4 opacity-0 transition-opacity duration-300">
     <div class="bg-brand-800 border border-brand-700 rounded-2xl w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300" id="modal-content-wrapper">
-      
-      <!-- Modal Header -->
       <div class="flex justify-between items-center p-6 border-b border-brand-700">
         <h3 class="font-display font-bold text-2xl" id="modal-title">Element Name</h3>
         <button onclick="closeModal()" class="text-gray-400 hover:text-white transition-colors bg-brand-700 p-2 rounded-full">
           <i class="ph ph-x text-xl"></i>
         </button>
       </div>
-
-      <!-- Modal Body (Scrollable) -->
-      <div class="p-6 overflow-y-auto flex-grow flex flex-col gap-6" id="modal-body">
-        <!-- Injected via JS -->
-      </div>
+      <div class="p-6 overflow-y-auto flex-grow flex flex-col gap-6" id="modal-body"></div>
     </div>
   </div>
 
-  <!-- Scripts -->
   <script>
-    // --- DICTIONARY FOR i18n ---
-    const i18n = {
-      en: {
-        title: "ICH <span class='text-brand-accent'>Shared Heritage</span> Radar",
-        loading: "Loading data...",
-        lastUpdate: "Last updated:",
-        totalElements: "Total Elements",
-        completeData: "Complete Data",
-        needsEnrichment: "Needs Enrichment",
-        sharedNetwork: "Shared Heritage Network",
-        mapTitle: "Heritage Network Map",
-        directoryTitle: "Intangible Cultural Heritage Directory",
-        filterAll: "All Status",
-        filterComplete: "Complete Data",
-        filterIncomplete: "Incomplete Data",
-        filterShared: "Shared Heritage Only",
-        filterAllCountries: "All Countries",
-        sortNewest: "Newest First",
-        sortOldest: "Oldest First",
-        emptyGrid: "No elements match the filter.",
-        btnAnalyze: "View Full Analysis",
-        modalOrigin: "Origin Country",
-        modalCategory: "Category",
-        modalSignificance: "Cultural Significance",
-        modalSources: "Data Sources",
-        modalDesc: "Description",
-        modalTools: "Tools & Materials",
-        modalSteps: "Process / Steps",
-        modalIncomplete: "Specific steps not found. Status: INCOMPLETE.",
-        modalShared: "Shared Heritage Detected",
-        sysStatus: "System Status",
-        sysLastAction: "Latest Discovery:",
-        sysStandby: "Monitoring global sources...",
-        discoveredLog: "Scraped new item",
-        enrichedLog: "Enriched item data",
-        googleSource: "Google Grounded Source"
+  // ═══════════════════════════════════════════════════════════════
+  //  COUNTRY CENTROIDS LOOKUP
+  //  Used to geocode `related_elements` that only carry a country name.
+  //  Extended to cover every country that appears in the dataset.
+  // ═══════════════════════════════════════════════════════════════
+  const COUNTRY_CENTROIDS = {
+    "Afghanistan":          [33.9391,  67.7100],
+    "Albania":              [41.1533,  20.1683],
+    "Algeria":              [28.0339,   1.6596],
+    "Angola":               [-11.2027, 17.8739],
+    "Argentina":            [-38.4161, -63.6167],
+    "Armenia":              [40.0691,  45.0382],
+    "Australia":            [-25.2744, 133.7751],
+    "Austria":              [47.5162,  14.5501],
+    "Azerbaijan":           [40.1431,  47.5769],
+    "Bahrain":              [26.0275,  50.5500],
+    "Bangladesh":           [23.6850,  90.3563],
+    "Belarus":              [53.7098,  27.9534],
+    "Belgium":              [50.5039,   4.4699],
+    "Bolivia":              [-16.2902, -63.5887],
+    "Bosnia and Herzegovina":[43.9159, 17.6791],
+    "Botswana":             [-22.3285,  24.6849],
+    "Brazil":               [-14.2350, -51.9253],
+    "Brunei":               [4.5353,  114.7277],
+    "Brunei Darussalam":    [4.5353,  114.7277],
+    "Bulgaria":             [42.7339,  25.4858],
+    "Cambodia":             [12.5657, 104.9910],
+    "Cameroon":             [7.3697,   12.3547],
+    "Canada":               [56.1304, -106.3468],
+    "Chile":                [-35.6751, -71.5430],
+    "China":                [35.8617, 104.1954],
+    "Colombia":             [4.5709,  -74.2973],
+    "Croatia":              [45.1000,  15.2000],
+    "Cuba":                 [21.5218,  -77.7812],
+    "Czech Republic":       [49.8175,  15.4730],
+    "Denmark":              [56.2639,   9.5018],
+    "Ecuador":              [-1.8312,  -78.1834],
+    "Egypt":                [26.8206,  30.8025],
+    "Estonia":              [58.5953,  25.0136],
+    "Ethiopia":             [9.1450,   40.4897],
+    "Finland":              [61.9241,  25.7482],
+    "France":               [46.2276,   2.2137],
+    "Georgia":              [42.3154,  43.3569],
+    "Germany":              [51.1657,  10.4515],
+    "Ghana":                [7.9465,   -1.0232],
+    "Global":               [20.0,      0.0],
+    "Greece":               [39.0742,  21.8243],
+    "Hungary":              [47.1625,  19.5033],
+    "India":                [20.5937,  78.9629],
+    "Indonesia":            [-0.7893, 113.9213],
+    "Iran":                 [32.4279,  53.6880],
+    "Iraq":                 [33.2232,  43.6793],
+    "Ireland":              [53.4129,  -8.2439],
+    "Israel":               [31.0461,  34.8516],
+    "Italy":                [41.8719,  12.5674],
+    "Jamaica":              [18.1096,  -77.2975],
+    "Japan":                [36.2048, 138.2529],
+    "Jordan":               [30.5852,  36.2384],
+    "Kazakhstan":           [48.0196,  66.9237],
+    "Kenya":                [-0.0236,  37.9062],
+    "Kosovo":               [42.6026,  20.9030],
+    "Kuwait":               [29.3117,  47.4818],
+    "Kyrgyzstan":           [41.2044,  74.7661],
+    "Laos":                 [19.8563, 102.4955],
+    "Latvia":               [56.8796,  24.6032],
+    "Lebanon":              [33.8547,  35.8623],
+    "Libya":                [26.3351,  17.2283],
+    "Lithuania":            [55.1694,  23.8813],
+    "Malaysia":             [4.2105,  101.9758],
+    "Mali":                 [17.5707,  -3.9962],
+    "Malta":                [35.9375,  14.3754],
+    "Mauritania":           [21.0079, -10.9408],
+    "Mesoamerica (general)":[ 15.0000, -90.0000],
+    "Mexico":               [23.6345, -102.5528],
+    "Mongolia":             [46.8625, 103.8467],
+    "Morocco":              [31.7917,  -7.0926],
+    "Mozambique":           [-18.6657,  35.5296],
+    "Myanmar":              [21.9162,  95.9560],
+    "Nepal":                [28.3949,  84.1240],
+    "Netherlands":          [52.1326,   5.2913],
+    "New Zealand":          [-40.9006, 174.8860],
+    "Nigeria":              [9.0820,    8.6753],
+    "North Korea":          [40.3399, 127.5101],
+    "Norway":               [60.4720,   8.4689],
+    "Oman":                 [21.4735,  55.9754],
+    "Pakistan":             [30.3753,  69.3451],
+    "Palestine":            [31.9522,  35.2332],
+    "Panama":               [8.5380,  -80.7821],
+    "Papua New Guinea":     [-6.3150,  143.9555],
+    "Paraguay":             [-23.4425, -58.4438],
+    "Peru":                 [-9.1900,  -75.0152],
+    "Philippines":          [12.8797, 121.7740],
+    "Poland":               [51.9194,  19.1451],
+    "Portugal":             [39.3999,  -8.2245],
+    "Qatar":                [25.3548,  51.1839],
+    "Romania":              [45.9432,  24.9668],
+    "Russia":               [61.5240, 105.3188],
+    "Saudi Arabia":         [23.8859,  45.0792],
+    "Senegal":              [14.4974,  14.4524],
+    "Serbia":               [44.0165,  21.0059],
+    "Singapore":            [1.3521,  103.8198],
+    "Slovakia":             [48.6690,  19.6990],
+    "Slovenia":             [46.1512,  14.9955],
+    "Somalia":              [5.1521,   46.1996],
+    "South Africa":         [-30.5595,  22.9375],
+    "South Korea":          [35.9078, 127.7669],
+    "Spain":                [40.4637,  -3.7492],
+    "Sri Lanka":            [7.8731,   80.7718],
+    "Sudan":                [12.8628,  30.2176],
+    "Sweden":               [60.1282,  18.6435],
+    "Switzerland":          [46.8182,   8.2275],
+    "Syria":                [34.8021,  38.9968],
+    "Taiwan":               [23.6978, 120.9605],
+    "Tajikistan":           [38.8610,  71.2761],
+    "Tanzania":             [-6.3690,  34.8888],
+    "Thailand":             [15.8700, 100.9925],
+    "Tunisia":              [33.8869,   9.5375],
+    "Turkey":               [38.9637,  35.2433],
+    "Turkmenistan":         [38.9697,  59.5563],
+    "Uganda":               [1.3733,   32.2903],
+    "Ukraine":              [48.3794,  31.1656],
+    "United Kingdom":       [55.3781,  -3.4360],
+    "United States":        [37.0902, -95.7129],
+    "USA":                  [37.0902, -95.7129],
+    "USA / Canada (various Indigenous nations)": [50.0, -100.0],
+    "Uruguay":              [-32.5228, -55.7658],
+    "Uzbekistan":           [41.3775,  64.5853],
+    "Vanuatu":              [-15.3767, 166.9592],
+    "Venezuela":            [6.4238,  -66.5897],
+    "Vietnam":              [14.0583, 108.2772],
+    "Yemen":                [15.5527,  48.5164],
+    "Zambia":               [-13.1339,  27.8493],
+    "Zimbabwe":             [-19.0154,  29.1549],
+    "Byzantine Empire":     [41.0082,  28.9784]  // Constantinople / Istanbul
+  };
+
+  // Helper: resolve coords from a country string (falls back to [0,0])
+  function coordsForCountry(countryStr) {
+    if (!countryStr) return null;
+    // Direct match
+    if (COUNTRY_CENTROIDS[countryStr]) return COUNTRY_CENTROIDS[countryStr];
+    // Partial match (e.g. "India, Syria, Lebanon" → first token)
+    const first = countryStr.split(',')[0].trim();
+    return COUNTRY_CENTROIDS[first] || null;
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  //  i18n
+  // ═══════════════════════════════════════════════════════════════
+  const i18n = {
+    en: {
+      title: "ICH <span class='text-brand-accent'>Shared Heritage</span> Radar",
+      loading: "Loading data...", lastUpdate: "Last updated:",
+      totalElements:"Total Elements", completeData:"Complete Data",
+      needsEnrichment:"Needs Enrichment", sharedNetwork:"Shared Heritage Network",
+      mapTitle:"Heritage Network Map", directoryTitle:"Intangible Cultural Heritage Directory",
+      filterAll:"All Status", filterComplete:"Complete Data",
+      filterIncomplete:"Incomplete Data", filterShared:"Shared Heritage Only",
+      filterAllCountries:"All Countries", sortNewest:"Newest First", sortOldest:"Oldest First",
+      emptyGrid:"No elements match the filter.", btnAnalyze:"View Full Analysis",
+      modalOrigin:"Origin Country", modalCategory:"Category",
+      modalSignificance:"Cultural Significance", modalSources:"Data Sources",
+      modalDesc:"Description", modalTools:"Tools & Materials", modalSteps:"Process / Steps",
+      modalIncomplete:"Specific steps not found. Status: INCOMPLETE.",
+      modalShared:"Shared Heritage Detected",
+      sysStatus:"System Status", sysLastAction:"Latest Discovery:",
+      sysStandby:"Monitoring global sources...",
+      discoveredLog:"Scraped new item", enrichedLog:"Enriched item data",
+      googleSource:"Google Grounded Source"
+    },
+    id: {
+      title: "Radar <span class='text-brand-accent'>Warisan Budaya</span> ICH",
+      loading:"Memuat data...", lastUpdate:"Pembaruan terakhir:",
+      totalElements:"Total Elemen", completeData:"Data Komplit",
+      needsEnrichment:"Butuh Pengayaan", sharedNetwork:"Jaringan Shared Heritage",
+      mapTitle:"Peta Jaringan Warisan Budaya", directoryTitle:"Direktori Warisan Budaya Takbenda",
+      filterAll:"Semua Status", filterComplete:"Data Komplit",
+      filterIncomplete:"Data Tidak Komplit", filterShared:"Hanya Shared Heritage",
+      filterAllCountries:"Semua Negara", sortNewest:"Terbaru", sortOldest:"Terlama",
+      emptyGrid:"Tidak ada elemen yang sesuai filter.", btnAnalyze:"Lihat Analisa Lengkap",
+      modalOrigin:"Negara Asal", modalCategory:"Kategori",
+      modalSignificance:"Signifikansi Budaya", modalSources:"Sumber Data",
+      modalDesc:"Deskripsi", modalTools:"Alat & Bahan", modalSteps:"Tata Cara / Urutan",
+      modalIncomplete:"Tata cara spesifik belum ditemukan. Status: INCOMPLETE.",
+      modalShared:"Shared Heritage Terdeteksi",
+      sysStatus:"Status Sistem", sysLastAction:"Penemuan Terbaru:",
+      sysStandby:"Memantau sumber global...",
+      discoveredLog:"Menemukan elemen baru", enrichedLog:"Mengumpulkan data tambahan",
+      googleSource:"Sumber Referensi Google"
+    }
+  };
+  let currentLang = 'en';
+
+  // ═══════════════════════════════════════════════════════════════
+  //  IMAGE HELPERS
+  // ═══════════════════════════════════════════════════════════════
+  const FALLBACK_IMAGE = "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23141414%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2216%22 fill=%22%23555%22%3EImage Unavailable%3C/text%3E%3C/svg%3E";
+
+  function getValidImageUrl(url) {
+    if (!url || url === "N/A" || url.trim() === "") return FALLBACK_IMAGE;
+    const cleanUrl = url.trim();
+    if (cleanUrl.includes('api.microlink.io')) return cleanUrl;
+    return `https://wsrv.nl/?url=${encodeURIComponent(cleanUrl)}&w=600&fit=cover`;
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  //  MOCK FALLBACK DATA
+  // ═══════════════════════════════════════════════════════════════
+  const MOCK_DATA = {
+    "summary": {
+      "generated_at": new Date().toISOString(),
+      "total_ich_elements": 2, "complete_records": 1, "incomplete_records": 1,
+      "categories_breakdown": { "Traditional Craftsmanship": 1, "Culinary Traditions": 1 }
+    },
+    "inventory": [
+      {
+        "id":"ich-001","element_name":"Keris Indonesia","category":"Traditional Craftsmanship",
+        "thumbnail_url":"https://images.unsplash.com/photo-1621252179022-d278ec68e7b3?w=800&q=80",
+        "source_urls":["https://en.wikipedia.org/wiki/Kris"],
+        "scraped_at": new Date(Date.now()-86400000).toISOString(),
+        "location":{"country":"Indonesia","provinces":["Jawa","Bali"],"lat":-7.6145,"lng":110.7126},
+        "resume_analisa":{"description":"Asymmetrical dagger with distinctive blade-patterning.","cultural_significance":"A symbol of status, spiritual artifact, and heirloom.","gemini_tags":["weapon","spiritual","metalwork"]},
+        "resume_tata_cara":{"type":"crafting_process","materials_and_tools":["Iron","Steel","Meteorite stone","Forge"],"step_by_step":["1. Ritual preparation","2. Forging iron","3. Shaping blade","4. Acid wash"]},
+        "shared_heritage_detection":{"is_shared":true,"confidence_score":0.95,"related_elements":[{"country":"Malaysia","element_name":"Keris Melayu","relationship_reason":"Austronesian historical roots"},{"country":"Brunei Darussalam","element_name":"Keris Brunei","relationship_reason":"Spread of royal court culture"}]},
+        "completion_status":"COMPLETE"
       },
-      id: {
-        title: "Radar <span class='text-brand-accent'>Warisan Budaya</span> ICH",
-        loading: "Memuat data...",
-        lastUpdate: "Pembaruan terakhir:",
-        totalElements: "Total Elemen",
-        completeData: "Data Komplit",
-        needsEnrichment: "Butuh Pengayaan",
-        sharedNetwork: "Jaringan Shared Heritage",
-        mapTitle: "Peta Jaringan Warisan Budaya",
-        directoryTitle: "Direktori Warisan Budaya Takbenda",
-        filterAll: "Semua Status",
-        filterComplete: "Data Komplit",
-        filterIncomplete: "Data Tidak Komplit",
-        filterShared: "Hanya Shared Heritage",
-        filterAllCountries: "Semua Negara",
-        sortNewest: "Terbaru",
-        sortOldest: "Terlama",
-        emptyGrid: "Tidak ada elemen yang sesuai filter.",
-        btnAnalyze: "Lihat Analisa Lengkap",
-        modalOrigin: "Negara Asal",
-        modalCategory: "Kategori",
-        modalSignificance: "Signifikansi Budaya",
-        modalSources: "Sumber Data",
-        modalDesc: "Deskripsi",
-        modalTools: "Alat & Bahan",
-        modalSteps: "Tata Cara / Urutan",
-        modalIncomplete: "Tata cara spesifik belum ditemukan. Status: INCOMPLETE.",
-        modalShared: "Shared Heritage Terdeteksi",
-        sysStatus: "Status Sistem",
-        sysLastAction: "Penemuan Terbaru:",
-        sysStandby: "Memantau sumber global...",
-        discoveredLog: "Menemukan elemen baru",
-        enrichedLog: "Mengumpulkan data tambahan",
-        googleSource: "Sumber Referensi Google"
+      {
+        "id":"ich-002","element_name":"Tejate","category":"Culinary Traditions",
+        "thumbnail_url":"https://upload.wikimedia.org/wikipedia/commons/1/1a/Tejate_en_j%C3%ADcara.jpg",
+        "source_urls":["https://en.wikipedia.org/wiki/Tejate"],
+        "scraped_at": new Date().toISOString(),
+        "location":{"country":"Mexico","provinces":["Oaxaca"],"lat":17.0732,"lng":-96.7266},
+        "resume_analisa":{"description":"A traditional non-alcoholic maize and cacao beverage.","cultural_significance":"Drink of the gods.","gemini_tags":["beverage","cacao","indigenous"]},
+        "resume_tata_cara":null,
+        "shared_heritage_detection":{"is_shared":false,"confidence_score":0,"related_elements":[]},
+        "completion_status":"INCOMPLETE"
       }
-    };
+    ]
+  };
 
-    let currentLang = 'en';
+  // ═══════════════════════════════════════════════════════════════
+  //  STATE
+  // ═══════════════════════════════════════════════════════════════
+  let globalData    = null;
+  let filteredData  = [];
+  let map           = null;
+  let linesLayer    = null;   // polylines live on a plain layer (animates properly)
+  let markersLayer  = null;   // cluster group for markers
+  let currentPage   = 1;
+  const itemsPerPage = 9;
 
-    // --- BULLETPROOF IMAGE FALLBACK ---
-    // SVG Data URI that works 100% offline.
-    // Fixed Error: Converted literal single quotes to %22 (URL encoded double quotes) 
-    // to prevent SyntaxError: Unexpected identifier 'http' when injected into the 'onerror' JS attribute.
-    const FALLBACK_IMAGE = "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23141414%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2216%22 fill=%22%23555%22%3EImage Unavailable%3C/text%3E%3C/svg%3E";
-
-    // --- SMART IMAGE PROXY ---
-    function getValidImageUrl(url) {
-      if (!url || url === "N/A" || url.trim() === "") {
-        return FALLBACK_IMAGE;
-      }
-      const cleanUrl = url.trim();
-
-      // Jika URL sudah merupakan API Microlink, biarkan aslinya karena sudah aman
-      if (cleanUrl.includes('api.microlink.io')) {
-        return cleanUrl;
-      }
-
-      // Gunakan layanan proxy gratis `wsrv.nl` (Images.weserv.nl).
-      // Proxy ini otomatis menembus Hotlink Protection (UNESCO) & mengatasi error CORS/Referrer (Wikimedia).
-      // Parameter &w=600 memastikan gambar dikompres agar load Dashboard tetap ringan walau aslinya bergiga-giga.
-      return `https://wsrv.nl/?url=${encodeURIComponent(cleanUrl)}&w=600&fit=cover`;
+  // ═══════════════════════════════════════════════════════════════
+  //  INIT
+  // ═══════════════════════════════════════════════════════════════
+  async function init() {
+    try {
+      const response = await fetch('data.json');
+      if (!response.ok) throw new Error('Network response was not ok');
+      globalData = await response.json();
+    } catch (error) {
+      console.warn('Failed to load data.json, using mock data.', error);
+      globalData = MOCK_DATA;
     }
+    populateCountryFilter();
+    updateLangUI();
+    renderDashboard();
+    updateScraperTicker();
+    initMap();
+    setupEventListeners();
+    applyFilters();
+  }
 
-    // --- MOCK DATA ---
-    const MOCK_DATA = {
-      "summary": {
-        "generated_at": new Date().toISOString(),
-        "total_ich_elements": 3,
-        "complete_records": 2,
-        "incomplete_records": 1,
-        "categories_breakdown": {
-          "Traditional Craftsmanship": 1,
-          "Culinary Traditions": 2
-        }
-      },
-      "inventory": [
-        {
-          "id": "ich-001",
-          "element_name": "Keris Indonesia",
-          "category": "Traditional Craftsmanship",
-          "thumbnail_url": "https://images.unsplash.com/photo-1621252179022-d278ec68e7b3?w=800&q=80",
-          "source_urls": [
-            "https://en.wikipedia.org/wiki/Kris"
-          ],
-          "scraped_at": new Date(Date.now() - 86400000).toISOString(),
-           "location": { "country": "Indonesia", "provinces": ["Jawa"], "lat": -6.2, "lng": 106.8 }, // Tambahkan lat & lng
-          "resume_analisa": {
-            "description": "Asymmetrical dagger with distinctive blade-patterning achieved through alternating laminations of iron and nickelous meteoritic iron.",
-            "cultural_significance": "A symbol of status, spiritual artifact, and heirloom passed down through generations.",
-            "gemini_tags": ["weapon", "spiritual", "metalwork"]
-          },
-          "resume_tata_cara": {
-            "type": "crafting_process",
-            "materials_and_tools": ["Iron", "Steel", "Meteorite stone", "Forge"],
-            "step_by_step": ["1. Ritual preparation", "2. Forging iron and pamor", "3. Shaping the blade", "4. Warangan (acid wash)"]
-          },
-          "shared_heritage_detection": {
-            "is_shared": true,
-            "confidence_score": 0.95,
-            "related_elements": [
-              { "country": "Malaysia", "element_name": "Keris Melayu", "relationship_reason": "Austronesian historical roots" },
-              { "country": "Brunei Darussalam", "element_name": "Keris Brunei", "relationship_reason": "Spread of royal court culture" }
-            ]
-          },
-          "completion_status": "COMPLETE"
-        },
-        {
-          "id": "ich-002",
-          "element_name": "Tejate",
-          "category": "Culinary Traditions",
-          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Tejate_en_j%C3%ADcara.jpg",
-          "source_urls": ["https://en.wikipedia.org/wiki/Tejate"],
-          "scraped_at": new Date().toISOString(),
-          "location": { "country": "Mexico", "provinces": ["Oaxaca"], "lat": 17.0, "lng": -96.7 }, // Tambahkan lat & lng
-          "resume_analisa": {
-            "description": "A traditional non-alcoholic maize and cacao beverage originating from pre-Hispanic times.",
-            "cultural_significance": "Often referred to as the 'drink of the gods', playing a central role in indigenous ceremonies and daily life.",
-            "gemini_tags": ["beverage", "cacao", "indigenous"]
-          },
-          "resume_tata_cara": {
-            "type": "culinary_recipe",
-            "materials_and_tools": ["Toasted maize", "Fermented cacao beans", "Mamey pits", "Flor de cacao", "Jícara (bowl)"],
-            "step_by_step": ["1. Toast the maize and cacao beans", "2. Grind ingredients into a thick paste", "3. Knead the paste while slowly adding cold water", "4. Mix until a thick foam forms on top", "5. Serve cold in a jícara"]
-          },
-          "shared_heritage_detection": {
-            "is_shared": false,
-            "confidence_score": 0,
-            "related_elements": []
-          },
-          "completion_status": "COMPLETE"
-        },
-        {
-          "id": "ich-003",
-          "element_name": "UNESCO Test Image",
-          "category": "Social Practices & Rituals",
-          "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00028-RL-EN.jpg",
-          "source_urls": ["https://example.com"],
-          "scraped_at": new Date(Date.now() - 4000000).toISOString(),
-          "location": { "country": "Global", "provinces": ["National"] },
-          "resume_analisa": {
-            "description": "This tests if UNESCO hotlink protected images load properly using the wsrv.nl proxy system.",
-            "cultural_significance": "Error handling robustness.",
-            "gemini_tags": ["test", "proxy"]
-          },
-          "resume_tata_cara": null,
-          "shared_heritage_detection": {
-            "is_shared": false,
-            "confidence_score": 0,
-            "related_elements": []
-          },
-          "completion_status": "INCOMPLETE"
-        }
-      ]
-    };
+  function populateCountryFilter() {
+    const sel = document.getElementById('filter-country');
+    const countries = new Set();
+    globalData.inventory.forEach(item => {
+      if (item.location?.country) countries.add(item.location.country);
+    });
+    Array.from(countries).sort().forEach(c => {
+      const o = document.createElement('option');
+      o.value = c; o.innerText = c;
+      sel.appendChild(o);
+    });
+  }
 
-    // --- DYNAMIC GEOCODING CACHE ---
-    const geoCache = new Map();
+  // ═══════════════════════════════════════════════════════════════
+  //  UI RENDERING
+  // ═══════════════════════════════════════════════════════════════
+  function renderDashboard() {
+    const { summary } = globalData;
+    const dict = i18n[currentLang];
+    const dateStr = new Date(summary.generated_at)
+      .toLocaleString(currentLang === 'en' ? 'en-US' : 'id-ID', { dateStyle:'medium', timeStyle:'short' });
+    document.getElementById('last-updated').innerHTML =
+      `<i class="ph ph-clock text-brand-secondary"></i> <span>${dict.lastUpdate} ${dateStr}</span>`;
+    const sharedCount = globalData.inventory.filter(i => i.shared_heritage_detection?.is_shared).length;
+    document.getElementById('stats-container').innerHTML = `
+      <div class="bg-brand-800 border border-brand-700 rounded-xl p-5 flex flex-col gap-1">
+        <p class="text-gray-400 text-sm font-medium">${dict.totalElements}</p>
+        <p class="text-3xl font-display font-bold text-white">${summary.total_ich_elements}</p>
+      </div>
+      <div class="bg-brand-800 border border-brand-700 rounded-xl p-5 flex flex-col gap-1">
+        <p class="text-gray-400 text-sm font-medium">${dict.completeData}</p>
+        <p class="text-3xl font-display font-bold text-brand-accent">${summary.complete_records}</p>
+      </div>
+      <div class="bg-brand-800 border border-brand-700 rounded-xl p-5 flex flex-col gap-1">
+        <p class="text-gray-400 text-sm font-medium">${dict.needsEnrichment}</p>
+        <p class="text-3xl font-display font-bold text-red-400">${summary.incomplete_records}</p>
+      </div>
+      <div class="bg-brand-800 border border-brand-700 rounded-xl p-5 flex flex-col gap-1">
+        <p class="text-gray-400 text-sm font-medium">${dict.sharedNetwork}</p>
+        <p class="text-3xl font-display font-bold text-brand-secondary">${sharedCount}</p>
+      </div>`;
+  }
 
-    let globalData = null;
-    let filteredData = [];
-    let map = null;
-    let markersLayer = null;
-    let currentPage = 1;
-    const itemsPerPage = 9;
+  function updateScraperTicker() {
+    const dict = i18n[currentLang];
+    const sorted = [...globalData.inventory].sort((a,b) => new Date(b.scraped_at) - new Date(a.scraped_at));
+    const latest = sorted[0];
+    const isComplete = latest?.completion_status === 'COMPLETE';
+    document.getElementById('system-ticker').innerHTML = `
+      <span class="text-white">${isComplete ? dict.enrichedLog : dict.discoveredLog}:</span>
+      <span class="text-brand-accent font-bold px-1">${latest?.element_name}</span>
+      <span class="text-gray-400">(${latest?.location?.country || 'Unknown'})</span>
+      <span class="${isComplete ? 'text-brand-accent' : 'text-red-400'} text-[10px] border border-current px-1 rounded ml-1">${latest?.completion_status}</span>`;
+  }
 
-    // --- INITIALIZATION ---
-    async function init() {
-      try {
-        const response = await fetch('data.json');
-        if (!response.ok) throw new Error('Network response was not ok');
-        globalData = await response.json();
-      } catch (error) {
-        console.warn('Failed to load data.json, using mock data.', error);
-        globalData = MOCK_DATA;
-      }
-
-      populateCountryFilter();
-      updateLangUI();
-      renderDashboard(); // Static UI stats
-      updateScraperTicker();
-      initMap();
-      setupEventListeners();
-      
-      // Apply initial filters & sort (which handles rendering the grid & map points)
-      applyFilters();
+  function renderGrid(data, append = false) {
+    const grid = document.getElementById('inventory-grid');
+    const loadMoreContainer = document.getElementById('load-more-container');
+    const dict = i18n[currentLang];
+    if (!append) grid.innerHTML = '';
+    if (data.length === 0) {
+      grid.innerHTML = `<div class="col-span-full text-center text-gray-500 py-10">${dict.emptyGrid}</div>`;
+      if (loadMoreContainer) loadMoreContainer.classList.add('hidden');
+      return;
     }
-
-    // --- POPULATE FILTERS ---
-    function populateCountryFilter() {
-      const countrySelect = document.getElementById('filter-country');
-      const uniqueCountries = new Set();
-      
-      globalData.inventory.forEach(item => {
-        if (item.location?.country && item.location.country.trim() !== '') {
-          uniqueCountries.add(item.location.country);
-        }
-      });
-      
-      // Sort alphabetically
-      const sortedCountries = Array.from(uniqueCountries).sort();
-      
-      sortedCountries.forEach(country => {
-        const opt = document.createElement('option');
-        opt.value = country;
-        opt.innerText = country;
-        countrySelect.appendChild(opt);
-      });
-    }
-
-    // --- SMART URL FORMATTER ---
-    function formatSourceLinks(urls, dict) {
-      if (!urls || urls.length === 0) return '-';
-      
-      return urls.map((url, index) => {
-        const isVertexRedirect = url.includes('vertexaisearch.cloud.google.com') || url.includes('grounding-api-redirect');
-        
-        let displayText = '';
-        let iconClass = '';
-        let colorClass = '';
-        let bgClass = 'bg-brand-900';
-
-        if (isVertexRedirect) {
-          displayText = `${dict.googleSource} ${index + 1}`;
-          iconClass = 'ph-google-logo';
-          colorClass = 'text-brand-accent hover:text-white';
-          bgClass = 'bg-brand-900 border border-brand-accent/30';
-        } else {
-          try {
-            displayText = new URL(url).hostname.replace(/^www\./, '');
-          } catch(e) {
-            displayText = `Link ${index + 1}`;
-          }
-          iconClass = 'ph-link';
-          colorClass = 'text-blue-400 hover:text-blue-300';
-          bgClass = 'bg-brand-800 border border-brand-700';
-        }
-        
-        return `<a href="${url}" target="_blank" class="w-fit max-w-full flex items-center gap-2 px-3 py-2 rounded-md transition-colors ${bgClass} ${colorClass}" title="${url}">
-                  <i class="ph ${iconClass} text-lg shrink-0"></i> 
-                  <span class="text-xs font-mono truncate">${displayText}</span>
-                </a>`;
-      }).join('');
-    }
-
-    // --- i18n TRANSLATION LOGIC ---
-    function toggleLang() {
-      currentLang = currentLang === 'en' ? 'id' : 'en';
-      document.getElementById('lang-label').innerText = currentLang.toUpperCase();
-      document.documentElement.lang = currentLang;
-      
-      updateLangUI();
-      renderDashboard();
-      updateScraperTicker();
-      applyFilters(); // Re-render grid to reflect any translated fallback texts
-      
-      closeModal();
-    }
-
-    function updateLangUI() {
-      const dict = i18n[currentLang];
-      document.getElementById('app-title').innerHTML = dict.title;
-      
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (dict[key]) {
-          if (el.tagName === 'OPTION') {
-            el.innerText = dict[key];
-          } else {
-            el.innerHTML = dict[key];
-          }
-        }
-      });
-    }
-
-    // --- RENDER LOGIC ---
-    function renderDashboard() {
-      const { summary } = globalData;
-      const dict = i18n[currentLang];
-
-      const dateObj = new Date(summary.generated_at);
-      const dateStr = dateObj.toLocaleString(currentLang === 'en' ? 'en-US' : 'id-ID', { dateStyle: 'medium', timeStyle: 'short' });
-      document.getElementById('last-updated').innerHTML = `<i class="ph ph-clock text-brand-secondary"></i> <span>${dict.lastUpdate} ${dateStr}</span>`;
-
-      const sharedCount = globalData.inventory.filter(i => i.shared_heritage_detection?.is_shared).length;
-      document.getElementById('stats-container').innerHTML = `
-        <div class="bg-brand-800 border border-brand-700 rounded-xl p-5 flex flex-col gap-1">
-          <p class="text-gray-400 text-sm font-medium">${dict.totalElements}</p>
-          <p class="text-3xl font-display font-bold text-white">${summary.total_ich_elements}</p>
-        </div>
-        <div class="bg-brand-800 border border-brand-700 rounded-xl p-5 flex flex-col gap-1">
-          <p class="text-gray-400 text-sm font-medium">${dict.completeData}</p>
-          <p class="text-3xl font-display font-bold text-brand-accent">${summary.complete_records}</p>
-        </div>
-        <div class="bg-brand-800 border border-brand-700 rounded-xl p-5 flex flex-col gap-1">
-          <p class="text-gray-400 text-sm font-medium">${dict.needsEnrichment}</p>
-          <p class="text-3xl font-display font-bold text-red-400">${summary.incomplete_records}</p>
-        </div>
-        <div class="bg-brand-800 border border-brand-700 rounded-xl p-5 flex flex-col gap-1">
-          <p class="text-gray-400 text-sm font-medium">${dict.sharedNetwork}</p>
-          <p class="text-3xl font-display font-bold text-brand-secondary">${sharedCount}</p>
-        </div>
-      `;
-    }
-
-    function updateScraperTicker() {
-      const dict = i18n[currentLang];
-      const inventory = globalData.inventory;
-      
-      if (inventory.length > 0) {
-        const sorted = [...inventory].sort((a, b) => new Date(b.scraped_at) - new Date(a.scraped_at));
-        const latest = sorted[0];
-        const isComplete = latest.completion_status === 'COMPLETE';
-        const actionText = isComplete ? dict.enrichedLog : dict.discoveredLog;
-        
-        document.getElementById('system-ticker').innerHTML = `
-          <span class="text-white">${actionText}:</span> 
-          <span class="text-brand-accent font-bold px-1">${latest.element_name}</span> 
-          <span class="text-gray-400">(${latest.location?.country || 'Unknown'})</span> 
-          <span class="${isComplete ? 'text-brand-accent' : 'text-red-400'} text-[10px] border border-current px-1 rounded ml-1">${latest.completion_status}</span>
-        `;
-      }
-    }
-
-    function renderGrid(data, append = false) {
-      const grid = document.getElementById('inventory-grid');
-      // Ambil elemen tombol load more
-      const loadMoreContainer = document.getElementById('load-more-container');
-      const dict = i18n[currentLang];
-      
-      if (!append) {
-        grid.innerHTML = ''; // Kosongkan grid jika ini pencarian/filter baru
-      }
-
-      if (data.length === 0) {
-        grid.innerHTML = `<div class="col-span-full text-center text-gray-500 py-10">${dict.emptyGrid}</div>`;
-        if (loadMoreContainer) loadMoreContainer.classList.add('hidden');
-        return;
-      }
-
-      // Hitung data mana saja yang akan ditampilkan di halaman ini
-      const startIndex = (currentPage - 1) * itemsPerPage;
-      const endIndex = startIndex + itemsPerPage;
-      const itemsToShow = data.slice(startIndex, endIndex);
-
-      // Loop hanya untuk item yang masuk dalam perhitungan halaman saat ini
-      itemsToShow.forEach((item, index) => {
-        const isComplete = item.completion_status === 'COMPLETE';
-        const isShared = item.shared_heritage_detection?.is_shared;
-        
-        const tags = item.resume_analisa?.gemini_tags?.slice(0, 3) || [];
-        const tagsHtml = tags.map(t => `<span class="bg-brand-700 text-xs px-2 py-1 rounded-md text-gray-300">#${t}</span>`).join('');
-
-        const card = document.createElement('div');
-        card.className = "bg-brand-800 border border-brand-700 rounded-xl overflow-hidden hover:border-brand-500 transition-colors group flex flex-col";
-        
-        const safeImageUrl = getValidImageUrl(item.thumbnail_url);
-        
-        card.innerHTML = `
-          <div class="h-48 w-full bg-brand-900 relative overflow-hidden">
-            <img src="${safeImageUrl}" alt="${item.element_name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
-            
-            <div class="absolute top-3 right-3 flex gap-2">
-              ${isShared ? '<span class="bg-brand-secondary text-brand-900 text-[10px] font-bold px-2 py-1 rounded shadow"><i class="ph-fill ph-link"></i> SHARED</span>' : ''}
-              <span class="${isComplete ? 'bg-brand-accent text-brand-900' : 'bg-red-500 text-white'} text-[10px] font-bold px-2 py-1 rounded shadow">
-                ${isComplete ? 'COMPLETE' : 'INCOMPLETE'}
-              </span>
-            </div>
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex   = startIndex + itemsPerPage;
+    data.slice(startIndex, endIndex).forEach(item => {
+      const isComplete = item.completion_status === 'COMPLETE';
+      const isShared   = item.shared_heritage_detection?.is_shared;
+      const tags       = item.resume_analisa?.gemini_tags?.slice(0,3) || [];
+      const tagsHtml   = tags.map(t => `<span class="bg-brand-700 text-xs px-2 py-1 rounded-md text-gray-300">#${t}</span>`).join('');
+      const card = document.createElement('div');
+      card.className = "bg-brand-800 border border-brand-700 rounded-xl overflow-hidden hover:border-brand-500 transition-colors group flex flex-col";
+      const safeImg = getValidImageUrl(item.thumbnail_url);
+      card.innerHTML = `
+        <div class="h-48 w-full bg-brand-900 relative overflow-hidden">
+          <img src="${safeImg}" alt="${item.element_name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" onerror="this.onerror=null;this.src='${FALLBACK_IMAGE}'">
+          <div class="absolute top-3 right-3 flex gap-2">
+            ${isShared ? '<span class="bg-brand-secondary text-brand-900 text-[10px] font-bold px-2 py-1 rounded shadow"><i class="ph-fill ph-link"></i> SHARED</span>' : ''}
+            <span class="${isComplete ? 'bg-brand-accent text-brand-900' : 'bg-red-500 text-white'} text-[10px] font-bold px-2 py-1 rounded shadow">${isComplete ? 'COMPLETE' : 'INCOMPLETE'}</span>
           </div>
-          
-          <div class="p-5 flex flex-col flex-grow gap-3">
-            <div>
-              <p class="text-xs text-brand-secondary font-mono mb-1 tracking-widest uppercase">${item.category}</p>
-              <h3 class="font-display font-bold text-xl leading-tight line-clamp-2">${item.element_name}</h3>
-              <p class="text-sm text-gray-400 mt-1"><i class="ph-fill ph-map-pin mr-1"></i>${item.location?.country || 'Unknown'}</p>
-            </div>
-            
-            <p class="text-sm text-gray-300 line-clamp-3 leading-relaxed flex-grow">
-              ${item.resume_analisa?.description || '...'}
-            </p>
-            
-            <div class="flex flex-wrap gap-1 mt-auto pt-4 border-t border-brand-700">
-              ${tagsHtml}
-            </div>
-            
-            <button onclick='openModal("${item.id}")' class="w-full mt-3 bg-brand-700 hover:bg-brand-accent hover:text-brand-900 text-white py-2.5 rounded-lg text-sm font-bold transition-all duration-300">
-              ${dict.btnAnalyze}
-            </button>
+        </div>
+        <div class="p-5 flex flex-col flex-grow gap-3">
+          <div>
+            <p class="text-xs text-brand-secondary font-mono mb-1 tracking-widest uppercase">${item.category}</p>
+            <h3 class="font-display font-bold text-xl leading-tight line-clamp-2">${item.element_name}</h3>
+            <p class="text-sm text-gray-400 mt-1"><i class="ph-fill ph-map-pin mr-1"></i>${item.location?.country || 'Unknown'}</p>
           </div>
-        `;
-        grid.appendChild(card);
-      });
-
-      // Tampilkan atau sembunyikan tombol Load More
-      if (loadMoreContainer) {
-        if (endIndex < data.length) {
-          loadMoreContainer.classList.remove('hidden');
-        } else {
-          loadMoreContainer.classList.add('hidden');
-        }
-      }
+          <p class="text-sm text-gray-300 line-clamp-3 leading-relaxed flex-grow">${item.resume_analisa?.description || '...'}</p>
+          <div class="flex flex-wrap gap-1 mt-auto pt-4 border-t border-brand-700">${tagsHtml}</div>
+          <button onclick='openModal("${item.id}")' class="w-full mt-3 bg-brand-700 hover:bg-brand-accent hover:text-brand-900 text-white py-2.5 rounded-lg text-sm font-bold transition-all duration-300">${dict.btnAnalyze}</button>
+        </div>`;
+      grid.appendChild(card);
+    });
+    if (loadMoreContainer) {
+      endIndex < data.length ? loadMoreContainer.classList.remove('hidden') : loadMoreContainer.classList.add('hidden');
     }
-    function loadMoreItems() {
-      currentPage++;
-      renderGrid(filteredData, true); // true = tambahkan ke bawah, jangan di-reset
-    }
+  }
 
+  function loadMoreItems() {
+    currentPage++;
+    renderGrid(filteredData, true);
+  }
 
-    // --- DYNAMIC MAP LOGIC ---
-     // 1. Buat variabel antrean global di luar fungsi
-      let nominatimQueue = Promise.resolve();
+  // ═══════════════════════════════════════════════════════════════
+  //  MAP
+  // ═══════════════════════════════════════════════════════════════
+  function initMap() {
+    map = L.map('map', { zoomControl: true, scrollWheelZoom: true }).setView([20, 0], 2);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd', maxZoom: 20
+    }).addTo(map);
+    setTimeout(() => map.invalidateSize(), 500);
+  }
 
-      async function getCoords(locationName) {
-        if (!locationName) return null;
-        
-        let searchQuery = locationName;
-        let countryOnly = locationName;
+  const mainIcon = L.divIcon({
+    className: '', html: '<div class="marker-main"></div>',
+    iconSize: [14, 14], iconAnchor: [7, 7], popupAnchor: [0, -10]
+  });
+  const relatedIcon = L.divIcon({
+    className: '', html: '<div class="marker-related"></div>',
+    iconSize: [10, 10], iconAnchor: [5, 5], popupAnchor: [0, -8]
+  });
 
-        if (locationName.includes('(') && locationName.includes(')')) {
-          countryOnly = locationName.split('(')[0].trim();
-          const province = locationName.split('(')[1].replace(')', '').trim();
-          searchQuery = `${province}, ${countryOnly}`; 
-        }
+  function drawMapElements(data) {
+    if (!map) return;
 
-        const key = searchQuery.toLowerCase();
-        
-        // Jika sudah ada di memori, kembalikan instan (tidak perlu antre)
-        if (geoCache.has(key)) return geoCache.get(key);
+    // ── Clear previous layers ──
+    if (linesLayer)   { map.removeLayer(linesLayer);   linesLayer = null; }
+    if (markersLayer) { map.removeLayer(markersLayer); markersLayer = null; }
 
-        // 2. Masukkan request baru ke dalam antrean Promise
-        return new Promise((resolve) => {
-          nominatimQueue = nominatimQueue.then(async () => {
-            try {
-              // JEDA 1.5 DETIK (Penting agar tidak diblokir Nominatim)
-              await new Promise(r => setTimeout(r, 1500));
-              
-              // Identitas aplikasi (wajib untuk Nominatim)
-              const emailParam = "&email=app@dashboard.local"; 
+    // Polylines must NOT be inside MarkerClusterGroup (clustering breaks SVG animation)
+    linesLayer   = L.layerGroup().addTo(map);
+    markersLayer = L.markerClusterGroup({ chunkedLoading: true, maxClusterRadius: 40 });
+    map.addLayer(markersLayer);
 
-              console.log(`Mengambil koordinat: ${searchQuery}...`);
-              let response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(searchQuery)}&limit=1${emailParam}`);
-              let data = await response.json();
+    // Track which related-country markers were already drawn
+    const drawnRelated = new Set();
 
-              if (data && data.length > 0) {
-                const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
-                geoCache.set(key, coords);
-                resolve(coords);
-                return; // Selesai untuk antrean ini
-              } 
-              
-              // JIKA GAGAL, FALLBACK KE NEGARA
-              if (searchQuery !== countryOnly) {
-                console.warn(`Provinsi tidak ditemukan, mencoba ke negara asal: ${countryOnly}`);
-                
-                // JEDA LAGI 1.5 DETIK sebelum request fallback
-                await new Promise(r => setTimeout(r, 1500)); 
-                
-                response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(countryOnly)}&limit=1${emailParam}`);
-                data = await response.json();
-                
-                if (data && data.length > 0) {
-                  const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
-                  geoCache.set(key, coords); 
-                  resolve(coords);
-                  return;
-                }
-              }
-              
-            } catch (error) {
-              console.warn(`Gagal mengambil data untuk ${searchQuery}.`, error);
-            }
-            
-            // JARING PENGAMAN (Koordinat acak agar tidak error)
-            const fallbackCoords = [ (Math.random() * 40 - 20), (Math.random() * 100 + 40) ];
-            geoCache.set(key, fallbackCoords);
-            resolve(fallbackCoords);
-          });
+    data.forEach(item => {
+      const lat = item.location?.lat;
+      const lng = item.location?.lng;
+      if (!lat || !lng) return;
+
+      const mainCoords = [lat, lng];
+
+      // ── Main marker ──
+      L.marker(mainCoords, { icon: mainIcon })
+        .bindPopup(`<strong>${item.element_name}</strong><br><span style="color:#aaa">${item.location.country}</span>`)
+        .addTo(markersLayer);
+
+      // ── Shared heritage connections ──
+      if (item.shared_heritage_detection?.is_shared) {
+        item.shared_heritage_detection.related_elements.forEach(rel => {
+          const relCoords = coordsForCountry(rel.country);
+          if (!relCoords) return;
+
+          // Related-country marker (draw once per country)
+          const relKey = rel.country + '||' + rel.element_name;
+          if (!drawnRelated.has(relKey)) {
+            drawnRelated.add(relKey);
+            L.marker(relCoords, { icon: relatedIcon })
+              .bindPopup(`<strong>${rel.element_name}</strong><br><span style="color:#aaa">${rel.country}</span><br><em style="color:#ccc;font-size:11px">${rel.relationship_reason}</em>`)
+              .addTo(markersLayer);
+          }
+
+          // Animated glowing connection line
+          L.polyline([mainCoords, relCoords], {
+            className : 'glowing-line',
+            weight    : 1.8,
+            opacity   : 0.85
+          }).addTo(linesLayer);
         });
       }
+    });
+  }
 
-      function initMap() {
-        map = L.map('map').setView([20, 0], 2); 
-        
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
-          subdomains: 'abcd',
-          maxZoom: 20
-        }).addTo(map);
+  // ═══════════════════════════════════════════════════════════════
+  //  FILTERS & SORT
+  // ═══════════════════════════════════════════════════════════════
+  function applyFilters() {
+    const statusVal  = document.getElementById('filter-status').value;
+    const countryVal = document.getElementById('filter-country').value;
+    const sortVal    = document.getElementById('sort-order').value;
+    let result = [...globalData.inventory];
+    if (statusVal === 'COMPLETE')    result = result.filter(i => i.completion_status === 'COMPLETE');
+    else if (statusVal === 'INCOMPLETE') result = result.filter(i => i.completion_status !== 'COMPLETE');
+    else if (statusVal === 'SHARED') result = result.filter(i => i.shared_heritage_detection?.is_shared);
+    if (countryVal !== 'all') result = result.filter(i => i.location?.country === countryVal);
+    result.sort((a,b) => {
+      const dA = new Date(a.scraped_at||0), dB = new Date(b.scraped_at||0);
+      return sortVal === 'newest' ? dB - dA : dA - dB;
+    });
+    filteredData = result;
+    currentPage = 1;
+    renderGrid(filteredData, false);
+    drawMapElements(filteredData);
+  }
 
-        // Paksa peta untuk me-refresh ukurannya
-        setTimeout(() => { map.invalidateSize(); }, 500);
+  function setupEventListeners() {
+    document.getElementById('filter-status').addEventListener('change', applyFilters);
+    document.getElementById('filter-country').addEventListener('change', applyFilters);
+    document.getElementById('sort-order').addEventListener('change', applyFilters);
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  //  MODAL
+  // ═══════════════════════════════════════════════════════════════
+  function formatSourceLinks(urls, dict) {
+    if (!urls || urls.length === 0) return '-';
+    return urls.map((url, i) => {
+      const isVertex = url.includes('vertexaisearch') || url.includes('grounding-api-redirect');
+      let label = isVertex ? `${dict.googleSource} ${i+1}` : (() => { try { return new URL(url).hostname.replace(/^www\./,''); } catch(e) { return `Link ${i+1}`; } })();
+      let icon  = isVertex ? 'ph-google-logo' : 'ph-link';
+      let cls   = isVertex ? 'text-brand-accent border-brand-accent/30' : 'text-blue-400 border-brand-700';
+      return `<a href="${url}" target="_blank" class="w-fit flex items-center gap-2 px-3 py-2 rounded-md bg-brand-900 border ${cls} text-xs font-mono truncate max-w-full hover:opacity-80 transition" title="${url}"><i class="ph ${icon} text-lg shrink-0"></i><span class="truncate">${label}</span></a>`;
+    }).join('');
+  }
+
+  function openModal(itemId) {
+    const item = globalData.inventory.find(i => i.id === itemId);
+    if (!item) return;
+    const dict = i18n[currentLang];
+    document.getElementById('modal-title').innerText = item.element_name;
+
+    let toolsHtml = '', stepsHtml = '';
+    if (item.resume_tata_cara?.step_by_step) {
+      if (item.resume_tata_cara.materials_and_tools) {
+        toolsHtml = `<div class="mb-4">
+          <h5 class="text-brand-secondary font-bold text-sm mb-2"><i class="ph-fill ph-toolbox mr-2"></i>${dict.modalTools}</h5>
+          <div class="flex flex-wrap gap-2">${item.resume_tata_cara.materials_and_tools.map(m=>`<span class="bg-brand-700 px-3 py-1 rounded text-sm">${m}</span>`).join('')}</div>
+        </div>`;
       }
-
-// VERSI BARU drawMapElements yang JAUH LEBIH CEPAT
-async function drawMapElements(data) {
-      if(!map) return;
-      if(markersLayer) map.removeLayer(markersLayer);
-      
-      markersLayer = L.markerClusterGroup({ chunkedLoading: true });
-      map.addLayer(markersLayer);
-
-      // --- DEFINISIKAN ICON DI SINI ---
-      const defaultIcon = L.divIcon({
-        className: 'custom-div-icon',
-        html: `<div class="w-4 h-4 bg-brand-accent rounded-full shadow-[0_0_10px_#00ffcc]"></div>`,
-        iconSize: [16, 16],
-        iconAnchor: [8, 8]
-      });
-
-      const relatedIcon = L.divIcon({
-        className: 'custom-div-icon',
-        html: `<div class="w-3 h-3 bg-brand-secondary rounded-full shadow-[0_0_8px_#facc15]"></div>`,
-        iconSize: [12, 12],
-        iconAnchor: [6, 6]
-      });
-
-      data.forEach(item => {
-        const lat = item.location?.lat;
-        const lng = item.location?.lng;
-
-        if (lat && lng) {
-          const mainCoords = [lat, lng];
-          
-          // Gambar Marker Utama
-          L.marker(mainCoords, {icon: defaultIcon})
-           .bindPopup(`<strong class="text-brand-900">${item.element_name}</strong><br><span class="text-gray-600">${item.location.country}</span>`)
-           .addTo(markersLayer);
-           
-          // Gambar Garis Shared Heritage (Jika ada data koordinat di relasi)
-          if (item.shared_heritage_detection?.is_shared && item.shared_heritage_detection.related_elements) {
-            item.shared_heritage_detection.related_elements.forEach(rel => {
-              if (rel.lat && rel.lng) {
-                const relCoords = [rel.lat, rel.lng];
-                
-                L.marker(relCoords, {icon: relatedIcon})
-                 .bindPopup(`<strong class="text-brand-900">${rel.element_name}</strong><br><span class="text-gray-600">${rel.country}</span>`)
-                 .addTo(markersLayer);
-
-                L.polyline([mainCoords, relCoords], {
-                  className: 'glowing-line',
-                  weight: 2
-                }).addTo(markersLayer);
-              }
-            });
-          }
-        }
-      });
+      stepsHtml = `<div>
+        <h5 class="text-brand-secondary font-bold text-sm mb-2"><i class="ph-fill ph-list-numbers mr-2"></i>${dict.modalSteps} (${item.resume_tata_cara.type||'Process'})</h5>
+        <div class="space-y-3">${item.resume_tata_cara.step_by_step.map(s=>`<div class="bg-brand-900/50 p-3 rounded-lg border border-brand-700 text-sm text-gray-300 leading-relaxed">${s.replace(/\*\*/g,'')}</div>`).join('')}</div>
+      </div>`;
+    } else {
+      stepsHtml = `<div class="p-4 bg-brand-900/50 rounded-lg border border-brand-700 text-red-400 text-sm text-center"><i class="ph ph-warning-circle mr-1"></i>${dict.modalIncomplete}</div>`;
     }
 
-    // --- FILTER & SORT LOGIC ---
-    function applyFilters() {
-      const statusVal = document.getElementById('filter-status').value;
-      const countryVal = document.getElementById('filter-country').value;
-      const sortVal = document.getElementById('sort-order').value;
-      
-      let result = [...globalData.inventory];
-      
-      // 1. Filter by Status
-      if (statusVal === 'COMPLETE') result = result.filter(i => i.completion_status === 'COMPLETE');
-      else if (statusVal === 'INCOMPLETE') result = result.filter(i => i.completion_status !== 'COMPLETE');
-      else if (statusVal === 'SHARED') result = result.filter(i => i.shared_heritage_detection?.is_shared);
-      
-      // 2. Filter by Country
-      if (countryVal !== 'all') {
-        result = result.filter(i => i.location?.country === countryVal);
-      }
-      
-      // 3. Sort by scraped_at (Date)
-      result.sort((a, b) => {
-        const dateA = new Date(a.scraped_at || 0);
-        const dateB = new Date(b.scraped_at || 0);
-        // "newest" = descending, "oldest" = ascending
-        return sortVal === 'newest' ? dateB - dateA : dateA - dateB;
-      });
-
-      filteredData = result;
-      currentPage = 1; // RESET HALAMAN SETIAP KALI FILTER BERUBAH
-      renderGrid(filteredData, false);
-      
-      drawMapElements(filteredData);
+    let sharedHtml = '';
+    if (item.shared_heritage_detection?.is_shared) {
+      sharedHtml = `<div class="bg-brand-900/80 p-5 rounded-xl border border-brand-secondary/30 mt-4">
+        <h4 class="font-bold text-brand-secondary flex items-center gap-2 mb-4"><i class="ph-fill ph-share-network"></i>${dict.modalShared} (Confidence: ${(item.shared_heritage_detection.confidence_score*100).toFixed(0)}%)</h4>
+        <div class="space-y-4">${item.shared_heritage_detection.related_elements.map(r=>`
+          <div class="pl-4 border-l-2 border-brand-secondary/50">
+            <p class="font-bold text-white">${r.element_name} <span class="text-gray-500 font-normal">(${r.country})</span></p>
+            <p class="text-sm text-gray-400 mt-1">"${r.relationship_reason}"</p>
+          </div>`).join('')}</div>
+      </div>`;
     }
 
-    function setupEventListeners() {
-      document.getElementById('filter-status').addEventListener('change', applyFilters);
-      document.getElementById('filter-country').addEventListener('change', applyFilters);
-      document.getElementById('sort-order').addEventListener('change', applyFilters);
-    }
-
-    // --- MODAL LOGIC ---
-    function openModal(itemId) {
-      const item = globalData.inventory.find(i => i.id === itemId);
-      if(!item) return;
-
-      const dict = i18n[currentLang];
-      document.getElementById('modal-title').innerText = item.element_name;
-      
-      let toolsHtml = '';
-      let stepsHtml = '';
-      
-      if (item.resume_tata_cara && item.resume_tata_cara.step_by_step) {
-        if(item.resume_tata_cara.materials_and_tools) {
-          toolsHtml = `
-            <div class="mb-4">
-              <h5 class="text-brand-secondary font-bold text-sm mb-2"><i class="ph-fill ph-toolbox mr-2"></i>${dict.modalTools}</h5>
-              <div class="flex flex-wrap gap-2">
-                ${item.resume_tata_cara.materials_and_tools.map(m => `<span class="bg-brand-700 px-3 py-1 rounded text-sm">${m}</span>`).join('')}
-              </div>
-            </div>`;
-        }
-        stepsHtml = `
+    const safeImg = getValidImageUrl(item.thumbnail_url);
+    document.getElementById('modal-body').innerHTML = `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex flex-col gap-4">
+          <img src="${safeImg}" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-lg" onerror="this.onerror=null;this.src='${FALLBACK_IMAGE}'">
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-brand-900 p-3 rounded-lg border border-brand-700">
+              <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-1">${dict.modalOrigin}</p>
+              <p class="font-bold text-sm">${item.location?.country||'-'}</p>
+              <p class="text-xs text-gray-400 mt-1">${(item.location?.provinces||[]).join(', ')}</p>
+            </div>
+            <div class="bg-brand-900 p-3 rounded-lg border border-brand-700">
+              <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-1">${dict.modalCategory}</p>
+              <p class="font-bold text-sm leading-tight">${item.category}</p>
+            </div>
+          </div>
+          <div class="bg-brand-900 p-4 rounded-lg border border-brand-700">
+            <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-2">${dict.modalSignificance}</p>
+            <p class="text-sm text-brand-accent leading-relaxed">${item.resume_analisa?.cultural_significance||'-'}</p>
+          </div>
           <div>
-            <h5 class="text-brand-secondary font-bold text-sm mb-2"><i class="ph-fill ph-list-numbers mr-2"></i>${dict.modalSteps} (${item.resume_tata_cara.type || 'Process'})</h5>
-            <div class="space-y-3">
-              ${item.resume_tata_cara.step_by_step.map(s => `<div class="bg-brand-900/50 p-3 rounded-lg border border-brand-700 text-sm text-gray-300 leading-relaxed">${s.replace(/\*\*/g, '')}</div>`).join('')}
-            </div>
-          </div>`;
-      } else {
-        stepsHtml = `<div class="p-4 bg-brand-900/50 rounded-lg border border-brand-700 text-red-400 text-sm text-center"><i class="ph ph-warning-circle mr-1"></i> ${dict.modalIncomplete}</div>`;
-      }
-
-      let sharedHtml = '';
-      if(item.shared_heritage_detection?.is_shared) {
-        sharedHtml = `
-          <div class="bg-brand-900/80 p-5 rounded-xl border border-brand-secondary/30 mt-4">
-            <h4 class="font-bold text-brand-secondary flex items-center gap-2 mb-4"><i class="ph-fill ph-share-network"></i> ${dict.modalShared} (Confidence: ${(item.shared_heritage_detection.confidence_score*100).toFixed(0)}%)</h4>
-            <div class="space-y-4">
-              ${item.shared_heritage_detection.related_elements.map(r => `
-                <div class="pl-4 border-l-2 border-brand-secondary/50">
-                  <p class="font-bold text-white">${r.element_name} <span class="text-gray-500 font-normal">(${r.country})</span></p>
-                  <p class="text-sm text-gray-400 mt-1">"${r.relationship_reason}"</p>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        `;
-      }
-
-      const safeImageUrl = getValidImageUrl(item.thumbnail_url);
-
-      document.getElementById('modal-body').innerHTML = `
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="flex flex-col gap-4">
-            <img src="${safeImageUrl}" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-lg" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
-            
-            <div class="grid grid-cols-2 gap-3">
-              <div class="bg-brand-900 p-3 rounded-lg border border-brand-700">
-                <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-1">${dict.modalOrigin}</p>
-                <p class="font-bold text-sm">${item.location?.country || '-'}</p>
-                <p class="text-xs text-gray-400 mt-1">${(item.location?.provinces || []).join(', ')}</p>
-              </div>
-              <div class="bg-brand-900 p-3 rounded-lg border border-brand-700">
-                <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-1">${dict.modalCategory}</p>
-                <p class="font-bold text-sm leading-tight">${item.category}</p>
-              </div>
-            </div>
-
-            <div class="bg-brand-900 p-4 rounded-lg border border-brand-700">
-              <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-2">${dict.modalSignificance}</p>
-              <p class="text-sm text-brand-accent leading-relaxed">${item.resume_analisa?.cultural_significance || '-'}</p>
-            </div>
-            
-            <div>
-              <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-2">${dict.modalSources}</p>
-              <div class="flex flex-col gap-2">
-                ${formatSourceLinks(item.source_urls, dict)}
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col">
-            <h4 class="font-display font-bold text-lg mb-2">${dict.modalDesc}</h4>
-            <p class="text-sm text-gray-300 leading-relaxed mb-6">${item.resume_analisa?.description || '-'}</p>
-            
-            ${toolsHtml}
-            ${stepsHtml}
-            ${sharedHtml}
+            <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-2">${dict.modalSources}</p>
+            <div class="flex flex-col gap-2">${formatSourceLinks(item.source_urls, dict)}</div>
           </div>
         </div>
-      `;
+        <div class="flex flex-col">
+          <h4 class="font-display font-bold text-lg mb-2">${dict.modalDesc}</h4>
+          <p class="text-sm text-gray-300 leading-relaxed mb-6">${item.resume_analisa?.description||'-'}</p>
+          ${toolsHtml}${stepsHtml}${sharedHtml}
+        </div>
+      </div>`;
 
-      const modal = document.getElementById('item-modal');
-      const wrapper = document.getElementById('modal-content-wrapper');
-      
-      modal.classList.remove('hidden');
-      void modal.offsetWidth;
-      modal.classList.remove('opacity-0');
-      wrapper.classList.remove('scale-95');
-    }
+    const modal   = document.getElementById('item-modal');
+    const wrapper = document.getElementById('modal-content-wrapper');
+    modal.classList.remove('hidden');
+    void modal.offsetWidth;
+    modal.classList.remove('opacity-0');
+    wrapper.classList.remove('scale-95');
+  }
 
-    function closeModal() {
-      const modal = document.getElementById('item-modal');
-      const wrapper = document.getElementById('modal-content-wrapper');
-      
-      modal.classList.add('opacity-0');
-      wrapper.classList.add('scale-95');
-      
-      setTimeout(() => {
-        modal.classList.add('hidden');
-      }, 300);
-    }
+  function closeModal() {
+    const modal   = document.getElementById('item-modal');
+    const wrapper = document.getElementById('modal-content-wrapper');
+    modal.classList.add('opacity-0');
+    wrapper.classList.add('scale-95');
+    setTimeout(() => modal.classList.add('hidden'), 300);
+  }
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !document.getElementById('item-modal').classList.contains('hidden')) {
-        closeModal();
-      }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !document.getElementById('item-modal').classList.contains('hidden')) closeModal();
+  });
+  document.getElementById('item-modal').addEventListener('click', e => {
+    if (e.target === document.getElementById('item-modal')) closeModal();
+  });
+
+  // ═══════════════════════════════════════════════════════════════
+  //  i18n TOGGLE
+  // ═══════════════════════════════════════════════════════════════
+  function toggleLang() {
+    currentLang = currentLang === 'en' ? 'id' : 'en';
+    document.getElementById('lang-label').innerText = currentLang.toUpperCase();
+    document.documentElement.lang = currentLang;
+    updateLangUI(); renderDashboard(); updateScraperTicker(); applyFilters(); closeModal();
+  }
+  function updateLangUI() {
+    const dict = i18n[currentLang];
+    document.getElementById('app-title').innerHTML = dict.title;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key]) el.tagName === 'OPTION' ? (el.innerText = dict[key]) : (el.innerHTML = dict[key]);
     });
+  }
 
-    document.getElementById('item-modal').addEventListener('click', (e) => {
-      if (e.target === document.getElementById('item-modal')) {
-        closeModal();
-      }
-    });
-
-    window.onload = init;
+  window.onload = init;
   </script>
 </body>
 </html>
