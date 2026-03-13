@@ -102,7 +102,7 @@ KEYWORDS = [
     "how villagers make traditional craft",
     "ancestral cooking method traditional dish",
 
-        # ─────────────────────────────────────────────
+    # ─────────────────────────────────────────────
     # ENGLISH (Global / General)
     # ─────────────────────────────────────────────
     "Intangible Cultural Heritage examples",
@@ -681,11 +681,18 @@ def get_screenshot_url(url, element_name="Unknown Element"):
     """
     Tries to get a screenshot from Microlink. 
     If the URL is missing or invalid, it falls back to Wikimedia Commons.
+    If the URL is ALREADY an image (e.g., .jpg), it returns the URL directly.
     """
     if not url or url.lower() == "n/a" or url.startswith("http://n/a"):
         log.info(f"Invalid URL for '{element_name}', triggering Wikimedia fallback...")
         wiki_img = get_wikimedia_image(element_name)
         return wiki_img if wiki_img else "N/A"
+        
+    # SMART CHECK: If it's already an image file, DO NOT use Microlink screenshot API.
+    lower_url = url.lower()
+    if lower_url.endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg')):
+        log.info(f"Direct image URL detected for '{element_name}'. Skipping Microlink API.")
+        return url
         
     encoded_url = requests.utils.quote(url)
     return f"https://api.microlink.io/?url={encoded_url}&screenshot=true&meta=false&embed=screenshot.url"
@@ -743,7 +750,6 @@ def enrich_incomplete_items(api_key, inventory):
     log.info(f"Found {len(incomplete_items)} incomplete items. Starting enrichment...")
     enriched_count = 0
     
-    # Process up to 3 incomplete items per run to save quota
     for item in incomplete_items[:3]:
         element_name = item.get("element_name")
         current_sources = item.get("source_urls", [])
@@ -758,7 +764,9 @@ def enrich_incomplete_items(api_key, inventory):
         You can search through local news, community blogs, and social media.
         Find AT LEAST ONE NEW source URL to add to the existing ones.
         
-        IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
+        IMPORTANT INSTRUCTIONS:
+        1. The element DOES NOT need to be officially recognized by UNESCO. It can be a local tradition, unregistered heritage, rare recipe, or community practice found on local blogs or regional news. 
+        2. DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
         
         Respond ONLY with a JSON object representing the UPDATED element.
         Ensure ALL output data values and keys are strictly in ENGLISH.
@@ -795,7 +803,7 @@ def enrich_incomplete_items(api_key, inventory):
             enriched_count += 1
             log.info(f"Successfully enriched {element_name} from multiple sources.")
         
-        time.sleep(5) # Rate limit safety (Jeda 5 detik antar request)
+        time.sleep(5) 
         
     return enriched_count
 
@@ -805,9 +813,6 @@ def enrich_incomplete_items(api_key, inventory):
 
 def discover_new_items(api_key, inventory):
     discovered_count = 0
-    
-    # LOOPING BATCH: Bertanya hingga 3 kali untuk menjaga Kualitas (Quality Over Quantity)
-    # Daripada meminta AI muntahin 5 sekaligus, kita minta 1 per 1 diulang 3x.
     max_discoveries_per_run = 3 
     
     for i in range(max_discoveries_per_run):
@@ -853,7 +858,7 @@ def discover_new_items(api_key, inventory):
                 if name.lower() not in existing_names:
                     item["id"] = generate_id(name)
                     
-                    # Ensure thumbnail with Wikimedia Fallback
+                    # Ensure thumbnail with Wikimedia Fallback OR Direct Image check
                     url_to_screenshot = item.get("source_urls", [""])[0] if item.get("source_urls") else ""
                     
                     if not item.get("thumbnail_url"):
@@ -863,7 +868,6 @@ def discover_new_items(api_key, inventory):
                     discovered_count += 1
                     log.info(f"Discovered new element: {name} (Status: {item.get('completion_status')})")
         
-        # Beri jeda 5 detik antar pencarian agar aman dari pemblokiran API (Rate Limits)
         time.sleep(5) 
                 
     return discovered_count
