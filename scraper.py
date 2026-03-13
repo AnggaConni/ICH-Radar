@@ -725,6 +725,8 @@ def enrich_incomplete_items(api_key, inventory):
         Respond ONLY with a JSON object representing the UPDATED element.
         Ensure ALL output data values and keys are strictly in ENGLISH.
         If you find the missing data, change "completion_status" to "COMPLETE".
+
+        "IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL (e.g. wikipedia.org, localnews.com, etc)."
         
         Required JSON Structure:
         {{
@@ -774,6 +776,8 @@ def discover_new_items(api_key, inventory):
     If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
     If you find all information, set "completion_status" to "COMPLETE".
     
+    "IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL (e.g. wikipedia.org, localnews.com, etc)."
+
     Output strictly as a JSON ARRAY containing ONE object with this structure:
     [
       {{
