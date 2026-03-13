@@ -1813,16 +1813,178 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2ba6c99b",
+      "element_name": "Wayuu Normative System, applied by the Pütchipü'üi (Palabrero)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/03384-RL-EN.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435",
+        "https://es.unesco.org/node/184136",
+        "https://www.mincultura.gov.co/prensa/noticias/Paginas/Palabrero-Wayuu-Patrimonio.aspx",
+        "https://www.comfama.com/cultura/palabreros-wayuu-maestros-del-dialogo/"
+      ],
+      "scraped_at": "2026-03-13T09:59:21.970621Z",
+      "location": {
+        "country": "Colombia",
+        "provinces": [
+          "La Guajira"
+        ],
+        "lat": 11.4354118,
+        "lng": -72.9002161
+      },
+      "resume_analisa": {
+        "description": "The Wayuu normative system, applied by the Pütchipü'üi (palabrero), is a traditional legislative system of the Wayuu people inhabiting the Guajira Peninsula, straddling Colombia and Venezuela. It comprises a body of principles, procedures, and rites that govern the social and spiritual conduct of the community. The system is inspired by principles of reparation and compensation and is applied by local moral authorities known as Pütchipü'üi or 'palabreros' (orators), who are experts in resolving conflicts and disputes between the matrilineal clans. It prioritizes peace and negotiation over conflict, aiming to re-establish social harmony through reconciliation.",
+        "cultural_significance": "This system is a cornerstone of Wayuu identity and social cohesion, serving as a testament to their respect for harmonious living. It represents a restitutive justice system, focused on restoring order, harmony, and balance rather than imposing punishment. The Pütchipü'üi embody wisdom and the power of the word, acting as crucial mediators in maintaining peace within the community. The system emphasizes the values of life, liberty, and peace, and its effectiveness depends on the timely and just application of the law.",
+        "gemini_tags": [
+          "Conflict Resolution",
+          "Indigenous Justice System",
+          "Social Practices",
+          "Oral Traditions",
+          "Wayuu Culture",
+          "Intangible Cultural Heritage",
+          "Colombia",
+          "Venezuela"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Conflict Resolution Process",
+        "materials_and_tools": [
+          "Diplomacy",
+          "Caution",
+          "Intelligence",
+          "Symbolic offerings (necklaces of precious stones, sacrifices of cattle, sheep, and goats)",
+          "Enramadas (traditional kiosks for meetings)"
+        ],
+        "step_by_step": [
+          "Initiation: When a conflict arises between individuals or clans, both the offender and the offended parties seek the authority of a Pütchipü'üi (palabrero).",
+          "Analysis: The Pütchipü'üi carefully analyzes the situation, considering the background and character of those involved.",
+          "Intention to Resolve: The Pütchipü'üi informs the concerned authorities of his intention to resolve the conflict peacefully.",
+          "Dialogue Establishment: If the 'word' (Pütchikalü) of the Pütchipü'üi is accepted by both parties, a dialogue is established.",
+          "Mediation: During the dialogue, the Pütchipü'üi acts with diplomacy, caution, and intelligence to facilitate communication and negotiation.",
+          "Compensation Proposal: A compensation system is employed, often involving symbolic offerings such as necklaces made of precious stones or sacrifices of cattle, sheep, and goats. Material compensation is considered essential for achieving concord.",
+          "Reconciliation: Compensations are offered at special events where the disputing families are invited to participate, aiming to re-establish social harmony through reconciliation."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Venezuela",
+            "element_name": "Wayuu Normative System, applied by the Pütchipü'üi (Palabrero)",
+            "relationship_reason": "The Wayuu community inhabits the Guajira Peninsula, which straddles both Colombia and Venezuela, sharing this traditional system across both nations. The system is recognized by both governments."
+          },
+          {
+            "country": "Colombia (other indigenous communities)",
+            "element_name": "Diverse Indigenous Conflict Resolution Practices",
+            "relationship_reason": "While specific practices vary, other indigenous communities in Colombia also utilize traditional conflict resolution systems focused on mediation and restorative justice, aiming to restore harmony rather than implement punishment."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-9996e8fc",
+      "element_name": "Artisanal Talavera Pottery of Puebla and Tlaxcala (Mexico)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462",
+        "https://en.wikipedia.org/wiki/Artisanal_Talavera_of_Puebla_and_Tlaxcala",
+        "https://www.loc.gov/item/webpage/talavera-ceramics-at-the-intersection-of-art-history-and-law-in-mexico-in-custodia-legis/",
+        "https://www.lewisginter.org/turning-earth-into-art-the-significance-of-talavera-pottery/",
+        "https://www.tierrayfuego.com/the-making-of-talavera-mexican-ceramic-tile/",
+        "https://www.mexicantiles.com/how-mexican-tile-and-sinks-are-made",
+        "https://talavera.mx/en/the-production-process-of-talavera/",
+        "https://www.missiontilewest.com/how-traditional-talavera-hand-painted-tile-is-made/",
+        "https://mexicada.shop/blogs/news/what-is-the-cultural-significance-of-talavera-pottery-in-mexican-traditions",
+        "https://casaderaicez.com/blogs/news/the-art-of-talavera-a-500-year-old-mexican-tradition",
+        "https://soldecampo.com/blogs/sol-de-campo/the-artisanal-legacy-history-of-talavera-pottery",
+        "https://www.gob.mx/sre/prensa/unesco-presents-intangible-cultural-heritage-certificate-to-mexico-s-talavera-pottery",
+        "https://artsandculture.google.com/story/the-production-process-of-talavera-pottery/6wXh-G4qV244Jw",
+        "https://alltribestreasures.com/blogs/news/talavera-pottery-history-art-cultural-heritage",
+        "https://www.bazardelmundo.com/talavera-pottery/",
+        "https://talavera.com/blogs/articles/talavera-sets-itself-apart",
+        "https://www.authenticmexicanhomedecor.com/blogs/blog/the-mastery-involved-in-talavera-ceramic-creation",
+        "https://www.youtube.com/watch?v=0hN_x62aD48",
+        "https://www.mexiconewsdaily.com/culture/unesco-declares-talavera-intangible-cultural-heritage/",
+        "https://imagine-mexico.com/talavera-pottery-added-to-the-list-of-intangible-cultural-heritage-of-humanity/",
+        "https://www.dmcspain.com/talavera-world-heritage-ceramics/"
+      ],
+      "scraped_at": "2026-03-13T09:59:50.728241Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "Puebla",
+          "Tlaxcala"
+        ],
+        "lat": 18.833333,
+        "lng": -98.0
+      },
+      "resume_analisa": {
+        "description": "Talavera pottery is a traditional Mexican tin-glazed earthenware, a type of majolica, characterized by its milky-white base glaze and vibrant hand-painted designs. The craft involves an elaborate and time-consuming process that has remained largely unchanged since the 16th century. Authentic Talavera is produced in specific regions of Mexico, primarily in the states of Puebla and Tlaxcala, due to the unique quality of local clays and the established historical tradition. The designs are hand-painted using natural mineral pigments, traditionally limited to a palette of six colors: blue, yellow, black, green, orange, and mauve, with cobalt blue being historically prominent.",
+        "cultural_significance": "Talavera pottery holds significant cultural importance in Mexico, symbolizing the country's rich heritage and artistic expression. It represents a unique blending of Spanish majolica techniques, introduced in the 16th century, with the existing pottery traditions and artistic influences of indigenous Mexican cultures. The skills and craftsmanship are often passed down through generations, ensuring the continuity of this living tradition. Beyond its aesthetic appeal, Talavera is integrated into daily life and ceremonial practices, used for utilitarian items like plates and sinks, as well as decorative elements in architecture, such as tiles on churches and buildings. The intricate designs often carry symbolism, with floral motifs representing fertility and nature, and geometric shapes reflecting indigenous influences.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Pottery",
+          "Ceramics",
+          "Tin-Glazed Earthenware",
+          "Hand-Painted",
+          "Mexican Culture",
+          "Intangible Cultural Heritage",
+          "Artisanal Production",
+          "Puebla",
+          "Tlaxcala"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship (Pottery Making)",
+        "materials_and_tools": [
+          "Natural clays (black sand from Amozoc, white sand from Tecali, or light/dark clay from Puebla region)",
+          "Water",
+          "Sieves",
+          "Sedimentation tubs",
+          "Potter's wheel or molds",
+          "Kilns (wood or gas-fired)",
+          "Tin and lead glaze",
+          "Natural mineral pigments (blue, yellow, black, green, orange, mauve)",
+          "Brushes",
+          "Sanding tools"
+        ],
+        "step_by_step": [
+          "**Clay Selection and Preparation**: Two types of natural clay, typically black sand from Amozoc and white sand from Tecali, or light and dark clays from the Puebla region, are selected. The clay is ground, mixed with water, and soaked in sedimentation tubs for several days. It is then washed and filtered to retain only the finest particles, which can reduce the volume by up to 50%. The mixture is kneaded, traditionally by stomping with bare feet, to achieve a uniform consistency and plasticity. Finally, the clay is formed into blocks and stored.",
+          "**Shaping**: Pieces are meticulously shaped by hand, either on a potter's wheel for vessels or by pressing clay into molds for tiles and other forms. For tiles, the clay is rolled out and cut into specific shapes, known as 'jahuetes'.",
+          "**Drying**: The freshly shaped pieces are left to dry slowly and uniformly in unventilated spaces or in the shade. This drying period can range from several days to up to 90 days, depending on the size and complexity of the piece.",
+          "**First Firing (Bisque Firing)**: The dried pieces undergo a first firing in a kiln, typically at temperatures between 800-850°C (1,472-1,560°F) for approximately 10 hours. After this firing, the pieces, now orange in color, are known as 'jahuete' or 'sancocho'. They are then inspected for cracks and sanded to remove any roughness or imperfections.",
+          "**Glazing**: An initial milky-white base glaze, made from tin and lead, is applied to the fired pieces, usually by hand-dipping. As the glaze dries at room temperature, its initial yellow hue turns into a matte white.",
+          "**Decoration (Hand-Painting)**: Designs are hand-painted onto the glazed surface using natural mineral pigments. Historically, a strict palette of six colors (blue, yellow, black, green, orange, and mauve) is used, with cobalt blue being a prominent and traditional choice. The paint is applied in a way that results in a slightly raised texture over the base.",
+          "**Second Firing**: The decorated pieces undergo a final firing at a higher temperature, around 1000°C (1,832°F). This second firing hardens the glaze and allows the colors to develop their characteristic brilliance and volume. The entire production process for a single piece can take from one month to up to six months."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Spain",
+            "element_name": "Ceramics of Talavera de la Reina and El Puente del Arzobispo",
+            "relationship_reason": "Talavera pottery in Mexico originated from Spanish majolica techniques, specifically from Talavera de la Reina, brought by Spanish artisans in the 16th century. Both traditions were jointly inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2019."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T09:46:25.545361Z",
-    "total_ich_elements": 22,
-    "complete_records": 21,
+    "generated_at": "2026-03-13T10:00:32.306957Z",
+    "total_ich_elements": 24,
+    "complete_records": 23,
     "incomplete_records": 1,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 10,
-      "Social Practices & Rituals": 4,
+      "Traditional Craftsmanship": 11,
+      "Social Practices & Rituals": 5,
       "Culinary Traditions": 5,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 2
