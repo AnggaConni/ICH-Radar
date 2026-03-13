@@ -438,16 +438,97 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2c75579d",
+      "element_name": "Bunya Nut Festival",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://www.slq.qld.gov.au/__data/assets/image/0006/528399/Bunya-Dreaming-Festival-2020-Jo-Anne-Driessens-Image-18374531100-0001-0029.jpg",
+      "source_urls": [
+        "https://eatwelltraveloften.com.au/the-story-of-the-bunya/",
+        "https://www.diegobonetto.com/beautiful-bunyas",
+        "https://www.slq.qld.gov.au/blog/bountiful-bunyas-charismatic-tree-fascinating-history",
+        "https://www.auzi.com/bunya-festival-brings-indigenous-tradition-back-to-the-southern-downs/",
+        "https://jerrycolebywilliams.com/2015/02/15/bunya-prehistoric-plant-ancient-australian-food-tradition/",
+        "https://www.studytoowoomba.qld.gov.au/embracing-the-rare-beauty-of-bunya-nut-season-in-toowoomba/",
+        "https://parks.des.qld.gov.au/parks/bunya-mountains/culture-history",
+        "https://www.australianfoodtimeline.com.au/1902-last-bunya-nut-gathering/",
+        "https://bunyamountains.com.au/about-the-bunya-mountains/",
+        "https://www.researchgate.net/publication/379904797_Not_All_Edible_Nuts_Are_Eaten_Evidence_for_Continued_Aboriginal_Cultural_Use_and_Dispersal_of_Bunya_Pine_Araucaria_bidwillii_in_Southern_But_Not_in_Northern_Queensland",
+        "https://www.botanicgardens.org.au/news/genomic-research-highlights-indigenous-ecological-knowledge-bunya-pine",
+        "https://ilsc.gov.au/new-bunya-mountain-base-paves-way-for-aboriginal-groups-to-gather-in-ancient-tradition/",
+        "https://qaaﬁ.uq.edu.au/article/2024/04/bringing-new-life-ancient-nut",
+        "https://www.bunyapeoples.org.au/bonye-buru-booburrgan-ngmmunge",
+        "https://en.wikipedia.org/wiki/Araucaria_bidwillii",
+        "https://en.wikipedia.org/wiki/Bunya_Mountains_National_Park",
+        "https://magpiepublishers.com.au/aboriginal-songlines/",
+        "https://www.slowfood.com/ark-of-taste-products/bunya-nuts/"
+      ],
+      "scraped_at": "2026-03-13T06:11:15.454911Z",
+      "location": {
+        "country": "Australia",
+        "provinces": [
+          "Queensland",
+          "New South Wales"
+        ]
+      },
+      "resume_analisa": {
+        "description": "The Bunya Nut Festival, also known as Bunya Gathering or 'Bonye Bonye Festival', is a traditional and culturally significant event for various Aboriginal peoples in Australia, primarily centered around the Bunya Mountains and Blackall Ranges in South-West Queensland. Historically, it occurred every three to four years, coinciding with the bumper harvest of the Bunya pine (Araucaria bidwillii) nuts. This gathering was a crucial time for numerous language groups and tribes, some traveling hundreds of kilometers along ancient songlines, to come together for feasting, trade, cultural exchange, and social practices. The festival was largely disrupted by European colonization in the late 19th and early 20th centuries due to displacement and logging. However, modern revivals, such as the Bunya Dreaming Festival, aim to continue the spirit of these gatherings, promoting reconciliation and cultural recognition.",
+        "cultural_significance": "The Bunya Nut Festival holds profound cultural significance, representing a deep connection to Country, reciprocity, and sustainable resource management. The Bunya pine is considered a sacred tree, often referred to as a 'Mother Spirit' or totem by many Aboriginal people. The gatherings served as a vital platform for maintaining law and social order, resolving disputes, arranging marriages, forging alliances, and facilitating the interchange of songs, stories, and dances. It was a 'parliament of sorts' for tribal leaders to discuss important matters. The nuts themselves were a ceremonial food of great importance, providing sustenance for hundreds, sometimes thousands, of people for extended periods.",
+        "gemini_tags": [
+          "Indigenous culture",
+          "Festival",
+          "Harvest festival",
+          "Social gathering",
+          "Ritual",
+          "Food tradition",
+          "Aboriginal Australians",
+          "Bunya nut",
+          "Oral traditions",
+          "Cultural exchange"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Social Gathering & Food Preparation",
+        "materials_and_tools": [
+          "Bunya nuts (from Bunya pine cones)",
+          "Climbing vines (for tree climbing)",
+          "Sticks or small hand-axes (for knocking down cones)",
+          "Campfires (for roasting nuts)",
+          "Stones (for grinding nuts into flour)",
+          "Salt (for boiling nuts in modern preparation)"
+        ],
+        "step_by_step": [
+          "Prediction of a bumper Bunya nut crop, which traditionally occurs every three to four years.",
+          "Local Murri people and traditional owners would invite neighboring Aboriginal groups to join the harvest.",
+          "Aboriginal peoples would travel hundreds of kilometers along established Songlines and traditional pathways to reach the Bunya Mountains and Blackall Ranges.",
+          "Bunya nuts were harvested either from the forest floor after cones naturally fell, or by skilled climbers ascending the giant Bunya pines using climbing vines and knocking down cones with sticks or small hand-axes.",
+          "Nuts were prepared for consumption: juicy young nuts were eaten raw, mature nuts were roasted on campfires, or ground into a flour called 'nyangti'. Some nuts were also buried in muddy streams to encourage new shoots for later consumption.",
+          "Participants engaged in a wide range of cultural practices, including feasting on Bunya nuts and other bush foods, trading goods and knowledge, observing cultural and kinship obligations, resolving disputes, conducting ceremonies, organizing future events, forging alliances, and interchanging songs, stories, and dances."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Vanuatu",
+            "element_name": "Toka (related to Monkey Puzzle tree)",
+            "relationship_reason": "The Toka tradition on Tanna Island, Vanuatu, is noted as a similar gathering and food source, involving the Monkey Puzzle tree (Araucaria araucana), a close relative of the Bunya pine, highlighting a shared cultural practice around ancient Araucaria species."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T06:02:58.561013Z",
-    "total_ich_elements": 5,
-    "complete_records": 4,
+    "generated_at": "2026-03-13T06:11:54.845515Z",
+    "total_ich_elements": 6,
+    "complete_records": 5,
     "incomplete_records": 1,
     "categories_breakdown": {
       "Traditional Craftsmanship": 2,
-      "Social Practices & Rituals": 2,
+      "Social Practices & Rituals": 3,
       "Culinary Traditions": 1
     }
   }
