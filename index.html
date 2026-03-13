@@ -640,74 +640,35 @@
 
     // --- DYNAMIC MAP LOGIC ---
      // 1. Buat variabel antrean global di luar fungsi
-let nominatimQueue = Promise.resolve();
-
-async function getCoords(locationName) {
-  if (!locationName) return null;
+async function getCoords(countryName) {
+  if (!countryName) return null;
   
-  let searchQuery = locationName;
-  let countryOnly = locationName;
+  // 1. Bersihkan nama negara (Misal: "Canada (Quebec)" menjadi "Canada")
+  // Ini mengambil teks sebelum tanda kurung buka '(' dan menghapus spasi sisa
+  const cleanCountryName = countryName.split('(')[0].trim();
+  const key = cleanCountryName.toLowerCase();
 
-  if (locationName.includes('(') && locationName.includes(')')) {
-    countryOnly = locationName.split('(')[0].trim();
-    const province = locationName.split('(')[1].replace(')', '').trim();
-    searchQuery = `${province}, ${countryOnly}`; 
-  }
-
-  const key = searchQuery.toLowerCase();
-  
-  // Jika sudah ada di memori, kembalikan instan (tidak perlu antre)
+  // Return from cache if already fetched
   if (geoCache.has(key)) return geoCache.get(key);
 
-  // 2. Masukkan request baru ke dalam antrean Promise
-  return new Promise((resolve) => {
-    nominatimQueue = nominatimQueue.then(async () => {
-      try {
-        // JEDA 1.5 DETIK (Penting agar tidak diblokir Nominatim)
-        await new Promise(r => setTimeout(r, 1500));
-        
-        // Identitas aplikasi (wajib untuk Nominatim)
-        const emailParam = "&email=app@dashboard.local"; 
-
-        console.log(`Mengambil koordinat: ${searchQuery}...`);
-        let response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(searchQuery)}&limit=1${emailParam}`);
-        let data = await response.json();
-
-        if (data && data.length > 0) {
-          const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
-          geoCache.set(key, coords);
-          resolve(coords);
-          return; // Selesai untuk antrean ini
-        } 
-        
-        // JIKA GAGAL, FALLBACK KE NEGARA
-        if (searchQuery !== countryOnly) {
-          console.warn(`Provinsi tidak ditemukan, mencoba ke negara asal: ${countryOnly}`);
-          
-          // JEDA LAGI 1.5 DETIK sebelum request fallback
-          await new Promise(r => setTimeout(r, 1500)); 
-          
-          response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(countryOnly)}&limit=1${emailParam}`);
-          data = await response.json();
-          
-          if (data && data.length > 0) {
-            const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
-            geoCache.set(key, coords); 
-            resolve(coords);
-            return;
-          }
-        }
-        
-      } catch (error) {
-        console.warn(`Gagal mengambil data untuk ${searchQuery}.`, error);
+  try {
+    // 2. Gunakan cleanCountryName untuk dipanggil ke API
+    const response = await fetch(`https://restcountries.com/v3.1/name/${encodeURIComponent(cleanCountryName)}?fullText=false`);
+    if (response.ok) {
+      const data = await response.json();
+      if (data && data.length > 0 && data[0].latlng) {
+        const coords = data[0].latlng;
+        geoCache.set(key, coords);
+        return coords;
       }
-      
-      // JARING PENGAMAN (Koordinat acak agar tidak error)
-      const fallbackCoords = [ (Math.random() * 40 - 20), (Math.random() * 100 + 40) ];
-      geoCache.set(key, fallbackCoords);
-      resolve(fallbackCoords);
-    });
-  });
+    }
+  } catch (error) {
+    console.warn(`Dynamic geocoding failed for ${cleanCountryName}.`, error);
+  }
+  
+  const fallbackCoords = [ (Math.random() * 40 - 20), (Math.random() * 100 + 40) ];
+  geoCache.set(key, fallbackCoords);
+  return fallbackCoords;
 }
 
       function initMap() {
