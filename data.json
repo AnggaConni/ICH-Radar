@@ -894,17 +894,338 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5a6ba7da",
+      "element_name": "La Chandeleur and Crêpes",
+      "category": "Culinary Traditions | Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition",
+        "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival",
+        "https://www.tastefrance.com/us/france/articles/la-chandeleur-frances-festive-day-crepes-and-fortune",
+        "https://alpinefrenchschool.com/french-traditions-chandeleur/",
+        "https://www.julietteetchocolat.com/blog/la-fete-de-la-chandeleur-une-celebration-d-origine-paienne-pour-feter-la-crepe",
+        "https://www.babylangues.com/blog/french-tradition-la-chandeleur-le-jour-des-crepes/",
+        "https://www.babylangues.com/blog/crepes-for-la-chandeleur-french-cuisine/",
+        "https://www.jetlaggers.com/why-do-french-people-eat-crepes-for-la-chandeleur/",
+        "https://www.opinelsa.com/blog/a-classic-crepe-recipe-for-la-chandeleur/",
+        "https://www.myparisportraits.com/la-chandeleur-unveiling-the-charm-of-french-crepes-and-superstitions/",
+        "https://www.sochic.sg/magazine/traditional-french-crepes-recipe-for-la-chandeleur/",
+        "https://www.cookingclassesinfrance.com/la-chandeleur-crepes-day-in-france/",
+        "https://www.programmesemanasanta.com/semana-santa-en-a-coruna-2025/",
+        "https://www.richeskarayib.com/es/blog/jamaican-beef-patty-historia-preparacion-y-herencia-cultural-jamaicana-n23",
+        "https://www.ecoleng.com/blog/chandeleur-tradicion-familiar-y-crepes-en-la-cultura-francesa",
+        "https://www.innovasciencejournal.omeditorial.com/index.php/isj/article/view/106",
+        "https://www.campuseducacion.com/blog/revista-digital-docente/importancia-de-la-familia-en-la-transmision-de-la-cultura-y-las-tradiciones/",
+        "https://www.clublibritos.com/blogs/noticias/tradiciones-familiares",
+        "https://www.dialnet.unirioja.es/servlet/articulo?codigo=8322049",
+        "https://www.minedu.gob.bo/files/publicaciones/2021/libro_sistematizacion_experiencias_educativas_2021.pdf",
+        "https://www.revistafacultaddederecho.unlz.edu.ar/index.php/RFD/article/view/100",
+        "https://www.jennieo.com/news/thanksgiving-family-recipes-unite-people",
+        "https://www.lacuisinedegeraldine.com/en/la-chandeleur-why-does-france-bake-crepes-on-february-2/",
+        "https://www.copycatcafe.com/la-chandeleur-superstition-crepes/",
+        "https://www.lescerclesdefermieres.qc.ca/blogue/la-tradition-de-la-chandeleur-le-2-fevrier",
+        "https://www.chandeleur.org/en/history-of-chandeleur"
+      ],
+      "scraped_at": "2026-03-13T07:17:46.002509Z",
+      "location": {
+        "country": "France",
+        "provinces": []
+      },
+      "resume_analisa": {
+        "description": "La Chandeleur, also known as Candlemas, is a traditional French holiday celebrated annually on February 2nd. It is widely recognized as 'Crêpe Day,' where families and friends gather to make and enjoy crêpes. This celebration is a blend of ancient pagan rituals, Christian traditions, and culinary customs. The round, golden shape of the crêpes symbolizes the sun and the return of light after the long winter months, embodying hope for spring and a bountiful harvest.",
+        "cultural_significance": "The origins of La Chandeleur are deeply rooted in both pagan and Christian beliefs. Ancient Roman festivals like Lupercalia, honoring fertility and purification, and Celtic Imbolc, dedicated to the goddess Brigid and light, involved lighting candles and torches to signify the return of warmth and light. In 472 AD, Pope Gelasius I Christianized the holiday, associating it with the Feast of the Presentation of Jesus at the Temple, 40 days after Christmas. The name 'Chandeleur' itself derives from the Latin 'candelorum' or French 'chandelle,' both meaning candle, reflecting the tradition of blessing and carrying candles in churches. Beyond its historical and religious context, La Chandeleur is rich in folklore and superstitions. A prominent tradition involves flipping a crêpe with one hand (typically the right) while holding a coin (traditionally a Louis d'or, now any coin) in the other (left hand), believed to bring financial prosperity and good luck for the coming year. Another custom suggests placing the first crêpe, folded over a coin, atop a cupboard or in a drawer to ensure good fortune and abundant harvests. Farmers historically believed that failing to make crêpes on this day would result in poor harvests. Additionally, weather-related superstitions exist, such as rain on Chandeleur predicting 40 more days of rain, while a sunny day signals the imminent end of winter. The practice of making crêpes also held practical significance, serving as an economical meal made from simple ingredients during late winter when food stores were low, and as a way to use up rich dairy products before the Lenten fast.",
+        "gemini_tags": [
+          "Culinary Tradition",
+          "French Culture",
+          "Candlemas",
+          "Crêpes",
+          "Folklore",
+          "Superstition",
+          "Pagan Origins",
+          "Christian Holiday",
+          "Seasonal Celebration",
+          "Family Tradition",
+          "Harvest Symbolism",
+          "Good Luck Ritual"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Culinary Recipe",
+        "materials_and_tools": [
+          "All-purpose flour",
+          "Eggs",
+          "Whole milk",
+          "Melted unsalted butter",
+          "Granulated sugar",
+          "Pinch of salt",
+          "Vanilla extract (optional)",
+          "Orange blossom essence (optional, for South of France flavor)",
+          "Dark rum (optional, for North of France flavor)",
+          "Beer (optional, orange infused beers are best)",
+          "Large mixing bowl",
+          "Whisk",
+          "Non-stick pan or griddle",
+          "Ladle",
+          "Spatula",
+          "Butter (for greasing pan)"
+        ],
+        "step_by_step": [
+          "Melt the butter and allow the milk to come to room temperature to help prevent lumps in the batter.",
+          "In a large mixing bowl, sift the all-purpose flour, then whisk in the granulated sugar and a pinch of salt. Create a well in the center of the dry ingredients.",
+          "Crack the eggs into the well, along with the melted butter, and begin whisking from the center outwards.",
+          "Gradually add the milk (and water if using) to the mixture, whisking continuously to ensure a smooth batter free of lumps. The consistency should be thin and runny.",
+          "Stir in vanilla extract or any other optional flavorings such as orange blossom essence, dark rum, or beer.",
+          "Cover the bowl and let the crêpe batter rest in the refrigerator for at least 30 minutes, or ideally 2 to 4 hours, or even up to 24 hours for best results.",
+          "Heat a lightly greased non-stick pan or griddle over medium heat.",
+          "Pour a small ladle (approximately 1/4 cup) of batter into the hot pan. Immediately tilt and swirl the pan in a circular motion to evenly coat the surface with a thin layer of batter.",
+          "Cook the crêpe for about 1 to 2 minutes on the first side, until the edges begin to turn light brown and lift from the pan.",
+          "Carefully loosen the crêpe with a spatula and flip it over. Experienced cooks may attempt to flip the crêpe in the air with one hand while holding a coin in the other for good luck.",
+          "Cook the second side for approximately 1 minute, or until it is lightly golden.",
+          "Remove the cooked crêpe from the pan and serve hot. Crêpes can be filled with a variety of sweet toppings like sugar and lemon, jam, or Nutella, or savory options such as ham and cheese."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "United Kingdom",
+            "element_name": "Pancake Day (Shrove Tuesday)",
+            "relationship_reason": "Similar celebration involving pancakes before Lent."
+          },
+          {
+            "country": "Italy",
+            "element_name": "Festa della Candelora (with crespelle)",
+            "relationship_reason": "Similar celebration of Candlemas involving pancake-like dishes."
+          },
+          {
+            "country": "Mexico",
+            "element_name": "El Día de la Candelaria",
+            "relationship_reason": "Similar family festival celebrating Candlemas."
+          },
+          {
+            "country": "Greece",
+            "element_name": "Traditional celebrations with loukoumades",
+            "relationship_reason": "Similar celebration involving sweet pancake-like dishes."
+          },
+          {
+            "country": "Belgium",
+            "element_name": "Chandeleur traditions",
+            "relationship_reason": "French-speaking regions have local variations of Chandeleur customs."
+          },
+          {
+            "country": "Switzerland",
+            "element_name": "Chandeleur traditions",
+            "relationship_reason": "French-speaking regions have local variations of Chandeleur customs."
+          },
+          {
+            "country": "Canada (Quebec)",
+            "element_name": "La Chandeleur",
+            "relationship_reason": "Celebrated with variations, including ancestral recipes sometimes incorporating snow."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b30ec0fe",
+      "element_name": "Hahoe Byeolsingut Talnori",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Hahoe_Mask_Dance_Drama_%28Hahoe_Byeolsingut_Talnori%29.jpg/1280px-Hahoe_Mask_Dance_Drama_%28Hahoe_Byeolsingut_Talnori%29.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori",
+        "https://english.cha.go.kr/cha/idx/SubIndex.do?mn=EN_03_02",
+        "https://www.korea.net/NewsFocus/Culture/view?articleId=66861",
+        "https://www.maskdance.com/",
+        "https://www.weltmuseumwien.at/en/program/hahoe-byeolsingut-talnori-korean-mask-theatre/"
+      ],
+      "scraped_at": "2026-03-13T07:18:24.254518Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [
+          "North Gyeongsang Province",
+          "Andong"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Hahoe Byeolsingut Talnori is a traditional Korean masked dance-drama performed as a special ritual to appease the village deity, Seonangsin, in Hahoe Village, Andong, North Gyeongsang Province. It boasts a history spanning over 500 years, with origins tracing back to the Goryeo or Joseon Dynasties. The performance is held irregularly, typically every three, five, or ten years, or on special occasions, usually at the end of December and early January. It is distinguished by its intricately crafted wooden masks and satirical plots, often incorporating elements of social criticism, humor, and spiritual rituals. The drama is structured into eight main episodes or 'madang'.",
+        "cultural_significance": "This practice holds significant cultural importance, being designated as Important Intangible Cultural Property of Korea (No. 69, designated 1980) and recognized by UNESCO as an Intangible Cultural Heritage of Humanity in 2009. It functions as a shamanistic rite to honor communal spirits and appease the village deity, Seonangsin, with prayers for peace and a bountiful harvest. The dance-drama satirizes corrupt Buddhist priests and the nobility, vividly portraying the inherent conflicts between the ruling class (Yangban) and commoners (Sangmin). This allowed common people a rare avenue to express their grievances, while also enabling the Yangban to gain insight into the commoners' way of life, thereby subtly reinforcing community structures. The unique Hahoe masks (Hahoetal) themselves are considered spiritual artifacts and are designated as National Treasure No. 121. The tradition plays a crucial role in the preservation and transmission of traditional knowledge and skills, embodying a vital part of Korean history and cultural identity.",
+        "gemini_tags": [
+          "Korean masked dance-drama",
+          "Hahoe Village",
+          "Shamanic ritual",
+          "Traditional Korean performing arts",
+          "Cultural heritage",
+          "Satire",
+          "Hahoetal masks",
+          "Intangible Cultural Heritage",
+          "Village ritual",
+          "Social commentary",
+          "Folk drama"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritualistic Masked Dance-Drama",
+        "materials_and_tools": [
+          "Eleven wooden masks (Hahoetal) in ten types, made of alder wood, with movable jaws for some characters (representing Monk, Nobleman, Scholar, Butcher, Bride, Bune (entertainer), Granny, Choraengi (busybody), and Imae (servant)). The Bride mask symbolizes the village guardian.",
+          "Colorful hanbok (traditional Korean clothing).",
+          "Traditional Korean musical instruments (Pungmulkkun - farmer's music band): Kkwaenggwari (small gong), taepyeongso (conical wooden oboe), sogo (small drums), buk (drums), janggo (hourglass-shaped drum), and jing (large gong)."
+        ],
+        "step_by_step": [
+          "**Preparation (weeks in advance)**: On the fifteenth day of the twelfth lunar month of the previous year, the owner of the village's 'dangsan' (the mountain where the guardian deity is believed to reside) ascends the mountain to inquire about the god's wishes.",
+          "**Prophecy**: The 'sanju' (mountain owner) presents a bowl of clean water to the guardian deity and prays to receive the prophecy. Upon returning to the village, the 'sanju' delivers the oracle to the village elders.",
+          "**Role Casting**: After deliberation by these elders, preparations for the 'byeolsin' rite commence, including the casting of roles for the mask dance-drama and the selection of actor-performers.",
+          "**Purification and Confinement**: A period of purification and confinement precedes the main event.",
+          "**Procession**: A procession takes place before the masked dance-drama.",
+          "**Performance (Eight 'Madang' / Episodes)**: The dance-drama, accompanied by traditional Korean music, consists of eight main episodes: (1) Shaman episode (Mudong madang), (2) Lion episode (Juji madang), (3) Butcher's episode (Baekjeong madang), (4) Old widow's episode (Halmi madang), (5) Apostate monk's episode (Pagyeseong madang), (6) Nobleman and scholar's episode (Yangban and Seonbi madang), (7) Wedding ceremony episode (Holrye madang), and (8) Wedding night's episode (Sinbang madang). The performances often incorporate ribaldry, social commentary, and satirical elements. Unlike some other mask plays, the Hahoe masks are not burned after the festivities."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "South Korea",
+            "element_name": "Talchum (general Korean mask dance)",
+            "relationship_reason": "Hahoe Byeolsingut Talnori is a specific and ancient form of 'Talchum', sharing the common themes of satire, social criticism, and shamanistic elements found in other Korean mask dances."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-aed11b6b",
+      "element_name": "Pysanka (Ukrainian Easter Egg Decoration)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Egg_decorating_in_Slavic_culture&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Egg_decorating_in_Slavic_culture",
+        "https://crees.ku.edu/pysanky",
+        "https://horniman.ac.uk/stories/pysanka-named-cultural-heritage-of-ukraine",
+        "https://heritagecrafts.org.uk/pysanka-ukrainian-tradition-and-art-of-decorating-eggs",
+        "https://time.com/6166140/pysanka-ukraine-easter-egg-history",
+        "https://roundhousesociety.org/blog/celebrating-tradition-the-art-and-significance-of-ukrainian-pysanky",
+        "https://en.wikipedia.org/wiki/Pysanka_Museum",
+        "https://kathymayandsilas.com/2016/08/28/pysanky-part-2-materials-list-for-ukrainian-easter-eggs/",
+        "https://www.homofaber.com/en/discover/pysanka-museum-kolomyia-ukraine",
+        "https://www.instructables.com/Pysanky-Ukrainian-Egg-Dying/",
+        "https://babasbeeswax.com/pages/online-catalogue-catalog-of-pysanky-supplies",
+        "https://www.learnpysanky.com/basic_steps.html",
+        "https://bellalunatoys.com/blogs/news/how-to-create-your-own-ukrainian-pysanky-eggs",
+        "https://ukrainian-tradition.com/pysanka-ukrainian-easter-traditions",
+        "https://dishfunctionaldesigns.blogspot.com/2011/04/how-to-make-pysanky-ukrainian-easter.html",
+        "https://www.atlasobscura.com/places/pysanka-museum",
+        "https://www.instructables.com/Ukrainian-Easter-Egg-Pysanka/"
+      ],
+      "scraped_at": "2026-03-13T07:19:10.392202Z",
+      "location": {
+        "country": "Ukraine",
+        "provinces": [
+          "Ivano-Frankivsk Oblast"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Pysanka (plural: pysanky) is a traditional Ukrainian Easter egg, intricately decorated using a wax-resist (batik) method. The name 'pysanka' comes from the Ukrainian verb 'pysaty' (писати), meaning 'to write,' reflecting the designs 'written' onto the egg with beeswax. This ancient art dates back millennia, with origins in the prehistoric Trypillian culture in the region now known as Ukraine. Early ceramic pysanky have been discovered dating back to the 5th millennium BCE. The practice involves applying hot wax to an egg's surface with a special tool called a kistka, then dyeing the egg in a series of colors, with the wax protecting areas from subsequent dyes.",
+        "cultural_significance": "Pysanky held profound cultural and spiritual significance, initially rooted in pagan beliefs. They were created as talismanic objects to worship the sun, ensure the return of spring, protect households from evil spirits, catastrophe, lightning, and fires, and bring fertility to livestock and crops. With the adoption of Christianity in 988 AD, the symbolism of the egg evolved to represent the rebirth of man and Christ's Resurrection, with many ancient symbols being reinterpreted through a Christian lens. Traditionally, pysanky were made during Holy Week by women of the family, often in secret, with patterns and color combinations passed down from mother to daughter. Giving a pysanka is considered a symbolic gift of life, protection, fecundity, or love. During Soviet rule, the practice was suppressed, but it experienced a revival after Ukraine regained independence in 1991, becoming a powerful symbol of Ukrainian identity and resilience. An ancient Ukrainian legend suggests that as long as pysanky are decorated, evil cannot prevail over the world.",
+        "gemini_tags": [
+          "Ukrainian culture",
+          "Egg decoration",
+          "Wax-resist",
+          "Easter tradition",
+          "Folk art",
+          "Symbolism",
+          "Intangible Cultural Heritage",
+          "Traditional craftsmanship"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Wax-resist dyeing (Batik method)",
+        "materials_and_tools": [
+          "Raw eggs (chicken, goose, ostrich, or quail; ideally fertilized and at room temperature)",
+          "Pencil (for sketching designs)",
+          "Kistka (stylus with a small funnel for applying wax; available in fine, medium, heavy sizes)",
+          "Beeswax (pure, often black or natural, softer than candle wax)",
+          "Dyes (acid-based powders, traditional colors include yellow, orange, red, green, brown, black; modern synthetic dyes also used)",
+          "Candle (for heating the kistka and melting wax off the finished egg)",
+          "Jars (for dye baths)",
+          "White vinegar (for preparing eggs and mixing some dyes)",
+          "Spoons or wire loop (for handling eggs in dye baths)",
+          "Paper towels or tissues (for drying eggs and wiping off wax)",
+          "Hair dryer or heat gun (optional, for melting wax)",
+          "Drying rack (optional)",
+          "Egg blower (optional, for emptying egg contents)",
+          "Varnish or sealant (optional, for preserving the finished egg)"
+        ],
+        "step_by_step": [
+          "Prepare the eggs: Select clean, smooth, raw eggs at room temperature. Wash them gently with warm water and mild dish soap, then pat dry. Some traditions include a vinegar rinse to acidify the shell and remove oils.",
+          "Prepare the dyes: Mix powdered dyes with water according to package directions, typically allowing them to cool. Vinegar is often added to most dye colors.",
+          "Sketch the design: Lightly draw the desired patterns and divisions on the clean, dry egg with a pencil. Avoid erasing, as it can scratch the shell.",
+          "Apply first wax layer: Heat the metal funnel of the kistka in a candle flame (avoiding soot). Dip the heated kistka into beeswax, scooping molten wax into the funnel. Apply this wax to all areas of the egg that should remain white in the final design.",
+          "First dye bath: Carefully place the waxed egg into the lightest colored dye bath (e.g., yellow) for 1-5 minutes, or until the desired brightness is achieved. Remove the egg with a spoon and gently pat dry.",
+          "Apply subsequent wax layers: Once the egg is dry, use the kistka to apply wax over all areas that should retain the current dye color.",
+          "Repeat dyeing and waxing: Continue this process, moving from lighter to progressively darker dye baths. After each dye, apply wax to preserve the color in desired areas.",
+          "Final dye bath: After the last wax application, immerse the egg in the darkest dye color.",
+          "Remove the wax: Gently hold the egg near the side of a candle flame (not directly in it) or use a heat gun to soften the wax. As the wax melts, carefully wipe it away with a paper towel or tissue, revealing the multi-colored design underneath.",
+          "Finish the pysanka: Once all wax is removed, the egg can be optionally varnished or sealed to protect the design and give it a glossy finish."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Poland",
+            "element_name": "Pisanki",
+            "relationship_reason": "Shared tradition of wax-resist egg decoration in Slavic cultures, utilizing similar techniques and names."
+          },
+          {
+            "country": "Lithuania",
+            "element_name": "Margučiai",
+            "relationship_reason": "Part of a broader Central and Eastern European tradition of decorated eggs, often employing wax-resist methods."
+          },
+          {
+            "country": "Romania",
+            "element_name": "Ouă încondeiate",
+            "relationship_reason": "Part of a broader Central and Eastern European tradition of decorated eggs, often employing wax-resist methods."
+          },
+          {
+            "country": "Slovakia",
+            "element_name": "Kraslice",
+            "relationship_reason": "Part of a broader Central and Eastern European tradition of decorated eggs, often employing wax-resist methods."
+          },
+          {
+            "country": "Czech Republic",
+            "element_name": "Kraslice",
+            "relationship_reason": "Part of a broader Central and Eastern European tradition of decorated eggs, often employing wax-resist methods."
+          },
+          {
+            "country": "Hungary",
+            "element_name": "Hímestojás",
+            "relationship_reason": "Part of a broader Central and Eastern European tradition of decorated eggs, often employing wax-resist methods."
+          },
+          {
+            "country": "Estonia",
+            "element_name": "Pysanka",
+            "relationship_reason": "Estonia officially recognized pysanka as part of its intangible heritage in 2013 and jointly applied with Ukraine for its recognition as UNESCO Intangible Cultural Heritage of Humanity."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T06:39:12.054280Z",
-    "total_ich_elements": 11,
-    "complete_records": 9,
+    "generated_at": "2026-03-13T07:19:43.687384Z",
+    "total_ich_elements": 14,
+    "complete_records": 12,
     "incomplete_records": 2,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 6,
+      "Traditional Craftsmanship": 7,
       "Social Practices & Rituals": 3,
-      "Culinary Traditions": 2
+      "Culinary Traditions": 2,
+      "Culinary Traditions | Social Practices & Rituals": 1,
+      "Performing Arts": 1
     }
   }
 }
