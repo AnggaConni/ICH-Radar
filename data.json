@@ -661,17 +661,250 @@
         ]
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-eee8675e",
+      "element_name": "Árbol de la Vida de Metepec (Tree of Life from Metepec)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/%C3%81rbol_de_la_Vida_-_Metepec%2C_Estado_de_M%C3%A9xico.jpg/800px-%C3%81rbol_de_la_Vida_-_Metepec%2C_Estado_de_M%C3%A9xico.jpg",
+      "source_urls": [
+        "https://www.gazeta-antropologia.es/?p=5969",
+        "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+        "https://www.youtube.com/watch?v=0k7b2L_9z7g",
+        "https://www.milenio.com/estados/metepec-municipio-con-artesanos-de-talla-mundial",
+        "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+      ],
+      "scraped_at": "2026-03-13T06:37:37.240842Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "State of Mexico"
+        ]
+      },
+      "resume_analisa": {
+        "description": "The Árbol de la Vida (Tree of Life) from Metepec is a distinctive form of Mexican folk art pottery, characterized by intricate hand-sculpted clay candelabras or freestanding sculptures. These pieces typically depict a tree trunk with branching arms adorned with numerous small figures, animals, flowers, and symbolic scenes. While traditionally representing biblical narratives like the Garden of Eden, their themes have expanded over time to include a variety of subjects reflecting Mexican culture, history, and daily life. These sculptures can range significantly in size, from a few millimeters to large public installations that can be several meters tall.",
+        "cultural_significance": "The Árbol de la Vida is a profound symbol of identity for the town of Metepec and a significant part of Mexico's cultural heritage. It embodies the history, beliefs, and creativity of the communities, with the knowledge and techniques meticulously passed down through generations, often within artisan families such as the Soteno family. This craft serves not only as a means of livelihood for many artisans but also as a vibrant expression of cultural identity and a tangible link to pre-Hispanic traditions blended with colonial influences. The creation process itself is seen to embody the four classical elements: earth (clay), water (mixing), air (drying), and fire (firing). These works of art are highly valued, contributing to local tourism and the economy, and are recognized internationally.",
+        "gemini_tags": [
+          "Mexican folk art",
+          "Traditional pottery",
+          "Clay sculpture",
+          "Living heritage",
+          "Metepec craftsmanship",
+          "Cultural identity",
+          "Religious art",
+          "Indigenous techniques"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Crafting (Pottery)",
+        "materials_and_tools": [
+          "Clay (barro) from local deposits",
+          "Water (agua)",
+          "Tule flower fiber (plumilla)",
+          "Wires (for assembly, especially for larger pieces)",
+          "Hand tools for shaping and cutting clay",
+          "Sun (for drying)",
+          "Wood or gas kilns (hornos) for firing",
+          "Mineral-based or commercial pigments/paints",
+          "Brushes (for painting)"
+        ],
+        "step_by_step": [
+          "**Clay Preparation:** Clay is extracted from local deposits and mixed with water. Tule flower fiber, known as 'plumilla,' is added to the mixture to give it consistency and prevent the clay from cracking easily during the process.",
+          "**Hand-building and Shaping:** Artisans hand-build the central tree structure, often using techniques like coiling, slab building, and pinching. Individual small figures, animals, and decorative elements are also sculpted by hand.",
+          "**Assembly:** For complex and larger pieces, wires are often used to attach the numerous sculpted elements to the main tree structure, ensuring stability. Clay is carefully cut, humidified, and joined to ensure strong bonds between pieces.",
+          "**Drying:** The assembled and shaped clay piece is left to dry under the sun to eliminate moisture. This is a crucial step to prevent cracking during firing.",
+          "**Firing:** Once thoroughly dry, the piece is placed in a wood or gas kiln and fired at low temperatures. This process hardens the clay, making it durable.",
+          "**Decoration/Painting:** After firing, the artisans patiently paint the piece using mineral-based or commercial pigments in vibrant colors such as reds, blues, and yellows, adding personality and intricate details to their creation."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Spain",
+            "element_name": "Religious iconography and ceramic traditions",
+            "relationship_reason": "The Árbol de la Vida evolved from pre-Hispanic pottery by incorporating Catholic iconography and biblical themes introduced during Spanish evangelization. This blend of indigenous ceramic techniques with European artistic influences is a key aspect of its shared heritage."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-939c84e6",
+      "element_name": "Kanchipuram Silk Weaving (Kanjivaram Sarees)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Kanchipuram_silk_saree.jpg/800px-Kanchipuram_silk_saree.jpg",
+      "source_urls": [
+        "https://www.mokshaa.com/blogs/news/the-heritage-behind-kanchipuram-silk-stories-woven-in-gold",
+        "https://www.vasumatis.com/blogs/news/how-kanjivaram-sarees-are-made",
+        "https://www.pothys.com/blog/kanchipuram-silk-sarees-royalty-woven-in-tradition/",
+        "https://cliosilks.com/blogs/news/how-kanchipuram-silk-sarees-are-made-step-by-step-weaving-process",
+        "https://www.fibre2fashion.com/industry-article/10046/the-weave-of-royalty-kanchipuram-silk-sarees-and-indian-heritage",
+        "https://www.saridhoti.com/blogs/news/the-kanjeevaram-formula",
+        "https://aikyatha.com/blogs/news/traditional-kanchipuram-silk-sarees-7-timeless-reasons",
+        "https://theststudio.com/blogs/news/the-origin-and-journey-of-kanchipuram-sarees",
+        "https://www.easemytrip.com/travel/blog/tamil-nadu-unesco-world-heritage-sites",
+        "https://www.samyakk.com/blogs/sarees/why-kanchipuram-sarees-are-called-the-queen-of-silks",
+        "https://www.deepamsilksbangalore.com/blogs/news/the-history-and-significance-of-south-indian-kanjivaram-sarees"
+      ],
+      "scraped_at": "2026-03-13T06:38:13.413149Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Tamil Nadu"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Kanchipuram silk sarees, also known as Kanjivaram sarees, are celebrated for their luxurious texture, vibrant colors, and intricate zari (gold and silver thread) work, embodying centuries-old weaving traditions. These sarees are more than just garments; they are a significant symbol of South Indian cultural pride and craftsmanship.",
+        "cultural_significance": "Kanchipuram silk holds profound cultural significance in South India, being an integral part of weddings, festivals, and other auspicious occasions. They symbolize prosperity, tradition, and the enduring spirit of South Indian heritage. Often passed down as cherished heirlooms, these sarees carry stories and memories across generations. The motifs frequently draw inspiration from images and scriptures found in South Indian temples, depicting deities, mythological figures, and traditional symbols.",
+        "gemini_tags": [
+          "Handloom",
+          "Silk Weaving",
+          "Traditional Textile",
+          "Indian Craft",
+          "Bridal Wear",
+          "Cultural Heritage",
+          "Zari Work",
+          "Tamil Nadu"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Handloom weaving",
+        "materials_and_tools": [
+          "Pure mulberry silk threads (primarily from Karnataka, India)",
+          "Zari (pure gold and silver threads, often from Surat, India)",
+          "Natural and/or chemical dyes",
+          "Traditional pit or frame loom",
+          "Shuttles",
+          "Reed",
+          "Healds",
+          "Graph paper (for design blueprints)"
+        ],
+        "step_by_step": [
+          "**Sericulture:** The process begins with raising silkworms (Bombyx mori moths) that feed on mulberry leaves to produce silk cocoons.",
+          "**Silk Extraction/Reeling:** Silk filaments are carefully unwound from multiple cocoons to obtain long, continuous silk threads.",
+          "**Degumming:** The raw silk threads are washed and boiled to remove sericin (gum), preparing them for dyeing.",
+          "**Dyeing:** Both warp (longitudinal) and weft (latitudinal) threads are dyed separately in vibrant colors, a process traditionally done by hand, followed by sun-drying.",
+          "**Twisting:** Raw silk is twisted to create warp and weft threads. Kanchipuram sarees typically use a double warp, where three silk threads are twisted together to form one strand, contributing to their thickness and durability.",
+          "**Designing Motifs:** Intricate patterns, including temple, floral, and geometric motifs, are sketched on graph paper, serving as a blueprint for the weavers.",
+          "**Warping/Loom Setup:** Each warp thread is meticulously arranged on the loom, passing through a reed and then a roller. The pallu (saree end piece) and border threads are specifically set to achieve distinctive contrasting colors.",
+          "**Weaving:** Skilled artisans manually interlace the warp and weft threads using shuttles. The body, border, and pallu are often woven separately and then joined using a unique interlocking technique called 'Korvai', which enables the striking contrast in colors and ensures durability.",
+          "**Finishing Touches:** After weaving, the saree undergoes a thorough check for loose threads, minor imperfections are corrected, and it is carefully folded for storage."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Mulberry Silk Production (Karnataka)",
+            "relationship_reason": "Kanchipuram silk sarees primarily utilize pure mulberry silk sourced from the state of Karnataka in India."
+          },
+          {
+            "country": "India",
+            "element_name": "Zari Production (Surat, Gujarat)",
+            "relationship_reason": "The zari (gold and silver threads) incorporated into Kanchipuram sarees is frequently sourced from Surat, Gujarat, India."
+          },
+          {
+            "country": "China",
+            "element_name": "Silk Production (Historical Origin)",
+            "relationship_reason": "The art of silk production originated in China over five thousand years ago and subsequently spread globally, including to India, via trade routes like the Silk Road."
+          },
+          {
+            "country": "India",
+            "element_name": "Banarasi Silk Weaving (Varanasi, Uttar Pradesh)",
+            "relationship_reason": "Both Kanchipuram and Banarasi silk weaving represent prominent traditional Indian silk textile traditions, recognized for their elaborate designs, rich materials, and significant cultural roles, though they possess distinct regional styles and weaving techniques."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-94b831fe",
+      "element_name": "Tejate",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tejate_en_j%C3%ADcara.jpg/1200px-Tejate_en_j%C3%ADcara.jpg",
+      "source_urls": [
+        "https://www.gob.mx/agricultura/articulos/tejate-la-bebida-de-los-dioses",
+        "https://aderezo.mx/bebidas/bienvenida-guelaguetza-animate-a-preparar-tejate-con-esta-receta/",
+        "https://elsabordeoaxaca.com/blogs/noticias/el-tejate-la-bebida-de-los-dioses-de-oaxaca",
+        "https://newworlder.com/origins-tejate/",
+        "https://www.youtube.com/watch?v=R94_0_r_03o",
+        "https://etnofood.com/tejate-oaxacas-ancient-drink/",
+        "https://www.youtube.com/watch?v=n-P_2-tI_oQ",
+        "https://culinariamexicana.com.mx/tejate-la-bebida-de-los-dioses/",
+        "https://grokipedia.org/wiki/Tejate",
+        "https://animalgourmet.com/2014/12/05/receta-del-refrescante-tejate-oaxaqueno/",
+        "https://www.sbs.com.au/food/article/2018/06/28/tejate-oaxacas-ancient-drink",
+        "https://www.youtube.com/watch?v=X07c-nQ72fU",
+        "https://montealban.com.mx/origins-of-chocolate-in-mexico-the-zapotec-cacao-legacy/",
+        "https://www.youtube.com/watch?v=r06lVq4Vf4A",
+        "https://www.youtube.com/watch?v=11XJqX6fX14"
+      ],
+      "scraped_at": "2026-03-13T06:38:41.320692Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "Oaxaca"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Tejate is a traditional, frothy, non-alcoholic Mesoamerican beverage with pre-Hispanic origins, primarily from the Central Valleys of Oaxaca, Mexico. Often referred to as 'the drink of the gods', it is made from nixtamalized maize, toasted cacao beans, ground mamey sapote seeds (pixtle), and rosita de cacao flowers (Quararibea funebris blossoms). Its distinctive feature is a thick, beige foam that forms on its surface, mainly due to the rosita de cacao. The preparation is a labor-intensive, artisanal process, traditionally carried out by women known as 'tejateras'.",
+        "cultural_significance": "Tejate holds profound cultural significance for the Zapotec communities in Oaxaca, where it has been an integral part of life since Mesoamerican times. It is traditionally consumed during agricultural rites, planting and harvest ceremonies, religious rituals, weddings, and quinceañeras, symbolizing sustenance, community identity, and a connection to ancestral traditions. The practice of preparing tejate, passed down matrilineally, represents a form of cultural resistance and continuity against modernization and acculturation. It is a symbol of hospitality, often served in decorated jícaras (gourds) at markets and festivals, such as the annual Tejate Festival in San Andrés Huayapam.",
+        "gemini_tags": [
+          "Traditional Beverage",
+          "Zapotec Culture",
+          "Oaxacan Cuisine",
+          "Pre-Hispanic Heritage",
+          "Ceremonial Drink",
+          "Artisanal Preparation",
+          "Maize-based",
+          "Cacao-based"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Beverage Preparation",
+        "materials_and_tools": [
+          "Metate (traditional grinding stone) or molinillo (mill)",
+          "Apaxtle or large clay pot (cazuela de barro)",
+          "Jícaras (gourds for serving)",
+          "Hands for beating"
+        ],
+        "step_by_step": [
+          "Nixtamalize the corn: Cook ½ kg of corn with 3 tablespoons of ash (or cal) until the husks loosen. Remove the corn from heat, let it cool, and then thoroughly remove all the husks, washing until the corn is completely white.",
+          "Grind the corn: Using a metate or a molinillo (mill), grind the nixtamalized corn to create a fine masa (dough).",
+          "Toast and prepare other ingredients: Separately toast 3 mamey sapote seeds (pixtle), 50 grams of cacao, and ¼ cup of rosita de cacao flowers. Once toasted, remove the husk from the cacao.",
+          "Grind additional ingredients: Grind the toasted mamey sapote seeds, cacao, and rosita de cacao together into a fine powder.",
+          "Combine ingredients: In a large clay pot (apaxtle or cazuela de barro), combine the corn masa with the ground mixture of cacao, pixtle, and rosita de cacao.",
+          "Beat and emulsify: Gradually add cold water to the mixture. Using clean hands and arms, vigorously beat the mixture. It is traditional to pour the water from a height of at least 20 centimeters to help create the characteristic thick, white foam on the surface. Continue beating until a generous foam is formed.",
+          "Sweeten and serve: Add sugar to taste, if desired. Serve the tejate very cold with ice, traditionally in decorated jícaras, ensuring each serving includes a portion of the foam."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Mesoamerica (general)",
+            "element_name": "Ancient Maize and Cacao Beverages",
+            "relationship_reason": "Tejate belongs to an ancient family of foam-topped maize and cacao beverages found throughout Mesoamerica, with archaeological evidence dating back to 1000-400 BCE. Early colonial records also reference similar frothed cacao-based drinks."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T06:25:31.456073Z",
-    "total_ich_elements": 8,
-    "complete_records": 6,
+    "generated_at": "2026-03-13T06:39:12.054280Z",
+    "total_ich_elements": 11,
+    "complete_records": 9,
     "incomplete_records": 2,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 4,
+      "Traditional Craftsmanship": 6,
       "Social Practices & Rituals": 3,
-      "Culinary Traditions": 1
+      "Culinary Traditions": 2
     }
   }
 }
