@@ -363,16 +363,92 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-24ffc441",
+      "element_name": "Blue Cornmeal Dumplings (kʼíneeshbízhii)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//recipes.fandom.com/wiki/Blue_Cornmeal_Dumplings&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://recipes.fandom.com/wiki/Blue_Cornmeal_Dumplings",
+        "https://www.reddit.com/r/Navajo/comments/1bd6x2j/kineeshbizhii_dumplings/",
+        "https://www.nrcnaa.org/pdf/cookbook.pdf",
+        "https://internationalrecipes.net/blue-corn-mush-navajo-nation/"
+      ],
+      "scraped_at": "2026-03-13T06:02:15.533813Z",
+      "location": {
+        "country": "USA",
+        "provinces": [
+          "Arizona",
+          "New Mexico",
+          "Utah"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Blue Cornmeal Dumplings, known as kʼíneeshbízhii in the Navajo-Diné culture, are a traditional food crafted from blue cornmeal and juniper ash. They are typically prepared during the colder months, specifically autumn and winter. The dumplings are culturally significant for their flat or oval shape, as creating them in a round or spherical form is believed to invoke hail, a belief linked to private ceremonial practices. This dish is often served hot and can be eaten with fried bread or in a stew. The use of juniper ash not only enhances flavor but also increases the calcium content of the dish.",
+        "cultural_significance": "In Navajo-Diné culture, knowing how to make kʼíneeshbízhii signifies survival. The preparation of these dumplings is a way of preserving traditional cultures of Native people and connecting to the heritage of the Navajo people. Blue corn itself holds deep spiritual and cultural importance, being central to Navajo prayer and ceremonies. The practice of using juniper ash in food preparation reflects an advanced understanding of nutrition, unlocking nutrients and increasing calcium content. During the period of Hwéeldi, or the Long Walk (1863-1867), variations of kʼíneeshbízhii using flour became a sustenance associated with the Bosque Redondo internment camp, highlighting resilience and adaptation.",
+        "gemini_tags": [
+          "Indigenous Cuisine",
+          "Native American Food",
+          "Navajo Culture",
+          "Traditional Dumplings",
+          "Blue Cornmeal",
+          "Juniper Ash",
+          "Ancestral Recipe",
+          "Culinary Heritage",
+          "Survival Food"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Food Preparation (Boiling, Kneading, Shaping)",
+        "materials_and_tools": [
+          "1 cup juniper ash",
+          "1 cup boiling water (for ash mixture)",
+          "3 ½ cups boiling water (for cooking dumplings)",
+          "6 cups ground blue cornmeal",
+          "Large pot"
+        ],
+        "step_by_step": [
+          "Mix 1 cup of juniper ash with 1 cup of boiling water.",
+          "Boil water in a large pot.",
+          "Strain the juniper ashes into the boiling water and stir.",
+          "Add the blue cornmeal and remove from heat.",
+          "Knead the mixture until the dough is soft but firm.",
+          "Shape the dough into small, thumb-sized balls (flat or oval shapes are culturally significant to avoid invoking hail).",
+          "Put 3 cups of water in a separate large pot and bring to a boil.",
+          "Add the shaped dough to the boiling water and stir.",
+          "Allow the dumplings to cook; the dough will make its own gravy.",
+          "Serve hot."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Mexico",
+            "element_name": "Tamales",
+            "relationship_reason": "Common use of cornmeal as a staple ingredient and preparation of steamed or boiled dough-based dishes in Indigenous cuisines."
+          },
+          {
+            "country": "USA / Canada (various Indigenous nations)",
+            "element_name": "Cornbread / Corn Mush",
+            "relationship_reason": "Widespread use of cornmeal in various forms of bread, mush, and dough-based preparations among Indigenous peoples across North America."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T05:46:13.601040Z",
-    "total_ich_elements": 4,
-    "complete_records": 3,
+    "generated_at": "2026-03-13T06:02:58.561013Z",
+    "total_ich_elements": 5,
+    "complete_records": 4,
     "incomplete_records": 1,
     "categories_breakdown": {
       "Traditional Craftsmanship": 2,
-      "Social Practices & Rituals": 2
+      "Social Practices & Rituals": 2,
+      "Culinary Traditions": 1
     }
   }
 }
