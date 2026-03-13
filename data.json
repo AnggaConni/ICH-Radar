@@ -519,15 +519,157 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-df8d78b4",
+      "element_name": "Khokhloma Painting (Хохломская роспись)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//gw2.ru/en/khokhloma-all-you-need-to-know-about-the-gold-painted-tableware/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://gw2.ru/en/khokhloma-all-you-need-to-know-about-the-gold-painted-tableware/",
+        "https://antiquevintage.co/the-timeless-beauty-of-russian-khokhloma-painting-exploring-the-techniques-behind-hand-painted-wooden-spoons/",
+        "https://ru.wikipedia.org/wiki/%D0%A5%D0%BE%D1%85%D0%BB%D0%BE%D0%BC%D0%B0",
+        "https://vuzlit.ru/852655/tehnologiya_izgotovleniya_hohlomy",
+        "https://en.wikipedia.org/wiki/Khokhloma",
+        "https://sima-land.ru/blogs/hobbi/hohloma-ot-istokov-do-sovremennosti/",
+        "https://monetnik.ru/blog/khokhlomskaya-rospis",
+        "https://stuartking.co.uk/khokhloma-ware-folk-art-for-the-masses/",
+        "https://maisonrusse.com/blogs/news/the-art-of-khokhloma",
+        "https://www.culture.ru/s/traditions/hohloma/",
+        "https://www.culture.ru/s/traditions/hohloma-proishozhdenie-i-znachenie-ponyatiya/",
+        "https://www.mapp.ru/o-traditsiyah-iskusstva-narodnogo-hudozhestvennogo-promysla-hohlomskoy-rospisi-ego-hudozhestvenno-stilevyh-osobennostyah-ob-izdeliyah-ao-hohlomskaya-rospis/",
+        "https://livingheritage.ru/objects/hohlomskaya-rospis/",
+        "https://gcnt.ru/wp-content/uploads/2021/08/%D0%A5%D0%BE%D1%85%D0%BB%D0%BE%D0%BC%D1%81%D0%BA%D0%B0%D1%8F-%D1%80%D0%BE%D1%81%D0%BF%D0%B8%D1%81%D1%8C.pdf",
+        "https://xn--80aa3akc1a.xn--p1ai/articles/zolotoe-nasledie-iskusstvo-i-tehnologiya-hohlomskoy-rospisi",
+        "https://gcnt.ru/wp-content/uploads/2021/08/%D0%A5%D0%BE%D1%85%D0%BB%D0%BE%D0%BC%D1%81%D0%BA%D0%B0%D1%8F-%D1%80%D0%BE%D1%81%D0%BF%D0%B8%D1%81%D1%8C-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D0%BE-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8E-%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B8-%D0%B4%D0%B5%D0%BA%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D1%85.pdf",
+        "https://bridgetomoscow.com/khokhloma",
+        "https://pandia.ru/text/78/200/58362.php",
+        "https://steemit.com/drawing/@yurche/draw-khokhloma-step-by-step-practice-of-ornamental-art"
+      ],
+      "scraped_at": "2026-03-13T06:23:40.375196Z",
+      "location": {
+        "country": "Russia",
+        "provinces": [
+          "Nizhny Novgorod Oblast"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Khokhloma painting is a traditional Russian folk craft renowned for its decorative painting on wooden tableware and furniture. It emerged in the 17th century in the Trans-Volga region, particularly around the village of Khokhloma in what is now Nizhny Novgorod Oblast. The style is characterized by its vibrant red, black, and gold colors, typically applied to a dark background. The intricate designs often feature lush floral motifs, such as berries (rowanberries and strawberries), leaves, and grasses, with occasional depictions of birds or animals. A distinctive feature of Khokhloma is its unique 'golden' effect, achieved without the use of real gold, through a specialized lacquering and baking process.",
+        "cultural_significance": "Khokhloma painting is a deeply ingrained symbol of Russian heritage and decorative culture, recognized globally as one of Russia's most iconic designs. Historically, Khokhloma wares were not only functional but also served as a means to display wealth during festive meals and celebrations. The art form reflects the Russian people's profound appreciation for nature and their pursuit of beauty. Its origins are often linked to Old Believers who sought refuge in the dense forests of the Nizhny Novgorod region in the 17th century. These Old Believers, many of whom were icon painters, are believed to have introduced sophisticated icon-painting techniques that influenced the unique 'golden' style of Khokhloma, blending their artistic traditions with the local woodworking skills. The craft has been passed down through generations, ensuring its continuity and evolution.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Russian Folk Art",
+          "Wood Painting",
+          "Decorative Arts",
+          "Intangible Cultural Heritage",
+          "Nizhny Novgorod",
+          "Old Believers Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship (Wood Painting)",
+        "materials_and_tools": [
+          "Wood (linden, birch, aspen, maple)",
+          "Lathe",
+          "Sanding materials",
+          "Clay primer ('vapa')",
+          "Drying oil (linseed oil/olifa)",
+          "Powdered aluminum (modern) or tin/silver (historical)",
+          "Tampon (sheep or calfskin)",
+          "Heat-resistant oil paints (red, black, yellow, green, orange, brown, blue)",
+          "Fine brushes (e.g., squirrel hair)",
+          "Transparent lacquer (e.g., linseed oil lacquer)",
+          "Kiln/oven"
+        ],
+        "step_by_step": [
+          "**Wood Preparation:** Select suitable soft wood (linden, birch, aspen, or maple). Carve the wood into the desired shape (e.g., spoons, bowls, furniture) using a lathe. Sand the carved wooden item to achieve a smooth surface.",
+          "**Priming (Vapa):** Apply a clay primer, traditionally called 'vapa', to the wooden surface. This step seals the wood pores and creates a foundational layer that also helps in waterproofing. The item is then dried.",
+          "**Oiling (Olifa Application):** Coat the primed item with several layers of drying oil, such as linseed oil (olifa). Each layer is allowed to dry thoroughly before the next is applied. This process makes the surface smooth and prepares it for the metallic coating.",
+          "**Tinning/Aluminizing (Luzhenie):** Using a tampon, traditionally made from sheep or calfskin, powdered aluminum (or historically tin/silver powder) is carefully rubbed onto the oiled surface. This creates a silvery-white, metallic base.",
+          "**Painting:** Artists then apply heat-resistant oil paints (primarily red, black, with accents of yellow, green, orange, brown, and sometimes blue) freehand using fine brushes. Traditional motifs include berries (rowan, strawberry), flowers, leaves, grasses, and occasionally birds or animals. Two main painting techniques are employed: 'surface painting' (where red and black designs are painted directly over the goldish background) and 'background painting' (where a goldish silhouette design is created on a colored background).",
+          "**Lacquering:** After the painting is complete, the item is coated with multiple layers of transparent lacquer, often a linseed oil-based lacquer. Each layer is dried before the next is applied, enhancing the colors and providing protection.",
+          "**Baking/Hardening (Zakalka):** The lacquered items are then baked in a kiln at high temperatures, typically around 120°C. This crucial step hardens the lacquer and, through a chemical reaction, transforms the silvery aluminum layer beneath into the characteristic golden hue, giving Khokhloma its renowned 'golden' appearance and making the items durable and heat-resistant."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.8,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-86fa28f5",
+      "element_name": "Folk art of the Matyó, embroidery of a traditional community",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00028-RL-EN.jpg",
+      "source_urls": [
+        "https://www.americanhungarianmuseum.org/matyo-embroidery/",
+        "https://www.sawasdee.com/indulge-in-matyo-embroidery-a-unique-of-hungarian-folk-art/",
+        "https://matyodesign.hu/en/the-matyo-pattern/",
+        "https://www.europeana.eu/en/stories/the-beauty-and-legacy-of-hungarian-embroidery",
+        "https://hungarianconservative.com/articles/culture_society/winter-flowers-matyo-embroidery-tard-mezokovesd-szentistvan-kisjanko-bori/",
+        "https://www.rferl.org/a/hungary-matyo-embroidery-economic-lifeline/32544136.html",
+        "https://ich.unesco.org/en/RL/folk-art-of-the-matyo-embroidery-of-a-traditional-community-00717",
+        "https://www.hungarikum.hu/en/matyo-folk-art-embroidery-culture-traditional-community",
+        "https://www.folkcostume.blogspot.com/2014/06/costume-and-embroidery-of-mezokovesd.html",
+        "https://www.scribd.com/document/329525790/Hungarian-Embroidery-Styles-and-Motifs"
+      ],
+      "scraped_at": "2026-03-13T06:24:15.132623Z",
+      "location": {
+        "country": "Hungary",
+        "provinces": [
+          "Borsod-Abaúj-Zemplén (Mezőkövesd, Tard, Szentistván)"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Matyó embroidery is a vibrant and intricate traditional folk art originating from the Roman Catholic Matyó community in northeastern Hungary, specifically in and around the towns of Mezőkövesd, Tard, and Szentistván. Characterized by rich, colorful floral motifs, the most iconic being the \"Matyó rose\" (a stylized peony), it evolved from earlier white-on-white embroidery in the mid-19th century to incorporate a wide palette of colors, influenced by men's furrier embroidery. This unique embroidery adorns traditional festive clothing, such as shirts, aprons, and home textiles, and its patterns are also applied in contemporary fashion and interior decoration.",
+        "cultural_significance": "Matyó embroidery is a profound expression of the Matyó community's identity, pride, and cultural heritage. It is a living tradition, passed down through generations, primarily from mother to daughter, fostering strong communal bonds. The intricate floral motifs carry deep symbolic meanings, often representing fertility, protection, and prosperity. Matyó garments are worn during significant social and religious events, including weddings and festivals, serving as a visual marker of cultural continuity. Its inscription on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity in 2012 has significantly contributed to its preservation, recognition, and the economic development of local communities through cultural tourism and the crafts industry.",
+        "gemini_tags": [
+          "Traditional Embroidery",
+          "Hungarian Folk Art",
+          "Matyó Culture",
+          "Floral Motifs",
+          "Intangible Cultural Heritage",
+          "Textile Art",
+          "Mezőkövesd",
+          "Handcraft",
+          "Community Practice",
+          "European Folk Art"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Hungary",
+            "element_name": "Kalocsa embroidery",
+            "relationship_reason": "Both Matyó and Kalocsa embroidery are prominent Hungarian folk embroidery styles known for their vibrant floral patterns, though they have distinct regional origins, design characteristics, and color palettes."
+          },
+          {
+            "country": "Hungary",
+            "element_name": "Kalotaszeg embroidery",
+            "relationship_reason": "Another distinct Hungarian embroidery style, differing from Matyó in its use of single colors and specific natural motifs, but part of the broader Hungarian embroidery tradition."
+          },
+          {
+            "country": "Hungary (and potentially wider Central/Eastern Europe)",
+            "element_name": "Furrier embroidery",
+            "relationship_reason": "Matyó embroidery's distinctive colorful and rich style evolved from and was significantly influenced by men's furrier embroidery traditions."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T06:11:54.845515Z",
-    "total_ich_elements": 6,
-    "complete_records": 5,
-    "incomplete_records": 1,
+    "generated_at": "2026-03-13T06:25:31.456073Z",
+    "total_ich_elements": 8,
+    "complete_records": 6,
+    "incomplete_records": 2,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 2,
+      "Traditional Craftsmanship": 4,
       "Social Practices & Rituals": 3,
       "Culinary Traditions": 1
     }
