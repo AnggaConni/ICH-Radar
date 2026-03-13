@@ -130,15 +130,130 @@
         ]
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-ec6118ad",
+      "element_name": "Thai Silk Weaving",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLJF6Va6A8UNRYLOGFOnGvvesS4hL9V3NaTGSw2kctzX5eMd0h-_jy_HYFeJuN9jFlbPgZzAEzL0IuDMkb6XSwEf-JINvQeKzbEsXE0VrTCJvGuHwbUqqzBi-2WWotWSrCUROOMg6XKwxR24doz7nzxCEn&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLJF6Va6A8UNRYLOGFOnGvvesS4hL9V3NaTGSw2kctzX5eMd0h-_jy_HYFeJuN9jFlbPgZzAEzL0IuDMkb6XSwEf-JINvQeKzbEsXE0VrTCJvGuHwbUqqzBi-2WWotWSrCUROOMg6XKwxR24doz7nzxCEn",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0X7zOAHmDTkyZIsw0aI7zC12OmHOcuNvurqrPxCdJaS1w3dVFNlmME-Q6GX6BauXmTgCgY4pWVxdSwt-eB8pZZ15sh6QUzyHDo9G6n8803b6GxvS44fs71in3MfCygEPg",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPam-wwREJcUMBFfLm-G7mStk2QacmCu6NwIaK3dyFgXXPCtGmNzATbKsR0HpLYnaaDXhkki9gh8WTuQK7xTQvRBEe0wQp5aWWkG76naxNO_YKI6uTkXPbxZo39QgOiZa8_AKoB5fEISnb1_Kmsqdk51HTPA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgLRq3NE-vpLuyPeyzWt-g-riInMbVdk5wBJjC1zcXILs9qWxfPCb8lPdGyN3HkaaxqPfvV7Gsc4uIXD4Xz_mY8fZkEVRNiXqctbOT4yri6JHL1xs8LkORwVox47So4cod4ihUJnq9kLsZT7EqqSG7F8otpZlfXIpKLyvXM-3fBKE6Gh9WQyIqCIRXdRD_Um4yj14OxwVdcckLONR0f3UTXD6WmDymQdhE9h1T0aBCF1uXCDkY",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzs8Dx4Uu3fSphFwLW0-LaHniSD2cwUp-pR1yY0pV5BKkVLxqF7DmxPIsPlfL5VHx_U4iWHdJ9diUxruer1T28OUza5ahIfD_Y_8dbDJFtLNIa8Ydu5lZfS_lEsCXjCYVMQx0-RHTkysOcinaCcL_PK082M0HlNTZqtzqSLZVM1X2Udw0Y0FLWjXs=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPvWpVqrGi8gBcL9vOzX4PhOJZ-mJzGDqdYRuiyyGWajZQXFamshdMYDyY2BYxoQo25R4cbiiElFHFF7ZRxX4yOSzi5PBnGQKzS42VQv2I9VQoW0D8AORbtHZz2b52OBjS6TdKrYD--1Yos5-iq4i8MVvWWA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlo-PBOMy47hzEkwcZTj86n9I7RU-1fV7I7eVjIU6NCIlr_l3IfcqOorrZY-FdwGJgJ3swuoEH4X-X-nHZzexCWTGTv8IdTS2T_WoOmaoRAj_dg_ch-qwoqD5jtYzMipamar86gj54vtMc5SX3dAOMU4l16EzyaG8bQY0G5m_a1vQehypF48QRdtvUDYcLtdn4F7Zb-H-m0y6Lyg3mNi9kO7KpK7GLWjjZ3yLkaOWlNg-VAxTIFuadyVaE55c",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHUUIm0SWtuePxVEwsIWhrXctCslBhdTxcKvmoZz1QzWg7ppwoiV71MoHALdesWAf3tcx40Tkf_eGVplnPLVGA1QUL41wQd9V50sjyw4eLMqZhfzaPehiewp4KBphgFKuc-Xb3Af-t7EHLrzd4t",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaFX5Xl2zXcTzTGvm21Iz88l71NuT0sefNkW76L2YhXyglMVQcXhQLN8_GFA-JQK0QvOg7h9IOnoT6F4UJIUK6nMaqIZz4dxSyQGfsYk5KRnXGbql9EjqTbKPa6XmwTHtH4T109ZVRH0AZwBqG2_8xC66JsL5S49oy8h1ZvhGzHajNY2eXHYp1eX-UzRDq5FXZJGvpfK9t1i5yqBYtvKQUekHRywPZ6GrrlgFi1zSwJVS1xXSu8LMXm8mkXWztwt91iqCp4MHYxA7v-u0yVgaNATiyWeZ74vjmM4zZvq6zwsl9HabBl66uOgGRBlxq4Vnt-oIWDqx2bDtRw=="
+      ],
+      "scraped_at": "2026-03-13T05:29:56.351077Z",
+      "location": {
+        "country": "Thailand",
+        "provinces": [
+          "Northeastern Thailand (Isaan region)",
+          "Chiang Mai",
+          "Sukhothai",
+          "Nan"
+        ]
+      },
+      "resume_analisa": {
+        "description": "Thai silk is a world-renowned product celebrated for its luxury, beauty, natural sheen, vibrant colors, and durable quality. It holds significant cultural value, with the entire process from sericulture (silkworm cultivation) to weaving being a traditional knowledge passed down through generations. The creation of Thai silk is a labor-intensive craft involving several intricate steps, culminating in the weaving of fabric on traditional handlooms.",
+        "cultural_significance": "Thai silk is more than just a textile; it symbolizes Thailand's rich cultural history and embodies centuries of craftsmanship. Its origins date back over 3,000 years, with early uses in religious and royal contexts, including ceremonial robes for monks and kings, and traditional Thai clothing. The craft is deeply rooted in family traditions, often passed down from mother to daughter, reflecting a profound connection between Thai people and nature.",
+        "gemini_tags": [
+          "Thai silk",
+          "silk weaving",
+          "traditional craftsmanship",
+          "sericulture",
+          "textile",
+          "handloom",
+          "cultural heritage",
+          "Thailand",
+          "Ikat",
+          "Brocade"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Textile Production (Sericulture and Weaving)",
+        "materials_and_tools": [
+          "Silk moth eggs",
+          "Mulberry leaves",
+          "Silk cocoons",
+          "Water",
+          "Natural dyes (from local plants) or synthetic dyes",
+          "Baskets (for silkworms)",
+          "Round, flat bamboo trays (chor) (for silkworms to spin cocoons)",
+          "Vats/boiling pots (for reeling)",
+          "Wooden spindles (for hand-reeling)",
+          "Traditional hand-operated loom"
+        ],
+        "step_by_step": [
+          "**1. Sericulture (Cultivation of Silkworms):**",
+          "Farmers cultivate Bombyx mori silkworms, which feed exclusively on mulberry leaves grown nearby.",
+          "Phase 1: Silk moth eggs hatch into caterpillars (silkworms).",
+          "Phase 2: Around nine days old, silkworms' feeding schedule increases to three times a day. Around Day 18, larger silkworms are moved to other baskets for sufficient room.",
+          "Phase 3: After approximately 36 days, silkworms reach full growth and turn yellow.",
+          "Phase 4: Silkworms are transferred to special round, flat bamboo trays (chor) to spin their cocoons, a process that takes five to eight days.",
+          "Most completed cocoons are harvested quickly to prevent the pupa inside from hatching, which would spoil the silk. Some are allowed to hatch to provide eggs for the next cycle.",
+          "Cleanliness is crucial throughout sericulture, protecting silkworms from smoke and insects.",
+          "**2. Preparing the Silk Threads:**",
+          "**Reeling**: The harvested cocoons are boiled in hot water to release and loosen the silk filaments.",
+          "Filaments from 10 to 20 cocoons are twisted together to form a single, thicker thread.",
+          "The thread is then hand-reeled onto wooden spindles to create a uniform strand of raw silk. This meticulous process can take nearly 40 hours to produce half a kilogram of silk. Hand-reeling yields three grades of silk.",
+          "**Dyeing**: The raw silk fabric is soaked in hot water and bleached (often with hydrogen peroxide) to remove its natural yellow coloring before dyeing.",
+          "Threads are then dyed using either natural pigments derived from local plants or synthetic dyes, depending on the desired color.",
+          "**3. Weaving:**",
+          "Once the silk threads are prepared and dyed, they are meticulously woven into fabric using a traditional hand-operated loom.",
+          "Weavers skillfully thread the silk through the loom, creating intricate patterns and designs that often carry cultural symbolism specific to the region.",
+          "Common weaving techniques include Ikat (mat mii), where patterns are tie-dyed onto weft threads before weaving (prevalent in Northeastern Thailand), and Brocading (e.g., Khit), which involves weaving raised patterns onto the fabric."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Silk Production and Weaving",
+            "relationship_reason": "Historical origin of silk and its spread across Asia through trade."
+          },
+          {
+            "country": "India",
+            "element_name": "Silk Production and Weaving",
+            "relationship_reason": "Historical origin of silk and its spread across Asia through trade."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Kebaya (traditional blouse-dress ensemble)",
+            "relationship_reason": "Shared textile traditions and craftsmanship, as Kebaya is often made from silk and recently inscribed on UNESCO's list as a joint nomination."
+          },
+          {
+            "country": "Malaysia",
+            "element_name": "Kebaya (traditional blouse-dress ensemble)",
+            "relationship_reason": "Shared textile traditions and craftsmanship, as Kebaya is often made from silk and recently inscribed on UNESCO's list as a joint nomination."
+          },
+          {
+            "country": "Singapore",
+            "element_name": "Kebaya (traditional blouse-dress ensemble)",
+            "relationship_reason": "Shared textile traditions and craftsmanship, as Kebaya is often made from silk and recently inscribed on UNESCO's list as a joint nomination."
+          },
+          {
+            "country": "Brunei",
+            "element_name": "Kebaya (traditional blouse-dress ensemble)",
+            "relationship_reason": "Shared textile traditions and craftsmanship, as Kebaya is often made from silk and recently inscribed on UNESCO's list as a joint nomination."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T05:28:26.444929Z",
-    "total_ich_elements": 2,
-    "complete_records": 1,
+    "generated_at": "2026-03-13T05:30:19.514947Z",
+    "total_ich_elements": 3,
+    "complete_records": 2,
     "incomplete_records": 1,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 1,
+      "Traditional Craftsmanship": 2,
       "Social Practices & Rituals": 1
     }
   }
