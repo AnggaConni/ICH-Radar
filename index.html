@@ -270,7 +270,7 @@
   // ═══════════════════════════════════════════════════════════════
 const COUNTRY_CENTROIDS = {
     // ==========================================
-    // MODERN COUNTRIES (A-Z)
+    // MODERN COUNTRIES & TERRITORIES (A-Z)
     // ==========================================
     "Afghanistan":          [33.9391,  67.7100],
     "Albania":              [41.1533,  20.1683],
@@ -310,6 +310,7 @@ const COUNTRY_CENTROIDS = {
     "China":                [35.8617, 104.1954],
     "Colombia":             [4.5709,  -74.2973],
     "Comoros":              [-11.6455, 43.3333],
+    "Cook Islands":         [-21.2367,-159.7777],
     "Costa Rica":           [9.7489,  -83.7534],
     "Croatia":              [45.1000,  15.2000],
     "Cuba":                 [21.5218, -77.7812],
@@ -360,6 +361,7 @@ const COUNTRY_CENTROIDS = {
     "Kazakhstan":           [48.0196,  66.9237],
     "Kenya":                [-0.0236,  37.9062],
     "Kiribati":             [-3.3704, -168.7340],
+    "Kosovo":               [42.6026,  20.9030],
     "Kuwait":               [29.3117,  47.4818],
     "Kyrgyzstan":           [41.2044,  74.7661],
     "Laos":                 [19.8563, 102.4955],
@@ -397,6 +399,7 @@ const COUNTRY_CENTROIDS = {
     "Nicaragua":            [12.8654, -85.2072],
     "Niger":                [17.6078,   8.0817],
     "Nigeria":              [9.0820,    8.6753],
+    "Niue":                 [-19.0544,-169.8672],
     "North Korea":          [40.3399, 127.5101],
     "North Macedonia":      [41.6086,  21.7453],
     "Norway":               [60.4720,   8.4689],
@@ -465,6 +468,7 @@ const COUNTRY_CENTROIDS = {
     "Vatican City":         [41.9029,  12.4534],
     "Venezuela":            [6.4238,  -66.5897],
     "Vietnam":              [14.0583, 108.2772],
+    "Western Sahara":       [24.2155, -12.8858],
     "Yemen":                [15.5527,  48.5164],
     "Zambia":               [-13.1339, 27.8493],
     "Zimbabwe":             [-19.0154, 29.1549],
@@ -472,7 +476,22 @@ const COUNTRY_CENTROIDS = {
     // ==========================================
     // HISTORICAL / VANISHED NATIONS & EMPIRES
     // ==========================================
+    // Nusantara / Indonesian Historical
     "Majapahit Empire":     [-7.5561, 112.3860], // Centered near Trowulan, East Java
+    "Srivijaya Empire":     [-2.9909, 104.7567], // Centered near Palembang, South Sumatra
+    "Kerajaan Sriwijaya":   [-2.9909, 104.7567], // Centered near Palembang, South Sumatra
+    "Mataram Sultanate":    [-7.8014, 110.3644], // Centered near Kotagede/Yogyakarta
+    "Aceh Sultanate":       [ 5.5500,  95.3167], // Centered in Banda Aceh
+    
+    // Global Historical Empires
+    "British Empire":       [51.5074,  -0.1278], // London
+    "Spanish Empire":       [40.4168,  -3.7038], // Madrid
+    "French Empire":        [48.8566,   2.3522], // Paris
+    "Qing Dynasty":         [39.9042, 116.4074], // Beijing
+    "Umayyad Caliphate":    [33.5138,  36.2765], // Damascus
+    "Abbasid Caliphate":    [33.3152,  44.3661], // Baghdad
+    "Mali Empire":          [12.0620,  -7.9897], // Niani / West Africa
+    "Songhai Empire":       [16.2733,  -0.0530], // Gao
     "Ancient Greece":       [37.9838,  23.7275], // Centered near Athens/Sparta
     "Byzantine Empire":     [41.0082,  28.9784], // Constantinople / Istanbul
     "Roman Empire":         [41.9028,  12.4964], // Rome
@@ -498,9 +517,11 @@ const COUNTRY_CENTROIDS = {
     "Gran Colombia":        [4.6097,  -74.0817], // Bogota
     "Republic of Texas":    [30.2672, -97.7431], // Austin / Texas Region
     "Confederate States":   [37.5407, -77.4360], // Richmond, VA
+    
+    // Miscellaneous
     "Global":               [20.0000,   0.0000]
 };
-
+    
   // Helper: resolve coords from a country string (falls back to [0,0])
   function coordsForCountry(countryStr) {
     if (!countryStr) return null;
