@@ -1047,11 +1047,15 @@
     // --- AKHIR KODE YOUTUBE CAROUSEL ---
 
     const safeImg = getValidImageUrl(item.thumbnail_url);
-    document.getElementById('modal-body').innerHTML = `
+      document.getElementById('modal-body').innerHTML = `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="flex flex-col gap-4">
           <img src="${safeImg}" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-lg" onerror="this.onerror=null;this.src='${FALLBACK_IMAGE}'">
-          <div class="grid grid-cols-2 gap-3">
+          
+          <div id="mini-map" class="w-full h-48 rounded-xl border border-brand-700 bg-brand-800 z-10"></div>
+          
+           <div class="grid grid-cols-2 gap-3">
+
             <div class="bg-brand-900 p-3 rounded-lg border border-brand-700">
               <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-1">${dict.modalOrigin}</p>
               <p class="font-bold text-sm">${item.location?.country||'-'}</p>
@@ -1089,6 +1093,65 @@
     void modal.offsetWidth;
     modal.classList.remove('opacity-0');
     wrapper.classList.remove('scale-95');
+
+// --- MULAI LOGIKA MINI MAP ---
+    setTimeout(() => {
+      // Hapus peta lama jika ada (mencegah error saat ganti elemen)
+      if (window.miniMapInstance) {
+        window.miniMapInstance.remove();
+      }
+
+      // Ambil kordinat elemen yang sedang dibuka
+      const mainLat = item.location?.lat;
+      const mainLng = item.location?.lng;
+
+      // Jika tidak ada kordinat, jangan tampilkan peta
+      if (!mainLat || !mainLng) {
+         document.getElementById('mini-map').style.display = 'none';
+         return;
+      }
+
+      // Inisialisasi Mini Map
+      window.miniMapInstance = L.map('mini-map', { 
+        zoomControl: false, // Sembunyikan tombol zoom agar bersih
+        scrollWheelZoom: false, // Cegah zoom saat scroll mouse
+        dragging: false // Cegah geser peta
+      }).setView([mainLat, mainLng], 3);
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        subdomains: 'abcd', maxZoom: 20
+      }).addTo(window.miniMapInstance);
+
+      // Buat Layer Khusus untuk Garis
+      const miniMapLines = L.layerGroup().addTo(window.miniMapInstance);
+
+      // Gambar Marker Utama
+      L.marker([mainLat, mainLng], { icon: makeMainIcon(1) }).addTo(window.miniMapInstance);
+
+      // Gambar Koneksi Shared Heritage (jika ada)
+      if (item.shared_heritage_detection?.is_shared) {
+        let bounds = L.latLngBounds([[mainLat, mainLng]]); // Mulai batas dari titik utama
+
+        item.shared_heritage_detection.related_elements.forEach(rel => {
+          const relCoords = coordsForCountry(rel.country);
+          if (relCoords) {
+            // Gambar Marker Terkait
+            L.marker(relCoords, { icon: relatedIcon }).addTo(window.miniMapInstance);
+            
+            // Gambar Garis
+            L.polyline([[mainLat, mainLng], relCoords], {
+              className: 'glowing-line', weight: 1.8, opacity: 0.85
+            }).addTo(miniMapLines);
+
+            bounds.extend(relCoords); // Perluas batas agar mencakup titik ini
+          }
+        });
+
+        // Sesuaikan zoom agar semua titik dan garis terlihat
+        window.miniMapInstance.fitBounds(bounds, { padding: [20, 20], maxZoom: 4 });
+      }
+    }, 300); // Tunggu 300ms agar animasi modal selesai sebelum merender peta
+    // --- AKHIR LOGIKA MINI MAP ---
   }
 
   function closeModal() {
