@@ -193,11 +193,21 @@
       <div id="inventory-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </div>
 
-    <div id="load-more-container" class="w-full flex justify-center mt-6 hidden">
-      <button id="btn-load-more" onclick="loadMoreItems()" class="bg-brand-800 border border-brand-700 hover:border-brand-accent px-6 py-2 rounded-full text-sm font-bold transition-all text-brand-accent">
-        Load More
-      </button>
-    </div>
+<div id="pagination-container" class="w-full flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 pt-6 border-t border-brand-700 hidden">
+       <div class="flex items-center gap-2 text-sm text-gray-400">
+         <span>Items per page:</span>
+         <select id="page-size-selector" onchange="changePageSize(this.value)" class="bg-brand-900 border border-brand-700 text-white rounded px-2 py-1 focus:border-brand-accent focus:outline-none transition-colors">
+           <option value="9">9</option>
+           <option value="18" selected>18</option>
+           <option value="36">36</option>
+          <option value="72">72</option>
+         </select>
+       </div>
+      <div id="pagination-buttons" class="flex gap-1"></div>
+       <div id="pagination-info" class="text-sm text-gray-400 font-mono"></div>
+     </div>
+
+
   </main>
 
   <!-- Modal -->
@@ -463,7 +473,7 @@
   let linesLayer    = null;   // polylines live on a plain layer (animates properly)
   let markersLayer  = null;   // cluster group for markers
   let currentPage   = 1;
-  const itemsPerPage = 9;
+  let itemsPerPage = 18;
 
   // ═══════════════════════════════════════════════════════════════
   //  INIT
@@ -548,60 +558,128 @@
   // Load More all the way down, which is a trivially small DOM.
   // The JSON payload at that scale is < 3 MB, also lightweight.
   // No virtual scrolling needed until ~5 000+ items.
-  function renderGrid(data, append = false) {
-    const grid = document.getElementById('inventory-grid');
-    const loadMoreContainer = document.getElementById('load-more-container');
-    const dict = i18n[currentLang];
+  function renderGrid(data) {
+    const grid = document.getElementById('inventory-grid');
+    const paginationContainer = document.getElementById('pagination-container');
+    const dict = i18n[currentLang];
 
-    if (!append) {
-      // Explicitly remove child nodes (faster than innerHTML='' on large DOMs)
-      while (grid.firstChild) grid.removeChild(grid.firstChild);
-    }
+    // Bersihkan grid setiap render
+    while (grid.firstChild) grid.removeChild(grid.firstChild);
 
-    if (data.length === 0) {
-      grid.innerHTML = `<div class="col-span-full text-center text-gray-500 py-10">${dict.emptyGrid}</div>`;
-      if (loadMoreContainer) loadMoreContainer.classList.add('hidden');
-      return;
-    }
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex   = startIndex + itemsPerPage;
-    data.slice(startIndex, endIndex).forEach(item => {
-      const isComplete = item.completion_status === 'COMPLETE';
-      const isShared   = item.shared_heritage_detection?.is_shared;
-      const tags       = item.resume_analisa?.gemini_tags?.slice(0,3) || [];
-      const tagsHtml   = tags.map(t => `<span class="bg-brand-700 text-xs px-2 py-1 rounded-md text-gray-300">#${t}</span>`).join('');
-      const card = document.createElement('div');
-      card.className = "bg-brand-800 border border-brand-700 rounded-xl overflow-hidden hover:border-brand-500 transition-colors group flex flex-col";
+    if (data.length === 0) {
+      grid.innerHTML = `<div class="col-span-full text-center text-gray-500 py-10">${dict.emptyGrid}</div>`;
+      paginationContainer.classList.add('hidden');
+      return;
+    }
+
+    paginationContainer.classList.remove('hidden');
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex   = startIndex + itemsPerPage;
+    const pageData   = data.slice(startIndex, endIndex);
+
+    pageData.forEach(item => {
+      const isComplete = item.completion_status === 'COMPLETE';
+      const isShared   = item.shared_heritage_detection?.is_shared;
+      const tags       = item.resume_analisa?.gemini_tags?.slice(0,3) || [];
+      const tagsHtml   = tags.map(t => `<span class="bg-brand-700 text-xs px-2 py-1 rounded-md text-gray-300">#${t}</span>`).join('');
+      const card = document.createElement('div');
+      card.className = "bg-brand-800 border border-brand-700 rounded-xl overflow-hidden hover:border-brand-500 transition-colors group flex flex-col";
       const safeImg = getValidImageUrl(item.thumbnail_url);
-      card.innerHTML = `
-        <div class="h-48 w-full bg-brand-900 relative overflow-hidden">
-          <img src="${safeImg}" alt="${item.element_name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" onerror="this.onerror=null;this.src='${FALLBACK_IMAGE}'">
+
+       // PERHATIKAN PENAMBAHAN loading="lazy" DI TAG IMG BAWAH INI
+       card.innerHTML = `
+         <div class="h-48 w-full bg-brand-900 relative overflow-hidden">
+          <img src="${safeImg}" alt="${item.element_name}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" onerror="this.onerror=null;this.src='${FALLBACK_IMAGE}'">
           <div class="absolute top-3 right-3 flex gap-2">
-            ${isShared ? '<span class="bg-brand-secondary text-brand-900 text-[10px] font-bold px-2 py-1 rounded shadow"><i class="ph-fill ph-link"></i> SHARED</span>' : ''}
+             ${isShared ? '<span class="bg-brand-secondary text-brand-900 text-[10px] font-bold px-2 py-1 rounded shadow"><i class="ph-fill ph-link"></i> SHARED</span>' : ''}
             <span class="${isComplete ? 'bg-brand-accent text-brand-900' : 'bg-red-500 text-white'} text-[10px] font-bold px-2 py-1 rounded shadow">${isComplete ? 'COMPLETE' : 'INCOMPLETE'}</span>
-          </div>
         </div>
-        <div class="p-5 flex flex-col flex-grow gap-3">
-          <div>
-            <p class="text-xs text-brand-secondary font-mono mb-1 tracking-widest uppercase">${item.category}</p>
-            <h3 class="font-display font-bold text-xl leading-tight line-clamp-2">${item.element_name}</h3>
-            <p class="text-sm text-gray-400 mt-1"><i class="ph-fill ph-map-pin mr-1"></i>${item.location?.country || 'Unknown'}</p>
+        </div>
+         <div class="p-5 flex flex-col flex-grow gap-3">
+        <div>
+             <p class="text-xs text-brand-secondary font-mono mb-1 tracking-widest uppercase">${item.category}</p>
+             <h3 class="font-display font-bold text-xl leading-tight line-clamp-2">${item.element_name}</h3>
+             <p class="text-sm text-gray-400 mt-1"><i class="ph-fill ph-map-pin mr-1"></i>${item.location?.country || 'Unknown'}</p>
           </div>
-          <p class="text-sm text-gray-300 line-clamp-3 leading-relaxed flex-grow">${item.resume_analisa?.description || '...'}</p>
-          <div class="flex flex-wrap gap-1 mt-auto pt-4 border-t border-brand-700">${tagsHtml}</div>
+            <p class="text-sm text-gray-300 line-clamp-3 leading-relaxed flex-grow">${item.resume_analisa?.description || '...'}</p>
+           <div class="flex flex-wrap gap-1 mt-auto pt-4 border-t border-brand-700">${tagsHtml}</div>
           <button onclick='openModal("${item.id}")' class="w-full mt-3 bg-brand-700 hover:bg-brand-accent hover:text-brand-900 text-white py-2.5 rounded-lg text-sm font-bold transition-all duration-300">${dict.btnAnalyze}</button>
         </div>`;
-      grid.appendChild(card);
-    });
-    if (loadMoreContainer) {
-      endIndex < data.length ? loadMoreContainer.classList.remove('hidden') : loadMoreContainer.classList.add('hidden');
-    }
+       grid.appendChild(card);
+     });
+
+    renderPaginationUI(data.length, startIndex, endIndex);
   }
 
-  function loadMoreItems() {
-    currentPage++;
-    renderGrid(filteredData, true);
-  }
+  function changePageSize(size) {
+    itemsPerPage = parseInt(size, 10);
+    currentPage = 1;
+    renderGrid(filteredData);
+    scrollToGrid();
+  }
+
+  function goToPage(page) {
+    currentPage = page;
+    renderGrid(filteredData);
+    scrollToGrid();
+  }
+
+  function scrollToGrid() {
+    const directoryHeader = document.querySelector('.ph-books').closest('div').parentElement;
+    directoryHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function renderPaginationUI(totalItems, startIndex, endIndex) {
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    const actualEndIndex = Math.min(endIndex, totalItems);
+
+    document.getElementById('pagination-info').innerText = `${startIndex + 1} - ${actualEndIndex} of ${totalItems}`;
+
+    const btnContainer = document.getElementById('pagination-buttons');
+    btnContainer.innerHTML = '';
+
+    // Prev Button
+    const prevBtn = document.createElement('button');
+    prevBtn.innerHTML = '<i class="ph ph-caret-left"></i>';
+    prevBtn.className = `px-3 py-1.5 rounded-md border transition-colors ${currentPage === 1 ? 'border-brand-700 text-gray-600 cursor-not-allowed bg-brand-900' : 'border-brand-700 text-gray-300 hover:border-brand-accent hover:text-brand-900 bg-brand-800 hover:bg-brand-accent'}`;
+    prevBtn.disabled = currentPage === 1;
+    if (!prevBtn.disabled) prevBtn.onclick = () => goToPage(currentPage - 1);
+    btnContainer.appendChild(prevBtn);
+
+    // Smart Page Numbers (with ellipsis for large datasets)
+    let pages = [];
+    if (totalPages <= 5) {
+      for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+      if (currentPage <= 3) pages = [1, 2, 3, 4, '...', totalPages];
+      else if (currentPage >= totalPages - 2) pages = [1, '...', totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+      else pages = [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
+    }
+
+    pages.forEach(p => {
+      const pBtn = document.createElement('button');
+      if (p === '...') {
+        pBtn.innerText = '...';
+        pBtn.className = 'px-2 py-1.5 text-gray-500 cursor-default';
+        pBtn.disabled = true;
+      } else {
+        pBtn.innerText = p;
+        pBtn.className = `px-3 py-1.5 rounded-md border text-sm font-bold transition-colors ${currentPage === p ? 'bg-brand-accent text-brand-900 border-brand-accent' : 'bg-brand-800 border-brand-700 text-gray-300 hover:border-brand-accent hover:text-brand-900 hover:bg-brand-accent'}`;
+        pBtn.onclick = () => goToPage(p);
+      }
+      btnContainer.appendChild(pBtn);
+    });
+
+    // Next Button
+    const nextBtn = document.createElement('button');
+    nextBtn.innerHTML = '<i class="ph ph-caret-right"></i>';
+    nextBtn.className = `px-3 py-1.5 rounded-md border transition-colors ${currentPage === totalPages ? 'border-brand-700 text-gray-600 cursor-not-allowed bg-brand-900' : 'border-brand-700 text-gray-300 hover:border-brand-accent hover:text-brand-900 bg-brand-800 hover:bg-brand-accent'}`;
+    nextBtn.disabled = currentPage === totalPages;
+    if (!nextBtn.disabled) nextBtn.onclick = () => goToPage(currentPage + 1);
+    btnContainer.appendChild(nextBtn);
+  }
+
 
   // ═══════════════════════════════════════════════════════════════
   //  MAP
@@ -778,7 +856,7 @@
     });
     filteredData = result;
     currentPage = 1;
-    renderGrid(filteredData, false);
+    renderGrid(filteredData);
     drawMapElements(filteredData);
   }
 
