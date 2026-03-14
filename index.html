@@ -241,25 +241,156 @@
     </div>
   </div>
 
-    <!-- Modal Guide -->
-  <div id="guide-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden modal-blur bg-black/60 p-4 opacity-0 transition-opacity duration-300">
-    <div class="bg-brand-800 border border-brand-700 rounded-2xl w-full max-w-2xl flex flex-col overflow-hidden transform scale-95 transition-transform duration-300" id="guide-modal-wrapper">
-      <div class="flex justify-between items-center p-6 border-b border-brand-700">
-        <h3 class="font-display font-bold text-xl flex items-center gap-2"><i class="ph-fill ph-info text-brand-accent text-2xl"></i> <span data-i18n="guideTitle">How to Use the Radar</span></h3>
-        <button onclick="closeGuide()" class="text-gray-400 hover:text-white transition-colors bg-brand-700 p-2 rounded-full">
-          <i class="ph ph-x text-xl"></i>
-        </button>
-      </div>
-      <div class="p-6 overflow-y-auto space-y-4 text-sm text-gray-300 leading-relaxed">
-        <p data-i18n="guideP1">Welcome to the ICH Shared Heritage Radar. This tool maps and analyzes Intangible Cultural Heritage globally.</p>
-        <ul class="space-y-3 mt-4">
-          <li><strong class="text-brand-accent">Map Nodes:</strong> Click on any pulsing green node on the map to see heritage elements from that region.</li>
-          <li><strong class="text-brand-secondary">Connections:</strong> Dashed lines indicate a "Shared Heritage" relationship between two different countries or cultures.</li>
-          <li><strong class="text-white">Directory:</strong> Use the filters to sort by country or data completion status. Click "View Full Analysis" to read the AI-enriched data, tools, and processes.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<!-- Modal Guide -->
+<div id="guide-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden modal-blur bg-black/60 p-4 opacity-0 transition-opacity duration-300">
+  <div class="bg-brand-800 border border-brand-700 rounded-2xl w-full max-w-2xl flex flex-col overflow-hidden transform scale-95 transition-transform duration-300" id="guide-modal-wrapper">
+    
+    <div class="flex justify-between items-center p-6 border-b border-brand-700">
+      <h3 class="font-display font-bold text-xl flex items-center gap-2">
+        <i class="ph-fill ph-info text-brand-accent text-2xl"></i>
+        <span data-i18n="guideTitle">How to Use the Radar</span>
+      </h3>
+      <button onclick="closeGuide()" class="text-gray-400 hover:text-white transition-colors bg-brand-700 p-2 rounded-full">
+        <i class="ph ph-x text-xl"></i>
+      </button>
+    </div>
+
+    <div class="p-6 overflow-y-auto space-y-6 text-sm text-gray-300 leading-relaxed" style="max-height: 75vh;">
+
+      <!-- Intro -->
+      <p class="text-gray-300 leading-relaxed" data-i18n="guideP1">
+        Welcome to the <span class="text-brand-accent font-bold">ICH Shared Heritage Radar</span> — an AI-powered tool that continuously discovers, enriches, and maps <strong class="text-white">Intangible Cultural Heritage (ICH)</strong> from communities around the world. Data is updated automatically every 2 days.
+      </p>
+
+      <!-- System Status Bar -->
+      <div class="bg-brand-900 border border-brand-700 rounded-xl p-4 flex flex-col gap-2">
+        <p class="text-brand-accent text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+          <i class="ph-fill ph-pulse text-base"></i> Live System Status
+        </p>
+        <p class="text-gray-400 text-xs">The status ticker at the top of the page shows the most recently discovered or enriched heritage element, its country of origin, and its data completion status in real time.</p>
+        <div class="flex gap-3 mt-1 flex-wrap">
+          <span class="bg-brand-accent text-brand-900 text-[10px] font-bold px-2 py-1 rounded">COMPLETE</span>
+          <span class="text-gray-400 text-xs self-center">All fields found — description, steps, sources, shared connections.</span>
+        </div>
+        <div class="flex gap-3 flex-wrap">
+          <span class="bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded">INCOMPLETE</span>
+          <span class="text-gray-400 text-xs self-center">Still missing step-by-step process, recipe, or valid image. Will be enriched next run.</span>
+        </div>
+      </div>
+
+      <!-- Stats Cards -->
+      <div>
+        <p class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-chart-bar text-brand-secondary"></i> Dashboard Stats</p>
+        <ul class="space-y-2 text-gray-400 text-xs">
+          <li><span class="text-white font-semibold">Total Elements</span> — Total number of ICH records in the database.</li>
+          <li><span class="text-brand-accent font-semibold">Complete Data</span> — Records with full descriptions, processes, and sources.</li>
+          <li><span class="text-red-400 font-semibold">Needs Enrichment</span> — Records flagged for a follow-up AI enrichment pass.</li>
+          <li><span class="text-brand-secondary font-semibold">Shared Heritage Network</span> — Records where cultural connections across countries were detected.</li>
+        </ul>
+      </div>
+
+      <!-- Map -->
+      <div>
+        <p class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-map-trifold text-brand-secondary"></i> Heritage Network Map</p>
+        <ul class="space-y-2">
+          <li class="flex gap-2 items-start">
+            <span class="mt-0.5 w-3 h-3 rounded-full bg-[#00ffcc] shrink-0 inline-block"></span>
+            <span><strong class="text-white">Green pulsing node</strong> — An ICH element's origin location. Click to see all elements from that region in a popup. If multiple elements share the same coordinates, a number badge appears on the node.</span>
+          </li>
+          <li class="flex gap-2 items-start">
+            <span class="mt-0.5 w-3 h-3 rounded-full bg-[#facc15] shrink-0 inline-block"></span>
+            <span><strong class="text-white">Yellow node</strong> — A related heritage element in another country, linked by a shared cultural lineage. Click to see the element name, country, and relationship reason.</span>
+          </li>
+          <li class="flex gap-2 items-start">
+            <svg class="mt-1 shrink-0" width="24" height="8"><line x1="0" y1="4" x2="24" y2="4" stroke="#00ffcc" stroke-width="2" stroke-dasharray="4 3"/></svg>
+            <span><strong class="text-white">Animated dashed line</strong> — A "Shared Heritage" connection between two cultures. The AI detected a historical, linguistic, or cultural relationship between them.</span>
+          </li>
+          <li class="flex gap-2 items-start">
+            <i class="ph ph-arrows-out text-brand-secondary shrink-0 mt-0.5"></i>
+            <span>Use your mouse scroll wheel to zoom, and click-drag to pan. The map automatically filters to match the active directory filters below.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Directory & Filters -->
+      <div>
+        <p class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-books text-brand-secondary"></i> Directory & Filters</p>
+        <ul class="space-y-2 text-gray-400">
+          <li><span class="text-white font-semibold">Filter by Country</span> — Narrow the directory and map to a single country of origin.</li>
+          <li><span class="text-white font-semibold">Filter by Status</span> — Show only Complete, Incomplete, or Shared Heritage records.</li>
+          <li><span class="text-white font-semibold">Sort</span> — Toggle between newest-first and oldest-first by discovery date.</li>
+          <li><span class="text-white font-semibold">Items per page</span> — Choose 9, 18, 36, or 72 cards per page. Pagination at the bottom lets you navigate large datasets.</li>
+          <li><span class="text-white font-semibold">View Full Analysis</span> — Opens the detail modal for that element (see below).</li>
+        </ul>
+      </div>
+
+      <!-- Detail Modal -->
+      <div>
+        <p class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-article text-brand-secondary"></i> Element Detail View</p>
+        <p class="text-gray-400 mb-2">Clicking <span class="text-brand-accent font-semibold">View Full Analysis</span> opens a full detail panel with:</p>
+        <ul class="space-y-2 text-gray-400">
+          <li><i class="ph ph-image text-brand-secondary mr-1"></i><span class="text-white font-semibold">Cover Image</span> — Automatically fetched thumbnail for the element.</li>
+          <li><i class="ph ph-map-pin text-brand-secondary mr-1"></i><span class="text-white font-semibold">Mini Map</span> — A focused map showing the element's origin and its shared heritage connections at a glance.</li>
+          <li><i class="ph ph-globe text-brand-secondary mr-1"></i><span class="text-white font-semibold">Origin & Category</span> — Country, province(s), and ICH category.</li>
+          <li><i class="ph ph-star text-brand-secondary mr-1"></i><span class="text-white font-semibold">Cultural Significance</span> — AI-summarized importance of the element to its community.</li>
+          <li><i class="ph ph-toolbox text-brand-secondary mr-1"></i><span class="text-white font-semibold">Tools & Materials</span> — Ingredients, instruments, or materials used in the practice.</li>
+          <li><i class="ph ph-list-numbers text-brand-secondary mr-1"></i><span class="text-white font-semibold">Step-by-Step Process</span> — The AI-extracted crafting method, recipe, or ritual sequence. Only shown for COMPLETE records.</li>
+          <li><i class="ph ph-share-network text-brand-secondary mr-1"></i><span class="text-white font-semibold">Shared Heritage</span> — Countries and elements with a detected cultural connection, shown with an AI confidence score.</li>
+          <li><i class="ph ph-youtube-logo text-red-500 mr-1"></i><span class="text-white font-semibold">Video Media</span> — If a YouTube link was found in the sources, an embedded video carousel appears automatically.</li>
+          <li><i class="ph ph-link text-brand-secondary mr-1"></i><span class="text-white font-semibold">Data Sources</span> — Direct links to Wikipedia articles, local news, community blogs, and Google-grounded sources used by the AI.</li>
+        </ul>
+      </div>
+
+      <!-- Export PDF -->
+      <div class="bg-brand-900 border border-yellow-500/20 rounded-xl p-4 flex flex-col gap-3">
+        <p class="text-white font-bold flex items-center gap-2"><i class="ph ph-printer text-brand-secondary"></i> Export to PDF</p>
+        <p class="text-gray-400">Click the <span class="text-white font-semibold"><i class="ph ph-printer text-sm"></i> printer icon</span> inside any element's detail view to generate a print-ready document. A new tab will open containing the full record — cover image, map, description, steps, and sources — then your browser's print dialog will appear automatically.</p>
+        
+        <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-3">
+          <p class="text-yellow-400 font-bold text-xs mb-1 flex items-center gap-1"><i class="ph ph-warning-circle"></i> Popup Blocker Warning</p>
+          <p class="text-gray-400 text-xs">The PDF export opens in a <strong class="text-white">new browser tab</strong>. If nothing happens when you click the printer icon, your browser's popup blocker is preventing it.</p>
+          <p class="text-gray-400 text-xs mt-2">To fix this:</p>
+          <ul class="text-gray-400 text-xs mt-1 space-y-1 list-disc list-inside">
+            <li><strong class="text-white">Chrome / Edge:</strong> Look for a blocked popup icon <i class="ph ph-x-circle text-xs"></i> in the address bar on the right. Click it, then select <em>"Always allow popups from this site"</em>.</li>
+            <li><strong class="text-white">Firefox:</strong> A bar appears at the top of the page. Click <em>"Allow"</em> or <em>"Options → Allow popups for this site"</em>.</li>
+            <li><strong class="text-white">Safari:</strong> Go to <em>Settings → Websites → Pop-up Windows</em> and set this site to <em>"Allow"</em>.</li>
+          </ul>
+          <p class="text-gray-400 text-xs mt-2">Once allowed, click the printer icon again. The export tab will open and the print dialog will appear after ~1.5 seconds to ensure the map renders correctly.</p>
+        </div>
+        
+        <p class="text-gray-500 text-xs">💡 Tip: In the print dialog, select <strong class="text-white">"Save as PDF"</strong> as the destination to export a digital PDF file instead of printing to paper.</p>
+      </div>
+
+      <!-- Export XML -->
+      <div>
+        <p class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-export text-brand-secondary"></i> Export XML (Dublin Core)</p>
+        <p class="text-gray-400 mb-2">The <span class="text-brand-secondary font-semibold">Export XML</span> button in the header downloads the entire database as a structured <strong class="text-white">Dublin Core OAI-DC XML</strong> file.</p>
+        <p class="text-gray-400 mb-2">Dublin Core is an internationally recognised metadata standard used by libraries, archives, and cultural heritage institutions worldwide. This makes the exported file compatible with:</p>
+        <ul class="text-gray-400 text-xs space-y-1 list-disc list-inside">
+          <li>Digital library systems (DSpace, Omeka, Fedora)</li>
+          <li>Open Archives Initiative (OAI-PMH) harvesters</li>
+          <li>Academic research databases and citation managers</li>
+          <li>UNESCO and national ICH documentation systems</li>
+        </ul>
+        <p class="text-gray-400 mt-2 text-xs">Each element exports with its <code class="bg-brand-700 px-1 rounded text-brand-accent">dc:identifier</code>, <code class="bg-brand-700 px-1 rounded text-brand-accent">dc:title</code>, <code class="bg-brand-700 px-1 rounded text-brand-accent">dc:subject</code> (category), <code class="bg-brand-700 px-1 rounded text-brand-accent">dc:description</code>, <code class="bg-brand-700 px-1 rounded text-brand-accent">dc:coverage</code> (country), and all <code class="bg-brand-700 px-1 rounded text-brand-accent">dc:source</code> URLs.</p>
+      </div>
+
+      <!-- Language Toggle -->
+      <div>
+        <p class="text-white font-bold mb-2 flex items-center gap-2"><i class="ph ph-translate text-brand-secondary"></i> Language Toggle (EN / ID)</p>
+        <p class="text-gray-400">Switch the interface between <strong class="text-white">English</strong> and <strong class="text-white">Bahasa Indonesia</strong> using the button in the top-right corner. All labels, filters, modal text, and status messages will update instantly. Your current filter and page state is preserved.</p>
+      </div>
+
+      <!-- AI Engine note -->
+      <div class="bg-brand-900 border border-brand-700 rounded-xl p-4">
+        <p class="text-white font-bold mb-1 flex items-center gap-2"><i class="ph-fill ph-robot text-brand-accent"></i> About the AI Engine</p>
+        <p class="text-gray-400 text-xs leading-relaxed">This radar is powered by <strong class="text-white">Google Gemini 2.5 Flash</strong> with Google Search Grounding. The AI crawler runs on a 2-day schedule, executing two phases per run: first it <em>enriches</em> any incomplete records from the previous run, then it <em>discovers</em> 2–4 entirely new heritage elements using a rotating multilingual keyword database spanning 40+ languages and regions — from unregistered village traditions to UNESCO-listed practices.</p>
+        <p class="text-gray-400 text-xs mt-2">Coordinates are geocoded via <strong class="text-white">OpenStreetMap Nominatim</strong>. Thumbnails are fetched via Microlink or Wikimedia Commons fallback. All source URLs are direct links — no AI-generated redirect links are stored.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
   <script>
@@ -479,7 +610,6 @@ const COUNTRY_CENTROIDS = {
     // Nusantara / Indonesian Historical
     "Majapahit Empire":     [-7.5561, 112.3860], // Centered near Trowulan, East Java
     "Srivijaya Empire":     [-2.9909, 104.7567], // Centered near Palembang, South Sumatra
-    "Kerajaan Sriwijaya":   [-2.9909, 104.7567], // Centered near Palembang, South Sumatra
     "Mataram Sultanate":    [-7.8014, 110.3644], // Centered near Kotagede/Yogyakarta
     "Aceh Sultanate":       [ 5.5500,  95.3167], // Centered in Banda Aceh
     
@@ -521,7 +651,7 @@ const COUNTRY_CENTROIDS = {
     // Miscellaneous
     "Global":               [20.0000,   0.0000]
 };
-    
+
   // Helper: resolve coords from a country string (falls back to [0,0])
   function coordsForCountry(countryStr) {
     if (!countryStr) return null;
@@ -795,6 +925,8 @@ const COUNTRY_CENTROIDS = {
   // The JSON payload at that scale is < 3 MB, also lightweight.
   // No virtual scrolling needed until ~5 000+ items.
   function renderGrid(data) {
+    const totalPages = Math.ceil(data.length / itemsPerPage);
+    if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
     const grid = document.getElementById('inventory-grid');
     const paginationContainer = document.getElementById('pagination-container');
     const dict = i18n[currentLang];
