@@ -224,12 +224,19 @@
   <!-- Modal -->
   <div id="item-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden modal-blur bg-black/60 p-4 opacity-0 transition-opacity duration-300">
     <div class="bg-brand-800 border border-brand-700 rounded-2xl w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300" id="modal-content-wrapper">
+      
       <div class="flex justify-between items-center p-6 border-b border-brand-700">
-        <h3 class="font-display font-bold text-2xl" id="modal-title">Element Name</h3>
-        <button onclick="closeModal()" class="text-gray-400 hover:text-white transition-colors bg-brand-700 p-2 rounded-full">
-          <i class="ph ph-x text-xl"></i>
-        </button>
+         <h3 class="font-display font-bold text-2xl pr-4" id="modal-title">Element Name</h3>
+         <div class="flex items-center gap-2 shrink-0">
+             <button onclick="printCardPDF()" class="text-gray-400 hover:text-brand-accent transition-colors bg-brand-700 hover:bg-brand-800 p-2 rounded-full" title="Print to PDF">
+             <i class="ph ph-printer text-xl"></i>
+          </button>
+           <button onclick="closeModal()" class="text-gray-400 hover:text-white transition-colors bg-brand-700 p-2 rounded-full">
+             <i class="ph ph-x text-xl"></i>
+           </button>
+        </div>
       </div>
+
       <div class="p-6 overflow-y-auto flex-grow flex flex-col gap-6" id="modal-body"></div>
     </div>
   </div>
@@ -464,9 +471,9 @@
   }
 
   // Update event listener penutup modal agar bisa klik di luar untuk Guide
-  document.addEventListener('click', e => {
-    if (e.target === document.getElementById('guide-modal')) closeGuide();
-  });
+   document.addEventListener('click', e => {
+     if (e.target === document.getElementById('guide-modal')) closeGuide();
+   });
 
 
   // ═══════════════════════════════════════════════════════════════
@@ -579,6 +586,7 @@
   let markersLayer  = null;   // cluster group for markers
   let currentPage   = 1;
   let itemsPerPage = 18;
+  let currentActiveItemId = null; // <--- Tambahkan ini
 
   // ═══════════════════════════════════════════════════════════════
   //  INIT
@@ -986,6 +994,7 @@
   }
 
   function openModal(itemId) {
+    currentActiveItemId = itemId;
     const item = globalData.inventory.find(i => i.id === itemId);
     if (!item) return;
     const dict = i18n[currentLang];
@@ -1188,6 +1197,204 @@
   }
 
   window.onload = init;
+
+
+  // =====================================================================
+  //  UTILITAS PDF PRINTING (Final Clean Version)
+  // =====================================================================
+
+  function printCardPDF() {
+    if (!currentActiveItemId) return;
+    const item = globalData.inventory.find(i => i.id === currentActiveItemId);
+    if (!item) return;
+
+    const dict = i18n[currentLang];
+    const safeImg = getValidImageUrl(item.thumbnail_url);
+
+    // 1. Ekstrak otomatis Thumbnail YouTube dari link sumber
+    const ytLinksForPrint = (item.source_urls || []).map(url => {
+      const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
+      return match ? match[1] : null;
+    }).filter(Boolean);
+
+    let ytThumbsHtml = '';
+    if (ytLinksForPrint.length > 0) {
+      ytThumbsHtml = `
+        <div class="print-section">
+          <h3>Video Media</h3>
+          <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            ${ytLinksForPrint.map(id => `<img src="https://img.youtube.com/vi/${id}/hqdefault.jpg" style="width: 250px; border-radius: 8px; border: 1px solid #e5e7eb;">`).join('')}
+          </div>
+        </div>`;
+    }
+
+    // 2. Merakit HTML standalone untuk tab baru (1 Kolom Layout dengan Meta Grid)
+    const finalPrintHtmlStr = `
+<!DOCTYPE html>
+<html lang="${currentLang}">
+<head>
+  <meta charset="UTF-8">
+  <title>Print - ${item.element_name}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    /* Reset & Typography */
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: #1f2937; max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; background: #ffffff; }
+    h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; color: #111827; margin-top: 0; }
+
+    /* 1. Header */
+    .print-header { border-bottom: 3px solid #111827; padding-bottom: 20px; margin-bottom: 30px; display: flex; align-items: center; gap: 15px; }
+    .print-header h1 { font-size: 32px; margin: 0; flex-grow: 1; }
+    .status-badge { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+    .status-complete { background: #00ffcc; color: #0a0a0a; }
+    .status-incomplete { background: #ef4444; color: #ffffff; }
+
+    /* Content Elements */
+    .cover-image { width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; border: 1px solid #e5e7eb; }
+    #print-leaflet-map { width: 100%; height: 350px; border-radius: 12px; margin-bottom: 20px; background: #f3f4f6; border: 1px solid #e5e7eb; z-index: 1; }
+
+    /* 1-Column Section Layout & Meta Grid */
+    .print-section { margin-bottom: 25px; padding: 20px; background: #f9fafb; border-radius: 12px; border: 1px solid #e5e7eb; break-inside: avoid; }
+    .print-section h3 { font-size: 16px; color: #374151; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; margin-bottom: 15px; }
+    .print-section p { margin: 0 0 10px 0; font-size: 14px; }
+    
+    /* INI META GRID YANG SUDAH DIPERBAIKI (columns) */
+    .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
+    
+    .sig-text { color: #007660; font-weight: 600; font-size: 15px; background: #f0fdfa; padding: 10px; border-radius: 8px; }
+    
+    /* List styling for steps and sources */
+    ul { margin: 0; padding-left: 20px; font-size: 14px; }
+    li { margin-bottom: 8px; }
+    .source-list { word-break: break-all; font-family: monospace; font-size: 12px; list-style-type: none; padding: 0; }
+    .source-list li { margin-bottom: 5px; color: #2563eb; }
+
+    /* 3. Footer */
+    .print-footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 11px; color: #6b7280; text-align: center; font-family: monospace; }
+
+    /* Print Specifics */
+    @media print {
+      body { padding: 0; margin: 0; color: black; }
+      .print-section { background: transparent; border: 1px solid #ddd; }
+      #print-leaflet-map { border: 1px solid #ddd; }
+      @page { margin: 1.5cm; size: A4; }
+    }
+  </style>
+</head>
+<body>
+  <div class="print-header">
+    <h1>${item.element_name}</h1>
+    <span class="status-badge ${item.completion_status === 'COMPLETE' ? 'status-complete' : 'status-incomplete'}">${item.completion_status}</span>
+  </div>
+
+  <img src="${safeImg}" class="cover-image" onerror="this.style.display='none'">
+  <div id="print-leaflet-map"></div>
+
+  <div class="print-section meta-grid">
+    <div>
+      <h3>Origin</h3>
+      <p><strong>Country:</strong> ${item.location?.country || 'Unknown'}</p>
+      <p><strong>Provinces:</strong> ${(item.location?.provinces || []).join(', ') || '-'}</p>
+    </div>
+    <div>
+      <h3>Category</h3>
+      <p><strong>Type:</strong> ${item.category}</p>
+    </div>
+  </div>
+
+  <div class="print-section">
+    <h3>${dict.modalDesc}</h3>
+    <p>${item.resume_analisa?.description || '-'}</p>
+  </div>
+
+  <div class="print-section">
+    <h3>${dict.modalSignificance}</h3>
+    <p class="sig-text">${item.resume_analisa?.cultural_significance || '-'}</p>
+  </div>
+
+  ${item.resume_tata_cara?.materials_and_tools ? `
+  <div class="print-section">
+    <h3>${dict.modalTools}</h3>
+    <p style="font-size:14px;">${item.resume_tata_cara.materials_and_tools.join(' &nbsp;•&nbsp; ')}</p>
+  </div>` : ''}
+
+  ${item.resume_tata_cara?.step_by_step ? `
+  <div class="print-section">
+    <h3>${dict.modalSteps} (${item.resume_tata_cara.type || 'Process'})</h3>
+    <ul>${item.resume_tata_cara.step_by_step.map(s => `<li>${s.replace(/\*\*/g, '')}</li>`).join('')}</ul>
+  </div>` : ''}
+
+  ${ytThumbsHtml}
+
+  <div class="print-section">
+    <h3>${dict.modalSources}</h3>
+    <ul class="source-list">
+      ${(item.source_urls || []).map(url => `<li>${escapeXML(url)}</li>`).join('')}
+    </ul>
+  </div>
+
+  <div class="print-footer">
+    --- Document generated by ICH Shared Heritage Radar v1.0 ---<br>
+    Printed on: ${new Date().toLocaleString()}
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
+  <script>
+    // Setup Peta Statis (Bright Mode)
+    const lat = ${item.location?.lat || 'null'};
+    const lng = ${item.location?.lng || 'null'};
+    
+    // Tarik centroids dari tab induk
+    const parentWindow = window.opener;
+    const CENTROIDS = parentWindow ? parentWindow.COUNTRY_CENTROIDS : {};
+    
+    if (lat !== null && lng !== null) {
+      const pMap = L.map('print-leaflet-map', { 
+        zoomControl: false, dragging: false, scrollWheelZoom: false, touchZoom: false 
+      }).setView([lat, lng], 4);
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 20 }).addTo(pMap);
+      L.marker([lat, lng]).addTo(pMap);
+
+      const isShared = ${item.shared_heritage_detection?.is_shared || false};
+      const related = ${JSON.stringify(item.shared_heritage_detection?.related_elements || [])};
+
+      if (isShared && related.length > 0) {
+        let bounds = L.latLngBounds([[lat, lng]]);
+        
+        related.forEach(rel => {
+          const firstToken = rel.country.split(',')[0].trim();
+          const coords = CENTROIDS[rel.country] || CENTROIDS[firstToken];
+          
+          if (coords) {
+            L.marker(coords).addTo(pMap);
+            L.polyline([[lat, lng], coords], {color: '#555', weight: 2, dashArray: '8, 8', opacity: 0.8}).addTo(pMap);
+            bounds.extend(coords);
+          }
+        });
+        pMap.fitBounds(bounds, { padding: [30, 30], maxZoom: 4 });
+      }
+    } else {
+      document.getElementById('print-leaflet-map').style.display = 'none';
+    }
+
+    // --- LOGIKA WAIT RENDER ---
+    window.onload = function() {
+      setTimeout(() => {
+        window.print();
+      }, 1500);
+    };
+  <\/script>
+</body>
+</html>
+    `;
+
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(finalPrintHtmlStr);
+    printWindow.document.close();
+  }
+
   </script>
 </body>
 </html>
