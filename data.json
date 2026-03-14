@@ -1975,19 +1975,255 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-fa353432",
+      "element_name": "Reog Ponorogo",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Reog_Ponorogo%2C_Surabaya_2018.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Reog",
+        "https://www.thejakartapost.com/indonesia/2024/12/05/kebaya-reog-ponorogo-now-listed-as-unesco-cultural-heritage.html",
+        "http://www.eastjava.com/tourism/ponorogo/",
+        "https://www.indonesia-product.com/reog-ponorogo-the-beautiful-handicraft-with-ethnic-value-art-from-ponorogo-east-java",
+        "https://www.latlong.net/place/ponorogo-ponorogo-regency-jawa-timur-indonesia-22569.html",
+        "https://www.gps-coordinates.net/latitude-longitude/indonesia/ponorogo",
+        "https://toponavi.com/id/ponorogo-map-27157"
+      ],
+      "scraped_at": "2026-03-14T21:40:57.765082Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "East Java"
+        ],
+        "lat": -7.6977397,
+        "lng": 112.4914199
+      },
+      "resume_analisa": {
+        "description": "Reog Ponorogo is a traditional theatrical dance originating from Ponorogo Regency in East Java, Indonesia. It is a complex performing art that blends dance, music, and mythology, widely recognized for its dramatic performances and striking masks. The central element is the magnificent 'Dadak Merak' mask, which combines the image of a tiger's head (caplokan) crowned with a fan-like arrangement of peacock feathers. The performance narrates legends, often telling the story of King Klono Sewandono's journey to win the hand of Princess Songgolangit, including a mythical battle with the lion-like creature Singo Barong. The art form incorporates various characters such as Klono Sewandono, Bujang Ganong (acrobatic dancers), Jathil (horse riders), and Warok (spiritual leaders and main dancers). The entire spectacle is accompanied by traditional gamelan music.",
+        "cultural_significance": "Reog Ponorogo holds profound cultural significance as it represents the identity, spirit, and collective memory of the local community in Ponorogo. It reflects history, spirituality, and social values, embodying courage, unity, and harmony among humans, nature, and the divine. Traditionally, it is performed during important occasions such as village purification ceremonies, weddings, religious celebrations, national holidays, and to welcome honored guests. Beyond its ceremonial functions, Reog Ponorogo serves as a medium for social education, fostering cooperation, mutual trust, and a strong sense of community among participants. It has a sacred dimension, reviving local history, mythology, and symbols passed down through oral literature and performing arts. The art form is also seen as a symbol of resistance and a living cultural legacy. In 2013, Reog Ponorogo was recognized as a National Intangible Cultural Heritage of Indonesia, and on December 3, 2024, it was officially inscribed on the UNESCO list of Intangible Cultural Heritage in Need of Urgent Safeguarding, highlighting the importance of its preservation.",
+        "gemini_tags": [
+          "Traditional Dance",
+          "Performing Arts",
+          "Indonesian Culture",
+          "East Java",
+          "Ponorogo",
+          "Mask Dance",
+          "Folklore",
+          "Intangible Cultural Heritage",
+          "Gamelan",
+          "Ritual Performance"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance Art",
+        "materials_and_tools": [
+          "Dadak Merak (Singo Barong mask): Made of wooden frame, bamboo, rattan, covered with tiger skin (caplokan), adorned with hundreds of peacock feathers (can weigh 50-80 kg)",
+          "Jaran Kepang (Eblek): Woven bamboo horses for Jathil dancers",
+          "Masks: Red masks for Bujang Ganong, Klono Sewandono mask (wood, light red paint, buffalo leather crown)",
+          "Gamelan instruments: Gong, slompret (small trumpet), kenong kempul, angklung, kendang (drums)",
+          "Pecut (Whip): Approximately 3 meters long, used to create loud sounds",
+          "Costumes: Black costumes for Bujang Ganong, colorful costumes for Jathil, regal attire for Klono Sewandono, black attire for Warok"
+        ],
+        "step_by_step": [
+          "The performance typically begins with an opening dance by Bujang Ganong. This involves 6-8 male dancers dressed in black costumes with red faces and intimidating moustaches, performing acrobatic movements and sometimes entering trance-like states.",
+          "Following this, the Jaran Kepang dance is performed by Jathil dancers. These are typically 6-8 dancers, originally young boys but now often women, who ride horses made of woven bamboo.",
+          "The main attraction of the show involves all the Reog dancers. The Warok, as the main male dancer, takes center stage wearing the massive and heavy Singo Barong mask (Dadak Merak).",
+          "Other dancers perform around the Warok. A key highlight demonstrating the Warok's extraordinary strength is when a Jathil dancer rides on top of the Singo Barong mask, which the Warok carries using only his teeth.",
+          "Throughout the performance, traditional gamelan music, featuring instruments like drums, gongs, angklung, and trumpets, creates a mystical and dynamic atmosphere, supporting the storytelling and dance movements."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.9,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-41c80d1d",
+      "element_name": "Les Soufflaculs",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Soufflaculs_de_Nontron_2014.jpg/330px-Soufflaculs_de_Nontron_2014.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Soufflaculs_of_Nontron",
+        "https://fr.wikipedia.org/wiki/Soufflaculs",
+        "https://www.grandsudinsolite.fr/nontron-soufflaculs-dordogne/",
+        "https://www.racinescomtoises.fr/les-soufflaculs-a-saint-claude-39/",
+        "https://www.flanerbouger.fr/les-soufflaculs-de-nontron-2019-nontron-dordogne-24300-131758",
+        "https://www.patrimoinevivantdelafrance.fr/index.php/fiches-inventaire/liste-par-domaine/28-pratiques-festives/280-carnaval-des-soufflaculs-de-nontron",
+        "https://www.sudouest.fr/dordogne/nontron/soufflaculs-le-retour-1456253.php",
+        "https://www.nontron.fr/les-soufflaculs/",
+        "https://www.hautjurasaintclaude.fr/les-soufflaculs-carnaval-de-saint-claude.html",
+        "https://www.seevisit.fr/saint-claude/soufflaculs-en-quelques-mots-1090.html",
+        "https://www.cartesfrance.fr/carte-france-ville/24311/carte-Nontron.html",
+        "https://www.cartesfrance.fr/carte-france-ville/39478/carte-Saint-Claude.html",
+        "https://2markers.com/en/france/nontron/map"
+      ],
+      "scraped_at": "2026-03-14T21:41:27.361025Z",
+      "location": {
+        "country": "France",
+        "provinces": [
+          "Nouvelle-Aquitaine",
+          "Bourgogne-Franche-Comté"
+        ],
+        "lat": 45.4039367,
+        "lng": 0.3756199
+      },
+      "resume_analisa": {
+        "description": "Les Soufflaculs is a traditional carnival festival celebrated primarily in the towns of Nontron (Dordogne) and Saint-Claude (Jura) in France. Dating back to the Middle Ages, participants dress in white nightgowns and cotton bonnets, often with masked or floured faces, and carry bellows. They parade through the town, using the bellows to symbolically 'chase away evil spirits' believed to be hiding under women's skirts. The event is a blend of festive revelry, satirical farce, and ritual, culminating in the judgment and cremation of an effigy representing the carnival king, known as 'Bufador' (or 'Petaçon' historically).",
+        "cultural_significance": "The Soufflaculs tradition holds significant cultural importance as a pre-Lenten carnival, providing an opportunity for festive excesses and a temporary inversion of social norms before the fasting period. It serves as a social outlet for satire, allowing the community to mock and ridicule authority figures, the wealthy, and the clergy. The act of blowing with the bellows is symbolic of expelling evil spirits and carries a bawdy and anti-clerical undertone. The tradition is recognized and listed in France's Inventory of Intangible Cultural Heritage since 2010.",
+        "gemini_tags": [
+          "Carnival",
+          "Folklore",
+          "French Tradition",
+          "Satire",
+          "Ritual",
+          "Pre-Lenten",
+          "Community Practice",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritualistic Procession and Carnival",
+        "materials_and_tools": [
+          "White nightgowns",
+          "White cotton bonnets",
+          "Clogs (often red)",
+          "Masks, flour, or soot for facial covering",
+          "Bellows"
+        ],
+        "step_by_step": [
+          "**Preparation**: Participants, known as 'Soufflaculs', dress in long white nightgowns, white cotton bonnets, and clogs. Their faces are often masked, whitened with flour, or blackened with soot. Some participants may sew their nightgowns together to form 'caterpillars' for the procession.",
+          "**Parade**: The Soufflaculs march in a lively procession through the streets of the town, often accompanied by brass bands, floats, and other festive animations.",
+          "**Bellows Ritual**: Each Soufflacul carries a bellows and uses it to blow under the skirts of women they encounter. This action is believed to symbolically chase away evil spirits and is also a traditional satirical and bawdy gesture.",
+          "**Specific Movements (Nontron)**: In Nontron, the ritual includes a sequence of eight specific movements performed by the Soufflaculs: squatting, blowing at the rear of the person in front, standing up, turning around while spinning the bellows near the face, squatting again, blowing at the rear of the person behind, standing up, and resuming the march.",
+          "**Carnival King (Bufador)**: An effigy, historically called 'Petaçon' and now 'Bufador' (the blower in Occitan), representing the carnival king, is a central figure in the procession.",
+          "**Judgment and Cremation**: The festivities culminate with a mock trial, judgment, and the symbolic cremation of the Bufador effigy, often followed by fireworks and a popular ball to mark the end of the carnival."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "France",
+            "element_name": "Danse du feu aux fesses (Tiou-tiou)",
+            "relationship_reason": "A Catalan variant of the Soufflaculs tradition, where participants light paper corkscrews attached to the rear of the person in front, indicating a shared regional carnival practice with similar themes of revelry and symbolic actions."
+          },
+          {
+            "country": "Germany",
+            "element_name": "16th-century iconography of 'souffle-à-cul'",
+            "relationship_reason": "The oldest known iconography related to the 'souffle-à-cul' (blowing at the rear) tradition dates back to the 16th century in bas-reliefs carved on the Brusttuch House in Goslar, Germany, depicting an imp blowing wind out of a witch with bellows. This suggests a historical European motif connected to the symbolic use of bellows in folklore."
+          },
+          {
+            "country": "Mexico",
+            "element_name": "Possible historical export and re-import of the tradition",
+            "relationship_reason": "One theory, though possibly folkloric, suggests the tradition was exported to Mexico by a religious order and later brought back to the Jura and Nontron by soldiers returning from a failed expedition in 1865. This indicates a potential, albeit unconfirmed, historical connection and transmission of the practice across continents."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ec3ba85b",
+      "element_name": "Ajrak (Block Printing)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ajrak_pattern.jpg/1280px-Ajrak_pattern.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ajrak",
+        "https://www.gaatha.com/crafts/ajrak/",
+        "https://vasl.co/blogs/news/the-story-of-ajrak",
+        "https://thephoenixcompany.in/blogs/news/the-process-of-ajrak-block-printing",
+        "https://coralslub.com/blogs/news/ajrak-a-timeless-legacy-of-indian-block-printing-art",
+        "https://saqqafat.com/blogs/news/the-significance-of-ajrak-in-sindhi-culture",
+        "https://www.arabnews.com/news/541986",
+        "https://ajrakh.com/blogs/news/what-is-ajrak",
+        "https://www.dawn.com/news/563821/craftsmanship-the-making-of-ajrak",
+        "https://ruralhandmade.com/blogs/news/a-complete-guide-to-ajrakh-and-the-process-of-ajrakh-making",
+        "https://ajrakhblockprint.com/process-tools/",
+        "https://matatraders.com/blogs/news/the-art-of-ajrakh-traditional-block-printing-process-explained",
+        "https://nivrafashion.com/blogs/news/what-is-ajrakh-print-history-process-meaning-explained",
+        "https://www.shawlovers.com/blogs/shawl-blog/ajrak-shawl-sindhi-pride",
+        "https://www.shutterstock.com/search/ajrak-patterns",
+        "https://www.shutterstock.com/search/ajrak+block+print",
+        "https://www.shutterstock.com/search/ajrak+print",
+        "https://www.shutterstock.com/search/sindhi+ajrak",
+        "https://www.shutterstock.com/search/pakistani+ajrak"
+      ],
+      "scraped_at": "2026-03-14T21:41:59.594065Z",
+      "location": {
+        "country": "Pakistan",
+        "provinces": [
+          "Sindh",
+          "South Punjab"
+        ],
+        "lat": 25.5,
+        "lng": 69.0
+      },
+      "resume_analisa": {
+        "description": "Ajrak is a distinctive form of textile block-printing, traditionally a shawl or fabric, primarily from the Sindh region of Pakistan. It is characterized by its deep crimson red and indigo blue backgrounds, adorned with symmetrical geometric and floral patterns, often interspersed with unprinted sparkling white motifs. The fabric, typically cotton, is printed on both sides using intricately hand-carved wooden blocks and a complex resist-dyeing technique.",
+        "cultural_significance": "Ajrak holds profound cultural significance as a symbol of Sindhi identity, pride, and heritage, with its roots tracing back to the ancient Indus Valley Civilization (around 2500-1500 BCE). It is deeply integrated into daily life and special occasions, used from infancy as a hammock to adulthood as a bridal accessory, turban, shawl, bed cover, or a token of respect and hospitality for guests and elders. The traditional colors and patterns are imbued with symbolic meanings: red often represents life and courage, black symbolizes darkness and strength, white depicts clouds and purity, and blue signifies twilight, loyalty, or the vast universe. The craft embodies resilience, unity, beauty, and tradition, and is a central element in festivals, weddings, and cultural events. Women play a crucial role in preserving this art form, passing down the intricate skills through generations.",
+        "gemini_tags": [
+          "Textile Art",
+          "Block Printing",
+          "Natural Dyes",
+          "Pakistani Culture",
+          "Sindhi Heritage",
+          "Traditional Craft",
+          "Resist Dyeing",
+          "Geometric Patterns",
+          "Cultural Symbolism",
+          "Handicraft"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Resist-dyeing and hand block printing",
+        "materials_and_tools": [
+          "Cotton fabric (greige/unbleached)",
+          "Hand-carved wooden blocks (often teak wood)",
+          "Natural dyes (Indigo, Madder root, Henna, Alizarin, Turmeric, Pomegranate rind)",
+          "Resist paste ingredients (Lime, Acacia gum, Clay, Rice paste, Fuller's earth, Camel dung, Soda ash, Castor oil, Myrobalan nuts/Harda, Sagikhar, Casiatora, Jaggery)",
+          "Copper vats",
+          "Water (traditionally river water)"
+        ],
+        "step_by_step": [
+          "**Saaj (Initial Washing/Scouring)**: The cotton fabric is meticulously washed multiple times (often 7-8 times) to remove starch and impurities. This involves soaking it in solutions containing camel dung, soda ash, and castor oil, then spreading it out overnight. This process is repeated until the cloth foams when rubbed, preparing it to be soft and absorbent.",
+          "**Harda Treatment / Kasanu (Mordanting)**: The fabric is soaked in a cold solution of Myrobalan (powdered nut of the harde tree) or tamarisk. This acts as a mordant, imparting a yellowish base and making the fabric receptive to natural dyes.",
+          "**Kiryana / Khariyanu (Outline Printing with Resist)**: A resist paste, typically made from lime, acacia gum, and rice paste, is carefully block-printed onto the cloth. This step creates the initial outline of the design and protects areas intended to remain white from subsequent dyeing.",
+          "**First Indigo Dye (if applicable)**: The fabric may be dipped into an earthenware or copper vat containing indigo dye. This colors the areas not covered by the resist paste, establishing the first layer of blue.",
+          "**Kharrh (Mud Resist Paste Application)**: A more complex mud resist paste (containing ingredients like rice paste, alum, molasses, Fuller's earth, fennel, and gum) is applied using blocks. This paste protects areas designated for red or black colors, as well as reinforcing the white areas against further indigo dyeing. Sifted dried cow dung might be sprinkled on top.",
+          "**Alizarin Dyeing**: The fabric is then dyed in an alizarin solution, often heated in a copper vat over a log fire. Artisans diligently lift and immerse the cloth repeatedly for several hours until the desired crimson red color develops in the mordanted areas not covered by the resist.",
+          "**Vicharnu (Rinsing and Sun Drying)**: The cloth undergoes alternating cycles of washing, rinsing in river water, and drying under the Sindhi sun. This crucial step helps to naturally bleach the white areas and deepen the other colors.",
+          "**Second Indigo Dye (if applicable)**: For deeper blue hues, the fabric is dipped into an indigo vat again. This process involves repeated dipping and exposure to air, allowing the indigo to oxidize and develop its rich, deep blue color.",
+          "**Final Wash and Finishing**: The resist pastes are thoroughly washed off the fabric, revealing the intricate patterns and contrasting colors. The Ajrak is then dried, and sometimes steamed or pressed to achieve a smooth and luminous finish."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Ajrakh (Block Printing)",
+            "relationship_reason": "Ajrak, also known as Ajrakh, shares historical origins in the Indus Valley Civilization and is a traditional block-printed textile craft practiced in both Pakistan and India. In India, it is prominently found in the Kutch region of Gujarat (e.g., Ajrakhpur, Dhamadka) and parts of Rajasthan. The craft was carried by communities like the Khatris who migrated from Sindh, leading to shared techniques, natural dye usage, and cultural significance across these regions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-13T10:00:32.306957Z",
-    "total_ich_elements": 24,
-    "complete_records": 23,
+    "generated_at": "2026-03-14T21:42:33.888646Z",
+    "total_ich_elements": 27,
+    "complete_records": 26,
     "incomplete_records": 1,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 11,
-      "Social Practices & Rituals": 5,
+      "Traditional Craftsmanship": 12,
+      "Social Practices & Rituals": 6,
       "Culinary Traditions": 5,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 2
+      "Performing Arts": 3
     }
   }
 }
