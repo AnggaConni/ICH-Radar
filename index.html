@@ -1517,8 +1517,8 @@ const COUNTRY_CENTROIDS = {
     let nodes = [];
     let links = [];
     let categories = [
-      { name: 'Main Heritage' },
-      { name: 'Related Element' }
+      { name: 'Main Heritage', itemStyle: { color: '#00ffcc' } },
+      { name: 'Related Element', itemStyle: { color: '#facc15' } }
     ];
 
     // Ekstrak data jaringan dari globalData
@@ -1533,7 +1533,8 @@ const COUNTRY_CENTROIDS = {
         category: 0,
         symbolSize: 35,
         itemStyle: { color: '#00ffcc', borderColor: '#ffffff', borderWidth: 2 },
-        tooltip: { formatter: `<b>${item.element_name}</b><br/>Origin: ${item.location?.country}` }
+        // Tooltip sederhana untuk node utama
+        tooltip: { formatter: `<div style="padding: 4px;"><b>${item.element_name}</b><br/><span style="color:#aaa;font-size:11px;">Origin: ${item.location?.country || '-'}</span><br/><br/><span style="color:#00ffcc;font-size:10px;">► Click to view details</span></div>` }
       });
 
       // Tambah Node Cabang & Garis
@@ -1547,7 +1548,18 @@ const COUNTRY_CENTROIDS = {
           category: 1,
           symbolSize: 20,
           itemStyle: { color: '#facc15' },
-          tooltip: { formatter: `<b>${rel.element_name || 'Similar Practice'}</b><br/>Location: ${rel.country}<br/><i>"${rel.relationship_reason}"</i>` }
+          // Tooltip dengan formatting HTML agar rapi
+          tooltip: { 
+            formatter: `
+              <div style="padding: 4px;">
+                <b style="color:#facc15">${rel.element_name || 'Similar Practice'}</b><br/>
+                <span style="color:#aaa;font-size:11px;">Location: ${rel.country}</span>
+                <div style="margin-top:8px; padding-top:8px; border-top:1px solid #444; color:#ddd; font-style:italic; font-size:12px; line-height:1.4;">
+                  "${rel.relationship_reason}"
+                </div>
+              </div>
+            `
+          }
         });
 
         links.push({
@@ -1562,7 +1574,11 @@ const COUNTRY_CENTROIDS = {
 
     const option = {
       backgroundColor: 'transparent',
-      tooltip: { trigger: 'item' },
+      // INI PERBAIKAN TOOLTIP-NYA:
+      tooltip: { 
+        trigger: 'item',
+        extraCssText: 'max-width: 320px; white-space: normal; word-wrap: break-word; background-color: #1a1a1a; border: 1px solid #333; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);'
+      },
       legend: { data: ['Main Heritage', 'Related Element'], textStyle: { color: '#aaa' } },
       animationDurationUpdate: 1500,
       animationEasingUpdate: 'quinticInOut',
@@ -1586,6 +1602,23 @@ const COUNTRY_CENTROIDS = {
     };
 
     diffChart.setOption(option);
+
+    // Mencegah penumpukan event click jika fungsi dipanggil ulang
+    diffChart.off('click'); 
+    
+    // Event Listener: Klik Node membuka Detail Modal
+    diffChart.on('click', function (params) {
+      if (params.dataType === 'node' && params.data.id && params.data.id.startsWith('main_')) {
+        const itemId = params.data.id.replace('main_', ''); // Ambil ID asli
+        
+        closeGraphModal(); // Tutup grafik
+        
+        // Tunggu animasi tutup grafik selesai (300ms), baru buka detail itemnya
+        setTimeout(() => {
+          openModal(itemId);
+        }, 350);
+      }
+    });
   }
 
 
