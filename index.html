@@ -112,15 +112,26 @@
         <i class="ph-fill ph-globe-hemisphere-east text-3xl text-brand-accent animate-pulse"></i>
         <h1 class="font-display font-bold text-xl tracking-tight" id="app-title">ICH <span class="text-brand-accent">Shared Heritage</span> Radar</h1>
       </div>
-      <div class="flex items-center gap-4">
-        <div class="text-xs text-gray-400 font-mono flex items-center gap-1" id="last-updated">
+
+      <div class="flex items-center gap-2 sm:gap-4">
+        <div class="hidden md:flex text-xs text-gray-400 font-mono items-center gap-1" id="last-updated">
           <i class="ph ph-clock"></i> <span data-i18n="loading">Loading data...</span>
-        </div>
-        <button onclick="toggleLang()" class="bg-brand-800 border border-brand-700 hover:border-brand-500 px-3 py-1.5 rounded-md text-xs font-bold transition-colors flex items-center gap-2">
+         </div>
+        
+              <button onclick="openGuide()" class="text-gray-300 hover:text-brand-accent transition-colors flex items-center gap-1.5 text-xs font-bold px-2 py-1.5 rounded-md border border-transparent hover:border-brand-700 hover:bg-brand-800" title="How to use">
+          <i class="ph ph-info text-lg"></i> <span class="hidden sm:inline" data-i18n="btnGuide">Guide</span>
+         </button>
+
+              <button onclick="exportToXML()" class="text-gray-300 hover:text-brand-secondary transition-colors flex items-center gap-1.5 text-xs font-bold px-2 py-1.5 rounded-md border border-transparent hover:border-brand-700 hover:bg-brand-800" title="Export Dublin Core XML">
+           <i class="ph ph-export text-lg"></i> <span class="hidden sm:inline" data-i18n="btnExport">Export XML</span>
+        </button>
+
+        <button onclick="toggleLang()" class="bg-brand-800 border border-brand-700 hover:border-brand-500 px-3 py-1.5 rounded-md text-xs font-bold transition-colors flex items-center gap-2 ml-2">
           <i class="ph ph-translate text-brand-secondary"></i>
           <span id="lang-label">EN</span>
-        </button>
-      </div>
+         </button>
+       </div>
+
     </div>
   </header>
 
@@ -222,6 +233,27 @@
       <div class="p-6 overflow-y-auto flex-grow flex flex-col gap-6" id="modal-body"></div>
     </div>
   </div>
+
+    <!-- Modal Guide -->
+  <div id="guide-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden modal-blur bg-black/60 p-4 opacity-0 transition-opacity duration-300">
+    <div class="bg-brand-800 border border-brand-700 rounded-2xl w-full max-w-2xl flex flex-col overflow-hidden transform scale-95 transition-transform duration-300" id="guide-modal-wrapper">
+      <div class="flex justify-between items-center p-6 border-b border-brand-700">
+        <h3 class="font-display font-bold text-xl flex items-center gap-2"><i class="ph-fill ph-info text-brand-accent text-2xl"></i> <span data-i18n="guideTitle">How to Use the Radar</span></h3>
+        <button onclick="closeGuide()" class="text-gray-400 hover:text-white transition-colors bg-brand-700 p-2 rounded-full">
+          <i class="ph ph-x text-xl"></i>
+        </button>
+      </div>
+      <div class="p-6 overflow-y-auto space-y-4 text-sm text-gray-300 leading-relaxed">
+        <p data-i18n="guideP1">Welcome to the ICH Shared Heritage Radar. This tool maps and analyzes Intangible Cultural Heritage globally.</p>
+        <ul class="space-y-3 mt-4">
+          <li><strong class="text-brand-accent">Map Nodes:</strong> Click on any pulsing green node on the map to see heritage elements from that region.</li>
+          <li><strong class="text-brand-secondary">Connections:</strong> Dashed lines indicate a "Shared Heritage" relationship between two different countries or cultures.</li>
+          <li><strong class="text-white">Directory:</strong> Use the filters to sort by country or data completion status. Click "View Full Analysis" to read the AI-enriched data, tools, and processes.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 
   <script>
   // ═══════════════════════════════════════════════════════════════
@@ -371,6 +403,73 @@
   }
 
   // ═══════════════════════════════════════════════════════════════
+  //  GUIDE MODAL & EXPORT XML
+  // ═══════════════════════════════════════════════════════════════
+  function openGuide() {
+    const modal = document.getElementById('guide-modal');
+    const wrapper = document.getElementById('guide-modal-wrapper');
+    modal.classList.remove('hidden');
+    void modal.offsetWidth; // trigger reflow
+    modal.classList.remove('opacity-0');
+    wrapper.classList.remove('scale-95');
+  }
+
+  function closeGuide() {
+    const modal = document.getElementById('guide-modal');
+    const wrapper = document.getElementById('guide-modal-wrapper');
+    modal.classList.add('opacity-0');
+    wrapper.classList.add('scale-95');
+    setTimeout(() => modal.classList.add('hidden'), 300);
+  }
+
+  function escapeXML(str) {
+    if (!str) return '';
+    return str.replace(/[<>&'"]/g, c => {
+      switch (c) {
+        case '<': return '&lt;'; case '>': return '&gt;';
+        case '&': return '&amp;'; case '\'': return '&apos;';
+        case '"': return '&quot;'; default: return c;
+      }
+    });
+  }
+
+  function exportToXML() {
+    if (!globalData || !globalData.inventory) return;
+    
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    xml += '<metadata xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">\n';
+
+    globalData.inventory.forEach(item => {
+      xml += '  <oai_dc:dc>\n';
+      xml += `    <dc:identifier>${item.id}</dc:identifier>\n`;
+      xml += `    <dc:title>${escapeXML(item.element_name)}</dc:title>\n`;
+      xml += `    <dc:subject>${escapeXML(item.category)}</dc:subject>\n`;
+      if (item.resume_analisa?.description) xml += `    <dc:description>${escapeXML(item.resume_analisa.description)}</dc:description>\n`;
+      if (item.location?.country) xml += `    <dc:coverage>${escapeXML(item.location.country)}</dc:coverage>\n`;
+      (item.source_urls || []).forEach(url => {
+        xml += `    <dc:source>${escapeXML(url)}</dc:source>\n`;
+      });
+      xml += '  </oai_dc:dc>\n';
+    });
+    
+    xml += '</metadata>';
+
+    const blob = new Blob([xml], { type: 'application/xml' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'ich_dublin_core_export.xml';
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  // Update event listener penutup modal agar bisa klik di luar untuk Guide
+  document.addEventListener('click', e => {
+    if (e.target === document.getElementById('guide-modal')) closeGuide();
+  });
+
+
+  // ═══════════════════════════════════════════════════════════════
   //  i18n
   // ═══════════════════════════════════════════════════════════════
   const i18n = {
@@ -392,7 +491,10 @@
       sysStatus:"System Status", sysLastAction:"Latest Discovery:",
       sysStandby:"Monitoring global sources...",
       discoveredLog:"Scraped new item", enrichedLog:"Enriched item data",
-      googleSource:"Google Grounded Source"
+      googleSource:"Google Grounded Source",
+      btnGuide: "Guide", btnExport: "Export XML",
+      guideTitle: "How to Use the Radar",
+      guideP1: "Welcome to the ICH Shared Heritage Radar. This tool maps and analyzes Intangible Cultural Heritage globally."
     },
     id: {
       title: "Radar <span class='text-brand-accent'>Warisan Budaya</span> ICH",
@@ -412,7 +514,10 @@
       sysStatus:"Status Sistem", sysLastAction:"Penemuan Terbaru:",
       sysStandby:"Memantau sumber global...",
       discoveredLog:"Menemukan elemen baru", enrichedLog:"Mengumpulkan data tambahan",
-      googleSource:"Sumber Referensi Google"
+      googleSource:"Sumber Referensi Google",
+      btnGuide: "Panduan", btnExport: "Ekspor XML",
+      guideTitle: "Panduan Penggunaan Radar",
+      guideP1: "Selamat datang di Radar ICH. Alat ini memetakan dan menganalisis Warisan Budaya Takbenda secara global."
     }
   };
   let currentLang = 'en';
