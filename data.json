@@ -2486,19 +2486,230 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-dabd953b",
+      "element_name": "Harvest ceremony of Saghay village",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+      ],
+      "scraped_at": "2026-03-14T22:32:47.351781Z",
+      "location": {
+        "country": "Iran",
+        "provinces": [
+          "East Azerbaijan"
+        ],
+        "lat": 38.9376054,
+        "lng": 45.6252101
+      },
+      "resume_analisa": {
+        "description": "The Harvest ceremony of Saghay village is an ancient annual ritual held in late June or early July (mid-Tir in the Iranian calendar) in Saghay village, Varzaqan County, East Azerbaijan, Iran. This tradition is deeply rooted in the spiritual beliefs of the villagers and marks the beginning of the agricultural harvest. The ceremony involves community gatherings, preparations of traditional bread, and a collective procession to Mount Pir-e Saqay, a sacred mountain. Activities include socializing, storytelling, and performing animal sacrifices at Cheshmeh-Ali spring, with the meat being cooked and distributed among attendees and those unable to participate. The ritual was registered in the list of Iran's National Intangible Heritage in 2011 CE (1390 SH).",
+        "cultural_significance": "This harvest ceremony holds significant cultural importance as it serves as an expression of gratitude to God for the bounty of the harvest, reinforcing the community's connection to their land and spiritual beliefs. It strengthens communal bonds through shared preparations, gatherings, and the distribution of food. The tradition also ensures the continuity of ancestral practices and preserves the agricultural heritage of the region. The sacredness of Mount Pir-e Saqay further highlights the deep spiritual dimension of this ritual.",
+        "gemini_tags": [
+          "Harvest Festival",
+          "Community Ritual",
+          "Agricultural Heritage",
+          "Spiritual Practice",
+          "Iranian Culture",
+          "Village Tradition",
+          "Animal Sacrifice",
+          "Communal Feast"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Community Ritual/Festival",
+        "materials_and_tools": [
+          "Traditional bread ingredients",
+          "New clothes",
+          "Animals for sacrifice (e.g., sheep)",
+          "Cooking equipment (pots, firewood)",
+          "Prayer books (for elder)",
+          "Mount Pir-e Saqay (sacred mountain)",
+          "Cheshmeh-Ali spring"
+        ],
+        "step_by_step": [
+          "Two days before the ceremony, a respected elder in the village announces the upcoming event by reciting prayers and poems, signaling the start of preparations.",
+          "Residents begin preparations, including baking traditional bread and extending invitations to fellow villagers who have moved elsewhere to return for the celebration.",
+          "On the morning of the ceremony, families dress in new clothes, signifying the festive and respectful nature of the occasion.",
+          "Families gather and proceed in groups towards Mount Pir-e Saqay, which is considered a sacred and respected place by the villagers.",
+          "Upon arrival at the mountain, each family settles in a designated spot and remains there until the afternoon, engaging in socializing and sharing stories. Elders often recount historical memories and traditions.",
+          "At the foot of Mount Pir-e Saqay, near Cheshmeh-Ali spring, villagers perform animal sacrifices as part of the ritual.",
+          "Meals are cooked from the sacrificed meat, preparing for a communal feast.",
+          "A portion of the cooked meat is distributed among the attendees, and also to those villagers who were unable to participate in the ceremony.",
+          "The village's agricultural harvest officially begins the day after the ceremony, following the blessings and communal thanksgiving."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Iran",
+            "element_name": "Harvest ritual in Yengejeh village",
+            "relationship_reason": "A similar ceremony is held in the neighboring village of Yengejeh."
+          },
+          {
+            "country": "Global",
+            "element_name": "Various Harvest Festivals",
+            "relationship_reason": "Harvest festivals, celebrating the bounty of crops and expressing gratitude, are a widespread phenomenon across many cultures and regions globally, often involving communal feasts, rituals, and spiritual connections to nature."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-4e044712",
+      "element_name": "Festividad de la Virgen de la Candelaria de Puno",
+      "category": "Social Practices & Rituals | Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/La_fiesta_de_la_Virgen_de_la_Candelaria_en_Puno_-_chicas.jpg",
+      "source_urls": [
+        "https://es.wikipedia.org/wiki/Fiesta_de_la_Candelaria_(Puno)",
+        "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956",
+        "https://machupicchuwayna.com/virgen-de-la-candelaria-en-puno/",
+        "https://trexperienceperu.com/blog/the-virgen-de-la-candelaria-festival-in-puno-tradition-and-devotion/",
+        "https://www.peru.travel/pe/mas-peru/virgen-de-la-candelaria-una-de-las-celebraciones-mas-emocionantes-del-peru"
+      ],
+      "scraped_at": "2026-03-14T22:33:08.917601Z",
+      "location": {
+        "country": "Peru",
+        "provinces": [
+          "Puno"
+        ],
+        "lat": -15.0,
+        "lng": -70.0
+      },
+      "resume_analisa": {
+        "description": "The Festividad de la Virgen de la Candelaria de Puno is a major cultural and religious festival celebrated annually in Puno, Peru, in honor of the Virgin of Candelaria, the city's patroness. This vibrant event, recognized by UNESCO as Intangible Cultural Heritage of Humanity, is a unique fusion of indigenous Andean traditions (Quechua and Aymara) and Catholic practices introduced during the colonial era. It is considered the largest cultural, musical, dance, and religious celebration of its kind in Peru and one of the most significant in Latin America, drawing thousands of participants and spectators.",
+        "cultural_significance": "The festival holds profound cultural and religious significance, serving as a powerful expression of faith and identity for the people of Puno. It embodies the syncretism between Catholic devotion to the Virgin Mary and ancestral Andean beliefs, including the veneration of Pachamama (Mother Earth) and rituals linked to agricultural cycles and fertility. The celebration fosters strong community cohesion, ensures the intergenerational transmission of traditional knowledge, music, and dance, and acts as a vital cultural and economic driver for the region. It also symbolizes cultural resistance and the enduring spirit of Andean heritage.",
+        "gemini_tags": [
+          "Religious Festival",
+          "Andean Culture",
+          "Folk Dance",
+          "Traditional Music",
+          "Cultural Syncretism",
+          "Intangible Cultural Heritage",
+          "Community Practice",
+          "Ritual",
+          "Peruvian Culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Festival and Rituals",
+        "materials_and_tools": [
+          "Elaborate costumes (embroidered, with masks and feathers)",
+          "Traditional musical instruments (pinquillos, chaqallos, lawak'umus, sicus, bombos, zampoñas)",
+          "Candles",
+          "K'apos (offerings or materials)",
+          "Fireworks ('castillos')"
+        ],
+        "step_by_step": [
+          "**Preparatory Phase (weeks before February)**: Dance groups engage in intensive rehearsals for their choreographies and musical performances. Communities organize novenas (nine days of prayer) in honor of the Virgin. Workshops are conducted for the creation of intricate masks and elaborate costumes, which are central to the festival's visual spectacle.",
+          "**Beginning of February (e.g., February 1st)**: The festival officially commences with religious ceremonies such as 'Albas de fiesta' (dawn masses), 'entrada de cirios' (entry of candles), and 'entrada de k'apos' (entry of offerings or materials), followed by vespers.",
+          "**Central Day (February 2nd)**: A solemn Holy Mass is celebrated. The revered image of the Virgin of Candelaria is then carried in a grand and colorful procession through the main streets of Puno, accompanied by traditional music and thousands of dancers. The 'Gran Concurso de Danzas Autóctonas' (Great Contest of Indigenous Dances) takes place, showcasing various traditional groups.",
+          "**The Octave (Seven days after the central day)**: This period includes a continuation of religious acts, such as additional dawn masses, entry of candles, and vespers. Popular celebrations feature the burning of 'castillos' (elaborate fireworks displays) and performances by numerous bands and 'sicuris' (panpipe players) groups. A significant Holy Mass marks the culmination of this phase.",
+          "**Gran Parada Folklórica de Veneración a la Virgen de la Candelaria (Great Folkloric Parade of Veneration to the Virgin of Candelaria)**: A massive folkloric parade is held, where urban dance groups, often referred to as 'dances of embroidered costumes,' and other ensembles perform in a grand display of veneration for the Virgin.",
+          "**Cacharpari (Farewell Ceremony)**: The festival concludes with a farewell ceremony, which typically includes a final concert and dismissal masses, officially bringing the extensive celebrations to an end."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Spain",
+            "element_name": "Devotion to the Virgin of Candelaria",
+            "relationship_reason": "The devotion to the Virgin of Candelaria originated in Tenerife, Spain, in 1392. It was subsequently introduced to Peru by Spanish colonizers during the 16th-century evangelization process, forming the basis of the festival in Puno."
+          },
+          {
+            "country": "Bolivia",
+            "element_name": "Fiesta de la Candelaria (or similar celebrations)",
+            "relationship_reason": "The celebration of the Virgin of Candelaria is also observed in other Latin American countries, including Bolivia, Chile, Venezuela, and Colombia, reflecting a shared religious and cultural heritage, though Puno's festival is noted for its particularly high cultural and religious expression."
+          },
+          {
+            "country": "Chile",
+            "element_name": "Fiesta de la Candelaria (or similar celebrations)",
+            "relationship_reason": "The celebration of the Virgin of Candelaria is also observed in other Latin American countries, including Bolivia, Chile, Venezuela, and Colombia, reflecting a shared religious and cultural heritage, though Puno's festival is noted for its particularly high cultural and religious expression."
+          },
+          {
+            "country": "Venezuela",
+            "element_name": "Fiesta de la Candelaria (or similar celebrations)",
+            "relationship_reason": "The celebration of the Virgin of Candelaria is also observed in other Latin American countries, including Bolivia, Chile, Venezuela, and Colombia, reflecting a shared religious and cultural heritage, though Puno's festival is noted for its particularly high cultural and religious expression."
+          },
+          {
+            "country": "Colombia",
+            "element_name": "Fiesta de la Candelaria (or similar celebrations)",
+            "relationship_reason": "The celebration of the Virgin of Candelaria is also observed in other Latin American countries, including Bolivia, Chile, Venezuela, and Colombia, reflecting a shared religious and cultural heritage, though Puno's festival is noted for its particularly high cultural and religious expression."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ceb08f09",
+      "element_name": "Traditional Medicinal Knowledge and Healing Practices of the Batek People",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.researchgate.net/publication/282299837_Ethnomedical_survey_of_plants_used_by_the_Bateq_in_Kuala_Koh&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.researchgate.net/publication/282299837_Ethnomedical_survey_of_plants_used_by_the_Bateq_in_Kuala_Koh",
+        "https://www.researchgate.net/publication/262295604_Illness_Perception_and_Healing_Practices_among_the_Batek_Tribe_in_Kuala_Koh_Kelantan_Malaysia",
+        "https://medic.upm.edu.my/upload/dokumen/20250212104523Qualitative_Exploration_of_the_Use_Knowledge_and_Perceptions_of_Medicinal_Plants_Among_Bateq_Villagers_in_Taman_Negara_Malaysia.pdf",
+        "https://artsandculture.google.com/story/the-bateq-people-their-ancient-folklores-ler-wei-rong/DwVR443p731bJA"
+      ],
+      "scraped_at": "2026-03-14T22:33:42.075983Z",
+      "location": {
+        "country": "Malaysia",
+        "provinces": [
+          "Kelantan",
+          "Pahang"
+        ],
+        "lat": 5.4021302,
+        "lng": 102.0635972
+      },
+      "resume_analisa": {
+        "description": "The Batek people, an indigenous (Orang Asli) hunter-gatherer community residing in the tropical rainforests of Peninsular Malaysia, possess a rich and orally transmitted traditional medicine knowledge heritage. Their healing system addresses both spiritual and physical ailments. For spiritual illnesses, faith-healing is practiced, often involving shamans who invoke forest spirits through chanting. For physical conditions, they utilize a wide array of medicinal plants gathered from their forest environment. This traditional knowledge is deeply intertwined with their intimate relationship with nature and is crucial for their survival and well-being.",
+        "cultural_significance": "This traditional medicine knowledge is a cornerstone of Batek culture and identity. It represents generations of accumulated wisdom about their environment and its resources, demonstrating their symbiotic relationship with the forest. The oral transmission of this knowledge from elders to younger generations is vital for cultural continuity and the preservation of their unique way of life. It provides a holistic approach to health, encompassing both physical and spiritual dimensions, and reinforces community bonds through shared healing practices.",
+        "gemini_tags": [
+          "Indigenous Medicine",
+          "Herbal Medicine",
+          "Shamanism",
+          "Oral Tradition",
+          "Ethnobotany",
+          "Malaysian Heritage",
+          "Healing Rituals",
+          "Forest Dwellers"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Herbal Remedy Preparation and Faith-Healing Rituals",
+        "materials_and_tools": [
+          "Medicinal plants (e.g., Spatholobus ferrugineus, Eurycoma longifolia, Spondias pinnata, Saraca cauliflora, Peliosanthes teta)",
+          "water",
+          "containers for preparation"
+        ],
+        "step_by_step": null
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.8,
+        "related_elements": []
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-14T21:58:08.915491Z",
-    "total_ich_elements": 30,
-    "complete_records": 29,
-    "incomplete_records": 1,
+    "generated_at": "2026-03-14T22:34:22.562140Z",
+    "total_ich_elements": 33,
+    "complete_records": 31,
+    "incomplete_records": 2,
     "categories_breakdown": {
       "Traditional Craftsmanship": 13,
-      "Social Practices & Rituals": 6,
+      "Social Practices & Rituals": 8,
       "Culinary Traditions": 6,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 4
+      "Performing Arts": 4,
+      "Social Practices & Rituals | Performing Arts": 1
     }
   }
 }
