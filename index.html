@@ -21,6 +21,8 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
   
   <script>
     tailwind.config = {
@@ -102,6 +104,7 @@
     ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #555; }
   </style>
+  
 </head>
 <body class="font-sans antialiased min-h-screen flex flex-col">
 
@@ -117,19 +120,26 @@
         <div class="hidden md:flex text-xs text-gray-400 font-mono items-center gap-1" id="last-updated">
           <i class="ph ph-clock"></i> <span data-i18n="loading">Loading data...</span>
          </div>
+
+          <!-- Header Button / Tombol  -->
         
               <button onclick="openGuide()" class="text-gray-300 hover:text-brand-accent transition-colors flex items-center gap-1.5 text-xs font-bold px-2 py-1.5 rounded-md border border-transparent hover:border-brand-700 hover:bg-brand-800" title="How to use">
           <i class="ph ph-info text-lg"></i> <span class="hidden sm:inline" data-i18n="btnGuide">Guide</span>
          </button>
 
+              <button onclick="openGraphModal()" class="text-gray-300 hover:text-brand-accent transition-colors flex items-center gap-1.5 text-xs font-bold px-2 py-1.5 rounded-md border border-transparent hover:border-brand-700 hover:bg-brand-800" title="Cultural Diffusion Graph">
+          <i class="ph ph-git-branch text-lg"></i> <span class="hidden sm:inline" data-i18n="btnGraph">Diffusion Map</span>
+        </button>
+
               <button onclick="exportToXML()" class="text-gray-300 hover:text-brand-secondary transition-colors flex items-center gap-1.5 text-xs font-bold px-2 py-1.5 rounded-md border border-transparent hover:border-brand-700 hover:bg-brand-800" title="Export Dublin Core XML">
            <i class="ph ph-export text-lg"></i> <span class="hidden sm:inline" data-i18n="btnExport">Export XML</span>
         </button>
 
-        <button onclick="toggleLang()" class="bg-brand-800 border border-brand-700 hover:border-brand-500 px-3 py-1.5 rounded-md text-xs font-bold transition-colors flex items-center gap-2 ml-2">
+              <button onclick="toggleLang()" class="bg-brand-800 border border-brand-700 hover:border-brand-500 px-3 py-1.5 rounded-md text-xs font-bold transition-colors flex items-center gap-2 ml-2">
           <i class="ph ph-translate text-brand-secondary"></i>
           <span id="lang-label">EN</span>
          </button>
+
        </div>
 
     </div>
@@ -392,6 +402,21 @@
   </div>
 </div>
 
+
+<div id="graph-modal" class="fixed inset-0 z-[110] flex items-center justify-center hidden modal-blur bg-black/80 p-4 opacity-0 transition-opacity duration-300">
+    <div class="bg-brand-800 border border-brand-700 rounded-2xl w-full max-w-6xl h-[85vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300" id="graph-modal-wrapper">
+      <div class="flex justify-between items-center p-6 border-b border-brand-700 bg-brand-900/50">
+        <div>
+          <h3 class="font-display font-bold text-2xl flex items-center gap-2"><i class="ph-fill ph-share-network text-brand-accent"></i> Cultural Similarity & Diffusion Graph</h3>
+          <p class="text-xs text-gray-400 mt-1">Interactive network mapping of shared heritage across borders.</p>
+        </div>
+        <button onclick="closeGraphModal()" class="text-gray-400 hover:text-white transition-colors bg-brand-700 p-2 rounded-full">
+          <i class="ph ph-x text-xl"></i>
+        </button>
+      </div>
+      <div id="echarts-container" class="flex-grow w-full h-full bg-[#0a0a0a]"></div>
+    </div>
+  </div>
 
   <script>
   // ═══════════════════════════════════════════════════════════════
@@ -1452,6 +1477,116 @@ const COUNTRY_CENTROIDS = {
   }
 
   window.onload = init;
+
+
+  // ═══════════════════════════════════════════════════════════════
+  //  CULTURAL DIFFUSION GRAPH (ECHARTS)
+  // ═══════════════════════════════════════════════════════════════
+  let diffChart = null;
+
+  function openGraphModal() {
+    const modal = document.getElementById('graph-modal');
+    const wrapper = document.getElementById('graph-modal-wrapper');
+    modal.classList.remove('hidden');
+    void modal.offsetWidth; // trigger reflow
+    modal.classList.remove('opacity-0');
+    wrapper.classList.remove('scale-95');
+
+    // Init Echarts setelah modal terbuka agar ukurannya akurat
+    setTimeout(() => {
+      renderDiffusionGraph();
+    }, 300);
+  }
+
+  function closeGraphModal() {
+    const modal = document.getElementById('graph-modal');
+    const wrapper = document.getElementById('graph-modal-wrapper');
+    modal.classList.add('opacity-0');
+    wrapper.classList.add('scale-95');
+    setTimeout(() => modal.classList.add('hidden'), 300);
+  }
+
+  function renderDiffusionGraph() {
+    const chartDom = document.getElementById('echarts-container');
+    if (!diffChart) {
+      diffChart = echarts.init(chartDom, 'dark');
+      // Resize chart saat window berubah
+      window.addEventListener('resize', () => diffChart.resize());
+    }
+
+    let nodes = [];
+    let links = [];
+    let categories = [
+      { name: 'Main Heritage' },
+      { name: 'Related Element' }
+    ];
+
+    // Ekstrak data jaringan dari globalData
+    globalData.inventory.forEach(item => {
+      if (!item.shared_heritage_detection?.is_shared) return;
+
+      // Tambah Node Utama
+      const mainNodeId = `main_${item.id}`;
+      nodes.push({
+        id: mainNodeId,
+        name: item.element_name,
+        category: 0,
+        symbolSize: 35,
+        itemStyle: { color: '#00ffcc', borderColor: '#ffffff', borderWidth: 2 },
+        tooltip: { formatter: `<b>${item.element_name}</b><br/>Origin: ${item.location?.country}` }
+      });
+
+      // Tambah Node Cabang & Garis
+      item.shared_heritage_detection.related_elements.forEach((rel, index) => {
+        const relNodeId = `rel_${item.id}_${index}`;
+        const score = item.shared_heritage_detection.confidence_score || 0.5;
+        
+        nodes.push({
+          id: relNodeId,
+          name: rel.element_name || rel.country,
+          category: 1,
+          symbolSize: 20,
+          itemStyle: { color: '#facc15' },
+          tooltip: { formatter: `<b>${rel.element_name || 'Similar Practice'}</b><br/>Location: ${rel.country}<br/><i>"${rel.relationship_reason}"</i>` }
+        });
+
+        links.push({
+          source: mainNodeId,
+          target: relNodeId,
+          value: score,
+          lineStyle: { width: score * 5, curveness: 0.2, opacity: 0.7 },
+          label: { show: false }
+        });
+      });
+    });
+
+    const option = {
+      backgroundColor: 'transparent',
+      tooltip: { trigger: 'item' },
+      legend: { data: ['Main Heritage', 'Related Element'], textStyle: { color: '#aaa' } },
+      animationDurationUpdate: 1500,
+      animationEasingUpdate: 'quinticInOut',
+      series: [
+        {
+          type: 'graph',
+          layout: 'force',
+          nodes: nodes,
+          links: links,
+          categories: categories,
+          roam: true, // Bisa di-zoom & digeser
+          label: { show: true, position: 'right', formatter: '{b}', color: '#fff', fontSize: 11 },
+          force: {
+            repulsion: 400, // Jarak tolak menolak antar node
+            edgeLength: [50, 150], // Panjang garis
+            gravity: 0.1
+          },
+          lineStyle: { color: 'source', curveness: 0.3 }
+        }
+      ]
+    };
+
+    diffChart.setOption(option);
+  }
 
 
   // =====================================================================
