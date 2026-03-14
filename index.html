@@ -836,6 +836,33 @@
       </div>`;
     }
 
+    // --- MULAI KODE YOUTUBE CAROUSEL ---
+     const ytLinks = (item.source_urls || []).map(url => {
+       const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
+       return match ? match[1] : null;
+     }).filter(Boolean);
+
+     let ytHtml = '';
+     if (ytLinks.length > 0) {
+      const ytSlides = ytLinks.map(id => `
+        <div class="snap-center shrink-0 w-full">
+        <iframe class="w-full aspect-video rounded-lg border border-brand-700 shadow-sm"
+                   src="https://www.youtube.com/embed/${id}"
+                   allowfullscreen></iframe>
+       </div>
+       `).join('');
+
+         ytHtml = `
+         <div class="bg-brand-900 p-4 rounded-lg border border-brand-700 flex flex-col gap-2">
+        <p class="text-[10px] text-gray-500 uppercase tracking-wider"><i class="ph-fill ph-youtube-logo text-red-500 text-sm align-middle mr-1"></i> Video Media</p>
+         <div class="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-1 scrollbar-thin scrollbar-thumb-brand-700">
+         ${ytSlides}
+        </div>
+        </div>
+   `;
+  }
+    // --- AKHIR KODE YOUTUBE CAROUSEL ---
+
     const safeImg = getValidImageUrl(item.thumbnail_url);
     document.getElementById('modal-body').innerHTML = `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -852,14 +879,19 @@
               <p class="font-bold text-sm leading-tight">${item.category}</p>
             </div>
           </div>
+
           <div class="bg-brand-900 p-4 rounded-lg border border-brand-700">
-            <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-2">${dict.modalSignificance}</p>
-            <p class="text-sm text-brand-accent leading-relaxed">${item.resume_analisa?.cultural_significance||'-'}</p>
-          </div>
-          <div>
+             <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-2">${dict.modalSignificance}</p>
+             <p class="text-sm text-brand-accent leading-relaxed">${item.resume_analisa?.cultural_significance||'-'}</p>
+             </div>
+
+             ${ytHtml}
+
+             <div>
             <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-2">${dict.modalSources}</p>
             <div class="flex flex-col gap-2">${formatSourceLinks(item.source_urls, dict)}</div>
-          </div>
+            </div>
+
         </div>
         <div class="flex flex-col">
           <h4 class="font-display font-bold text-lg mb-2">${dict.modalDesc}</h4>
