@@ -371,6 +371,21 @@ on:
 
 ---
 
+Understanding the Workflow Design:
+Cron Schedule Breakdown (0 0 */2 * *): * 0 ➔ Minute 0
+
+0 ➔ Hour 0 (Midnight UTC)
+
+*/2 ➔ Every 2 days
+
+* ➔ Every month
+
+* ➔ Every day of the week
+
+Manual Trigger (workflow_dispatch): Allows you to manually trigger the scraper at any time directly from the GitHub Actions UI.
+
+Infinite Loop Protection ([skip ci]): The [skip ci] tag acts as a crucial safeguard during the automated git commit, preventing the bot from triggering subsequent workflow runs infinitely.
+
 ## 🔑 Adding More Keywords
 
 The discovery engine uses a rotating multilingual keyword database. Each run, a keyword is selected at random to seed a new Gemini search query. Add your own targeted patterns to `KEYWORDS` in `scraper.py`:
