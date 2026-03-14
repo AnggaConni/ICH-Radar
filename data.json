@@ -2211,19 +2211,294 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-f2cfba96",
+      "element_name": "Pinisi Boat Building",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Pinisi_-_Indonesian_Sailing_Ship_1998.jpg/474px-Pinisi_-_Indonesian_Sailing_Ship_1998.jpg",
+      "source_urls": [
+        "https://phinisi.co.id",
+        "https://indonesia.travel",
+        "https://lamima.com",
+        "https://riaramarine.com",
+        "https://seatreksailing.com",
+        "https://silolona.com",
+        "https://komodotours.com",
+        "https://journal.unismuh.ac.id",
+        "https://woodenboat.com.au",
+        "https://id.wikipedia.org/wiki/Tanah_Beru,_Bonto_Bahari,_Bulukumba",
+        "https://www.gps-coordinates.net/latitude-longitude/indonesia/bulukumba-regency",
+        "https://en.wikipedia.org/wiki/Bulukumba_Regency",
+        "https://commons.wikimedia.org/wiki/File:Pinisi_-_Indonesian_Sailing_Ship_1998.jpg"
+      ],
+      "scraped_at": "2026-03-14T21:56:13.867359Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "South Sulawesi"
+        ],
+        "lat": -3.6446718,
+        "lng": 119.9471906
+      },
+      "resume_analisa": {
+        "description": "Pinisi are traditional two-masted wooden sailing vessels originating from South Sulawesi, Indonesia. They are characterized by their distinctive gaff-ketch rig with seven sails. Historically, these majestic boats were vital for trade, fishing, and transportation across the Indonesian archipelago, with routes extending as far as Australia, Malacca, Burma, and Vietnam. Today, Pinisi boats have also adapted to modern uses, serving as luxury cruises and eco-tourism vessels. The construction process relies heavily on inherited knowledge passed down orally through generations, often without the use of modern blueprints.",
+        "cultural_significance": "The art of Pinisi boat building in South Sulawesi was officially inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2017. This recognition underscores its global importance and reinforces Indonesia's maritime identity. The tradition embodies local wisdom, ancestral craftsmanship, and a deep connection between humans and nature, particularly within the Bugis and Makassar communities. Each stage of construction is accompanied by customary rituals and ceremonies, expressing gratitude, respect for nature, and fostering communal harmony. These practices highlight values of cooperation, respect for tradition, and spiritual balance, making Pinisi boats symbols of identity, resilience, and ancestral knowledge.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Boat Building",
+          "Maritime Heritage",
+          "Indonesia",
+          "UNESCO Intangible Cultural Heritage",
+          "Bugis Culture",
+          "Makassar Culture",
+          "Wooden Boats",
+          "Shell-First Construction"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Shell-first construction",
+        "materials_and_tools": [
+          "Wood: Ironwood (Ulin/Kayu Besi), Teak (Jati), Bitti Wood (Kayu Bitti), Merbau, Nyatoh, and other local hardwoods. Ironwood is particularly prized for its durability, strength, and natural resistance to termites, fungal decay, marine borers, and water damage.",
+          "Fastenings: Traditionally, wooden pegs (pasak) and tongue and groove joinery are used to secure planks, rather than nails.",
+          "Sealing: Tree resin is used for sealing joints.",
+          "Rigging: Natural rope, often made from coconut husk or cotton, is used for rigging and fastening.",
+          "Tools: Traditional hand tools such as adzes, chisels, and handsaws are primarily used. While modern builders may incorporate electric tools and CAD software for efficiency, the core craftsmanship relies on hand tools."
+        ],
+        "step_by_step": [
+          "1. Preparation and Timber Selection: The process begins with contract agreements between buyers and builders, followed by the selection of a suitable coastal construction site. Specific types of wood, such as Teak, Bitti, or Ironwood, are chosen for their durability and resistance. Ritual ceremonies are performed to seek blessings and communicate with the tree before it is cut. The timber is then seasoned and sun-dried for several weeks to prevent warping.",
+          "2. Keel Laying: The keel, considered the 'soul of the boat,' is laid as the foundational structural step. This stage often involves a ceremonial offering.",
+          "3. Hull Planking (Shell-First Construction): Unlike Western methods, Pinisi builders construct the hull by carefully cutting, shaping (often hand-sculpting with adze and chisel), and fitting planks together. These planks are secured using wooden dowels (pasak) and tongue and groove joinery to form the exterior shell of the boat before the internal frames are installed.",
+          "4. Framing: After the hull planking is complete, wooden ribs (frames) are added internally to provide additional strength and maintain the boat's shape.",
+          "5. Deck and Interior Construction: The deck and superstructure are then installed, which includes laying floorboards and constructing living quarters or cargo areas.",
+          "6. Mast and Sail Installation: Two towering masts are raised and fitted with the distinctive hand-sewn sails, forming the gaff-ketch rig, which typically includes seven sails.",
+          "7. Finishing Touches: This stage involves sanding, sealing the joints with tree resin, painting the vessel, and completing the rigging. For modern Pinisi, engines and rudders may also be installed.",
+          "8. Launch Ceremony: The culmination of the building process is a sacred launch ceremony, where the completed boat is blessed and ceremonially pushed into the sea with active community participation."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Australia",
+            "element_name": "Indigenous coastal populations' trade with Bugis/Makassan seafarers",
+            "relationship_reason": "For centuries, annual fleets from Sulawesi engaged in a fishery (teripang or bêche-de-mer industry) with northern Australia, fostering long-standing economic and cultural connections with its Indigenous coastal populations."
+          },
+          {
+            "country": "Malaysia",
+            "element_name": "Maritime trade with Malacca",
+            "relationship_reason": "Pinisi boats were historically used for trade routes extending to Malacca."
+          },
+          {
+            "country": "Myanmar",
+            "element_name": "Maritime trade with Burma",
+            "relationship_reason": "Pinisi boats were historically used for trade routes extending to Burma."
+          },
+          {
+            "country": "Vietnam",
+            "element_name": "Maritime trade with Vietnam",
+            "relationship_reason": "Pinisi boats were historically used for trade routes extending to Vietnam."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7afdf052",
+      "element_name": "Traditional Knowledge and Practices Associated with Cassava Flour Mills in Santa Catarina",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "http://portal.iphan.gov.br/bcr/media/uploads/bens/2130/CANELINHA_ALDEIA_TAVA%C3%8D_CR%C3%89DITO_RANCHO_CULTURAL_0388.jpg",
+      "source_urls": [
+        "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc",
+        "https://slowfoodbrasil.org/fortaleza-dos-engenhos-de-farinha-polvilhada-de-santa-catarina/",
+        "https://blog.fazendaverde.com.br/engenho-de-mandioca/",
+        "https://www.cpt.com.br/cursos-agroindustria/artigos/aprenda-como-se-faz-farinha-de-mandioca-caseira",
+        "https://www.agriconline.com.br/artigo/boas-praticas-de-fabricacao-de-farinha-de-mandioca",
+        "https://brasilplural.ufsc.br/2026/02/25/engenhos-de-farinha-de-santa-catarina-podem-se-tornar-patrimonio-nacional-pesquisadores-do-ibp-participam-do-projeto/",
+        "https://rededeengenhos.org/",
+        "https://ndmais.com.br/cultura/engenhos-de-farinha-o-resgate-de-um-patrimonio-cultural-da-ilha-de-santa-catarina/",
+        "https://www.nsctotal.com.br/noticias/fotos-documentario-resgata-historia-e-tradicao-dos-engenhos-de-farinha-no-sul-de-sc",
+        "https://cartinhadarainha.com.br/acordar-os-engenhos-de-farinha-farinha-polvilhada-e-bijajica-como-elos-de-luta-em-imbituba-sc-30/",
+        "http://portal.iphan.gov.br/bcr/detalhes/2130"
+      ],
+      "scraped_at": "2026-03-14T21:56:50.623153Z",
+      "location": {
+        "country": "Brazil",
+        "provinces": [
+          "Santa Catarina"
+        ],
+        "lat": -27.0628367,
+        "lng": -51.114965
+      },
+      "resume_analisa": {
+        "description": "The Traditional Knowledge and Practices Associated with Cassava Flour Mills in Santa Catarina refer to the artisanal production of cassava flour in the Brazilian state of Santa Catarina. This agro-food system encompasses agricultural knowledge, production techniques, and cultural practices passed down through generations by indigenous, quilombola, and Euro-descendant communities. The resulting 'farinha polvilhada' (powdered flour) is characterized by its white color, fine and soft texture, and a taste that can be sweet or sour, sometimes described as 'warming' in the mouth. The mills themselves are not just production sites but also serve as important social hubs for gatherings, memory sharing, and celebrations.",
+        "cultural_significance": "This practice is officially recognized as cultural heritage of Brazil by the Institute of National Historical and Artistic Heritage (IPHAN), inscribed in the Book of Knowledge. Its history spans over 2,000 to 3,000 years, with its origins rooted in the indigenous Guarani and Tupi-Guarani peoples who first cultivated and processed cassava. The tradition represents a rich cultural exchange, incorporating indigenous knowledge of cassava, Azorean milling techniques and animal traction introduced in the 18th century, and contributions from enslaved Africans in agriculture, carpentry, and wooden gear construction. The flour mills are vital spaces for community life, fostering social bonds through collective work, shared meals, traditional songs like the 'ratoeira', and conversations. 'Farinhadas,' or collective flour-making events, are a central social practice, often organized as a 'mutirão' (collective effort) based on reciprocity. Historically, the flour was economically significant, supplying urban populations, military troops, and ships for about two centuries. The continued practice by family farmers, indigenous communities, and quilombolas highlights its enduring importance to Brazilian identity and food security.",
+        "gemini_tags": [
+          "Culinary Traditions",
+          "Traditional Craftsmanship",
+          "Social Practices & Rituals",
+          "Intangible Cultural Heritage",
+          "Agro-food System",
+          "Brazil",
+          "Cassava Flour",
+          "Indigenous Heritage",
+          "Azorean Influence",
+          "African Diaspora"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Food Preparation",
+        "materials_and_tools": [
+          "Cassava roots (various varieties)",
+          "Water",
+          "Cotton bags",
+          "Grater (manual or mechanical)",
+          "Press (traditional wooden press, possibly with iron gears)",
+          "Sieve",
+          "Tacho (large pan/oven)",
+          "Wood (for fire, e.g., guava wood)"
+        ],
+        "step_by_step": [
+          "**Cultivation and Harvest**: Select and cultivate specific varieties of cassava, considering soil fertility and the desired characteristics of the final flour. Harvest the cassava roots during the season, typically between May and September.",
+          "**Washing and Peeling**: Wash the harvested cassava roots thoroughly. Carefully scrape or peel the roots, removing only the brown outer skin.",
+          "**Grating**: Grate the peeled cassava roots into a wet pulp. This step is traditionally done manually.",
+          "**Pressing**: Place the grated cassava pulp into cotton bags. Press the bags using a traditional press (which can be entirely wooden or incorporate some iron gears) to remove excess water and some of the starch (polvilho). This pressing process can take a day or more. The extracted liquid, when decanted, yields cassava starch.",
+          "**Discompacting/Crushing**: After pressing, the fibrous block of cassava (known as 'tipiti') is discompacted or crushed, often using a secondary grinding machine to break it apart.",
+          "**Sifting**: Pass the discompacted cassava through a sieve to remove any coarser particles, resulting in a fine, loose flour.",
+          "**Roasting/Drying**: Transfer the sifted flour to a 'tacho' (large pan or oven) and roast it over a strong wood fire (e.g., using guava wood). This drying and toasting process is crucial, and experienced 'engenheiros de farinha' (flour mill masters) determine the correct point by smell and texture. Alternatively, natural drying can be used for raw flour."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Brazil (Indigenous Peoples)",
+            "element_name": "Cassava cultivation and basic processing",
+            "relationship_reason": "The fundamental knowledge of cultivating and processing cassava, including transforming its toxic roots into edible food, originated with the Guarani and Tupi-Guarani indigenous peoples over 2,000 to 3,000 years ago."
+          },
+          {
+            "country": "Portugal (Azorean immigrants)",
+            "element_name": "Milling techniques and animal traction",
+            "relationship_reason": "In the 18th century, Azorean immigrants brought new milling techniques and the use of animal traction (from European wheat mills) to Santa Catarina, which were integrated into the cassava flour production process."
+          },
+          {
+            "country": "Brazil (Afro-descendants/Enslaved Africans)",
+            "element_name": "Agricultural, carpentry, and wooden gear construction knowledge",
+            "relationship_reason": "Enslaved Africans contributed their knowledge of agriculture, carpentry, and the construction of wooden gears, which were incorporated into the design and operation of the cassava flour mills."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c3f0e05a",
+      "element_name": "Sichuan Opera Face-Changing (Bian Lian)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.smithsonianmag.com/blogs/national-museum-of-asian-art/2014/07/02/face-changing-sichuan-opera/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.smithsonianmag.com/blogs/national-museum-of-asian-art/2014/07/02/face-changing-sichuan-opera/",
+        "https://en.wikipedia.org/wiki/Bian_lian",
+        "https://www.scmp.com/magazines/style/article/3263073/what-face-changing-performance-decoding-mystery-and-mastery-chinas-dazzling-centuries-old-art-form",
+        "https://www.chinaculture.org/gb/cn_wh/2004-06/29/content_51770.htm",
+        "https://www.chinaculturetour.com/chengdu/sichuan-opera-face-changing.htm",
+        "https://www.thechinacurrent.com/culture/the-mystery-and-mastery-of-face-changing/",
+        "https://www.trippest.com/blog/bian-lian-face-changing-sichuan-opera.html",
+        "https://www.thinkchina.sg/mask-speaks-unmasking-spirit-sichuan-opera-eye-sichuan-series",
+        "https://www.wais-academy.com/bianlian",
+        "https://www.lanzhou.gov.cn/art/2024/3/27/art_10206_1294870.html",
+        "https://www.hema-bianlian.com/post/川劇變臉歷史由來",
+        "https://www.youtube.com/watch?v=gS-H_h212oI",
+        "https://www.youtube.com/watch?v=Fj-Jz6pY144"
+      ],
+      "scraped_at": "2026-03-14T21:57:38.879325Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Sichuan",
+          "Chongqing"
+        ],
+        "lat": 30.5000001,
+        "lng": 102.4999999
+      },
+      "resume_analisa": {
+        "description": "Sichuan Opera Face-Changing, known as Bian Lian (變臉), is an ancient Chinese dramatic art and a distinctive theatrical technique within Sichuan Opera. Performers, adorned in brightly colored costumes, execute instantaneous mask changes to vividly portray shifts in a character's emotions or identities. This mysterious art form is often likened to magic due to the incredible speed and seamlessness of the transformations.",
+        "cultural_significance": "Bian Lian is a highlight of Sichuan Opera, deeply reflecting Sichuan culture. Its origins are linked to ancient times when people painted their faces to frighten away wild animals. Over centuries, this practice evolved into a sophisticated art form used to reveal the innermost feelings and complex psychological states of characters, transforming abstract emotions into visible and tangible expressions. In 2006, Bian Lian was inscribed on China's national intangible cultural heritage list, cementing its status as an iconic symbol of Chinese opera. Historically, its techniques were so highly valued that it was classified as a 'second-level state secret' by China's Ministry of Culture in 1987, though this status was later invalidated. The various colors of the masks carry symbolic meanings, representing different emotions and character traits; for instance, red often signifies loyalty and courage, black denotes firmness and honesty, white suggests cunning, and blue can represent brutality or despotism.",
+        "gemini_tags": [
+          "Sichuan Opera",
+          "Face-Changing",
+          "Bian Lian",
+          "Chinese Performing Arts",
+          "Intangible Cultural Heritage",
+          "Traditional Theater",
+          "Masks",
+          "Illusion",
+          "Chinese Folklore"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance techniques for instantaneous mask changes during a theatrical act.",
+        "materials_and_tools": [
+          "Cosmetic paint (oil-based)",
+          "Powder cosmetics (e.g., gold, silver, ink powders)",
+          "Damask or silk masks (pre-painted and cut)",
+          "Thin silk threads",
+          "Specially designed costumes with hidden mechanisms",
+          "Fans or other props for misdirection"
+        ],
+        "step_by_step": [
+          "**Wiping Mask (抹臉 / Smearing the face):** The performer pre-applies cosmetic paint to a specific, concealed area of their face, such as the forehead, eyebrows, cheeks, or nose. During the performance, with a swift hand motion or the use of a prop, they quickly wipe the paint across their face to reveal a new facial color or expression.",
+          "**Blowing Mask (吹臉 / Blowing the face):** This technique utilizes powder cosmetics. Powder (e.g., gold, silver, or ink) is either hidden in a tiny box on the stage, placed in a cup, or concealed in the performer's palm. The actor executes a quick movement, such as leaning close to the box or blowing from their hand, causing the powder to puff up and adhere to their face, instantly changing its color. Performers must close their eyes and mouth and hold their breath for this to be effective.",
+          "**Pulling Mask (扯臉 / Pulling the face):** Considered the most intricate method, this involves multiple masks painted on pieces of damask or silk. These masks are meticulously cut and layered onto the performer's face, each attached with a thin silk thread. These threads are discreetly fastened to various parts of the performer's costume. Through precise, lightning-fast movements, such as a flick of a cloak, a swing of a sleeve, or a turn of the head, the performer pulls the threads, causing the masks to disappear one by one, revealing a new face underneath.",
+          "**Qi-manipulation (運氣 / Ghost Face):** A rare and highly advanced technique, some masters are said to employ Qigong movements to alter their facial complexion, changing colors (e.g., from red to white, or white to blue/black) to convey intense emotions like fear or anger without the use of physical masks or paint."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Malaysia",
+            "element_name": "Bian Lian (as practiced by non-Chinese performers)",
+            "relationship_reason": "The art form has been taught and performed in Malaysia, with some female performers learning it from their fathers."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Bian Lian (as practiced by non-Chinese performers)",
+            "relationship_reason": "The secrets of Bian Lian reportedly 'leaked out' during a Sichuan Opera troupe's visit to Japan in 1986, leading to its practice by non-Chinese performers there."
+          },
+          {
+            "country": "Singapore",
+            "element_name": "Bian Lian (as practiced by non-Chinese performers)",
+            "relationship_reason": "Bian Lian is performed in Singapore, often as part of cultural exchanges and by non-Chinese performers."
+          },
+          {
+            "country": "South Korea",
+            "element_name": "Bian Lian (as practiced by non-Chinese performers)",
+            "relationship_reason": "The art form has spread to South Korea, with non-Chinese performers practicing it."
+          },
+          {
+            "country": "United Kingdom",
+            "element_name": "Bian Lian (integrated into other performances)",
+            "relationship_reason": "Bian Lian has been integrated into performances like the northern lion dance troupe during Chinese New Year celebrations in London, showcasing cross-cultural dialogue."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-14T21:42:33.888646Z",
-    "total_ich_elements": 27,
-    "complete_records": 26,
+    "generated_at": "2026-03-14T21:58:08.915491Z",
+    "total_ich_elements": 30,
+    "complete_records": 29,
     "incomplete_records": 1,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 12,
+      "Traditional Craftsmanship": 13,
       "Social Practices & Rituals": 6,
-      "Culinary Traditions": 5,
+      "Culinary Traditions": 6,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 3
+      "Performing Arts": 4
     }
   }
 }
