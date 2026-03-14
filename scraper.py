@@ -567,6 +567,43 @@ KEYWORDS = [
     "First Nations traditional knowledge Australia",
 
     # ─────────────────────────────────────────────
+    # DIASPORA, MIGRATION & SHARED HERITAGE
+    # (Triggering the AI to find cross-border cultural diffusion)
+    # ─────────────────────────────────────────────
+    "traditional practices in diaspora communities",
+    "immigrant heritage food preserved across generations",
+    "cross-border cultural traditions shared by multiple countries",
+    "syncretic cultural rituals and assimilated heritage",
+    "tradisi perantau yang masih dipertahankan di luar negeri",
+    "budaya campuran hasil asimilasi masyarakat",
+    "prácticas culturales de la diáspora",
+    "traditions partagées au-delà des frontières",
+
+    # ─────────────────────────────────────────────
+    # TRADITIONAL SPORTS & MARTIAL ARTS
+    # (High-engagement community practices)
+    # ─────────────────────────────────────────────
+    "traditional martial arts heritage",
+    "indigenous sports and community games",
+    "bela diri tradisional warisan leluhur",
+    "permainan tradisional anak desa yang terlupakan",
+    "artes marciales tradicionales patrimonio vivo",
+    "jeux traditionnels et sports autochtones",
+    "传统武术 非物质文化遗产",
+
+    # ─────────────────────────────────────────────
+    # MARITIME, NAVIGATION & VERNACULAR ARCHITECTURE
+    # (Often shared across coastal networks/islands)
+    # ─────────────────────────────────────────────
+    "traditional boat building heritage",
+    "indigenous navigation techniques ocean seafaring",
+    "traditional ecological architecture and building techniques",
+    "teknik pembuatan perahu tradisional nelayan",
+    "arsitektur vernakular cara membangun rumah adat",
+    "pengetahuan navigasi laut tradisional",
+    "arquitectura vernácula y saberes constructivos",
+
+    # ─────────────────────────────────────────────
     # DOMAIN-SPECIFIC CROSS-LANGUAGE SEARCHES
     # ─────────────────────────────────────────────
     # Music & Performing Arts
