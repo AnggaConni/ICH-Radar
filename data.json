@@ -2696,20 +2696,250 @@
         "related_elements": []
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-7c3c1098",
+      "element_name": "Traditional Couscous-Making in Kalampaki, Drama",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.cibum.gr/2025/09/29/pos-ftiaxnoyn-to-paradosiako-koyskous-sto-kalampaki-dramas/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.cibum.gr/2025/09/29/pos-ftiaxnoyn-to-paradosiako-koyskous-sto-kalampaki-dramas/",
+        "https://www.arxeion-politismou.gr/2025/07/08/h-paraskeyh-toy-koys-koys-sto-kalampaki-dramas-sthn-aylh-politistikh-klhronomia-ths-ellados/"
+      ],
+      "scraped_at": "2026-03-15T01:21:47.784930Z",
+      "location": {
+        "country": "Greece",
+        "provinces": [
+          "Drama",
+          "Macedonia"
+        ],
+        "lat": 41.1499443,
+        "lng": 24.1468286
+      },
+      "resume_analisa": {
+        "description": "The traditional couscous of Kalampaki, Drama, is a pasta with a characteristic shape, consisting of small round pieces. It is prepared from eggs, milk, wheat flour, and semolina. The process involves a special technique using a unique wooden trough and two sieves with specific-sized holes. This tradition is still practiced by housewives in Kalampaki in September, after the Feast of the Exaltation of the Holy Cross on September 14th. It has been recognized as an element of the National Inventory of Intangible Cultural Heritage of the Ministry of Culture.",
+        "cultural_significance": "For the local community, couscous is more than just food; it embodies the aroma of simmering village chicken, the anticipation of family gatherings at the Sunday table, and the stories shared around the pot. It is a tradition passed down from mother to daughter, from the older generation to the younger, amidst jokes, laughter, and courtyard conversations. Its inclusion in the National Inventory is a testament to the years of dedication by people who have learned and contributed to its preservation, reinforcing cultural identity and historical continuity.",
+        "gemini_tags": [
+          "Traditional Pasta",
+          "Greek Cuisine",
+          "Culinary Heritage",
+          "Community Practice",
+          "Intangible Cultural Heritage",
+          "Drama, Greece",
+          "Handmade Food",
+          "Seasonal Tradition"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Food preparation (pasta making)",
+        "materials_and_tools": [
+          "Ingredients: Eggs, milk, wheat flour, semolina",
+          "Tools: Special wooden trough (made from a hollowed-out tree trunk, without joints, using an adze), two sieves with specific-sized holes (made by piercing sheet metal with a nail)"
+        ],
+        "step_by_step": [
+          "Gather the main ingredients: eggs, milk, wheat flour, and semolina.",
+          "Prepare the specialized tools, which include a unique wooden trough, traditionally crafted from a hollowed-out tree trunk using an adze, and two sieves with precisely sized holes, created by piercing sheet metal with a nail.",
+          "Combine the eggs, milk, wheat flour, and semolina within the wooden trough.",
+          "Using a special technique, the women of the village meticulously shape the dough into small, perfect round pieces with their fingertips.",
+          "The formed couscous is then passed through the two specialized sieves to ensure it achieves its characteristic small, round shape and specific size.",
+          "The preparation traditionally takes place in September, following the Feast of the Exaltation of the Holy Cross, observed on September 14th."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Morocco",
+            "element_name": "Couscous",
+            "relationship_reason": "Shared culinary tradition of semolina-based pasta, although specific preparation methods and ingredients may vary regionally. The term 'couscous' itself points to a broader culinary family."
+          },
+          {
+            "country": "Algeria",
+            "element_name": "Couscous",
+            "relationship_reason": "Shared culinary tradition of semolina-based pasta, although specific preparation methods and ingredients may vary regionally. The term 'couscous' itself points to a broader culinary family."
+          },
+          {
+            "country": "Tunisia",
+            "element_name": "Couscous",
+            "relationship_reason": "Shared culinary tradition of semolina-based pasta, although specific preparation methods and ingredients may vary regionally. The term 'couscous' itself points to a broader culinary family."
+          },
+          {
+            "country": "Mauritania",
+            "element_name": "Couscous",
+            "relationship_reason": "Shared culinary tradition of semolina-based pasta, although specific preparation methods and ingredients may vary regionally. The term 'couscous' itself points to a broader culinary family."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-35d727fa",
+      "element_name": "Kofar Mata Dye Pits (Kano Indigo Dyeing Tradition)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://artsandculture.google.com/asset/northern-nigerian-man-dyeing-a-cloth-in-one-of-the-kano-dye-pits-the-centenary-project/1QG5M7812tXvYw",
+      "source_urls": [
+        "https://kamsokids.com/blogs/news/the-dying-dye-pits-of-kofar-mata",
+        "https://kohantextilejournal.com/nigeria-indigo-dye-pits-preserve-522-year-old-tradition/",
+        "https://thenationonlineng.net/kanos-dying-dye-pits/",
+        "https://thisisus.world/blogs/news/indigo-story",
+        "https://thisisus.world/pages/about-us",
+        "https://omirenstyles.com/blogs/northern-nigerian-art/from-calabash-to-leather-traditional-crafts-of-northern-nigeria",
+        "https://omirenstyles.com/blogs/northern-nigerian-fashion/woven-identities-how-northern-nigerian-fashion-blends-native-and-modernity",
+        "https://cornellbotanicgardens.org/our-plants/featured-plants/indigo/",
+        "https://guardian.ng/life/a-dive-into-the-traditional-crafts-of-nigeria/",
+        "https://guardian.ng/news/nigeria-hopes-kanos-ancient-textile-traditions-can-boost-trade-and-tourism/",
+        "https://www.howwemadeitinafrica.com/business-fades-at-nigerias-traditional-dye-pits/40960/",
+        "https://www.voanews.com/a/business-fades-at-nigerias-traditional-dye-pits/2515053.html",
+        "https://historynewsnetwork.org/article/38725",
+        "https://www.youtube.com/watch?v=kYJ0_lX8B-A",
+        "https://artsandculture.google.com/story/500-years-of-tie-and-dye-production/wwVBEv6h1n1-LQ",
+        "https://artsandculture.google.com/asset/northern-nigerian-man-dyeing-a-cloth-in-one-of-the-kano-dye-pits-the-centenary-project/1QG5M7812tXvYw"
+      ],
+      "scraped_at": "2026-03-15T01:22:13.337866Z",
+      "location": {
+        "country": "Nigeria",
+        "provinces": [
+          "Kano State"
+        ],
+        "lat": 11.8948389,
+        "lng": 8.5364136
+      },
+      "resume_analisa": {
+        "description": "The Kofar Mata Dye Pits in Kano, Nigeria, represent one of Africa's oldest surviving indigo dyeing traditions, established in 1498. These pits are more than just shallow wells filled with dye; they are a living museum of cultural resilience where techniques have remained largely unchanged for centuries. Generations of Hausa dyers have continued this ancestral craft, producing deep, rich blue fabrics.",
+        "cultural_significance": "Indigo dyeing in Hausa culture is deeply symbolic, with blue garments signifying status, spirituality, and readiness for special ceremonies. The famous 'Babban Riga', a flowing robe, is dyed in these pits and worn with pride across Northern Nigeria and West Africa. Historically, the indigo-dyed cotton was a backbone of Kano's economy, rivalling the fabled riches of Timbuktu, and was famous in the trans-Saharan trade. The patterns and symbols on the textiles often communicate religious beliefs or announce social facts. The craft is a significant part of Kano's cultural identity, a source of livelihood, and community pride, embodying Hausa ingenuity and an enduring spirit.",
+        "gemini_tags": [
+          "Traditional Dyeing",
+          "Indigo",
+          "Textile Craft",
+          "Hausa Culture",
+          "Nigerian Heritage",
+          "Kano",
+          "Intangible Cultural Heritage",
+          "Sustainable Craftsmanship",
+          "West African Textiles"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Indigo Dyeing",
+        "materials_and_tools": [
+          "Indigo plant (Indigofera tinctoria or Lonchocarpus cyanescens) leaves, flowers, and stems",
+          "Ash from burnt firewood",
+          "Potash (potassium)",
+          "Water",
+          "Deep, stone-lined pits",
+          "Wooden mortar (for pounding leaves)",
+          "Cotton fabric",
+          "Wooden mallets (for softening fabric)"
+        ],
+        "step_by_step": [
+          "Gather leaves, flowers, and stems from the indigo plant (Indigofera or Lonchocarpus cyanescens).",
+          "Pound the indigo plant parts into a pulp in a wooden mortar.",
+          "Leave the pulp to dry in the sun for two or three days.",
+          "Prepare the dye solution by mixing indigo leaves/pulp with ash from burnt firewood, potash (potassium), and water in deep, stone-lined pits.",
+          "Allow the mixture to ferment for several days to weeks (at least one week, up to a month for preparation). The strong odor and foaming surface indicate the mixture is ready.",
+          "Prepare the fabric (often cotton) by folding, tying, or sewing it in specific ways to create resist patterns (similar to tie-dye or Adire techniques).",
+          "Dip the prepared fabric into the fermented dye solution multiple times to achieve the desired shade of blue. The fabric may be submerged for two to three days, agitated throughout to ensure even dyeing.",
+          "Remove the fabric from the pits and hang it to dry and oxidize for about twenty-four hours without rinsing.",
+          "Soften the dried fabrics using wooden mallets, which also helps to achieve a desired sheen and eliminates the need for ironing."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Mali",
+            "element_name": "Tuareg indigo robes (Tagelmust)",
+            "relationship_reason": "Tuareg traders, known as the 'blue men of the desert' due to their indigo-stained skin and robes, were major customers of the Kano dye pits and helped introduce indigo-dyed fabrics across Africa through trans-Saharan trade routes."
+          },
+          {
+            "country": "Nigeria (Yoruba people)",
+            "element_name": "Adire (tie-dye)",
+            "relationship_reason": "The Hausa blue indigo dyeing is likened to the Adire of the Yoruba people, which also involves indigo resist-dyeing techniques. Both traditions are prominent in Nigeria."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Shibori (tie-dyeing)",
+            "relationship_reason": "Several observers have likened the Hausa blue indigo to the Japanese Shibori, indicating shared principles of resist-dyeing and cultural significance of indigo."
+          },
+          {
+            "country": "West Africa (general)",
+            "element_name": "Various indigo dyeing traditions",
+            "relationship_reason": "Indigo dyeing is an ancient craft practiced across West Africa, with variations in techniques and designs. Kano is considered one of the oldest centers, and its influence spread throughout the region."
+          },
+          {
+            "country": "India and Asia",
+            "element_name": "Indigo plant (Indigofera)",
+            "relationship_reason": "The indigo plant itself, a primary source of the dye, is native to India and Asia, suggesting an ancient global connection in the origins of indigo dyeing."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-47af1ec4",
+      "element_name": "Suguidanon (Epic Chanting)",
+      "category": "Oral Traditions | Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//culturalmappingpanayguimaras.wordpress.com/2026/02/18/oral-traditions-and-expressions-including-language-archives/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://culturalmappingpanayguimaras.wordpress.com/2026/02/18/oral-traditions-and-expressions-including-language-archives/",
+        "https://www.scribd.com/document/381665427/Philippine-Oral-Lore",
+        "https://www.researchgate.net/publication/371986422_Kami_Kadto_and_the_Power_of_Oral_Traditions_in_Shaping_Philippine_Heritage",
+        "https://tabletwelve.wordpress.com/2023/12/09/the-enduring-legacy-of-storytelling-in-filipino-culture/",
+        "https://www.britannica.com/place/Philippines/Culture-and-diversity"
+      ],
+      "scraped_at": "2026-03-15T01:22:48.959360Z",
+      "location": {
+        "country": "Philippines",
+        "provinces": [
+          "Central Panay"
+        ],
+        "lat": 11.701064,
+        "lng": 122.3670311
+      },
+      "resume_analisa": {
+        "description": "Suguidanon is a centuries-old oral tradition of epic chanting performed by the Panay Bukidnon communities in upland Central Panay, Philippines. It encompasses ten epics that articulate their spiritual worldview, customs, and identity. This practice is a fundamental means of transmitting knowledge, ideas, and culture from one generation to the next, reflecting the interconnectedness between past generations and the living culture.",
+        "cultural_significance": "Suguidanon serves as both entertainment and a vital medium for transmitting cultural knowledge during social and spiritual gatherings. It plays a crucial role in shaping Filipino heritage by acting as a conduit for memory, identity, and continuity, conveying genealogies, historical accounts, values, ethics, and the spirituality of the community. The oral traditions, including epics, preserve social beliefs and values, ensuring the survival of cultural knowledge across generations and strengthening the social fabric.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Epic Chanting",
+          "Philippine Folklore",
+          "Indigenous Culture",
+          "Panay Bukidnon",
+          "Cultural Transmission",
+          "Performing Arts",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Global",
+            "element_name": "Oral Storytelling and Epic Traditions",
+            "relationship_reason": "The practice of transmitting history, literature, and cultural knowledge through oral storytelling and epic chanting is a widespread human tradition found in numerous indigenous and ancient cultures worldwide, serving similar functions of cultural preservation and identity formation."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-14T22:34:22.562140Z",
-    "total_ich_elements": 33,
-    "complete_records": 31,
-    "incomplete_records": 2,
+    "generated_at": "2026-03-15T01:23:07.009253Z",
+    "total_ich_elements": 36,
+    "complete_records": 33,
+    "incomplete_records": 3,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 13,
+      "Traditional Craftsmanship": 14,
       "Social Practices & Rituals": 8,
-      "Culinary Traditions": 6,
+      "Culinary Traditions": 7,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 4,
-      "Social Practices & Rituals | Performing Arts": 1
+      "Social Practices & Rituals | Performing Arts": 1,
+      "Oral Traditions | Performing Arts": 1
     }
   }
 }
