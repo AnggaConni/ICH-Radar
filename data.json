@@ -2925,21 +2925,265 @@
         ]
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-e8c9a11f",
+      "element_name": "Nanjing Yunjin Brocade",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.chinatoday.com.cn/ctenglish/2018/art/202601/t20260105_800318042.html&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.chinatoday.com.cn/ctenglish/2018/art/202601/t20260105_800318042.html",
+        "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226",
+        "https://www.yomkey.com/blogs/news/brief-introduction-about-chinese-nanjing-brocade",
+        "https://www.chinesestudies.academy/nanjing-yunjin-brocade/",
+        "https://news.cgtn.com/news/7a417a4d34557a6333566d54/share_p.html",
+        "https://www.nanjingmuseum.com/en/collection/royal-clothes-made-of-nanjing-yunjin-brocade",
+        "https://antiquevintage.com.au/blogs/news/nanjing-yunjin-brocade-a-legacy-of-luxury-and-craftsmanship",
+        "http://www.ihchina.cn/project_details/12711/",
+        "https://www.jsyunjin.com/",
+        "https://www.shanghaidaily.com/lifestyle/Coding-in-silk-and-gold-the-ancient-craft-of-Nanjing-Yunjin-brocade/ar/2025-09-18/122046",
+        "https://www.xinhuanet.com/travel/2021-05/26/c_1127495067.htm",
+        "https://www.guangming.cn/culture/2021-03/17/content_34674797.htm"
+      ],
+      "scraped_at": "2026-03-17T01:13:25.899861Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Jiangsu Province"
+        ],
+        "lat": 33.0000001,
+        "lng": 119.9999999
+      },
+      "resume_analisa": {
+        "description": "Nanjing Yunjin Brocade, also known as 'cloud brocade' (云锦), is a traditional Chinese luxury silk brocade originating from Nanjing, Jiangsu Province. It is renowned for its exquisite patterns, stunning luster, and rich colors that evoke the imagery of clouds. Representing the pinnacle of Chinese brocade craftsmanship, Yunjin is distinguished by its intricate motifs woven directly into the fabric, often incorporating precious materials such as silk, gold, silver, and peacock feather threads. It is considered one of the 'Four Famous Brocades' of ancient China.",
+        "cultural_significance": "With a history spanning over 1,600 years, dating back to the Eastern Jin Dynasty, Nanjing Yunjin Brocade holds profound cultural and historical significance. Historically, it served as the designated textile for the imperial courts of the Yuan, Ming, and Qing dynasties, used for emperors' robes, court decorations, and as royal tributes. The brocade symbolizes wealth, status, and luxury, with its elaborate patterns often conveying symbolic meanings rooted in Chinese folklore and philosophy. Its exceptional value is encapsulated in the ancient saying, 'an inch of the brocade is worth an inch of gold,' reflecting the complex techniques and extensive labor involved in its production. Nanjing Yunjin Brocade is regarded as a 'living fossil' of traditional Chinese brocade weaving. In recognition of its importance, the Nanjing Yunjin Brocade Weaving Techniques were inscribed on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity in 2009.",
+        "gemini_tags": [
+          "Silk Weaving",
+          "Traditional Textile",
+          "Chinese Craftsmanship",
+          "Imperial Art",
+          "Intangible Cultural Heritage",
+          "Nanjing Culture",
+          "Brocade",
+          "Handicraft"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand-woven brocade using a traditional drawloom",
+        "materials_and_tools": [
+          "Silk threads",
+          "Gold threads",
+          "Silver threads",
+          "Peacock feather yarn",
+          "Traditional large drawloom (hualou wooden loom)"
+        ],
+        "step_by_step": [
+          "Pattern Design: Creating a detailed design, often featuring traditional Chinese motifs like dragons, phoenixes, and auspicious symbols.",
+          "Pattern Drafting / Tiaohua Jieben (挑花结本): Transferring the design from paper to a textile pattern sample or creating jacquard cards, which involves tying knots to indicate the pattern. This stage is likened to programming in ancient times.",
+          "Material Preparation: Preparing the various threads, including silk, gold, silver, and peacock feather yarns.",
+          "Loom Preparation (Zaoji - 造机): Setting up the large, complicated wooden drawloom, which can be up to 5.6 meters long, 4 meters tall, and 1.4 meters wide.",
+          "Weaving: Two artisans operate the loom simultaneously. The 'Zhuaihuagong' (拽花工), or 'thread puller,' sits on the upper part of the loom, responsible for adjusting the warp threads. The 'Zhishou' (织手), or 'weaver,' sits below, inserting weft threads and applying gold and colored decorations according to complex mnemonic ballads and color schemes. The 'Zhuanghua' (妆花) technique, characterized by 'wahua panzhi' (挖花盘织 - discontinuous supplementary weft threads) and 'zhuhua yise' (逐花异色 - different colors for each flower), can only be done by hand. Due to its complexity, two skilled artisans can produce only about 5 to 6 centimeters of brocade per day."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Shu Brocade (Sichuan)",
+            "relationship_reason": "One of the 'Four Famous Brocades' of China, sharing a common heritage of traditional Chinese brocade weaving."
+          },
+          {
+            "country": "China",
+            "element_name": "Song Brocade (Suzhou)",
+            "relationship_reason": "One of the 'Four Famous Brocades' of China, sharing a common heritage of traditional Chinese brocade weaving."
+          },
+          {
+            "country": "China",
+            "element_name": "Zhuang Brocade (Guangxi)",
+            "relationship_reason": "One of the 'Four Famous Brocades' of China, sharing a common heritage of traditional Chinese brocade weaving."
+          },
+          {
+            "country": "China",
+            "element_name": "Various Chinese ethnic minority groups",
+            "relationship_reason": "Nanjing Yunjin Brocade absorbed weaving skills and techniques from various minority ethnic groups in China throughout its history."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-d96694fb",
+      "element_name": "Ainu Oral Literature (Yukara)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ja.wikipedia.org/wiki/%25E5%258F%25A3%25E6%2589%25BF%25E6%2596%2587%25E8%258A%25B8_%28%25E3%2582%25A2%25E3%2582%25A4%25E3%2583%258C%29&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E5%8F%A3%E6%89%BF%E6%96%87%E8%8A%B8_(%E3%82%A2%E3%82%A4%E3%83%8C)",
+        "https://www.akanainu.jp/ainu_culture/oral_literature/",
+        "https://www.hokkaidoisan.org/heritage/005.html",
+        "https://www.akarenga-h.jp/ainu/culture/oral-literature/"
+      ],
+      "scraped_at": "2026-03-17T01:13:59.679928Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Hokkaido"
+        ],
+        "lat": 43.4519831,
+        "lng": 142.8197834
+      },
+      "resume_analisa": {
+        "description": "Ainu oral literature encompasses a rich and extensive collection of stories, myths, epic poems (Yukara), divine songs (Kamuy Yukar), and prose narratives (Uwepeker) that were transmitted orally across generations by the Ainu people, the indigenous inhabitants of Hokkaido, Japan. Before the modern era, the Ainu language lacked a written script, making oral transmission the sole method for preserving their vast literary heritage. These oral traditions are characterized by their narrative depth, often featuring supernatural beings (kamuy), heroic figures, and explanations of the natural world.",
+        "cultural_significance": "Ainu oral literature is fundamental to the Ainu identity, cultural continuity, and the transmission of their unique worldview. It serves as a vital repository of their history, cosmology, ethical principles, and social customs, reflecting a deep connection with nature and the spiritual realm. Through these narratives, the Ainu learned about the relationship between humans and gods (kamuy), the wisdom for living in harmony with their environment, and the rules governing their society. The act of storytelling is a significant communal practice, fostering social cohesion and ensuring that the cultural heritage is passed down to younger generations.",
+        "gemini_tags": [
+          "Oral tradition",
+          "Indigenous culture",
+          "Epic poetry",
+          "Mythology",
+          "Folklore",
+          "Japan",
+          "Ainu",
+          "Storytelling",
+          "Cultural transmission",
+          "Hokkaido"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Performance and Transmission",
+        "materials_and_tools": [
+          "Human voice",
+          "Memory",
+          "Traditional melodies and rhythms (for Yukara and Kamuy Yukar)",
+          "Communal gathering spaces (e.g., around a hearth)"
+        ],
+        "step_by_step": [
+          "**Learning and Memorization:** Individuals, often from a young age, would learn the extensive repertoire of stories, myths, and epic poems by listening to elders and skilled storytellers within their community. This process involved deep memorization, particularly for the long and intricate Yukara.",
+          "**Performance Context:** Oral traditions were typically performed in social gatherings, such as family settings or community events, where listeners would gather to hear the narratives. The atmosphere was often intimate and engaging.",
+          "**Narration and Recitation:** The storyteller, known as a 'yukar-kashi' or 'uwepeker-kashi', would recite the stories. For Yukara and Kamuy Yukar, this often involved distinct melodies, rhythmic patterns, and vocalizations that enhanced the narrative and captivated the audience.",
+          "**Audience Engagement:** Listeners were not passive recipients; they actively participated by focusing intently, internalizing the moral and cultural lessons, and sometimes even offering interjections or repeating specific phrases or sounds, especially during divine songs.",
+          "**Intergenerational Transmission:** The oral traditions were passed down through successive generations, ensuring the continuity of Ainu culture. While individual storytellers might introduce subtle nuances, the core narratives and their cultural essence were meticulously preserved."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Various Indigenous cultures worldwide",
+            "element_name": "Epic poems, creation myths, folk tales, traditional songs",
+            "relationship_reason": "Oral traditions, including epic poems and creation myths, are a universal phenomenon among indigenous cultures globally. They serve as primary means of preserving history, cultural values, and worldviews in the absence of or alongside written language. The Ainu Yukara shares the fundamental characteristic of being a long narrative poem transmitted orally, akin to epic traditions found in many other indigenous societies."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0153cc3a",
+      "element_name": "Pathein Hti (Pathein Umbrella)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Pathein_Hti.jpg/800px-Pathein_Hti.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Pathein_hti",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBeExo5AEIyYXsT9oMsLlBf_Z-UEvrrSUegpZV1wcQWFWs-VGEwa7ZcoxZp9LNO2SDYGiZtEINUHKayLSMjId_5qXYjn_Qz8-3ngOoON_boVeYtTVkAu-_pxJKsV0tQx4gyxrY",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLmyx4nPEoHjr93TibJh2LcT0hbjbDlXLJcglcaPYehWuL1aCsTBGvFjz_pWQnUxBLaItjFETws5DDb48CsCL7DgB3ebDQJtSdOk73Z9c40oDsFrWjDT7y_vFdzwviUxkoK1BZ5WQNGOlS0qh95H-bvv4UJM-GoWuKeVeoBYApuPYNUDjTeCDb0Anc-bHei88qxhxLT_coi5DE",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTWnRzaFjfFddhzxAbKLeNHSBL6Ufzoib5ToiL9IiOHUZzd8NzFMSVsamDKUn1tVEfw_bhuWXjaxxZwNfCuZzFrJZ3UD-kNSKKFpoLJkxow9SQVkRkcrw_t5U_e4APq2g17z-hMDR1RUtHZj5h",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3HSUUW9pGQlUyThHYZhSIjtKKXjUEu6euz4QOB2SJG9G0CngdFJq9-6AZ6fgrLL7_baPvzrTFSXyeu3NG0L6b-4nBEqgJ9OULJrN_ub3hhccoZKU5cDE18Raz_phGQJWTJhQXRMKtj6cg0cpaEGQqEfvIQFjOYtGG4xFSXlN7p98V0b4Texvh95Vt-jc",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGge8JxPfMjZ29_x57yofXzKDBskmeDlDgvcgfNMFms63oYN7MxXChCzOZyXt6QXSd7bym6erlp3ign4w8x8s_ZFepr0JecnmuVhgSSi5p-q71sF-p9an_xa7pIuUcIMOgxs14uCHZ0XU8hor6calHWqmB1EiK5kS1GWI3gEW9q",
+        "https://en.wikipedia.org/wiki/Hti",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyuEZhBlrgxBSqVmfNbtsYPizyq-cvLF_iXlAlHCPEevUfTPLGd4AeXq78wtpnrY5MmSNcDJBzh6qIB4fCt9PLJjrXA9qU8viY2dBTZrsnp_FgcfHPps698ZEFCA",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeEAAGSV9SqXUTuniOF5V8l99IKkY5wbx8XYBks1d1zb5eFXlsCvvq7QyDyeEjiBdpxpb_2wRIHJ9svDi9vw3FdORqIK-Mx2j8QpM40qB16dPOG_W2Xf5n_f1AIiu28saAz6OcKOu9U2PSN2nGHglEuw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwARdPzDXc1Excno9U8N2qfyLuiA9EoAWhmVITBs3ULmUSv6nw4kRG7mgIvZKlY6FR0jWP2lVGpyu3PPyNLD75DV-Ll6dQ7ehpYQQQ2lmwXjxze-QLX9iGhj-_mRB0YGP-ZEbTugI=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLRbtBvPu3VLQtAyuX4lJ1FZb6_UHWM33IwD1fGQGk5CiOjvWtStHOEzpSylyTRZ_6z3u6oHEUH7akCgVcKrJShM6BjE3j1vQg-YhsW1aLiwesDNilnUT7",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxPbVmvpRBtAvCIk9V359lrnUkXnimRcvNQOa9b-JmK5kjHR1Lr01tWCehpnaulhy3DkwKdfAlTzXIbjWfuzzPV-vG0K8gSHYSV9a-fRKfxIFepblbBpWtO3klBI0nriI_OpQ_",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgJ42RRroq1RQP1Wy_u2i7o2RzFUVWKLmeHBNSxENIdSvWFDE8xEad3owgktD56ex6NnzyDBJEfE9wZS4vqCGYvp_zfG7MxPhD7pijl_Ni3j72lvDD6uqKVPv5cHRazJRtOjbIfIQxg019t0S6",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeZ6GiahhgyJanzHdQU9FeqqxmTDBR1yU89IrBD4Rik9l-Wzb-ytf0CCKgPKPvZgUc9OWCMzdl7Kaly5OsU6mXThbdkEwjE8vyGGTdWdaj-D_zIZmxMPvNBXYfKRzAKaueM09hqvs=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4Hz6bGwZUOCpIG3SW6BSQlJhaHDcMqGTz17eV4SUnRgwCVJf8Xg6KE5pM0mzYvArViOkeK9FuoKLpBWxs1No7WLyBF4novSLH4rbf6vcyCWabBAQuaIQlWCrX7ENeHOzQC8FYdndjNlvIcMWsnLxW",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjD8B102Tk3dLirs0IagwHU0YWsEGVGBz-gDUu2WFHyu8lrw3WFKWV7yxyu0IzO6i2tlbqVTDBpLw9m5urlrjLpQU6d7qjXUmyWzJYSCgrLP8wD-fuykxgJREsbjKmro11Smf0WLyriBn6WRhEK2XPfxg="
+      ],
+      "scraped_at": "2026-03-17T01:14:31.472173Z",
+      "location": {
+        "country": "Myanmar",
+        "provinces": [
+          "Ayeyarwady Region"
+        ],
+        "lat": 16.8340079,
+        "lng": 95.1804705
+      },
+      "resume_analisa": {
+        "description": "The Pathein Hti, or Pathein umbrella, is a traditional Myanmar handicraft originating from Pathein, the capital city of Ayeyarwady Region. These umbrellas are entirely crafted by hand from paper, cotton, and bamboo. Historically, they served as practical items for sun and rain protection. Today, they are prominently used as decorative elements in traditional festivals and ceremonies, and are a popular souvenir for visitors.",
+        "cultural_significance": "The Pathein Hti holds deep cultural and historical significance in Myanmar. In pre-colonial Burma, the 'hti' (umbrella) was a powerful symbol of social status, reverence, power, and authority, primarily used by royalty and monks. White umbrellas were exclusive to the king and chief queen, golden umbrellas for high officials, and red for lower-ranking officials, with the number and size also indicating status. The craft itself emerged from royal artisans who, after King Thibaw's exile in 1885, brought their skills to Pathein, establishing a vibrant cottage industry. The Pathein Hti thus represents a living connection to Myanmar's royal past and cultural identity, embodying artistry and tradition. It is an integral part of various Myanmar festivals and ceremonies, including the Ka-htain festival, Thingyan water festival, and Shinbyu novitiation ceremonies.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Handicraft",
+          "Umbrella Making",
+          "Cultural Symbol",
+          "Myanmar Heritage",
+          "Pathein",
+          "Traditional Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Handcrafting",
+        "materials_and_tools": [
+          "Taragu bamboo (at least nine years old)",
+          "Ma U Shwe War wood",
+          "Paper, cotton, or silk for canopy",
+          "Natural oils (e.g., sesame oil)",
+          "Natural dyes",
+          "Paste (from ground Palawpinan yam, tapioca starch, or rice flour)",
+          "Cotton thread or wool",
+          "Hand tools for carving, cutting, and painting"
+        ],
+        "step_by_step": [
+          "**Material Selection**: Select mature Taragu bamboo (at least nine years old) for the supporting and branch arms, and Ma U Shwe War wood for the main shaft and handle.",
+          "**Frame Assembly**: Construct the intricate wooden and bamboo framework, including the main shaft, handle, supporting ribs, and the opening/closing mechanism. All components are made of wood and bamboo, without any metal or springs.",
+          "**Canopy Preparation**: Choose the canopy material, typically paper, cotton, or silk. This material is then treated with natural oils, such as sesame oil, to render it water-resistant.",
+          "**Dyeing**: Apply natural dyes to the canopy fabric to achieve the vibrant colors characteristic of Pathein Hti.",
+          "**Canopy Attachment**: Carefully stretch the prepared and dyed canopy material over the assembled frame. It is then securely glued to the ribs using a traditional paste made from ground Palawpinan yam mixed with water, or alternatively, tapioca starch or rice flour.",
+          "**Binding**: Use cotton thread or wool to meticulously weave and tie the umbrella's crown and top parts, ensuring the canopy is firmly secured to the frame.",
+          "**Decoration (Painting)**: The artistic phase involves hand-painting intricate patterns and motifs onto the canopy. Common designs include lotus blossoms (symbolizing purity), peacocks (representing royalty), and celestial beings (for divine protection).",
+          "**Polishing and Quality Check**: Conduct a final polishing to enhance the umbrella's appearance and perform thorough quality checks to ensure its durability, functionality, and overall aesthetic appeal, making any necessary adjustments."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Traditional Chinese Parasols",
+            "relationship_reason": "Shared tradition of handcrafted parasols for sun protection, ceremonial use, and artistic expression, often made from bamboo and paper/silk."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Wagasa (Japanese Traditional Umbrella)",
+            "relationship_reason": "Shared tradition of handcrafted paper and bamboo umbrellas, valued for their artistic decoration, cultural significance, and use in traditional arts and ceremonies."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Bo Sang Umbrella",
+            "relationship_reason": "Shared tradition of handcrafted paper/cotton umbrellas with painted designs, serving both practical and decorative purposes, and often associated with local festivals and tourism."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-15T01:23:07.009253Z",
-    "total_ich_elements": 36,
-    "complete_records": 33,
+    "generated_at": "2026-03-17T01:15:07.873333Z",
+    "total_ich_elements": 39,
+    "complete_records": 36,
     "incomplete_records": 3,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 14,
+      "Traditional Craftsmanship": 16,
       "Social Practices & Rituals": 8,
       "Culinary Traditions": 7,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 4,
       "Social Practices & Rituals | Performing Arts": 1,
-      "Oral Traditions | Performing Arts": 1
+      "Oral Traditions | Performing Arts": 1,
+      "Oral Traditions": 1
     }
   }
 }
