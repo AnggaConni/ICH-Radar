@@ -3168,17 +3168,136 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-1e397911",
+      "element_name": "Arancini (Sicilian Rice Balls)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.foodnouveau.com/recipes/savory/how-to-make-arancini/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.foodnouveau.com/recipes/savory/how-to-make-arancini/",
+        "https://www.thechoppingblock.com/blog/how-to-make-amazing-arancini",
+        "https://www.doeatbetterexperience.com/blog/arancini-or-arancine-history-of-the-tastiest-dispute/",
+        "https://www.sipandfeast.com/arancini-italian-rice-balls/",
+        "https://food52.com/recipes/25039-arancini-recipe",
+        "https://www.vincenzosplate.com/recipe-items/sicilian-arancini-recipe/",
+        "https://zafferanoandco.com/blogs/magazine/the-origins-of-arancini-siciliani-a-hidden-tale-of-culinary-history-by-master-chef-gianluca-deiana-abis",
+        "https://www.domina.it/en/magazine/sicilian-arancino-history-recipe-and-interesting-facts/",
+        "https://www.tastingtable.com/1199346/italian-street-food-combines-everything-handheld-meal/",
+        "https://www.joebananalimos.com/discover-italy/sicily-sicilia/arancini/",
+        "https://www.giadzy.com/posts/how-your-favorite-italian-american-foods-evolved-from-italian-traditions",
+        "https://mattssicily.com/the-sicilian-arancini/",
+        "https://comfortablefood.com/arancini-sicilian-risotto-balls/",
+        "https://themeddish.com/Arancini-Recipe",
+        "https://www.theitalianontour.com/italian-street-food/",
+        "https://sicilianfoodculture.com/en/the-origin-of-arancina-palermo-or-catania/",
+        "https://www.wfc.it/en/magazine/sicilian-rice-arancini-original-recipe-history-and-curiosities/"
+      ],
+      "scraped_at": "2026-03-19T01:17:27.355002Z",
+      "location": {
+        "country": "Italy",
+        "provinces": [
+          "Sicily"
+        ],
+        "lat": 37.587794,
+        "lng": 14.155048
+      },
+      "resume_analisa": {
+        "description": "Arancini, also known as arancine, are a beloved Sicilian culinary tradition consisting of deep-fried, breaded rice balls. Their name, meaning 'little oranges,' is derived from their typically round shape and golden-orange color after frying. While often spherical, particularly in Palermo, they can also be conical in eastern Sicily, resembling Mount Etna. The core of an arancino is usually saffron-tinted risotto, which is then stuffed with various savory fillings. Common fillings include a hearty ragù (meat sauce), peas, and different types of cheese like mozzarella or caciocavallo. Vegetarian options with spinach and cheese, or even sweet variations with pistachio and chocolate, also exist.",
+        "cultural_significance": "Arancini hold a profound cultural significance in Sicily, embodying the island's rich history and diverse influences. They are a staple at Sicilian celebrations, festivals, and family gatherings, fostering a sense of warmth and togetherness. Historically, arancini evolved from a practical, portable meal for workers and travelers, with the breaded coating aiding in preservation. In some parts of Sicily, particularly Palermo, Syracuse, and Trapani, arancini are a traditional food for the Feast of Santa Lucia on December 13th, commemorating the arrival of a grain ship during a severe famine. Beyond Sicily, arancini have become a popular street food throughout Italy and are cherished by Italian-American communities, representing a culinary bridge between their heritage and new environments. The elaborate and time-consuming process of making arancini is often seen as a ritual passed down through generations, showcasing deep-rooted traditions.",
+        "gemini_tags": [
+          "Sicilian cuisine",
+          "Italian-American food",
+          "street food",
+          "fried rice balls",
+          "immigrant food heritage",
+          "culinary tradition",
+          "saffron rice",
+          "ragu",
+          "mozzarella",
+          "deep-fried snack"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Cooking",
+        "materials_and_tools": [
+          "Arborio rice (or Carnaroli/Vialone Nano)",
+          "Chicken or vegetable stock",
+          "Butter",
+          "Olive oil",
+          "Onion",
+          "Garlic",
+          "Saffron threads",
+          "White wine (optional)",
+          "Parmigiano Reggiano cheese",
+          "Salt and pepper",
+          "Ground beef (for ragù filling)",
+          "Carrot (for ragù filling)",
+          "Celery (for ragù filling)",
+          "Tomato paste (for ragù filling)",
+          "Peas (for ragù filling)",
+          "Fresh basil (for ragù filling)",
+          "Fresh mozzarella (or bocconcini/caciocavallo) cubes",
+          "All-purpose flour",
+          "Eggs",
+          "Breadcrumbs (plain or Panko)",
+          "Neutral oil for deep-frying (e.g., vegetable, canola)",
+          "Large saucepan/pot (for risotto)",
+          "Large pan (for ragù)",
+          "Large baking sheet",
+          "Shallow bowls (for dredging)",
+          "Deep, heavy pot (for frying)",
+          "Deep-fry thermometer",
+          "Slotted spoon or spider",
+          "Paper towels (for draining)",
+          "Ice cream scoop (optional, for shaping)"
+        ],
+        "step_by_step": [
+          "**1. Prepare the Risotto:** Heat stock in a saucepan and keep it warm. In a large, heavy pan, sauté finely chopped onion and minced garlic in butter or olive oil until softened. Add Arborio rice and saffron threads, stirring frequently to toast the grains. Deglaze the pan with white wine (if using), scraping any browned bits, and cook until the wine has reduced. Gradually add the warm stock, one ladleful at a time, stirring continuously until each addition is absorbed before adding more. Continue until the rice is al dente and the liquid has evaporated (about 20 minutes). Remove from heat, stir in grated Parmigiano Reggiano cheese and a knob of butter (optional). Season with salt and pepper to taste. Spread the cooked risotto onto a large baking sheet and allow it to cool completely in the refrigerator, ideally for at least an hour or overnight, to firm up.",
+          "**2. Prepare the Filling (e.g., Ragù):** In a separate pan, heat olive oil and sauté chopped onion, carrot, and celery until softened. Add ground beef, breaking it into small pieces, and cook until browned. Stir in tomato paste, peas, and a splash of water, along with fresh basil. Simmer the ragù for about 15-20 minutes, stirring occasionally and adding water if needed to prevent it from drying out. Season with salt and freshly ground pepper. Allow the filling to cool completely.",
+          "**3. Form the Arancini:** Cut fresh mozzarella into small cubes (about 1/2 inch or 1.25 cm) and have them at room temperature. Take about 1/4 to 1/2 cup of the cold risotto mixture and flatten it in the palm of your hand to create a cup shape. Place a spoonful of the cooled ragù filling and a mozzarella cube into the center of the rice cup. Gently enclose the filling with the rice, shaping it into a compact ball. Wetting your hands with water can help prevent sticking. Place the formed arancini on a parchment-lined baking sheet and chill them in the refrigerator for at least 20 minutes to firm up.",
+          "**4. Dredge the Arancini:** Set up a dredging station with three shallow bowls: one with all-purpose flour, one with beaten eggs (or a mixture of flour and water for a batter), and one with breadcrumbs (plain or Panko). Roll each rice ball first in the flour, tapping off any excess. Next, dip the floured ball into the beaten egg (or batter), allowing any excess to drip off. Finally, roll the ball in the breadcrumbs, pressing lightly to ensure an even and thorough coating. Place the dredged arancini on a clean baking sheet.",
+          "**5. Fry the Arancini:** Heat a deep, heavy pot or Dutch oven with about 3 inches of neutral oil (such as vegetable or canola oil) to a temperature of 350-370°F (175-187°C). Use a deep-fry thermometer to monitor the oil temperature. Carefully place a few arancini into the hot oil, ensuring not to overcrowd the pot. Fry for approximately 3-5 minutes, turning them gently as needed, until they are golden brown and crispy on all sides, and the cheese inside has melted. Remove the fried arancini with a slotted spoon or spider and transfer them to a paper towel-lined plate or baking sheet to drain excess oil. Serve warm, optionally with marinara sauce for dipping."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Arab World",
+            "element_name": "Kubbeh (or similar rice/meat dishes)",
+            "relationship_reason": "The origins of arancini are traced back to the Arab domination in Sicily (9th-11th centuries), who introduced rice and saffron to the island. Early versions involved rice seasoned with saffron, vegetables, and meat, eaten by hand, similar to some Arabic dishes."
+          },
+          {
+            "country": "Italy (Norman influence)",
+            "element_name": "Ragù (meat sauce)",
+            "relationship_reason": "The ragù filling, a common component of arancini, is believed to have been introduced during the Norman domination of Sicily."
+          },
+          {
+            "country": "Italy (Swabian influence)",
+            "element_name": "Breading and Frying techniques",
+            "relationship_reason": "The invention of the breading and frying technique for arancini is often attributed to the court of Frederick II of Swabia, as it made the rice balls portable and helped preserve them during long journeys or hunting expeditions."
+          },
+          {
+            "country": "United States",
+            "element_name": "Italian-American Cuisine (e.g., larger portions, adaptations of traditional dishes)",
+            "relationship_reason": "Arancini are a popular dish among Italian-American communities, where traditional Italian recipes were adapted and evolved due to the availability of new ingredients and the need to feed large families, becoming a staple in Italian-American cuisine."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-17T01:15:07.873333Z",
-    "total_ich_elements": 39,
-    "complete_records": 36,
+    "generated_at": "2026-03-19T01:18:51.928438Z",
+    "total_ich_elements": 40,
+    "complete_records": 37,
     "incomplete_records": 3,
     "categories_breakdown": {
       "Traditional Craftsmanship": 16,
       "Social Practices & Rituals": 8,
-      "Culinary Traditions": 7,
+      "Culinary Traditions": 8,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 4,
       "Social Practices & Rituals | Performing Arts": 1,
