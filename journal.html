@@ -242,13 +242,25 @@
         @media print {
             @page { size: A4 portrait; margin: 20mm; }
             body { background: none; padding: 0; margin: 0; }
+            
+            /* Memaksa background color dan style tampil saat diprint (Penting untuk Peta) */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
             .a4-paper { width: 100%; min-height: auto; box-shadow: none; padding: 0; }
             .no-print-area { display: none !important; }
             h1, h2, h3, .figure-caption, .journal-table th { page-break-after: avoid; break-after: avoid; }
-            .figure-container, .quote-box { page-break-inside: avoid; break-inside: avoid; }
+            
+            /* Margin sedikit disesuaikan untuk transisi halaman yang lebih rapi */
+            .figure-container, .quote-box { page-break-inside: avoid; break-inside: avoid; margin-top: 15px; margin-bottom: 20px; }
             p, td { orphans: 3; widows: 3; }
-            canvas { -webkit-print-color-adjust: exact; color-adjust: exact; }
-            .force-page-break { page-break-before: always; }
+            canvas { -webkit-print-color-adjust: exact !important; color-adjust: exact !important; }
+            
+            /* Menghapus paksaan halaman baru agar tidak ada lahan kosong berlebih */
+            .force-page-break { page-break-before: auto !important; break-before: auto !important; }
         }
     </style>
 </head>
@@ -293,10 +305,7 @@
             <p style="margin-top:0;" id="j-prologue-text">Initializing data...</p>
         </div>
 
-        <!-- 2. ANATOMY (Category Visualization) -->
-        <h2 class="section-title" id="j-anatomy-title">2. Anatomy of Tradition</h2>
-        <p id="j-anatomy-text"></p>
-
+        <!-- DIPINDAHKAN: Gambar 1 kini diletakkan DI ATAS section 2 Anatomy -->
         <div class="figure-container">
             <div class="chart-stack">
                 <!-- Wrapper prevents infinite stretching -->
@@ -308,11 +317,17 @@
             </div>
         </div>
 
+        <!-- 2. ANATOMY (Category Visualization) -->
+        <h2 class="section-title" id="j-anatomy-title">2. Anatomy of Tradition</h2>
+        <p id="j-anatomy-text"></p>
+
+
         <!-- 3. MAP DISTRIBUTION (Dynamic from data.json) -->
         <h2 class="section-title">3. Global Distribution Cartography</h2>
         <p>The map below visualizes the geographical footprint of the documented cultural entities. Each node represents a living heritage actively maintained by local communities, plotted automatically by our intelligence engine based on real-time data scraping.</p>
         
-        <div class="figure-container force-page-break">
+        <!-- Dihapus: force-page-break agar tidak memakan lahan kosong secara paksa -->
+        <div class="figure-container">
             <div class="map-container" id="distributionMap"></div>
             <div class="figure-caption">
                 <strong>Figure 2. Interactive Geo-Spatial Map.</strong> Distribution of Intangible Cultural Heritage entities extracted from the actual database (<i>data.json</i>).
@@ -323,7 +338,8 @@
         <h2 class="section-title" id="j-shared-title">4. Echoes Across Borders</h2>
         <p id="j-shared-text"></p>
 
-        <div class="figure-container force-page-break">
+        <!-- Dihapus: force-page-break agar tidak memakan lahan kosong secara paksa -->
+        <div class="figure-container">
             <div class="network-container" id="nodeNetwork"></div>
             <div class="figure-caption">
                 <strong>Figure 3. Shared Heritage Constellation.</strong> (Dynamic Graph) Box nodes represent formally registered cultural elements from our database. Oval nodes represent detected related traditions spanning across different countries, demonstrating shared human history.
@@ -342,7 +358,8 @@
         <p id="j-epilogue-text"></p>
 
         <!-- 7. APPENDIX TABLE (Dynamic from data.json) -->
-        <h2 class="section-title force-page-break">Appendix A: Documented Entities Register</h2>
+        <!-- Menjaga tabel referensi di halaman baru secara wajar -->
+        <h2 class="section-title" style="page-break-before: always;">Appendix A: Documented Entities Register</h2>
         <table class="journal-table" id="dataTable">
             <thead>
                 <tr>
@@ -408,11 +425,12 @@
                 if(layer instanceof L.Marker) { leafletMapInstance.removeLayer(layer); }
             });
 
+            // Perbaikan CSS in-line agar titik lebih kecil (8px) dan warna hijau (teal) ikut tercetak saat diprint
             const customIcon = L.divIcon({
                 className: 'custom-div-icon',
-                html: "<div style='background-color:#0f766e; width:10px; height:10px; border-radius:50%; border:2px solid white; box-shadow: 0 0 4px rgba(0,0,0,0.5);'></div>",
-                iconSize: [14, 14],
-                iconAnchor: [7, 7]
+                html: "<div style='background-color:#0f766e !important; width:8px; height:8px; border-radius:50%; border:1.5px solid white; box-shadow: 0 0 4px rgba(0,0,0,0.5); -webkit-print-color-adjust: exact; print-color-adjust: exact;'></div>",
+                iconSize: [11, 11],
+                iconAnchor: [5.5, 5.5]
             });
 
             let bounds = L.latLngBounds();
