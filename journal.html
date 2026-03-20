@@ -186,16 +186,17 @@
             border-radius: 4px; page-break-inside: avoid;
         }
         
-        .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; margin-bottom: 15px; }
+        /* Fixed Chart Grid to Stack Vertically preventing squished aspect ratios */
+        .chart-stack { display: flex; flex-direction: column; gap: 30px; align-items: center; margin-bottom: 15px; }
         
         /* Fix for broken charts: restrict height */
-        .chart-wrapper { position: relative; height: 260px; width: 100%; display: flex; justify-content: center; }
+        .chart-wrapper { position: relative; height: 280px; width: 100%; display: flex; justify-content: center; }
 
         .figure-caption {
-            font-size: 10pt; font-family: 'Montserrat', sans-serif; margin-top: 15px; color: #64748b;
+            font-size: 10pt; font-family: 'Montserrat', sans-serif; margin-top: 25px; color: #64748b;
             text-align: left; border-left: 3px solid var(--accent-color); padding-left: 10px;
         }
-        .map-container, .network-container { width: 100%; height: 350px; margin-bottom: 15px; border: 1px solid var(--border-color); background-color: #f8fafc; z-index: 1; }
+        .map-container, .network-container { width: 100%; height: 400px; margin-bottom: 15px; border: 1px solid var(--border-color); background-color: #f8fafc; z-index: 1; }
         
         .quote-box {
             font-family: 'Montserrat', sans-serif; font-size: 14px; font-style: italic; color: var(--accent-secondary);
@@ -297,19 +298,19 @@
         <p id="j-anatomy-text"></p>
 
         <div class="figure-container">
-            <div class="chart-grid">
+            <div class="chart-stack">
                 <!-- Wrapper prevents infinite stretching -->
                 <div class="chart-wrapper"><canvas id="barChart"></canvas></div>
                 <div class="chart-wrapper"><canvas id="polarChart"></canvas></div>
             </div>
             <div class="figure-caption">
-                <strong>Figure 1. Data Anatomy.</strong> (Left) Actual category distribution based on agent data collection. (Right) Regional representation of cultural samples.
+                <strong>Figure 1. Data Anatomy.</strong> (Top) Actual category distribution based on agent data collection. (Bottom) Regional representation of cultural samples extracted directly from the geographical coordinates of the database.
             </div>
         </div>
 
         <!-- 3. MAP DISTRIBUTION (Dynamic from data.json) -->
         <h2 class="section-title">3. Global Distribution Cartography</h2>
-        <p>The map below visualizes the geographical footprint of the documented cultural entities. Each node represents a living heritage actively maintained by local communities, plotted automatically by our intelligence engine.</p>
+        <p>The map below visualizes the geographical footprint of the documented cultural entities. Each node represents a living heritage actively maintained by local communities, plotted automatically by our intelligence engine based on real-time data scraping.</p>
         
         <div class="figure-container force-page-break">
             <div class="map-container" id="distributionMap"></div>
@@ -325,7 +326,7 @@
         <div class="figure-container force-page-break">
             <div class="network-container" id="nodeNetwork"></div>
             <div class="figure-caption">
-                <strong>Figure 3. Shared Heritage Constellation.</strong> (Illustrative) Box nodes represent registered entities, oval nodes are detected related traditions.
+                <strong>Figure 3. Shared Heritage Constellation.</strong> (Dynamic Graph) Box nodes represent formally registered cultural elements from our database. Oval nodes represent detected related traditions spanning across different countries, demonstrating shared human history.
             </div>
         </div>
 
@@ -368,6 +369,7 @@
         let resumeDB = {};
         let inventoryData = [];
         let barChartInstance = null;
+        let polarChartInstance = null;
         let leafletMapInstance = null;
 
         // Configuration
@@ -375,59 +377,24 @@
         Chart.defaults.font.family = "'Montserrat', sans-serif";
         Chart.defaults.color = "#4a5568";
 
-        // Initialize Static Charts (Polar & Network)
-        function initStaticCharts() {
-            // Polar Chart (Static)
-            const ctxPolar = document.getElementById('polarChart').getContext('2d');
-            new Chart(ctxPolar, {
-                type: 'polarArea',
-                data: {
-                    labels: ['Asia & Pacific', 'Latin America', 'Europe', 'Africa'],
-                    datasets: [{
-                        data: [14, 8, 5, 2], 
-                        backgroundColor: [
-                            'rgba(15, 118, 110, 0.7)', 'rgba(217, 119, 6, 0.7)', 
-                            'rgba(37, 99, 235, 0.7)', 'rgba(225, 29, 72, 0.7)'
-                        ]
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false, // Prevents infinite stretching
-                    plugins: { 
-                        legend: { position: 'bottom', labels: { boxWidth: 10 } },
-                    }
-                }
-            });
-
-            // Vis-Network (Static Illustrative)
-            const nodes = new vis.DataSet([
-                { id: 1, label: 'Kano Dye\n(Nigeria)', group: 'main' },
-                { id: 2, label: 'Thai Silk\n(Thailand)', group: 'main' },
-                { id: 101, label: 'Adire\n(Yoruba)', group: 'shared' },
-                { id: 201, label: 'Kebaya\n(Archipelago)', group: 'shared' },
-                { id: 202, label: 'Silk Road\n(China)', group: 'shared' }
-            ]);
-            const edges = new vis.DataSet([
-                { from: 1, to: 101, label: 'Indigo Technique' },
-                { from: 2, to: 201, label: 'Fabric Material' },
-                { from: 2, to: 202, label: 'Historical Origin' },
-                { from: 1, to: 2, label: 'Natural Dyeing', dashes: true }
-            ]);
-            const container = document.getElementById('nodeNetwork');
-            const data = { nodes: nodes, edges: edges };
-            const options = {
-                groups: {
-                    main: { color: { background: '#9f1239', border: '#7e0e2d' }, font: { color: '#ffffff' }, shape: 'box' },
-                    shared: { color: { background: '#f8fafc', border: '#cbd5e1' }, font: { color: '#4a5568' }, shape: 'ellipse' }
-                },
-                edges: { font: { size: 10, align: 'middle' }, color: '#94a3b8', width: 1.5 },
-                physics: { enabled: false } 
-            };
-            new vis.Network(container, data, options);
+        // Helper string truncator for network labels
+        function truncateStr(str, n) {
+            if(!str) return "Unknown";
+            return (str.length > n) ? str.substr(0, n-1) + '...' : str;
         }
 
-        // Initialize dynamic Map from Data.json
+        // Region Mapper for the Polar Chart
+        function getRegion(country) {
+            const c = country.toLowerCase();
+            if (['japan', 'china', 'south korea', 'vietnam', 'philippines', 'indonesia', 'malaysia', 'myanmar', 'thailand', 'india', 'pakistan', 'iran', 'bangladesh'].includes(c)) return 'Asia & Pacific';
+            if (['mexico', 'peru', 'brazil', 'usa', 'colombia', 'argentina', 'chile', 'ecuador', 'bolivia', 'venezuela', 'canada'].includes(c)) return 'Americas';
+            if (['france', 'greece', 'italy', 'spain', 'russia', 'ukraine', 'hungary', 'poland', 'romania', 'slovakia', 'belgium', 'switzerland', 'germany', 'united kingdom'].includes(c)) return 'Europe';
+            if (['nigeria', 'tanzania', 'mali', 'morocco', 'algeria', 'tunisia', 'uganda'].includes(c)) return 'Africa';
+            if (['australia', 'new zealand', 'vanuatu'].includes(c)) return 'Oceania';
+            return 'Other Regions';
+        }
+
+        // Render Dynamic Maps from Data.json
         function renderMap() {
             if (!leafletMapInstance) {
                 leafletMapInstance = L.map('distributionMap', { zoomControl: true }).setView([20.0, 0.0], 2);
@@ -437,7 +404,6 @@
                 }).addTo(leafletMapInstance);
             }
 
-            // Clear existing markers if any
             leafletMapInstance.eachLayer((layer) => {
                 if(layer instanceof L.Marker) { leafletMapInstance.removeLayer(layer); }
             });
@@ -456,7 +422,7 @@
                 if (item.location && item.location.lat && item.location.lng) {
                     L.marker([item.location.lat, item.location.lng], {icon: customIcon})
                      .addTo(leafletMapInstance)
-                     .bindPopup(`<b>${item.name}</b><br>${item.location.country || 'Unknown'}`);
+                     .bindPopup(`<b>${item.element_name}</b><br>${item.location.country || 'Unknown'}`);
                     
                     bounds.extend([item.location.lat, item.location.lng]);
                     addedNodes++;
@@ -480,7 +446,7 @@
 
             inventoryData.forEach(item => {
                 const tr = document.createElement('tr');
-                const name = item.name || 'Unknown Entity';
+                const name = item.element_name || 'Unknown Entity';
                 const country = (item.location && item.location.country) ? item.location.country : 'Unspecified';
                 const category = item.category || 'Uncategorized';
                 
@@ -504,15 +470,85 @@
             }
 
             inventoryData.forEach(item => {
-                if (item.source_url) {
+                if (item.source_urls && item.source_urls.length > 0) {
+                    // Just take the first primary URL to avoid making the list too long
+                    const primaryUrl = item.source_urls[0];
                     const li = document.createElement('li');
-                    li.innerHTML = `<b>${item.name || 'Dataset'}</b>. Source: <a href="${item.source_url}" target="_blank">${item.source_url}</a>`;
+                    li.innerHTML = `<b>${item.element_name || 'Dataset'}</b>. Source: <a href="${primaryUrl}" target="_blank">${truncateStr(primaryUrl, 60)}</a>`;
                     refList.appendChild(li);
                 }
             });
         }
 
-        // Render Dynamic Bar Chart from JSON
+        // Render Dynamic Network Graph (Vis-Network) from data.json
+        function renderDynamicNetwork() {
+            const nodesArr = [];
+            const edgesArr = [];
+            const existingNodeIds = new Set();
+
+            inventoryData.forEach(item => {
+                // Add Main Node
+                if (!existingNodeIds.has(item.id)) {
+                    nodesArr.push({ 
+                        id: item.id, 
+                        label: `${truncateStr(item.element_name, 20)}\n(${item.location.country})`, 
+                        group: 'main' 
+                    });
+                    existingNodeIds.add(item.id);
+                }
+
+                // Add Shared/Related Nodes
+                if (item.shared_heritage_detection && item.shared_heritage_detection.is_shared) {
+                    item.shared_heritage_detection.related_elements.forEach(rel => {
+                        // Create a reliable unique ID for shared elements
+                        const relId = 'shared_' + rel.element_name.toLowerCase().replace(/\s+/g, '_');
+                        
+                        if (!existingNodeIds.has(relId)) {
+                            nodesArr.push({ 
+                                id: relId, 
+                                label: `${truncateStr(rel.element_name, 20)}\n(${rel.country})`, 
+                                group: 'shared' 
+                            });
+                            existingNodeIds.add(relId);
+                        }
+
+                        // Create Connection
+                        edgesArr.push({ 
+                            from: item.id, 
+                            to: relId, 
+                            label: truncateStr(rel.relationship_reason, 15), 
+                            title: rel.relationship_reason // tooltip on hover
+                        });
+                    });
+                }
+            });
+
+            const container = document.getElementById('nodeNetwork');
+            const data = { nodes: new vis.DataSet(nodesArr), edges: new vis.DataSet(edgesArr) };
+            const options = {
+                groups: {
+                    main: { color: { background: '#9f1239', border: '#7e0e2d' }, font: { color: '#ffffff' }, shape: 'box' },
+                    shared: { color: { background: '#f8fafc', border: '#cbd5e1' }, font: { color: '#4a5568' }, shape: 'ellipse' }
+                },
+                edges: { font: { size: 9, align: 'middle' }, color: '#94a3b8', width: 1 },
+                physics: { 
+                    enabled: true, 
+                    solver: 'forceAtlas2Based', 
+                    forceAtlas2Based: { gravitationalConstant: -30, centralGravity: 0.005, springLength: 200, springConstant: 0.18 },
+                    stabilization: { iterations: 150 } 
+                },
+                interaction: { dragNodes: false, zoomView: true, dragView: true }
+            };
+            
+            const network = new vis.Network(container, data, options);
+            
+            // Stop jittering after layout stabilizes
+            network.on("stabilizationIterationsDone", function () {
+                network.setOptions( { physics: false } );
+            });
+        }
+
+        // Render Dynamic Bar Chart
         function updateBarChart(categoriesObj) {
             const ctxBar = document.getElementById('barChart').getContext('2d');
             const labels = Object.keys(categoriesObj);
@@ -533,11 +569,65 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false, // Prevents infinite stretching
+                    maintainAspectRatio: false,
                     plugins: { 
-                        legend: { display: false }
+                        legend: { display: false },
+                        title: { display: true, text: 'Actual Category Distribution' }
                     },
                     scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
+                }
+            });
+        }
+
+        // Render Dynamic Polar Chart
+        function updatePolarChart() {
+            const ctxPolar = document.getElementById('polarChart').getContext('2d');
+            
+            // Calculate regional tally from actual data
+            const regionCounts = { 'Asia & Pacific': 0, 'Americas': 0, 'Europe': 0, 'Africa': 0, 'Oceania': 0, 'Other Regions': 0 };
+            inventoryData.forEach(item => {
+                if (item.location && item.location.country) {
+                    const r = getRegion(item.location.country);
+                    if (regionCounts[r] !== undefined) {
+                        regionCounts[r]++;
+                    }
+                }
+            });
+
+            // Filter out empty regions
+            const labels = [];
+            const data = [];
+            const colors = ['rgba(15, 118, 110, 0.7)', 'rgba(217, 119, 6, 0.7)', 'rgba(37, 99, 235, 0.7)', 'rgba(225, 29, 72, 0.7)', 'rgba(139, 92, 246, 0.7)', 'rgba(100, 116, 139, 0.7)'];
+            const activeColors = [];
+            
+            let colorIdx = 0;
+            for (const [key, value] of Object.entries(regionCounts)) {
+                if (value > 0) {
+                    labels.push(key);
+                    data.push(value);
+                    activeColors.push(colors[colorIdx % colors.length]);
+                    colorIdx++;
+                }
+            }
+
+            if (polarChartInstance) { polarChartInstance.destroy(); }
+
+            polarChartInstance = new Chart(ctxPolar, {
+                type: 'polarArea',
+                data: {
+                    labels: labels.length > 0 ? labels : ['No Data'],
+                    datasets: [{
+                        data: data.length > 0 ? data : [1], 
+                        backgroundColor: activeColors.length > 0 ? activeColors : ['#ccc']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { 
+                        legend: { position: 'bottom', labels: { boxWidth: 10 } },
+                        title: { display: true, text: 'Actual Regional Distribution' }
+                    }
                 }
             });
         }
@@ -570,11 +660,11 @@
             document.getElementById('j-epilogue-title').textContent = sections.epilogue?.title || "6. Epilogue";
             document.getElementById('j-epilogue-text').textContent = sections.epilogue?.text || "";
 
-            // Update Chart with actual data statistics
+            // Update charts with actual data statistics
             updateBarChart(entry.statistics?.categories_distribution || {});
         }
 
-        // Master Fetch Function (Gets both resume.json and data.json)
+        // Master Fetch Function
         async function fetchAllData() {
             try {
                 // 1. Fetch Narrative Journal (resume.json)
@@ -585,7 +675,7 @@
                     console.warn('resume.json not found');
                 }
 
-                // 2. Fetch Actual Data for Maps/Tables (data.json)
+                // 2. Fetch Actual Data for Maps/Tables/Network (data.json)
                 const resData = await fetch('data.json');
                 if (resData.ok) {
                     const rawData = await resData.json();
@@ -617,10 +707,12 @@
                     switchJournal(availableQuarters[0]);
                 }
 
-                // Render dynamic components using data.json
+                // Render all dynamic components using actual data.json
                 renderMap();
                 renderTable();
                 renderReferences();
+                updatePolarChart();
+                renderDynamicNetwork();
 
             } catch (error) {
                 console.error("Data Fetch Error:", error);
@@ -631,7 +723,6 @@
 
         // Init
         window.addEventListener('DOMContentLoaded', () => {
-            initStaticCharts();
             fetchAllData();
         });
     </script>
