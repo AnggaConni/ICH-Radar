@@ -103,6 +103,35 @@
     ::-webkit-scrollbar-track { background: #141414; }
     ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #555; }
+
+    /* --- STYLE TOMBOL JURNAL GLOWING --- */
+    @keyframes pulse-glow {
+      0% { box-shadow: 0 0 5px #ff00aa, inset 0 0 5px #ff00aa; transform: scale(1); }
+      50% { box-shadow: 0 0 15px #ff00aa, 0 0 5px #ff00aa, inset 0 0 10px #ff00aa; transform: scale(1.02); }
+      100% { box-shadow: 0 0 5px #ff00aa, inset 0 0 5px #ff00aa; transform: scale(1); }
+    }
+
+    .btn-journal-glow {
+      background-color: rgba(255, 0, 170, 0.1);
+      color: #ff00aa;
+      border: 1px solid #ff00aa;
+      border-radius: 4px; /* Sesuaikan jika tombol lain lebih membulat */
+      padding: 8px 16px; /* Sesuaikan dengan padding tombol Anda yang lain */
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      animation: pulse-glow 2s infinite; /* Efek denyut meminta diklik */
+      margin-left: 10px; /* Jarak dengan tombol sebelahnya */
+    }
+
+    .btn-journal-glow:hover {
+      background-color: #ff00aa;
+      color: #111; /* Warna teks gelap saat dihover agar kontras */
+      box-shadow: 0 0 20px #ff00aa, 0 0 40px #ff00aa;
+      animation: none; /* Matikan animasi saat di-hover */
+      transform: scale(1.05);
+    }
+
   </style>
   
 </head>
@@ -128,12 +157,16 @@
          </button>
 
               <button onclick="openGraphModal()" class="text-gray-300 hover:text-brand-accent transition-colors flex items-center gap-1.5 text-xs font-bold px-2 py-1.5 rounded-md border border-transparent hover:border-brand-700 hover:bg-brand-800" title="Cultural Diffusion Graph">
-          <i class="ph ph-git-branch text-lg"></i> <span class="hidden sm:inline" data-i18n="btnGraph">Diffusion Map</span>
-        </button>
+              <i class="ph ph-git-branch text-lg"></i> <span class="hidden sm:inline" data-i18n="btnGraph">Diffusion Map</span>
+            </button>
 
               <button onclick="exportToXML()" class="text-gray-300 hover:text-brand-secondary transition-colors flex items-center gap-1.5 text-xs font-bold px-2 py-1.5 rounded-md border border-transparent hover:border-brand-700 hover:bg-brand-800" title="Export Dublin Core XML">
-           <i class="ph ph-export text-lg"></i> <span class="hidden sm:inline" data-i18n="btnExport">Export XML</span>
-        </button>
+              <i class="ph ph-export text-lg"></i> <span class="hidden sm:inline" data-i18n="btnExport">Export XML</span>
+            </button>
+
+              <button class="btn-journal-glow" onclick="window.open('journal.html', '_blank')">
+              📖 Journal
+            </button>
 
               <button onclick="toggleLang()" class="bg-brand-800 border border-brand-700 hover:border-brand-500 px-3 py-1.5 rounded-md text-xs font-bold transition-colors flex items-center gap-2 ml-2">
           <i class="ph ph-translate text-brand-secondary"></i>
