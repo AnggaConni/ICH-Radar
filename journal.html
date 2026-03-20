@@ -269,6 +269,10 @@
             .chart-wrapper {
                 height: 250px !important; /* Mengunci tinggi grafik agar browser tidak panik */
             }
+            /* Tambahkan ini agar Peta & Network sedikit lebih kecil saat diprint */
+            .map-container, .network-container {
+                height: 280px !important; 
+            }
         }
 
     </style>
@@ -339,7 +343,7 @@
         <h2 class="section-title">3. Global Distribution Cartography</h2>
         <p>The map below visualizes the geographical footprint of the documented cultural entities. Each node represents a living heritage actively maintained by local communities, plotted automatically by our intelligence engine based on real-time data scraping.</p>
         
-        <div class="figure-container force-page-break">
+        <div class="figure-container">
             <div class="map-container" id="distributionMap"></div>
             <div class="figure-caption">
                 <strong>Figure 3. Interactive Geo-Spatial Map.</strong> Distribution of Intangible Cultural Heritage entities extracted from the actual database (<i>data.json</i>).
@@ -350,7 +354,7 @@
         <h2 class="section-title" id="j-shared-title">4. Echoes Across Borders</h2>
         <p id="j-shared-text"></p>
 
-        <div class="figure-container force-page-break">
+        <div class="figure-container">
             <div class="network-container" id="nodeNetwork"></div>
             <div class="figure-caption">
                 <strong>Figure 4. Shared Heritage Constellation.</strong> (Dynamic Graph) Box nodes represent formally registered cultural elements from our database. Oval nodes represent detected related traditions spanning across different countries, demonstrating shared human history.
