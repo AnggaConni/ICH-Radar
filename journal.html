@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jejak Tak Kasat Mata: Jurnal Visual Warisan Budaya Takbenda</title>
+    <title>Intangible Cultural Heritage Journal</title>
     
     <!-- Menggunakan font serif klasik untuk nuansa akademik & storytelling -->
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
            ========================================= */
         :root {
             --bg-color: #e5e7eb;
-            --paper-color: #ffffff; /* Warna kertas putih bersih */
+            --paper-color: #ffffff;
             --text-color: #2d3748;
             --heading-color: #1a202c;
             --border-color: #cbd5e1;
@@ -55,6 +55,7 @@
             box-sizing: border-box;
             text-align: justify;
             font-size: 11pt;
+            position: relative;
         }
 
         .no-print-area {
@@ -64,14 +65,45 @@
             padding: 15px 30px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 210mm;
+            box-sizing: border-box;
+        }
+
+        /* UI Controls (Dropdown & Buttons) */
+        .controls-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        select.journal-select {
+            padding: 10px 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            border: 2px solid var(--accent-color);
+            border-radius: 5px;
+            color: var(--accent-color);
+            background-color: #fff0f5;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        select.journal-select:hover {
+            background-color: var(--accent-color);
+            color: white;
         }
 
         button {
-            background-color: var(--accent-color);
+            background-color: var(--accent-secondary);
             color: white;
             border: none;
-            padding: 12px 24px;
-            font-size: 16px;
+            padding: 11px 24px;
+            font-size: 15px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             border-radius: 5px;
@@ -79,19 +111,26 @@
             transition: background 0.3s;
         }
 
-        button:hover { background-color: #880e4f; }
+        button:hover { background-color: #0d5c56; }
 
         /* =========================================
            TYPOGRAPHY & FORMATTING
            ========================================= */
-        h1, h2, h3, h4 {
+        .issn-header {
+            text-align: right;
             font-family: 'Montserrat', sans-serif;
-            color: var(--heading-color);
+            font-size: 12px;
+            font-weight: 600;
+            color: #718096;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
         }
+
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: var(--heading-color); }
 
         h1.title {
             text-align: center;
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 700;
             margin-bottom: 15px;
             line-height: 1.3;
@@ -123,109 +162,55 @@
             color: var(--accent-color);
         }
 
-        .abstract-text {
-            font-size: 11pt;
-            font-weight: 600;
-            text-align: justify;
-        }
+        .abstract-text { font-size: 11pt; font-weight: 600; text-align: justify; }
 
-        /* Teks Bercerita (Drop Cap) */
         .story-start::first-letter {
-            font-size: 3.5em;
-            float: left;
-            line-height: 0.8;
-            margin-right: 8px;
-            margin-top: 4px;
-            color: var(--accent-color);
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
+            font-size: 3.5em; float: left; line-height: 0.8; margin-right: 8px; margin-top: 4px;
+            color: var(--accent-color); font-family: 'Montserrat', sans-serif; font-weight: 700;
         }
 
         h2.section-title {
-            font-size: 16px;
-            letter-spacing: 1px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 5px;
-            margin-top: 35px;
-            text-transform: uppercase;
+            font-size: 16px; letter-spacing: 1px; border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px; margin-top: 35px; text-transform: uppercase;
         }
 
         p { margin-bottom: 16px; }
 
-        .two-columns {
-            column-count: 2;
-            column-gap: 10mm;
-            text-align: justify;
-        }
+        .two-columns { column-count: 2; column-gap: 10mm; text-align: justify; }
 
         /* =========================================
            VISUALIZATION CONTAINERS
            ========================================= */
         .figure-container {
-            margin: 35px 0;
-            padding: 15px;
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 4px;
-            page-break-inside: avoid; /* Mencegah terpotong saat print */
+            margin: 35px 0; padding: 15px; background: white; border: 1px solid #e2e8f0;
+            border-radius: 4px; page-break-inside: avoid;
         }
-
-        .chart-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
+        .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; margin-bottom: 15px; }
         .figure-caption {
-            font-size: 10pt;
-            font-family: 'Montserrat', sans-serif;
-            margin-top: 15px;
-            color: #64748b;
-            text-align: left;
-            border-left: 3px solid var(--accent-color);
-            padding-left: 10px;
+            font-size: 10pt; font-family: 'Montserrat', sans-serif; margin-top: 15px; color: #64748b;
+            text-align: left; border-left: 3px solid var(--accent-color); padding-left: 10px;
         }
-
-        .map-container, .network-container {
-            width: 100%;
-            height: 400px;
-            margin-bottom: 15px;
-            border: 1px solid var(--border-color);
-            background-color: #f8fafc;
-            z-index: 1;
-        }
-
-        /* Callout Quotes */
+        .map-container, .network-container { width: 100%; height: 350px; margin-bottom: 15px; border: 1px solid var(--border-color); background-color: #f8fafc; z-index: 1; }
         .quote-box {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-            font-style: italic;
-            color: var(--accent-secondary);
-            border-left: 4px solid var(--accent-secondary);
-            padding: 15px 20px;
-            margin: 25px 0;
-            background-color: #f0fdfa;
-            page-break-inside: avoid;
+            font-family: 'Montserrat', sans-serif; font-size: 14px; font-style: italic; color: var(--accent-secondary);
+            border-left: 4px solid var(--accent-secondary); padding: 15px 20px; margin: 25px 0; background-color: #f0fdfa; page-break-inside: avoid;
         }
+
+        /* Error/Loading state */
+        .loader-message { text-align: center; font-family: 'Montserrat', sans-serif; color: #718096; padding: 50px; font-style: italic; }
 
         /* =========================================
-           STYLING CETAK PDF (Print Media Queries)
+           STYLING CETAK PDF
            ========================================= */
         @media print {
             @page { size: A4 portrait; margin: 20mm; }
             body { background: none; padding: 0; margin: 0; }
             .a4-paper { width: 100%; min-height: auto; box-shadow: none; padding: 0; }
             .no-print-area { display: none !important; }
-            
-            /* Kontrol Pemotongan Halaman */
             h1, h2, h3, .figure-caption { page-break-after: avoid; break-after: avoid; }
             .figure-container, .quote-box { page-break-inside: avoid; break-inside: avoid; }
             p { orphans: 3; widows: 3; }
             canvas { -webkit-print-color-adjust: exact; color-adjust: exact; }
-            
-            /* Memaksa elemen tertentu untuk turun ke halaman baru jika terlalu sempit */
             .force-page-break { page-break-before: always; }
         }
     </style>
@@ -233,144 +218,104 @@
 <body>
 
     <div class="no-print-area">
-        <button onclick="window.print()">🖨️ Cetak Jurnal (Save as PDF)</button>
-        <p style="font-size: 13px; margin-top: 10px; color: #4a5568;"><b>Tips Cetak:</b> Aktifkan <i>Background graphics</i> pada jendela print agar warna pastel pada laporan ikut tercetak.</p>
+        <div class="controls-container">
+            <select id="journal-select" class="journal-select" onchange="switchJournal(this.value)">
+                <option value="">Memuat Data Jurnal...</option>
+            </select>
+            <button onclick="window.print()">🖨️ Cetak Jurnal (PDF)</button>
+        </div>
+        <p style="font-size: 13px; margin: 0; color: #4a5568;">
+            <b>Tips Cetak:</b> Aktifkan <i>Background graphics</i> pada jendela print agar warna pastel tercetak.
+        </p>
     </div>
 
     <div class="a4-paper" id="report-content">
         
+        <!-- ISSN -->
+        <div class="issn-header">ISSN: 2987-XXXX (Online)</div>
+
         <!-- TITLE -->
-        <h1 class="title">Jejak Tak Kasat Mata: Narasi Visual Warisan Budaya Takbenda dan Jaringan Akar Bersama (Shared Heritage)</h1>
+        <h1 class="title" id="j-title">Memuat Jurnal...</h1>
         
         <div class="authors">
-            <strong>Tim Peneliti Etnografi Digital<sup>1</sup></strong><br>
-            <sup>1</sup> Lembaga Riset Antropologi Global, Jakarta<br>
+            <strong>Sistem Agen Etnografi Otonom<sup>1</sup></strong><br>
+            <sup>1</sup> ICH Shared Heritage Intelligence Engine<br>
+            <span id="j-date" style="font-size: 12px; color: #a0aec0;"></span>
         </div>
 
         <!-- ABSTRACT -->
         <div class="abstract-container">
             <h2 class="abstract-title">Abstrak</h2>
-            <div class="abstract-text">
-                Di balik setiap artefak kuno, tarian seremonial, dan resep leluhur, terdapat bisikan sejarah umat manusia yang menolak untuk dilupakan. Jurnal visual ini menganalisis himpunan data dari 40 elemen Warisan Budaya Takbenda (Intangible Cultural Heritage/ICH) yang tersebar dari lembah Oaxaca di Meksiko hingga hutan hujan di Semenanjung Malaya. Melalui pendekatan antropologi digital dan visualisasi data multi-dimensi, studi ini menyingkap realitas yang menakjubkan: bahwa batas-batas negara modern hanyalah garis ilusi bagi tradisi. Hampir 75% warisan budaya yang dianalisis memiliki akar "Shared Heritage", membuktikan bahwa budaya manusia sejatinya adalah tenunan raksasa dari migrasi, asimilasi, dan perdagangan.
-            </div>
+            <div class="abstract-text" id="j-abstract">Mencari file resume.json...</div>
         </div>
 
         <!-- 1. INTRODUCTION -->
-        <h2 class="section-title">1. Prolog: Benang Merah Peradaban</h2>
+        <h2 class="section-title" id="j-prologue-title">1. Prolog</h2>
         <div class="two-columns">
-            <p class="story-start">K</p>
-            <p style="margin-top:0;">etika seorang pengrajin di Jepang mengikat benang sutra untuk menghasilkan kain <em>Yuki-tsumugi</em>, tangannya bergerak mengikuti ritme yang telah berdetak selama ribuan tahun. Ribuan kilometer dari sana, di bawah terik matahari Nigeria, seorang pencelup menenggelamkan kain ke dalam lubang tarum (indigo) <em>Kofar Mata</em> dengan doa-doa yang sama untuk memohon warna biru yang abadi.</p>
-            <p>Warisan Budaya Takbenda (ICH) bukanlah entitas mati yang disimpan di balik etalase kaca museum. Ia adalah napas yang dihembuskan dari generasi ke generasi. Namun, dalam pendokumentasian modern, kita seringkali menjebak budaya ini ke dalam kotak-kotak kedaulatan negara. Laporan ini berupaya membebaskan data tersebut dengan menelusuri dataset inventarisasi global, memetakan bukan hanya "apa" dan "di mana", tetapi "bagaimana" mereka saling terhubung dalam jaringan rahasia sejarah manusia.</p>
+            <p class="story-start" id="j-prologue-dropcap">-</p>
+            <p style="margin-top:0;" id="j-prologue-text">Silakan tunggu sebentar.</p>
         </div>
 
-        <!-- 2. ANATOMI BUDAYA (Visualisasi Kategori & Wilayah) -->
-        <h2 class="section-title">2. Anatomi Tradisi: Karsa, Kriya, dan Rasa</h2>
-        <p>Dari 40 sampel entitas yang dianalisis, kita dapat melihat anatomi dari apa yang manusia anggap berharga untuk diwariskan. Keterampilan tangan (Craftsmanship) mendominasi kelangsungan hidup sejarah kita.</p>
+        <!-- 2. ANATOMY (Visualisasi Kategori) -->
+        <h2 class="section-title" id="j-anatomy-title">2. Anatomi Tradisi</h2>
+        <p id="j-anatomy-text"></p>
 
         <div class="figure-container">
             <div class="chart-grid">
-                <div>
-                    <canvas id="barChart"></canvas>
-                </div>
-                <div>
-                    <canvas id="polarChart"></canvas>
-                </div>
+                <div><canvas id="barChart"></canvas></div>
+                <div><canvas id="polarChart"></canvas></div>
             </div>
             <div class="figure-caption">
-                <strong>Gambar 1. Anatomi Data.</strong> (Kiri) Grafik Batang menunjukkan dominasi "Traditional Craftsmanship" (40%) sebagai wujud fisik dari memori takbenda. (Kanan) Grafik Area Polar merepresentasikan agregat distribusi sampel berdasarkan kawasan, memperlihatkan kekayaan tradisi di wilayah Asia dan Amerika Latin dalam dataset ini.
+                <strong>Gambar 1. Anatomi Data.</strong> (Kiri) Distribusi kategori aktual berdasarkan pendataan agen. (Kanan) Ilustrasi sampel sebaran regional budaya (Static).
             </div>
         </div>
 
-        <p>Bukan suatu kebetulan bahwa <em>Traditional Craftsmanship</em> memegang porsi terbesar. Entah itu meracik lumpur untuk tembikar <em>Talavera</em> di Meksiko atau menyusun mozaik kayu <em>Khatamkari</em> di Iran, manusia purba menggunakan kriya sebagai bahasa fisik untuk mengabadikan nilai-nilai spiritual dan sosial mereka ke dalam objek yang dapat disentuh.</p>
+        <!-- 3. SHARED HERITAGE (Network Vis) -->
+        <h2 class="section-title" id="j-shared-title">3. Gema Lintas Batas</h2>
+        <p id="j-shared-text"></p>
 
-        <!-- 3. PEMETAAN GEOSPASIAL (Leaflet Map) -->
-        <h2 class="section-title">3. Kartografi Memori: Pemetaan Spasial</h2>
-        <p>Mari kita lihat di mana titik-titik memori ini berlabuh. Peta di bawah ini tidak hanya memetakan lokasi originasi sebuah budaya, tetapi juga menarik garis khayal (putus-putus merah) yang melambangkan rute difusi budaya, perdagangan, dan migrasi masa lalu.</p>
-
-        <div class="figure-container force-page-break"> <!-- Paksa turun halaman jika di-print -->
-            <div class="map-container" id="distributionMap"></div>
-            <div class="figure-caption">
-                <strong>Gambar 2. Peta Kartografi Memori.</strong> Titik biru mewakili lokasi originasi tradisi (misal: Pinisi di Sulawesi, Tejate di Oaxaca). Garis merah putus-putus menggambarkan konsep "Shared Heritage"—bagaimana teknik pewarnaan nila dari Afrika menyebar melalui jalur sutra, atau bagaimana desain perahu Nusantara mencapai pesisir Australia (Jalur Teripang).
-            </div>
-        </div>
-
-        <!-- 4. TEMA INTI (Radar Chart) -->
-        <div class="two-columns">
-            <p>Di balik lokasi geografis, algoritma pembacaan teks <em>(Gemini Tags)</em> berhasil mengekstraksi nilai-nilai intrinsik dari setiap dokumen inventaris. Melalui Grafik Radar (Gambar 3), kita dapat melihat bahwa <strong>Identitas Komunitas</strong> dan <strong>Harmoni dengan Alam (Nature/Agro)</strong> adalah dua motor penggerak utama mengapa sebuah tradisi dipertahankan. Konsep seperti <em>Teko Porã</em> di Paraguay bukanlah sekadar kebiasaan, melainkan filosofi ekologis untuk bertahan hidup (Survival).</p>
-            
-            <div style="margin-top: 20px;">
-                <canvas id="radarChart"></canvas>
-            </div>
-            <div class="figure-caption" style="margin-bottom: 20px;">
-                <strong>Gambar 3. Grafik Radar Tema Inti.</strong>
-            </div>
-        </div>
-
-        <!-- 5. JARINGAN SHARED HERITAGE (Vis.js) -->
-        <h2 class="section-title">4. Gema Lintas Batas: Jaringan Warisan Bersama</h2>
-        <p>Bagian paling menakjubkan dari riset ini terungkap melalui deteksi <code>shared_heritage_detection</code>. Algoritma menyoroti bahwa budaya seringkali menolak paspor. Tradisi membuat <em>Couscous</em> di Kalampaki, Yunani, menggemakan tradisi di Maroko dan Aljazair. Tradisi mengusir roh jahat <em>Soufflaculs</em> di Prancis, memiliki ukiran kembar di Jerman sejak abad ke-16.</p>
-
-        <div class="figure-container">
+        <div class="figure-container force-page-break">
             <div class="network-container" id="nodeNetwork"></div>
             <div class="figure-caption">
-                <strong>Gambar 4. Konstelasi Shared Heritage.</strong> Node kotak (tengah) melambangkan entitas yang terdaftar, sementara node oval (luar) adalah tradisi serumpun di negara lain. Simpul ini membuktikan bahwa budaya Sutra, Tembikar, dan Ritual Pagan Eropa memiliki satu akar nenek moyang komunal.
+                <strong>Gambar 2. Konstelasi Shared Heritage.</strong> (Ilustratif) Node kotak melambangkan entitas terdaftar, node oval adalah tradisi serumpun yang terdeteksi.
             </div>
         </div>
 
+        <!-- 4. PERIODIC REPORT (Bab Baru dari Python) -->
+        <h2 class="section-title" id="j-periodic-title">4. Status Implementasi (Periodic Report)</h2>
         <div class="quote-box">
-            "Hampir 75% dari sampel budaya yang dianalisis menolak diklaim oleh satu negara tunggal. Warisan budaya sejatinya adalah monumen atas dialog tanpa henti antar peradaban; ia adalah bukti bahwa manusia selalu bergerak, berbagi, dan meminjam satu sama lain."
+            "Seksi ini mengadopsi kerangka kerja Laporan Berkala (Form ICH-10 UNESCO), meninjau kapasitas institusional dan legislatif dalam mengelola warisan budaya pada kuartal terkait."
         </div>
+        <p id="j-periodic-text"></p>
 
-        <!-- 6. CONCLUSION -->
-        <h2 class="section-title">5. Epilog</h2>
-        <p>Dari laporan visual ini, kesimpulan yang dapat ditarik sangat jelas: memetakan Warisan Budaya Takbenda berarti memetakan silsilah umat manusia. Praktik-praktik ini—apakah itu melukis topeng <em>Reog Ponorogo</em>, merajut <em>Matyó</em> di Hungaria, atau menyanyikan epik <em>Suguidanon</em> di Filipina—hanyalah berbagai dialek berbeda dari satu bahasa yang sama: bahasa tentang keinginan manusia untuk diingat. Melindungi ICH bukan berarti mengurung mereka dalam batas negara, melainkan merayakan keterhubungan global kita yang luhur.</p>
+        <!-- 5. CONCLUSION -->
+        <h2 class="section-title" id="j-epilogue-title">5. Epilog</h2>
+        <p id="j-epilogue-text"></p>
 
     </div>
 
-    <!-- SCRIPT INITIALIZATION -->
+    <!-- LOGIC PROGRAM -->
     <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            // Matikan animasi untuk kompatibilitas Print PDF
+        let resumeDB = {};
+        let barChartInstance = null;
+
+        // Inisialisasi Chart Default (Static Data)
+        function initStaticCharts() {
             Chart.defaults.animation = false; 
             Chart.defaults.font.family = "'Montserrat', sans-serif";
             Chart.defaults.color = "#4a5568";
 
-            // 1. BAR CHART (Kategori)
-            const ctxBar = document.getElementById('barChart').getContext('2d');
-            new Chart(ctxBar, {
-                type: 'bar',
-                data: {
-                    labels: ['Craftsmanship', 'Culinary', 'Social/Ritual', 'Performing Arts'],
-                    datasets: [{
-                        label: 'Jumlah Entitas',
-                        data: [16, 8, 8, 8],
-                        backgroundColor: 'rgba(159, 18, 57, 0.8)', // Merah Marun
-                        borderRadius: 4
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: { 
-                        legend: { display: false },
-                        title: { display: true, text: 'Distribusi Kategori ICH' }
-                    },
-                    scales: { y: { beginAtZero: true } }
-                }
-            });
-
-            // 2. POLAR AREA CHART (Distribusi Benua/Region - Aggregated from JSON)
+            // Polar Chart (Static)
             const ctxPolar = document.getElementById('polarChart').getContext('2d');
             new Chart(ctxPolar, {
                 type: 'polarArea',
                 data: {
                     labels: ['Asia & Pasifik', 'Amerika Latin', 'Eropa', 'Afrika'],
                     datasets: [{
-                        data: [14, 8, 5, 2], // Representasi kasar dari sebaran data di JSON
+                        data: [14, 8, 5, 2], 
                         backgroundColor: [
-                            'rgba(15, 118, 110, 0.7)', // Hijau Tua
-                            'rgba(217, 119, 6, 0.7)',  // Orange
-                            'rgba(37, 99, 235, 0.7)',  // Biru
-                            'rgba(225, 29, 72, 0.7)'   // Rose
+                            'rgba(15, 118, 110, 0.7)', 'rgba(217, 119, 6, 0.7)', 
+                            'rgba(37, 99, 235, 0.7)', 'rgba(225, 29, 72, 0.7)'
                         ]
                     }]
                 },
@@ -378,116 +323,25 @@
                     responsive: true,
                     plugins: { 
                         legend: { position: 'bottom', labels: { boxWidth: 10 } },
-                        title: { display: true, text: 'Sebaran Regional' }
+                        title: { display: true, text: 'Sebaran Regional (Ilustratif)' }
                     }
                 }
             });
 
-            // 3. RADAR CHART (Tema Inti dari Gemini Tags)
-            const ctxRadar = document.getElementById('radarChart').getContext('2d');
-            new Chart(ctxRadar, {
-                type: 'radar',
-                data: {
-                    labels: ['Identitas & Kebanggaan', 'Spiritual/Ritual', 'Alam & Ekologi', 'Perayaan/Festivity', 'Ketahanan (Survival)'],
-                    datasets: [{
-                        label: 'Intensitas Tema dalam Dataset',
-                        data: [90, 75, 85, 60, 50],
-                        backgroundColor: 'rgba(159, 18, 57, 0.2)',
-                        borderColor: 'rgba(159, 18, 57, 1)',
-                        pointBackgroundColor: 'rgba(159, 18, 57, 1)',
-                        borderWidth: 2
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    scales: { r: { beginAtZero: true, max: 100 } },
-                    plugins: { legend: { display: false } }
-                }
-            });
-
-            // 4. LEAFLET MAP (CartoDB Positron Basemap for clean print)
-            const map = L.map('distributionMap', { zoomControl: false }).setView([15.0, 10.0], 1.5);
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-                subdomains: 'abcd',
-                maxZoom: 20
-            }).addTo(map);
-
-            // Data Marker Geospasial dari JSON
-            const locations = [
-                { name: "Yuki-tsumugi", lat: 36.5657, lng: 139.8836, country: "Jepang" },
-                { name: "Tejate & Barro Negro", lat: 17.0732, lng: -96.7266, country: "Meksiko" },
-                { name: "Pysanka", lat: 48.9215, lng: 24.7103, country: "Ukraina" },
-                { name: "Kano Dye Pits", lat: 11.8948, lng: 8.5364, country: "Nigeria" },
-                { name: "Pinisi Boat & Reog", lat: -3.6446, lng: 119.9471, country: "Indonesia" },
-                { name: "Bunya Nut Fest", lat: -26.8883, lng: 151.5729, country: "Australia" },
-                { name: "Thai Silk", lat: 15.8700, lng: 100.9925, country: "Thailand" },
-                { name: "Matyó Embroidery", lat: 47.8142, lng: 20.5683, country: "Hungaria" },
-                { name: "Teko Porã", lat: -23.3165, lng: -58.1693, country: "Paraguay" },
-                { name: "Batek Healing", lat: 5.4021, lng: 102.0635, country: "Malaysia" }
-            ];
-
-            const customIcon = L.divIcon({
-                className: 'custom-div-icon',
-                html: "<div style='background-color:#0f766e; width:10px; height:10px; border-radius:50%; border:2px solid white; box-shadow: 0 0 4px rgba(0,0,0,0.5);'></div>",
-                iconSize: [14, 14],
-                iconAnchor: [7, 7]
-            });
-
-            locations.forEach(loc => {
-                L.marker([loc.lat, loc.lng], {icon: customIcon}).addTo(map)
-                 .bindPopup(`<b>${loc.name}</b><br>${loc.country}`);
-            });
-
-            // Garis Migrasi / Shared Heritage
-            const sharedConnections = [
-                [[48.9215, 24.7103], [51.9194, 19.1451]], // Ukraina -> Polandia (Pisanki)
-                [[15.8700, 100.9925], [35.8617, 104.1954]], // Thailand -> Tiongkok (Silk)
-                [[15.8700, 100.9925], [-0.7893, 113.9213]], // Thailand -> Indonesia (Kebaya)
-                [[11.8948, 8.5364], [17.5707, -3.9962]],    // Nigeria -> Mali (Indigo Tuareg)
-                [[-3.6446, 119.9471], [-26.8883, 151.5729]], // Indonesia -> Australia (Trade)
-                [[-23.3165, -58.1693], [-16.2902, -63.5887]], // Paraguay -> Bolivia (Suma Qamana)
-                [[47.8142, 20.5683], [45.4039, 0.3756]] // Eastern Europe -> France (Carnival Roots)
-            ];
-
-            sharedConnections.forEach(latlngs => {
-                L.polyline(latlngs, {
-                    color: '#9f1239', // Merah Marun
-                    weight: 2,
-                    opacity: 0.6,
-                    dashArray: '6, 6'
-                }).addTo(map);
-            });
-
-            // 5. VIS-NETWORK (Hubungan Kultural Terpusat)
+            // Vis-Network (Static Illustrative)
             const nodes = new vis.DataSet([
-                // Pusat (Dari JSON Utama)
                 { id: 1, label: 'Kano Dye\n(Nigeria)', group: 'main' },
                 { id: 2, label: 'Thai Silk\n(Thailand)', group: 'main' },
-                { id: 3, label: 'Ajrak Print\n(Pakistan)', group: 'main' },
-                { id: 4, label: 'Chicha de Año\n(Peru)', group: 'main' },
-                
-                // Terhubung (Shared)
                 { id: 101, label: 'Adire\n(Yoruba)', group: 'shared' },
-                { id: 102, label: 'Tuareg Robes\n(Mali)', group: 'shared' },
                 { id: 201, label: 'Kebaya\n(Nusantara)', group: 'shared' },
-                { id: 202, label: 'Silk Road\n(China/India)', group: 'shared' },
-                { id: 301, label: 'Kachchhi\n(India)', group: 'shared' },
-                { id: 401, label: 'Chicha de Jora\n(Bolivia/Ecuador)', group: 'shared' }
+                { id: 202, label: 'Silk Road\n(China)', group: 'shared' }
             ]);
-
             const edges = new vis.DataSet([
                 { from: 1, to: 101, label: 'Teknik Indigo' },
-                { from: 1, to: 102, label: 'Perdagangan' },
                 { from: 2, to: 201, label: 'Materi Kain' },
                 { from: 2, to: 202, label: 'Asal Sejarah' },
-                { from: 3, to: 301, label: 'Migrasi Khatri' },
-                { from: 4, to: 401, label: 'Fermentasi Jagung' },
-                // Hubungan Lintas Kategori (Tekstil)
-                { from: 1, to: 3, label: 'Pewarnaan Alam', dashes: true },
-                { from: 2, to: 3, label: 'Kriya Busana', dashes: true }
+                { from: 1, to: 2, label: 'Pewarnaan Alam', dashes: true }
             ]);
-
             const container = document.getElementById('nodeNetwork');
             const data = { nodes: nodes, edges: edges };
             const options = {
@@ -496,16 +350,130 @@
                     shared: { color: { background: '#f8fafc', border: '#cbd5e1' }, font: { color: '#4a5568' }, shape: 'ellipse' }
                 },
                 edges: { font: { size: 10, align: 'middle' }, color: '#94a3b8', width: 1.5 },
-                physics: { enabled: true, solver: 'forceAtlas2Based', stabilization: { iterations: 150 } }, 
-                interaction: { dragNodes: false, zoomView: false, dragView: false }
+                physics: { enabled: false } 
             };
             new vis.Network(container, data, options);
+        }
+
+        // Render Grafik Batang Dinamis dari JSON
+        function updateBarChart(categoriesObj) {
+            const ctxBar = document.getElementById('barChart').getContext('2d');
             
-            // Bekukan fisika setelah beberapa saat agar rapi saat dicetak
-            setTimeout(() => {
-                const network = new vis.Network(container, data, options);
-                network.setOptions({ physics: { enabled: false } });
-            }, 2500);
+            const labels = Object.keys(categoriesObj);
+            const data = Object.values(categoriesObj);
+
+            if (barChartInstance) {
+                barChartInstance.destroy();
+            }
+
+            barChartInstance = new Chart(ctxBar, {
+                type: 'bar',
+                data: {
+                    labels: labels.length > 0 ? labels : ['No Data'],
+                    datasets: [{
+                        label: 'Jumlah Entitas',
+                        data: data.length > 0 ? data : [0],
+                        backgroundColor: 'rgba(159, 18, 57, 0.8)',
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: { 
+                        legend: { display: false },
+                        title: { display: true, text: 'Distribusi Kategori Aktual' }
+                    },
+                    scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
+                }
+            });
+        }
+
+        // Load & Switch Journal Content
+        function switchJournal(quarter) {
+            if (!quarter || !resumeDB[quarter]) return;
+            
+            const entry = resumeDB[quarter];
+            const content = entry.content;
+            const sections = content.sections;
+
+            // Update Tanggal
+            document.getElementById('j-date').textContent = `Diterbitkan: ${entry.statistics.generated_at || 'N/A'}`;
+
+            // Main Text
+            document.getElementById('j-title').textContent = content.title || `Jurnal Kuartal ${quarter}`;
+            document.getElementById('j-abstract').textContent = content.abstract || '';
+
+            // Prologue
+            document.getElementById('j-prologue-title').textContent = sections.prologue?.title || "1. Prolog";
+            document.getElementById('j-prologue-dropcap').textContent = sections.prologue?.dropcap || "";
+            document.getElementById('j-prologue-text').textContent = sections.prologue?.text || "";
+
+            // Anatomy
+            document.getElementById('j-anatomy-title').textContent = sections.anatomy?.title || "2. Anatomi Tradisi";
+            document.getElementById('j-anatomy-text').textContent = sections.anatomy?.text || "";
+
+            // Shared Heritage
+            document.getElementById('j-shared-title').textContent = sections.shared_heritage?.title || "3. Gema Lintas Batas";
+            document.getElementById('j-shared-text').textContent = sections.shared_heritage?.text || "";
+
+            // Periodic Report
+            document.getElementById('j-periodic-title').textContent = sections.periodic_report?.title || "4. Status Implementasi";
+            document.getElementById('j-periodic-text').textContent = sections.periodic_report?.text || "";
+
+            // Epilogue
+            document.getElementById('j-epilogue-title').textContent = sections.epilogue?.title || "5. Epilog";
+            document.getElementById('j-epilogue-text').textContent = sections.epilogue?.text || "";
+
+            // Update Chart
+            updateBarChart(entry.statistics?.categories_distribution || {});
+        }
+
+        // Fetch JSON Data
+        async function fetchJournalData() {
+            try {
+                // Untuk test lokal, pastikan pakai Live Server / web server
+                const response = await fetch('resume.json');
+                if (!response.ok) throw new Error('File resume.json tidak ditemukan.');
+                
+                resumeDB = await response.json();
+                
+                const selectEl = document.getElementById('journal-select');
+                selectEl.innerHTML = ''; // Kosongkan
+                
+                // Filter hanya yang berstatus "complete" dan urutkan dari yang terbaru
+                const availableQuarters = Object.keys(resumeDB)
+                    .filter(q => resumeDB[q].status === "complete")
+                    .sort().reverse();
+
+                if (availableQuarters.length === 0) {
+                    selectEl.innerHTML = '<option value="">Belum ada jurnal (Incomplete)</option>';
+                    document.getElementById('j-title').textContent = "Belum Ada Jurnal Lengkap";
+                    return;
+                }
+
+                // Isi Dropdown
+                availableQuarters.forEach(q => {
+                    const option = document.createElement('option');
+                    option.value = q;
+                    option.textContent = `Edisi Kuartal ${q}`;
+                    selectEl.appendChild(option);
+                });
+
+                // Load edisi paling terbaru secara otomatis
+                switchJournal(availableQuarters[0]);
+
+            } catch (error) {
+                console.error("Gagal mengambil data:", error);
+                document.getElementById('j-title').textContent = "Gagal Memuat Database Jurnal";
+                document.getElementById('j-abstract').innerHTML = `Pastikan file <b>resume.json</b> sudah di-generate oleh Python dan berada di folder yang sama. <i>(Peringatan: Jika Anda membuka file ini langsung (file://), browser mungkin memblokir akses JSON. Gunakan Live Server/GitHub Pages)</i>.`;
+                document.getElementById('journal-select').innerHTML = '<option value="">Error Akses Data</option>';
+            }
+        }
+
+        // Jalankan saat dokumen siap
+        window.addEventListener('DOMContentLoaded', () => {
+            initStaticCharts();
+            fetchJournalData();
         });
     </script>
 </body>
