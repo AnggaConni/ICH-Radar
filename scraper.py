@@ -988,9 +988,8 @@ def discover_new_items(api_key, inventory):
                 
     return discovered_count
 
-
 # ======================================================================
-# QUARTERLY JOURNAL / RESUME GENERATOR (JSON ONLY)
+# QUARTERLY JOURNAL / RESUME GENERATOR (JSON ONLY - ENGLISH)
 # ======================================================================
 def generate_quarterly_resume(api_key, inventory):
     # Tentukan Kuartal Saat Ini
@@ -999,7 +998,7 @@ def generate_quarterly_resume(api_key, inventory):
     
     resume_db = {}
     
-    # Load resume.json jika sudah ada agar data kuartal sebelumnya tidak hilang
+    # Load resume.json jika sudah ada
     if os.path.exists(RESUME_FILE):
         try:
             with open(RESUME_FILE, 'r', encoding='utf-8') as f:
@@ -1007,7 +1006,7 @@ def generate_quarterly_resume(api_key, inventory):
         except Exception:
             pass
             
-    # Inisialisasi struktur untuk kuartal ini jika belum ada
+    # Inisialisasi struktur untuk kuartal ini
     if quarter_str not in resume_db:
         resume_db[quarter_str] = {
             "status": "incomplete",
@@ -1020,7 +1019,7 @@ def generate_quarterly_resume(api_key, inventory):
         log.info(f"⏭️ Resume Jurnal untuk {quarter_str} sudah COMPLETE. Skip generasi.")
         return
         
-    log.info(f"📝 Memulai penyusunan data Resume/Jurnal untuk {quarter_str}...")
+    log.info(f"📝 Memulai penyusunan data Resume/Jurnal (Bahasa Inggris) untuk {quarter_str}...")
     
     # 1. Siapkan Statistik Data
     total_items = len(inventory)
@@ -1035,56 +1034,62 @@ def generate_quarterly_resume(api_key, inventory):
         "generated_at": now.strftime("%Y-%m-%d %H:%M:%S")
     }
 
-    # Cek apakah ada data kuartal sebelumnya untuk komparasi tren
+    # Cek komparasi tren (English Version)
     previous_quarters = [q for q in resume_db.keys() if q != quarter_str]
-    tren_prompt = "Fokus pada menceritakan koleksi data yang ada saat ini."
+    tren_prompt = "Focus on narrating the current cultural data collection."
     if previous_quarters:
         last_q = sorted(previous_quarters)[-1]
-        tren_prompt = f"Bandingkan dengan kuartal sebelumnya ({last_q}). Ceritakan tren pertambahan data, fokus kategori yang berkembang, dan perbedaannya."
+        tren_prompt = f"Compare with the previous quarter ({last_q}). Describe the data growth trend, focusing on developing categories and differences."
 
-    # 2. PROMPT AI: Meminta output JSON dengan struktur spesifik
+    # 2. PROMPT AI (Full English)
     prompt = f"""
-    Anda adalah seorang Antropolog Digital yang bertugas menyusun Jurnal Visual Warisan Budaya Takbenda Kuartal {quarter_str}.
-    Statistik saat ini: Total {total_items} entitas budaya. Distribusi kategori: {json.dumps(categories)}.
+    You are a Digital Anthropologist tasked with writing the Intangible Cultural Heritage Visual Journal for Quarter {quarter_str}.
+    Current Statistics: Total of {total_items} cultural entities. Category distribution: {json.dumps(categories)}.
     {tren_prompt}
     
-    Tugas Anda adalah menghasilkan konten narasi yang terstruktur. Wajib sertakan bab laporan bergaya "UNESCO Periodic Report" yang membahas kapasitas institusional dan legislatif secara imajiner berdasarkan data yang ada.
+    Your task is to generate a structured narrative. You MUST include a "UNESCO Periodic Report" section that fictitiously discusses institutional capacity and legislative frameworks based on the data.
     
-    Keluarkan HANYA dalam format JSON MURNI (tanpa markdown ```json). Strukturnya harus persis seperti ini:
+    The structure MUST exactly match this JSON format:
     {{
-        "title": "Jejak Tak Kasat Mata: Narasi Visual Warisan Budaya Kuartal {quarter_str}",
-        "abstract": "Paragraf abstrak...",
+        "title": "Invisible Footprints: Visual Narrative of Cultural Heritage Quarter {quarter_str}",
+        "abstract": "Abstract paragraph summarizing the findings...",
         "sections": {{
             "prologue": {{
-                "title": "1. Prolog: Benang Merah Peradaban",
-                "dropcap": "Satu huruf pertama dari paragraf (misal: 'K')",
-                "text": "Sisa teks paragraf prologue setelah huruf pertama..."
+                "title": "1. Prologue: The Common Thread of Civilization",
+                "dropcap": "The first single letter of the prologue paragraph (e.g., 'W')",
+                "text": "The rest of the prologue paragraph text..."
             }},
             "anatomy": {{
-                "title": "2. Anatomi Tradisi: Karsa, Kriya, dan Rasa",
-                "text": "Narasi mengenai dominasi kategori dan statistik data..."
+                "title": "2. Anatomy of Tradition: Creativity, Craft, and Spirit",
+                "text": "Narrative regarding category dominance and data statistics..."
             }},
             "shared_heritage": {{
-                "title": "3. Gema Lintas Batas: Jaringan Warisan Bersama",
-                "text": "Narasi hubungan antar negara (seperti sutra, pewarnaan indigo, rute migrasi)..."
+                "title": "3. Echoes Across Borders: Shared Heritage Network",
+                "text": "Narrative about relationships between countries (e.g., silk, indigo dyeing, migration routes)..."
             }},
             "periodic_report": {{
-                "title": "4. Status Implementasi Konvensi (Periodic Report)",
-                "text": "Laporan resmi layaknya UNESCO Periodic Report mengenai pelestarian, legislasi, dll..."
+                "title": "4. Status of Convention Implementation (Periodic Report)",
+                "text": "Official report style similar to UNESCO Periodic Report regarding safeguarding, legislation, etc..."
             }},
             "epilogue": {{
-                "title": "5. Epilog",
-                "text": "Kesimpulan penutup yang filosofis..."
+                "title": "5. Epilogue",
+                "text": "Philosophical concluding thoughts..."
             }}
         }}
     }}
     """
     
-    url = "[https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent](https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent)"
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
     headers = {'Content-Type': 'application/json', 'x-goog-api-key': api_key}
+    
+    # Payload yang diperkuat (menggunakan responseMimeType untuk mencegah API bingung)
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.5, "maxOutputTokens": 4096}
+        "generationConfig": {
+            "temperature": 0.5, 
+            "maxOutputTokens": 8192,
+            "responseMimeType": "application/json"
+        }
     }
     
     try:
@@ -1093,13 +1098,8 @@ def generate_quarterly_resume(api_key, inventory):
         result = response.json()
         raw_text = result['candidates'][0]['content']['parts'][0]['text']
         
-        # Ekstrak JSON (KODE BARU: Jauh lebih aman dan anti-gagal)
-        match = re.search(r'\{.*\}', raw_text, re.DOTALL)
-        if match:
-            clean_json = match.group(0)
-            ai_content = json.loads(clean_json)
-        else:
-            raise ValueError("Format JSON tidak ditemukan dalam respons AI.")
+        # Karena menggunakan responseMimeType, AI sudah terjamin mengirim JSON bersih
+        ai_content = json.loads(raw_text)
         
         # Simpan ke dalam Database Resume
         resume_db[quarter_str]["status"] = "complete"
@@ -1110,9 +1110,15 @@ def generate_quarterly_resume(api_key, inventory):
             
         log.info(f"✅ Data Jurnal {quarter_str} berhasil digenerate dan disimpan ke resume.json!")
         
+    except requests.exceptions.HTTPError as http_err:
+        log.error(f"❌ API Error HTTP: {http_err}")
+        # Menangkap alasan spesifik dari Google jika gagal lagi
+        log.error(f"Detail Penolakan Google Gemini: {response.text}") 
+        with open(RESUME_FILE, 'w', encoding='utf-8') as f:
+            json.dump(resume_db, f, indent=4, ensure_ascii=False)
+            
     except Exception as e:
         log.error(f"❌ Gagal men-generate konten jurnal: {e}")
-        # Status tetap incomplete agar di-retry pada cron job berikutnya
         with open(RESUME_FILE, 'w', encoding='utf-8') as f:
             json.dump(resume_db, f, indent=4, ensure_ascii=False)
 
