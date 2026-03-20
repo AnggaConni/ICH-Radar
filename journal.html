@@ -731,13 +731,13 @@
             document.getElementById('j-shared-title').textContent = sections.shared_heritage?.title ? `3.2. ${sections.shared_heritage.title.replace(/^\d+\.\s*/, '')}` : "3.2. Echoes Across Borders";
             document.getElementById('j-shared-text').textContent = sections.shared_heritage?.text || "";
 
-            document.getElementById('j-periodic-title').textContent = sections.periodic_report?.title || "5. Implementation Status (Periodic Report)";
+            document.getElementById('j-periodic-title').textContent = sections.periodic_report?.title ? `4. ${sections.periodic_report.title.replace(/^\d+\.\s*/, '')}` : "4. Implementation Status (Periodic Report)";
             document.getElementById('j-periodic-text').textContent = sections.periodic_report?.text || "";
 
-            document.getElementById('j-epilogue-title').textContent = sections.epilogue?.title || "6. Epilogue";
+            document.getElementById('j-epilogue-title').textContent = sections.epilogue?.title ? `6. ${sections.epilogue.title.replace(/^\d+\.\s*/, '')}` : "6. Epilogue";
             document.getElementById('j-epilogue-text').textContent = sections.epilogue?.text || "";
 
-            // Update charts with actual data statistics
+            // Update charts with actual data statistics 
             updateBarChart(entry.statistics?.categories_distribution || {});
         }
 
