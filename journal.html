@@ -322,8 +322,7 @@
         <h2 class="section-title" id="j-anatomy-title">2. Anatomy of Tradition</h2>
         <p id="j-anatomy-text"></p>
 
-        <h2 class="section-title" id="j-anatomy-title">2. Anatomy of Tradition</h2>
-        <p id="j-anatomy-text"></p>
+        <h3 class="section-title" style="font-size: 14px; margin-top: 25px;">2.1. Category & Regional Visualization</h3>
 
         <div class="figure-container">
             <div class="chart-wrapper"><canvas id="barChart"></canvas></div>
@@ -340,7 +339,9 @@
         </div>
 
         <!-- 3. MAP DISTRIBUTION (Dynamic from data.json) -->
-        <h2 class="section-title">3. Global Distribution Cartography</h2>
+        <h2 class="section-title">3. Spatial & Network Analysis</h2>
+
+        <h3 class="section-title" style="font-size: 14px; margin-top: 25px;">3.1. Global Distribution Cartography</h3>
         <p>The map below visualizes the geographical footprint of the documented cultural entities. Each node represents a living heritage actively maintained by local communities, plotted automatically by our intelligence engine based on real-time data scraping.</p>
         
         <div class="figure-container">
@@ -351,7 +352,7 @@
         </div>
 
         <!-- 4. SHARED HERITAGE (Network Vis) -->
-        <h2 class="section-title" id="j-shared-title">4. Echoes Across Borders</h2>
+        <h3 class="section-title" id="j-shared-title" style="font-size: 14px; margin-top: 25px;">3.2. Echoes Across Borders: Shared Heritage Network</h3>
         <p id="j-shared-text"></p>
 
         <div class="figure-container">
@@ -679,10 +680,10 @@
             document.getElementById('j-prologue-dropcap').textContent = sections.prologue?.dropcap || "";
             document.getElementById('j-prologue-text').textContent = sections.prologue?.text || "";
 
-            document.getElementById('j-anatomy-title').textContent = sections.anatomy?.title || "2. Anatomy of Tradition";
+            document.getElementById('j-anatomy-title').textContent = sections.anatomy?.title || "Anatomy of Tradition";
             document.getElementById('j-anatomy-text').textContent = sections.anatomy?.text || "";
 
-            document.getElementById('j-shared-title').textContent = sections.shared_heritage?.title || "4. Echoes Across Borders";
+            document.getElementById('j-shared-title').textContent = sections.shared_heritage?.title ? `3.2. ${sections.shared_heritage.title.replace(/^\d+\.\s*/, '')}` : "3.2. Echoes Across Borders";
             document.getElementById('j-shared-text').textContent = sections.shared_heritage?.text || "";
 
             document.getElementById('j-periodic-title').textContent = sections.periodic_report?.title || "5. Implementation Status (Periodic Report)";
