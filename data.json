@@ -3530,16 +3530,252 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-07c38d60",
+      "element_name": "Nón lá (Vietnamese Conical Hat)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Non_la.jpg/800px-Non_la.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1",
+        "https://vietnam.travel/things-to-do/vietnamese-conical-hat-non-la",
+        "https://www.vinpearl.com/en/discovery/non-la-vietnam-vietnamese-national-symbol-of-elegance",
+        "https://www.vivujourneys.com/blog/non-la-vietnam-conical-hat/",
+        "https://mitdecor.vn/cach-lam-non-la/",
+        "https://sieuthitretruc.vn/huong-dan-cach-lam-non-la-de-dang-cho-nguoi-tap-lam.html",
+        "https://www.tapchikientruc.vn/tin-tuc/lang-chuong-lang-nghe-mang-dam-hon-viet-nam.html",
+        "https://baolaodong.vn/lang-chuong-giu-nghe-non-la-mo-loi-du-lich-trai-nghiem-van-hoa-1961291.html",
+        "https://phongnhadiscovery.com/non-la-viet-nam-bieu-tuong-dac-sac-cua-nguoi-viet/",
+        "https://www.esperantotur.com/blog/kheo-leo-va-ti-mi-trong-quy-trinh-lam-non-lang-chuong",
+        "https://grokipedia.org/wiki/N%C3%B3n_l%C3%A1",
+        "https://www.researchgate.net/publication/348575024_Preserve_and_develop_the_public_space_of_Chuong_conical_village_BAO_TON_VA_PHAT_TRIEN_KHONG_GIAN_CONG_CONG_LANG_NON_CHUONG_-THANH_OAI_-HA_NOI"
+      ],
+      "scraped_at": "2026-03-20T08:42:55.075288Z",
+      "location": {
+        "country": "Vietnam",
+        "provinces": [
+          "Hanoi (Chuông Village, Thanh Oai District)",
+          "Thừa Thiên Huế (Phủ Cam, Dạ Lê)",
+          "Bình Định (Gò Găng)",
+          "Phú Vang (Đồng Di)",
+          "Hương Thủy (Dạ Lê)",
+          "Nông Cống (Trường Giang)"
+        ],
+        "lat": 21.0283334,
+        "lng": 105.854041
+      },
+      "resume_analisa": {
+        "description": "The Nón lá, or Vietnamese Conical Hat, is a traditional headwear item characterized by its broad, conical shape and lightweight construction. It is primarily made from layered palm leaves sewn onto a bamboo frame and is designed to protect wearers from Vietnam's intense tropical sun and monsoon rains. Beyond its practical uses, it also serves as a versatile tool for fanning or carrying goods.",
+        "cultural_significance": "The Nón lá is an iconic symbol of Vietnam, deeply embedded in the country's culture and often associated with Vietnamese women and rural life. It embodies Vietnamese resilience, rural simplicity, and feminine grace, frequently paired with the elegant áo dài dress in art, poetry, festivals, and daily life, symbolizing national identity and the harmony between people and nature. Archaeological evidence, including depictions on the Ngọc Lũ bronze drum and Đào Thịnh bronze jar, traces the Nón lá's origins to over 2,500–3,000 years ago, linking it to Vietnam's ancient wet-rice cultivation culture where such hats were essential for farmers. It plays a central role in folk dances like 'múa nón' (hat dance) and is exchanged as a thoughtful gift during Tet (Lunar New Year), representing prosperity and shared heritage.",
+        "gemini_tags": [
+          "Vietnamese culture",
+          "traditional craft",
+          "headwear",
+          "palm leaf",
+          "bamboo",
+          "cultural symbol",
+          "intangible heritage",
+          "folk art",
+          "rural life",
+          "women's fashion",
+          "agricultural tool"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship (Hat Making)",
+        "materials_and_tools": [
+          "Palm leaves (lá nón, lá cọ, lá dừa, lá buông, lá hồ, lá dứa, du quy diệp)",
+          "Bamboo (tre, nứa) for frame slats and spokes",
+          "Thread (nylon, silk, or monofilament)",
+          "Needle",
+          "Knife or scissors",
+          "Hot plowshare or iron (for flattening leaves)",
+          "Hat mold or conical frame"
+        ],
+        "step_by_step": [
+          "**1. Material Selection and Preparation**: Select suitable palm leaves, ensuring they are neither too young nor too old for optimal flexibility and color. The leaves are then dried, often by sun-drying for several days, followed by exposure to dew to soften them. Finally, they are flattened and smoothed using a heated plowshare or iron to ensure they are pliable and free from tears or burns.",
+          "**2. Frame Making**: Create the conical frame from thin, supple bamboo slats (nứa). These slats are meticulously whittled and bent into 16 concentric circles of varying diameters, from a wide base to a small tip. These circles are then fixed together with thread or string to form the sturdy skeleton of the hat.",
+          "**3. Leaf Arrangement**: The prepared leaves are carefully trimmed and arranged evenly onto the bamboo frame. Typically, two layers of leaves are used, with a layer of dried bamboo sheath (mo lang) placed in between to enhance the hat's strength and durability. The leaves must be precisely positioned to cover the entire surface of the mold without overlapping too thickly.",
+          "**4. Sewing (Chằm nón)**: This is a critical step requiring great skill and precision. Using a needle and strong thread (often nylon or silk), the artisan sews the layers of leaves onto the bamboo frame. The stitches must be short, small, and even to create a tight, smooth, and aesthetically pleasing surface, while also carefully hiding all knots and connections.",
+          "**5. Finishing Touches**: After the leaves are securely sewn, any excess leaf material is trimmed. The brim is reinforced, and a chin strap (quai nón) made of soft fabric, such as velvet or silk, is attached. To further increase durability and enhance the hat's aesthetic appeal, a layer of glossy oil or varnish may be applied."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Various Asian countries (e.g., China, Japan, Korea, Laos, Cambodia, Thailand, Indonesia, Malaysia)",
+            "element_name": "Conical hats (general term)",
+            "relationship_reason": "Conical hats are a common form of headwear found across many Asian societies, serving similar functional purposes of protection from sun and rain. However, the specific materials, construction techniques, and profound cultural symbolism of the Vietnamese Nón lá are distinct and deeply rooted in Vietnamese history and traditions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7f7c0ceb",
+      "element_name": "Nanjing Yunjin Brocade Weaving Skills",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.sinocultural.com/blogs/chinese-culture/yun-brocade-yunjin-of-china-nanjing-patterns-material-and-price&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.sinocultural.com/blogs/chinese-culture/yun-brocade-yunjin-of-china-nanjing-patterns-material-and-price",
+        "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm",
+        "https://www.unesco.org/archives/multimedia/document-3298",
+        "https://www.chinaculture.org/gb/2009-07/28/content_351185.htm",
+        "https://www.nanjingmuseum.com/en/collection/royal-clothes-made-of-nanjing-yunjin-brocade",
+        "https://www.chinatoday.com.cn/ctenglish/2018/culture/202601/t20260105_800366160.html",
+        "https://www.newhanfu.com/10986.html",
+        "https://www.thecraftatlas.com/crafts/nanjing-yunjin-brocade",
+        "https://www.shanghaidaily.com/feature/culture/Coding-in-silk-and-gold-the-ancient-craft-of-Nanjing-Yunjin-brocade/ar/30941913.html",
+        "https://www.longshilan.com/weaving-wonders-exploring-the-artistry-and-history-behind-nanjing-yunjin-brocade-and-suzhou-silk-embroidery/"
+      ],
+      "scraped_at": "2026-03-20T08:43:28.962965Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Jiangsu Province"
+        ],
+        "lat": 33.0000001,
+        "lng": 119.9999999
+      },
+      "resume_analisa": {
+        "description": "Nanjing Yunjin Brocade, also known as \"cloud brocade,\" is a traditional Chinese luxury silk brocade originating from Nanjing, China. It is renowned for its stunning luster, exquisite patterns, and a rich array of colors, often compared to the splendor of clouds at sunset. Historically, it was considered the most extravagant silk fabric, primarily used for imperial garments. This intricate craft represents the pinnacle of Chinese silk weaving and is regarded as the final milestone in the history of ancient Chinese silk weaving. A distinguishing feature of Yunjin is that its complex motifs are woven directly into the fabric, rather than being embroidered onto a finished textile.",
+        "cultural_significance": "Nanjing Yunjin Brocade served as the designated textile for the imperial courts of the Yuan, Ming, and Qing dynasties. It was used to create elaborate robes for emperors, empresses, and high-ranking officials, as well as for decorative wall hangings and religious textiles. The incorporation of precious materials like gold and silver threads, along with its intricate patterns and vibrant colors, made Yunjin Brocade a profound symbol of power and status. The craft embodies the cultures of palaces, institutions, and royal etiquettes, and has also become an important part of folk culture and customs. It is often referred to as a \"living fossil\" of ancient brocade weaving, as it preserves traditional characteristics and unique techniques that modern machinery cannot replicate. In recognition of its outstanding cultural value, Nanjing Yunjin Brocade Weaving Techniques were inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2009.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Textile Arts",
+          "Silk Weaving",
+          "Imperial Textiles",
+          "Chinese Culture",
+          "Intangible Cultural Heritage",
+          "Jacquard Weaving",
+          "Luxury Fabric",
+          "Nanjing"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Weaving / Textile Craftsmanship",
+        "materials_and_tools": [
+          "High-quality Mulberry Silk",
+          "Real Gold Thread (pure gold hammered into extremely thin foil, cut into strips, and twisted with silk threads)",
+          "Peacock Feather Threads (carefully chosen tail quills, specially treated and twisted with silk threads)",
+          "Silver Thread (sometimes incorporated)",
+          "Large, complicated traditional Jacquard wooden looms (Dahualou wooden jacquard looms)",
+          "Pattern cards (for programming weaving patterns)",
+          "Special tools (for compacting weft segments)"
+        ],
+        "step_by_step": [
+          "**Pattern Design**: Designers meticulously create intricate patterns, often inspired by traditional Chinese motifs such as dragons, phoenixes, and auspicious symbols.",
+          "**Pattern Drafting (Tiaohua Jieben)**: Craftsmen translate the designs into pattern templates by weaving silk threads on a special frame at a 1:1 scale. Each thread in this template corresponds to a specific weaving action on the loom, a process sometimes likened to a computer's binary algorithm or programming.",
+          "**Material Preparation**: Raw materials are carefully prepared. This includes selecting high-quality mulberry silk, creating gold thread by hammering pure gold into thin foil, cutting it into strips, and twisting it with silk threads, and preparing peacock feather threads by separating, twisting, and preserving peacock tail quills with silk.",
+          "**Loom Construction/Preparation (Zao Ji)**: The large, complex traditional Jacquard wooden loom (Dahualou wooden jacquard loom) is meticulously assembled and prepared. This involves installing the necessary warp threads and setting up the pattern cards that guide the weaving process.",
+          "**Weaving**: This is the most complex and time-consuming stage, requiring the synchronized effort of two artisans operating the massive loom. One artisan, known as the \"flower picker\" or \"upper worker,\" sits above the loom, responsible for adjusting the warp threads according to the intricate pattern cards. The second artisan, the \"weaver\" or \"lower worker,\" sits below, inserting the weft threads (made of silk, gold, or peacock feather yarns) and applying the gold and colored decorations. The weaving employs a technique called \"continuous warp and segmented weft\" (Tongjing Duanwei) or \"different color by pattern,\" where weft threads are inserted, interrupted, or joined as dictated by the pattern, rather than running the full width of the fabric. Special tools are used to compact each segment of colored weft. Weavers often sing mnemonic ballads to aid in remembering the complex techniques and to foster a cooperative atmosphere. Due to its intricate nature, a team of two artisans can produce only about five to six centimeters of fabric per day."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Shu Brocade (Sichuan)",
+            "relationship_reason": "Nanjing Yunjin is one of China's 'Four Famous Brocades,' sharing a common heritage of advanced silk weaving techniques and cultural significance within China with Shu Brocade."
+          },
+          {
+            "country": "China",
+            "element_name": "Song Brocade (Suzhou)",
+            "relationship_reason": "Nanjing Yunjin is one of China's 'Four Famous Brocades,' sharing a common heritage of advanced silk weaving techniques and cultural significance within China with Song Brocade."
+          },
+          {
+            "country": "Italy",
+            "element_name": "Soprarizzo Velvet",
+            "relationship_reason": "Soprarizzo Velvet is mentioned as a similar craft, being a handwoven, opulent jacquard velvet with a complex manufacturing process, indicating a shared type of craftsmanship in luxury textile production, though not a direct historical lineage."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-8cc8dba2",
+      "element_name": "Yoga (Yoga Asanas/Postures)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://images.unsplash.com/photo-1544367524-d44bc404c05c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Traditional_Knowledge_Digital_Library",
+        "https://www.csir.res.in/tkdl",
+        "https://www.voanews.com/a/a-13-2010-06-11-96155949-html/172159.html",
+        "https://www.wipo.int/tk/en/tkdl/",
+        "https://pib.gov.in/PressReleasePage.aspx?PRID=2010040",
+        "https://www.lingayasvidyapeeth.edu.in/indias-first-ai-digital-library-for-medicine/",
+        "https://www.stratjuris.com/blog/yoga-from-traditional-knowledge-to-ipr-yoga-is-no-yo-ga"
+      ],
+      "scraped_at": "2026-03-20T08:44:09.471933Z",
+      "location": {
+        "country": "India",
+        "provinces": [],
+        "lat": 22.3511148,
+        "lng": 78.6677428
+      },
+      "resume_analisa": {
+        "description": "Yoga is an ancient Indian practice that integrates physical postures (asanas), breathing exercises (pranayama), meditation, and ethical principles to achieve holistic well-being. It is a comprehensive system for promoting physical, mental, and spiritual health.",
+        "cultural_significance": "Yoga is a significant aspect of Indian culture, deeply rooted in its philosophy, discipline, and science, with origins dating back over 5,000 years, documented in ancient texts like the Rigveda and Upanishads. Traditionally, knowledge was transmitted through the guru-shishya parampara (teacher-disciple lineage). India has actively worked to protect its traditional knowledge of yoga from misappropriation and biopiracy through initiatives like the Traditional Knowledge Digital Library (TKDL).",
+        "gemini_tags": [
+          "Traditional Indian Practice",
+          "Yoga",
+          "Asanas",
+          "Holistic Health",
+          "Cultural Preservation",
+          "Intangible Cultural Heritage",
+          "Mind-Body Practice",
+          "Ancient Wisdom"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Holistic Mind-Body Practice",
+        "materials_and_tools": [
+          "Yoga mat",
+          "Comfortable clothing"
+        ],
+        "step_by_step": [
+          "A typical yoga session often begins with warm-up exercises.",
+          "This is followed by a sequence of physical postures (asanas) that vary in complexity and focus, often synchronized with breathing techniques (pranayama).",
+          "The practice usually concludes with relaxation and meditation.",
+          "The Traditional Knowledge Digital Library (TKDL) has documented hundreds of yoga postures (asanas) after scrutinizing ancient Sanskrit texts, making video recordings of nearly 900 poses, and aiming to record at least 1,500 poses to preserve this detailed knowledge."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Global",
+            "element_name": "Modern Yoga Practices",
+            "relationship_reason": "Yoga has transcended its origins to become a universally embraced practice, transforming into a multi-billion-dollar industry globally."
+          },
+          {
+            "country": "China",
+            "element_name": "Traditional Medicine Digital Libraries",
+            "relationship_reason": "India's TKDL initiative, which includes yoga, has inspired countries like China to develop similar programs to save their own traditional medicine."
+          },
+          {
+            "country": "South Korea",
+            "element_name": "Traditional Medicine Digital Libraries",
+            "relationship_reason": "India's TKDL initiative, which includes yoga, has inspired countries like South Korea to develop similar programs to save their own traditional medicine."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-20T08:30:08.826564Z",
-    "total_ich_elements": 43,
-    "complete_records": 40,
+    "generated_at": "2026-03-20T08:45:09.434973Z",
+    "total_ich_elements": 46,
+    "complete_records": 43,
     "incomplete_records": 3,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 17,
-      "Social Practices & Rituals": 9,
+      "Traditional Craftsmanship": 19,
+      "Social Practices & Rituals": 10,
       "Culinary Traditions": 8,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 5,
