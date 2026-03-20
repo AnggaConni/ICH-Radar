@@ -29,6 +29,7 @@ log = logging.getLogger("ICH_Radar")
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
 HISTORY_FILE = os.path.join(BASE_DIR, "history.json")
 DATA_FILE    = os.path.join(BASE_DIR, "data.json")
+RESUME_FILE  = os.path.join(BASE_DIR, "resume.json")
 
 # ======================================================================
 # GLOBAL KEYWORD DATABASE FOR DISCOVERY (Multi-Language)
@@ -787,7 +788,7 @@ def audit_inventory(inventory):
 # ======================================================================
 
 def call_gemini(api_key, prompt):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
     
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
@@ -797,9 +798,15 @@ def call_gemini(api_key, prompt):
             "maxOutputTokens": 8192
         }
     }
-    
+
+    # API Key dimasukkan dengan aman melalui Header
+    headers = {
+        'Content-Type': 'application/json',
+        'x-goog-api-key': api_key
+    }
+
     try:
-        response = requests.post(url, json=payload, headers={'Content-Type': 'application/json'})
+        response = requests.post(url, json=payload, headers=headers)
         if response.status_code != 200:
             log.error(f"Google API Error: {response.text}")
             return None
@@ -884,6 +891,9 @@ def enrich_incomplete_items(api_key, inventory):
             # --- LOGIKA KOORDINAT ---
             country = updated_item.get("location", {}).get("country", "")
             lat, lng = get_coordinates(country)
+            
+            # Perbaikan: Inisialisasi key "location" untuk mencegah KeyError
+            updated_item.setdefault("location", {})
             updated_item["location"]["lat"] = lat
             updated_item["location"]["lng"] = lng
             
@@ -978,6 +988,134 @@ def discover_new_items(api_key, inventory):
                 
     return discovered_count
 
+
+# ======================================================================
+# QUARTERLY JOURNAL / RESUME GENERATOR (JSON ONLY)
+# ======================================================================
+def generate_quarterly_resume(api_key, inventory):
+    # Tentukan Kuartal Saat Ini
+    now = datetime.now()
+    quarter_str = f"{now.year}-Q{(now.month - 1) // 3 + 1}"
+    
+    resume_db = {}
+    
+    # Load resume.json jika sudah ada agar data kuartal sebelumnya tidak hilang
+    if os.path.exists(RESUME_FILE):
+        try:
+            with open(RESUME_FILE, 'r', encoding='utf-8') as f:
+                resume_db = json.load(f)
+        except Exception:
+            pass
+            
+    # Inisialisasi struktur untuk kuartal ini jika belum ada
+    if quarter_str not in resume_db:
+        resume_db[quarter_str] = {
+            "status": "incomplete",
+            "statistics": {},
+            "content": {}
+        }
+        
+    # Jika sudah complete, lewati proses
+    if resume_db[quarter_str]["status"] == "complete":
+        log.info(f"⏭️ Resume Jurnal untuk {quarter_str} sudah COMPLETE. Skip generasi.")
+        return
+        
+    log.info(f"📝 Memulai penyusunan data Resume/Jurnal untuk {quarter_str}...")
+    
+    # 1. Siapkan Statistik Data
+    total_items = len(inventory)
+    categories = {}
+    for item in inventory:
+        cat = item.get("category", "Unknown")
+        categories[cat] = categories.get(cat, 0) + 1
+        
+    resume_db[quarter_str]["statistics"] = {
+        "total_items": total_items,
+        "categories_distribution": categories,
+        "generated_at": now.strftime("%Y-%m-%d %H:%M:%S")
+    }
+
+    # Cek apakah ada data kuartal sebelumnya untuk komparasi tren
+    previous_quarters = [q for q in resume_db.keys() if q != quarter_str]
+    tren_prompt = "Fokus pada menceritakan koleksi data yang ada saat ini."
+    if previous_quarters:
+        last_q = sorted(previous_quarters)[-1]
+        tren_prompt = f"Bandingkan dengan kuartal sebelumnya ({last_q}). Ceritakan tren pertambahan data, fokus kategori yang berkembang, dan perbedaannya."
+
+    # 2. PROMPT AI: Meminta output JSON dengan struktur spesifik
+    prompt = f"""
+    Anda adalah seorang Antropolog Digital yang bertugas menyusun Jurnal Visual Warisan Budaya Takbenda Kuartal {quarter_str}.
+    Statistik saat ini: Total {total_items} entitas budaya. Distribusi kategori: {json.dumps(categories)}.
+    {tren_prompt}
+    
+    Tugas Anda adalah menghasilkan konten narasi yang terstruktur. Wajib sertakan bab laporan bergaya "UNESCO Periodic Report" yang membahas kapasitas institusional dan legislatif secara imajiner berdasarkan data yang ada.
+    
+    Keluarkan HANYA dalam format JSON MURNI (tanpa markdown ```json). Strukturnya harus persis seperti ini:
+    {{
+        "title": "Jejak Tak Kasat Mata: Narasi Visual Warisan Budaya Kuartal {quarter_str}",
+        "abstract": "Paragraf abstrak...",
+        "sections": {{
+            "prologue": {{
+                "title": "1. Prolog: Benang Merah Peradaban",
+                "dropcap": "Satu huruf pertama dari paragraf (misal: 'K')",
+                "text": "Sisa teks paragraf prologue setelah huruf pertama..."
+            }},
+            "anatomy": {{
+                "title": "2. Anatomi Tradisi: Karsa, Kriya, dan Rasa",
+                "text": "Narasi mengenai dominasi kategori dan statistik data..."
+            }},
+            "shared_heritage": {{
+                "title": "3. Gema Lintas Batas: Jaringan Warisan Bersama",
+                "text": "Narasi hubungan antar negara (seperti sutra, pewarnaan indigo, rute migrasi)..."
+            }},
+            "periodic_report": {{
+                "title": "4. Status Implementasi Konvensi (Periodic Report)",
+                "text": "Laporan resmi layaknya UNESCO Periodic Report mengenai pelestarian, legislasi, dll..."
+            }},
+            "epilogue": {{
+                "title": "5. Epilog",
+                "text": "Kesimpulan penutup yang filosofis..."
+            }}
+        }}
+    }}
+    """
+    
+    url = "[https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent](https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent)"
+    headers = {'Content-Type': 'application/json', 'x-goog-api-key': api_key}
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.5, "maxOutputTokens": 4096}
+    }
+    
+    try:
+        response = requests.post(url, json=payload, headers=headers)
+        response.raise_for_status()
+        result = response.json()
+        raw_text = result['candidates'][0]['content']['parts'][0]['text']
+        
+        # Ekstrak JSON (KODE BARU: Jauh lebih aman dan anti-gagal)
+        match = re.search(r'\{.*\}', raw_text, re.DOTALL)
+        if match:
+            clean_json = match.group(0)
+            ai_content = json.loads(clean_json)
+        else:
+            raise ValueError("Format JSON tidak ditemukan dalam respons AI.")
+        
+        # Simpan ke dalam Database Resume
+        resume_db[quarter_str]["status"] = "complete"
+        resume_db[quarter_str]["content"] = ai_content
+        
+        with open(RESUME_FILE, 'w', encoding='utf-8') as f:
+            json.dump(resume_db, f, indent=4, ensure_ascii=False)
+            
+        log.info(f"✅ Data Jurnal {quarter_str} berhasil digenerate dan disimpan ke resume.json!")
+        
+    except Exception as e:
+        log.error(f"❌ Gagal men-generate konten jurnal: {e}")
+        # Status tetap incomplete agar di-retry pada cron job berikutnya
+        with open(RESUME_FILE, 'w', encoding='utf-8') as f:
+            json.dump(resume_db, f, indent=4, ensure_ascii=False)
+
 # ======================================================================
 # MAIN EXECUTION
 # ======================================================================
@@ -1002,6 +1140,9 @@ def main():
         discovered = discover_new_items(api_key, inventory)
         
         db["inventory"] = inventory
+        
+        # PHASE 3: Generate Quarterly Resume / Journal
+        generate_quarterly_resume(api_key, inventory)
         
         # Save if there's any modification
         if audited > 0 or enriched > 0 or discovered > 0:
