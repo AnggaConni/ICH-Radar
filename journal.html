@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Journal of Intangible Cultural Heritage</title>
     
-    <!-- Using classic serif font for academic & storytelling feel -->
+    <!-- Classic serif font for academic & storytelling feel -->
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     
     <!-- Chart.js for diagrams -->
@@ -185,19 +185,55 @@
             margin: 35px 0; padding: 15px; background: white; border: 1px solid #e2e8f0;
             border-radius: 4px; page-break-inside: avoid;
         }
+        
         .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; margin-bottom: 15px; }
+        
+        /* Fix for broken charts: restrict height */
+        .chart-wrapper { position: relative; height: 260px; width: 100%; display: flex; justify-content: center; }
+
         .figure-caption {
             font-size: 10pt; font-family: 'Montserrat', sans-serif; margin-top: 15px; color: #64748b;
             text-align: left; border-left: 3px solid var(--accent-color); padding-left: 10px;
         }
         .map-container, .network-container { width: 100%; height: 350px; margin-bottom: 15px; border: 1px solid var(--border-color); background-color: #f8fafc; z-index: 1; }
+        
         .quote-box {
             font-family: 'Montserrat', sans-serif; font-size: 14px; font-style: italic; color: var(--accent-secondary);
             border-left: 4px solid var(--accent-secondary); padding: 15px 20px; margin: 25px 0; background-color: #f0fdfa; page-break-inside: avoid;
         }
 
-        /* Error/Loading state */
-        .loader-message { text-align: center; font-family: 'Montserrat', sans-serif; color: #718096; padding: 50px; font-style: italic; }
+        /* =========================================
+           TABLE AND REFERENCES STYLING
+           ========================================= */
+        .journal-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 10pt;
+            margin-bottom: 25px;
+            page-break-inside: auto;
+        }
+        .journal-table th, .journal-table td {
+            border: 1px solid var(--border-color);
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .journal-table th {
+            background-color: #f8fafc;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--heading-color);
+            font-weight: 600;
+        }
+        .journal-table tr { page-break-inside: avoid; page-break-after: auto; }
+        .journal-table tbody tr:nth-child(even) { background-color: #f1f5f9; }
+        
+        .reference-list {
+            font-size: 10pt;
+            padding-left: 20px;
+            color: #4a5568;
+        }
+        .reference-list li { margin-bottom: 8px; word-wrap: break-word; }
+        .reference-list a { color: var(--accent-secondary); text-decoration: none; }
+        .reference-list a:hover { text-decoration: underline; }
 
         /* =========================================
            PRINT PDF STYLING
@@ -207,9 +243,9 @@
             body { background: none; padding: 0; margin: 0; }
             .a4-paper { width: 100%; min-height: auto; box-shadow: none; padding: 0; }
             .no-print-area { display: none !important; }
-            h1, h2, h3, .figure-caption { page-break-after: avoid; break-after: avoid; }
+            h1, h2, h3, .figure-caption, .journal-table th { page-break-after: avoid; break-after: avoid; }
             .figure-container, .quote-box { page-break-inside: avoid; break-inside: avoid; }
-            p { orphans: 3; widows: 3; }
+            p, td { orphans: 3; widows: 3; }
             canvas { -webkit-print-color-adjust: exact; color-adjust: exact; }
             .force-page-break { page-break-before: always; }
         }
@@ -220,7 +256,7 @@
     <div class="no-print-area">
         <div class="controls-container">
             <select id="journal-select" class="journal-select" onchange="switchJournal(this.value)">
-                <option value="">Loading Journal Data...</option>
+                <option value="">Loading Data...</option>
             </select>
             <button onclick="window.print()">🖨️ Print Journal (PDF)</button>
         </div>
@@ -246,14 +282,14 @@
         <!-- ABSTRACT -->
         <div class="abstract-container">
             <h2 class="abstract-title">Abstract</h2>
-            <div class="abstract-text" id="j-abstract">Looking for resume.json file...</div>
+            <div class="abstract-text" id="j-abstract">Connecting to knowledge base...</div>
         </div>
 
         <!-- 1. INTRODUCTION -->
         <h2 class="section-title" id="j-prologue-title">1. Prologue</h2>
         <div class="two-columns">
             <p class="story-start" id="j-prologue-dropcap">-</p>
-            <p style="margin-top:0;" id="j-prologue-text">Please wait a moment.</p>
+            <p style="margin-top:0;" id="j-prologue-text">Initializing data...</p>
         </div>
 
         <!-- 2. ANATOMY (Category Visualization) -->
@@ -262,49 +298,85 @@
 
         <div class="figure-container">
             <div class="chart-grid">
-                <div><canvas id="barChart"></canvas></div>
-                <div><canvas id="polarChart"></canvas></div>
+                <!-- Wrapper prevents infinite stretching -->
+                <div class="chart-wrapper"><canvas id="barChart"></canvas></div>
+                <div class="chart-wrapper"><canvas id="polarChart"></canvas></div>
             </div>
             <div class="figure-caption">
-                <strong>Figure 1. Data Anatomy.</strong> (Left) Actual category distribution based on agent data collection. (Right) Illustrative sample of regional cultural distribution (Static).
+                <strong>Figure 1. Data Anatomy.</strong> (Left) Actual category distribution based on agent data collection. (Right) Regional representation of cultural samples.
             </div>
         </div>
 
-        <!-- 3. SHARED HERITAGE (Network Vis) -->
-        <h2 class="section-title" id="j-shared-title">3. Echoes Across Borders</h2>
+        <!-- 3. MAP DISTRIBUTION (Dynamic from data.json) -->
+        <h2 class="section-title">3. Global Distribution Cartography</h2>
+        <p>The map below visualizes the geographical footprint of the documented cultural entities. Each node represents a living heritage actively maintained by local communities, plotted automatically by our intelligence engine.</p>
+        
+        <div class="figure-container force-page-break">
+            <div class="map-container" id="distributionMap"></div>
+            <div class="figure-caption">
+                <strong>Figure 2. Interactive Geo-Spatial Map.</strong> Distribution of Intangible Cultural Heritage entities extracted from the actual database (<i>data.json</i>).
+            </div>
+        </div>
+
+        <!-- 4. SHARED HERITAGE (Network Vis) -->
+        <h2 class="section-title" id="j-shared-title">4. Echoes Across Borders</h2>
         <p id="j-shared-text"></p>
 
         <div class="figure-container force-page-break">
             <div class="network-container" id="nodeNetwork"></div>
             <div class="figure-caption">
-                <strong>Figure 2. Shared Heritage Constellation.</strong> (Illustrative) Box nodes represent registered entities, oval nodes are detected related traditions.
+                <strong>Figure 3. Shared Heritage Constellation.</strong> (Illustrative) Box nodes represent registered entities, oval nodes are detected related traditions.
             </div>
         </div>
 
-        <!-- 4. PERIODIC REPORT (New Chapter from Python) -->
-        <h2 class="section-title" id="j-periodic-title">4. Implementation Status (Periodic Report)</h2>
+        <!-- 5. PERIODIC REPORT -->
+        <h2 class="section-title" id="j-periodic-title">5. Implementation Status (Periodic Report)</h2>
         <div class="quote-box">
             "This section adopts the Periodic Reporting framework (UNESCO Form ICH-10), reviewing institutional and legislative capacities in managing cultural heritage for the relevant quarter."
         </div>
         <p id="j-periodic-text"></p>
 
-        <!-- 5. CONCLUSION -->
-        <h2 class="section-title" id="j-epilogue-title">5. Epilogue</h2>
+        <!-- 6. CONCLUSION -->
+        <h2 class="section-title" id="j-epilogue-title">6. Epilogue</h2>
         <p id="j-epilogue-text"></p>
+
+        <!-- 7. APPENDIX TABLE (Dynamic from data.json) -->
+        <h2 class="section-title force-page-break">Appendix A: Documented Entities Register</h2>
+        <table class="journal-table" id="dataTable">
+            <thead>
+                <tr>
+                    <th style="width: 40%">Entity Name</th>
+                    <th style="width: 30%">Region / Country</th>
+                    <th style="width: 30%">Category Classification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Populated by JS -->
+            </tbody>
+        </table>
+
+        <!-- 8. REFERENCES (Dynamic from data.json) -->
+        <h2 class="section-title">References & Source Citations</h2>
+        <ol class="reference-list" id="refList">
+            <!-- Populated by JS -->
+        </ol>
 
     </div>
 
     <!-- LOGIC PROGRAM -->
     <script>
         let resumeDB = {};
+        let inventoryData = [];
         let barChartInstance = null;
+        let leafletMapInstance = null;
 
-        // Initialize Default Charts (Static Data)
+        // Configuration
+        Chart.defaults.animation = false; 
+        Chart.defaults.font.family = "'Montserrat', sans-serif";
+        Chart.defaults.color = "#4a5568";
+
+        // Initialize Static Charts (Polar & Network)
         function initStaticCharts() {
-            Chart.defaults.animation = false; 
-            Chart.defaults.font.family = "'Montserrat', sans-serif";
-            Chart.defaults.color = "#4a5568";
-
             // Polar Chart (Static)
             const ctxPolar = document.getElementById('polarChart').getContext('2d');
             new Chart(ctxPolar, {
@@ -321,9 +393,9 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false, // Prevents infinite stretching
                     plugins: { 
                         legend: { position: 'bottom', labels: { boxWidth: 10 } },
-                        title: { display: true, text: 'Regional Distribution (Illustrative)' }
                     }
                 }
             });
@@ -355,23 +427,105 @@
             new vis.Network(container, data, options);
         }
 
+        // Initialize dynamic Map from Data.json
+        function renderMap() {
+            if (!leafletMapInstance) {
+                leafletMapInstance = L.map('distributionMap', { zoomControl: true }).setView([20.0, 0.0], 2);
+                L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                    attribution: '&copy; OpenStreetMap &copy; CARTO',
+                    maxZoom: 20
+                }).addTo(leafletMapInstance);
+            }
+
+            // Clear existing markers if any
+            leafletMapInstance.eachLayer((layer) => {
+                if(layer instanceof L.Marker) { leafletMapInstance.removeLayer(layer); }
+            });
+
+            const customIcon = L.divIcon({
+                className: 'custom-div-icon',
+                html: "<div style='background-color:#0f766e; width:10px; height:10px; border-radius:50%; border:2px solid white; box-shadow: 0 0 4px rgba(0,0,0,0.5);'></div>",
+                iconSize: [14, 14],
+                iconAnchor: [7, 7]
+            });
+
+            let bounds = L.latLngBounds();
+            let addedNodes = 0;
+
+            inventoryData.forEach(item => {
+                if (item.location && item.location.lat && item.location.lng) {
+                    L.marker([item.location.lat, item.location.lng], {icon: customIcon})
+                     .addTo(leafletMapInstance)
+                     .bindPopup(`<b>${item.name}</b><br>${item.location.country || 'Unknown'}`);
+                    
+                    bounds.extend([item.location.lat, item.location.lng]);
+                    addedNodes++;
+                }
+            });
+
+            if (addedNodes > 0) {
+                leafletMapInstance.fitBounds(bounds, { padding: [20, 20], maxZoom: 5 });
+            }
+        }
+
+        // Render Data Table
+        function renderTable() {
+            const tbody = document.querySelector('#dataTable tbody');
+            tbody.innerHTML = '';
+            
+            if (inventoryData.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="3" style="text-align:center;">No data available.</td></tr>';
+                return;
+            }
+
+            inventoryData.forEach(item => {
+                const tr = document.createElement('tr');
+                const name = item.name || 'Unknown Entity';
+                const country = (item.location && item.location.country) ? item.location.country : 'Unspecified';
+                const category = item.category || 'Uncategorized';
+                
+                tr.innerHTML = `
+                    <td><strong>${name}</strong></td>
+                    <td>${country}</td>
+                    <td>${category}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Render References
+        function renderReferences() {
+            const refList = document.getElementById('refList');
+            refList.innerHTML = '';
+
+            if (inventoryData.length === 0) {
+                refList.innerHTML = '<li>No citations generated.</li>';
+                return;
+            }
+
+            inventoryData.forEach(item => {
+                if (item.source_url) {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<b>${item.name || 'Dataset'}</b>. Source: <a href="${item.source_url}" target="_blank">${item.source_url}</a>`;
+                    refList.appendChild(li);
+                }
+            });
+        }
+
         // Render Dynamic Bar Chart from JSON
         function updateBarChart(categoriesObj) {
             const ctxBar = document.getElementById('barChart').getContext('2d');
-            
             const labels = Object.keys(categoriesObj);
             const data = Object.values(categoriesObj);
 
-            if (barChartInstance) {
-                barChartInstance.destroy();
-            }
+            if (barChartInstance) { barChartInstance.destroy(); }
 
             barChartInstance = new Chart(ctxBar, {
                 type: 'bar',
                 data: {
                     labels: labels.length > 0 ? labels : ['No Data'],
                     datasets: [{
-                        label: 'Number of Entities',
+                        label: 'Entities Count',
                         data: data.length > 0 ? data : [0],
                         backgroundColor: 'rgba(159, 18, 57, 0.8)',
                         borderRadius: 4
@@ -379,16 +533,16 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false, // Prevents infinite stretching
                     plugins: { 
-                        legend: { display: false },
-                        title: { display: true, text: 'Actual Category Distribution' }
+                        legend: { display: false }
                     },
                     scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
                 }
             });
         }
 
-        // Load & Switch Journal Content
+        // Switch Journal Content based on Dropdown
         function switchJournal(quarter) {
             if (!quarter || !resumeDB[quarter]) return;
             
@@ -396,51 +550,54 @@
             const content = entry.content;
             const sections = content.sections;
 
-            // Update Date
             document.getElementById('j-date').textContent = `Published: ${entry.statistics.generated_at || 'N/A'}`;
-
-            // Main Text
             document.getElementById('j-title').textContent = content.title || `Quarter Journal ${quarter}`;
             document.getElementById('j-abstract').textContent = content.abstract || '';
 
-            // Prologue
             document.getElementById('j-prologue-title').textContent = sections.prologue?.title || "1. Prologue";
             document.getElementById('j-prologue-dropcap').textContent = sections.prologue?.dropcap || "";
             document.getElementById('j-prologue-text').textContent = sections.prologue?.text || "";
 
-            // Anatomy
             document.getElementById('j-anatomy-title').textContent = sections.anatomy?.title || "2. Anatomy of Tradition";
             document.getElementById('j-anatomy-text').textContent = sections.anatomy?.text || "";
 
-            // Shared Heritage
-            document.getElementById('j-shared-title').textContent = sections.shared_heritage?.title || "3. Echoes Across Borders";
+            document.getElementById('j-shared-title').textContent = sections.shared_heritage?.title || "4. Echoes Across Borders";
             document.getElementById('j-shared-text').textContent = sections.shared_heritage?.text || "";
 
-            // Periodic Report
-            document.getElementById('j-periodic-title').textContent = sections.periodic_report?.title || "4. Implementation Status (Periodic Report)";
+            document.getElementById('j-periodic-title').textContent = sections.periodic_report?.title || "5. Implementation Status (Periodic Report)";
             document.getElementById('j-periodic-text').textContent = sections.periodic_report?.text || "";
 
-            // Epilogue
-            document.getElementById('j-epilogue-title').textContent = sections.epilogue?.title || "5. Epilogue";
+            document.getElementById('j-epilogue-title').textContent = sections.epilogue?.title || "6. Epilogue";
             document.getElementById('j-epilogue-text').textContent = sections.epilogue?.text || "";
 
-            // Update Chart
+            // Update Chart with actual data statistics
             updateBarChart(entry.statistics?.categories_distribution || {});
         }
 
-        // Fetch JSON Data
-        async function fetchJournalData() {
+        // Master Fetch Function (Gets both resume.json and data.json)
+        async function fetchAllData() {
             try {
-                // For local testing, make sure to use a Live Server / web server
-                const response = await fetch('resume.json');
-                if (!response.ok) throw new Error('File resume.json not found.');
-                
-                resumeDB = await response.json();
-                
+                // 1. Fetch Narrative Journal (resume.json)
+                const resJournal = await fetch('resume.json');
+                if (resJournal.ok) {
+                    resumeDB = await resJournal.json();
+                } else {
+                    console.warn('resume.json not found');
+                }
+
+                // 2. Fetch Actual Data for Maps/Tables (data.json)
+                const resData = await fetch('data.json');
+                if (resData.ok) {
+                    const rawData = await resData.json();
+                    inventoryData = rawData.inventory || [];
+                } else {
+                    console.warn('data.json not found');
+                }
+
+                // Populate Dropdown
                 const selectEl = document.getElementById('journal-select');
-                selectEl.innerHTML = ''; // Empty the dropdown
+                selectEl.innerHTML = ''; 
                 
-                // Filter only "complete" status and sort starting from the newest
                 const availableQuarters = Object.keys(resumeDB)
                     .filter(q => resumeDB[q].status === "complete")
                     .sort().reverse();
@@ -448,32 +605,34 @@
                 if (availableQuarters.length === 0) {
                     selectEl.innerHTML = '<option value="">No journals available (Incomplete)</option>';
                     document.getElementById('j-title').textContent = "No Complete Journals Yet";
-                    return;
+                    document.getElementById('j-abstract').textContent = "Database is waiting for python AI to generate the first complete journal. Check GitHub Actions.";
+                } else {
+                    availableQuarters.forEach(q => {
+                        const option = document.createElement('option');
+                        option.value = q;
+                        option.textContent = `${q} Quarter Edition`;
+                        selectEl.appendChild(option);
+                    });
+                    // Load the newest edition narrative
+                    switchJournal(availableQuarters[0]);
                 }
 
-                // Fill Dropdown
-                availableQuarters.forEach(q => {
-                    const option = document.createElement('option');
-                    option.value = q;
-                    option.textContent = `${q} Quarter Edition`;
-                    selectEl.appendChild(option);
-                });
-
-                // Automatically load the newest edition
-                switchJournal(availableQuarters[0]);
+                // Render dynamic components using data.json
+                renderMap();
+                renderTable();
+                renderReferences();
 
             } catch (error) {
-                console.error("Failed to fetch data:", error);
-                document.getElementById('j-title').textContent = "Failed to Load Journal Database";
-                document.getElementById('j-abstract').innerHTML = `Make sure the <b>resume.json</b> file has been generated by Python and is in the same folder. <i>(Warning: If you open this file directly (file://), the browser might block JSON access. Use Live Server/GitHub Pages)</i>.`;
-                document.getElementById('journal-select').innerHTML = '<option value="">Data Access Error</option>';
+                console.error("Data Fetch Error:", error);
+                document.getElementById('j-title').textContent = "Failed to Load Databases";
+                document.getElementById('j-abstract').innerHTML = `Ensure both <b>resume.json</b> and <b>data.json</b> exist. <i>(If running locally, use Live Server to avoid CORS issues)</i>.`;
             }
         }
 
-        // Run when the document is ready
+        // Init
         window.addEventListener('DOMContentLoaded', () => {
             initStaticCharts();
-            fetchJournalData();
+            fetchAllData();
         });
     </script>
 </body>
