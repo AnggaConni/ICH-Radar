@@ -386,24 +386,66 @@
 
         <!-- 5. Methodology & Limitations -->
         <h2 class="section-title">5. Methodology & Limitations</h2>
-        
-        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">5.1 Data Collection and Discovery Process</h3>
-        <p>This study employs an automated, iterative data collection system designed to identify and document Intangible Cultural Heritage (ICH) elements at scale. Data acquisition is conducted through a two-phase computational pipeline:</p>
-        
-        <p><strong>Discovery Phase:</strong> Cultural elements are identified using a multilingual keyword-based search strategy across global digital sources, including community blogs, local media, open knowledge platforms, and publicly accessible web content. The system intentionally includes both formally recognized and unregistered heritage practices.</p>
-        
-        <p><strong>Enrichment Phase:</strong> AI-assisted retrieval mechanism enhances missing attributes such as descriptive narratives, cultural significance, procedural knowledge (crafting, rituals, recipes), and supporting visual references. This loop prioritizes data completeness and diversity over volume.</p>
 
-        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">5.2 AI-Assisted Analysis and Structuring</h3>
-        <p>All collected data is processed using an AI language model with search-grounding capabilities to extract structured descriptions, classify elements, and identify potential cross-cultural relationships. The system applies a low-temperature configuration to ensure standardized and consistent outputs.</p>
+        <!-- Figure 1: Methodology Flow -->
+        <div style="margin: 20px 0; padding: 16px; border: 1px solid #ddd; border-radius: 8px; font-family: monospace; background: #fafafa;">
+            <div style="text-align:center; font-weight: bold; margin-bottom: 10px;">
+                Figure 1. Computational Methodology Flow (Discovery–Enrichment Loop)
+            </div>
+            <div style="text-align:center;">
+                Discovery → Enrichment → Validation → Structuring → Journal Output  
+                ↺ Continuous Iterative Loop
+            </div>
+        </div>
 
-        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">5.3 Geo-Spatial and Network Mapping</h3>
-        <p>Geographical coordinates are derived using geocoding services to construct global distribution maps and network graphs. This enables spatial visualization of cultural diffusion patterns and transnational linkages.</p>
+        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
+        5.1 Data Collection and Discovery Process
+        </h3>
 
-        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">5.4 Data Validation and Quality Control</h3>
-        <p>The system incorporates automated validation, including detection of incomplete records and fallback retrieval strategies (e.g., Wikimedia). However, no manual ethnographic verification is currently applied.</p>
+        <p>
+        This study employs an automated, iterative data collection system designed to identify and document Intangible Cultural Heritage (ICH) elements at scale. Data acquisition is conducted through a two-phase computational pipeline, operating in a continuous discovery–enrichment loop.
+        </p>
 
-        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">5.5 Limitations</h3>
+        <p>
+        <strong>Discovery Phase:</strong> Cultural elements are identified using a multilingual keyword-based search strategy across global digital sources, including community blogs, local media, open knowledge platforms, and publicly accessible web content. The system intentionally includes both formally recognized and unregistered heritage practices.
+        </p>
+
+        <p>
+        <strong>Enrichment Phase:</strong> The system systematically enriches incomplete records through an AI-assisted retrieval mechanism, enhancing attributes such as descriptive narratives, cultural significance, procedural knowledge (crafting, rituals, recipes), and supporting visual references.
+        </p>
+
+        <p>
+        This iterative mechanism allows the system to progressively improve data completeness and quality over time, rather than relying on one-time data extraction.
+        </p>
+
+        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
+        5.2 AI-Assisted Analysis and Structuring
+        </h3>
+
+        <p>
+        All collected data is processed using an AI language model with search-grounding capabilities to extract structured descriptions, classify elements, and identify potential cross-cultural relationships. The system applies a low-temperature configuration to ensure consistency, reduce generative variability, and maintain reproducible outputs.
+        </p>
+
+        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
+        5.3 Geo-Spatial and Network Mapping
+        </h3>
+
+        <p>
+        Geographical coordinates are derived using geocoding services to construct global distribution maps and network graphs. This enables spatial visualization of cultural diffusion patterns and transnational linkages.
+        </p>
+
+        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
+        5.4 Data Validation and Quality Control
+        </h3>
+
+        <p>
+        The system incorporates automated validation, including detection of incomplete records, timestamped updates, and fallback retrieval strategies (e.g., Wikimedia). These mechanisms support data traceability and incremental improvement over time. However, no manual ethnographic verification is currently applied.
+        </p>
+
+        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
+        5.5 Limitations
+        </h3>
+
         <ul style="padding-left: 20px; margin-bottom: 16px;">
             <li><strong>Source Reliability:</strong> Data is derived from heterogeneous online sources which may introduce inconsistencies.</li>
             <li><strong>Lack of Field Validation:</strong> The system does not replace ethnographic fieldwork; findings are preliminary cultural signals.</li>
@@ -411,9 +453,13 @@
             <li><strong>Algorithmic Bias:</strong> Search engine indexing may influence which cultural elements are discovered.</li>
         </ul>
 
-        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">5.6 Positioning of the System</h3>
-        <p>This framework is not intended to replace traditional ethnographic methodologies. Instead, it functions as a <strong>computational pre-ethnographic layer</strong>, designed to detect, structure, and surface cultural patterns at scale.</p>
+        <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
+        5.6 Positioning of the System
+        </h3>
 
+        <p>
+        This framework is not intended to replace traditional ethnographic methodologies. Instead, it functions as a <strong>computational pre-ethnographic layer</strong>, designed to detect, structure, and surface cultural patterns at scale—serving as an entry point for further academic or field-based investigation.
+        </p>
         <!-- 6. CONCLUSION -->
         <h2 class="section-title" id="j-epilogue-title">6. Epilogue</h2>
         <p id="j-epilogue-text"></p>
