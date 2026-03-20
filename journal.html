@@ -237,7 +237,7 @@
         .reference-list a:hover { text-decoration: underline; }
 
         /* =========================================
-           PRINT PDF STYLING
+           PRINT PDF STYLING (DIKEMAS LEBIH PADAT)
            ========================================= */
         @media print {
             @page { size: A4 portrait; margin: 20mm; }
@@ -254,9 +254,23 @@
             .no-print-area { display: none !important; }
             h1, h2, h3, .figure-caption, .journal-table th { page-break-after: avoid; break-after: avoid; }
             
-            /* Margin sedikit disesuaikan untuk transisi halaman yang lebih rapi */
-            .figure-container, .quote-box { page-break-inside: avoid; break-inside: avoid; margin-top: 15px; margin-bottom: 20px; }
-            p, td { orphans: 3; widows: 3; }
+            /* MERAPATKAN JARAK AGAR TIDAK BANYAK LAHAN KOSONG */
+            .figure-container, .quote-box { 
+                page-break-inside: avoid; 
+                break-inside: avoid; 
+                margin-top: 10px; 
+                margin-bottom: 15px; 
+                padding: 10px;
+            }
+            
+            h2.section-title { margin-top: 15px; padding-bottom: 2px; }
+            p { margin-bottom: 10px; line-height: 1.5; orphans: 3; widows: 3; }
+            
+            /* MENGECILKAN UKURAN PETA DAN GRAFIK KHUSUS SAAT PRINT AGAR MUAT */
+            .map-container, .network-container { height: 260px !important; margin-bottom: 10px; }
+            .chart-wrapper { height: 220px !important; }
+            .chart-stack { gap: 15px; }
+
             canvas { -webkit-print-color-adjust: exact !important; color-adjust: exact !important; }
             
             /* Menghapus paksaan halaman baru agar tidak ada lahan kosong berlebih */
@@ -305,10 +319,9 @@
             <p style="margin-top:0;" id="j-prologue-text">Initializing data...</p>
         </div>
 
-        <!-- DIPINDAHKAN: Gambar 1 kini diletakkan DI ATAS section 2 Anatomy -->
+        <!-- Gambar 1 DI ATAS section 2 Anatomy -->
         <div class="figure-container">
             <div class="chart-stack">
-                <!-- Wrapper prevents infinite stretching -->
                 <div class="chart-wrapper"><canvas id="barChart"></canvas></div>
                 <div class="chart-wrapper"><canvas id="polarChart"></canvas></div>
             </div>
@@ -326,7 +339,6 @@
         <h2 class="section-title">3. Global Distribution Cartography</h2>
         <p>The map below visualizes the geographical footprint of the documented cultural entities. Each node represents a living heritage actively maintained by local communities, plotted automatically by our intelligence engine based on real-time data scraping.</p>
         
-        <!-- Dihapus: force-page-break agar tidak memakan lahan kosong secara paksa -->
         <div class="figure-container">
             <div class="map-container" id="distributionMap"></div>
             <div class="figure-caption">
@@ -338,7 +350,6 @@
         <h2 class="section-title" id="j-shared-title">4. Echoes Across Borders</h2>
         <p id="j-shared-text"></p>
 
-        <!-- Dihapus: force-page-break agar tidak memakan lahan kosong secara paksa -->
         <div class="figure-container">
             <div class="network-container" id="nodeNetwork"></div>
             <div class="figure-caption">
@@ -358,7 +369,6 @@
         <p id="j-epilogue-text"></p>
 
         <!-- 7. APPENDIX TABLE (Dynamic from data.json) -->
-        <!-- Menjaga tabel referensi di halaman baru secara wajar -->
         <h2 class="section-title" style="page-break-before: always;">Appendix A: Documented Entities Register</h2>
         <table class="journal-table" id="dataTable">
             <thead>
@@ -389,18 +399,21 @@
         let polarChartInstance = null;
         let leafletMapInstance = null;
 
-        // Configuration
         Chart.defaults.animation = false; 
         Chart.defaults.font.family = "'Montserrat', sans-serif";
         Chart.defaults.color = "#4a5568";
 
-        // Helper string truncator for network labels
         function truncateStr(str, n) {
             if(!str) return "Unknown";
             return (str.length > n) ? str.substr(0, n-1) + '...' : str;
         }
 
-        // Region Mapper for the Polar Chart
+        // FUNGSI BARU: Membuang angka bawaan dari AI (misal: "3. Judul" menjadi "Judul")
+        function stripNum(str) {
+            if (!str) return "";
+            return str.replace(/^\d+[\.\-\:]?\s*/, '').trim();
+        }
+
         function getRegion(country) {
             const c = country.toLowerCase();
             if (['japan', 'china', 'south korea', 'vietnam', 'philippines', 'indonesia', 'malaysia', 'myanmar', 'thailand', 'india', 'pakistan', 'iran', 'bangladesh'].includes(c)) return 'Asia & Pacific';
@@ -411,7 +424,6 @@
             return 'Other Regions';
         }
 
-        // Render Dynamic Maps from Data.json
         function renderMap() {
             if (!leafletMapInstance) {
                 leafletMapInstance = L.map('distributionMap', { zoomControl: true }).setView([20.0, 0.0], 2);
@@ -425,7 +437,6 @@
                 if(layer instanceof L.Marker) { leafletMapInstance.removeLayer(layer); }
             });
 
-            // Perbaikan CSS in-line agar titik lebih kecil (8px) dan warna hijau (teal) ikut tercetak saat diprint
             const customIcon = L.divIcon({
                 className: 'custom-div-icon',
                 html: "<div style='background-color:#0f766e !important; width:8px; height:8px; border-radius:50%; border:1.5px solid white; box-shadow: 0 0 4px rgba(0,0,0,0.5); -webkit-print-color-adjust: exact; print-color-adjust: exact;'></div>",
@@ -452,7 +463,6 @@
             }
         }
 
-        // Render Data Table
         function renderTable() {
             const tbody = document.querySelector('#dataTable tbody');
             tbody.innerHTML = '';
@@ -477,7 +487,6 @@
             });
         }
 
-        // Render References
         function renderReferences() {
             const refList = document.getElementById('refList');
             refList.innerHTML = '';
@@ -489,7 +498,6 @@
 
             inventoryData.forEach(item => {
                 if (item.source_urls && item.source_urls.length > 0) {
-                    // Just take the first primary URL to avoid making the list too long
                     const primaryUrl = item.source_urls[0];
                     const li = document.createElement('li');
                     li.innerHTML = `<b>${item.element_name || 'Dataset'}</b>. Source: <a href="${primaryUrl}" target="_blank">${truncateStr(primaryUrl, 60)}</a>`;
@@ -498,14 +506,12 @@
             });
         }
 
-        // Render Dynamic Network Graph (Vis-Network) from data.json
         function renderDynamicNetwork() {
             const nodesArr = [];
             const edgesArr = [];
             const existingNodeIds = new Set();
 
             inventoryData.forEach(item => {
-                // Add Main Node
                 if (!existingNodeIds.has(item.id)) {
                     nodesArr.push({ 
                         id: item.id, 
@@ -515,10 +521,8 @@
                     existingNodeIds.add(item.id);
                 }
 
-                // Add Shared/Related Nodes
                 if (item.shared_heritage_detection && item.shared_heritage_detection.is_shared) {
                     item.shared_heritage_detection.related_elements.forEach(rel => {
-                        // Create a reliable unique ID for shared elements
                         const relId = 'shared_' + rel.element_name.toLowerCase().replace(/\s+/g, '_');
                         
                         if (!existingNodeIds.has(relId)) {
@@ -530,12 +534,11 @@
                             existingNodeIds.add(relId);
                         }
 
-                        // Create Connection
                         edgesArr.push({ 
                             from: item.id, 
                             to: relId, 
                             label: truncateStr(rel.relationship_reason, 15), 
-                            title: rel.relationship_reason // tooltip on hover
+                            title: rel.relationship_reason
                         });
                     });
                 }
@@ -560,13 +563,11 @@
             
             const network = new vis.Network(container, data, options);
             
-            // Stop jittering after layout stabilizes
             network.on("stabilizationIterationsDone", function () {
                 network.setOptions( { physics: false } );
             });
         }
 
-        // Render Dynamic Bar Chart
         function updateBarChart(categoriesObj) {
             const ctxBar = document.getElementById('barChart').getContext('2d');
             const labels = Object.keys(categoriesObj);
@@ -597,11 +598,9 @@
             });
         }
 
-        // Render Dynamic Polar Chart
         function updatePolarChart() {
             const ctxPolar = document.getElementById('polarChart').getContext('2d');
             
-            // Calculate regional tally from actual data
             const regionCounts = { 'Asia & Pacific': 0, 'Americas': 0, 'Europe': 0, 'Africa': 0, 'Oceania': 0, 'Other Regions': 0 };
             inventoryData.forEach(item => {
                 if (item.location && item.location.country) {
@@ -612,7 +611,6 @@
                 }
             });
 
-            // Filter out empty regions
             const labels = [];
             const data = [];
             const colors = ['rgba(15, 118, 110, 0.7)', 'rgba(217, 119, 6, 0.7)', 'rgba(37, 99, 235, 0.7)', 'rgba(225, 29, 72, 0.7)', 'rgba(139, 92, 246, 0.7)', 'rgba(100, 116, 139, 0.7)'];
@@ -650,7 +648,6 @@
             });
         }
 
-        // Switch Journal Content based on Dropdown
         function switchJournal(quarter) {
             if (!quarter || !resumeDB[quarter]) return;
             
@@ -662,30 +659,28 @@
             document.getElementById('j-title').textContent = content.title || `Quarter Journal ${quarter}`;
             document.getElementById('j-abstract').textContent = content.abstract || '';
 
-            document.getElementById('j-prologue-title').textContent = sections.prologue?.title || "1. Prologue";
+            // MEMAKSA URUTAN ANGKA AGAR SELALU BENAR DAN TIDAK KEMBAR DENGAN AI
+            document.getElementById('j-prologue-title').textContent = "1. " + stripNum(sections.prologue?.title || "Prologue");
             document.getElementById('j-prologue-dropcap').textContent = sections.prologue?.dropcap || "";
             document.getElementById('j-prologue-text').textContent = sections.prologue?.text || "";
 
-            document.getElementById('j-anatomy-title').textContent = sections.anatomy?.title || "2. Anatomy of Tradition";
+            document.getElementById('j-anatomy-title').textContent = "2. " + stripNum(sections.anatomy?.title || "Anatomy of Tradition");
             document.getElementById('j-anatomy-text').textContent = sections.anatomy?.text || "";
 
-            document.getElementById('j-shared-title').textContent = sections.shared_heritage?.title || "4. Echoes Across Borders";
+            document.getElementById('j-shared-title').textContent = "4. " + stripNum(sections.shared_heritage?.title || "Echoes Across Borders");
             document.getElementById('j-shared-text').textContent = sections.shared_heritage?.text || "";
 
-            document.getElementById('j-periodic-title').textContent = sections.periodic_report?.title || "5. Implementation Status (Periodic Report)";
+            document.getElementById('j-periodic-title').textContent = "5. " + stripNum(sections.periodic_report?.title || "Implementation Status (Periodic Report)");
             document.getElementById('j-periodic-text').textContent = sections.periodic_report?.text || "";
 
-            document.getElementById('j-epilogue-title').textContent = sections.epilogue?.title || "6. Epilogue";
+            document.getElementById('j-epilogue-title').textContent = "6. " + stripNum(sections.epilogue?.title || "Epilogue");
             document.getElementById('j-epilogue-text').textContent = sections.epilogue?.text || "";
 
-            // Update charts with actual data statistics
             updateBarChart(entry.statistics?.categories_distribution || {});
         }
 
-        // Master Fetch Function
         async function fetchAllData() {
             try {
-                // 1. Fetch Narrative Journal (resume.json)
                 const resJournal = await fetch('resume.json');
                 if (resJournal.ok) {
                     resumeDB = await resJournal.json();
@@ -693,7 +688,6 @@
                     console.warn('resume.json not found');
                 }
 
-                // 2. Fetch Actual Data for Maps/Tables/Network (data.json)
                 const resData = await fetch('data.json');
                 if (resData.ok) {
                     const rawData = await resData.json();
@@ -702,7 +696,6 @@
                     console.warn('data.json not found');
                 }
 
-                // Populate Dropdown
                 const selectEl = document.getElementById('journal-select');
                 selectEl.innerHTML = ''; 
                 
@@ -721,11 +714,9 @@
                         option.textContent = `${q} Quarter Edition`;
                         selectEl.appendChild(option);
                     });
-                    // Load the newest edition narrative
                     switchJournal(availableQuarters[0]);
                 }
 
-                // Render all dynamic components using actual data.json
                 renderMap();
                 renderTable();
                 renderReferences();
@@ -739,7 +730,6 @@
             }
         }
 
-        // Init
         window.addEventListener('DOMContentLoaded', () => {
             fetchAllData();
         });
