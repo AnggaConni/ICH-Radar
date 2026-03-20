@@ -250,6 +250,27 @@
             canvas { -webkit-print-color-adjust: exact; color-adjust: exact; }
             .force-page-break { page-break-before: always; }
         }
+
+        /* =========================================
+           PRINT FIX: MEMAKSA UKURAN GRAFIK
+           ========================================= */
+        .chart-wrapper canvas {
+            max-width: 100% !important;
+            max-height: 100% !important;
+        }
+
+        @media print {
+            body {
+                display: block !important; /* Mematikan flexbox body yang sering error saat print */
+            }
+            .figure-container {
+                margin: 15px 0 !important; /* Memperkecil margin atas-bawah saat print agar lebih padat */
+            }
+            .chart-wrapper {
+                height: 250px !important; /* Mengunci tinggi grafik agar browser tidak panik */
+            }
+        }
+
     </style>
 </head>
 <body>
