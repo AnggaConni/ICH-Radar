@@ -1,0 +1,20 @@
+{
+    "2026-Q1": {
+        "status": "incomplete",
+        "statistics": {
+            "total_items": 43,
+            "categories_distribution": {
+                "Traditional Craftsmanship": 17,
+                "Social Practices & Rituals": 9,
+                "Culinary Traditions": 8,
+                "Culinary Traditions | Social Practices & Rituals": 1,
+                "Performing Arts": 5,
+                "Social Practices & Rituals | Performing Arts": 1,
+                "Oral Traditions | Performing Arts": 1,
+                "Oral Traditions": 1
+            },
+            "generated_at": "2026-03-20 08:30:08"
+        },
+        "content": {}
+    }
+}

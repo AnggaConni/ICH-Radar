@@ -3287,19 +3287,262 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c1365c80",
+      "element_name": "Ka Nua Ritual",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//efws.ac.id/index.php/EFWS/article/view/100&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://efws.ac.id/index.php/EFWS/article/view/100",
+        "https://jelajah.kompas.com/read/2010/12/09/1654395/ritual.adat.langka.ka.nua.yang.nyaris.punah",
+        "https://www.kompas.com/travel/read/2010/12/10/11562916/ka.nua.yang.nyaris.punah",
+        "https://www.scribd.com/document/425026903/Kebudayaan-dan-Adat-Etnis-Bajawa",
+        "https://www.threadsaslife.com/pages/flores",
+        "https://www.museumofwander.com/guide-to-bajawa-flores-indonesia/",
+        "https://exoticeastnusatenggara.com/acara-adat/",
+        "https://repository.upi.edu/2824/4/S_SENI_1001402_Chapter3.pdf",
+        "https://www.cycloscope.net/ngada-villages-bajawa-cultural-guide-to-bena-and-gurusina/"
+      ],
+      "scraped_at": "2026-03-20T08:28:07.942959Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "East Nusa Tenggara"
+        ],
+        "lat": -8.5656787,
+        "lng": 120.6978581
+      },
+      "resume_analisa": {
+        "description": "The Ka Nua ritual is a rare and sacred village inauguration ceremony of the Bajawa people in Ngada, Flores, East Nusa Tenggara, Indonesia. It represents the highest hierarchical traditional feast in Bajawa culture and is performed only once to officially recognize a new traditional village (nua) as complete and perfect. This grand thanksgiving celebration involves a large number of participants and is characterized by festive events, including numerous sacrifices of pigs and buffaloes. The ritual serves to purify the village and its inhabitants from sins and diseases, and it plays a crucial role in strengthening kinship ties among the community members.",
+        "cultural_significance": "The Ka Nua ritual holds profound cultural significance for the Bajawa people. It symbolizes the attainment of perfection for a new traditional village, often described with the phrase 'sadho Inerie leba suru laki,' signifying reaching the peak of Mount Inerie, the highest mountain in Bajawa. It is a sacred ceremony that legitimizes a settlement for a community, culminating in elaborate offerings and animal sacrifices. Beyond its ceremonial aspects, Ka Nua narrates the history of ancestors and imparts educational messages, advice, and guidance for fostering a better and more harmonious life within the community. Furthermore, it acts as a powerful bond for kinship, drawing relatives from distant places to reunite and participate in the communal celebration. Ultimately, it serves as a collective expression of gratitude to God and the ancestors for their blessings.",
+        "gemini_tags": [
+          "Ritual",
+          "Village Inauguration",
+          "Bajawa Culture",
+          "Flores",
+          "East Nusa Tenggara",
+          "Indonesia",
+          "Endangered Tradition",
+          "Ancestor Worship",
+          "Animal Sacrifice",
+          "Community Practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual Ceremony",
+        "materials_and_tools": [
+          "Buffaloes (for sacrifice)",
+          "Pigs (for sacrifice)",
+          "Traditional musical instruments (gong - 'go', drum - 'laba')",
+          "Offerings (e.g., betel nut, lime, areca nut, gambier, tobacco, though specific to Ka Nua not explicitly detailed, these are common in Bajawa rituals)",
+          "Megalithic stone altars",
+          "Ngadhu (male ancestor shrine)",
+          "Bhaga (female ancestor shrine)"
+        ],
+        "step_by_step": [
+          "**Prerequisite: Ka Sao Ritual**: Before the Ka Nua ritual can be performed, all traditional houses (sa'o) within the new village must first be inaugurated through a separate ritual called Ka Sao.",
+          "**Uma Moni (Opening a New Field)**: This initial step is a thanksgiving ceremony held at the beginning of harvesting a new garden or field. It is marked by the performance of the Ja'i dance as an expression of gratitude for the harvest and the creation of megalithic monuments dedicated to each harvested field.",
+          "**Nuka Wole Pare Medo (Bringing Harvest from the Garden to the Traditional House)**: Following the harvest, the produce is ceremonially transported from the fields to the traditional houses.",
+          "**Kada Kolo Bhaga-Raju Madhu (Inauguration of Miniature Houses in the Village Center)**: This stage involves the inauguration of miniature structures located in the center of the village. These structures symbolize male ancestors (ngadhu) and female ancestors (bhaga).",
+          "**Todo Kabu Keri (Cutting the Alang-alang / Trampling Grass)**: This act officially marks the inauguration of the traditional house and symbolizes the purification of the village and its inhabitants from sins and diseases. It typically takes place in the central village square (kisa nua).",
+          "**Animal Sacrifice**: A significant part of the ritual involves the sacrifice of numerous animals, including buffaloes (e.g., 20) and pigs (e.g., 120). The blood of the sacrificed buffaloes is believed to fertilize the land and ensure its productivity.",
+          "**Communal Feast and Dance**: The entire event is accompanied by traditional Bajawa dances, such as Ja'i, and ethnic music played with instruments like 'go' (gong) and 'laba' (drum). A communal feast is also part of the celebration.",
+          "**Discussion and Reconciliation**: During the ritual, community leaders address and resolve various issues, including clan conflicts, to foster inner peace and prevent prolonged grudges among the villagers."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-564ced8e",
+      "element_name": "Anshun Dixi Opera (安顺地戏)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://image.shutterstock.com/image-photo/china-anshun-dixi-nuo-opera-260nw-2034918014.jpg",
+      "source_urls": [
+        "https://zh.wikipedia.org/wiki/%E5%9C%B0%E6%88%8F",
+        "https://www.chinadaily.com.cn/culture/2015-09/14/content_21873105.htm",
+        "https://www.chinadaily.com.cn/a/201802/20/WS5a8b417fa3106e7dcc18084a.html",
+        "https://www.chinadaily.com.cn/a/202110/22/WS617235a9a310cdd39e49220c.html",
+        "http://www.nuowenhua.com/html/nuowenhua/20050522/16.html",
+        "http://www.nuowenhua.com/html/xuehuihuodong/20241215/154.html",
+        "http://culture.china.com.cn/2025-08/01/content_42211907.htm",
+        "https://www.gmw.cn/2024-03/01/content_37160759.htm",
+        "https://www.youtube.com/watch?v=Q-1c-2n-01s"
+      ],
+      "scraped_at": "2026-03-20T08:28:47.286097Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Guizhou"
+        ],
+        "lat": 27.0,
+        "lng": 107.0
+      },
+      "resume_analisa": {
+        "description": "Anshun Dixi Opera, also known as \"Tuanpu Jumping God\" or Ground Opera, is an ancient folk drama unique to the Tunpu people of Anshun, Guizhou, China. Originating in the early Ming Dynasty (approximately 600 years ago), it developed from military garrisons sent to the region, integrating military training, sacrificial rituals, and entertainment. Performers don distinctive wooden masks on their foreheads, cover their faces with green gauze, wear battle skirts, and wield traditional weapons like spears and swords. The performances are characterized by martial dances accompanied by gongs and drums. The narratives typically revolve around historical war stories, promoting themes of loyalty and patriotism, often featuring heroes from classic Chinese novels such as \"Romance of the Three Kingdoms\" and \"Generals of the Yang Family\". The opera is performed in open village spaces, which is why it is called \"Ground Opera\" (Dixi).",
+        "cultural_significance": "Anshun Dixi Opera is widely regarded as a \"living fossil of Chinese drama\" and a \"living museum of Chinese drama history\" due to its remarkable preservation of ancient performance styles and its crucial role in illustrating the evolution of Chinese opera from archaic Nuo rituals. It forms a fundamental component of Tunpu culture, deeply reflecting their historical narrative, spiritual beliefs, and communal customs. Historically, the opera served multiple purposes, including warding off evil spirits, supplicating for bountiful harvests, and maintaining the martial prowess of the soldier-farmers (Tunpu people). Today, it remains a significant cultural event, particularly during the Spring Festival and the mid-July harvest season, serving both as a form of blessing and entertainment. Furthermore, it plays an important role in fostering national identity and facilitating cultural exchange. In recognition of its profound cultural value, Anshun Dixi Opera was inscribed on the first batch of National Intangible Cultural Heritage of China in 2006.",
+        "gemini_tags": [
+          "Chinese Traditional Opera",
+          "Nuo Culture",
+          "Masked Performance",
+          "Folk Ritual",
+          "Intangible Cultural Heritage",
+          "Guizhou Culture",
+          "Tunpu Culture",
+          "Martial Arts Performance",
+          "Exorcism Rituals",
+          "Historical Drama"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance and Traditional Craftsmanship (Mask Making)",
+        "materials_and_tools": [
+          "Wooden masks (known as \"lianzi\" or \"face\")",
+          "Green gauze (to cover the face, with the mask positioned on the forehead)",
+          "Battle skirts, long gowns, battle robes",
+          "Weapons (e.g., spears, swords)",
+          "Small flags (worn on the back)",
+          "Gong and drum (for musical accompaniment)",
+          "Dingxiang wood or poplar wood (for mask carving)",
+          "Carving tools (e.g., chisels)",
+          "Paints (red, green, blue, white, yellow, black)",
+          "Gold leaf and silver leaf (for embellishment)",
+          "Glass pieces (for mask embellishment)"
+        ],
+        "step_by_step": [
+          "**Mask Making Process:**",
+          "1. **Material Selection**: Select high-quality Dingxiang wood or poplar wood.",
+          "2. **Carving**: Intricately carve the mask, which typically comprises the face, helmet, and ears. The facial features adhere to specific traditional conventions, such as distinct eyebrow styles for different character types and prescribed methods for carving mouths and eyes. Carving techniques often combine shallow relief and openwork.",
+          "3. **Painting and Embellishment**: Apply a vibrant palette of colors including red, green, blue, white, yellow, and black. Gold leaf and silver leaf are often used for added brilliance, and sometimes glass pieces are embedded for a more elaborate finish.",
+          "4. **\"Opening Light\" (开光 - Kaiguang) Ceremony**: Following the carving, a sacred ritual is performed by the carver to imbue the mask with spiritual essence. This involves reverently placing the mask on a shrine, sacrificing a rooster, and dabbing its blood onto the mask while chanting specific incantations.",
+          "**Performance Process:**",
+          "1. **\"Kaixiang\" (开箱 - Opening the Box)**: A solemn ceremony to retrieve the sacred masks from their designated storage box or cabinet, usually housed in a temple or a specific household.",
+          "2. **\"Qingshen\" (请神 - Inviting the Gods)**: A ritual conducted to formally invite the deities to be present during the performance.",
+          "3. **\"Dingshen\" (顶神 - Carrying the Gods)**: This step often refers to the act of performers wearing the masks, symbolizing the spirits or deities possessing them.",
+          "4. **\"Saokai chang\" (扫开场 - Sweeping the Opening)**: A ritualistic sweeping of the performance area, intended to cleanse it of evil and usher in good fortune.",
+          "5. **\"Tiaoshen\" (跳神 - Jumping Gods) / \"Jumping Opera\" (跳戏)**: The main theatrical performance, during which the actors enact the historical stories. This segment can be further structured into sub-parts such as \"setting up court,\" \"issuing a challenge,\" \"sending troops,\" and \"returning to court\" for war-themed plays.",
+          "6. **\"Shao shouchang\" (扫收场 - Sweeping the Closing)**: A concluding ritual to symbolically sweep away any lingering misfortune and welcome blessings for the community.",
+          "7. **\"Fengxiang\" (封箱 - Sealing the Box)**: A final ceremony to respectfully return the masks to their storage, concluding the performance cycle."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Nuo Opera (傩戏)",
+            "relationship_reason": "Anshun Dixi Opera is a regional variant and a significant branch of the broader Chinese Nuo Opera tradition. It originated from the military Nuo and folk Nuo practices brought by Ming Dynasty soldiers and immigrants from the Central Plains (including regions like Anhui, Jiangsu, Jiangxi, Zhejiang, and Henan) to Guizhou. It shares the fundamental purpose of exorcism, blessing, and entertainment with other Nuo cultural forms across China."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Japanese Nōgaku (能楽)",
+            "relationship_reason": "Nuo culture, including its operatic forms, was historically transmitted from China to Japan, inspiring the development and creation of Japanese Nōgaku."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-33f8cdfc",
+      "element_name": "Nakshi Kantha",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Nakshi_Kantha_exhibition_at_Bengal_Shilpalaya.jpg/640px-Nakshi_Kantha_exhibition_at_Bengal_Shilpalaya.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Nakshi_kantha",
+        "https://www.aramcoworld.com/Articles/March-2025/Nakshi-Kantha-Embroidery",
+        "https://houseofwanderingsilk.com/blogs/news/nakshi-kantha-artisans-process",
+        "https://www.textiletoday.com.bd/nakshi-kantha-traditional-source-income-bengali-rural-women/",
+        "https://embers.com/blogs/news/nakshi-kantha-sustainable-fashion-decor",
+        "https://phantomhands.in/blogs/journal/nakshi-kantha-a-brief-introduction",
+        "https://www.viaindia.nl/blogs/news/the-art-of-nakshi-kantha",
+        "https://dialogue.earth/en/climate-change/traditional-embroidery-evolves-with-changing-climate-and-tastes-in-bengal/",
+        "https://www.sarahsembroidery.com/kantha-work/"
+      ],
+      "scraped_at": "2026-03-20T08:29:34.540902Z",
+      "location": {
+        "country": "Bangladesh",
+        "provinces": [
+          "Mymensingh",
+          "Jamalpur",
+          "Bogra",
+          "Rajshahi",
+          "Faridpur",
+          "Jessore",
+          "Chittagong",
+          "West Bengal (India)",
+          "Tripura (India)",
+          "Assam (India)"
+        ],
+        "lat": 24.8889305,
+        "lng": 90.3845187
+      },
+      "resume_analisa": {
+        "description": "Nakshi Kantha is a centuries-old Bengali art tradition of embroidered quilts, originating from the Bengal region. The term 'Nakshi' refers to artistic patterns, and 'Kantha' denotes a type of embroidery typically done on quilts. Traditionally, it involves layering old sarees, lungis, and dhotis, and then intricately embroidering them with colorful patterns and designs using a distinctive running stitch, known as the 'kantha stitch'. These designs are rich in symbolism, often depicting themes from folk culture, mythology, daily rural life, and personal memories.",
+        "cultural_significance": "Nakshi Kantha holds profound cultural significance as a prominent folk art form and a symbol of Bengali cultural identity and heritage. It was historically a domestic craft, with women in rural households creating these quilts for family use during their leisure time, a process that could span months or even years. The motifs are deeply influenced by religious beliefs and local culture, frequently featuring a lotus as a central motif, alongside solar and moon motifs, trees of life, and various elements drawn from nature and everyday existence. Beyond its utilitarian purpose of repurposing old fabrics into functional items like wraps, bedding, prayer mats, and floor coverings, it served as a vital medium for women to express their joys, sorrows, and narratives. In contemporary times, Nakshi Kantha has experienced a significant revival, evolving into a flourishing cottage industry that provides economic empowerment to rural women artisans in both Bangladesh and India.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Textile Art",
+          "Embroidery",
+          "Folk Art",
+          "Bengali Culture",
+          "Recycling",
+          "Women's Craft",
+          "Cultural Heritage",
+          "South Asian Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand-stitched embroidery on layered fabric",
+        "materials_and_tools": [
+          "Old sarees, lungis, dhotis (traditionally)",
+          "New cotton cloth or Tussar silk (modern/commercial)",
+          "Colorful threads (traditionally from old sarees, now cotton anchor thread)",
+          "Needle",
+          "Embroidery frame (optional, for commercial production)",
+          "Tracing paper (for commercial production)",
+          "Fabric dye mixed with turpentine (for commercial design transfer)",
+          "Small pin stuck in bamboo (for pricking design, commercial production)"
+        ],
+        "step_by_step": [
+          "Gathering and Layering Fabric: Traditionally, 3 to 6 old sarees, lungis, or dhotis are collected and layered one over the other.",
+          "Preparing the Base: The layered cloth is laid flat on the ground with weights on the edges. The four edges are stitched, and two or three rows of large running stitches are made to hold the layers together.",
+          "Design Transfer (Modern/Commercial): For commercial production, designs are first sketched on art paper, then transferred onto tracing paper. Thousands of tiny pinholes are pricked along the design lines on the tracing paper. Fabric dye mixed with turpentine is then rubbed across the tracing paper, allowing it to seep through the pinpricks and mark the design with tiny white dots on the cloth. (Traditionally, designs were not drawn but outlined directly with needle and thread, often freehand.)",
+          "Thread Selection: Cotton anchor threads are matched with the fabric and design's color story.",
+          "Embroidery: The primary stitch used is the running stitch, known as the 'kantha stitch' or 'phor'. Other stitches like Chatai (pattern darning), Kaitya (bending stitch), Jessore stitch, threaded running stitch, Lik phor, herringbone stitch, satin stitch, backstitch, and cross-stitch are also employed. If there is a central motif, it is often embroidered first, followed by corner designs and other intricate details. The entire surface of the fabric is covered with small, often wave-like, stitches.",
+          "Finishing: Once the embroidery is complete, the Nakshi Kantha is washed and dried, ready for use or display."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Nakshi Kantha (or Kantha Embroidery)",
+            "relationship_reason": "Shared origin and traditional practice in the historical Bengal region, which is now divided between Bangladesh and the Indian states of West Bengal, Tripura, and parts of Assam."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-19T01:18:51.928438Z",
-    "total_ich_elements": 40,
-    "complete_records": 37,
+    "generated_at": "2026-03-20T08:30:08.826564Z",
+    "total_ich_elements": 43,
+    "complete_records": 40,
     "incomplete_records": 3,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 16,
-      "Social Practices & Rituals": 8,
+      "Traditional Craftsmanship": 17,
+      "Social Practices & Rituals": 9,
       "Culinary Traditions": 8,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 4,
+      "Performing Arts": 5,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 1
