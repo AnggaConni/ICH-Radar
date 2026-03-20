@@ -273,6 +273,21 @@
             .map-container, .network-container {
                 height: 280px !important; 
             }
+            /* --- TAMBAHKAN INI UNTUK MEMUNCULKAN LEGENDA YANG HILANG --- */
+            
+            /* Ganti .chart-legend-item dengan nama kelas item legenda Anda (di dalam HTML terpisah) */
+            .chart-legend-item, 
+            .chart-legend-color-box, /* Ganti dengan nama kelas kotak warna */
+            .chart-legend-label { /* Ganti dengan nama kelas teks label */
+                -webkit-print-color-adjust: exact !important; /* Paksa warna latar belakang */
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            /* Dan pastikan teks label legenda memiliki warna teks default yang jelas */
+            .chart-legend-label {
+                color: #4a5568 !important; /* Paksa warna teks agar tidak diubah menjadi putih */
+            }
         }
 
     </style>
