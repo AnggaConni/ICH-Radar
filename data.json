@@ -3766,17 +3766,303 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c28d942e",
+      "element_name": "Hanji (Korean Traditional Handmade Paper)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Korean_paper&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Korean_paper",
+        "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000",
+        "https://eunahcho.com/hanji-production-process",
+        "https://www.youtube.com/watch?v=J_jQ71wX_0g",
+        "https://www.youtube.com/watch?v=s5F_V9p6N0Y",
+        "https://www.youtube.com/watch?v=gT825e36Gz8",
+        "https://www.youtube.com/watch?v=0h-h4-754qg"
+      ],
+      "scraped_at": "2026-03-21T01:08:06.726441Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [
+          "Jeonju",
+          "Imil",
+          "Mungyeong",
+          "Uiryeong",
+          "Goesan",
+          "Hamyang",
+          "Gapyeong",
+          "Wonju",
+          "various regions across South Korea"
+        ],
+        "lat": 35.8237631,
+        "lng": 127.1472805
+      },
+      "resume_analisa": {
+        "description": "Hanji is traditional Korean handmade paper crafted from the inner bark of the paper mulberry tree (Broussonetia papyrifera), locally known as 'dak'. It is celebrated for its exceptional durability, unique texture, and remarkable versatility, often lasting over a thousand years. Historically, Hanji has been extensively utilized for a wide array of purposes, including writing, painting, calligraphy, and the preservation of important documents. Its applications also extended to daily life, such as in traditional clothing (hanbok), various household objects, architectural elements like doors and windows, and even for creating resilient armor.",
+        "cultural_significance": "Hanji is profoundly embedded in Korean culture and history, serving as a powerful symbol of Korean heritage and the nation's enduring craftsmanship. It played a pivotal role in safeguarding historical records, Buddhist scriptures, and official court documents throughout various dynasties. Beyond its functional uses, Hanji is a revered medium for artistic expression, particularly in calligraphy and traditional painting, where its unique qualities enhance the artwork. The traditional manufacturing process, a complex and meticulous craft passed down through generations, is not only eco-friendly but also crucial for the preservation of indigenous Korean knowledge and cultural practices. The Korean government recognizes Hanji as an Important Intangible Cultural Property, and significant efforts are currently underway to inscribe 'Traditional knowledge and skills associated with the production of Hanji and related cultural practices in the Republic of Korea' on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Paper Making",
+          "Korean Culture",
+          "Intangible Cultural Heritage",
+          "Sustainable Practices",
+          "Art Medium",
+          "Historical Preservation",
+          "Cultural Identity"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Papermaking",
+        "materials_and_tools": [
+          "Paper mulberry tree (dak/Broussonetia papyrifera) branches",
+          "Mucilage from Hibiscus manihot roots (dakpul/황촉규)",
+          "Lye (잿물, traditionally from burnt bean stalks, buckwheat straw, pepper stalks, cotton stalks)",
+          "Water",
+          "Steaming equipment",
+          "Metal tool for scraping bark",
+          "Boiling pot (gamasot)",
+          "Pounding tools (wooden mallets, flat stone)",
+          "Paper-making screen (bal) and frame (balteul/지통)",
+          "Drying area (sun or heated room)",
+          "Pressing stones or pressing machine"
+        ],
+        "step_by_step": [
+          "**Harvesting Mulberry Bark**: One-year-old branches of the paper mulberry tree (dak) are harvested, typically during the cold months between November and February, when the fibers are at their strongest.",
+          "**Steaming and Peeling**: The harvested branches are steamed, and the outer bark is carefully peeled away. The initial outer layer is referred to as 'dark bark'.",
+          "**Creating 'White Bark'**: The dark bark is soaked in cold water, usually overnight, and then meticulously scraped with a metal tool to remove the black cuticles, revealing the 'white bark'.",
+          "**Boiling in Lye**: The prepared white bark fibers are thoroughly boiled in an alkaline solution (lye, traditionally derived from plant ashes) for approximately 6-7 hours. This process softens and purifies the fibers.",
+          "**Washing and Whitening**: The boiled fibers are painstakingly washed in clean, often running, water to remove impurities and any remaining lye. They are then often spread out to dry in the sun, which further whitens the fibers naturally.",
+          "**Picking Impurities**: Any remaining foreign substances or imperfections are meticulously picked out from the fibers by hand.",
+          "**Pounding**: The wet, cleaned fibers are placed on a flat stone surface and repeatedly pounded with wooden mallets. This process separates and lengthens the fibers, transforming them into a fine pulp.",
+          "**Adding Mucilage**: A mucilaginous substance, known as 'dakpul', extracted from the roots of the hibiscus plant (Hibiscus manihot), is added to the fiber mixture suspended in water. This natural agent helps to evenly disperse the fibers and aids in the formation of uniform paper sheets.",
+          "**Sheet Formation (We Bal Method)**: The fiber-and-mucilage mixture is poured onto a bamboo screen (bal) set within a frame (jigye). The artisan employs a distinctive technique called 'we bal tteugi', repeatedly dipping and shaking the screen in the vat to interlock the fibers and form a sheet with a multi-directional grain.",
+          "**Pressing**: The newly formed wet sheets are carefully peeled from the screen and stacked. These stacks are then placed under heavy stones or a pressing machine to remove excess water.",
+          "**Drying**: The pressed sheets are individually separated and traditionally dried. This can involve drying them on warm floors, often by brushing them onto a heated surface, or by air-drying them in the sun. Modern methods may utilize heated stainless steel drums for more even drying.",
+          "**Dochim (Pounding Finished Sheets)**: In some traditional Hanji processes, the finished, dried sheets undergo an additional pounding step called 'dochim'. This technique further compacts the fibers, enhances the paper's smoothness, and reduces ink bleed."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Traditional Chinese Papermaking",
+            "relationship_reason": "Papermaking originated in China around 105 AD with Cai Lun and was subsequently introduced to Korea between the 3rd and 6th centuries, serving as the foundational knowledge for Hanji production."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Washi (Traditional Japanese Paper)",
+            "relationship_reason": "Papermaking techniques were transmitted from Korea to Japan in the 7th century by the Buddhist monk Damjing of Goguryeo, leading to the development of Washi, which also utilizes mulberry fibers but evolved with distinct Japanese characteristics."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-dbde646d",
+      "element_name": "Sangkhalok Ceramic Ware",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Sangkhalok_ceramic_ware_from_Sukhothai.jpg/800px-Sangkhalok_ceramic_ware_from_Sukhothai.jpg",
+      "source_urls": [
+        "https://grok.se/wiki/Sangkhalok_ceramic_ware",
+        "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware",
+        "https://dasta.or.th/en/articles/731",
+        "https://www.chinadaily.com.cn/culture/2017-01/07/content_27891823.htm",
+        "https://www.evendo.com/th/en/sukhothai/sangkhalok-museum-sukhothai/2042299",
+        "https://anyflip.com/lqgqf/vxxb/basic",
+        "https://www.goldentriangle.biz/products/a-sukhothai-sangkhalok-ceramic"
+      ],
+      "scraped_at": "2026-03-21T01:08:43.573631Z",
+      "location": {
+        "country": "Thailand",
+        "provinces": [
+          "Sukhothai"
+        ],
+        "lat": 17.1446985,
+        "lng": 99.4375845
+      },
+      "resume_analisa": {
+        "description": "Sangkhalok ceramic ware, also known as Sawankhalok or Sukhothai ware, refers to a tradition of high-fired stoneware produced in northern Thailand from the 14th to the 16th centuries. These ceramics are renowned for their durable bodies, varied glazing techniques including celadon, monochrome white and brown, and underglazed black decorations. Forms include bowls, dishes, covered boxes, jars, and architectural elements like glazed tiles and figurines.",
+        "cultural_significance": "Sangkhalok ceramic ware represents the exceptional art and pottery skills of the local people in Sukhothai, marking a significant chapter in Southeast Asian ceramic history and serving as a cornerstone of Thai artistic and industrial heritage. It was an important export good, reflecting cultural exchanges and contributing to temple decorations. Today, it remains a cultural identity of Mueang Kao Sukhothai and a unique souvenir.",
+        "gemini_tags": [
+          "Thai ceramics",
+          "Sukhothai handicrafts",
+          "Traditional pottery",
+          "Stoneware",
+          "Celadon",
+          "Cultural heritage Thailand",
+          "UNESCO Creative City Crafts and Folk Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Pottery / Ceramic Production",
+        "materials_and_tools": [
+          "Local clay and mud (river sediment)",
+          "Minerals (e.g., oxide from metals for black patterns)",
+          "Slip",
+          "Glazes (celadon, white, brown)",
+          "Potter's wheel",
+          "Bare hands",
+          "Cutting wire",
+          "Trowel",
+          "Turiang Kiln (cross-draft or updraft kilns)"
+        ],
+        "step_by_step": [
+          "**Raw Materials and Preparation:** Clay is sourced from local mountains (e.g., Khao Si Lan), then processed through filtering and aging.",
+          "**Molding and Shaping:** High-skilled craftsmen create the primary shape, often using a spinning wheel for symmetrical forms. Water is used to keep the clay wet and smooth.",
+          "**Decoration and Coloring:** Patterns are applied using various techniques. This can involve painting on bisque-fired wares (fired once at low heat) using local minerals for colors like black. Slip is often applied as a foundation. Other methods include engraving or incising (sgraffito) patterns into the clay body before glazing with sharp-ended tools, excising clay from the surface with a rounded tool, or stamping. Common motifs for underglaze black decoration include lotus petals, fish, aquatic life, floral scrolls, and geometric patterns.",
+          "**Glazing:** The wares are then impregnated with various glazes, such as celadon, monochrome white, or brown.",
+          "**Firing:** The glazed ceramics are fired at high temperatures, typically ranging from 1,150-1,280°C, and sometimes up to 1,300°C. This high-temperature firing takes place in advanced cross-draft or updraft kilns, known as Turiang Kilns, to produce durable stoneware."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Chinese Kiln Technology / Blue and White Porcelain",
+            "relationship_reason": "Sangkhalok wares originated from local innovations influenced by Chinese kiln technology. Some patterns are similar to Chinese traditional patterns, and the production was influenced by Chinese blue and white porcelain."
+          },
+          {
+            "country": "Vietnam",
+            "element_name": "Vietnamese Decorative Styles",
+            "relationship_reason": "Sangkhalok wares were influenced by Vietnamese decorative styles."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Sankoroku (Japanese term for Sangkhalok)",
+            "relationship_reason": "Sangkhalok wares were extensively exported to Japan, where they were known as 'sunkoroku' by the late 16th century."
+          },
+          {
+            "country": "Philippines",
+            "element_name": "Ceramic Trade Wares",
+            "relationship_reason": "Sangkhalok wares were exported to the Philippines, appearing in 15th-16th century archaeological contexts like burials, filling trade gaps left by Chinese restrictions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-d678026c",
+      "element_name": "Apple Dumplings",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.shutterstock.com/image-photo/apple-dumpling-white-ice-cream-top-260nw-2195048259.jpg",
+      "source_urls": [
+        "https://chasingtheseasons.com/how-to-make-classic-apple-dumplings/",
+        "https://tastesoflizzyt.com/amish-apple-dumplings/",
+        "https://grokipedia.com/article/apple-dumpling",
+        "https://en.wikipedia.org/wiki/Apple_dumpling",
+        "https://todayssignificance.com/national-apple-dumpling-day/",
+        "https://www.plattertalk.com/apple-dumplings-recipe/",
+        "https://houseofnasheats.com/old-fashioned-apple-dumplings/",
+        "https://www.thepioneerwoman.com/food-cooking/recipes/a10228/best-apple-dumplings-recipe/",
+        "https://nationaltoday.com/national-apple-dumpling-day/",
+        "https://www.daysoftheyear.com/days/national-apple-dumpling-day/",
+        "https://southernbite.com/easy-apple-dumplings/",
+        "https://allthingsmamma.com/easy-apple-dumplings/",
+        "https://www.kingarthurbaking.com/recipes/baked-apple-dumplings-recipe",
+        "https://hoosierhomemade.com/apple-dumplings-recipe/",
+        "https://www.tasteatlas.com/apple-dumpling",
+        "https://www.radacutlery.com/blog/southern-apple-dumplings-recipe/",
+        "https://rivercityrecipes.com/country-apple-dumplings/",
+        "https://thesouthernladycooks.com/fat-apple-dumplings/"
+      ],
+      "scraped_at": "2026-03-21T01:09:06.086862Z",
+      "location": {
+        "country": "United States",
+        "provinces": [
+          "Pennsylvania"
+        ],
+        "lat": 40.9699889,
+        "lng": -77.7278831
+      },
+      "resume_analisa": {
+        "description": "Apple dumplings are a traditional dessert consisting of a whole, peeled, and cored apple, or apple pieces, encased in a flaky pastry dough. The apple's core is typically filled with a mixture of butter, sugar, and cinnamon. The wrapped apples are then baked in a sweet syrup, often made from brown sugar, water, and additional spices, until the pastry is golden brown and the apple is tender. This comforting dish is commonly served warm, often accompanied by a scoop of vanilla ice cream, whipped cream, or extra syrup.",
+        "cultural_significance": "Apple dumplings hold a significant place in American culinary traditions, particularly in the northeastern United States and among Pennsylvania Dutch communities, where they are considered a 'cultural staple'. They evoke feelings of nostalgia, warmth, and family gatherings, symbolizing resilience as a sustaining food for early settlers. The dessert is often associated with the autumn apple harvest season and is enjoyed for breakfast, dessert, or even as a main course. Its popularity is reflected in its mention in American literature, with Mark Twain famously praising it, and the observance of National Apple Dumpling Day on September 17th.",
+        "gemini_tags": [
+          "American cuisine",
+          "Pennsylvania Dutch",
+          "Dessert",
+          "Baked goods",
+          "Autumn food",
+          "Comfort food",
+          "Traditional recipe",
+          "Fruit pastry"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Baking",
+        "materials_and_tools": [
+          "6 medium apples (e.g., Granny Smith, Honeycrisp), peeled and cored",
+          "For the Dough:",
+          "2 cups all-purpose flour",
+          "2 1/2 teaspoons baking powder",
+          "1/2 teaspoon salt",
+          "2/3 cup shortening or 1 cup unsalted butter (chilled, cubed)",
+          "1/2 to 2/3 cup milk (or 1/2 cup ice cold water for butter dough)",
+          "For the Filling (per apple):",
+          "1-2 tablespoons granulated sugar (or brown sugar)",
+          "1/2 teaspoon ground cinnamon",
+          "1/4 teaspoon ground nutmeg (optional)",
+          "1/2 tablespoon unsalted butter",
+          "For the Syrup:",
+          "1 cup brown sugar",
+          "2 cups water",
+          "1/4 cup unsalted butter",
+          "1/2 teaspoon ground cinnamon",
+          "1/2 teaspoon vanilla extract (optional)",
+          "Lemon-lime soda (e.g., Mountain Dew or Sprite) - optional, for a different sauce variation",
+          "Baking dish (9x13 inch)",
+          "Rolling pin",
+          "Small saucepan",
+          "Food processor (optional, for dough)",
+          "Pastry blender or fork (optional, for dough)"
+        ],
+        "step_by_step": [
+          "Prepare the apples: Peel and core the apples. If using whole apples, leave them intact. If using apple wedges, cut each apple into 4-8 wedges.",
+          "Make the pastry dough: In a medium bowl, whisk together flour, baking powder, and salt. Cut in the shortening or cold butter until the mixture resembles coarse crumbs or small peas. Gradually add milk (or ice water) and mix until a soft dough forms. Avoid overworking the dough. Wrap the dough in plastic and refrigerate for at least 30 minutes. Alternatively, use store-bought pie crust or crescent roll dough.",
+          "Preheat oven to 350-375°F (175-190°C) and lightly grease a 9x13 inch baking dish.",
+          "Roll out the dough: On a lightly floured surface, roll out the dough into a large rectangle or individual squares/circles, large enough to enclose each apple. If using crescent roll dough, separate into triangles.",
+          "Assemble the dumplings: Place an apple (or apple wedges) in the center of each dough piece. Fill the cored center of the apple (or sprinkle over wedges) with a mixture of sugar, cinnamon, and nutmeg, and top with a small pat of butter.",
+          "Wrap the apples: Bring the corners or edges of the dough up around the apple, pinching and sealing the edges to enclose it completely. Trim any excess dough if necessary.",
+          "Arrange in baking dish: Place the assembled apple dumplings in the prepared baking dish, leaving some space between them.",
+          "Prepare the syrup: In a small saucepan, combine brown sugar, water, butter, and cinnamon. Bring to a gentle boil over low to medium heat, stirring frequently until the sugar dissolves completely. Remove from heat and stir in vanilla extract (if using).",
+          "Pour syrup over dumplings: Pour the hot syrup evenly over the apple dumplings in the baking dish. If using the soda variation, pour the soda around the edges of the pan.",
+          "Bake: Bake for approximately 30-60 minutes, or until the apples are tender when pierced with a knife and the pastry is golden brown. Baste the dumplings with the syrup once or twice during baking. If the tops brown too quickly, loosely cover with foil.",
+          "Serve: Remove from oven and let cool slightly. Serve warm, often with a scoop of vanilla ice cream or a dollop of whipped cream, drizzling extra syrup from the pan over the top."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "United Kingdom (England)",
+            "element_name": "Boiled Fruit Puddings / Apple Dumplings",
+            "relationship_reason": "Documented origins of apple dumplings in 18th-century English cookbooks, where they were often boiled in cloth."
+          },
+          {
+            "country": "Germany / Austria / Czech Republic (Central Europe)",
+            "element_name": "Obstknödel / Apfelknödel (Boiled Fruit Dumplings)",
+            "relationship_reason": "Similar peasant fare of fruit encased in dough, often boiled, reflecting a broader European tradition that influenced American apple dumplings."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-20T08:45:09.434973Z",
-    "total_ich_elements": 46,
-    "complete_records": 43,
+    "generated_at": "2026-03-21T01:09:36.585710Z",
+    "total_ich_elements": 49,
+    "complete_records": 46,
     "incomplete_records": 3,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 19,
+      "Traditional Craftsmanship": 21,
       "Social Practices & Rituals": 10,
-      "Culinary Traditions": 8,
+      "Culinary Traditions": 9,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 5,
       "Social Practices & Rituals | Performing Arts": 1,
