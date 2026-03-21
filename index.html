@@ -1661,8 +1661,8 @@ const COUNTRY_CENTROIDS = {
   }
 
 
-  // =====================================================================
-  //  UTILITAS PDF PRINTING (Final Graphic Version)
+// =====================================================================
+  //  UTILITAS PDF PRINTING (Final Graphic & Fix Syntax)
   // =====================================================================
 
   function printCardPDF() {
@@ -1812,7 +1812,6 @@ const COUNTRY_CENTROIDS = {
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
   <script>
-    // Ambil Data Kordinat dan Status yang sudah diinject dari JS Utama
     const lat = ${item.location?.lat || 'null'};
     const lng = ${item.location?.lng || 'null'};
     const isShared = ${item.shared_heritage_detection?.is_shared || false};
@@ -1828,7 +1827,6 @@ const COUNTRY_CENTROIDS = {
 
       L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 20 }).addTo(pMap);
 
-      // Gunakan CircleMarker SVG murni agar tidak gagal load saat diprint
       L.circleMarker([lat, lng], { radius: 8, color: '#900c3f', fillColor: '#900c3f', fillOpacity: 1 }).addTo(pMap);
 
       if (isShared && relatedNodes.length > 0) {
@@ -1853,11 +1851,10 @@ const COUNTRY_CENTROIDS = {
             name: mainName + '\\n(' + mainCountry + ')',
             symbol: 'roundRect',
             symbolSize: [140, 55],
-            // Warna merah tebal untuk node utama agar sangat jelas saat diprint
             itemStyle: { color: '#900c3f', borderColor: '#5c0829', borderWidth: 2 },
             label: { 
                 show: true, 
-                position: 'inside',  // <--- Kunci posisi teks di dalam kotak
+                position: 'inside',  
                 color: '#ffffff', 
                 fontSize: 11, 
                 fontWeight: 'bold',
@@ -1878,12 +1875,11 @@ const COUNTRY_CENTROIDS = {
                 name: rel.element_name + '\\n(' + rel.country + ')',
                 symbol: 'roundRect',
                 symbolSize: [130, 50],
-                // Gunakan border abu-abu GELAP (#475569) & background putih pudar agar tidak hilang di PDF
                 itemStyle: { color: '#f8fafc', borderColor: '#475569', borderWidth: 2 },
                 label: { 
                     show: true, 
-                    position: 'inside', // <--- Kunci posisi teks di dalam kotak
-                    color: '#0f172a',   // Teks warna gelap/hitam
+                    position: 'inside', 
+                    color: '#0f172a',   
                     fontSize: 10,
                     width: 110,
                     overflow: 'truncate', 
@@ -1900,8 +1896,8 @@ const COUNTRY_CENTROIDS = {
                     formatter: '{c}', 
                     fontSize: 9, 
                     color: '#1e293b',
-                    backgroundColor: '#ffffff', // Background putih untuk label garis
-                    borderColor: '#cbd5e1',     // Border tipis untuk label garis
+                    backgroundColor: '#ffffff', 
+                    borderColor: '#cbd5e1',     
                     borderWidth: 1,
                     padding: [3, 5],
                     borderRadius: 4
@@ -1925,6 +1921,7 @@ const COUNTRY_CENTROIDS = {
                 }
             }]
         });
+      } // <--- KURUNG KURAWAL INI YANG SEBELUMNYA TERHAPUS
     } else {
       document.getElementById('print-leaflet-map').style.display = 'none';
     }
