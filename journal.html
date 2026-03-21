@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Journal of Intangible Cultural Heritage</title>
     
-    <!-- Classic serif font for academic & storytelling feel -->
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Chart.js for diagrams -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
-    <!-- Leaflet for Maps -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-    <!-- Vis-Network for Graph/Node Relationships -->
     <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     
     <style>
@@ -112,6 +108,32 @@
         }
 
         button:hover { background-color: #0d5c56; }
+        
+        .btn-info { background-color: #475569; }
+        .btn-info:hover { background-color: #334155; }
+
+        /* =========================================
+           MODAL STYLING (For ISSN Info)
+           ========================================= */
+        .modal-overlay {
+            display: none; 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6); z-index: 9999;
+            justify-content: center; align-items: center;
+            backdrop-filter: blur(2px);
+        }
+        .modal-content {
+            background: #ffffff; width: 90%; max-width: 550px;
+            padding: 30px; border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            position: relative; font-family: 'Montserrat', sans-serif;
+            color: #334155;
+        }
+        .close-modal {
+            position: absolute; top: 15px; right: 20px;
+            font-size: 24px; cursor: pointer; color: #94a3b8; background: none; border: none; padding: 0;
+        }
+        .close-modal:hover { color: #e11d48; }
 
         /* =========================================
            TYPOGRAPHY & FORMATTING
@@ -186,10 +208,7 @@
             border-radius: 4px; page-break-inside: avoid;
         }
         
-        /* Fixed Chart Grid to Stack Vertically preventing squished aspect ratios */
         .chart-stack { display: flex; flex-direction: column; gap: 30px; align-items: center; margin-bottom: 15px; }
-        
-        /* Fix for broken charts: restrict height */
         .chart-wrapper { position: relative; height: 280px; width: 100%; display: flex; justify-content: center; }
 
         .figure-caption {
@@ -207,31 +226,14 @@
            TABLE AND REFERENCES STYLING
            ========================================= */
         .journal-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 10pt;
-            margin-bottom: 25px;
-            page-break-inside: auto;
+            width: 100%; border-collapse: collapse; font-size: 10pt; margin-bottom: 25px; page-break-inside: auto;
         }
-        .journal-table th, .journal-table td {
-            border: 1px solid var(--border-color);
-            padding: 8px 12px;
-            text-align: left;
-        }
-        .journal-table th {
-            background-color: #f8fafc;
-            font-family: 'Montserrat', sans-serif;
-            color: var(--heading-color);
-            font-weight: 600;
-        }
+        .journal-table th, .journal-table td { border: 1px solid var(--border-color); padding: 8px 12px; text-align: left; }
+        .journal-table th { background-color: #f8fafc; font-family: 'Montserrat', sans-serif; color: var(--heading-color); font-weight: 600; }
         .journal-table tr { page-break-inside: avoid; page-break-after: auto; }
         .journal-table tbody tr:nth-child(even) { background-color: #f1f5f9; }
         
-        .reference-list {
-            font-size: 10pt;
-            padding-left: 20px;
-            color: #4a5568;
-        }
+        .reference-list { font-size: 10pt; padding-left: 20px; color: #4a5568; }
         .reference-list li { margin-bottom: 8px; word-wrap: break-word; }
         .reference-list a { color: var(--accent-secondary); text-decoration: none; }
         .reference-list a:hover { text-decoration: underline; }
@@ -241,58 +243,52 @@
            ========================================= */
         @media print {
             @page { size: A4 portrait; margin: 20mm; }
-            body { background: none; padding: 0; margin: 0; }
+            body { background: none; padding: 0; margin: 0; display: block !important; }
             .a4-paper { width: 100%; min-height: auto; box-shadow: none; padding: 0; }
-            .no-print-area { display: none !important; }
+            .no-print-area, .modal-overlay { display: none !important; }
             h1, h2, h3, .figure-caption, .journal-table th { page-break-after: avoid; break-after: avoid; }
-            .figure-container, .quote-box { page-break-inside: avoid; break-inside: avoid; }
+            .figure-container, .quote-box { page-break-inside: avoid; break-inside: avoid; margin: 15px 0 !important; }
             p, td { orphans: 3; widows: 3; }
             canvas { -webkit-print-color-adjust: exact; color-adjust: exact; }
             .force-page-break { page-break-before: always; }
-        }
-
-        /* =========================================
-           PRINT FIX: MEMAKSA UKURAN GRAFIK
-           ========================================= */
-        .chart-wrapper canvas {
-            max-width: 100% !important;
-            max-height: 100% !important;
-        }
-
-        @media print {
-            body {
-                display: block !important; /* Mematikan flexbox body yang sering error saat print */
-            }
-            .figure-container {
-                margin: 15px 0 !important; /* Memperkecil margin atas-bawah saat print agar lebih padat */
-            }
-            .chart-wrapper {
-                height: 250px !important; /* Mengunci tinggi grafik agar browser tidak panik */
-            }
-            /* Tambahkan ini agar Peta & Network sedikit lebih kecil saat diprint */
-            .map-container, .network-container {
-                height: 280px !important; 
-            }
-            /* --- TAMBAHKAN INI UNTUK MEMUNCULKAN LEGENDA YANG HILANG --- */
-            
-            /* Ganti .chart-legend-item dengan nama kelas item legenda Anda (di dalam HTML terpisah) */
-            .chart-legend-item, 
-            .chart-legend-color-box, /* Ganti dengan nama kelas kotak warna */
-            .chart-legend-label { /* Ganti dengan nama kelas teks label */
-                -webkit-print-color-adjust: exact !important; /* Paksa warna latar belakang */
-                print-color-adjust: exact !important;
-                color-adjust: exact !important;
-            }
-
-            /* Dan pastikan teks label legenda memiliki warna teks default yang jelas */
-            .chart-legend-label {
-                color: #4a5568 !important; /* Paksa warna teks agar tidak diubah menjadi putih */
-            }
+            .chart-wrapper canvas { max-width: 100% !important; max-height: 100% !important; }
+            .chart-wrapper { height: 250px !important; }
+            .map-container, .network-container { height: 280px !important; }
+            .chart-legend-item, .chart-legend-color-box, .chart-legend-label { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
+            .chart-legend-label { color: #4a5568 !important; }
         }
 
     </style>
 </head>
 <body>
+
+    <div id="infoModal" class="modal-overlay" onclick="if(event.target === this) closeModal()">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">✖</button>
+            <h3 style="margin-top:0; font-size: 18px; color: var(--accent-color); border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; text-transform: uppercase;">Editorial Board & Journal Info</h3>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 13px; margin-bottom: 20px;">
+                <div>
+                    <p style="margin: 0 0 8px 0;"><strong>Penerbit:</strong><br>Angga Conni Saputra</p>
+                    <p style="margin: 0 0 8px 0;"><strong>Pemimpin Redaksi:</strong><br>Angga Conni Saputra</p>
+                    <p style="margin: 0 0 8px 0;"><strong>Sistem Kurasi:</strong><br>ICH Intelligence Engine (AI)</p>
+                </div>
+                <div>
+                    <p style="margin: 0 0 8px 0;"><strong>Kala Terbit:</strong><br>Kuartalan (Quarterly)</p>
+                    <p style="margin: 0 0 8px 0;"><strong>Kontak Redaksi:</strong><br>[Email Anda]</p>
+                    <p style="margin: 0 0 8px 0;"><strong>Lokasi:</strong><br>[Kota/Provinsi], Indonesia</p>
+                </div>
+            </div>
+
+            <div style="background: #f8fafc; border: 1px dashed #cbd5e1; padding: 15px; border-radius: 6px; text-align: center;">
+                <h4 style="margin: 0 0 10px 0; font-size: 14px; color: #0f172a;">Arsip Terbitan (Archives)</h4>
+                <p style="font-size: 11px; color: #64748b; margin-top: 0;">Unduh file PDF statis di bawah ini sebagai wujud terbitan resmi.</p>
+                <a href="./Visual%20Journal%20of%20Intangible%20Cultural%20Heritage.pdf" download style="display: inline-block; background-color: var(--accent-secondary); color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 13px; transition: background 0.3s;">
+                    📥 Download PDF Vol.1 No.1 (2026-Q1)
+                </a>
+            </div>
+        </div>
+    </div>
 
     <div class="no-print-area">
         <div class="controls-container">
@@ -300,6 +296,7 @@
                 <option value="">Loading Data...</option>
             </select>
             <button onclick="window.print()">🖨️ Print Journal (PDF)</button>
+            <button class="btn-info" onclick="openModal()">ℹ️ About & Editorial Board</button>
         </div>
         <p style="font-size: 13px; margin: 0; color: #4a5568;">
             <b>Print Tips:</b> Enable <i>Background graphics</i> in your print dialog to include the pastel colors.
@@ -308,10 +305,8 @@
 
     <div class="a4-paper" id="report-content">
         
-        <!-- ISSN -->
         <div class="issn-header">ISSN: 2987-XXXX (Online)</div>
 
-        <!-- TITLE -->
         <h1 class="title" id="j-title">Loading Journal...</h1>
         
         <div class="authors">
@@ -320,39 +315,17 @@
             <span id="j-date" style="font-size: 12px; color: #a0aec0;"></span>
         </div>
 
-        <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 18px 25px; margin: 10px 0 35px 0; font-family: 'Montserrat', sans-serif; font-size: 13px; color: #334155; text-align: left; page-break-inside: avoid;">
-            <h3 style="margin: 0 0 12px 0; color: var(--accent-color); font-size: 15px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; text-transform: uppercase; letter-spacing: 1px;">
-                Editorial Board & Journal Information
-            </h3>
-            
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                <div>
-                    <p style="margin: 0 0 6px 0;"><strong>Penerbit:</strong> Angga Conni Saputra</p>
-                    <p style="margin: 0 0 6px 0;"><strong>Pemimpin Redaksi:</strong> Angga Conni Saputra</p>
-                    <p style="margin: 0 0 6px 0;"><strong>Sistem Kurasi Data:</strong> ICH Intelligence Engine (AI)</p>
-                </div>
-                <div>
-                    <p style="margin: 0 0 6px 0;"><strong>Kala Terbit:</strong> Kuartalan (Quarterly)</p>
-                    <p style="margin: 0 0 6px 0;"><strong>Kontak Redaksi:</strong> [Email Anda]</p>
-                    <p style="margin: 0 0 6px 0;"><strong>Lokasi:</strong> [Kota/Provinsi], Indonesia</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- ABSTRACT -->
         <div class="abstract-container">
             <h2 class="abstract-title">Abstract</h2>
             <div class="abstract-text" id="j-abstract">Connecting to knowledge base...</div>
         </div>
 
-        <!-- 1. INTRODUCTION -->
         <h2 class="section-title" id="j-prologue-title">1. Prologue</h2>
         <div class="two-columns">
             <p class="story-start" id="j-prologue-dropcap">-</p>
             <p style="margin-top:0;" id="j-prologue-text">Initializing data...</p>
         </div>
 
-        <!-- 2. ANATOMY (Category Visualization) -->
         <h2 class="section-title" id="j-anatomy-title">2. Anatomy of Tradition</h2>
         <p id="j-anatomy-text"></p>
 
@@ -372,7 +345,6 @@
             </div>
         </div>
 
-        <!-- 3. MAP DISTRIBUTION (Dynamic from data.json) -->
         <h2 class="section-title">3. Spatial & Network Analysis</h2>
 
         <h3 class="section-title" style="font-size: 14px; margin-top: 25px;">3.1. Global Distribution Cartography</h3>
@@ -385,7 +357,6 @@
             </div>
         </div>
 
-        <!-- 3.2. SHARED HERITAGE (Network Vis) -->
         <h3 class="section-title" id="j-shared-title" style="font-size: 14px; margin-top: 25px;">3.2. Echoes Across Borders: Shared Heritage Network</h3>
         <p id="j-shared-text"></p>
 
@@ -396,17 +367,14 @@
             </div>
         </div>
 
-        <!-- 4. PERIODIC REPORT -->
         <h2 class="section-title" id="j-periodic-title">5. Implementation Status (Periodic Report)</h2>
         <div class="quote-box">
             "This section adopts the Periodic Reporting framework (UNESCO Form ICH-10), reviewing institutional and legislative capacities in managing cultural heritage for the relevant quarter."
         </div>
         <p id="j-periodic-text"></p>
 
-        <!-- 5. Methodology & Limitations -->
         <h2 class="section-title">5. Methodology & Limitations</h2>
 
-        <!-- Figure 1: Methodology Flow -->
         <div style="margin: 20px 0; padding: 16px; border: 1px solid #ddd; border-radius: 8px; font-family: monospace; background: #fafafa;">
             <div style="text-align:center; font-weight: bold; margin-bottom: 10px;">
                 Figure 1. Computational Methodology Flow (Discovery–Enrichment Loop)
@@ -420,85 +388,45 @@
         <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
         5.1 Data Collection and Discovery Process
         </h3>
-
-        <p>
-        This study employs an automated, iterative data collection system designed to identify and document Intangible Cultural Heritage (ICH) elements at scale. Data acquisition is conducted through a two-phase computational pipeline, operating in a continuous discovery–enrichment loop.
-        </p>
-
-        <p>
-        <strong>Discovery Phase:</strong> Cultural elements are identified using a multilingual keyword-based search strategy across global digital sources, including community blogs, local media, open knowledge platforms, and publicly accessible web content. The system intentionally includes both formally recognized and unregistered heritage practices.
-        </p>
-
-        <p>
-        <strong>Enrichment Phase:</strong> The system systematically enriches incomplete records through an AI-assisted retrieval mechanism, enhancing attributes such as descriptive narratives, cultural significance, procedural knowledge (crafting, rituals, recipes), and supporting visual references.
-        </p>
-
-        <p>
-        This iterative mechanism allows the system to progressively improve data completeness and quality over time, rather than relying on one-time data extraction.
-        </p>
+        <p>This study employs an automated, iterative data collection system designed to identify and document Intangible Cultural Heritage (ICH) elements at scale. Data acquisition is conducted through a two-phase computational pipeline, operating in a continuous discovery–enrichment loop.</p>
+        <p><strong>Discovery Phase:</strong> Cultural elements are identified using a multilingual keyword-based search strategy across global digital sources, including community blogs, local media, open knowledge platforms, and publicly accessible web content. The system intentionally includes both formally recognized and unregistered heritage practices.</p>
+        <p><strong>Enrichment Phase:</strong> The system systematically enriches incomplete records through an AI-assisted retrieval mechanism, enhancing attributes such as descriptive narratives, cultural significance, procedural knowledge (crafting, rituals, recipes), and supporting visual references.</p>
+        <p>This iterative mechanism allows the system to progressively improve data completeness and quality over time, rather than relying on one-time data extraction.</p>
 
         <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
         5.2 AI-Assisted Analysis and Structuring
         </h3>
-
-        <p>
-        All collected data is processed using an AI language model with search-grounding capabilities to extract structured descriptions, classify elements, and identify potential cross-cultural relationships. The system applies a low-temperature configuration to ensure consistency, reduce generative variability, and maintain reproducible outputs.
-        </p>
+        <p>All collected data is processed using an AI language model with search-grounding capabilities to extract structured descriptions, classify elements, and identify potential cross-cultural relationships. The system applies a low-temperature configuration to ensure consistency, reduce generative variability, and maintain reproducible outputs.</p>
 
         <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
         5.3 Geo-Spatial and Network Mapping
         </h3>
-
-        <p>
-        Geographical coordinates are derived using geocoding services to construct global distribution maps and network graphs. This enables spatial visualization of cultural diffusion patterns and transnational linkages.
-        </p>
+        <p>Geographical coordinates are derived using geocoding services to construct global distribution maps and network graphs. This enables spatial visualization of cultural diffusion patterns and transnational linkages.</p>
 
         <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
         5.4 Data Validation and Quality Control
         </h3>
-
-        <p>
-        The system incorporates automated validation, including detection of incomplete records, timestamped updates, and fallback retrieval strategies (e.g., Wikimedia). These mechanisms support data traceability and incremental improvement over time. However, no manual ethnographic verification is currently applied.
-        </p>
+        <p>The system incorporates automated validation, including detection of incomplete records, timestamped updates, and fallback retrieval strategies (e.g., Wikimedia). These mechanisms support data traceability and incremental improvement over time. However, no manual ethnographic verification is currently applied.</p>
 
         <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
         5.5 Limitations
         </h3>
-
         <ul style="padding-left: 20px; margin-bottom: 16px;">
-            <li>
-                <strong>Source Reliability:</strong> Data is derived from heterogeneous online sources which may introduce inconsistencies. However, this diversity also reflects the distributed and community-driven nature of Intangible Cultural Heritage documentation.
-            </li>
-
-            <li>
-                <strong>Lack of Field Validation:</strong> The system does not replace ethnographic fieldwork; findings should be interpreted as preliminary cultural signals requiring further contextual verification.
-            </li>
-
-            <li>
-                <strong>Interpretive Constraints:</strong> AI-generated narratives may lack contextual depth and community-specific nuance, particularly in representing lived experiences and tacit knowledge.
-            </li>
-
-            <li>
-                <strong>Community and Representation Bias:</strong> In alignment with the principles of the UNESCO 2003 Convention, cultural identification is inherently community-defined. As such, variations, partial perspectives, and representational bias are not treated solely as errors, but as reflections of diverse cultural viewpoints. Nevertheless, these variations may result in uneven representation across regions and groups.
-            </li>
-
-            <li>
-                <strong>Algorithmic Bias:</strong> Search engine indexing, keyword selection, and digital visibility may influence which cultural elements are discovered and prioritized.
-            </li>
+            <li><strong>Source Reliability:</strong> Data is derived from heterogeneous online sources which may introduce inconsistencies. However, this diversity also reflects the distributed and community-driven nature of Intangible Cultural Heritage documentation.</li>
+            <li><strong>Lack of Field Validation:</strong> The system does not replace ethnographic fieldwork; findings should be interpreted as preliminary cultural signals requiring further contextual verification.</li>
+            <li><strong>Interpretive Constraints:</strong> AI-generated narratives may lack contextual depth and community-specific nuance, particularly in representing lived experiences and tacit knowledge.</li>
+            <li><strong>Community and Representation Bias:</strong> In alignment with the principles of the UNESCO 2003 Convention, cultural identification is inherently community-defined. As such, variations, partial perspectives, and representational bias are not treated solely as errors, but as reflections of diverse cultural viewpoints. Nevertheless, these variations may result in uneven representation across regions and groups.</li>
+            <li><strong>Algorithmic Bias:</strong> Search engine indexing, keyword selection, and digital visibility may influence which cultural elements are discovered and prioritized.</li>
         </ul>
 
         <h3 style="font-size: 14px; margin-top: 20px; font-family: 'Montserrat', sans-serif;">
         5.6 Positioning of the System
         </h3>
-
-        <p>
-        This framework is not intended to replace traditional ethnographic methodologies. Instead, it functions as a <strong>computational pre-ethnographic layer</strong>, designed to detect, structure, and surface cultural patterns at scale—serving as an entry point for further academic or field-based investigation.
-        </p>
-        <!-- 6. CONCLUSION -->
+        <p>This framework is not intended to replace traditional ethnographic methodologies. Instead, it functions as a <strong>computational pre-ethnographic layer</strong>, designed to detect, structure, and surface cultural patterns at scale—serving as an entry point for further academic or field-based investigation.</p>
+        
         <h2 class="section-title" id="j-epilogue-title">6. Epilogue</h2>
         <p id="j-epilogue-text"></p>
 
-        <!-- 7. APPENDIX TABLE (Dynamic from data.json) -->
         <h2 class="section-title force-page-break">Appendix A: Documented Entities Register</h2>
         <table class="journal-table" id="dataTable">
             <thead>
@@ -509,38 +437,40 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Populated by JS -->
-            </tbody>
+                </tbody>
         </table>
 
-        <!-- 8. REFERENCES (Dynamic from data.json) -->
         <h2 class="section-title">References & Source Citations</h2>
         <ol class="reference-list" id="refList">
-            <!-- Populated by JS -->
-        </ol>
+            </ol>
 
     </div>
 
-    <!-- LOGIC PROGRAM -->
     <script>
+        // MODAL LOGIC
+        function openModal() {
+            document.getElementById('infoModal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('infoModal').style.display = 'none';
+        }
+
+        // JOURNAL LOGIC
         let resumeDB = {};
         let inventoryData = [];
         let barChartInstance = null;
         let polarChartInstance = null;
         let leafletMapInstance = null;
 
-        // Configuration
         Chart.defaults.animation = false; 
         Chart.defaults.font.family = "'Montserrat', sans-serif";
         Chart.defaults.color = "#4a5568";
 
-        // Helper string truncator for network labels
         function truncateStr(str, n) {
             if(!str) return "Unknown";
             return (str.length > n) ? str.substr(0, n-1) + '...' : str;
         }
 
-        // Region Mapper for the Polar Chart
         function getRegion(country) {
             const c = country.toLowerCase();
             if (['japan', 'china', 'south korea', 'vietnam', 'philippines', 'indonesia', 'malaysia', 'myanmar', 'thailand', 'india', 'pakistan', 'iran', 'bangladesh'].includes(c)) return 'Asia & Pacific';
@@ -551,7 +481,6 @@
             return 'Other Regions';
         }
 
-        // Render Dynamic Maps from Data.json
         function renderMap() {
             if (!leafletMapInstance) {
                 leafletMapInstance = L.map('distributionMap', { zoomControl: true }).setView([20.0, 0.0], 2);
@@ -591,7 +520,6 @@
             }
         }
 
-        // Render Data Table
         function renderTable() {
             const tbody = document.querySelector('#dataTable tbody');
             tbody.innerHTML = '';
@@ -616,7 +544,6 @@
             });
         }
 
-        // Render References
         function renderReferences() {
             const refList = document.getElementById('refList');
             refList.innerHTML = '';
@@ -628,7 +555,6 @@
 
             inventoryData.forEach(item => {
                 if (item.source_urls && item.source_urls.length > 0) {
-                    // Just take the first primary URL to avoid making the list too long
                     const primaryUrl = item.source_urls[0];
                     const li = document.createElement('li');
                     li.innerHTML = `<b>${item.element_name || 'Dataset'}</b>. Source: <a href="${primaryUrl}" target="_blank">${truncateStr(primaryUrl, 60)}</a>`;
@@ -637,14 +563,12 @@
             });
         }
 
-        // Render Dynamic Network Graph (Vis-Network) from data.json
         function renderDynamicNetwork() {
             const nodesArr = [];
             const edgesArr = [];
             const existingNodeIds = new Set();
 
             inventoryData.forEach(item => {
-                // Add Main Node
                 if (!existingNodeIds.has(item.id)) {
                     nodesArr.push({ 
                         id: item.id, 
@@ -654,10 +578,8 @@
                     existingNodeIds.add(item.id);
                 }
 
-                // Add Shared/Related Nodes
                 if (item.shared_heritage_detection && item.shared_heritage_detection.is_shared) {
                     item.shared_heritage_detection.related_elements.forEach(rel => {
-                        // Create a reliable unique ID for shared elements
                         const relId = 'shared_' + rel.element_name.toLowerCase().replace(/\s+/g, '_');
                         
                         if (!existingNodeIds.has(relId)) {
@@ -669,12 +591,11 @@
                             existingNodeIds.add(relId);
                         }
 
-                        // Create Connection
                         edgesArr.push({ 
                             from: item.id, 
                             to: relId, 
                             label: truncateStr(rel.relationship_reason, 15), 
-                            title: rel.relationship_reason // tooltip on hover
+                            title: rel.relationship_reason
                         });
                     });
                 }
@@ -699,13 +620,11 @@
             
             const network = new vis.Network(container, data, options);
             
-            // Stop jittering after layout stabilizes
             network.on("stabilizationIterationsDone", function () {
                 network.setOptions( { physics: false } );
             });
         }
 
-        // Render Dynamic Bar Chart
         function updateBarChart(categoriesObj) {
             const ctxBar = document.getElementById('barChart').getContext('2d');
             const labels = Object.keys(categoriesObj);
@@ -736,22 +655,17 @@
             });
         }
 
-        // Render Dynamic Polar Chart
         function updatePolarChart() {
             const ctxPolar = document.getElementById('polarChart').getContext('2d');
-            
-            // Calculate regional tally from actual data
             const regionCounts = { 'Asia & Pacific': 0, 'Americas': 0, 'Europe': 0, 'Africa': 0, 'Oceania': 0, 'Other Regions': 0 };
+            
             inventoryData.forEach(item => {
                 if (item.location && item.location.country) {
                     const r = getRegion(item.location.country);
-                    if (regionCounts[r] !== undefined) {
-                        regionCounts[r]++;
-                    }
+                    if (regionCounts[r] !== undefined) regionCounts[r]++;
                 }
             });
 
-            // Filter out empty regions
             const labels = [];
             const data = [];
             const colors = ['rgba(15, 118, 110, 0.7)', 'rgba(217, 119, 6, 0.7)', 'rgba(37, 99, 235, 0.7)', 'rgba(225, 29, 72, 0.7)', 'rgba(139, 92, 246, 0.7)', 'rgba(100, 116, 139, 0.7)'];
@@ -789,7 +703,6 @@
             });
         }
 
-        // Switch Journal Content based on Dropdown
         function switchJournal(quarter) {
             if (!quarter || !resumeDB[quarter]) return;
             
@@ -817,42 +730,28 @@
             document.getElementById('j-epilogue-title').textContent = sections.epilogue?.title ? `6. ${sections.epilogue.title.replace(/^\d+\.\s*/, '')}` : "6. Epilogue";
             document.getElementById('j-epilogue-text').textContent = sections.epilogue?.text || "";
 
-            // Update charts with actual data statistics 
             updateBarChart(entry.statistics?.categories_distribution || {});
         }
 
-        // Master Fetch Function
         async function fetchAllData() {
             try {
-                // 1. Fetch Narrative Journal (resume.json)
                 const resJournal = await fetch('resume.json');
-                if (resJournal.ok) {
-                    resumeDB = await resJournal.json();
-                } else {
-                    console.warn('resume.json not found');
-                }
+                if (resJournal.ok) resumeDB = await resJournal.json();
 
-                // 2. Fetch Actual Data for Maps/Tables/Network (data.json)
                 const resData = await fetch('data.json');
                 if (resData.ok) {
                     const rawData = await resData.json();
                     inventoryData = rawData.inventory || [];
-                } else {
-                    console.warn('data.json not found');
                 }
 
-                // Populate Dropdown
                 const selectEl = document.getElementById('journal-select');
                 selectEl.innerHTML = ''; 
                 
-                const availableQuarters = Object.keys(resumeDB)
-                    .filter(q => resumeDB[q].status === "complete")
-                    .sort().reverse();
+                const availableQuarters = Object.keys(resumeDB).filter(q => resumeDB[q].status === "complete").sort().reverse();
 
                 if (availableQuarters.length === 0) {
-                    selectEl.innerHTML = '<option value="">No journals available (Incomplete)</option>';
+                    selectEl.innerHTML = '<option value="">No journals available</option>';
                     document.getElementById('j-title').textContent = "No Complete Journals Yet";
-                    document.getElementById('j-abstract').textContent = "Database is waiting for python AI to generate the first complete journal. Check GitHub Actions.";
                 } else {
                     availableQuarters.forEach(q => {
                         const option = document.createElement('option');
@@ -860,11 +759,9 @@
                         option.textContent = `${q} Quarter Edition`;
                         selectEl.appendChild(option);
                     });
-                    // Load the newest edition narrative
                     switchJournal(availableQuarters[0]);
                 }
 
-                // Render all dynamic components using actual data.json
                 renderMap();
                 renderTable();
                 renderReferences();
@@ -873,15 +770,10 @@
 
             } catch (error) {
                 console.error("Data Fetch Error:", error);
-                document.getElementById('j-title').textContent = "Failed to Load Databases";
-                document.getElementById('j-abstract').innerHTML = `Ensure both <b>resume.json</b> and <b>data.json</b> exist. <i>(If running locally, use Live Server to avoid CORS issues)</i>.`;
             }
         }
 
-        // Init
-        window.addEventListener('DOMContentLoaded', () => {
-            fetchAllData();
-        });
+        window.addEventListener('DOMContentLoaded', fetchAllData);
     </script>
 </body>
 </html>
