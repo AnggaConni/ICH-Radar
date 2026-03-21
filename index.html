@@ -1751,7 +1751,13 @@ const COUNTRY_CENTROIDS = {
   </div>
 
   <img src="${safeImg}" class="cover-image" onerror="this.style.display='none'">
+  
   <div id="print-leaflet-map"></div>
+  
+  <div id="print-shared-analysis" style="display: none; margin-bottom: 25px; padding: 15px; background: #f0fdfa; border-left: 4px solid #007660; border-radius: 6px;">
+      <h4 style="margin: 0 0 10px 0; color: #007660; font-size: 16px;">Analisa Shared Heritage</h4>
+      <div id="print-shared-analysis-content" style="font-size: 14px; color: #333; line-height: 1.5;"></div>
+  </div>
 
   <div class="print-section meta-grid">
     <div>
@@ -1811,6 +1817,10 @@ const COUNTRY_CENTROIDS = {
     const parentWindow = window.opener;
     const CENTROIDS = parentWindow ? parentWindow.COUNTRY_CENTROIDS : {};
     
+    // Ambil elemen DOM untuk analisa
+    const analysisContainer = document.getElementById('print-shared-analysis');
+    const analysisContent = document.getElementById('print-shared-analysis-content');
+
     if (lat !== null && lng !== null) {
       const pMap = L.map('print-leaflet-map', { 
         zoomControl: false, dragging: false, scrollWheelZoom: false, touchZoom: false 
@@ -1836,9 +1846,28 @@ const COUNTRY_CENTROIDS = {
           }
         });
         pMap.fitBounds(bounds, { padding: [30, 30], maxZoom: 4 });
+
+        // Tampilkan konten Analisa Shared Heritage
+        if (analysisContainer && analysisContent) {
+            analysisContainer.style.display = 'block';
+            let analysisHTML = '<p style="margin-top: 0; margin-bottom: 8px; font-weight: bold;">Elemen ini terdeteksi memiliki keterkaitan warisan budaya dengan:</p><ul style="margin-top:0; padding-left: 20px;">';
+            
+            related.forEach(rel => {
+                // Gunakan rel.element_name agar sesuai dengan struktur database
+                analysisHTML += '<li style="margin-bottom: 6px;"><strong>' + rel.country + '</strong>: ' + rel.element_name + '</li>';
+            });
+            
+            analysisHTML += '</ul>';
+            analysisContent.innerHTML = analysisHTML;
+        }
+
+      } else {
+        // Jika tidak shared, sembunyikan container analisa
+        if (analysisContainer) analysisContainer.style.display = 'none';
       }
     } else {
       document.getElementById('print-leaflet-map').style.display = 'none';
+      if (analysisContainer) analysisContainer.style.display = 'none';
     }
 
     // --- LOGIKA WAIT RENDER ---
