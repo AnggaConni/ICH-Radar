@@ -1662,7 +1662,7 @@ const COUNTRY_CENTROIDS = {
 
 
   // =====================================================================
-  //  UTILITAS PDF PRINTING (Final Clean Version)
+  //  UTILITAS PDF PRINTING (Final Graphic Version)
   // =====================================================================
 
   function printCardPDF() {
@@ -1690,7 +1690,17 @@ const COUNTRY_CENTROIDS = {
         </div>`;
     }
 
-    // 2. Merakit HTML standalone untuk tab baru (1 Kolom Layout dengan Meta Grid)
+    // 2. Siapkan data kordinat terkait SECARA LANGSUNG agar peta tidak error
+    let relatedPrintData = [];
+    if (item.shared_heritage_detection?.is_shared) {
+        relatedPrintData = (item.shared_heritage_detection.related_elements || []).map(rel => {
+            const firstToken = rel.country.split(',')[0].trim();
+            const coords = COUNTRY_CENTROIDS[rel.country] || COUNTRY_CENTROIDS[firstToken] || null;
+            return { ...rel, coords };
+        });
+    }
+
+    // 3. Merakit HTML standalone
     const finalPrintHtmlStr = `
 <!DOCTYPE html>
 <html lang="${currentLang}">
@@ -1699,43 +1709,36 @@ const COUNTRY_CENTROIDS = {
   <title>Print - ${item.element_name}</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"><\/script>
+  
   <style>
-    /* Reset & Typography */
     *, *::before, *::after { box-sizing: border-box; }
     body { font-family: 'Inter', sans-serif; color: #1f2937; max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; background: #ffffff; }
     h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; color: #111827; margin-top: 0; }
 
-    /* 1. Header */
     .print-header { border-bottom: 3px solid #111827; padding-bottom: 20px; margin-bottom: 30px; display: flex; align-items: center; gap: 15px; }
     .print-header h1 { font-size: 32px; margin: 0; flex-grow: 1; }
     .status-badge { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
     .status-complete { background: #00ffcc; color: #0a0a0a; }
     .status-incomplete { background: #ef4444; color: #ffffff; }
 
-    /* Content Elements */
     .cover-image { width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; border: 1px solid #e5e7eb; }
     #print-leaflet-map { width: 100%; height: 350px; border-radius: 12px; margin-bottom: 20px; background: #f3f4f6; border: 1px solid #e5e7eb; z-index: 1; }
 
-    /* 1-Column Section Layout & Meta Grid */
-    .print-section { margin-bottom: 25px; padding: 20px; background: #f9fafb; border-radius: 12px; border: 1px solid #e5e7eb; break-inside: avoid; }
+    .print-section { margin-bottom: 25px; padding: 20px; background: #f9fafb; border-radius: 12px; border: 1px solid #e5e7eb; page-break-inside: avoid; }
     .print-section h3 { font-size: 16px; color: #374151; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; margin-bottom: 15px; }
     .print-section p { margin: 0 0 10px 0; font-size: 14px; }
     
-    /* INI META GRID YANG SUDAH DIPERBAIKI (columns) */
     .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
-    
     .sig-text { color: #007660; font-weight: 600; font-size: 15px; background: #f0fdfa; padding: 10px; border-radius: 8px; }
     
-    /* List styling for steps and sources */
     ul { margin: 0; padding-left: 20px; font-size: 14px; }
     li { margin-bottom: 8px; }
     .source-list { word-break: break-all; font-family: monospace; font-size: 12px; list-style-type: none; padding: 0; }
     .source-list li { margin-bottom: 5px; color: #2563eb; }
 
-    /* 3. Footer */
     .print-footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 11px; color: #6b7280; text-align: center; font-family: monospace; }
 
-    /* Print Specifics */
     @media print {
       body { padding: 0; margin: 0; color: black; }
       .print-section { background: transparent; border: 1px solid #ddd; }
@@ -1754,9 +1757,9 @@ const COUNTRY_CENTROIDS = {
   
   <div id="print-leaflet-map"></div>
   
-  <div id="print-shared-analysis" style="display: none; margin-bottom: 25px; padding: 15px; background: #f0fdfa; border-left: 4px solid #007660; border-radius: 6px;">
-      <h4 style="margin: 0 0 10px 0; color: #007660; font-size: 16px;">Analisa Shared Heritage</h4>
-      <div id="print-shared-analysis-content" style="font-size: 14px; color: #333; line-height: 1.5;"></div>
+  <div class="print-section" id="print-echarts-wrapper" style="display: none; background: #ffffff;">
+      <h3 style="margin-top:0; color:#900c3f;">Analisa Shared Heritage (Jaringan Kultural)</h3>
+      <div id="print-echarts-container" style="width: 100%; height: 400px;"></div>
   </div>
 
   <div class="print-section meta-grid">
@@ -1809,72 +1812,98 @@ const COUNTRY_CENTROIDS = {
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
   <script>
-    // Setup Peta Statis (Bright Mode)
+    // Ambil Data Kordinat dan Status yang sudah diinject dari JS Utama
     const lat = ${item.location?.lat || 'null'};
     const lng = ${item.location?.lng || 'null'};
-    
-    // Tarik centroids dari tab induk
-    const parentWindow = window.opener;
-    const CENTROIDS = parentWindow ? parentWindow.COUNTRY_CENTROIDS : {};
-    
-    // Ambil elemen DOM untuk analisa
-    const analysisContainer = document.getElementById('print-shared-analysis');
-    const analysisContent = document.getElementById('print-shared-analysis-content');
+    const isShared = ${item.shared_heritage_detection?.is_shared || false};
+    const relatedNodes = ${JSON.stringify(relatedPrintData)};
+    const mainName = ${JSON.stringify(item.element_name)};
+    const mainCountry = ${JSON.stringify(item.location?.country || 'Unknown')};
 
     if (lat !== null && lng !== null) {
+      // INIT PETA
       const pMap = L.map('print-leaflet-map', { 
         zoomControl: false, dragging: false, scrollWheelZoom: false, touchZoom: false 
       }).setView([lat, lng], 4);
 
       L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 20 }).addTo(pMap);
-      L.marker([lat, lng]).addTo(pMap);
 
-      const isShared = ${item.shared_heritage_detection?.is_shared || false};
-      const related = ${JSON.stringify(item.shared_heritage_detection?.related_elements || [])};
+      // Gunakan CircleMarker SVG murni agar tidak gagal load saat diprint
+      L.circleMarker([lat, lng], { radius: 8, color: '#900c3f', fillColor: '#900c3f', fillOpacity: 1 }).addTo(pMap);
 
-      if (isShared && related.length > 0) {
+      if (isShared && relatedNodes.length > 0) {
         let bounds = L.latLngBounds([[lat, lng]]);
         
-        related.forEach(rel => {
-          const firstToken = rel.country.split(',')[0].trim();
-          const coords = CENTROIDS[rel.country] || CENTROIDS[firstToken];
-          
-          if (coords) {
-            L.marker(coords).addTo(pMap);
-            L.polyline([[lat, lng], coords], {color: '#555', weight: 2, dashArray: '8, 8', opacity: 0.8}).addTo(pMap);
-            bounds.extend(coords);
+        relatedNodes.forEach(rel => {
+          if (rel.coords) {
+            L.circleMarker(rel.coords, { radius: 6, color: '#64748b', fillColor: '#ffffff', fillOpacity: 1, weight: 2 }).addTo(pMap);
+            L.polyline([[lat, lng], rel.coords], { color: '#94a3b8', weight: 2, dashArray: '5, 5' }).addTo(pMap);
+            bounds.extend(rel.coords);
           }
         });
         pMap.fitBounds(bounds, { padding: [30, 30], maxZoom: 4 });
 
-        // Tampilkan konten Analisa Shared Heritage
-        if (analysisContainer && analysisContent) {
-            analysisContainer.style.display = 'block';
-            let analysisHTML = '<p style="margin-top: 0; margin-bottom: 8px; font-weight: bold;">Elemen ini terdeteksi memiliki keterkaitan warisan budaya dengan:</p><ul style="margin-top:0; padding-left: 20px;">';
-            
-            related.forEach(rel => {
-                // Gunakan rel.element_name agar sesuai dengan struktur database
-                analysisHTML += '<li style="margin-bottom: 6px;"><strong>' + rel.country + '</strong>: ' + rel.element_name + '</li>';
-            });
-            
-            analysisHTML += '</ul>';
-            analysisContent.innerHTML = analysisHTML;
-        }
+        // INIT GRAFIK ECHARTS
+        document.getElementById('print-echarts-wrapper').style.display = 'block';
+        const chartDom = document.getElementById('print-echarts-container');
+        const myChart = echarts.init(chartDom);
 
-      } else {
-        // Jika tidak shared, sembunyikan container analisa
-        if (analysisContainer) analysisContainer.style.display = 'none';
+        let nodes = [{
+            id: 'main',
+            name: mainName + '\\n(' + mainCountry + ')',
+            symbol: 'roundRect',
+            symbolSize: [130, 45],
+            itemStyle: { color: '#900c3f', borderColor: '#900c3f' },
+            label: { show: true, color: '#ffffff', fontSize: 11, fontWeight: 'bold' }
+        }];
+
+        let links = [];
+
+        relatedNodes.forEach((rel, i) => {
+            let shortReason = rel.relationship_reason;
+            if (shortReason.length > 25) shortReason = shortReason.substring(0, 25) + '...';
+
+            nodes.push({
+                id: 'rel_' + i,
+                name: rel.element_name + '\\n(' + rel.country + ')',
+                symbol: 'roundRect',
+                symbolSize: [120, 40],
+                itemStyle: { color: '#ffffff', borderColor: '#cbd5e1', borderWidth: 2 },
+                label: { show: true, color: '#334155', fontSize: 10 }
+            });
+
+            links.push({
+                source: 'main',
+                target: 'rel_' + i,
+                value: shortReason,
+                label: { show: true, formatter: '{c}', fontSize: 9, color: '#64748b' },
+                lineStyle: { width: 1.5, color: '#94a3b8', curveness: 0.2, type: 'dashed' }
+            });
+        });
+
+        myChart.setOption({
+            animation: false, // Matikan animasi agar langsung terbentuk sempurna di PDF
+            series: [{
+                type: 'graph',
+                layout: 'force',
+                roam: false,
+                nodes: nodes,
+                links: links,
+                force: { repulsion: 800, edgeLength: [80, 150], gravity: 0.1 },
+                label: { show: true }
+            }]
+        });
       }
     } else {
       document.getElementById('print-leaflet-map').style.display = 'none';
-      if (analysisContainer) analysisContainer.style.display = 'none';
     }
 
     // --- LOGIKA WAIT RENDER ---
     window.onload = function() {
+      // Tunggu 2 detik agar Force Layout Echarts menetap dan Peta Load Sempurna
       setTimeout(() => {
         window.print();
-      }, 1500);
+      }, 2000); 
     };
   <\/script>
 </body>
