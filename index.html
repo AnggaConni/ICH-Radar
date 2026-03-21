@@ -1852,45 +1852,71 @@ const COUNTRY_CENTROIDS = {
             id: 'main',
             name: mainName + '\\n(' + mainCountry + ')',
             symbol: 'roundRect',
-            symbolSize: [130, 45],
+            symbolSize: [140, 55], // Kotak sedikit diperbesar
             itemStyle: { color: '#900c3f', borderColor: '#900c3f' },
-            label: { show: true, color: '#ffffff', fontSize: 11, fontWeight: 'bold' }
+            label: { 
+                show: true, 
+                color: '#ffffff', 
+                fontSize: 11, 
+                fontWeight: 'bold',
+                width: 120,          // Batasi lebar teks agar tidak keluar kotak
+                overflow: 'break',   // Turun ke baris baru jika kepanjangan
+                lineHeight: 14
+            }
         }];
 
         let links = [];
 
         relatedNodes.forEach((rel, i) => {
             let shortReason = rel.relationship_reason;
-            if (shortReason.length > 25) shortReason = shortReason.substring(0, 25) + '...';
+            if (shortReason.length > 35) shortReason = shortReason.substring(0, 35) + '...';
 
             nodes.push({
                 id: 'rel_' + i,
                 name: rel.element_name + '\\n(' + rel.country + ')',
                 symbol: 'roundRect',
-                symbolSize: [120, 40],
+                symbolSize: [130, 50],
                 itemStyle: { color: '#ffffff', borderColor: '#cbd5e1', borderWidth: 2 },
-                label: { show: true, color: '#334155', fontSize: 10 }
+                label: { 
+                    show: true, 
+                    color: '#334155', 
+                    fontSize: 10,
+                    width: 110,
+                    overflow: 'truncate', // Potong dengan '...' jika menabrak batas kotak
+                    lineHeight: 13
+                }
             });
 
             links.push({
                 source: 'main',
                 target: 'rel_' + i,
                 value: shortReason,
-                label: { show: true, formatter: '{c}', fontSize: 9, color: '#64748b' },
+                label: { 
+                    show: true, 
+                    formatter: '{c}', 
+                    fontSize: 9, 
+                    color: '#64748b',
+                    backgroundColor: 'rgba(255,255,255,0.8)', // Background tipis agar teks di atas garis terbaca jelas
+                    padding: [2, 4],
+                    borderRadius: 2
+                },
                 lineStyle: { width: 1.5, color: '#94a3b8', curveness: 0.2, type: 'dashed' }
             });
         });
 
         myChart.setOption({
-            animation: false, // Matikan animasi agar langsung terbentuk sempurna di PDF
+            animation: false, 
             series: [{
                 type: 'graph',
                 layout: 'force',
                 roam: false,
                 nodes: nodes,
                 links: links,
-                force: { repulsion: 800, edgeLength: [80, 150], gravity: 0.1 },
-                label: { show: true }
+                force: { 
+                    repulsion: 3000,        // <--- Tolakan antar kotak diperbesar drastis (awalnya 800)
+                    edgeLength: [150, 220], // <--- Garis penghubung diperpanjang
+                    gravity: 0.05           // <--- Tarikan ke tengah diperlemah agar menyebar
+                }
             }]
         });
       }
