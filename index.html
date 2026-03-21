@@ -1852,15 +1852,17 @@ const COUNTRY_CENTROIDS = {
             id: 'main',
             name: mainName + '\\n(' + mainCountry + ')',
             symbol: 'roundRect',
-            symbolSize: [140, 55], // Kotak sedikit diperbesar
-            itemStyle: { color: '#900c3f', borderColor: '#900c3f' },
+            symbolSize: [140, 55],
+            // Warna merah tebal untuk node utama agar sangat jelas saat diprint
+            itemStyle: { color: '#900c3f', borderColor: '#5c0829', borderWidth: 2 },
             label: { 
                 show: true, 
+                position: 'inside',  // <--- Kunci posisi teks di dalam kotak
                 color: '#ffffff', 
                 fontSize: 11, 
                 fontWeight: 'bold',
-                width: 120,          // Batasi lebar teks agar tidak keluar kotak
-                overflow: 'break',   // Turun ke baris baru jika kepanjangan
+                width: 120,          
+                overflow: 'break',   
                 lineHeight: 14
             }
         }];
@@ -1876,13 +1878,15 @@ const COUNTRY_CENTROIDS = {
                 name: rel.element_name + '\\n(' + rel.country + ')',
                 symbol: 'roundRect',
                 symbolSize: [130, 50],
-                itemStyle: { color: '#ffffff', borderColor: '#cbd5e1', borderWidth: 2 },
+                // Gunakan border abu-abu GELAP (#475569) & background putih pudar agar tidak hilang di PDF
+                itemStyle: { color: '#f8fafc', borderColor: '#475569', borderWidth: 2 },
                 label: { 
                     show: true, 
-                    color: '#334155', 
+                    position: 'inside', // <--- Kunci posisi teks di dalam kotak
+                    color: '#0f172a',   // Teks warna gelap/hitam
                     fontSize: 10,
                     width: 110,
-                    overflow: 'truncate', // Potong dengan '...' jika menabrak batas kotak
+                    overflow: 'truncate', 
                     lineHeight: 13
                 }
             });
@@ -1895,12 +1899,14 @@ const COUNTRY_CENTROIDS = {
                     show: true, 
                     formatter: '{c}', 
                     fontSize: 9, 
-                    color: '#64748b',
-                    backgroundColor: 'rgba(255,255,255,0.8)', // Background tipis agar teks di atas garis terbaca jelas
-                    padding: [2, 4],
-                    borderRadius: 2
+                    color: '#1e293b',
+                    backgroundColor: '#ffffff', // Background putih untuk label garis
+                    borderColor: '#cbd5e1',     // Border tipis untuk label garis
+                    borderWidth: 1,
+                    padding: [3, 5],
+                    borderRadius: 4
                 },
-                lineStyle: { width: 1.5, color: '#94a3b8', curveness: 0.2, type: 'dashed' }
+                lineStyle: { width: 1.5, color: '#64748b', curveness: 0.2, type: 'dashed' }
             });
         });
 
@@ -1913,13 +1919,12 @@ const COUNTRY_CENTROIDS = {
                 nodes: nodes,
                 links: links,
                 force: { 
-                    repulsion: 3000,        // <--- Tolakan antar kotak diperbesar drastis (awalnya 800)
-                    edgeLength: [150, 220], // <--- Garis penghubung diperpanjang
-                    gravity: 0.05           // <--- Tarikan ke tengah diperlemah agar menyebar
+                    repulsion: 3000,        
+                    edgeLength: [150, 220], 
+                    gravity: 0.05           
                 }
             }]
         });
-      }
     } else {
       document.getElementById('print-leaflet-map').style.display = 'none';
     }
