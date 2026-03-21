@@ -1662,7 +1662,7 @@ const COUNTRY_CENTROIDS = {
 
 
 // =====================================================================
-  //  UTILITAS PDF PRINTING (Final Graphic & Fix Syntax)
+  //  UTILITAS PDF PRINTING (Final Graphic & Timing Fix)
   // =====================================================================
 
   function printCardPDF() {
@@ -1819,119 +1819,96 @@ const COUNTRY_CENTROIDS = {
     const mainName = ${JSON.stringify(item.element_name)};
     const mainCountry = ${JSON.stringify(item.location?.country || 'Unknown')};
 
-    if (lat !== null && lng !== null) {
-      // INIT PETA
-      const pMap = L.map('print-leaflet-map', { 
-        zoomControl: false, dragging: false, scrollWheelZoom: false, touchZoom: false 
-      }).setView([lat, lng], 4);
-
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 20 }).addTo(pMap);
-
-      L.circleMarker([lat, lng], { radius: 8, color: '#900c3f', fillColor: '#900c3f', fillOpacity: 1 }).addTo(pMap);
-
-      if (isShared && relatedNodes.length > 0) {
-        let bounds = L.latLngBounds([[lat, lng]]);
-        
-        relatedNodes.forEach(rel => {
-          if (rel.coords) {
-            L.circleMarker(rel.coords, { radius: 6, color: '#64748b', fillColor: '#ffffff', fillOpacity: 1, weight: 2 }).addTo(pMap);
-            L.polyline([[lat, lng], rel.coords], { color: '#94a3b8', weight: 2, dashArray: '5, 5' }).addTo(pMap);
-            bounds.extend(rel.coords);
-          }
-        });
-        pMap.fitBounds(bounds, { padding: [30, 30], maxZoom: 4 });
-
-        // INIT GRAFIK ECHARTS
-        document.getElementById('print-echarts-wrapper').style.display = 'block';
-        const chartDom = document.getElementById('print-echarts-container');
-        const myChart = echarts.init(chartDom);
-
-        let nodes = [{
-            id: 'main',
-            name: mainName + '\\n(' + mainCountry + ')',
-            symbol: 'roundRect',
-            symbolSize: [140, 55],
-            itemStyle: { color: '#900c3f', borderColor: '#5c0829', borderWidth: 2 },
-            label: { 
-                show: true, 
-                position: 'inside',  
-                color: '#ffffff', 
-                fontSize: 11, 
-                fontWeight: 'bold',
-                width: 120,          
-                overflow: 'break',   
-                lineHeight: 14
-            }
-        }];
-
-        let links = [];
-
-        relatedNodes.forEach((rel, i) => {
-            let shortReason = rel.relationship_reason;
-            if (shortReason.length > 35) shortReason = shortReason.substring(0, 35) + '...';
-
-            nodes.push({
-                id: 'rel_' + i,
-                name: rel.element_name + '\\n(' + rel.country + ')',
-                symbol: 'roundRect',
-                symbolSize: [130, 50],
-                itemStyle: { color: '#f8fafc', borderColor: '#475569', borderWidth: 2 },
-                label: { 
-                    show: true, 
-                    position: 'inside', 
-                    color: '#0f172a',   
-                    fontSize: 10,
-                    width: 110,
-                    overflow: 'truncate', 
-                    lineHeight: 13
-                }
-            });
-
-            links.push({
-                source: 'main',
-                target: 'rel_' + i,
-                value: shortReason,
-                label: { 
-                    show: true, 
-                    formatter: '{c}', 
-                    fontSize: 9, 
-                    color: '#1e293b',
-                    backgroundColor: '#ffffff', 
-                    borderColor: '#cbd5e1',     
-                    borderWidth: 1,
-                    padding: [3, 5],
-                    borderRadius: 4
-                },
-                lineStyle: { width: 1.5, color: '#64748b', curveness: 0.2, type: 'dashed' }
-            });
-        });
-
-        myChart.setOption({
-            animation: false, 
-            series: [{
-                type: 'graph',
-                layout: 'force',
-                roam: false,
-                nodes: nodes,
-                links: links,
-                force: { 
-                    repulsion: 3000,        
-                    edgeLength: [150, 220], 
-                    gravity: 0.05           
-                }
-            }]
-        });
-      } // <--- KURUNG KURAWAL INI YANG SEBELUMNYA TERHAPUS
-    } else {
-      document.getElementById('print-leaflet-map').style.display = 'none';
-    }
-
-    // --- LOGIKA WAIT RENDER ---
+    // --- LOGIKA WAIT RENDER (Dirombak agar ECharts dieksekusi setelah DOM 100% siap) ---
     window.onload = function() {
-      // Tunggu 2 detik agar Force Layout Echarts menetap dan Peta Load Sempurna
-      setTimeout(() => {
-        window.print();
-      }, 2000); 
+      if (lat !== null && lng !== null) {
+        
+        // INIT PETA LEAFLET
+        const pMap = L.map('print-leaflet-map', { 
+          zoomControl: false, dragging: false, scrollWheelZoom: false, touchZoom: false 
+        }).setView([lat, lng], 4);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 20 }).addTo(pMap);
+        L.circleMarker([lat, lng], { radius: 8, color: '#900c3f', fillColor: '#900c3f', fillOpacity: 1 }).addTo(pMap);
+
+        if (isShared && relatedNodes.length > 0) {
+          let bounds = L.latLngBounds([[lat, lng]]);
+          relatedNodes.forEach(rel => {
+            if (rel.coords) {
+              L.circleMarker(rel.coords, { radius: 6, color: '#64748b', fillColor: '#ffffff', fillOpacity: 1, weight: 2 }).addTo(pMap);
+              L.polyline([[lat, lng], rel.coords], { color: '#94a3b8', weight: 2, dashArray: '5, 5' }).addTo(pMap);
+              bounds.extend(rel.coords);
+            }
+          });
+          pMap.fitBounds(bounds, { padding: [30, 30], maxZoom: 4 });
+
+          // INIT ECHARTS (Diberi Jedah agar container benar-benar tampil (display:block) di layar)
+          const wrapper = document.getElementById('print-echarts-wrapper');
+          wrapper.style.display = 'block';
+          
+          setTimeout(() => {
+            const chartDom = document.getElementById('print-echarts-container');
+            
+            // PAKSA DIMENSI secara eksplisit agar grafiknya tidak tersembunyi
+            const myChart = echarts.init(chartDom, null, { 
+                width: chartDom.clientWidth || 760, 
+                height: 400 
+            });
+
+            let nodes = [{
+                id: 'main',
+                name: mainName + '\\n(' + mainCountry + ')',
+                symbol: 'roundRect',
+                symbolSize: [140, 55],
+                itemStyle: { color: '#900c3f', borderColor: '#5c0829', borderWidth: 2 },
+                label: { show: true, position: 'inside', color: '#ffffff', fontSize: 11, fontWeight: 'bold', width: 120, overflow: 'break', lineHeight: 14 }
+            }];
+
+            let links = [];
+
+            relatedNodes.forEach((rel, i) => {
+                let shortReason = rel.relationship_reason;
+                if (shortReason.length > 35) shortReason = shortReason.substring(0, 35) + '...';
+
+                nodes.push({
+                    id: 'rel_' + i,
+                    name: rel.element_name + '\\n(' + rel.country + ')',
+                    symbol: 'roundRect',
+                    symbolSize: [130, 50],
+                    itemStyle: { color: '#f8fafc', borderColor: '#475569', borderWidth: 2 },
+                    label: { show: true, position: 'inside', color: '#0f172a', fontSize: 10, width: 110, overflow: 'truncate', lineHeight: 13 }
+                });
+
+                links.push({
+                    source: 'main', target: 'rel_' + i, value: shortReason,
+                    label: { show: true, formatter: '{c}', fontSize: 9, color: '#1e293b', backgroundColor: '#ffffff', borderColor: '#cbd5e1', borderWidth: 1, padding: [3, 5], borderRadius: 4 },
+                    lineStyle: { width: 1.5, color: '#64748b', curveness: 0.2, type: 'dashed' }
+                });
+            });
+
+            myChart.setOption({
+                animation: false, 
+                series: [{
+                    type: 'graph', layout: 'force', roam: false, nodes: nodes, links: links,
+                    force: { repulsion: 3000, edgeLength: [150, 220], gravity: 0.05 }
+                }]
+            });
+
+            // Tunggu layout node selesai, resize grafiknya, baru buka dialog Print
+            setTimeout(() => {
+                myChart.resize();
+                window.print();
+            }, 1000);
+
+          }, 150); // Jeda 150ms untuk browser reflow
+
+        } else {
+            // Jika tidak ada diagram ECharts, langsung print setelah map selesai render
+            setTimeout(() => window.print(), 1000);
+        }
+      } else {
+        document.getElementById('print-leaflet-map').style.display = 'none';
+        setTimeout(() => window.print(), 500);
+      }
     };
   <\/script>
 </body>
