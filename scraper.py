@@ -1,7 +1,7 @@
 """
 =======================================================================
   ICH SHARED HERITAGE RADAR v6.1 — Global Intelligence Engine
-  AI Engine : Google Gemini 3.1 Flash (Google Search Grounding)
+  AI Engine : Google Gemini 2.5 Flash (Google Search Grounding)
   Mode      : 2-Phase (Enrichment of Incomplete Data -> Discovery)
   Feature   : Quality over Quantity (Iterative Looping), Anti-Redundancy, Wikimedia Fallback
 =======================================================================
@@ -788,18 +788,14 @@ def audit_inventory(inventory):
 # ======================================================================
 
 def call_gemini(api_key, prompt):
-    # Menggunakan endpoint Gemini 3 Flash Preview
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent"
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
     
-    # Konfigurasi payload
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "systemInstruction": {"parts": [{"text": system_instruction}]},
+        "tools": [{"googleSearch": {}}],
         "generationConfig": {
-            "temperature": 0.5,
-            "maxOutputTokens": 8192,
-            # Menghasilkan output dalam format JSON jika diminta
-            "responseMimeType": "application/json" if expect_json else "text/plain"
+            "temperature": 0.4, # Lower temperature for strictly formatted output
+            "maxOutputTokens": 8192
         }
     }
 
@@ -1083,7 +1079,7 @@ def generate_quarterly_resume(api_key, inventory):
     }}
     """
     
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent"
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
     headers = {'Content-Type': 'application/json', 'x-goog-api-key': api_key}
     
     # Payload yang diperkuat (menggunakan responseMimeType untuk mencegah API bingung)
