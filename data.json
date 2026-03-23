@@ -4251,17 +4251,249 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-528f0df2",
+      "element_name": "Matoborwa (Processed Sweet Potatoes)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.slowfood.org/arkoftaste/matoborwa/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.slowfood.org/arkoftaste/matoborwa/",
+        "https://www.researchgate.net/figure/Two-widely-known-processed-sweet-potato-products-A-Makewe-and-B-Matoborwa-developed-by_fig4_330693529",
+        "https://en.wikipedia.org/wiki/Nyamwezi_people",
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nyamwezi",
+        "https://misalabamedia.blogspot.com/2026/02/historia-ya-kabila-la-wanyamwezi.html",
+        "https://www.safaritours.co.tz/nyamwezi-tribe-of-tanzania/"
+      ],
+      "scraped_at": "2026-03-23T01:17:31.501722Z",
+      "location": {
+        "country": "Tanzania",
+        "provinces": [
+          "Tabora Region",
+          "Lake Zone"
+        ],
+        "lat": -5.1913822,
+        "lng": 32.5080629
+      },
+      "resume_analisa": {
+        "description": "Matoborwa are a traditional processed food made from sweet potatoes (Ipomoea batatas) by the Nyamwezi tribe in the Tabora region of Tanzania. The process involves boiling, peeling, slicing, and sun-drying the sweet potato roots. The resulting sun-dried slices are typically brown, sweet, brittle, and hard, allowing for storage for over six months and reducing pest infestation. This traditional method of preservation was crucial for food security.",
+        "cultural_significance": "Matoborwa was once a staple food for the Nyamwezi people, often consumed twice daily. Its cultural importance is further highlighted by the fact that the name of the Tabora region itself is derived from the word 'matoborwa', as visitors found it easier to pronounce 'Tobora'. The practice is currently at risk of being lost due to shifts in consumer preferences towards commercially available wheat and rice-based products.",
+        "gemini_tags": [
+          "Food Preservation",
+          "Traditional Cuisine",
+          "Sweet Potato Processing",
+          "Nyamwezi Culture",
+          "Tanzanian Heritage",
+          "Staple Food",
+          "Endangered Tradition"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Food Preparation and Preservation",
+        "materials_and_tools": [
+          "Fresh sweet potato roots (Ipomoea batatas)",
+          "Water",
+          "Pot (for boiling)",
+          "Knife (for peeling and slicing)",
+          "Sun (for drying)"
+        ],
+        "step_by_step": [
+          "Boil fresh sweet potato roots in water for 30-40 minutes.",
+          "Peel the boiled sweet potatoes.",
+          "Slice the peeled sweet potatoes into thin strips.",
+          "Dry the slices in the sun."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Tanzania",
+            "element_name": "Michembe (Processed Sweet Potatoes)",
+            "relationship_reason": "Similar sweet potato processing technique, also developed by Nyamwezi and Sukuma tribes, and spread to other zones."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-05ceeeb6",
+      "element_name": "Ohaguro",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Ohaguro&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ohaguro",
+        "https://www.tempesmiles.com/what-is-ohaguro/",
+        "https://www.laspina.org/blog/ohaguro-the-japanese-teeth-blackening-custom-the-tradition-of-ohaguro",
+        "https://heritageofjapan.wordpress.com/2012/08/29/ohaguro-the-japanese-teeth-blackening-custom-known-to-have-been-practised-from-the-kofun-period-was-shared-by-ancient-southeast-asian-tribes/",
+        "https://livejapan.com/en/in-tokyo/in-pref-tokyo/in-shinjuku/article-a1000008/",
+        "https://www.ancient-origins.net/history-ancient-traditions/ohaguro-0014299",
+        "https://www.wikihow.com/Blacken-Your-Teeth-(Ohaguro)",
+        "https://encyclopedia.pub/18659",
+        "https://www.youtube.com/watch?v=F0v0sL3f2c4",
+        "https://www.edopedia.com/edo-a-z/ohaguro-haguro-black-teeth/",
+        "https://thestoly.com/the-story-behind-ohaguro-the-japanese-teeth-blackening-custom/",
+        "https://lisaswritopia.com/2018/09/10/suffering-for-beauty-ohaguro-the-practice-of-blackening-teeth/",
+        "https://www.uncannyjapan.com/ohaguro/"
+      ],
+      "scraped_at": "2026-03-23T01:17:58.099400Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [],
+        "lat": 36.5748441,
+        "lng": 139.2394179
+      },
+      "resume_analisa": {
+        "description": "Ohaguro (お歯黒), literally meaning 'black teeth,' is a traditional Japanese custom of blackening one's teeth with a dark solution primarily made from iron filings and vinegar. This practice was particularly prevalent from the Heian to the Edo periods, spanning the 10th to the late 19th century. While predominantly observed by married women and members of the aristocracy and samurai class, it later extended to commoner women and geisha. The Meiji government banned Ohaguro in 1870, leading to its gradual disappearance, though it can still be seen in some Japanese festivals, period films, kabuki, and among some geisha in Kyoto.",
+        "cultural_significance": "Ohaguro held multifaceted cultural significance in Japan. It was considered a symbol of beauty, with deep black objects, such as glossy lacquer, being highly admired, and black teeth harmonizing with the powdered white faces prevalent at the time. The practice also marked a woman's transition into adulthood, particularly signifying maturity and marital status after marriage or childbirth. In some contexts, it conveyed loyalty, acting as a visual signal of devotion to one's husband or household, similar to a wedding ring. Samurai also adopted Ohaguro to demonstrate their unwavering loyalty to their masters. Beyond aesthetics and social markers, Ohaguro was believed to offer health benefits, functioning as a dental sealant to prevent tooth decay and strengthen teeth and gums.",
+        "gemini_tags": [
+          "Traditional Beauty Practice",
+          "Japanese Culture",
+          "Historical Ritual",
+          "Social Status Symbol",
+          "Dental Health Tradition",
+          "Coming-of-Age Ritual",
+          "Marital Status Indicator"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Teeth Dyeing",
+        "materials_and_tools": [
+          "Steel wool (or iron filings, common nails, needles, pins)",
+          "Apple cider vinegar (or grape vinegar)",
+          "Gallnut powder (tannins) or green tea powder (matcha)",
+          "Container for soaking",
+          "Bowl for mixing",
+          "Soft paint or calligraphy brush",
+          "Pomegranate rind (optional, for adherence)",
+          "Spices like cinnamon, cloves, anise (optional, for taste)"
+        ],
+        "step_by_step": [
+          "**Prepare Kanemizu (Ferric Acetate Solution):** Soak steel wool, iron filings, or other iron pieces in a container filled with apple cider vinegar (or grape vinegar) for 5-7 days. During this period, a silver-to-rust colored foam will form on the surface, and a dark, foul-smelling substance, known as kanemizu or 'iron juice,' will be created.",
+          "**Combine with Tannins:** Pour the resulting kanemizu liquid into a bowl. Add gallnut powder (tannins) or finely powdered green tea (matcha) to the liquid. This combination causes the ferric acetate to turn black and become non-water-soluble.",
+          "**Optional Flavoring:** To mitigate the unpleasant taste of the dye, spices such as cinnamon, cloves, or anise could be added to the mixture.",
+          "**Prepare Teeth (Optional):** Before application, some practitioners would rub pomegranate rind over their teeth to help the dye adhere more effectively.",
+          "**Apply the Dye:** Using a soft paint or calligraphy brush, carefully apply the black mixture to the teeth. Precision is important to avoid waste, although the dye can be easily washed from the gums, tongue, and palate.",
+          "**Layering and Rinsing:** Multiple layers of the dye are typically required to achieve a deep, consistent black color. Once the desired shade is reached, the mouth is rinsed with water to remove any residues.",
+          "**Reapplication:** To maintain the glossy black appearance, the dye had to be reapplied regularly, often daily or every few days, as its effect was not permanent."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Teeth blackening",
+            "relationship_reason": "Similar cultural practice of dyeing teeth black for beauty or other purposes, though specific ingredients and methods might vary."
+          },
+          {
+            "country": "Southeast Asia (Vietnam, Laos, Thailand)",
+            "element_name": "Teeth blackening",
+            "relationship_reason": "Similar cultural practice of dyeing teeth black for beauty, maturity, or health benefits, with variations in materials like coconut husks or red resin."
+          },
+          {
+            "country": "Pacific Islands",
+            "element_name": "Teeth blackening",
+            "relationship_reason": "Similar cultural practice of dyeing teeth black."
+          },
+          {
+            "country": "South America",
+            "element_name": "Teeth blackening",
+            "relationship_reason": "Similar cultural practice of dyeing teeth black."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-382aba0a",
+      "element_name": "Thanjavur Art Plate (தஞ்சாவூர் கலைத் தட்டு)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.gaatha.org/craft-archive/research/thanjavur-art-plate&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.gaatha.org/craft-archive/research/thanjavur-art-plate",
+        "https://ancientmadurai.com/thanjavur-art-plate/",
+        "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+        "https://www.civilsdaily.com/news/thanjavur-art-plates/",
+        "https://www.rooftopapp.com/blog/thanjavur-art-plate-analysing-cultural-legacy/",
+        "https://authindia.com/blogs/thanjavur-art-plates-craft-of-cultural-and-commercial-importance/",
+        "https://www.gitagged.com/thanjavur-art-plate-online/"
+      ],
+      "scraped_at": "2026-03-23T01:18:26.508603Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Tamil Nadu"
+        ],
+        "lat": 11.3323723,
+        "lng": 78.6098639
+      },
+      "resume_analisa": {
+        "description": "The Thanjavur Art Plate, also known as Thanjavur Kalai Thattu, is a traditional metal craft exclusively made in Thanjavur, Tamil Nadu, India. It is a circular plate crafted primarily from a combination of three metals: brass, copper, and silver. The plates feature intricate relief images, often depicting Hindu deities, floral motifs, and mythological scenes, embossed onto the metallic surfaces. [2, 5, 6] Originally introduced during the Maratha rule by Rajah Serfoji II (1777–1832) in the 18th century, these plates were conceived as unique royal gifts to showcase the kingdom's artistic prowess and hospitality. [2, 3, 4, 5, 6, 9] Over time, the craft has evolved from ceremonial platters to include a variety of products such as plaques, trophies, wall hangings, and souvenirs. [2, 3] The Thanjavur Art Plate has been recognized as a Geographical Indication (GI) product since 2007, affirming its unique origin and traditional craftsmanship. [2, 4, 6, 7, 10, 18]",
+        "cultural_significance": "The Thanjavur Art Plate holds significant cultural and historical importance, dating back over 250 years. [3, 6] It was initially created as a symbol of royalty and a prestigious gift for guests, embodying the Maratha principle of 'Atithi Devo Bhava' (the guest is like God). [3, 6, 9] The plates often feature deities like Lakshmi or Ganesha, symbolizing wealth and abundance, and are used in Hindu worship practices as symbolic offerings in home altars or temples. [3, 6] The craft is exclusively practiced by the Vishwakarma goldsmith community in Thanjavur, passed down through generations, making it an inherited art and a way of life for these artisans. [2, 3, 4, 5, 6] It represents the enduring legacy of Tamil Nadu's artistic heritage and metal craftsmanship, blending functionality with spiritual iconography. [6, 8] The GI tag further underscores its cultural significance and helps preserve this traditional art form. [6, 7, 10]",
+        "gemini_tags": [
+          "Metal Craft",
+          "Indian Handicraft",
+          "Thanjavur",
+          "Traditional Art",
+          "GI Tag",
+          "Cultural Heritage",
+          "Embossing",
+          "South Indian Craftsmanship"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "Brass sheets (for base plate)",
+          "Copper sheets (for motifs and embellishments)",
+          "Silver sheets (for motifs and embellishments)",
+          "Lead (for creating design molds)",
+          "Wax and asphalt boards (to fix the base plate)",
+          "Hammers",
+          "Pincers",
+          "Molds",
+          "Punch tool",
+          "Chisels (for engraving)",
+          "Compass (for measurement)",
+          "Weight (to fix the plate)",
+          "Cutting tool",
+          "Needle (for metal beads)",
+          "Hooved metal box (for circular metal beads)",
+          "Grinding stone (for sharpening tools)",
+          "Glue (for fixing)",
+          "Wax mixture (brick powder, gingili oil, frankincense - for filling hollow depressions)"
+        ],
+        "step_by_step": [
+          "**Material Preparation:** Brass sheets are selected for the base plate, while thin sheets of copper and silver are prepared for intricate embellishments and motifs. [2, 3, 4, 5, 8]",
+          "**Base Plate Preparation:** A brass sheet is hammered onto a sticky board made of wax and asphalt to firmly secure it. [2, 4, 5, 9]",
+          "**Mould Creation:** Lead is used to create molds for embossing three-dimensional designs onto the metal sheets. [4, 5]",
+          "**Motif Embossing:** Intricate designs, often depicting Hindu deities, floral patterns, or geometric motifs, are embossed onto thin sheets of copper and silver using molds, punch tools, and hammers. [2, 3, 4, 5]",
+          "**Engraving and Detailing:** Chisels are used for engraving fine details onto the embossed metal pieces. [3]",
+          "**Assembly of Reliefs:** The embossed copper and silver pieces (primary and secondary reliefs) are carefully fixed onto the brass base plate using traditional techniques, ensuring precision in placement. [2, 3, 4, 5, 9]",
+          "**Back Filling (Optional):** A wax mixture (brick powder, gingili oil, and frankincense) may be used to fill hollow depressions on the back of the metal relief sheets for added stability. [3]",
+          "**Polishing:** The final product undergoes polishing to enhance the contrast between the different metals (golden brass, reddish copper, and silvery embellishments), giving it a distinctive and visually striking appearance. [2, 5]"
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 1.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-22T14:10:36.045865Z",
-    "total_ich_elements": 51,
-    "complete_records": 47,
+    "generated_at": "2026-03-23T01:18:48.859213Z",
+    "total_ich_elements": 54,
+    "complete_records": 50,
     "incomplete_records": 4,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 21,
-      "Social Practices & Rituals": 11,
-      "Culinary Traditions": 9,
+      "Traditional Craftsmanship": 22,
+      "Social Practices & Rituals": 12,
+      "Culinary Traditions": 10,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 5,
       "Social Practices & Rituals | Performing Arts": 1,
