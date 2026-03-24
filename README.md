@@ -472,7 +472,7 @@ Source URLs for every record are stored and displayed in the dashboard, allowing
 
 Heritage communities and researchers who identify inaccuracies in any record are encouraged to open an issue or pull request.
 
-**License: MIT**
+**License: AGPL**
 
 ---
 
