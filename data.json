@@ -4483,22 +4483,283 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a78124bd",
+      "element_name": "Zellige (Moroccan Mosaic Tiles)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//paristile.com/blogs/news/how-zellige-tiles-are-made&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://paristile.com/blogs/news/how-zellige-tiles-are-made",
+        "https://www.cletile.com/blogs/news/what-is-zellige-tile-how-is-it-made",
+        "https://houseofanouar.com/blogs/zellige-tiles/how-moroccan-zellige-tiles-are-made",
+        "https://zelligerar.com/blogs/news/how-tiles-are-made",
+        "https://lasignaturemarrakech.com/blogs/news/exploring-the-art-of-zellij-moroccan-mosaic-masterpieces",
+        "https://www.ziatile.com/blogs/zellige-tiles/zellige-tiles-a-story-of-art-craft-and-culture",
+        "https://www.leighvaeth.com/blog/history-of-zellige-from-moroccan-tradition-to-modern-luxury",
+        "https://arttravelmorocco.com/moroccan-zellij-history-craftsmanship-and-cultural-significance/",
+        "https://mosaicmorocco.com/blogs/news/the-history-behind-moroccan-zellige",
+        "https://moroccandesign.com/blogs/moroccan-design/the-art-of-zellige",
+        "https://driftwooddesignlab.com/blogs/news/zellige-an-ancient-tilemaking-tradition",
+        "https://www.travelexplorationmorocco.com/moroccan-pottery-workshops-traditional-ceramic-and-tile-making-classes-in-unesco-fes-zagora",
+        "https://www.mosaics-tiles.com/how-zellige-tiles-are-made",
+        "https://artzellige.com/blogs/news/a-comprehensive-guide-to-the-beautiful-art-of-moroccan-zellige",
+        "https://www.moroccantravel.com/moroccan-pottery-ceramics.html"
+      ],
+      "scraped_at": "2026-03-25T01:15:08.358798Z",
+      "location": {
+        "country": "Morocco",
+        "provinces": [
+          "Fez",
+          "Meknes",
+          "Safi",
+          "Tetouan"
+        ],
+        "lat": 34.0346534,
+        "lng": -5.0161926
+      },
+      "resume_analisa": {
+        "description": "Zellige (also spelled zellij) is a traditional form of handmade terracotta mosaic tilework originating from Morocco, renowned for its vibrant colors, intricate geometric patterns, and unique imperfections. Each tile is shaped, glazed, and fired by hand, resulting in one-of-a-kind surfaces with rich tonal variation. This ancient craft, passed down through generations of skilled artisans known as maâlems, is an integral part of Moroccan craftsmanship and Islamic art. Zellige tiles are typically used to create detailed mosaics that decorate various architectural elements, including walls, floors, fountains, mosques, riads, and palaces across North Africa and beyond. The distinctive style comes from its handmade process, which creates imperfect yet unique tiles.",
+        "cultural_significance": "Zellige holds deep cultural and religious significance in Moroccan society and the broader Islamic world. Historically, it symbolized wealth, power, and artistic skill, adorning the palaces and public buildings of rulers and nobility. The intricate geometric and repetitive patterns are deeply rooted in Islamic theology, symbolizing the infinite nature of creation and the unity of the divine, and acting as visual representations of harmony and order in the universe. The art form exemplifies the Islamic emphasis on aniconic art, avoiding depictions of living beings and instead celebrating the infinite through complex geometry and symmetry. Colors also carry symbolic meanings, such as blue for tranquility and protection, green for fertility and paradise, and yellow for the brilliance of the sun. Zellige remains a cornerstone of Moroccan design, connecting to heritage and serving as a testament to the country's artistic ingenuity and religious devotion. The craft is a living tradition, with knowledge and skills passed down through generations of maâlems.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Moroccan Art",
+          "Mosaic Tiles",
+          "Islamic Art",
+          "Geometric Patterns",
+          "Handmade Tiles",
+          "Cultural Heritage",
+          "Fez Craft",
+          "Architectural Decoration",
+          "Artisan Skill"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting",
+        "materials_and_tools": [
+          "Natural clay (from Fez region)",
+          "Water",
+          "Natural pigments (e.g., cobalt, copper, manganese)",
+          "Glaze mixture (natural oxides, quartz, feldspar)",
+          "Olive pits and branches (for kiln fuel)",
+          "Wooden molds",
+          "Metal chisels (menqash/menkach)",
+          "Kilns (ancient bee-hive or wood-burning)",
+          "Spatula",
+          "Hammer"
+        ],
+        "step_by_step": [
+          "**Clay Harvesting and Preparation**: Natural clay is sourced, typically from regions like Fez. It is then soaked in water for several days, filtered, and kneaded by hand and foot to achieve a smooth, workable, and plastic texture, ensuring no air bubbles.",
+          "**Molding and Drying**: The prepared clay is hand-shaped or pressed into wooden molds to form uniform square or rectangular slabs/tiles. These are then left to dry naturally under the sun for several days, a crucial step to prevent cracking during firing.",
+          "**First Firing (Biscuit Firing)**: The sun-dried clay slabs (known as \"biscuit tiles\") are fired in traditional wood-burning kilns, often fueled by olive pits and branches. The uneven heat distribution in these kilns contributes to the unique tonal variations of the tiles.",
+          "**Glazing**: After the first firing, each tile is hand-dipped or brushed with a glaze made from natural pigments and oxides. This glaze provides the vibrant colors and glossy finish characteristic of Zellige.",
+          "**Second Firing (Glaze Firing)**: The glazed tiles are re-fired at high temperatures in the traditional kilns. This sets the glaze and further enhances the unique color shifts and texture changes. Some specific colors might require shielding or gas ovens due to fragility.",
+          "**Hand-Cutting (Tessellation)**: Master artisans (maâlems) use a sharp hammer called a menqash (or menkach) and chisels to meticulously hand-cut the fired and glazed tiles into precise geometric shapes (squares, triangles, stars, octagons, etc.). This step requires remarkable precision and skill, ensuring each piece fits perfectly into complex mosaic patterns. The edges are often chiseled at an angle, creating a chamfered, irregular edge.",
+          "**Mosaic Assembly**: The hand-cut pieces are then assembled face-down on the ground, often without a pre-drawn pattern, by skilled \"man-tilers\" who arrange them into intricate mosaic designs. Once the pattern is complete, glue, mesh, and cement are carefully added to the back to create a rigid sheet for installation.",
+          "**Installation (Post-production)**: Zellige requires skilled installers due to the variations in size and thickness. Tiles are set with a thin-set adhesive, and non-sanded grout is used to fill gaps. Sealing is crucial, especially for unglazed tiles or wet areas."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Spain (Al-Andalus)",
+            "element_name": "Moorish/Islamic Tilework",
+            "relationship_reason": "Zellige traces its origins to the medieval period when Moorish craftsmen brought their skills from Al-Andalus (Islamic Spain) to Morocco. The word \"zellij\" itself derives from the Arabic term \"az-zulayj,\" referring to polished stone, reflecting influences from Roman and Byzantine mosaics. Moroccan artisans refined this art, blending Islamic geometric patterns with influences from Berber, Andalusian, and other local traditions. Islamic art, with its emphasis on aniconic geometric patterns, is a shared foundation."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-bbde7b94",
+      "element_name": "Dreamtime Stories (The Dreaming)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://www.japingkaaboriginalart.com/wp-content/uploads/2020/02/rainbow-serpent-dreamtime-story-japingka-aboriginal-art-gallery.jpg",
+      "source_urls": [
+        "https://www.artark.com.au/what-is-the-dreaming-dreamtime-in-aboriginal-culture/",
+        "https://aboriginalcontemporary.com.au/blogs/news/what-is-the-dreamtime-and-dreaming",
+        "https://www.aboriginal-art-australia.com/aboriginal-art-culture/what-is-aboriginal-dreamtime/",
+        "https://kateowengallery.com/pages/aboriginal-dreamtime-stories-jukurrpa",
+        "https://www.commonground.org.au/learn/the-dreaming",
+        "https://trueconnection.org/blog/the-dreamtime-stories-of-aboriginal-australians-wisdom-from-the-worlds-oldest-living-culture",
+        "https://fish.asn.au/aboriginal-dreamtime-stories/"
+      ],
+      "scraped_at": "2026-03-25T01:15:39.494265Z",
+      "location": {
+        "country": "Australia",
+        "provinces": [
+          "All states and territories where Aboriginal people reside",
+          "Northern Territory (e.g., Arnhem Land)",
+          "Western Australia (e.g., Kimberley region)",
+          "Central Australia",
+          "New South Wales (e.g., Western NSW, Illawarra)",
+          "South Australia"
+        ],
+        "lat": -24.7761086,
+        "lng": 134.755
+      },
+      "resume_analisa": {
+        "description": "Dreamtime, also known as The Dreaming or Tjukurrpa (in Arrernte language), is the fundamental concept in Australian Aboriginal culture that encompasses a worldview connecting the human, physical, and sacred realms. It represents the beliefs, knowledge, and values of Aboriginal peoples, explaining the creation of the world, its landscapes, and the laws governing human behavior. It is not a static past event but a continuous 'everywhen' – encompassing the past, present, and future simultaneously. Dreamtime stories feature Ancestral Spirits (often in animal or human form) who shaped the land, created life, and established social and moral codes.",
+        "cultural_significance": "Dreamtime stories are the bedrock of Aboriginal religion and culture, serving as practical guides for survival, moral conduct, and reinforcing cultural identity and environmental stewardship. They transmit imperative knowledge, cultural values, traditions, and law to future generations. These narratives explain the interconnectedness of life, the sanctity of the Earth, and the human responsibility to live in balance with nature. They dictate social behavior, family relations, and obligations to people, land, and spirits. Dreamtime stories also provide a sense of identity and continuity, with individuals and families often identifying with specific Dreamings (totems). They are crucial for understanding Aboriginal people's place in traditional society and nature, linking their spiritual world of the past with the present and future.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Creation Myth",
+          "Folklore",
+          "Spirituality",
+          "Cultural Education",
+          "Environmental Stewardship",
+          "Social Law",
+          "Identity",
+          "Indigenous Culture",
+          "Australia"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Transmission and Cultural Education",
+        "materials_and_tools": [
+          "Oral narration",
+          "Storytelling",
+          "Ceremonial body painting",
+          "Art (e.g., dot painting, rock art)",
+          "Song",
+          "Dance",
+          "Ceremonies",
+          "Sacred sites (as teaching grounds)"
+        ],
+        "step_by_step": [
+          "Dreamtime stories are passed down orally from generation to generation, primarily by Elders to younger community members.",
+          "This transmission occurs through various customs including direct storytelling, ceremonial performances involving song and dance, and visual art forms like body painting and rock art.",
+          "The stories often have multiple layers of meaning ('outside' versions for general knowledge and 'inside' knowledge restricted to initiated senior men and women).",
+          "Young people are often taken onto Country by Elders to learn about landforms and their associated stories, thus connecting the narratives directly to the physical landscape.",
+          "The stories are not static but are continuously reinterpreted and reimagined, ensuring their relevance while retaining their spiritual essence."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 1.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-e741b517",
+      "element_name": "Andean Backstrap Weaving",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Textile_detail_from_Peru%2C_19th_century.jpg/640px-Textile_detail_from_Peru%2C_19th_century.jpg",
+      "source_urls": [
+        "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/",
+        "https://www.awamaki.org/backstrap-weaving-in-peru/",
+        "https://en.wikipedia.org/wiki/Andean_textiles",
+        "https://hatchingdragons.com/blogs/news/south-american-indigenous-textiles",
+        "https://www.museidigenova.it/en/content/andean-textiles",
+        "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/preserving-andean-weaving-center-traditional-textiles",
+        "https://www.textilescusco.org/andean-textiles/",
+        "https://www.metmuseum.org/toah/hd/atex/hd_atex.htm",
+        "https://bfpc.eiu.edu/20th-century-andean-textiles/",
+        "https://radicalweavers.com/blogs/news/top-5-weaving-destinations-around-the-world",
+        "https://www.ccd-nl.org/guatemalan-ikat-and-traditional-weaving-a-vibrant-tapestry-of-culture-and-identity/",
+        "https://www.guatemala.com/cultura/arte/importancia-tejido-guatemalteco-cultura-maya.html",
+        "https://www.lauramorelli.com/blog/guatemalan-textiles/",
+        "https://actualidadambiental.pe/declaran-patrimonio-cultural-de-la-nacion-al-arte-de-tejer-de-los-indigenas-huni-kuin-o-cashinahua/",
+        "https://craftychica.com/2025/12/latin-american-textiles-guide/",
+        "https://josefinwaltin.com/2020/04/11/backstrap-weaving/",
+        "https://www.tramatextiles.org/post/the-art-of-backstrap-weaving-a-tradition-passed-through-generations",
+        "https://andeantextilearts.org/the-art-of-four-selvaged-cloth/",
+        "https://maiwa.com/blogs/journal/peruvian-backstrap-weaving",
+        "https://museumoftheredriver.org/exhibits/andean-textiles/",
+        "https://thekindcraft.com/weaving-in-the-andes-mountains/"
+      ],
+      "scraped_at": "2026-03-25T01:16:17.801063Z",
+      "location": {
+        "country": "Peru",
+        "provinces": [
+          "Cusco Region",
+          "Patacancha Valley",
+          "Sacred Valley",
+          "Chinchero",
+          "Pitumarca",
+          "Colca Valley"
+        ],
+        "lat": -13.5230729,
+        "lng": -71.9657873
+      },
+      "resume_analisa": {
+        "description": "Andean backstrap weaving is an ancient and traditional textile art practiced in the Andes, primarily in Peru, and passed down through generations. It utilizes a portable, non-mechanized backstrap loom constructed from wood, bone, and strings, where the weaver controls the tension of the warp threads with their own body. The resulting textiles are typically warp-faced, meaning the warp yarns determine the visible color and design. Intricate patterns, known as 'pallay' (Quechua for 'pick-up'), are created by carefully selecting and manipulating warp threads, often depicting stories, reflecting the surrounding landscape, or conveying cultural messages.",
+        "cultural_significance": "This weaving tradition is a vital component of identity in the high Andes, deeply intertwined with alpaca herding and the Quechua language. Historically, it served as a crucial means of communication and recording history in a predominantly oral culture. Woven textiles were significant indicators of wealth and played central roles in civil and religious ceremonies. They honor Pachamama (Mother Earth) and express profound appreciation for growth, generation, and connection to the natural world. Weavers are regarded as artists, preserving intangible cultural heritage through the intergenerational transmission of knowledge.",
+        "gemini_tags": [
+          "Traditional Textile",
+          "Backstrap Loom",
+          "Andean Culture",
+          "Indigenous Craft",
+          "Peru",
+          "Cultural Heritage",
+          "Weaving",
+          "Natural Dyes",
+          "Storytelling through Textiles",
+          "Quechua"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Backstrap Loom Weaving",
+        "materials_and_tools": [
+          "Loom components: Warp bars (wood), backstrap (leather/fabric), shed stick (wood), heddle stick (wood), shuttle/bobbin (wood), batten/sword/machete (wood), r'uki (small pointed bone tool)",
+          "Fibers: Alpaca wool (baby alpaca, vicuña), llama wool, sheep wool, indigenous cotton",
+          "Dyes: Natural dyes from plants (e.g., chilca, kinsukuchu), insects (e.g., cochinilla beetle), minerals",
+          "Mordants: Natural mordants like salt, citric acid, alum"
+        ],
+        "step_by_step": [
+          "Fiber Preparation: Raw wool is spun multiple times (plying or k'antiy in Quechua) to create strong, taut yarn.",
+          "Dyeing: Yarn is dyed in boiling water using natural plant, insect, or mineral dyes, often with natural mordants.",
+          "Warping: Create the warp by winding strings between two poles or warp bars. This process can involve two people tossing yarn back and forth, especially for patterned areas where two balls of yarn are used to create pairs of warp yarns. A 'cross' is created to maintain the order of the warp strings.",
+          "Loom Setup: One warp bar is secured to a stationary object (such as a tree or stake), while the other is fastened to a backstrap worn around the weaver's waist. This allows the weaver to control the tension of the warp threads by shifting their body. The heddle rod, shed stick, and other loom components are then set up.",
+          "Weaving: The weaver uses the heddle rod to lift alternating warp threads, creating an opening called a 'shed'. The weft thread is then passed through this shed using a shuttle or bobbin.",
+          "Beating: A batten (or sword/machete) and a small pointed bone tool called a 'r'uki' are used to beat the horizontal weft thread firmly into place, which determines the density and tightness of the finished textile.",
+          "Pattern Creation: Intricate designs (pallay) are formed by meticulously picking up and dropping specific warp yarns.",
+          "Continuing the Weave: The shed is changed by pulling the shed stick, and the process of passing the weft and beating is repeated for each row. The completed portion of the weaving is gradually rolled up on the warp bar closest to the weaver.",
+          "Four-Selvage Weaving (advanced technique): For textiles designed to have no cut edges, weaving begins from one end, then the loom is turned, and weaving continues from the other end. As the two woven sections approach each other, smaller tools and needles are used to complete the central portion.",
+          "Finishing: The edges of the textile may be reinforced with additional stitching (chukay) or adorned with yarn fringe."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Guatemala",
+            "element_name": "Maya Backstrap Weaving",
+            "relationship_reason": "Shares the fundamental backstrap loom technique, deep cultural significance, and the use of patterns to convey cultural symbolism and identity."
+          },
+          {
+            "country": "Bolivia",
+            "element_name": "Aguayo (Traditional Textile)",
+            "relationship_reason": "A traditional Andean textile characterized by bright colors and geometric patterns, used for various purposes including carrying cloths, jackets, and blankets, reflecting shared regional textile traditions."
+          },
+          {
+            "country": "Ecuador",
+            "element_name": "Otavalo Textiles",
+            "relationship_reason": "Features vibrant colors and geometric designs, often woven from alpaca or sheep wool, indicating a shared Andean textile heritage and aesthetic."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-23T01:18:48.859213Z",
-    "total_ich_elements": 54,
-    "complete_records": 50,
+    "generated_at": "2026-03-25T01:16:54.325806Z",
+    "total_ich_elements": 57,
+    "complete_records": 53,
     "incomplete_records": 4,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 22,
+      "Traditional Craftsmanship": 24,
       "Social Practices & Rituals": 12,
       "Culinary Traditions": 10,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 5,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 2
+      "Oral Traditions": 3
     }
   }
 }
