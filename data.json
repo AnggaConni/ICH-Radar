@@ -4744,22 +4744,304 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ac66e7fb",
+      "element_name": "Epic of Manas and Manaschi Tradition",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00204-CLT-1406181045-HP_00002.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Epic_of_Manas",
+        "https://www.theorychina.org/xzzx/202305/t20230507_18967.shtml",
+        "https://www.central-asia.guide/kyrgyzstan/culture/manas-epic/",
+        "https://factsanddetails.com/central-asia/Kyrgyzstan/sub8_5a/entry-4786.html",
+        "https://www.unesco.org/en/memory-world/manuscript-kyrgyz-epic-manas-narrator-sagymbay-orozbakov",
+        "https://hoonarts.com/the-epic-of-manas-soul-of-the-kyrgyz/",
+        "https://foreignpolicy.org/2022/09/01/kyrgyzstan-the-epic-of-manas/",
+        "https://www.nomadsland.travel/kyrgyzstan/history/epic-of-manas/",
+        "https://www.wipo.int/wipo_magazine/en/2021/03/article_0007.html",
+        "https://medium.com/illumination-mirror/550-000-amazing-verses-how-the-epic-of-manas-shaped-kyrgyz-culture-942f20f18838",
+        "https://silkroadresearch.org/2018/11/04/epic-of-manas/",
+        "https://uzbekjourneys.com/2013/02/manaschi-bards-of-kyrgyzstan.html",
+        "https://folkwaystoday.com/manas-and-the-manaschi-foundations-of-the-kyrgyz-soul/",
+        "https://www.calvertjournal.com/articles/show/12836/hamid-ismailov-manaschi-review-kyrgyzstan-myths-novel",
+        "https://risingvoices.library.wesleyan.edu/article/performing-of-the-manas-epic-today-an-audiovisual-ethnographic-experience/",
+        "https://www.silkroadfoundation.org/library/manas/manas_intro.html",
+        "https://ich.unesco.org/en/RL/the-art-of-akyns-epic-tellers-and-manaschi-00204"
+      ],
+      "scraped_at": "2026-03-27T01:20:42.580414Z",
+      "location": {
+        "country": "Kyrgyzstan",
+        "provinces": [
+          "Talas Region",
+          "Issyk-Kul Region",
+          "Chuy Region"
+        ],
+        "lat": 42.4193701,
+        "lng": 72.1416121
+      },
+      "resume_analisa": {
+        "description": "The Epic of Manas is a monumental oral epic poem of the Kyrgyz people, considered the longest epic poem in the world, with some versions containing approximately 500,000 lines. It recounts the heroic deeds of Manas, his son Semetey, and grandson Seitek, as they unite the Kyrgyz tribes and defend their homeland against various foes. The narrative is a rich tapestry of historical events, myths, legends, and daily life, reflecting the nomadic worldview and cultural values of the Kyrgyz people.",
+        "cultural_significance": "The Epic of Manas is Kyrgyzstan's most significant cultural treasure and a cornerstone of Kyrgyz national identity, spiritual heritage, and historical memory. It serves as an oral encyclopedia, transmitting the history, customs, traditions, and values of mutual respect across generations. Manaschis, the epic tellers, play a crucial role in preserving and transmitting this heritage, offering moral and spiritual guidance to communities and helping younger generations connect with their past and culture. The epic is deeply intertwined with the Kyrgyz spirit, with its themes of liberty, resistance to external domination, and a profound connection to the natural landscape.",
+        "gemini_tags": [
+          "Oral tradition",
+          "Epic poetry",
+          "Storytelling",
+          "Kyrgyz culture",
+          "National identity",
+          "Intangible cultural heritage",
+          "Manaschi",
+          "Central Asian folklore"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Performance and Transmission",
+        "materials_and_tools": [
+          "None (traditionally unaccompanied by musical instruments)"
+        ],
+        "step_by_step": [
+          "**Becoming a Manaschi**: Individuals are traditionally believed to be born into the profession or chosen by the spirit of Manas through dreams. The tradition is often passed down orally from a master Manaschi to an apprentice through non-formal education, though some learn from family members.",
+          "**Memorization and Improvisation**: Manaschis commit vast portions of the epic (hundreds of thousands of lines) to memory. However, their role is not merely recitation; they are storytellers who improvise from a basic storyline and rhythm, often weaving in contemporary issues and adapting the narrative. There is no single 'official' text, as each Manaschi recreates the epic anew during performance.",
+          "**Performance Style**: The epic is recited in a melodic chant, typically unaccompanied by musical instruments. Manaschis employ dramatic delivery, utilizing a range of gestures, changes in tone, pitch, and facial expressions to engage the audience. They may enter a near-trance state to vividly recreate the epic's historical atmosphere. The style of narration varies depending on the nature of the story being told, from vivid descriptions of battles to lamentations for tragic events.",
+          "**Social and Spiritual Role**: Manaschis hold a revered social and spiritual status within Kyrgyz society. They are esteemed for their extensive knowledge and dramatic artistry, providing moral and spiritual support to communities. They are seen as a vital link between the sacred world of the epic and the secular world of the listeners, often consulted on personal matters."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Epic of Manas (among Kirgiz people in Xinjiang)",
+            "relationship_reason": "The Epic of Manas is also a significant oral tradition among the Kirgiz ethnic minority in China, particularly in the Xinjiang Uygur Autonomous Region."
+          },
+          {
+            "country": "Kazakhstan, Tajikistan, Afghanistan, Pakistan, Uzbekistan",
+            "element_name": "Turkic Dastans (e.g., Alpamysh)",
+            "relationship_reason": "The Epic of Manas belongs to the broader Turkic 'dastan' genre of oral epics found across Central Asia, sharing thematic and structural similarities with other epic traditions in neighboring countries like the Alpamysh epic in Uzbekistan."
+          },
+          {
+            "country": "Mongolia, Tibet",
+            "element_name": "Epic of Jangar (Mongolian), Epic of Gesar (Tibetan)",
+            "relationship_reason": "The Epic of Manas is recognized alongside the Mongolian Epic of Jangar and the Tibetan Epic of Gesar as one of the 'three great epics' of China's ethnic minority groups, highlighting a shared regional tradition of lengthy oral epic poetry."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0d9aca90",
+      "element_name": "Chakan Embroidery",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/09625-RL-EN.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/chakan-embroidery-art-in-the-republic-of-tajikistan-01384",
+        "https://tehranichc.org/en/chakan-embroidery-art-in-the-republic-of-tajikistan/",
+        "https://ich.unesco.org/en/multimedia/chakan-embroidery-art-in-the-republic-of-tajikistan-01097",
+        "https://www.asiaplustj.info/en/news/tajikistan/culture/20181130/chakan-embroidery-inscribed-on-unesco-list-of-the-intangible-cultural-heritage-of-humanity",
+        "https://www.smithsonianmag.com/travel/women-artisans-of-central-asia-180983485/",
+        "https://ich.unesco.org/en/photos/art-of-chakan-embroidery-in-kulob-01097",
+        "https://www.shesight.com/threads-of-tradition-the-art-of-chakan-embroidery/",
+        "https://uzbektravel.com/blog/reviving-tradition-the-vibrant-festival-of-chakan-in-tajikistan",
+        "https://ich.unesco.org/en/photos/chakan-embroidery-art-in-the-republic-of-tajikistan-01384"
+      ],
+      "scraped_at": "2026-03-27T01:21:14.353415Z",
+      "location": {
+        "country": "Tajikistan",
+        "provinces": [
+          "Khatlon Province",
+          "Kulob",
+          "Vose'",
+          "Muminabad",
+          "Danghara",
+          "Dushanbe"
+        ],
+        "lat": 37.8804734,
+        "lng": 69.2636923
+      },
+      "resume_analisa": {
+        "description": "Chakan embroidery is a traditional art form practiced by women and girls in Tajikistan, involving the intricate sewing of ornaments, images of flowers, and symbolic drawings onto cotton or silk fabrics using colorful threads. The designs often depict mythological images and elements from nature and the cosmos, reflecting people's wishes and hopes. Historically, threads were dyed with natural pigments from plants and minerals, though modern fabric threads are now commonly used.",
+        "cultural_significance": "Chakan embroidery holds significant cultural importance in Tajikistan, serving as a marker of national identity. It is widely used to adorn traditional clothing, including women's shirts, headscarves, and bridal dresses, as well as men's skullcaps known as 'tāqi' or 'toqi'. Chakan items are integral to marriage ceremonies and are proudly worn during national festivals and holidays. The embroidered products symbolize beauty, elegance, and the unity of humans with nature. Many motifs carry deep symbolic meanings, such as pomegranate flowers representing fertility, willow leaves signifying flexibility, and celestial elements like moons and stars reaching for the heavens. Some motifs are linked to Zoroastrian symbolism, with circles representing the sun and blue waves signifying life. Beyond its aesthetic value, Chakan embroidery provides a vital source of income for many women and strengthens community bonds as craftswomen gather to work, share stories, and sing folksongs. The art of Chakan embroidery was inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2018.",
+        "gemini_tags": [
+          "Embroidery",
+          "Traditional Craft",
+          "Textile Art",
+          "Tajik Culture",
+          "Intangible Cultural Heritage",
+          "Folk Art",
+          "Women's Craft",
+          "Cultural Identity",
+          "Symbolism",
+          "Community Practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand Embroidery",
+        "materials_and_tools": [
+          "Cotton fabric",
+          "Silk fabric",
+          "Colorful threads (historically from cotton and silk fibers, dyed with natural plant and mineral dyes; currently, fabric threads)",
+          "Needle"
+        ],
+        "step_by_step": [
+          "Select the desired textile (cotton or silk fabric) and colorful threads.",
+          "Draw the ornaments, images of flowers, or symbolic designs onto the chosen fabric.",
+          "Using a needle, create the designs through patient needlework and various needlepoint techniques.",
+          "Once embroidered, the decorated fabric is often sewn into clothing items (shirts, headscarves, skullcaps) or household textiles (curtains, pillows, bedspreads, cradle coverlets, wall hangers)."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Uzbekistan",
+            "element_name": "Gold Embroidery (Zardozi)",
+            "relationship_reason": "While Chakan embroidery is distinct to Tajikistan, gold embroidery is popular in adjacent regions of southern Uzbekistan, and Tajik and Uzbek handicrafts share many similarities in the Central Asian context."
+          },
+          {
+            "country": "Central Asia (general)",
+            "element_name": "Suzani Embroidery",
+            "relationship_reason": "Suzani, another type of embroidered textile, is traditionally used as decorative wall hangings or bedspreads in Tajikistan and is also found across Central Asia, indicating a broader regional tradition of intricate textile arts."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b7daf62a",
+      "element_name": "Mudmee Silk Weaving",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//surroundliving.com/blogs/news/mudmee-the-story-technique-and-cultural-legacy-of-thailands-iconic-tie-dye-silk&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://surroundliving.com/blogs/news/mudmee-the-story-technique-and-cultural-legacy-of-thailands-iconic-tie-dye-silk",
+        "https://www.thailandfoundation.or.th/culture-heritage/the-making-of-thai-silk/",
+        "https://www.thailandnow.in.th/arts-culture/thai-silk-a-royal-legacy/",
+        "https://www.thailandunique.com/mudmee-fabric-a-cultural-treasure-of-thailand",
+        "https://behindthescenesadventures.com/indigo-ikat-dyeing-and-weaving-in-northeast-thailand/",
+        "https://nationalclothing.org/asia/72-thailand/176-ikat-silk-weaving-in-thailand-traditional-thai-craft.html",
+        "https://4creaturecomforts.com/tribal-textiles-of-south-east-asia",
+        "https://www.chatuchak.org/the-cultural-significance-of-thai-silk/",
+        "https://www.thailandnow.in.th/arts-culture/thai-silk-weaving-a-tapestry-of-tradition-innovation-and-cultural-resilience/",
+        "https://zumi.co.th/blogs/news/mudmee-tie-dye-a-tradition-of-thailand",
+        "https://sacit.or.th/en/detail/132",
+        "https://buriram.info/buriram-silk-weaving-traditional-mudmee-crafts-guide/",
+        "https://thismanknits.com/2025/02/16/traditional-handwoven-textiles-of-northeastern-thailand/",
+        "https://www.tci-thaijo.org/index.php/suj/article/download/246479/167822/",
+        "https://thecraftatlas.com/crafts/ikat",
+        "https://plaichansilk.com/blogs/news/mudmee-silk",
+        "https://www.researchgate.net/publication/376288673_Silk_Patterns_Conservation_and_Development_of_Traditional_Thai_silk_Production_for_Added_Commercial_Value_in_Khon_Kaen_Province",
+        "https://www.etsy.com/market/mudmee_fabric"
+      ],
+      "scraped_at": "2026-03-27T01:21:44.368967Z",
+      "location": {
+        "country": "Thailand",
+        "provinces": [
+          "Northeast Thailand (Isaan region)",
+          "Khon Kaen",
+          "Buriram",
+          "Surin",
+          "Chaiyaphum",
+          "Nakhon Ratchasima",
+          "Sisaket",
+          "Kalasin",
+          "Suphan Buri",
+          "Uthai Thani",
+          "Kanchanaburi",
+          "Lop Buri",
+          "Chainat"
+        ],
+        "lat": 13.7270505,
+        "lng": 100.5419836
+      },
+      "resume_analisa": {
+        "description": "Mudmee is a traditional tie-dye silk weaving technique originating primarily from Northeast Thailand (Isaan). It involves meticulously tying sections of silk yarn with waterproof materials before dyeing to create intricate patterns, which are then handwoven on traditional wooden looms.",
+        "cultural_significance": "Mudmee silk is considered a national treasure and a symbol of Thailand's cultural heritage. It has been historically associated with ceremonial attire, including garments worn during religious festivals, weddings, and royal events, as well as being a part of everyday life in rural communities. Each Mudmee piece often carries specific meanings rooted in folklore, spirituality, or regional identity, with designs signifying prosperity, fertility, or protection. The technique fosters intergenerational knowledge transfer, as skills are passed from elder weavers to younger artisans, and plays a role in sustainable craftsmanship, often utilizing natural dyes derived from plants, roots, and minerals. Her Majesty Queen Sirikit played a significant role in the preservation and promotion of Thai silk, including Mudmee.",
+        "gemini_tags": [
+          "Thai handicrafts",
+          "Silk weaving",
+          "Tie-dye",
+          "Ikat",
+          "Traditional textiles",
+          "Cultural heritage",
+          "Isaan culture",
+          "Handloom",
+          "Natural dyes"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship - Textile Weaving (Ikat/Tie-dye)",
+        "materials_and_tools": [
+          "Silk yarns (or cotton)",
+          "Waterproof materials (plastic threads, natural fibers like banana ropes, rubber, plastic twine, strips of plastic bags, Scotch tape) for tying",
+          "Dyes (natural dyes from plants, roots, minerals, indigo, jackfruit heartwood, lac, barks, ebony tree, or chemical dyes)",
+          "Traditional wooden looms",
+          "Spools/bobbins",
+          "Frame for arranging threads",
+          "Shuttles"
+        ],
+        "step_by_step": [
+          "**Sericulture (Silk Production):** If using silk, silkworms are cultivated to produce silk threads from their cocoons.",
+          "**Yarn Preparation:** Cocoons are boiled to release silk filaments. Filaments from multiple cocoons are twisted together to form a single thread, which is then hand-reeled into skeins. Silk yarns are bleached to remove sericin and contaminants, making them soft and white, followed by thorough rinsing.",
+          "**Pattern Design:** The desired pattern is created, sometimes by drawing it on graph paper, to serve as a guide for the tying process.",
+          "**Thread Arrangement and Marking:** The silk threads (typically weft yarns for Mudmee) are arranged tautly on a frame and marked with the design.",
+          "**Resist Tying (Ikat):** Sections of the silk yarn are carefully and tightly tied with waterproof materials (such as plastic threads, banana ropes, or rubber) at precise intervals according to the marked design. These tied sections will resist the dye.",
+          "**Dyeing:** The tied bundles of yarn are submerged in dye baths. Multiple dyeing and tying cycles may be required to achieve complex, multi-colored designs. Traditionally, natural dyes derived from plants, roots, and minerals are used.",
+          "**Drying and Untying:** After dyeing, the threads are hung to dry. Once completely dry, the waterproof wrappings are carefully undone, revealing the dyed and undyed sections that form the intricate pattern.",
+          "**Winding onto Spools/Bobbins:** The dyed threads are wound onto a large bamboo wheel, then onto small bobbins, ensuring they are in the exact order required for weaving.",
+          "**Loom Preparation (Setting Warp Yarns):** Warp yarns (often pre-dyed, such as black) are set into the loom's beater and meticulously adjusted into order.",
+          "**Weaving:** The dyed weft yarns on bobbins are meticulously handwoven on traditional wooden looms. Precise alignment of the pre-dyed patterns is crucial as the shuttle passes across the loom. The weaver manages the warp yarns in the heddle and interlaces the weft yarns until the fabric is completed.",
+          "**Finishing:** The finished woven fabric is reeled and adjusted for final presentation."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Laos",
+            "element_name": "Ikat (or Mat-mi)",
+            "relationship_reason": "Mudmee is the Thai term for the Ikat weaving technique, which is also known as mat-mi in Laos and Cambodia. This technique involves resist-dyeing threads before weaving to create patterns."
+          },
+          {
+            "country": "Cambodia",
+            "element_name": "Ikat (or Mat-mi)",
+            "relationship_reason": "Mudmee is the Thai term for the Ikat weaving technique, which is also known as mat-mi in Laos and Cambodia. This technique involves resist-dyeing threads before weaving to create patterns."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Ikat",
+            "relationship_reason": "Ikat weaving is widely practiced in Indonesia, and historical accounts suggest the Mudmee technique in Thailand may have been influenced by traditions that passed through Indonesia from India."
+          },
+          {
+            "country": "India",
+            "element_name": "Ikat",
+            "relationship_reason": "Ikat weaving is a traditional craft in India, and it is speculated that the Mudmee technique in Thailand could have originated or been influenced by Indian Ikat traditions."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Ikat (Oshima Ikat)",
+            "relationship_reason": "Japan has a long history of Ikat production, including specific styles like Oshima Ikat, demonstrating a shared weaving tradition."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-25T01:16:54.325806Z",
-    "total_ich_elements": 57,
-    "complete_records": 53,
+    "generated_at": "2026-03-27T01:22:22.651383Z",
+    "total_ich_elements": 60,
+    "complete_records": 56,
     "incomplete_records": 4,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 24,
+      "Traditional Craftsmanship": 26,
       "Social Practices & Rituals": 12,
       "Culinary Traditions": 10,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 5,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 3
+      "Oral Traditions": 4
     }
   }
 }
