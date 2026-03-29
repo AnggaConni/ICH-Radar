@@ -5026,19 +5026,180 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ad24bf9c",
+      "element_name": "Ainu's Kamuy (Spirit-Deity) Worldview and Traditional Ecological Knowledge",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.ainu-upopoy.jp/en/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.ainu-upopoy.jp/en/",
+        "https://www.vivid-japan.com/indigenous-ainu-culture-shiretokos-cultural-heritage",
+        "https://www.shiretoko.asia/en/column/ainu-culture/",
+        "https://www.env.go.jp/en/nature/nps/park/hokkaido/learning/hokkaido_ainu.html",
+        "https://www.japanhouselondon.uk/whats-on/2023/ainu-stories-contemporary-lives-by-the-saru-river/",
+        "https://note.com/tobetsu_eco/n/n2b2742969969",
+        "https://www.city.asahikawa.hokkaido.jp/museum/0200-0300-0300-0100-0100-0100-0100-0100.html",
+        "https://www.bunka.nii.ac.jp/heritages/detail/208151",
+        "https://www.mdpi.com/2072-6643/12/1/146/htm",
+        "https://www.jnto.go.jp/eng/news/jnto-web-magazine/202209_hokkaido_ainu.html",
+        "https://www.hokkaido-educational-tour.jp/learn/ainu/nature/",
+        "https://www.asahikawa-kankou.jp/special/history/ainu.html",
+        "https://www.hokkaidodevk.or.jp/02_jigyo/02_kenkyu/pdf/2016_02_02.pdf",
+        "https://www.afar.com/magazine/exploring-national-parks-in-eastern-hokkaido-japan",
+        "https://www.azureroad.com/blog/hokkaido-indigenous-tourism-experience"
+      ],
+      "scraped_at": "2026-03-29T01:24:43.144809Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Hokkaido",
+          "Sakhalin (historical)",
+          "Kuril Islands (historical)"
+        ],
+        "lat": 43.4519831,
+        "lng": 142.8197834
+      },
+      "resume_analisa": {
+        "description": "The Ainu people, indigenous to northern Japan, possess a profound worldview centered on 'Kamuy', spirit-deities believed to inhabit all elements of nature, including animals (such as bears, salmon, and owls), plants, mountains, rivers, natural phenomena (like fire and water), and even tools and diseases. This animistic belief system posits that Kamuy visit the human world, bringing essential gifts like meat and furs, and in return, humans must demonstrate deep gratitude and respect through various rituals and practices. This worldview underpins their traditional hunter-gatherer lifestyle, emphasizing a harmonious coexistence with nature rather than dominance, and guiding their sustainable resource management practices where resources are taken only when necessary and with utmost reverence for the ecosystem.",
+        "cultural_significance": "The Kamuy worldview is fundamental to Ainu cultural heritage, shaping their spiritual beliefs, social practices, and daily life. It fosters a deep sense of interconnectedness between humans and the natural world, promoting a sustainable relationship with the environment. Key rituals, such as the 'Iyomante' (bear-sending ceremony) and 'Iwakte' (sending off the souls of tools and small animals), are central to expressing gratitude and maintaining balance with the Kamuy world, ensuring the continued bounty of nature. This traditional ecological knowledge, passed down through oral traditions, has enabled the Ainu to thrive in often harsh environmental conditions while preserving their ecosystems.",
+        "gemini_tags": [
+          "Animism",
+          "Indigenous Knowledge",
+          "Traditional Ecological Knowledge",
+          "Nature Worship",
+          "Sustainable Practices",
+          "Oral Traditions",
+          "Rituals",
+          "Ainu Culture",
+          "Hunter-Gatherer"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional community practices, spiritual rituals, sustainable resource management",
+        "materials_and_tools": [
+          "Offerings (e.g., sake, inau - carved wooden sticks)",
+          "Animal pelts and furs (for clothing, furnishings, trade)",
+          "Fish skins (for clothing)",
+          "Plant fibers (from tree bark, grass stalks for clothing, tools)",
+          "Animal bones (for tools)",
+          "Wild plants (for food, medicine)",
+          "Millet, rice, beans, potatoes (cultivated crops)"
+        ],
+        "step_by_step": [
+          "**Recognition of Kamuy**: Acknowledge that all significant elements of nature, including animals, plants, mountains, rivers, fire, water, and even some tools and phenomena like diseases, are 'Kamuy' (spirit-deities) that temporarily visit the human realm.",
+          "**Respectful Interaction**: Approach nature with deep reverence, understanding that Kamuy bring gifts necessary for human survival.",
+          "**Sustainable Harvesting**: Engage in hunting, fishing, and foraging practices that ensure only necessary amounts of resources are taken, leaving enough for other animals and for future generations. This includes careful resource management of salmon, deer, and wild plants.",
+          "**Expression of Gratitude (Rituals)**: Perform elaborate worship rituals, involving songs, dances, and offerings (like sake and inau), to express profound thanks to the Kamuy for their generosity and to maintain harmony between the human and Kamuy worlds.",
+          "**Sending Back Souls (Iyomante, Iwakte)**: Conduct specific 'sending-off' ceremonies, such as 'Iyomante' (for bears, involving raising a cub and then ritually sacrificing it to send its spirit back to the Kamuy world) and 'Iwakte' (for small animals, birds, and even worn-out tools), to respectfully return the Kamuy's spirit to their realm, with the belief that they will return with more gifts.",
+          "**Oral Transmission of Knowledge**: Pass down traditional ecological knowledge, spiritual beliefs, practical skills (e.g., food preparation, crafting), and cultural narratives through oral traditions (such as 'yukar' epic poems and 'uwepeker' folk tales), and hands-on experience from elders to younger generations."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Shinto (ancient roots)",
+            "relationship_reason": "Both Ainu worldview and ancient Shinto share animistic roots, involving the belief in spirits (Kamuy/Kami) residing in natural objects and phenomena, and a reverence for nature."
+          },
+          {
+            "country": "Various Indigenous Cultures Worldwide",
+            "element_name": "Traditional Ecological Knowledge / Animism",
+            "relationship_reason": "The Ainu's deep respect for nature, animistic beliefs, and sustainable resource management practices are common themes found in many indigenous cultures globally."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-05d91027",
+      "element_name": "Silat Cingkrik",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/PENCAK_SILAT_-_Indonesian_martial_art_performance.jpg/800px-PENCAK_SILAT_-_Indonesian_martial_art_performance.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cingkrik",
+        "http://www.unlimitedmartialarts.com/2008/11/silat-cingrik-goning.html",
+        "https://www.budaya-indonesia.org/Cingkrik-Silat-Khas-Betawi-Rawa-Belong",
+        "https://beritajakarta.id/read/47035/story-of-silat-cingkrik-from-rawa-belong",
+        "https://id.wikipedia.org/wiki/Silat_Cingkrik",
+        "https://www.openstreetmap.org/node/2085784999",
+        "https://commons.wikimedia.org/wiki/File:PENCAK_SILAT_-_Indonesian_martial_art_performance.jpg"
+      ],
+      "scraped_at": "2026-03-29T01:25:22.581751Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Special Capital Region of Jakarta",
+          "West Jakarta"
+        ],
+        "lat": -6.1754049,
+        "lng": 106.827168
+      },
+      "resume_analisa": {
+        "description": "Silat Cingkrik is a traditional Betawi Pencak Silat style that originated in the Rawa Belong area of Kebon Jeruk subdistrict, West Jakarta, Indonesia, around the 1920s. It was created by Ki Maing (Ismail bin Muayad), who was inspired by the agile movements of a monkey. The name 'Cingkrik' is believed to be derived from the Betawi words 'jingkrak-jingkrik' or 'cingrak-cingkrik', meaning agile. This martial art emphasizes fast, agile, and evasive movements, often targeting the face, throat, and groin, and incorporates various throwing techniques.",
+        "cultural_significance": "Silat Cingkrik holds significant cultural importance as an integral part of Betawi heritage. It is often associated with the legendary Betawi rebel fighter Si Pitung, though historical accounts suggest Cingkrik's creation might be later than Pitung's era. Beyond self-defense, it serves as a performing art, a means of preserving cultural identity, and a practice that strengthens comradeship and maintains social order within the community.",
+        "gemini_tags": [
+          "Indonesian martial art",
+          "Betawi culture",
+          "Pencak Silat style",
+          "self-defense",
+          "traditional performance",
+          "intangible cultural heritage"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Malaysia",
+            "element_name": "Pencak Silat",
+            "relationship_reason": "Pencak Silat is a broad martial art tradition shared across the Malay Archipelago, including Malaysia."
+          },
+          {
+            "country": "Singapore",
+            "element_name": "Pencak Silat",
+            "relationship_reason": "Pencak Silat is a broad martial art tradition shared across the Malay Archipelago, including Singapore."
+          },
+          {
+            "country": "Brunei",
+            "element_name": "Pencak Silat",
+            "relationship_reason": "Pencak Silat is a broad martial art tradition shared across the Malay Archipelago, including Brunei."
+          },
+          {
+            "country": "Netherlands",
+            "element_name": "Silat Cingkrik Goning",
+            "relationship_reason": "A style of Silat Cingkrik, Cingkrik Goning, has spread to the Netherlands through Indonesian practitioners."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Beksi",
+            "relationship_reason": "Beksi is another prominent Betawi Pencak Silat style, often mentioned alongside Cingkrik."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Kwitang",
+            "relationship_reason": "Kwitang is another well-known Betawi Pencak Silat style."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-27T01:22:22.651383Z",
-    "total_ich_elements": 60,
-    "complete_records": 56,
-    "incomplete_records": 4,
+    "generated_at": "2026-03-29T01:25:57.446759Z",
+    "total_ich_elements": 62,
+    "complete_records": 57,
+    "incomplete_records": 5,
     "categories_breakdown": {
       "Traditional Craftsmanship": 26,
-      "Social Practices & Rituals": 12,
+      "Social Practices & Rituals": 13,
       "Culinary Traditions": 10,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 5,
+      "Performing Arts": 6,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 4
