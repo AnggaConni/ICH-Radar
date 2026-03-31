@@ -5187,16 +5187,318 @@
         ]
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-bb711f45",
+      "element_name": "Gzhel Ceramics",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//crees.ku.edu/gzhel&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://crees.ku.edu/gzhel",
+        "https://russian-crafts.com/gzhel-origins-of-the-russian-craft/",
+        "https://en.wikipedia.org/wiki/Gzhel",
+        "https://bespokeheritage.com/blogs/russian-folk-art/gzhel-ceramics-evolution",
+        "https://www.rbth.com/lifestyle/335804-gzhel-blue-white-tableware",
+        "https://gzhel.ru/tehnika-gzhelskoj-rospisi-priemy-ornamenty-i-sozdanie-iskusstva/",
+        "https://kure.edu.tr/en/gzhel-porcelain/",
+        "https://bridgetomoscow.com/gzhel",
+        "https://spoonka.ru/kak-delayut-gzhel/",
+        "https://dpo-edu.ru/promysly/gzhelskaya-rospis/",
+        "https://scientificrussia.ru/articles/blue-on-white-secrets-of-gzhel-craftsmen",
+        "https://www.youtube.com/watch?v=e_R7L64_3F0",
+        "https://maisonrusse.com/collections/gzhel-ceramics",
+        "https://nina-potter.ru/master-klass-gzhel-russkaya-majolika/",
+        "https://vashsamovar.ru/blog/gzhel-tehnologiya-izgotovleniya/",
+        "https://mirgzheli.ru/gzhelskaya-rospis-rozhdenie-vasilkovoj-skazki/",
+        "https://www.stp-goods.com/collections/blue-and-white-porcelain",
+        "https://www.youtube.com/watch?v=e1fXk1_d49k",
+        "https://www.youtube.com/watch?v=s1j23-jW91g",
+        "https://m.vk.com/@-195971434-master-klass-gzhelskaya-rospis",
+        "https://gzhel.net/gzhelskaya-rospis-rozhdenie-vasilkovoj-skazki/"
+      ],
+      "scraped_at": "2026-03-31T01:22:21.198252Z",
+      "location": {
+        "country": "Russia",
+        "provinces": [
+          "Moscow Oblast",
+          "Ramensky District"
+        ],
+        "lat": 55.5043158,
+        "lng": 38.0353929
+      },
+      "resume_analisa": {
+        "description": "Gzhel ceramics is a traditional Russian style of blue and white pottery, named after the village of Gzhel and its surrounding region, located southeast of Moscow. This folk art has been produced since the 14th century, evolving from simple earthenware to fine porcelain. It is characterized by its distinctive cobalt blue designs on a pure white background, often featuring intricate floral motifs, particularly roses, as well as birds, animals, and landscapes. Each piece is hand-painted, making every item individually unique.",
+        "cultural_significance": "Gzhel ceramics represent a significant part of Russian folk art and cultural heritage, embodying the artistic spirit of the Russian people. Its development was influenced by royal decrees in the 17th century, which designated Gzhel as an exclusive supplier of vessels for the Moscow Apothecary's order, marking the beginning of ceramic production in Russia. The craft experienced periods of decline but was notably revived in the mid-20th century by art historians and artists who restored traditional techniques and developed the iconic blue-and-white style. Today, Gzhel is one of Russia's most recognizable symbols, adorning many Russian homes and serving as a popular souvenir for tourists.",
+        "gemini_tags": [
+          "Russian folk art",
+          "Ceramics",
+          "Porcelain painting",
+          "Blue and white pottery",
+          "Traditional craftsmanship",
+          "Cultural heritage of Russia",
+          "Decorative arts"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ceramic production and underglaze painting",
+        "materials_and_tools": [
+          "Clay (white clay, kaolin, feldspar, quartz)",
+          "Cobalt oxide paint (appears black before firing, turns blue)",
+          "Brushes (natural bristles, various lengths and widths)",
+          "White glaze",
+          "Kilns",
+          "Plaster molds",
+          "Fuchsine solution (for quality control, optional)"
+        ],
+        "step_by_step": [
+          "**1. Sketching and Design**: Artists create preliminary sketches and designs for the future ceramic pieces, which are then approved.",
+          "**2. Clay Preparation**: The raw clay is cleaned of impurities and thoroughly mixed to achieve a homogeneous mass. For porcelain, a liquid slip, a mixture of quartz, feldspar, and kaolin diluted with water, is prepared.",
+          "**3. Forming**: Items are shaped either by hand or using specialized machines. For intricate pieces, plaster molds are used. The slip is poured into these molds, where it hardens upon contact with the mold walls. Excess slip is drained. Individual components like handles and spouts are cast separately and then carefully attached to the main body.",
+          "**4. Drying and Initial Firing (Bisque Firing)**: The formed items are allowed to dry, either naturally or in special drying chambers. Following drying, they undergo a preliminary or 'bisque' firing at temperatures ranging from 800-900°C. This process hardens the clay and prepares it for painting.",
+          "**5. Quality Control (Optional)**: Some manufacturers may dip the bisque-fired items in a fuchsine solution to highlight any minute cracks or defects, which disappear after subsequent firing.",
+          "**6. Painting**: Artists hand-paint the designs onto the bisque-fired, unglazed surface using cobalt oxide paint. At this stage, the cobalt appears dark gray or black. A characteristic technique is the 'brushstroke with shadows,' where varying amounts of paint on different sides of the brush allow for a range of shades from deep to light blue with a single stroke. Motifs typically include flowers (especially roses), leaves, birds, and landscapes.",
+          "**7. Glazing**: After the painting is complete, the items are coated with a thin, white glaze.",
+          "**8. Final Firing**: The glazed and painted items are then subjected to a final high-temperature firing, usually around 1400°C. During this firing, the cobalt paint undergoes a chemical transformation, changing from black to its iconic vibrant sky-blue color, and the glaze becomes transparent and glossy, resulting in a durable and aesthetically finished ceramic piece.",
+          "**9. Final Quality Control and Packaging**: The finished Gzhel ceramics undergo a final inspection for quality before being packaged for distribution."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Netherlands",
+            "element_name": "Delftware",
+            "relationship_reason": "The blue and white color palette and painting style of Gzhel ceramics were influenced by Dutch blue and white ceramics, which became popular in Russia in the 17th century."
+          },
+          {
+            "country": "China",
+            "element_name": "Chinese blue and white porcelain",
+            "relationship_reason": "The development of Gzhel porcelain and its blue and white designs was influenced by Chinese porcelain, which was highly valued and expensive in Russia."
+          },
+          {
+            "country": "Italy",
+            "element_name": "Maiolica",
+            "relationship_reason": "Gzhel craftsmen adopted and adapted the European majolica technique, developing their own 'Gzhel Maiolica' with multi-colored designs before the prevalence of the blue-and-white style."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-295bc5db",
+      "element_name": "Pachamama Ritual (Offering to Mother Earth)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//trexperienceperu.com/pachamama-myths-meaning-rituals-and-its-cultural-importance/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://trexperienceperu.com/pachamama-myths-meaning-rituals-and-its-cultural-importance/",
+        "https://pachaexpeditions.com/significance-of-pachamama-in-andean-culture-and-beliefs/",
+        "https://machutravelperu.com/pachamama-meaning-andean-culture/",
+        "https://happygringotours.com/what-pachamama-is-rituals-celebrations-and-significance/",
+        "https://quechuasexpeditions.com/pachamama-ceremony-sacred-ritual-to-mother-earth/",
+        "https://www.argentina.travel/blog/en/pachamama-day-the-behind-the-scenes-of-the-festivity-that-connects-us-with-nature/",
+        "https://www.enigmaperu.com/blog/ayni-ceremony-to-the-pachamama/",
+        "https://piexperiences.com/pachamama-ceremony-in-peru/",
+        "https://perugrandtravel.com/pachamama-month-in-peru-traditions-and-rituals-in-august/",
+        "https://incamedicineschool.com/a-simple-ritual-for-honoring-pachamama-at-machu-picchu/",
+        "https://kumalicreativewellness.com/pachamama-offering-a-gratitude-ceremony-for-mother-earth/",
+        "https://happygringotours.com/pachamama-meaning-in-the-andean-culture/",
+        "https://www.ticketmachupicchu.com/mother-earth-day-pachamama/",
+        "https://www.tourinperu.com/blog/pachamama-offering-and-other-inca-mystical-rituals-in-cusco/",
+        "https://www.salkantaytrekking.com/peru-travel-guide/pachamama-ceremonies-offering-and-rituals/",
+        "https://www.andeanlodges.com/pachamama-day-celebrating-mother-earth-in-cusco/",
+        "https://www.sumaqhotelperu.com/spiritual-ceremony-to-pachamama-or-mother-earth/",
+        "https://incamedicineschool.com/mother-earth-pachamama-ceremony/",
+        "https://www.incatrailreservations.com/blog/offering-to-pachamama-ceremony-traditional-andean-earth-ritual/",
+        "https://raisingmiro.com/2014/05/16/the-despacho-ceremony-a-blessing-for-mother-earth/",
+        "https://lissarankin.com/how-to-perform-a-despacho-ceremony/",
+        "https://www.andeanpath.com/blog/andean-offering"
+      ],
+      "scraped_at": "2026-03-31T01:22:57.560257Z",
+      "location": {
+        "country": "South America",
+        "provinces": [
+          "Peru",
+          "Bolivia",
+          "Ecuador",
+          "Argentina (Jujuy, Salta)",
+          "Chile"
+        ],
+        "lat": -32.0503828,
+        "lng": -52.1384907
+      },
+      "resume_analisa": {
+        "description": "The Pachamama Ritual, also known as 'Pago a la Tierra' (Payment to the Earth) or 'Despacho' ceremony, is an ancient and deeply revered traditional practice among indigenous communities in the Andean regions of South America. Pachamama, meaning 'Mother Earth' in Quechua and Aymara languages, is a powerful goddess representing nature, fertility, and life itself. The ritual is a way to honor and express profound gratitude to Mother Earth for providing sustenance, fertility, and protection, while also seeking blessings for future harvests and overall well-being.",
+        "cultural_significance": "Pachamama holds a central and vital place in Andean cosmology and daily life. The rituals serve as a constant reminder of the importance of living in harmony and reciprocity with the natural environment, reflecting a deep respect for ancestral traditions and the interconnectedness of all life. This practice has persisted for centuries, even intertwining with Catholic beliefs in some areas, where Pachamama is sometimes associated with the Virgin Mary. The ceremonies reinforce community bonds and cultural identity, particularly during significant times like August 1st, known as Pachamama Day, when the earth is believed to 'open its mouth' to receive offerings.",
+        "gemini_tags": [
+          "Indigenous ritual",
+          "Andean culture",
+          "Mother Earth worship",
+          "Agricultural rites",
+          "Gratitude ceremony",
+          "Reciprocity",
+          "Spiritual practice",
+          "Despacho ceremony",
+          "Pachamama Day"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual Offering / Ceremony",
+        "materials_and_tools": [
+          "Coca leaves (often three undamaged leaves, known as 'k'intus')",
+          "Traditional Andean blanket (uncu or multicolored cloak)",
+          "Food items (e.g., corn, sweets, traditional dishes like tijtincha, pachamanca, Andean cereals, biscuits)",
+          "Drinks (e.g., chicha de jora, wine, cane with rue)",
+          "Animal fat (e.g., llama fat)",
+          "Colored paper",
+          "Medicinal plants and herbs (e.g., rue, rosemary, cinnamon, sandalwood)",
+          "Eggs",
+          "Minerals",
+          "Seashells",
+          "Amulets",
+          "Seeds and fruits",
+          "Incense",
+          "Clay container",
+          "Sacred acacia koa plant",
+          "Yellow confetti and flowers",
+          "Figurines (representing wishes like house, car, money)"
+        ],
+        "step_by_step": [
+          "**Preparation:** Families may gather the night before (especially for August 1st celebrations) to prepare traditional foods like tijtincha. A special outdoor location is selected, often with a view of sacred mountains (Apus), or a peaceful indoor/outdoor space is chosen.",
+          "**Creating the Despacho (Offering Bundle):** An Andean shaman or priest (altomisayoq, pako, or Q'ero shaman) leads the ceremony. The offering, often in the shape of a mandala, is carefully arranged on a colorful cloth (uncu or Andean blanket). Offerings typically include coca leaves (often three undamaged leaves, known as 'k'intus', held by participants for personal requests), corn, sweets, fruits, flowers, seeds, wine, chicha, animal fat, colored paper, and other symbolic items. Each element is placed in a specific order, which can vary by local tradition.",
+          "**Setting Intentions and Prayers:** Participants hold coca leaves to their heart, infusing them with their intentions, releasing heavy energy (hucha) and inviting light energy (sami). The shaman recites prayers in Quechua or Aymara, giving thanks and asking Mother Earth for protection, health, work, prosperity, and abundant harvests.",
+          "**Offering to Pachamama:** The prepared despacho is offered to Pachamama. This can involve burying it in the earth (often in a hole in the ground), burning it in a sacred fire, or placing it in a special location like a hill, river, or sacred site. In some variations, embers are placed in a clay container with the sacred acacia koa plant, then buried and covered with a blanket to smoke, after which food offerings are placed.",
+          "**Community Participation and Daily Practices:** The ceremony often involves traditional music, dance, and colorful clothing. In Cusco, families may place yellow confetti and yellow flowers in every corner of their homes and light incense. A common daily practice is the 'challa,' where a small amount of chicha or other drink is spilled on the floor before drinking as a toast to Pachamama, symbolizing reciprocity.",
+          "**Purification and Closing:** Purification rituals, such as smudging with incense or aromatic herbs, may be performed to cleanse the space and participants of negative energies. The ceremony may conclude with the person who opened it marking the coming years with a white stone, or simply by closing the sacred space."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Peru",
+            "element_name": "Pachamama Ritual / Offering to Pachamama",
+            "relationship_reason": "The worship of Pachamama and associated rituals are widely practiced across the Andean regions of South America, sharing common beliefs, offerings, and cultural significance among indigenous communities. Peru is a central country for these practices."
+          },
+          {
+            "country": "Bolivia",
+            "element_name": "Pachamama Ritual / Offering to Pachamama",
+            "relationship_reason": "The worship of Pachamama and associated rituals are widely practiced across the Andean regions of South America, sharing common beliefs, offerings, and cultural significance among indigenous communities. Bolivia is a key country for these practices."
+          },
+          {
+            "country": "Ecuador",
+            "element_name": "Pachamama Ritual / Offering to Pachamama",
+            "relationship_reason": "The worship of Pachamama and associated rituals are widely practiced across the Andean regions of South America, sharing common beliefs, offerings, and cultural significance among indigenous communities. Ecuador is a key country for these practices."
+          },
+          {
+            "country": "Argentina",
+            "element_name": "Pachamama Ritual / Offering to Pachamama",
+            "relationship_reason": "The worship of Pachamama and associated rituals are widely practiced across the Andean regions of South America, sharing common beliefs, offerings, and cultural significance among indigenous communities. Northwestern Argentina (Jujuy and Salta provinces) is known for these celebrations."
+          },
+          {
+            "country": "Chile",
+            "element_name": "Pachamama Ritual / Offering to Pachamama",
+            "relationship_reason": "The worship of Pachamama and associated rituals are widely practiced across the Andean regions of South America, sharing common beliefs, offerings, and cultural significance among indigenous communities. Chile is also mentioned as a country where these traditions extend."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-edb6be5c",
+      "element_name": "Inuit Traditional Knowledge of Arctic Navigation and Environmental Stewardship (Inuit Qaujimajatuqangit)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.pc.gc.ca/fr/amnc-nmca/cnic-cnic/tallurutiup-imanga/qaujimajatuqangit&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.pc.gc.ca/fr/amnc-nmca/cnic-cnic/tallurutiup-imanga/qaujimajatuqangit",
+        "https://polartours.com/fr/qui-sont-les-inuits-cultures-et-traditions-de-larctique/",
+        "https://www.nirb.ca/fr/qaujimajatuqangit-inuit",
+        "https://archipel.uqam.ca/10390/1/M15822.pdf",
+        "https://www.fao.org/indigenous-peoples/our-work/traditional-knowledge-and-climate/fr/",
+        "https://www.undp.org/fr/blog/les-savoirs-autochtones-sont-essentiels-pour-lutter-contre-le-changement-climatique-voici-pourquoi"
+      ],
+      "scraped_at": "2026-03-31T01:23:43.469802Z",
+      "location": {
+        "country": "Canada",
+        "provinces": [
+          "Nunavut",
+          "Northwest Territories",
+          "Quebec (Nunavik)"
+        ],
+        "lat": 65.0377727,
+        "lng": -92.5540791
+      },
+      "resume_analisa": {
+        "description": "Inuit Traditional Knowledge, known as Inuit Qaujimajatuqangit (IQ), encompasses a comprehensive system of knowledge, practices, and beliefs developed by Inuit communities through generations of interaction with the Arctic environment. This includes a profound understanding of the land, sea, ice, weather patterns, animal behavior, and celestial bodies, which is crucial for survival and sustainable living in the harsh Arctic conditions. It involves sophisticated skills in tracking, hunting, fishing, and safe navigation across diverse Arctic terrains. The knowledge is transmitted orally and through practical experience, enabling Inuit to adapt to changing environmental dynamics.",
+        "cultural_significance": "Inuit Qaujimajatuqangit is fundamental to Inuit cultural identity, well-being, and self-determination. It underpins their social economy, cultural practices, and harmonious relationship with the environment. This traditional knowledge is vital for sustainable resource management, informing community decision-making, and contributing to conservation efforts, as seen in its integration into Canadian environmental legislation and management plans for areas like Tallurutiup Imanga National Marine Conservation Area. It represents a holistic worldview that emphasizes respect for nature and intergenerational responsibility.",
+        "gemini_tags": [
+          "Indigenous knowledge",
+          "Arctic",
+          "Inuit",
+          "Traditional navigation",
+          "Environmental stewardship",
+          "Sustainable practices",
+          "Oral traditions",
+          "Cultural heritage",
+          "Traditional Ecological Knowledge (TEK)",
+          "Arctic survival"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Knowledge Acquisition and Application",
+        "materials_and_tools": [
+          "Natural Arctic environment (ice, snow, sea, land, celestial bodies)",
+          "Wildlife (animals, birds, fish)",
+          "Traditional tools for hunting, fishing, and travel (e.g., sleds, kayaks, harpoons)",
+          "Oral storytelling and teachings from elders",
+          "Direct observation and experiential learning"
+        ],
+        "step_by_step": [
+          "**Observation and Sensory Learning**: Continuously observing natural phenomena such as ice formation and movement, wind directions, snow conditions, animal migration patterns, and celestial navigation cues (sun, moon, stars).",
+          "**Oral Transmission and Storytelling**: Learning from elders and experienced community members through stories, songs, direct instruction, and shared experiences that convey accumulated knowledge about the environment, animal behavior, and safe travel routes.",
+          "**Experiential Practice and Skill Development**: Actively participating in hunting, fishing, and traveling expeditions from a young age to develop practical skills, such as tracking animals, reading ice conditions, predicting weather, and navigating vast landscapes without modern instruments. This involves hands-on effort and continuous refinement of abilities.",
+          "**Adaptation and Innovation**: Integrating new observations and experiences into existing knowledge systems, allowing for dynamic adaptation to environmental changes, including those brought by climate change, while maintaining core traditional principles.",
+          "**Ethical Stewardship and Respect**: Applying knowledge with a deep respect for the environment (Avatittinnik Kamatsiarniq) and its inhabitants, ensuring sustainable harvesting practices and maintaining the balance of the ecosystem for future generations."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Canada",
+            "element_name": "Traditional Ecological Knowledge (TEK) of other First Nations",
+            "relationship_reason": "Shared principles of deep connection to nature, intergenerational transmission of knowledge, sustainable resource management, and holistic worldview, particularly in understanding ecosystems and wildlife."
+          },
+          {
+            "country": "Brazil",
+            "element_name": "Kayapó Indigenous Forest Management Practices",
+            "relationship_reason": "Similar emphasis on traditional ecological knowledge for sustainable resource management and enhancing biodiversity, demonstrating a profound understanding of natural processes."
+          },
+          {
+            "country": "Bolivia",
+            "element_name": "Andean Cosmovision of the Kallawaya (Pachamama)",
+            "relationship_reason": "Shared concept of an interconnected worldview (cosmovision) that integrates spiritual, cultural, and environmental dimensions, emphasizing harmony between humans and nature."
+          },
+          {
+            "country": "Australia",
+            "element_name": "Aboriginal Australian Dreamtime",
+            "relationship_reason": "Shared concept of a profound spiritual and cultural connection to the land and its creation myths, linking generations, nature, and ancestors."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-29T01:25:57.446759Z",
-    "total_ich_elements": 62,
-    "complete_records": 57,
+    "generated_at": "2026-03-31T01:24:50.963926Z",
+    "total_ich_elements": 65,
+    "complete_records": 60,
     "incomplete_records": 5,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 26,
-      "Social Practices & Rituals": 13,
+      "Traditional Craftsmanship": 27,
+      "Social Practices & Rituals": 15,
       "Culinary Traditions": 10,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 6,
