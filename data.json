@@ -5489,16 +5489,268 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-9881a3c9",
+      "element_name": "Gold Laminating and Gilding Craft of Kieu Ky Village",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html",
+        "https://hanoitimes.vn/kieu-ky-gilding-craft-revives-thanks-to-artisans-creativity-318357.html",
+        "https://vietnamnet.vn/en/visiting-gold-leaf-village-in-hanoi-121921.html",
+        "https://e.vnexpress.net/news/travel/places/kieu-ky-village-gold-lamination-inscribed-as-national-heritage-4246830.html",
+        "https://www.vietravel.com/vietnam/gold-leaf-making-craft-in-kieu-ki-p171.aspx"
+      ],
+      "scraped_at": "2026-04-01T01:29:17.071891Z",
+      "location": {
+        "country": "Vietnam",
+        "provinces": [
+          "Hanoi"
+        ],
+        "lat": 21.0283334,
+        "lng": 105.854041
+      },
+      "resume_analisa": {
+        "description": "The Gold Laminating and Gilding Craft of Kieu Ky Village is a traditional Vietnamese craft involving the intricate process of beating gold and silver into super-thin leaves, which are then used to adorn various objects, particularly lacquered items, religious artifacts, and architectural details. The village is unique in Vietnam for preserving this ancient technique.",
+        "cultural_significance": "This craft, with a history of about 400 years, is deeply rooted in the cultural and religious practices of Vietnam. It is believed to have been founded in the 18th century by Nguyen Quy Tri, a mandarin who learned the technique in China and passed it down to the villagers of Kieu Ky. The villagers honor him as the forefather of the craft, having built a temple dedicated to him and observing his death anniversary annually. The gold and silver leaves are used for gilding Buddha statues, horizontal lacquered boards (hoanh phi), parallel panels (cau doi), thrones, diaphragms, and other decorative items found in pagodas, temples, worship halls, and imperial palaces nationwide. The craft was recognized as a national cultural heritage in 2021.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Gilding",
+          "Laminating",
+          "Vietnamese Culture",
+          "Village Craft",
+          "Lacquerware Decoration",
+          "Heritage Craft",
+          "Gold Leaf Making",
+          "Silver Leaf Making"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Gold and Silver Leaf Laminating and Gilding",
+        "materials_and_tools": [
+          "Poonah paper (Do paper/rice paper pieces)",
+          "Resin",
+          "Longan wood sawdust",
+          "Cast-iron wok",
+          "Buffalo leather",
+          "Water pot",
+          "Hammer (special hammer)",
+          "Stone anvil",
+          "Gold ingots",
+          "Silver ingots",
+          "Raw cloth",
+          "Clay pot",
+          "Bellows"
+        ],
+        "step_by_step": [
+          "**1. Prepare the special ink:** Mix 10 kilograms of resin and longan wood sawdust. Roll the mixture into logs and then cut it into toe-sized balls. Burn these balls below a cast-iron wok to collect the soot.",
+          "**2. Make buffalo leather glue:** Stew buffalo leather in a water pot for many hours, sometimes a whole day.",
+          "**3. Create the ink mixture:** Knead the collected soot and buffalo leather glue together, then stew the mixture until it condenses.",
+          "**4. Produce 'Quy paper' (or 'Dong leaf'):** Apply the special purple-lustered blackish-blue ink on poonah paper sheets (also referred to as 'do paper' or 'rice paper pieces'). Hang the inked paper to dry. Beat the paper with a hammer to make it thinner and smoother, repeating this process three or four times. The paper is also painted several times with the ink and buffalo hide-based glue to make it solid and firm.",
+          "**5. Melt and form gold/silver bullion:** Gold and silver are placed into a clay pot and heated on a pit with hand-controlled bellows until they reach their melting point. The molten material is then poured into a small slot to form bullions, typically 10cm long.",
+          "**6. Initial beating of gold/silver:** Craftsmen pound the bullion with a special hammer to flatten them into thin ribbons, approximately 1cm in width.",
+          "**7. Cut into snippets:** The thin gold or silver ribbons are then cut into small snippets, each measuring about 1cm x 1cm (or 1 sq. cm).",
+          "**8. First lamination and beating:** Each gold or silver snippet is carefully placed between sheets of the prepared 'Quy paper' (or 'Dong leaf').",
+          "**9. Bind and beat in quires:** The quy paper sheets, with the gold/silver snippets inside, are bound into quires, typically consisting of 490 sheets per quire (or a set of 49 gold leaves in dong leaf holders). Two quires are then bound together, wrapped in a raw cloth, and dried overnight above a stove.",
+          "**10. Intensive hammering:** The packet of quy paper sheets containing the gold/silver is placed on a stone anvil and beaten with a special hammer. This process spreads the gold or silver over the quy paper, making it extremely thin.",
+          "**11. Further cutting and beating:** After the initial intensive hammering, each gold leaf is cut into 16 smaller pieces (or 12 small sections). These smaller pieces are then placed between more Dong leaves and hammered again to achieve even greater thinness. The final, exceptionally thin gold leaves are known as 'Quy gold'.",
+          "**12. Gilding stage:** The final stage of gilding, where the gold leaves are applied to products, must be carried out in a closed room, as even a gentle breath can blow the delicate gold leaves away."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Gold and Silver Lamination/Gilding (general technique)",
+            "relationship_reason": "The craft's founder, Nguyen Quy Tri, learned the technique of using thin gold sheets to trim red-lacquer devotional objects while serving as an envoy to the Qing dynasty in China, and subsequently brought the craft back to Kieu Ky village in Vietnam."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-cbedde3a",
+      "element_name": "Dene Stick Pull",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://www.traditionalgamesalaska.org/uploads/1/0/6/6/106649723/denestickpull_orig.png",
+      "source_urls": [
+        "https://www.participaction.com/en-ca/blog/preserving-indigenous-cultures-through-play-a-glimpse-into-3-traditional-indigenous-sports",
+        "https://www.denegames.ca/dene-games",
+        "https://teaandbannock.com/2016/03/02/dene-games-sportsmanship-and-respect/",
+        "https://www.traditionalgamesalaska.org/traditional-games-alaska",
+        "https://www.thecanadianencyclopedia.ca/en/article/dene-games",
+        "https://weio.org/dena-games",
+        "https://www.youtube.com/watch?v=0_20j_p39mQ"
+      ],
+      "scraped_at": "2026-04-01T01:30:24.922934Z",
+      "location": {
+        "country": "Canada",
+        "provinces": [
+          "Northwest Territories",
+          "Yukon",
+          "Nunavut",
+          "Alberta",
+          "British Columbia",
+          "Saskatchewan",
+          "Manitoba"
+        ],
+        "lat": 65.0000004,
+        "lng": -118.0
+      },
+      "resume_analisa": {
+        "description": "Dene Stick Pull is a traditional sport of the Dene (or Northern Athapaskan) peoples of Canada, designed to test and develop grip strength and pulling technique. The game typically involves two participants pulling on a stick, which is often greased to simulate the slipperiness of a fish. It is one of several Dene Games that originated from age-old traditions of northern Indigenous communities.",
+        "cultural_significance": "This game is deeply rooted in the Dene way of life, serving as practical training for essential survival skills, particularly ice fishing and handling slippery fish. Historically, it helped hunters maintain the strength and technique needed to secure fish from water or nets. Beyond its practical utility, Dene Stick Pull fosters community bonds, promotes physical fitness, and plays a vital role in preserving cultural heritage. It was traditionally played after community gatherings and feasts, sometimes involving competitions between multiple Dene communities. Today, it is featured in major events like the Arctic Winter Games, ensuring the continuity of Dene traditions.",
+        "gemini_tags": [
+          "Indigenous Sport",
+          "Traditional Game",
+          "Dene Culture",
+          "Canada",
+          "Physical Skill",
+          "Survival Training",
+          "Community Practice",
+          "Cultural Preservation",
+          "Strength Game"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Strength/Grip Game",
+        "materials_and_tools": [
+          "A sturdy stick (often tapered and greased with bear grease or Crisco lard)"
+        ],
+        "step_by_step": [
+          "Two contestants stand facing each other, or next to each other facing opposite directions, with their near foot forward and alongside the opponent's.",
+          "Both players grasp the stick with one hand, typically up to a marked centerline if present. The stick is often greased to increase difficulty.",
+          "The elbow of the pulling hand must remain locked, and the players' feet (heels or toes) cannot be raised off the floor, requiring them to maintain a strong stance.",
+          "Upon a signal, players pull strongly and steadily, avoiding jerky movements or bending the elbow, with the aim of pulling the stick from their opponent's grip.",
+          "The player who successfully pulls the stick cleanly from their opponent's hand wins the match.",
+          "The game is typically played in a best-of-three format.",
+          "If there is a tie after the first two pulls, a coin flip determines which arm is used for the third pull, with the winner of the first match making the coin call."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Canada (Inuit)",
+            "element_name": "Inuit Stick Pull / Finger Pull",
+            "relationship_reason": "Similar traditional strength-based games are found among various northern Indigenous communities, including the Inuit, serving to develop skills for hunting and survival (e.g., pulling seals from ice, strengthening fingers for fishing)."
+          },
+          {
+            "country": "USA (Alaska, Dena/Athabascan)",
+            "element_name": "Dena Stick Pull",
+            "relationship_reason": "The Dena (Athabascan) people in Alaska also practice a 'Stick Pull' game with a similar purpose of testing grip strength and mimicking the act of grabbing fish."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0467aec8",
+      "element_name": "Kogi Mamo Training (Spiritual Leadership Training)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://fairmined.org/wp-content/uploads/2019/07/Kogi-Mamos-spiritual-leaders-meditating-underneath-a-tree.-Sierra-Nevada-Colombia.-300x200.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Kogi_people",
+        "https://tierranativacolombia.com/en/blog/the-ancestral-wisdom-of-the-kogui-spiritual-guardians-and-protectors-of-the-heart-of-the-world",
+        "https://ictnews.org/archive/the-kogi-fight-to-preserve-their-ancient-wisdom",
+        "https://www.taironatrust.org/training-leadership-and-sacred-sites",
+        "https://www.taironatrust.org/the-kogi",
+        "https://medium.com/pollinate-magazine/becoming-our-own-best-elders-listening-to-the-message-of-the-kogi-96690467776d",
+        "https://www.sierranevadamountains.org/kogi-people",
+        "https://fairmined.org/kogi-mamos-spiritual-leaders-meditating-underneath-a-tree-sierra-nevada-colombia/",
+        "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/natural-law-and-jaba-se-kogi-cosmovision-interconnected",
+        "https://www.colombia-exotique.com/en/the-kogis-of-the-sierra-nevada-in-colombia/",
+        "https://medium.com/@evawillmann/meeting-the-keepers-of-our-world-the-mamos-of-colombia-1f4a9b69992c",
+        "https://sacredfuture.org/keeping-ancestral-knowledge-alive/",
+        "https://transformational.travel/transforming-with-the-kogi-in-colombia/",
+        "https://geraltblanchard.com/kogi-reflections/",
+        "https://www.humanium.org/en/kogi-lesson-world/",
+        "https://ritualgoddess.com/kogi-water-divination/",
+        "https://wilderutopia.com/traditions/kogi-people-of-colombia-from-heart-of-the-mountain/",
+        "https://storiesandobjects.com/blogs/news/woven-with-desire"
+      ],
+      "scraped_at": "2026-04-01T01:31:01.098574Z",
+      "location": {
+        "country": "Colombia",
+        "provinces": [
+          "Magdalena",
+          "La Guajira",
+          "Cesar"
+        ],
+        "lat": 10.5808075,
+        "lng": -74.0685669
+      },
+      "resume_analisa": {
+        "description": "The Kogi Mamo Training is a rigorous and extensive spiritual and leadership formation process undertaken by the Kogi people, an indigenous group residing in the Sierra Nevada de Santa Marta mountains of northern Colombia. This training prepares individuals, primarily men known as Mamos (and their female counterparts, Sagas), to serve as spiritual guides, healers, and leaders within their communities. The process emphasizes deep introspection, connection with the natural world, and the safeguarding of ancestral knowledge to maintain the balance and harmony of the universe.",
+        "cultural_significance": "The Mamo training is central to the Kogi's identity as the 'Elder Brothers' who are responsible for caring for the 'Heart of the World' (the Sierra Nevada de Santa Marta). Through this training, ancestral wisdom, known as the 'Law of Origin,' is preserved and transmitted, guiding every aspect of Kogi life in harmony with nature. Mamos act as spiritual mediators between the physical and thought-worlds (Aluna), ensuring ecological and social balance through contemplation, rituals, and offerings. They also serve as community doctors, judges, and environmental guardians, often communicating warnings to the 'Younger Brothers' (outsiders) about the consequences of environmental destruction.",
+        "gemini_tags": [
+          "Indigenous Knowledge Systems",
+          "Spiritual Leadership",
+          "Environmental Stewardship",
+          "Oral Traditions",
+          "Ritual Practices",
+          "Cultural Preservation",
+          "Traditional Education",
+          "Community Governance"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Spiritual and Leadership Training",
+        "materials_and_tools": [
+          "Isolated ceremonial houses (nuhue) or caves for seclusion",
+          "Guidance from experienced elder Mamos",
+          "Natural elements for offerings (e.g., to earth, rivers, mountains)",
+          "Coca leaves and poporos (gourds with lime powder) for men's traditional chewing practices to connect with the natural world",
+          "Beads and water for divination practices"
+        ],
+        "step_by_step": [
+          "**Selection:** Individuals, typically boys, are chosen for Mamo training through divination, often at birth or in early childhood.",
+          "**Early Childhood Isolation (0-9 years):** Future Mamos are taken from their families at a very young age (from birth, 6 months, or 3-4 years) and raised in strict isolation, often in dark caves or specialized ceremonial huts (nuhue), with minimal exposure to the outside world. During this period, elder Mamos and the child's mother provide care and sustenance.",
+          "**Intensive Learning and Attunement (6-18+ years):** From around 6-9 years old, the apprentices begin a structured learning process. They are taught general topics, then progress to 'discovering' the natural world (animals, trees, clouds) and learning to communicate with 'Aluna,' the cosmic consciousness or thought-world of the Great Mother. This involves prolonged periods of silence, introspection, meditation, and observing the cycles of nature. They delve into the 'Law of Origin,' which governs their existence and relationship with the environment, and learn to perform sacred rituals and offerings to maintain universal balance.",
+          "**Emergence and Role Assumption (around 18-25 years):** After a training period that can last 18 to 25 years, the Mamos emerge from their isolation. They possess profound spiritual knowledge and leadership capabilities, though they may initially lack practical worldly experience. They then assume their roles as Mamos, guiding their communities, conducting ceremonies, and working to preserve the balance of the universe."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Colombia",
+            "element_name": "Arhuaco Mamos/Sagas",
+            "relationship_reason": "The Arhuaco, another indigenous group in the Sierra Nevada de Santa Marta, also have spiritual leaders (Mamos and Sagas) with similar training and roles in maintaining cosmic balance."
+          },
+          {
+            "country": "Colombia",
+            "element_name": "Wiwa Mamos/Zagas",
+            "relationship_reason": "The Wiwa, also residing in the Sierra Nevada de Santa Marta, share a similar tradition of spiritual leaders (Mamos and Zagas) and their training."
+          },
+          {
+            "country": "Guatemala",
+            "element_name": "Guatemalan Maya spiritual leaders",
+            "relationship_reason": "Historically, some Guatemalan Maya leaders were sent to be trained by the Kogi, indicating a recognition and influence of Kogi ancestral knowledge."
+          },
+          {
+            "country": "United States",
+            "element_name": "Seminole people's offerings",
+            "relationship_reason": "The Seminole people of Florida send offerings to the Kogi, acknowledging their spiritual significance and role as 'Elder Brothers.'"
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-03-31T01:24:50.963926Z",
-    "total_ich_elements": 65,
-    "complete_records": 60,
+    "generated_at": "2026-04-01T01:32:03.810149Z",
+    "total_ich_elements": 68,
+    "complete_records": 63,
     "incomplete_records": 5,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 27,
-      "Social Practices & Rituals": 15,
+      "Traditional Craftsmanship": 28,
+      "Social Practices & Rituals": 17,
       "Culinary Traditions": 10,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 6,
