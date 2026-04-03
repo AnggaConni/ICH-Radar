@@ -5741,22 +5741,284 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-60ed8367",
+      "element_name": "Ethiopian Coffee Ceremony",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://www.opaqa.coffee/cdn/shop/articles/Ethiopian_Coffee_Ceremony_Rituals_Culture_Meaning.jpg?v=1704768395",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea",
+        "https://bunnacafe.com/the-coffee-ceremony/",
+        "https://www.dallmayr-academy.com/magazine/the-ethiopian-coffee-ceremony",
+        "https://maskalteff.com/blogs/ethiopian-food-recipes/intro-to-ethiopian-cuisine",
+        "https://www.espressoandcoffeeguide.com/ethiopian-coffee-ceremony/",
+        "https://www.globaltableadventure.com/diy-ethiopian-coffee-ceremony-bunna-ceremony/",
+        "https://www.opaqa.coffee/blogs/ethiopian-coffee-ceremony-rituals-culture-meaning",
+        "https://www.kibeb.com/blogs/news/ethiopian-coffee-making-tool-set-a-tradition-steeped-in-culture",
+        "https://www.baristalife.com/blogs/coffee/traditional-ethiopian-coffee-ceremony-set",
+        "https://www.lavazza.com/en/coffee-world/coffee-culture/ethiopian-coffee-ceremony.html",
+        "https://www.coffeeexporterinethiopia.com/what-are-the-steps-of-an-ethiopian-coffee-ceremony/",
+        "https://www.freshcup.com/ethiopian-coffee-ceremony-could-soon-join-unesco-heritage-list/",
+        "https://www.ethiopiatoursandtravel.com/blog/coffee-ceremony-in-ethiopia",
+        "https://www.unesco.org/en/articles/brewing-heritage-ethiopia-advances-file-preparation-traditional",
+        "https://www.getyourguide.com/addis-ababa-l149/addis-ababa-traditional-ethiopian-coffee-ceremony-tour-t474246/",
+        "https://gevi.com/blogs/coffee/eritrean-coffee-ceremony-jebena-secrets",
+        "https://www.compassion.com/blog/ethiopian-coffee-ceremony-photos/",
+        "https://www.gastroobscura.com/places/addis-ababa/ethiopian-coffee-ceremony",
+        "https://addisfortune.news/coffee-festival-wants-parliament-unesco-to-certify-a-living-ritual/"
+      ],
+      "scraped_at": "2026-04-03T01:21:01.086517Z",
+      "location": {
+        "country": "Ethiopia",
+        "provinces": [
+          "Throughout Ethiopia",
+          "Addis Ababa",
+          "Kaffa",
+          "Sidama",
+          "Yirgacheffe",
+          "Harar"
+        ],
+        "lat": 10.2116702,
+        "lng": 38.6521203
+      },
+      "resume_analisa": {
+        "description": "The Ethiopian Coffee Ceremony, known as 'Bunna' in Amharic, is a traditional social ritual deeply embedded in Ethiopian culture, involving the meticulous roasting, grinding, brewing, and serving of coffee. It is typically performed by a woman of the household and is considered a profound act of hospitality, community, and intention.",
+        "cultural_significance": "More than just a beverage preparation, the ceremony is a cornerstone of daily life, symbolizing hospitality, friendship, respect, and community bonding. It serves as an invitation into a relationship, a way to welcome neighbors, resolve conflicts, celebrate milestones, and share stories and wisdom. The ritual involves three distinct rounds of coffee – Abol, Tona, and Baraka – each carrying symbolic meaning related to transformation, strengthening bonds, and blessings. The burning of incense during the ceremony also adds a spiritual dimension, often linking to the Ethiopian Orthodox Church's rituals.",
+        "gemini_tags": [
+          "Ethiopian culture",
+          "Coffee ritual",
+          "Hospitality",
+          "Community gathering",
+          "Social practice",
+          "Traditional ceremony",
+          "African heritage",
+          "Intangible cultural heritage",
+          "Culinary tradition"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual/Ceremony",
+        "materials_and_tools": [
+          "Green coffee beans",
+          "Open flame or charcoal stove (makchaya)",
+          "Flat roasting pan (baret metad or menkeshkesh)",
+          "Mortar (mukecha) and pestle (zenezena)",
+          "Jebena (traditional clay coffee pot)",
+          "Small, handleless cups (sini or finjal)",
+          "Rekebot (coffee tray/table)",
+          "Incense (frankincense or myrrh)",
+          "Incense burner (mebetchiya)",
+          "Water",
+          "Sugar (optional)",
+          "Salt (optional, in rural areas)",
+          "Traditional butter (niter kibbeh, optional, in rural areas)",
+          "Fresh grass, flowers, or herbs (for decoration)",
+          "Traditional snacks (popcorn, ambasha bread, roasted barley/kolo, dabo kolo)"
+        ],
+        "step_by_step": [
+          "**Prepare the space**: A welcoming environment is set up, often with fresh grass, flowers, or herbs spread on the floor. Stools are arranged for guests. Incense (frankincense or myrrh) is burned in a mebetchiya to create a calming atmosphere and ward off evil spirits.",
+          "**Wash and roast the coffee beans**: Green coffee beans are carefully washed to remove impurities. They are then roasted over an open flame or charcoal stove in a flat pan (baret metad or menkeshkesh) until they turn a deep, rich brown and become shiny with oils. The host continuously stirs the beans for an even roast and wafts the aromatic smoke towards guests as a gesture of hospitality.",
+          "**Grind the roasted beans**: Once roasted, the beans are ground by hand using a mortar (mukecha) and pestle (zenezena) into a fine powder. The freshly ground coffee is often passed around for guests to smell.",
+          "**Brew the coffee**: The finely ground coffee is placed into a jebena (traditional clay coffee pot) with boiling water. The jebena is then placed back on the heat (makchaya) to simmer for a few minutes, allowing the coffee to brew slowly and develop its rich flavor. A cloth may cover the pot to steep.",
+          "**Serve the coffee**: The host pours the coffee from a height (about one foot) into small, handleless cups (sini or finjal) arranged on a tray (rekebot). This is done in three rounds: Abol (the first and strongest round, symbolizing initial transformation, awakening, connection, and respect), Tona (the second, slightly weaker round, representing continuity, strengthening bonds, and deeper conversation), and Baraka (the third and final, most diluted round, signifying blessings, goodwill, and peace). Guests typically add sugar to their coffee; in rural areas, salt or traditional butter (niter kibbeh) may be added. Traditional snacks like popcorn, ambasha bread, roasted barley (kolo), or dabo kolo are often served alongside the coffee."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Eritrea",
+            "element_name": "Eritrean Coffee Ceremony",
+            "relationship_reason": "The Ethiopian and Eritrean coffee ceremonies share close cultural roots and are often referred to collectively within Habesha culture, emphasizing similar practices and cultural significance."
+          },
+          {
+            "country": "Sudan",
+            "element_name": "Sudanese Coffee Ceremony (implied)",
+            "relationship_reason": "The coffee ceremony is also an integral part of social and cultural life in parts of Sudan."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-dc9e27d5",
+      "element_name": "Pane Carasau",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.sardiniaexperience.com/pane-carasau-sardinian-bread/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.sardiniaexperience.com/pane-carasau-sardinian-bread/",
+        "https://www.joebanana.com/pane-carasau-sardinia-sardegna/",
+        "https://www.veroni.com/usa/the-history-of-pane-carasau/",
+        "https://pastagrammar.com/pane-carasau-sardinian-flatbread-recipe/",
+        "https://pastaevangelists.com/blogs/recipes/how-to-make-pane-carasau-sardinian-flatbread",
+        "https://ourcookingjourney.com/pane-carasau-music-paper-bread-from-sardinia/",
+        "https://natashasbaking.com/pane-carasau-sardinian-flatbread/",
+        "https://www.italiaregina.it/en/carasau-bread-history/",
+        "https://en.wikipedia.org/wiki/Pane_carasau",
+        "https://www.italia.it/en/sardinia/food/discovering-iconic-dish-sardinia-pane-carasau",
+        "https://www.tasteatlas.com/pane-carasau",
+        "https://www.deliciousitaly.com/sardinia-food/sacred-sardinian-bread",
+        "https://gioiasarda.com/en/carasau-and-guttiau-bread-sardinian-tradition-and-filigree-design/",
+        "https://www.sunalle.it/en/il-pane-carasau-sunalle-eccellenza-della-sardegna/",
+        "https://overnyc.com/pane-carasau-music-bread-sardinian-flatbread-recipe/"
+      ],
+      "scraped_at": "2026-04-03T01:21:40.317237Z",
+      "location": {
+        "country": "Italy",
+        "provinces": [
+          "Sardinia",
+          "Nuoro (Barbagia region)"
+        ],
+        "lat": 40.0912813,
+        "lng": 9.0305773
+      },
+      "resume_analisa": {
+        "description": "Pane Carasau is a traditional Sardinian flatbread, renowned for its extremely thin, crispy texture and golden-brown hue. Often referred to as 'carta da musica' (music paper) due to its delicate appearance and the characteristic crackling sound it makes when broken, this ancient bread traces its origins back to the Bronze Age, prior to 1000 BCE. It is a staple food in Sardinia, historically prepared to be durable and long-lasting.",
+        "cultural_significance": "Pane Carasau is more than just a food item; it is a profound symbol of Sardinian culture and history, deeply embedded in the island's culinary heritage. Historically, it served as a crucial sustenance for shepherds during their long journeys and periods of isolation in remote pastures, owing to its remarkable shelf life of up to a year when stored properly. The bread is frequently featured in traditional festivals and family gatherings, maintaining its status as a cultural and culinary icon. Traditionally, its preparation was a communal event, often involving at least three women, reflecting the strong community bonds. It embodies the resilient and hospitable character of the Sardinian people, particularly those from the wilder Barbagia region where it originated.",
+        "gemini_tags": [
+          "Traditional Bread",
+          "Sardinian Cuisine",
+          "Flatbread",
+          "Shepherd's Food",
+          "Long Shelf Life",
+          "Cultural Symbol",
+          "Italian Heritage",
+          "Ancient Recipe",
+          "Culinary Icon",
+          "Oral Tradition"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Bread Making",
+        "materials_and_tools": [
+          "Durum wheat semolina flour (or hard wheat bran/semolina, sometimes with all-purpose flour)",
+          "Water",
+          "Salt",
+          "Yeast (active dry, fresh, or sourdough starter)",
+          "Wood-fired oven (traditional, but a regular oven with a pizza stone or inverted baking sheet can be used)",
+          "Mixing bowls",
+          "Rolling pin",
+          "Pizza peel (recommended)"
+        ],
+        "step_by_step": [
+          "Combine the flour (durum wheat semolina, sometimes with all-purpose flour), yeast, and salt in a large mixing bowl.",
+          "Gradually add warm water to the dry ingredients and mix until a rough dough forms.",
+          "Transfer the dough to a clean, lightly floured surface and knead it for 5 to 15 minutes until it becomes smooth and elastic.",
+          "Place the kneaded dough in a lightly oiled bowl, cover it with a damp cloth or plastic wrap, and let it rest and rise at room temperature. The resting time can vary from 10-15 minutes, 2-2.5 hours, 3 hours, or even overnight in the fridge, until it has doubled in size.",
+          "Once the dough has risen, punch it down to release air. Divide the dough into equal pieces (e.g., 3, 4, or 7 pieces) and shape each into a smooth ball. Place them on a lightly floured surface, cover, and let them rest again for about 15-45 minutes.",
+          "Preheat your oven to a very high temperature (traditionally a wood-fired oven, otherwise 230-260°C / 475-500°F). Place a baking stone or an inverted baking sheet in the oven to heat up thoroughly for at least 30-40 minutes.",
+          "On a lightly floured surface, take one dough ball and roll it out very thinly into a circular sheet, approximately 12 inches (33 cm) in diameter and 2-3 mm thick. Keep unused dough covered.",
+          "Carefully slide the thin dough sheet onto the preheated baking stone or sheet in the oven. Bake it until the bread puffs up quickly like a balloon, which happens due to the intense heat.",
+          "Remove the puffed bread from the oven. While it is still warm, carefully split the ballooned bread into two separate, paper-thin layers along its circumference using a knife.",
+          "Place the two separated sheets back into the hot oven and bake them again (this second baking is called 'carasatura'). This step is crucial to achieve the characteristic crispiness and golden-brown color of Pane Carasau."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Mediterranean region (general)",
+            "element_name": "Various flatbreads",
+            "relationship_reason": "Pane Carasau shares a common heritage with other thin, crispy flatbreads found across Mediterranean cultures, often characterized by ancient origins and a long shelf life."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-93e9fd61",
+      "element_name": "Traditional Argan Oil Extraction by Berber Women",
+      "category": "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions",
+      "thumbnail_url": "https://cdn.shopify.com/s/files/1/0073/7949/0904/files/argan-oil-production.jpg?v=1676646738",
+      "source_urls": [
+        "https://eossibeauty.com/blog/the-story-behind-argan-oil-how-its-made",
+        "https://moroccanelixir.com/blogs/news/pure-argan-oil-traditional-production",
+        "https://moroccanelixir.com/blogs/news/argan-oil-ethically-sourced-beauty-for-women-by-women",
+        "https://foxbrimnaturals.com/blogs/news/how-argan-oil-is-made",
+        "https://foxbrimnaturals.com/blogs/news/exploring-organic-argan-oil-from-morocco",
+        "https://moroccanelixir.com/blogs/news/benefits-of-argan-oil",
+        "https://foxbrimnaturals.com/blogs/news/how-to-get-pure-and-organic-argan-oil-at-amazon",
+        "https://pubmed.ncbi.nlm.nih.gov/33405022/",
+        "https://kahinagivingbeauty.com/pages/argan-oil",
+        "https://www.un.org/en/observances/argania-day",
+        "https://www.highatlasfoundation.org/blog/moroccos-argan-oil-unites-tradition-and-modernity",
+        "https://www.youtube.com/watch?v=kYc-7-y0D00",
+        "https://www.youtube.com/watch?v=F0f-q0P3g7Q"
+      ],
+      "scraped_at": "2026-04-03T01:22:13.078530Z",
+      "location": {
+        "country": "Morocco",
+        "provinces": [
+          "Souss-Massa",
+          "Souss Valley",
+          "Anti-Atlas Mountains",
+          "Agadir region"
+        ],
+        "lat": 30.187722,
+        "lng": -8.6322498
+      },
+      "resume_analisa": {
+        "description": "The traditional extraction of Argan oil is a laborious, multi-step artisanal process primarily carried out by Berber women in the semi-desert regions of southwestern Morocco, particularly in the Souss-Massa area. This ancient practice involves harvesting the fruits of the Argan tree, sun-drying them, manually cracking the extremely hard nuts with stones to extract the kernels, grinding these kernels into a paste, and then hand-kneading and pressing the paste to release the precious oil. This method, passed down through generations, is crucial for preserving the oil's quality and is a cornerstone of Berber cultural heritage.",
+        "cultural_significance": "Argan oil is deeply intertwined with Moroccan tradition and Berber identity, serving as a symbol of cultural heritage and environmental sustainability. It has been an integral part of daily life for centuries, used in beauty rituals for skin and hair, for medicinal purposes to treat various ailments, and as a staple in culinary practices, notably in the preparation of Amlou, a nutty spread. The production process is a significant social activity, often organized within women's cooperatives, which empowers Berber women economically by providing income and education, thereby fostering independence and strengthening community bonds. The Argan tree itself (Argania spinosa) is revered as the 'tree of life' due to its vital role in preventing soil erosion and desertification in the harsh semi-arid environment. UNESCO recognized the Arganeraie Biosphere Reserve in 1998 and inscribed the know-how concerning the Argan tree on the Representative List of the Intangible Cultural Heritage of Humanity in 2014, highlighting its global importance.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Culinary Tradition",
+          "Social Practice",
+          "Women's Empowerment",
+          "Indigenous Knowledge",
+          "Sustainable Practice",
+          "Moroccan Culture",
+          "Berber Heritage",
+          "Endangered Practice",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Extraction Process",
+        "materials_and_tools": [
+          "Argan fruits (ripe, fallen naturally or hand-picked)",
+          "Stones (one base rock, one hand-held sharp stone for cracking)",
+          "Traditional stone grinder (R'ha)",
+          "Warm water (for malaxing)",
+          "Hands"
+        ],
+        "step_by_step": [
+          "Harvesting the Argan fruit: Ripe Argan fruits are collected, typically after they fall naturally from the trees, usually during the summer months (May to August).",
+          "Drying and pulp removal: The collected fruits are sun-dried for several weeks to remove moisture and facilitate the removal of the fleshy outer pulp. The dried pulp can be used as animal feed.",
+          "Cracking the hard shell: The dried outer peel is removed, revealing the extremely hard Argan nut. These nuts are then manually cracked open, typically by Berber women using two stones (one as a base, one as a hammer), to extract the inner kernels. This is the most labor-intensive step.",
+          "Sorting the kernels: The extracted kernels are sorted for quality, consistency in color, and absence of odor.",
+          "Roasting the kernels (for culinary oil): If the oil is intended for culinary use, the kernels are lightly roasted over low heat in earthen dishes to enhance their nutty flavor and aroma. For cosmetic oil, this step is skipped to maintain a neutral aroma.",
+          "Grinding the kernels: The kernels (roasted or unroasted) are then ground into a thick, oily paste using a traditional stone grinder (R'ha).",
+          "Malaxing and pressing: The resulting paste is hand-kneaded for several minutes, often with small quantities of warm water added, to form an oil-rich dough. This dough is then hand-pressed to slowly extract the pure Argan oil.",
+          "Decantation and filtration: The extracted oil is left to rest for several weeks (2-4 weeks) to allow solid residues and sediment to settle. The oil is then decanted and filtered, traditionally manually, to achieve clarity and purity."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 1.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-01T01:32:03.810149Z",
-    "total_ich_elements": 68,
-    "complete_records": 63,
+    "generated_at": "2026-04-03T01:22:59.915761Z",
+    "total_ich_elements": 71,
+    "complete_records": 66,
     "incomplete_records": 5,
     "categories_breakdown": {
       "Traditional Craftsmanship": 28,
-      "Social Practices & Rituals": 17,
-      "Culinary Traditions": 10,
+      "Social Practices & Rituals": 18,
+      "Culinary Traditions": 11,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 6,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 4
+      "Oral Traditions": 4,
+      "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1
     }
   }
 }
