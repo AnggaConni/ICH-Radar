@@ -606,27 +606,15 @@ function continent(country) { return CONTINENTS[country] || 'Other'; }
 document.addEventListener('DOMContentLoaded', () => {
   lucide.createIcons();
   
-  fetch('data.json')
-    .then(r => { 
-      if (!r.ok) throw new Error('File data.json tidak ditemukan HTTP ' + r.status); 
-      return r.json(); 
-    })
-    .then(data => {
-      // Kita pisahkan eksekusi render ke dalam try-catch mandiri
-      try {
-        startApp(data);
-      } catch (renderErr) {
-        console.error("❌ BUKAN FETCH ERROR! Ini Error saat menyusun halaman:", renderErr);
-        // Tampilkan error rendering langsung di layar agar ketahuan
-        document.body.innerHTML = `<div style="padding:40px; color:white; font-family:monospace;">
-          <h2 style="color:#B8522A">Data.json berhasil dimuat, tapi aplikasi Crash saat Render!</h2>
-          <p>${renderErr.stack}</p>
-        </div>`;
-      }
-    })
-    .catch((fetchErr) => {
-      console.error("❌ Gagal membaca file data.json:", fetchErr);
-      // Tampilkan modal HANYA jika benar-benar gagal download file
+fetch('data.json')
+    .then(r => { if (!r.ok) throw new Error('not found'); return r.json(); })
+    .then(startApp)
+    .catch((err) => { // <--- TAMBAHKAN 'err' DI DALAM KURUNG INI
+      
+      // INI KODE DETEKTIFNYA:
+      console.error("🚨 DETEKTIF ERROR MENEMUKAN:", err);
+      
+      // show modal
       document.getElementById('modal-overlay').style.display = 'flex';
     });
     
