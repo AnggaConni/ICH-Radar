@@ -821,7 +821,7 @@ function killCharts(obj) { for (let k in obj) { try { if(!obj[k].isDisposed()) o
 
 
 
-/* ── PRINTING (NEW TAB, PERFECT A4 FLOW, AVOID PAGE CUTS) ── */
+/* ── PRINTING (NEW TAB, PERFECT A4 FLOW, DASHBOARD MERGED) ── */
 async function doPrint() {
   const loader = document.getElementById('print-loader');
   loader.style.display = 'flex';
@@ -829,7 +829,7 @@ async function doPrint() {
   try {
     let pwHtml = '';
 
-    // 1. GENERATE COVER (Akan di-styling ulang oleh CSS khusus print di bawah)
+    // 1. GENERATE COVER
     pwHtml += `<div class="print-page cover-page">${getPageContent(1, '-print')}</div>`;
 
     // 2. GENERATE DAFTAR ISI (TOC)
@@ -837,8 +837,7 @@ async function doPrint() {
     <div class="print-page toc-page">
         <h1 class="display-title" style="font-size:2.2rem; margin-bottom: 1.5rem; color: var(--navy); border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem;">Table of Contents</h1>
         <div style="column-count: 2; column-gap: 15mm; font-family: 'Lora', serif; font-size: 0.8rem;">
-            <div style="display:flex; justify-content:space-between; margin-bottom: 0.4rem; break-inside: avoid;"><strong>Global Dashboard</strong></div>
-            <div style="display:flex; justify-content:space-between; margin-bottom: 0.4rem; break-inside: avoid;"><strong>Categories &amp; Overview</strong></div>
+            <div style="display:flex; justify-content:space-between; margin-bottom: 0.4rem; break-inside: avoid;"><strong>Global Dashboard & Overview</strong></div>
     `;
     
     const byCont = {};
@@ -859,14 +858,19 @@ async function doPrint() {
     tocHtml += `</div></div>`;
     pwHtml += tocHtml;
 
-    // 3. GENERATE DASHBOARD & OVERVIEW
-    pwHtml += `<div class="print-page no-cut-page">${getPageContent(2, '-print')}</div>`;
-    pwHtml += `<div class="print-page no-cut-page">${getPageContent(3, '-print')}</div>`;
+    // 3. GENERATE DASHBOARD & OVERVIEW (🔥 DIGABUNG DALAM 1 HALAMAN 🔥)
+    pwHtml += `
+    <div class="print-page">
+        <div class="content-flow">${getPageContent(2, '-print')}</div>
+        <div class="content-flow" style="margin-top: 35px; padding-top: 25px; border-top: 2px dashed rgba(184,82,42,0.3);">
+            ${getPageContent(3, '-print')}
+        </div>
+    </div>`;
 
     // 4. GENERATE KONTEN ITEMS (Flow Alami)
     for (let i = STATIC; i < total(); i += 2) {
-        const leftContent = getPageContent(i, '-print');     // Data Peta & Meta
-        const rightContent = getPageContent(i + 1, '-print'); // Data Deskripsi & Langkah
+        const leftContent = getPageContent(i, '-print');     
+        const rightContent = getPageContent(i + 1, '-print'); 
         
         pwHtml += `
         <div class="print-page heritage-item">
@@ -889,7 +893,7 @@ async function doPrint() {
         return;
     }
 
-    // 7. Inject HTML & CSS (CSS BEDAH PRESISI)
+    // 7. Inject HTML & CSS 
     printWindow.document.write(`
       <!DOCTYPE html>
       <html>
@@ -910,7 +914,7 @@ async function doPrint() {
           
           #nav, #stage, #modal-overlay, #print-loader, #print-wrapper { display: none !important; }
 
-          /* 🔥 HANYA BUNUH SCROLLBAR DI CONTAINER TERTENTU 🔥 */
+          /* HANYA BUNUH SCROLLBAR DI CONTAINER TERTENTU */
           div[style*="max-height:220px"], div[style*="max-height: 220px"], .leaf-scroll {
               overflow: visible !important;
               max-height: none !important;
@@ -925,9 +929,9 @@ async function doPrint() {
               position: relative;
           }
           
-          /* 🔥 PERBAIKAN COVER PAGE 🔥 */
+          /* PERBAIKAN COVER PAGE */
           .cover-page .cover-wrap {
-              background: white !important; /* Buang gradient gelap */
+              background: white !important; 
               border: 3px solid var(--gold);
               padding: 40mm 20mm;
               border-radius: 0;
@@ -937,12 +941,12 @@ async function doPrint() {
               flex-direction: column;
               justify-content: center;
           }
-          .cover-page .cover-wrap::before { display: none; } /* Hilangkan pattern background */
+          .cover-page .cover-wrap::before { display: none; }
           .cover-page .cover-top { color: var(--terracotta) !important; font-size: 0.7rem; font-weight: bold; }
           .cover-page .cover-h1 { color: var(--navy) !important; font-size: 3.5rem; margin: 2rem 0; }
           .cover-page .cover-h1 em { color: var(--gold) !important; }
           .cover-page .cover-tagline, .cover-page p { color: var(--ink-soft) !important; font-size: 0.9rem; }
-          .cover-page .cover-foot { color: var(--ink-faint) !important; display: none; } /* Sembunyikan "turn page" */
+          .cover-page .cover-foot { color: var(--ink-faint) !important; display: none; }
           .cover-page .cover-stat-box { 
               background: rgba(196,154,13,0.05) !important; 
               border: 1px solid var(--gold) !important; 
@@ -950,7 +954,7 @@ async function doPrint() {
           .cover-page .cover-stat-n { color: var(--navy) !important; }
           .cover-page .cover-stat-l { color: var(--terracotta) !important; }
 
-          /* 🔥 ANTI-TERPOTONG (BREAK-INSIDE: AVOID) 🔥 */
+          /* ANTI-TERPOTONG (BREAK-INSIDE: AVOID) */
           .map-box { 
               height: 220px !important; 
               margin: 15px 0 20px !important; 
@@ -960,7 +964,6 @@ async function doPrint() {
               break-inside: avoid !important; 
           }
           
-          /* Kunci Chart, Panel, dan Langkah agar tidak pisah halaman */
           [id^="chart-donut"], .panel, .step-row, .shared-row, .stat-card, .bar-row {
               page-break-inside: avoid !important;
               break-inside: avoid !important;
