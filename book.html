@@ -818,36 +818,184 @@ function spawnCharts(chartsObj, isPrint) {
 function killMaps(obj)   { for (let k in obj) { try { obj[k].remove(); } catch(e){} delete obj[k]; } }
 function killCharts(obj) { for (let k in obj) { try { if(!obj[k].isDisposed()) obj[k].dispose(); } catch(e){} delete obj[k]; } }
 
-/* ── PRINTING ── */
+/* ── PRINTING (NEW TAB BOOK MODE) ── */
 async function doPrint() {
   const loader = document.getElementById('print-loader');
   loader.style.display = 'flex';
-  const pw = document.getElementById('print-wrapper');
-  pw.innerHTML = ''; pw.style.display = 'block';
 
   try {
-    [1,2,3].forEach(i => { pw.innerHTML += `<div class="pb no-break" style="padding:15mm 20mm;min-height:250mm;background:white">${getPageContent(i, '-print')}</div>`; });
+    // 1. Susun Layout Buku
+    // Halaman 1 (Cover) dibuat berdiri sendiri.
+    let pwHtml = `<div class="print-page-single pb no-break">${getPageContent(1, '-print')}</div>`;
+
+    // Halaman 2 (Dashboard) & 3 (Overview) disandingkan berdampingan
+    pwHtml += `<div class="print-page-double pb no-break">
+                 <div class="print-leaf">${getPageContent(2, '-print')}</div>
+                 <div class="print-leaf">${getPageContent(3, '-print')}</div>
+               </div>`;
+
+    // Looping sisa data: Halaman Kiri & Kanan disandingkan dalam 1 lembar landscape
     const t = total();
     for (let i = STATIC; i < t; i += 2) {
-      pw.innerHTML += `<div class="pb no-break" style="padding:12mm 15mm;min-height:250mm;background:white;display:grid;grid-template-columns:1fr 1fr;gap:15mm"><div>${getPageContent(i, '-print')}</div><div>${getPageContent(i+1, '-print')}</div></div>`;
+      pwHtml += `<div class="print-page-double pb no-break">
+                   <div class="print-leaf">${getPageContent(i, '-print')}</div>
+                   <div class="print-leaf">${getPageContent(i+1, '-print')}</div>
+                 </div>`;
     }
-    lucide.createIcons();
-    await new Promise(r => setTimeout(r, 200));
-    spawnMaps(pMaps, true); spawnCharts(pCharts, true);
-    for (let k in pMaps) pMaps[k]?.invalidateSize?.();
-    await new Promise(r => setTimeout(r, 3500));
 
-    const cleanup = () => {
-      pw.innerHTML = ''; pw.style.display = 'none'; loader.style.display = 'none';
-      killMaps(pMaps); killCharts(pCharts); window.removeEventListener('afterprint', cleanup);
-    };
-    window.addEventListener('afterprint', cleanup);
-    window.print();
-    setTimeout(cleanup, 9000);
+    // 2. Kumpulkan koordinat untuk merender titik-titik (dots) merah di peta
+    const mapDotsData = items.slice(0, 60).map(it => ({
+        lat: parseFloat(it?.location?.lat),
+        lon: parseFloat(it?.location?.lng || it?.location?.lon)
+    })).filter(pos => !isNaN(pos.lat) && !isNaN(pos.lon));
+
+    // 3. Buka Tab Baru
+    const printWindow = window.open('', '_blank');
+    if (!printWindow) {
+        alert("Pop-up diblokir browser. Mohon izinkan pop-up (Always Allow) untuk mencetak PDF Atlas.");
+        loader.style.display = 'none';
+        return;
+    }
+
+    // 4. Inject HTML, CSS khusus Buku, dan Script sinkronisasi ke Tab Baru
+    printWindow.document.write(`
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>Living Heritage Atlas - Document</title>
+        ${document.head.innerHTML}
+        
+        <style>
+          /* --- OVERRIDE STYLE KHUSUS BUKU PDF --- */
+          @page { size: A4 landscape; margin: 0; }
+          
+          body { 
+              background: white !important; 
+              color: #1C1208 !important; 
+              -webkit-print-color-adjust: exact !important; 
+              print-color-adjust: exact !important; 
+              margin: 0; padding: 0; 
+              overflow: visible !important;
+          }
+          
+          /* Sembunyikan elemen UI nav/modal di tab cetak */
+          #nav, #stage, #modal-overlay, #print-loader, #print-wrapper { display: none !important; }
+          
+          /* Utility Print */
+          .pb { page-break-after: always; break-after: page; }
+          .no-break { page-break-inside: avoid; break-inside: avoid; }
+
+          /* Layout Halaman Buku (A4 Landscape: 297x210mm) */
+          .print-page-single {
+              width: 297mm; height: 210mm;
+              box-sizing: border-box;
+              display: flex; flex-direction: column;
+          }
+          .print-page-single .cover-wrap { border-radius: 0; } /* Cover full bleed */
+
+          .print-page-double {
+              width: 297mm; height: 210mm;
+              padding: 15mm 20mm;
+              box-sizing: border-box;
+              display: grid; grid-template-columns: 1fr 1fr; gap: 20mm;
+              background: #fff;
+          }
+          .print-leaf { display: flex; flex-direction: column; height: 100%; position: relative; }
+          
+          /* Kosmetik Peta agar tajam saat diprint */
+          .map-box { border: 1px solid #d8c9ad !important; background: #EAE6DC; }
+        </style>
+      </head>
+      <body>
+        ${pwHtml}
+
+        <script>
+          const mapDots = ${JSON.stringify(mapDotsData)};
+
+          window.onload = function() {
+             lucide.createIcons();
+
+             // 1. Render ECharts
+             document.querySelectorAll('[id^="chart-donut"]').forEach(el => {
+               if (!el.getAttribute('data-donut')) return;
+               try {
+                 const data = JSON.parse(el.getAttribute('data-donut'));
+                 const chart = echarts.init(el, null, { renderer: 'canvas' });
+                 chart.setOption({
+                   animation: false,
+                   series: [{ type: 'pie', radius: ['38%','65%'], center: ['35%','50%'], label: { show: false }, data: data, color: ['#B8522A','#1E7B7B','#1A2B52','#C49A0D','#4D7355','#6B3D72','#7A4E1A','#2C6060'] }]
+                 });
+               } catch(e) {}
+             });
+
+             // 2. Render Maps dengan "Smart Render Lock"
+             const mapElements = document.querySelectorAll('[id^="map-"]');
+             let mapsToLoad = mapElements.length;
+
+             // Jika tidak ada peta, langsung print
+             if (mapsToLoad === 0) {
+                 setTimeout(() => window.print(), 800);
+                 return;
+             }
+
+             let loadCheckFired = false;
+             const tryPrint = () => {
+                 // Trigger print HANYA JIKA semua peta sudah selesai diload
+                 if (!loadCheckFired && mapsToLoad <= 0) {
+                     loadCheckFired = true;
+                     setTimeout(() => window.print(), 1200); // Beri jeda 1 detik agar browser merapikan layout akhir
+                 }
+             };
+
+             mapElements.forEach(el => {
+               const lat = parseFloat(el.getAttribute('data-lat')) || 0;
+               const lon = parseFloat(el.getAttribute('data-lon')) || 0;
+               const map = L.map(el.id, { zoomControl: false, fadeAnimation: false, zoomAnimation: false, attributionControl: false }).setView([lat, lon], 4);
+
+               const layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 18 });
+               
+               // KUNCI UTAMA: Dengarkan event 'load' Leaflet
+               layer.on('load', () => {
+                   mapsToLoad--;
+                   tryPrint();
+               });
+               layer.addTo(map);
+
+               // Titik sebaran negara lain
+               mapDots.forEach(pos => {
+                 if (Math.abs(pos.lat-lat)>0.01 || Math.abs(pos.lon-lon)>0.01) {
+                   L.circleMarker([pos.lat, pos.lon], { radius: 2.5, color: '#B8522A', fillColor: '#B8522A', fillOpacity: 0.28, weight: 0 }).addTo(map);
+                 }
+               });
+
+               // Pin lokasi utama
+               const icon = L.divIcon({ className: '', html: '<div style="width:13px;height:13px;border-radius:50%;background:#B8522A;border:2px solid white;box-shadow:0 0 4px rgba(0,0,0,0.3)"></div>', iconSize: [13,13], iconAnchor: [6,6] });
+               L.marker([lat,lon], { icon }).addTo(map);
+             });
+
+             // Safety Fallback: Jika ada server Leaflet yang timeout, paksa print setelah 6 detik
+             setTimeout(() => {
+                 if(!loadCheckFired) {
+                     mapsToLoad = 0;
+                     tryPrint();
+                 }
+             }, 6000);
+          };
+        <\/script>
+      </body>
+      </html>
+    `);
+    
+    printWindow.document.close(); // Ini memicu trigger window.onload di tab baru
+    loader.style.display = 'none';
+
   } catch(e) {
-    loader.style.display = 'none'; alert('PDF export failed: ' + e.message);
+    loader.style.display = 'none';
+    alert('PDF export failed: ' + e.message);
   }
 }
+
+
 </script>
 </body>
 </html>
