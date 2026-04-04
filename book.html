@@ -605,37 +605,36 @@ function continent(country) { return CONTINENTS[country] || 'Other'; }
 /* ── BOOT ── */
 document.addEventListener('DOMContentLoaded', () => {
   lucide.createIcons();
-
-fetch('data.json')
-    .then(async r => {
-      // Tangkap jika file tidak ditemukan atau URL salah arah
-      if (!r.ok) throw new Error(`HTTP Error ${r.status}: File tidak ditemukan di jalur ini.`);
-      
+  
+  fetch('data.json')
+    .then(r => { 
+      if (!r.ok) throw new Error('File data.json tidak ditemukan HTTP ' + r.status); 
+      return r.json(); 
+    })
+    .then(data => {
+      // Kita pisahkan eksekusi render ke dalam try-catch mandiri
       try {
-        return await r.json();
-      } catch (jsonErr) {
-        // Tangkap jika JSON corrupt / berbentuk Git LFS pointer
-        throw new Error(`Format JSON gagal dibaca: ${jsonErr.message}`);
+        startApp(data);
+      } catch (renderErr) {
+        console.error("❌ BUKAN FETCH ERROR! Ini Error saat menyusun halaman:", renderErr);
+        // Tampilkan error rendering langsung di layar agar ketahuan
+        document.body.innerHTML = `<div style="padding:40px; color:white; font-family:monospace;">
+          <h2 style="color:#B8522A">Data.json berhasil dimuat, tapi aplikasi Crash saat Render!</h2>
+          <p>${renderErr.stack}</p>
+        </div>`;
       }
     })
-    .then(startApp)
-    .catch((err) => {
-      console.error("Auto-fetch gagal:", err);
-      
-      // Injeksi pesan error langsung ke dalam Modal UI
-      const modalBody = document.querySelector('.modal-body');
-      modalBody.innerHTML = `
-        Place <strong>data.json</strong> in the same folder as this file and reload,
-        or select it manually below.
-        <br><br>
-        <span style="display:block; padding:0.6rem; background:rgba(184,82,42,0.1); border-left:3px solid var(--terracotta); border-radius:3px; color:var(--terracotta); font-family:'DM Mono', monospace; font-size:0.65rem;">
-          <strong>🔍 System Log:</strong><br>${err.message}
-        </span>
-      `;
-      
+    .catch((fetchErr) => {
+      console.error("❌ Gagal membaca file data.json:", fetchErr);
+      // Tampilkan modal HANYA jika benar-benar gagal download file
       document.getElementById('modal-overlay').style.display = 'flex';
     });
-} );
+    
+  window.addEventListener('resize', () => {
+    const m = window.innerWidth < 720;
+    if (m !== mobile) { mobile = m; render(); }
+  });
+});
 
 function loadFile() {
   const f = document.getElementById('file-input').files[0];
