@@ -818,7 +818,10 @@ function spawnCharts(chartsObj, isPrint) {
 function killMaps(obj)   { for (let k in obj) { try { obj[k].remove(); } catch(e){} delete obj[k]; } }
 function killCharts(obj) { for (let k in obj) { try { if(!obj[k].isDisposed()) obj[k].dispose(); } catch(e){} delete obj[k]; } }
 
-/* ── PRINTING (NEW TAB, PORTRAIT, TOC, NO SCROLL) ── */
+
+
+
+/* ── PRINTING (NEW TAB, PERFECT A4 FLOW, AVOID PAGE CUTS) ── */
 async function doPrint() {
   const loader = document.getElementById('print-loader');
   loader.style.display = 'flex';
@@ -826,81 +829,67 @@ async function doPrint() {
   try {
     let pwHtml = '';
 
-    // Helper: Membuat Footer & Nomor Halaman
-    const getPrintFooter = (idx) => {
-        let tag = '', pg = '';
-        if (idx === 2) { tag = 'Global Dashboard'; pg = 'p. 2'; }
-        else if (idx === 3) { tag = 'Overview'; pg = 'p. 3'; }
-        else {
-            const di = Math.floor((idx - STATIC) / 2);
-            const item = items[di];
-            const isL = idx % 2 === 0;
-            const country = item?.location?.country || '—';
-            const cont = item ? continent(country) : '—';
-            const title = item?.element_name || item?.title || '—';
-            tag = isL ? `${cont} · ${country}` : `Story · ${title.slice(0,30)}`;
-            pg = `p. ${idx}`;
-        }
-        return `<div class="print-footer"><span>${tag}</span><span>${pg}</span></div>`;
-    };
+    // 1. GENERATE COVER (Akan di-styling ulang oleh CSS khusus print di bawah)
+    pwHtml += `<div class="print-page cover-page">${getPageContent(1, '-print')}</div>`;
 
-    // 1. Generate Cover (Halaman 1)
-    pwHtml += `<div class="print-section cover-section" style="min-height: 297mm; padding: 0;">${getPageContent(1, '-print')}</div>`;
-
-    // 2. Generate Daftar Isi (Table of Contents) otomatis
+    // 2. GENERATE DAFTAR ISI (TOC)
     let tocHtml = `
-    <div class="print-section print-toc">
-        <h1 class="display-title" style="font-size:2rem; margin-bottom: 1.5rem; color: var(--navy); border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem;">Table of Contents</h1>
-        <div class="toc-list">
-            <div class="toc-row"><strong>Global Dashboard</strong><span>p. 2</span></div>
-            <div class="toc-row"><strong>Categories &amp; Overview</strong><span>p. 3</span></div>
+    <div class="print-page toc-page">
+        <h1 class="display-title" style="font-size:2.2rem; margin-bottom: 1.5rem; color: var(--navy); border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem;">Table of Contents</h1>
+        <div style="column-count: 2; column-gap: 15mm; font-family: 'Lora', serif; font-size: 0.8rem;">
+            <div style="display:flex; justify-content:space-between; margin-bottom: 0.4rem; break-inside: avoid;"><strong>Global Dashboard</strong></div>
+            <div style="display:flex; justify-content:space-between; margin-bottom: 0.4rem; break-inside: avoid;"><strong>Categories &amp; Overview</strong></div>
     `;
     
-    // Kelompokkan daftar isi berdasarkan Benua
     const byCont = {};
-    items.forEach((item, i) => {
+    items.forEach((item) => {
         const c = continent(item?.location?.country || '');
         if (!byCont[c]) byCont[c] = [];
-        byCont[c].push({ item, i });
+        byCont[c].push(item);
     });
 
     CONT_ORDER.forEach(c => {
         if (!byCont[c]) return;
-        tocHtml += `<div class="toc-group-title">${c}</div>`;
-        byCont[c].forEach(({ item, i }) => {
+        tocHtml += `<div style="margin: 1.5rem 0 0.4rem; color: var(--terracotta); font-family: 'DM Mono'; font-weight: bold; letter-spacing: 0.1em; text-transform: uppercase; border-bottom: 1px solid rgba(184,82,42,0.2); break-after: avoid; break-inside: avoid;">${c}</div>`;
+        byCont[c].forEach((item) => {
             const title = item?.element_name || item?.title || 'Untitled';
-            const pgNum = STATIC + (i * 2); 
-            tocHtml += `<div class="toc-row"><span>${title}</span><span>p. ${pgNum}</span></div>`;
+            tocHtml += `<div style="margin-bottom: 0.35rem; border-bottom: 1px dotted rgba(28,18,8,0.15); padding-bottom: 0.15rem; break-inside: avoid;">${title}</div>`;
         });
     });
     tocHtml += `</div></div>`;
     pwHtml += tocHtml;
 
-    // 3. Loop Semua Halaman Content secara Vertikal (Satu per satu ke bawah)
-    const t = total();
-    for (let i = 2; i < t; i++) {
-      pwHtml += `
-        <div class="print-section">
-            <div class="print-content-inner">${getPageContent(i, '-print')}</div>
-            ${getPrintFooter(i)}
+    // 3. GENERATE DASHBOARD & OVERVIEW
+    pwHtml += `<div class="print-page no-cut-page">${getPageContent(2, '-print')}</div>`;
+    pwHtml += `<div class="print-page no-cut-page">${getPageContent(3, '-print')}</div>`;
+
+    // 4. GENERATE KONTEN ITEMS (Flow Alami)
+    for (let i = STATIC; i < total(); i += 2) {
+        const leftContent = getPageContent(i, '-print');     // Data Peta & Meta
+        const rightContent = getPageContent(i + 1, '-print'); // Data Deskripsi & Langkah
+        
+        pwHtml += `
+        <div class="print-page heritage-item">
+            <div class="content-flow">${leftContent}</div>
+            <div class="content-flow" style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed var(--parchment-dark);">${rightContent}</div>
         </div>`;
     }
 
-    // 4. Kumpulkan koordinat peta
+    // 5. Kumpulkan Koordinat Peta
     const mapDotsData = items.slice(0, 60).map(it => ({
         lat: parseFloat(it?.location?.lat),
         lon: parseFloat(it?.location?.lng || it?.location?.lon)
     })).filter(pos => !isNaN(pos.lat) && !isNaN(pos.lon));
 
-    // 5. Buka Tab Baru
+    // 6. Buka Tab Baru
     const printWindow = window.open('', '_blank');
     if (!printWindow) {
-        alert("Pop-up diblokir. Izinkan pop-up (Always Allow) untuk mencetak PDF.");
+        alert("Pop-up diblokir. Izinkan pop-up untuk mencetak PDF.");
         loader.style.display = 'none';
         return;
     }
 
-    // 6. Inject HTML & CSS khusus Cetak Vertikal
+    // 7. Inject HTML & CSS (CSS BEDAH PRESISI)
     printWindow.document.write(`
       <!DOCTYPE html>
       <html>
@@ -908,8 +897,8 @@ async function doPrint() {
         <title>Living Heritage Atlas - Document</title>
         ${document.head.innerHTML}
         <style>
-          /* --- OVERRIDE STYLE KHUSUS BUKU VERTIKAL (A4 PORTRAIT) --- */
-          @page { size: A4 portrait; margin: 15mm 20mm; }
+          /* --- A4 PORTRAIT & MARGIN MODERATE --- */
+          @page { size: A4 portrait; margin: 15mm 15mm; }
           
           body { 
               background: white !important; 
@@ -917,58 +906,73 @@ async function doPrint() {
               -webkit-print-color-adjust: exact !important; 
               print-color-adjust: exact !important; 
               margin: 0; padding: 0; 
-              overflow: visible !important;
           }
           
           #nav, #stage, #modal-overlay, #print-loader, #print-wrapper { display: none !important; }
 
-          /* Wadah Utama Halaman */
-          .print-section {
-              display: flex;
-              flex-direction: column;
-              min-height: 250mm; /* Tinggi A4 dikurangi margin */
-              page-break-after: always;
-              break-after: page;
-              position: relative;
-              background: white;
-              padding-bottom: 5mm;
-          }
-          .cover-section { page-break-after: always; break-after: page; padding-bottom: 0; }
-          
-          .print-content-inner { flex: 1; display: flex; flex-direction: column; }
-          
-          /* 🔥 FIX SCROLLBAR TENGGELAM 🔥 */
-          /* Memaksa elemen yang awalnya di-scroll untuk memanjang penuh tanpa batas */
-          div[style*="overflow-y:auto"], div[style*="overflow-y: auto"], .leaf-scroll {
+          /* 🔥 HANYA BUNUH SCROLLBAR DI CONTAINER TERTENTU 🔥 */
+          div[style*="max-height:220px"], div[style*="max-height: 220px"], .leaf-scroll {
               overflow: visible !important;
               max-height: none !important;
               height: auto !important;
           }
 
-          /* Style Kaki Halaman (Page Numbers) */
-          .print-footer {
-              margin-top: 1.5rem;
-              padding-top: 0.75rem;
-              border-top: 1px solid var(--parchment-mid);
-              display: flex;
-              justify-content: space-between;
-              font-family: 'DM Mono', monospace;
-              font-size: 0.65rem;
-              color: var(--ink-faint);
-              text-transform: uppercase;
-              letter-spacing: 0.1em;
+          /* Pemisah Halaman */
+          .print-page { 
+              page-break-after: always; 
+              break-after: page; 
+              padding-top: 5mm;
+              position: relative;
           }
-
-          /* Style Daftar Isi */
-          .print-toc { padding: 10mm 5mm; }
-          .toc-list { font-family: 'Lora', serif; font-size: 0.85rem; line-height: 1.6; }
-          .toc-group-title { font-family: 'DM Mono', monospace; color: var(--terracotta); margin: 1.5rem 0 0.5rem; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: bold; border-bottom: 1px solid rgba(184,82,42,0.2); padding-bottom: 0.2rem;}
-          .toc-row { display: flex; justify-content: space-between; border-bottom: 1px dotted rgba(28,18,8,0.2); margin-bottom: 0.4rem; padding-bottom: 0.2rem; }
-          .toc-row span:last-child { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--terracotta); font-weight: 600; }
           
-          /* Visual Peta */
-          .map-box { min-height: 200px; border: 1px solid #d8c9ad !important; }
-          .cover-wrap { border-radius: 0; min-height: 297mm; }
+          /* 🔥 PERBAIKAN COVER PAGE 🔥 */
+          .cover-page .cover-wrap {
+              background: white !important; /* Buang gradient gelap */
+              border: 3px solid var(--gold);
+              padding: 40mm 20mm;
+              border-radius: 0;
+              height: 260mm;
+              box-sizing: border-box;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+          }
+          .cover-page .cover-wrap::before { display: none; } /* Hilangkan pattern background */
+          .cover-page .cover-top { color: var(--terracotta) !important; font-size: 0.7rem; font-weight: bold; }
+          .cover-page .cover-h1 { color: var(--navy) !important; font-size: 3.5rem; margin: 2rem 0; }
+          .cover-page .cover-h1 em { color: var(--gold) !important; }
+          .cover-page .cover-tagline, .cover-page p { color: var(--ink-soft) !important; font-size: 0.9rem; }
+          .cover-page .cover-foot { color: var(--ink-faint) !important; display: none; } /* Sembunyikan "turn page" */
+          .cover-page .cover-stat-box { 
+              background: rgba(196,154,13,0.05) !important; 
+              border: 1px solid var(--gold) !important; 
+          }
+          .cover-page .cover-stat-n { color: var(--navy) !important; }
+          .cover-page .cover-stat-l { color: var(--terracotta) !important; }
+
+          /* 🔥 ANTI-TERPOTONG (BREAK-INSIDE: AVOID) 🔥 */
+          .map-box { 
+              height: 220px !important; 
+              margin: 15px 0 20px !important; 
+              border: 1px solid var(--parchment-dark) !important; 
+              border-radius: 4px;
+              page-break-inside: avoid !important; 
+              break-inside: avoid !important; 
+          }
+          
+          /* Kunci Chart, Panel, dan Langkah agar tidak pisah halaman */
+          [id^="chart-donut"], .panel, .step-row, .shared-row, .stat-card, .bar-row {
+              page-break-inside: avoid !important;
+              break-inside: avoid !important;
+          }
+          
+          /* Rapikan Elemen Teks */
+          .lora-body { font-size: 0.8rem !important; line-height: 1.6 !important; }
+          .step-txt { font-size: 0.75rem !important; line-height: 1.5 !important; }
+          
+          /* Sembunyikan judul ganda di bagian bawah (Story Record) */
+          .content-flow:nth-child(2) .page-eyebrow,
+          .content-flow:nth-child(2) h2 { display: none !important; }
         </style>
       </head>
       <body>
@@ -980,30 +984,28 @@ async function doPrint() {
           window.onload = function() {
              lucide.createIcons();
 
-             // Render Chart
              document.querySelectorAll('[id^="chart-donut"]').forEach(el => {
                if (!el.getAttribute('data-donut')) return;
                try {
                  const data = JSON.parse(el.getAttribute('data-donut'));
                  const chart = echarts.init(el, null, { renderer: 'canvas' });
-                 chart.setOption({ animation: false, series: [{ type: 'pie', radius: ['38%','65%'], center: ['35%','50%'], label: { show: false }, data: data, color: ['#B8522A','#1E7B7B','#1A2B52','#C49A0D','#4D7355','#6B3D72','#7A4E1A','#2C6060'] }] });
+                 chart.setOption({ 
+                     animation: false, 
+                     series: [{ type: 'pie', radius: ['38%','65%'], center: ['35%','50%'], label: { show: false }, data: data, color: ['#B8522A','#1E7B7B','#1A2B52','#C49A0D','#4D7355','#6B3D72','#7A4E1A','#2C6060'] }] 
+                 });
                } catch(e) {}
              });
 
-             // Render Maps & Sinkronisasi Print
              const mapElements = document.querySelectorAll('[id^="map-"]');
              let mapsToLoad = mapElements.length;
 
-             if (mapsToLoad === 0) {
-                 setTimeout(() => window.print(), 800);
-                 return;
-             }
+             if (mapsToLoad === 0) { setTimeout(() => window.print(), 800); return; }
 
              let loadCheckFired = false;
              const tryPrint = () => {
                  if (!loadCheckFired && mapsToLoad <= 0) {
                      loadCheckFired = true;
-                     setTimeout(() => window.print(), 1500); // Beri waktu browser merapikan tinggi div tanpa scroll
+                     setTimeout(() => window.print(), 1000); 
                  }
              };
 
@@ -1026,9 +1028,7 @@ async function doPrint() {
                L.marker([lat,lon], { icon }).addTo(map);
              });
 
-             setTimeout(() => {
-                 if(!loadCheckFired) { mapsToLoad = 0; tryPrint(); }
-             }, 6000);
+             setTimeout(() => { if(!loadCheckFired) { mapsToLoad = 0; tryPrint(); } }, 6000);
           };
         <\/script>
       </body>
