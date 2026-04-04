@@ -606,21 +606,15 @@ function continent(country) { return CONTINENTS[country] || 'Other'; }
 document.addEventListener('DOMContentLoaded', () => {
   lucide.createIcons();
   
-fetch('data.json')
-    .then(r => { if (!r.ok) throw new Error('not found'); return r.json(); })
-    .then(startApp)
-    .catch((err) => { // <--- TAMBAHKAN 'err' DI DALAM KURUNG INI
-      
-      // INI KODE DETEKTIFNYA:
-      console.error("🚨 DETEKTIF ERROR MENEMUKAN:", err);
-      
-      // show modal
-      document.getElementById('modal-overlay').style.display = 'flex';
-    });
-    
-  window.addEventListener('resize', () => {
-    const m = window.innerWidth < 720;
-    if (m !== mobile) { mobile = m; render(); }
+fetch('https://anggaconni.github.io/ICH-Radar/data.json')
+  .then(r => { 
+    if (!r.ok) throw new Error('File tidak ditemukan di URL tersebut'); 
+    return r.json(); 
+  })
+  .then(startApp)
+  .catch((err) => { 
+    console.error("🚨 DETEKTIF ERROR MENEMUKAN:", err);
+    document.getElementById('modal-overlay').style.display = 'flex';
   });
 });
 
