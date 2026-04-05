@@ -6002,15 +6002,227 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-245032f1",
+      "element_name": "Lurji Supra (Georgian Blue Tablecloth)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.orientotravel.com/wp-content/uploads/2026/01/Lurji-Supra-Georgian-Blue-Tablecloth-Oriento-Travel.jpg",
+      "source_urls": [
+        "https://www.orientotravel.com/the-azure-altar-secrets-of-the-georgian-tablecloth/",
+        "https://atinati.com/en/blue-tablecloth",
+        "https://bluetabla.ge/about-us",
+        "https://homofaber.com/en/discover/artisans/the-blue-tablecloth-atelier",
+        "https://tsvholding.ge/blue-tablecloths"
+      ],
+      "scraped_at": "2026-04-05T01:24:32.377068Z",
+      "location": {
+        "country": "Georgia",
+        "provinces": [
+          "Tbilisi",
+          "Telavi",
+          "Sighnaghi",
+          "Eastern Georgia"
+        ],
+        "lat": 41.6934591,
+        "lng": 44.8014495
+      },
+      "resume_analisa": {
+        "description": "The Lurji Supra, or Georgian Blue Tablecloth, is a distinctive and symbolically rich textile from the South Caucasus. It serves not only as a decorative household item but also as a ritual surface, a cultural code, and a link between the material and spiritual realms. Characterized by a striking dual palette of deep blue and white, it features sharp white motifs set against a rich blue background. These cheerful designs sometimes include inscriptions.",
+        "cultural_significance": "In Georgian tradition, the table adorned with the Lurji Supra transcends its everyday function, becoming an 'altar of hospitality, memory, and sacred order.' During its use, ordinary life is momentarily suspended, and food, wine, and words gain ritual importance. This craft embodies an organic blend of Eastern and Western cultural influences within Georgia. It gained widespread popularity in Tbilisi during the 19th century, becoming a staple for special occasions and celebrations. The choice of blue was practical, as it effectively concealed wine stains, an important consideration for feasts. The creation technique of Georgian blue cotton tablecloths is recognized as UNESCO's intangible cultural heritage.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Textile Art",
+          "Resist Dyeing",
+          "Cultural Heritage",
+          "Georgian Culture",
+          "Intangible Cultural Heritage",
+          "Ritual Object",
+          "Textile History"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Resist Dyeing (Woodblock Printing)",
+        "materials_and_tools": [
+          "White cotton or linen fabric",
+          "Pear or walnut wood (for carving blocks)",
+          "Wax and animal fat mixture (resist)",
+          "Fermented woad or indigo (blue dye)",
+          "Carved wooden blocks",
+          "Cold dye vat"
+        ],
+        "step_by_step": [
+          "Patterns are meticulously carved into dense woodblocks, typically made from pear or walnut wood.",
+          "The carved woodblocks are then coated with a mixture of wax and animal fat.",
+          "The wax-coated blocks are stamped onto white cotton or linen fabric, transferring the resist pattern.",
+          "The fabric, with its wax resist patterns, is submerged into a cold dye vat containing fermented woad or indigo. The wax prevents the dye from coloring the covered areas, creating the negative space for the design.",
+          "Finally, the cloth is heated to melt and remove the wax, revealing the sharp white motifs against the newly dyed deep blue background."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Turkey",
+            "element_name": "Traditional Textile Production/Dyeing Techniques",
+            "relationship_reason": "The technology for producing blue tablecloths was introduced to Georgia from the East, presumably from Turkey. One historical Lurji Supra even bears the signature of 'Petros from Diyarbakir,' a Turkish city known for textile production."
+          },
+          {
+            "country": "Persia (Iran)",
+            "element_name": "Textile Influences and Dyeing Techniques",
+            "relationship_reason": "Blue dyes entered Georgia through Persia, and Georgian artisans selectively adapted these influences, creating a distinct local textile language. Unlike Ottoman or Persian textiles, which often featured dense polychromy, the Lurji Supra preferred a restrained dual palette."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-71ec307e",
+      "element_name": "Traditional craftsmanship of the Mongol Ger and its associated customs",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00872-RL-EN-00018-medium.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+      ],
+      "scraped_at": "2026-04-05T01:24:00Z",
+      "location": {
+        "country": "Mongolia",
+        "provinces": [],
+        "lat": 46.8250388,
+        "lng": 103.8499736
+      },
+      "resume_analisa": {
+        "description": "The Mongol Ger is a portable, circular dwelling, a fundamental aspect of the nomadic lifestyle in Mongolia. It consists of a wooden frame, including walls, poles, and a peaked roof, which is then covered with layers of canvas and felt and secured with ropes. This structure is designed to be light enough for nomads to transport, flexible enough to be folded and packed, and sturdy enough to withstand Mongolia's harsh climate, including fierce spring winds. The craftsmanship involves various skills, including woodworking, felt-making, painting, sewing, and stitching.",
+        "cultural_significance": "The Mongol Ger is more than just a dwelling; it is a profound symbol of the nomadic lifestyle, cultural identity, and the resourcefulness of the Mongolian people. Its construction and associated customs play a vital social and cultural role for nomadic families, with the makers of Gers being highly respected within the community. The traditional ornamentation painted or carved on the wooden frame and furniture often carries symbolic meanings related to living nature, such as mountains, clouds, rivers, and fire, as well as auspicious symbols. The process of making felt for the Ger is often a communal activity, bringing families and neighbors together. The Ger's design has remained largely unchanged for centuries, a testament to its perfect adaptation to the steppe environment.",
+        "gemini_tags": [
+          "Mongolian culture",
+          "Nomadic lifestyle",
+          "Traditional dwelling",
+          "Felt making",
+          "Wood carving",
+          "Textile arts",
+          "Intangible Cultural Heritage",
+          "Communal practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting a traditional dwelling (Ger)",
+        "materials_and_tools": [
+          "Sheep's wool",
+          "Water or whey",
+          "Large mat",
+          "Wooden sticks (for beating wool)",
+          "Horse or other animals (for rolling felt)",
+          "Wood (for frame, poles, roof, door, furniture)",
+          "Canvas",
+          "Ropes (often made from animal hair)",
+          "Paint and brushes (for ornamentation)",
+          "Needles",
+          "Threads (e.g., camel wool threads, silk thread)",
+          "Scissors",
+          "Thimbles"
+        ],
+        "step_by_step": [
+          "**Felt Making**: Sheep's wool is sheared, cleaned by beating with wooden sticks to loosen fibers, and then laid out evenly on a large mat. The wool is sprinkled with water or whey, rolled up tightly, and then dragged behind a horse or rolled back and forth by hand for hours. This process of moisture, heat, and pressure causes the wool fibers to interlock, forming a dense, durable felt.",
+          "**Woodworking (Frame Construction)**: Men carve the wooden components of the Ger, including the lattice walls, roof poles, and the crown ring (toono). They also craft the door and various furniture pieces.",
+          "**Decoration**: The wooden frame, pillars, roof poles, and furniture are painted and decorated with traditional ornamentation. These designs often feature symbols of living nature, such as mountains, clouds, rivers, and fire, as well as auspicious symbols.",
+          "**Covering the Structure**: Layers of felt and canvas are prepared to cover the wooden frame of the Ger. Women are often adept at sewing and stitching these covers.",
+          "**Assembly**: The felt and canvas covers are placed over the wooden frame, and the entire structure is tightened with ropes, often made from animal hair. The Ger is designed for easy dismantling and reassembly, a communal family operation where children learn by observing their elders.",
+          "**Final Touches**: After assembly, the new felt is cut into shapes for roof, wall, crown, and door covers, and then laced and stitched. A small feast often follows the completion of felt-making, and participants receive shares or gifts."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Central Asia",
+            "element_name": "Felt-making traditions",
+            "relationship_reason": "Felt-making is a widespread and ancient technique among nomadic peoples across the Great Steppe, used for various purposes including dwellings and clothing."
+          },
+          {
+            "country": "China (Inner Mongolia)",
+            "element_name": "Mongolian embroidery and traditional clothing",
+            "relationship_reason": "Mongolian embroidery and traditional clothing (like the deel) are shared cultural practices among Mongolian ethnic groups, including those residing in China, reflecting similar nomadic heritage and aesthetic preferences."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-f5315716",
+      "element_name": "Kithul Madeema / Kithul Kapeema (Tapping Kithul Palm Sap)",
+      "category": "Traditional Community Practice",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318",
+        "https://ceylonwire.lk/sri-lanka-kithul-madeema-unesco-intangible-cultural-heritage-list/",
+        "https://rathuirapaper.com/unescos-list-of-intangible-cultural-sri-lanka-kithul-madeema-unescos-intangible-cultural-heritage-list/"
+      ],
+      "scraped_at": "2026-04-05T01:25:21.377467Z",
+      "location": {
+        "country": "Sri Lanka",
+        "provinces": [],
+        "lat": 7.5554942,
+        "lng": 80.7137847
+      },
+      "resume_analisa": {
+        "description": "Kithul Madeema, also known as Kithul Kapeema, is an ancient indigenous technology and traditional practice in Sri Lanka that involves extracting sap from the Kithul palm (Caryota urens tree). This sap is then processed to produce Kithul treacle (pani) and jaggery (hakuru). The practice is deeply embedded in the rural communities of Sri Lanka.",
+        "cultural_significance": "This practice is a vital part of Sri Lankan rural life, embodying traditional knowledge and skills passed down through generations. The resulting Kithul treacle and jaggery are integral to traditional Sri Lankan cuisine and are also used in indigenous medicine. The tradition faces significant threats from modernization, deforestation, and a decline in the number of skilled practitioners, highlighting the urgent need for its safeguarding.",
+        "gemini_tags": [
+          "Kithul palm",
+          "sap tapping",
+          "traditional sweetener",
+          "Sri Lankan heritage",
+          "rural practice",
+          "indigenous technology",
+          "Kithul treacle",
+          "Kithul jaggery"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Sap extraction and processing for treacle and jaggery",
+        "materials_and_tools": [
+          "Kithul palm (Caryota urens tree)",
+          "Ladder",
+          "Vines",
+          "Sacred cutting knife",
+          "Collection pot/container",
+          "Heat source (for boiling sap)"
+        ],
+        "step_by_step": [
+          "Identify a mature Kithul palm tree suitable for sap extraction.",
+          "Climb the Kithul tree using a specially constructed ladder.",
+          "Carefully tie the flower stalk of the Kithul palm with vines to prepare it for tapping.",
+          "Make precise cuts on the flower stalk using a sacred cutting knife, a crucial step that requires considerable skill and care.",
+          "Position a collection pot or container to gather the sap that drips from the cut flower stalk.",
+          "Collect the sap regularly, typically twice a day, to prevent fermentation.",
+          "Process the collected sap by boiling it down over a heat source until it thickens into Kithul treacle (pani).",
+          "For jaggery (hakuru), continue to boil and stir the treacle until it crystallizes and can be molded into solid blocks."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Various Asian countries (e.g., India, Indonesia, Thailand)",
+            "element_name": "Palm sugar production",
+            "relationship_reason": "The general practice of tapping various types of palm trees (such as coconut, date, or Palmyra palms) for sap to produce sweeteners like treacle and jaggery is a widespread traditional practice across many countries in South and Southeast Asia. While the specific Kithul palm and its associated cultural practices are unique to Sri Lanka, the underlying concept of palm sap harvesting for sweeteners is a shared heritage."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-03T01:22:59.915761Z",
-    "total_ich_elements": 71,
-    "complete_records": 66,
+    "generated_at": "2026-04-05T01:25:40.503751Z",
+    "total_ich_elements": 74,
+    "complete_records": 69,
     "incomplete_records": 5,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 28,
+      "Traditional Craftsmanship": 30,
       "Social Practices & Rituals": 18,
       "Culinary Traditions": 11,
       "Culinary Traditions | Social Practices & Rituals": 1,
@@ -6018,7 +6230,8 @@
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 4,
-      "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1
+      "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
+      "Traditional Community Practice": 1
     }
   }
 }
