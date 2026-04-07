@@ -6214,19 +6214,290 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c05f3095",
+      "element_name": "Aboriginal Firestick Farming (Cultural Burning)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fire-stick_farming_in_Australia.jpg/1280px-Fire-stick_farming_in_Australia.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fire-stick_farming",
+        "https://www.welcometocountry.com.au/blogs/shop/traditional-aboriginal-and-torres-strait-islander-land-management-practices-fire-stick-farming-and-beyond",
+        "https://www.cityofsydney.nsw.gov.au/news/aboriginal-fire-stick-farming-close-to-home-carbon-offsetting",
+        "https://www.parks.tas.gov.au/learn/cultural-heritage/aboriginal-cultural-burning",
+        "https://www.odysseytraveller.com/articles/aboriginal-fire-management/",
+        "https://www.education.sa.gov.au/teaching/curriculum-and-learning/aboriginal-education/firestick-farming",
+        "https://www.klc.org.au/indigenous-fire-management",
+        "https://www.wwf.org.au/what-we-do/bushfires/cultural-burning",
+        "https://www.sbs.com.au/voices/article/firestick-farming-how-traditional-indigenous-burning-protected-the-bush/19a99p07q",
+        "https://www.iawfonline.org/article/australia-fire-stick-farming/",
+        "https://www.australianstogether.org.au/discover/indigenous-history/learning-from-indigenous-fire-management-practices/",
+        "https://www.commonground.org.au/learn/traditional-fire-management",
+        "https://www.tandfonline.com/doi/full/10.1080/00049158.2024.2400344",
+        "https://wanyaari.com.au/the-science-behind-aboriginal-innovations/",
+        "https://www.pnas.org/doi/10.1073/pnas.1204758109",
+        "https://austhrutime.com/fire-stick_farmers.htm",
+        "https://www.aitsl.edu.au/docs/default-source/default-document-library/firestick-farming.pdf"
+      ],
+      "scraped_at": "2026-04-07T01:22:42.292044Z",
+      "location": {
+        "country": "Australia",
+        "provinces": [
+          "Northern Territory",
+          "Queensland",
+          "Western Australia",
+          "Tasmania",
+          "New South Wales",
+          "South Australia"
+        ],
+        "lat": -19.8516101,
+        "lng": 133.2303375
+      },
+      "resume_analisa": {
+        "description": "Aboriginal Firestick Farming, also known as cultural burning or cool burning, is a traditional land management practice employed by Aboriginal Australians for tens of thousands of years. It involves the careful and deliberate use of low-intensity fire to burn vegetation in a controlled manner. This technique is used to manage the landscape, reduce fuel loads, encourage new plant growth, facilitate hunting, and increase biodiversity. The practice creates a mosaic of burnt and unburnt patches across the land, which supports diverse wildlife and promotes regeneration.",
+        "cultural_significance": "Firestick farming is a central pillar of Aboriginal land management, deeply intertwined with Indigenous Australians' connection to Country, spiritual duties, and intergenerational knowledge transfer. It reflects a profound understanding of fire's ecological role in nutrient cycling, biodiversity promotion, and fire risk reduction. The practice is not merely a tool but a spiritual and cultural practice, reinforcing a custodial relationship with the land and ensuring its health and productivity for future generations. After being disrupted by European colonization, there is a growing recognition of its cultural value and its crucial role in stemming destructive bushfires and promoting ecosystem health in contemporary Australia.",
+        "gemini_tags": [
+          "Traditional Ecological Knowledge",
+          "Land Management",
+          "Indigenous Practices",
+          "Fire Ecology",
+          "Biodiversity Conservation",
+          "Cultural Heritage",
+          "Australia",
+          "Bushfire Prevention",
+          "Oral Tradition",
+          "Social Rituals",
+          "Environmental Stewardship"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Land Management Practice",
+        "materials_and_tools": [
+          "Firesticks (traditional)",
+          "Deep ecological knowledge of local environment (plants, animals, soil, weather, seasons)",
+          "Multi-season calendars (traditional)",
+          "Modern tools like GIS and helicopters (in contemporary applications)"
+        ],
+        "step_by_step": [
+          "**Reading Country**: Elders and practitioners meticulously observe the local environment, including trees, plants, soil types, moisture levels, topography, and wind patterns. This deep ecological knowledge, often guided by multi-season calendars, informs the decision of when, where, and how intensely to burn.",
+          "**Timing**: Fires are typically lit during the early, cooler dry season (e.g., between March and July in Northern Australia) when weather conditions, such as humidity and wind, allow for low-intensity, controlled burns.",
+          "**Lighting Small, Controlled Fires**: Fire is applied in small, targeted patches, traditionally using firesticks, to ignite dry grasses and leaf litter.",
+          "**Maintaining Low Intensity (Cool Burns)**: The fires are deliberately kept at a low heat intensity, known as 'cool burns'. This ensures that the tree canopy remains protected, deeper plant roots are preserved, and the risk of high-intensity, destructive wildfires is significantly reduced.",
+          "**Creating Mosaic Patterns**: The burning process is designed to create a mosaic of burnt and unburnt areas across the landscape. This patchy burning strategy provides diverse habitats for wildlife, promotes the regeneration of specific plant species, and establishes natural firebreaks.",
+          "**Continuous Observation and Adaptation**: Practitioners constantly monitor the fire's behavior and the environmental response, adapting their techniques to suit the specific conditions of each region and the immediate ecological needs of the Country."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Botswana",
+            "element_name": "Indigenous fire management programs",
+            "relationship_reason": "Australian Aboriginal fire management programs, including 'firestick farming' principles, are being exported to other countries like Botswana through Australian government aid programs and the United Nations University, demonstrating shared principles of traditional ecological knowledge for land management."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c2f5c04c",
+      "element_name": "Mola Textile Art",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+        "https://en.wikipedia.org/wiki/Mola_(art_form)",
+        "https://unframed.lacma.org/2012/08/06/mola-textiles-and-the-kuna-indians",
+        "https://www.discover.silversea.com/destinations/central-south-america/how-the-molas-of-panama-became-a-symbol-of-cultural-identity/",
+        "https://visitlatinamerica.com/en/article/the-art-of-the-mola-when-textiles-tell-the-story-of-the-kunas",
+        "https://indiartscollective.com/blogs/news/the-making-molas",
+        "https://eyesoncolombia.wordpress.com/2009/08/18/the-mola-art-form/",
+        "https://benton.uconn.edu/exhibitions/past-exhibitions/molas-textile-designs-of-the-guna-indians-of-panama/",
+        "https://eobquiltdesign.com/blogs/news/make-a-mola-with-block-10"
+      ],
+      "scraped_at": "2026-04-07T01:23:15.635627Z",
+      "location": {
+        "country": "Panama",
+        "provinces": [
+          "Guna Yala",
+          "San Blas Islands"
+        ],
+        "lat": 9.1875975,
+        "lng": -77.8713723
+      },
+      "resume_analisa": {
+        "description": "Mola textile art is a distinctive hand-made textile form created by the indigenous Guna (also known as Kuna) women. It involves a reverse appliqué technique using multiple layers of brightly colored cotton fabrics. Molas typically feature intricate designs depicting stylized animals, plants, geometric patterns, scenes of daily life, and sometimes historical or modern themes. These panels are traditionally sewn together to form the front and back of a Guna woman's blouse, known as 'dulemor' or 'mola' in the Guna language, which means 'shirt' or 'clothing'.",
+        "cultural_significance": "Molas are an essential symbol of Guna cultural identity and national pride. The art form originated from the Guna tradition of body painting with geometric designs, which transitioned to textiles after contact with Spanish settlers and missionaries. Historically, molas also served as a symbol of political resistance against assimilation policies by the Panamanian government. The creation of molas is an exclusively female task, passed down through generations from grandmothers and mothers to young girls, making it a vital aspect of Guna women's heritage and a significant source of income. Molas are considered a medium for social commentary, personal creativity, and fashion within Guna society.",
+        "gemini_tags": [
+          "Textile Art",
+          "Indigenous Craft",
+          "Reverse Appliqué",
+          "Cultural Identity",
+          "Panamanian Culture",
+          "Colombian Culture",
+          "Women's Craft",
+          "Traditional Dress",
+          "Guna People"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "Multiple layers (2-7 or more) of different colored cotton fabrics (often with a black base layer)",
+          "Appliqué needles",
+          "Milliners needles",
+          "Matching thread (often the same color as the layer being stitched)",
+          "Small, sharp scissors",
+          "Mola patterns (sometimes drawn, sometimes conceived mentally)",
+          "Mechanical pencil or Frixion gel pen (for tracing designs, if used)",
+          "Safety pins or straight pins (for basting)"
+        ],
+        "step_by_step": [
+          "Gather several layers of different colored cotton fabrics (typically 2 to 7, but can be more), often starting with a black base fabric to enhance other colors.",
+          "Stack the chosen fabric layers one on top of the other and stitch them together, often by basting.",
+          "Draw the desired design onto the top layer of fabric, or work directly from a mental pattern.",
+          "Using small, sharp scissors, carefully cut away parts of the top layer of fabric to begin revealing the color of the layer beneath.",
+          "Fold under the raw edges of the cut fabric and stitch them down with tiny, nearly invisible stitches, using thread that matches the fabric color.",
+          "Continue this reverse appliqué process by cutting progressively smaller patterns into subsequent layers and stitching down their edges, revealing the underlying colors and creating a multi-layered, multi-dimensional design.",
+          "Additional small pieces of colored cloth may be inserted between layers, and intricate embroidery can be added to further embellish the design.",
+          "Mola panels are typically created in pairs to form the front and back of a traditional Guna woman's blouse, to which a yoke and arms are then attached to complete the garment."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Colombia",
+            "element_name": "Mola Textile Art",
+            "relationship_reason": "The Guna people, who are the creators of Mola textile art, reside in both Panama and parts of neighboring Colombia, sharing the same cultural traditions and art form."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-16a44444",
+      "element_name": "Lakhon Nang Sbek Thom (Khmer Shadow Theatre)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/08468-SM.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Khmer_shadow_theatre",
+        "https://ich.unesco.org/en/RL/sbek-thom-khmer-shadow-theatre-00108",
+        "https://www.intocambodia.org/content/sbaek-lakhaoun-khmer-shadow-theatre",
+        "https://www.fiveable.me/ap-world/study-guides/sbek-thom-khmer-shadow-puppet-theater-9781501719332",
+        "https://www.dokumen.pub/sbek-thom-khmer-shadow-theater-9781501719332.html",
+        "https://www.sraart.com/sbek-thom-khmer-shadow-theater",
+        "https://www.worldinvestmentnews.com/cambodia/cambodian-dance",
+        "https://www.angkor-database.org/nang-sbek-the-cambodian-shadow-theater",
+        "https://www.tourismcambodia.com/khmer-art-culture/khmer-arts.htm",
+        "https://www.charyaburt.com/brief-history-of-cambodian-dance",
+        "https://www.cambodiaadventureguide.com/the-kingdom-of-cambodia",
+        "https://www.bestpricetravel.com/travel-guide/cambodia/cambodia-arts-and-craft.html",
+        "https://www.khsearch.com/articles/2313/khmer-art-summary",
+        "https://www.kampucheathmey.com/2022/08/30/253995.html",
+        "https://www.7january.gov.kh/article/1858",
+        "https://www.scribd.com/document/360405101/History-and-Khmer-Art-History",
+        "https://www.eric-kim.com/blog/khmer-aesthetics-a-comprehensive-overview",
+        "https://www.metahousephnompenh.org/khmer-art-history-and-culture",
+        "https://www.anytexture.com/artisans-angkor-traditional-crafts-in-siem-reap-cambodia/",
+        "https://www.fairtradevillage.com/blog/khmer-handicraft-techniques-in-danger-as-imitation-handicrafts-flood-siem-reap-market-stalls",
+        "https://www.ucdavis.edu/news/celebrating-cambodian-traditions-ceremonial-practices",
+        "https://www.hsolb.org/cambodian-culture",
+        "https://www.tourismcambodia.com/culture/khmer-wedding.htm",
+        "https://www.wikiwand.com/en/Theatre_of_Cambodia",
+        "https://www.wikiwand.com/en/Culture_of_Cambodia"
+      ],
+      "scraped_at": "2026-04-07T01:23:47.221092Z",
+      "location": {
+        "country": "Cambodia",
+        "provinces": [
+          "Siem Reap",
+          "Phnom Penh",
+          "Battambang"
+        ],
+        "lat": 13.3617562,
+        "lng": 103.8590321
+      },
+      "resume_analisa": {
+        "description": "Lakhon Nang Sbek Thom, also known as Khmer Shadow Theatre, is a classical Cambodian performing art form that utilizes large, non-articulated leather puppets to narrate stories. The primary repertoire is drawn from the Reamker, the Cambodian adaptation of the Indian epic Ramayana, alongside other Hindu and Buddhist tales. Performances involve puppeteers dancing with the figures behind a large white screen, illuminated by a light source (traditionally a bonfire or modern projectors), and are accompanied by a Pin Peat orchestra and narrators who recite and sing the text.",
+        "cultural_significance": "Dating back to before the Angkorian period, Lakhon Nang Sbek Thom is considered a sacred art form, embodying Khmer beliefs rooted in Brahmanism and Buddhism. Historically, performances were ritualistic, dedicated to divinities, and held on significant occasions such as the Khmer New Year, the King's birthday, or veneration ceremonies. It functions as a vital medium for conveying moral, ethical, and religious teachings to the community. The art form faced severe threats and near eradication during the Khmer Rouge regime but has experienced a significant revival thanks to the efforts of surviving artists and cultural institutions.",
+        "gemini_tags": [
+          "Khmer Shadow Theatre",
+          "Puppetry",
+          "Traditional Performing Arts",
+          "Cambodian Culture",
+          "Reamker",
+          "Intangible Cultural Heritage",
+          "Ritual Performance",
+          "Leather Puppets",
+          "Pin Peat Orchestra",
+          "Angkorian Era"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship (Puppet Making) & Performing Arts (Performance)",
+        "materials_and_tools": [
+          "Cowhide (or buffalo skin)",
+          "Ash (for cleaning/preserving hides)",
+          "Kandaol tree bark solution (for dyeing hides)",
+          "Sharp tools (chisels, knives for cutting designs)",
+          "Bamboo sticks (for puppet manipulation)",
+          "Large white screen (approx. 10m wide, 4m high)",
+          "Tall bamboo screens/poles (to hold the screen)",
+          "Bonfire (coconut shells or firewood) or projectors (light source)",
+          "Pin Peat orchestra instruments (e.g., roneat ek, roneat thung, kong thom, sralai, sampho, skor thom, chheung)"
+        ],
+        "step_by_step": [
+          "**Puppet Making:**",
+          "1. Select and prepare cowhide or buffalo skin.",
+          "2. 'Kill' the hide (known as 'samlab Sbek') by immersing it in ash to prevent rotting.",
+          "3. Stretch the hide and meticulously remove any remaining flesh using sharp knives.",
+          "4. Soak the hide in a solution made from beaten Kandaol tree bark for several days to dye it, resulting in colors ranging from red to yellow or dark brown.",
+          "5. Draw the desired figures, typically characters from the Reamker, gods, or deities, onto the tanned hide.",
+          "6. Carefully cut out the intricate designs and perforations using sharp tools like chisels and knives.",
+          "7. Paint the cut-out pieces, often using vivid colors, although these colors are not visible during the shadow performance.",
+          "8. Attach two bamboo sticks to the puppet, enabling the puppeteer to manipulate it during the performance.",
+          "**Performance:**",
+          "1. Erect a large white screen, typically around 10 meters wide and 4 meters high, on poles approximately 2.5 meters above the ground, usually outdoors beside a rice field or pagoda.",
+          "2. Set up a light source, traditionally a bonfire fueled by coconut shells or firewood, or modern projectors, behind the screen to cast the shadows.",
+          "3. Before the performance commences, artists gather to pray and meditate, burning incense and chanting to prepare themselves for the sacred storytelling.",
+          "4. The Pin Peat orchestra begins to play, providing musical accompaniment, while narrators (one for the general story, another for specific characters) recite and sing the epic text.",
+          "5. Puppeteers, who are also dancers, manipulate the large, non-articulated leather puppets using the attached bamboo sticks. They move with precise and specific dance steps behind the screen, bringing the silhouettes to life.",
+          "6. The movements of the puppeteers are choreographed to reflect the characters they portray, with noble characters moving gracefully and monkey characters exhibiting lively movements."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Wayang Kulit",
+            "relationship_reason": "Lakhon Nang Sbek Thom is recognized as the Cambodian counterpart to Indonesia's Wayang Kulit, both being traditional forms of shadow play utilizing leather puppets."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Nang Yai and Nang Talung",
+            "relationship_reason": "Khmer shadow theatre is closely related to and shares resemblances with the shadow plays of Thailand, specifically Nang Yai (large figures) and Nang Talung (small, movable figures). Historical connections and mutual influences between these traditions are acknowledged."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-05T01:25:40.503751Z",
-    "total_ich_elements": 74,
-    "complete_records": 69,
+    "generated_at": "2026-04-07T01:24:19.011125Z",
+    "total_ich_elements": 77,
+    "complete_records": 72,
     "incomplete_records": 5,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 30,
-      "Social Practices & Rituals": 18,
+      "Traditional Craftsmanship": 31,
+      "Social Practices & Rituals": 19,
       "Culinary Traditions": 11,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 6,
+      "Performing Arts": 7,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 4,
