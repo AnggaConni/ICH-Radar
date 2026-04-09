@@ -6485,22 +6485,288 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-d5ab8573",
+      "element_name": "Gzhel Painting",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gzhel_teapot.jpg/800px-Gzhel_teapot.jpg",
+      "source_urls": [
+        "https://www.gzhel.ru/o-gzheli/tehnika-gzhelskoj-rospisi/",
+        "https://www.culture.ru/s/gzhel/",
+        "https://krestcy.ru/nezno-goluboe-cudo-skazocnaa-gzel/",
+        "https://obuchonok.ru/node/1406",
+        "https://dpo-edu.ru/promysly/gzhelskaya-rospis",
+        "https://sreda-studio.ru/blog/gzhelskaya-keramika-istoriya-vozniknoveniya-promysla",
+        "https://www.youtube.com/watch?v=J8r_6o3g48E",
+        "https://www.maam.ru/detskiisad/kak-risovat-v-tehnike-gzhel-v-starshei-grupe.html",
+        "https://vashsamovar.ru/blog/gzhel-tekhnologiya-izgotovleniya/",
+        "https://www.live-the-world.com/articles/russia/gzhel-porcelain-20-shades-of-blue",
+        "https://masteridelo.ru/remeslo/rukodelie-i-tvorchestvo/rospis/gzhel/gzhelskaya-rospis-istoriya-osobennosti.html",
+        "https://www.youtube.com/watch?v=s1j-g70xW6c",
+        "https://www.gzhel.net/about/history/",
+        "https://www.bridge-to-moscow.com/russian-culture/gzhel/",
+        "https://www.sovfarfor.ru/applied-art/porcelain/gzhel.html",
+        "https://russian-crafts.com/gzhel-porcelain/",
+        "https://crees.ku.edu/gzhel",
+        "https://ru.wikipedia.org/wiki/%D0%93%D0%B6%D0%B5%D0%BB%D1%8C",
+        "https://www.culture.ru/materials/253381/krasota-iskonno-russkikh-ornamentov-v-rospisi-fayansa-i-izraztsov-gzhel",
+        "https://vk.com/@gzhel_ceramics-gzhelskaya-rospis-istoriya-vidy-rospisi-cveta-i-elementy-2020",
+        "https://tutsplus.com/tutorials/how-to-create-a-gzhel-pottery-russian-pattern-in-adobe-illustrator--cms-31776",
+        "https://kure.edu.tr/en/gzhel-porcelain/",
+        "https://ok.ru/group/55941655619623/topic/156942466085543"
+      ],
+      "scraped_at": "2026-04-09T01:14:33.572770Z",
+      "location": {
+        "country": "Russia",
+        "provinces": [
+          "Moscow Oblast",
+          "Ramensky District"
+        ],
+        "lat": 55.5043158,
+        "lng": 38.0353929
+      },
+      "resume_analisa": {
+        "description": "Gzhel painting is a renowned Russian folk handicraft characterized by its distinctive blue designs on a pure white ceramic or porcelain base. The craft originated in the Gzhel region, southeast of Moscow, which has been known for its high-quality clay since the 14th century. Initially, Gzhel ceramics were multicolored, often using the majolica technique. However, in the early 19th century, the iconic blue-and-white style emerged, influenced by European and Chinese blue-and-white ceramics, particularly Dutch Delftware. The designs typically feature floral motifs (especially roses), birds, leaves, and sometimes folk scenes, rendered with a unique \"brushstroke with shadows\" technique that creates subtle tonal transitions from dark to light blue using a single brushstroke. Gzhel items include a wide range of tableware, home decor, and figurines.",
+        "cultural_significance": "Gzhel ceramics are not merely craft products but a significant national symbol of Russian home design and a vital element of Russian cultural identity. The tradition has been passed down through generations of skilled artisans, often women, who maintain the traditional techniques. Despite periods of decline, including near extinction after World War II, Gzhel has been revived through the dedicated efforts of art historians and artists, ensuring its survival and continued evolution. It is a cherished souvenir for tourists and adorns many Russian homes, embodying centuries of history, mastery, and artistic development.",
+        "gemini_tags": [
+          "Russian folk art",
+          "ceramic painting",
+          "blue and white ceramics",
+          "traditional craft",
+          "porcelain art",
+          "cultural heritage",
+          "decorative art",
+          "pottery",
+          "hand-painted",
+          "floral motifs"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ceramic and Porcelain Hand-Painting",
+        "materials_and_tools": [
+          "High-quality white clay (porcelain clay)",
+          "Cobalt oxide paint (appears black when applied, turns blue after firing)",
+          "Transparent glaze",
+          "Brushes (flat, synthetic, natural bristles, with an oval edge)",
+          "Kiln (for high-temperature firing)",
+          "Plaster molds (for shaping items)",
+          "Knife or sponge (for smoothing)",
+          "Palette (for mixing paints)",
+          "Water (for diluting paints)"
+        ],
+        "step_by_step": [
+          "Clay Preparation: High-quality white clay is purified and mixed with water to achieve a homogeneous, fluid consistency.",
+          "Molding: The liquid clay is poured into plaster molds to create the desired shapes for various items like teapots, plates, jugs, vases, and figurines. Individual parts (e.g., handles, lids) are often molded separately and then carefully assembled. Plaster molds are used because they absorb excess moisture, making the product stronger.",
+          "Drying and Smoothing: After removal from the molds, the pieces are dried. Any surface irregularities are then corrected by meticulous cleaning with a special knife and polishing with a sponge.",
+          "Painting (Underglaze): Traditional designs are applied by hand using cobalt oxide paint. This paint appears black when applied but transforms into a vibrant blue during firing. Gzhel painters use specific brushstrokes, notably the \"brushstroke with shadows\" (also known as the \"Chinese stroke\" or \"double stroke\"). This technique involves loading different amounts of paint onto the brush, often with more paint on one side, and then pressing and twisting the brush to create a smooth transition from dark, saturated blue to light, almost transparent blue within a single stroke. Motifs typically include flowers (especially roses), leaves, birds, and sometimes narrative folk scenes. Each stroke's appearance is influenced by the amount of paint, pressure, duration, and angle of contact with the surface.",
+          "Glazing: Once the painting is complete, the items are coated with a transparent glaze, which will become glossy after firing.",
+          "Firing: The glazed and painted items are fired in a kiln at high temperatures, typically around 1400 degrees Celsius. This crucial step causes the cobalt oxide to develop its characteristic rich blue color and the glaze to become transparent and shiny, making the ceramic surface strong and durable."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Netherlands",
+            "element_name": "Delftware",
+            "relationship_reason": "Gzhel's blue-and-white style became popular in Russia in the 17th century, influenced by European ceramics, particularly Dutch Delftware."
+          },
+          {
+            "country": "China",
+            "element_name": "Blue and white porcelain",
+            "relationship_reason": "Gzhel porcelain makers honed a process to produce white porcelain similar to that of Europe and China, and the blue and white designs were influenced by techniques from Europe and Asia."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-39c23ecb",
+      "element_name": "Byliny (Russian Oral Epic Poems)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Bylina&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Bylina",
+        "https://www.bookbrowse.com/excerpts/index.cfm/book_number/4117/the-story-of-russia/the-bylina",
+        "https://grokipedia.org/wiki/Bylina",
+        "https://lucetadicosimo.wordpress.com/2012/03/07/introduction-to-byliny-russian-heroic-poems/",
+        "https://www.britannica.com/art/bylina",
+        "https://www.literaryencyclopedia.com/php/sworks.php?rec=true&UID=17562",
+        "https://academic.oup.com/edited-volume/44426/chapter-abstract/374640821?redirectedFrom=fulltext",
+        "https://edblogs.columbia.edu/worldepics/bylinas/",
+        "https://mail.ru/vokrugsveta/articles/chto-takoe-bylina-istoriya-etimologiya-slova-geroi-i-kulturnyi-kontekst-181140078/",
+        "https://www.russia.com/culture/literature/folklore/byliny/",
+        "https://ru.wikipedia.org/wiki/%D0%91%D1%8B%D0%BB%D0%B8%D0%BD%D0%B0",
+        "https://vk.com/@vremyaveka-narodnye-skaziteli-i-bylinnye-tradicii-rossii-2025",
+        "https://www.britannica.com/art/epic-poetry",
+        "https://www.ebsco.com/products/research-starters/literature-writing/european-oral-and-epic-traditions",
+        "https://lanternsearchlight.medium.com/the-epic-poem-and-poet-singing-our-origin-stories-into-truth-182373722971",
+        "https://slavtradition.ru/vse-o-russkih-bylinah/",
+        "https://cyberleninka.ru/article/n/geography-of-bylinas-in-semantic-opposition-own-alien",
+        "https://www.masterclass.com/articles/what-is-an-epic-poem",
+        "https://en.wikipedia.org/wiki/Epic_poetry",
+        "https://www.versologie.cz/pdf/2014_2_konashkov.pdf"
+      ],
+      "scraped_at": "2026-04-09T01:15:12.333765Z",
+      "location": {
+        "country": "Russia",
+        "provinces": [
+          "Arkhangelsk Oblast",
+          "Olonetsky Krai",
+          "Pechora region",
+          "Karelia",
+          "Siberia",
+          "Kievan Rus' (historical region)"
+        ],
+        "lat": 63.5589686,
+        "lng": 43.1221646
+      },
+      "resume_analisa": {
+        "description": "Byliny (Russian: былина; plural: byliny) are traditional Old Russian narrative poems, a form of oral epic poetry, also popularly known as *stariny* (Russian: старины), meaning \"old songs\". These epics combine elements of history and fantasy, focusing on the heroic deeds of *bogatyrs* (legendary knights) who defend Russian lands from enemies. Byliny originated in the medieval period of Kievan Rus' (roughly 10th–13th centuries) and were transmitted orally by *skomorokhi* (itinerant performers), *kaliki perekhozhie* (religious pilgrims), and later by peasant singers. They were often performed by a single individual, sometimes accompanied by a *gusli*, a harp-like instrument. Byliny typically follow a linear structure comprising an introduction, a narrative portion, and an epilogue, often employing exaggerated details and hyperbole to make the stories more exciting. They are characterized by their rhythmic, poetic structure and the use of formulaic elements, including specific beginnings (*zachin*) and endings (*kontsovka*). Famous heroes include Ilya Muromets, Dobrynya Nikitich, and Alyosha Popovich.",
+        "cultural_significance": "Byliny hold a unique and enduring place in the cultural landscape of Russia, serving as a living bridge between the past and present, and an oral archive of history, mythology, values, and national identity. They are considered emblematic of the Russian soul and spirit, reflecting themes of national identity, valor, and folklore motifs. These epic poems were crucial in preserving ancient beliefs, worldviews, and historical information across generations, often presenting a folk history that could diverge from official accounts. Byliny blend pagan and Christian elements, glorifying warrior exploits and princely courts. During the Soviet era, the heroic themes of byliny were popularized, and their heroes were featured in inspirational films. Even today, byliny continue to influence Russian literature, arts, and modern adaptations, underscoring their lasting legacy in Slavic cultural studies.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Epic Poetry",
+          "Russian Folklore",
+          "Heroic Narrative",
+          "Storytelling",
+          "Slavic Culture",
+          "Medieval History",
+          "Bogatyrs",
+          "Gusli",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Ancient Greece",
+            "element_name": "Iliad and Odyssey (Homer's epics)",
+            "relationship_reason": "Both are foundational oral epic poems, sharing characteristics like heroic narratives, formulaic structures, and transmission through performance, serving to transmit shared myths and histories across generations."
+          },
+          {
+            "country": "Mesopotamia",
+            "element_name": "Epic of Gilgamesh",
+            "relationship_reason": "Considered one of the oldest surviving epic poems, it shares the characteristic of being a lengthy narrative about extraordinary deeds and characters, often with a blend of human and divine elements."
+          },
+          {
+            "country": "Germany",
+            "element_name": "Nibelungenlied",
+            "relationship_reason": "A heroic epic poem from medieval Europe, reflecting similar themes of heroism, national identity, and legendary narratives."
+          },
+          {
+            "country": "England",
+            "element_name": "Beowulf",
+            "relationship_reason": "An Old English epic poem, sharing heroic themes, an oral tradition background, and the recounting of extraordinary feats of warriors."
+          },
+          {
+            "country": "India",
+            "element_name": "Mahabharata and Ramayana",
+            "relationship_reason": "Ancient Indian epic poems composed in Sanskrit, demonstrating the global prevalence of epic poetry as a means of preserving cultural histories and communal values."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-d47c6240",
+      "element_name": "Traditional Ways of Making Artisanal Minas Cheese (Modo de Fazer Queijo Minas Artesanal)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/02102-CLT-2024-000035-0001.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/traditional-ways-of-making-artisan-minas-cheese-in-minas-gerais-02102",
+        "http://portal.iphan.gov.br/bem/detalhes/147",
+        "https://agenciabrasil.ebc.com.br/en/cultura/noticia/2024-12/unesco-recognizes-artisanal-minas-cheese-intangible-heritage",
+        "https://www.estadao.com.br/paladar/como-e-feito-o-queijo-minas-artesanal/",
+        "https://www.gov.br/cultura/pt-br/noticias/2024/12/modos-de-fazer-o-queijo-minas-artesanal-sao-reconhecidos-como-patrimonio-cultural-da-humanidade"
+      ],
+      "scraped_at": "2026-04-09T01:15:43.093506Z",
+      "location": {
+        "country": "Brazil",
+        "provinces": [
+          "Minas Gerais"
+        ],
+        "lat": -18.5264844,
+        "lng": -44.1588654
+      },
+      "resume_analisa": {
+        "description": "The Traditional Ways of Making Artisanal Minas Cheese (Modo de Fazer Queijo Minas Artesanal) refer to the centuries-old practices of producing cheese from raw milk in the state of Minas Gerais, Brazil. This tradition involves specific knowledge and techniques passed down through generations, particularly among small rural producers. The cheese is characterized by its unique flavor, color, and aroma, which are influenced by the local climate, pastures, cattle management, and the use of 'pingo' – a natural yeast derived from the cheese-making process itself. It is a firm, slightly crumbly cheese with a mild yet distinctive flavor. The production is deeply rooted in the daily lives of farmers and is a significant part of the cultural identity of the region.",
+        "cultural_significance": "The 'Modo de Fazer Queijo Minas Artesanal' holds immense cultural significance, having been recognized as an Intangible Cultural Heritage of Humanity by UNESCO in December 2024, making it the first Brazilian food-making tradition to receive this title. It was previously recognized as a Cultural Heritage of Brazil by IPHAN in 2008. This practice is intrinsically linked to the history and culture of Minas Gerais, dating back over three centuries to the colonial period and the gold rush, when an enduring food was needed for long journeys. It is associated with hospitality and is commonly consumed with sweets and drinks during meetings and special occasions. The tradition reinforces a sense of belonging to a place and community, strengthens local economies, and promotes socioeconomic inclusion, especially for family farming. The process emphasizes human interaction, with knowledge transmitted orally through observation and daily practice.",
+        "gemini_tags": [
+          "Culinary Tradition",
+          "Intangible Cultural Heritage",
+          "Cheese Making",
+          "Brazilian Culture",
+          "Minas Gerais",
+          "Traditional Craftsmanship",
+          "Family Farming",
+          "Social Practices"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Cheese Making (Culinary Practice)",
+        "materials_and_tools": [
+          "Raw cow's milk (not ultrapasteurized)",
+          "Rennet or liquid coagulant",
+          "Salt (coarse salt)",
+          "Pingo (natural yeast/whey from previous day's cheese production)",
+          "Large, deep pot or milk container",
+          "Thermometer (optional, for temperature control)",
+          "Skimmer",
+          "Cheese molds (cylindrical forms)",
+          "Pressing surface/method",
+          "Maturation room (temperature-controlled)"
+        ],
+        "step_by_step": [
+          "After milking, the raw milk is collected and brought to a dedicated production room.",
+          "Rennet (or liquid coagulant) and 'pingo' (whey from the previous day's cheese, rich in lactic bacteria) are added to the milk and stirred. The 'pingo' is crucial for the cheese's characteristic flavor.",
+          "The milk is left to rest for 30 to 45 minutes to allow coagulation, forming a consistent curd.",
+          "The coagulated curd is then cut horizontally and vertically.",
+          "After a brief rest (around 5 minutes) for the whey to separate, the curds are gently stirred.",
+          "The curds are transferred to cylindrical cheese molds, often using a skimmer, allowing excess whey to drain.",
+          "The cheesemaker presses the curds by hand within the molds to further remove whey.",
+          "Coarse salt is applied to the cheese in the molds during the pressing process.",
+          "The cheese is then moved to a maturation room, where it is kept at a controlled temperature for a minimum of 17 days (or 14 to 22 days, depending on the specific region and desired characteristics) to lose water and develop its complex flavors and aroma."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Portugal",
+            "element_name": "Traditional Portuguese cheese-making",
+            "relationship_reason": "The origins of Minas Artisanal Cheese date back to the late 17th and early 18th centuries, when Portuguese settlers in Minas Gerais adapted traditional Portuguese curd cheese recipes to local conditions, particularly to create a food that could endure long journeys during the gold rush."
+          },
+          {
+            "country": "Various European countries",
+            "element_name": "Artisanal raw milk cheese production",
+            "relationship_reason": "While the specific 'Modo de Fazer Queijo Minas Artesanal' is unique to Minas Gerais, the broader practice of producing artisanal cheese from raw milk using natural ferments and traditional methods is a shared heritage found in many European countries, reflecting a common approach to preserving milk and creating distinct regional food products."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-07T01:24:19.011125Z",
-    "total_ich_elements": 77,
-    "complete_records": 72,
-    "incomplete_records": 5,
+    "generated_at": "2026-04-09T01:16:17.487385Z",
+    "total_ich_elements": 80,
+    "complete_records": 74,
+    "incomplete_records": 6,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 31,
+      "Traditional Craftsmanship": 32,
       "Social Practices & Rituals": 19,
-      "Culinary Traditions": 11,
+      "Culinary Traditions": 12,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 7,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 4,
+      "Oral Traditions": 5,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1
     }
