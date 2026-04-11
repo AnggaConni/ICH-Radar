@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICH Radar | AI-Powered Cultural Intelligence & Learning Hub</title>
-    <meta name="description" content="Discover, document, and analyze Intangible Cultural Heritage (ICH) practices. Learn about UNESCO Operational Directives and Capacity Building.">
     
+    <!-- Primary Meta Tags -->
+    <title>ICH Radar | AI-Powered Cultural Intelligence & Learning Hub</title>
+    <meta name="title" content="ICH Radar | AI-Powered Cultural Intelligence & Learning Hub">
+    <meta name="description" content="An AI-assisted OSINT engine designed to discover, document, and analyze Intangible Cultural Heritage (ICH) practices worldwide. Explore UNESCO's 2003 Convention frameworks.">
+    <meta name="keywords" content="Intangible Cultural Heritage, ICH, UNESCO 2003 Convention, Theory of Change, COM-B Model, Cultural Preservation, OSINT, AI, Anthropology">
+    <meta name="author" content="Angga Conni Saputra">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anggaconni.github.io/TheoryofChange_COM-B/index.html">
+    <meta property="og:title" content="ICH Radar | AI-Powered Cultural Intelligence & Learning Hub">
+    <meta property="og:description" content="Discover, document, and analyze Intangible Cultural Heritage (ICH) practices from across the world using AI. Learn about UNESCO Operational Directives and Capacity Building.">
+    <meta property="og:image" content="thum.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://anggaconni.github.io/TheoryofChange_COM-B/index.html">
+    <meta property="twitter:title" content="ICH Radar | AI-Powered Cultural Intelligence & Learning Hub">
+    <meta property="twitter:description" content="An AI-assisted OSINT engine designed to discover, document, and analyze Intangible Cultural Heritage (ICH) practices worldwide.">
+    <meta property="twitter:image" content="thum.png">
+
+    <!-- Inline SVG Favicon (Woven/Infinity Knot representing Cultural Lineage) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%2300ffcc' stroke-width='8'/%3E%3Cpath d='M30 50 C 30 20, 70 20, 70 50 C 70 80, 30 80, 30 50 Z' fill='none' stroke='%23facc15' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23ff00aa'/%3E%3C/svg%3E">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -61,18 +83,15 @@
     <style>
         body { background-color: #0a0a0a; color: #f5f5f5; overflow-x: hidden; }
         
-        /* Grid Background Pattern */
         .bg-grid {
             background-size: 40px 40px;
             background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
                               linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
         }
 
-        /* Hide Scrollbar for Carousel but keep functionality */
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* Mockup Specific Styles */
         .mockup-container { box-shadow: 0 0 50px -10px rgba(0, 255, 204, 0.15), 0 0 0 1px #1f1f1f; }
         .glowing-line-mockup {
             stroke: #00ffcc;
@@ -81,7 +100,6 @@
             animation: dashMove 2s linear infinite;
         }
         
-        /* Glowing Journal Button */
         .btn-journal {
             background-color: rgba(255, 0, 170, 0.1);
             color: #ff00aa;
@@ -95,11 +113,18 @@
             box-shadow: 0 0 20px rgba(255, 0, 170, 0.6);
         }
 
-        /* Quiz Option Styles */
         .quiz-option { transition: all 0.2s ease; }
         .quiz-option:hover:not(:disabled) { border-color: #00ffcc; background-color: rgba(0, 255, 204, 0.05); }
         .quiz-correct { border-color: #10b981 !important; background-color: rgba(16, 185, 129, 0.1) !important; color: #10b981 !important; }
         .quiz-wrong { border-color: #ef4444 !important; background-color: rgba(239, 68, 68, 0.1) !important; color: #ef4444 !important; opacity: 0.7; }
+        
+        /* Modal Styling */
+        .modal-blur { backdrop-filter: blur(8px); }
+        .prose-custom h4 { color: white; font-weight: bold; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .prose-custom p { color: #d1d5db; margin-bottom: 1rem; line-height: 1.6; font-size: 0.95rem; }
+        .prose-custom ul { list-style-type: disc; padding-left: 1.5rem; color: #d1d5db; margin-bottom: 1rem; font-size: 0.95rem; }
+        .prose-custom li { margin-bottom: 0.5rem; }
+        .prose-custom strong { color: white; }
     </style>
 </head>
 <body class="antialiased selection:bg-brand-accent selection:text-brand-900 bg-grid">
@@ -111,7 +136,7 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-brand-900/80 backdrop-blur-md border-b border-brand-700">
+    <nav class="fixed top-0 w-full z-50 bg-brand-900/80 backdrop-blur-md border-b border-brand-700 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between h-20 items-center">
                 <a href="#" class="flex items-center gap-3">
@@ -121,17 +146,18 @@
                 
                 <div class="hidden lg:flex items-center gap-6">
                     <a href="#about" class="text-sm font-medium text-gray-400 hover:text-brand-accent transition-colors">About</a>
+                    <a href="#inventory" class="text-sm font-medium text-gray-400 hover:text-brand-accent transition-colors">Methodology</a>
                     <a href="#capacity-building" class="text-sm font-medium text-gray-400 hover:text-brand-accent transition-colors">Capacity Building</a>
                     <a href="#directives" class="text-sm font-medium text-gray-400 hover:text-brand-accent transition-colors">Directives</a>
                     <a href="#quiz" class="text-sm font-medium text-gray-400 hover:text-brand-secondary transition-colors">Quiz</a>
                 </div>
 
                 <div class="flex items-center gap-4">
-                    <a href="book.html" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold text-gray-300 border border-brand-700 hover:bg-brand-800 transition-colors">
-                        <i class="ph-fill ph-book-open text-brand-secondary text-lg"></i> Book Mode
+                    <a href="book.html" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold text-gray-300 border border-brand-700 hover:bg-brand-800 transition-colors" title="Read Content as a Book">
+                        <i class="ph-fill ph-book-open text-brand-secondary text-lg"></i>
                     </a>
-                    <a href="journal.html" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold btn-journal">
-                        <i class="ph-fill ph-notebook text-lg"></i> Journal
+                    <a href="journal.html" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold btn-journal" title="Open Research Journal">
+                        <i class="ph-fill ph-notebook text-lg"></i>
                     </a>
                     <a href="radar.html" class="bg-brand-accent hover:bg-[#00e6b8] text-brand-900 px-6 py-2.5 rounded-lg font-bold text-sm transition-all shadow-[0_0_15px_rgba(0,255,204,0.3)] flex items-center gap-2">
                         Launch Radar <i class="ph-bold ph-arrow-right"></i>
@@ -261,44 +287,8 @@
         </div>
     </section>
 
-    <!-- NEW: UNESCO Capacity Building Section -->
-    <section id="capacity-building" class="py-24 border-t border-brand-700 bg-[#0a0a0a]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-brand-accent font-mono text-sm tracking-widest uppercase mb-4">Global Strategy</h2>
-                <h3 class="text-3xl md:text-4xl font-display font-bold text-white mb-6">UNESCO Capacity-Building Programme</h3>
-                <p class="text-gray-400 text-lg leading-relaxed">
-                    Established in 2009, UNESCO's global capacity-building programme is one of the top priorities for implementing the 2003 Convention. It creates positive institutional environments to safeguard ICH and harness its potential for sustainable development.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-brand-900 border border-brand-700 p-6 rounded-2xl hover:border-brand-accent transition-colors">
-                    <i class="ph-fill ph-stack text-3xl text-brand-secondary mb-4"></i>
-                    <h4 class="text-white font-bold mb-2">50+ Thematic Units</h4>
-                    <p class="text-sm text-gray-400">A comprehensive repository of training materials ranging from national policy development to gender dynamics in ICH.</p>
-                </div>
-                <div class="bg-brand-900 border border-brand-700 p-6 rounded-2xl hover:border-brand-accent transition-colors lg:translate-y-4">
-                    <i class="ph-fill ph-users-three text-3xl text-brand-accent mb-4"></i>
-                    <h4 class="text-white font-bold mb-2">Global Facilitators</h4>
-                    <p class="text-sm text-gray-400">A dynamic, internationally recognized network of over 80 expert facilitators delivering training and advisory services worldwide.</p>
-                </div>
-                <div class="bg-brand-900 border border-brand-700 p-6 rounded-2xl hover:border-brand-accent transition-colors">
-                    <i class="ph-fill ph-plant text-3xl text-emerald-400 mb-4"></i>
-                    <h4 class="text-white font-bold mb-2">Sustainable Development</h4>
-                    <p class="text-sm text-gray-400">Integrating ICH safeguarding into the 2030 Agenda, addressing food security, health, education, and biological diversity.</p>
-                </div>
-                <div class="bg-brand-900 border border-brand-700 p-6 rounded-2xl hover:border-brand-accent transition-colors lg:translate-y-4">
-                    <i class="ph-fill ph-files text-3xl text-blue-400 mb-4"></i>
-                    <h4 class="text-white font-bold mb-2">Nominations & Plans</h4>
-                    <p class="text-sm text-gray-400">Tools to help States Parties prepare international assistance requests, safeguarding plans, and Representative List nominations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Community Based Inventory Section -->
-    <section id="inventory" class="py-24 border-t border-brand-700 bg-brand-900">
+    <section id="inventory" class="py-24 border-t border-brand-700 bg-[#0d0d0d]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
@@ -310,7 +300,7 @@
                     <p class="text-gray-400 leading-relaxed text-lg mb-8">
                         However, communities today don't always document their heritage in formal registries. They write blogs, post on local forums, create niche websites, and share videos. 
                     </p>
-                    <div class="bg-brand-800 border-l-4 border-brand-accent p-6 rounded-r-xl shadow-lg">
+                    <div class="bg-brand-900 border-l-4 border-brand-accent p-6 rounded-r-xl shadow-lg">
                         <p class="text-white font-medium italic">
                             "ICH Radar acts as an autonomous digital archivist, finding the scattered, informal digital footprints left by communities and structuring them into formal, globally accessible intelligence to support CBI efforts."
                         </p>
@@ -318,22 +308,22 @@
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-[#0a0a0a] p-6 rounded-2xl border border-brand-700 hover:border-brand-secondary transition-colors">
+                    <div class="bg-brand-800 p-6 rounded-2xl border border-brand-700 hover:border-brand-secondary transition-colors">
                         <i class="ph-fill ph-magnifying-glass text-3xl text-brand-secondary mb-4"></i>
                         <h4 class="text-white font-bold mb-2">Open Web Discovery</h4>
                         <p class="text-sm text-gray-400">Scans non-traditional sources like local news and regional blogs to find unlisted heritage.</p>
                     </div>
-                    <div class="bg-[#0a0a0a] p-6 rounded-2xl border border-brand-700 hover:border-brand-secondary transition-colors sm:mt-8">
+                    <div class="bg-brand-800 p-6 rounded-2xl border border-brand-700 hover:border-brand-secondary transition-colors sm:mt-8">
                         <i class="ph-fill ph-database text-3xl text-brand-accent mb-4"></i>
                         <h4 class="text-white font-bold mb-2">Data Structuring</h4>
                         <p class="text-sm text-gray-400">Converts unstructured text into specific metadata: materials, steps, and cultural significance.</p>
                     </div>
-                    <div class="bg-[#0a0a0a] p-6 rounded-2xl border border-brand-700 hover:border-brand-secondary transition-colors">
+                    <div class="bg-brand-800 p-6 rounded-2xl border border-brand-700 hover:border-brand-secondary transition-colors">
                         <i class="ph-fill ph-share-network text-3xl text-blue-400 mb-4"></i>
                         <h4 class="text-white font-bold mb-2">Cultural Lineage</h4>
                         <p class="text-sm text-gray-400">Detects historical and geographical connections to map how traditions diffuse across borders.</p>
                     </div>
-                    <div class="bg-[#0a0a0a] p-6 rounded-2xl border border-brand-700 hover:border-brand-secondary transition-colors sm:mt-8">
+                    <div class="bg-brand-800 p-6 rounded-2xl border border-brand-700 hover:border-brand-secondary transition-colors sm:mt-8">
                         <i class="ph-fill ph-export text-3xl text-brand-journal mb-4"></i>
                         <h4 class="text-white font-bold mb-2">Dublin Core Export</h4>
                         <p class="text-sm text-gray-400">Exports data into XML formats compliant with international library and museum standards.</p>
@@ -343,7 +333,80 @@
         </div>
     </section>
 
-    <!-- NEW: Operational Directives Carousel -->
+    <!-- MASSIVELY EXPANDED: UNESCO Capacity Building Section -->
+    <section id="capacity-building" class="py-24 border-t border-brand-700 bg-brand-900 relative">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-brand-accent font-mono text-sm tracking-widest uppercase mb-4">Global Strategy Learning Hub</h2>
+                    <h3 class="text-3xl md:text-5xl font-display font-bold text-white mb-6">UNESCO Capacity-Building Modules</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Established in 2009, UNESCO's global capacity-building programme provides the foundational training to implement the 2003 Convention. Click the modules below to study the core concepts.
+                    </p>
+                </div>
+                <div class="shrink-0">
+                    <a href="https://ich.unesco.org/en/capacity-building-materials" target="_blank" class="bg-transparent border border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-brand-900 px-6 py-3 rounded-xl font-bold transition-all shadow-[0_0_15px_rgba(0,255,204,0.1)] hover:shadow-[0_0_20px_rgba(0,255,204,0.4)] flex items-center gap-2 group">
+                        <i class="ph-fill ph-link"></i> Official UNESCO Materials <i class="ph-bold ph-arrow-up-right group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interactive Learning Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Card 1 -->
+                <button onclick="openCBModal('implementing')" class="text-left bg-[#0a0a0a] border border-brand-700 p-8 rounded-3xl hover:border-[#00ffcc] hover:shadow-[0_10px_30px_rgba(0,255,204,0.1)] transition-all group flex flex-col h-full">
+                    <div class="w-14 h-14 bg-brand-800 rounded-2xl flex items-center justify-center text-brand-accent text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="ph-fill ph-bank"></i></div>
+                    <h4 class="text-xl font-display font-bold text-white mb-3">Implementing the Convention</h4>
+                    <p class="text-sm text-gray-400 flex-grow mb-6">Understand the core obligations of States Parties, the organs of the Convention, and the definition of ICH.</p>
+                    <span class="text-brand-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1">Read Module <i class="ph-bold ph-arrow-right"></i></span>
+                </button>
+
+                <!-- Card 2 -->
+                <button onclick="openCBModal('inventorying')" class="text-left bg-[#0a0a0a] border border-brand-700 p-8 rounded-3xl hover:border-[#facc15] hover:shadow-[0_10px_30px_rgba(250,204,21,0.1)] transition-all group flex flex-col h-full">
+                    <div class="w-14 h-14 bg-brand-800 rounded-2xl flex items-center justify-center text-brand-secondary text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="ph-fill ph-users-three"></i></div>
+                    <h4 class="text-xl font-display font-bold text-white mb-3">Community-Based Inventorying</h4>
+                    <p class="text-sm text-gray-400 flex-grow mb-6">Learn the methodology of documenting heritage with the active participation and consent of communities.</p>
+                    <span class="text-brand-secondary text-xs font-bold uppercase tracking-wider flex items-center gap-1">Read Module <i class="ph-bold ph-arrow-right"></i></span>
+                </button>
+
+                <!-- Card 3 -->
+                <button onclick="openCBModal('safeguarding')" class="text-left bg-[#0a0a0a] border border-brand-700 p-8 rounded-3xl hover:border-[#ff00aa] hover:shadow-[0_10px_30px_rgba(255,0,170,0.1)] transition-all group flex flex-col h-full">
+                    <div class="w-14 h-14 bg-brand-800 rounded-2xl flex items-center justify-center text-brand-journal text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="ph-fill ph-shield-check"></i></div>
+                    <h4 class="text-xl font-display font-bold text-white mb-3">Developing Safeguarding Plans</h4>
+                    <p class="text-sm text-gray-400 flex-grow mb-6">How to identify threats to viability and design actionable, community-driven safeguarding measures.</p>
+                    <span class="text-brand-journal text-xs font-bold uppercase tracking-wider flex items-center gap-1">Read Module <i class="ph-bold ph-arrow-right"></i></span>
+                </button>
+
+                <!-- Card 4 -->
+                <button onclick="openCBModal('nominations')" class="text-left bg-[#0a0a0a] border border-brand-700 p-8 rounded-3xl hover:border-blue-400 hover:shadow-[0_10px_30px_rgba(96,165,250,0.1)] transition-all group flex flex-col h-full">
+                    <div class="w-14 h-14 bg-brand-800 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="ph-fill ph-file-text"></i></div>
+                    <h4 class="text-xl font-display font-bold text-white mb-3">Preparing Nominations</h4>
+                    <p class="text-sm text-gray-400 flex-grow mb-6">Navigate the complexities of nominating elements to the Representative List and Urgent Safeguarding List.</p>
+                    <span class="text-blue-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1">Read Module <i class="ph-bold ph-arrow-right"></i></span>
+                </button>
+
+                <!-- Card 5 -->
+                <button onclick="openCBModal('sdg')" class="text-left bg-[#0a0a0a] border border-brand-700 p-8 rounded-3xl hover:border-emerald-400 hover:shadow-[0_10px_30px_rgba(52,211,153,0.1)] transition-all group flex flex-col h-full">
+                    <div class="w-14 h-14 bg-brand-800 rounded-2xl flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="ph-fill ph-plant"></i></div>
+                    <h4 class="text-xl font-display font-bold text-white mb-3">ICH & Sustainable Development</h4>
+                    <p class="text-sm text-gray-400 flex-grow mb-6">Explore how safeguarding ICH directly contributes to the UN 2030 Agenda for Sustainable Development.</p>
+                    <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1">Read Module <i class="ph-bold ph-arrow-right"></i></span>
+                </button>
+
+                <!-- Card 6 -->
+                <button onclick="openCBModal('gender')" class="text-left bg-[#0a0a0a] border border-brand-700 p-8 rounded-3xl hover:border-orange-400 hover:shadow-[0_10px_30px_rgba(251,146,60,0.1)] transition-all group flex flex-col h-full">
+                    <div class="w-14 h-14 bg-brand-800 rounded-2xl flex items-center justify-center text-orange-400 text-2xl mb-6 group-hover:scale-110 transition-transform"><i class="ph-fill ph-gender-intersex"></i></div>
+                    <h4 class="text-xl font-display font-bold text-white mb-3">Gender and ICH</h4>
+                    <p class="text-sm text-gray-400 flex-grow mb-6">Analyze the role of gender dynamics in the creation, practice, and transmission of intangible cultural heritage.</p>
+                    <span class="text-orange-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1">Read Module <i class="ph-bold ph-arrow-right"></i></span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Operational Directives Carousel -->
     <section id="directives" class="py-24 border-t border-brand-700 bg-[#0d0d0d] overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
@@ -360,13 +423,13 @@
         <!-- Carousel -->
         <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 md:px-12 pb-12 hide-scrollbar scroll-smooth" id="od-carousel">
             
-            <!-- Card 1: Inscription -->
+            <!-- Card 1 -->
             <article class="snap-center shrink-0 w-[85vw] md:w-[500px] bg-brand-900 border border-brand-700 rounded-3xl p-8 shadow-xl flex flex-col">
                 <div class="bg-brand-800 w-16 h-16 rounded-2xl flex items-center justify-center text-brand-secondary text-2xl mb-6 border border-brand-700"><i class="ph-fill ph-list-dashes"></i></div>
                 <h4 class="text-sm font-mono text-gray-500 uppercase tracking-widest mb-2">Chapter I</h4>
                 <h3 class="text-2xl font-bold text-white mb-4">Criteria for Inscription</h3>
                 <p class="text-gray-400 mb-6 leading-relaxed flex-grow">
-                    Whether applying for the <strong>Representative List (R.1-R.5)</strong> to promote visibility and dialogue, or the <strong>Urgent Safeguarding List (U.1-U.6)</strong> for elements facing grave threats, strict criteria apply. 
+                    Whether applying for the <strong>Representative List (R.1-R.5)</strong> to promote visibility, or the <strong>Urgent Safeguarding List (U.1-U.6)</strong> for elements facing grave threats, strict criteria apply. 
                 </p>
                 <ul class="text-sm text-gray-300 space-y-2 border-t border-brand-800 pt-4">
                     <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-brand-accent mt-1"></i> Must constitute ICH as defined in Article 2.</li>
@@ -375,7 +438,7 @@
                 </ul>
             </article>
 
-            <!-- Card 2: Sustainable Development -->
+            <!-- Card 2 -->
             <article class="snap-center shrink-0 w-[85vw] md:w-[500px] bg-brand-900 border border-brand-700 rounded-3xl p-8 shadow-xl flex flex-col">
                 <div class="bg-brand-800 w-16 h-16 rounded-2xl flex items-center justify-center text-emerald-400 text-2xl mb-6 border border-brand-700"><i class="ph-fill ph-leaf"></i></div>
                 <h4 class="text-sm font-mono text-gray-500 uppercase tracking-widest mb-2">Chapter VI</h4>
@@ -390,7 +453,7 @@
                 </ul>
             </article>
 
-            <!-- Card 3: Raising Awareness -->
+            <!-- Card 3 -->
             <article class="snap-center shrink-0 w-[85vw] md:w-[500px] bg-brand-900 border border-brand-700 rounded-3xl p-8 shadow-xl flex flex-col">
                 <div class="bg-brand-800 w-16 h-16 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 border border-brand-700"><i class="ph-fill ph-megaphone"></i></div>
                 <h4 class="text-sm font-mono text-gray-500 uppercase tracking-widest mb-2">Chapter IV</h4>
@@ -405,7 +468,7 @@
                 </ul>
             </article>
 
-            <!-- Card 4: Communities & NGOs -->
+            <!-- Card 4 -->
             <article class="snap-center shrink-0 w-[85vw] md:w-[500px] bg-brand-900 border border-brand-700 rounded-3xl p-8 shadow-xl flex flex-col">
                 <div class="bg-brand-800 w-16 h-16 rounded-2xl flex items-center justify-center text-brand-journal text-2xl mb-6 border border-brand-700"><i class="ph-fill ph-users-three"></i></div>
                 <h4 class="text-sm font-mono text-gray-500 uppercase tracking-widest mb-2">Chapter III</h4>
@@ -415,29 +478,29 @@
                 </p>
                 <ul class="text-sm text-gray-300 space-y-2 border-t border-brand-800 pt-4">
                     <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-brand-journal mt-1"></i> NGOs with proven competence can be accredited.</li>
-                    <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-brand-journal mt-1"></i> Accredited NGOs provide advisory functions to the Committee.</li>
+                    <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-brand-journal mt-1"></i> Accredited NGOs provide advisory functions.</li>
                     <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-brand-journal mt-1"></i> Focus on capacity-building for local bearers.</li>
                 </ul>
             </article>
 
-            <!-- Card 5: Reporting -->
+            <!-- Card 5 -->
             <article class="snap-center shrink-0 w-[85vw] md:w-[500px] bg-brand-900 border border-brand-700 rounded-3xl p-8 shadow-xl flex flex-col">
                 <div class="bg-brand-800 w-16 h-16 rounded-2xl flex items-center justify-center text-orange-400 text-2xl mb-6 border border-brand-700"><i class="ph-fill ph-file-text"></i></div>
                 <h4 class="text-sm font-mono text-gray-500 uppercase tracking-widest mb-2">Chapter V</h4>
                 <h3 class="text-2xl font-bold text-white mb-4">Reporting to the Committee</h3>
                 <p class="text-gray-400 mb-6 leading-relaxed flex-grow">
-                    States Parties are required to periodically submit reports on the legislative, regulatory, and institutional measures taken to safeguard ICH in their territories to ensure continuous monitoring.
+                    States Parties are required to periodically submit reports on the legislative, regulatory, and institutional measures taken to safeguard ICH in their territories.
                 </p>
                 <ul class="text-sm text-gray-300 space-y-2 border-t border-brand-800 pt-4">
                     <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-orange-400 mt-1"></i> <strong>Every 6 Years:</strong> General implementation reports (Form ICH-10).</li>
-                    <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-orange-400 mt-1"></i> <strong>Every 4 Years:</strong> Status reports for the Urgent Safeguarding List (Form ICH-11).</li>
+                    <li class="flex items-start gap-2"><i class="ph-fill ph-check-circle text-orange-400 mt-1"></i> <strong>Every 4 Years:</strong> Status reports for Urgent Safeguarding List (Form ICH-11).</li>
                 </ul>
             </article>
 
         </div>
     </section>
 
-    <!-- NEW: Ethics & Commercialization Section -->
+    <!-- Ethics & Commercialization Section -->
     <section id="ethics" class="py-24 border-t border-brand-700 bg-brand-900">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -574,772 +637,231 @@
     </footer>
 
     <!-- ========================================== -->
-    <!-- SCRIPTS (Carousel & Quiz) -->
+    <!-- MODAL CONTAINER (Capacity Building) -->
+    <!-- ========================================== -->
+    <div id="cb-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden modal-blur bg-black/80 p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-brand-900 border border-brand-700 rounded-2xl w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300 shadow-2xl" id="cb-modal-wrapper">
+            
+            <div class="flex justify-between items-center p-6 border-b border-brand-700 bg-brand-800">
+                <div class="flex items-center gap-3">
+                    <div id="cb-modal-icon-container" class="w-10 h-10 rounded-lg flex items-center justify-center text-xl bg-brand-900 border border-brand-700"><i id="cb-modal-icon" class="ph-fill ph-book-open"></i></div>
+                    <h3 class="font-display font-bold text-xl text-white" id="cb-modal-title">Module Title</h3>
+                </div>
+                <button onclick="closeCBModal()" class="text-gray-400 hover:text-white transition-colors bg-brand-900 border border-brand-700 p-2 rounded-full">
+                    <i class="ph ph-x text-xl"></i>
+                </button>
+            </div>
+
+            <div class="p-6 md:p-8 overflow-y-auto flex-grow prose-custom" id="cb-modal-content">
+                <!-- Content injected via JS -->
+            </div>
+            
+            <div class="p-6 border-t border-brand-700 bg-brand-800 flex justify-end">
+                <a href="https://ich.unesco.org/en/capacity-building-materials" target="_blank" class="bg-brand-accent text-brand-900 px-6 py-2.5 rounded-lg font-bold text-sm transition-all hover:bg-[#00e6b8] flex items-center gap-2">
+                    Access Official Materials <i class="ph-bold ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS (Carousel, Quiz, & Modals) -->
     <!-- ========================================== -->
     <script>
+        // --- NAVBAR SCROLL EFFECT ---
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-lg', 'border-brand-700/50');
+            } else {
+                nav.classList.remove('shadow-lg', 'border-brand-700/50');
+            }
+        });
+
         // --- CAROUSEL SCROLL LOGIC ---
         function scrollCarousel(direction) {
             const carousel = document.getElementById('od-carousel');
-            // Scroll by 80% of the visible width
             const scrollAmount = carousel.clientWidth * 0.8;
             carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
         }
 
-        // --- KNOWLEDGE DATABASE ---
-        const KNOWLEDGE_DB =[
-            { 
-                t: "Oral Traditions", 
-                d: "Learning the techniques of passing down folklore directly from a Maestro.",
-                q: "What is considered a primary threat to the survival of oral traditions?",
-                opts:["Climate change", "Language endangerment", "Overpopulation", "Digital archiving"],
-                ans: 1 
-            },
-            { 
-                t: "Horizon Scanning", 
-                d: "Using this foresight planning tool to detect early signs of future developments.",
-                q: "What is the main purpose of Horizon Scanning in heritage safeguarding?",
-                opts:["Drafting annual financial audits", "Identifying emerging threats and opportunities", "Calculating historical tax values", "Restoring physical museum artifacts"],
-                ans: 1
-            },
-            { 
-                t: "Impact Architect", 
-                d: "Applying this framework to design measurable social interventions.",
-                q: "In the context of behavioral change, what does an 'Impact Architect' primarily design?",
-                opts:["Architectural blueprints for heritage sites", "Systemic social interventions and nudges", "Digital 3D models of artifacts", "Traditional music compositions"],
-                ans: 1
-            },
-            {
-                t: "Digital Archiving",
-                d: "Sharing techniques for recording traditional dance movements into 3D motion capture.",
-                q: "Why is 3D motion capture highly useful for safeguarding traditional dances?",
-                opts:["It automatically translates the lyrics of the accompanying songs.", "It accurately preserves spatial movement data for future study.", "It replaces the need for human dancers in cultural festivals.", "It reduces the cost of tailoring traditional costumes."],
-                ans: 1
-            },
-            {
-                t: "Ecological Philosophy",
-                d: "Understanding the spiritual connection between indigenous communities and nature.",
-                q: "Which concept best describes traditional ecological knowledge?",
-                opts:["Exploiting natural resources for maximum profit.", "A reciprocal, sustainable relationship with the environment.", "Ignoring seasonal changes in agricultural planning.", "Replacing natural ecosystems with urban infrastructure."],
-                ans: 1
-            },
-            {
-                t: "Community Mapping",
-                d: "Using participatory maps to identify cultural resources.",
-                q: "What is the primary benefit of participatory community mapping?",
-                opts:["It allows governments to tax cultural resources.", "It empowers local communities to define their own heritage.", "It replaces the need for ethnographic research.", "It hides cultural sites from tourists."],
-                ans: 1
-            },
-            {
-                t: "The COM-B Model",
-                d: "A behavioral science framework for understanding change.",
-                q: "In the COM-B model, what must be present for a behavior to occur?",
-                opts:["Capability, Opportunity, and Motivation", "Capital, Organization, and Management", "Culture, Origin, and Meaning", "Communication, Observation, and Measurement"],
-                ans: 0
-            },
-            {
-                t: "Intangible Cultural Heritage (ICH)",
-                d: "Understanding the UNESCO 2003 Convention.",
-                q: "Which of the following is considered Intangible Cultural Heritage?",
-                opts:["A historical stone temple.", "A collection of ancient gold coins.", "Traditional weaving skills passed down through generations.", "A natural national park."],
-                ans: 2
-            },
-            {
-                t: "The Barnum Effect",
-                d: "A psychological phenomenon affecting how people perceive information.",
-                q: "How does the Barnum Effect relate to cultural communication?",
-                opts:["It explains why people prefer physical artifacts over stories.", "It makes general cultural statements feel highly personalized and true to an individual.", "It describes the financial cost of safeguarding.", "It is a technique for preserving old manuscripts."],
-                ans: 1
-            },
-            {
-                t: "Safeguarding vs. Protection",
-                d: "Understanding the nuanced terminology in heritage management.",
-                q: "In the context of ICH, what does 'safeguarding' emphasize compared to 'protection'?",
-                opts:["Locking artifacts in a museum vault.", "The continuous recreation and transmission of heritage by communities.", "Preventing any changes to traditional practices.", "Copyrighting cultural expressions for profit."],
-                ans: 1
-            },
-            {
-                t: "Canary Trap",
-                d: "An information security tactic.",
-                q: "How is a 'Canary Trap' used in strategic communications?",
-                opts:["To capture birds for traditional ceremonies.", "To share different versions of a document to identify who is leaking information.", "To archive oral histories.", "To fundraise for museum maintenance."],
-                ans: 1
-            },
-            {
-                t: "Living Human Treasures",
-                d: "Recognizing the bearers of cultural knowledge.",
-                q: "What is the primary role of a 'Living Human Treasure'?",
-                opts:["To sell cultural artifacts.", "To ensure the continuous transmission of their specialized knowledge to younger generations.", "To serve as political diplomats.", "To manage museum collections."],
-                ans: 1
-            },
-            {
-                t: "Loss Aversion",
-                d: "A cognitive bias where the pain of losing is psychologically twice as powerful as the pleasure of gaining.",
-                q: "How can 'Loss Aversion' be utilized in a heritage safeguarding campaign?",
-                opts:["By highlighting the financial gains of tourism.", "By emphasizing that a unique language will be gone forever if not spoken today.", "By offering monetary rewards for practicing traditions.", "By building more physical museums."],
-                ans: 1
-            },
-            {
-                t: "Cultural Appropriation",
-                d: "Understanding the ethical boundaries of sharing heritage.",
-                q: "What distinguishes cultural appropriation from cultural exchange?",
-                opts:["Learning a language from a native speaker.", "A dominant group exploiting the culture of a marginalized group without respect or compensation.", "Collaborating on a joint musical performance.", "Translating traditional poetry into other languages."],
-                ans: 1
-            },
-            {
-                t: "Nudge Theory",
-                d: "Using subtle interventions to influence behavior.",
-                q: "Which is an example of a 'Nudge' in promoting traditional food?",
-                opts:["Banning the sale of fast food.", "Placing traditional snacks at eye-level near the checkout counter.", "Taxing imported ingredients.", "Forcing people to attend cooking classes."],
-                ans: 1
-            },
-            {
-                t: "Disaster Risk Reduction (DRR)",
-                d: "Preparing heritage for crises.",
-                q: "Why is DRR crucial for Intangible Cultural Heritage?",
-                opts:["Because natural disasters only affect physical buildings.", "Because displacement and trauma can severely disrupt the community networks that sustain ICH.", "Because DRR guarantees international funding.", "Because it stops climate change."],
-                ans: 1
-            },
-            {
-                t: "Channel Convergence",
-                d: "A communication strategy.",
-                q: "What does 'Channel Convergence' entail?",
-                opts:["Digging new irrigation canals for traditional farming.", "Directing all public communication and inquiries to a single, controlled platform.", "Translating texts into multiple languages.", "Merging different cultural dances into one."],
-                ans: 1
-            },
-            {
-                t: "Free, Prior and Informed Consent (FPIC)",
-                d: "An ethical standard in community research.",
-                q: "Why is FPIC essential before documenting a community's sacred rituals?",
-                opts:["It ensures the researchers get paid.", "It respects the community's right to control their own cultural data and participation.", "It speeds up the publication process.", "It guarantees the research will be scientifically accurate."],
-                ans: 1
-            },
-            {
-                t: "Gini Ratio & Infrastructure",
-                d: "Analyzing the socio-economic impacts of development.",
-                q: "A study found that new rural infrastructure inadvertently increased the Gini ratio. What does this imply?",
-                opts:["Poverty was completely eradicated.", "The economic inequality within the population widened.", "Traditional arts became more popular.", "The infrastructure was physically unstable."],
-                ans: 1
-            },
-            {
-                t: "Serverless Architecture",
-                d: "Using accessible cloud tools for digital sustainability.",
-                q: "Why might a 'Serverless' approach (like Google Apps Script) be better for a low-resource NGO's cultural database?",
-                opts:["It requires buying expensive physical servers.", "It is highly sustainable, requiring minimal technical maintenance and ongoing server costs.", "It prevents any data from being shared online.", "It automatically translates cultural data."],
-                ans: 1
-            },
-            {
-                t: "Community-Based Inventory (CBI)",
-                d: "Empowering communities to document their own heritage systematically.",
-                q: "What is the core principle of a Community-Based Inventory in ICH safeguarding?",
-                opts:["External experts strictly dictate what is valuable.", "The community actively identifies, categorizes, and owns their cultural data.", "It is designed only for physical monuments and artifacts.", "It is a secret database for government use only."],
-                ans: 1
-            },
-            {
-                t: "Psychological Priming",
-                d: "A communication tactic to subtly guide how future information is perceived.",
-                q: "In cultural diplomacy, how can 'Priming' be effectively used?",
-                opts:["By hiding the true financial cost of a project.", "By subtly introducing related concepts early on to shape how a later policy is received.", "By forcing stakeholders to memorize historical dates.", "By publicly arguing with foreign diplomats."],
-                ans: 1
-            },
-            {
-                t: "High-Context Communication",
-                d: "Understanding how information is implicitly shared in traditional communities.",
-                q: "What characterizes a 'High-Context' cultural communication style?",
-                opts:["Everything must be written down in long, detailed text documents.", "Communication is done entirely through digital messaging apps.", "Meaning is heavily derived from non-verbal cues, shared history, and relationships.", "People typically speak very loudly to convey meaning."],
-                ans: 2
-            },
-            {
-                t: "The Paradox of Safety",
-                d: "Exploring the risks of over-regulating living cultural systems.",
-                q: "How might the 'Paradox of Safety' negatively impact Intangible Cultural Heritage?",
-                opts:["By making museum buildings completely earthquake-proof.", "Over-protecting and strictly formalizing a living tradition might stop it from evolving and surviving naturally.", "By adding too many security guards to an exhibition.", "By guaranteeing international funding for local artists."],
-                ans: 1
-            },
-            {
-                t: "Divergent Learning",
-                d: "Understanding 'output-heavy' approaches to transmitting traditional skills.",
-                q: "In traditional craftsmanship, an 'output-heavy' divergent learning style emphasizes:",
-                opts:["Reading thick theoretical textbooks for years before practicing.", "Learning through continuous hands-on practice, iteration, and creating tangible results.", "Taking multiple-choice written exams.", "Watching instructional videos without touching the tools."],
-                ans: 1
-            },
-            {
-                t: "Monitoring Data Anomalies",
-                d: "Using data tracking to prevent systemic failures in cultural programs.",
-                q: "When monitoring a cultural grant dashboard, detecting an early data anomaly is crucial because:",
-                opts:["It allows you to completely ignore the problem.", "It helps spend more budget unnecessarily.", "It prevents minor logistical errors from cascading into critical program failures.", "It proves that qualitative data is useless."],
-                ans: 2
-            },
-            {
-                t: "Minimalist Exhibition Design",
-                d: "Designing spaces that highlight the heritage, not the architecture.",
-                q: "What is an advantage of using an 'industrial minimalist' design for a cultural exhibition?",
-                opts:["It distracts the visitors with too many complex colors.", "Its raw, low-maintenance aesthetic keeps the focus entirely on the cultural artifacts.", "It requires constant daily repainting and repairs.", "It forces the use of fragile, expensive materials."],
-                ans: 1
-            },
-            {
-                t: "Narrative Convergence",
-                d: "Taking control of narratives during a cultural crisis or dispute.",
-                q: "If a dispute arises over the origin of a shared heritage, what is a strategic first response?",
-                opts:["Execute a 'Channel Convergence' strategy to consolidate official messaging and clarify facts.", "Deactivate all communication channels and hide.", "Immediately rewrite the history books.", "Ban the heritage practice until the dispute is resolved."],
-                ans: 0
-            },
-            {
-                t: "Organizational Effectiveness",
-                d: "Evaluating the structures that manage cultural policies.",
-                q: "Why is evaluating organizational effectiveness crucial within a Ministry of Culture?",
-                opts:["To justify reducing the budget for local artists.", "To ensure that bureaucratic structures are genuinely facilitating, rather than hindering, cultural safeguarding.", "To increase the amount of mandatory paperwork.", "To easily confiscate and hide local research data."],
-                ans: 1
-            },
-            {
-                t: "Cold Chain Management",
-                d: "Ensuring temperature-sensitive resources are preserved during logistics.",
-                q: "In the context of vaccine or sensitive biological resource logistics, what is a 'Cold Chain breach'?",
-                opts:["A sudden increase in shipping costs.", "An exposure to temperatures outside the recommended range, potentially damaging the item.", "A failure in the digital tracking software.", "A physical break in the storage container."],
-                ans: 1
-            },
-            {
-                t: "Batik: Tulis vs Cap",
-                d: "Distinguishing between manual and semi-automated textile arts.",
-                q: "What is the primary characteristic of 'Batik Tulis' that differentiates it from 'Batik Cap'?",
-                opts:["It uses synthetic dyes only.", "The patterns are applied manually using a 'canting', leading to unique variations in every stroke.", "It is produced significantly faster.", "It does not use wax in the resisting process."],
-                ans: 1
-            },
-            {
-                t: "Social Intervention Design",
-                d: "Creating programs that genuinely change community outcomes.",
-                q: "When designing a social intervention, why is it dangerous to ignore qualitative local data?",
-                opts:["Because qualitative data is too expensive to collect.", "Because infrastructure alone cannot solve systemic issues if it conflicts with local social dynamics.", "Because only quantitative data is accepted by international donors.", "Because it makes the final report look too long."],
-                ans: 1
-            },
-            {
-                t: "The 'SMILE' Application",
-                d: "Using digital tools for real-time monitoring of critical supplies.",
-                q: "How does real-time data monitoring (like the SMILE app) prevent systemic errors in logistics?",
-                opts:["By automatically placing orders based on social media trends.", "By identifying dosing or storage anomalies immediately before they reach the end-user.", "By replacing the need for human managers entirely.", "By increasing the battery life of storage units."],
-                ans: 1
-            },
-            {
-                t: "Intangible vs Tangible Link",
-                d: "Understanding how physical sites and living traditions coexist.",
-                q: "Why is the preservation of a physical site (like a Rice Barn) essential for Intangible Heritage?",
-                opts:["Because physical sites are more valuable for real estate.", "Because the physical space often serves as the 'vessel' where the community practices and transmits their living traditions.", "Because UNESCO only cares about physical buildings.", "Because it is easier to tax physical property."],
-                ans: 1
-            },
-            {
-                t: "Bureaucratic Inertia",
-                d: "Understanding why digital transformation often fails in government.",
-                q: "What is a major cause of failure in 'E-Persuratan' or digital governance systems?",
-                opts:["The software is always too slow.", "The lack of behavioral adaptation and willingness to shift from paper-based power structures.", "The high cost of server maintenance.", "The lack of high-speed internet in all offices."],
-                ans: 1
-            },
-            {
-                t: "Community Bearing",
-                d: "The role of the individual in the collective heritage.",
-                q: "Who is a 'Community Bearer' in the context of safeguarding?",
-                opts:["A government official who signs cultural laws.", "An individual or group within the community who practices and transmits the heritage.", "A tourist who visits a cultural site.", "A researcher who writes books about the culture."],
-                ans: 1
-            },
-            {
-                t: "Information Warfare: Canary Trap",
-                d: "Identifying the source of information leaks in an organization.",
-                q: "What is the intended result of a successful 'Canary Trap'?",
-                opts:["To feed the birds at a heritage site.", "To pinpoint exactly which individual is leaking confidential information by giving them a uniquely 'salted' version of a document.", "To encrypt all digital files.", "To automate public relations messaging."],
-                ans: 1
-            },
-            {
-                t: "Participatory Observation",
-                d: "A core method in ethnographic cultural research.",
-                q: "What does 'Participatory Observation' require from a researcher?",
-                opts:["Watching the community through satellite imagery.", "Genuinely living within and engaging with the community while simultaneously documenting their practices.", "Conducting interviews only via digital surveys.", "Reading historical archives without visiting the site."],
-                ans: 1
-            },
-            {
-                t: "Sustainable Safeguarding",
-                d: "Ensuring traditions survive long after the funding ends.",
-                q: "What makes a safeguarding project 'Sustainable'?",
-                opts:["When it relies on permanent international government grants.", "When the community takes full ownership of the practice and integrates it into their daily socio-economic life.", "When the practice is moved entirely to a digital museum.", "When the practice is strictly controlled by a single master."],
-                ans: 1
-            },
-            { 
-                t: "File Format Sustainability", 
-                d: "Ensuring digital cultural archives remain accessible over time.",
-                q: "Why is choosing open-source file formats (like .TIFF or .WAV) crucial for long-term digital preservation of ICH recordings?",
-                opts:[
-                    "They take up less storage space on hard drives.",
-                    "They can be read by proprietary software only.",
-                    "They prevent vendor lock-in and ensure future accessibility regardless of software changes.",
-                    "They automatically translate oral traditions into multiple languages."
-                ],
-                ans: 2
-            },
-            { 
-                t: "Community Consent Protocol", 
-                d: "Ethical guidelines for researchers documenting ICH.",
-                q: "According to UNESCO's Ethical Principles, if a community withdraws its consent during a documentation project, the researcher must:",
-                opts:[
-                    "Continue documenting anyway for the sake of science.",
-                    "Appeal directly to the government to override the community's decision.",
-                    "Halt all activities immediately and respect the community's decision.",
-                    "Offer monetary compensation to change their minds."
-                ],
-                ans: 2
-            },
-            { 
-                t: "Heritage and Climate Change", 
-                d: "Intersection of environment and safeguarding.",
-                q: "How does climate change specifically threaten Intangible Cultural Heritage in coastal communities?",
-                opts:[
-                    "It increases funding for cultural preservation.",
-                    "Sea-level rise can displace communities, severing the geographic connection to traditions like fishing rituals and boat-building.",
-                    "It makes traditional clothing more fashionable.",
-                    "It reduces the need for disaster preparedness planning."
-                ],
-                ans: 1
-            },
-            { 
-                t: "Evaluation Criteria for Nominations", 
-                d: "How UNESCO assesses ICH nominations.",
-                q: "Which of the following is NOT one of the five main evaluation criteria for inscriptions on the Representative List?",
-                opts:[
-                    "R.1: The element constitutes ICH as defined in Article 2 of the Convention.",
-                    "R.2: Inscription contributes to ensuring visibility and awareness of ICH.",
-                    "R.3: Safeguarding measures are elaborated to protect the element.",
-                    "R.4: The element has high commercial tourism potential."
-                ],
-                ans: 3
-            },
-            { 
-                t: "Tokenism in Participation", 
-                d: "Avoiding superficial community engagement.",
-                q: "What is 'tokenism' in the context of community participation in ICH safeguarding projects?",
-                opts:[
-                    "Giving community members actual decision-making power.",
-                    "Involving community representatives symbolically without giving them real influence over outcomes.",
-                    "Paying community members fair wages for their participation.",
-                    "Documenting community traditions with their full consent."
-                ],
-                ans: 1
-            },
-            { 
-                t: "Intergenerational Transmission", 
-                d: "Core concept in ICH viability.",
-                q: "According to the 2003 Convention, what is the single most important factor in determining whether an ICH element is 'viable'?",
-                opts:[
-                    "The number of YouTube videos about it.",
-                    "Its inclusion in school textbooks.",
-                    "Its continuous transmission from generation to generation within the community.",
-                    "The amount of government funding it receives."
-                ],
-                ans: 2
-            },
-            { 
-                t: "Multinational Nominations", 
-                d: "Shared heritage across borders.",
-                q: "What is a primary advantage of submitting a multinational nomination for an ICH element shared by several countries?",
-                opts:[
-                    "It guarantees faster approval by UNESCO.",
-                    "Each country can submit separate documentation without coordination.",
-                    "It promotes dialogue and cooperation while demonstrating the element's role in building bridges between communities.",
-                    "It allows each country to claim exclusive ownership."
-                ],
-                ans: 2
-            },
-            { 
-                t: "Herarchy of ICH", 
-                d: "Understanding value judgments in heritage.",
-                q: "The Ethical Principles for ICH Safeguarding explicitly reject which problematic approach?",
-                opts:[
-                    "Documenting ICH with community consent.",
-                    "Establishing hierarchies or rankings of ICH elements (e.g., 'this dance is more important than that ritual').",
-                    "Involving youth in transmission activities.",
-                    "Seeking international cooperation for safeguarding."
-                ],
-                ans: 1
-            },
-            { 
-                t: "Digitization Risks", 
-                d: "Potential negative impacts of digital archiving.",
-                q: "What is a significant risk of digitizing sacred or secret ICH without proper protocols?",
-                opts:[
-                    "The files might be accidentally deleted.",
-                    "Sacred knowledge intended only for initiated community members could become publicly accessible, violating cultural protocols.",
-                    "Digital files are always lower quality than analog recordings.",
-                    "It increases the cost of storage significantly."
-                ],
-                ans: 1
-            },
-            { 
-                t: "Periodic Reporting Cycle", 
-                d: "Monitoring mechanism of the Convention.",
-                q: "How often are States Parties generally required to submit their periodic reports on ICH safeguarding efforts to UNESCO?",
-                opts:[
-                    "Every year.",
-                    "Every six years (aligned with the reporting cycle).",
-                    "Only once, upon ratifying the Convention.",
-                    "Whenever a new element is nominated."
-                ],
-                ans: 1
-            },
-            { 
-                t: "Heritage Commodification", 
-                d: "Economic pressures on living traditions.",
-                q: "What is 'commodification' of ICH and why is it concerning?",
-                opts:[
-                    "Making ICH freely available to everyone.",
-                    "The process of transforming cultural practices into marketable products, often stripping them of their deeper meaning to appeal to tourists.",
-                    "Government subsidies for traditional crafts.",
-                    "Fair trade certification for indigenous art."
-                ],
-                ans: 1
-            },
-            { 
-                t: "Community-based Research", 
-                d: "Methodological approaches in ICH documentation.",
-                q: "In community-based research methodology, who should ultimately control and own the research data collected about a community's ICH?",
-                opts:[
-                    "The university or research institution funding the project.",
-                    "The government ministry that issued the research permit.",
-                    "The community itself, following principles of data sovereignty.",
-                    "UNESCO, as the international authority."
-                ],
-                ans: 2
-            },
-            { 
-                t: "Formal vs Non-formal Transmission", 
-                d: "Different educational contexts for ICH.",
-                q: "Non-formal transmission of ICH refers to:",
-                opts:[
-                    "Teaching ICH in university degree programs.",
-                    "Learning that occurs outside official educational institutions, such as within families, apprenticeships, or community gatherings.",
-                    "Online courses about traditional crafts.",
-                    "Government-mandated cultural training programs."
-                ],
-                ans: 1
-            },
-            { 
-                t: "Heritage Impact Assessment", 
-                d: "Evaluating development impacts on ICH.",
-                q: "What should a Heritage Impact Assessment for a development project (e.g., dam construction) specifically evaluate regarding ICH?",
-                opts:[
-                    "Whether the project will increase tourism revenue.",
-                    "How many new jobs will be created for local youth.",
-                    "The potential disruption to community practices, rituals, and knowledge transmission tied to the affected landscape.",
-                    "The architectural style of the new construction."
-                ],
-                ans: 2
-            },
-            { 
-                t: "Transparency in Governance", 
-                d: "Ethical management of ICH programs.",
-                q: "The Operational Directives emphasize that safeguarding measures must be developed and implemented with maximum transparency. This means:",
-                opts:[
-                    "All meetings must be broadcast live on television.",
-                    "Decisions, processes, and outcomes should be openly accessible and clearly communicated to communities and the public.",
-                    "Only government officials can access safeguarding documents.",
-                    "Communities must sign non-disclosure agreements."
-                ],
-                ans: 1
-            },
-            { 
-                t: "Cultural Mapping", 
-                d: "Visualizing community heritage resources.",
-                q: "How does cultural mapping differ from simple geographic mapping?",
-                opts:[
-                    "It only focuses on physical landmarks.",
-                    "It layers intangible elements like stories, rituals, and memories onto physical spaces, showing how communities imbue landscapes with meaning.",
-                    "It uses satellite imagery exclusively.",
-                    "It is conducted without community input."
-                ],
-                ans: 1
-            },
-            { 
-                t: "ICH and Human Dignity", 
-                d: "Ethical foundations of safeguarding.",
-                q: "According to the Ethical Principles, all safeguarding activities must:",
-                opts:[
-                    "Prioritize scientific documentation above all else.",
-                    "Be conducted in the language of the researchers.",
-                    "Respect the dignity and human rights of the communities concerned.",
-                    "Seek maximum media exposure."
-                ],
-                ans: 2
-            },
-            { 
-                t: "Transmission Crisis Indicators", 
-                d: "Early warning signs for endangered ICH.",
-                q: "Which of the following is a warning sign that an ICH element may be facing a transmission crisis?",
-                opts:[
-                    "Increasing number of public performances.",
-                    "Growing tourism interest in the practice.",
-                    "Fewer young people learning the practice, with the average age of practitioners rising significantly.",
-                    "New variations of the tradition emerging."
-                ],
-                ans: 2
-            },
-            { 
-                t: "Glossary of ICH Terms", 
-                d: "Understanding UNESCO terminology.",
-                q: "In UNESCO documents, what is meant by the 'viability' of an ICH element?",
-                opts:[
-                    "Its ability to generate income.",
-                    "Its capacity to survive and be recreated across generations despite changing circumstances.",
-                    "Its physical durability if made into an object.",
-                    "Its popularity on international social media."
-                ],
-                ans: 1
-            },
-            { 
-                t: "Post-Inscription Responsibilities", 
-                d: "Obligations after UNESCO listing.",
-                q: "After an ICH element is inscribed on a UNESCO list, the State Party is expected to:",
-                opts:[
-                    "Consider the work complete and move on to other priorities.",
-                    "Implement the safeguarding measures described in the nomination file and report on their progress in periodic reports.",
-                    "Prevent any changes or evolution in the practice.",
-                    "Charge royalties to anyone who performs the element."
-                ],
-                ans: 1
-            },
-            { 
-                t: "Periodic Reporting Cycle", 
-                d: "Understanding the reporting obligations of States Parties.",
-                q: "According to Chapter V of the Operational Directives, how often must States Parties submit their periodic reports on the implementation of the Convention?",
-                opts:[
-                    "Every two years",
-                    "Every six years, based on a rotation region by region",
-                    "Every ten years",
-                    "Only once, upon ratification"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Urgent Safeguarding List Reporting", 
-                d: "Specific reporting requirements for endangered ICH.",
-                q: "For elements inscribed on the List of Intangible Cultural Heritage in Need of Urgent Safeguarding, how frequently must States Parties submit status reports?",
-                opts:[
-                    "Every two years",
-                    "Every fourth year following inscription",
-                    "Every year for the first five years",
-                    "Only if the element's viability declines"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Form ICH-10", 
-                d: "Official reporting instrument for the Convention.",
-                q: "What is the purpose of Form ICH-10 in the reporting mechanism of the 2003 Convention?",
-                opts:[
-                    "Nominating new elements for the Representative List",
-                    "Reporting on the implementation of the Convention and status of all elements on the Representative List",
-                    "Applying for International Assistance grants",
-                    "Accrediting non-governmental organizations"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Gender in Reporting", 
-                d: "Cross-cutting priority in ICH safeguarding.",
-                q: "The Operational Directives explicitly require States Parties to pay special attention to which factor when preparing periodic reports on inscribed elements?",
-                opts:[
-                    "The commercial value of the element",
-                    "The role of gender",
-                    "The number of tourists visiting related sites",
-                    "The age of the oldest practitioner"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Register of Good Safeguarding Practices", 
-                d: "Mechanism for sharing successful approaches.",
-                q: "What type of programs, projects, and activities can be selected for inclusion in the Register of Good Safeguarding Practices?",
-                opts:[
-                    "Only those funded by UNESCO",
-                    "Those that best reflect the principles and objectives of the Convention",
-                    "Those that generate the highest tourism revenue",
-                    "Those that have been practiced for at least 500 years"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Form ICH-03", 
-                d: "Official form for submitting safeguarding practices.",
-                q: "Which UNESCO form is used to submit proposals for the Register of Good Safeguarding Practices?",
-                opts:[
-                    "ICH-01",
-                    "ICH-02",
-                    "ICH-03",
-                    "ICH-04"
-                ],
-                ans: 2
-            },
-            { 
-                t: "International Assistance Request Forms", 
-                d: "Applying for financial support from the ICH Fund.",
-                q: "Which form should be used to request international assistance of up to US$ 100,000 from the Intangible Cultural Heritage Fund?",
-                opts:[
-                    "ICH-01-up_to",
-                    "ICH-02-up_to",
-                    "ICH-03-up_to",
-                    "ICH-04-up_to"
-                ],
-                ans: 3
-            },
-            { 
-                t: "Emergency Assistance", 
-                d: "Rapid response mechanisms for ICH in crisis.",
-                q: "Unlike standard nomination deadlines, emergency assistance requests to the ICH Fund can be submitted:",
-                opts:[
-                    "Only during UNESCO General Conference sessions",
-                    "At any time",
-                    "Only in January each year",
-                    "Only after a formal warning from the Committee"
-                ],
-                ans: 1
-            },
-            { 
-                t: "NGO Accreditation", 
-                d: "Role of civil society in Convention implementation.",
-                q: "What is the primary function of NGOs accredited to provide advisory services to the Intergovernmental Committee?",
-                opts:[
-                    "To receive annual funding from UNESCO",
-                    "To act in an advisory capacity and contribute to the evaluation of nominations",
-                    "To manage all ICH elements in their country",
-                    "To approve or reject new inscriptions"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Form ICH-09", 
-                d: "Application for NGO accreditation.",
-                q: "Which form must accredited non-governmental organizations use to submit their accreditation requests to act in an advisory capacity to the Committee?",
-                opts:[
-                    "ICH-07",
-                    "ICH-08",
-                    "ICH-09",
-                    "ICH-10"
-                ],
-                ans: 2
-            },
-            { 
-                t: "NGO Reporting Obligations", 
-                d: "Accountability for accredited organizations.",
-                q: "Accredited NGOs must submit reports on their contribution to the implementation of the Convention using which form?",
-                opts:[
-                    "ICH-07",
-                    "ICH-08",
-                    "ICH-09",
-                    "ICH-10"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Multinational Nominations", 
-                d: "Shared heritage across borders.",
-                q: "What is a key advantage of submitting multinational nomination files for ICH elements present in multiple countries?",
-                opts:[
-                    "They receive priority processing by the Committee",
-                    "They require less documentation than national nominations",
-                    "They promote dialogue and cooperation while demonstrating the element's role in building bridges between communities",
-                    "They automatically qualify for the Urgent Safeguarding List"
-                ],
-                ans: 2
-            },
-            { 
-                t: "Ethical Principle 2", 
-                d: "Rights of communities to continue practices.",
-                q: "The second ethical principle recognizes the need to respect communities' right to:",
-                opts:[
-                    "Receive payment for any documentation of their heritage",
-                    "Continue the practices, representations, expressions, knowledge and skills necessary to ensure the viability of ICH",
-                    "Prevent researchers from studying their culture",
-                    "Claim copyright over all traditional expressions"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Ethical Principle 4", 
-                d: "Consent requirements in ICH work.",
-                q: "Ethical Principle 4 explicitly states that all interactions with communities should be subject to:",
-                opts:[
-                    "Government approval",
-                    "Free, prior, sustained, and informed consent",
-                    "Written contracts with financial terms",
-                    "UNESCO oversight"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Sustained Consent", 
-                d: "Understanding the temporal dimension of consent.",
-                q: "In the FPIC framework, what does 'sustained' consent imply beyond initial agreement?",
-                opts:[
-                    "Consent that lasts forever once given",
-                    "Continuous dialogue with communities for confirmation and feedback after consent has been obtained",
-                    "Consent that must be renewed annually",
-                    "Consent that applies to all future projects automatically"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Ethical Principle 8", 
-                d: "The living nature of ICH.",
-                q: "What does Ethical Principle 8 emphasize about the nature of intangible cultural heritage?",
-                opts:[
-                    "It must be preserved exactly as first documented",
-                    "Its dynamic and living nature should be continuously respected",
-                    "It should be frozen in its most authentic form",
-                    "Evolution indicates loss of cultural value"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Commercial Use of ICH Data", 
-                d: "Ethical concerns in heritage commodification.",
-                q: "According to ethical guidelines, what is a primary concern regarding the commercial use of ICH recordings or data?",
-                opts:[
-                    "It always generates revenue for communities",
-                    "It may occur without permission from or benefit to the communities concerned",
-                    "It is prohibited under the Convention",
-                    "It requires UNESCO authorization"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Ethical Principle 6", 
-                d: "Who determines the value of ICH.",
-                q: "Ethical Principle 6 stresses that the value of ICH should be assessed by:",
-                opts:[
-                    "UNESCO expert evaluators",
-                    "Its own community, not subject to external judgments",
-                    "National government authorities",
-                    "International tourism boards"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Form ICH-07", 
-                d: "Supplementary documentation for nominations.",
-                q: "What is the purpose of Form ICH-07 in the nomination process?",
-                opts:[
-                    "Financial reporting for International Assistance",
-                    "Submitting photo and video documentation to accompany nomination files",
-                    "Accreditation of non-governmental organizations",
-                    "Periodic reporting on inscribed elements"
-                ],
-                ans: 1
-            },
-            { 
-                t: "Transfer Between Lists", 
-                d: "Mechanism for reclassifying ICH elements.",
-                q: "Which forms are used to request transfer of an element from the Urgent Safeguarding List to the Representative List?",
-                opts:[
-                    "ICH-01 USL to RL",
-                    "ICH-02 USL to RL",
-                    "ICH-03 USL to RL",
-                    "ICH-04 USL to RL"
-                ],
-                ans: 1
+        // --- CAPACITY BUILDING MODAL LOGIC ---
+        const CB_DATA = {
+            'implementing': {
+                title: "Implementing the Convention",
+                icon: "ph-bank", colorClass: "text-brand-accent",
+                content: `
+                    <p>The 2003 Convention provides an international framework for safeguarding intangible cultural heritage (ICH). This module helps stakeholders understand their roles and obligations.</p>
+                    <h4>Key Concepts:</h4>
+                    <ul>
+                        <li><strong>What is ICH?</strong> Understanding the definition set out in Article 2, focusing on continuous recreation and transmission.</li>
+                        <li><strong>Roles of State Parties:</strong> Obligations include drawing up inventories, adopting national policies, and promoting education (Articles 11-15).</li>
+                        <li><strong>Organs of the Convention:</strong> The General Assembly (sovereign body) and the Intergovernmental Committee (executive body).</li>
+                    </ul>
+                    <h4>Why it matters:</h4>
+                    <p>Without a strong legal and institutional framework at the national level, safeguarding efforts remain fragmented and underfunded. This module is the starting point for aligning national cultural policies with international standards.</p>
+                `
+            },
+            'inventorying': {
+                title: "Community-Based Inventorying",
+                icon: "ph-users-three", colorClass: "text-brand-secondary",
+                content: `
+                    <p>Inventorying is not merely making a list; it is a safeguarding measure in itself. The Convention mandates that communities must be actively involved in identifying and defining their heritage.</p>
+                    <h4>The Methodology:</h4>
+                    <ul>
+                        <li><strong>Ethics First:</strong> Ensuring Free, Prior and Informed Consent (FPIC) before any documentation begins.</li>
+                        <li><strong>Techniques:</strong> Utilizing participatory video, mapping, and interview techniques where community members act as researchers.</li>
+                        <li><strong>Data Sovereignty:</strong> Recognizing that communities own the knowledge and should control access, especially regarding secret/sacred practices.</li>
+                    </ul>
+                    <h4>Why it matters:</h4>
+                    <p>Top-down inventories created solely by academics often alienate the very people who practice the heritage. Community-Based Inventorying (CBI) builds local capacity and ensures the resulting data reflects the community's own worldview.</p>
+                `
+            },
+            'safeguarding': {
+                title: "Developing Safeguarding Plans",
+                icon: "ph-shield-check", colorClass: "text-brand-journal",
+                content: `
+                    <p>Safeguarding means ensuring the continuous viability of ICH. This module guides practitioners through diagnosing threats and designing effective interventions.</p>
+                    <h4>Strategic Steps:</h4>
+                    <ul>
+                        <li><strong>Identifying Threats:</strong> Are there issues with transmission? Is globalization de-contextualizing the practice? Are raw materials disappearing?</li>
+                        <li><strong>Setting Objectives:</strong> Moving beyond "protection" (which implies freezing in time) towards "safeguarding" (supporting living evolution).</li>
+                        <li><strong>Designing Measures:</strong> Creating specific activities like establishing apprenticeships, securing legal rights to natural resources, or integrating ICH into school curricula.</li>
+                    </ul>
+                    <h4>The Behavioral Link:</h4>
+                    <p>Effective safeguarding often requires behavioral change. Planners must assess if the community has the Capability, Opportunity, and Motivation (COM-B) to continue the practice under modern pressures.</p>
+                `
+            },
+            'nominations': {
+                title: "Preparing Nominations",
+                icon: "ph-file-text", colorClass: "text-blue-400",
+                content: `
+                    <p>Inscribing an element on UNESCO's Lists brings international visibility, but the nomination process is rigorous and requires careful preparation.</p>
+                    <h4>The Two Main Lists:</h4>
+                    <ul>
+                        <li><strong>Representative List (RL):</strong> Designed to ensure visibility and awareness of ICH and encourage dialogue.</li>
+                        <li><strong>Urgent Safeguarding List (USL):</strong> For elements whose viability is at severe risk despite community efforts. Requires a robust, funded safeguarding plan.</li>
+                    </ul>
+                    <h4>Common Pitfalls to Avoid:</h4>
+                    <p>Nominations are frequently rejected if they use inappropriate vocabulary (e.g., claiming a practice is "authentic", "original", or "unique in the world"), or if they fail to prove the active participation of the community in the nomination process.</p>
+                `
+            },
+            'sdg': {
+                title: "ICH & Sustainable Development",
+                icon: "ph-plant", colorClass: "text-emerald-400",
+                content: `
+                    <p>Intangible Cultural Heritage is a powerful, yet often overlooked, driver of the UN 2030 Agenda for Sustainable Development.</p>
+                    <h4>Key Intersections:</h4>
+                    <ul>
+                        <li><strong>Inclusive Social Development:</strong> Traditional health practices and food security systems.</li>
+                        <li><strong>Environmental Sustainability:</strong> Traditional ecological knowledge, biodiversity conservation, and resilience to natural disasters.</li>
+                        <li><strong>Inclusive Economic Development:</strong> Income generation through traditional craftsmanship and sustainable, ethically managed cultural tourism.</li>
+                        <li><strong>Peace and Security:</strong> Rituals and social practices that resolve disputes and build social cohesion.</li>
+                    </ul>
+                    <h4>Why it matters:</h4>
+                    <p>Development policies that ignore cultural context often fail. Integrating ICH into development plans ensures that economic progress does not come at the expense of cultural identity.</p>
+                `
+            },
+            'gender': {
+                title: "Gender and ICH",
+                icon: "ph-gender-intersex", colorClass: "text-orange-400",
+                content: `
+                    <p>Gender plays a fundamental role in the creation, practice, and transmission of intangible cultural heritage. This module explores how to navigate gender dynamics ethically.</p>
+                    <h4>Understanding Dynamics:</h4>
+                    <ul>
+                        <li><strong>Roles in Transmission:</strong> Recognizing that men and women often hold different knowledge and play complementary roles in rituals and crafts.</li>
+                        <li><strong>Mutual Respect:</strong> Safeguarding must not justify gender-based discrimination. The Convention only protects ICH that is compatible with international human rights instruments.</li>
+                        <li><strong>Evolution:</strong> As societies change, gender roles within ICH often adapt. Safeguarding plans should support communities in negotiating these changes organically.</li>
+                    </ul>
+                    <h4>Why it matters:</h4>
+                    <p>Ignoring gender can lead to safeguarding plans that inadvertently marginalize key practitioners or freeze a living tradition into an outdated, discriminatory form.</p>
+                `
             }
+        };
+
+        function openCBModal(id) {
+            const data = CB_DATA[id];
+            if(!data) return;
+
+            document.getElementById('cb-modal-title').innerText = data.title;
+            document.getElementById('cb-modal-content').innerHTML = data.content;
+            
+            const iconEl = document.getElementById('cb-modal-icon');
+            iconEl.className = `ph-fill ${data.icon} ${data.colorClass}`;
+            
+            const modal = document.getElementById('cb-modal');
+            const wrapper = document.getElementById('cb-modal-wrapper');
+            modal.classList.remove('hidden');
+            void modal.offsetWidth; // trigger reflow
+            modal.classList.remove('opacity-0');
+            wrapper.classList.remove('scale-95');
+        }
+
+        function closeCBModal() {
+            const modal = document.getElementById('cb-modal');
+            const wrapper = document.getElementById('cb-modal-wrapper');
+            modal.classList.add('opacity-0');
+            wrapper.classList.add('scale-95');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+
+        // Close modal on click outside or escape key
+        document.getElementById('cb-modal').addEventListener('click', (e) => {
+            if(e.target === document.getElementById('cb-modal')) closeCBModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if(e.key === 'Escape' && !document.getElementById('cb-modal').classList.contains('hidden')) closeCBModal();
+        });
+
+
+        // --- KNOWLEDGE DATABASE & QUIZ LOGIC ---
+        const KNOWLEDGE_DB =[
+            { t: "Oral Traditions", d: "Learning the techniques of passing down folklore directly from a Maestro.", q: "What is considered a primary threat to the survival of oral traditions?", opts:["Climate change", "Language endangerment", "Overpopulation", "Digital archiving"], ans: 1 },
+            { t: "Horizon Scanning", d: "Using this foresight planning tool to detect early signs of future developments.", q: "What is the main purpose of Horizon Scanning in heritage safeguarding?", opts:["Drafting annual financial audits", "Identifying emerging threats and opportunities", "Calculating historical tax values", "Restoring physical museum artifacts"], ans: 1 },
+            { t: "Impact Architect", d: "Applying this framework to design measurable social interventions.", q: "In the context of behavioral change, what does an 'Impact Architect' primarily design?", opts:["Architectural blueprints for heritage sites", "Systemic social interventions and nudges", "Digital 3D models of artifacts", "Traditional music compositions"], ans: 1 },
+            { t: "Digital Archiving", d: "Sharing techniques for recording traditional dance movements into 3D motion capture.", q: "Why is 3D motion capture highly useful for safeguarding traditional dances?", opts:["It automatically translates the lyrics of the accompanying songs.", "It accurately preserves spatial movement data for future study.", "It replaces the need for human dancers in cultural festivals.", "It reduces the cost of tailoring traditional costumes."], ans: 1 },
+            { t: "Ecological Philosophy", d: "Understanding the spiritual connection between indigenous communities and nature.", q: "Which concept best describes traditional ecological knowledge?", opts:["Exploiting natural resources for maximum profit.", "A reciprocal, sustainable relationship with the environment.", "Ignoring seasonal changes in agricultural planning.", "Replacing natural ecosystems with urban infrastructure."], ans: 1 },
+            { t: "Community Mapping", d: "Using participatory maps to identify cultural resources.", q: "What is the primary benefit of participatory community mapping?", opts:["It allows governments to tax cultural resources.", "It empowers local communities to define their own heritage.", "It replaces the need for ethnographic research.", "It hides cultural sites from tourists."], ans: 1 },
+            { t: "The COM-B Model", d: "A behavioral science framework for understanding change.", q: "In the COM-B model, what must be present for a behavior to occur?", opts:["Capability, Opportunity, and Motivation", "Capital, Organization, and Management", "Culture, Origin, and Meaning", "Communication, Observation, and Measurement"], ans: 0 },
+            { t: "Intangible Cultural Heritage (ICH)", d: "Understanding the UNESCO 2003 Convention.", q: "Which of the following is considered Intangible Cultural Heritage?", opts:["A historical stone temple.", "A collection of ancient gold coins.", "Traditional weaving skills passed down through generations.", "A natural national park."], ans: 2 },
+            { t: "The Barnum Effect", d: "A psychological phenomenon affecting how people perceive information.", q: "How does the Barnum Effect relate to cultural communication?", opts:["It explains why people prefer physical artifacts over stories.", "It makes general cultural statements feel highly personalized and true to an individual.", "It describes the financial cost of safeguarding.", "It is a technique for preserving old manuscripts."], ans: 1 },
+            { t: "Safeguarding vs. Protection", d: "Understanding the nuanced terminology in heritage management.", q: "In the context of ICH, what does 'safeguarding' emphasize compared to 'protection'?", opts:["Locking artifacts in a museum vault.", "The continuous recreation and transmission of heritage by communities.", "Preventing any changes to traditional practices.", "Copyrighting cultural expressions for profit."], ans: 1 },
+            { t: "Canary Trap", d: "An information security tactic.", q: "How is a 'Canary Trap' used in strategic communications?", opts:["To capture birds for traditional ceremonies.", "To share different versions of a document to identify who is leaking information.", "To archive oral histories.", "To fundraise for museum maintenance."], ans: 1 },
+            { t: "Living Human Treasures", d: "Recognizing the bearers of cultural knowledge.", q: "What is the primary role of a 'Living Human Treasure'?", opts:["To sell cultural artifacts.", "To ensure the continuous transmission of their specialized knowledge to younger generations.", "To serve as political diplomats.", "To manage museum collections."], ans: 1 },
+            { t: "Loss Aversion", d: "A cognitive bias where the pain of losing is psychologically twice as powerful as the pleasure of gaining.", q: "How can 'Loss Aversion' be utilized in a heritage safeguarding campaign?", opts:["By highlighting the financial gains of tourism.", "By emphasizing that a unique language will be gone forever if not spoken today.", "By offering monetary rewards for practicing traditions.", "By building more physical museums."], ans: 1 },
+            { t: "Cultural Appropriation", d: "Understanding the ethical boundaries of sharing heritage.", q: "What distinguishes cultural appropriation from cultural exchange?", opts:["Learning a language from a native speaker.", "A dominant group exploiting the culture of a marginalized group without respect or compensation.", "Collaborating on a joint musical performance.", "Translating traditional poetry into other languages."], ans: 1 },
+            { t: "Nudge Theory", d: "Using subtle interventions to influence behavior.", q: "Which is an example of a 'Nudge' in promoting traditional food?", opts:["Banning the sale of fast food.", "Placing traditional snacks at eye-level near the checkout counter.", "Taxing imported ingredients.", "Forcing people to attend cooking classes."], ans: 1 },
+            { t: "Disaster Risk Reduction (DRR)", d: "Preparing heritage for crises.", q: "Why is DRR crucial for Intangible Cultural Heritage?", opts:["Because natural disasters only affect physical buildings.", "Because displacement and trauma can severely disrupt the community networks that sustain ICH.", "Because DRR guarantees international funding.", "Because it stops climate change."], ans: 1 },
+            { t: "Channel Convergence", d: "A communication strategy.", q: "What does 'Channel Convergence' entail?", opts:["Digging new irrigation canals for traditional farming.", "Directing all public communication and inquiries to a single, controlled platform.", "Translating texts into multiple languages.", "Merging different cultural dances into one."], ans: 1 },
+            { t: "Free, Prior and Informed Consent (FPIC)", d: "An ethical standard in community research.", q: "Why is FPIC essential before documenting a community's sacred rituals?", opts:["It ensures the researchers get paid.", "It respects the community's right to control their own cultural data and participation.", "It speeds up the publication process.", "It guarantees the research will be scientifically accurate."], ans: 1 },
+            { t: "Gini Ratio & Infrastructure", d: "Analyzing the socio-economic impacts of development.", q: "A study found that new rural infrastructure inadvertently increased the Gini ratio. What does this imply?", opts:["Poverty was completely eradicated.", "The economic inequality within the population widened.", "Traditional arts became more popular.", "The infrastructure was physically unstable."], ans: 1 },
+            { t: "Community-Based Inventory (CBI)", d: "Empowering communities to document their own heritage systematically.", q: "What is the core principle of a Community-Based Inventory in ICH safeguarding?", opts:["External experts strictly dictate what is valuable.", "The community actively identifies, categorizes, and owns their cultural data.", "It is designed only for physical monuments and artifacts.", "It is a secret database for government use only."], ans: 1 },
+            { t: "High-Context Communication", d: "Understanding how information is implicitly shared in traditional communities.", q: "What characterizes a 'High-Context' cultural communication style?", opts:["Everything must be written down in long, detailed text documents.", "Communication is done entirely through digital messaging apps.", "Meaning is heavily derived from non-verbal cues, shared history, and relationships.", "People typically speak very loudly to convey meaning."], ans: 2 },
+            { t: "The Paradox of Safety", d: "Exploring the risks of over-regulating living cultural systems.", q: "How might the 'Paradox of Safety' negatively impact Intangible Cultural Heritage?", opts:["By making museum buildings completely earthquake-proof.", "Over-protecting and strictly formalizing a living tradition might stop it from evolving and surviving naturally.", "By adding too many security guards to an exhibition.", "By guaranteeing international funding for local artists."], ans: 1 },
+            { t: "Monitoring Data Anomalies", d: "Using data tracking to prevent systemic failures in cultural programs.", q: "When monitoring a cultural grant dashboard, detecting an early data anomaly is crucial because:", opts:["It allows you to completely ignore the problem.", "It helps spend more budget unnecessarily.", "It prevents minor logistical errors from cascading into critical program failures.", "It proves that qualitative data is useless."], ans: 2 },
+            { t: "Community Bearing", d: "The role of the individual in the collective heritage.", q: "Who is a 'Community Bearer' in the context of safeguarding?", opts:["A government official who signs cultural laws.", "An individual or group within the community who practices and transmits the heritage.", "A tourist who visits a cultural site.", "A researcher who writes books about the culture."], ans: 1 },
+            { t: "Sustainable Safeguarding", d: "Ensuring traditions survive long after the funding ends.", q: "What makes a safeguarding project 'Sustainable'?", opts:["When it relies on permanent international government grants.", "When the community takes full ownership of the practice and integrates it into their daily socio-economic life.", "When the practice is moved entirely to a digital museum.", "When the practice is strictly controlled by a single master."], ans: 1 },
+            { t: "File Format Sustainability", d: "Ensuring digital cultural archives remain accessible over time.", q: "Why is choosing open-source file formats (like .TIFF or .WAV) crucial for long-term digital preservation of ICH recordings?", opts:["They take up less storage space on hard drives.", "They can be read by proprietary software only.", "They prevent vendor lock-in and ensure future accessibility regardless of software changes.", "They automatically translate oral traditions into multiple languages."], ans: 2 },
+            { t: "Community Consent Protocol", d: "Ethical guidelines for researchers documenting ICH.", q: "According to UNESCO's Ethical Principles, if a community withdraws its consent during a documentation project, the researcher must:", opts:["Continue documenting anyway for the sake of science.", "Appeal directly to the government to override the community's decision.", "Halt all activities immediately and respect the community's decision.", "Offer monetary compensation to change their minds."], ans: 2 },
+            { t: "Heritage and Climate Change", d: "Intersection of environment and safeguarding.", q: "How does climate change specifically threaten Intangible Cultural Heritage in coastal communities?", opts:["It increases funding for cultural preservation.", "Sea-level rise can displace communities, severing the geographic connection to traditions like fishing rituals and boat-building.", "It makes traditional clothing more fashionable.", "It reduces the need for disaster preparedness planning."], ans: 1 },
+            { t: "Evaluation Criteria for Nominations", d: "How UNESCO assesses ICH nominations.", q: "Which of the following is NOT one of the five main evaluation criteria for inscriptions on the Representative List?", opts:["R.1: The element constitutes ICH as defined in Article 2 of the Convention.", "R.2: Inscription contributes to ensuring visibility and awareness of ICH.", "R.3: Safeguarding measures are elaborated to protect the element.", "R.4: The element has high commercial tourism potential."], ans: 3 },
+            { t: "Tokenism in Participation", d: "Avoiding superficial community engagement.", q: "What is 'tokenism' in the context of community participation in ICH safeguarding projects?", opts:["Giving community members actual decision-making power.", "Involving community representatives symbolically without giving them real influence over outcomes.", "Paying community members fair wages for their participation.", "Documenting community traditions with their full consent."], ans: 1 },
+            { t: "Intergenerational Transmission", d: "Core concept in ICH viability.", q: "According to the 2003 Convention, what is the single most important factor in determining whether an ICH element is 'viable'?", opts:["The number of YouTube videos about it.", "Its inclusion in school textbooks.", "Its continuous transmission from generation to generation within the community.", "The amount of government funding it receives."], ans: 2 },
+            { t: "Multinational Nominations", d: "Shared heritage across borders.", q: "What is a primary advantage of submitting a multinational nomination for an ICH element shared by several countries?", opts:["It guarantees faster approval by UNESCO.", "Each country can submit separate documentation without coordination.", "It promotes dialogue and cooperation while demonstrating the element's role in building bridges between communities.", "It allows each country to claim exclusive ownership."], ans: 2 },
+            { t: "Herarchy of ICH", d: "Understanding value judgments in heritage.", q: "The Ethical Principles for ICH Safeguarding explicitly reject which problematic approach?", opts:["Documenting ICH with community consent.", "Establishing hierarchies or rankings of ICH elements (e.g., 'this dance is more important than that ritual').", "Involving youth in transmission activities.", "Seeking international cooperation for safeguarding."], ans: 1 },
+            { t: "Digitization Risks", d: "Potential negative impacts of digital archiving.", q: "What is a significant risk of digitizing sacred or secret ICH without proper protocols?", opts:["The files might be accidentally deleted.", "Sacred knowledge intended only for initiated community members could become publicly accessible, violating cultural protocols.", "Digital files are always lower quality than analog recordings.", "It increases the cost of storage significantly."], ans: 1 },
+            { t: "Periodic Reporting Cycle", d: "Monitoring mechanism of the Convention.", q: "How often are States Parties generally required to submit their periodic reports on ICH safeguarding efforts to UNESCO?", opts:["Every year.", "Every six years (aligned with the reporting cycle).", "Only once, upon ratifying the Convention.", "Whenever a new element is nominated."], ans: 1 },
+            { t: "Heritage Commodification", d: "Economic pressures on living traditions.", q: "What is 'commodification' of ICH and why is it concerning?", opts:["Making ICH freely available to everyone.", "The process of transforming cultural practices into marketable products, often stripping them of their deeper meaning to appeal to tourists.", "Government subsidies for traditional crafts.", "Fair trade certification for indigenous art."], ans: 1 },
+            { t: "Community-based Research", d: "Methodological approaches in ICH documentation.", q: "In community-based research methodology, who should ultimately control and own the research data collected about a community's ICH?", opts:["The university or research institution funding the project.", "The government ministry that issued the research permit.", "The community itself, following principles of data sovereignty.", "UNESCO, as the international authority."], ans: 2 },
+            { t: "Formal vs Non-formal Transmission", d: "Different educational contexts for ICH.", q: "Non-formal transmission of ICH refers to:", opts:["Teaching ICH in university degree programs.", "Learning that occurs outside official educational institutions, such as within families, apprenticeships, or community gatherings.", "Online courses about traditional crafts.", "Government-mandated cultural training programs."], ans: 1 },
+            { t: "Heritage Impact Assessment", d: "Evaluating development impacts on ICH.", q: "What should a Heritage Impact Assessment for a development project (e.g., dam construction) specifically evaluate regarding ICH?", opts:["Whether the project will increase tourism revenue.", "How many new jobs will be created for local youth.", "The potential disruption to community practices, rituals, and knowledge transmission tied to the affected landscape.", "The architectural style of the new construction."], ans: 2 },
+            { t: "Transparency in Governance", d: "Ethical management of ICH programs.", q: "The Operational Directives emphasize that safeguarding measures must be developed and implemented with maximum transparency. This means:", opts:["All meetings must be broadcast live on television.", "Decisions, processes, and outcomes should be openly accessible and clearly communicated to communities and the public.", "Only government officials can access safeguarding documents.", "Communities must sign non-disclosure agreements."], ans: 1 },
+            { t: "Cultural Mapping", d: "Visualizing community heritage resources.", q: "How does cultural mapping differ from simple geographic mapping?", opts:["It only focuses on physical landmarks.", "It layers intangible elements like stories, rituals, and memories onto physical spaces, showing how communities imbue landscapes with meaning.", "It uses satellite imagery exclusively.", "It is conducted without community input."], ans: 1 },
+            { t: "ICH and Human Dignity", d: "Ethical foundations of safeguarding.", q: "According to the Ethical Principles, all safeguarding activities must:", opts:["Prioritize scientific documentation above all else.", "Be conducted in the language of the researchers.", "Respect the dignity and human rights of the communities concerned.", "Seek maximum media exposure."], ans: 2 },
+            { t: "Transmission Crisis Indicators", d: "Early warning signs for endangered ICH.", q: "Which of the following is a warning sign that an ICH element may be facing a transmission crisis?", opts:["Increasing number of public performances.", "Growing tourism interest in the practice.", "Fewer young people learning the practice, with the average age of practitioners rising significantly.", "New variations of the tradition emerging."], ans: 2 },
+            { t: "Glossary of ICH Terms", d: "Understanding UNESCO terminology.", q: "In UNESCO documents, what is meant by the 'viability' of an ICH element?", opts:["Its ability to generate income.", "Its capacity to survive and be recreated across generations despite changing circumstances.", "Its physical durability if made into an object.", "Its popularity on international social media."], ans: 1 },
+            { t: "Post-Inscription Responsibilities", d: "Obligations after UNESCO listing.", q: "After an ICH element is inscribed on a UNESCO list, the State Party is expected to:", opts:["Consider the work complete and move on to other priorities.", "Implement the safeguarding measures described in the nomination file and report on their progress in periodic reports.", "Prevent any changes or evolution in the practice.", "Charge royalties to anyone who performs the element."], ans: 1 }
         ];
 
         let currentQuestionObj = null;
