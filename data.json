@@ -6751,19 +6751,288 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c0d8f5ea",
+      "element_name": "Drowning of Marzanna (Topienie Marzanny)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Marzanna_-_spring_doll.JPG/800px-Marzanna_-_spring_doll.JPG",
+      "source_urls": [
+        "https://study.gov.pl/everything-you-should-know-about-polish-spring-tradition",
+        "https://www.realpoland.eu/marzannas-drowning-a-polish-tradition-of-welcoming-spring/",
+        "https://www.atlasobscura.com/articles/drowning-marzanna-poland-spring",
+        "https://yourrootsinpoland.com/2016/03/20/effigy-of-marzanna-representing-winter/",
+        "https://realpoland.tours/the-drowning-of-marzanna-how-to-say-goodbye-to-polish-winter/",
+        "https://damosfera.pl/pierwszy-dzien-wiosny-i-tradycja-topienia-marzanny/",
+        "https://wpna.fm/polish-traditions-the-drowning-of-marzanna/",
+        "https://morele.net/wiadomosci/topienie-marzanny-ludowy-zwyczaj-tradycja-topienia-marzanny/3091/",
+        "https://www.globalpenfriends.com/articles/marzanna-ritual-in-poland",
+        "https://inyourpocket.com/poland/surviving-slavic-rituals-in-poland-the-drowning-of-marzanna-winters-witch_71271f",
+        "https://www.kidskonnect.com/holidays/marzanna/",
+        "https://historiapoznania.pl/topienie-marzanny-starozytny-slowianski-rytual-ktory-przetrwal-w-wielkopolsce-od-xv-wieku/",
+        "https://digitalglobaltraveler.medium.com/make-marzanna-drown-because-spring-has-come-a4c330089868",
+        "https://culture.pl/en/article/9-slavic-rituals-customs-of-ye-olden-days",
+        "https://culture.pl/pl/artykul/niezapomniane-obrzedy-i-zwyczaje-slowianskie",
+        "https://slowianskamitologia.wordpress.com/2018/11/26/topienie-marzanny/",
+        "https://goddessmarazanna.wordpress.com/goddess-marazanna/",
+        "https://sophiehodorowiczknab.com/blog/marzanna-an-ancient-springtime-festival",
+        "https://commons.wikimedia.org/wiki/File:Marzanna_-_spring_doll.JPG",
+        "https://www.reddit.com/r/poland/comments/tj8f0e/in_kielce_people_made_and_drowned_an_effigy_with/"
+      ],
+      "scraped_at": "2026-04-11T01:19:31.685872Z",
+      "location": {
+        "country": "Poland",
+        "provinces": [
+          "Upper Silesia",
+          "Małopolska",
+          "Podhale",
+          "Wielkopolska"
+        ],
+        "lat": 50.1890652,
+        "lng": 18.4646568
+      },
+      "resume_analisa": {
+        "description": "The Drowning of Marzanna, known in Polish as 'Topienie Marzanny', is an ancient Slavic pagan ritual observed in Poland and other Central European countries to mark the end of winter and welcome the arrival of spring. It involves creating an effigy of Marzanna, the Slavic goddess associated with death, winter, and disease, and then ritually disposing of it, typically by burning and/or drowning it in a river or lake. The tradition is usually celebrated on March 21st, the first day of calendar spring.",
+        "cultural_significance": "This ritual is deeply rooted in pre-Christian Slavic beliefs, symbolizing the cyclical nature of life, death, and rebirth. The destruction of the Marzanna effigy is believed to banish the harshness of winter, diseases, and misfortunes, thereby ensuring a bountiful harvest and the renewal of nature. Despite historical attempts by the Catholic Church to suppress or replace this pagan custom, it has persisted and evolved, becoming a cherished part of Polish folklore. In modern times, while it has largely lost its sacred character, it remains a popular and joyful event, particularly for children and teenagers in schools, as a festive way to celebrate the arrival of spring.",
+        "gemini_tags": [
+          "Pagan ritual",
+          "Spring celebration",
+          "Slavic folklore",
+          "Effigy burning",
+          "Effigy drowning",
+          "Seasonal rite",
+          "Polish tradition",
+          "Winter banishment",
+          "Nature renewal"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual",
+        "materials_and_tools": [
+          "Straw",
+          "Old clothes/fabric/linen",
+          "Ribbons",
+          "Beads",
+          "Headscarf",
+          "Sticks (for the effigy's structure)"
+        ],
+        "step_by_step": [
+          "**1. Creation of the Effigy**: Participants, often children and young people, construct a human-shaped doll (effigy) of Marzanna. This is typically made from straw, old clothes, or fabric, and decorated with items like ribbons, beads, or a headscarf to give it a female appearance.",
+          "**2. Procession**: The completed Marzanna effigy is carried in a festive procession through the village or town. This procession may involve singing traditional songs. Historically, the effigy was sometimes dipped into puddles or streams along the route.",
+          "**3. Burning and Drowning**: The procession proceeds to a nearby river, lake, or other body of water. The effigy is often set on fire before being thrown into the water to drown. This act symbolizes the definitive departure of winter.",
+          "**4. Return (Optional/Historical)**: In some traditional practices, after Marzanna was drowned, her 'corpse' would be retrieved and paraded back through the village, sometimes by girls, accompanied by dancing and singing. Superstitions advised against touching the effigy once it was in the water or looking back while returning home, to avoid bad luck or illness."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Czech Republic",
+            "element_name": "Drowning of Morena",
+            "relationship_reason": "Similar ritual involving an effigy of the winter goddess (Morena) to welcome spring, rooted in common Slavic pagan traditions."
+          },
+          {
+            "country": "Slovakia",
+            "element_name": "Drowning of Marzanna/Morena",
+            "relationship_reason": "Similar ritual involving an effigy of the winter goddess (Marzanna/Morena) to welcome spring, rooted in common Slavic pagan traditions."
+          },
+          {
+            "country": "Lithuania",
+            "element_name": "Drowning of Morė",
+            "relationship_reason": "Similar ritual involving an effigy of the winter goddess (Morė) to welcome spring, rooted in common Baltic and Slavic seasonal rites."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-532905a0",
+      "element_name": "Maasai Beadwork",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.luxurytanzaniasafaris.com/maasai-beadwork-and-its-significance/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.luxurytanzaniasafaris.com/maasai-beadwork-and-its-significance/",
+        "https://globalsprouts.com/maasai-beaded-bracelets-history-and-craft/",
+        "https://www.culturalelements.com/blogs/news/the-story-of-maasai-beaded-jewelry",
+        "https://we.org/en-CA/we-stories/the-evolution-of-beading-in-maasai-culture-from-heritage-art-to-sustainable-income/",
+        "https://artsandculture.google.com/story/accessorizing-change-history-and-materials-of-maasai-jewellery/1QWBh04v13n3uw",
+        "https://maramatinee.com/history-of-beadwork-in-the-maasai/",
+        "https://lammuseum.uncg.edu/2023/02/09/kenya-create-maasai-accessories/",
+        "https://www.asiliaafrica.com/maasai-beadwork-meaning/",
+        "https://www.maramatinee.com/the-poetry-of-patterns-symbols-and-motifs-used-in-maasai-beadwork/",
+        "https://www.campiyakanzi.com/maasai-beadwork/",
+        "https://artsandculture.google.com/story/the-magnificent-beading-technique-of-maasai/gwXh93_h-2-7KQ",
+        "https://www.pristinetrails.com/enriching-your-safari-part-2-beading-with-the-maasai/",
+        "https://www.leopardorchidsafaris.com/maasai-beadwork/",
+        "https://medium.com/@lyndatilley/maasai-beadwork-a-vanishing-art-7f985040d65b",
+        "https://maabeadwork.com/pages/production",
+        "https://www.maramatinee.com/beadwork-masterclass/",
+        "https://www.pristinetrails.com/enriching-your-safari-part-2-beading-with-the-maasai/",
+        "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/secret-life-beads",
+        "https://www.youtube.com/watch?v=1x70l0l1S0s"
+      ],
+      "scraped_at": "2026-04-11T01:20:04.798662Z",
+      "location": {
+        "country": "Kenya",
+        "provinces": [
+          "Northern Kenya",
+          "Central Kenya",
+          "Southern Kenya"
+        ],
+        "lat": 1.4419683,
+        "lng": 38.4313975
+      },
+      "resume_analisa": {
+        "description": "Maasai beadwork is a vibrant and intricate art form primarily practiced by Maasai women in East Africa, particularly Kenya and Tanzania. It involves creating various personal adornment objects like necklaces, bracelets, earrings, belts, and headbands. The beadwork serves as a visual language, conveying information about the wearer's age, social status, marital status, and role within the community. Historically, beads were made from natural materials like clay, seeds, shells, bone, wood, copper, and brass. In the 19th century, European traders introduced brightly colored glass beads, which are now the primary material. The craft is passed down through generations, typically from mother to daughter.",
+        "cultural_significance": "Maasai beadwork is deeply intertwined with Maasai identity, beliefs, and traditions. It is a vital aspect of Maasai culture, representing beauty, tradition, strength, and social status. Beadwork plays a central role in significant life events and rituals, including birth ceremonies, coming-of-age rituals, marriage ceremonies, and funerals. The colors and patterns used are highly symbolic, often associated with cattle (their primary food source and wealth) and elements of their environment. For example, red signifies bravery, strength, and unity; blue represents the sky and energy; white symbolizes purity, peace, and health; green is associated with the land and health; orange denotes hospitality and warmth; and black stands for the people and the hardships they face. Beyond its cultural role, beadwork has become an important source of income for Maasai women, contributing to their economic independence, especially in times of environmental hardship.",
+        "gemini_tags": [
+          "Maasai culture",
+          "Beadwork",
+          "Traditional jewelry",
+          "East Africa",
+          "Cultural symbolism",
+          "Women's craft",
+          "Indigenous art",
+          "Kenya",
+          "Tanzania",
+          "Rites of passage",
+          "Economic empowerment"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship (Beadwork)",
+        "materials_and_tools": [
+          "Beads (traditionally clay, seeds, shells, bone, wood, copper, brass; currently predominantly small glass seed beads, often from the Czech Republic)",
+          "Fine wire or string/thread (traditionally Zulu grass, now often strong nylon thread, recycled thread from old grain bags)",
+          "Needle",
+          "Multi-strand spacer (made from wood, bone, or shell, for some items like bracelets)",
+          "Leather strips (for some pieces)",
+          "Recycled plastic (from yogurt pots, used to hold thread in place, for some techniques)"
+        ],
+        "step_by_step": [
+          "Gather Materials: Select beads (considering their symbolic colors), thread/wire, and a spacer if making a bracelet or collar.",
+          "Prepare the Base: For items like bracelets, a multi-strand spacer is used. The thread is secured to the starting spacer, often with a 'stop bead' and a knot. For other items, leather strips might form the base.",
+          "Stringing Beads: Beads are meticulously strung onto the fine wire or string, one by one, following precise designs and patterns.",
+          "Forming Patterns: Artisans create intricate and captivating geometric shapes and motifs, with each color and pattern conveying specific meanings.",
+          "Securing Rows/Sections: For structured pieces like bracelets, each row of beads is secured to the spacer before adding more beads.",
+          "Finishing: The process continues until the desired piece is complete, with the final threads secured to ensure durability."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Tanzania",
+            "element_name": "Maasai Beadwork",
+            "relationship_reason": "The Maasai people and their beadwork tradition span across both Kenya and Tanzania."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-f13a3d5b",
+      "element_name": "Kunqu Opera",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Kunqu_Opera_performer.jpg/800px-Kunqu_Opera_performer.jpg",
+      "source_urls": [
+        "https://zh.wikipedia.org/wiki/%E5%B4%91%E6%9B%B2",
+        "https://ja.wikipedia.org/wiki/%E5%B4%91%E6%9B%B2",
+        "http://www.kunqumuseum.com/",
+        "https://www.coursera.org/learn/kunqu-opera",
+        "https://www.youtube.com/watch?v=rW7gpneLph8",
+        "https://www.facebook.com/taipeikunqu/",
+        "http://www.unesco.org/culture/ich/index.php?RL=00004"
+      ],
+      "scraped_at": "2026-04-11T01:20:38.695174Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Jiangsu",
+          "Zhejiang",
+          "Shanghai",
+          "Beijing",
+          "Hunan",
+          "Sichuan",
+          "Henan",
+          "Hebei",
+          "Guangdong",
+          "Fujian",
+          "Jiangxi"
+        ],
+        "lat": 33.0000001,
+        "lng": 119.9999999
+      },
+      "resume_analisa": {
+        "description": "Kunqu Opera (崑曲) is one of the oldest and most refined forms of traditional Chinese opera, originating in Kunshan, Suzhou, Jiangsu province, in the 14th century. It is renowned for its graceful and delicate singing style, often referred to as 'water-mill style' or '水磨腔', characterized by elegant recitation, subtle acting, and flowing dance movements. The art form integrates singing, recitation, acting, dancing, and martial arts, forming a comprehensive performing art. It is widely known as the 'Mother of a Hundred Operas' ('百戲之母' or '百戲之祖') due to its significant influence on the development of many other Chinese opera forms, including Peking Opera.",
+        "cultural_significance": "Kunqu Opera is a precious treasure of Chinese traditional culture, representing a highly developed art form in the history of Chinese literature, opera, music, and dance. Its profound cultural significance was recognized globally when it was inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2001. The opera reflects the aesthetic characteristics of Chinese culture and a deep pursuit of refined elegance. Its scripts possess high literary value, with famous works such as 'The Peony Pavilion' (牡丹亭) by Tang Xianzu and 'The Palace of Eternal Youth' (長生殿) by Hong Sheng being celebrated classics. Kunqu embodies the classical Chinese aesthetic principle of 'no sound not sung, no movement not danced' ('無聲不歌，無動不舞'), making it a quintessential representation of traditional Chinese performing arts.",
+        "gemini_tags": [
+          "Performing Arts",
+          "Traditional Chinese Opera",
+          "Intangible Cultural Heritage",
+          "Classical Music",
+          "Dance",
+          "Chinese Culture",
+          "Suzhou",
+          "Kunshan",
+          "UNESCO"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance and Training",
+        "materials_and_tools": [
+          "Musical instruments (Dizi/flute, Sheng, Xiao, Suona, Sanxian, Pipa, Erhu, Guzheng, drums, clappers, gongs, cymbals)",
+          "Elaborate costumes",
+          "Headdresses",
+          "Stage makeup",
+          "Props (folding fans, round fans, water sleeves, horsewhips, handkerchiefs)"
+        ],
+        "step_by_step": [
+          "**Training**: The training of Kunqu performers is traditionally based on 'oral transmission and heart-to-heart instruction' (口傳心授). It involves rigorous 'basic skill training' (基本功訓練).",
+          "**Vocalization and Recitation**: Students learn traditional musical notation (工尺譜), specific vocalization methods (聲腔口法), and the nuances of 'singing and recitation' (唱念).",
+          "**Acting and Movement**: Performers are trained in 'acting and movement' (做表), which includes highly dance-like body movements (身段) and expressive gestures. This involves mastering specific 'body language' and its application in performance. Training often focuses on classic scenes, such as 'The Peony Pavilion - Seeking a Dream', to teach intricate singing and body movements, incorporating props like handkerchiefs, folding fans, round fans, and water sleeves.",
+          "**Character Roles**: Actors specialize in various character roles, known as 'Jiamen' (家門), including Sheng (male roles), Dan (female roles), Jing (painted face roles), Mo (elderly male roles), Chou (clown roles), Wai (supporting male roles), and Tie (supporting female roles). These roles have further detailed subdivisions, each with established performance programs and techniques.",
+          "**Musical Accompaniment**: A Kunqu performance is accompanied by a 'Wenwuchang' (文武場), comprising civil and martial orchestras. The civil orchestra primarily uses melodic instruments like the Dizi (flute), Sheng (mouth organ), Xiao (vertical flute), Suona (double-reed horn), Sanxian (three-stringed lute), Pipa (lute), Erhu (two-stringed fiddle), and Guzheng (zither) to accompany the singing. The martial orchestra uses percussion instruments such as drums, clappers, gongs, and cymbals to control rhythm and enhance dramatic effect.",
+          "**Stage and Aesthetics**: The Kunqu stage is typically simple and symbolic, relying on the performers' artistry and the audience's imagination to create elaborate scenes. Costumes, headdresses, and makeup are meticulously designed to reflect the character's identity and enhance the visual spectacle."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Peking Opera (京劇)",
+            "relationship_reason": "Kunqu Opera is widely regarded as the 'mother of Peking Opera' and significantly influenced its singing styles, character types, and overall performance techniques."
+          },
+          {
+            "country": "China (various regions)",
+            "element_name": "Yue Opera (越劇), Sichuan Opera (川劇), Cantonese Opera (粵劇), etc.",
+            "relationship_reason": "Numerous local opera forms across China, including Yue Opera, Sichuan Opera, and Cantonese Opera, were directly or indirectly influenced and nourished by Kunqu Opera's artistic traditions."
+          },
+          {
+            "country": "Taiwan",
+            "element_name": "Taiwanese Kunqu Opera (台灣崑劇團)",
+            "relationship_reason": "Taiwan actively engages in the preservation and performance of Kunqu Opera, with ongoing cross-strait exchanges and collaborations with mainland China in training, performances, and academic research to promote its inheritance and development."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-09T01:16:17.487385Z",
-    "total_ich_elements": 80,
-    "complete_records": 74,
+    "generated_at": "2026-04-11T01:21:24.828939Z",
+    "total_ich_elements": 83,
+    "complete_records": 77,
     "incomplete_records": 6,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 32,
-      "Social Practices & Rituals": 19,
+      "Traditional Craftsmanship": 33,
+      "Social Practices & Rituals": 20,
       "Culinary Traditions": 12,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 7,
+      "Performing Arts": 8,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 5,
