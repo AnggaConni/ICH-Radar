@@ -7020,19 +7020,293 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-12e63937",
+      "element_name": "Couscous",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Couscous_with_vegetables_and_meat.jpg",
+      "source_urls": [
+        "https://www.histoire-immigration.fr/l-echo-des-archives/le-couscous-patrimoine-immateriel-de-l-unesco",
+        "https://news.un.org/fr/story/2020/12/1084882",
+        "https://ich.unesco.org/fr/RL/les-savoirs-savoir-faire-et-pratiques-lies-a-la-production-et-a-la-consommation-du-couscous-01602",
+        "https://ich.unesco.org/en/RL/knowledge-know-how-and-practices-pertaining-to-the-production-and-consumption-of-couscous-01602",
+        "https://rimping.com/couscous-a-global-culinary-gem/",
+        "https://www.thenationalnews.com/arts-culture/the-unexpected-allure-of-couscous-the-history-and-tradition-behind-the-north-african-staple-1.1132640",
+        "https://meriem-news.com/le-couscous-un-heritage-culinaire-entre-au-patrimoine-de-lunesco/",
+        "https://www.royalmansour.com/fr/blog/la-recette-du-couscous-aux-sept-legumes-du-chef-karim-benbaba/",
+        "https://www.albertmenes.fr/blog/couscous-marocain-facile-et-rapide-la-vraie-recette-traditionnelle/",
+        "https://couscousday.com/culture/",
+        "https://www.remitly.com/blog/traditional-foods-around-the-world/moroccan-couscous/",
+        "https://www.middleeasteye.net/discover/couscous-world-heritage-status-food-maghreb",
+        "https://laconquetedessaveurs.com/le-couscous-au-patrimoine-culinaire-de-lhumanite/",
+        "https://www.youtube.com/watch?v=LqN_yW6bJ00",
+        "https://lepetitjournal.com/couscous-un-plat-adule-par-lespagne-mauresque-283103",
+        "https://www.minouchka.com/2008/05/08/couscous-a-la-marocaine-par-etapes-et-quelques-astuces/",
+        "https://maghrebsouk.com/blogs/news/couscous-histoire-et-tradition-dun-plat-millenaire",
+        "https://www.youtube.com/watch?v=Fj-y5v-2e1Y",
+        "https://fr.wikipedia.org/wiki/Couscous",
+        "https://www.lesatelierscuisine.com/blog/histoire-dune-recette-le-couscous/",
+        "https://www.academiedugout.fr/recette/couscous-royal_7182",
+        "https://www.biblio.serere.org/le-couscous-origine-de-la-recette/"
+      ],
+      "scraped_at": "2026-04-13T01:30:42.423184Z",
+      "location": {
+        "country": "North Africa",
+        "provinces": [
+          "Algeria",
+          "Morocco",
+          "Tunisia",
+          "Mauritania",
+          "Libya",
+          "Egypt",
+          "Sahara Occidental"
+        ],
+        "lat": 36.7544771,
+        "lng": 2.9732029
+      },
+      "resume_analisa": {
+        "description": "Couscous is a dish made from steamed semolina (durum wheat), typically served with a stew of vegetables, meat (such as lamb or chicken), or fish, and seasoned with various spices. It is a staple food and a culinary creation rooted in Berber cuisine. The term 'couscous' refers both to the small, steamed granules of semolina and the complete prepared dish. Its origins trace back thousands of years to the Berber people of North Africa.",
+        "cultural_significance": "Couscous holds immense cultural significance, symbolizing solidarity, conviviality, sharing, and togetherness across North African communities and beyond. It is deeply ingrained in daily life and is often prepared for special occasions such as weddings, births, religious holidays (like Ramadan and Eid), and even funerals, serving to reunite families and communities. In many Maghrebi families, it is a tradition to serve couscous on Friday afternoons after Muslim congregational prayers. The preparation of couscous is a ceremonial process, and the knowledge and know-how are traditionally transmitted informally from mother to daughter.",
+        "gemini_tags": [
+          "Culinary Heritage",
+          "North African Cuisine",
+          "Shared Tradition",
+          "UNESCO Intangible Cultural Heritage",
+          "Maghreb",
+          "Semolina",
+          "Steaming",
+          "Communal Meal",
+          "Social Practice",
+          "Berber Culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Culinary Preparation",
+        "materials_and_tools": [
+          "Semolina (durum wheat)",
+          "Water",
+          "Salt",
+          "Olive oil or smen (clarified butter)",
+          "Vegetables (e.g., carrots, zucchini, turnips, potatoes, chickpeas, onions, tomatoes, celery)",
+          "Meat (e.g., lamb, chicken) or fish",
+          "Spices (e.g., paprika, turmeric, cumin, coriander, black pepper, chili, caraway, ginger, cinnamon, saffron, ras el hanout)",
+          "Fresh herbs (e.g., coriander, parsley)",
+          "Couscoussier (a two-part steamer pot)",
+          "Large shallow dish (for rolling semolina)",
+          "Pot (for broth)"
+        ],
+        "step_by_step": [
+          "**Prepare the semolina:** Place semolina in a large, shallow dish. Season with salt, drizzle with olive oil, and gently rub and roll the semolina grains by hand to separate them. Gradually sprinkle with water and continue rolling until the grains are evenly hydrated and separated. Let the semolina rest for a few minutes.",
+          "**Prepare the broth:** In the bottom pot of the couscoussier, sauté the chosen meat (if using) with chopped onions, garlic, and a blend of spices. Add chopped tomatoes, some of the harder vegetables (like carrots and turnips), and water to create a flavorful broth. Bring to a boil.",
+          "**First steaming of couscous:** Place the prepared semolina in the perforated top part of the couscoussier. Once the broth in the bottom pot is boiling and steam is rising, place the top part with the semolina over it. Steam for approximately 15-20 minutes, or until steam thoroughly escapes through the semolina.",
+          "**Second preparation of semolina:** Carefully remove the top part of the couscoussier. Transfer the partially steamed semolina back into the large shallow dish. Using oiled hands, gently separate the grains and sprinkle with more water. Allow it to rest and absorb the moisture.",
+          "**Add remaining vegetables to broth:** Add the faster-cooking vegetables (such as zucchini and potatoes) to the simmering broth in the bottom pot.",
+          "**Second steaming of couscous:** Return the semolina to the top part of the couscoussier and place it back over the boiling broth. Steam for another 15-20 minutes. Some traditional recipes may involve a third steaming for an even lighter and fluffier texture.",
+          "**Serve:** Once cooked, transfer the fluffy couscous to a large communal platter (known as a 'gssaa' in some regions). Arrange the cooked meat and vegetables on top of the couscous. Ladle the rich, flavorful broth over the entire dish just before serving. It is traditionally eaten communally, often with hands."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Algeria, Morocco, Tunisia, Mauritania",
+            "element_name": "Couscous (various regional variations)",
+            "relationship_reason": "Joint UNESCO inscription recognizing shared knowledge, know-how, and practices related to its production and consumption. It is a fundamental staple food and a powerful symbol of cultural identity across these North African countries."
+          },
+          {
+            "country": "Libya, Egypt, Sahel (Sub-Saharan Africa), Moorish Spain, Italy (Sardinia, Sicily), Malta, Portugal, Greece, Levant (Middle East), Brazil",
+            "element_name": "Couscous (local variations)",
+            "relationship_reason": "The tradition of couscous spread historically through trade, migration, and conquests from North Africa, leading to its adaptation and integration into the local cuisines and cultural practices of these diverse regions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5d8f129a",
+      "element_name": "Khao Lam (ข้าวหลาม)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Sticky_rice_in_bamboo&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sticky_rice_in_bamboo",
+        "https://www.tasteatlas.com/khao-lam",
+        "https://www.pttgcgroup.com/"
+      ],
+      "scraped_at": "2026-04-13T01:31:30.973876Z",
+      "location": {
+        "country": "Thailand",
+        "provinces": [
+          "Nakhon Pathom",
+          "Chonburi (Bang Saen)",
+          "Rayong",
+          "Northern Thailand (Lanna region including Chiang Mai, Chiang Rai, Lampang)",
+          "Phuket (Ban Hin Rui)",
+          "Nakhon Phanom (Ban Phon)"
+        ],
+        "lat": 13.8918425,
+        "lng": 100.0165659
+      },
+      "resume_analisa": {
+        "description": "Khao Lam is a traditional Southeast Asian dessert consisting of sweet sticky rice, often mixed with coconut milk, sugar, and various fillings, which is then cooked inside specially prepared bamboo tubes over an open flame or in a charcoal pit. The unique slow-cooking process within the bamboo imparts distinct flavors and results in a texture that is often custardy at the top and chewier towards the bottom.",
+        "cultural_significance": "Khao Lam holds deep cultural significance in Thailand, rooted in centuries-old traditions. Historically, it served as a practical and hearty meal for farmers and travelers due to its portability and sustained energy. Beyond its culinary role, Khao Lam is a symbol of Thai hospitality and community, with its preparation often being a communal activity in villages. It is a seasonal delicacy eagerly anticipated and enjoyed during festivals and special occasions, such as Makha Bucha Day in Rayong province, where it is traditionally made for merit-making ceremonies at local temples. This practice reflects the rich heritage of Thailand and fosters family and community bonds.",
+        "gemini_tags": [
+          "Thai dessert",
+          "sticky rice",
+          "bamboo cooking",
+          "traditional food",
+          "Southeast Asian cuisine",
+          "community practice",
+          "festival food",
+          "culinary heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional cooking method (Roasting in bamboo)",
+        "materials_and_tools": [
+          "Glutinous rice (white or black sticky rice)",
+          "Coconut milk",
+          "Sugar (white or palm sugar)",
+          "Salt",
+          "Bamboo tubes (approx. 12 inches long, 1.5-2.5 inch diameter, with a thin inner membrane)",
+          "Banana leaves or coconut husks (for plugging)",
+          "Optional fillings: Black beans, taro, corn, durian, young coconut meat, pandan leaves",
+          "Open flame, charcoal pit, or ancient earth oven"
+        ],
+        "step_by_step": [
+          "Prepare bamboo tubes by cutting them to about 12 inches long above a joint, cleaning the inside and outside, and allowing them to dry.",
+          "Rinse glutinous rice several times and soak it in water (e.g., 2-4 hours in cold water or 1 hour in warm water).",
+          "Mix coconut milk, sugar, and salt until dissolved to create a sweet and creamy base.",
+          "(Optional) Mix the soaked rice with boiled black beans or other desired fillings such as taro, corn, or durian.",
+          "Pour a small amount (e.g., 1 inch) of the coconut milk mixture into each bamboo tube.",
+          "Fill the bamboo cylinders with the rice mixture, leaving some space (e.g., 4 inches) at the top. Tamp down the rice by gently bumping the tubes on the floor a few times.",
+          "Top the rice with more of the coconut milk mixture, ensuring it covers the rice.",
+          "Plug the open end of each bamboo tube tightly with banana leaves or coconut husks to seal it. In some traditional methods, grated coconut meat (after squeezing milk) is used as a plug.",
+          "Place the bamboo tubes over an open flame, in a charcoal pit, or an ancient earth oven. Roast slowly for approximately 1-2 hours on medium heat, continuously turning the tubes to ensure even cooking and prevent burning.",
+          "Once cooked, allow the bamboo to cool down slightly.",
+          "Carefully peel off the outer layer of the bamboo to expose the inner membrane, which encases the sticky rice. This step requires skill to avoid damaging the delicate membrane."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Myanmar",
+            "element_name": "Paung Din",
+            "relationship_reason": "Similar traditional sticky rice dish cooked in bamboo."
+          },
+          {
+            "country": "Cambodia",
+            "element_name": "Kralan (ក្រឡាន)",
+            "relationship_reason": "Similar traditional sticky rice dish cooked in bamboo, often eaten during Chinese and Khmer New Year."
+          },
+          {
+            "country": "Laos",
+            "element_name": "Khao Lam (ເຂົ້າຫລາມ)",
+            "relationship_reason": "Similar traditional sticky rice dish cooked in bamboo, a popular street food."
+          },
+          {
+            "country": "Vietnam",
+            "element_name": "Cơm Lam",
+            "relationship_reason": "Similar traditional sticky rice dish cooked in bamboo, often served with grilled pork or chicken."
+          },
+          {
+            "country": "Malaysia, Singapore, Indonesia",
+            "element_name": "Lemang",
+            "relationship_reason": "A traditional dish made from glutinous rice, coconut milk, and salt, cooked in hollowed bamboo tubes, typically eaten during Eid-ul-Fitr celebrations."
+          },
+          {
+            "country": "Philippines",
+            "element_name": "Binungey",
+            "relationship_reason": "Similar sticky rice snack cooked in coconut milk."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-bff34950",
+      "element_name": "Sichuan Opera Face-Changing (川剧变脸)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.wais-academy.com/bianlian-performance&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.wais-academy.com/bianlian-performance",
+        "https://www.chinanews.com.cn/cul/2023/09-05/10072046.shtml",
+        "https://www.sbs.com.au/language/mandarin/zh-hans/podcast-episode/sichuan-opera-face-changing-performer-he-changhan-hopes-traditional-culture-will-be-inherited-and-understood/y06p28522",
+        "https://www.thinkchina.sg/mask-speaks-unmasking-spirit-sichuan-opera-eye-on-sichuan-series",
+        "https://www.chicagochinanews.com/news/2010/01/30/2529.html",
+        "https://www.chinacourt.org/article/detail/2024/08/id/7702890.shtml",
+        "https://asia.si.edu/learn/for-educators/teaching-china-with-the-smithsonian/videos/face-changing/"
+      ],
+      "scraped_at": "2026-04-13T01:32:13.920356Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Sichuan"
+        ],
+        "lat": 30.5000001,
+        "lng": 102.4999999
+      },
+      "resume_analisa": {
+        "description": "Sichuan Opera Face-Changing (Bian Lian) is a highly specialized and captivating theatrical technique within Sichuan Opera, a traditional Chinese art form. Performers rapidly change their facial masks or makeup to dramatically portray sudden shifts in a character's emotions and personality. This ancient art is renowned for its speed, mystery, and the seemingly magical transformations that occur in the blink of an eye. It serves as a romanticized method to externalize the complex inner thoughts and feelings of the characters on stage.",
+        "cultural_significance": "Sichuan Opera Face-Changing is considered a 'theatrical marvel' and a 'national treasure' of Chinese intangible cultural heritage. It is a cornerstone of Sichuan Opera, enriching its narrative by vividly expressing the emotional spectrum of its characters. Beyond its artistic value, Bian Lian has become a powerful symbol of Chinese culture, frequently showcased in international cultural exchanges and performances, captivating audiences worldwide and fostering a deeper appreciation for traditional Chinese performing arts.",
+        "gemini_tags": [
+          "Chinese Opera",
+          "Traditional Performance",
+          "Mask Changing",
+          "Intangible Cultural Heritage",
+          "Sichuan Culture",
+          "Performing Arts",
+          "Theatrical Technique",
+          "Cultural Exchange"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "The techniques of Sichuan Opera Face-Changing are broadly categorized into four main methods: Smearing Face (抹脸), Blowing Face (吹脸), Pulling Masks (扯脸), and the legendary Qi-gong Face-Changing (运气变脸).",
+        "materials_and_tools": [
+          "Oil-based makeup (for smearing)",
+          "Powdered makeup (e.g., gold, silver, black powder for blowing)",
+          "Silk masks (layered, pre-painted for pulling)",
+          "Fine silk threads (for pulling masks)",
+          "Elaborate costumes (to conceal mechanisms and threads)",
+          "Fans",
+          "Swords",
+          "Capes (used to aid in mask changes)"
+        ],
+        "step_by_step": [
+          "**Smearing Face (抹脸)**: Performers pre-apply oil-based makeup to specific areas of their face (e.g., forehead, eyebrows, nose). During the performance, with a swift hand gesture, they smear the makeup across their face, instantly transforming their facial color or pattern.",
+          "**Blowing Face (吹脸)**: This technique involves powdered makeup. A small container of colored powder is discreetly placed on the stage. During a dance movement, the performer quickly approaches the container, blows the powder onto their face (which has been pre-oiled to make the powder stick), and instantly changes their facial color. Performers must close their eyes, mouth, and hold their breath during this action.",
+          "**Pulling Masks (扯脸)**: This is the most intricate and commonly seen method. Multiple pre-painted silk masks are layered onto the performer's face, each fitted with a fine silk thread. These threads are cleverly hidden within the performer's elaborate costume. Through precise movements, often aided by props like fans or capes, the performer subtly pulls a thread, causing a mask to instantly peel away and reveal the next one underneath. The masks and their mechanisms are custom-made for each performer to ensure a seamless and rapid change.",
+          "**Qi-gong Face-Changing (运气变脸)**: This is a legendary and rarely practiced method, said to involve a performer using internal 'qi' (life energy) to change their facial complexion to reflect deep emotional shifts, such as a change from red to white to blue to express fear after relief. The exact mechanism remains a closely guarded secret."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Various (International)",
+            "element_name": "Chinese Cultural Performances Abroad",
+            "relationship_reason": "While the origin and specific techniques of Sichuan Opera Face-Changing are unique to China, the art form is widely performed internationally in various countries (e.g., USA, Europe, Singapore, Thailand) as a representation of Chinese culture, fostering global appreciation and cultural exchange."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-11T01:21:24.828939Z",
-    "total_ich_elements": 83,
-    "complete_records": 77,
-    "incomplete_records": 6,
+    "generated_at": "2026-04-13T01:33:02.393018Z",
+    "total_ich_elements": 86,
+    "complete_records": 79,
+    "incomplete_records": 7,
     "categories_breakdown": {
       "Traditional Craftsmanship": 33,
       "Social Practices & Rituals": 20,
-      "Culinary Traditions": 12,
+      "Culinary Traditions": 14,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 8,
+      "Performing Arts": 9,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 5,
