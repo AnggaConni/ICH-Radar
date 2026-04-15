@@ -7294,19 +7294,311 @@
         ]
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-1e324eb7",
+      "element_name": "Gerabah Kasongan (Kasongan Pottery)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.djki.go.id/artikel/kenali-gerabah-kasongan-dari-bantul-yogyakarta&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.djki.go.id/artikel/kenali-gerabah-kasongan-dari-bantul-yogyakarta",
+        "https://id.wikipedia.org/wiki/Gerabah_Kasongan",
+        "https://digilib.isi.ac.id/2012/1/HISTORISITAS%20DESA%20GERABAH%20KASONGAN.pdf",
+        "https://travel.tempo.co/read/1879008/asal-usul-gerabah-kasongan-kerajinan-keramik-asal-bantul",
+        "https://kumparan.com/kumparanwoman/gerabah-kasongan-sejarah-dan-makna-gerabah-khas-yogyakarta-21V81d120Wk",
+        "https://www.tournesia.id/desa-wisata-kasongan-yogyakarta",
+        "https://greattours.travel/gerabah-kasongan/",
+        "https://www.mikirbae.com/2015/03/proses-pembuatan-gerabah-kasongan.html",
+        "https://www.gramedia.com/literasi/proses-pembuatan-gerabah/",
+        "https://www.indonesia.travel/gb/en/destinations/java/yogyakarta/kasongan-village",
+        "https://www.youtube.com/watch?v=R94y_n15C9U",
+        "https://www.youtube.com/watch?v=2tX2M251_j4",
+        "https://www.yogyakarta.go.id/wisata/detail/1000/desa-wisata-kasongan",
+        "https://www.google.com/search?q=time+in+Yogyakarta,+ID",
+        "https://www.google.com/search?q=kasongan+bantul+yogyakarta+latitude+longitude",
+        "https://www.latlong.net/place/bantul-yogyakarta-indonesia-32832.html",
+        "https://www.latlong.net/place/yogyakarta-city-indonesia-32829.html",
+        "https://www.latlong.net/latitude-longitude-indonesia.html",
+        "https://visitingjogja.jogjaprov.go.id/detail/2117-museumku-gerabah",
+        "https://rri.co.id/yogyakarta/lifestyle/1033481/kasongans-pottery-heritage-at-the-museumku-gerabah-in-yogyakarta",
+        "https://magz.tempo.co/read/177511071275/gerabah-a-vanishing-tradition",
+        "https://www.rumahbudayaindonesia.com/kembali-ke-akar-menggali-kisah-dan-filosofi-di-balik-seni-gerabah-tradisional-indonesia/",
+        "https://repository.ampta.ac.id/id/eprint/1253/",
+        "https://sosiologiagama.uinsgd.ac.id/sosiologi-agama-mendukung-sdgs-8-tentang-pekerjaan-layak-dan-perumbuhan-ekonomi/",
+        "https://ejournal.unesa.ac.id/index.php/JPTK/article/download/47948/29161"
+      ],
+      "scraped_at": "2026-04-15T01:25:12.267104Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Special Region of Yogyakarta"
+        ],
+        "lat": -7.9778384,
+        "lng": 110.3672257
+      },
+      "resume_analisa": {
+        "description": "Gerabah Kasongan refers to traditional earthenware originating from Kasongan Village, located in Bantul Regency, Yogyakarta, Indonesia. This village is renowned as a prominent center for pottery craftsmanship. The craft has a long-standing history, evolving from the creation of functional household items into diverse artistic and decorative pieces. Kasongan pottery is characterized by its unique forms and motifs, which are often inspired by nature and traditional Javanese patterns. It is a significant cultural product that has also become a popular tourist attraction and a source of livelihood for the local community.",
+        "cultural_significance": "The history of Gerabah Kasongan dates back to the Dutch colonial era, around the 1800s, or even during the Diponegoro War (1825-1830), with Kyai Guru Abdul Raup being a notable figure in its early development. Initially, the craft served practical purposes, fulfilling daily household needs. Over time, it developed into intricate art pieces imbued with philosophical and symbolic meanings derived from rich Javanese culture. The pottery is seen as a representation of the human life cycle, symbolizing the journey from earth and returning to it. Motifs frequently draw inspiration from natural elements such as plants, animals, and landscapes, alongside various traditional Javanese patterns, with some pieces featuring distinctive animal ornaments. Beyond its artistic value, Gerabah Kasongan plays a crucial role in the local economy and serves as a strong symbol of the community's cultural identity. In recognition of its importance, the Indonesian Government designated Gerabah Kasongan as an Intangible Cultural Heritage in 2013.",
+        "gemini_tags": [
+          "pottery",
+          "earthenware",
+          "traditional craft",
+          "Javanese culture",
+          "Yogyakarta",
+          "Indonesia",
+          "Kasongan"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Manual (hand-molding) and wheel-throwing, sometimes utilizing molds for specific shapes.",
+        "materials_and_tools": [
+          "Clay (tanah liat), including specific types like Godean, Bangunjiwo, Mangunan, red soil, and yellow soil",
+          "Sand",
+          "Water",
+          "Grinding/kneading tools (e.g., manual or mechanical grinders)",
+          "Potter's wheel (roda putar) or rotating board (papan berbentuk bulat)",
+          "Shaping tools (hands, wooden tools, small metal cans, busir)",
+          "Smoothing agents (water, kerosene, gasoline)",
+          "Carving tools (for decoration)",
+          "Drying area (open air, sunlight)",
+          "Kiln or open-air furnace (tungku pembakaran)",
+          "Painting tools (brushes)",
+          "Paints or water-based wood stain"
+        ],
+        "step_by_step": [
+          "**1. Clay Preparation:** Select and clean raw clay, removing impurities such as sand and pebbles. The clay is then mixed with sand and other specific types of soil (e.g., Godean, Bangunjiwo, Mangunan, red soil, yellow soil) in varying ratios to achieve the desired consistency and plasticity.",
+          "**2. Grinding and Kneading:** The mixed clay undergoes a grinding or kneading process, often repeated multiple times (e.g., up to six times), to ensure all components are thoroughly blended and the clay achieves optimal plasticity and workability.",
+          "**3. Shaping:** The prepared clay is then formed into the desired object. This can be done manually by hand (hand-molding), using a potter's wheel for symmetrical or cylindrical forms, or by pressing clay into pre-made molds. Traditional Kasongan pottery often emphasizes manual techniques.",
+          "**4. Refining and Smoothing:** After the initial shaping, the pottery piece is refined and smoothed. This process involves using water, small cloths, wooden tools, or even small pieces of cut metal cans to achieve a smooth surface. Kerosene or gasoline may also be used for additional smoothing.",
+          "**5. Drying:** The shaped and smoothed pottery is then air-dried. This is typically done in an open area exposed to sunlight for a period ranging from several days to a few weeks (e.g., 1-3 weeks), allowing the water content to evaporate and the clay to harden. Partial drying may occur before any carving or intricate detailing.",
+          "**6. Carving/Decorating (Optional):** If decorative elements are desired, motifs or patterns are carved onto the pottery once it has reached a semi-dry state, making it firm enough to hold its shape but still workable for carving.",
+          "**7. Firing/Baking:** Once completely dry, the pottery is placed into a kiln or an open-air furnace for firing. This crucial step, which can last for about one day and one night, hardens the clay permanently. While some sources mention firing at over 2000 degrees Celsius, traditional methods often involve lower temperatures.",
+          "**8. Cooling:** After the firing process is complete, the pottery is removed from the kiln and allowed to cool down gradually.",
+          "**9. Finishing and Painting:** The final stage involves further smoothing if necessary, followed by painting with various colors or applying a water-based wood stain to enhance its appearance and protect the surface. The finished product is then ready for sale or use."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Gerabah Plered (Purwakarta)",
+            "relationship_reason": "Similar traditional pottery craft in Indonesia, sharing techniques and cultural significance of earthenware production."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Gerabah Sitiwinangun (Cirebon)",
+            "relationship_reason": "Similar traditional pottery craft in Indonesia, sharing techniques and cultural significance of earthenware production."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Gerabah Banyumulek (Lombok)",
+            "relationship_reason": "Similar traditional pottery craft in Indonesia, sharing techniques and cultural significance of earthenware production."
+          },
+          {
+            "country": "South Korea",
+            "element_name": "Korean Traditional Jar (Onggi)",
+            "relationship_reason": "Shared general practice of traditional pottery making, involving similar stages of clay preparation, shaping, drying, and firing to create functional and artistic earthenware."
+          },
+          {
+            "country": "China",
+            "element_name": "Jingdezhen Ceramics",
+            "relationship_reason": "Shared general practice of traditional ceramics making, involving similar stages of clay preparation, shaping, drying, and firing to create functional and artistic earthenware."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-8ebb50f6",
+      "element_name": "Arabic Coffee Rituals (Qahwa)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Arabic_coffee_with_dates.jpg/1200px-Arabic_coffee_with_dates.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Arabic_coffee",
+        "https://www.unesco.org/en/ich/RL/01074",
+        "https://www.hidmc.com/blog/arabic-coffee-dates-culture",
+        "https://rosethermos.com/blogs/news/arabic-coffee-etiquette-from-traditions-to-daily-routine",
+        "https://www.albahertours.com/blog/bedouin-coffee-culture-and-rituals",
+        "https://www.arabian-adventures.com/blog/arabian-coffee-culture-10-profound-rituals-of-the-desert-welcome/"
+      ],
+      "scraped_at": "2026-04-15T01:25:50.147848Z",
+      "location": {
+        "country": "Arabian Peninsula and Levant",
+        "provinces": [
+          "Saudi Arabia",
+          "United Arab Emirates",
+          "Qatar",
+          "Yemen",
+          "Jordan",
+          "Palestine",
+          "Oman",
+          "Kuwait"
+        ],
+        "lat": null,
+        "lng": null
+      },
+      "resume_analisa": {
+        "description": "Arabic coffee, known as Qahwa, is a traditional brewed coffee made from Coffea arabica beans, deeply infused with spices such as cardamom, saffron, and sometimes cloves or rose water. It is a fundamental element of social traditions and hospitality throughout the Arab world, serving as more than just a beverage but as a profound symbol of generosity and welcome. This cultural practice involves specific methods of preparation and serving, typically utilizing a traditional long-spouted pot called a 'dallah' and small, handleless cups known as 'finjaan'.",
+        "cultural_significance": "The Arabic coffee ritual is a cornerstone of hospitality, social bonding, and cultural identity across Arab societies. It is integral to various social occasions, including family visits, formal gatherings, weddings, and tribal meetings for reconciliation and conflict resolution, and even extends to funerals. The elaborate rituals and etiquette surrounding its preparation and serving reflect deep respect and appreciation for guests, reinforcing core community values of generosity and mutual regard. Refusing the offer of coffee is generally considered impolite, highlighting its importance in social interactions. In 2015, UNESCO officially recognized Arabic coffee as an Intangible Cultural Heritage, acknowledging its significant role in fostering social connections and preserving cultural identity.",
+        "gemini_tags": [
+          "Hospitality",
+          "Rituals",
+          "Arab Culture",
+          "Coffee",
+          "Social Practice",
+          "Tradition",
+          "Middle East",
+          "Bedouin",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Preparation and Serving Ritual",
+        "materials_and_tools": [
+          "Lightly roasted Arabica coffee beans (coarsely ground)",
+          "Water",
+          "Cardamom (crushed, essential spice)",
+          "Saffron (optional)",
+          "Cloves (optional)",
+          "Rose water (optional)",
+          "Dallah (traditional long-spouted coffee pot)",
+          "Finjaan (small handle-less cups)",
+          "Mihbaj (traditional mortar and pestle for grinding, historically)"
+        ],
+        "step_by_step": [
+          "**Bean Selection and Roasting**: Select high-quality Arabica beans, traditionally sourced from regions like Yemen or Ethiopia. The beans are lightly roasted to a golden color, often over an open fire.",
+          "**Grinding**: After cooling, the roasted beans are crushed, traditionally using a 'mihbaj' (mortar and pestle). The rhythmic sound of grinding historically served as an invitation for neighbors and guests to join.",
+          "**Brewing**: Water is boiled in a 'dallah' or a pot. The coarsely ground coffee, along with spices such as crushed cardamom, saffron, and cloves, is added. The mixture is then simmered for 10-20 minutes without stirring to allow it to steep. Some regional variations involve lifting the pot off the heat multiple times to create a desirable foam and settle the coffee grounds.",
+          "**Serving Preparation**: The brewed coffee is strained and transferred into a clean 'dallah' or a thermal carafe for serving. Traditional Arabic coffee is typically served unsweetened, though some regional preferences may include a small amount of sugar added during preparation.",
+          "**Serving Etiquette**: The server stands, holding the 'dallah' in their left hand and offering the 'finjaan' (cup) with their right hand. The eldest or most distinguished guest is served first, with the serving proceeding to the right. Only a small amount of coffee (approximately one-third to one-quarter of the cup) is poured into the 'finjaan'; filling the cup to the brim is considered an insult, implying the host wishes the guest to leave quickly. The host may taste the first cup, known as 'al heif', to ensure its quality before serving guests. Guests are expected to receive the cup with their right hand. To signal that they have had enough coffee, guests gently shake their cup; otherwise, the host will continue to offer refills. It is customary to drink one to three cups, with refusing the first cup being impolite, but drinking more than three is generally avoided. Arabic coffee is frequently accompanied by dates or other sweets to complement its often bitter taste."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Yemen",
+            "element_name": "Yemeni Coffee Day",
+            "relationship_reason": "Yemen is widely recognized as the origin of coffee and celebrates its cultivation, sharing a deep historical connection with Arabic coffee traditions."
+          },
+          {
+            "country": "Turkey",
+            "element_name": "Turkish Coffee",
+            "relationship_reason": "Arabic coffee shares similarities with Turkish coffee in its preparation method, involving pulverized beans and boiling, though Arabic coffee is distinct for its common use of cardamom and specific serving etiquette."
+          },
+          {
+            "country": "Ethiopia",
+            "element_name": "Coffee Origins",
+            "relationship_reason": "The legend of coffee's discovery is often attributed to Ethiopia, making it a foundational element in the broader history of coffee consumption, including Arabic coffee."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-67344c5f",
+      "element_name": "Maasai Adumu (Jumping Dance)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Adumu&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Adumu",
+        "https://momaa.org/blogs/news/adumu-the-maasai-jumping-dance",
+        "https://www.jacadatravel.com/africa/kenya/maasai-mara/beat-of-tradition-the-role-of-traditional-dance-for-kenyas-young-maasai/",
+        "https://goclimbingkilimanjaro.com/adumu-dance/",
+        "https://grokipedia.org/wiki/Adumu",
+        "https://artsandculture.google.com/story/adamu-the-maasai-moran-dance/8wWB66oF71-rKg",
+        "https://kizzaadventures.com/why-do-the-maasai-mara-jump/",
+        "https://maramatinee.com/maasai-jumping-competition/",
+        "https://www.gadventures.com/blog/get-up-the-tradition-of-the-maasai-jumping-dance/",
+        "https://adumusafaris.com/what-is-adumu/",
+        "https://lughayangu.com/the-adumu-dance-of-the-maasai/",
+        "https://afrisquare.com/adumu-the-jumping-dance-of-the-maasai-people/",
+        "https://www.youtube.com/watch?v=0h94h14_92c"
+      ],
+      "scraped_at": "2026-04-15T01:26:29.215145Z",
+      "location": {
+        "country": "Kenya",
+        "provinces": [
+          "Maasai Mara",
+          "Serengeti",
+          "Ngorongoro",
+          "Mount Kilimanjaro area",
+          "Arusha"
+        ],
+        "lat": -1.0958912,
+        "lng": 35.8557529
+      },
+      "resume_analisa": {
+        "description": "The Adumu, also known as the Maasai jumping dance or Enkipaata, is an energetic and acrobatic traditional dance performed by the Maasai people of Kenya and Tanzania. It is primarily performed by young Maasai warriors, known as morans, at significant cultural events such as weddings, religious rites, and particularly during coming-of-age ceremonies like Eunoto. The dance is characterized by a distinctive sequence of vertical leaps, where dancers stand in a circle and take turns jumping straight up into the air, keeping their bodies as straight and upright as possible with minimal knee bending. The objective is to jump as high as possible, showcasing strength, stamina, and agility. The performance is accompanied by traditional Maasai songs and chants, often featuring deep, guttural throat singing and high-pitched responses, sometimes with women and children joining in the harmony.",
+        "cultural_significance": "The Adumu dance holds profound cultural significance for the Maasai. Historically, it is believed to have developed as a method for Maasai warriors to train for combat, honing their leaping and jumping abilities essential for hunting and battle, and to display their stamina, agility, and power. It serves as a crucial rite of passage, especially during the Eunoto ceremony, which marks the transition of junior warriors to senior warriors, allowing them to take on more responsibilities and become eligible for marriage. The dance is a competitive display of physical prowess, where the height of a warrior's jump earns esteem and bragging rights, symbolizing courage, endurance, and fitness. Beyond its warrior tradition, Adumu fosters a strong sense of community and unity among the Maasai, serving as a social activity that brings people together for celebrations and gatherings. It also acts as a courtship ritual, allowing young men to display their skills to potential brides. The Adumu is a vibrant expression of Maasai identity, embodying their values, traditions, and community spirit, and plays a vital role in preserving and transmitting their heritage across generations.",
+        "gemini_tags": [
+          "Maasai",
+          "Traditional Dance",
+          "Warrior Ritual",
+          "Rite of Passage",
+          "East Africa",
+          "Kenya",
+          "Tanzania",
+          "Performing Arts",
+          "Oral Traditions",
+          "Social Practices & Rituals"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Dance Performance",
+        "materials_and_tools": [
+          "Shúkàs (colorful cloths, often red, wrapped around the body)",
+          "Beaded jewelry (necklaces, bracelets, earrings, often intricate)",
+          "Spears (carried by dancers as symbols, not used in the dance itself)",
+          "Shields (carried by dancers as symbols, not used in the dance itself)",
+          "Drums (for rhythmic accompaniment, played by community members)",
+          "Rattles (for rhythmic accompaniment, played by community members)",
+          "Horns (for rhythmic accompaniment, played by community members)"
+        ],
+        "step_by_step": [
+          "Young Maasai warriors (morans) gather, typically forming a circle or half-circle.",
+          "The group initiates rhythmic chanting and singing, often characterized by deep, guttural throat singing and high-pitched responses. This vocal accompaniment sets the rhythm for the dance and may be supported by drums, rattles, or horns played by other community members.",
+          "One or more warriors take turns stepping into the center of the circle to perform the main jumping movements.",
+          "Dancers execute impressive vertical leaps, aiming to jump as high as possible from a standing position.",
+          "During the jumps, the body is kept straight and upright, with minimal bending of the knees. Dancers typically land softly on the balls of their feet, ensuring their heels do not touch the ground to maintain continuous rhythm.",
+          "The height and grace of each jump are often competitive, serving as a display of the warrior's strength, agility, and endurance.",
+          "When a warrior tires, they rejoin the outer circle, and other morans take their place in the center to continue the jumping.",
+          "Women and other community members often participate by joining in the chanting, singing, and ululations, offering encouragement and praise to the dancers."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Kenya",
+            "element_name": "Maasai Adumu (Jumping Dance)",
+            "relationship_reason": "The Maasai people inhabit both Kenya and Tanzania, and the Adumu dance is a shared cultural practice across these regions."
+          },
+          {
+            "country": "Tanzania",
+            "element_name": "Maasai Adumu (Jumping Dance)",
+            "relationship_reason": "The Maasai people inhabit both Kenya and Tanzania, and the Adumu dance is a shared cultural practice across these regions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-13T01:33:02.393018Z",
-    "total_ich_elements": 86,
-    "complete_records": 79,
+    "generated_at": "2026-04-15T01:27:01.423127Z",
+    "total_ich_elements": 89,
+    "complete_records": 82,
     "incomplete_records": 7,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 33,
-      "Social Practices & Rituals": 20,
+      "Traditional Craftsmanship": 34,
+      "Social Practices & Rituals": 21,
       "Culinary Traditions": 14,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 9,
+      "Performing Arts": 10,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 5,
