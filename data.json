@@ -7586,19 +7586,161 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-465fde21",
+      "element_name": "Myanmar Traditional Puppetry (Yoke Thé)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Burmese_Marionette_Puppet.jpg/800px-Burmese_Marionette_Puppet.jpg",
+      "source_urls": [
+        "https://www.xinhuanet.com/english/20241028/484501a30488424296236b2803b07044/c.html",
+        "https://www.insightguides.com/inspire-me/blog/myanmar-performing-arts-scene",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPXlBAjXxBPI0gTiapsgho8WmzFHV3cuLoO0_Al32wKs68YeYs3iyaBIVGlTv_iu4FmPI66p0TBbsV4a8FDilS4CVvKgXZI7kxLFsud-CAMjh1uPnkA_Uz4i1CvsSXE-aFV5Evrcc6CrXzZphkYJm-uvYXx1d7zLVfUCuwqfydIA==",
+        "https://www.angelinahue.com/blog/2017/11/29/pulling-strings-to-keep-alive-myanmars-puppetry-tradition",
+        "https://www.irrawaddy.com/culture/bringing-myanmar-puppetry-back-to-life.html",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqXdUfgN6n9zvtHror8H4kasRuvYgtF_iPntl7jvx7fxx9AzCsjXgxSVgEyvDu7jlCmczvdXyGCXuKAR-HKUNoG7DBknoVWHuwrBUBEBLnCvbH-cyYk0SA5s9MitEI2TMwoPINL3PA20nODvjoJ8KAX0pSpQNiF-8IPENoNGtkt-Lv-JRktE_QowP1M7qgYeFPmt65xViA4QdlKxEPmcJ-Kc7TK7UKbeYX90tcQfhL5YPG-BV1WhhKZwc9hUFPxls=",
+        "https://www.irrawaddy.com/culture/in-mandalay-a-theater-revives-the-dying-art-of-burmese-puppetry.html",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5IT_MDEVsKNRo5IIUaOE4Bj2kA5vKVpyJb3uSR5LijShddPoAE14MxvGPBQQHe-HouVdV_mtiMobCZmKnfkjVh0t-45i6vhnXOsUZY_zPemgadqgzRQdOb9bEJgQS9dizyEr9wVrMZ4MC4WTuqNsFvFJQnFjwffMTSQXj0q7UMPIOLvj4Q_97xZJnEkLMfjXS4SEXPrk3D1SFqw=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5iZ_ybMZ_5A1OTPU_tyZRIlZZoxTs8OiiYGeShgS29oeMYZDahbrec3ld66QxwO9nl_RDy7bjlYiOD-sudcNcedwazB1T-jWjSEW1e4qi1dUuoUp1dZArkorltE0AN3mB3tLFxP9ZKQ3BsAhXh2gcUaHQfna7I4JSn-No9PqlgkAYkTDB"
+      ],
+      "scraped_at": "2026-04-17T01:28:14.236274Z",
+      "location": {
+        "country": "Myanmar",
+        "provinces": [
+          "Yangon Region",
+          "Mandalay Region"
+        ],
+        "lat": 16.647565,
+        "lng": 96.1129218
+      },
+      "resume_analisa": {
+        "description": "Myanmar Traditional Puppetry, known as Yoke Thé, is a prestigious performing art with a history dating back to the 15th century, traditionally associated with royal events and religious celebrations. Historically, it served as both royal entertainment and a form of mass media, spreading stories of current events and Jataka tales (stories of Buddha's past lives). The performances typically involved marionettes, almost a meter tall, faultlessly carved and dressed in elaborate costumes, accompanied by a 'sai wang' orchestra with dialogue, song, and music. The art form experienced a significant decline from World War II to the late 1980s, and its popularity waned further with the advent of cinema and television. It is currently considered an almost extinct or fast-disappearing art form due to a lack of interest from younger generations, economic viability, and past government disinterest. Despite this, individuals and small theaters are actively working to revive and preserve this tradition, often relying on tourism for support.",
+        "cultural_significance": "Yoke Thé is an important part of Myanmar's cultural heritage and a source of national pride. It reflects the country's rich storytelling traditions, often enacting tales from Buddhist scripture. The intricate craftsmanship of the puppets and the unique styles of performance, including the way Burmese puppets are said to 'dance more wonderfully than other kinds of puppets because they can dance almost likely with the human,' highlight its distinctiveness. The art form embodies a continuous link between the past, present, and future, with efforts to preserve it aiming to transmit this knowledge and skill to future generations.",
+        "gemini_tags": [
+          "Performing Arts",
+          "Puppetry",
+          "Traditional Art",
+          "Myanmar",
+          "Endangered Heritage",
+          "Cultural Revival",
+          "Oral Traditions",
+          "Craftsmanship"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Thailand",
+            "element_name": "Traditional Thai Dance and Puppetry",
+            "relationship_reason": "Traditional performing arts, music, and dance in Myanmar have been strongly influenced by Thailand. While Myanmar puppetry has its unique styles, puppetry in Southeast Asia generally was a highly esteemed art."
+          },
+          {
+            "country": "Cambodia",
+            "element_name": "Cambodian Classical Dance",
+            "relationship_reason": "Myanmar's brand of performing arts is as elegant as Cambodian apsara, featuring ornate costumes and intricate hand movements."
+          },
+          {
+            "country": "Vietnam",
+            "element_name": "Vietnamese Water Puppetry",
+            "relationship_reason": "While neighboring countries such as Thailand and Vietnam are attracting international visitors with their puppetry, Myanmar's government does little to promote its traditional performing arts."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-e9076fee",
+      "element_name": "Besale Ritual Healing of the Suku Anak Dalam",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.estungkara.com/blog/upaya-perempuan-suku-anak-dalam-menjaga-pengetahuan-tanaman-obat&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.estungkara.com/blog/upaya-perempuan-suku-anak-dalam-menjaga-pengetahuan-tanaman-obat",
+        "https://www.researchgate.net/publication/344211181_The_practice_and_plants_used_in_Besale_ritual_healing_by_the_Anak_Dalam_Tribe_in_Nyogan_Village_Jambi_Indonesia",
+        "https://www.scispace.com/paper/2020-the-practice-and-plants-used-in-besale-ritual-healing-by-the-anak-dalam-tribe-in-nyogan-village-jambi-indonesia-r-asra-m-silalahi-i-a-fijridiyanto-e-biodiversitas/20695029",
+        "https://www.detik.com/sumut/budaya/d-7050302/uniknya-besale-ritual-pengobatan-suku-anak-dalam-di-jambi",
+        "https://wikivoyage.org/wiki/Jambi_(province)",
+        "https://www.goodnewsfromindonesia.id/2022/04/17/besale-upacara-adat-suku-anak-dalam-memohon-kesembuhan",
+        "https://ejurnal.isi-padangpanjang.ac.id/index.php/joged/article/view/1005",
+        "https://www.researchgate.net/publication/372861295_Evolution_of_Sacred_Traditions_The_Inclusive_Transformation_of_the_Besale_Ritual_among_the_Suku_Anak_Dalam_Indonesia",
+        "https://jurnal.unpas.ac.id/index.php/pendas/article/view/23965",
+        "https://smj.ejournal.unri.ac.id/index.php/SMJ/article/view/8051",
+        "https://www.digitalnomad.id/the-orang-rimba-of-indonesia/"
+      ],
+      "scraped_at": "2026-04-17T01:29:39.598583Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Jambi"
+        ],
+        "lat": -1.7069965,
+        "lng": 102.7140041
+      },
+      "resume_analisa": {
+        "description": "The Besale Ritual Healing is a traditional ceremony practiced by the Suku Anak Dalam (also known as Orang Rimba) indigenous community in Jambi Province, Sumatra, Indonesia. This ritual is performed to cure severe illnesses, which are often believed to be caused by malevolent spirits or the wrath of deities. It integrates ritualistic practices, spiritual methods, and the use of medicinal plants.",
+        "cultural_significance": "The Besale ritual holds profound cultural significance for the Suku Anak Dalam, serving as a sacred and vital component of their identity and local wisdom. It is a crucial means of preserving their cultural heritage, strengthening community bonds, and reinforcing spiritual beliefs. The ceremony emphasizes the deep interconnectedness between humans, ancestral spirits, and the natural cosmos. It is also understood as a way to seek forgiveness for transgressions and maintain harmony within their world.",
+        "gemini_tags": [
+          "Traditional Healing",
+          "Ritual",
+          "Indigenous Knowledge",
+          "Spiritual Practice",
+          "Ethnobotany",
+          "Sumatra",
+          "Indonesia",
+          "Suku Anak Dalam",
+          "Orang Rimba"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Healing Ritual",
+        "materials_and_tools": [
+          "Plants (21 identified species, predominantly fresh flowers, used for construction, ornaments, and offerings)",
+          "Kemenyan (incense)",
+          "Lonceng (brass bell)",
+          "Two small bowls for incantations",
+          "White cloth",
+          "Small wooden or woven houses (miniature house/balai)",
+          "19 \"bird\" ornaments made from coconut leaves",
+          "Offerings (including caco, juwadah, red porridge, wheat flour, roasted chicken, eggs, gelamai, and barte/flower made from pounded dried rice)",
+          "Traditional musical instruments (e.g., gendang - drums, redab)"
+        ],
+        "step_by_step": [
+          "**Preparation (Beterkas)**: During the day preceding the ritual, the dukun (shaman) oversees the preparation of all necessary equipment. This includes constructing a large hall (balai) to host the ceremony, preparing a brass bell, two small bowls for incantations, white cloth, small wooden or woven houses, 19 \"bird\" ornaments crafted from coconut leaves, and a variety of offerings such as caco, juwadah, red porridge, wheat flour, roasted chicken, eggs, gelamai, and barte (a flower made from pounded dried rice).",
+          "**Ritual Commencement**: The main ritual commences at night, typically starting at dusk (around 7 PM Western Indonesian Time) and continuing until dawn (approximately 3 AM), with the exact duration depending on the specific needs of the healing. The ceremony is led by a Tumenggung or dukun (shaman).",
+          "**Incantation and Incense Burning**: Mantras, known as 'sale', are recited by the shaman. Kemenyan (incense) is burned as a crucial element to summon spirits or 'jemalang', with the belief that offerings entice these spirits to be more receptive to appeals for assistance.",
+          "**Musical Accompaniment and Dance**: The ritual is accompanied by traditional music, primarily featuring gendang (drums), and involves biduan (singers) and pebayu (dancers, who are assistants to the shaman). The biduan chant worship poems, and the pebayu begin to sway and dance around the patient, often entering a trance-like or unconscious state.",
+          "**Spiritual Intervention**: At the climax of the Besale ceremony, it is believed that benevolent spirits enter the ritual space and directly intervene to heal the sick individual.",
+          "**Plant Utilization**: Throughout the ritual, fresh plant materials are actively used. They are burned to create smoke, hung as decorations or spiritual conduits, and in some instances, parts of the plants are consumed.",
+          "**Post-Ritual Disposal**: Following the completion of the Besale ritual, all ceremonial equipment and remnants must be cast into a river. It is believed that failure to perform this final step will prevent the patient's full recovery."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Uras, Kendurisko, Togak Belian, Nyimur (other Sumatran traditional ceremonies)",
+            "relationship_reason": "These are other traditional ceremonies and healing rituals found among various ethnic groups on Sumatra, sharing underlying spiritual beliefs and community-based practices, similar to the Besale ritual."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-15T01:27:01.423127Z",
-    "total_ich_elements": 89,
-    "complete_records": 82,
-    "incomplete_records": 7,
+    "generated_at": "2026-04-17T01:30:24.862216Z",
+    "total_ich_elements": 91,
+    "complete_records": 83,
+    "incomplete_records": 8,
     "categories_breakdown": {
       "Traditional Craftsmanship": 34,
-      "Social Practices & Rituals": 21,
+      "Social Practices & Rituals": 22,
       "Culinary Traditions": 14,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 10,
+      "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 5,
