@@ -1,9 +1,10 @@
-name: Generate Modul dari PPTX
+name: Generate Modul
 
 on:
   push:
     paths:
-      - 'data/pptx/**/*.pptx' # Script jalan cuma kalau ada PPTX baru/berubah
+      - 'data/pptx/**/*.pptx' # Berjalan jika ada PPTX baru
+      - 'data/pdf/**/*.pdf'   # Berjalan juga jika ada PDF baru (Upload manual)
 
 jobs:
   build-modul:
@@ -23,7 +24,8 @@ jobs:
       - name: Konversi PPTX ke PDF
         run: |
           mkdir -p data/pdf
-          # Looping semua file pptx dan ubah ke pdf pakai libreoffice tanpa buka aplikasinya
+          # Set nullglob agar tidak error jika folder pptx kosong
+          shopt -s nullglob
           for file in data/pptx/*.pptx; do
             libreoffice --headless --convert-to pdf "$file" --outdir data/pdf/
           done
@@ -36,5 +38,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add modul/ modul.html data/pdf/
-          git commit -m "Auto-generate HTML Modules dari PPTX" || echo "No changes to commit"
+          git commit -m "Auto-generate HTML Modules" || echo "No changes to commit"
           git push
