@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conducting communitybased needs identifications | ICH Radar Modules</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans:['Inter', 'sans-serif'],
+                        display:['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            900: '#0a0a0a',
+                            800: '#141414',
+                            700: '#1f1f1f',
+                            accent: '#00ffcc',
+                            secondary: '#facc15',
+                            journal: '#ff00aa'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles (Grid Background) -->
+    <style>
+        body { background-color: #0a0a0a; color: #f5f5f5; overflow-x: hidden; }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-brand-900 text-white font-sans antialiased h-screen flex flex-col overflow-hidden bg-grid">
+    
+    <!-- Header Navigasi -->
+    <nav class="bg-brand-900/80 backdrop-blur-md border-b border-brand-700 px-6 py-4 flex items-center justify-between shadow-sm z-50 shrink-0">
+        <div class="flex items-center gap-4">
+            <a href="../modul.html" class="flex items-center justify-center w-10 h-10 rounded-xl bg-brand-800 border border-brand-700 hover:border-brand-accent text-gray-400 hover:text-brand-accent transition-colors" title="Back to Modules">
+                <i class="ph-bold ph-arrow-left text-lg"></i>
+            </a>
+            <h1 class="text-xl font-display font-bold text-white truncate max-w-xl hidden sm:block">Conducting communitybased needs identifications</h1>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="hidden sm:flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-brand-accent bg-brand-800 border border-brand-700 px-3 py-1.5 rounded-lg">
+                <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+                Secure Document Viewer
+            </div>
+            <div class="w-10 h-10 rounded-xl bg-brand-800 border border-brand-700 flex items-center justify-center text-red-400">
+                <i class="ph-fill ph-file-pdf text-xl"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Area PDF Embed -->
+    <main class="flex-1 w-full p-2 sm:p-6 overflow-hidden relative">
+        <!-- Ambient Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-accent/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+        
+        <div class="w-full h-full bg-[#111] rounded-2xl shadow-[0_0_50px_rgba(0,255,204,0.1)] border border-brand-700 overflow-hidden relative z-10">
+            <!-- Parameter toolbar=0 menyembunyikan UI acrobat standar agar lebih clean -->
+            <embed src="../data/pdf/Conducting communitybased needs identifications.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="100%" class="w-full h-full" />
+        </div>
+    </main>
+
+</body>
+</html>
+    
