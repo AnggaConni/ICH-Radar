@@ -3,8 +3,11 @@ name: Generate Modul
 on:
   push:
     paths:
-      - 'data/pptx/**/*.pptx' # Berjalan jika ada PPTX baru
-      - 'data/pdf/**/*.pdf'   # Berjalan juga jika ada PDF baru (Upload manual)
+      - 'data/pdf/**/*.pdf'   # Berjalan hanya jika ada file PDF yang di-push/diubah
+
+# Baris di bawah ini adalah SOLUSI untuk error "403 Permission Denied"
+permissions:
+  contents: write
 
 jobs:
   build-modul:
@@ -18,18 +21,6 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install LibreOffice (Untuk Konversi PPTX)
-        run: sudo apt-get update && sudo apt-get install -y libreoffice
-
-      - name: Konversi PPTX ke PDF
-        run: |
-          mkdir -p data/pdf
-          # Set nullglob agar tidak error jika folder pptx kosong
-          shopt -s nullglob
-          for file in data/pptx/*.pptx; do
-            libreoffice --headless --convert-to pdf "$file" --outdir data/pdf/
-          done
-
       - name: Jalankan Script Node.js Generator
         run: node scripts/generate-modul.js
 
@@ -38,5 +29,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add modul/ modul.html data/pdf/
-          git commit -m "Auto-generate HTML Modules" || echo "No changes to commit"
+          git commit -m "Auto-generate HTML Modules from PDF" || echo "No changes to commit"
           git push
