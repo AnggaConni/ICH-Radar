@@ -1,0 +1,40 @@
+name: Generate Modul dari PPTX
+
+on:
+  push:
+    paths:
+      - 'data/pptx/**/*.pptx' # Script jalan cuma kalau ada PPTX baru/berubah
+
+jobs:
+  build-modul:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install LibreOffice (Untuk Konversi PPTX)
+        run: sudo apt-get update && sudo apt-get install -y libreoffice
+
+      - name: Konversi PPTX ke PDF
+        run: |
+          mkdir -p data/pdf
+          # Looping semua file pptx dan ubah ke pdf pakai libreoffice tanpa buka aplikasinya
+          for file in data/pptx/*.pptx; do
+            libreoffice --headless --convert-to pdf "$file" --outdir data/pdf/
+          done
+
+      - name: Jalankan Script Node.js Generator
+        run: node scripts/generate-modul.js
+
+      - name: Commit & Push Hasil HTML
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add modul/ modul.html data/pdf/
+          git commit -m "Auto-generate HTML Modules dari PPTX" || echo "No changes to commit"
+          git push
