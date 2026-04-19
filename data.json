@@ -7728,17 +7728,416 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-42342292",
+      "element_name": "Suri (Palm Weevil Larvae)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.rainforestcruises.com/jungle-blog/wp-content/uploads/2016/08/suri-grubs-peru-amazon.jpg",
+      "source_urls": [
+        "https://www.rainforestcruises.com/jungle-blog/eating-suri-in-the-amazon",
+        "https://perufood.blogspot.com/2008/08/amazonian-grub-so-suri.html",
+        "https://www.slowfood.com/ark-of-taste/suri/",
+        "https://www.tasteatlas.com/anticuchos-de-suri-recipe",
+        "https://www.atlasobscura.com/foods/suri-grubs-peru",
+        "https://www.mapotic.com/worlds-scariest-food/places/suri-grubs"
+      ],
+      "scraped_at": "2026-04-19T01:32:08.751116Z",
+      "location": {
+        "country": "Peru",
+        "provinces": [
+          "Loreto",
+          "Ucayali",
+          "Madre de Dios"
+        ],
+        "lat": -5.0,
+        "lng": -75.0
+      },
+      "resume_analisa": {
+        "description": "Suri are the larvae of the palm weevil (Rhynchophorus palmarum), also known as 'cocotero' or 'larva de palma' in Peru. These large, cream-colored grubs, characterized by a darker head and pincers, are found primarily in the decomposing trunks of aguaje (Mauritia flexuosa) palm trees in the Amazonian region. They feed on the oily palm bark, which imparts a rich, fatty, and slightly sweet flavor. Suri are considered a highly prized delicacy and a significant source of protein in the local diet. They can be consumed raw, grilled 'anticucho-style' on skewers, or fried as 'chicharrón de suri'.",
+        "cultural_significance": "Suri holds undeniable popularity and cultural significance as a traditional delicacy in the Peruvian Amazon, serving as an important and nutritious food source for indigenous populations. It is estimated that native communities consume an average of 2 kilograms of suri per year. Beyond its nutritional value, suri is considered a sustainable food source and contributes to the local economy. Some experts even propose its potential role in alleviating global hunger due to its high nutritional content and ease of cultivation. In traditional Amazonian medicine, suri larvae are also used to relieve ailments such as coughs, asthma, and rheumatism. The consumption of suri is not only a culinary practice but also a significant part of the local cultural identity and a popular attraction for tourists visiting the Amazon.",
+        "gemini_tags": [
+          "Culinary Traditions",
+          "Indigenous Cuisine",
+          "Amazonian Food",
+          "Entomophagy",
+          "Traditional Medicine",
+          "Sustainable Food",
+          "Peruvian Amazon"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Frying (Chicharrón de Suri)",
+        "materials_and_tools": [
+          "1 kg (2.2 lbs) suri (palm weevil larvae)",
+          "1 tablespoon garlic paste (or crushed garlic)",
+          "Salt to taste",
+          "Black pepper to taste",
+          "1 cup vegetable oil (for frying)",
+          "4-5 unripe green plantains",
+          "Large skillet",
+          "Paper towels"
+        ],
+        "step_by_step": [
+          "Rinse the suri thoroughly and pat dry with paper towels.",
+          "In a bowl, mix the suri with garlic paste, salt, and pepper. Let it marinate for 20 minutes.",
+          "Peel and slice the green plantains.",
+          "Heat vegetable oil in a large skillet.",
+          "Fry the marinated suri until golden brown and crispy.",
+          "Separately, boil or fry the sliced plantains.",
+          "After frying, drain excess oil from the suri and plantains on paper towels.",
+          "Serve the fried suri with the plantains, often accompanied by a cocona salad."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Ecuador",
+            "element_name": "Mojojoy or Chontacuro",
+            "relationship_reason": "Similar palm weevil larvae consumed as food in the Amazon region."
+          },
+          {
+            "country": "Colombia",
+            "element_name": "Mojojoy or Chontacuro",
+            "relationship_reason": "Similar palm weevil larvae consumed as food in the Amazon region."
+          },
+          {
+            "country": "Malaysia",
+            "element_name": "Sago worm",
+            "relationship_reason": "Consumption of similar insect larvae (sago worm) as a food source."
+          },
+          {
+            "country": "Central Africa",
+            "element_name": "Various grubs",
+            "relationship_reason": "Grubs are a highly-prized source of protein, indicating a broader practice of entomophagy."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-6af150a3",
+      "element_name": "Dough Sculpture (Miansu)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Dough_Figurines.jpg/800px-Dough_Figurines.jpg",
+      "source_urls": [
+        "https://www.chinadaily.com.cn/lifestyle/2009-08/04/content_8518939.htm",
+        "https://www.globaltimes.cn/content/867375.shtml",
+        "http://www.chinaculture.org/gb/en_artqa/2006-09/20/content_85627.htm",
+        "http://www.baotou.gov.cn/qingshan/wlygdj/whyc/202208/t20220825_1730043.html",
+        "https://www.beijing.gov.cn/en/culture/intangibleculturalheritage/202110/t20211018_2515091.html",
+        "http://www.sxfei.cn/feiyi/show/1109.html",
+        "https://www.kmwlxy.edu.cn/info/1020/1247.htm",
+        "https://www.visitbeijing.com.cn/a1/a-X317300000000000000032",
+        "http://www.hwjyw.com/culture/area/qilu/gongyi/200908/t20090817_30537.shtml",
+        "https://www.dzwww.com/shandong/sdnews/202409/t20240906_14594692.htm",
+        "https://www.zaozhuang.gov.cn/channels/6667/6669/202208/23/1661217004245.html",
+        "https://sd.dzwww.com/sdnews/202205/t20220521_10103444.htm",
+        "https://www.shandongwenhua.com/a/202007/07/2237.html"
+      ],
+      "scraped_at": "2026-04-19T01:32:36.232316Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Shandong",
+          "Beijing",
+          "Shanxi",
+          "Inner Mongolia",
+          "Yunnan",
+          "Tianjin"
+        ],
+        "lat": 36.398987,
+        "lng": 118.5055691
+      },
+      "resume_analisa": {
+        "description": "Dough Sculpture, also known as Miansu (面塑) or 'nie mianren' (捏面人), is a traditional Chinese folk art involving molding human figures and animals from dough. This art form typically creates small sculptures, often several centimeters in height, using simple hand tools. Historically, dough sculptures originated from folk sacrificial activities, where dough products replaced real cattle and sheep as offerings. Written records of Chinese dough sculptures date back to the Han Dynasty (206 BC-AD 220). Over thousands of years, it evolved from edible ceremonial items into a distinct art form, becoming an integral part of Chinese culture and folk arts. Regional styles vary; those in the Yellow River Valley are often described as simple, crude, unconstrained, and profound, while those in the Yangtze River Valley are delicate, exquisite, and polished. Modern dough sculptures are often preserved for decades, unlike their earlier edible counterparts.",
+        "cultural_significance": "Dough sculpture holds significant cultural value in China, reflecting national social life, aesthetic feelings, and customs. It embodies the cultural spirit of praying for happiness, respecting ancestors and gods, and promoting harmony and tranquility. Traditionally, Miansu was closely linked to people's spiritual needs, used in sacrificial activities, and made for festivals, weddings, funerals, and other celebratory occasions to convey wishes for good fortune and blessings. As an art form, it integrates group, regional, and folk customs, sustaining people's emotions. It serves as a living fossil for the study of history, archaeology, folk arts, sculpture, and aesthetics. Today, it is recognized as an intangible cultural heritage in various regions, and its exquisite craftsmanship and vivid portrayal of characters make it a cherished art form and a popular gift.",
+        "gemini_tags": [
+          "Chinese folk art",
+          "Dough art",
+          "Traditional sculpture",
+          "Intangible cultural heritage",
+          "Handicraft",
+          "Ceremonial art",
+          "Performing art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "White flour",
+          "Glutinous rice flour",
+          "Honey",
+          "Lard",
+          "Powdered sugar",
+          "Refined powder",
+          "Edible pigments/food coloring",
+          "Salt (optional)",
+          "Preservatives (for non-edible art)",
+          "Glycerin (for non-edible art)",
+          "Wax (for non-edible art)",
+          "Boiling water",
+          "Scissors",
+          "Kitchen knife",
+          "Comb",
+          "Chinese dates (for decoration/texture)",
+          "Bunge prickly ash (for decoration/texture)",
+          "Bamboo needles/skewers",
+          "Small knife/sculpting tools",
+          "Brush (for oiling)",
+          "Rolling pin (optional)",
+          "Feathers (for details like beards)",
+          "Silk threads (for details like hair)",
+          "Cotton (for details like hair)"
+        ],
+        "step_by_step": [
+          "**Prepare the Dough Base:** Combine white flour and glutinous rice flour. For the dough's workability and preservation, mix honey, lard, powdered sugar, and refined powder, making them soluble with boiling water, then combine with the flour. Some recipes may also include salt, preservatives, glycerin, or wax.",
+          "**Color the Dough:** Add edible pigments or food coloring to the dough mixture to create pastes of various colors.",
+          "**Cook the Dough:** Steam the colored dough pastes for two to three minutes. It is crucial not to overcook them, as this can cause them to lose their luster. Alternatively, some methods involve steaming the mixed dough before adding colors.",
+          "**Knead and Shape:** Once the dough is prepared, artists use their hands to knead, rub, twist, pull, pinch, press, cut, and carve. Simple tools such as scissors, a kitchen knife, a comb, bamboo needles, or a small knife are employed to sculpt various vivid figures, including human characters, animals, and mythological beings.",
+          "**Add Details and Refinements:** Utilize tools to create intricate textures, patterns, and decorative elements. For specific details like beards, hair, or crowns, materials such as feathers, silk threads, or cotton may be incorporated.",
+          "**Preservation (for display pieces):** For dough sculptures intended for long-term display rather than consumption, a thin layer of oil is often brushed onto the finished piece to enhance its gleam and vibrancy, and to aid in its preservation. Modern techniques also involve adding anti-cracking and anti-corrosion materials to the dough mixture to ensure the artwork can last for decades without decay or cracking."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Vietnam",
+            "element_name": "Dough Sculpture / Rice Sculpture",
+            "relationship_reason": "Historical spread of the art form from China to Southeast Asia."
+          },
+          {
+            "country": "Southeast Asia (General)",
+            "element_name": "Dough Sculpture / Rice Sculpture",
+            "relationship_reason": "Historical spread of the art form from China to Southeast Asia."
+          },
+          {
+            "country": "China (Jiangxi Province)",
+            "element_name": "Rice Sculpture (米塑)",
+            "relationship_reason": "Influence of Jiangxi rice sculpture artists on the development of Caozhou Miansu in Shandong, indicating an internal shared heritage or cross-pollination of similar art forms."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7e5c4e9c",
+      "element_name": "The Art of Dry Stone Walling, Knowledge and Techniques",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dry_stone_wall_in_the_Yorkshire_Dales.jpg/1200px-Dry_stone_wall_in_the_Yorkshire_Dales.jpg",
+      "source_urls": [
+        "https://www.nationaltrust.org.uk/features/learn-how-to-build-a-dry-stone-wall",
+        "https://themediterraneanlifestyle.gr/the-art-of-dry-stone-walls/",
+        "https://www.spain.info/en/discover-spain/art-dry-stone-walling-intangible-cultural-heritage/",
+        "https://naturalbydesign.co.uk/in-depth-guide-to-dry-stone-walling-tips-and-techniques/",
+        "https://thestonetrust.org/how-to-build-walls/",
+        "https://www.toscanamia.net/blog/unescos-intangible-cultural-heritage-of-humanitydry-stone-walls/",
+        "https://www.iucn.org/news/mediterranean/202001/dry-stone-walls",
+        "https://drystonewalls.com/dry-stone-walls-history/",
+        "https://www.unescobenicom.it/en/art-of-dry-stone-walling-knowledge-and-techniques/",
+        "https://en.wikipedia.org/wiki/Dry_stone",
+        "https://gardentopics.co.uk/tools-for-dry-stone-walling/",
+        "https://www.ecologicaldisciple.com/the-art-of-creation-stones-that-breathe/",
+        "https://marenakos.com/wp-content/uploads/2019/08/BuildingDrystoneWalls.pdf",
+        "https://rockandtools.com/en/blog/how-to-build-a-dry-stone-wall-n308",
+        "https://www.fieldmag.com/articles/dry-stone-walling-how-to-build",
+        "https://www.geopietra.com/en/news/the-dry-stone-walling-named-heritage-of-humanity-inspires-geopietra/",
+        "https://www.youtube.com/watch?v=kYJz22u4G3U",
+        "https://trowandholden.com/products/dry-stone-walling-set",
+        "https://www.irishtimes.com/ireland/2024/12/05/irish-dry-stone-wall-construction-added-to-unesco-cultural-heritage-list/",
+        "https://thestonetrust.org/tool-guide-what-tools-do-i-need-as-a-beginner-waller/",
+        "https://www.unesco.it/it/PatrimonioImmateriale/Detail/131",
+        "https://www.awesomeearthmovers.com/dry-stone-walling-tradition-meets-innovation/",
+        "https://www.youtube.com/watch?v=J3mC0u3e_5Y"
+      ],
+      "scraped_at": "2026-04-19T01:33:13.330350Z",
+      "location": {
+        "country": "Multiple (primarily European countries, also global presence)",
+        "provinces": [
+          "Andalusia (Spain)",
+          "Aragon (Spain)",
+          "Asturias (Spain)",
+          "Balearic Islands (Spain)",
+          "Catalonia (Spain)",
+          "Extremadura (Spain)",
+          "Galicia (Spain)",
+          "Valencia (Spain)",
+          "Tuscany (Italy)",
+          "Amalfi Coast (Italy)",
+          "Cinque Terre (Italy)",
+          "Puglia (Italy)",
+          "Pantelleria (Italy)",
+          "Peak District (UK)",
+          "Yorkshire (UK)",
+          "Scotland (UK)",
+          "County Mayo (Ireland)",
+          "Connemara (Ireland)",
+          "Aran Islands (Ireland)",
+          "Cork (Ireland)",
+          "Kerry (Ireland)"
+        ],
+        "lat": 37.3399964,
+        "lng": -4.5811614
+      },
+      "resume_analisa": {
+        "description": "The Art of Dry Stone Walling involves constructing structures by meticulously stacking stones upon each other without the use of mortar or any other binding materials. The stability of these structures is achieved through the careful selection, shaping, and interlocking placement of each stone. Dry stone structures have profoundly shaped diverse rural and even urban landscapes across the globe, serving various purposes such as dwellings, agricultural field boundaries, retaining walls for terracing, and enclosures for livestock. This ancient technique plays a vital role in preventing landslides, floods, and soil erosion, while also enhancing biodiversity and creating favorable microclimatic conditions for agriculture.",
+        "cultural_significance": "This traditional craftsmanship testifies to the ingenious methods and practices used by people since prehistoric times to organize their living and working spaces by optimizing local natural and human resources. It exemplifies a harmonious and sustainable relationship between human beings and nature, utilizing readily available materials to create durable and resilient structures that can last for thousands of years. The practice is primarily passed down through practical application and is deeply rooted in rural communities, as well as among professionals in the construction business. In 2018, UNESCO inscribed 'The Art of Dry Stone Walling, Knowledge and Techniques' on its Representative List of the Intangible Cultural Heritage of Humanity, with Ireland being added to this recognition in 2024. It represents a significant aspect of rural identity and demonstrates how ancestors learned to work with the land.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Sustainable Building",
+          "Rural Heritage",
+          "Landscape Architecture",
+          "Community Practice",
+          "Ecological Preservation",
+          "UNESCO Intangible Heritage",
+          "Ancient Building Technique"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Construction Technique",
+        "materials_and_tools": [
+          "Stones (various local types like gritstone, limestone, Euganean trachyte, granite rubble)",
+          "Shovel or Spade (for digging foundations)",
+          "Mattock (for digging and loosening soil)",
+          "Walling Hammer (e.g., Pennine hammer, French style, 2lb carbide hammer point, 3lb mason's hammer, bricklayers hammer)",
+          "Chisel (wide chisel, hand tracer, pitching tools)",
+          "Gloves, goggles, reinforced boots, knee pads (for safety and comfort)",
+          "Wooden \"A\" frames (to guide wall shape and height)",
+          "Building pins and cable ties (to secure frames)",
+          "Walling line or string line (to maintain straightness and level of courses)",
+          "Plumb line (to ensure vertical alignment)",
+          "Spirit level (for horizontal leveling)",
+          "Bar (for leveraging and moving larger stones)",
+          "Moving and transporting equipment (e.g., wheelbarrow, if needed)"
+        ],
+        "step_by_step": [
+          "1. **Prepare the Ground:** Mark out the area for the wall using string or chalk lines. Clear and level the ground, then dig a trench approximately one foot deep (or 4-6 inches below ground level on the lower side for sloped terrain) to reach stable subsoil or hardpan. Remove any roots or organic debris and firmly compact the dirt. If building on a slope, create stepped foundations to ensure level shelves for stability.",
+          "2. **Sort Stones:** Systematically sort the collected stones into piles based on size: large, medium, and small. Reserve the largest stones for the foundation and the best-shaped, flatter stones for the top (capstones).",
+          "3. **Install the Foundation (Footing Course):** Lay the largest, flattest stones into the prepared trench. Ensure they are laid flat and interlocked. Pack any gaps between these foundation stones with smaller stones. The footing course should be laid to be slightly lower in the center and higher on the outer edges, or as two linear courses with rubble filling the center, to create a stable base and allow for an inward lean.",
+          "4. **Set Up Frames and Lines:** Construct \"A\" shaped wooden frames that represent the desired height and width of the finished wall, inclining slightly inward. Secure these frames with building pins and cable ties to prevent movement. Run a taut, level string line between the frames to serve as a guide for the height and alignment of each subsequent layer of stones.",
+          "5. **Build Up Layers (Courses):** Begin constructing the wall from the bottom up, progressively using larger to smaller stones. Lay each stone flat and position it lengthways into the wall to maximize friction and strength. Each successive layer should be slightly narrower than the one below it, maintaining the overall \"A\" shape of the wall. Carefully overlap stones to avoid creating continuous vertical joints (known as \"running joints\"), which can weaken the structure. Fill any internal gaps between the larger face stones with smaller \"filling stones\" (hearting) to ensure a tight and stable core.",
+          "6. **Shape Stones (as needed):** Use a walling hammer and chisel to trim, split, or shape stones to achieve the desired fit and appearance, particularly for the face stones and capstones.",
+          "7. **Ensure Stability:** Throughout the building process, prioritize the careful selection and precise placement of each stone to ensure interlocking and overall stability. The slight inward lean of the wall (batter) helps gravity to pull the stones down and in towards the center, enhancing the wall's strength.",
+          "8. **Finishing Touches:** Once the main body of the wall reaches the desired height, place the pre-selected capstones on top. These are typically larger, flatter stones that provide a neat finish and help to bind the top of the wall."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Croatia",
+            "element_name": "Art of dry stone walling, knowledge and techniques",
+            "relationship_reason": "Inscribed by UNESCO as part of a multinational nomination for Intangible Cultural Heritage of Humanity."
+          },
+          {
+            "country": "Cyprus",
+            "element_name": "Art of dry stone walling, knowledge and techniques",
+            "relationship_reason": "Inscribed by UNESCO as part of a multinational nomination for Intangible Cultural Heritage of Humanity."
+          },
+          {
+            "country": "France",
+            "element_name": "Art of dry stone walling, knowledge and techniques",
+            "relationship_reason": "Inscribed by UNESCO as part of a multinational nomination for Intangible Cultural Heritage of Humanity."
+          },
+          {
+            "country": "Greece",
+            "element_name": "Art of dry stone walling, knowledge and techniques",
+            "relationship_reason": "Inscribed by UNESCO as part of a multinational nomination for Intangible Cultural Heritage of Humanity."
+          },
+          {
+            "country": "Italy",
+            "element_name": "Art of dry stone walling, knowledge and techniques",
+            "relationship_reason": "Inscribed by UNESCO as part of a multinational nomination for Intangible Cultural Heritage of Humanity."
+          },
+          {
+            "country": "Slovenia",
+            "element_name": "Art of dry stone walling, knowledge and techniques",
+            "relationship_reason": "Inscribed by UNESCO as part of a multinational nomination for Intangible Cultural Heritage of Humanity."
+          },
+          {
+            "country": "Spain",
+            "element_name": "Art of dry stone walling, knowledge and techniques",
+            "relationship_reason": "Inscribed by UNESCO as part of a multinational nomination for Intangible Cultural Heritage of Humanity."
+          },
+          {
+            "country": "Switzerland",
+            "element_name": "Art of dry stone walling, knowledge and techniques",
+            "relationship_reason": "Inscribed by UNESCO as part of a multinational nomination for Intangible Cultural Heritage of Humanity."
+          },
+          {
+            "country": "Ireland",
+            "element_name": "Dry Stone Construction, Knowledge and Techniques",
+            "relationship_reason": "Added to UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2024 as part of an international application including Andorra, Austria, Belgium, and Luxembourg."
+          },
+          {
+            "country": "Andorra",
+            "element_name": "Dry Stone Construction, Knowledge and Techniques",
+            "relationship_reason": "Added to UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2024 as part of an international application including Ireland, Austria, Belgium, and Luxembourg."
+          },
+          {
+            "country": "Austria",
+            "element_name": "Dry Stone Construction, Knowledge and Techniques",
+            "relationship_reason": "Added to UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2024 as part of an international application including Ireland, Andorra, Belgium, and Luxembourg."
+          },
+          {
+            "country": "Belgium",
+            "element_name": "Dry Stone Construction, Knowledge and Techniques",
+            "relationship_reason": "Added to UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2024 as part of an international application including Ireland, Andorra, Austria, and Luxembourg."
+          },
+          {
+            "country": "Luxembourg",
+            "element_name": "Dry Stone Construction, Knowledge and Techniques",
+            "relationship_reason": "Added to UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2024 as part of an international application including Ireland, Andorra, Austria, and Belgium."
+          },
+          {
+            "country": "United Kingdom",
+            "element_name": "Dry Stone Walling",
+            "relationship_reason": "Long-standing traditional practice, particularly in areas like the Peak District, Yorkshire, and Scotland, with historical significance and ongoing preservation efforts."
+          },
+          {
+            "country": "North America, Australia, New Zealand",
+            "element_name": "Dry Stone Walling",
+            "relationship_reason": "Techniques transplanted by European settlers during colonial expansion, adapted to local environments."
+          },
+          {
+            "country": "Zimbabwe",
+            "element_name": "Dry Stone Construction (Great Enclosure)",
+            "relationship_reason": "Historical use of dry stone construction dating back to the 13th-14th centuries."
+          },
+          {
+            "country": "Belize",
+            "element_name": "Dry Stone Construction (Maya ruins at Lubaantun)",
+            "relationship_reason": "Historical use of dry stone construction around the 8th or 9th century A.D."
+          },
+          {
+            "country": "Peru",
+            "element_name": "Inca Dry Stone Walling (Machu Picchu)",
+            "relationship_reason": "Masterful use of dry stone techniques by the Inca in the 15th century for terraces and freestanding walls."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Ano-zumi (Japanese dry stone craft)",
+            "relationship_reason": "Thrived in the 17th century."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-17T01:30:24.862216Z",
-    "total_ich_elements": 91,
-    "complete_records": 83,
+    "generated_at": "2026-04-19T01:33:58.338293Z",
+    "total_ich_elements": 94,
+    "complete_records": 86,
     "incomplete_records": 8,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 34,
+      "Traditional Craftsmanship": 36,
       "Social Practices & Rituals": 22,
-      "Culinary Traditions": 14,
+      "Culinary Traditions": 15,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
