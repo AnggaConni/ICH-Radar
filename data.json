@@ -8127,22 +8127,259 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-41bac63e",
+      "element_name": "Burmese Proverbs and Maxims (စကားပုံ - sagabaunj)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//goldenripples.wordpress.com/2012/11/22/asian-proverbs-burma-myanmar/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://goldenripples.wordpress.com/2012/11/22/asian-proverbs-burma-myanmar/",
+        "https://www.scribd.com/document/460714498/The-Role-of-Myanmar-Proverb-in-Myanmar-Traditional-Life",
+        "https://ling-app.com/burmese/burmese-proverbs/",
+        "https://www.scribd.com/document/425501865/Burmese-Proverbs-Hla-Pe",
+        "https://fiftyviss.wordpress.com/2008/12/30/the-beauty-of-burmese-sayings/",
+        "https://terebess.hu/english/myanmar-proverbs.html",
+        "https://talkpal.ai/blog/what-are-the-traditional-proverbs-about-education-in-myanmar/",
+        "https://www.routledge.com/Ancient-Proverbs-and-Maxims-from-Burmese-Sources-Or-The-Niti-Literature/Pe/p/book/9780415246757",
+        "https://en.wikisource.org/wiki/Ancient_Proverbs_and_Maxims_From_Burmese_Sources;_or,_The_N%C3%AEti_Literature/Chapter_4",
+        "https://www.academia.edu/37397089/Arakanese_Proverbs_in_Comparison_with_their_Counterparts_in_Burmese"
+      ],
+      "scraped_at": "2026-04-21T01:28:17.762270Z",
+      "location": {
+        "country": "Myanmar",
+        "provinces": [
+          "All"
+        ],
+        "lat": 24.2502295,
+        "lng": 94.2922181
+      },
+      "resume_analisa": {
+        "description": "Burmese Proverbs and Maxims, known as 'sagabaunj' (စကားပုံ), are short, wise sayings that encapsulate truths based on common sense or the practical experience of humankind. They are essentially similes or parables, reflecting the Myanmar way of thinking, living, and philosophical values, often deeply rooted in Theravada Buddhism. These proverbs are used to illustrate points, make eloquent speeches, and engage in lively conversations. They provide general advice on how to act and live daily life, convey practical knowledge, enhance the way of life, and demonstrate universal truths. They express views on human beings, their characters, and behaviors, and can have multiple implications depending on the context of their use.",
+        "cultural_significance": "Burmese proverbs are considered the 'true essence of Myanmar heritage passed down from a generation to the next'. They serve as 'golden bridges connecting generations,' offering guidance that transcends time and borders, holding immense value for Burmese people to connect with their roots. They play a significant role in Myanmar's social and educational fabric, imparting moral values, encouraging learning, and promoting critical thinking. They reflect the deep respect that Myanmar society holds for education and lifelong learning. These sayings are not just rules but gentle guidelines that help navigate complex social and family dynamics with grace and understanding.",
+        "gemini_tags": [
+          "oral tradition",
+          "wisdom",
+          "folklore",
+          "language",
+          "Buddhism",
+          "cultural values",
+          "social practices",
+          "traditional knowledge"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Transmission and Application",
+        "materials_and_tools": [
+          "Human language",
+          "Memory",
+          "Storytelling",
+          "Daily conversations",
+          "Literature",
+          "Formal education"
+        ],
+        "step_by_step": [
+          "**Transmission:** Proverbs are passed down through generations, primarily orally. Elders play a crucial role in sharing this age-old wisdom with younger family members and community members, often during family gatherings.",
+          "**Usage in Daily Life:** They are frequently incorporated into everyday conversations to provide guidance, offer commentary on situations, or to subtly convey advice without being overly direct.",
+          "**Educational Application:** Proverbs are used in formal education and literature to teach moral values, encourage critical thinking, and instill the importance of learning and perseverance.",
+          "**Contextual Application:** Individuals learn to apply proverbs appropriately by observing when and how native speakers use them in various situations. This requires understanding the underlying meaning and cultural context of each proverb.",
+          "**Language Learning:** For those learning the Burmese language, engaging with proverbs involves listening for context, practicing pronunciation, asking for explanations of unfamiliar sayings, and even sharing proverbs from their own culture to foster cultural exchange."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Global",
+            "element_name": "Proverbs and Maxims (General)",
+            "relationship_reason": "Many Burmese proverbs have universal themes and direct counterparts or similar meanings in other cultures worldwide, reflecting shared human experiences and wisdom. For example, 'to weave while the moon shines' is akin to the English 'to make hay while the sun shines,' and 'Use a needle now or you may need an axe later' is similar to 'A stitch in time saves nine.'"
+          },
+          {
+            "country": "India",
+            "element_name": "Indian Proverbs and Niti Literature",
+            "relationship_reason": "Myanmar's culture, including its proverbs, has been influenced by India. The 'Niti literature' (codes of conduct, principles of morality, maxims) from ancient Burmese sources has Sanskrit-Pali origins, indicating a direct historical and linguistic connection."
+          },
+          {
+            "country": "China",
+            "element_name": "Chinese Proverbs and Sayings",
+            "relationship_reason": "Myanmar's geopolitical evolution alongside major civilizations like China has resulted in significant cultural exchange, which likely includes shared proverbial wisdom and influences on traditional sayings."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Thai Proverbs and Folk Wisdom",
+            "relationship_reason": "Thailand has played a notable role in Myanmar's historical narrative and cultural exchange, suggesting a potential for shared or similar proverbs and traditional wisdom."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-44a4e554",
+      "element_name": "Moroccan Zellige Tile Art",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://stockcake.com/moroccan-tile-pattern-image-geometric-moroccan-zellige.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Zellige",
+        "https://www.arttravelmorocco.com/blog/moroccan-zellij-history-craftsmanship-and-cultural-significance",
+        "https://www.leightile.com/blog/the-history-of-zellige",
+        "https://www.zellige.info/history-of-moroccan-zellige.html",
+        "https://www.maroc.cz/en/the-art-of-moroccan-zellige-history-and-modern-use/",
+        "https://www.zelligerar.com/mosaic-faq",
+        "https://www.artistictile.com/products/zellige-cloud-white-tile",
+        "https://www.zelligedirect.com/"
+      ],
+      "scraped_at": "2026-04-21T01:28:43.442082Z",
+      "location": {
+        "country": "Morocco",
+        "provinces": [
+          "Fez-Meknes",
+          "Tangier-Tetouan-Al Hoceima"
+        ],
+        "lat": 33.8333136,
+        "lng": -4.8556382
+      },
+      "resume_analisa": {
+        "description": "Zellige (pronounced Zeh-leej or zuh-leej) is a traditional Moroccan mosaic tile art made from individually handcrafted geometric tiles. It is renowned for its intricate geometric patterns, vibrant colors, and unique imperfections, which are considered a hallmark of its authenticity. These handmade tiles are created using natural clay and traditional techniques that have been passed down through generations of skilled artisans, known as Maâlems.",
+        "cultural_significance": "Zellige is a key element of Moroccan craftsmanship and Islamic art, deeply rooted in the country's architectural and artistic heritage. It symbolizes artisan pride, spiritual expression through symmetry and pattern, and cultural identity. Historically, Zellige has adorned mosques, madrasas, palaces, fountains, and historic houses across North Africa and Al-Andalus, reflecting the rich cultural heritage of the region. Morocco is actively pursuing its inscription on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity, highlighting its importance as a living tradition.",
+        "gemini_tags": [
+          "Moroccan Zellige",
+          "Mosaic Tile Art",
+          "Traditional Craftsmanship",
+          "Islamic Art",
+          "Moroccan Heritage",
+          "Handmade Tiles",
+          "Geometric Patterns",
+          "Fez Craftsmanship"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship / Mosaic Tile Making",
+        "materials_and_tools": [
+          "Natural clay (typically sourced from Fez region)",
+          "Water",
+          "Natural pigments (derived from minerals and plants)",
+          "Wooden molds",
+          "Metal chisels (menkach)",
+          "Traditional wood-burning kilns (fueled by olive pits/wood)",
+          "Glaze"
+        ],
+        "step_by_step": [
+          "**Clay Harvesting and Preparation**: Natural clay is extracted, soaked in water, and then kneaded by hand and foot to achieve a smooth, workable texture, eliminating air bubbles.",
+          "**Shaping and Drying**: The prepared clay is flattened by hand into square slabs or other shapes using molds and then left to dry naturally under the Moroccan sun.",
+          "**First Firing (Biscuit Tile)**: The dried clay slabs are fired in traditional wood-burning kilns. This initial firing produces unglazed, base tiles known as 'biscuit' tiles.",
+          "**Glazing**: Each biscuit tile is hand-dipped or brushed with glaze, made from natural oxides and pigments, to create a wide array of vibrant colors.",
+          "**Second Firing**: The glazed tiles are re-fired at high temperatures in the traditional kilns. The uneven heat distribution in these kilns contributes to the subtle color shifts and unique imperfections characteristic of Zellige.",
+          "**Hand-Cutting (Chiseling)**: Master artisans (Maâlems) use a sharp metal chisel, called a 'menkach', to meticulously hand-cut each fired and glazed tile into precise geometric shapes (tesserae).",
+          "**Assembling the Mosaic**: The hand-cut pieces are then arranged face down on the floor, often following intricate patterns drawn beforehand. They are then secured with a special mortar or cement backing to form the final mosaic panels."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Algeria",
+            "element_name": "Zellige (or similar mosaic art)",
+            "relationship_reason": "Historical development in the Maghreb and Al-Andalus, and recent disputes over cultural appropriation, with Morocco formally appealing to UNESCO to defend Zellige as its own heritage."
+          },
+          {
+            "country": "Spain",
+            "element_name": "Azulejo",
+            "relationship_reason": "Zellige developed in Al-Andalus (Moorish Spain) and the Maghreb, and the word 'azulejo' in Spanish and Portuguese is derived from the Arabic word 'zilij' (zellige), indicating a shared etymological and historical root, though the art forms evolved distinctly."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c6c5cfda",
+      "element_name": "Makonde Wood Carving (Ujamaa / Tree of Life)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Makonde_sculpture_Ujamaa_detail.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Makonde_people",
+        "https://www.bluegecko.org/kenya/tribes/makonde-carvings.htm",
+        "https://www.1stdibs.com/furniture/folk-art/sculptures/makonde-african-wood-carvings-sculptures-tanzania/id-f_20775952/",
+        "https://www.ceremonyandcelebration.com/object-lessons/makonde-tree-of-life-carving-tanzania",
+        "https://africanblackwoodconservation.org/makonde-art/",
+        "https://luangisa.com/collections/makonde-art",
+        "https://commons.wikimedia.org/wiki/File:Makonde_sculpture_Ujamaa_detail.jpg",
+        "https://hartenbergerworldmusicalinstrumentcollection.org/makonde-ujamaa-tree-of-life-a/",
+        "https://www.ntz.info/gen/n00994.html"
+      ],
+      "scraped_at": "2026-04-21T01:29:23.705019Z",
+      "location": {
+        "country": "Tanzania",
+        "provinces": [
+          "Mtwara Region",
+          "Lindi Region",
+          "Dar es Salaam"
+        ],
+        "lat": -10.6990264,
+        "lng": 39.0217984
+      },
+      "resume_analisa": {
+        "description": "Makonde wood carving, particularly the 'Tree of Life' (Ujamaa) style, refers to towering wooden pillars intricately carved with dozens of interlocking human figures, often climbing upward from a single piece of wood. These sculptures are a profound expression of family, unity, culture, and history, symbolizing the interconnectedness of all living beings. Beyond Ujamaa, Makonde carvers also create ritual objects like Mapiko masks and abstract Shetani sculptures, which represent spirits from their mythology.",
+        "cultural_significance": "Makonde wood carving holds deep cultural significance. The 'Ujamaa' carvings, meaning family, togetherness, and support in Swahili, emphasize unity and cooperation within the community. They frequently feature a central mother figure, highlighting the importance of women in the matrilineal Makonde society, with female figurines often engraved with lizards to symbolize fertility and represent birth and survival. These carvings serve as vital vessels for education and the preservation of oral traditions, transmitting values, communal wisdom, tribal myths, and ancestral stories to younger generations in the absence of a written history. Spiritually, Mapiko masks embody ancestral spirits during men's initiation ceremonies, while Shetani sculptures depict various spirits from Makonde mythology. The 'Ujamaa' concept was also adopted as a national symbol of political unity in Tanzania during the 1960s and 70s. The choice of mpingo (African blackwood) as the primary material further symbolizes the enduring nature of Makonde cultural heritage.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Wood Carving",
+          "Makonde Culture",
+          "Tanzanian Heritage",
+          "Mozambican Heritage",
+          "Ujamaa",
+          "Tree of Life",
+          "Folklore",
+          "Ritual Art",
+          "Oral Traditions"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Wood Carving",
+        "materials_and_tools": [
+          "Mpingo tree (African blackwood, Dalbergia melanoxylon, also known as ebony wood)",
+          "Axe",
+          "Chisel",
+          "Mallet",
+          "Knife"
+        ],
+        "step_by_step": [
+          "The carver begins with an initial idea, often inspired by real-life observations, imagination, or even dreams.",
+          "Working without prior sketches or models, the carver directly carves into a single, dense block of mpingo wood, relying on confidence and imaginative skill.",
+          "The laborious process involves meticulously transforming the hard wood into detailed sculptures.",
+          "Young apprentices learn the craft by observing and practicing alongside experienced elders, frequently in carving villages, often under the shade of mango trees.",
+          "Crafting a single 'Tree of Life' sculpture can be a lengthy endeavor, taking anywhere from weeks to a year, with some master carvers completing only a few such intricate pieces in their lifetime due to the high level of dedication and skill required."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Mozambique",
+            "element_name": "Makonde Wood Carving",
+            "relationship_reason": "The Makonde people and their distinct wood carving tradition, including the Ujamaa style, are found in both southeastern Tanzania and northern Mozambique, separated by the Ruvuma River, sharing a common origin and culture."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-19T01:33:58.338293Z",
-    "total_ich_elements": 94,
-    "complete_records": 86,
+    "generated_at": "2026-04-21T01:30:00.155439Z",
+    "total_ich_elements": 97,
+    "complete_records": 89,
     "incomplete_records": 8,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 36,
+      "Traditional Craftsmanship": 38,
       "Social Practices & Rituals": 22,
       "Culinary Traditions": 15,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 5,
+      "Oral Traditions": 6,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1
     }
