@@ -8364,17 +8364,211 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-37d39c7b",
+      "element_name": "Kimjang (Kimchi-making)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00881-RL-EN-Thumb.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/kimjang-making-and-sharing-kimchi-in-the-republic-of-korea-00881",
+        "https://ich.unesco.org/en/RL/tradition-of-kimchi-making-in-the-democratic-peoples-republic-of-korea-01063",
+        "https://www.beyondkimchee.com/traditional-korean-kimchi-recipe-kimjang-kimchi/",
+        "https://www.kimchimari.com/kimjang-day-part-1-how-its-done/",
+        "https://www.vice.com/en/article/pkp48b/kimjang-kimchi-recipe",
+        "https://123kimchi.com/kimjang-kimchi/"
+      ],
+      "scraped_at": "2026-04-23T01:45:20.408085Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [
+          "All provinces"
+        ],
+        "lat": 36.638392,
+        "lng": 127.6961188
+      },
+      "resume_analisa": {
+        "description": "Kimjang is the traditional process of preparing and preserving large quantities of kimchi, the spicy Korean fermented vegetable dish, for consumption during the long, harsh winter months. This collective practice typically occurs in late autumn and involves families, friends, and neighbors coming together to make and share kimchi.",
+        "cultural_significance": "Kimjang reaffirms Korean identity and is a significant opportunity for strengthening family cooperation and community bonds. It serves as an important reminder for many Koreans that human communities need to live in harmony with nature. The practice transmits innovative skills and creative ideas across generations, particularly from mothers-in-law to daughters-in-law. It is considered a major household event, a symbol of Korean identity and pride, and embodies the spirit of sharing and cooperation.",
+        "gemini_tags": [
+          "Korean cuisine",
+          "fermentation",
+          "communal practice",
+          "winter preparation",
+          "cultural identity",
+          "social cohesion",
+          "traditional food",
+          "intangible cultural heritage",
+          "sharing culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Fermentation (Lacto-fermentation)",
+        "materials_and_tools": [
+          "Napa cabbage",
+          "Coarse sea salt",
+          "Water",
+          "Korean radish (or kohlrabi/daikon)",
+          "Korean chili flakes (gochugaru)",
+          "Garlic",
+          "Ginger",
+          "Onion",
+          "Pear",
+          "Salted shrimp (saewoo jut)",
+          "Anchovy sauce (myeolchi aekjeot)",
+          "Sweet rice flour (or all-purpose flour)",
+          "Dried kelp (dashima, kombu)",
+          "Dried shiitake mushrooms (pyogo)",
+          "Butternut squash (optional, for kimchi base)",
+          "Green onions",
+          "Water parsley/water dropwort (minari, optional)",
+          "Korean mustard greens (Gaat, optional)",
+          "Large mixing bowls",
+          "Blender (optional, for paste)",
+          "Plastic bags/containers",
+          "Colander",
+          "Knife",
+          "Mandoline slicer (optional, for radish)"
+        ],
+        "step_by_step": [
+          "**1. Prepare Cabbage:** Slice a thin layer off the hard core of napa cabbages and remove any dry outer leaves. Cut each cabbage in half lengthwise, keeping the core intact but scoring it halfway to allow better brine penetration.",
+          "**2. Brine Cabbage:** Dissolve coarse sea salt in water to create a brine. Place cabbage halves, cut side up, in a large bowl or container. Separate the leaves and sprinkle additional coarse sea salt directly onto the thicker white stems of the cabbage. Submerge the salted cabbage in the brine. Allow the cabbage to wilt for 5-10 hours, flipping occasionally (e.g., every 1-2 hours), until the thick stems can bend easily without breaking.",
+          "**3. Rinse and Drain Cabbage:** Rinse the brined cabbage thoroughly under running water, typically 2-3 times, to remove excess salt. Gently squeeze out excess water. Place the cabbage in a colander, cut side down, and let it drain for at least 30 minutes to an hour while preparing the seasoning.",
+          "**4. Prepare Kimchi Base (optional, for depth):** In a pot, combine water, dried kelp, dried shiitake mushrooms, and sliced butternut squash. Bring to a boil, then simmer until the squash is soft. Remove kelp and mushrooms, then mash the squash directly into the base. In a separate bowl, whisk sweet rice flour (or all-purpose flour) with water to create a slurry. Add the slurry to the pot and cook over low heat, whisking constantly, until the mixture thickens into a smooth paste. Let it cool completely.",
+          "**5. Prepare Kimchi Seasoning Paste (Yangnyeom):** In a blender, combine aromatic ingredients such as onion, garlic, ginger, and pear; blend until smooth, adding a small amount of kimchi stock or water if needed. In a large mixing bowl, toss julienned Korean radish (or kohlrabi/daikon) with Korean chili flakes (gochugaru) until evenly coated. Add the blended aromatics, salted shrimp (minced), anchovy sauce, sugar, Korean plum extract (optional), and the cooled kimchi base (if used) to the radish. Add sliced green onions, water parsley, and Korean mustard greens. Mix thoroughly until it forms a thick, cohesive paste.",
+          "**6. Stuff Cabbage:** Gently spread the leaves of each brined cabbage half/quarter with your hands. Spread a generous amount of the kimchi seasoning paste evenly between all the leaves, focusing on coating the thicker white parts of the cabbage. Once all layers are coated, roll the cabbage onto itself, with the cut side folding in and the outer green layers on the outside. Use the outermost leaf to wrap around the cabbage to secure the stuffing.",
+          "**7. Pack and Ferment:** Tightly pack the stuffed cabbages into airtight containers, such as glass jars or traditional kimchi containers, pressing down to remove as many air pockets as possible. The container should be about 70% full. Cover the kimchi directly with plastic wrap before sealing the container with a lid. Store the kimchi in a refrigerator (ideally a kimchi refrigerator) at a consistent cool temperature (around 39-40°F or 4-5°C) for slow fermentation. Kimchi can be consumed fresh after a few days, but typically develops its full flavor after 21-30 days of fermentation."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Democratic People's Republic of Korea (North Korea)",
+            "element_name": "Tradition of Kimchi-making",
+            "relationship_reason": "Both South Korea's 'Kimjang: Making and Sharing Kimchi' (inscribed in 2013) and North Korea's 'Tradition of Kimchi-making' (inscribed in 2015) are recognized on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity. This highlights Kimjang as a shared cultural heritage that transcends the border between the two Koreas, underscoring the enduring common identity of the Korean people."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-1bfc643c",
+      "element_name": "Noken (Multifunctional Knotted or Woven Bag)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Noken_bags.jpg/800px-Noken_bags.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/USL/noken-multifunctional-knotted-or-woven-bag-handcraft-of-the-people-of-papua-00619",
+        "https://en.wikipedia.org/wiki/Noken",
+        "http://www.thejakartapost.com/news/2009/02/05/papuans-remote-areas-prefer-noken039-ballot-box.html",
+        "https://www.youtube.com/watch?v=02f1X7_46f0",
+        "https://bwcf.or.id/mengenal-noken-sebagai-warisan-budaya-unesco/",
+        "https://www.kompas.id/baca/humaniora/2022/02/20/noken-warisan-budaya-papua-untuk-dunia",
+        "https://www.indonesia.travel/gb/en/destinations/maluku-papua/papua/noken-papuas-multifunctional-cultural-heritage"
+      ],
+      "scraped_at": "2026-04-23T01:45:54.858205Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Papua",
+          "West Papua",
+          "Central Papua",
+          "Highland Papua"
+        ],
+        "lat": -2.4749149,
+        "lng": 138.08485
+      },
+      "resume_analisa": {
+        "description": "Noken is a traditional Papuan multifunctional knotted or woven bag, meticulously handmade from natural plant fibers such as wood bark, leaves, or orchid stems. It is uniquely worn across the forehead or head, with the bag hanging down the back, enabling hands-free movement. Noken varies in size and design, serving diverse purposes from carrying agricultural produce, daily necessities, firewood, and small animals to holding babies, personal items, and even books. Its distinctive stretchy and strong nature is a result of the intricate hand-knotting or weaving technique.",
+        "cultural_significance": "More than a utilitarian object, Noken embodies profound cultural values for the Papuan people. It symbolizes life, peace, fertility, responsibility, and womanhood. The ability to craft a Noken is often a marker of maturity for Papuan women, signifying their readiness for adulthood and marriage in some communities. It plays a significant role in various rituals and social practices, including peace offerings and traditional festivities. Noken also represents cultural unity, sustainability, and is even recognized in a unique traditional electoral system in certain areas. In 2012, Noken was inscribed on the UNESCO Intangible Cultural Heritage List in Need of Urgent Safeguarding, highlighting its global cultural importance and the need for its preservation.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Indigenous Culture",
+          "Textile Art",
+          "Social Practices",
+          "Ritual Object",
+          "Sustainable Craft",
+          "Papuan Culture",
+          "Indonesian Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Hand-knotting/Weaving",
+        "materials_and_tools": [
+          "Branches, stems, or bark of small trees or shrubs (e.g., Gnetum gnemon/melinjo, mahkota dewa, Waru Tree, Ficus, Aglaia, Sukun, Boehmeria malabarica, Boehmeria nivea, Astronia spp., Sida rhombifolia, Wikstromia venosa)",
+          "Leaves (e.g., pandanus, sago palm, water hyacinth, pineapple leaf fiber, swamp grass)",
+          "Orchid roots/stems",
+          "Natural dyes (from fruits, tree barks, leaves like Pittosporum pullifolium, Melastoma polyanthum, Phaius tankervilleae, Calanth spp., Spathoglottis spp., Gardenia lamingtonii, Curcuma domestica)",
+          "Hands (no loom or machinery)"
+        ],
+        "step_by_step": [
+          "Collect fibers from local plants such as tree bark, orchid roots, or leaves.",
+          "Cut branches, stems, or bark, then heat them over a fire and soak them in water.",
+          "Dry the processed wood fiber.",
+          "Spin the dried fiber to create a strong thread or string, often by twisting it tightly with the palm of the hand on the thigh.",
+          "Optionally, color the string using natural dyes derived from fruits, tree barks, or leaves.",
+          "Knot the string entirely by hand to form net bags of various patterns and sizes (some communities also use weaving techniques).",
+          "The entire process demands significant manual skill, care, and artistic sense, typically taking anywhere from a few days to several months to master and complete a single Noken, depending on its size and complexity."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.9,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-27240bd6",
+      "element_name": "Zapotec Weaving of Oaxaca",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//t-skies.com/blogs/news/weaving-tradition-into-every-thread-the-artisans-of-oaxaca&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://t-skies.com/blogs/news/weaving-tradition-into-every-thread-the-artisans-of-oaxaca"
+      ],
+      "scraped_at": "2026-04-23T01:46:00Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "Oaxaca"
+        ],
+        "lat": 17.0,
+        "lng": -96.5
+      },
+      "resume_analisa": {
+        "description": "The Zapotec civilization in Oaxaca, southern Mexico, maintains a long-standing tradition of weaving. Their textiles and artwork feature designs that form a visual language rich with symbolism, embodying the Zapotec worldview and deep connection to nature. Weaving is considered a sacred practice, honoring ancestors, communicating with the divine, and preserving cultural legacy. Each symbol woven into their textiles carries distinct meanings, often rooted in their stories, agricultural traditions, or spiritual beliefs.",
+        "cultural_significance": "For the Zapotecs, weaving is a sacred practice—a way to honor their ancestors, communicate with the divine, and preserve their cultural legacy. The designs found in their textiles are more than decoration; they form a visual language that embodies the Zapotec worldview and their deep connection to nature. Through these designs, the Zapotecs narrate stories that connect their past, present, and future, ensuring that their heritage endures across generations.",
+        "gemini_tags": [
+          "Zapotec weaving",
+          "Oaxaca",
+          "Mexico",
+          "Traditional Craftsmanship",
+          "Cultural Heritage",
+          "Textile Art",
+          "Indigenous Craft",
+          "Natural Dyes",
+          "Symbolism"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.0,
+        "related_elements": []
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-21T01:30:00.155439Z",
-    "total_ich_elements": 97,
-    "complete_records": 89,
-    "incomplete_records": 8,
+    "generated_at": "2026-04-23T01:46:58.892112Z",
+    "total_ich_elements": 100,
+    "complete_records": 91,
+    "incomplete_records": 9,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 38,
+      "Traditional Craftsmanship": 40,
       "Social Practices & Rituals": 22,
-      "Culinary Traditions": 15,
+      "Culinary Traditions": 16,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
