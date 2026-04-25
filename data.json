@@ -8558,24 +8558,311 @@
         "related_elements": []
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-9274f9a4",
+      "element_name": "Čičmany Painted Houses and Embroidery",
+      "category": "Traditional Craftsmanship | Social Practices & Rituals",
+      "thumbnail_url": "https://www.alamy.com/stock-photo-traditional-log-houses-decorated-with-white-linear-patterns-in-the-village-of-cicmany-in-zilina-region-in-slovakia-170725227.html",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/%C4%8Ci%C4%8Dmany",
+        "https://www.atlasobscura.com/places/painted-village-of-cicmany",
+        "https://thewanders.eu/cicmany/",
+        "https://www.ludovakultura.sk/en/ich-lists/ornaments-in-cicmany/",
+        "https://folkcostume.blogspot.com/2013/07/costume-of-cicmany-and-vicinity-slovakia.html",
+        "https://www.shutterstock.com/search/cicmany+pattern",
+        "https://3seaseurope.com/cicmany-the-first-folk-architecture-reserve-in-the-world/",
+        "https://weepingredorger.wordpress.com/2014/01/27/cicmany-village-slovakia/",
+        "https://www.dinotruck.com/cicmany-live-the-life-expeditions/",
+        "https://www.independentcouple.com/this-wonderful-slovak-village-will-make-you-believe-in-fairytale/",
+        "https://outsider-environments.blogspot.com/2021/09/cicmany-vyzdobena-dedina-decorated.html",
+        "https://www.theedition.sk/cicmany-the-painted-folk-village-of-slovakia/",
+        "https://tymrazem.pl/en/cicmany-a-picturesque-village-full-of-tradition/",
+        "https://www.livetheworld.com/post/admire-slovak-folk-art-in-cicmany-open-air-museum-162x"
+      ],
+      "scraped_at": "2026-04-25T01:24:38.471303Z",
+      "location": {
+        "country": "Slovakia",
+        "provinces": [
+          "Žilina Region"
+        ],
+        "lat": 49.2196821,
+        "lng": 18.7396517
+      },
+      "resume_analisa": {
+        "description": "Čičmany is a small mountain village in northwestern Slovakia, renowned for its distinctive folk architecture, particularly its dark wooden log houses adorned with intricate white geometric and symbolic patterns. This unique tradition of house painting originated approximately 200 years ago, initially employing white lime to preserve damaged wood and protect against humidity. Following a significant fire in 1921, the village was meticulously restored with support from the Slovakian government and under the architectural guidance of Dušan Jurkovič, ensuring the preservation of its characteristic appearance. In 1977, Čičmany was designated as the world's first folk architecture reserve. The characteristic patterns found on the houses are also integral to the local traditional embroidery, prominently featured on folk costumes.",
+        "cultural_significance": "The white geometric patterns, which include abstract representations of animals, arrows, clovers, crosses, hearts, stars, spirals, and pinwheels, initially served a dual purpose: practical protection against moisture and sun rays, and potentially an apotropaic function to ward off evil spirits. Over time, their significance evolved to emphasize decoration and cultural representation, becoming a cherished symbol of Slovak folk art and a prominent element of national tradition. The village and its traditions gained wider recognition after the Slavonic Ethnological Exhibition in Prague in 1895, fostering interest in tourism and ethnographic studies. These patterns are also deeply embedded in the local folk costumes, which are proudly worn during various festivals, including the annual carnival celebration known as 'Fašiangy'. The ornaments are believed to symbolize harmony, stability, and fertility.",
+        "gemini_tags": [
+          "Folk Architecture",
+          "Traditional Painting",
+          "Geometric Patterns",
+          "Slovakian Culture",
+          "Rural Heritage",
+          "Traditional Embroidery",
+          "Apotropaic Symbols",
+          "Community Preservation",
+          "Cultural Tourism",
+          "Social Practices & Rituals"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional House Painting and Embroidery",
+        "materials_and_tools": [
+          "House Painting: Dark wooden log houses, white lime paint (historically mud, then lime), brushes (implied).",
+          "Embroidery: Fabric (e.g., linen for costumes), colored threads (e.g., golden orangey-yellow, red, blue, black, white), needles."
+        ],
+        "step_by_step": [
+          "House Painting:",
+          "1. Construct or maintain dark wooden log houses.",
+          "2. Historically, women would apply mud, and subsequently white lime, to the corners of the houses to preserve them from humidity and sun damage.",
+          "3. Over time, the application of white lime expanded to cover the entire exteriors of the unplastered log houses.",
+          "4. Intricate geometric and symbolic patterns (e.g., animals, arrows, clovers, crosses, hearts, stars, spirals, pinwheels) are painted freehand, without prior sketching, using white lime.",
+          "5. The designs for the house paintings are inspired by local handmade embroidery.",
+          "Embroidery:",
+          "1. Designs that mirror the house patterns are embroidered onto traditional folk costumes and other textiles such as tablecloths and handkerchiefs.",
+          "2. Common embroidery techniques include counted satin stitch, needle woven hemstitch, cutwork, and faggot stitching.",
+          "3. Traditionally, specific thread colors were used to denote marital status: golden orangey-yellow for married women, red for single girls, and blue and black for widows."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Poland",
+            "element_name": "Zalipie Painted Village",
+            "relationship_reason": "Both villages are known for houses decorated with traditional folk art, although Čičmany features white geometric patterns on dark wood, while Zalipie is characterized by colorful frescoes."
+          },
+          {
+            "country": "Slovakia",
+            "element_name": "Slovak Folk Costumes and Embroidery (general tradition)",
+            "relationship_reason": "The Čičmany patterns are directly transferred from their traditional embroidery to the house decorations, highlighting a strong connection within broader Slovak folk art traditions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a8c404db",
+      "element_name": "Vedic Chanting",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Vedic_chant&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Vedic_chant",
+        "https://ich.unesco.org/en/RL/tradition-of-vedic-chanting-00062",
+        "https://www.hinduismtoday.com/news/unesco-declares-vedic-chanting-a-heritage-of-humanity/",
+        "https://www.thesanskritmagazine.com/significance-of-vedic-chanting-in-daily-life/",
+        "https://indrosphere.com/the-ancient-art-of-vedic-chanting-a-cultural-legacy/",
+        "https://matri.yoga/patterns-of-vedic-chanting-in-detail-6-tutorials/",
+        "https://moniqueparkeryoga.com/vedic-chanting/",
+        "https://srimatham.com/home/vedic-chanting/introduction-to-vedic-chanting/",
+        "https://www.kamakoti.org/hindudharma/part20/chap1.htm",
+        "https://vedastudies.com/veda-recitation-online/"
+      ],
+      "scraped_at": "2024-04-26T01:25:00Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Maharashtra",
+          "Kerala",
+          "Karnataka",
+          "Odisha"
+        ],
+        "lat": 19.5670323,
+        "lng": 76.4164557
+      },
+      "resume_analisa": {
+        "description": "Vedic Chanting is an ancient oral tradition involving the precise recitation of sacred texts known as the Vedas. It is considered one of the world's oldest unbroken oral traditions, dating back over 3,500 years. The practice emphasizes meticulous adherence to specific intonations, rhythms, and pronunciations of Sanskrit mantras to preserve their original sound and potency.",
+        "cultural_significance": "Vedic Chanting holds profound spiritual and cultural significance, serving as a primary source of knowledge and the sacred foundation of Hinduism. It is believed to establish a direct connection with divine energies, promote mindfulness, and contribute to spiritual upliftment and well-being. The tradition plays a crucial role in preserving ancient wisdom, linguistic integrity, and cultural identity across generations. Recognized by UNESCO in 2003 (and inscribed in 2008) as a Masterpiece of the Oral and Intangible Heritage of Humanity, it highlights the global importance of this unique cultural expression.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Ritual",
+          "Chanting",
+          "Hinduism",
+          "Sanskrit",
+          "India",
+          "Intangible Cultural Heritage",
+          "Memorization",
+          "Spiritual Practice",
+          "Ancient Texts"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral transmission and recitation",
+        "materials_and_tools": [
+          "Sacred Vedic texts (as content for recitation)",
+          "Guru (teacher)",
+          "Shishya (student)",
+          "Memory",
+          "Vocal cords"
+        ],
+        "step_by_step": [
+          "**Guru-Shishya Tradition**: The knowledge of Vedic chanting is transmitted orally from a teacher (guru) to a student (shishya). The student listens intently to the guru and then reproduces the chant exactly, fostering deep concentration and memory.",
+          "**Learning Pathas (Recitation Styles)**: Students are introduced to various recitation styles, known as 'pathas', designed for perfect memorization and pronunciation. Simpler methods include Samhita-patha (continuous recitation), Pada-patha (word-by-word recitation where compounds are dissolved), and Krama-patha (step-by-step pairing of words).",
+          "**Mastering Complex Vikrutipathas**: Advanced students learn more intricate recitation styles, or 'Vikrutipathas', such as Jata, Maalaa, Sikha, Rekha, Dhwaja, Danda, Rathaa, and Ghana. These involve complex patterns of repeating words forwards and backwards, ensuring the text remains unaltered. Ghana-patha, for instance, repeats words in a bell shape.",
+          "**Adhering to Tonal Accents (Svaras)**: Chanting strictly follows rules of intonation, pitch, tone, and melody, using specific tonal accents (udātta - middle, anudātta - lower, svarita - higher, and dīrgha svarita - extended high tone) marked in the texts to maintain linguistic and phonetic integrity.",
+          "**Precise Pronunciation (Varna)**: Meticulous attention is given to the correct pronunciation of each syllable (varna), differentiation between short and long vowels, and specific speech combinations, as the potency of the mantras is believed to lie in their sound.",
+          "**Cultivating Focus and Mindfulness**: The practice demands complete concentration and mindfulness, serving as a powerful form of meditation that helps calm the mind and enhance mental clarity."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Nepal",
+            "element_name": "Hindu religious practices and rituals",
+            "relationship_reason": "Shared religious traditions and presence of Vedic scholars and practitioners."
+          },
+          {
+            "country": "Sri Lanka",
+            "element_name": "Hindu temple rituals and Sanskrit chanting",
+            "relationship_reason": "Historical and cultural ties, with Hindu communities practicing Vedic traditions."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Balinese Hindu rituals and sacred chants",
+            "relationship_reason": "Influence of Hindu traditions, particularly in Bali, where Sanskrit chants are part of religious ceremonies."
+          },
+          {
+            "country": "Malaysia",
+            "element_name": "Hindu festivals and prayers",
+            "relationship_reason": "Significant Hindu diaspora practicing Vedic chanting in religious contexts."
+          },
+          {
+            "country": "Fiji",
+            "element_name": "Indo-Fijian Hindu cultural practices",
+            "relationship_reason": "Practiced by the Indo-Fijian community as part of their ancestral heritage."
+          },
+          {
+            "country": "Mauritius",
+            "element_name": "Mauritian Hindu traditions and ceremonies",
+            "relationship_reason": "Practiced by the Indo-Mauritian community, preserving ancestral customs."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ebf47c04",
+      "element_name": "Bun Bang Fai (Rocket Festival)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Bun_Bang_Fai_rockets_in_Yasothon.jpg",
+      "source_urls": [
+        "https://www.mayflowertours.com/blog/boun-bang-fai-the-rocket-festival-of-laos",
+        "https://thailandnow.in.th/culture-and-lifestyle/bun-bang-fai-festival-2026/",
+        "https://thaiherbkitchen.com/bun-bang-fai-rocket-festival/",
+        "https://www.toureast.net/en/thailand/bun-bang-fai-the-rocket-festival",
+        "https://vietnamparadisetravel.com/blog/rocket-festival-in-laos-boun-bang-fai",
+        "https://www.amusingplanet.com/2014/05/bun-bang-fai-rocket-festival-in.html",
+        "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B8%E0%B8%8D%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%84%E0%B8%9F",
+        "https://en.wikipedia.org/wiki/Rocket_Festival",
+        "https://www.astampaday.com/2018/05/thailands-bun-bang-fai-festival-of.html",
+        "https://www.thailandfoundation.or.th/culture-heritage/isaan-rocket-festival-an-ancient-promise-of-rain/",
+        "https://www.quora.com/What-is-the-significance-of-the-Bun-Bang-Fai-festival-in-Thailand",
+        "https://www.tagthai.com/blog/boon-bang-fai-rocket-festival-2025/",
+        "https://portailasie.com/thailand/bun-bang-fai-rocket-festival/",
+        "https://www.chiangmaitouristguide.com/bun-bang-fai-chiang-mais-rocket-festival/",
+        "https://sonasia-holiday.com/blog/epic-guide-for-boun-bang-fai-rocket-festival-in-thailand-and-laos/"
+      ],
+      "scraped_at": "2026-04-25T01:25:41.915096Z",
+      "location": {
+        "country": "Thailand",
+        "provinces": [
+          "Northeastern Thailand (Isaan region)",
+          "Yasothon",
+          "Roi Et",
+          "Kalasin",
+          "Udon Thani",
+          "Nong Khai",
+          "Maha Sarakham",
+          "Sisaket",
+          "Nong Bua Lamphu",
+          "Loei",
+          "Amnat Charoen",
+          "Northern Thailand",
+          "Narathiwat (Amphoe Sukhirin)"
+        ],
+        "lat": 16.4558094,
+        "lng": 102.8191518
+      },
+      "resume_analisa": {
+        "description": "The Bun Bang Fai, or Rocket Festival, is an ancient merit-making ceremony traditionally practiced by ethnic Lao people in Northeastern Thailand and Laos. It is held annually around May or June, at the beginning of the rainy season, to implore the rain god, Phaya Thaen, for timely rainfall for agricultural abundance, especially for rice cultivation. The festival is a vibrant and energetic celebration combining spirituality, community bonding, and cultural rituals, featuring parades, traditional music, dancing, and competitive launches of elaborately decorated homemade rockets.",
+        "cultural_significance": "The festival is deeply rooted in ancient agricultural traditions and animist beliefs, later blending with Buddhist rituals. It symbolizes renewal, fertility, and abundance, connecting the community to its agricultural heritage and fostering a collective identity. It serves as an opportunity for communities to come together, strengthen ties, pass on traditions, and celebrate cultural identity before the hard work of rice farming begins. The rockets are launched as an offering and a reminder to Phaya Thaen to keep his promise of rain, stemming from the folklore of Phaya Khankhak (the Toad King) who waged war against Phaya Thaen to bring rain to the human world.",
+        "gemini_tags": [
+          "Rain-making ritual",
+          "Agricultural festival",
+          "Community celebration",
+          "Rocketry",
+          "Thai folklore",
+          "Lao folklore",
+          "Fertility rites",
+          "Buddhist traditions",
+          "Parades",
+          "Traditional music and dance"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Festival / Ritual",
+        "materials_and_tools": [
+          "Rockets (Bang Fai): Traditionally made from bamboo, filled with gunpowder, charcoal, and other combustible materials. Modern rockets may use PVC or metal piping. They are often decorated with gilded engravings, naga (mythical serpent) motifs, and other colorful designs.",
+          "Launching towers/racks: Made of bamboo scaffolding.",
+          "Traditional Lao instruments (e.g., khaen), costumes, floats for parades.",
+          "Food and drinks for feasting."
+        ],
+        "step_by_step": [
+          "Preparation (Weeks/Months before): Communities form organizing committees. Villagers and craftsmen spend weeks or months constructing and decorating rockets (bang fai), which can range from small to massive (up to 9 meters long, packed with up to 120 kg of gunpowder).",
+          "Day 1 (Friday/First Day): Religious rituals are performed by monks in the temple. Colorful parades featuring traditional costumes, musical performances (with instruments like the khaen), dancing, and floats take place. Some parades include humorous or satirical elements, cross-dressing, and phallic symbols (buk paen or palad khik) representing fertility. There are also folk singing and dancing performances, and community gatherings with festive foods.",
+          "Day 2 (Saturday/Second Day - Main Parade Day): Rockets are paraded through the streets to the launch site. More parades, traditional music, and dance continue. In some areas, there are beauty contests and tug-of-war competitions.",
+          "Day 3 (Sunday/Third Day - Rocket Launch Day): The climax of the festival involves competitive rocket launches. Teams from neighboring villages showcase their creations, competing for the highest, longest-lasting, and most spectacular launches. A ceremony is held to bless the rockets. Unsuccessful teams whose rockets fail to launch or fall shortly after launch are traditionally thrown into a nearby mud pool."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Laos",
+            "element_name": "Boun Bang Fai (Rocket Festival)",
+            "relationship_reason": "The festival is a shared tradition practiced by ethnic Lao people in both Northeastern Thailand and Laos, with similar origins, mythology, and practices aimed at invoking rain for agriculture."
+          },
+          {
+            "country": "United States",
+            "element_name": "Bun Bang Fai celebrations by Lao diaspora",
+            "relationship_reason": "Lao refugees resettled in the United States continue to celebrate traditional Lao holidays like Bun Bang Fai, serving as cultural centers."
+          },
+          {
+            "country": "France",
+            "element_name": "Bun Bang Fai celebrations by Lao diaspora",
+            "relationship_reason": "Lao refugees resettled in France continue to celebrate traditional Lao holidays like Bun Bang Fai, serving as cultural centers."
+          },
+          {
+            "country": "(Implicit comparison) Western celebrations",
+            "element_name": "Mardi Gras",
+            "relationship_reason": "Both festivals share themes of spectacle, community, celebration, revelry, elaborate costumes, parades, music, dance, and reflect themes of transformation (end of winter/dry season, arrival of spring/wet season), fertility, and renewal."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-23T01:46:58.892112Z",
-    "total_ich_elements": 100,
-    "complete_records": 91,
+    "generated_at": "2026-04-25T01:26:22.290065Z",
+    "total_ich_elements": 103,
+    "complete_records": 94,
     "incomplete_records": 9,
     "categories_breakdown": {
       "Traditional Craftsmanship": 40,
-      "Social Practices & Rituals": 22,
+      "Social Practices & Rituals": 23,
       "Culinary Traditions": 16,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 6,
+      "Oral Traditions": 7,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
-      "Traditional Community Practice": 1
+      "Traditional Community Practice": 1,
+      "Traditional Craftsmanship | Social Practices & Rituals": 1
     }
   }
 }
