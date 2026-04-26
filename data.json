@@ -8844,17 +8844,288 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-99dd6ebc",
+      "element_name": "Mole Poblano",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//patijinich.com/mole-poblano-yes-you-can/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://patijinich.com/mole-poblano-yes-you-can/",
+        "https://www.mexicanplease.com/mole-poblano-recipe/",
+        "https://dorastable.com/mole-poblano-recipe/",
+        "https://www.unileverfoodsolutions.us/recipe/mole-poblano-R0050854.html",
+        "https://globaltableadventure.com/recipe/5-step-mole-poblano/",
+        "https://thechroniclekhana.com/journey-through-time-mole-of-mexico/",
+        "https://www.mexicanplease.com/mole-poblano-recipe/",
+        "https://vallartarestaurants.com/the-rich-history-of-mole-sauce/",
+        "https://stefansgourmet.com/2019/12/01/homemade-mole-poblano/",
+        "https://todowafi.com/the-history-of-mole-poblano/",
+        "https://www.foodorigins.com/mole-poblano/",
+        "https://www.mexicada.com/blog/what-is-the-history-behind-the-preparation-of-mole-poblano-in-mexican-families",
+        "https://www.kiwilimon.com/blog/historia-de-la-comida/origen-del-mole-poblano",
+        "https://www.sfcincomayoparty.com/mexicos-culinary-treasure-the-history-of-mole/",
+        "https://www.velasresorts.com/blog/gastronomy/a-culinary-journey-through-traditional-mexican-mole/",
+        "https://en.wikipedia.org/wiki/Mole_(sauce)"
+      ],
+      "scraped_at": "2026-04-26T18:52:03.575331Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "Puebla"
+        ],
+        "lat": 18.833333,
+        "lng": -98.0
+      },
+      "resume_analisa": {
+        "description": "Mole Poblano is a quintessential Mexican sauce, often hailed as the national dish, renowned for its intricate and profound flavor profile that harmoniously blends sweetness, spice, bitterness, and earthiness. It is a thick, dark reddish-brown sauce or paste created by meticulously grinding a multitude of ingredients, primarily various dried chili peppers (such as ancho, pasilla, mulato, and chipotle), a rich array of spices, nuts, seeds, and notably, chocolate.",
+        "cultural_significance": "Mole Poblano holds deep cultural and symbolic significance, representing the historical fusion of Mexico's indigenous and European culinary traditions. Its preparation is a labor-intensive, often communal, and cherished family affair, with recipes passed down through generations. This dish is a staple at major celebrations and festivities, including weddings, baptisms, national holidays like Cinco de Mayo, and Día de Muertos, embodying themes of unity, love, and cultural pride.",
+        "gemini_tags": [
+          "Mexican cuisine",
+          "Traditional sauce",
+          "Puebla",
+          "Culinary heritage",
+          "Chili peppers",
+          "Chocolate",
+          "Festive food",
+          "Family tradition",
+          "Mestizaje"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Recipe",
+        "materials_and_tools": [
+          "Dried chiles (ancho, pasilla, mulato, chipotle)",
+          "White onion",
+          "Garlic cloves",
+          "Roma tomatoes",
+          "Tomatillos",
+          "Nuts (almonds, peanuts, pecans, walnuts)",
+          "Seeds (pumpkin seeds/pepitas, sesame seeds, reserved chile seeds)",
+          "Raisins",
+          "Ripe plantain",
+          "Corn tortillas or day-old bread (bolillo)",
+          "Spices (whole cloves, anise seeds, coriander seeds, black peppercorns, cinnamon stick, allspice, dried thyme, dried marjoram, Mexican oregano)",
+          "Mexican chocolate (e.g., Ibarra or artisanal brand)",
+          "Piloncillo (unrefined whole cane sugar) or granulated sugar",
+          "Lard, vegetable shortening, or vegetable oil",
+          "Chicken or vegetable stock/broth",
+          "Salt",
+          "Comal or cast iron pan",
+          "Large skillet or heavy-bottomed pot (e.g., Dutch oven)",
+          "Blender or molcajete (traditional grinding stone)",
+          "Strainer or sieve (optional, for smoother sauce)"
+        ],
+        "step_by_step": [
+          "**Prepare Chiles:** Stem and deseed the dried chiles (ancho, pasilla, mulato, chipotle), reserving some of the seeds. Lightly toast the chiles on a dry comal or skillet over medium heat until aromatic, being careful not to burn them. Immediately transfer the toasted chiles to a heat-proof bowl and pour boiling water over them to rehydrate for about 15-20 minutes.",
+          "**Toast/Fry Dry Ingredients:** In a separate large skillet, heat some lard or oil. Separately toast or fry the various nuts (almonds, peanuts, pecans, walnuts), pumpkin seeds, sesame seeds, and the reserved chile seeds until lightly browned and aromatic. Remove with a slotted spoon. In the same skillet, toast corn tortillas or day-old bread until dry and crispy. Also, lightly toast whole spices like cloves, anise seeds, coriander seeds, black peppercorns, and cinnamon sticks.",
+          "**Sauté Aromatics and Fruits:** In the same skillet with a little oil, sauté roughly chopped white onion and garlic cloves until softened and lightly browned. Separately, roast or simmer Roma tomatoes and tomatillos until tender. Fry slices of ripe plantain and raisins until softened.",
+          "**Blend Ingredients:** Combine the rehydrated chiles (drained), all the toasted nuts and seeds, sautéed onion and garlic, roasted tomatoes and tomatillos, fried plantain and raisins, and toasted tortillas/bread in a blender. Add a portion of chicken or vegetable stock. Puree until the mixture is as smooth as possible, adding more stock as needed to achieve a thick, pourable consistency. Some recipes recommend blending in batches and then pressing the puree through a fine-mesh strainer for an exceptionally smooth sauce.",
+          "**Simmer the Sauce:** Heat a generous amount of lard or oil in a large, heavy-bottomed pot or Dutch oven over medium heat. Carefully add the blended mole paste to the hot fat. Cook the mole, stirring frequently to prevent sticking, for at least 30 minutes to 1.5 hours. This crucial step allows the flavors to deepen and meld, and the sauce to thicken. Season with salt to taste.",
+          "**Add Chocolate and Sweeteners:** Stir in the Mexican chocolate and piloncillo (or sugar) until they are completely dissolved into the simmering sauce. Continue to cook, stirring occasionally, until the mole reaches your desired consistency and a reddish-brown 'mole oil' may begin to separate on the surface.",
+          "**Serve:** Mole Poblano is traditionally served hot, often over cooked poultry such as chicken or turkey, and accompanied by Mexican rice. It is typically garnished with a sprinkle of sesame seeds."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Mexico",
+            "element_name": "Mole Negro (Oaxaca)",
+            "relationship_reason": "Mole Negro is another highly renowned regional variation of mole, originating from Oaxaca. It shares the fundamental concept of a complex, chili-based sauce with diverse ingredients, but features distinct flavor profiles and ingredient combinations specific to the Oaxacan region, often with a darker hue and smokier notes."
+          },
+          {
+            "country": "Mexico",
+            "element_name": "Other regional moles (e.g., Mole Verde, Mole Amarillo, Mole Coloradito)",
+            "relationship_reason": "The term 'mole' encompasses a broad category of traditional sauces in Mexico, with numerous regional variations found across different states. All these moles stem from the pre-Hispanic 'mulli' concept and have evolved through a blend of indigenous and colonial influences, each offering unique ingredients, colors, and flavor profiles."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-6ddf23d7",
+      "element_name": "Hilot",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.coldteacollective.com/indigenous-filipino-healing-practices/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.coldteacollective.com/indigenous-filipino-healing-practices/",
+        "https://nurturewellnessvillage.com/4-filipino-indigenous-healing-practices-for-holistic-health/",
+        "https://www.thefarmatsanbenito.com/the-filipino-approach-to-wellness-treatments-and-their-deeper-meaning/",
+        "https://en.wikipedia.org/wiki/History_of_medicine_in_the_Philippines",
+        "https://www.scirp.org/journal/paperinformation.aspx?paperid=100373",
+        "https://www.scribd.com/document/636830701/Indigenous-Healing-Practices"
+      ],
+      "scraped_at": "2026-04-26T18:52:34.539860Z",
+      "location": {
+        "country": "Philippines",
+        "provinces": [],
+        "lat": 12.7503486,
+        "lng": 122.7312101
+      },
+      "resume_analisa": {
+        "description": "Hilot is an ancient and holistic Filipino healing tradition that aims to restore balance to an individual's physical, mental, emotional, and spiritual well-being. It is often characterized as a therapeutic massage combined with energy alignment techniques, but it encompasses a broader system of traditional medicine including bonesetting, herbology, pulse diagnosis, and spiritual interventions. Practitioners, known as manghihilot or mangablon, use their skilled hands to detect and treat areas of congestion, skeletal misalignments, and energy imbalances within the body's urat (nerve or vein), pennet (tendons, ligaments), lasag (flesh or muscle), and tulang (bones).",
+        "cultural_significance": "Hilot is deeply embedded in Filipino culture, passed down through generations, and represents a traditional approach to health that predates the introduction of Western medicine. It emphasizes the interconnectedness of the self with nature and community, and often integrates spiritual beliefs and rituals, such as whispered prayers (bulong) and recited prayers (orasyon), to harmonize the body and spirit. It is seen as a way to connect with ancestral healing wisdom.",
+        "gemini_tags": [
+          "Traditional Healing",
+          "Filipino Culture",
+          "Holistic Wellness",
+          "Massage Therapy",
+          "Herbal Medicine",
+          "Spiritual Healing",
+          "Indigenous Knowledge"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Healing Practice (Therapeutic Massage and Energy Alignment)",
+        "materials_and_tools": [
+          "Skilled hands of the manghihilot or mangablon",
+          "Herbal oils (e.g., virgin coconut oil, locally prepared herbal oils)",
+          "Medicinal herbs and plants (e.g., ginger root, guava leaves)",
+          "Heated elements (e.g., heated banana leaves or stones for Rorof-Rorof, heated cups for Ventosa)",
+          "Candles (kandilâ) and special cloths (may be used in some diagnostic or spiritual rituals)"
+        ],
+        "step_by_step": [
+          "Diagnosis: The manghihilot uses touch, pulse diagnosis (himolso), and sometimes spiritual means (tawas, luop) to identify areas of imbalance, congestion, or misalignment in the body's energy flow, nerves, tendons, muscles, and bones.",
+          "Preparation: The patient may be prepared with herbal applications or oils. The healer may also engage in prayers or rituals to set the healing intention.",
+          "Therapeutic Application: The manghihilot applies various massage strokes, pressure points, and manipulation techniques to the affected areas. This can include rubbing (e.g., pekkel), pressing, and kneading to alleviate muscle tension, treat sprains, dislocations, and realign skeletal structures.",
+          "Herbal Integration: Herbal concoctions, poultices, or oils are often integrated into the massage or applied to specific body parts to enhance healing, reduce inflammation, or provide warmth.",
+          "Spiritual Component: Prayers (bulong, orasyon) and other mindful rituals may be incorporated throughout the session to harmonize the body and spirit, address spiritual imbalances, and invoke healing energies.",
+          "Post-Treatment Care: The healer may provide recommendations for continued herbal remedies, dietary adjustments, or further sessions."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Cupping Therapy (Ventosa)",
+            "relationship_reason": "Hilot includes Ventosa (suction cupping), which is a common practice in China and other parts of Asia."
+          },
+          {
+            "country": "India",
+            "element_name": "Ayurveda",
+            "relationship_reason": "Traditional Filipino medicine, including Hilot, shares similarities with India's Ayurveda in its holistic approach to healing."
+          },
+          {
+            "country": "Various Asian cultures",
+            "element_name": "Traditional Chinese Medicine (TCM), other Asian mind-body practices",
+            "relationship_reason": "Hilot's holistic view, emphasis on energy balance, and integration of mind-body-spirit are akin to principles found in TCM and other Asian healing traditions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-cf379dcb",
+      "element_name": "Ciptagelar Rice Cultivation and Seren Taun Harvest Festival",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Ciptagelar_farmers_carrying_rice_paddy_after_harvest.jpg",
+      "source_urls": [
+        "https://www.thejakartapost.com/travel/2017/10/02/what-to-discover-in-west-java-cultural-village-ciptagelar.html",
+        "https://en.wikipedia.org/wiki/Ciptagelar",
+        "https://observerid.com/ciptagelar-customary-village-venerating-rice-as-source-of-life/",
+        "https://www.localguidesconnect.com/t5/Google-Maps-contribution-stories/Kasepuhan-Ciptagelar-Customary-Village-in-West-Java-Indonesia/ba-p/2205510",
+        "http://ejournal.upi.edu/index.php/jpis/article/download/29471/13936",
+        "https://www.atlantis-press.com/proceedings/icssis-17/25883292",
+        "https://satoyama-initiative.org/wp-content/uploads/2017/11/Cultural-Based-Policy-for-Sustainable-Landscape-in-Kasepuhan-Ciptagelar.pdf",
+        "http://journal.isi-ska.ac.id/index.php/SeratRupa/article/view/3909",
+        "https://adventureindonesia.com/harmony-in-ciptagelar-village-the-traditional-sundanese-community/",
+        "https://www.researchgate.net/publication/362635921_Indigenous_Sundanese_Leadership_Eco-Systemic_Lessons_on_Zero_Emissions",
+        "https://www.mongabay.co.id/2012/09/05/foto-kemeriahan-pesta-seren-taun-ke-644-di-ciptagelar/",
+        "https://datatempo.co/foto/detail/P0209201200027/perayaan-seren-taun-di-kampung-ciptagelar-sukabumi"
+      ],
+      "scraped_at": "2026-04-26T18:53:06.845170Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "West Java"
+        ],
+        "lat": -6.8891904,
+        "lng": 107.6404716
+      },
+      "resume_analisa": {
+        "description": "The Kasepuhan Ciptagelar community, located in Sirnaresmi Village, Sukabumi Regency, West Java, Indonesia, maintains a deeply rooted and centuries-old tradition centered around rice cultivation and storage, culminating in the annual Seren Taun harvest festival. This indigenous community, founded in 1368, strictly adheres to 'adat' (customary law) and ancestral 'wangsit' (orders) in their daily lives, particularly concerning their agricultural practices. They view rice not merely as a commodity but as a sacred source of life, thus prohibiting its sale. Their farming methods are non-intensive and organic, utilizing traditional tools and local seeds passed down through generations. A distinctive feature is their traditional rice barns, known as 'leuit,' which are mini-house-shaped structures made of wood, bamboo, and palm leaves, capable of storing rice with its stalks intact for decades, ensuring the community's food sovereignty. The Seren Taun festival is the highlight of their agricultural year, involving various rituals and cultural performances.",
+        "cultural_significance": "The Ciptagelar rice tradition holds profound cultural significance, primarily ensuring the community's food sovereignty by maintaining a self-sufficient food supply for many years, independent of external markets. Their agricultural practices embody a deep respect for nature, which they revere as 'Ibu Bumi' (Mother Earth) and 'Bapak Langit' (Father Sky), leading them to shun modern chemicals and machinery in favor of environmentally friendly methods. This adherence to ancestral wisdom ('adat' and 'wangsit') emphasizes the continuity of their heritage and identity. The Seren Taun festival and the various rituals throughout the rice cycle are crucial for fostering strong community bonds, reinforcing social cohesion, and celebrating their shared cultural identity. The sacredness of rice, which is prohibited from being sold, underscores its symbolic importance as a source of life rather than just a food commodity.",
+        "gemini_tags": [
+          "Traditional Agriculture",
+          "Harvest Festival",
+          "Food Sovereignty",
+          "Indigenous Practices",
+          "Cultural Heritage",
+          "Community Rituals",
+          "Sustainable Living",
+          "Rice Cultivation",
+          "Traditional Architecture",
+          "Oral Traditions",
+          "Sundanese Culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Rice Cultivation, Storage, and Harvest Festival",
+        "materials_and_tools": [
+          "Local rice seeds (around 160 varieties)",
+          "Traditional farming tools (hoes, knives)",
+          "Buffalo (for plowing)",
+          "Leuit (traditional rice barns made of wood, bamboo, palm leaves)",
+          "Saung Lisung (area for pounding rice)",
+          "Goah (traditional cooking area with fireplace)",
+          "Kebat cloth (for women during ceremonies)",
+          "Headbands (for men during ceremonies)",
+          "Traditional musical instruments (Dogdog Lojor, Angklung Buhun, Rengkong)"
+        ],
+        "step_by_step": [
+          "**Ngaseuk**: The initial ritual marking the beginning of rice planting, led by the village head (Abah), followed by community participation in planting rice.",
+          "**Mid-cycle Rituals**: Various ceremonies are performed during the rice growth cycle, including Sapang Jadian Pare, Selamatan Pare Ngidam, Mapag Pare Beukah, and Sawenan Ceremony, to ensure a bountiful harvest.",
+          "**Mipit**: The harvesting of rice in the fields, typically done once a year.",
+          "**Nganyaran**: A ceremony involving the cooking and tasting of the first rice from the current year's harvest.",
+          "**Ponggokan**: The registration of all community members (and sometimes animals) in preparation for the Seren Taun festival.",
+          "**Seren Taun Festival**: An annual rice harvest customary ceremony, marking the end of one agricultural year and the beginning of another. It features cultural performances like traditional dances, wayang golek (wooden puppet theater), debus (martial art), and angklung buhun (bamboo musical instrument).",
+          "**Ngadiukeun**: The culminating ceremony of Seren Taun, where harvested rice hulls (paddy) are ceremonially stored in the village's 'leuit' (rice barns).",
+          "**Rice Storage in Leuit**: Rice is stored in 'leuit' with its stalks intact, allowing it to breathe naturally. These barns are designed to preserve rice for extended periods, sometimes for decades or even centuries.",
+          "**Traditional Rice Processing**: When needed, rice is pounded by hand using wooden pestles and mortars in 'saung lisung'. Cooking is done in 'goah' using a traditional fireplace, avoiding modern rice cookers."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Philippines",
+            "element_name": "Ifugao Rice Terraces and their associated rituals",
+            "relationship_reason": "Similar focus on traditional rice farming, ancestral connection, and community rituals surrounding rice cultivation and harvest."
+          },
+          {
+            "country": "Vietnam",
+            "element_name": "Traditional rice cultivation practices and harvest festivals",
+            "relationship_reason": "General similarity in agrarian traditions, where rice cultivation is central to community life and celebrated with annual festivals."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Traditional rice farming and associated Shinto rituals",
+            "relationship_reason": "Shared concept of the sacredness of rice and the performance of seasonal rituals and festivals linked to the rice cycle."
+          },
+          {
+            "country": "Indonesia (Bali)",
+            "element_name": "Subak system and associated rice rituals",
+            "relationship_reason": "Similar traditional ecological knowledge systems for rice cultivation, emphasizing spiritual connection to nature and communal management."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-25T01:26:22.290065Z",
-    "total_ich_elements": 103,
-    "complete_records": 94,
+    "generated_at": "2026-04-26T18:53:49.331869Z",
+    "total_ich_elements": 106,
+    "complete_records": 97,
     "incomplete_records": 9,
     "categories_breakdown": {
       "Traditional Craftsmanship": 40,
-      "Social Practices & Rituals": 23,
-      "Culinary Traditions": 16,
+      "Social Practices & Rituals": 25,
+      "Culinary Traditions": 17,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
