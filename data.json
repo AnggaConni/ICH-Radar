@@ -9115,17 +9115,201 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5782a6f3",
+      "element_name": "Traditional weaving of Al Sadu",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/01586-CLT-13406-EN.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/traditional-weaving-of-al-sadu-01586",
+        "https://saudicultures.com/discover-al-sadu-the-art-of-traditional-arabian-weaving/",
+        "https://www.abudhabiculture.ae/en/experience/heritage/al-sadu",
+        "https://www.alsadusociety.org/al-sadu-weaving-in-kuwait"
+      ],
+      "scraped_at": "2026-04-27T01:49:27.361069Z",
+      "location": {
+        "country": "Saudi Arabia, Kuwait, Qatar, United Arab Emirates",
+        "provinces": [],
+        "lat": null,
+        "lng": null
+      },
+      "resume_analisa": {
+        "description": "Al Sadu refers to a traditional woven textile crafted by Bedouin women using a horizontal ground loom. It features ancient geometric patterns that echo the colors and shapes of the desert environment. The textiles are known for their durability and are typically made from natural fibers such as sheep's wool, goat hair, and camel hair. Traditional colors include beige, red, brown, and black, often derived from natural dyes. Al Sadu textiles are used to create functional objects like tents, blankets, carpets, pillows, and decorations for camel saddles and bags.",
+        "cultural_significance": "Al Sadu weaving is a vital cultural, economic, and social practice that reflects the shared heritage and the important roles of women in Bedouin society. It serves as a symbol of shared tradition and culture, with patterns acting as a form of visual storytelling that conveys the weaver's identity, environment, and heritage. The craft is primarily transmitted informally within families, with older Bedouin women, who are master weavers, playing a key role in passing on skills to younger generations. Educational organizations and associations also contribute to its preservation through classes, workshops, and exhibitions. The practice was inscribed in 2011 on the UNESCO List of Intangible Cultural Heritage in Need of Urgent Safeguarding, and later, the 'Traditional weaving of Al Sadu' for Saudi Arabia, Kuwait, and Qatar was nominated for the Representative List in 2025.",
+        "gemini_tags": [
+          "Bedouin culture",
+          "traditional weaving",
+          "geometric patterns",
+          "natural fibers",
+          "cultural heritage",
+          "women's craft",
+          "Arabian Peninsula",
+          "intangible cultural heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Warp-faced plain weave on a horizontal ground loom",
+        "materials_and_tools": [
+          "Raw materials: Sheep's wool, goat hair, camel hair, cotton yarns",
+          "Dyes: Natural sources (pomegranate husks, onion skins, roots, stems, local plants, henna, turmeric, saffron, cactus, indigo), chemical dyes (modern use)",
+          "Tools: Horizontal ground loom, 'al kirdash' (comb), 'al meghzal' (spindle), stakes, props for stationary raised heddle"
+        ],
+        "step_by_step": [
+          "1. Gathering raw materials: Men often assist in shearing sheep and goats to obtain wool and hair. Camel hair is usually collected after it naturally falls.",
+          "2. Preparing fibers: Women meticulously clean the raw fibers by removing dirt and twigs, washing them, and then drying them in the sun.",
+          "3. Combing fibers: An 'al kirdash' tool is used to comb the fibers, separating and balancing them in preparation for spinning.",
+          "4. Spinning yarn: The prepared fibers are spun into yarn using an 'al meghzal' (spindle), and then wound into balls.",
+          "5. Dyeing: White sheep's wool is often dyed using natural substances like pomegranate husks, onion skins, roots, stems, local plants, henna, turmeric, saffron, cactus, and indigo to achieve various colors. Camel and goat hair are typically left in their natural colors.",
+          "6. Setting up the loom: A horizontal ground loom is assembled. Stakes are used to hold the bars at each end, and props support the stationary raised heddle.",
+          "7. Weaving: The warp-faced plain weave technique is employed. The weaver selects specific warp threads to appear on the face of the fabric, inserts the weft, and then beats it into place. Geometric patterns, such as stripes, triangles, dots, and stepped forms, are created during this weaving process."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Kuwait",
+            "element_name": "Traditional weaving of Al Sadu",
+            "relationship_reason": "Shared practice, inscribed on UNESCO Representative List."
+          },
+          {
+            "country": "Qatar",
+            "element_name": "Traditional weaving of Al Sadu",
+            "relationship_reason": "Shared practice, inscribed on UNESCO Representative List."
+          },
+          {
+            "country": "United Arab Emirates",
+            "element_name": "Al-Sadu: Traditional Weaving Skills",
+            "relationship_reason": "Shared practice, inscribed on UNESCO List of Intangible Cultural Heritage in Need of Urgent Safeguarding."
+          },
+          {
+            "country": "Iraq",
+            "element_name": "Al-Sadu",
+            "relationship_reason": "Craft is well known among Bedouin communities in this country."
+          },
+          {
+            "country": "Jordan",
+            "element_name": "Al-Sadu",
+            "relationship_reason": "Craft is well known among Bedouin communities in this country."
+          },
+          {
+            "country": "Syria",
+            "element_name": "Al-Sadu",
+            "relationship_reason": "Craft is well known among Bedouin communities in this country."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c6d2b27e",
+      "element_name": "Pancutra (Pantrucas)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//irenemercadal.com/pancutras-chilenas/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://irenemercadal.com/pancutras-chilenas/",
+        "https://elurbanorural.cl/la-pantruca-en-nuestra-gastronomia/",
+        "https://cuisine-with-chilean-flavor.blogspot.com/2010/02/pancutras-pantrucas-chilean-soup-with.html",
+        "https://www.youtube.com/watch?v=0k5i5v27g2k",
+        "https://cocinalocal.cl/receta-de-pantrucas/",
+        "https://eatingchile.blogspot.com/2013/06/chilean-pantrucas-noodles.html",
+        "https://www.youtube.com/watch?v=525t12l7U8k",
+        "https://www.youtube.com/watch?v=L2G_bL8l08A",
+        "https://www.andbeyond.com/experiences/south-america/chile/lake-district/mapuche-wisdom/",
+        "https://www.midariodecocina.com/pantrucas-chilean-recipe/"
+      ],
+      "scraped_at": "2026-04-27T01:50:39.035819Z",
+      "location": {
+        "country": "Chile",
+        "provinces": [
+          "Patagonia (Argentina)",
+          "Araucanía (Chile)",
+          "Lake District (Chile)"
+        ],
+        "lat": 31.5402016,
+        "lng": -110.753927
+      },
+      "resume_analisa": {
+        "description": "Pancutra, also known as Pantrucas or Pancucha, is a traditional Mapuche soup featuring thin flour-based dumplings cooked in a flavorful broth. The name originates from Mapudungún, the language of the Mapuche people, and translates to 'soup with flour dough'. It is a hearty and comforting dish, particularly popular during cold weather.",
+        "cultural_significance": "Pancutra is a deeply rooted culinary tradition in Chile and the Patagonian region of Argentina, reflecting the gastronomic heritage of the Mapuche people. It is considered an economical and delicious dish, often associated with home cooking and family gatherings. Historically, it was consumed during significant periods, with some Mapuche communities in Argentina incorporating it into the commemoration of their 'true new year'. [cite: 7, 2020 snippet from previous search] The dish embodies the Mapuche connection to the land and their resourcefulness in creating nourishing meals from basic ingredients.",
+        "gemini_tags": [
+          "Mapuche cuisine",
+          "Traditional soup",
+          "Chilean food",
+          "Argentine food",
+          "Indigenous culinary heritage",
+          "Comfort food",
+          "Patagonian cuisine"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Recipe",
+        "materials_and_tools": [
+          "For the broth:",
+          "Oil (vegetable or olive)",
+          "Onion (chopped)",
+          "Garlic (minced)",
+          "Ground beef or other meat (optional, or can be vegetarian)",
+          "Carrot (sliced or grated)",
+          "Red bell pepper (sliced, optional)",
+          "Potatoes (cubed or in sticks)",
+          "Beef, chicken, or vegetable stock/broth (or water)",
+          "Salt, pepper, oregano, cumin, chili powder/paprika (ají de color)",
+          "Celery (optional)",
+          "For the dumplings (pantrucas):",
+          "All-purpose flour",
+          "Egg",
+          "Warm water",
+          "Salt",
+          "Tools: Large pot, mixing bowl, rolling pin, knife or thumb for cutting dough, wooden spoon"
+        ],
+        "step_by_step": [
+          "Prepare the broth base: In a large pot, heat oil over medium heat. Sauté chopped onion and minced garlic until soft and translucent.",
+          "Add meat (if using): Incorporate ground beef or other finely chopped meat and cook until browned.",
+          "Add vegetables and seasonings: Stir in carrots, bell pepper (if using), celery (if using), oregano, cumin, chili powder/paprika, salt, and pepper. Cook for a few minutes, stirring occasionally.",
+          "Add liquid and potatoes: Pour in the stock or water and add the cubed potatoes. Bring to a boil, then reduce heat and simmer while preparing the dough.",
+          "Prepare the dumpling dough: In a bowl, combine flour, egg, and a pinch of salt. Gradually add warm water, mixing until a soft, homogeneous dough forms that doesn't stick to your fingers.",
+          "Roll and cut the dough: On a lightly floured surface, roll out the dough as thinly as possible (about 1/8 inch or less). Cut the dough into small, irregular squares (approximately 1-inch) or strips. Traditionally, some cut the dough directly into the broth using their thumb.",
+          "Cook the dumplings: Once the potatoes in the broth are cooked, add the prepared dumplings to the simmering broth. Cook for about 10 minutes, or until the dumplings are tender and cooked through.",
+          "Optional additions: Some recipes suggest adding a whole egg per serving directly into the soup during the last few minutes of cooking, allowing it to poach.",
+          "Serve: Ladle the hot soup into bowls. Garnish with fresh chopped cilantro or parsley, and sometimes a touch of green chili or oregano. Serve immediately."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Chile",
+            "element_name": "Pantrucas",
+            "relationship_reason": "Pancutra is widely known as Pantrucas in Chile, sharing the same Mapuche origin and culinary characteristics."
+          },
+          {
+            "country": "Argentina",
+            "element_name": "Concones",
+            "relationship_reason": "In Argentina, a similar dish called 'concones' exists, which are a type of gnocchi made with toasted flour, though not exactly identical to pantrucas."
+          },
+          {
+            "country": "Peru",
+            "element_name": "Sopones",
+            "relationship_reason": "The concept of cooking dough pieces in broth, similar to pancutra, might have influences from Inca gastronomy, which also included such preparations in Peru and Bolivia."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-26T18:53:49.331869Z",
-    "total_ich_elements": 106,
-    "complete_records": 97,
+    "generated_at": "2026-04-27T01:51:07.738643Z",
+    "total_ich_elements": 108,
+    "complete_records": 99,
     "incomplete_records": 9,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 40,
+      "Traditional Craftsmanship": 41,
       "Social Practices & Rituals": 25,
-      "Culinary Traditions": 17,
+      "Culinary Traditions": 18,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
