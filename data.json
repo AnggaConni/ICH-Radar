@@ -9299,17 +9299,102 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-56a24cc4",
+      "element_name": "Anishinaabe Traditional Wild Rice Harvesting (Manoominikewin)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.nature.org/content/dam/tnc/nature/en/photos/wild-rice-harvest-ojibwe-minnesota.jpg",
+      "source_urls": [
+        "https://sevengenerations.on.ca/how-to-harvest-and-prepare-wild-rice-manoomin/",
+        "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/wild-rice-harvest/",
+        "https://northernontario.travel/thunder-bay/anishinaabe-wild-rice-experience",
+        "https://www.slowfoodusa.org/blog/wild-rice-moon-the-rice-harvest-of-the-north-american-anishinaabeg-peoples",
+        "https://en.wikipedia.org/wiki/Ricing_stick",
+        "https://www.mnopedia.org/thing/wild-rice-and-ojibwe",
+        "https://www.glifwc.org/publications/pdf/Manoomin_web.pdf",
+        "https://wisconsin101.org/items/show/184",
+        "https://lessonsofourland.org/lessons/wild-rice/",
+        "https://www.nativeartincanada.com/wild-rice---the-harvesting-processing-and-cooking-of-this-ojibwa-food.html",
+        "https://lltc.edu/minnesota-ojibwe-harvest-sacred-climate-imperiled-wild-rice/",
+        "https://indigenoustourismontario.ca/experiences/anishinaabe-wild-rice-experience/",
+        "https://www.nativewildricecoalition.com/sources-for-wild-rice-and-ricing-tools.html",
+        "https://wisconsin101.org/items/show/216",
+        "https://www.wildernessnorth.com/blog/the-sacred-harvest-of-rice/"
+      ],
+      "scraped_at": "2026-04-29T01:59:37.073251Z",
+      "location": {
+        "country": "United States, Canada",
+        "provinces": [
+          "Minnesota",
+          "Wisconsin",
+          "Ontario"
+        ],
+        "lat": 37.6056575,
+        "lng": -82.3243095
+      },
+      "resume_analisa": {
+        "description": "Anishinaabe Traditional Wild Rice Harvesting, known as Manoominikewin, is the practice of gathering and processing wild rice (Zizania palustris) from lakes and rivers in the Great Lakes region. This annual harvest, typically occurring from late August to early September, involves specific traditional techniques and tools to ensure the sustainability of the wild rice beds. It is a communal activity, often performed in pairs, and includes several steps from harvesting to preparing the rice for consumption or storage.",
+        "cultural_significance": "Manoomin, meaning 'the good grain' or 'good berry', is deeply embedded in the cultural identity, spirituality, and way of life of the Anishinaabe people (including Ojibwe/Chippewa). It is considered a sacred gift from the Creator and is central to their creation story and a prophecy that guided them to a place 'where the food grows on water'. The harvest is often accompanied by spiritual rituals and ceremonies, emphasizing a respectful and mindful approach to connect with the natural world. Beyond its spiritual and cultural importance, Manoomin also holds economic significance, providing sustenance and a source of income for many Anishinaabe individuals and communities. The practice fosters a deep connection to the land and water, and the knowledge involved in harvesting and processing is shared across generations, contributing to the preservation of cultural heritage. It is also an act of indigenous food sovereignty, asserting their right to traditional food systems.",
+        "gemini_tags": [
+          "Traditional Ecological Knowledge",
+          "Indigenous Practices",
+          "Food Sovereignty",
+          "Sustainable Harvesting",
+          "Anishinaabe Culture",
+          "Great Lakes Region",
+          "Community Rituals",
+          "Wild Rice",
+          "Manoomin",
+          "Culinary Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Harvesting and Processing",
+        "materials_and_tools": [
+          "Birch bark canoe or small boat",
+          "Long pole (for the 'poler' to navigate)",
+          "Two long wooden sticks, also known as ricing sticks, knocking sticks, or 'bawa'iganaakoog' (for the 'knocker' to harvest)",
+          "Metal washtub or cast iron kettle (for parching)",
+          "Fire (for parching)",
+          "Plastic tarps or birch bark mats (for drying)",
+          "Shallow pit lined with wood, animal hide, or tarp (for hulling)",
+          "Special moccasins (for 'dancing' or hulling)",
+          "Winnowing basket or large shallow birch bark trays (for winnowing)"
+        ],
+        "step_by_step": [
+          "**1. Preparation and Ceremony:** Wild rice harvesting typically occurs from late August to early September. Before beginning the harvest, some choose to perform a ceremony, often involving an offering of tobacco or food, to show respect and gratitude.",
+          "**2. Harvesting (Ricing):** The harvest is a communal activity, usually performed by two people in a birch bark canoe or small boat. One person, the 'poler', stands at the stern and gently pushes the boat through the rice beds using a long pole, avoiding disturbance to the plants. The second person, the 'knocker', sits at the bow and uses two long wooden ricing sticks. One stick is used to bend the rice stalks over the canoe, while the other gently taps the ripe grains, causing them to fall into the boat. This careful method ensures the plant is not damaged and allows some grains to fall back into the water to reseed for future harvests.",
+          "**3. Drying:** After harvesting, the freshly gathered wild rice is spread out on plastic tarps or birch bark mats to air dry in the sun. This step is crucial to remove initial moisture and prevent molding.",
+          "**4. Parching:** The dried wild rice is then parched, which involves heating it in a metal washtub or cast iron kettle over a fire. This process further dries the rice, loosens the hulls, and imparts a distinctive toasted flavor.",
+          "**5. Hulling (Dancing/Jigging):** Traditionally, the parched rice is placed in a shallow pit lined with wood, an animal hide, or a tarp. Individuals, often wearing special moccasins, 'dance' or tread on the rice, rolling it against their feet to separate the hulls from the grains.",
+          "**6. Winnowing:** The hulled rice is then winnowed to separate the lighter husks (chaff) from the heavier rice grains. This is typically done by placing portions of the rice in a winnowing basket or large shallow birch bark tray and tossing it into the air, allowing the wind to carry away the chaff while the grains fall back into the container.",
+          "**7. Finishing/Cleaning:** The final step involves carefully cleaning and sorting the wild rice to remove any remaining husks, debris, or foreign materials. After this, the wild rice is ready to be cooked or stored for future use."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "United States, Canada",
+            "element_name": "Wild rice harvesting by other Indigenous communities (e.g., Menominee, Dakota) in the Great Lakes region",
+            "relationship_reason": "Shared geographical region, similar traditional food sources, and ecological knowledge of wild rice, with many Indigenous nations in the Great Lakes basin having historical and ongoing connections to Manoomin."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-27T01:51:07.738643Z",
-    "total_ich_elements": 108,
-    "complete_records": 99,
+    "generated_at": "2026-04-29T02:01:08.918489Z",
+    "total_ich_elements": 109,
+    "complete_records": 100,
     "incomplete_records": 9,
     "categories_breakdown": {
       "Traditional Craftsmanship": 41,
       "Social Practices & Rituals": 25,
-      "Culinary Traditions": 18,
+      "Culinary Traditions": 19,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
