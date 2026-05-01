@@ -9384,17 +9384,321 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-931b73e6",
+      "element_name": "Traditional ways of making Artisan Minas Cheese in Minas Gerais",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.shutterstock.com/image-photo/fresh-brazilian-white-minas-cheese-260nw-2194600129.jpg",
+      "source_urls": [
+        "https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/975480/1/Capitulo4.pdf",
+        "https://hotandchilli.com/cheese-brazilian-minas-style-a-recipe-and-updates/",
+        "https://brazilianfarmers.com/news/brazilian-minas-artisanal-cheese-recognized-as-intangible-cultural-heritage-by-unesco/",
+        "https://boasnovas.net.br/queijo-minas-artesanal-e-patrimonio-cultural-da-humanidade/",
+        "https://ich.unesco.org/en/RL/traditional-ways-of-making-artisan-minas-cheese-in-minas-gerais-02102",
+        "https://www.scribd.com/document/514436033/Minas-Cheese-Production-Process-Guide",
+        "https://www.gov.br/iphan/pt-br/patrimonio-cultural/patrimonio-imaterial/modos-de-fazer/queijo-artesanal-de-minas",
+        "https://www.aventuradobrasil.com/brazilian-cheese-culture-around-queijo-minas/",
+        "https://www.youtube.com/watch?v=3g5t3-1v_1o",
+        "https://sousviderecipes.com/recipes/queijo-minas-caseiro/",
+        "https://www.youtube.com/watch?v=s56fC3s97XU",
+        "https://en.wikipedia.org/wiki/Minas_cheese",
+        "https://news.un.org/pt/story/2024/12/1854497",
+        "https://www.youtube.com/watch?v=2Jj98-t0-j0",
+        "https://www.youtube.com/watch?v=1d_2159_D2U",
+        "https://www.gov.br/iphan/pt-br/patrimonio-cultural/patrimonio-imaterial/videos/modos-de-fazer-o-queijo-minas-artesanal",
+        "https://thebrasilians.com/unesco-recognizes-artisanal-minas-cheese-as-intangible-heritage/",
+        "https://www.youtube.com/watch?v=7M71yJzG_20",
+        "https://agroportal.pt/queijo-artesanal-brasileiro-torna-se-patrimonio-cultural-imaterial-da-humanidade-unesco/",
+        "https://www.youtube.com/watch?v=42-k_2-Ff0g",
+        "https://ich.unesco.org/en/videos/video-traditional-ways-of-making-artisan-minas-cheese-in-minas-gerais-02102",
+        "https://www.youtube.com/watch?v=mG001_s2t_I",
+        "https://www.shutterstock.com/search/queijo-minas"
+      ],
+      "scraped_at": "2026-05-01T02:01:18.564375Z",
+      "location": {
+        "country": "Brazil",
+        "provinces": [
+          "Minas Gerais"
+        ],
+        "lat": -18.5264844,
+        "lng": -44.1588654
+      },
+      "resume_analisa": {
+        "description": "The Traditional ways of making Artisan Minas Cheese in Minas Gerais encompass the knowledge and techniques developed by small rural producers in the Brazilian state of Minas Gerais. This artisanal cheese is made from raw cow's milk and utilizes 'pingo,' a natural yeast derived from previous cheese production. The process is deeply rooted in local traditions, contributing to the distinct flavor, color, and aroma of the cheese. It is a significant element of the region's culinary heritage and is often associated with hospitality, commonly consumed with sweets and drinks during social gatherings and special occasions.",
+        "cultural_significance": "This traditional practice holds immense cultural significance, reinforcing a sense of belonging to a place and community. It plays a vital role in strengthening local economies and promoting socioeconomic inclusion, particularly for family farmers. The history of Minas cheese dates back over three centuries to Portuguese colonial rule, where Portuguese immigrants adapted their cheese-making culture to local conditions. In December 2024, the 'Ways of Making Minas Artisanal Cheese' was officially recognized by UNESCO as an Intangible Cultural Heritage of Humanity, marking it as the first Brazilian food-making tradition to receive such a prestigious title.",
+        "gemini_tags": [
+          "Culinary Tradition",
+          "Traditional Craftsmanship",
+          "Intangible Cultural Heritage",
+          "Brazil",
+          "Minas Gerais",
+          "Cheese Making",
+          "Rural Practices",
+          "Family Farming",
+          "Oral Tradition"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Food Preparation (Cheese Making)",
+        "materials_and_tools": [
+          "Raw cow's milk (freshly milked, around 37°C)",
+          "Lactic culture ('pingo' - natural yeast from previous cheese production)",
+          "Rennet (enzymatic coagulant, powdered or liquid)",
+          "Salt",
+          "Pan or tank (for milk and coagulation)",
+          "Filter (plastic or metallic funnel with fine mesh fabric)",
+          "Cheese cloth",
+          "Sieve",
+          "Cheese mold",
+          "Manual press",
+          "Slate bench (for salting)"
+        ],
+        "step_by_step": [
+          "1. **Milk Filtration:** Filter raw, freshly milked cow's milk (approximately 37°C) to remove any macroscopic particles. The cheese production should commence within 90 minutes of milking.",
+          "2. **Addition of Lactic Culture and Rennet:** Add 'pingo' (a natural yeast, typically 200-300mL per 100 liters of milk in the Serro region) and rennet to the filtered milk.",
+          "3. **Coagulation:** Allow the milk to rest undisturbed until it coagulates and forms a firm curd mass. This stage usually takes between 40 to 90 minutes, influenced by factors such as the 'pingo' dosage and milk composition.",
+          "4. **Curd Cutting:** Once the curd is firm, cut it into small cubes.",
+          "5. **Stirring (Mexedura):** Gently stir the cut curd to facilitate the separation of the whey.",
+          "6. **Draining (Dessoragem):** Separate the liquid whey from the solid curd.",
+          "7. **Molding (Enformagem):** Transfer the drained curd into cheese molds.",
+          "8. **Manual Pressing:** Manually press the cheese within the molds to expel any remaining excess whey and to give the cheese its characteristic shape.",
+          "9. **Dry Salting:** Apply dry salt to the surface of the cheese. This process is often repeated, with the cheese being turned to ensure even salting on all sides.",
+          "10. **Maturation:** Allow the cheese to mature for a specific period. The maturation time varies by region, typically ranging from 14 to 22 days, with some regulations stipulating a minimum of 22 days."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Portugal",
+            "element_name": "Traditional Portuguese cheese making",
+            "relationship_reason": "The origins of Minas cheese are linked to Portuguese colonial rule, where Portuguese immigrants introduced and adapted their traditional cheese-making techniques to the local conditions in Brazil."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ddb43183",
+      "element_name": "Obon Festival",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Obon_Festival.jpg/800px-Obon_Festival.jpg",
+      "source_urls": [
+        "https://www.sugimototea.com/japanese-tea-blog/obon-festival-history-and-guide/",
+        "https://sakuraco.com/blog/obon-what-is-the-important-history-behind-it",
+        "https://en.wikipedia.org/wiki/Obon",
+        "https://travel.rakuten.com/contents/japan/guide/obon/",
+        "https://aeromexico.com/en-us/travel-guide/obon-festival-japanese-tradition",
+        "https://www.japan.travel/en/guide/obon-festival/",
+        "https://www.japanesetraditions.com/obon",
+        "https://zentern.com/blog/obon-festival-japans-festival-of-ancestral-spirits/",
+        "https://eat2explore.com/blogs/eat2explore-blog/a-time-for-remembrance-celebrating-obon-in-japan",
+        "https://www.go.go.jp/blog/what-is-obon-a-guide-to-the-japanese-spirit-festival/",
+        "https://www.legacytree.com/blog/obon-the-japanese-festival-of-reverencing-ancestors",
+        "https://www.remitly.com/gb/en/c/blog/culture/obon-day-japan/",
+        "https://memorial-diamond.jp/en/column/obon/"
+      ],
+      "scraped_at": "2026-05-01T02:01:52.238295Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Kanto",
+          "Tohoku",
+          "Okinawa",
+          "Kyoto",
+          "Tokushima",
+          "Nagasaki",
+          "Gifu"
+        ],
+        "lat": 35.3028999,
+        "lng": 139.8340282
+      },
+      "resume_analisa": {
+        "description": "The Obon Festival, also known as Bon, is a significant Japanese holiday dedicated to honoring the spirits of ancestors. It is believed that during this time, the spirits of the deceased return to the earthly world to visit their living relatives. The festival involves family reunions, visits to ancestral graves, traditional dances known as Bon Odori, and various ceremonies involving lanterns and fires to guide the spirits.",
+        "cultural_significance": "Obon serves as a crucial time for families to honor and remember their ancestors, express gratitude, and strengthen family and community bonds. It plays a vital role in preserving Japanese cultural identity and traditions, fostering a sense of continuity and respect for past generations. The rituals performed, such as Bon Odori dances and Toro Nagashi, are a tribute to the deceased and a way to ensure that spirits find their way back to the spirit world.",
+        "gemini_tags": [
+          "ancestor veneration",
+          "Buddhist custom",
+          "family reunion",
+          "traditional dance",
+          "lantern festival",
+          "grave visit",
+          "Japanese culture",
+          "seasonal festival",
+          "community practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Festival rituals",
+        "materials_and_tools": [
+          "Lanterns (chochin, toro nagashi)",
+          "Fires (mukaebi, okuribi)",
+          "Offerings (flowers, food, incense, fruits)",
+          "Vegetable animals (cucumber horse, eggplant cow)",
+          "Yukata (traditional summer kimono)",
+          "Taiko drums",
+          "Yagura (raised platform for dancing)"
+        ],
+        "step_by_step": [
+          "**Preparations**: Families clean their homes and neighborhoods in the days leading up to Obon. They prepare special altars called 'bon-dana' or 'butsudan,' which are decorated with flowers, candles, incense, and fruits as offerings. Some families create 'shoryouma' (spirit horses) from cucumbers (symbolizing fast travel) and eggplants (symbolizing a slow return) by sticking chopsticks into them.",
+          "**Welcoming Ancestors (Mukae-bon)**: On the first day of Obon, small fires called 'mukaebi' (welcoming fires) or paper lanterns (chochin) are lit outside homes to guide ancestral spirits back to the family residence.",
+          "**Grave Visits (Ohakamairi)**: Families visit ancestral graves to clean headstones, offer flowers, incense, and food as an act of devotion and remembrance.",
+          "**Bon Odori (Bon Dance)**: Traditional dances are performed in public places such as parks, temple grounds, or streets, often around a central elevated platform (yagura). Participants, frequently dressed in colorful yukata, dance to folk songs and the rhythmic beats of taiko drums. The dance styles vary by region, sometimes depicting local history or activities.",
+          "**Sending Off Ancestors (Okuri-bon / Toro Nagashi)**: At the conclusion of the festival, 'okuribi' (farewell fires) are lit, and 'toro nagashi' (floating lanterns) are placed in rivers, lakes, or the sea. These acts symbolize guiding the spirits back to the afterlife."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Ghost Festival (Zhongyuan Festival)",
+            "relationship_reason": "Obon's origins are heavily influenced by the Buddhist Ghost Festival and the Chinese Taoist Zhongyuan Festival, sharing themes of ancestral veneration."
+          },
+          {
+            "country": "Vietnam",
+            "element_name": "Tết Trung Nguyên",
+            "relationship_reason": "A related festival with similar ancestral veneration themes and Buddhist influences."
+          },
+          {
+            "country": "Korea",
+            "element_name": "Baekjung",
+            "relationship_reason": "A related festival with similar ancestral veneration themes and Buddhist influences."
+          },
+          {
+            "country": "Ryukyu Islands",
+            "element_name": "Bun/Usōrō",
+            "relationship_reason": "A related festival with similar ancestral veneration themes."
+          },
+          {
+            "country": "Cambodia",
+            "element_name": "Pchum Ben",
+            "relationship_reason": "A related festival with similar ancestral veneration themes and Buddhist influences."
+          },
+          {
+            "country": "Laos",
+            "element_name": "Boun Khao Padap Din",
+            "relationship_reason": "A related festival with similar ancestral veneration themes and Buddhist influences."
+          },
+          {
+            "country": "Sri Lanka",
+            "element_name": "Mataka dānēs",
+            "relationship_reason": "A related festival with similar ancestral veneration themes and Buddhist influences."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Sat Thai",
+            "relationship_reason": "A related festival with similar ancestral veneration themes and Buddhist influences."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5d89f1fc",
+      "element_name": "Pinisi Boat Building Tradition",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.seatrekbali.com/culture-enthusiasts/pinisi-and-the-art-of-boatbuilding-in-sulawesi/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.seatrekbali.com/culture-enthusiasts/pinisi-and-the-art-of-boatbuilding-in-sulawesi/",
+        "https://www.kastenmarine.com/pinisi_history.htm",
+        "https://www.researchgate.net/publication/364536630_The_Process_of_Making_a_Pinisi_Boat_in_Bantobahari_District_Bulukumba_Regency_Indonesia",
+        "https://www.atlantis-press.com/proceedings/w-share-21/125966683",
+        "https://theculturetrip.com/asia/indonesia/articles/7-types-of-traditional-indonesian-boats-you-can-still-see-today/",
+        "https://theculturetrip.com/asia/indonesia/articles/how-phinisi-boats-are-made-in-tana-beru-craft-culture-ceremony/",
+        "https://lagaligoliveaboard.com/phinisi-boats-history-design/",
+        "https://southernwoodenboatsailing.com/phinisi/",
+        "https://ecomtingacmt.wordpress.com/2013/02/14/how-to-make-a-boat-pinisi/",
+        "https://theculturetrip.com/asia/indonesia/articles/how-indonesias-traditional-boat-builders-are-preserving-culture/",
+        "https://www.indonesia.travel/gb/en/trip-ideas/indonesia-boat-traditional-boats-to-luxury-yachts-you-need-to-know",
+        "https://emergingdestinations.com/south-sulawesi-boat-building-earns-world-heritage-status/",
+        "https://www.kastenmarine.com/phinisi_building_it_right.htm",
+        "https://www.aramcoworld.com/Articles/March-2021/Pinisi-Boats-Sail-into-the-Future",
+        "https://www.researchgate.net/publication/342932630_The_Development_Prospect_of_the_Pinisi_Vessel_Industry_in_the_Bulukumba_Regency_Indonesia",
+        "https://www.boatdesign.net/threads/indonesia-traditional-vessel-design-in-history-to-present.12354/",
+        "https://shipmodeling.net/forums/topic/24796-indonesian-pinisi-sinar-kumala-scratch-build-scale-175-completed-build/"
+      ],
+      "scraped_at": "2026-05-01T02:02:25.209497Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "South Sulawesi"
+        ],
+        "lat": -3.6446718,
+        "lng": 119.9471906
+      },
+      "resume_analisa": {
+        "description": "Pinisi are iconic traditional Indonesian sailing boats, renowned for their majestic two-mast schooner design. Historically, they were vital for trade and extensive voyages across the Indonesian archipelago. The construction of a Pinisi integrates technical expertise with spiritual beliefs, relying on oral traditions, intuition, and cultural responsibility rather than formal blueprints.",
+        "cultural_significance": "Beyond their function as vessels, Pinisi boats are regarded as living entities imbued with a soul. Their creation is deeply intertwined with elaborate spiritual rituals, offerings, and ancestral blessings, reflecting the profound maritime culture of the Bugis and Makassan people. The intricate knowledge and skills of Pinisi boat building are passed down through generations, often exclusively from father to son, underscoring its intergenerational and familial heritage. The Pinisi stands as a proud national symbol for modern Indonesia, embodying its maritime identity and craftsmanship, and has been recognized by UNESCO as an element of Intangible Cultural Heritage.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Maritime Heritage",
+          "Indonesian Culture",
+          "Boat Building",
+          "Rituals",
+          "Oral Traditions",
+          "UNESCO Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Boat Building",
+        "materials_and_tools": [
+          "Wood (Teak, Bitti, Ironwood/Ulin, Welengreng, Bangkirai)",
+          "Wooden pegs/dowels (trunnels)",
+          "Tree resin (for sealing joints)",
+          "Natural rope (coconut husk or cotton)",
+          "Traditional hand tools (adzes, chisels, handsaws, planes, manual drills)"
+        ],
+        "step_by_step": [
+          "Determine an auspicious day for seeking and cutting wood, typically the 5th and 7th days in the local calendar.",
+          "Perform a special ceremony before felling the chosen tree (e.g., Welengreng) to seek permission from its guardian.",
+          "Cut, dry, and further process the wood into necessary components.",
+          "Lay the keel (lunas), positioning the front beam to symbolize man and the rear beam to symbolize woman, oriented towards the Northeast. Conduct a keel-laying ritual with offerings such as rice, coins, or incense placed beneath it.",
+          "Construct the hull by first applying the planking. Planks are fitted together using tight-fitting wooden dowels or pegs, not nails, a method opposite to Western boatbuilding.",
+          "Install wooden ribs (frames) to give the boat its shape after the planking is complete.",
+          "Install floorboards and construct living quarters (decks and boat rooms).",
+          "Raise two towering masts and fit them with hand-sewn sails, typically a gaff-ketch rig with seven sails.",
+          "Paint the boat.",
+          "Install engines and twin rudders.",
+          "Perform a final blessing and purification ceremony, 'maccera lopi' (purify boat), often involving animal sacrifice, before the boat is launched into the sea with community participation."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Philippines",
+            "element_name": "Various traditional outrigger boats (e.g., Paraw, Vinta, Banka, Pambut)",
+            "relationship_reason": "The underlying Austronesian boatbuilding technology, characterized by plank-first construction, is shared across Southeast Asia and Oceania. Historical trade routes and cultural exchanges have also influenced shipbuilding traditions in the region."
+          },
+          {
+            "country": "Malaysia",
+            "element_name": "Various traditional boats (e.g., Dhow-like vessels)",
+            "relationship_reason": "Pinisi construction shares similarities with other traditional vessels in Southeast Asia, including some dhow-like hull forms, suggesting historical influences and shared maritime heritage."
+          },
+          {
+            "country": "Other Southeast Asian countries",
+            "element_name": "Various traditional wooden boats",
+            "relationship_reason": "The general practice of building wooden boats by hand, often without blueprints and incorporating local rituals, is a common thread in maritime cultures throughout the region, stemming from ancient Austronesian seafaring traditions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-04-29T02:01:08.918489Z",
-    "total_ich_elements": 109,
-    "complete_records": 100,
+    "generated_at": "2026-05-01T02:03:10.797627Z",
+    "total_ich_elements": 112,
+    "complete_records": 103,
     "incomplete_records": 9,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 41,
-      "Social Practices & Rituals": 25,
-      "Culinary Traditions": 19,
+      "Traditional Craftsmanship": 42,
+      "Social Practices & Rituals": 26,
+      "Culinary Traditions": 20,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
