@@ -9688,17 +9688,189 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b09e3ce8",
+      "element_name": "Wedang Uwuh",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Wedang_Uwuh_Jawa.jpg/1280px-Wedang_Uwuh_Jawa.jpg",
+      "source_urls": [
+        "https://jurnal.ugm.ac.id/jurnal-humaniora/article/download/14195/9525",
+        "https://jamupedia.id/artikel/wedang-uwuh-a-drink-rich-in-benefits-that-was-created-by-accident",
+        "https://www.opendrinks.io/drinks/wedang-uwuh",
+        "https://www.pettyelliott.com/drinks/wedang-uwuh",
+        "https://boisdejasmin.com/2020/05/rubbish-to-gems-a-tale-of-javanese-tea-wedang-uwuh.html",
+        "https://www.voaindonesia.com/a/wedang-uwuh-merambah-dunia/6373117.html",
+        "https://kumparan.com/kumparanfood/wedang-uwuh-warisan-budaya-tak-benda-yang-menyehatkan-22Q5321fP8B",
+        "https://ubuvilla.com/sejarah-wedang-uwuh/",
+        "https://jogjapolitan.harianjogja.com/read/2023/05/01/510/1539207/kuliner-bantul-wedang-uwuh-jadi-warisan-budaya-tak-benda",
+        "https://www.youtube.com/watch?v=F_Y9_0-h7-0",
+        "https://www.halodoc.com/artikel/wedang-uwuh-berasal-dari-mana-asal-usul-dan-manfaatnya",
+        "https://thedailyroar.com/food/wedang-uwuh-a-red-temptation-herb-drink-from-yogyakarta/",
+        "https://www.goethe.de/ins/id/id/kul/kue/20658406.html",
+        "https://voi.id/en/lifestyle/349479/getting-to-know-wedang-uwuhs-composition-the-medicine-of-mujarab-sultan-agung-in-the-era-of-mataram-islam",
+        "https://jamupedia.id/artikel/wedang-uwuh",
+        "https://id.wikipedia.org/wiki/Wedang_uwuh",
+        "https://www.raminten.com/wedang-uwuh-manfaat-komposisi-dan-cara-membuat-minuman-rempah-khas-yogyakarta/",
+        "https://www.kalurahtrimulyo.bantulkab.go.id/first/artikel/111-Wedang-Uwuh"
+      ],
+      "scraped_at": "2026-05-03T01:52:30.528305Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Yogyakarta Special Region",
+          "Java"
+        ],
+        "lat": -7.8019592,
+        "lng": 110.3659754
+      },
+      "resume_analisa": {
+        "description": "Wedang Uwuh is a traditional Javanese warm herbal drink, originating from Imogiri, Yogyakarta. Its name, 'uwuh,' means 'trash' or 'litter' in Javanese, referring to its appearance with various leaves, spices, and wood shavings floating in the drink. It is characterized by its fragrant aroma, unique herbal taste, and distinctive reddish color, which comes from the secang (sappan) wood.",
+        "cultural_significance": "Originating in Imogiri, Yogyakarta, during the Mataram Kingdom era around the 17th century, legend says it was discovered by accident when Sultan Agung's drink was mixed with fallen leaves and spices. It was initially served to Javanese royalty and later to pilgrims visiting the royal cemetery in Imogiri. Wedang Uwuh is highly valued for its warming properties and numerous health benefits, including boosting immunity, reducing inflammation, improving blood circulation, and acting as an antioxidant. It embodies the Javanese philosophy of utilizing all parts of a spice tree. The drink has been officially recognized as an Intangible Cultural Heritage of Indonesia by the Ministry of Education and Culture in 2017.",
+        "gemini_tags": [
+          "Traditional Drink",
+          "Herbal Beverage",
+          "Javanese Culture",
+          "Indonesian Heritage",
+          "Spice Drink",
+          "Health Benefits",
+          "Culinary Tradition",
+          "Yogyakarta"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Drink",
+        "materials_and_tools": [
+          "Fresh ginger (30-50g, crushed or sliced)",
+          "Secang (sappan) wood (shavings or pieces)",
+          "Clove (leaves, stems, or whole cloves, 4-15 pieces/leaves)",
+          "Cinnamon (1-2 sticks or 25g, or leaves)",
+          "Nutmeg (leaves or 5g crushed whole nutmeg)",
+          "Lemongrass (1-3 stalks, bruised)",
+          "Cardamom (5-15 grains)",
+          "Rock sugar or honey (to taste)",
+          "Water (500ml - 1500ml)",
+          "Saucepan",
+          "Strainer (optional)",
+          "Serving cups/teapot"
+        ],
+        "step_by_step": [
+          "Wash all the ingredients thoroughly.",
+          "Gently crush or slice the fresh ginger. Optionally, lightly broil the ginger first to enhance its aroma.",
+          "Bruise the lemongrass stalks to release their fragrance.",
+          "In a saucepan, bring the desired amount of water to a boil.",
+          "Add all the spices and herbs (ginger, secang wood, cloves, cinnamon, nutmeg, lemongrass, cardamom) into the boiling water.",
+          "Continue to boil and simmer the mixture for approximately 10-25 minutes, or until the water turns a distinctive reddish color from the secang wood and the aroma of the spices is strong.",
+          "Turn off the heat.",
+          "Add rock sugar or honey to taste, stirring until completely dissolved.",
+          "Serve warm. Traditionally, Wedang Uwuh is served without straining, allowing the 'uwuh' (litter) to remain in the drink, contributing to its unique appearance."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 1.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b30ae6f3",
+      "element_name": "Asin Tibuok artisanal sea salt",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/As%25C3%25ADn_tibuok&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/As%C3%ADn_tibuok",
+        "https://xroadsphilippineseasalts.com/pages/asin-tibuok-the-dinosaur-egg",
+        "https://ich.unesco.org/en/USL/02316",
+        "https://asintibuok.com/about/",
+        "https://mataphoto.org/rediscovering-asin-tibuok-a-cultural-salt-of-bohol/",
+        "https://asintibuok.ph/",
+        "https://speedregalo.ph/blogs/news/asin-tibuok-a-filipino-culinary-treasure-and-speedregalos-gateway-to-heritage",
+        "https://www.slowfood.org/ark-of-taste-details/asin-tibuok-unbroken-salt/",
+        "https://asianews.network/philippines-asin-tibuok-a-heritage-ingredient-fighting-for-survival/",
+        "https://asianjournal.com/magazines/life-style/arts-culture/preserving-tradition-the-journey-of-asin-tibuok-from-bohols-shores-to-the-world/",
+        "https://lumina.edu.ph/wp-content/uploads/2024/02/Lumina-Vol-5-No-1-2024-pp-1-10.pdf",
+        "https://thephilbiznews.com/how-an-ancient-ph-salt-won-a-place-on-unescos-heritage-list/",
+        "https://www.adventure.com/articles/philippines-asin-tibuok-salt-dinosaur-egg",
+        "https://emkp.org/making-asin-tibuok-officially-included-in-unescos-list-of-intangible-cultural-heritage-in-need-of-urgent-safeguarding/",
+        "https://www.parispe.dfa.gov.ph/newsroom/phl-in-the-news/3534-the-practice-of-making-asin-tibuok-the-artisanal-sea-salt-of-the-boholano-bohol-island-inscribed-in-the-unesco-list-of-intangible-cultural-heritage-in-need-of-urgent-safeguarding"
+      ],
+      "scraped_at": "2026-05-03T01:53:10.693011Z",
+      "location": {
+        "country": "Philippines",
+        "provinces": [
+          "Bohol",
+          "Capiz",
+          "Guimaras"
+        ],
+        "lat": 9.8807822,
+        "lng": 124.2064612
+      },
+      "resume_analisa": {
+        "description": "Asin Tibuok, also known as 'dinosaur egg' salt, is a rare Filipino artisanal sea salt from the Boholano people, characterized by its unique dome shape and smoky, slightly sweet, and fruity flavor. It is produced through a meticulous, pre-Hispanic method involving coconut husks, ash, and clay pots.",
+        "cultural_significance": "Asin Tibuok is more than just a condiment; it represents centuries of Filipino heritage and indigenous knowledge. It was historically used for trade, bartered for rice, and played a central role in community life and food traditions. The craft is passed down through generations, often as a family activity, with children learning by observing and helping. Its production is a symbol of resilience and cultural identity for the Boholano people. It was recently inscribed in the UNESCO List of Intangible Cultural Heritage in Need of Urgent Safeguarding in December 2025, and is also listed in the Ark of Taste by the Slow Food movement, highlighting its endangered status and unique taste.",
+        "gemini_tags": [
+          "Artisanal Salt",
+          "Traditional Food",
+          "Philippine Heritage",
+          "Endangered Craft",
+          "Boholano Culture",
+          "Culinary Heritage",
+          "Pre-Hispanic Tradition",
+          "Community Practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Salt Production",
+        "materials_and_tools": [
+          "Coconut husks",
+          "Seawater",
+          "Firewood/local hardwoods",
+          "Pits for soaking",
+          "Funnel-shaped bamboo filtering device (kaing)",
+          "Hollowed-out coconut trunk (tasik collector)",
+          "Special clay pots (kuro or coon)",
+          "Furnace/stove",
+          "Shell dipper (lagang)",
+          "Dried palms (for heat)"
+        ],
+        "step_by_step": [
+          "**Soaking Coconut Husks**: Coconut husks are collected and soaked in special pits continually refilled with seawater for at least three to six months, allowing them to absorb sea minerals.",
+          "**Drying and Chopping Husks**: The soaked husks are then chopped into smaller pieces and sun-dried for a few days, ensuring they are not exposed to rain.",
+          "**Burning Husks into Ash**: The dried husks are slowly and carefully burned in a pile for several days (about a week) with local hardwoods, often with seawater continuously poured over them, until they are completely reduced to ash (gasang). This process requires constant monitoring to maintain the fire.",
+          "**Filtering Ash to Create Brine**: The ashes are gathered into a funnel-shaped bamboo filtering device (kaing). Seawater is poured through the ash, leaching out the salt and creating a highly concentrated brine called 'tasik'.",
+          "**Boiling Brine in Clay Pots**: The tasik is collected in hollowed-out coconut trunks and then poured into special handmade clay pots (kuro or coon). These pots are hung in a special furnace or arranged on a long stove and boiled for several hours (up to eight uninterrupted hours). More tasik is continuously replenished as the water evaporates.",
+          "**Salt Formation and Cooling**: As the water evaporates, the salt solidifies and fills the pot. The pots eventually crack, revealing the solidified mass of salt, which is initially very hot. It takes several hours for the 'dinosaur egg' shaped salt to cool enough to be handled."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Philippines",
+            "element_name": "Túltul (or dúkdok)",
+            "relationship_reason": "A related artisanal salt from the Ilonggo people, made similarly to Asin Tibuok but boiled with coconut milk (gatâ)."
+          },
+          {
+            "country": "Global",
+            "element_name": "Artisanal Salt Production",
+            "relationship_reason": "Asin Tibuok is part of a broader global tradition of artisanal salt production, employing time-honored, location-specific methods for salt preservation, which are increasingly challenged by modern industrial practices."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-01T02:03:10.797627Z",
-    "total_ich_elements": 112,
-    "complete_records": 103,
+    "generated_at": "2026-05-03T01:54:12.884151Z",
+    "total_ich_elements": 114,
+    "complete_records": 105,
     "incomplete_records": 9,
     "categories_breakdown": {
       "Traditional Craftsmanship": 42,
       "Social Practices & Rituals": 26,
-      "Culinary Traditions": 20,
+      "Culinary Traditions": 22,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
