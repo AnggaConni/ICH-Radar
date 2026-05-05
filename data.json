@@ -9860,16 +9860,315 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-45cd34a4",
+      "element_name": "Sifnian Pottery",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sifnos_Pottery_Museum_in_Artemonas.jpg/640px-Sifnos_Pottery_Museum_in_Artemonas.jpg",
+      "source_urls": [
+        "https://www.sifnospottery.gr/",
+        "https://www.flymetothemoontravel.com/sifnos-ceramics-heritage-a-timeless-story-of-clay/",
+        "https://www.greeka.com/cyclades/sifnos/culture/pottery/",
+        "https://www.greece-is.com/archipelago-network-preserving-the-cultural-legacy-of-sifnos-potters/",
+        "https://youthheritage.eu/blog-archives/",
+        "https://archipelagonetwork.org/ceramic-culture-and-everyday-life-in-sifnos-the-cosmas-and-ariadne-xenakis-collection/",
+        "https://www.greecetravel.com/sifnos/pottery.html",
+        "https://www.sifnosstoneware.com/ceramic-process",
+        "https://www.unesco.org/creative-cities/sifnos",
+        "https://www.homofaber.com/en/discover/guided-tour-and-ceramic-demonstration-sifnos-giannis-apostolidis",
+        "https://www.europeana.eu/en/item/2059001/data_sounds_2023_07_07_Sifnos_Pottery",
+        "https://www.verinahotels.com/blog/antonios-atsonios-meet-a-sifnian-potter/",
+        "https://www.apostolidis-ceramics.gr/en/handmade-earthen-products-of-sifnos",
+        "https://en.wikipedia.org/wiki/Sifnos",
+        "https://www.gtp.gr/Sifnos"
+      ],
+      "scraped_at": "2026-05-05T01:54:00Z",
+      "location": {
+        "country": "Greece",
+        "provinces": [
+          "South Aegean",
+          "Cyclades"
+        ],
+        "lat": 36.6664741,
+        "lng": 25.7315159
+      },
+      "resume_analisa": {
+        "description": "Sifnian pottery is an ancient and continuously practiced craft on the Greek island of Sifnos, renowned for its high-quality, fire-resistant clay. This tradition, dating back to the Early Cycladic period (2000-1500 BC), involves the creation of both utilitarian household items, such as cooking vessels and storage jars, and decorative ceramics. The craft has been passed down through generations, with Sifnian potters developing exceptional dexterity and skill in processing the local clay. The island's favorable natural resources, including abundant refractory clay, rainwater, and suitable fuel, have significantly contributed to the flourishing of this art form.",
+        "cultural_significance": "Sifnian pottery is deeply intertwined with the island's cultural identity, history, and daily life. It plays a crucial role in Sifnos's famous gastronomy, with traditional clay cooking vessels like the 'mastelo' (for slow-roasting meat) and 'tsikali' (for chickpea stew) being integral to local culinary practices and festivals. Historically, the pottery industry was a major employer, with entire families involved in specialized roles. The migration of Sifnian potters to other regions of Greece and abroad also spread their craft and established the reputation of Sifnian ceramics. In 2022, Sifnos pottery was included in the National Inventory of Intangible Cultural Heritage, recognizing its contribution to local life and cultural continuity. Today, numerous workshops continue to operate, preserving this living tradition and contributing significantly to the local economy and tourism.",
+        "gemini_tags": [
+          "Pottery",
+          "Ceramics",
+          "Traditional Craftsmanship",
+          "Greek Islands",
+          "Cycladic Culture",
+          "Sifnos",
+          "Handmade Art",
+          "Utilitarian Art",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Pottery Making",
+        "materials_and_tools": [
+          "Refractory clay (from schist rock)",
+          "Water",
+          "Wood (for kilns)",
+          "Potter's wheel (often foot-powered)",
+          "Simple hand tools",
+          "Glazes (for some finished products)"
+        ],
+        "step_by_step": [
+          "**Clay Collection**: The 'homatas' (clay collector) gathers fire-resistant clay, often a blend of dense and sandy soils, from the hills of Sifnos.",
+          "**Wood Gathering**: The 'kladas' (wood gatherer) collects wood, which serves as fuel for the kilns.",
+          "**Clay Transport**: The 'moularas' (mule transporter) carries the collected clay by mule to the pottery workshop.",
+          "**Clay Preparation**: The 'kopanistis' (clay preparer) processes and prepares the raw clay, making it suitable for shaping on the wheel.",
+          "**Shaping (Throwing)**: The master potter (known as 'tsikalas', 'aggeioplastis', or 'kanatas') and their assistant ('basperetis') skillfully shape the clay on a potter's wheel, often powered by foot, using traditional simple tools.",
+          "**Drying**: The newly shaped ceramic pieces are left to dry naturally, a process often aided by the sunny climate of the island.",
+          "**Firing**: The dried pottery is then fired in wood-fueled kilns at high temperatures, typically around 1000°C, to achieve its characteristic durability and fire-resistant properties.",
+          "**Glazing and Finishing**: Depending on the desired outcome, some pieces are glazed and decorated, while others are left in the natural, earthy tones of the Sifnian clay."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Greece",
+            "element_name": "Pottery in other Cycladic Islands",
+            "relationship_reason": "Sifnian potters migrated to and established workshops on other Cycladic islands, spreading their techniques and influence."
+          },
+          {
+            "country": "Greece",
+            "element_name": "Pottery in Attica (Maroussi, Halandri, Agia Paraskevi)",
+            "relationship_reason": "Many Sifnian potters moved to mainland Greece, particularly areas in Attica like Maroussi, Halandri, and Agia Paraskevi, where they founded new pottery workshops and contributed to the local ceramic tradition."
+          },
+          {
+            "country": "Italy",
+            "element_name": "Ancient ceramics in Calabria",
+            "relationship_reason": "A marble inscription from the 2nd century BC found in Calabria praises Sifnian ceramics, indicating ancient trade and recognition of their craft beyond Greece."
+          },
+          {
+            "country": "Turkey (Asia Minor)",
+            "element_name": "Pottery in coastal areas of Asia Minor",
+            "relationship_reason": "Sifnian potters also exported their wares and some migrated to coastal areas of Asia Minor."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-37f54957",
+      "element_name": "Amazonian Chagra Traditional Agricultural System",
+      "category": "Social Practices & Rituals | Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.semillas.org.co/es/la-chagra-patrimonio-colectivo-de-las-comunidades-indigenas-amazonicas&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.semillas.org.co/es/la-chagra-patrimonio-colectivo-de-las-comunidades-indigenas-amazonicas",
+        "https://www.thecollector.com/chagra-sustainable-agriculture-amazon/",
+        "https://dialnet.unirioja.es/servlet/articulo?codigo=9134105",
+        "https://revistas.unal.edu.co/index.php/agrocol/article/view/17491",
+        "https://www.corpoamazonia.gov.co/index.php/publicaciones/documentos-tecnicos/send/10-documentos-tecnicos/29-la-chagra-tradicional-inga-tarpuy-micuy",
+        "https://visionamazonia.minambiente.gov.co/la-chagra-un-espacio-de-integracion-y-aprendizaje-cultural-para-las-comunidades-indigenas/",
+        "https://sembrandocapacidades.com/wp-content/uploads/2021/07/SISTEMA-AGROECOLOGICO-TRADICIONAL-DE-CHAGRAS-AMAZONICAS-EN-EL-MEDIO-CAQUETA.pdf",
+        "https://www.fao.org/giahs/giahs-sites/amazonian-chakra/en/",
+        "https://www.javeriana.edu.co/documents/10845/14420060/The+changing+chagras+Traditional+ecological+knowledge+transformations+in+the+Colombian+amazon.pdf/40097780-e794-4414-871d-55512214300e",
+        "https://www.patrimonionatural.org.co/noticias/las-chagras-indigenas-seguridad-alimentaria-y-la-transmision-de-conocimientos/",
+        "https://www.sinchi.org.co/files/publicaciones/libros/La%20chagra%20en%20La%20Chorrera.pdf",
+        "https://www.scielo.org.co/pdf/rlcs/v41n2/v41n2a04.pdf",
+        "https://andandoporbogota.blogspot.com/2014/07/la-chagra-amazonica.html",
+        "https://www.biodiversidadenamerica.org/la-chagra-un-sistema-ancestral-de-conexion-con-la-tierra/",
+        "https://www.elespectador.com/ambiente/cinco-plantas-amazonicas-comunes-en-las-chagras/",
+        "https://es.wikipedia.org/wiki/Chagra",
+        "https://www.turismo.gob.ec/el-chagra-es-un-simbolo-del-mestizaje/",
+        "https://www.parquesnacionales.gov.co/portal/es/asi-se-monitorea-la-chagra-el-cultivo-tradicional-indigena-en-el-pnn-amacayacu/"
+      ],
+      "scraped_at": "2026-05-05T01:54:47.088471Z",
+      "location": {
+        "country": "Colombia",
+        "provinces": [
+          "Amazonas Department (Leticia Municipality, El Vergel, La Chorrera, Solano, Caquetá)",
+          "Medio río Caquetá",
+          "Putumayo Department (Mocoa)"
+        ],
+        "lat": -4.4601154,
+        "lng": -73.5283314
+      },
+      "resume_analisa": {
+        "description": "The Amazonian Chagra is a traditional indigenous agroforestry system practiced by various communities in the Amazon rainforest. It is a family or community space, typically one to two hectares, for cultivating a high diversity of food, medicinal plants, and materials. This system mimics the natural processes of forest succession, combining transient and perennial crops. Chagras are temporary, usually productive for two to three years, after which the land is left to regenerate naturally. It's characterized by polyculture, rotation of areas, and a deep understanding of ecological relationships, production cycles, and plant-soil interactions.",
+        "cultural_significance": "More than just an agricultural plot, the Chagra is a fundamental manifestation of indigenous cosmology, serving as a sacred space for cultural preservation, food sovereignty, and the transmission of ancestral knowledge across generations. Women are often the primary custodians of seeds and possess extensive knowledge about cultivated plants and chagra management. It is a place of integration and learning where children and youth are taught traditional practices, mythical stories, and bio-spiritual explanations, reinforcing community identity and a holistic connection between humans, nature, and the spiritual world. The Chagra also represents a model of sustainable agriculture, demonstrating balanced, reciprocal, and sustainable strategies for cohabitation within the Amazonian ecosystem.",
+        "gemini_tags": [
+          "Indigenous agriculture",
+          "Amazon rainforest",
+          "Traditional ecological knowledge",
+          "Polyculture",
+          "Food sovereignty",
+          "Cultural transmission",
+          "Agroforestry",
+          "Sustainable practices",
+          "Community practice",
+          "Ritualistic agriculture",
+          "Shifting cultivation"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Agricultural System / Agroforestry",
+        "materials_and_tools": [
+          "Machete",
+          "Axes",
+          "Fire (for burning vegetation)",
+          "Seeds and cuttings (e.g., yuca/cassava, corn, banana, pineapple, coca, tobacco, ají/chili, chontaduro, various fruits, medicinal plants)",
+          "Traditional baskets"
+        ],
+        "step_by_step": [
+          "**Selection of Land**: Men, often in consultation with shamans, choose an appropriate parcel of land. This decision considers factors like soil type, existing vegetation, and involves negotiating with the land's spiritual owners through ancestral rituals to seek permission and ensure animals are not harmed.",
+          "**Socola (Clearing Small Vegetation)**: The smaller vegetation in the selected area is cleared, typically by hand or with machetes.",
+          "**Tumba (Felling Larger Trees)**: Larger trees and trunks are cut down. This is often a collective effort involving men from the community. During this process, useful products like honey or edible animals found in the felled trees may be collected.",
+          "**Drying**: The cleared vegetation is left to dry. This period can range from a few weeks to up to three months, depending on climatic conditions.",
+          "**Quema (Burning)**: The dried organic material is burned. This controlled burning releases nitrogen and other nutrients, fertilizing the soil with ash. This task is often performed by the married couple. The terrain is then allowed to cool for approximately two weeks.",
+          "**Siembra (Planting)**: Women primarily lead the planting phase. Both transient (short-cycle) and permanent crops are planted simultaneously. Yuca (cassava) is the main crop, alongside others such as corn, banana, pineapple, coca, tobacco, ají, chontaduro, various fruits, and medicinal plants. Shamans may perform blessings before or during planting.",
+          "**Desyerbe (Weeding and Maintenance)**: Regular weeding and elimination of competitor plants are carried out, mainly by women, using hands and machetes. These removed plants are often piled up and burned to create additional ash fertilizer for the crops.",
+          "**Cosecha (Harvesting)**: Crops are harvested as they mature. The chagra typically remains productive for about two to three years for most transient crops, while perennial fruits may continue to yield for longer periods.",
+          "**Abandono y Recuperación (Abandonment and Recovery)**: After its productive cycle, the chagra is abandoned to allow the land to recover through natural regeneration (fallow period). This ecological succession can take 30 to 50 years for the forest to fully regenerate. A closing ritual may be conducted by the shaman."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Ecuador",
+            "element_name": "Amazonian Chakra",
+            "relationship_reason": "Similar traditional agroforestry system recognized as a Globally Important Agricultural Heritage System (GIAHS) in Napo province, sharing ecological, social, and spiritual knowledge."
+          },
+          {
+            "country": "Brazil",
+            "element_name": "Traditional Indigenous Agricultural Systems",
+            "relationship_reason": "Part of the broader Amazon basin, where similar ancestral agricultural practices are found among indigenous communities, reflecting shared ecological adaptation and cultural significance."
+          },
+          {
+            "country": "Peru",
+            "element_name": "Traditional Indigenous Agricultural Systems",
+            "relationship_reason": "Part of the broader Amazon basin, where similar ancestral agricultural practices are found among indigenous communities, reflecting shared ecological adaptation and cultural significance."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-cfd25214",
+      "element_name": "Despacho Ceremony (Pachamama Offering)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//raisingmiro.com/2014/05/16/the-despacho-ceremony-a-blessing-for-mother-earth/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://raisingmiro.com/2014/05/16/the-despacho-ceremony-a-blessing-for-mother-earth/",
+        "https://willkapachaexperience.com/what-is-despacho-offering/",
+        "https://angelablueskies.com/despacho-ceremony/",
+        "https://holtonhealingarts.com/what-is-despacho/",
+        "https://pumadventures.com/offering-to-pachamama/",
+        "https://kerrihummingbird.com/andean-despacho-prayer-ceremony/",
+        "https://www.incashamanicglossary.com/appendix-j-the-andean-despacho-ceremony",
+        "https://kumalicreativewellness.com/pachamama-offering-gratitude-ceremony-mother-earth/",
+        "https://hannahmedicinewoman.com/despacho-ceremony",
+        "https://pieexperiences.com/pachamama-ceremony-peru/",
+        "https://incamedicineschool.com/pachamama-altar/",
+        "https://quechuasexpeditions.com/pachamama-ceremony-peru/",
+        "https://willkapachaexperience.com/despacho-ceremony-cusco/",
+        "https://travelsafoot.com/despacho-ceremony-peru-sacred-valley/",
+        "https://desireedemars.com/despacho-messages-to-spirit/"
+      ],
+      "scraped_at": "2026-05-05T01:55:19.739081Z",
+      "location": {
+        "country": "Peru",
+        "provinces": [
+          "Cusco",
+          "Sacred Valley"
+        ],
+        "lat": -13.5170887,
+        "lng": -71.9785356
+      },
+      "resume_analisa": {
+        "description": "The Despacho Ceremony, also known as a Pachamama Offering, is a sacred Andean ritual involving the meticulous creation of a symbolic prayer bundle. This offering is made to honor Pachamama (Mother Earth), the Apus (mountain spirits), and the spirit in all of nature, expressing profound gratitude, setting intentions, and seeking to restore balance and harmony. It is an act rooted in the Andean principle of Ayni, which signifies sacred reciprocity and the interconnectedness of all beings and elements.",
+        "cultural_significance": "Deeply embedded in Andean traditions, particularly among the indigenous Q'ero people of Peru, the Despacho Ceremony is a centerpiece of their spiritual and ritualistic heritage. It serves multiple purposes, including maintaining harmony with the natural world, fostering community unity, achieving spiritual alignment, promoting healing and cleansing, and marking significant life transitions such as births, weddings, or new beginnings. The ceremony reflects the Andean worldview, which emphasizes the interconnectedness of all elements in nature—earth, mountains, and cosmos—and the importance of a balanced exchange of energy.",
+        "gemini_tags": [
+          "Andean culture",
+          "Spiritual ritual",
+          "Pachamama",
+          "Apus",
+          "Reciprocity",
+          "Q'ero people",
+          "Peru",
+          "Bolivia",
+          "Ecuador",
+          "Healing",
+          "Gratitude",
+          "Community practice",
+          "Oral traditions"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual/Ceremony",
+        "materials_and_tools": [
+          "Sacred cloth (mesa, mastana, or unkuna)",
+          "White paper (at least a foot square)",
+          "Coca leaves (sacred plant of the Andes)",
+          "Bay leaves or laurel (substitute for coca leaves where illegal)",
+          "Colorful flower petals",
+          "Grains (corn, quinoa, rice, chickpeas)",
+          "Herbs (lavender, anise)",
+          "Sweets (candies, sugar figures, honey, animal crackers)",
+          "Incense (sage, palo santo, or other aromatic herbs)",
+          "Feathers",
+          "Shells (e.g., spondylus shells, representing Mother Lake/feminine)",
+          "Metal charms (gold and silver foil for sun and moon)",
+          "Magnets, magnetite, or pyrite (to attract good fortune)",
+          "Cotton (representing clouds)",
+          "Rainbow ribbon or yarn (representing the bridge between worlds)",
+          "Red string or yarn (to tie the bundle)",
+          "Small white candle (representing the mountain/fire element)",
+          "Clear alcohol (e.g., pisco, florida water)",
+          "Red and white wine (to honor Pachamama and Apukuna)",
+          "Llama fat (traditionally symbolizes nourishment and life)",
+          "Small stones (kuyas, Apu stones)",
+          "Personal meaningful items (photos, small craft items)"
+        ],
+        "step_by_step": [
+          "**1. Setting Intention and Choosing Location:** Participants clarify their personal or group intentions for the ceremony, which can include gratitude, healing, new beginnings, or seeking guidance. A sacred outdoor space, such as mountaintops, riverbanks, forests, or a specially prepared indoor area, is chosen to foster a strong connection with nature.",
+          "**2. Opening Sacred Space:** The ceremony begins by invoking the Four Directions (South, West, North, East), Mother Earth (Pachamama), and Father Sky (Inti Tayta), thereby creating a protected ceremonial container. An energetic cleansing ritual, often involving the burning of sacred incense like sage or palo santo (sahumerio), may be performed to purify the space and participants.",
+          "**3. Laying the Foundation:** A sacred cloth, such as a mesa, mastana, or unkuna, is carefully laid on the ground. A square piece of white paper, symbolizing clarity, is then placed on top of the cloth to serve as the base for the offering.",
+          "**4. Assembling the Offering (Mandala):** An experienced shaman (Paqo or altomisayoq) guides the meticulous process of arranging various symbolic items onto the white paper, forming a beautiful mandala pattern. Each item is chosen for its specific meaning and is placed with deep intention and prayer. Key elements often include coca leaves (for prayers and gratitude), colorful flower petals (representing beauty and joy), grains and seeds (symbolizing sustenance and the earth element), sweets and sugar figures (offering joy and sweetness to Pachamama), shells (representing the feminine and Mother Lake), metal charms (for the sun and moon), cotton (for clouds), and llama fat (for nourishment and life).",
+          "**5. Infusing Intentions:** As each offering is placed, participants blow their personal prayers and intentions into coca leaves (known as k'intus) or other symbolic items, imbuing the offering with their heartfelt desires and gratitude.",
+          "**6. Blessing and Wrapping:** Once all the elements have been carefully arranged and infused with intentions, the Despacho bundle is blessed by the spiritual guides. It is then meticulously folded and tied with a red string, often resembling a sacred gift.",
+          "**7. Release to Spirit:** The completed Despacho bundle is offered to the spirit world. This release can take various forms: ritual burning (believed to facilitate rapid transformation), burial in the earth (for slow, deep integration), or offering to a body of water like a river or ocean (to carry the prayers). This final act is typically performed by the shaman alone, out of respect for the spirits.",
+          "**8. Closing Sacred Space:** The ceremony concludes with expressions of gratitude to Pachamama, the Apus, and all participating spirits, followed by the formal closing of the sacred space."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Bolivia",
+            "element_name": "Despacho Ceremony (Pachamama Offering)",
+            "relationship_reason": "Shared traditional practice in the Quechua-speaking Andean region, recognizing Pachamama and Apus."
+          },
+          {
+            "country": "Ecuador",
+            "element_name": "Despacho Ceremony (Pachamama Offering)",
+            "relationship_reason": "Shared traditional practice in the Quechua-speaking Andean region, recognizing Pachamama and Apus."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-03T01:54:12.884151Z",
-    "total_ich_elements": 114,
-    "complete_records": 105,
+    "generated_at": "2026-05-05T01:55:54.168492Z",
+    "total_ich_elements": 117,
+    "complete_records": 108,
     "incomplete_records": 9,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 42,
-      "Social Practices & Rituals": 26,
+      "Traditional Craftsmanship": 43,
+      "Social Practices & Rituals": 27,
       "Culinary Traditions": 22,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
@@ -9878,7 +10177,8 @@
       "Oral Traditions": 7,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
-      "Traditional Craftsmanship | Social Practices & Rituals": 1
+      "Traditional Craftsmanship | Social Practices & Rituals": 1,
+      "Social Practices & Rituals | Culinary Traditions": 1
     }
   }
 }
