@@ -10159,17 +10159,147 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-8989ffdd",
+      "element_name": "Tagurabong",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.jisem-journal.com/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.jisem-journal.com/"
+      ],
+      "scraped_at": "2026-05-07T01:57:06.572695Z",
+      "location": {
+        "country": "Philippines",
+        "provinces": [
+          "Capiz",
+          "Tapaz",
+          "Santa Ana"
+        ],
+        "lat": 11.3852987,
+        "lng": 122.6377315
+      },
+      "resume_analisa": {
+        "description": "Tagurabong is an intricate and long-standing traditional harvest ritual practiced by the local folks in Santa Ana, Tapaz, Capiz, Philippines. It is considered an heirloom or \"surundon,\" embodying the wisdom and traditions passed down through generations. The ritual serves as a significant occasion to express gratitude for a bountiful harvest and to welcome the newly harvested rice. It holds symbolic meaning encompassing prosperous life and good health, extending beyond the mere physical act of harvesting. It is also believed to possess healing powers, helping individuals feel better when sick or tired.",
+        "cultural_significance": "Tagurabong is deeply significant to the community as it honors ancestors, strengthens cultural heritage, and promotes overall well-being. It underscores the community's strong commitment to preserving its traditions and its profound appreciation for nature. The meticulous performance of the ritual is believed to ensure a successful harvest and maintain the health of the community, reflecting gratitude for blessings and rewards. The intergenerational transmission of this practice is a cornerstone of the rural cultural identity in Santa Ana, Tapaz, Capiz.",
+        "gemini_tags": [
+          "Harvest Ceremony",
+          "Philippines",
+          "Community Ritual",
+          "Ancestral Worship",
+          "Gratitude",
+          "Rice Harvest",
+          "Healing Ritual",
+          "Cultural Heritage",
+          "Traditional Practice",
+          "Indigenous Practice"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.0,
+        "related_elements": []
+      },
+      "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-ca7fb255",
+      "element_name": "Tunu Ahi Ika",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.cultura.gob.cl/publicaciones-digitales/recetas-de-pueblos-originarios/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.cultura.gob.cl/publicaciones-digitales/recetas-de-pueblos-originarios/",
+        "https://www.cultura.gob.cl/actualidad/a-disfrutar-la-diversidad-de-las-recetas-de-pueblos-originarios/",
+        "https://imaginerapanui.com/en/easter-island-food/",
+        "https://kapuarapanuitours.com/en/typical-food-from-easter-island/",
+        "https://www.google.com/search?q=latitude+longitude+Easter+Island",
+        "https://www.allrecipes.com/article/how-to-cook-with-hot-stones/",
+        "https://www.exarc.net/issue-2016-3/ea/cooking-baskets-using-hot-rocks",
+        "https://www.steakstones.com/blogs/news/exploring-the-sizzling-delights-of-hot-stone-cooking",
+        "https://www.esah.es/blog/sabores-ancestrales-un-viaje-a-la-historia-de-la-gastronomia/",
+        "https://www.tunahiika.cl/"
+      ],
+      "scraped_at": "2026-05-07T01:57:29.559646Z",
+      "location": {
+        "country": "Chile",
+        "provinces": [
+          "Valparaíso Region",
+          "Easter Island (Rapa Nui)"
+        ],
+        "lat": -32.5976089,
+        "lng": -70.8529753
+      },
+      "resume_analisa": {
+        "description": "Tunu Ahi Ika, which translates to \"fish cooked over fire\" in Spanish, is an ancient culinary tradition of the Rapa Nui people on Easter Island. This ancestral cooking technique involves preparing food, primarily fresh fish and sweet potatoes, directly on hot volcanic stones. While traditionally used for fish and its entrails (kokoma), it has evolved to include other meats and seafood.",
+        "cultural_significance": "Tunu Ahi is more than just a cooking method; it is a significant social practice on Rapa Nui. It fosters community gatherings, with families and friends often heading to the coast on weekends to light bonfires and enjoy outdoor meals prepared using this technique. It represents a profound connection to the island's ancestral past and its natural resources, embodying the cultural and gastronomic identity of the Rapa Nui people.",
+        "gemini_tags": [
+          "Rapa Nui cuisine",
+          "Easter Island food",
+          "Traditional cooking",
+          "Volcanic stone cooking",
+          "Chilean culinary heritage",
+          "Polynesian food",
+          "Ancestral recipes",
+          "Community practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Cooking on hot volcanic stones",
+        "materials_and_tools": [
+          "Fresh fish (with scales)",
+          "Sweet potatoes (camote)",
+          "Bananas (plátano)",
+          "Volcanic stones",
+          "Firewood",
+          "Banana or 'gomero' (rubber tree) leaves (for serving)"
+        ],
+        "step_by_step": [
+          "Ignite a fire using firewood to heat volcanic stones until they are red hot. If a grill is used, light it and then add volcanic stones to maintain heat and prevent the food from burning.",
+          "Once the stones are sufficiently hot, place the sweet potatoes and fresh fish directly onto them. Ensure the back of the fish is positioned towards the fire to ensure even cooking and prevent it from remaining raw.",
+          "Allow the food to cook slowly over the hot stones until they gradually cool down.",
+          "Once cooked, carefully remove the fish and sweet potatoes from the stones.",
+          "Serve the Tunu Ahi Ika on banana or 'gomero' (rubber tree) leaves. Accompany the dish with fresh bananas, which help to soften the strong flavor of the fish."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Peru",
+            "element_name": "Pachamanka",
+            "relationship_reason": "Both involve cooking with red-hot volcanic rocks, although Pachamanka is an underground oven method."
+          },
+          {
+            "country": "New Zealand",
+            "element_name": "Hāngi",
+            "relationship_reason": "Similar to Rapa Nui's Umu (a related but distinct dish), Hāngi involves slow cooking in an earth oven with red-hot volcanic stones."
+          },
+          {
+            "country": "Various (e.g., North America, India)",
+            "element_name": "Stone boiling/grilling/roasting",
+            "relationship_reason": "The fundamental technique of using heated stones for cooking, whether for boiling water, grilling, or roasting, is an ancient and widespread practice across many indigenous cultures globally."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Ishiyaki",
+            "relationship_reason": "Involves grilling meat on a hot stone, similar to the direct cooking on stones in Tunu Ahi."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-05T01:55:54.168492Z",
-    "total_ich_elements": 117,
-    "complete_records": 108,
-    "incomplete_records": 9,
+    "generated_at": "2026-05-07T01:58:33.731580Z",
+    "total_ich_elements": 119,
+    "complete_records": 109,
+    "incomplete_records": 10,
     "categories_breakdown": {
       "Traditional Craftsmanship": 43,
-      "Social Practices & Rituals": 27,
-      "Culinary Traditions": 22,
+      "Social Practices & Rituals": 28,
+      "Culinary Traditions": 23,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 11,
       "Social Practices & Rituals | Performing Arts": 1,
