@@ -10289,22 +10289,202 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-362bbc5d",
+      "element_name": "Indigenous Oral Storytelling by Elders",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/African_storytelling.jpg",
+      "source_urls": [
+        "https://www.upr.org/utah-news/2021-10-29/storytelling-is-vital-to-many-indigenous-cultures-but-preserving-oral-traditions-can-be-challenging",
+        "https://www.brightsparktravel.ca/blog/indigenous-storytelling-connecting-culture-land-and-healing",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7740283/",
+        "https://www.caring.com/caregivers/oral-histories-seniors-share-stories/",
+        "https://indigenousfoundations.arts.ubc.ca/oral_traditions/",
+        "https://rockandart.org/the-power-of-oral-traditions-stories-passed-through-generations/",
+        "https://medium.com/@zoegrogan_90950/oral-tradition-passing-down-stories-in-indigenous-communities-1f0f4a86708b",
+        "https://buildingbrainstogether.com/oral-traditions-and-storytelling-of-the-indigenous-people/",
+        "https://ich.unesco.org/en/oral-traditions-and-expressions-00007",
+        "https://www.emerald.com/insight/content/doi/10.1108/JD-06-2023-0118/full/html",
+        "https://medium.com/the-medium/observing-oral-tradition-in-indigenous-communities-76672322a3b9",
+        "https://voiceofwitness.org/community-oral-history-projects/",
+        "https://www.mpm.edu/research-collections/history-cultures/first-peoples-wisconsin/oral-traditions",
+        "https://www.neh.gov/article/preserving-resilience-through-oral-histories-snapshot-nehs-cultural-and-community-resilience",
+        "https://e-palli.com/journal/index.php/ijhss/article/view/1063/1010",
+        "https://www.ncoa.org/ncoa-blog/the-native-elder-storytelling-project/",
+        "https://indigenouspeoplesatlasofcanada.ca/article/oral-tradition/",
+        "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/our-breath-being-indigenous-living-through-storying",
+        "https://commons.wikimedia.org/wiki/File:African_storytelling.jpg"
+      ],
+      "scraped_at": "2026-05-09T01:56:57.261981Z",
+      "location": {
+        "country": "Worldwide",
+        "provinces": [
+          "Various Indigenous territories"
+        ],
+        "lat": -33.8938107,
+        "lng": 151.2621478
+      },
+      "resume_analisa": {
+        "description": "Indigenous Oral Storytelling by Elders encompasses the diverse practices across various Indigenous cultures globally where older community members transmit knowledge, history, cultural values, spiritual beliefs, and practical wisdom through spoken narratives. These stories are not merely entertainment but serve as foundational elements for cultural identity, education, and the preservation of ancestral knowledge. They often include myths, legends, historical accounts, genealogies, and moral teachings, adapted to the audience and context.",
+        "cultural_significance": "Oral storytelling is paramount for Indigenous communities, acting as a primary means of cultural continuity and identity formation. It preserves endangered languages, transmits ethical principles, social norms, and collective memory across generations. Elders, as custodians of this knowledge, play a vital role in shaping the character and social behavior of younger generations, fostering a strong sense of belonging and connection to the land and ancestors. The stories also serve as a form of historical record, offering perspectives often absent from written accounts, and contribute to healing and community resilience.",
+        "gemini_tags": [
+          "Oral Traditions",
+          "Indigenous Culture",
+          "Storytelling",
+          "Elders",
+          "Cultural Transmission",
+          "Folklore",
+          "Community Practices",
+          "Knowledge Preservation",
+          "Cultural Identity",
+          "Ancestral Wisdom"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Transmission of Knowledge and Narratives",
+        "materials_and_tools": [
+          "Voice",
+          "Memory",
+          "Gestures",
+          "Expressions",
+          "Music (sometimes)",
+          "Dance (sometimes)",
+          "Communal gathering spaces (e.g., around fires)",
+          "Specific seasonal timings"
+        ],
+        "step_by_step": [
+          "**Designation of Storytellers:** Elders or designated community members, often those with deep knowledge and a strong connection to ancestral teachings, assume the role of storytellers.",
+          "**Contextual Setting:** Stories are typically shared in specific settings, such as during winter evenings when hunting and gathering are less active, around communal fires, in ceremonies, rituals, or everyday social gatherings. Some stories are reserved for particular seasons, times of day, or places.",
+          "**Narrative Delivery:** The elder recounts stories, often with repetition to ensure accuracy and memorization. The delivery is holistic, incorporating gestures, expressions, and sometimes music or dance to create an immersive experience. Stories are often tailored to the age group of the audience and may have non-linear narratives with layered meanings.",
+          "**Audience Engagement and Learning:** Listeners, especially younger generations, are expected to listen attentively, learn the stories, and internalize the embedded lessons. The stories often present moral dilemmas or consequences of behaviors, inviting listeners to interpret them through their own experiences and develop critical thinking skills.",
+          "**Validation and 'Oral Footnoting':** The accuracy of historical narratives is maintained through collective responsibility. Narrators may cite the source of their knowledge, such as a great-grandparent or another elder, a practice sometimes referred to as 'oral footnoting.'",
+          "**Intergenerational Transmission:** The continuous cycle involves younger generations learning from elders and eventually becoming storytellers themselves, ensuring the uninterrupted chain of knowledge transmission."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Canada",
+            "element_name": "First Nations Oral Traditions",
+            "relationship_reason": "Shared practice of transmitting histories, legends, and knowledge through elders."
+          },
+          {
+            "country": "New Zealand",
+            "element_name": "Māori Oral Storytelling",
+            "relationship_reason": "Similar emphasis on oral traditions for cultural identity, history, and environmental connection."
+          },
+          {
+            "country": "United States",
+            "element_name": "Navajo, Shoshone, Paiute, Goshute, Ute, Blackfoot Oral Traditions",
+            "relationship_reason": "Specific examples of Indigenous American tribes where elders transmit knowledge and stories, often seasonally."
+          },
+          {
+            "country": "West Africa",
+            "element_name": "Griot Oral Historians",
+            "relationship_reason": "Professional oral historians who maintain genealogies and historical events through memory."
+          },
+          {
+            "country": "Papua New Guinea",
+            "element_name": "Highlands Community Oral Traditions",
+            "relationship_reason": "Elders telling tales of ancestors, spirits, and the natural world around communal fires."
+          },
+          {
+            "country": "Germany / Celtic Regions (Ireland, Scotland)",
+            "element_name": "European Folktale Transmission",
+            "relationship_reason": "Historical transmission of fairy tales and ballads through maternal lines and community elders."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-99cd846e",
+      "element_name": "Lucha Canaria",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/LuchaCanaria.jpg",
+      "source_urls": [
+        "https://www.seasidesandybeach.com/en/blog/lucha-canaria-a-rich-cultural-heritage-of-the-region/",
+        "https://www.fuerteventura.com/culture/lucha-canaria/",
+        "https://www.europeana.eu/en/item/2059209/data_sounds_2022_02_08_11_25_46_398_Lucha_Canaria",
+        "https://prezi.com/p/09y0k9r_7o0p/lucha-canaria-a-canarian-legacy/",
+        "https://www.lapalma.info/en/the-island/country-and-people/culture/traditions-on-la-palma/",
+        "https://fight2win.nl/lucha-canaria/",
+        "https://grapplezilla.com/lucha-canaria-canarian-wrestling/",
+        "https://www.lanzaroteinformation.com/lucha-canaria-canarian-wrestling/",
+        "https://www.grancanaria.com/turismo/en/culture/traditional-sports/lucha-canaria-canarian-wrestling/"
+      ],
+      "scraped_at": "2026-05-09T01:57:32.350150Z",
+      "location": {
+        "country": "Spain",
+        "provinces": [
+          "Canary Islands"
+        ],
+        "lat": 28.2935785,
+        "lng": -16.6214471
+      },
+      "resume_analisa": {
+        "description": "Lucha Canaria is a traditional wrestling style originating from the Canary Islands, deeply rooted in the aboriginal Guanche culture. It is a contact sport where two wrestlers engage in a circular sand pit known as a 'terrero'. The primary objective is to unbalance the opponent, causing them to touch the ground with any part of their body other than the soles of their feet, typically within a minute and a half. Unlike many wrestling forms, Lucha Canaria prohibits blows or holds, instead relying on a specific set of techniques called 'mañas'.",
+        "cultural_significance": "Lucha Canaria serves as a powerful symbol of Canarian identity and heritage, being an integral part of the islands' cultural fabric since prehistoric times, with evidence found in ancient pintaderas and reliefs. Historically, it was practiced for various purposes, including resolving conflicts, settling territorial disputes, courting ladies, and providing entertainment during popular festivals. Today, it continues as a vibrant living tradition, passed down through generations, and plays a central role in local festivals and community gatherings. The sport places a strong emphasis on 'nobleza,' embodying values of sportsmanship and honor.",
+        "gemini_tags": [
+          "Traditional Sport",
+          "Wrestling",
+          "Canary Islands",
+          "Guanche Culture",
+          "Living Heritage",
+          "Cultural Identity",
+          "Performing Arts",
+          "Social Practice",
+          "Folklore"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Wrestling / Contact Sport",
+        "materials_and_tools": [
+          "Terrero: A circular arena, usually made of sand, featuring concentric circles of 15 and 17 meters in diameter.",
+          "Traditional costume: Consists of a short-sleeved shirt, shorts, and a scarf. Wrestlers wear 'brega clothing' (struggle clothing), including a strong shirt or blouse and 'brega pants', designed to facilitate gripping and prevent tearing."
+        ],
+        "step_by_step": [
+          "1. **Preparation**: Wrestlers don their traditional 'brega clothing' and enter the 'terrero' (sand circle).",
+          "2. **Starting Position ('brega position')**: Opponents crouch at a 90-degree angle with semi-bent legs, bringing their shoulders together with heads to the side. The left hand firmly grasps the opponent's right rolled-up trouser hem, while the right hand is placed on the opponent's left shoulder, with right hands pointing towards the ground.",
+          "3. **Start of the fight**: The referee signals the commencement of the bout.",
+          "4. **Objective**: The goal is to unbalance the opponent and make them touch the ground with any part of their body other than their feet, typically within a minute and a half.",
+          "5. **Allowed Techniques ('mañas')**: Wrestlers employ specific techniques known as 'mañas', categorized into four main groups: 'agarre' (grabbing and lifting), 'cogidas' (gripping, such as 'cogida de muslo' or thigh grip), 'desvío' (deflecting, using the opponent's strength to unbalance them), and 'bloqueo' (blocking with arms and legs).",
+          "6. **Forbidden Actions**: Striking, kicking, punching, strangling, or applying holds are strictly prohibited. Pulling an opponent to the ground is invalid if they fall outside the designated circle.",
+          "7. **Winning**: A wrestler wins a bout by causing their opponent to fall twice. In team competitions, victory is achieved when all opposing fighters are knocked down.",
+          "8. **Sportsmanship**: Following a match, the winner traditionally helps the defeated opponent to their feet and offers a respectful hug, demonstrating the paramount value of 'nobleza' (sportsmanship and honor) in Lucha Canaria."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Morocco (North Africa)",
+            "element_name": "Similar wrestling traditions",
+            "relationship_reason": "Lucha Canaria's origins predate the Spanish conquest of the Canary Islands and it is believed to have been brought from the area that is now Morocco, stemming from the aboriginal Guanche culture which has North African roots."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-07T01:58:33.731580Z",
-    "total_ich_elements": 119,
-    "complete_records": 109,
+    "generated_at": "2026-05-09T01:59:05.548018Z",
+    "total_ich_elements": 121,
+    "complete_records": 111,
     "incomplete_records": 10,
     "categories_breakdown": {
       "Traditional Craftsmanship": 43,
       "Social Practices & Rituals": 28,
       "Culinary Traditions": 23,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 11,
+      "Performing Arts": 12,
       "Social Practices & Rituals | Performing Arts": 1,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 7,
+      "Oral Traditions": 8,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 1,
