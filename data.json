@@ -10469,17 +10469,245 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-e1f6e94b",
+      "element_name": "Batik",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Batik_Indonesia.jpg/576px-Batik_Indonesia.jpg",
+      "source_urls": [
+        "https://www.glooob.com/explore-indonesias-traditional-crafts-a-journey-through-heritage/",
+        "https://www.serunichome.com/blogs/news/indonesia-the-nation-of-handicraft",
+        "https://www.scribd.com/document/425480749/Kliping-Kerajinan-Tangan-Nusantara",
+        "https://www.zewanderingfrogs.com/crafts-of-indonesia/",
+        "https://www.youtube.com/watch?v=A_2_P4G4h7A",
+        "https://www.youtube.com/watch?v=j26M71nK1_M",
+        "https://commons.wikimedia.org/wiki/File:Batik_Indonesia.jpg",
+        "https://www.shutterstock.com/search/batik-indonesia",
+        "https://www.latlong.net/place/yogyakarta-indonesia-22532.html"
+      ],
+      "scraped_at": "2026-05-11T02:06:01.620745Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Yogyakarta",
+          "Pekalongan",
+          "Java",
+          "Bali",
+          "Sumatra"
+        ],
+        "lat": -7.7953473,
+        "lng": 110.3672845
+      },
+      "resume_analisa": {
+        "description": "Batik is a traditional Indonesian method of decorating fabric using wax and dye. The process involves applying wax to fabric to create intricate designs. Subsequently, the fabric is dyed, and the areas covered in wax resist the dye, resulting in beautiful patterns. After the dyeing process, the wax is removed, revealing the stunning design beneath. There are two primary techniques: batik tulis (hand-drawn batik), which uses a canting tool for intricate designs, and batik cap (stamped batik), which utilizes a copper stamp for repeated motifs.",
+        "cultural_significance": "Batik is deeply ingrained in Indonesian culture, considered the national identity and holding a significant place in the country's cultural heritage. It reflects Indonesia's diverse cultural heritage and natural resources, with different regions and ethnic groups having their own distinct patterns and colors. Beyond being an art form, Batik is a way of life and an important component of Indonesia's social, cultural, and religious customs. Its profound cultural value was formally recognized by UNESCO in 2009 when it designated Indonesian Batik as a Masterpiece of Oral and Intangible Heritage of Humanity.",
+        "gemini_tags": [
+          "textile art",
+          "wax-resist dyeing",
+          "traditional Indonesian craft",
+          "intangible cultural heritage",
+          "Indonesian culture",
+          "fabric decoration"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Wax-resist dyeing technique, specifically hand-drawn (Batik Tulis) and stamped (Batik Cap).",
+        "materials_and_tools": [
+          "Fabric (e.g., cotton, silk)",
+          "Wax (hot mala or hot wax)",
+          "Canting (a pen-like tool for hand-drawing wax)",
+          "Copper stamp (for applying wax patterns)",
+          "Dyes (e.g., napto tu, cic suda, developer salt/garam pangit)",
+          "Water",
+          "Soda ash (soda au)",
+          "Containers for mixing and soaking",
+          "Drying racks/lines"
+        ],
+        "step_by_step": [
+          "**Preparation**: Select the fabric and either draw the desired pattern onto it (for Batik Tulis) or prepare the copper stamp (for Batik Cap).",
+          "**Wax Application (Pencantingan/Pengecapan)**: Apply hot wax to the fabric using a canting for intricate hand-drawn designs (Batik Tulis) or a copper stamp for repeated patterns (Batik Cap). The wax acts as a resist, preventing dye from penetrating those areas.",
+          "**Dyeing (Pewarnaan)**:",
+          "    *   Prepare the dye solutions (e.g., mixing napto tu and cic suda in one container, and developer salt in another).",
+          "    *   Soak the fabric in plain water until fully wet, then dry it.",
+          "    *   Dip the fabric into the napal solution, drain, then dip it into the developer salt solution, and drain again. This process can be repeated for different colors, with additional wax applied between each dyeing step to preserve previously dyed areas.",
+          "**Wax Removal (Pelorodan)**:",
+          "    *   Prepare a solution of soda ash (soda au) in hot water.",
+          "    *   Soak the dyed fabric in this hot soda ash solution and gently press until all the wax is removed.",
+          "**Rinsing and Drying**: Rinse the fabric thoroughly in plain water and hang it to dry."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 1.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-447b4a7f",
+      "element_name": "Smudging Ceremony",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//cbcn.ca/en/indigenous-traditional-healing&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://cbcn.ca/en/indigenous-traditional-healing",
+        "https://nativeamericanconnections.org/traditional-healing/",
+        "https://tribaltradeco.com/blogs/tribal-trade-co/important-indigenous-ceremonies",
+        "https://desertbloomhealthcare.com/gems-of-ancient-healing-traditional-native-american-health-practices/"
+      ],
+      "scraped_at": "2026-05-11T02:06:30.727392Z",
+      "location": {
+        "country": "Canada, United States",
+        "provinces": [],
+        "lat": 37.6056575,
+        "lng": -82.3243095
+      },
+      "resume_analisa": {
+        "description": "The Smudging Ceremony is a traditional Indigenous healing ritual practiced by various First Nations, Inuit, Métis, and Native American communities. It is a purification ceremony aimed at cleansing a person, place, or object of negative thoughts, feelings, and energies, thereby purifying the soul and bringing clarity to the mind. This holistic practice addresses imbalances in the body, mind, emotions, and spirit.",
+        "cultural_significance": "Smudging holds profound cultural and spiritual significance, serving as a vital practice for spiritual and mental cleansing, refocusing energy, and strengthening connections to the spiritual world. It is believed to clear negativity, invite positivity, peace, and protection, and promote overall well-being by restoring harmony. The ceremony often involves sacred plants, which are considered gifts from the Earth and are integral to Indigenous cultures.",
+        "gemini_tags": [
+          "Indigenous healing",
+          "Native American",
+          "First Nations",
+          "Spiritual cleansing",
+          "Traditional medicine",
+          "Ritual",
+          "Purification",
+          "Sacred plants",
+          "Holistic health",
+          "Smudging"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Purification Ritual",
+        "materials_and_tools": [
+          "Sacred plants (commonly sage, sweetgrass, cedar, and tobacco)",
+          "Abalone shell or other small, fire-safe container",
+          "Feather or hand (often an eagle feather) for wafting smoke"
+        ],
+        "step_by_step": [
+          "Gather the sacred plants (sage, sweetgrass, cedar, tobacco) and place them in a fire-safe container, such as an abalone shell.",
+          "Carefully ignite the sacred plants, allowing them to catch fire briefly.",
+          "Gently blow out the flames, so the plants smolder and produce smoke, rather than burn with an open flame.",
+          "Using a hand or an eagle feather, waft the smoke around the person or place being cleansed. For a person, the smoke is typically directed around the head, shoulders, body, and limbs.",
+          "As the smoke is wafted, intentions for cleansing, purification, and inviting positive energy are often set or spoken."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.85,
+        "related_elements": [
+          {
+            "country": "Various",
+            "element_name": "Smoke cleansing rituals",
+            "relationship_reason": "The practice of using smoke from burning plants for purification and spiritual cleansing is found in various indigenous cultures worldwide, though the specific plants, tools, and ceremonial contexts may differ."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2518d8bd",
+      "element_name": "Yerushalmi Kugel",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://image.shutterstock.com/image-photo/traditional-jewish-dish-known-yerushalmi-260nw-1349117672.jpg",
+      "source_urls": [
+        "https://www.atimmigrantstable.com/jerusalem-kugel-recipe/",
+        "https://www.jewishfoodsociety.org/recipes/yerushalmi-kugel",
+        "https://www.myjewishlearning.com/the-nosher/yerushalmi-kugel-recipe/",
+        "https://kosherbygloria.com/yerushalmi-kugel/",
+        "https://www.aish.com/jl/f/r/48943891.html",
+        "https://nancooksthebooks.com/easy-yerushalmi-kugel/",
+        "https://www.tasteatlas.com/kugel-yerushalmi",
+        "https://en.wikipedia.org/wiki/Yerushalmi_Kugel",
+        "https://www.ou.org/jewish_action/05/2008/a_kugel_a_kiegel_a_yerushalmi_kugel/",
+        "https://www.myjewishlearning.com/the-nosher/the-tangled-history-of-noodle-kugel/",
+        "https://globalkitchentravels.com/jerusalem-kugel-yerushalmi-kugel/",
+        "https://www.shutterstock.com/image-photo/traditional-jewish-dish-known-yerushalmi-1349117672",
+        "https://www.yivo.org/Yerushalmi-Kugel",
+        "https://kosherfromjerusalem.com/2020/12/20/yerushalmi-kugel-sweet-and-savory/",
+        "https://www.dreamstime.com/photos/kugel-yerushalmi.html"
+      ],
+      "scraped_at": "2026-05-11T02:06:55.240953Z",
+      "location": {
+        "country": "Israel",
+        "provinces": [
+          "Jerusalem"
+        ],
+        "lat": 31.7788472,
+        "lng": 35.2257856
+      },
+      "resume_analisa": {
+        "description": "Yerushalmi Kugel, also known as Jerusalem Kugel, is a distinctive Israeli noodle casserole characterized by its sweet and peppery flavor profile. It is made with thin egg noodles, caramelized sugar, and a generous amount of black pepper, resulting in a dish that is crispy and dark golden-brown on the outside and chewy on the inside.",
+        "cultural_significance": "This dish holds significant cultural importance as a staple of the local Jewish community in Jerusalem since the 18th century. It is traditionally served on Shabbat (the Jewish Sabbath) and Jewish holidays such as Rosh Hashana. The kugel is believed to have originated with Ashkenazi Jewish followers of the Vilna Gaon, known as Perushim, who settled in Jerusalem and adapted their European noodle kugel to incorporate locally available ingredients and tastes. It is considered 'pareve,' meaning it contains neither meat nor dairy, making it suitable for any Jewish meal. Traditionally, Yerushalmi Kugel is often served with pickles, creating a unique combination of sweet, savory, and sour flavors.",
+        "gemini_tags": [
+          "Jewish cuisine",
+          "Israeli cuisine",
+          "Shabbat food",
+          "Holiday food",
+          "Noodle dish",
+          "Caramelized",
+          "Sweet and savory",
+          "Ashkenazi Jewish tradition",
+          "Jerusalem culinary heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Recipe",
+        "materials_and_tools": [
+          "12-16 oz (340-450g) fine or thin egg noodles",
+          "½ cup to ⅔ cup + 2 tablespoons neutral oil (e.g., canola, vegetable)",
+          "1 to 1 ¼ cups granulated sugar (some recipes use dark brown sugar)",
+          "1-2 tablespoons fresh, coarsely ground black pepper (to taste)",
+          "1-1 ½ teaspoons kosher salt (plus more for boiling noodles)",
+          "4-6 large eggs, beaten",
+          "Optional: 1 tablespoon cinnamon (some recipes)",
+          "Large pot (for boiling noodles and mixing)",
+          "Heavy skillet or Dutch oven (oven-safe, for caramelizing and baking)",
+          "Whisk",
+          "Cooking spray or oil for greasing pan"
+        ],
+        "step_by_step": [
+          "Preheat oven to 300-350°F (150-175°C). Grease an oven-safe pot or Dutch oven.",
+          "Cook noodles according to package instructions in a large pot of salted boiling water until al dente. Rinse and drain well. Return to the pot and toss with a small amount of oil to prevent sticking, then set aside to cool slightly.",
+          "In a heavy skillet or the oven-safe pot, heat ½ cup of oil over medium-high heat. Add 1 cup of sugar (or 2 cups dark brown sugar) and melt into a golden to dark amber caramel, stirring occasionally. This typically takes 5-15 minutes. Be careful not to burn the sugar.",
+          "Working quickly, pour the hot caramelized sugar over the cooked noodles and mix well to coat all the noodles. Let the noodle mixture cool for about 10 minutes.",
+          "In a separate bowl, whisk together the beaten eggs, remaining sugar (if any), salt, and black pepper (and cinnamon if using).",
+          "Pour the egg mixture over the noodles and stir thoroughly to incorporate.",
+          "Transfer the noodle mixture into the prepared oven-safe pot, spreading it into an even layer.",
+          "Some recipes suggest frying the kugel on high heat for 5-6 minutes on the stovetop to develop a crust before baking.",
+          "Bake in the preheated oven for 2 hours (or overnight at a lower temperature like 212°F/100°C for a more caramelized result).",
+          "Remove from oven and let it cool slightly before slicing and serving. The outer crust will harden as it cools."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Europe",
+            "element_name": "Noodle Kugel (Ashkenazi varieties)",
+            "relationship_reason": "Yerushalmi Kugel is an adaptation of traditional Ashkenazi noodle kugel, which originated in Europe. The Jewish immigrants brought their kugel traditions to Jerusalem, where they evolved."
+          },
+          {
+            "country": "Middle East",
+            "element_name": "Culinary traditions of Jews from Arab lands",
+            "relationship_reason": "The distinctive use of caramelized sugar and a generous amount of black pepper in Yerushalmi Kugel is attributed to the influence of culinary traditions from Jews of Arab lands, as these ingredients were more accessible and commonly used in the Middle East than in Europe during the 18th-19th centuries, reflecting the cultural blending in Jerusalem."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-09T01:59:05.548018Z",
-    "total_ich_elements": 121,
-    "complete_records": 111,
+    "generated_at": "2026-05-11T02:07:23.416766Z",
+    "total_ich_elements": 124,
+    "complete_records": 114,
     "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 43,
-      "Social Practices & Rituals": 28,
-      "Culinary Traditions": 23,
+      "Traditional Craftsmanship": 44,
+      "Social Practices & Rituals": 29,
+      "Culinary Traditions": 24,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 12,
       "Social Practices & Rituals | Performing Arts": 1,
