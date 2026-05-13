@@ -10697,15 +10697,191 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0a09a457",
+      "element_name": "Noken multifunctional knotted or woven bag, handcraft of the people of Papua",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ich.unesco.org/en/USL/noken-multifunctional-knotted-or-woven-bag-handcraft-of-the-people-of-papua-00619&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ich.unesco.org/en/USL/noken-multifunctional-knotted-or-woven-bag-handcraft-of-the-people-of-papua-00619",
+        "https://www.indonesia.travel/gb/en/destinations/maluku-papua/papua/noken-papua-s-multifunctional-cultural-heritage",
+        "https://www.localcrafts.org/the-art-of-noken-weaving-in-papua-a-bag-that-carries-culture/",
+        "https://www.thecraftatlas.com/crafts/noken",
+        "https://www.unesco-ichcap.org/eng/ek/sub3/pdf_file/Noken.pdf",
+        "https://en.wikipedia.org/wiki/Noken",
+        "https://www.youtube.com/watch?v=sI9_h5lB12I",
+        "https://www.youtube.com/watch?v=L244h_B9-J4",
+        "https://apnews.com/article/noken-papua-indonesia-bag-unesco-craft-9653556f8f5539498260b45d0231908b",
+        "https://www.voanews.com/a/papua-s-noken-bag-symbolizes-knotted-legacy-of-resilience-identity/7447265.html",
+        "https://australian.museum/blog/museum-business/our-global-neighbours-noken-from-papuan-highlands/"
+      ],
+      "scraped_at": "2026-05-13T02:07:16.288371Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Papua",
+          "West Papua"
+        ],
+        "lat": -2.4749149,
+        "lng": 138.08485
+      },
+      "resume_analisa": {
+        "description": "Noken is a traditional multifunctional knotted or woven bag handmade by indigenous communities in Papua and West Papua Provinces of Indonesia. It is crafted from natural fibers and is distinctive for its usage, often being hung from the head to carry various items. The bag is stretchy, strong, and biodegradable, made entirely by hand without the use of looms or machinery. Noken varies in size, material, and design depending on its function and region of origin, with each Papuan community having its own distinctive techniques and motifs.",
+        "cultural_significance": "Noken holds profound cultural significance for the Papuan people. It serves as a practical tool for carrying agricultural produce, firewood, daily necessities, and even babies or small animals. Beyond its utility, Noken is a symbol of maturity for Papuan women; the mastery of Noken crafting indicates a woman's readiness for adulthood and marriage. It also embodies values of life, peace, fertility, sharing, democracy, and truth. Noken is integrated into various social practices, including rituals, education, gifting, and even political processes, where it is recognized as a ballot tool in some areas. The craft is traditionally passed down through generations, primarily from mothers to daughters, reinforcing cultural identity and intergenerational connection. In 2012, UNESCO recognized Noken as an Intangible Cultural Heritage in Need of Urgent Safeguarding, acknowledging its cultural importance and the threats to its continuation.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Indigenous Knowledge",
+          "Cultural Heritage",
+          "Papua",
+          "Indonesia",
+          "Weaving",
+          "Handicraft",
+          "Social Practices",
+          "Rituals",
+          "Sustainability"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Hand-knotting/Weaving",
+        "materials_and_tools": [
+          "Natural fibers (wood fiber, tree bark from melinjo/gnetum tree, yonggoli, huisa, screw pine, pandanus leaves, bamboo reeds, swamp grass, sago palm leaves, orchid stems/roots)",
+          "Natural dyes (from fruits, tree barks, and leaves)",
+          "Fire (for heating fibers)",
+          "Water (for soaking fibers)",
+          "Hands (for spinning and knotting)",
+          "Needle (sometimes used for knitting/crocheting, though traditional is hand-knotting)"
+        ],
+        "step_by_step": [
+          "Collect natural fibers from local plants such as tree bark, orchid roots, or Gnetum tree leaves.",
+          "Process the collected fibers: For wood and bark, cut branches, stems, or bark, then heat them over a fire and soak them in water.",
+          "Dry the processed fibers.",
+          "Spin the dried fibers by hand, often by twisting them tightly on the palms and thighs, to create a strong thread or string.",
+          "Optionally, color the string using natural dyes extracted from local fruits, tree barks, and leaves.",
+          "Knot the string entirely by hand, using a knotless netting technique that creates loops resembling a figure eight, to form bags of various patterns and sizes.",
+          "The entire process requires significant manual skill, care, and artistic sense, and can take from a few days for small bags to several months for larger, more complex ones."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-58bbd176",
+      "element_name": "Myanmar Lacquerware (Bagan Lacquerware)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.turquoisemountain.org/assets/images/_1200x630_crop_center-center_none/TM_Myanmar_Lacquer_01_2017_01_02_13_40_30_c_0.jpg",
+      "source_urls": [
+        "https://www.turquoisemountain.org/what-we-do/myanmar/the-art-of-lacquer",
+        "https://npnews.com/news/655b3400a4611d0b43343a41",
+        "https://en.wikipedia.org/wiki/Bagan",
+        "https://www.tickingthebucketlist.com/lacquer-shopping-in-bagan-tips/",
+        "https://www.dateandtime.info/citycoordinates.php?id=1328906",
+        "https://www.gps-coordinates.net/coordinate/bagan",
+        "https://www.myanmartours.com/myanmar-travel-guide/myanmar-handicrafts/lacquerware.html",
+        "https://sabaidesigns.com/blogs/news/antique-burmese-lacquerware-collection",
+        "https://hladay.com/blogs/news/black-elephant-lacquerware",
+        "https://www.handsatwork.org/u-ba-nyein-lacquerware-workshop-bagan-myanmar/",
+        "https://www.mdn.gov.mm/en/world-heritage-tag-may-provide-fillip-bagan-lacquerware-say-businesses",
+        "https://www.bagan.travel/bagan-lacquerware/",
+        "https://www.soas.ac.uk/event/object-focus-living-tradition-bagan-lacquerware"
+      ],
+      "scraped_at": "2026-05-13T02:08:18.838471Z",
+      "location": {
+        "country": "Myanmar",
+        "provinces": [
+          "Mandalay Region"
+        ],
+        "lat": 20.9872395,
+        "lng": 95.7656747
+      },
+      "resume_analisa": {
+        "description": "Myanmar Lacquerware, locally known as 'Yun-de', is a centuries-old traditional handicraft primarily centered in Bagan, Myanmar. The art form emerged in Myanmar during the 12th and 13th centuries A.D., flourishing under the patronage of the royal court in Mandalay and becoming highly refined in Bagan. It is characterized by its distinctive black color, derived from the sap of the Melanhorrea Usitata tree (thitsi), which sets it apart visually and technically from lacquerware produced in other countries like China and Japan. The craft involves a complex and time-consuming process of applying multiple layers of lacquer to a woven base, followed by intricate engraving and coloring.",
+        "cultural_significance": "Lacquerware holds deep cultural, artistic, and socio-economic significance in Myanmar. It is considered an intangible art of Bagan, with skills passed down through generations within Burmese families. Historically, it was used for royal courts, religious ceremonies, and as gifts to foreign envoys. Today, it serves as a significant souvenir for tourists visiting Bagan, a UNESCO World Heritage Site, and is used in Buddhist ceremonies, household decorations, and traditional festivals. Efforts are ongoing to preserve and promote this craft, with potential for UNESCO Intangible Cultural Heritage inscription to provide global awareness and support.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Lacquerware",
+          "Myanmar",
+          "Bagan",
+          "Cultural Heritage",
+          "Handicraft",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand-made production",
+        "materials_and_tools": [
+          "Lacquer tree sap (thitsi from Melanhorrea Usitata tree)",
+          "Bamboo (coiled or woven)",
+          "Horsehair",
+          "Wood or stone (for bases)",
+          "Cow bone ashes (for 'Thayo' paste)",
+          "Pigments (cinnabar for red, orpiment for yellow, indigo for blue/green)",
+          "Gold leaf",
+          "Sharp tools/stylet (for engraving)",
+          "Brush (for painting)",
+          "Fine fabric (for polishing)",
+          "Acacia gum (for binding color)",
+          "Rice husk (for cleaning)"
+        ],
+        "step_by_step": [
+          "Collecting lacquer sap (thitsi) from the Melanhorrea Usitata tree, primarily found in Myanmar's Shan and Tenasserim regions.",
+          "Creating the base by weaving thin bamboo strips, sometimes combined with horsehair, or using wood or stone.",
+          "Applying multiple layers of lacquer (known as the 'A Net Dee' or 'Thayo' stage). Thitsi, often mixed with cow bone ashes, sawdust, or clay, is applied to the base. Each layer requires drying for several days or weeks in a humid, obscure environment, followed by careful polishing and washing. This process is repeated numerous times, typically 7 to 16 layers, to build strength and smoothness.",
+          "Engraving intricate patterns into the hardened and smoothed lacquer surface using sharp tools.",
+          "Coloring the engraved designs by rubbing various pigments—such as cinnabar for red, orpiment for yellow, and indigo for blue or green—into the etched lines.",
+          "Performing a final polishing to achieve a glossy finish. For luxury or royal items, gold leaf may be applied as a decorative embellishment. The entire production process for a single intricate piece can take from six months to a year."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Lacquer Art",
+            "relationship_reason": "Lacquer art originated in China (3000-5000 years ago) and spread to Myanmar, arriving about 1000 years ago from Yunnan province."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Lacquerware",
+            "relationship_reason": "Lacquer art spread from China to Japan and other surrounding countries."
+          },
+          {
+            "country": "Korea",
+            "element_name": "Lacquerware",
+            "relationship_reason": "Lacquer art spread from China to Korea and other surrounding countries."
+          },
+          {
+            "country": "Vietnam",
+            "element_name": "Lacquerware",
+            "relationship_reason": "Myanmar is one of seven lacquer-producing countries, including Vietnam."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Lacquerware",
+            "relationship_reason": "Myanmar is one of seven lacquer-producing countries, including Thailand. Historical accounts suggest techniques may have also come from regions like Chiangmai in Thailand."
+          },
+          {
+            "country": "Cambodia",
+            "element_name": "Lacquerware",
+            "relationship_reason": "Myanmar is one of seven lacquer-producing countries, including Cambodia."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-11T02:07:23.416766Z",
-    "total_ich_elements": 124,
-    "complete_records": 114,
+    "generated_at": "2026-05-13T02:08:54.511464Z",
+    "total_ich_elements": 126,
+    "complete_records": 116,
     "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 44,
+      "Traditional Craftsmanship": 46,
       "Social Practices & Rituals": 29,
       "Culinary Traditions": 24,
       "Culinary Traditions | Social Practices & Rituals": 1,
