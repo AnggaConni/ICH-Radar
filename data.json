@@ -10873,20 +10873,240 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a1716961",
+      "element_name": "Ramman Festival",
+      "category": "Social Practices & Rituals | Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ramman_Festival.jpg/640px-Ramman_Festival.jpg",
+      "source_urls": [
+        "https://www.youngintach.org/unesco-intangible-cultural-heritage-ramman-garhwal-uttarakhand/",
+        "https://www.himalayandreamtreks.com/ramman-festival-uttarakhand/",
+        "https://en.wikipedia.org/wiki/Ramman_(festival)",
+        "https://ich.unesco.org/en/RL/ramman-religious-festival-and-ritual-theatre-of-the-garhwal-himalayas-india-00281",
+        "https://oaklores.com/behind-the-masks-the-story-of-ramman-festival/",
+        "https://mohitbangari.com/ramman-festival-where-culture-faith-and-tradition-come-together/",
+        "https://www.theunknownindia.com/ramman-festival-uttarakhand/"
+      ],
+      "scraped_at": "2026-05-15T02:07:53.166645Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Uttarakhand"
+        ],
+        "lat": 30.0417376,
+        "lng": 79.089691
+      },
+      "resume_analisa": {
+        "description": "The Ramman Festival is an annual religious festival and ritual theatre held in late April in the twin villages of Saloor-Dungra in the Painkhanda Valley of Chamoli district, Uttarakhand, India. It is dedicated to Bhumiyal Devta, the tutelary god of the village. The festival is characterized by highly complex rituals, including the recitation of a local version of the epic of Rama and various legends, along with performances of songs and masked dances. It is a unique cultural heritage, specific to its location and time, and is not replicated elsewhere in the Himalayas.",
+        "cultural_significance": "Ramman is an endangered cultural heritage that serves as an offering to the village deity, Bhumiyal Devta, believed to protect the land, crops, and the entire community. It is an agrarian festival celebrating the intrinsic ties between humans, nature, and the divine. The festival is a vital source for the oral transmission of various heritage components, with skills in dance, singing, and drumming passed down through hereditary communities across generations. It fosters social cohesion, binding together people from diverse social strata and ethnic backgrounds through shared practices, beliefs, and professions. The festival combines the sacred and the social, ritualistic elements with revelry, and expresses the history, faith, lifestyle, fears, and hopes of the Saloor-Dungra villagers through a blend of oral, literary, visual, kinetic, and traditional craft forms.",
+        "gemini_tags": [
+          "Ritual Theatre",
+          "Folk Festival",
+          "Masked Dance",
+          "Oral Tradition",
+          "Community Practice",
+          "Hindu Festival",
+          "Uttarakhand Culture",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Religious Festival and Ritual Theatre",
+        "materials_and_tools": [
+          "Wooden masks (handcrafted from local trees, spiritually venerated)",
+          "Make-up materials (sheep's wool, honey, vermilion, wheat flour, oil, turmeric, soot, locally grown plants and vegetables)",
+          "Traditional Garhwali musical instruments (drums, reed pipes like mohuri and shehnai, cymbals)",
+          "Red cloth band (tied over actors' foreheads during performance)",
+          "Oil lamp (placed on stage, symbolizing divine presence)"
+        ],
+        "step_by_step": [
+          "The festival is the culmination of a year-long religious cycle of Bhumiyal Devta; every year, after the Ramman festival, the deity resides in a selected village family's house for one year, where daily rituals and offerings are performed.",
+          "The village priest announces the precise date for the Ramman festival, which typically falls on the ninth or eleventh day after Baisakhi (a harvest festival in April).",
+          "On the day of Baisakhi, Bhumiyal Devta comes out in a procession to the temple. Before the festival officially begins, a ceremonial procession carries the deity back to the temple courtyard from the family's residence where it resided for the year.",
+          "On the second day of the festival, villagers offer 'hariyali' (sprouted barley plants) to the deity, who in turn promises prosperity and good agricultural yield.",
+          "Throughout the 10 to 13-day festival, daily rituals are performed in the temple, and the deity visits different parts of the village.",
+          "The performances commence with an invocation to Lord Ganesha, the remover of obstacles.",
+          "Masked dances and songs are performed, depicting a local version of the epic of Lord Rama and various aspects of everyday life. These include dances of Ganesha and Parvati, the Sun God, Bur Deva along with Gopi Chand (Krishna) and Radhika, the Mwar-Mwarin dance (showcasing the travails of buffalo herders), and the Baniya-Baniyain Nritya (dance of the trader-couple depicting hardships).",
+          "The performances are accompanied by rhythmic drumming and the singing of 'Jagar', a form of musical rendition of local legends and oral epics by professional bards known as Jagaris or Bhallas.",
+          "Performers wear sacred wooden masks, handcrafted and imbued with spiritual veneration, representing specific characters and gods. Make-up is applied using natural materials such as sheep's wool, honey, vermilion, wheat flour, oil, turmeric, soot, and locally grown plants.",
+          "Community members play distinct roles: villagers of Saloor-Dungra are the main organizers and financiers; Bhandaris (Kshatriya caste) have the exclusive right to wear the sacred mask of Narsingh Devta; Das drummers (from the lowest caste) provide the music; Brahmin priests conduct rituals; and Baaris and Dhaaris are responsible for organization and fund collection.",
+          "A 'Koorjogi' ceremony takes place where a character pulls out weeds (koor) from village fields, and people engage in a communal sport of throwing these weeds at each other.",
+          "The festival concludes with a communal feast where the 'prasada' (sacrament) of the deity is distributed among the villagers."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Ramlila",
+            "relationship_reason": "The Ramman Festival involves the recitation and enactment of a local version of the epic of Rama, similar to Ramlila, which is a dramatic folk re-enactment of the life of Rama performed across India."
+          },
+          {
+            "country": "India (Kerala)",
+            "element_name": "Mudiyettu / Kutiyattam",
+            "relationship_reason": "Like Mudiyettu and Kutiyattam, Ramman is a form of ritualistic theatre with elaborate costumes, make-up, and significant community participation, often performed in sacred spaces like temple courtyards, reflecting a broader Indian tradition of devotional performing arts."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-798c1804",
+      "element_name": "Traditional skills, techniques and knowledge for the conservation and transmission of wooden architecture in Japan",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/01618-CL2-2019-000003.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/01618",
+        "https://bunka.nii.ac.jp/heritages/detail/207000/512",
+        "https://denkenko.jp/selected-techniques/",
+        "https://japanwoodcraft.org/traditional-construction-method/",
+        "https://edokagura.com/en/kigumi/",
+        "https://www.arch2o.com/japanese-wood-joints-kigumi/",
+        "https://www.nihonkenchikuhozon.or.jp/en/traditional-techniques/"
+      ],
+      "scraped_at": "2026-05-15T02:08:25.220836Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Various prefectures across Japan, including Nara, Kyoto, Tochigi"
+        ],
+        "lat": 36.5748441,
+        "lng": 139.2394179
+      },
+      "resume_analisa": {
+        "description": "This cultural heritage encompasses a comprehensive set of traditional skills, techniques, and knowledge essential for constructing new wooden buildings and meticulously restoring existing ones in Japan. It involves various specialized crafts such as plastering, the cultivation and harvesting of raw materials, lacquer painting on traditional structures, and the intricate production of tatami mats. A core aspect is 'Kigumi,' a sophisticated system of wood joinery (Tsugite and Shiguchi) that enables the creation of robust, earthquake- and typhoon-resistant structures primarily using wood, often without metal fasteners. The tradition emphasizes the profound understanding and sustainable utilization of natural materials like wood, grass, and earth.",
+        "cultural_significance": "The traditional skills for wooden architecture are vital for safeguarding Japan's rich wooden architectural heritage, including its numerous temples, shrines, castles, and traditional houses. This practice fosters strong cooperation and social cohesion within communities, reinforcing a shared cultural identity by transmitting ancestral wisdom and techniques across generations. The inherent design principles, particularly in joinery, contribute to the remarkable resilience of these structures against natural disasters prevalent in Japan, such as earthquakes and typhoons. Furthermore, the heritage promotes sustainable development through the cyclical harvesting and reuse of natural resources, reflecting a deep respect for nature.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Wooden Architecture",
+          "Conservation",
+          "Restoration",
+          "Japan",
+          "Intangible Cultural Heritage",
+          "Sustainable Materials",
+          "Earthquake Resistance",
+          "Joinery",
+          "Traditional Skills"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Wood Joinery (Kigumi)",
+        "materials_and_tools": [
+          "Various types of wood (e.g., cedar, Japanese cypress, pine, chestnut)",
+          "Hand tools (e.g., planes, chisels, saws)"
+        ],
+        "step_by_step": [
+          "**Material Selection**: Carpenters meticulously examine the unique properties and nature of different types of lumber, such as cedar, Japanese cypress, pine, or chestnut, to select the most suitable wood for each specific structural component.",
+          "**Kizami (Hand-carving/Processing)**: Using traditional hand tools like planes, chisels, and saws, craftspeople intricately carve and process the ends of timber. This involves making precise holes and cutouts, transforming raw wood into functional structural members.",
+          "**Joinery - Tsugite**: This technique involves connecting timber pieces end-to-end to create longer beams. It often utilizes complex geometric locks that are designed to become stronger under load, ensuring structural integrity without relying on metal fasteners.",
+          "**Joinery - Shiguchi**: This method focuses on connecting timbers at right angles, such as posts to beams. It involves creating three-dimensional, interlocking puzzles where the wood itself acts as the fastener, effectively distributing stress across multiple contact points.",
+          "**Assembly**: The precisely carved and joined wooden components are fitted together tightly to form a sturdy and flexible framework. This assembly is often achieved without the use of metal fasteners like nails or screws, relying solely on the intricate joinery.",
+          "**Placement on Cornerstones**: The completed wooden frame is typically placed on granite cornerstones (ishibadate). This foundation method allows the structure to respond fluidly to external forces, such as seismic activity, by enabling controlled movement.",
+          "**Conservative Restoration (Ongoing)**: The heritage includes continuous efforts in conservative restoration. This involves regular repairs and renovations to address wear, weathering, mold, and damage from natural disasters. Skilled craftspeople work collaboratively to replace only damaged parts, ensuring harmony and unity between the original and new components."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Global",
+            "element_name": "Traditional wooden construction and joinery techniques",
+            "relationship_reason": "While Japanese techniques are highly specialized, the fundamental principles of constructing with wood and creating various types of joints are found in traditional architectural practices across many cultures globally. Modern seismic engineering also draws inspiration from the flexibility and energy dissipation achieved by traditional Japanese wood joints."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-9bf6664b",
+      "element_name": "Kyo-Yuzen",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//kanko.city.kyoto.lg.jp/tradition/kyo-yuzen/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://kanko.city.kyoto.lg.jp/tradition/kyo-yuzen/",
+        "https://www.sensho.or.jp/process/",
+        "https://kogeijapan.com/locale/en/kyo-yuzen-textiles/",
+        "https://www.kimono-maruhisa.com/column/yuzen-dyeing/",
+        "https://artsandculture.google.com/asset/kyo-yuzen-kata-yuzen/"
+      ],
+      "scraped_at": "2026-05-15T02:09:05.683131Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Kyoto Prefecture"
+        ],
+        "lat": 35.242552,
+        "lng": 135.454601
+      },
+      "resume_analisa": {
+        "description": "Kyo-Yuzen is a traditional Japanese dyeing technique, primarily used for kimonos and obis, originating in Kyoto during the Edo period. It is characterized by its free and vibrant designs, often featuring natural landscapes, flowers, and birds. The creation of Kyo-Yuzen involves a highly specialized, multi-step process, traditionally executed by different artisans, each specializing in a particular stage. This division of labor ensures the exquisite detail and quality of the finished textile.",
+        "cultural_significance": "Kyo-Yuzen is a representative dyeing technique of Kyoto and holds significant cultural importance in Japan, embodying a refined aesthetic sense. Its history dates back to the late 17th century, with the designs often inspired by the work of the fan painter Miyazaki Yuzensai. It is synonymous with the elegant and colorful Japanese kimono, reflecting centuries of cultivated beauty and intricate skill. Kyo-Yuzen is a vital part of Japan's kimono culture and is recognized as a traditional craft that has continuously evolved while preserving its heritage.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Textile Art",
+          "Dyeing Technique",
+          "Japanese Culture",
+          "Kimono",
+          "Kyoto"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Textile Dyeing (Resist Dyeing and Hand-Painting)",
+        "materials_and_tools": [
+          "Silk fabric (for kimono/obi)",
+          "Aobana (blue flower liquid for preliminary drawing)",
+          "Mochinori (rice paste for resist dyeing)",
+          "Dyes (natural and chemical)",
+          "Various brushes and spatulas",
+          "Steamers",
+          "Water",
+          "Gold powder/leaf",
+          "Embroidery threads",
+          "Needles",
+          "Shinshi (bamboo stretchers)",
+          "Hiki-ko (powdered rice bran)"
+        ],
+        "step_by_step": [
+          "1. Planning and Design (企画考案): Dyeing masters (sensho) conceive the design, considering patterns, color placement, and balance based on various art and craft materials. They also select the appropriate fabric for the garment and design.",
+          "2. Fabric Stretching (ゆのし - Yunoshi): The fabric is stretched with steam to adjust its length and width, remove wrinkles, promote color development, and add luster. This process is performed three times throughout the overall production.",
+          "3. Measuring and Marking (検尺・墨打ち - Kenjaku/Sumuuchi): The fabric is measured, and sections for sleeves, body, and overlap are marked with ink.",
+          "4. Temporary Tailoring (仮絵羽仕立て - Kari-eba shitate): The fabric is temporarily sewn into the shape of a kimono to ensure that the pattern aligns correctly after dyeing.",
+          "5. Preliminary Drawing (下絵 - Shita-e): Based on the design, the pattern is drawn onto the white fabric using a thin blue flower liquid (aobana). The outline is drawn first with a light solution, then refined with a darker one. After this, the temporary tailoring is is undone, and the fabric sections are stretched with bamboo shinshi to prevent distortion.",
+          "6. Paste Resist Application (糊置 - Nori-oki / ゴム糸目 - Gomu-itome): A resist paste (itome-nori, often made from mochi paste or rubber in modern methods) is applied along the drawn lines. This prevents dyes from bleeding into other areas during the subsequent coloring process.",
+          "7. Color Application (挿し友禅 - Sashi-Yuzen): Dyes are meticulously applied within the paste-resisted areas using various brushes. Lighter colors are applied first, followed by darker ones. This step requires high dyeing skill and a keen sense of color, as the artisan's creativity influences the final result.",
+          "8. Paste Resist Application for Background (伏せ糊 - Fuse-nori): After the pattern is colored, a paste (fuse-nori) is applied over the dyed pattern areas, and then powdered rice bran (hiki-ko) is sprinkled on top. This protects the colored patterns from the background dye.",
+          "9. Background Dyeing (引染 - Hiki-zome / 地染め - Ji-zome): The background color is applied evenly using a large brush. For darker colors, the dyeing process may be repeated two to three times to achieve depth.",
+          "10. Steaming (蒸し - Mushi): The dyed fabric is steamed at approximately 100 degrees Celsius for 20-50 minutes to fix the dyes. For darker background colors, this step may be repeated multiple times.",
+          "11. Washing (水元 - Mizumoto): The fabric is thoroughly washed with plenty of high-quality water to remove excess dyes and all resist pastes.",
+          "12. Gold Decoration (金彩 - Kinsai): Gold leaf, gold powder, or silver leaf/powder is applied to add luxurious accents. Various techniques like surihaku (stencil printing with gold/silver leaf) and kinkuri (gold powder application) are used.",
+          "13. Embroidery (刺繡 - Shishu): Silk, gold, and silver threads are used to add embroidery, giving the patterns elegance, vibrancy, and a three-dimensional effect.",
+          "14. Final Stretching and Finishing (ゆのし - Yunoshi / 地直し - Jinaoshi): The fabric undergoes a final stretching (age-noshi) and finishing to prepare it for tailoring."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.9,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-13T02:08:54.511464Z",
-    "total_ich_elements": 126,
-    "complete_records": 116,
+    "generated_at": "2026-05-15T02:09:59.835392Z",
+    "total_ich_elements": 129,
+    "complete_records": 119,
     "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 46,
+      "Traditional Craftsmanship": 48,
       "Social Practices & Rituals": 29,
       "Culinary Traditions": 24,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 12,
-      "Social Practices & Rituals | Performing Arts": 1,
+      "Social Practices & Rituals | Performing Arts": 2,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 8,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
