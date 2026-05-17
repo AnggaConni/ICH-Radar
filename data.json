@@ -11093,26 +11093,343 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-13951cec",
+      "element_name": "Vanuatu Sand Drawing (Sandroing)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00073-RL-EN-00073-Thumb.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sand_drawing",
+        "https://ich.unesco.org/en/RL/vanuatu-sand-drawings-00073",
+        "https://www.atlasofendangeredalphabets.com/vanuatu-sand-writing/",
+        "https://www.scispace.com/article/10.1111/taja.12428",
+        "https://www.sista.com.vu/sand-drawing-a-dying-practice/",
+        "https://www.culturalaffairs.org/sandroing-tracing-kastom-in-vanuatu-exhibit/",
+        "https://www.museumofnewmexicofoundation.org/sandroing-tracing-kastom-in-vanuatu/",
+        "https://tourism.gov.vu/news/sandroing-tracing-kastom-in-vanuatu"
+      ],
+      "scraped_at": "2026-05-17T02:02:53.953431Z",
+      "location": {
+        "country": "Vanuatu",
+        "provinces": [
+          "Central Islands",
+          "Northern Islands",
+          "Ambrym Island",
+          "Pentecost Island",
+          "Malakula",
+          "Ambae",
+          "Paama"
+        ],
+        "lat": -16.5255069,
+        "lng": 168.1069154
+      },
+      "resume_analisa": {
+        "description": "Vanuatu Sand Drawing, known as \"sandroing\" in Bislama, is an artistic and ritual tradition recognized by UNESCO as a Masterpiece of the Oral and Intangible Heritage of Humanity. This practice involves tracing a continuous meandering line on an imagined grid in sand, volcanic ash, or clay using a single finger to create graceful, often symmetrical, geometric patterns. It serves as a vital means of communication among the approximately 80 different language groups inhabiting the central and northern islands of Vanuatu. The drawings function as mnemonic devices, recording and transmitting rituals, mythological lore, local histories, cosmologies, kinship systems, song cycles, farming techniques, architectural and craft designs, and choreographic patterns. The ephemeral nature of sandroing means the drawings exist only at the moment of creation before being erased or dissolved by natural elements.",
+        "cultural_significance": "Sandroing is more than mere art; it is a profound symbolic language and a cultural treasure, forming a vital part of Vanuatu's cultural identity and \"kastom\" (traditional culture). These drawings hold multiple layers of meaning and function as artistic expressions, repositories of information, illustrations for stories, signatures, or objects of contemplation. They are employed to impart social responsibility to children, explain complex philosophical concepts to adults, and some sacred drawings are believed to facilitate access to the afterlife. The practice integrates art, geometry, storytelling, and sometimes singing, representing a polysemiotic form of communication that combines language, gesture, and visual depiction.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Intangible Cultural Heritage",
+          "Storytelling",
+          "Rituals",
+          "Geometric Art",
+          "Indigenous Knowledge",
+          "Communication System",
+          "Mnemonic Device",
+          "Performance Art",
+          "Vanuatu",
+          "Pacific Islands"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance art / Drawing ritual",
+        "materials_and_tools": [
+          "Fine black volcanic ground (sand, volcanic ash, or clay)",
+          "White ashes (to strengthen contrast)",
+          "Single finger",
+          "Coconut leaf broom (for cleaning)",
+          "Siel leaves (to set respectful perimeter)"
+        ],
+        "step_by_step": [
+          "A flat area of fine black volcanic ground (sand, volcanic ash, or clay) is cleaned, often using the palm of the hand or a coconut leaf broom.",
+          "White ashes may be sprinkled over the drawing space to enhance the contrast between the drawn line and the background.",
+          "Siel leaves are sometimes planted around the drawing space to establish a respectful perimeter.",
+          "An imagined or physically traced grid is established on the chosen surface, sometimes by drawing vertical lines from left to right, followed by horizontal lines from top to bottom.",
+          "Using a single index finger, the artist traces a continuous meandering line within this grid, forming intricate geometric patterns.",
+          "A fundamental rule is that the finger should not be lifted from the surface until the entire image is complete, and the line typically starts and ends at the same point, ideally without retracing any path.",
+          "During the drawing process, the artist often narrates a story, with the visual patterns illustrating the unfolding narrative.",
+          "Upon completion, the artist may contemplate the drawing and verbally interpret its various parts and deeper meanings to the audience.",
+          "The drawing is then either intentionally erased or left to be dissolved by the elements, emphasizing its ephemeral nature and the transient beauty of the performance."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "United States",
+            "element_name": "Navajo Sand Painting",
+            "relationship_reason": "Similar form of art involving drawing in sand, though Navajo sand painting incorporates colored sands and is often part of healing ceremonies."
+          },
+          {
+            "country": "Australia",
+            "element_name": "Aboriginal Dot Paintings",
+            "relationship_reason": "Dot paintings from Central Australia originated as drawings in the sand."
+          },
+          {
+            "country": "Angola",
+            "element_name": "Tchokwe (Chokwe) sand narratives (Sona)",
+            "relationship_reason": "Tchokwe people draw pictures in the sand to illustrate their stories, sharing a similar 'storyline' aspect with Vanuatu sand drawings."
+          },
+          {
+            "country": "Ancient Greece",
+            "element_name": "Geometric figures drawn in sand for studying geometry",
+            "relationship_reason": "Ancient Greek mathematicians utilized sand drawings to study geometry."
+          },
+          {
+            "country": "Various (Celtic, Islamic)",
+            "element_name": "Celtic knots and Islamic interlace patterns",
+            "relationship_reason": "Aesthetically, Vanuatuan sandroings share similarities with the intricate patterns found in Celtic knots and Islamic interlace designs."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0d391b67",
+      "element_name": "Opera dei Pupi (Sicilian Puppets)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://ich.unesco.org/en/photo-up/opera-dei-pupi-sicilian-puppet-theatre-00011#tabs",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/opera-dei-pupi-sicilian-puppet-theatre-00011",
+        "https://en.wikipedia.org/wiki/Opera_dei_Pupi",
+        "https://www.livetheworld.com/post/palermo-and-the-sicilian-puppets-art-2l2p",
+        "https://www.discovermessinasicily.com/sicilian-puppets-a-centuries-old-tradition/",
+        "https://whartibus.com/opera-dei-pupi-intangible-cultural-heritage-by-unesco/",
+        "https://www.visitsicily.info/en/the-opera-dei-pupi/",
+        "https://wepa.unima.org/en/pupi/",
+        "https://www.italia.it/en/sicily/catania/opera-dei-pupi-sicily"
+      ],
+      "scraped_at": "2026-05-17T02:03:29.357896Z",
+      "location": {
+        "country": "Italy",
+        "provinces": [
+          "Sicily",
+          "Palermo",
+          "Catania",
+          "Messina",
+          "Syracuse",
+          "Agrigento",
+          "Trapani",
+          "Caltanissetta",
+          "Enna",
+          "Ragusa"
+        ],
+        "lat": 37.587794,
+        "lng": 14.155048
+      },
+      "resume_analisa": {
+        "description": "The Opera dei Pupi, or Sicilian Puppet Theatre, is a traditional theatrical form that originated in Sicily, Italy, in the early 19th century. It features intricately crafted puppets, known as 'pupi,' which re-enact epic tales of chivalry, primarily from the Carolingian Cycle, such as 'Orlando Furioso' and 'Chanson de Roland'. The puppeteers, called 'pupari,' bring these characters to life through narration, improvisation, singing, and intricate manipulation. This complex art form is recognized by UNESCO as an Intangible Cultural Heritage of Humanity since 2008.",
+        "cultural_significance": "The Opera dei Pupi is a profound expression of Sicily's historical memory and cultural identity. It served as a vital educational tool and a shared community experience, fostering social cohesion by allowing audiences to connect with common stories and values like loyalty, bravery, and justice. The performances often reflect timeless human struggles and can even be used to address contemporary civic issues, as exemplified by puppets representing figures like Judges Falcone and Borsellino.",
+        "gemini_tags": [
+          "Sicilian Puppetry",
+          "Traditional Theatre",
+          "Italian Folklore",
+          "Puppet Making",
+          "Intangible Cultural Heritage",
+          "Chivalric Epics",
+          "Craftsmanship",
+          "Performing Arts",
+          "Sicily"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship (Puppet Making)",
+        "materials_and_tools": [
+          "Wood (for skeleton, head, limbs)",
+          "Straw (for frame covering)",
+          "Sackcloth (for covering)",
+          "Iron rings (to join torso to limbs and head)",
+          "Brass/metal (for armor)",
+          "Precious fabrics (for clothing/cloaks)",
+          "Fine brushes",
+          "Bright colors (for painting faces and details)",
+          "Iron rods (for manipulation)",
+          "Strings (for articulation, especially in Palermo style)"
+        ],
+        "step_by_step": [
+          "Carving the wood: Craftsmen meticulously carve wood to create the solid structure of the puppets, including expressive faces, arms, and legs.",
+          "Building the skeleton/frame: A wooden skeleton, often with a spruce-based frame, is constructed. This frame may then be covered with straw and sackcloth.",
+          "Assembling the body: The torso is joined to the limbs and head using iron rings to enable movements that simulate the human body.",
+          "Creating and attaching armor: Elaborate metal armor, frequently made of brass, is chiseled, welded, and then adorned and attached to the puppet.",
+          "Tailoring and dressing: The puppet is dressed in precious fabrics, cloaks, and robes, with costumes designed to characterize the specific role.",
+          "Painting: Faces and other intricate details are hand-painted using fine brushes and vibrant colors.",
+          "Implementing the maneuvering mechanism: A solid iron rod passes through the puppet's body and head for primary manipulation. In the Palermo style, additional rods and strings are used to articulate the visor, knee, and sword arm, while in the Catania style, two iron rods are typically used from a stage bridge."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "France",
+            "element_name": "Chansons de geste",
+            "relationship_reason": "Historical literary influence, as the epic tales performed are largely based on medieval French chivalric literature."
+          },
+          {
+            "country": "Europe",
+            "element_name": "Renaissance epics and 18th-century marionette theatre",
+            "relationship_reason": "The Opera dei Pupi has roots in broader European theatrical and literary traditions, including Renaissance epics and earlier forms of marionette theatre."
+          },
+          {
+            "country": "Spain",
+            "element_name": "Chivalry puppet theatre",
+            "relationship_reason": "Puppet theatre on chivalric themes was known in Spain in the 16th century, predating its spread to Italy."
+          },
+          {
+            "country": "Italy (Naples)",
+            "element_name": "Puppet theatre",
+            "relationship_reason": "The tradition of puppet theatre on chivalry spread to Sicily from Naples in the early decades of the 19th century."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-79c4c9a9",
+      "element_name": "The know-how and practice of simples in Réunion (Les savoir-faire et la pratique des simples à la Réunion)",
+      "category": "Social Practices & Rituals | Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.woundi.fr/blog/l-evolution-de-la-connaissance-des-plantes-medicinales-a-la-reunion/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.woundi.fr/blog/l-evolution-de-la-connaissance-des-plantes-medicinales-a-la-reunion/",
+        "https://fr.wikipedia.org/wiki/Phytoth%C3%A9rapie_%C3%A0_La_R%C3%A9union",
+        "https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Fiches-d-inventaire/Les-savoir-faire-et-la-pratique-des-simples-a-la-Reunion",
+        "https://journals.openedition.org/ethnomedecine/1806",
+        "https://journals.openedition.org/ethnomedecine/1806",
+        "https://www.officetourisme-ouest.com/blog/les-tisaneurs-gardiens-de-la-memoire-reunionnaise/",
+        "https://www.tilt.fr/environnement/les-savoirs-ancestaux-des-tisaniers-de-lile-de-la-reunion/",
+        "https://www.mesenseignes.fr/tisaneur-974-la-reunion-a-saint-pierre/cest-moi-974-la-reunion-herboristerie-saint-pierre-97410"
+      ],
+      "scraped_at": "2026-05-17T02:04:05.681041Z",
+      "location": {
+        "country": "France",
+        "provinces": [
+          "Réunion"
+        ],
+        "lat": -21.1309332,
+        "lng": 55.5265771
+      },
+      "resume_analisa": {
+        "description": "The know-how and practice of simples in Réunion, also known as traditional Réunionnais medicine or phytotherapy, is an ancestral cultural heritage of Réunion, a French overseas department in the Indian Ocean. It encompasses the extensive knowledge and utilization of medicinal plants for healing purposes, transmitted across generations. This practice is deeply embedded in the island's history, shaped by the diverse populations who settled there, including African slaves, Indian and Chinese indentured laborers, Malagasy people, and European colonists. This creolization of knowledge has resulted in a unique pharmacopoeia. Key figures in this tradition are the \"tisaneurs\" (herbalists), who possess expertise in identifying, harvesting, and preparing plants for various ailments. The term \"simples\" refers to medicinal plants used in their natural, unprocessed state or in simple preparations.",
+        "cultural_significance": "This traditional medicine is a vital component of Réunion's cultural identity, embodying resilience and ancestral knowledge. It represents a holistic approach to health, where the connection between humans and plants holds both spiritual and medical significance. The practice is primarily transmitted orally within families and communities, fostering a deep respect for nature. Despite the advent of modern biomedicine, the use of medicinal plants remains a frequent therapeutic recourse, particularly for chronic conditions like diabetes and even as a complement to conventional cancer treatments. \"Jardins créoles\" (Creole gardens) serve as important spaces for cultivating these medicinal plants. The practice is seen as a living heritage, with efforts being made to preserve and transmit this knowledge to future generations.",
+        "gemini_tags": [
+          "Traditional Medicine",
+          "Phytotherapy",
+          "Herbalism",
+          "Cultural Heritage",
+          "Réunion",
+          "Indian Ocean",
+          "Creole Culture",
+          "Ethnobotany",
+          "Healing Practices",
+          "Oral Traditions",
+          "Medicinal Plants"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Herbal medicine preparation and application",
+        "materials_and_tools": [
+          "Medicinal plants (leaves, flowers, roots/rhizomes) such as mahot tantan, zèb à pik (Chrysopogon nigritanus), tizan fèy douvan (ti-baume/Mélisse), ginger (Zingiber officinale), ambaville, moringa, tribulus, bois de reinette, indigo, ayaparna.",
+          "Water",
+          "Pots for boiling/infusion",
+          "Containers for maceration",
+          "Tools for harvesting (e.g., knife, basket)"
+        ],
+        "step_by_step": [
+          "**1. Identification and Gathering:** Knowledgeable individuals, often \"tisaneurs\" or family members, identify and collect specific medicinal plants. These plants are sourced from \"jardins créoles\" (Creole gardens) or the natural environment, particularly in the highlands of Réunion. The timing of harvesting can be crucial for optimal potency.",
+          "**2. Preparation:** Plants are prepared in various forms depending on the ailment and the specific plant part used. Common methods include:",
+          "    *   **Infusions:** Steeping plant parts (e.g., leaves, flowers) in hot water. This is a common method for preparing \"tisanes\" (herbal teas).",
+          "    *   **Decoctions:** Boiling tougher plant parts (e.g., roots, bark) in water for a longer period to extract active compounds. The mixture is brought to a boil and maintained at temperature for two to fifteen minutes, then cooled and filtered.",
+          "    *   **Cataplasms:** Crushing or mashing plant material and applying it directly to the affected area of the skin.",
+          "    *   **Macerated oils:** Soaking plant parts in oil for several hours, days, or weeks to extract fat-soluble compounds.",
+          "    *   **Baths:** Preparing herbal concoctions for therapeutic baths.",
+          "    *   **Syrups:** Creating concentrated sweet preparations from plant extracts.",
+          "**3. Application/Consumption:** The prepared remedies are then consumed orally (e.g., as herbal teas) or applied externally, often within a home setting. The \"tisaneur\" adapts the specific treatment and plant combination based on the patient's symptoms and the perceived cause of the illness, which can be physical, social, or spiritual."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Madagascar",
+            "element_name": "Traditional Malagasy Medicine (Raokandro malagasy)",
+            "relationship_reason": "Significant influence on Réunionnais traditional medicine due to shared knowledge of pharmacopoeia and historical migration."
+          },
+          {
+            "country": "India",
+            "element_name": "Ayurveda and traditional Indian medicine",
+            "relationship_reason": "Influence from Indian indentured laborers who brought their knowledge of medicinal plants and healing practices."
+          },
+          {
+            "country": "Africa",
+            "element_name": "Traditional African healing practices",
+            "relationship_reason": "Roots in the knowledge of medicinal plants and healing rituals brought by African slaves."
+          },
+          {
+            "country": "China",
+            "element_name": "Traditional Chinese Medicine",
+            "relationship_reason": "Enrichment of knowledge from Chinese indentured laborers."
+          },
+          {
+            "country": "France",
+            "element_name": "European folk medicine",
+            "relationship_reason": "Contribution from European colonists, including the introduction of new plants and medical concepts."
+          },
+          {
+            "country": "Comoros Archipelago",
+            "element_name": "Traditional medicine practices of Comoros",
+            "relationship_reason": "Shared heritage and practices within the Southwest Indian Ocean islands."
+          },
+          {
+            "country": "Mauritius",
+            "element_name": "Traditional medicine practices of Mauritius",
+            "relationship_reason": "Shared heritage and practices within the Southwest Indian Ocean islands."
+          },
+          {
+            "country": "Rodrigues Island",
+            "element_name": "Traditional medicine practices of Rodrigues",
+            "relationship_reason": "Shared heritage and practices within the Southwest Indian Ocean islands."
+          },
+          {
+            "country": "Seychelles",
+            "element_name": "Traditional medicine practices of Seychelles",
+            "relationship_reason": "Shared heritage and practices within the Southwest Indian Ocean islands."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-15T02:09:59.835392Z",
-    "total_ich_elements": 129,
-    "complete_records": 119,
+    "generated_at": "2026-05-17T02:04:42.468496Z",
+    "total_ich_elements": 132,
+    "complete_records": 122,
     "incomplete_records": 10,
     "categories_breakdown": {
       "Traditional Craftsmanship": 48,
-      "Social Practices & Rituals": 29,
+      "Social Practices & Rituals": 30,
       "Culinary Traditions": 24,
       "Culinary Traditions | Social Practices & Rituals": 1,
-      "Performing Arts": 12,
+      "Performing Arts": 13,
       "Social Practices & Rituals | Performing Arts": 2,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 8,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 1,
-      "Social Practices & Rituals | Culinary Traditions": 1
+      "Social Practices & Rituals | Culinary Traditions": 1,
+      "Social Practices & Rituals | Traditional Craftsmanship": 1
     }
   }
 }
