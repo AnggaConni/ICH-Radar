@@ -11409,17 +11409,183 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5a07be24",
+      "element_name": "Cinavu (Abai)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.wildchina.com/blog/taiwanese-cuisine-a-legacy-of-culinary-fusion&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.wildchina.com/blog/taiwanese-cuisine-a-legacy-of-culinary-fusion",
+        "https://topics.amcham.com.tw/2026/01/a-new-appreciation-for-indigenous-food/",
+        "https://taiwanindigenousfoodways.com/",
+        "https://www.atayal.org/food-and-diet-traditions",
+        "https://www.taiwan-panorama.com/Articles/Details?Guid=c7216a67-937b-4022-b5b6-764951475c40"
+      ],
+      "scraped_at": "2026-05-19T02:14:09.954730Z",
+      "location": {
+        "country": "Taiwan",
+        "provinces": [
+          "Indigenous communities across Taiwan, including Rukai, Paiwan, and Atayal regions"
+        ],
+        "lat": 23.9739374,
+        "lng": 120.9820179
+      },
+      "resume_analisa": {
+        "description": "Cinavu, also known as Abai, is a traditional indigenous Taiwanese dish. It typically consists of glutinous rice (or millet) and tender pork, which are wrapped in specific local leaves, such as false sourwood, peach tree leaves, or false roselle leaves, before being steamed. This dish is a staple food and a significant part of the indigenous foodways of Taiwan.",
+        "cultural_significance": "Cinavu holds deep cultural significance for Taiwan's indigenous communities, embodying their rich heritage, ancestral rituals, and communal ties. It reflects their profound connection to the land, seasons, and sustainable practices of hunting, gathering, and farming. The ingredients used, such as millet and wild greens, are integral to their traditional diet and represent their ecological intelligence. Consuming Cinavu not only offers a taste of tradition but also serves as a vessel for cultural transmission and a reminder of the land's history and the people's identity.",
+        "gemini_tags": [
+          "Indigenous Cuisine",
+          "Taiwanese Food",
+          "Traditional Recipe",
+          "Steamed Dish",
+          "Cultural Heritage",
+          "Ancestral Practices",
+          "Sustainable Foodways",
+          "Millet",
+          "Pork",
+          "Leaf-wrapped Food"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Steaming",
+        "materials_and_tools": [
+          "Glutinous rice (or millet)",
+          "Tender pork",
+          "False sourwood leaves, peach tree leaves, or false roselle leaves (for wrapping)",
+          "Silvergrass (for binding, especially with false roselle leaves)",
+          "Steamer"
+        ],
+        "step_by_step": [
+          "Prepare the glutinous rice (or millet) and tender pork.",
+          "Fill the rice (or millet) with the prepared pork.",
+          "Wrap the mixture tightly in the chosen local leaves (false sourwood, peach tree, or false roselle leaves).",
+          "If using false roselle leaves, bind the wrapped parcel securely with silvergrass.",
+          "Steam the wrapped parcels until they are cooked to perfection."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Zongzi",
+            "relationship_reason": "Both involve wrapping glutinous rice and other fillings in natural leaves (bamboo leaves for Zongzi) and cooking by steaming or boiling."
+          },
+          {
+            "country": "Malaysia, Indonesia",
+            "element_name": "Lemang",
+            "relationship_reason": "Similar to Cinavu, Lemang is glutinous rice cooked in natural containers (hollowed bamboo tubes) by roasting."
+          },
+          {
+            "country": "Malaysia, Indonesia",
+            "element_name": "Ketupat",
+            "relationship_reason": "Ketupat involves glutinous rice cooked in woven palm leaves, sharing the concept of leaf-wrapped rice."
+          },
+          {
+            "country": "Taiwan (Atayal tribe)",
+            "element_name": "Bamboo-tube rice (zhu zhu)",
+            "relationship_reason": "This Atayal dish also involves stuffing glutinous rice into natural containers (bamboo tubes), sealing them with leaves, and then steaming or boiling."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b1961bbc",
+      "element_name": "Ukrainian Borscht",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://ifoodreal.com/wp-content/uploads/2021/04/ukrainian-borscht-recipe-3.jpg",
+      "source_urls": [
+        "https://ifoodreal.com/ukrainian-borscht-recipe/",
+        "https://kyivindependent.com/borsch-a-ukrainian-staple-explained/",
+        "https://ich.unesco.org/en/RL/culture-of-ukrainian-borscht-cooking-01852",
+        "https://en.wikipedia.org/wiki/Borscht",
+        "https://www.veselka.com/history-of-borscht/",
+        "https://folklife.si.edu/magazine/history-of-borshch",
+        "https://thepeasantsdaughter.net/ukrainian-borscht-recipe/"
+      ],
+      "scraped_at": "2026-05-19T02:15:42.369851Z",
+      "location": {
+        "country": "Ukraine",
+        "provinces": [],
+        "lat": 49.4871968,
+        "lng": 31.2718321
+      },
+      "resume_analisa": {
+        "description": "Ukrainian Borscht is a vibrant, sour soup, deeply rooted in Ukrainian culinary tradition. It is characterized by its distinctive red color, primarily from beets, and a complex balance of sweet, sour, and savory flavors. The soup typically includes a variety of vegetables such as cabbage, potatoes, carrots, onions, and garlic. While often made with meat (beef, pork, or chicken) to create a hearty broth, vegetarian versions are also common. It is traditionally served hot, often garnished with a dollop of sour cream (smetana) and fresh dill, and sometimes accompanied by rye bread or garlic buns (pampushky). The history of borscht dates back centuries, evolving from an ancient hogweed-based soup to the beet-based variant widely recognized today.",
+        "cultural_significance": "Borscht holds immense cultural significance in Ukraine, serving as a powerful symbol of national identity, home, tradition, and resilience. It is a dish passed down through generations within families, with many households having their own unique recipe variations. Borscht plays a central role in major celebrations and family gatherings, including Christmas Eve meals and wedding rituals, where it signifies hospitality and community. For Ukrainian immigrants and diaspora communities worldwide, borscht is more than just food; it is a profound link to their ancestral heritage, a comfort food that evokes childhood memories, and a testament to their enduring culture. In 2022, UNESCO recognized the 'Culture of Ukrainian borscht cooking' on its List of Intangible Cultural Heritage in Need of Urgent Safeguarding, citing the ongoing armed conflict as a threat to its viability.",
+        "gemini_tags": [
+          "Ukrainian cuisine",
+          "immigrant food",
+          "heritage food",
+          "traditional soup",
+          "beet soup",
+          "comfort food",
+          "Eastern European cuisine",
+          "diaspora food",
+          "UNESCO Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Soup",
+        "materials_and_tools": [
+          "Large pot or Dutch oven",
+          "Frying pan",
+          "Knife",
+          "Cutting board",
+          "Vegetable peeler",
+          "Grater (optional)",
+          "Skimmer spoon (optional)"
+        ],
+        "step_by_step": [
+          "Prepare the broth: If using meat, cube 1.5-2 lbs of beef, pork, or chicken (with bones for richer flavor) and place in a large pot. Cover with 6-10 cups of cold water, add bay leaves and peppercorns. Bring to a boil, then reduce heat and simmer for 1-2 hours, skimming any foam. Remove meat, chop, and set aside. Strain the broth.",
+          "Prepare vegetables: Peel and cut beets into matchsticks or grate them. Shred cabbage. Dice potatoes into small-medium cubes. Dice onion and slice carrots. Mince garlic.",
+          "Make the zazharka (sautéed vegetable base): In a frying pan, heat oil or lard. Sauté diced onions and carrots for about 5 minutes until translucent. Add beets (reserving some grated beets for later if desired for color), tomato paste, and a splash of vinegar or sugar. Cook for another 3-5 minutes, stirring occasionally. This step intensifies color and flavor.",
+          "Combine and simmer: Add the prepared broth back to the large pot. Add shredded cabbage and diced potatoes. Bring to a boil, then reduce heat and simmer for about 20 minutes, or until vegetables are tender.",
+          "Add zazharka and meat: Stir in the sautéed vegetable mixture (zazharka), the cooked and chopped meat (if using), and any reserved raw grated beets. Add minced garlic, dill, and adjust seasonings with salt, pepper, vinegar, and sugar to taste.",
+          "Rest and serve: Allow the borscht to simmer gently for another 10-15 minutes to allow flavors to meld. Turn off the heat and let it rest for 10 minutes before serving. Serve hot with a dollop of sour cream and fresh dill."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Russia",
+            "element_name": "Borscht (Russian variant)",
+            "relationship_reason": "Borscht is widely consumed in Russia, though the Ukrainian version is distinct and recognized by UNESCO."
+          },
+          {
+            "country": "Poland",
+            "element_name": "Barszcz",
+            "relationship_reason": "Similar beet-based sour soups are found in Polish cuisine."
+          },
+          {
+            "country": "Belarus",
+            "element_name": "Borscht (Belarusian variant)",
+            "relationship_reason": "Borscht is cooked in Belarus, a former republic of the USSR, with regional variations."
+          },
+          {
+            "country": "Moldova",
+            "element_name": "Borscht (Moldovan variant)",
+            "relationship_reason": "Borscht is cooked in Moldova, a former republic of the USSR, with regional variations."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-17T02:04:42.468496Z",
-    "total_ich_elements": 132,
-    "complete_records": 122,
+    "generated_at": "2026-05-19T02:16:16.598969Z",
+    "total_ich_elements": 134,
+    "complete_records": 124,
     "incomplete_records": 10,
     "categories_breakdown": {
       "Traditional Craftsmanship": 48,
       "Social Practices & Rituals": 30,
-      "Culinary Traditions": 24,
+      "Culinary Traditions": 26,
       "Culinary Traditions | Social Practices & Rituals": 1,
       "Performing Arts": 13,
       "Social Practices & Rituals | Performing Arts": 2,
