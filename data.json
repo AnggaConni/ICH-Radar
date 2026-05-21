@@ -11575,22 +11575,302 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-89555cd9",
+      "element_name": "Al-Hakawati Storytelling",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hakawati_in_Damascus.jpg/800px-Hakawati_in_Damascus.jpg",
+      "source_urls": [
+        "https://wanabqa.com/al-hakawati-the-storyteller-a-theatrical-phenomenon-important-element-of-the-intangible-syrian-heritage/",
+        "https://www.arabamerica.com/the-art-of-arab-storytelling-one-thousand-and-one-nights/",
+        "https://ar.wikipedia.org/wiki/%D8%AD%D9%83%D9%88%D8%A7%D8%AA%D9%8A",
+        "https://calicemagazine.com/embracing-heritage-a-personal-journey-with-hakawati/",
+        "https://multilingual.com/understanding-the-orality-of-arabic-culture/",
+        "https://oraltradition.org/issues/4i1-2/denny/",
+        "https://www.canon-me.com/hakawaty/",
+        "https://en.wikipedia.org/wiki/Oral_tradition",
+        "https://hakawati.org/origin-arabic-storyteller/",
+        "https://en.wikipedia.org/wiki/Al-Qaskhun",
+        "https://www.ithra.com/en/discover/stories/the-tradition-of-hakawati-and-modern-storytelling",
+        "https://ich.unesco.org/doc/src/00008-AR-PDF.pdf",
+        "https://archive.aramcoworld.com/issue/200705/tales.in.the.hood.the.last.hakawati.htm",
+        "https://syrianguides.com/the-hakawati-keeping-tales-alive-in-ancient-damascus/",
+        "https://allgoodtales.com/storytelling-traditions-across-the-world-lebanon/",
+        "https://dergipark.org.tr/en/download/article-file/3268846",
+        "https://www.youtube.com/watch?v=1o6P-25gJ_0",
+        "https://ar.wikipedia.org/wiki/%D8%AA%D8%B1%D8%A7%D8%AB_%D8%B4%D9%81%D9%88%D9%8A",
+        "https://maghrebi-voices.swarthworth.edu/moroccan-storytelling/",
+        "https://www.youtube.com/watch?v=2e63a1k300M",
+        "https://www.asjp.cerist.dz/en/downArticle/273/1/17/233075",
+        "https://azwan.org/%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D8%B4%D9%81%D9%88%D9%8A/",
+        "https://www.almothaqaf.com/aqlam-wa-afkar/77789.html"
+      ],
+      "scraped_at": "2026-05-21T02:11:45.002802Z",
+      "location": {
+        "country": "Arab World",
+        "provinces": [
+          "Damascus",
+          "Beirut",
+          "Sidon",
+          "Baghdad",
+          "Marrakech"
+        ],
+        "lat": 23.5752013,
+        "lng": 58.3967978
+      },
+      "resume_analisa": {
+        "description": "Al-Hakawati, meaning 'the storyteller' in Arabic, is a traditional occupation and a significant form of oral expression across the Arab world. Historically, a Hakawati was a professional narrator who entertained audiences by recounting tales, often with dramatic flair, in public spaces such as coffeehouses and markets. These storytellers would narrate a vast repertoire including legends, fables, historical events, mystical stories, and sometimes personal accounts. The Hakawati embodies the characters through variations in voice, movement, and rhythm, making the storytelling a theatrical phenomenon. While traditionally a male-dominated profession, modern interpretations and initiatives are seeing women also engage in storytelling.",
+        "cultural_significance": "Al-Hakawati played a crucial role in preserving and transmitting cultural heritage, folklore, and history across generations. It served as a primary source of entertainment, especially before the advent of modern media, and was instrumental in conveying moral values, social norms, and collective memory. The tradition fostered community bonding, with people gathering to listen to captivating narratives. In contemporary contexts, storytelling events, building on the Hakawati legacy, also serve as platforms to discuss social issues and process collective trauma, highlighting its enduring relevance as a form of cultural activism and a means of documenting personal histories.",
+        "gemini_tags": [
+          "Oral storytelling",
+          "Arab culture",
+          "Traditional performance",
+          "Folklore",
+          "Cultural preservation",
+          "Community practice",
+          "Intangible heritage",
+          "Middle Eastern traditions"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance Art",
+        "materials_and_tools": [
+          "Traditional attire (e.g., loose-fitting garment, fez, sword in some regions)",
+          "Book (sometimes used for reference or as a prop, though often stories are recited from memory)",
+          "Cane (used for dramatic gestures and emphasis)"
+        ],
+        "step_by_step": [
+          "**Setting the Scene:** The performance typically takes place in public spaces like traditional coffeehouses, often in the evenings after dinner or between prayers, sometimes extending into the early hours of the morning.",
+          "**Preparation and Repertoire:** The Hakawati possesses a vast repertoire of traditional tales, including stories from 'One Thousand and One Nights', chronicles of legendary Arab heroes like Antar, stories from the Quran, and tales of historical figures such as Sultan Baybars. Storytellers often learn from masters and may improvise to suit the audience and context.",
+          "**Engaging the Audience:** The Hakawati sits facing the audience, often holding a book and a cane. They begin by warming up the audience with verbal appetizers, anecdotes, and jokes to establish a connection.",
+          "**Dramatic Narration:** Stories are narrated with significant dramatic flair. The Hakawati uses a range of vocal techniques, including variations in pitch, tone, and accent, and employs body movements and gestures to impersonate different characters and convey emotions, effectively acting out the tales.",
+          "**Interactive Performance:** The performance is often interactive, with the Hakawati engaging directly with the audience, interjecting commentary, and sometimes drawing on the listeners' lives for their stories.",
+          "**Sustaining Interest:** Long narratives can unfold over many sessions, with each session ending on a cliffhanger to maintain audience suspense and ensure their return for the next installment.",
+          "**Conveying Message:** Beyond entertainment, the performance aims to mesmerize the audience, evoke emotions, and convey sublime messages, moral values, or historical lessons embedded within the narrative."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Persia, India",
+            "element_name": "One Thousand and One Nights (Arabian Nights)",
+            "relationship_reason": "A significant portion of the Hakawati's traditional repertoire, this collection of stories has origins in Persian, Indian, and Arab cultures and has profoundly influenced world literature."
+          },
+          {
+            "country": "Iraq",
+            "element_name": "Al-Qaskhun",
+            "relationship_reason": "An Iraqi term for a professional storyteller, particularly in Baghdad, which is synonymous with Al-Hakawati."
+          },
+          {
+            "country": "Egypt",
+            "element_name": "Sha'ir (poet)",
+            "relationship_reason": "The Egyptian counterpart to the Hakawati, often accompanying their tales with a rababah (a simple stringed instrument)."
+          },
+          {
+            "country": "West Africa",
+            "element_name": "Griot",
+            "relationship_reason": "Similar to the Hakawati, Griots are professional oral historians, storytellers, praise singers, poets, and musicians who transmit cultural knowledge and history."
+          },
+          {
+            "country": "Morocco",
+            "element_name": "Halqa (storytelling circle)",
+            "relationship_reason": "A traditional male storytelling circle found in public spaces, sharing the essence of oral narration and community engagement with the Hakawati tradition."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-32855744",
+      "element_name": "Dong Ho Folk Painting (Nghệ thuật làm tranh dân gian Đông Hồ)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://c8.alamy.com/comp/2B01NTX/vietnam-lao-thu-thu-tan-old-rat-taking-a-bride-traditional-woodblock-painting-of-mice-paying-tribute-to-the-big-cat-china-from-dong-ho-village-bac-ninh-province-20th-century-dong-ho-painting-vietnamese-tranh-ong-h-or-tranh-l-ng-h-full-name-dong-ho-folk-woodcut-painting-tranh-khc-g-dan-gian-ong-h-is-a-genre-of-vietnamese-woodcut-paintings-originating-from-dong-ho-village-l-ng-ong-h-in-bac-ninh-province-vietnam-using-the-traditional-i-p-paper-and-colours-derived-from-nature-craftsmen-print-dong-ho-pictures-of-different-themes-2B01NTX.jpg",
+      "source_urls": [
+        "https://sungetaways.com/vietnam-travel-guide/dong-ho-folk-painting/",
+        "https://www.ancient-origins.net/ancient-places/dong-ho-painting-0018440",
+        "https://vinpearl.com/vi/lang-tranh-dong-ho-ve-dep-van-hoa-co-truyen-xu-kinh-bac-1699320251",
+        "https://www.klook.com/vi/blog/lang-tranh-dong-ho/",
+        "https://langnghe.org.vn/lang-tranh-dong-ho-bac-ninh/",
+        "https://vietnamdrive.com/dong-ho-folk-painting-guide-to-vietnams-woodblock-art/",
+        "https://mia.vn/cam-nang-du-lich/lang-tranh-dong-ho-noi-truyen-thu-net-dep-van-hoa-dac-sac-1070",
+        "https://vietnamdrive.com/dong-ho-folk-painting-guide-to-vietnams-woodblock-art/",
+        "https://vietnamdiscovery.com/culture-arts/vietnamese-folk-painting/",
+        "https://vinpearl.com/en/dong-ho-painting-a-traditional-art-form-to-be-treasured-1699320251",
+        "https://vi.wikipedia.org/wiki/Tranh_%C4%90%C3%B4ng_H%E1%BB%93",
+        "https://dsvh.gov.vn/tranh-dan-gian-dong-ho-1945",
+        "https://medium.com/@vietnamdiscovery/dong-ho-painting-a-quintessential-part-of-vietnamese-folk-culture-a9066601247c",
+        "https://www.teenink.com/art/article/1004118/Dong-Ho-paintings-the-beauty-of-Vietnamese-culture",
+        "http://tranhdangiandongho.vn/quy-trinh-lam-tranh-dong-ho/",
+        "https://baobacninh.vn/nhung-nghe-nhan-lam-song-day-dong-tranh-dong-ho-271511.html",
+        "https://www.youtube.com/watch?v=9_q3t418_2k",
+        "https://en.wikipedia.org/wiki/%C4%90%C3%B4ng_H%E1%BB%93_painting",
+        "https://redsvn.net/lich-su-va-ky-thuat-cua-dong-tranh-dan-gian-dong-ho/",
+        "https://vietnamdiscovery.com/culture-arts/dong-ho-painting/",
+        "https://waki.vn/cach-ve-tranh-dong-ho/",
+        "https://www.alamy.com/stock-photo/tranh-dong-ho.html"
+      ],
+      "scraped_at": "2026-05-21T02:12:22.852812Z",
+      "location": {
+        "country": "Vietnam",
+        "provinces": [
+          "Bac Ninh Province"
+        ],
+        "lat": 21.3282166,
+        "lng": 106.4625257
+      },
+      "resume_analisa": {
+        "description": "Dong Ho folk painting is a traditional Vietnamese woodblock printing art form originating from Dong Ho village, Song Ho commune, Thuan Thanh district, Bac Ninh Province. It is renowned for its vibrant colors, symbolic imagery, and the exclusive use of natural materials. These paintings were historically crafted for ordinary people, particularly for decorating homes during Lunar New Year (Tet) celebrations, conveying wishes for prosperity, luck, and harmony.",
+        "cultural_significance": "Dong Ho paintings deeply reflect rural Vietnamese values, communal beliefs, and everyday aspirations. They serve as a medium to communicate moral lessons, social humor, and wishes for a good life, such as family harmony, fertility, and prosperity. This art form is an indispensable part of Vietnamese folk culture, deeply rooted in the Red River Delta region, and has influenced contemporary design. It has been recognized as a National Intangible Cultural Heritage of Vietnam, with a dossier submitted to UNESCO for inclusion in the list of intangible cultural heritages in need of urgent safeguarding.",
+        "gemini_tags": [
+          "Woodblock Printing",
+          "Folk Art",
+          "Vietnamese Culture",
+          "Traditional Craft",
+          "Lunar New Year",
+          "Natural Pigments",
+          "Cultural Heritage",
+          "Bac Ninh"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Woodblock Printing",
+        "materials_and_tools": [
+          "Woodblocks: Carved from jackfruit wood or 'thừng mực' wood for outline blocks, and 'mỡ' wood for color blocks.",
+          "Carving tools: Specialized chisels known as 've' (a set typically contains 30-40 pieces).",
+          "Giấy điệp (Do paper): Handcrafted paper made from the bark of the 'Do' tree, coated with a mixture of glutinous rice paste and powdered seashells (điệp powder).",
+          "Natural pigments: Red (from crushed red stone, 'vang' tree bark, or 'gạch non' - young brick), Black (from burned bamboo leaves or xoan tree ash), Yellow (from 'hoa hoè' - pagoda tree flowers or sticky rice straw), Blue/Indigo (from indigo leaves or copper rust), White (from powdered seashells mixed with glutinous rice paste).",
+          "Glutinous rice paste (hồ nếp): Used to mix with colors and coat the paper.",
+          "Pine leaf brush: Used to apply the seashell powder mixture to the paper.",
+          "Loofah: Used to gently massage the back of the paper during printing."
+        ],
+        "step_by_step": [
+          "1. Design and Woodblock Carving: Artists create original designs. These designs are then meticulously transferred and carved onto wooden blocks. Separate woodblocks are prepared for each color and for the final black outline, requiring high skill and precision.",
+          "2. Paper Preparation (Giấy Điệp): The bark of the 'Do' tree is processed through several stages including soaking, cooking with lime, washing, and crushing to create raw paper. This paper is then coated with a mixture of glutinous rice paste and finely powdered seashells (điệp powder) using a pine leaf brush, resulting in 'giấy điệp' (seashell paper) which is known for its shimmering, durable surface.",
+          "3. Pigment Preparation: Natural materials sourced from the environment (like specific stones, leaves, and flowers) are collected and processed to extract vibrant and durable pigments. These natural colors are then mixed with glutinous rice paste to achieve the desired consistency for printing.",
+          "4. Printing: The prepared natural colors are applied onto the carved woodblocks. The colored blocks are then pressed onto the 'giấy điệp' sheets. This process is done in multiple stages, typically using 2 to 5 different woodblocks, each corresponding to a specific color. Darker colors are often printed first, followed by lighter shades. The final black outline block is usually printed last to define the shapes and lock the colors in place. A loofah may be used to gently rub the back of the paper during this step to ensure even color absorption.",
+          "5. Drying: After all the colors have been printed, the paintings are carefully dried, often in the sun, to prevent smudging and ensure the longevity and vibrancy of the colors."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Chinese New Year Prints (Nianhua)",
+            "relationship_reason": "Both are traditional folk woodblock prints, often associated with New Year celebrations, using symbolic imagery and natural pigments. Historical accounts suggest Chinese woodblock printing techniques influenced early Vietnamese carving."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Ukiyo-e woodblock prints",
+            "relationship_reason": "While stylistically distinct, both represent sophisticated forms of woodblock printing, showcasing a rich tradition of intricate carving and printing techniques in East Asian art."
+          },
+          {
+            "country": "Korea",
+            "element_name": "Minhwa (Korean folk painting)",
+            "relationship_reason": "Both are folk art forms that depict everyday life, moral lessons, and wishes for good fortune, often employing vibrant colors and symbolic motifs, although Minhwa is not exclusively woodblock printed."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-bdaf6663",
+      "element_name": "Maasai Cow Blood Drinking (Osaroi)",
+      "category": "Culinary Traditions | Social Practices & Rituals",
+      "thumbnail_url": "https://www.atlasobscura.com/foods/maasai-cow-blood",
+      "source_urls": [
+        "https://goclimbingkilimanjaro.com/maasai-tradition-drinking-cattle-blood-explained/",
+        "https://historystreet.substack.com/p/the-tribesmen-who-spit-on-themselves",
+        "https://www.atlasobscura.com/foods/maasai-cow-blood",
+        "https://www.thomsonsafaris.com/blog/traditional-maasai-food-blood-and-milk/",
+        "https://www.youtube.com/watch?v=g9o-o2208-o"
+      ],
+      "scraped_at": "2026-05-21T02:12:56.526780Z",
+      "location": {
+        "country": "Kenya",
+        "provinces": [
+          "Rift Valley Province",
+          "Narok County"
+        ],
+        "lat": 1.4419683,
+        "lng": 38.4313975
+      },
+      "resume_analisa": {
+        "description": "The Maasai, a Nilotic ethnic group inhabiting parts of Kenya and Tanzania, traditionally consume cow's blood as a significant part of their diet. This practice involves drawing blood from a live cow without slaughtering it, and the blood is consumed fresh, cooked, or most commonly, mixed with milk. When mixed with milk, the beverage is known as 'Osaroi'. This practice is deeply intertwined with their pastoralist lifestyle and reverence for cattle.",
+        "cultural_significance": "Cow's blood holds immense cultural significance for the Maasai, symbolizing wealth, social status, and survival. It is consumed during important rituals and celebrations such as weddings, childbirth, and male initiation ceremonies, marking transitions into warriorhood and adulthood. The Maasai believe the blood is highly nourishing, beneficial for the immune system, and is given to individuals who are sick, have recently given birth, or undergone circumcision to aid recovery. Elders also occasionally consume it as a remedy for hangovers. The color red, which represents blood, is a prominent symbol in Maasai culture, signifying bravery, courage, and strength.",
+        "gemini_tags": [
+          "Maasai",
+          "East Africa",
+          "Pastoralism",
+          "Bloodletting",
+          "Ritual drink",
+          "Traditional diet",
+          "Cultural ceremony",
+          "Kenya",
+          "Tanzania"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional beverage/food preparation",
+        "materials_and_tools": [
+          "Live cow",
+          "Arrow or sharp object for puncturing",
+          "Ropes for restraining the cow",
+          "Clay pot or calabash (bottle gourd) for collecting blood",
+          "Hot ash and mud for sealing the wound",
+          "Milk (optional, for mixing)"
+        ],
+        "step_by_step": [
+          "A group of Maasai men gently restrains a live cow, often using ropes to immobilize it.",
+          "One man skillfully nicks the cow's jugular artery, typically using a specially designed arrow or a sharp object, ensuring the animal is not killed.",
+          "A clay pot or calabash is held below the incision to collect the flowing blood.",
+          "Once a sufficient amount of blood has been collected, the wound is quickly sealed by smearing hot ash and mud over the cut to stop the bleeding.",
+          "The cow is then released, allowing it to recover and continue producing milk and blood for future use, making it a sustainable practice often performed about once a month on different animals.",
+          "The collected blood can be consumed immediately while fresh and warm, used as an ingredient in cooked dishes, or mixed with milk to create a nutritious beverage called Osaroi."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Tanzania",
+            "element_name": "Maasai traditions in Tanzania",
+            "relationship_reason": "The Maasai people and their traditions, including blood drinking, are shared across the border regions of Kenya and Tanzania."
+          },
+          {
+            "country": "Kenya",
+            "element_name": "Maasai traditions in Kenya",
+            "relationship_reason": "The Maasai people and their traditions, including blood drinking, are shared across the border regions of Kenya and Tanzania."
+          },
+          {
+            "country": "East African Pastoralist Communities (General)",
+            "element_name": "Pastoralist lifestyle and age-set system",
+            "relationship_reason": "While specific to the Maasai, the broader pastoralist lifestyle and age-set social organization are characteristic of several other indigenous communities in East Africa."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-19T02:16:16.598969Z",
-    "total_ich_elements": 134,
-    "complete_records": 124,
+    "generated_at": "2026-05-21T02:13:27.027721Z",
+    "total_ich_elements": 137,
+    "complete_records": 127,
     "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 48,
+      "Traditional Craftsmanship": 49,
       "Social Practices & Rituals": 30,
       "Culinary Traditions": 26,
-      "Culinary Traditions | Social Practices & Rituals": 1,
+      "Culinary Traditions | Social Practices & Rituals": 2,
       "Performing Arts": 13,
       "Social Practices & Rituals | Performing Arts": 2,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 8,
+      "Oral Traditions": 9,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 1,
