@@ -11855,16 +11855,308 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2ddcae62",
+      "element_name": "Festa do Divino Espírito Santo (Festival of the Holy Spirit)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Festa_do_Divino_Esp%C3%ADrito_Santo_em_Piren%C3%B3polis_-_Cavalhadas.jpg/1200px-Festa_do_Divino_Esp%C3%ADrito_Santo_em_Piren%C3%B3polis_-_Cavalhadas.jpg",
+      "source_urls": [
+        "https://www.takeyourbackpack.com/festa-do-divino-espirito-santo-festival-guide-brazil/",
+        "https://www.visitbrasil.com/en/events/faith-and-tradition-on-the-feast-of-the-divine-holy-spirit/",
+        "https://www.santoamaro.org.br/simbolos-festa-do-divino/",
+        "https://www.roteirodasfestasdodivino.com/history",
+        "https://periodicos.ufes.br/coloquio/article/download/12471/8672",
+        "https://www.thebrasilians.com/faith-and-tradition-on-the-feast-of-the-divine-holy-spirit/",
+        "https://santacruzportuguesehall.com/history-of-the-festa-of-the-holy-ghost/",
+        "https://www.thebermudian.com/culture/soupa-do-divinio-espirito-santo/",
+        "https://www.festadodivino.com.br/festa-do-divino-origem-e-historia/",
+        "https://milenadabrowska.com/en/festas-do-espirito-santo/",
+        "https://www.irmandadedodivino.org/festas-do-espirito-santo",
+        "https://en.wikipedia.org/wiki/Cult_of_the_Holy_Spirit",
+        "https://www.opusdei.org/pt-br/article/10-dias-para-preparar-a-festa-do-espirito-santo/",
+        "https://maria-brazil.org/brazilian-folklore-festa-do-divino.html",
+        "https://dialnet.unirioja.es/servlet/articulo?codigo=4310578",
+        "https://www.revistas.ueg.br/index.php/building/article/view/1899",
+        "https://revistacesla.com/index.php/revista/article/view/178",
+        "https://benitolink.com/festa-do-espirito-santo-brings-together-faith-family-and-the-community/",
+        "https://portuguesecooking.com/celebration-of-the-holy-ghost/",
+        "https://arsenalcatolico.com.br/novena-de-preparacao-para-a-festa-do-divino-espirito-santo-primeiro-dia/",
+        "https://arsenalcatolico.com.br/novena-de-preparacao-para-a-festa-do-divino-espirito-santo-quinto-dia/"
+      ],
+      "scraped_at": "2026-05-23T02:02:08.536700Z",
+      "location": {
+        "country": "Brazil",
+        "provinces": [
+          "Rio de Janeiro (Paraty)",
+          "Maranhão (São Luís)",
+          "Goiás (Pirenópolis)",
+          "Santa Catarina (Florianópolis)",
+          "Minas Gerais (São João del-Rei)",
+          "São Paulo (Mogi das Cruzes, Sorocaba, São Luiz do Paraitinga)",
+          "Bahia (Salvador, Alcântara)"
+        ],
+        "lat": -22.9110137,
+        "lng": -43.2093727
+      },
+      "resume_analisa": {
+        "description": "The Festa do Divino Espírito Santo, or Festival of the Holy Spirit, is a deeply rooted religious and cultural celebration observed in various regions of Brazil and the Azores, Portugal. It commemorates the descent of the Holy Spirit upon the apostles, fifty days after Easter, aligning with Pentecost. The festival is characterized by a blend of Catholic traditions with local Afro-Brazilian and Indigenous cultural influences in Brazil, and strong Azorean identity in Portugal. It is a vibrant event that transcends mere religious observance, incorporating music, dance, gastronomy, and symbolic acts. The festivities often span several weeks, beginning with preparatory rituals and culminating in grand processions and communal feasts.",
+        "cultural_significance": "The Festa do Divino holds immense cultural significance, embodying values of charity, humility, solidarity, sharing, unity, and hope for peace and abundance. Its origins are attributed to Queen Isabel of Aragon in 14th-century Portugal, who, during a time of famine, vowed to honor the Holy Spirit if peace and food were brought to her people. This legacy of compassion is reflected in the festival's core practice of distributing food to the poor and the entire community. The celebration reinforces community identity and cohesion, fostering intergenerational transmission of traditions through oral history, observation, and participation. Key symbols like the dove, crown, scepter, and the red banner with a white dove are central to its iconography, representing the Holy Spirit, peace, and the responsibility of the 'festeiro' (festival organizer).",
+        "gemini_tags": [
+          "Religious Festival",
+          "Brazilian Culture",
+          "Portuguese Culture",
+          "Intangible Cultural Heritage",
+          "Community Celebration",
+          "Folklore",
+          "Catholic Tradition",
+          "Communal Feasts",
+          "Processions",
+          "Symbolism"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual Steps and Traditional Recipe",
+        "materials_and_tools": [
+          "Holy Spirit Insignia (crown, scepter, salva/silver tray)",
+          "Red banner with a white dove",
+          "Decorations (flowers, candles, colored ribbons)",
+          "Food ingredients for Sopa do Divino (beef/chicken, potatoes, carrots, kale, day-old bread, salt, mint)",
+          "Large cauldrons for soup preparation",
+          "Blessed bread (Pão Benzido)",
+          "Musical instruments (brass bands, drums)",
+          "Traditional costumes (for Imperial Court, Cavalhadas)",
+          "Chapels or 'Impérios' (small Holy Spirit chapels)"
+        ],
+        "step_by_step": [
+          "**1. Preparatory Period (Sete Domingos do Divino / Novena):** The festival is preceded by seven consecutive Sundays of spiritual preparation, or a nine-day novena. This period involves special masses, communal prayers, and the Holy Spirit's banner visiting different homes in the community.",
+          "**2. Election and Crowning of the Emperor/Empress:** A central ritual involves the crowning of an 'Emperor' or 'Empress,' often a child, who, along with their court, represents humility and the distribution of divine blessings. This coronation is a highlight, often taking place after a solemn mass.",
+          "**3. Street Decorations:** Communities decorate streets, especially in historic centers, with colorful ribbons, flowers, and other festive elements.",
+          "**4. Processions:** Throughout the festival, various processions take place. The 'Procissão do Divino com o Estandarte' (Procession with the Banner) features a red banner with a white dove, which is paraded through the streets. The Imperial Court, carrying the crown, scepter, and salva, also processes to the main church for the Coronation Mass. In coastal areas, maritime processions may occur.",
+          "**5. Communal Feasts (Bodo):** A fundamental aspect is the distribution of food to the public, symbolizing charity and equality. Large quantities of traditional dishes are prepared and served free.",
+          "**6. Preparation of Sopa do Divino (Holy Ghost Soup):** This traditional soup is a staple of the communal feasts. It typically involves boiling meat (beef or chicken) until cooked, then setting it aside. Chopped vegetables like kale and potatoes, and small pasta (like stars or orzo), are added to the meat broth and cooked until tender. The soup is seasoned with salt and often served over slices of bread, with a piece of meat and a sprig of mint. In some places, it's thickened with day-old bread.",
+          "**7. Distribution of Pão Benzido (Blessed Bread):** Small loaves of bread are blessed by a priest and distributed to the faithful during masses or processions as a spiritual gesture.",
+          "**8. Cultural Performances:** The festival includes music, with local bands (e.g., Banda Santa Cecília, filarmonica bands) playing, and traditional dances. In some Brazilian locations like Pirenópolis, 'Cavalhadas' (theatrical reenactments of battles between Moors and Christians) are performed.",
+          "**9. Community Gathering:** 'Barracões Comunitários' (festival tents) are erected in some areas for daily community gatherings, fostering social interaction and celebration.",
+          "**10. Conclusion:** The festival culminates with a final mass and expressions of gratitude, often involving the election of the 'festeiro' for the following year."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Portugal",
+            "element_name": "Festa do Divino Espírito Santo in the Azores",
+            "relationship_reason": "The festival originated in Portugal in the 14th century, influenced by Queen Isabel of Aragon, and was brought to Brazil during the colonial period. It continues to be celebrated in the Azores with similar core rituals and symbols."
+          },
+          {
+            "country": "United States (Portuguese diaspora)",
+            "element_name": "Holy Ghost Festival in California",
+            "relationship_reason": "Portuguese immigrants, particularly from the Azores, brought the Festa do Divino Espírito Santo tradition to communities in the United States, where it is celebrated to preserve their culture and heritage."
+          },
+          {
+            "country": "Bermuda",
+            "element_name": "Holy Ghost Festival in Bermuda",
+            "relationship_reason": "The tradition of the Holy Ghost Festival, including the communal feast of 'sopas' (soup), was also brought to Bermuda, reflecting the Portuguese diaspora's cultural preservation efforts."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-eaf54114",
+      "element_name": "Ceramica di Grottaglie",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.thatsarte.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/u/pumo-pugliese-bianco-thatsarte-1.jpg",
+      "source_urls": [
+        "https://pugliatips.com/en/grottaglie-ceramics/",
+        "https://priorworld.com/italian-ceramics-in-grottagile/",
+        "https://lovepuglia.com/grottaglie-city-of-ceramics/",
+        "https://svadore.com/visit-grottaglie-the-ceramics-capital-of-puglia/",
+        "https://www.puglia.com/grottaglie-ceramics-between-ancient-tradition-and-contemporary-art-a-journey-into-the-artistic-soul-of-puglia/",
+        "https://www.thatsarte.com/blog/grottaglie-ceramics-pottery-dinnerware-italian-pumi/",
+        "https://beautifulpuglia.com/grottaglie-italy-ceramics-capital/",
+        "https://www.nicofasano.it/en/pomo/",
+        "https://authenticpugliatours.com/grottaglie-ceramics/",
+        "https://grandvoyageitaly.com/good-luck-ceramics-the-pumi-and-pigne-of-puglia",
+        "https://emikodavies.com/blog/grottaglie-ceramics/",
+        "https://www.pugliapassion.com/grottaglie.html",
+        "https://www.puntoevirgolaschool.com/blog/the-ceramics-of-grottaglie",
+        "https://en.wikipedia.org/wiki/Grottaglie"
+      ],
+      "scraped_at": "2026-05-23T02:02:43.764102Z",
+      "location": {
+        "country": "Italy",
+        "provinces": [
+          "Apulia",
+          "Taranto"
+        ],
+        "lat": 40.9842539,
+        "lng": 16.6210027
+      },
+      "resume_analisa": {
+        "description": "Grottaglie, a town in the province of Taranto, Apulia, Italy, is internationally recognized as the 'City of Ceramics' due to its extensive history of figuline (potter's art) production. This tradition dates back to the 8th century B.C. and has flourished significantly since the 14th century. The town features a dedicated 'Ceramics Quarter' (Quartiere delle Ceramiche) with numerous artisan workshops, many of which are carved into the local soft tufa rock, leveraging the region's abundant red clay. Historically, Grottaglie ceramics were primarily utilitarian, encompassing large jars (capasoni) for wine and oil, pitchers, and other household items. Over time, the craft evolved to include more refined ornamental pieces like majolica and the iconic 'pumo'.",
+        "cultural_significance": "Ceramica di Grottaglie is deeply intertwined with the town's identity and historical narrative, having served as a primary economic driver for centuries. These ceramics played a crucial role in daily life, addressing needs for food and liquid storage, hygiene, and home decoration. The 'pumo,' a distinctive bud-shaped ceramic finial, is a significant symbol of good luck, fertility, and prosperity, prominently displayed on balconies and within homes throughout Puglia. The tradition is sustained by numerous family-run workshops, where skills are meticulously passed down through generations. Grottaglie is officially recognized as a 'City of Art' by the Apulia Region, celebrating its unique blend of traditional craftsmanship and contemporary artistic innovation.",
+        "gemini_tags": [
+          "Italian ceramics",
+          "Traditional pottery",
+          "Apulian craftsmanship",
+          "Grottaglie art",
+          "Pumo",
+          "Majolica",
+          "Hand-thrown pottery"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand-thrown, glazed, and painted pottery",
+        "materials_and_tools": [
+          "Red clay (locally extracted)",
+          "Potter's wheel (historically foot-pedaled, now often electric)",
+          "Kilns (furnaces)",
+          "Iron hammer (historical for breaking clay blocks)",
+          "Natural brushes (e.g., thyme or olive branches for decoration)"
+        ],
+        "step_by_step": [
+          "**Clay Preparation:** Raw clay is extracted from local quarries. Historically, 'palacemakers' broke clay blocks with an iron hammer, and 'stompa creta' pounded the coarse dust with their feet to prepare it.",
+          "**Shaping:** The prepared clay is then shaped on a potter's wheel by artisans, known as 'faenzaru' in historical contexts.",
+          "**Drying:** The freshly shaped ceramic pieces are left to dry for several days to remove moisture. (Implied from general pottery practices)",
+          "**First Firing (Bisque Firing):** The dried pieces are fired in kilns, a process historically managed by the 'caminaru'.",
+          "**Glazing and Decoration:** After the first firing, pieces are glazed and then decorated. This includes various traditional styles such as: 'Caposanara' or 'Ruagnara' for utilitarian objects, often finished with manganese mid-brown paint; and 'Faenzara' or 'Bianchi' for more decorative pieces, which involve painted designs on a white glazed base, featuring styles like turquoise floral patterns or vibrant splatter paint (schizzato).",
+          "**Second Firing (Glaze Firing):** The glazed and decorated pieces undergo a final firing to set the glazes and colors. (Implied from general pottery practices)"
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Greece",
+            "element_name": "Ancient Greek Pottery",
+            "relationship_reason": "The tradition of pottery in Grottaglie dates back to the 8th century B.C., with local potters utilizing techniques like the potter's wheel, which has roots in ancient Greek craftsmanship. The art of making ceramics has been passed down since the era of Magna Graecia, a period of Greek colonization in Southern Italy."
+          },
+          {
+            "country": "Italy (other regions)",
+            "element_name": "Majolica Ceramics (e.g., Deruta, Vietri sul Mare, Caltagirone)",
+            "relationship_reason": "Grottaglie's ornamental ceramics include majolica, a distinguished ceramic tradition characterized by tin-glazed earthenware, which is also prominent in other renowned Italian ceramic centers like Deruta, Vietri sul Mare, and Caltagirone."
+          },
+          {
+            "country": "Mediterranean Region",
+            "element_name": "Mediterranean Ceramic Traditions",
+            "relationship_reason": "Grottaglie hosts the 'Mediterranean Contemporary Ceramics Competition,' underscoring its connection to broader Mediterranean ceramic culture and artistic expressions, fostering dialogue and shared artistic development across the region."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a386b976",
+      "element_name": "Timbila",
+      "category": "Performing Arts | Traditional Craftsmanship",
+      "thumbnail_url": "https://www.trtafrika.com/media/images/2026/01/30/timbila-1-1706606827.jpg",
+      "source_urls": [
+        "https://www.trtafrika.com/culture/african-heritage-the-timbila-musical-instrument-of-mozambique-16788484",
+        "https://ich.unesco.org/en/RL/chopi-timbila-00147",
+        "https://nona.net/features/map/regedor-zavala-1400277.html",
+        "https://www.naxos.com/catalogue/item.asp?item_code=8.470002",
+        "https://www.wildstate.org/timbila-live-aid-play-or-burst-ukmz/",
+        "https://www.shutterstock.com/search/mozambique-drum"
+      ],
+      "scraped_at": "2026-05-23T02:03:28.693281Z",
+      "location": {
+        "country": "Mozambique",
+        "provinces": [
+          "Inhambane"
+        ],
+        "lat": -22.779116,
+        "lng": 34.5661741
+      },
+      "resume_analisa": {
+        "description": "Timbila is a traditional musical instrument, an 'African xylophone,' integral to the culture of the Chopi people in Mozambique. It is played in collective orchestras known as 'migondo' or 'Ngodo,' which can consist of five to thirty wooden xylophones of varying sizes and pitches. Each timbila performance incorporates the solemn m'zeno song, performed by dancers, while musicians play softly and slowly. These songs often serve as a form of oral history and social commentary, reflecting contemporary social issues and chronicling community events. The music itself is a vibrant mesh of rhythms and whistles, dancing and drumming, utilizing a heptatonian tuning system where an octave is divided into seven roughly equal intervals.",
+        "cultural_significance": "The Timbila is a profound sonic symbol of Mozambique, representing the harmony between music, history, and national identity. It was recognized by UNESCO as Intangible Cultural Heritage in 2008. The instrument and its associated music accompany solemn moments, cultural acts, and national celebrations, thereby reaffirming Mozambican pride and cultural identity. It played a crucial role in preserving Chopi culture by serving as a form of oral history and social commentary, surviving periods of suppression during Portuguese colonial rule. The tradition is passed down through generations, with orchestras often comprising masters and apprentices of all ages, including children playing alongside their grandfathers, ensuring the continuity of this rich cultural heritage.",
+        "gemini_tags": [
+          "African Xylophone",
+          "Chopi People",
+          "Mozambican Music",
+          "Intangible Cultural Heritage",
+          "Traditional Musical Instrument",
+          "Orchestral Music",
+          "Oral Tradition",
+          "Craftsmanship"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Instrument Crafting and Performance",
+        "materials_and_tools": [
+          "Highly resonant wood of the slow-growing mwenje (sneezewort) tree",
+          "Other local woods (mukusu, ndani, mathamba, phula ya phembe, mbungu) from Maputo and Gaza provinces",
+          "Calabashes (wild fruit shells) for resonators",
+          "Beeswax for sealing resonators",
+          "Oil from the nkuso fruit for tempering resonators and sound quality",
+          "Thin membranes from the diaphragm of a bush rat (vondo) or ox peritoneum",
+          "Mafurreira wood for instrument supports (mugwama, ditaho, murwalo)",
+          "Wooden mallets with tips covered in fabric or rubber"
+        ],
+        "step_by_step": [
+          "**Instrument Construction:** Timbilas are meticulously manufactured and tuned wooden instruments.",
+          "Wooden keys are arranged like piano keys to form the playing surface.",
+          "Under each wooden slat, a calabash (wild fruit shell) is fastened to act as a resonator.",
+          "The calabashes are tightly sealed with beeswax.",
+          "The resonators are tempered with oil from the nkuso fruit to achieve their rich nasal sound and characteristic vibrations.",
+          "Thin membranes, obtained from the diaphragm of a bush rat (vondo) or ox peritoneum, are applied to partially cover the openings of the gourds to perfect the sound quality.",
+          "The entire assembly is supported by structures made from mafurreira wood, known as mugwama, ditaho, and murwalo.",
+          "Each gourd is perforated with three holes, from which sound echoes when struck.",
+          "**Performance:** Timbilas are played collectively in orchestras (migondo or Ngodo) that vary in size, typically from five to thirty instruments.",
+          "Musicians strike the wooden keys with mallets, producing deep and harmonious sounds.",
+          "The orchestras combine melody, rhythm, and poetry in a collective presentation that integrates music, theater, and historical narration.",
+          "Performances, lasting approximately one hour, feature both solo and orchestral themes with varying tempi.",
+          "Timbila dances, performed by two to twelve dancers, are closely integrated with the music and performed in front of the orchestra.",
+          "New musical pieces are composed annually and performed at community events such as weddings.",
+          "The knowledge and skills of timbila making and playing are transmitted from masters to apprentices across all age groups, often involving intergenerational learning within families."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Congo",
+            "element_name": "Ilimba Drum (xylophone)",
+            "relationship_reason": "The Ilimba Drum, a one-note gourd resonated xylophone, is a traditional musical instrument in Congo, Zambia, Zimbabwe, Angola, and Mozambique, related to the reverence of ancestral spirits, suggesting a broader Bantu xylophone tradition."
+          },
+          {
+            "country": "Zambia",
+            "element_name": "Ilimba Drum (xylophone)",
+            "relationship_reason": "The Ilimba Drum, a one-note gourd resonated xylophone, is a traditional musical instrument in Congo, Zambia, Zimbabwe, Angola, and Mozambique, related to the reverence of ancestral spirits, suggesting a broader Bantu xylophone tradition."
+          },
+          {
+            "country": "Zimbabwe",
+            "element_name": "Ilimba Drum (xylophone)",
+            "relationship_reason": "The Ilimba Drum, a one-note gourd resonated xylophone, is a traditional musical instrument in Congo, Zambia, Zimbabwe, Angola, and Mozambique, related to the reverence of ancestral spirits, suggesting a broader Bantu xylophone tradition."
+          },
+          {
+            "country": "Angola",
+            "element_name": "Ilimba Drum (xylophone)",
+            "relationship_reason": "The Ilimba Drum, a one-note gourd resonated xylophone, is a traditional musical instrument in Congo, Zambia, Zimbabwe, Angola, and Mozambique, related to the reverence of ancestral spirits, suggesting a broader Bantu xylophone tradition."
+          },
+          {
+            "country": "Various (Western)",
+            "element_name": "Xylophone and Marimba",
+            "relationship_reason": "The xylophone and marimba are considered Western variants of the timbila, born much later than its ancestor, indicating a historical and structural lineage."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-21T02:13:27.027721Z",
-    "total_ich_elements": 137,
-    "complete_records": 127,
+    "generated_at": "2026-05-23T02:03:56.317149Z",
+    "total_ich_elements": 140,
+    "complete_records": 130,
     "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 49,
-      "Social Practices & Rituals": 30,
+      "Traditional Craftsmanship": 50,
+      "Social Practices & Rituals": 31,
       "Culinary Traditions": 26,
       "Culinary Traditions | Social Practices & Rituals": 2,
       "Performing Arts": 13,
@@ -11875,7 +12167,8 @@
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 1,
       "Social Practices & Rituals | Culinary Traditions": 1,
-      "Social Practices & Rituals | Traditional Craftsmanship": 1
+      "Social Practices & Rituals | Traditional Craftsmanship": 1,
+      "Performing Arts | Traditional Craftsmanship": 1
     }
   }
 }
