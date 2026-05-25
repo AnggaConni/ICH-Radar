@@ -12147,17 +12147,264 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-466b6167",
+      "element_name": "Santons de Provence",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Santons_de_Provence_-_Aix-en-Provence.jpg",
+      "source_urls": [
+        "https://www.francetoday.com/culture/the-santons-of-provence-a-history/",
+        "https://www.maregionsud.fr/decouvrir/artisanat-et-savoir-faire/les-santons-de-provence",
+        "https://www.santons-fouque.fr/en/blog/how-are-santons-of-provence-made-n16",
+        "https://www.santons-richard.com/fr/content/10-etapes-de-fabrication-pour-nos-santons",
+        "https://www.santons-provence.com/fr/fabrication",
+        "https://definingfrance.com/santons-de-provence-a-french-christmas-tradition/",
+        "https://www.thegoodlifefrance.com/santons-of-provence/",
+        "https://www.babylangues.com/what-are-santons-provence-christmas-tradition/",
+        "https://www.loumessugo.com/christmas-traditions-provence-santons/",
+        "https://www.avignon-et-provence.com/en/tourism-provence/santons-nativity-scene",
+        "https://en.wikipedia.org/wiki/Santon_(figurine)",
+        "https://fr.wikipedia.org/wiki/Santon_de_Provence",
+        "https://perfectlyprovence.co/christmas-traditions-the-santons-of-provence/",
+        "https://www.renestance.com/meet-the-santons-a-french-traditional-nativity-scene/"
+      ],
+      "scraped_at": "2026-05-25T02:29:47.299044Z",
+      "location": {
+        "country": "France",
+        "provinces": [
+          "Provence-Alpes-Côte d'Azur",
+          "Bouches-du-Rhône",
+          "Vaucluse"
+        ],
+        "lat": 44.0580563,
+        "lng": 6.0638506
+      },
+      "resume_analisa": {
+        "description": "Santons de Provence are small, hand-painted clay figurines that depict the Nativity scene and various characters from traditional Provençal village life. They are an integral part of Christmas celebrations in Provence, France.",
+        "cultural_significance": "The tradition of Santons emerged during the French Revolution when public Nativity scenes were banned, prompting Provençal families to create miniature versions at home to preserve their religious customs. These figurines represent a diverse array of characters from Provençal society, including biblical figures, local tradespeople (like bakers, fishermen, and shepherds), and everyday villagers, symbolizing the entire community's participation in the Nativity. Santons are a cherished part of Provençal Christmas traditions, often displayed in elaborate crèches (cribs) and passed down through generations.",
+        "gemini_tags": [
+          "French folk art",
+          "Christmas tradition",
+          "clay figurines",
+          "Provençal culture",
+          "Nativity scene",
+          "traditional craftsmanship",
+          "religious art",
+          "terracotta figures",
+          "regional heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Clay figurine making / Pottery",
+        "materials_and_tools": [
+          "Red clay (often from Aubagne or Marseille)",
+          "Plaster (for molds)",
+          "Sculpting tools (scalpel, wood tools, dentist's tools)",
+          "Iron pick",
+          "Small knife",
+          "Wet sponge",
+          "Ceramic kiln/oven",
+          "Natural pigments",
+          "Ocres (from Roussillon)",
+          "Acrylic binder",
+          "Gouache paint",
+          "Fine brushes",
+          "Wooden board (for smoothing base)"
+        ],
+        "step_by_step": [
+          "**Creating the original model**: The santonnier sculpts the desired character from a block of clay, meticulously shaping details and capturing the intended expression and posture using precise tools.",
+          "**Making the plaster mold**: A two-part plaster mold is created from the original clay model to faithfully reproduce the figurine, ensuring all intricate details are captured.",
+          "**Molding/Stamping**: A ball of clay is placed into one half of the plaster mold, and the second half is pressed firmly to force the clay into all the hollows and capture the details.",
+          "**Demolding and creating a 'chimney'**: The clay figurine is carefully removed from the mold, often with the aid of an iron pick. A small 'chimney' (vent) is created in the figurine to allow air to escape efficiently during firing, preventing the clay from exploding in the kiln.",
+          "**Finishing touches/Trimming**: Excess clay (known as 'burrs') from the mold lines is removed with a small knife. The artisan then accentuates or adds fine details, such as facial features or accessories for the character.",
+          "**Smoothing**: The santon is smoothed with a wet sponge to remove any dust, dirt, or fingerprints. The base of the figurine is also smoothed with a flat piece of wood, and the maker's unique stamp is often inscribed at this stage.",
+          "**Drying**: The shaped santon is left to air dry in the shade for a period ranging from several days to an average of two weeks. During this process, the clay may shrink slightly.",
+          "**Firing/Baking**: The dried santons are carefully arranged in a ceramic kiln and baked at high temperatures, typically between 800°C and 1050°C. The firing process can last for several hours, with the kiln remaining at peak temperature for about 20 minutes, followed by a gradual cooling period that can extend for a full day or more (total process 10-36 hours).",
+          "**Painting**: After cooling, the terracotta santons are meticulously hand-painted. This is often the most time-consuming and detailed step. Lighter colors, such as flesh tones, are applied first, followed by darker colors, using gouache, natural pigments, and ocres."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Italy",
+            "element_name": "Neapolitan Nativity scenes (Presepe Napoletano) / Living Nativity scenes",
+            "relationship_reason": "The broader tradition of Nativity scenes, from which Santons de Provence evolved, is historically traced back to St. Francis of Assisi's creation of the first living Nativity scene in Greccio, Italy, in the 13th century. Provençal santons later developed their distinct regional style, diverging from these earlier Italian forms like Neapolitan figurines."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-6bf7eba4",
+      "element_name": "Obushera (Fermented Millet/Sorghum Drink)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.youtube.com/watch%3Fv%3Ds0f_2eY3G_k&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=s0f_2eY3G_k",
+        "https://www.youtube.com/watch?v=Fj-eI03_YpE",
+        "https://www.youtube.com/watch?v=wX-y0hJd7-c",
+        "https://www.youtube.com/watch?v=x7t8uF1D06U"
+      ],
+      "scraped_at": "2026-05-25T02:30:32.363870Z",
+      "location": {
+        "country": "Uganda",
+        "provinces": [
+          "Western Uganda"
+        ],
+        "lat": -0.0020853,
+        "lng": 29.8842587
+      },
+      "resume_analisa": {
+        "description": "Obushera is a traditional fermented drink primarily made from millet and/or sorghum flour, widely consumed in Uganda. It is a staple beverage, especially among the Bakiga and Banyankole tribes in Western Uganda. The drink can be prepared in various consistencies, from a thick porridge-like consistency to a thinner, more liquid form, and is known for its slightly sour and sweet taste due to fermentation. It is considered a nutritious and healthy drink, often served at parties and special occasions.",
+        "cultural_significance": "Obushera holds significant cultural importance in Uganda, particularly for the Bakiga and Banyankole communities. It is a traditional beverage that is deeply integrated into daily life and social gatherings. The preparation and consumption of Obushera are often associated with celebrations, parties, and as a symbol of hospitality. For the Bakiga, it is noted that no party is complete without Obushera. It is valued for its nutritional benefits and is considered a healthy, organic drink.",
+        "gemini_tags": [
+          "Fermented Drink",
+          "Ugandan Cuisine",
+          "Millet",
+          "Sorghum",
+          "Traditional Beverage",
+          "African Cuisine",
+          "Bakiga Tribe",
+          "Banyankole Tribe"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Beverage Preparation",
+        "materials_and_tools": [
+          "Millet flour and/or Sorghum flour (sometimes fermented millet flour/enteemy)",
+          "Water",
+          "Pots/Pans for boiling",
+          "Mixing spoon/ladle",
+          "Bucket/Container for fermentation"
+        ],
+        "step_by_step": [
+          "Boil a significant amount of water in a pot. It is crucial to use thoroughly boiled water for safety.",
+          "In a separate bowl, mix a portion of the millet and/or sorghum flour with cold, previously boiled water to create a paste. The paste should be somewhat runny, similar to a smoothie, to avoid lumps.",
+          "Gradually add the flour paste to the boiling water while continuously stirring to prevent lumps from forming.",
+          "Continue stirring and cooking until the mixture thickens into a porridge-like consistency. It should not be overcooked.",
+          "Allow the thick porridge to cool down to a warm (not hot, not cold) temperature.",
+          "Once warm, add fermented millet flour (enteemy) or sprouted millet (ekimela) to the mixture. This acts as a starter for fermentation.",
+          "Stir well to ensure the fermented flour is evenly distributed.",
+          "Cover the mixture and let it rest and ferment for several hours, or even overnight, until it reaches the desired sour and sweet taste.",
+          "Depending on the desired consistency, additional lukewarm water can be added and stirred in.",
+          "The Obushera is ready to be consumed once fermented."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Tanzania",
+            "element_name": "Ubhusara",
+            "relationship_reason": "Mentioned as a traditional drink in Tanzania, similar in name and likely in preparation to Ugandan Obushera, indicating a shared culinary tradition across East Africa."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ae617db7",
+      "element_name": "Pão de Ló de Ovar",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/P%C3%A3o-de-l%C3%B3_de_Ovar.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/P%C3%A3o_de_l%C3%B3",
+        "https://www.tasteatlas.com/pao-de-lo-de-ovar",
+        "https://www.tasteatlas.com/pao-de-lo-de-ovar-authentic-recipe",
+        "https://mimstable.com/pao-de-lo-de-ovar-recipe-authentic-portuguese-creamy-sponge-cake/",
+        "https://lisbon.vip/pao-de-lo-de-ovar-a-taste-of-tradition/",
+        "https://www.cm-ovar.pt/visitar/gastronomia/pao-de-lo-de-ovar",
+        "https://ec.europa.eu/agriculture/eambrosia/detail/PGI-PT-01341",
+        "https://www.visitportugal.com/en/content/rota-do-pao-de-lo",
+        "https://www.youtube.com/watch?v=k_jH5q40gY4",
+        "https://amasscook.com/everything-you-ever-wanted-to-know-about-pao-de-lo/",
+        "https://noponto.pt/pao-de-lo-de-ovar/"
+      ],
+      "scraped_at": "2026-05-25T02:30:54.100029Z",
+      "location": {
+        "country": "Portugal",
+        "provinces": [
+          "Aveiro"
+        ],
+        "lat": 40.640496,
+        "lng": -8.6537841
+      },
+      "resume_analisa": {
+        "description": "Pão de Ló de Ovar is a traditional Portuguese sponge cake, highly regarded for its distinctive moist, creamy, and often runny interior, known as 'pito', encased within a delicate golden-brown crust. It is primarily crafted from a simple combination of eggs (with a high proportion of yolks), sugar, and wheat flour, notably without the use of yeast or baking powder. The cake's unique texture is achieved through meticulous whipping of the egg and sugar mixture and precise baking techniques.",
+        "cultural_significance": "This culinary heritage dates back to the 18th century, with its origins often attributed to Portuguese convents where nuns developed many iconic egg-based sweets. Historically, Pão de Ló de Ovar was offered to priests during Holy Week processions. It holds significant cultural importance in Portuguese confectionery, particularly in Ovar, where a five-day summer festival is dedicated to it. Since 2016, Pão de Ló de Ovar has been recognized with Protected Geographical Indication (PGI) status by the European Union, safeguarding its authenticity and ensuring it can only be produced in Ovar.",
+        "gemini_tags": [
+          "Portuguese cuisine",
+          "sponge cake",
+          "conventual sweet",
+          "traditional dessert",
+          "Ovar",
+          "Aveiro",
+          "PGI",
+          "egg-based pastry"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Baking (cake)",
+        "materials_and_tools": [
+          "Eggs (whole eggs and egg yolks)",
+          "Sugar",
+          "Wheat flour (all-purpose, without baking powder)",
+          "Salt (optional)",
+          "Mixing bowl",
+          "Whisk (electric whisk or stand mixer recommended)",
+          "Spatula",
+          "Round cake pan (traditionally clay molds)",
+          "Parchment paper",
+          "Oven"
+        ],
+        "step_by_step": [
+          "Combine the whole eggs, egg yolks, sugar, and a pinch of salt in a mixing bowl.",
+          "Whip the mixture continuously, preferably with an electric whisk or stand mixer, for about 10 to 15 minutes until it becomes pale, airy, and significantly increases in volume (approximately triples).",
+          "Sift the wheat flour into the batter in several batches.",
+          "Gently fold the sifted flour into the egg mixture using a spatula, taking care not to deflate the airy batter.",
+          "Prepare a round cake pan by greasing it with butter and lining it with parchment paper. Traditionally, clay molds lined with white paper were used.",
+          "Carefully pour the prepared batter into the lined cake pan.",
+          "Bake in a preheated oven at approximately 180°C (350°F) to 220°C (420°F) for a short duration, typically 10 to 20 minutes. The baking time is crucial and can vary depending on the desired moistness of the center; a traditional Pão de Ló de Ovar often has a very moist, almost gooey interior.",
+          "Once baked, allow the cake to cool completely in its mold before carefully removing it."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Brazil",
+            "element_name": "Pão de Ló (Brazilian variations)",
+            "relationship_reason": "Shared Portuguese colonial heritage and culinary influence led to various adaptations of Pão de Ló in Brazil."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Castella (Kasutera)",
+            "relationship_reason": "Pão de Ló was introduced to Japan by Portuguese missionaries in the 16th century, evolving into the distinct Japanese sponge cake known as Castella."
+          },
+          {
+            "country": "Portugal (various regions)",
+            "element_name": "Pão de Ló de Alfeizerão, Pão de Ló de Margaride, Pão de Ló de Rio Maior",
+            "relationship_reason": "These are regional variations of the broader Pão de Ló tradition within Portugal, each with unique characteristics in ingredients, preparation, or texture."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-23T02:03:56.317149Z",
-    "total_ich_elements": 140,
-    "complete_records": 130,
+    "generated_at": "2026-05-25T02:31:39.167716Z",
+    "total_ich_elements": 143,
+    "complete_records": 133,
     "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 50,
+      "Traditional Craftsmanship": 51,
       "Social Practices & Rituals": 31,
-      "Culinary Traditions": 26,
+      "Culinary Traditions": 28,
       "Culinary Traditions | Social Practices & Rituals": 2,
       "Performing Arts": 13,
       "Social Practices & Rituals | Performing Arts": 2,
