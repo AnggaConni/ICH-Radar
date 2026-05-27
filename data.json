@@ -12394,22 +12394,252 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-fece2976",
+      "element_name": "Jia (or Jaxlil) Oral Tradition of the Miao Ethnic Group",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://img2.chinadaily.com.cn/images/201403/06/53174241a310006a1b02.jpg",
+      "source_urls": [
+        "https://www.chinadaily.com.cn/culture/2014-03/06/content_17326847.htm",
+        "https://www.cits.cn/china-guide/ethnic-minorities/miao/jia-ancient-oral-tradition-of-the-miao-ethnic-group.html",
+        "https://www.chinadaily.com.cn/culture/2014-03/06/content_17326847_2.htm",
+        "https://www.visitbeijing.com.cn/a1/a-X85V71060934F40000B91C",
+        "https://ehraf.yale.edu/document?id=ak17-002",
+        "https://www.factsanddetails.com/china/cat5/sub10/item283.html",
+        "https://en.wikipedia.org/wiki/Miao_people",
+        "https://www.windhorsetour.com/china/minorities/miao-people.htm",
+        "https://www.ebsco.com/products/research-starters/miao-people",
+        "https://www.asiaharvest.org/wp-content/uploads/Miao-origins.pdf",
+        "https://www.mdpi.com/2077-1444/12/10/893",
+        "https://www.thevalelondon.com/blogs/news/souls-spirits-and-stories-exploring-miao-folklore",
+        "https://ich.unesco.org/en/activities/regional-workshop-on-the-transmission-of-the-traditional-technique-of-costume-making-of-the-miao-hmong-people-living-in-china-lao-pdr-thailand-and-viet-nam-00022"
+      ],
+      "scraped_at": "2026-05-27T02:30:41.961819Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Guizhou",
+          "Hunan",
+          "Yunnan",
+          "Guangxi",
+          "Sichuan",
+          "Guangdong",
+          "Hainan"
+        ],
+        "lat": 27.0,
+        "lng": 107.0
+      },
+      "resume_analisa": {
+        "description": "The Jia, also known as Jaxlil in the Miao language, is an ancient oral tradition of the Miao ethnic group, primarily found in Guizhou Province, China. It is considered an 'encyclopedia of the Miao,' encompassing their myths about the world's origin, history, laws, customs, social structure, literature, religion, and ancient technology. This oral lore is akin to a sacred text, like the Bible for Christians, as it embodies all the values and beliefs of the Miao people. The Jia is distinct from typical folk songs due to its profound content and its functions in religious ceremonies and conflict resolution. It is transmitted across generations through oral histories and storytelling.",
+        "cultural_significance": "The Jia oral tradition is of immense cultural significance, serving as a vital mechanism for preserving the rich heritage of the Miao people. It is crucial for transmitting their historical knowledge, cultural and social values, and collective memory. Beyond its narrative role, the Jia plays religious functions and acts as a legal framework for settling disputes, thereby reinforcing community cohesion and ethnic identity. Recognized as a 'living fossil' and a 'museum' of Miao traditional culture, its preservation is essential for maintaining the distinctiveness of the Miao identity. The tradition is currently endangered, prompting significant efforts to record and document its content, leading to its incorporation into China's national intangible cultural heritage in 2008.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Miao Culture",
+          "Chinese Ethnic Minority",
+          "Folklore",
+          "Mythology",
+          "History Transmission",
+          "Cultural Preservation",
+          "Endangered Heritage",
+          "Storytelling",
+          "Religious Practice",
+          "Legal Custom"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral performance (recitation and singing)",
+        "materials_and_tools": [
+          "Human voice",
+          "Memory"
+        ],
+        "step_by_step": [
+          "The Jia is passed down through oral histories and storytelling, often delivered in a poetic form.",
+          "It typically features a structure with five characters and five pitches within each line.",
+          "Some Miao oral traditions, including creation myths and genealogies, are conveyed in songs and couplets, where alternate sentences define the preceding one, aiding in accurate remembrance.",
+          "Performances often occur at feasts and festivals, with recitations or singing carried out by individuals or groups, such as young men and women, particularly among the Black Miao.",
+          "At funerals and weddings, specific recitations of ancestry, sometimes tracing back generations, are performed."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Laos",
+            "element_name": "Hmong Oral Traditions",
+            "relationship_reason": "The Miao people are closely related to the Hmong people, who migrated from China to Southeast Asian countries like Laos. Their oral traditions are crucial for transmitting their shared philosophy and history across these regions."
+          },
+          {
+            "country": "Vietnam",
+            "element_name": "Hmong Oral Traditions",
+            "relationship_reason": "As with Laos, the Hmong in Vietnam share a common ancestry and cultural practices with the Miao in China, including the transmission of oral traditions that preserve their collective memory and identity."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Hmong Oral Traditions",
+            "relationship_reason": "The Hmong in Thailand are part of the broader Miao/Hmong ethnic group, and their oral traditions serve similar functions in maintaining cultural continuity and historical knowledge."
+          },
+          {
+            "country": "Myanmar",
+            "element_name": "Hmong Oral Traditions",
+            "relationship_reason": "Miao/Hmong communities in Myanmar also uphold oral traditions that are integral to their cultural identity and the transmission of their history and beliefs."
+          },
+          {
+            "country": "United States",
+            "element_name": "Hmong Diaspora Oral Traditions",
+            "relationship_reason": "Due to migrations, significant Hmong (Miao) diaspora communities exist in countries like the United States, where oral traditions continue to play a role in preserving their cultural heritage and connecting generations."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b3ea700c",
+      "element_name": "Ceebu Jën",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Ceebu_Jen%2C_Senegalese_dish.jpg",
+      "source_urls": [
+        "https://nkenne.com/blog/ceebu-jen-senegal-national-dish/",
+        "https://ich.unesco.org/en/RL/ceebu-jen-a-culinary-art-of-senegal-01744",
+        "https://tastetutor.com/thieboudienne-the-original-jollof-rice-with-fish-vegetables-from-senegal/",
+        "https://honestcooking.com/thieboudienne-recipe-senegalese-fish-rice/",
+        "https://grokipedia.org/wiki/Thieboudienne",
+        "https://momkoumba.com/thieboudienne/",
+        "https://whats4eats.com/fish/ceebu-jen-recipe",
+        "https://thehouseandhomestead.com/thieboudienne-traditional-west-african-fish-and-rice-dish/",
+        "https://cosmoappliances.com/blogs/news/thieboudienne-recipe",
+        "https://www.ourworldonaplate.com/senegal-thieboudienne-ceebu-jen/",
+        "https://www.africanheritage.com/the-thieboudienne-makes-it-into-the-unesco-intangible-cultural-heritage-list/",
+        "https://archiqoo.com/locations/senegal/intangible_cultural_heritage/ceebu_jen_a_culinary_art_of_senegal",
+        "https://remitly.com/blog/culture/thieboudienne-senegal-cuisine/",
+        "https://royacshop.com/blogs/news/how-to-make-senegalese-thieboudienne-ceebu-jen",
+        "https://www.youtube.com/watch?v=F_f0i52wX0g",
+        "https://www.africatimes.com/2023/01/20/unesco-names-senegal-as-the-true-home-of-jollof-rice-over-ghana-and-nigeria/",
+        "https://en.wikipedia.org/wiki/Thieboudienne",
+        "https://www.gettyimages.com/detail/news-photo/ceebu-jen-a-traditional-dish-made-of-rice-fish-and-a-news-photo/1237245291",
+        "https://qz.com/africa/2180862/how-senegal-won-the-jollof-war",
+        "https://commons.wikimedia.org/wiki/File:Ceebu_Jen,_Senegalese_dish.jpg",
+        "https://www.maptons.com/senegal/saint-louis/map"
+      ],
+      "scraped_at": "2026-05-27T02:31:15.140069Z",
+      "location": {
+        "country": "Senegal",
+        "provinces": [
+          "Saint-Louis"
+        ],
+        "lat": 16.0280445,
+        "lng": -16.5048686
+      },
+      "resume_analisa": {
+        "description": "Ceebu Jën, also known as Thieboudienne, is the national dish of Senegal. Its name literally means 'rice with fish' in Wolof (ceeb = rice, jën = fish). It is a flavorful one-pot dish typically made with fish, broken rice, a rich tomato sauce, and a variety of seasonal vegetables such as carrots, eggplant, white cabbage, cassava, sweet potato, and okra. The dish is characterized by its complex fish-based flavors and slow-cooked richness, often considered more intricate than other Jollof rice variations.",
+        "cultural_significance": "Ceebu Jën is a profound symbol of Senegalese identity and 'teranga' (hospitality and generosity). It originated in the fishing communities of Saint-Louis in the 19th century, with popular lore attributing its creation to a cook named Penda Mbaye. The recipe and techniques are traditionally passed down from mother to daughter. Eating Ceebu Jën is a communal ritual, often served in a large shared bowl, symbolizing unity, respect, and equality. Specific cultural practices are associated with its consumption, such as not sitting with a raised knee, holding the bowl with the left hand, and not dropping grains of rice. It was inscribed on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity in 2021.",
+        "gemini_tags": [
+          "Senegalese cuisine",
+          "national dish",
+          "fish and rice",
+          "West African food",
+          "communal dining",
+          "hospitality",
+          "UNESCO intangible cultural heritage",
+          "traditional recipe"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Recipe",
+        "materials_and_tools": [
+          "**For the Fish (e.g., grouper, snapper, tilapia):**",
+          "1-2 lbs whole firm white fish or thick fish steaks, cleaned and scored",
+          "Lemon and salt (for rubbing fish)",
+          "**For the Fish Stuffing (Rof):**",
+          "2-8 cloves fresh garlic, minced",
+          "1/2 - 1 handful fresh parsley, finely chopped",
+          "1 small onion, chopped (or scallions)",
+          "1-5 hot chili peppers (e.g., Scotch Bonnet, habanero), finely chopped or whole (adjust to taste)",
+          "1 Maggi cube or bouillon",
+          "Salt and black pepper to taste",
+          "**For the Main Dish:**",
+          "1/4 - 1.5 cups peanut or vegetable oil",
+          "1-3 medium onions, diced or sliced",
+          "1/2 - 1 cup double-concentrated tomato paste, diluted with water",
+          "2-3 plum tomatoes, finely chopped (optional)",
+          "6-10 cups water or shrimp/seafood stock",
+          "2-3 cups broken jasmine or short-grain rice, washed and soaked (optional)",
+          "**Vegetables (cut into large pieces):**",
+          "2-4 carrots",
+          "1-2 eggplants",
+          "1-2 cassava (yuca) roots",
+          "1/4 - 1/2 head cabbage",
+          "1-3 okra pods",
+          "1 small kabocha squash or pumpkin (optional)",
+          "1-2 sweet potatoes (optional)",
+          "**Flavor Enhancers (optional):**",
+          "2 dried fish (e.g., guedj), cleaned",
+          "2 pieces dried snail (yeet), cleaned",
+          "2 bay leaves",
+          "Tamarind paste or sauce",
+          "White hibiscus flowers (bissap blanc)",
+          "Hibiscus leaves (lalo)",
+          "**Garnish:**",
+          "Lime wedges"
+        ],
+        "step_by_step": [
+          "**1. Prepare the Fish and Rof (Stuffing):** Rinse and pat dry the fish. Make diagonal slits on both sides. Blend garlic, parsley, small onion (or scallions), Maggi cube, salt, and pepper to create the 'rof' paste. Stuff this mixture into the slits of the fish. Rub the fish with lemon and salt. Let it marinate for at least 30 minutes, or longer in the refrigerator.",
+          "**2. Sear the Fish:** Heat oil in a large, deep pot or Dutch oven over medium-high heat. Lightly fry the stuffed fish on both sides until golden brown (about 3-5 minutes per side). Remove the fish and set aside.",
+          "**3. Create the Sauce Base:** In the same pot with the remaining oil, sauté the chopped onions until translucent. Add the diluted tomato paste and chopped plum tomatoes (if using), cooking until the paste caramelizes and the oil separates (about 5-7 minutes). Add any remaining rof mixture.",
+          "**4. Simmer Vegetables and Broth:** Pour in water or seafood stock. Add dried fish, dried snail, bay leaves, and any optional flavor enhancers like hibiscus flowers or leaves. Bring to a boil. Add the harder vegetables first (e.g., cassava, carrots, sweet potatoes), simmering for about 10-20 minutes until nearly tender. Then add softer vegetables (e.g., eggplant, cabbage, okra), and cook for another 10-15 minutes. Once vegetables are cooked but still firm, carefully remove them from the pot and set aside with the fish.",
+          "**5. Cook the Rice:** Wash the broken rice thoroughly (and soak if desired). Add the washed rice to the flavorful broth in the pot. Ensure the liquid just covers the rice. Stir well, reduce heat to low, cover the pot tightly, and simmer for 15-30 minutes, or until the rice has absorbed the liquid and is cooked through and fluffy.",
+          "**6. Assemble and Serve:** Gently return the cooked fish and vegetables to the pot with the rice, steaming everything together briefly to warm through. Alternatively, spread the cooked rice on a large communal serving platter. Arrange the vegetables over the center of the rice, and place the fish on top. Pour any reserved broth over the dish. Serve hot, traditionally eaten with hands, and garnished with lime wedges."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "West Africa (general)",
+            "element_name": "Jollof Rice",
+            "relationship_reason": "Ceebu Jën is widely considered the precursor and original version of Jollof Rice, a staple dish across West Africa."
+          },
+          {
+            "country": "Gambia",
+            "element_name": "Benachin",
+            "relationship_reason": "In Gambia, Ceebu Jën is also known as Benachin, which means 'one-pot' in Wolof, reflecting the traditional cooking method."
+          },
+          {
+            "country": "Nigeria",
+            "element_name": "Jollof Rice",
+            "relationship_reason": "The Nigerian version of Jollof Rice is a variation of the broader West African dish, with Ceebu Jën being its origin."
+          },
+          {
+            "country": "Ghana",
+            "element_name": "Jollof Rice",
+            "relationship_reason": "The Ghanaian version of Jollof Rice is a variation of the broader West African dish, with Ceebu Jën being its origin."
+          },
+          {
+            "country": "United States",
+            "element_name": "Gullah Red Rice",
+            "relationship_reason": "It is suggested that the Gullah red rice dish from the Gullah people of the Southern United States may have derived from Thieboudienne, indicating a culinary transfer through enslaved Africans."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-25T02:31:39.167716Z",
-    "total_ich_elements": 143,
-    "complete_records": 133,
+    "generated_at": "2026-05-27T02:31:51.339417Z",
+    "total_ich_elements": 145,
+    "complete_records": 135,
     "incomplete_records": 10,
     "categories_breakdown": {
       "Traditional Craftsmanship": 51,
       "Social Practices & Rituals": 31,
-      "Culinary Traditions": 28,
+      "Culinary Traditions": 29,
       "Culinary Traditions | Social Practices & Rituals": 2,
       "Performing Arts": 13,
       "Social Practices & Rituals | Performing Arts": 2,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 9,
+      "Oral Traditions": 10,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 1,
