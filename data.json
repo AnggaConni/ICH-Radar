@@ -12624,16 +12624,274 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-287f3320",
+      "element_name": "Upacara Adat Ngaben",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ngaben_Ceremony.jpg/1280px-Ngaben_Ceremony.jpg",
+      "source_urls": [
+        "https://banjar.bulelengkab.go.id/pages/makna-upacara-ngaben",
+        "https://petijenasah.com/prosesi-adat-pemakaman-bali-upacara-ngaben-dan-filosofi-di-baliknya/",
+        "https://id.wikipedia.org/wiki/Ngaben",
+        "https://travel.kompas.com/read/2022/01/24/11000047/sekilas-tentang-tradisi-ngaben-prosesi-amp-keunikannya",
+        "https://kesra.bulelengkab.go.id/pages/upacara-ngaben-dalam-agama-hindu",
+        "https://ceraken.baliprov.go.id/rituals/upacara-ngaben/",
+        "https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/bali/upacara-ngaben",
+        "https://www.kumparan.com/kumparantravel/tata-cara-pelaksanaan-upacara-adat-ngaben-di-bali-beserta-fakta-dan-jenisnya-22XQpY0eG2P",
+        "https://kamboja.co.id/tata-cara-upacara-ngaben-tradisi-pemakaman-di-bali/",
+        "https://www.baliinstitute.com/balinese-cremation-ceremony-ngaben-meaning-process-and-visitor-etiquette/",
+        "https://www.gramedia.com/literasi/upacara-ngaben/",
+        "https://www.scribd.com/document/500000000/Upacara-Ngaben-Makna-dan-Tujuan",
+        "https://www.thebalisoul.com/stories/the-spiritual-significance-of-ngaben-balis-unique-cremation-ceremony",
+        "https://marariversafarilodge.com/cultural-lessons-from-the-balinese-ngaben-ceremony/",
+        "https://ejournal.warmadewa.ac.id/index.php/jish/article/view/2901",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e9/Ngaben_Ceremony.jpg",
+        "https://www.traveloka.com/id/explore/destination/sekilas-tentang-tradisi-ngaben-prosesi-dan-keunikan-tradisi-ngaben-di-bali-acc/229070"
+      ],
+      "scraped_at": "2026-05-29T02:08:56.811876Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Bali"
+        ],
+        "lat": -8.2271303,
+        "lng": 115.1919203
+      },
+      "resume_analisa": {
+        "description": "Ngaben is a significant Balinese Hindu cremation ceremony, also known as Pitra Yadnya or Pelebon, performed to release the soul (atma) from the physical body and return the five elements (Panca Maha Bhuta) that constitute the human body to their cosmic origin in the universe. Unlike typical funerals, Ngaben is not a somber occasion but rather a celebration of the soul's journey towards its next life or ultimate liberation. The ceremony is believed to purify the soul and sever its worldly attachments, allowing it to continue its spiritual journey.",
+        "cultural_significance": "The Upacara Adat Ngaben holds profound cultural and spiritual significance for the Hindu community in Bali. It is considered a sacred duty and an act of devotion (yadnya) by the family towards their deceased ancestors. The ritual facilitates the soul's journey towards reincarnation or Moksha, a state of ultimate freedom from the cycle of rebirth and union with God. It also symbolizes the family's acceptance and willingness to let go of the deceased, reinforcing their adherence to Hindu religious teachings and the cosmic cycle of life, death, and rebirth. The ceremony strengthens communal unity, reflecting the Balinese philosophy of 'gotong royong' (mutual cooperation).",
+        "gemini_tags": [
+          "Balinese culture",
+          "Hindu ritual",
+          "cremation ceremony",
+          "death ritual",
+          "spiritual journey",
+          "ancestor veneration",
+          "Indonesia",
+          "Pitra Yadnya",
+          "Pelebon",
+          "Panca Maha Bhuta",
+          "Moksha"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual Ceremony",
+        "materials_and_tools": [
+          "Bade (cremation tower or vehicle, often multi-tiered and adorned, sometimes shaped like a bull or other animal, varying with caste and tradition)",
+          "Kajang (a white paper or lontar leaf inscribed with sacred magical scripts, representing the soul's identity and spiritual 'ticket')",
+          "Offerings (sesajen or bebanten, various ritualistic food and symbolic items)",
+          "Fire (the primary element for cremation, believed to purify the soul)",
+          "Sarcophagus (often in the shape of a bull or other animal, used to hold the body during cremation)",
+          "Gamelan music (accompanies the procession)"
+        ],
+        "step_by_step": [
+          "**Ngulapin:** A preliminary ceremony to call back the soul, especially if the person died outside the family home.",
+          "**Nyiramin/Ngemandusin:** The ritual bathing and cleansing of the deceased's body, often accompanied by the placement of symbolic items on different body parts to restore their cosmic functions.",
+          "**Ngajum Kajang:** The preparation of the 'kajang,' a symbolic document containing sacred writings, signifying the family's readiness to release the soul.",
+          "**Ngaskara:** A purification ceremony for the soul, intended to guide it back to the divine.",
+          "**Mameras:** A ritual performed to purify the family members participating in the ceremony.",
+          "**Papegatan:** A symbolic ritual to sever the deceased's worldly attachments and ensure a smooth transition to the spiritual realm.",
+          "**Pakiriman Ngutang/Memargi ke Setra:** The grand procession where the deceased's body, placed in a 'bade' (cremation tower or sarcophagus), is carried to the cremation ground (setra), often accompanied by vibrant gamelan music and prayers.",
+          "**Ngeseng/Pembakaran Jenazah:** The central act of cremation, where the body is ritually burned. This is believed to return the five elements of the body to the universe and liberate the soul.",
+          "**Nuduk Galih:** After cremation, the remaining ashes and bone fragments are carefully collected.",
+          "**Nganyut Sekah/Nganyud:** The final step involves scattering the collected ashes into the sea or a river, symbolizing the soul's complete return to its cosmic origin and the ultimate purification."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Hindu Cremation Ceremonies",
+            "relationship_reason": "Ngaben's origins are linked to ancient Hindu cremation practices, such as those performed by the Bharatayuddha in India around 400 BC, which share the belief in returning the body to its natural elements. The philosophical foundation of Ngaben, including the concept of Panca Sradha (five basic frameworks of Hinduism) and Panca Maha Bhuta (five elements of the human body), is deeply rooted in broader Hindu traditions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0478cd87",
+      "element_name": "Ajrak",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//qumas.com/blogs/news/ajrak-pakistan-sacred-cloth-5000-year-story&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://qumas.com/blogs/news/ajrak-pakistan-sacred-cloth-5000-year-story",
+        "https://en.wikipedia.org/wiki/Ajrak",
+        "https://gaatha.org/craft-documentation/ajrakh-printing-ajrakhpur-gujarat-craft-documentation-ajrak/",
+        "https://matatraders.com/blogs/news/the-art-of-ajrakh-traditional-block-printing-process-explained",
+        "https://moomal.pk/blogs/news/ajrak",
+        "https://jhooms.com/blogs/news/ajrak-a-symbol-of-life-and-legacy-in-pakistani-culture",
+        "https://faridagupta.com/blogs/news/a-complete-guide-to-ajrakh-and-the-process-of-ajrakh-making",
+        "https://wanderingsilk.org/textile-guide-ajrakh/",
+        "https://sindhishaan.com/ajrak-is-sindhs-living-heritage/",
+        "https://www.arabnews.com/news/541246",
+        "https://medium.com/@sindhiculture/the-significance-of-ajrak-in-sindhi-culture-c74381387d85",
+        "https://rrprintingtools.com/blogs/news/astonishing-ageless-ajrak-printing"
+      ],
+      "scraped_at": "2026-05-29T02:09:41.366403Z",
+      "location": {
+        "country": "Pakistan",
+        "provinces": [
+          "Sindh",
+          "South Punjab (Saraiki belt)"
+        ],
+        "lat": 25.5,
+        "lng": 69.0
+      },
+      "resume_analisa": {
+        "description": "Ajrak is a distinctive form of textile block-printing, primarily found in the Sindh region of Pakistan. It is characterized by its deep crimson red and indigo blue background, featuring symmetrical geometric patterns with interspersed unprinted sparkling white motifs, often resembling stars. Made predominantly from cotton, Ajrak is known for its suppleness and the intricate, double-sided designs achieved through a multi-day, multi-step resist printing and natural dyeing process using hand-carved wooden blocks.",
+        "cultural_significance": "Ajrak holds profound cultural weight and is a timeless symbol of Sindhi culture and traditions, deeply rooted in the region for over 5,000 years, tracing back to the Indus Valley Civilization. It is present at every milestone of Sindhi life, from being used as a hammock for infants to being draped by brides at weddings and serving as a final homage in times of mourning. Ajrak is commonly presented as a gesture of hospitality and respect to guests and dignitaries. The patterns and colors carry symbolic meanings: red often represents life and courage, blue signifies loyalty, twilight, or the vast universe, black symbolizes darkness and strength, and white depicts purity or clouds. The trefoil pattern, seen on the 'Priest-King' bust from Mohenjo-daro, is still used and signifies the unity of the gods of the Sun, water, and earth. It is a visible marker of Sindhi identity, representing continuity, honor, and resilience.",
+        "gemini_tags": [
+          "Textile Art",
+          "Block Printing",
+          "Natural Dyes",
+          "Sindhi Culture",
+          "Pakistani Heritage",
+          "Resist Dyeing",
+          "Geometric Patterns",
+          "Cultural Symbolism",
+          "Traditional Craftsmanship",
+          "Indus Valley Civilization"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Resist block printing and natural dyeing",
+        "materials_and_tools": [
+          "Cotton fabric",
+          "Soda ash",
+          "Castor oil (Arandi oil)",
+          "Camel dung solution (traditional bleaching agent)",
+          "Myrobalan nuts (for yellowish base)",
+          "Resist paste (made from lime, gum arabic, clay, millet flour)",
+          "Natural dyes (Indigo for blue, Madder roots for red, Iron rust for black, Rhubarb root, Pomegranate, Turmeric)",
+          "Hand-carved wooden blocks (often from Shisham or Teakwood)",
+          "Danda (stirrer)",
+          "Ghod (wooden stand)",
+          "Printing table",
+          "Budho (wooden beater)",
+          "Indigo-maat (dyeing tank)",
+          "Kundi (tank for Harda treatment)",
+          "Tari (tray)",
+          "Rangchul (dyeing tank made of bricks and cow dung)",
+          "Mesh-based pad"
+        ],
+        "step_by_step": [
+          "**Saaj (Initial Washing)**: The cotton fabric is washed multiple times in plain water and beaten to remove impurities. It is then soaked in a solution of soda ash, castor oil, and sometimes camel dung to soften the fibers and make them more absorbent.",
+          "**Harda Treatment**: The fabric is soaked in a solution of myrobalan nuts, which imparts a yellowish base. This base is crucial for binding dye molecules in subsequent steps.",
+          "**Rekh / Resist Printing (Outline)**: Skilled craftsmen use hand-carved wooden blocks to print the initial outline of the design onto the fabric with a resist paste (made from lime, gum, and clay). Sawdust or finely powdered cow dung is sprinkled over the wet paste to prevent smudging.",
+          "**Dyeing (Indigo)**: If blue is part of the design, the cloth is immersed in an indigo vat. The fabric absorbs the dye and, upon exposure to oxygen, turns blue.",
+          "**Vicharnu (Rinsing and Drying)**: After dyeing, the fabric is thoroughly rinsed and dried in the sun.",
+          "**Rang (Boiling)**: The cloth is boiled in a solution, often containing madder, to fully develop and reveal the black and red colors.",
+          "**Layered Printing and Dyeing**: The process involves multiple alternating cycles of applying resist pastes with different blocks and dyeing with various natural colors (e.g., madder for crimson, iron rust for black). The resist paste is washed off between applications.",
+          "**Mirror Printing (Double-Sided)**: To achieve the characteristic double-sided symmetry, artisans repeat the printing and dyeing steps on both sides of the fabric, ensuring perfect alignment of motifs.",
+          "**Final Wash and Finishing**: The fabric undergoes a final wash to remove any remaining resist or excess dye, followed by drying and sometimes light polishing to achieve a luminous and breathable finish."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Ajrakh block-printing",
+            "relationship_reason": "The craft originated in the Sindh region (now Pakistan) and later flourished in the Kutch district of Gujarat and Barmer in Rajasthan, India, with the migration of the Khatri community. Both regions share the same traditional techniques, motifs, and cultural significance."
+          },
+          {
+            "country": "Ancient Egypt",
+            "element_name": "Textile use for mummification",
+            "relationship_reason": "Ancient records indicate that Egyptians imported cloth from Sindh, referred to as 'Sindhin', to wrap sacred mummies, suggesting historical trade and influence of Sindhi textiles."
+          },
+          {
+            "country": "Persia",
+            "element_name": "Presentation of textiles",
+            "relationship_reason": "Historical accounts mention an Ajrak being presented to Persian King Darius I at his coronation around 500 BCE, highlighting its esteemed value and cross-cultural recognition."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-87ddd5e2",
+      "element_name": "Tradisi Turun Mandi (Minangkabau Newborn Bathing Tradition)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//id.wikipedia.org/wiki/Turun_Mandi&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://id.wikipedia.org/wiki/Turun_Mandi",
+        "https://www.traveloka.com/id-id/explore/destination/tradisi-di-indonesia-yang-unik-acc/176964",
+        "https://www.kompasiana.com/fathurrahman2000/658b196408a80479f67a3243/memahami-adat-turun-mandi-dalam-filsafat-bahasa",
+        "https://www.kompasiana.com/noviafitriyani/60b45701d544077c5952d7d2/tradisi-turun-mandi-yang-turun-temurun-di-minangkabau",
+        "https://www.indonesia.travel/gb/en/destinations/sumatra/west-sumatra/the-down-mandi-ceremony",
+        "https://www.thestoryofindonesia.com/2010/01/turun-mandi-ceremony-in-minangkabau.html",
+        "https://pelitanusantaranews.com/2024/09/09/warisan-tradisional-kebudayaan-turun-mandi-di-minangkabau/"
+      ],
+      "scraped_at": "2026-05-29T02:10:20.013276Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "West Sumatra"
+        ],
+        "lat": -0.5827529,
+        "lng": 100.6133379
+      },
+      "resume_analisa": {
+        "description": "Tradisi Turun Mandi, also known as 'bacungak' or 'baok kayia' in some local dialects, is a centuries-old Minangkabau tradition in West Sumatra, Indonesia, performed for newborn babies. It is a symbolic bathing ceremony held to express gratitude for the child's birth and to introduce the new member to the community. The ceremony signifies the baby's first formal introduction to the world outside the home.",
+        "cultural_significance": "This tradition holds deep cultural and spiritual significance for the Minangkabau people. It serves as an expression of gratitude to God for the gift of a child and is believed to cleanse and protect the baby from negative energy while bestowing blessings and protection. The ceremony also marks the mother's first outing after postpartum recovery and strengthens social bonds and togetherness within the community by formally introducing the newborn. It is also interpreted as a way to introduce the child to the realities of life, symbolizing that life is filled with different tastes and situations (bitter, sweet, salty, spicy). The practice embodies spiritual and social values, reflecting the community's hopes for the child's blessings, health, and protection.",
+        "gemini_tags": [
+          "Newborn Ritual",
+          "Minangkabau Culture",
+          "Bathing Ceremony",
+          "Gratitude Ritual",
+          "Community Practice",
+          "West Sumatra Tradition",
+          "Life Cycle Ritual"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual/Ceremony",
+        "materials_and_tools": [
+          "River water (symbolizing purification and new life)",
+          "Batiah bareh (rice cake)",
+          "Boreh rondang (rice without oil)",
+          "Palo nasi (topmost part of rice, taken first)",
+          "Limeh (container made from banana leaves)",
+          "Tampang karambiah tumbuah (coconut ready to be planted)",
+          "Sigi kain buruak (torch made from torn cloths)",
+          "Arang (charcoal)",
+          "Darah ayam (chicken blood)",
+          "Clean clothes for the baby"
+        ],
+        "step_by_step": [
+          "The date for the ceremony is determined based on the baby's birth day: an odd day for a baby boy and an even day for a baby girl.",
+          "Preparations are made, including gathering materials such as 'batiah bareh', 'boreh rondang', 'palo nasi', 'limeh', 'tampang karambiah tumbuah', 'sigi kain buruak', charcoal, and chicken blood.",
+          "Arang (charcoal) and darah ayam (chicken blood) are added to three cups of rice. Two cups are placed on the road leading to the river, and one is brought to the river where the ceremony will take place.",
+          "The baby is paraded from the home to the river or a designated waterway by the person who assisted in the birth process, accompanied by family members and the community.",
+          "At the river, the 'tampang karambiah tumbuah' (coconut ready to be planted) is used as a seat for the 'bidan' (midwife) or traditional birth attendant.",
+          "The 'sigi' (torch) made from torn cloths is used to provide smoke to the child, which is believed to offer protection.",
+          "The baby is symbolically bathed in the river water.",
+          "During the ceremony, a few strands of the baby's hair may be cut, and the baby is introduced to the taste of white rice, salt, sugar, and chili by touching them to the lips, symbolizing the different tastes and experiences of life.",
+          "After the ceremony at the river, the baby and mother are paraded back to their home.",
+          "At home, guests are served food as part of the celebration.",
+          "'Boreh rondang' and 'palo nasi', placed in 'limeh' (banana leaf containers), are distributed to children to introduce the newborn to the community and foster friendships."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.9,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-27T02:31:51.339417Z",
-    "total_ich_elements": 145,
-    "complete_records": 135,
+    "generated_at": "2026-05-29T02:10:53.198442Z",
+    "total_ich_elements": 148,
+    "complete_records": 138,
     "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 51,
-      "Social Practices & Rituals": 31,
+      "Traditional Craftsmanship": 52,
+      "Social Practices & Rituals": 33,
       "Culinary Traditions": 29,
       "Culinary Traditions | Social Practices & Rituals": 2,
       "Performing Arts": 13,
