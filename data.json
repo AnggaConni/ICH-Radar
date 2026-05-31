@@ -12882,15 +12882,185 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ef2e7194",
+      "element_name": "Know-how of cultivating mastic on the island of Chios",
+      "category": "Traditional Craftsmanship | Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=http%3A//www.unesco.org/culture/ich/RL/00993&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "http://www.unesco.org/culture/ich/RL/00993",
+        "https://www.grecogum.com/blogs/news/how-mastic-gum-is-harvested-a-timeless-tradition",
+        "https://www.grecogum.com/blogs/news/how-mastic-gum-is-harvested",
+        "https://www.travel.gr/en/culture/heritage/mastic-of-chios-the-precious-resin-tears-originating-from-greece/",
+        "https://www.greece-is.com/mastiha-the-challenging-harvest-that-keeps-chios-alive/",
+        "https://www.imagining-greece.gr/items/show/210",
+        "https://www.mingei.eu/heritage-crafts/mastic/",
+        "https://www.piop.gr/el/diktyo-mouseion/mouseio-mastixas-xiou.aspx",
+        "https://www.chios.gr/en/mastiha/unesco-recognition/",
+        "https://www.chios.gr/en/mastiha/mastiha-culture/"
+      ],
+      "scraped_at": "2026-05-31T02:31:39.850035Z",
+      "location": {
+        "country": "Greece",
+        "provinces": [
+          "North Aegean (Chios Island)"
+        ],
+        "lat": 37.6610479,
+        "lng": 26.4674349
+      },
+      "resume_analisa": {
+        "description": "The know-how of cultivating mastic on the island of Chios refers to the traditional practices involved in extracting mastic, an aromatic resin, from the Pistacia lentiscus var. chia shrub. This specific variety of mastic tree is unique to the southern part of Chios, known as 'Mastihohoria' or 'mastic villages'. The cultivation is a year-round family occupation, with tasks often divided between men and women of all ages.",
+        "cultural_significance": "Mastic cultivation is deeply intertwined with the identity and cultural continuity of Chios Island. It has historically been a cornerstone of the island's economic and social development, with references dating back to the 5th century B.C.. The process fosters strong community bonds, establishing networks of alliances and mutual help among the villagers. The knowledge and techniques are transmitted informally from older to younger generations, reinforcing the cultural identity of the community and contributing to social integration. The traditional cultivation methods were inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2014, recognizing its centuries-old practices and unique social culture.",
+        "gemini_tags": [
+          "Traditional Agriculture",
+          "Resin Harvesting",
+          "Community Practices",
+          "Greek Heritage",
+          "UNESCO Intangible Cultural Heritage",
+          "Family Occupation",
+          "Chios Island"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional cultivation and harvesting of natural resin",
+        "materials_and_tools": [
+          "Kentitiri (small iron tool for incisions)",
+          "Brooms",
+          "Spatulas (timitiria)",
+          "Wooden boxes/containers",
+          "White powder (calcium carbonate/kalsos)"
+        ],
+        "step_by_step": [
+          "**Winter (December-February):** Men are responsible for the natural fertilization and pruning of the mastic shrubs.",
+          "**Mid-June to early July (Plakoma):** Women sweep, level, and clean the ground around the trunk of each tree. A white powder, typically calcium carbonate (kalsos), is then spread on the soil to create a clean, sterile base where the resin can fall without contamination.",
+          "**Early July - Mid-August (Kentima/Embroidering):** Using a specialized iron tool called a 'kentitiri', farmers make shallow incisions on the tree's trunk and larger branches. This process, known as 'kentima' or 'embroidering', stimulates the tree to release its resinous sap. The skill involved is crucial to avoid harming the tree while ensuring sufficient resin production.",
+          "**Mid-August onwards (Harvesting):** The resin slowly oozes from the incisions, dripping onto the whitened ground where it solidifies into translucent 'tears'. The first harvest, focusing on larger tears, typically begins after August 15th.",
+          "**Collection (Mid-August to end of September):** The hardened mastic tears are collected from the ground. This is done by hand, with brooms, or with special spatula-like tools called 'timitiria'. Smaller pieces are often swept together with the white soil and then sifted in the field to remove initial debris.",
+          "**Storage and Initial Cleaning:** The collected mastic is transferred to wooden containers and stored in cool, dry places. An initial cleaning process removes dirt and larger impurities.",
+          "**Drying and Curing (September/October to November/December):** The mastic is left to dry for several months in a cool, often underground, room. This drying period allows the resin to fully harden and crystallize, making it less sticky and easier to handle for further cleaning.",
+          "**Further Cleaning and Sorting (November - early spring):** This labor-intensive phase involves women traditionally 'dandling' (sifting), washing the mastic with soap and cold water, and then drying it. A meticulous 'tweaking' process uses knives and pointed objects to remove any remaining dust, pebbles, or bark, tear by tear. The mastic is then sorted by size and quality.",
+          "**Final Processing:** The Chios Mastiha Growers Association takes over the remaining processing, including further sorting and grading based on size and color, before packaging and export."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Multiple Mediterranean Countries (Greece, Italy, Spain, Morocco, Portugal, Cyprus, Croatia)",
+            "element_name": "Mediterranean Diet",
+            "relationship_reason": "The Mediterranean Diet is a UNESCO-recognized intangible cultural heritage shared by several countries, which includes traditional knowledge and practices related to food, often incorporating local products like mastic."
+          },
+          {
+            "country": "India",
+            "element_name": "Ayurvedic Pharmacopoeia",
+            "relationship_reason": "A monograph on mastic exists in the Ayurvedic Pharmacopoeia of India, indicating a shared recognition and traditional use of mastic for its medicinal properties, even though the cultivation know-how is specific to Chios."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-05d3f9db",
+      "element_name": "Traditional Syrian Glassblowing",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.nawafir-tours.com/blog/the-timeless-craft-of-glassblowing-in-damascus-artistic-mastery-and-cultural-legacy/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.nawafir-tours.com/blog/the-timeless-craft-of-glassblowing-in-damascus-artistic-mastery-and-cultural-legacy/",
+        "https://ich.unesco.org/en/RL/traditional-syrian-glassblowing-01961",
+        "https://www.paisley.org/iridescent-artefacts-preserving-syrian-glass-for-the-paisley-museum-art-gallery/",
+        "https://obakki.com/blogs/journal/history-of-glassblowing",
+        "https://www.greenwichhistory.org/stained-glass-windows",
+        "https://www.metmuseum.org/toah/hd/blgl/hd_blgl.htm",
+        "https://www.moanaglass.com/blogs/news/glassblowing-tools"
+      ],
+      "scraped_at": "2026-05-31T02:32:05.216010Z",
+      "location": {
+        "country": "Syria",
+        "provinces": [
+          "Damascus",
+          "Aleppo",
+          "Hama",
+          "Sidon",
+          "Tyre"
+        ],
+        "lat": 33.5130695,
+        "lng": 36.3095814
+      },
+      "resume_analisa": {
+        "description": "Traditional Syrian glassblowing, particularly from Damascus, is an artisanal craft focused on creating intricate glass objects by hand. This practice utilizes discarded glass fragments, transforming them into new, aesthetically pleasing, and functional items. The craft involves a meticulous process of melting, shaping, and decorating the glass, reflecting centuries of accumulated skill and knowledge.",
+        "cultural_significance": "Damascene glassblowing is deeply embedded in the social, spiritual, and historical fabric of Damascus. The crafted glass objects hold significant symbolic value, frequently used in religious ceremonies, important social gatherings, and various cultural traditions, such as offerings or wedding decorations. These pieces are often cherished as family heirlooms, passed down through generations. Beyond its artistic and cultural contributions, the craft provides a vital source of livelihood for artisans, ensuring the preservation of a centuries-old tradition and fostering a strong sense of continuity and shared identity within the community.",
+        "gemini_tags": [
+          "Glassblowing",
+          "Traditional Craftsmanship",
+          "Syria",
+          "Damascus",
+          "Artisanal",
+          "Cultural Heritage",
+          "Recycling",
+          "Livelihood",
+          "Apprenticeship",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand-blown glass",
+        "materials_and_tools": [
+          "Discarded glass fragments",
+          "Handmade brick oven",
+          "Hollow metal rod (blowpipe)",
+          "Metal tongs",
+          "Powdered dyes (optional)"
+        ],
+        "step_by_step": [
+          "Gather discarded glass fragments, which would otherwise be considered waste.",
+          "Place these glass fragments inside a specially constructed handmade brick oven.",
+          "Heat the oven intensely to melt the glass until it becomes molten and malleable.",
+          "Using a hollow metal rod (blowpipe), the skilled artisan carefully gathers the molten glass onto the end of the rod.",
+          "Blow air through the hollow rod to inflate the molten glass, causing it to expand and take on a three-dimensional shape.",
+          "Employ metal tongs, specifically designed for working with hot glass, to manipulate and shape the glass further into desired forms such as cups, vases, lamps, or ornaments.",
+          "To add color, powdered dyes can either be incorporated into the molten glass during the melting stage or applied to the cooled and hardened glass.",
+          "Once the glass has cooled and solidified, decorative elements, often cultural symbols like the Hand of Fatima, can be intricately painted or engraved onto the surface.",
+          "The finished piece is then typically placed in an annealer (a specialized kiln) to cool slowly and evenly, preventing cracks and ensuring durability."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Italy",
+            "element_name": "Murano Glassblowing",
+            "relationship_reason": "Syrian craftsmen were instrumental in transferring glassblowing techniques to Europe, significantly influencing centers like Venice (Murano glass)."
+          },
+          {
+            "country": "Lebanon",
+            "element_name": "Phoenician Glassblowing",
+            "relationship_reason": "The Phoenicians, from the Syro-Palestinian coast, developed early glass workshops and were crucial in the initial spread of glassblowing techniques."
+          },
+          {
+            "country": "Egypt",
+            "element_name": "Ancient Egyptian Glasswork",
+            "relationship_reason": "The glassblowing technique spread to Egypt from the Syro-Palestinian region."
+          },
+          {
+            "country": "Roman Empire",
+            "element_name": "Roman Glassware",
+            "relationship_reason": "Syrian craftsmen developed glassblowing in the 1st century BC, producing and exporting glass vessels that were widely used throughout the Roman and early Byzantine Empires."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-29T02:10:53.198442Z",
-    "total_ich_elements": 148,
-    "complete_records": 138,
+    "generated_at": "2026-05-31T02:32:32.137728Z",
+    "total_ich_elements": 150,
+    "complete_records": 140,
     "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 52,
+      "Traditional Craftsmanship": 53,
       "Social Practices & Rituals": 33,
       "Culinary Traditions": 29,
       "Culinary Traditions | Social Practices & Rituals": 2,
@@ -12900,7 +13070,7 @@
       "Oral Traditions": 10,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
-      "Traditional Craftsmanship | Social Practices & Rituals": 1,
+      "Traditional Craftsmanship | Social Practices & Rituals": 2,
       "Social Practices & Rituals | Culinary Traditions": 1,
       "Social Practices & Rituals | Traditional Craftsmanship": 1,
       "Performing Arts | Traditional Craftsmanship": 1
