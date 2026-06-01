@@ -13052,19 +13052,278 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-88db68d3",
+      "element_name": "Seblang Bakungan",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Seblang_Bakungan_Banyuwangi.jpg/1280px-Seblang_Bakungan_Banyuwangi.jpg",
+      "source_urls": [
+        "https://beritajatim.com/gaya-hidup/tradisi-seblang-bakungan-kembali-digelar-ribuan-wisatawan-saksikan-ritual-sakral-suku-osing-banyuwangi/",
+        "https://eudl.eu/pdf/10.4108/eai.20-9-2019.2291079",
+        "https://www.indonesia-tourism.com/east-java/banyuwangi/seblang-traditional-art.html",
+        "http://journal.unj.ac.id/unj/index.php/isllae/article/view/10667/6938",
+        "https://www.ijsmr.net/archive/volume-6-issue-12-december-2017/6-12-108-2017.pdf",
+        "https://www.thejakartapost.com/news/2015/08/03/the-seblang-dance-ritual-banyuwangi.html",
+        "https://www.shutterstock.com/image-photo/banyuwangi-east-java-indonesia-07092016-seblang-77468698",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seblang_Bakungan_Banyuwangi.jpg",
+        "https://www.banyuwangikab.go.id/berita/seblang-bakungan-tarian-magis-warga-using-banyuwangi-yang-pukau-wisatawan",
+        "https://www.latitude-longitude.org/id/banyuwangi/",
+        "https://www.time-ok.com/indonesia/banyuwangi",
+        "https://database.earth/cities/banyuwangi",
+        "https://www.geloky.com/banyuwangi-indonesia-map-lat-long-coordinates/",
+        "https://www.shutterstock.com/image-photo/banyuwangi-east-java-indonesia-april-08-2292329249",
+        "https://www.shutterstock.com/search/seblang+dance",
+        "https://www.boundingoveroursteps.com/trance-dance-bali/"
+      ],
+      "scraped_at": "2026-06-01T02:39:55.710276Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "East Java"
+        ],
+        "lat": -7.6977397,
+        "lng": 112.4914199
+      },
+      "resume_analisa": {
+        "description": "Seblang Bakungan is a sacred ritual dance performed by the Osing community in Bakungan village, Glagah District, Banyuwangi Regency, East Java, Indonesia. It is an integral part of the \"bersih desa\" (village cleansing) tradition. The dance is uniquely performed by an elderly woman who has reached menopause and enters a trance state, believed to be possessed by ancestral spirits or Dewi Sri, the Goddess of Fertility. The performance is accompanied by traditional Gamelan music and songs, some of which narrate stories of rebellion against Dutch colonialists.",
+        "cultural_significance": "The Seblang Bakungan ritual is held annually, typically one week after Eid al-Adha, to express profound gratitude to God for blessings, ensure the welfare and safety of the village, ward off evil, maintain fertile land, and guarantee a successful harvest. It is deeply rooted in the Osing community's agrarian culture and animistic beliefs, where the dancer acts as a medium between the human world and the supernatural, including ancestral spirits and village guardians. This tradition also plays a crucial role in strengthening social bonds, fostering mutual cooperation, and preserving the local environment, being considered the oldest and most powerful ritual for the Osing tribe.",
+        "gemini_tags": [
+          "Osing culture",
+          "Banyuwangi",
+          "traditional dance",
+          "trance ritual",
+          "Indonesian folklore",
+          "community practice",
+          "social ritual",
+          "cultural heritage",
+          "village cleansing",
+          "fertility ritual",
+          "ancestral worship",
+          "East Java tradition"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual Steps",
+        "materials_and_tools": [
+          "Traditional Gamelan instruments (drum, gongs, saron, violin)",
+          "Omprok (headwear made from shredded banana leaves, fresh flowers, small mirror)",
+          "Shawl tied to the waist",
+          "Long cloth with Gajah Oling motif",
+          "White socks and anklets (for the dancer)",
+          "Incense",
+          "Tumpeng (cone-shaped rice dish)",
+          "Pecel pithik (chicken salad)",
+          "Oncor (torches)",
+          "Offerings (ubo rampe)",
+          "Seeds, plants, windmill (for 'Adol Kembang')"
+        ],
+        "step_by_step": [
+          "**Preparation**: The Seblang arena, often in front of an art studio, is prepared and decorated by community members with coconut leaves and various 'tuwuhan' (vegetables and fruits). The dancer's costume, including the 'omprok' (headwear), is prepared and imbued with spells/mantras.",
+          "**Communal Feast & Prayers**: The ritual commences with a mass communal feast (kenduri massal) along the village road. Following this, villagers perform Maghrib and Hajat prayers at the local mosque, seeking safety and welfare for the village.",
+          "**Pilgrimage & Ablutions**: Village officials and elders undertake a pilgrimage to ancestral graves, bringing water from Watu Ulo beach and offerings. The designated Seblang dancer performs ablutions by soaking her body with water from a sacred source, a practice believed to facilitate the trance state.",
+          "**Dancer's Procession**: Make-up is applied to the dancer at an elder's house. Incense is burned, and the dancer's eyes are covered with a cloth. She is then paraded along the village road towards the stage, accompanied by male Seblang dancers and relatives.",
+          "**Trance Induction**: Upon reaching the dance arena, a shaman recites mantras. Gamelan music, featuring specific compositions, is played to invite ancestral spirits to possess the dancer. The onset of the trance is typically marked by the dancer tumbling backward, after which she begins dancing with monotonous movements and closed eyes.",
+          "**Ider Bumi & Communal Meal**: A torch parade, known as 'ider bumi', circles the village, passing through sacred locations. During this procession, a communal meal of tumpeng and pecel pithik is shared on mats, illuminated by the torchlight.",
+          "**Seblang Dance Performance**: The possessed dancer performs the Seblang dance, guided by the gamelan rhythm and songs, which sometimes recount tales of rebellion.",
+          "**Conclusion ('Adol Kembang')**: The performance concludes in the middle of the night with 'Adol Kembang' (selling flowers). Spectators then eagerly snatch away seeds, plants, and windmills from the stage, believing these items bring blessings."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Indonesia (Bali)",
+            "element_name": "Sanghyang Dedari, Sanghyang Jaran, Kecak Dance",
+            "relationship_reason": "These Balinese trance dances involve spirit possession and ritualistic performances for community well-being, similar to Seblang. The Osing people share cultural ties and animistic beliefs with their Balinese neighbors."
+          },
+          {
+            "country": "Indonesia (Cirebon, Java)",
+            "element_name": "Sintren Dance",
+            "relationship_reason": "Sintren is a traditional trance dance from the northern coast of Java, including Cirebon, where the dancer enters a trance state and is believed to communicate with spirits, reflecting a shared spiritual practice."
+          },
+          {
+            "country": "Indonesia (Ternate, North Maluku)",
+            "element_name": "Salai Jin Dance",
+            "relationship_reason": "This dance from the Ternate Tribe also involves dancers entering a trance state and performing extreme actions, believed to involve spirits (jinn), indicating a common theme of spirit mediumship in dance."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2cb9d495",
+      "element_name": "Taijiquan (太极拳)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.ich.china.com.cn/2020-12/17/content_41369796.htm&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.ich.china.com.cn/2020-12/17/content_41369796.htm",
+        "https://www.macaoculture.gov.mo/ich/detail/100051",
+        "https://www.ich.china.com.cn/2020-12/18/content_41370248.htm",
+        "https://www.xinhuanet.com/politics/2020-12/17/c_1126872583.htm",
+        "https://zh.wikipedia.org/wiki/%E5%A4%AA%E6%9E%81%E6%8B%B3",
+        "https://www.sjc.edu.cn/info/1020/1908.htm",
+        "https://tv.cctv.com/2017/04/25/VIDE79FqC4j5J8rXb0Yl69tV170425.shtml",
+        "https://www.sohu.com/a/340058913_120199589",
+        "https://www.taijiquan.com.cn/news/2023-01-10/1673323089196.html",
+        "https://www.chinanews.com.cn/gn/2020/12-18/9365287.shtml",
+        "https://www.xinhuanet.com/world/2021-03/23/c_1127244585.htm",
+        "https://www.bjlyw.com/2021/0402/20485.html",
+        "https://jihongtaichi.com/how-to-get-started-with-tai-chi/",
+        "https://www.ich.china.com.cn/2020-12/18/content_41370248.htm",
+        "https://article.xuexi.cn/articles/index.html?art_id=14183861849176378566",
+        "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=12596956795027581788&toc_style_id=feeds_default&track_id=1439922D-1271-464A-A87A-728108C56A49_693893322744&share_to=wechat",
+        "https://www.qstheory.cn/llwx/2020-12/21/c_1126886481.htm"
+      ],
+      "scraped_at": "2026-06-01T02:40:33.211165Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Henan",
+          "Hebei",
+          "Beijing",
+          "Tianjin",
+          "Macau"
+        ],
+        "lat": 34.0000001,
+        "lng": 113.9999999
+      },
+      "resume_analisa": {
+        "description": "Taijiquan is a traditional Chinese martial art, also known as an internal martial art, that integrates philosophy, martial arts, and health. It is characterized by slow, graceful movements and emphasizes inner cultivation and breath regulation. It has evolved into various styles, including Chen, Yang, Wu, Sun, and Wu (Hao) styles. Originating in the mid-17th century in Chenjiagou Village, Wen County, Henan Province, Taijiquan was inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2020.",
+        "cultural_significance": "Taijiquan is deeply rooted in traditional Chinese philosophical thought, particularly the concepts of Yin and Yang, the unity of heaven and humanity, and traditional Chinese medicine theories. It promotes physical and mental well-being, harmony, and self-cultivation, serving as a unique exercise that combines combat, body strengthening, fitness, and spiritual cultivation. It provides a sense of identity and continuity for communities and groups, and its principles of harmony, unity, inclusiveness, and the balance of hard and soft transcend national, racial, and religious boundaries, making it a shared asset for humanity.",
+        "gemini_tags": [
+          "Traditional Chinese Martial Arts",
+          "Intangible Cultural Heritage",
+          "Mind-Body Practice",
+          "Health and Wellness",
+          "Philosophy",
+          "Performing Arts",
+          "Social Practices"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Training Methods and Core Principles",
+        "materials_and_tools": [
+          "Comfortable clothing",
+          "Lightweight, soft-soled shoes"
+        ],
+        "step_by_step": [
+          "Quiet the mind and focus intention (静心用意): Maintain a calm and concentrated mind, guiding movements with intention, and ensuring stable, deep, and natural breathing.",
+          "Maintain correct posture and stability (中正安舒): Keep the body naturally relaxed, upright, and balanced. Avoid stiffness or leaning. Emphasize a relaxed chest, extended back, loose waist, straight spine, slightly tucked hips, and stable, flexible legs.",
+          "Move with fluidity and continuity (柔和缓慢，连贯协调): Movements should be continuous, soft, slow, and circular, without interruption. The waist acts as the axis, coordinating the upper and lower body as a single unit.",
+          "Distinguish between \"full\" and \"empty\" (虚实分明): Clearly differentiate between the weight-bearing (full) and non-weight-bearing (empty) leg, maintaining balance and smooth transitions.",
+          "Practice foundational techniques (基本功): This includes standing meditation (站桩) to build a solid foundation, loosening the waist (松腰) through gentle rotations and hip sinks, and developing flexible footwork (步法) like bow stance and empty stance, moving like a cat.",
+          "Cultivate \"Chan Si Jin\" (缠丝劲 - Silk Reeling Energy): Develop spiral-like internal energy that flows from the shoulders to the fingers, and from the ground through the legs, waist, and arms.",
+          "Coordinate breathing with movements (呼吸配合): Practice abdominal breathing, inhaling as the body rises or expands, and exhaling as it sinks or contracts.",
+          "\"Eye follows hand, hand follows foot\" (眼到手到，手到脚到): Ensure that the eyes, hands, and feet move in coordinated harmony, with the eyes setting the direction, hands positioning, and feet controlling power and direction."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Global",
+            "element_name": "Various Taijiquan styles (e.g., Yang, Chen, Wu, Sun, Hao)",
+            "relationship_reason": "Global practice and adaptation of a shared martial art and health exercise, with various schools developing from a common origin. Taijiquan is practiced in over 150 countries and regions worldwide by hundreds of millions of people."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-8827cc66",
+      "element_name": "Kōauau (Māori Flute)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://images.metmuseum.org/CRDImages/mi/original/89.4.2636_front_CP1.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Taonga",
+        "https://www.cam.ac.uk/stories/re-connecting-with-taonga-maori-in-the-museum",
+        "https://www.futurelearn.com/info/courses/taonga-maori-and-object-based-learning/01/steps/14022",
+        "https://www.emerald.com/insight/content/doi/10.1108/17466661211270417/full/html",
+        "https://www.quora.com/What-is-the-purpose-of-a-taonga-Te-Ao-M%C4%81ori",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9236111/",
+        "https://www.beehive.govt.nz/speech/taonga",
+        "https://www.newzealand.com/nz/feature/maori-cultural-experience-living-taonga/",
+        "https://www.taongapuoro.com/making.html",
+        "https://grokipedia.org/wiki/Taonga_p%C5%ABoro",
+        "https://platypusman.com/maori-taonga/",
+        "https://ngaitahu.iwi.nz/our_stories/whare-taonga/",
+        "https://www.govt.nz/browse/engaging-with-government/the-nz-system/maori-culture-and-heritage/",
+        "https://www.tairawhitimuseum.org.nz/collections/taonga-maori/",
+        "https://teara.govt.nz/en/maori-musical-instruments-taonga-puoro",
+        "https://www.taongapuoro.com/design.html",
+        "https://www.metmuseum.org/art/collection/search/503417",
+        "https://www.massey.ac.nz/~antjcm/koauau.html",
+        "https://www.haumanucollective.com/koauau",
+        "https://www.tepapa.govt.nz/discover-collections/read-watch-play/maori/maori-musical-instruments-taonga-puoro/koauau-flute",
+        "https://www.jeremycloake.com/koauau"
+      ],
+      "scraped_at": "2026-06-01T02:41:02.348966Z",
+      "location": {
+        "country": "New Zealand",
+        "provinces": [],
+        "lat": -41.5000831,
+        "lng": 172.8344077
+      },
+      "resume_analisa": {
+        "description": "Kōauau are the most common type of Māori flute, typically small, ductless, and notchless, ranging from approximately 100 to 385 millimeters in length. They are open at both ends and usually feature three finger-holes, known as wenewene, though some can have more or fewer. The sound is produced by directing breath across the sharp edge of the upper aperture and is further manipulated through subtle movements of the tongue and lips. Kōauau are traditionally crafted from various materials including native woods (such as mataī), kelp, and bones from birds (like albatross or moa), as well as human bone. Modern kōauau may also use sheep, goat, deer, emu, ostrich, or beef bone. These flutes are often intricately carved, transforming them into treasured possessions (taonga).",
+        "cultural_significance": "Kōauau are considered 'taonga pūoro' or 'singing treasures' and hold deep cultural and spiritual significance within Māori society. They are seen as descendants of Hine Raukatauri, the goddess of flute music, and are associated with the atua (spiritual entity) of flute music. Each kōauau is unique, possessing its own 'voice' like individual people, and is treated with great respect due to its spiritual functions. Kōauau are used for entertainment, healing, grieving, and easing pain, with their music often accompanied by words to express emotions and experiences. Historically, they were used in romantic rituals, with stories like that of Tūtānekai and Hinemoa illustrating their power over affections. They are also believed to attract native birds and were used to welcome newborns, bid farewell to spirits, and aid in the healing of broken bones in conjunction with traditional Māori medicine (rongoā).",
+        "gemini_tags": [
+          "Māori cultural heritage",
+          "Taonga Pūoro",
+          "Kōauau",
+          "Traditional Musical Instrument",
+          "Flute Making",
+          "Māori Craftsmanship",
+          "New Zealand Indigenous Culture",
+          "Oral Traditions",
+          "Social Practices & Rituals"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship (Musical Instrument Making)",
+        "materials_and_tools": [
+          "Wood (native woods like mataī)",
+          "Bone (albatross wing, human, moa, sheep/goat leg, deer, emu, ostrich, beef)",
+          "Kelp",
+          "Stone",
+          "Hot embers/coal",
+          "Sandpaper (120, 240, 400-600 grit)",
+          "Metal rod (for reamer)",
+          "Hard stick or stone",
+          "Carving tools"
+        ],
+        "step_by_step": [
+          "Select a suitable material, such as a straight section of bone (e.g., shank bone) or native wood.",
+          "For wooden kōauau, traditionally use hot embers or a hot coal to burn out the central bore that runs through the length of the shaft.",
+          "Mark the positions for the finger holes (wenewene). Kōauau typically have three finger holes, but variations with no holes, or five to six holes, exist. A method for individualization involves marking finger holes at the knuckle creases of the index finger, leaving a thumb width above the top hole.",
+          "Shape and smooth the surface of the kōauau using sandpaper of various grits, starting with coarser (120 grit) and progressing to finer (240, then 400-600 grit) to remove scratches.",
+          "For bone or wood kōauau, rub linseed oil inside and out and allow it to dry.",
+          "Burnish the kōauau by rubbing it with a hard stick or a stone to achieve a smooth finish.",
+          "Embellish the kōauau with carvings, which often tell stories or depict designs, to transform it into a true taonga."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-05-31T02:32:32.137728Z",
-    "total_ich_elements": 150,
-    "complete_records": 140,
+    "generated_at": "2026-06-01T02:41:36.042708Z",
+    "total_ich_elements": 153,
+    "complete_records": 143,
     "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 53,
-      "Social Practices & Rituals": 33,
+      "Traditional Craftsmanship": 54,
+      "Social Practices & Rituals": 34,
       "Culinary Traditions": 29,
       "Culinary Traditions | Social Practices & Rituals": 2,
-      "Performing Arts": 13,
+      "Performing Arts": 14,
       "Social Practices & Rituals | Performing Arts": 2,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 10,
