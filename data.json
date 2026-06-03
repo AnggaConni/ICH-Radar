@@ -13311,16 +13311,335 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-f703fbae",
+      "element_name": "Coppa dell'Amicizia and Caffè alla Valdostana",
+      "category": "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coppa_dell%27amicizia.jpg/330px-Coppa_dell%27amicizia.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Friendship_cup",
+        "https://www.coppadellamicizia.it/coppa-dell-amicizia-valdostana/",
+        "https://www.tourissimo.travel/blog/valle-daosta-friendship-cup",
+        "https://www.lovevda.it/it/cultura/artigianato/oggetti-torniti",
+        "https://www.chaletalmaso.it/grolla-dell-amicizia/",
+        "https://blog.giallozafferano.it/sfiziedeliziedipaola/caffe-dellamicizia/",
+        "https://www.lovevda.it/it/gusto/ricette/caffe-alla-valdostana",
+        "https://italiansinsight.com/caffe-valdostana-coffee-from-valle-daosta-and-the-friendship-cup/",
+        "https://www.lavalleenotizie.it/leo-garin-ecco-la-vera-storia-della-coppa-dellamicizia/",
+        "https://pinshape.com/items/19714-3d-printed-coppa-dell-amicizia-friendships-cup",
+        "https://www.enologiavite.com/ricetta-grolla-coppa-dell-amicizia-valdostana",
+        "https://lilimadeleine.it/grolla-valdostana-dellamicizia-la-ricetta-originale/",
+        "https://it.wikipedia.org/wiki/Coppa_dell%27amicizia_(contenitore)",
+        "https://it.wikipedia.org/wiki/Caff%C3%A8_alla_valdostana",
+        "https://www.lovevda.it/it/cultura/artigianato/oggetti-caratteristici",
+        "https://www.dissapore.com/ricette/grolla-dellamicizia-il-caffe-corretto-alla-valdostana/",
+        "https://www.lesamisdubois.it/chi-siamo/",
+        "https://www.guidaturisticavalledaosta.it/la-grolla-valdostana/",
+        "https://blogzine.cidac.eu/la-coppa-dellamicizia/",
+        "https://www.palatiaspas.it/la-grolla-dellamicizia/",
+        "https://www.philomusa.com/products/coppa-dell-amicizia-italian",
+        "https://ilsugareepreservoimieigiornicomefrutta.wordpress.com/2016/03/16/coppa-dellamiciziafriendship-bowl/",
+        "https://www.youtube.com/watch?v=1F2b8L97800"
+      ],
+      "scraped_at": "2026-06-03T02:46:31.573315Z",
+      "location": {
+        "country": "Italy",
+        "provinces": [
+          "Aosta Valley"
+        ],
+        "lat": 45.730099,
+        "lng": 7.387426
+      },
+      "resume_analisa": {
+        "description": "The 'Coppa dell'Amicizia' (Friendship Cup) is a traditional wooden cup originating from the mountainous Aosta Valley region of Italy. It features a lid and multiple spouts around its rim. This unique handcrafted object is primarily used for a communal drinking ritual of 'Caffè alla Valdostana' (Aostan Coffee), a specially prepared alcoholic coffee drink. The cup is typically hand-carved by skilled local artisans, often from various types of wood such as walnut, ash, mahogany, maple, apple, or pear.",
+        "cultural_significance": "The 'Coppa dell'Amicizia' and its associated ritual of drinking 'Caffè alla Valdostana' are deeply rooted in the values of friendship, sharing, and community in the Aosta Valley. The practice, known as 'à la ronde,' involves passing the cup among friends or family members, with each person sipping from a different spout without setting the cup down until it is empty. This tradition is a cherished way to foster togetherness, celebrate special occasions, and preserve the local cultural heritage. The communal aspect of sharing from a single vessel has historical precedents in the region, with older traditions of drinking wine from shared bowls. The 'Caffè alla Valdostana' itself is a warming drink, traditionally enjoyed during cold winter months, and its preparation and consumption create a convivial atmosphere.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Culinary Traditions",
+          "Social Practices",
+          "Rituals",
+          "Wood Carving",
+          "Communal Drinking",
+          "Italian Folklore",
+          "Aosta Valley Culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Culinary Recipe & Social Ritual",
+        "materials_and_tools": [
+          "Coppa dell'Amicizia (wooden cup with lid and multiple spouts)",
+          "Moka pot or coffee filter for long coffee",
+          "Small saucepan (optional, for heating grappa/Génépy)",
+          "Long spoon for stirring",
+          "Lighter or torch for flaming"
+        ],
+        "step_by_step": [
+          "Prepare long, hot coffee (using a moka pot or filter, not espresso).",
+          "Pour the hot coffee into the Coppa dell'Amicizia.",
+          "Add sugar, lemon peel, and orange peel to the coffee in the cup. Some recipes also include cinnamon stick, juniper berries, or cloves.",
+          "Wet the rim of the cup and its spouts with grappa, then sprinkle sugar generously onto the moistened rim.",
+          "Pour the remaining grappa (and Génépy or other chosen liqueurs like Cointreau, cognac, or rum) into the coffee mixture in the cup.",
+          "Carefully ignite the liquid in the cup (often using a lighter or small torch) and stir with a long spoon. Allow the alcohol to burn until the sugar on the rim caramelizes.",
+          "Extinguish the flame by placing the lid firmly on the Coppa dell'Amicizia.",
+          "Pass the cup 'à la ronde' (in a circle, typically anti-clockwise, though some traditions may vary) among friends. Each person drinks from a different spout. The cup should not be put down on the table until its contents are completely consumed."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Italy (general)",
+            "element_name": "Grolla Valdostana",
+            "relationship_reason": "The Grolla is a similar, taller wooden chalice from Aosta Valley, also used for communal drinking (traditionally wine), and is considered a precursor or related object to the Coppa dell'Amicizia."
+          },
+          {
+            "country": "Various European cultures",
+            "element_name": "Communal drinking vessels",
+            "relationship_reason": "The broader concept of communal drinking from a shared vessel has historical roots in various cultures, including older traditions in Aosta Valley for wine. However, the specific multi-spouted 'Coppa dell'Amicizia' for 'Caffè alla Valdostana' is a distinct regional development."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b814ddb6",
+      "element_name": "Myanmar Lacquerware (Yun-de / Pan-yun)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://c8.alamy.com/comp/BG0DK0/burmese-lacquerware-myanmar-burma-asia-BG0DK0.jpg",
+      "source_urls": [
+        "https://www.turquoisemountain.org/the-art-of-lacquer",
+        "https://homejourney.com/myanmar-traditional-arts-crafts-guide/",
+        "https://www.myanmartours.us/lacquerware-traditional-myanmar-handicraft/",
+        "https://www.turquoisemountain.org/lacquerware",
+        "https://www.shwenankathu.com/myanmar-traditional-arts",
+        "https://npnews.com/news/65611",
+        "https://www.artsofasiamagazine.com/highlights-of-the-lacquer-collection-from-myanmar-burma-in-the-victoria-and-albert-museum/",
+        "https://en.wikipedia.org/wiki/Art_of_Myanmar",
+        "https://en.wikipedia.org/wiki/Bagan",
+        "https://www.irrawaddy.com/culture/art/the-art-of-lacquerware.html",
+        "https://www.sabaidesigns.com/blogs/news/the-burmese-tradition-of-lacquerware"
+      ],
+      "scraped_at": "2026-06-03T02:47:04.079048Z",
+      "location": {
+        "country": "Myanmar",
+        "provinces": [
+          "Mandalay Region"
+        ],
+        "lat": 20.9872395,
+        "lng": 95.7656747
+      },
+      "resume_analisa": {
+        "description": "Myanmar Lacquerware, locally known as \"Yun-de\" or \"Pan-yun,\" is a centuries-old traditional handicraft and one of the \"Ten Flowers\" (Pan Sè Myo), Myanmar's comprehensive traditional arts classification system. It is renowned for its intricate designs, durability, and lustrous finish. The art form originated from China's Yunnan province and flourished in Bagan, a UNESCO World Heritage site, which remains the primary center for its production. Myanmar lacquerware is distinctive for its black color, setting it apart from lacquerware produced in China and Japan.",
+        "cultural_significance": "Lacquerware is deeply interwoven into the artistic, cultural, and socio-economic fabric of Myanmar. The skills are passed down through generations within families. Historically, it received patronage from the royal court, particularly in Mandalay. It serves both functional purposes, such as kitchenware and storage, and religious significance, with items like hsun-ok (stupa-shaped vessels for food offerings to monasteries) and Kammavaca (Buddhist manuscripts). The craft is a vital source of national identity and pride, with ongoing efforts to preserve it through colleges and workshops.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Myanmar",
+          "Lacquerware",
+          "Bagan",
+          "Cultural Heritage",
+          "Handicraft",
+          "Art",
+          "Traditional Art",
+          "Burmese Art",
+          "UNESCO"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship",
+        "materials_and_tools": [
+          "Sap (thitsi) from the Melanhorrea Usitata tree (varnish tree)",
+          "Cow bone ashes",
+          "Sawdust",
+          "Cotton fibers",
+          "Crushed animal bones",
+          "Bamboo (for coiled or woven bases)",
+          "Horsehair",
+          "Wood (e.g., jackfruit wood)",
+          "Stone",
+          "Natural pigments (cinnabar for red, orpiment for yellow, indigo for blue, combined for green)",
+          "Gold leaf",
+          "Silver",
+          "Colored eggshell pieces",
+          "Sharp iron stylus (for engraving)",
+          "Needles (for drawing designs)"
+        ],
+        "step_by_step": [
+          "Base Construction: The process begins with creating a base, traditionally made from coiled or woven bamboo strips, bamboo and horsehair, or wood (e.g., jackfruit wood). For luxury items, layers of fine horsehair or fabric may be added to strengthen the structure. The base is then polished to ensure smoothness.",
+          "Sap Collection: Sap, known as \"thitsi,\" is collected from the Melanhorrea Usitata tree.",
+          "Lacquering (A Net Dee Stage): The black thitsi sap is mixed with cow bone ashes, sawdust, or cotton fibers to achieve the right viscosity and durability. This mixture is applied to the base in thin, successive coats.",
+          "Drying and Curing: Each applied layer of lacquer requires a period of drying and hardening in underground brick cellars (called \"thyiks\") for up to 10 days. This is a time-consuming stage, with high-quality pieces taking six to seven months due to multiple layers and intermittent drying.",
+          "Polishing: After drying, the lacquer is often sandpapered with teak wood ash and then carefully washed.",
+          "Decorative Techniques (Yun Stage): Once the lacquer base reaches the desired thickness and finish, artisans apply decorative techniques. This final stage, called \"Yun,\" involves engraving intricate patterns into the black lacquer base using a sharp iron stylus or drawing floral designs with needles.",
+          "Color Application and Inlaying: Engraved incisions are filled with natural pigments, typically red (from cinnabar), yellow (from orpiment), and green (from combining yellow with indigo). Only one color is added at a time, with drying and polishing between applications. Inlaying with gold leaf, silver, or colored eggshell pieces is also used for embellishment. The final touch may involve applying gold leaf from Mandalay.",
+          "Final Finish: The completed pieces are known for their remarkable durability and lustrous finishes that improve with age and use."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Chinese Lacquerware",
+            "relationship_reason": "Lacquer art first came to Myanmar from China's Yunnan province."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Japanese Lacquerware",
+            "relationship_reason": "Shared tradition of lacquerware, but Myanmar lacquerware has a distinctive black color, setting it visually and technically apart. Lacquer craft exchange programs exist."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Thai Lacquerware",
+            "relationship_reason": "Historical contact through conflict and resettlement of artisans from Chiang Mai (northern Thailand) to Burma in the 17th century. Lacquer craft exchange programs exist."
+          },
+          {
+            "country": "Cambodia",
+            "element_name": "Cambodian Lacquerware",
+            "relationship_reason": "Participation in lacquer craft exchange programs."
+          },
+          {
+            "country": "Vietnam",
+            "element_name": "Vietnamese Lacquerware",
+            "relationship_reason": "Participation in lacquer craft exchange programs."
+          },
+          {
+            "country": "Laos",
+            "element_name": "Lao Lacquerware",
+            "relationship_reason": "Participation in lacquer craft exchange programs."
+          },
+          {
+            "country": "Republic of Korea",
+            "element_name": "Korean Lacquerware",
+            "relationship_reason": "Participation in lacquer craft exchange programs."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-060d514a",
+      "element_name": "Anishinaabe Traditional Wild Rice Harvesting (Manoomin Gaa-miinigoowizid)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://www.glifwc.org/images/Manoomin_brochure_cover.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ricing_stick",
+        "https://en.wikipedia.org/wiki/Anishinaabe_religions",
+        "https://en.wikipedia.org/wiki/Native_American_religions",
+        "https://en.wikipedia.org/wiki/Anishinaabe",
+        "https://en.wikipedia.org/wiki/Wild_rice",
+        "https://www.nativewildricecoalition.com/cultural-importance",
+        "https://www.glifwc.org/publications/pdf/Manoomin_brochure.pdf",
+        "https://www.glifwc.org/publications/pdf/Wild_Rice_Harvesting_Guide.pdf",
+        "https://www.mnopedia.org/thing/wild-rice-and-ojibwe",
+        "https://wi101.wisc.edu/ricing-manoominikewin/",
+        "https://news.mongabay.com/2024/03/culture-and-conservation-thrive-as-great-lakes-tribes-bring-back-native-wild-rice/",
+        "https://www.iisd.org/ela/blog/sowing-abundance-how-freshwater-science-helping-bring-wild-rice-back-indigenous-communities/",
+        "https://www.lessonsofourland.org/wild-rice",
+        "https://www.nature.org/en-us/get-involved/how-we-help/stories-in-action/wild-rice-harvest/",
+        "https://wildernessnorth.com/the-sacred-harvest-of-rice/",
+        "https://www.native-art-in-canada.com/wild-rice.html",
+        "https://www.native-art-in-canada.com/traditional-knowledge.html",
+        "https://anishinaabemowin.com/anishinaabe-people/",
+        "https://www.nativewildricecoalition.com/sources-for-wild-rice-and-ricing-tools",
+        "https://ldbhs.com/a-shared-heritage-with-anishinaabe-ojibway/",
+        "https://www.mnopedia.org/essay/ojibwe-our-historical-role-influencing-contemporary-minnesota",
+        "https://www.mnhs.org/mnhspress/books/wild-rice-and-ojibway-people",
+        "https://www.environmentandsociety.org/arcadia/manoomin-taming-wild-rice-great-lakes-region",
+        "https://www.nativewildricecoalition.com/resources",
+        "https://www.nature.org/en-us/get-involved/how-we-help/stories-in-action/restoring-wild-rice-northwoods/",
+        "https://pluralism.org/anishinaabe-ojibwe-ways",
+        "https://www.seagrant.wisc.edu/our-work/focus-areas/healthy-coastal-ecosystems/manoomin-education-and-outreach-project/",
+        "https://www.native-art-in-canada.com/ojibwafood.html",
+        "https://ojibwe.lib.umn.edu/main-entry/story-wild-rice",
+        "https://www3.nd.edu/~underc/east/publications/documents/2012_Bios35502_Manoomin_Wild_Rice_Harvesting_of_the_Ojibwe.pdf",
+        "https://www.lakeheadu.ca/research-and-innovation/news/archive/2023/node/76672",
+        "https://www.seagrant.wisc.edu/news/sea-grant-and-partners-work-together-to-restore-culturally-important-wild-rice/",
+        "https://www.glifwc.org/climatechange/Manoomin_Climate_Change_Impact_and_Conservation.pdf",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10619022/",
+        "https://pubmed.ncbi.nlm.nih.gov/41159385/",
+        "https://wisconsinwetlands.org/news/manoomin-wild-rice-the-ecology-and-importance-of-a-wetland-treasure/",
+        "https://wisconsinwetlands.org/news/makak-aabajitoon-ganawendang-manoomin-guiding-wild-rice-conservation-with-anishinaabe-worldview/",
+        "https://wisconsinwetlands.org/news/wetland-coffee-break-ganawenindiwag-working-with-plant-relatives-to-heal-and-protect-gichigami-shorelines/",
+        "https://www.lrboi-nsn.gov/natural-resources/wild-rice-program-manoomin/",
+        "https://www.wisconsinconservation.org/blog/bringing-wild-rice-back-to-spur-lake/"
+      ],
+      "scraped_at": "2026-06-03T02:48:09.759452Z",
+      "location": {
+        "country": "United States | Canada",
+        "provinces": [
+          "Michigan",
+          "Minnesota",
+          "Wisconsin",
+          "Ontario",
+          "Manitoba"
+        ],
+        "lat": 37.6056575,
+        "lng": -82.3243095
+      },
+      "resume_analisa": {
+        "description": "Anishinaabe Traditional Wild Rice Harvesting, known as Manoomin Gaa-miinigoowizid, is a centuries-old practice deeply embedded in the culture of the Anishinaabe people, including the Ojibwe, Odawa, Potawatomi, Algonquin, Nipissing, and Mississaugas, across the Great Lakes region of North America. It involves the careful hand-harvesting and processing of wild rice (Manoomin) from shallow lakes and rivers, using traditional tools and methods passed down through generations. The practice is not merely about food gathering but encompasses spiritual, social, and economic dimensions, reflecting a profound connection to the land and a commitment to sustainable living.",
+        "cultural_significance": "Manoomin is considered a sacred gift from the Creator and is central to the Anishinaabe way of life, fulfilling a prophecy to settle where 'food grows on water'. The harvest is often accompanied by spiritual rituals and ceremonies, serving as a way to connect with the natural world and one's spirituality. It has provided essential nutritional value as a staple food for centuries, contributing to the economic self-sufficiency of communities. The practice fosters a deep connection to the land and water, embodying an expression of commitment and reciprocity with nature to ensure the sustainability of the rice for future generations. It is a communal and culturally significant event, providing opportunities for sharing stories, songs, and traditions, and is crucial for the preservation and transfer of traditional knowledge to younger generations.",
+        "gemini_tags": [
+          "Indigenous Knowledge",
+          "Traditional Food",
+          "Sustainable Harvesting",
+          "Great Lakes Culture",
+          "Anishinaabe",
+          "Ojibwe",
+          "Cultural Heritage",
+          "Community Practice",
+          "Ritual",
+          "Environmental Stewardship"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Harvesting and Processing of Wild Rice",
+        "materials_and_tools": [
+          "Canoe (birch bark or aluminum)",
+          "Push pole (15-19 feet long, forked end, smooth wood like cedar or tamarack)",
+          "Ricing sticks/knockers (round, smooth wood, 30-38 inches long, no more than one pound)",
+          "Tarps or birch bark mats (for drying)",
+          "Metal washtub or cast iron kettle (for parching)",
+          "Paddle (for stirring during parching)",
+          "Special moccasins (with high cuffs, deer hide, no beads, for dancing/threshing)",
+          "Hole in the ground lined with canvas, wood, or deer hide (for dancing/threshing)",
+          "Birch bark trays or shallow baskets (for winnowing)"
+        ],
+        "step_by_step": [
+          "1. **Preparation/Ceremony**: Some harvesters choose to perform a ceremony, often involving an offering of tobacco or food, before beginning the harvest as a sign of respect and gratitude.",
+          "2. **Harvesting (Ricing)**: Typically conducted by two people in a canoe during late August to early September in shallow, slow-moving waters. One person, the 'poler,' stands and gently propels the canoe through the rice bed using a long push pole, taking care not to damage the plants. The other person, the 'knocker,' uses two ricing sticks to bend and gather rice stalks over the canoe, then gently taps the stalks to dislodge ripened grains into the boat. This method ensures unripe grains remain to reseed for future harvests.",
+          "3. **Drying**: The freshly harvested 'green' rice is spread out on tarps or birch bark mats to air dry in the sun. During this stage, unwanted plant segments, dirt, and insects are removed, and the rice is regularly turned to ensure even drying.",
+          "4. **Parching (Roasting)**: The dried wild rice is then heated in a metal washtub or large cast iron kettle over a slow fire. It is continuously stirred with a paddle to further reduce moisture, loosen the hulls, prevent burning, and impart a distinctive roasted flavor. Parching also destroys the germ, aiding in preservation.",
+          "5. **Hulling/Threshing (Dancing/Jigging)**: Traditionally, the parched rice is placed in a shallow pit dug in the ground, often lined with canvas, wood, or deer hide. A person, typically wearing special moccasins with high cuffs, 'dances' or 'jigs' on the rice, treading on the balls of their feet, to loosen and separate the husks from the grains.",
+          "6. **Winnowing**: This step involves separating the hulled rice grains from the lighter husks and other debris. It is typically performed outdoors, utilizing the wind. The rice is placed in birch bark trays or shallow baskets and gently tossed into the air, allowing the wind to carry away the lighter chaff while the heavier rice grains fall back into the container. This process is repeated until most impurities are removed.",
+          "7. **Finishing**: After winnowing, thorough finishers may hand-pick through the rice to remove any remaining hulls or foreign matter. The cleaned wild rice is then ready for cooking or storage."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "United States | Canada",
+            "element_name": "Traditional wild rice harvesting by other Indigenous nations (e.g., Menominee, Cree, Dakota)",
+            "relationship_reason": "Similar traditional practices of harvesting and processing wild rice (manoomin) as a staple food and culturally significant resource, often involving similar tools and methods, and rooted in deep respect for the land and sustainable practices among various Indigenous groups in the Great Lakes region and surrounding areas."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-01T02:41:36.042708Z",
-    "total_ich_elements": 153,
-    "complete_records": 143,
+    "generated_at": "2026-06-03T02:49:19.297575Z",
+    "total_ich_elements": 156,
+    "complete_records": 146,
     "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 54,
-      "Social Practices & Rituals": 34,
+      "Traditional Craftsmanship": 55,
+      "Social Practices & Rituals": 35,
       "Culinary Traditions": 29,
       "Culinary Traditions | Social Practices & Rituals": 2,
       "Performing Arts": 14,
@@ -13332,7 +13651,8 @@
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
       "Social Practices & Rituals | Culinary Traditions": 1,
       "Social Practices & Rituals | Traditional Craftsmanship": 1,
-      "Performing Arts | Traditional Craftsmanship": 1
+      "Performing Arts | Traditional Craftsmanship": 1,
+      "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1
     }
   }
 }
