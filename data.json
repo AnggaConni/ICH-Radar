@@ -13630,22 +13630,261 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-4c1f702a",
+      "element_name": "Naqqali (Iranian Dramatic Storytelling)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.iranicaonline.org/articles/naqqali&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.iranicaonline.org/articles/naqqali",
+        "https://surfiran.com/naqqali-iranian-dramatic-story-telling/",
+        "https://persiaadvisor.com/naqqali-iranian-dramatic-story-telling/",
+        "https://en.wikipedia.org/wiki/Naqqali",
+        "https://ich.unesco.org/en/RL/naqqali-iranian-dramatic-story-telling-00535",
+        "https://www.bestirantours.com/naqqali-iranian-dramatic-storytelling/",
+        "https://kalouttour.com/naqqali-iran-dramatic-story-telling/",
+        "https://www.tehrantimes.com/news/479633/A-view-of-Iranian-intangible-cultural-elements-on-UNESCO-list",
+        "https://ich.unesco.org/en/multimedia/naqqali-iranian-dramatic-story-telling-0053500007",
+        "https://ich.unesco.org/doc/src/6COM-8.9-Decision-EN.pdf",
+        "https://grokipedia.org/wiki/Naqqali"
+      ],
+      "scraped_at": "2026-06-05T02:16:00Z",
+      "location": {
+        "country": "Iran",
+        "provinces": [],
+        "lat": 32.6475314,
+        "lng": 54.5643516
+      },
+      "resume_analisa": {
+        "description": "Naqqali, also known as Persian epic storytelling, is the oldest form of dramatic performance in Iran. A single performer, known as a Naqqal, recounts epic and religious narratives in either verse or prose. The performance is characterized by expressive gestures, movements, and vocal modulations, and may occasionally include instrumental music or the use of painted scrolls called 'parda' depicting epic or religious heroes. Naqqals serve as both entertainers and vital custodians of Persian literature and culture. They are required to possess exceptional talent, a remarkable memory, and strong improvisational skills to captivate their audience.",
+        "cultural_significance": "Naqqali has historically held a significant role in Iranian society, influencing various strata from royal courts to rural villages. It acts as a crucial guardian of folk tales, ethnic epics, and Iranian folk music, thereby preserving cultural memory and fostering national cohesion. This dramatic art form is instrumental in transmitting wisdom and experiences from past generations to the present. Before widespread literacy, Naqqali was a primary means for people to learn and engage with their cultural narratives. Its theatrical conventions continue to inspire contemporary Iranian artists.",
+        "gemini_tags": [
+          "Iranian",
+          "Storytelling",
+          "Dramatic Performance",
+          "Oral Tradition",
+          "Epic",
+          "Folklore",
+          "Traditional Theatre",
+          "Cultural Heritage",
+          "Shahnameh",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance Art",
+        "materials_and_tools": [
+          "Simple costumes, sometimes ancient helmets or armored jackets for battle scenes",
+          "A multifunctional cane (metrāq)",
+          "Large painted canvas (parda) depicting epic or religious heroes (pardā-dari) (optional)",
+          "Tumārs (written forms of the repertoire, for master Naqqals)"
+        ],
+        "step_by_step": [
+          "Apprenticeship: Beginners (pupils) train under master Naqqals (Morsheds), often accompanying them during performances.",
+          "Mastery: Pupils develop exceptional memory, improvisational skills, and eloquence by listening to and memorizing recitations, and sometimes transcribing *ṭumārs*.",
+          "Performance Setup: Historically, performances took place in diverse venues such as coffeehouses, nomadic tents, private homes, and caravanserais.",
+          "Opening: A performance might commence with an apprentice reciting verses from classical poets, followed by a *ṣalavāt* (a Shiʿite Muslim prayer).",
+          "Narration: The Naqqal recounts stories in verse or prose, employing expressive gestures, movements, and vocal modulations, occasionally incorporating verses into prose narration.",
+          "Dramatic Elements: The Naqqal impersonates various characters (e.g., kings, queens, warriors, beggars), creates sound effects (e.g., horse galloping, fencing), and uses the multifunctional cane symbolically to represent objects like a horse or sword. Specific costumes may be donned for battle scenes.",
+          "Audience Engagement: The Naqqal adapts the narrative to the audience's mood and utilizes wit and agility to maintain their captivation.",
+          "Closing: Traditionally, the performance concluded with the Naqqal soliciting contributions from the audience."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Various countries",
+            "element_name": "Oral storytelling traditions (general)",
+            "relationship_reason": "Naqqali is a specific and highly developed form of the universal human practice of oral storytelling, sharing the fundamental act of transmitting narratives through spoken word and performance."
+          },
+          {
+            "country": "Ancient Greece",
+            "element_name": "Ancient Greek storytelling/minstrelsy",
+            "relationship_reason": "Early written records of Persian performing arts from classical Greek authors, such as Xenophon's accounts of Cyrus the Great, mention stories and songs performed by singers, indicating an ancient, shared tradition of heroic narrative performance."
+          },
+          {
+            "country": "Iran",
+            "element_name": "Ta'zieh (Passion Play), Pardeh-khaani (storytelling with painted curtains)",
+            "relationship_reason": "Naqqali is recognized as one of the four traditional performing arts in Iran, alongside Ta'zieh, Marionette, and Ruhowzi. Pardeh-khaani is a closely related form of storytelling that utilizes painted screens as visual aids during narration."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-fdcc9973",
+      "element_name": "Busó festivities at Mohács (Busójárás)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/2022_Moh%C3%A1cs_Bus%C3%B3j%C3%A1r%C3%A1s.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/buso-festivities-at-mohacs-masked-end-of-winter-carnival-custom-00252",
+        "https://www.whartibus.com/busojaras-festivities-at-mohacs-intangible-cultural-heritage-unesco/",
+        "https://www.mohacsibusojaras.hu/",
+        "https://www.xpatloop.com/read/38479/busojaras-2026-in-mohacs-is-a-six-day-winter-festival-in-hungary",
+        "https://grokipedia.org/wiki/Bus%C3%B3j%C3%A1r%C3%A1s"
+      ],
+      "scraped_at": "2026-06-05T02:16:28.937945Z",
+      "location": {
+        "country": "Hungary",
+        "provinces": [
+          "Baranya County"
+        ],
+        "lat": 47.1817585,
+        "lng": 19.5060937
+      },
+      "resume_analisa": {
+        "description": "The Busó festivities, known as Busójárás, is a six-day annual carnival held in Mohács, southern Hungary, typically in late February or early March, to mark the end of winter and welcome spring. The central figures are the 'busós,' men (traditionally) wearing frightening-looking, hand-carved wooden masks, large woolly sheepskin cloaks, and often carrying noise-making devices like bells and rattles. The festival is multifaceted, involving parades, folk music, dancing, craft exhibitions, and various rituals.",
+        "cultural_significance": "The Busójárás is a deeply rooted tradition that originated with the Šokci (a subgroup of Croats) minority in Mohács, but has become a general emblem of the city and a powerful expression of local and national identity. It serves to symbolically drive away winter, ensure fertility, and welcome the renewal of spring. A popular legend attributes its origin to the time of the Ottoman occupation, where villagers, disguised as fearsome monsters, allegedly scared away Turkish invaders. The tradition is actively preserved and transmitted to younger generations through self-organized busó groups of diverse cultural backgrounds, fostering social cohesion and a sense of belonging.",
+        "gemini_tags": [
+          "Carnival",
+          "Winter-ending ritual",
+          "Masked festival",
+          "Hungarian folklore",
+          "Šokci heritage",
+          "Intangible Cultural Heritage",
+          "Community practice",
+          "Fertility ritual",
+          "Parade",
+          "Folk music"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Festival / Carnival",
+        "materials_and_tools": [
+          "Hand-carved wooden masks (often from willow, sometimes painted with animal blood)",
+          "Large woolly sheepskin cloaks (bunda)",
+          "Trousers (often stuffed with straw)",
+          "Decorated stockings",
+          "Bells (cowbells)",
+          "Rattles",
+          "Wooden clubs",
+          "Wooden phalluses (as fertility symbols)",
+          "Rowboats",
+          "Fantasy vehicles (horse-drawn or motorized)",
+          "Bonfire",
+          "Coffin (symbolizing winter)",
+          "Sacks filled with sawdust or ash (for Jankeles)"
+        ],
+        "step_by_step": [
+          "**Preparation:** Leading up to and during the festival week, busó groups engage in mask carving, costume making, and planning the events.",
+          "**Thursday (Kisfarsang - Little Carnival):** The festival officially begins with opening events, folk art and handicraft fairs, children's programs, smaller parades, and South Slavic Dance Houses.",
+          "**Friday & Saturday:** These days feature a continuation of fairs, exhibitions, folk dance and music performances, traditional workshops (e.g., costume making, mask making), and local gastronomy showcases.",
+          "**Carnival Sunday (Farsang vasárnap - Main Day):** This is the peak of the festivities. Busó groups gather and dramatically cross the Danube River in rowboats from 'the island' to Sokacrév. A grand Busó Parade then proceeds through the city center, featuring hundreds of busós, other costumed participants, and elaborately decorated fantasy vehicles. A carnival coffin is often launched into the river. The day culminates with the lighting of a large bonfire in the central square (Széchenyi Square), where the coffin symbolizing winter is burned, followed by communal dancing with the busós.",
+          "**Shrove Tuesday (Farsangtemetés - Burial of Farsang - Final Day):** The festival concludes with a final Busó Parade and another bonfire lighting and coffin-burning ceremony in the city center. Throughout the day, busós may visit local houses, bringing blessings or playfully performing pranks, sometimes involving flour or sawdust. South Slavic Dance Houses continue into the evening."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Croatia",
+            "element_name": "Various carnival traditions",
+            "relationship_reason": "The tradition originated with the Šokci (a Croatian ethnic subgroup) minority in Mohács. Guest Busó groups from Croatia often join the festivities."
+          },
+          {
+            "country": "Bulgaria",
+            "element_name": "Kukeri",
+            "relationship_reason": "Similar masked end-of-winter/carnival customs with ancient, pagan roots aimed at scaring away evil spirits and welcoming spring."
+          },
+          {
+            "country": "Switzerland",
+            "element_name": "Tschäggätte (Lötschenthal)",
+            "relationship_reason": "Similar carnival masks and traditions exist."
+          },
+          {
+            "country": "Serbia",
+            "element_name": "Various carnival traditions",
+            "relationship_reason": "Guest Busó groups from Serbia often join the festivities."
+          },
+          {
+            "country": "Poland",
+            "element_name": "Various carnival traditions",
+            "relationship_reason": "Guest Busó groups from Poland often join the festivities."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-3e874b13",
+      "element_name": "Hekaya za Abunuwasi (Tales of Abunuwasi)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388049219l/19875150.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Swahili_literature",
+        "https://sacredfootsteps.com/2024/03/25/hidden-voices-female-swahili-poets-in-islamic-east-africa/",
+        "https://polyglotclub.com/language/swahili/culture/oral-narratives",
+        "https://www.maktaba.org/books/tales-of-abunuwas",
+        "https://www.britannica.com/art/African-literature/Swahili-oral-traditions-and-poetry",
+        "https://www.mkukinanyota.com/product/tales-of-abunuwas-and-other-stories/",
+        "https://www.textbookcentre.com/hekaya-za-abunuwas-na-hadithi-nyingine-moran",
+        "https://archive.org/details/talesofabunuwaso00lewi",
+        "https://moranpublishers.com/product/hekaya-za-abunuasi-na-hadithi-nyingine/"
+      ],
+      "scraped_at": "2026-06-05T02:17:08.654719Z",
+      "location": {
+        "country": "East Africa",
+        "provinces": [
+          "Kenya",
+          "Tanzania",
+          "Zanzibar",
+          "Comoros",
+          "Mozambique"
+        ],
+        "lat": -1.2686662,
+        "lng": 36.8161377
+      },
+      "resume_analisa": {
+        "description": "Hekaya za Abunuwasi, or Tales of Abunuwasi, are a collection of captivating and humorous oral narratives integral to Swahili literature and culture in East Africa. These stories feature Abunuwasi (also known as Abu Nawas), a clever and often deceptive trickster figure. The tales are rich in wisdom, ideas on justice, and morality, frequently depicting wit triumphing over brute force. They serve as both entertainment and a means to impart virtues such as honesty, respect, and bravery to younger generations. The stories reflect the nuances of Swahili life, cultural beliefs, and traditions.",
+        "cultural_significance": "Hekaya za Abunuwasi hold significant cultural importance as they are a cornerstone of Swahili oral traditions and literature. They play a crucial role in transmitting cultural heritage and moral values, fostering community engagement, and preserving Swahili identity across generations. The narratives are used to teach children about virtues and to connect individuals with their roots and societal roles. The enduring popularity of these tales underscores their deep integration into the cultural fabric of the Swahili-speaking communities.",
+        "gemini_tags": [
+          "Oral Traditions",
+          "Folklore",
+          "Swahili Culture",
+          "East Africa",
+          "Storytelling",
+          "Didactic Literature",
+          "Trickster Tales"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Iraq",
+            "element_name": "Abu Nawas (original character)",
+            "relationship_reason": "The character of Abu Nawas originated in Baghdad, Iraq, during the reign of Harun Al Rashid (763-809). His tales spread widely across Arab countries, Turkey, Uzbekistan, and subsequently to East Africa through centuries of contact with Arab traders and Islamic scholars."
+          },
+          {
+            "country": "Middle East/Arabian Peninsula",
+            "element_name": "One Thousand and One Nights (Arabian Nights)",
+            "relationship_reason": "Many of the Abunuwasi tales also appear in the classic collection 'One Thousand and One Nights', which features Harun Al Rashid as a central figure. This highlights a shared literary tradition with the broader Middle Eastern and Arabian storytelling heritage."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-03T02:49:19.297575Z",
-    "total_ich_elements": 156,
-    "complete_records": 146,
-    "incomplete_records": 10,
+    "generated_at": "2026-06-05T02:17:40.923609Z",
+    "total_ich_elements": 159,
+    "complete_records": 148,
+    "incomplete_records": 11,
     "categories_breakdown": {
       "Traditional Craftsmanship": 55,
-      "Social Practices & Rituals": 35,
+      "Social Practices & Rituals": 36,
       "Culinary Traditions": 29,
       "Culinary Traditions | Social Practices & Rituals": 2,
-      "Performing Arts": 14,
+      "Performing Arts": 15,
       "Social Practices & Rituals | Performing Arts": 2,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 10,
+      "Oral Traditions": 11,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
