@@ -13869,22 +13869,285 @@
         ]
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-72fd6d50",
+      "element_name": "Dastangoi",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Dastangoi&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Dastangoi",
+        "https://rekhta.org/learning/what-is-dastangoi-the-traditional-art-of-urdu-storytelling",
+        "https://tornosindia.com/dastangoi-a-traditional-art-of-storytelling/",
+        "https://medium.com/@abhisheklabhe/dastangoi-an-urdu-form-of-oral-storytelling-44f76269666d",
+        "https://thelifestyleportal.in/people-culture/dastangoi-the-urdu-poetic-art-of-story-telling/",
+        "https://dastangoi.org/the-re-discovered-art-of-urdu-storytelling/",
+        "https://medium.com/@dastangoi/dastangoi-a-journey-of-storytelling-and-cultural-heritage-a2d9a9f2130e",
+        "https://rasafestival.org/dastangoi",
+        "https://thebetterindia.com/51351/india-first-female-dastango-fouzia-dastangoi-urdu-storytelling/",
+        "https://outlookindia.com/outlook-spotlight/dastaan-e-dastangoi-the-lost-art-form-of-story-telling-news-344485"
+      ],
+      "scraped_at": "2026-06-07T02:34:23.552393Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Delhi",
+          "Uttar Pradesh (Lucknow)"
+        ],
+        "lat": 28.6138954,
+        "lng": 77.2090057
+      },
+      "resume_analisa": {
+        "description": "Dastangoi is a 13th-century Urdu oral storytelling art form that originated in Persia and pre-Islamic Arabia, flourishing significantly in the Indian subcontinent, particularly in Delhi and Lucknow. It involves a 'dastango' (storyteller) who uses voice modulation, gestures, facial expressions, and imagination to narrate elaborate epic tales of adventure, magic, warfare, and romance. The word 'Dastangoi' itself is derived from two Persian words: 'Dastan' meaning story or tale, and 'goi' meaning to tell or narrate.",
+        "cultural_significance": "Dastangoi is a vital cultural legacy, rich with Persian, Arabic, and Indian linguistic and narrative influences. It reached its zenith during the Mughal era, particularly in the courts of emperors like Akbar, where it was a celebrated form of entertainment for both royalty and commoners. The tales often promoted positive images of rulers and warriors. After a period of decline in the early 20th century, the art form was notably revived in 2005 by figures like Mahmood Farooqui and Shamsur Rahman Faruqi, and is now regaining its prominence and finding a niche among audiences globally. It serves as a way of preserving heritage and presenting history in an engaging manner.",
+        "gemini_tags": [
+          "Oral Storytelling",
+          "Urdu Heritage",
+          "Performing Arts",
+          "Indian Culture",
+          "Persian Influence",
+          "Mughal Era",
+          "Traditional Narrative"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance Art",
+        "materials_and_tools": [
+          "Voice",
+          "Gestures",
+          "Facial Expressions",
+          "Imagination",
+          "White attire (sometimes)",
+          "Floor mat (for seating)",
+          "Pyaala (bowl) of water (sometimes)"
+        ],
+        "step_by_step": [
+          "**Preparation**: The Dastango (storyteller) dedicates time to mastering the intricate narratives, often drawing from epic tales such as 'Dastan-e-Amir Hamza', and refines their vocal delivery and expressive skills.",
+          "**Setting the Ambience**: Traditionally, the Dastango, sometimes dressed in simple white attire, is seated on a floor mat. A pyaala (bowl) of water may be placed nearby, contributing to the performance's minimalist aesthetic.",
+          "**Opening the Performance**: The session often commences with a recitation of a Shayari, Nazm, or Ghazal, serving to warm up the audience and set the mood for the storytelling.",
+          "**Narrative Delivery**: The Dastango employs a range of techniques including nuanced voice modulation, expressive gestures, and vivid facial expressions to create a compelling and immersive world for the listeners, making them 'live' the story.",
+          "**Incorporating Story Elements**: The narratives are intricately woven with four key constituents: 'razm' (battle and combat), 'bazm' (assembly and entertainment), 'tilism' (enchantment and magic), and 'ayyari' (craftiness and trickery).",
+          "**Audience Engagement**: The performance often involves direct addresses and a constant dialogue with the audience, inviting them to be active participants. Appreciation is traditionally shown through vocal affirmations like 'wah wahs' rather than applause.",
+          "**Evolution of Performance**: While historically performed by a single Dastango, contemporary Dastangoi performances may feature two storytellers who alternate recitations and interweave narratives, adding a dynamic layer to the tradition."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Persia (Iran)",
+            "element_name": "Persian Dastan / Naqqali",
+            "relationship_reason": "Dastangoi originated in Persia, with the Persian style of Dastan evolving in the 16th century. It shares foundational roots with Persian storytelling traditions like Naqqali, which also incorporates spoken words, written narratives, and performance elements."
+          },
+          {
+            "country": "Arab World (Pre-Islamic Arabia)",
+            "element_name": "Sira and Qissa (Arabic Storytelling)",
+            "relationship_reason": "The origin of Dastangoi has been ascribed to pre-Islamic Arabia, where Arabic literature was rich with heroic stories known as Sira and Qissa, which influenced the development of Dastangoi."
+          },
+          {
+            "country": "India",
+            "element_name": "Panchatantra",
+            "relationship_reason": "Early Dastangos freely borrowed themes and narratives from other established storytelling traditions, including the ancient Indian collection of fables, the Panchatantra."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-69c85fd1",
+      "element_name": "Handmade Weaving in Upper Egypt (Sa'eed)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://cdn.shopify.com/s/files/1/0270/2823/products/Solid-Handwoven-Bamboo-Viscose-Scarf-Purple-Dandarah-1_720x.jpg?v=1678822558",
+      "source_urls": [
+        "https://ich.unesco.org/en/USL/handmade-weaving-in-upper-egypt-saeed-01591",
+        "https://www.elwatannews.com/news/details/4969299",
+        "https://www.dandarah.com/blogs/news/nagada-weaving-a-craft-dating-back-to-pharaonic-times",
+        "https://www.fairtradeegypt.org/blogs/news/akhmim-4000-years-of-textile-innovation"
+      ],
+      "scraped_at": "2026-06-07T02:34:57.883760Z",
+      "location": {
+        "country": "Egypt",
+        "provinces": [
+          "Upper Egypt (Sa'eed)",
+          "Sohag (Akhmim)",
+          "Qena (Naqada)"
+        ],
+        "lat": 27.2481556,
+        "lng": 33.8231416
+      },
+      "resume_analisa": {
+        "description": "Handmade weaving in Upper Egypt (Sa'eed) is a complex craft tradition that demands time, effort, patience, and practice. It encompasses various stages including loom preparation, threading, and the intricate process of weaving to achieve the final textile product. This craft has been meticulously passed down through generations by both men and women, who utilize their inherited knowledge and artistic talent. The fundamental principles of this weaving tradition have largely remained unchanged since ancient times, employing natural materials such as linen, cotton, wool, and silk. Despite its rich history, the craft currently faces significant challenges, including a decline in profitability, the high cost of raw materials, and difficulties in transmitting these skills to younger generations.",
+        "cultural_significance": "This handloom weaving is a profound source of identity and pride for the communities in Upper Egypt. Akhmim, a prominent center for this craft, boasts a textile production history spanning over 4,000 years, known as 'Panopolis' to the Greeks and 'Shemin' to early Christians. Akhmim textiles historically integrated Egyptian, Greek, and later Christian and Islamic artistic patterns. Nagada, another significant weaving hub, has maintained its traditions since Pharaonic times. In 2020, UNESCO officially inscribed 'Handmade weaving in Upper Egypt (Sa'eed)' on its List of Intangible Cultural Heritage in Need of Urgent Safeguarding. This recognition underscores its immense cultural significance and highlights the critical need for protection, community support, and the preservation of this invaluable heritage.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Weaving",
+          "Textile Art",
+          "Egyptian Heritage",
+          "Intangible Cultural Heritage",
+          "Handloom",
+          "Akhmim",
+          "Nagada",
+          "Upper Egypt",
+          "Cultural Identity",
+          "UNESCO"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Handloom Weaving",
+        "materials_and_tools": [
+          "Looms (traditional pit looms, newer handlooms, simple Jaquard looms)",
+          "Linen",
+          "Cotton",
+          "Wool",
+          "Silk",
+          "Animal fibers",
+          "Plant fibers",
+          "Insect fibers (silkworms)",
+          "Thread table (Neer)",
+          "Ball weft",
+          "Comb",
+          "Shuttle"
+        ],
+        "step_by_step": [
+          "Loom preparation: Setting up the weaving apparatus, which can include traditional pit looms or newer handlooms.",
+          "Threading: Arranging and attaching the warp threads to the loom. The 'Neer' (thread table) is used to control the spaces of the warp.",
+          "Weaving: Interlacing the weft threads through the warp. This involves using a ball weft to expand the thread as needed, and a shuttle to carry the weft across. A comb is used to push the shuttle and ensure the desired width of the fabric.",
+          "Post-weaving processes: These can include washing, dyeing, ironing, cutting, sewing, and pattern making, depending on the final product."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Sudan",
+            "element_name": "Farka (scarf or sari-like cloth)",
+            "relationship_reason": "Nagada weavers in Upper Egypt historically produced and exported 'Farka' in large quantities to Sudan, where it was traditionally worn by Sudanese brides."
+          },
+          {
+            "country": "Sudan",
+            "element_name": "Weaving sheep hair",
+            "relationship_reason": "Traditional weaving practices, such as weaving sheep hair, exist in Sudan and face similar challenges regarding the transmission of skills to younger generations and competition from imported goods."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-a309a1b4",
+      "element_name": "Melekouni of Rhodes",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.greek-gastronomy.gr/en/melekouni-of-rhodes/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.greek-gastronomy.gr/en/melekouni-of-rhodes/",
+        "https://greekreporter.com/2025/12/10/melekouni-ancient-greek-energy-snack/",
+        "https://gastronomytours.gr/melekouni/",
+        "https://www.hhotels.com/blog/melekouni-recipe/",
+        "https://fayshomemaderecipes.blogspot.com/2014/09/melekounia-from-rhodes-greece.html",
+        "https://melissokomiki.gr/en/melekouni/",
+        "https://melissokomiki.gr/en/melekouni-pgi-honey-bars/",
+        "https://www.greece-is.com/seven-greek-traditions-recognized-as-intangible-cultural-heritage/",
+        "https://www.greece-is.com/the-unique-customs-of-six-greek-islands-to-be-preserved/",
+        "https://www.gtp.gr/TDirectoryDetails.asp?ID=18588",
+        "https://www.nikostakis.com/melekouni-archives/",
+        "https://www.filemarodion.gr/en/product/traditional-melekouni/",
+        "https://tastetheworld.blog/2016/08/15/melekouni-greek-candy-recipe/",
+        "https://www.beelosophy.gr/en/melekouni-of-rhodes/",
+        "https://www.tasteatlas.com/melekouni"
+      ],
+      "scraped_at": "2026-06-07T02:35:31.164158Z",
+      "location": {
+        "country": "Greece",
+        "provinces": [
+          "South Aegean",
+          "Rhodes"
+        ],
+        "lat": 36.6664741,
+        "lng": 25.7315159
+      },
+      "resume_analisa": {
+        "description": "Melekouni is a traditional, soft, rhombus-shaped sweet originating from the island of Rhodes, Greece. It is primarily made from sesame seeds and honey, and is highly regarded for its delicious taste and significant nutritional value. The name \"melekouni\" is derived from the Greek word \"meli\" (honey) and the Rhodian dialect word \"kouna\" (sesame seed), highlighting its two main ingredients. Unlike the harder 'pasteli', melekouni is characterized by its soft, flexible, and chewy texture, attributed to its higher honey content.",
+        "cultural_significance": "Melekouni holds profound cultural significance on Rhodes, deeply intertwined with local customs and celebrations. It is traditionally offered at joyous events such as weddings, engagements, baptisms, and name days, often serving as both an invitation and a celebratory treat. This sweet symbolizes prosperity, happiness, good fortune, and fertility, with the sesame seeds representing abundance and honey signifying the union of a couple. Its preparation is a communal affair, where women of the village traditionally gather in a festive atmosphere of singing and joy. The history of melekouni can be traced back to ancient Greece, where honey and sesame were staple foods, and a similar confection called 'indrion' was mentioned by Homer. Melekouni has been recognized as a Product of Protected Geographical Indication (PGI) of Rhodes and is included in Greece's National Index of Intangible Cultural Heritage, underscoring its importance as a cultural product and a representative of Rhodian and Greek confectionery.",
+        "gemini_tags": [
+          "Traditional Sweet",
+          "Greek Cuisine",
+          "Rhodes",
+          "Honey",
+          "Sesame",
+          "Cultural Heritage",
+          "Wedding Tradition",
+          "Baptism Tradition",
+          "Energy Snack",
+          "PGI Product",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Recipe",
+        "materials_and_tools": [
+          "Sesame seeds (natural, roasted)",
+          "Honey (thyme honey from Dodecanese preferred, or a combination of flower, pine, and thyme honey)",
+          "Almonds (whole, peeled, roasted)",
+          "Lemon juice",
+          "Orange zest (or bergamot peel)",
+          "Spices (cinnamon, coriander, nutmeg)",
+          "Baking pan",
+          "Pot or saucepan",
+          "Blender or mortar (optional, for lightly crushing sesame)",
+          "Wet marble surface or parchment paper on a large cookie sheet",
+          "Roller",
+          "Sharp knife",
+          "Cellophane (for wrapping)",
+          "Well-closed containers (for storage)"
+        ],
+        "step_by_step": [
+          "Roast the sesame seeds in a baking pan until soft. Optionally, lightly crush them using a blender or mortar.",
+          "Roast the peeled almonds.",
+          "In a pot or saucepan, heat the honey and let it simmer until it loses some moisture and begins to solidify.",
+          "Add the roasted sesame seeds, roasted almonds, lemon juice, orange zest, and desired spices (cinnamon, coriander, nutmeg) to the hot honey. Stir thoroughly to ensure all ingredients are well blended.",
+          "Prepare a clean, wet marble surface or line a large cookie sheet with parchment paper.",
+          "While the mixture is still warm and soft, spread it evenly onto the prepared surface.",
+          "Optionally, press additional whole almonds onto the surface of the mixture.",
+          "Using a roller, flatten the mixture to the desired thickness.",
+          "Allow the sweet to cool down completely.",
+          "Once cooled and firm, use a wet, sharp knife to cut the melekouni into traditional rhombus (diamond) shaped pieces.",
+          "Wrap individual pieces in cellophane and store them in well-closed containers to maintain freshness."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Greece",
+            "element_name": "Pasteli",
+            "relationship_reason": "Melekouni is considered a type of soft pasteli, sharing common core ingredients like sesame and honey, and ancient Greek origins. However, melekouni distinguishes itself with a softer, more flexible texture due to a higher honey content and specific preparation methods."
+          },
+          {
+            "country": "Mediterranean region",
+            "element_name": "Mediterranean Diet",
+            "relationship_reason": "Melekouni aligns with the principles of the Mediterranean Diet, which emphasizes healthy, natural ingredients. Its components, such as honey, sesame, and almonds, were fundamental to ancient Greek cuisine and are recognized for their nutritional benefits, contributing to well-being and longevity."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-05T02:17:40.923609Z",
-    "total_ich_elements": 159,
-    "complete_records": 148,
-    "incomplete_records": 11,
+    "generated_at": "2026-06-07T02:36:02.408006Z",
+    "total_ich_elements": 162,
+    "complete_records": 150,
+    "incomplete_records": 12,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 55,
+      "Traditional Craftsmanship": 56,
       "Social Practices & Rituals": 36,
-      "Culinary Traditions": 29,
+      "Culinary Traditions": 30,
       "Culinary Traditions | Social Practices & Rituals": 2,
       "Performing Arts": 15,
       "Social Practices & Rituals | Performing Arts": 2,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 11,
+      "Oral Traditions": 12,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
