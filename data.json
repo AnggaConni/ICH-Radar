@@ -14132,15 +14132,104 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-227238ff",
+      "element_name": "Anyaman Bambu (Bamboo Weaving)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/sulawesi/north-sulawesi/anyaman-bambu-sulawesi-utara.jpg",
+      "source_urls": [
+        "https://www.indonesia.travel/gb/en/destinations/sulawesi/north-sulawesi/bamboo-weaving",
+        "https://songhaidesign.com/blogs/news/indonesia-and-the-art-of-weaving",
+        "https://idola-indonesia.com/craft-woven-bamboo-way-makes/",
+        "https://odg.com.vn/the-art-of-bamboo-weaving-a-timeless-craft-with-endless-possibilities/",
+        "https://www.indonesiakaya.com/jelajah-indonesia/detail/kerajinan-tangan-kalimantan-timur-wujud-warisan-budaya-nusantara",
+        "https://ejournal.undiksha.ac.id/index.php/JJTP/article/view/28743/16474",
+        "https://ejournal.undiksha.ac.id/index.php/PKMCSR/article/view/2157/1638",
+        "https://www.gaia.id/banana-leaves-bamboo-weaving-and-textiles-trace-of-zero-waste-in-indonesian-culture/",
+        "https://www.gaia.id/anyaman-dayak-warisan-kreativitas-masa-lalu-dalam-ruang-modernisasi/",
+        "https://www.dutatv.com/pembuatan-anyaman-kulit-bambu-khas-desa-hulu-banyu-loksado/",
+        "https://kerajinanrajapolah.wordpress.com/2012/04/05/sejarah-anyaman-bambu-halus/"
+      ],
+      "scraped_at": "2026-06-13T02:15:07.161695Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "North Sulawesi",
+          "West Java",
+          "Central Kalimantan",
+          "East Kalimantan",
+          "West Kalimantan",
+          "Bali",
+          "East Lombok",
+          "Yogyakarta"
+        ],
+        "lat": 0.6555692,
+        "lng": 124.090151
+      },
+      "resume_analisa": {
+        "description": "Anyaman Bambu, or Bamboo Weaving, is a traditional Indonesian craft that utilizes bamboo as its primary material to produce a diverse range of functional and decorative items. This intricate process involves precise cutting, splitting, and arranging of bamboo strips into specific patterns, resulting in strong, durable, and aesthetically pleasing products. Common items include mats, baskets, furniture, hats, and various household utensils.",
+        "cultural_significance": "Bamboo weaving is a deeply rooted tradition in Indonesian culture, reflecting the country's rich diversity and the craftsmanship of its people. It symbolizes strength in gentleness, perseverance through intricate patterns, and the spirit of togetherness and mutual cooperation, often being a collective community effort. Beyond its practical uses for carrying and storing food, transporting goods, and serving as household items, bamboo weaving holds significant cultural importance. For instance, in Bali, intricately woven bamboo baskets are used for offerings in Hindu ceremonies, connecting the craft to religious and cultural rituals. It plays a vital role in preserving cultural heritage and provides sustainable livelihoods for many communities across the archipelago.",
+        "gemini_tags": [
+          "Traditional Craft",
+          "Bamboo",
+          "Weaving",
+          "Indonesian Culture",
+          "Handicraft",
+          "Sustainable Craft",
+          "Community Practice",
+          "Folk Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Manual Weaving",
+        "materials_and_tools": [
+          "Mature bamboo (e.g., black bamboo, turmeric bamboo, apus bamboo, ater bamboo, nyatu bamboo skin)",
+          "Saws",
+          "Knives/Machetes",
+          "Downs (for smoothing bamboo strips)",
+          "Small nails"
+        ],
+        "step_by_step": [
+          "**1. Selection of Bamboo**: Choose mature bamboo culms that are strong, flexible, and straight, avoiding those that are too old or too young. Specific varieties like black bamboo or turmeric bamboo are often preferred for their durability.",
+          "**2. Preparation and Curing**: Cut the bamboo culms to the appropriate length and remove the nodes or joints. Some traditional methods involve soaking the bamboo in a river to enhance its sturdiness, followed by drying it under direct sunlight for several days to eliminate moisture content. Alternatively, a curing process is used to prevent insect infestation and ensure longevity.",
+          "**3. Splitting and Stripping**: Carefully split the bamboo culms vertically into thin sheets or strips, known as splints. The outer layers are precisely stripped away to reveal the smooth and pliable inner core, which is then used for weaving. The width and thickness of these strips are adjusted according to the desired product.",
+          "**4. Smoothing and Refining (Habatori and Mentori)**: The bamboo strips are tidied up and their thickness is adjusted to ensure uniformity, a process called 'habatori'. Subsequently, 'mentori' involves smoothing the left and right sides of the strips while setting a standard width, which is crucial for creating precise and high-quality crafts.",
+          "**5. Weaving Process**: Begin by preparing two strands of bamboo strips, one facing the 'meat' (inner part) and the other facing the 'skin' (outer part). These are then woven crisscross, either lengthwise or crosswise, by alternating the main axes. Various weaving techniques are employed, including two-axis, three-axis, room weaving (braiding), lotus weaving, and twisted weave, each yielding distinct patterns and structural characteristics.",
+          "**6. Finishing**: To strengthen the woven product, the ends of the bamboo strips are often tied securely with string or thread. Depending on the desired aesthetic, some bamboo weaving products may also incorporate natural dyeing techniques to add color and uniqueness."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Vietnam",
+            "element_name": "Nón Lá (conical hats)",
+            "relationship_reason": "Uses thin bamboo strips woven into intricate patterns, symbolizing protection and beauty, and is emblematic of Vietnamese identity."
+          },
+          {
+            "country": "Philippines",
+            "element_name": "Various woven products (mats, baskets, hats, ceremonial garments like inabel blankets and t'nalak cloth)",
+            "relationship_reason": "Indigenous groups like the Ifugao and T'boli weave bamboo into functional and decorative items, embodying rich cultural traditions and artistic craftsmanship."
+          },
+          {
+            "country": "China",
+            "element_name": "Intricate basketry, furniture, and construction materials",
+            "relationship_reason": "Different regions in China have distinct bamboo weaving traditions, passed down through generations, reflecting unique styles, techniques, and patterns."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-07T02:36:02.408006Z",
-    "total_ich_elements": 162,
-    "complete_records": 150,
+    "generated_at": "2026-06-13T02:17:06.346958Z",
+    "total_ich_elements": 163,
+    "complete_records": 151,
     "incomplete_records": 12,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 56,
+      "Traditional Craftsmanship": 57,
       "Social Practices & Rituals": 36,
       "Culinary Traditions": 30,
       "Culinary Traditions | Social Practices & Rituals": 2,
