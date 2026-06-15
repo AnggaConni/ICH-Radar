@@ -14221,20 +14221,205 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-746e9986",
+      "element_name": "Longzhou Shehuo (陇州社火)",
+      "category": "Social Practices & Rituals | Performing Arts",
+      "thumbnail_url": "http://www.xinhuanet.com/culture/titlepic/1130089151_1709292800537_title1n.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Shehuo",
+        "https://news.cgtn.com/news/3d3d514e3251447a78457a6333566d54/index.html",
+        "https://www.chinadailyhk.com/article/198751",
+        "http://www.ihchina.cn/detail_web/detail/201402/19/C484A9505F2F432483866163F736631E.html",
+        "http://www.chinesefolklore.org.cn/web/index.php?mod=news&classid=12&id=1130",
+        "https://www.globaltimes.cn/page/202603/1310058.shtml",
+        "http://www.xinhuanet.com/photo/2024-02/16/c_1130026214.htm",
+        "http://www.xinhuanet.com/culture/20240301/21427d14214f4886b66e31284a1a0f96/c.html",
+        "https://www.reddit.com/r/chinatrip/comments/1ax534s/what_is_gansu_shehuo_a_detailed_record_of/",
+        "https://www.thepaper.cn/newsDetail_forward_21503370",
+        "http://www.gscn.com.cn/news/system/2023/01/11/012810330.shtml",
+        "http://www.dili360.com/nh/detail/5063.htm",
+        "https://cn.chinadaily.com.cn/a/202502/09/WS67a86f3fa310be53ce3f4acf.html",
+        "https://cn.chinadaily.com.cn/a/202402/20/WS65d487a0a3109f7860dd264c.html",
+        "https://www.chinadaily.com.cn/a/202503/05/WS65e69e46a31082fc043c9429.html",
+        "https://www.chinadaily.com.cn/a/202603/03/WS65e41258a31082fc043c938d.html",
+        "https://news.cgtn.com/news/2026-02-11/Shehuo-celebrations-fill-Tumushuke-streets-ahead-of-Spring-Festival-1qf23p9v99A/index.html",
+        "https://news.cgtn.com/news/2024-01-29/People-usher-in-Chinese-New-Year-with-Shehuo-performances-in-Hebei-1q6pI72dJ6s/index.html",
+        "https://www.globaltimes.cn/page/202510/1329242.shtml",
+        "https://www.chinadaily.com.cn/culture/2016-03/11/content_23832439.htm",
+        "https://www.sohu.com/a/735606473_120863955",
+        "http://www.chinaculture.org/pub/zh_CN/zt/zt_wh/zt_wh_ms/zt_wh_ms_mswh/201501/t20150109_478065.html",
+        "https://english.news.cn/20230207/5836236b33374828859942a77519e59d/c.html",
+        "https://www.silkroadexpo.org.cn/art/2022/2/16/art_132_1140685.html",
+        "https://zh.wikipedia.org/wiki/%E7%A4%BE%E7%81%AB"
+      ],
+      "scraped_at": "2026-06-15T02:43:05.973178Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Shaanxi"
+        ],
+        "lat": 35.5895959,
+        "lng": 109.3013107
+      },
+      "resume_analisa": {
+        "description": "Shehuo (社火), also known as \"earth and fire,\" is a traditional Chinese carnival-like folk celebration predominantly observed in the countryside of Northern China during the Chinese New Year and Lantern Festival. It is deeply rooted in ancient sacrificial activities where people prayed for bountiful harvests and prosperity, and sought to ward off misfortune and usher in a fresh start for the new year. Longzhou Shehuo, specifically from Longxian county in Shaanxi province (historically known as Longzhou), is a notable regional variation. It is acclaimed as a \"treasure of Chinese folk art\" and an \"inland carnival,\" characterized by its vivid colors, intricate facial makeup, and diverse performances.",
+        "cultural_significance": "Shehuo is a centuries-old practice that underscores the historical importance of agriculture in Chinese society, serving as a collective prayer to the gods of Earth and Fire for good harvests, peace, and protection against evil spirits. Beyond its sacrificial origins, it has evolved into a significant community-connecting event and a vibrant platform for folk art, reflecting the ethical values and spiritual outlook of rural society. The performances, often drawing themes from mythology, historical epics, and folk legends, also serve to transmit virtues and educate the public.",
+        "gemini_tags": [
+          "Chinese folk festival",
+          "traditional performance",
+          "Spring Festival",
+          "Lantern Festival",
+          "rural customs",
+          "Shaanxi culture",
+          "intangible cultural heritage",
+          "face painting",
+          "dragon dance",
+          "lion dance",
+          "stilt walking",
+          "ancient rituals",
+          "community celebration"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance preparation and ritual",
+        "materials_and_tools": [
+          "Costumes (embroidered, traditional opera attire)",
+          "Ornate headpieces",
+          "Props (e.g., swords, flower branches, bamboo horses, land boats, ox statues)",
+          "Musical instruments (drums, gongs, cymbals)",
+          "Makeup (pigments, brushes for face painting)",
+          "Stilts (for stilt-walking Shehuo)",
+          "Iron frames (for Xinzi/Gaotai Shehuo)"
+        ],
+        "step_by_step": [
+          "**Preparation (Lunar December/Early January)**: Villages organize Shehuo troupes, which involves acquiring and updating costumes and musical instruments, as well as practicing martial arts and singing tunes. Rural artisans contribute by preparing props and models.",
+          "**Character Selection and Makeup**: Performers are chosen to portray traditional deities, immortals, buddhas, sages, heroes, and mythical creatures from ancient mythology, historical tales, and folklore. Shehuo artists paint elaborate facial makeup (face painting) based on the character's personality, using vibrant colors (traditionally five colors: blue, red, yellow, white, black, representing the five elements) and patterns (cloud, water, fire, crescent moon) to exaggerate and magnify character features.",
+          "**Costuming**: Performers fasten embroidered costumes and adjust ornate headpieces, transforming into their assigned characters.",
+          "**Procession and Performance**: The Shehuo troupe, often led by drum bands and flag teams, parades through streets and villages, stopping at courtyards and crossroads to perform.",
+          "**Performance Types**: Performances vary widely by region and may include dragon dances, lion dances, Yangko dances, traditional Chinese opera excerpts, stilt walking, fire breathing, drumming, 'Xinzi' or 'Gaotai' (children standing on elevated platforms), 'carrying Shehuo' (adults carrying children), 'horse Shehuo' (performers on horseback), and 'land boat' dances.",
+          "**Rituals and Blessings**: During the performances, specific characters like 'Chunguan' (Spring Official) recite poems and offer blessings for good fortune and harvest. The 'Haiponiang' (Ugly Woman) acts as a clown and performs rituals to sweep away bad luck and illness.",
+          "**Community Interaction**: Villagers welcome the troupes with firecrackers, and lion and dragon dances may enter homes that set off fireworks, symbolizing blessings for the new year."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Gansu Shehuo",
+            "relationship_reason": "Regional variation of Shehuo, sharing core origins and practices but incorporating local characteristics and cultural elements from the Silk Road."
+          },
+          {
+            "country": "China",
+            "element_name": "Shanxi Shehuo (e.g., Pingyao Shehuo)",
+            "relationship_reason": "Regional variation of Shehuo, sharing core origins and practices, particularly known for land boats and shoulder-pole performances."
+          },
+          {
+            "country": "China",
+            "element_name": "Qinghai Shehuo",
+            "relationship_reason": "Regional variation of Shehuo, sharing core origins and practices, with specific roles like 'Dengguan Laoye' (Lantern Official)."
+          },
+          {
+            "country": "China",
+            "element_name": "Xinjiang Shehuo",
+            "relationship_reason": "Regional variation of Shehuo, blending traditional folk customs with regional ethnic minority arts."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-eea51846",
+      "element_name": "Hospitality Rituals for a Son-in-Law (Ikirunguri cha Bhairwa and Ubhusara)",
+      "category": "Culinary Traditions | Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.jamiiforums.com/threads/mila-na-desturi-zetu.722621/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.jamiiforums.com/threads/mila-na-desturi-zetu.722621/",
+        "https://fermentingforfoodies.com/togwa-recipe-tanzanian-fermented-maize-drink/",
+        "https://www.youtube.com/watch?v=vS0uUMEHMj8",
+        "https://orantcharitiesafrica.org/how-to-make-thobwa-malawian-recipes/"
+      ],
+      "scraped_at": "2026-06-15T02:44:12.714567Z",
+      "location": {
+        "country": "Tanzania",
+        "provinces": [],
+        "lat": -6.5247123,
+        "lng": 35.7878438
+      },
+      "resume_analisa": {
+        "description": "This cultural practice involves specific culinary and social rituals extended to a son-in-law when he visits his in-laws, serving as a profound demonstration of respect. The ritual typically begins with a special breakfast of 'Ikirunguri cha Bhairwa', a porridge made from millet flour and cow fat. Following this, 'Ubhusara' (also known as Togwa), a traditional fermented millet drink, is offered in a distinctive container called 'Ikisonzo' while the son-in-law awaits lunch. The lunch itself is a significant meal, often featuring 'Ugali wa Udaga' (ugali made from a mixture of millet and cassava flour) accompanied by beef or goat meat and a side dish called 'Kichuri'.",
+        "cultural_significance": "These hospitality rituals are deeply embedded in the community's cultural fabric, symbolizing 'HESHIMA YA PEKEE' (special respect) for the son-in-law. They reinforce familial bonds, demonstrate generosity, and uphold the traditional values of welcoming and honoring guests, particularly those who have married into the family. The specific foods and their presentation carry symbolic weight, signifying the importance of the relationship and the family's regard for their new member.",
+        "gemini_tags": [
+          "Tanzanian culture",
+          "hospitality",
+          "traditional food",
+          "millet porridge",
+          "fermented drink",
+          "family rituals",
+          "East African traditions",
+          "culinary heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Culinary preparation and serving ritual",
+        "materials_and_tools": [
+          "Millet flour (for Ikirunguri cha Bhairwa and Ugali wa Udaga)",
+          "Cow fat (for Ikirunguri cha Bhairwa)",
+          "Maize or millet flour (for Ubhusara/Togwa)",
+          "Water (for Ubhusara/Togwa)",
+          "Sugar (optional, for Ubhusara/Togwa)",
+          "Cardamom powder (optional, for Ubhusara/Togwa)",
+          "Cassava flour (for Ugali wa Udaga)",
+          "Beef or goat meat",
+          "Ingredients for 'Kichuri' (side dish)",
+          "Pots",
+          "Stirring utensils",
+          "Ikisonzo (traditional serving container for Ubhusara)"
+        ],
+        "step_by_step": [
+          "**Ikirunguri cha Bhairwa Preparation (Breakfast)**: Prepare a porridge using millet flour and cow fat. The specific step-by-step process for 'Ikirunguri cha Bhairwa' is not detailed in the available information. Serve this porridge as breakfast to the son-in-law.",
+          "**Ubhusara (Togwa) Preparation (Mid-morning drink)**:",
+          "1.  **Make the Uji Base (Thin Porridge)**: In a bowl, mix maize or millet flour with cold water until smooth, ensuring no lumps. Bring 700ml of water to a boil in a medium pot. Reduce the heat to a gentle simmer and slowly pour in the flour-water mixture while stirring continuously. Stir constantly for 5-8 minutes as it thickens until the porridge is smooth, thick, and has lost its raw flour taste.",
+          "2.  **Cool**: Allow the cooked porridge to cool down to room temperature (approximately 25-30°C or 77-86°F).",
+          "3.  **Ferment**: Transfer the cooled porridge to a clean, non-reactive container. Cover it loosely and let it ferment at room temperature for 24-48 hours. Stir occasionally during this period. The fermentation is complete when the mixture develops a mildly sour taste and a slightly bubbly appearance.",
+          "4.  **Thin and Serve**: The fermented Togwa will typically be thick. Gradually add cold, clean water and stir until the desired drinking consistency is achieved, ranging from a thin porridge to an almost juice-like liquid. For a smoother texture, it can be strained through cheesecloth or a fine mesh strainer. Serve the prepared Ubhusara in an 'Ikisonzo', a traditional container.",
+          "**Lunch Preparation**: Prepare 'Ugali wa Udaga' by cooking a mixture of millet and cassava flour. This ugali is traditionally served with beef or goat meat and a side dish known as 'Kichuri'."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Malawi",
+            "element_name": "Thobwa",
+            "relationship_reason": "Thobwa is a traditional Malawian fermented beverage made from cornflour and sorghum, sharing similarities with Togwa (Ubhusara) as a fermented grain drink common in East Africa."
+          },
+          {
+            "country": "Southern Africa",
+            "element_name": "Mahewu",
+            "relationship_reason": "Togwa (Ubhusara) is described as a 'Southern African cousin' to Mahewu, indicating a broader regional tradition of fermented grain-based drinks."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-13T02:17:06.346958Z",
-    "total_ich_elements": 163,
-    "complete_records": 151,
-    "incomplete_records": 12,
+    "generated_at": "2026-06-15T02:45:45.908858Z",
+    "total_ich_elements": 165,
+    "complete_records": 152,
+    "incomplete_records": 13,
     "categories_breakdown": {
       "Traditional Craftsmanship": 57,
       "Social Practices & Rituals": 36,
       "Culinary Traditions": 30,
-      "Culinary Traditions | Social Practices & Rituals": 2,
+      "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 15,
-      "Social Practices & Rituals | Performing Arts": 2,
+      "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 12,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
