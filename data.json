@@ -14406,17 +14406,212 @@
         ]
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-92077eef",
+      "element_name": "Griot Storytelling",
+      "category": "Oral Traditions | Performing Arts | Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Griot&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Griot",
+        "https://www.ourancestories.com/griot-storytelling-west-africa/",
+        "https://artsandculture.google.com/story/how-griots-tell-legendary-epics-through-stories-and-songs-in-west-africa/dwXh7768eW4eKw",
+        "https://www.britannica.com/art/griot",
+        "https://allgoodtales.com/storytelling-traditions-across-the-world-west-africa/",
+        "https://www.playingforchange.com/inside-west-africas-griot-culture-prince-diabate-marks-park/",
+        "https://www.ducksters.com/history/africa/griots_and_storytellers.php",
+        "https://medium.com/@allgoodtales/storytelling-traditions-across-the-world-west-africa-6f925b64c12a",
+        "https://shanti-chi.com/griot-way-training",
+        "https://www.seckoukeita.com/my-culture",
+        "https://journal.oraltradition.org/issues/12i2/hale/"
+      ],
+      "scraped_at": "2026-06-17T02:42:37.129053Z",
+      "location": {
+        "country": "West Africa",
+        "provinces": [
+          "Mali",
+          "Senegal",
+          "The Gambia",
+          "Guinea",
+          "Niger",
+          "Burkina Faso",
+          "Mauritania",
+          "Nigeria"
+        ],
+        "lat": 12.64059,
+        "lng": -8.0273189
+      },
+      "resume_analisa": {
+        "description": "Griot storytelling is a traditional West African practice centered around a griot (also known as jali or jeli), who serves as a historian, storyteller, praise singer, poet, and musician. Griots are masters of communicating stories and history orally, preserving and passing on the values, genealogies, and historical narratives of their people for hundreds of years without being written down. They are often skilled musicians, accompanying their narratives with instruments such as the kora, balafon, or ngoni. Griots adapt and expand their narratives over time, weaving in their own experiences to keep stories relevant across generations and cultures.",
+        "cultural_significance": "Griots are highly regarded within their communities, serving as the 'memory' of their people and custodians of community histories, meticulously recording births, deaths, marriages, and the collective memory of generations. They play a vital role in maintaining the social fabric by imparting tales, offering advice to leaders, and mediating disputes using lessons from the past. The loss of a griot is metaphorically compared to 'the burning down of a library,' underscoring their crucial role in preserving knowledge and cultural heritage. They are essential to West African events like weddings, where they share family histories of the bride and groom.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Storytelling",
+          "West African Culture",
+          "Music",
+          "History",
+          "Genealogy",
+          "Social Practice",
+          "Cultural Preservation",
+          "Performing Arts",
+          "Community Rituals"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Transmission and Performance",
+        "materials_and_tools": [
+          "Voice",
+          "Kora (21-string harp-lute)",
+          "Balafon (xylophone)",
+          "Ngoni (lute-like instrument)",
+          "Other traditional and modern musical instruments"
+        ],
+        "step_by_step": [
+          "**Hereditary Transmission:** The griot profession is hereditary, often passed down through family lines, with most griots marrying within their own group.",
+          "**Early Apprenticeship:** Training typically begins at a young age, sometimes around eight years old, and can continue for many years.",
+          "**Listening and Memorization:** Apprentices undergo rigorous training, involving years of listening to elder griots and memorizing a vast repertoire of hundreds of songs, stories, and historical accounts.",
+          "**Instrumental Mastery:** Griots learn to play traditional instruments like the kora, balafon, or ngoni; in some families, they are taught to build their own instruments.",
+          "**Adaptation and Interpretation:** Beyond memorization, griots learn to interpret and adapt performances to specific audiences and social contexts, weaving in their own experiences and contemporary details to keep narratives relevant.",
+          "**Final Test and Instrument Bestowal:** After proving mastery in music and storytelling, new griots may be given a musical instrument, or they might construct their own.",
+          "**Performance:** Griots perform at various events, including formal ceremonies, weddings, and community gatherings, using poetic and musical conventions to entertain and educate their audience."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Mali",
+            "element_name": "Griot Storytelling",
+            "relationship_reason": "Origin point and strong presence of griot traditions, particularly among Mande peoples."
+          },
+          {
+            "country": "Senegal",
+            "element_name": "Griot Storytelling",
+            "relationship_reason": "Significant presence of griots, especially among the Wolof people, who depend on griots for cultural knowledge."
+          },
+          {
+            "country": "The Gambia",
+            "element_name": "Griot Storytelling",
+            "relationship_reason": "Important cultural figures and memory keepers in the community."
+          },
+          {
+            "country": "Guinea",
+            "element_name": "Griot Storytelling",
+            "relationship_reason": "Prominent Malinke griot families and a strong tradition of kora playing."
+          },
+          {
+            "country": "Niger",
+            "element_name": "Griot Storytelling",
+            "relationship_reason": "Presence of Hausa griots and a recognized tradition."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-3abdf822",
+      "element_name": "Ayam Betutu",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.segari.id/uploads/resep/resep-ayam-betutu-khas-bali-1711100062.webp",
+      "source_urls": [
+        "https://www.segari.id/resep/resep-ayam-betutu-khas-bali",
+        "https://www.detik.com/bali/kuliner/d-7345476/resep-dan-cara-masak-ayam-betutu-khas-bali-yang-pedas-dan-nikmat",
+        "https://www.rumah123.com/artikel/gaya-hidup/sejarah-ayam-betutu-bali-dan-rekomendasi-tempat-terbaiknya-71701",
+        "https://formosapublisher.org/index.php/aesthetica/article/download/43/36",
+        "https://www.palmia.co.id/resep/ayam-betutu",
+        "https://id.wikipedia.org/wiki/Story:Ayam_Betutu",
+        "https://id.wikipedia.org/wiki/Ayam_betutu",
+        "https://travel.kompas.com/read/2020/04/17/103000678/sejarah-ayam-betutu-hidangan-khas-bali-pengaruh-budaya-majapahit",
+        "https://www.youtube.com/watch?v=0k3vX_v-mX0",
+        "https://www.masakapahariini.com/resep/resep-ayam-betutu-pedas-khas-gilimanuk-bali/",
+        "https://www.sasa.co.id/resep/resep-ayam-betutu",
+        "https://www.bimoli.com/resep/resep-masakan-nusantara-ayam-betutu-bali-yang-legendaris",
+        "https://food.detik.com/ayam/d-5557760/resep-ayam-betutu-khas-gilimanuk-bali-yang-pedas-mantap",
+        "https://www.youtube.com/watch?v=s0e5Gz_oU5A",
+        "https://www.dapurumami.com/resep/7-resep-tradisional-yang-bisa-menambah-asupan-gizi-keluarga-20240424095402"
+      ],
+      "scraped_at": "2026-06-17T02:43:05.615321Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Bali",
+          "Gianyar"
+        ],
+        "lat": -8.2271303,
+        "lng": 115.1919203
+      },
+      "resume_analisa": {
+        "description": "Ayam Betutu is a traditional Balinese dish made from a whole chicken or duck, generously filled and coated with a rich blend of Balinese spices known as \"base genep.\" The cooking process, traditionally involving roasting or steaming for an extended period, results in exceptionally tender meat, deeply infused with flavor, and a distinctive aromatic profile. This culinary delight is renowned for its spicy and savory taste, making it a beloved specialty of Bali.",
+        "cultural_significance": "Ayam Betutu holds profound cultural importance in Bali, serving as a staple dish for Hindu Balinese religious ceremonies and customary events. It is frequently prepared for significant occasions such as Ngaben (cremation ceremonies), Otonan (birth rituals), Odalan (temple festivals), and weddings. The dish is also traditionally offered to esteemed religious leaders, including Pedanda and Sulinggih Yang. Its origins are deeply rooted in the Majapahit era of the 15th-16th century, influenced by the migration of Hindu populations to Bali, which brought with it various cultural and culinary traditions. The name \"Betutu\" itself is derived from the words \"be\" (meat) and \"tunu\" (roasted), literally translating to \"roasted meat,\" reflecting its traditional preparation method. This dish not only represents a culinary masterpiece but also embodies the rich cultural identity and heritage of the island.",
+        "gemini_tags": [
+          "Balinese cuisine",
+          "Traditional Indonesian food",
+          "Spicy chicken dish",
+          "Slow-cooked poultry",
+          "Ceremonial food",
+          "Spice-rich recipe",
+          "Indonesian culinary heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Recipe",
+        "materials_and_tools": [
+          "1 whole chicken (or duck)",
+          "1 lime",
+          "Salt",
+          "Cassava leaves (for stuffing)",
+          "Lemongrass",
+          "Bay leaves",
+          "Kaffir lime leaves",
+          "Banana leaves (for wrapping)",
+          "Cooking oil",
+          "Water (for steaming/cooking)",
+          "Toothpicks (to seal chicken)",
+          "Mortar and pestle (for grinding spices)",
+          "Oven or steamer (traditionally sekam fire)",
+          "Bumbu Halus (Spice Paste): Shallots, garlic, red chilies, bird's eye chilies, candlenuts, ginger, turmeric, galangal, kencur, black pepper, coriander, brown sugar, shrimp paste"
+        ],
+        "step_by_step": [
+          "Clean the whole chicken thoroughly with running water, then rub it with lime juice and salt. Let it marinate in the refrigerator for approximately 30 minutes.",
+          "Prepare the \"bumbu halus\" (spice paste) by grinding all the spice ingredients (shallots, garlic, chilies, candlenuts, ginger, turmeric, galangal, kencur, black pepper, coriander, salt, brown sugar, and shrimp paste) using a mortar and pestle until a fine or coarsely pounded paste is formed.",
+          "Heat cooking oil in a pan and sauté the prepared spice paste until fragrant.",
+          "Boil cassava leaves until tender, then drain and roughly chop them. Mix a portion of the sautéed spice paste with the chopped cassava leaves.",
+          "Generously coat the entire chicken, both inside and out, with the remaining sautéed spice paste. Ensure even coverage, including the inner cavity.",
+          "Stuff the seasoned cassava leaves into the chicken's cavity. Secure the opening of the chicken's belly with toothpicks to keep the stuffing inside.",
+          "Wrap the spiced and stuffed chicken tightly in several layers of banana leaves. Some recipes also suggest an additional layer of aluminum foil for steaming.",
+          "Cook the chicken: Traditionally, Ayam Betutu is roasted for 8-10 hours in a \"sekam\" (rice husk) fire, creating a natural oven effect. Modern methods involve steaming the wrapped chicken for about 2 hours until tender, followed by baking or grilling for an additional 20-30 minutes to achieve a characteristic aroma and golden finish.",
+          "Once cooked, unwrap the Ayam Betutu and serve it hot. It is often accompanied by side dishes such as sambal matah (Balinese raw shallot and lemongrass chili sauce) or plecing kangkung (spicy water spinach salad)."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Indonesia (Java)",
+            "element_name": "Majapahit culinary traditions",
+            "relationship_reason": "The origins of Ayam Betutu are historically linked to the Majapahit era (15th-16th century), when the migration of Hindu populations from Java to Bali brought various cultural and culinary influences, including the foundation for spice-rich dishes."
+          },
+          {
+            "country": "Indonesia (various regions)",
+            "element_name": "Spice-rich traditional Indonesian dishes",
+            "relationship_reason": "The use of 'base genep' (complete spice paste) in Ayam Betutu is a hallmark of many traditional Indonesian regional cuisines, which commonly feature complex blends of fresh herbs and spices."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-15T02:45:45.908858Z",
-    "total_ich_elements": 165,
-    "complete_records": 152,
+    "generated_at": "2026-06-17T02:43:38.888435Z",
+    "total_ich_elements": 167,
+    "complete_records": 154,
     "incomplete_records": 13,
     "categories_breakdown": {
       "Traditional Craftsmanship": 57,
       "Social Practices & Rituals": 36,
-      "Culinary Traditions": 30,
+      "Culinary Traditions": 31,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 15,
       "Social Practices & Rituals | Performing Arts": 3,
@@ -14428,7 +14623,8 @@
       "Social Practices & Rituals | Culinary Traditions": 1,
       "Social Practices & Rituals | Traditional Craftsmanship": 1,
       "Performing Arts | Traditional Craftsmanship": 1,
-      "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1
+      "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1,
+      "Oral Traditions | Performing Arts | Social Practices & Rituals": 1
     }
   }
 }
