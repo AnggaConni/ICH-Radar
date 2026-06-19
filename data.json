@@ -14601,19 +14601,201 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c87399c8",
+      "element_name": "Kora",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Kora_instrument.jpg/800px-Kora_instrument.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Kora_(instrument)",
+        "https://www.grinnell.edu/node/105496",
+        "https://www.koraworkshop.co.uk/history/",
+        "https://worldmusiccentral.org/2024/11/21/the-kora-west-africas-cherished-21-stringed-harp-lute/",
+        "https://www.musical-instruments-encyclopedia.org/kora",
+        "https://www.kaypacha.es/en/kora/",
+        "https://musicforestinstruments.com/kora/",
+        "https://africanmusiclibrary.org/kora-more-than-a-musical-instrument/",
+        "https://kora-mandings.com/making-of-an-african-kora/",
+        "https://www.afropop.org/articles/journeys-with-the-kora",
+        "https://www.amis.org/publications/journal/volume-45/on-the-organology-of-the-kora/",
+        "https://www.youtube.com/watch?v=s0q6m6e409o",
+        "https://www.youtube.com/watch?v=gT5-83e8U_g",
+        "https://www.britannica.com/art/kora",
+        "https://www.metmuseum.org/art/collection/search/790104",
+        "https://www.jaliyacamp.com/the-kora",
+        "https://www.seckoukeita.com/my-instruments"
+      ],
+      "scraped_at": "2026-06-19T02:55:54.890691Z",
+      "location": {
+        "country": "West Africa",
+        "provinces": [
+          "Mali",
+          "The Gambia",
+          "Senegal",
+          "Guinea",
+          "Guinea-Bissau",
+          "Burkina Faso",
+          "Sierra Leone",
+          "Ivory Coast"
+        ],
+        "lat": 12.64059,
+        "lng": -8.0273189
+      },
+      "resume_analisa": {
+        "description": "The Kora is a 21-stringed (sometimes 22 or 23) harp-lute, a unique West African instrument that combines features of both a harp and a lute. It is typically crafted from a large calabash gourd cut in half, covered with cowhide or antelope skin to form a resonator. A long hardwood neck (often rosewood or kéno) passes through the gourd, supporting the strings. The strings, traditionally made from twisted antelope hide, are now commonly nylon fishing line or harp strings. They are arranged in two parallel rows, usually 11 for the left hand and 10 for the right, passing over a notched wooden bridge. The instrument is played by plucking the strings with the thumbs and forefingers of both hands, while the other fingers grip two hand posts. Its sound is often described as melodic, resonant, soothing, and ethereal, capable of producing complex polyphonic and polyrhythmic textures.",
+        "cultural_significance": "The Kora is deeply intertwined with the Jaliya (griot) tradition of the Mande people in West Africa. Jalis are hereditary oral historians, genealogists, storytellers, praise singers, and musicians who play a crucial role in preserving and transmitting cultural heritage across generations. The instrument is central to social ceremonies, including births, weddings, and funerals, where its music connects physical and spiritual worlds and accompanies epic tales, praise songs, and moral teachings. Learning to play the Kora is a hereditary skill, traditionally passed from father to son within Jali families, though modern times have seen female virtuosos like Sona Jobarteh. The Kora has gained international recognition, influencing various music genres and being declared a UNESCO site of intangible cultural heritage in 2008.",
+        "gemini_tags": [
+          "Traditional Musical Instrument",
+          "West African Music",
+          "Harp-Lute",
+          "Oral Tradition",
+          "Griot",
+          "Cultural Heritage",
+          "Handmade Instrument",
+          "Mandinka Culture",
+          "African Folklore",
+          "Performing Arts"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship",
+        "materials_and_tools": [
+          "Large calabash gourd (Merango)",
+          "Cowhide or antelope skin (Nisongulo)",
+          "Hardwood for neck, handles, and bridge (e.g., Kéno/African rosewood)",
+          "Nylon fishing line or harp strings (formerly twisted antelope hide)",
+          "Iron ring (Diouto Néo)",
+          "Leather tuning rings (Konso) or guitar machine heads",
+          "Wooden cushion (Kula Raon) and cloth for the bridge base",
+          "Nails/brass studs",
+          "Rope/cord for stretching skin",
+          "Planer, spoke shave, drills, sandpaper, oil (for neck finishing)",
+          "Bamboo strips (optional, for calabash support)"
+        ],
+        "step_by_step": [
+          "Select a large calabash gourd, cut it in half, scrape and smooth the inside and outside, round the edges, and allow it to dry. Some makers reinforce the calabash with an aluminum ring and coat the inside with resin.",
+          "Shape a uniform, knot-free hardwood (e.g., kéno/rosewood) into a long neck. Mark and cut holes for the neck in the calabash. Drill holes for tuning mechanisms and hand posts. Sand and oil the neck for a fine finish.",
+          "De-hair a piece of cowhide or antelope skin and cut it to size. Place the wet skin over the open half of the calabash. Create slits around the circumference of the skin and thread a cord or rope through them to act as a drawstring. Pull the drawstring tightly to stretch the skin tautly over the calabash, securing it with nails or tacks around the rim. A sound hole is also cut into the skin.",
+          "Insert the prepared wooden neck vertically through the holes in the calabash and skin. Attach two wooden handles (Bulu Kalo) on either side of the neck and a crossbar (Baram Banda) horizontally, securing them under the skin to stabilize the structure and provide handgrips for playing.",
+          "Construct a notched, rectangular wooden bridge (Kora Bato). Place a cloth-covered wooden cushion (Kula Raon) on the soundboard, and then position the bridge vertically on top of it.",
+          "Attach an iron ring (Diouto Néo) to the base of the neck. Prepare 21 (or more) strings from nylon fishing line (or traditional hide). One end of each string is attached to the iron ring. The strings then pass over the notches in the bridge, dividing them into two ranks (11 left, 10 right). The other end of each string is secured to the neck using braided leather tuning rings (Konso) or modern guitar machine heads, which allow for tension adjustment and tuning.",
+          "After all strings are attached, the instrument is tuned. This process may involve frequent playing and re-tuning as the hide stretches and settles."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Mali, Guinea, Senegal, The Gambia, Guinea-Bissau, Burkina Faso, Sierra Leone, Ivory Coast",
+            "element_name": "Jaliya (Griot tradition)",
+            "relationship_reason": "The Kora is an integral part of the Jaliya tradition, serving as the primary instrument for hereditary oral historians, genealogists, storytellers, and musicians across these West African nations."
+          },
+          {
+            "country": "West Africa (general)",
+            "element_name": "Balafon (Mande xylophone)",
+            "relationship_reason": "The Balafon is another traditional Mande instrument, often played by Jeli alongside the Kora, and shares a deep historical and cultural connection within West African musical traditions."
+          },
+          {
+            "country": "West Africa (general)",
+            "element_name": "Ngoni (lute-like instrument)",
+            "relationship_reason": "The Ngoni is a traditional Mande stringed instrument, similar to a lute, that is also associated with the Jeli tradition and often performed in conjunction with the Kora."
+          },
+          {
+            "country": "West Africa (general)",
+            "element_name": "Donsongoni (hunter's harp) and Simbin (hunter's harp)",
+            "relationship_reason": "The Kora is believed to have evolved from similar harp-like instruments in the region, such as the donsongoni and simbin, sharing structural and functional similarities."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ec967a31",
+      "element_name": "Bullet Ant Initiation Ritual (Waumat)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Satere-Mawe_bullet_ant_initiation.jpg/640px-Satere-Mawe_bullet_ant_initiation.jpg",
+      "source_urls": [
+        "https://www.worldatlas.com/articles/8-tribal-traditions-from-around-the-world.html",
+        "https://www.rarest.org/ancient-and-extreme-the-wildest-tribal-rituals-ever-recorded/",
+        "https://medium.com/@gaurishukla_4047/weird-tribal-rituals-that-will-shock-you-996167825d10",
+        "https://www.inuth.com/lifestyle/travel/from-lip-plates-to-scarification-9-weird-tribal-traditions-around-the-world-that-are-practised-even-today/",
+        "https://www.internationaltraveller.com/bizarre-cultural-rituals/",
+        "https://pib.socioambiental.org/en/Povo:Sater%C3%A9_Maw%C3%A9",
+        "https://joshuaproject.net/people_groups/14605/BR",
+        "https://news.mongabay.com/2019/04/stinging-ants-amazon-indigenous-group-girds-itself-to-hold-ancestral-lands/",
+        "https://www.harveymudd.edu/hmc-blogs/coming-age-ants-satere-mawe-tradition-wearing-bullet-ant-gloves",
+        "https://en.wikipedia.org/wiki/Maw%C3%A9_people",
+        "https://artsandculture.google.com/story/sater%C3%A9-maw%C3%A9-amazonian-resilience/0wWBaW28j_U0bA",
+        "https://www.worldatlas.com/articles/suffering-pain-for-the-sake-of-tradition-bullet-ants-and-the-satere-mawe-people.html",
+        "https://www.smithsonianmag.com/science-nature/when-becoming-man-means-sticking-your-hand-glove-ants-180953154/",
+        "https://www.discoverwildlife.com/animal-facts/insects/bullet-ant-initiation-ceremony-amazon/",
+        "https://prezi.com/p/0n4c-m_k-g0g/bullet-ant-ritual/"
+      ],
+      "scraped_at": "2026-06-19T02:56:53.681811Z",
+      "location": {
+        "country": "Brazil",
+        "provinces": [
+          "Amazonas",
+          "Pará"
+        ],
+        "lat": 0.6395295,
+        "lng": -50.3706084
+      },
+      "resume_analisa": {
+        "description": "The Bullet Ant Initiation Ritual, also known as Waumat or Tucandeira rite, is a coming-of-age ceremony practiced by the Satere-Mawe people in the Brazilian Amazon. It involves young men inserting their hands into gloves filled with bullet ants, enduring their excruciating stings for a period of ten minutes, and repeating this ordeal multiple times. The bullet ant's sting is considered one of the most painful insect stings, comparable to a gunshot wound, causing intense throbbing, burning pain, temporary paralysis, trembling, and sometimes hallucinations that can last for up to 24 hours.",
+        "cultural_significance": "This ritual is a demonstration of strength, endurance, and courage, signifying a boy's transition into a full-fledged man and warrior of the tribe. It is also seen as a way to prepare young men for the rigors of life and leadership, including resisting external threats like illegal loggers and land grabbers. The ceremony is deeply connected to their commitment to preserving their identity and indigenous rights.",
+        "gemini_tags": [
+          "Initiation Rite",
+          "Coming-of-Age Ceremony",
+          "Indigenous Ritual",
+          "Endurance Test",
+          "Satere-Mawe Culture",
+          "Amazon Rainforest",
+          "Social Practice",
+          "Traditional Community Practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Initiation Rite",
+        "materials_and_tools": [
+          "Bullet ants (Paraponera clavata, also known as tucandeira ants)",
+          "Woven gloves made of natural fibers",
+          "Bamboo stick (for collection)",
+          "Cashew leaves (for temporary anesthetic)",
+          "Shaman/elder"
+        ],
+        "step_by_step": [
+          "A group of villagers, often accompanied by a shaman or elder, locates bullet ant nests, typically near the bottom of trees in the forest.",
+          "The ants are carefully gathered, sometimes using a hollow bamboo stick.",
+          "The collected bullet ants are then submerged in a mixture of water and chopped cashew leaves, which acts as a temporary anesthetic to render them unconscious for about thirty minutes.",
+          "During this time, the ants are meticulously woven into special gloves made of natural fibers, with their stingers facing inward. The gloves may also be decorated with red macaw feathers (symbolizing conflict) and white hawk eagle feathers (symbolizing courage).",
+          "Once the ants regain consciousness and become agitated, the young man undergoing the ritual inserts both hands into the gloves.",
+          "He must endure the stings for a period of no less than ten minutes, often performing a dance while wearing the gloves.",
+          "During and after the ordeal, the individual experiences excruciating pain, temporary paralysis, trembling, and potentially hallucinations, with symptoms lasting up to 24 hours.",
+          "To fully complete the initiation, the ritual is repeated multiple times, sometimes up to 20 times, over the course of several months or even years."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.8,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-17T02:43:38.888435Z",
-    "total_ich_elements": 167,
-    "complete_records": 154,
+    "generated_at": "2026-06-19T02:57:33.882655Z",
+    "total_ich_elements": 169,
+    "complete_records": 156,
     "incomplete_records": 13,
     "categories_breakdown": {
       "Traditional Craftsmanship": 57,
-      "Social Practices & Rituals": 36,
+      "Social Practices & Rituals": 37,
       "Culinary Traditions": 31,
       "Culinary Traditions | Social Practices & Rituals": 3,
-      "Performing Arts": 15,
+      "Performing Arts": 16,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 12,
