@@ -14783,17 +14783,338 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-aee32318",
+      "element_name": "Dziady (Forefathers' Eve)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Dziady_%28restored%29.png",
+      "source_urls": [
+        "https://lamusdworski.wordpress.com/2015/10/31/dziady-zaduszki-pominki-the-forefathers-eve/",
+        "https://yourrootsinpoland.com/dziady-supernatural-genealogy/",
+        "https://polishnews.com/polish-forefathers-eve-how-our-ancestors-commemorated-the-dead/",
+        "https://kuryerpolski.com/polish-forefathers-eve-how-our-ancestors-remembered-the-dead/",
+        "https://www.worldanvil.com/w/magic-earth-apparitionstudio/a/forefathers-eve-tradition",
+        "https://warsandsawa.com/forefathers-eve-part-ii-by-adam-mickiewicz/",
+        "https://en.wikipedia.org/wiki/Dziady",
+        "https://culture.pl/en/work/forefathers-eve-adam-mickiewicz",
+        "https://3seaseurope.com/spirits-awakened-during-this-slavic-style-halloween-precursor/"
+      ],
+      "scraped_at": "2026-06-21T02:41:47.445831Z",
+      "location": {
+        "country": "Poland",
+        "provinces": [
+          "Eastern Poland",
+          "Belarus",
+          "Ukraine",
+          "Lithuania"
+        ],
+        "lat": 45.0510264,
+        "lng": -76.5411723
+      },
+      "resume_analisa": {
+        "description": "Dziady (Forefathers' Eve) is an ancient Slavic pre-Christian rite dedicated to the spirits of ancestors, emphasizing the \"communion of the living with the dead.\" It was celebrated to win the favor of the deceased, who were believed to be caretakers in the sphere of fertility. The custom involved inviting souls to a feast, offering them food and drink, and guiding them with fire. It was celebrated at least twice a year, in spring (April/early May) and autumn (late October/early November), often coinciding with the new moon. After the advent of Christianity, Dziady customs syncretized with Christian celebrations like All Souls' Day (Zaduszki) on November 2nd.",
+        "cultural_significance": "Dziady highlighted the strong connection between the worlds of the living and the dead in Slavic spirituality. It was believed that spirits could impact the material world, particularly fertility and abundance. The ritual aimed to ensure peace for the souls and the favor of the invisible world for the living. It also served as a way to remember and honor ancestors, with the belief that souls could return within their bloodline. The tradition was immortalized in Adam Mickiewicz's poetic drama \"Dziady,\" which played a significant role in shaping Polish national identity.",
+        "gemini_tags": [
+          "Slavic folklore",
+          "Ancestor worship",
+          "Ritual",
+          "Poland",
+          "Belarus",
+          "Ukraine",
+          "Paganism",
+          "Christianity",
+          "Feast",
+          "Commemoration",
+          "Spirits",
+          "Folklore",
+          "Eastern Europe"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual (Communion with ancestors)",
+        "materials_and_tools": [
+          "Food (honey, groats, eggs, ritual bread, fasting food soaked in milk and honey)",
+          "Drinks (vodka, water)",
+          "Candles/fireplaces/campfires",
+          "Wooden masks (\"karaboshkas\", for some variations)",
+          "Wooden bridges (for spring Dziady)"
+        ],
+        "step_by_step": [
+          "Preparation for souls' visit: Houses were cleaned, small treats of food and drinks were left, and lit candles were placed around the house and on paths outside to help souls find their way and warm up. Chimneys were cleaned before November, as souls could enter through them. Doors or windows were often left slightly open.",
+          "Gathering: People gathered in old houses, cemeteries (directly on graves), or sacred spots (former burial places, hills, under sacred trees).",
+          "Invocation: A spiritual leader (żerca, guślarz, wiseman, old 'wise woman' or 'wise man') would lead the rite, invoking the souls of Forefathers using incantations and prayers.",
+          "Offering: Food and drinks were offered to the souls. This involved dropping or pouring some food and drinks on the table, floor, or graves. Specific foods included honey, groats, eggs, and fasting food soaked in milk and honey.",
+          "Fire: Fires were lit (on crossroads, graves of those who died violently, or as campfires) to warm up the souls and light their way, and also to prevent malevolent spirits. Grave candles are a remnant of this tradition.",
+          "Beggars: Beggars (also called \"dziady\") were given food, small objects, or money in exchange for prayers for the deceased, as they were believed to have a special connection with the \"other world\" and could be ancestors in disguise.",
+          "Rules during the feast: It was forbidden to pour out water (to avoid wetting spirits), knead cabbage (to avoid stomping on ghosts), or bang fists on the table (to not scare off spirits). Conversations focused solely on ancestors.",
+          "Spring Dziady (Radonica): Involved a feast at graves, with food buried in the ground near the grave. Wooden bridges were made and placed near graves to help the dead come to the feast."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Belarus",
+            "element_name": "Dziady",
+            "relationship_reason": "Shared ancient Slavic ritual, still cultivated in parts of Belarus."
+          },
+          {
+            "country": "Ukraine",
+            "element_name": "Dziady",
+            "relationship_reason": "Shared ancient Slavic ritual, still cultivated in parts of Ukraine."
+          },
+          {
+            "country": "Russia",
+            "element_name": "Dziady",
+            "relationship_reason": "Shared ancient Slavic ritual, still cultivated in parts of Russia."
+          },
+          {
+            "country": "Lithuania",
+            "element_name": "Dziady (or similar practices like Vėlinės)",
+            "relationship_reason": "Shared ancient Slavic/Baltic ritual, culturally connected with Poland."
+          },
+          {
+            "country": "Western Europe",
+            "element_name": "Halloween",
+            "relationship_reason": "Seen as an equivalent or having remnants of similar traditions (blurred boundaries between worlds, commemoration of the dead)."
+          },
+          {
+            "country": "Ancient Rome",
+            "element_name": "Lemuria",
+            "relationship_reason": "Similar rituals of providing ancestors with food and casting out evil spirits."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-3666f3cc",
+      "element_name": "Bidriware",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//memeraki.com/blogs/art-forms/bidriware-the-deccans-iconic-inlay-metal-art-form&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://memeraki.com/blogs/art-forms/bidriware-the-deccans-iconic-inlay-metal-art-form",
+        "https://spenowr.com/blogs/bidri-craft",
+        "https://natriel.com/blogs/bidri-art-indias-timeless-silver-inlay-craft-in-striking-black",
+        "https://krafteria.in/blogs/news/bidriware-the-royal-black-metal-art-of-bidar",
+        "https://artsandculture.google.com/story/quaint-elegance-the-craft-of-bidri/qQVR_2M9N629JA",
+        "https://oaklores.com/blogs/the-lore/bidriware-the-timeless-craft-of-silver-on-black",
+        "https://theindiacraftproject.com/blogs/stories/where-black-metal-holds-light-the-art-precision-of-bidriware",
+        "https://en.wikipedia.org/wiki/Bidriware",
+        "https://www.impart.org/articles/bidriware-techniques-processes-craft-design",
+        "https://www.indiamap.com/travel/crafts/bidriware-of-karnataka",
+        "https://bidri.in/blogs/news/bidri-work-traditional-handicrafts-to-treasure"
+      ],
+      "scraped_at": "2026-06-21T02:42:28.263604Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Karnataka",
+          "Telangana",
+          "Maharashtra",
+          "Uttar Pradesh",
+          "Bihar",
+          "West Bengal"
+        ],
+        "lat": 14.9562045,
+        "lng": 75.7896741
+      },
+      "resume_analisa": {
+        "description": "Bidriware is a unique metal handicraft from India, renowned for its striking silver, gold, or brass inlay designs set against a deep black metal background. The base metal is an alloy primarily composed of zinc and copper (typically a 16:1 ratio of zinc to copper), which gives it the distinctive ability to turn black during the oxidation process. This intricate craft is highly valued for its visual contrast and detailed artistry.",
+        "cultural_significance": "Originating in the 14th century under the Bahmani Sultanate in Bidar, Karnataka, Bidriware flourished under royal patronage and became a symbol of artistic excellence, prestige, and wealth. The craft reflects a rich blend of Persian, Turkish, Arabic, and Indian influences in its designs and motifs, which include floral arabesques, sacred symbols like the lotus and swastika, Quranic verses, and Persian roses. Bidriware is considered a living reminder of medieval Indian history and is appreciated globally. It also holds Geographical Indication (GI) status since 2006, recognizing its unique regional identity and cultural importance.",
+        "gemini_tags": [
+          "Metal Craft",
+          "Inlay Art",
+          "Indian Handicraft",
+          "Deccan Art",
+          "Royal Patronage",
+          "Cultural Heritage",
+          "Traditional Art",
+          "Zinc-Copper Alloy",
+          "Silver Inlay",
+          "Persian Influence",
+          "Decorative Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Metal Inlay Craft",
+        "materials_and_tools": [
+          "Zinc-copper alloy",
+          "Pure silver (wire or flattened strips)",
+          "Clay moulds",
+          "Castor oil",
+          "Resin",
+          "Lathe",
+          "Files",
+          "Copper sulphate solution",
+          "Metal stylus",
+          "Chisels",
+          "Hammer",
+          "Special soil from Bidar Fort",
+          "Ammonium chloride",
+          "Water",
+          "Sandpaper",
+          "Charcoal",
+          "Coconut oil"
+        ],
+        "step_by_step": [
+          "**1. Moulding/Casting:** A mould is prepared from soil made malleable with castor oil and resin. Molten zinc-copper alloy is poured into this mould to create the base object.",
+          "**2. Smoothening:** Once the cast piece cools, its surface is smoothed and shaped using a lathe and files to achieve an even finish.",
+          "**3. Temporary Black Coating & Designing:** A temporary black coating is applied to the surface using a strong copper sulphate solution. Intricate designs are then etched freehand onto this blackened surface with a metal stylus.",
+          "**4. Engraving:** The object is secured, and craftsmen use small chisels and a hammer to engrave the etched designs into the metal.",
+          "**5. Silver Inlaying:** Fine wires or flattened strips of pure silver are carefully hammered into the engraved grooves.",
+          "**6. Filing, Buffing, and Smoothing:** The entire piece is filed, buffed, and smoothed again to ensure the silver inlay is flush with the metal surface and to remove the temporary black coating, making the surface appear silvery white.",
+          "**7. Final Blackening (Oxidation):** A paste is prepared using a special soil found specifically in the unlit areas of Bidar Fort, mixed with ammonium chloride and water. This paste is rubbed onto the heated Bidri surface. The zinc alloy reacts with the paste, turning a deep, permanent black, while the silver inlay remains bright and untouched, creating a striking contrast.",
+          "**8. Final Finishing:** The finished product is buffed with oil (such as coconut oil) to deepen the matte black coating and enhance the luster of the silver inlay."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Persia (Iran)",
+            "element_name": "Metal inlay techniques (Koftagiri)",
+            "relationship_reason": "Bidriware is believed to have originated in Persia and was introduced to India by Persian artisans, such as Abdullah bin Kaiser, during the Bahmani Sultanate in the 14th-15th centuries. The techniques and styles, including the damascene work known as 'koftagiri,' show strong Persian influence, which was then adapted and merged with local Indian craftsmanship."
+          },
+          {
+            "country": "Mughal Empire",
+            "element_name": "Mughal decorative arts",
+            "relationship_reason": "Bidriware designs and motifs, particularly in the 17th and 18th centuries, were significantly influenced by Mughal decorative arts, including floral arabesques, poppy flowers, and 'ashrafi' patterns."
+          },
+          {
+            "country": "Arabian Peninsula",
+            "element_name": "Arabic calligraphy",
+            "relationship_reason": "Some Bidriware items incorporate Arabic calligraphy, often featuring Quranic verses, reflecting Arabic and Islamic influences on the art form."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-714b7ded",
+      "element_name": "Perepechi",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://thumbs.dreamstime.com/b/open-small-pies-baked-oven-front-strong-fire-traditional-udmurt-dish-perepechi-169060558.jpg",
+      "source_urls": [
+        "https://www.tasteatlas.com/perepechi",
+        "https://www.iamcook.ru/showrecipe/12188-udmurtskie-perepechi",
+        "https://prostokvashino.ru/recipes/perepechi-po-udmurtski/",
+        "https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%BF%D0%B5%D1%87",
+        "https://ovkuse.ru/recipes/udmurtskie-perepechi-199-kkal/",
+        "https://vk.com/wall-142289659_11172",
+        "https://ok.ru/group/54002636400879/topic/157476837095919",
+        "https://todaymeow.com/udmurt-perepechi-recipe/",
+        "https://thetroikatable.wordpress.com/2012/07/11/party-for-everybody-dance-come-on-and-boom-boom/",
+        "https://www.youtube.com/watch?v=F_Y0wYJqj5g",
+        "https://smachno.ua/ru/recepty/vypechka/udmurtskie-perepechi/",
+        "https://www.youtube.com/watch?v=kYx4w_yP6vI",
+        "https://en.wikipedia.org/wiki/Udmurt_cuisine",
+        "https://www.youtube.com/watch?v=9_j3o2i351I",
+        "https://www.youtube.com/watch?v=Q8T5d-Gq02w",
+        "https://www.reddit.com/r/AskTheWorld/comments/olr79k/what_is_a_regional_food_or_ethnic_minority_food/",
+        "https://en.wikipedia.org/wiki/Peremech",
+        "https://www.dreamstime.com/open-small-pies-baked-oven-front-strong-fire-traditional-udmurt-dish-perepechi-stock-photo-image-dough-homemade-169060558"
+      ],
+      "scraped_at": "2026-06-21T02:43:07.410670Z",
+      "location": {
+        "country": "Russia",
+        "provinces": [
+          "Udmurtia"
+        ],
+        "lat": 57.1961165,
+        "lng": 52.6959832
+      },
+      "resume_analisa": {
+        "description": "Perepechi are traditional open-faced pies or tartlets originating from Udmurtia, a republic in Russia. These small, round pastries typically range from 4 to 12 cm in diameter and feature distinctive pinched edges, forming a 'basket' or 'vatrushka' shape. The dough is traditionally made from unleavened rye flour, although modern recipes often incorporate or substitute wheat flour. Perepechi are filled with a variety of savory ingredients, including ground meat (pork, beef, or a mixture), mushrooms, eggs, onions, cabbage, potatoes, or even foraged greens like pestiki. A key characteristic is the custard-like topping, usually a mixture of eggs and milk, poured over the filling before baking. Traditionally, they were baked in a Russian oven over a low fire, giving rise to their name, which may mean 'baked in front of the oven' or 'behind the oven'. They are always served hot.",
+        "cultural_significance": "Perepechi hold a significant place in Udmurt cuisine and culture, traditionally prepared for holidays, celebrations, and special events like weddings. Historically, they were even noted in royal records, such as at the wedding of Tsar Vasily III. The dish gained broader recognition and popularity after the 'Buranovskie Babushki' (Buranovo Grannies), a folk group from Udmurtia, represented Russia in the Eurovision Song Contest in 2012 and promoted Udmurt culinary traditions. The practice of making perepechi reflects the agricultural lifestyle of the Udmurt people, utilizing grains, meat, and vegetables common in the region.",
+        "gemini_tags": [
+          "Udmurt cuisine",
+          "Russian folk food",
+          "Savory pie",
+          "Traditional baking",
+          "Open-faced tartlet",
+          "Eastern European cuisine",
+          "Comfort food"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Baking",
+        "materials_and_tools": [
+          "Rye flour (or a mix with wheat flour)",
+          "Eggs",
+          "Milk (or water, yogurt)",
+          "Butter (melted or vegetable oil)",
+          "Salt",
+          "Sugar (optional, for dough)",
+          "Baking soda (optional, for dough)",
+          "Ground meat (pork, beef, or mixed)",
+          "Mushrooms",
+          "Onions",
+          "Cabbage",
+          "Potatoes",
+          "Spices (e.g., black pepper, thyme)",
+          "Mixing bowls",
+          "Rolling pin",
+          "Frying pan",
+          "Baking sheet",
+          "Parchment paper",
+          "Oven (or traditional Russian stove)"
+        ],
+        "step_by_step": [
+          "Prepare the filling first to allow it to cool. For a meat and mushroom filling: finely chop onions and mushrooms. Sauté the onions and mushrooms in a pan with a little butter or vegetable oil until lightly browned. Add ground meat and cook until browned, breaking it up with a spatula. Season with salt, pepper, and optional herbs like thyme. If using other fillings like cabbage or potatoes, prepare them accordingly (e.g., finely chop and sauté cabbage, boil and mash potatoes).",
+          "Make the dough: In a large bowl, combine rye flour (or a mix of rye and wheat flour) with a pinch of salt. Some recipes also include an egg, warm milk or water, melted butter, and a small amount of sugar or baking soda. Mix and knead until a stiff but pliable dough is formed. If the dough is too sticky, add more flour; if too dry, add a little more liquid.",
+          "Rest the dough: Form the dough into a ball, cover it with a towel or plastic wrap, and let it rest for at least 20-30 minutes.",
+          "Form the 'baskets': Divide the rested dough into small, equal pieces (e.g., 8-10 pieces). Roll each piece into a circular flatbread, about 7-12 cm in diameter and approximately 3-5 mm thick.",
+          "Create the rim: Lift the edges of each dough circle and pinch them at intervals to form a raised rim, creating a 'basket' or 'tartlet' shape. This can be done by pressing the dough with your thumbs about 1 cm from the edge and folding the rest upwards.",
+          "Pre-bake (optional but recommended for shape retention): Place the formed dough baskets on a baking sheet lined with parchment paper. Some recipes suggest pre-baking the empty dough bases in a preheated oven (around 180°C / 350°F) for 2-3 minutes to help them hold their shape.",
+          "Fill the baskets: Spoon the cooled filling into each dough basket, filling it up to the edges of the rim.",
+          "Prepare the egg-milk custard: In a separate bowl, whisk eggs with milk and a pinch of salt.",
+          "Pour the custard: Gently pour the egg-milk mixture over the filling in each perepech.",
+          "Bake: Immediately place the filled perepechi into a preheated oven (typically 170-200°C / 340-390°F). Bake for 15-25 minutes, or until the edges are golden brown and the filling is set and custardy. Some recipes suggest brushing the dough with melted butter before baking for a glossy finish.",
+          "Serve hot: Remove from the oven and serve immediately. Perepechi are best enjoyed hot, often with tea, broth, or baked milk."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Russia (Tatarstan, Bashkortostan)",
+            "element_name": "Peremech (Belyash)",
+            "relationship_reason": "A fried dough pastry with a similar open-faced or central-hole design, often filled with ground meat and onions, and served with broth or dairy products."
+          },
+          {
+            "country": "Latvia",
+            "element_name": "Sklandrausis",
+            "relationship_reason": "A traditional open-faced rye pastry pie, similar in concept to perepechi, often with a potato and carrot filling."
+          },
+          {
+            "country": "Finland",
+            "element_name": "Lanttusupikas",
+            "relationship_reason": "Mentioned as a similar savory pie, indicating a shared culinary tradition among Finno-Ugric peoples."
+          },
+          {
+            "country": "Finland",
+            "element_name": "Kalakukko",
+            "relationship_reason": "A traditional Finnish fish pie baked inside a rye crust, sharing the concept of a savory filling encased in dough."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-19T02:57:33.882655Z",
-    "total_ich_elements": 169,
-    "complete_records": 156,
+    "generated_at": "2026-06-21T02:43:44.657282Z",
+    "total_ich_elements": 172,
+    "complete_records": 159,
     "incomplete_records": 13,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 57,
-      "Social Practices & Rituals": 37,
-      "Culinary Traditions": 31,
+      "Traditional Craftsmanship": 58,
+      "Social Practices & Rituals": 38,
+      "Culinary Traditions": 32,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 16,
       "Social Practices & Rituals | Performing Arts": 3,
