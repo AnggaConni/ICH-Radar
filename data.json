@@ -15104,16 +15104,232 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-692a0a32",
+      "element_name": "Rite of the Kalyady Tsars (Christmas Tsars)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//lexpatent.by/en/the-belarusian-rite-of-the-kalyady-tsars-christmas-tsars-a-folk-tradition-inscribed-on-unescos-list-of-intangible-cultural-heritage-in-need-of-urgent-safeguarding-in-2009/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://lexpatent.by/en/the-belarusian-rite-of-the-kalyady-tsars-christmas-tsars-a-folk-tradition-inscribed-on-unescos-list-of-intangible-cultural-heritage-in-need-of-urgent-safeguarding-in-2009/",
+        "https://ich.unesco.org/en/RL/rite-of-the-kalyady-tsars-christmas-tsars-00308",
+        "https://www.belarus.by/en/travel/heritage/belarusian-rite-of-the-kolyady-christmas-tsars",
+        "https://makeheritagefun.com/the-rite-of-the-kalyady-tsars/",
+        "https://ich.unesco.org/doc/src/4.COM-14.01-EN.pdf",
+        "https://en.wikipedia.org/wiki/Kalyady_Tsars",
+        "https://www.livetheworld.com/post/kalyady-east-slavic-fusion-of-christian-and-pagan-festivities-1033",
+        "https://www.sb.by/articles/a-village-where-everyone-dreams-of-becoming-tsar-how-semezhevo-preserves-unique-rite.html",
+        "https://www.sb.by/articles/unique-kolyady-tsars-ceremony-included-on-unescos-intangible-cultural-heritage-list-held-in-kopyl-di.html",
+        "https://www.sb.by/articles/winter-magical-night-when-breathtaking-wonders-happen.html"
+      ],
+      "scraped_at": "2026-06-23T02:10:46.143717Z",
+      "location": {
+        "country": "Belarus",
+        "provinces": [
+          "Minsk Region"
+        ],
+        "lat": 53.6099039,
+        "lng": 27.5910208
+      },
+      "resume_analisa": {
+        "description": "The Rite of the Kalyady Tsars (Christmas Tsars) is a traditional ritual and festive event celebrated annually in the village of Semezhava, Kopyl District, Minsk Region, Belarus. It takes place on the eve of the 'Old New Year' (Julian calendar), typically on January 13-14. The rite combines elements of carnival, folk plays, and distinctive local performing arts. A procession of young men, dressed in specific costumes as 'Tsars' and other characters, visits local houses, particularly those of unmarried girls, to perform a historical-religious drama known as 'Tsar Maximilian'. The performance is comic in nature and includes sharing 'medicine secrets' and engaging in playful interactions with the hosts. As darkness falls, the procession is lit by torchlight. In exchange for their performances and good wishes, the 'Tsars' receive treats and gifts from the villagers.",
+        "cultural_significance": "The Rite of the Kalyady Tsars is deeply significant to the community of Semezhava. It is believed that the annual visit of the 'Tsars' brings peace, harmony, and wealth to the households they visit throughout the year. The tradition provides the community with a strong sense of identity and continuity, playing a vital role in maintaining intergenerational links. Its importance is recognized internationally, having been inscribed on the UNESCO List of Intangible Cultural Heritage in Need of Urgent Safeguarding in 2009. The rite also showcases traditional craftsmanship through the creation of its unique costumes. The tradition dates back to the 18th century, originating from the comic performances of tsar's troops stationed in Semezhava, which were later adopted and developed by the local population. The rite was revived in 1996, highlighting the community's dedication to preserving its heritage.",
+        "gemini_tags": [
+          "Social Practice",
+          "Ritual",
+          "Performing Arts",
+          "Folklore",
+          "Traditional Craftsmanship",
+          "Belarusian Culture",
+          "Christmas Tradition",
+          "New Year Celebration"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual and Festive Performance",
+        "materials_and_tools": [
+          "White shirts",
+          "White trousers",
+          "Red embroidered Semezhava belts",
+          "Tall hats adorned with colorful paper ribbons",
+          "Torches",
+          "Sack (for collecting treats)"
+        ],
+        "step_by_step": [
+          "**Selection of Participants:** Annually, approximately 500 men participate, with seven young men or boys chosen through a competitive process to play the main roles of 'Kalyady Tsars'. Selection is based on appearance and theatrical talent. Other characters include Tsar Maximilian, Tsar Mamay, a Doctor, a Drummer, a Sack Carrier, and the Dzed (old man) and Baba (old lady).",
+          "**Costume Preparation:** Participants prepare their costumes, which consist of white shirts and trousers, red embroidered Semezhava belts crisscrossed across their chests, and tall hats decorated with colorful paper ribbons. The costumes are often handmade, reflecting local traditional weaving.",
+          "**Learning the Rite:** The chosen participants learn the words and actions of the historical-religious drama 'Tsar Maximilian'.",
+          "**Procession:** On the evening of January 13-14 (Shchedry Vecher), the group of carolers, including the 'Tsars', forms a procession and moves along the streets of Semezhava village. As darkness falls, the 'Tsars' light torches to illuminate their path.",
+          "**House-to-House Performances:** The procession visits local houses, particularly those of unmarried girls. Inside, they perform comic scenes from the 'Tsar Maximilian' drama, share 'medicine secrets', and engage in playful interactions with the hosts.",
+          "**Receiving Rewards:** In return for their performance and wishes for peace, harmony, and wealth for the coming year, the villagers offer treats and gifts, which are collected by the 'Sack Carrier'.",
+          "**Post-Performance Celebration:** After visiting the houses, all participants gather at one table for a late-night traditional Christmas celebration."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Slavic cultures (general)",
+            "element_name": "Kalyady rituals",
+            "relationship_reason": "The Rite of the Kalyady Tsars combines features typical of 'Kalyady' rituals found in various Slavic cultures. Kalyady itself is an ancient, pre-Orthodox tradition of house-to-house carol-singing that later coincided with Christmas."
+          },
+          {
+            "country": "Belarus",
+            "element_name": "Batleyka (Belarusian amateur puppet theatre)",
+            "relationship_reason": "The 'Tsar Maximilian' drama performed during the Kalyady Tsars rite is linked to Batleyka, the traditional Belarusian puppet theater-play."
+          },
+          {
+            "country": "Belarus (other regions)",
+            "element_name": "Other 'Shchodryk' (Old New Year's Eve) traditions (e.g., 'Koniki', 'Tsiareshka's Wedding', caroling with 'Kaza')",
+            "relationship_reason": "The Kalyady Tsars rite is one of several distinct traditions accompanying the celebration of 'Shchodryk' (Old New Year's Eve) in different regions of Belarus."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b459ac99",
+      "element_name": "Ayyanar and Mariamman Village Folk Worship with Terracotta Offerings",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//hindublog.co.in/how-to-worship-ayyanar/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://hindublog.co.in/how-to-worship-ayyanar/",
+        "https://www.jatir.in/index.php/jatir/article/view/100",
+        "https://globalinch.org/clay-and-terracotta-of-tamil-nadu/",
+        "https://www.magikindia.com/ayyanar-the-rural-temples-of-tamil-nadu/",
+        "https://www.bygonetalesofindia.com/post/ayyanar-the-guardian-deity",
+        "https://www.thecollector.com/5-places-in-america-where-indigenous-traditions-still-anchor-daily-life/",
+        "https://www.newindianexpress.com/cities/chennai/2022/jul/11/indigenous-craft-gets-international-appeal-2475094.html",
+        "https://www.hinduismtoday.com/2025/04/capturing-divinity/",
+        "https://www.ignca.gov.in/wp-content/uploads/2020/08/From-Earth-to-Earth.pdf",
+        "https://www.thetimesofindia.com/city/chennai/exploring-craft-and-worship-of-terracotta-gods/articleshow/49472658.cms",
+        "https://www.purathanam.com/blogs/news/ayyanar-horse-from-tamizhnadu-south-india",
+        "https://www.grokipedia.org/Aiyanar",
+        "https://www.lemon8-app.com/share/post/7422312643598586374?country=MY&lang=en",
+        "https://www.scribd.com/document/654817742/Mariamman-Worship-Guide-at-Home",
+        "https://arunachala-grace.blogspot.com/2012/05/special-celebration-for-rain-goddess.html",
+        "https://www.newindianexpress.com/videos/nation/2019/jun/05/madurais-ayyanar-festival-clay-horses-rituals-to-invoke-rain-107693.html",
+        "https://www.researchgate.net/publication/364445851_A_Current_Wisdom_and_Heritage_of_Making_Terracotta_Horses_in_Konthagai_Village_Sivagangai_District_Tamil_Nadu",
+        "https://www.astropedia.com/archetypes/ayyanar",
+        "https://www.quora.com/When-are-the-Ayyanar-temple-festivals-usually-held-in-Tamilnadu-Can-anyone-give-me-this-information",
+        "https://www.sphoorthitheatre.com/panruti-clay-dolls-miniature-storytellers-of-tamil-nadu/",
+        "https://www.aljazeera.com/features/2026/6/20/in-nepals-highlands-climate-change-threatens-tibets-bon-faith",
+        "https://www.wander-lush.org/ancient-traditions-still-practiced-today/",
+        "https://www.insightvacations.com/blog/5-ancient-traditions-to-witness-around-the-world",
+        "https://www.ebonystays.com/blog/lost-traditions-of-indian-villages-that-still-live-on",
+        "https://www.backroadplanet.com/ancient-local-customs-protected-from-modern-influence/",
+        "https://www.thecollector.com/kassandre-dwyer/",
+        "https://www.artisanatautochtone.com/blogs/news/indigenous-purification-rituals-a-complete-guide",
+        "https://ich.unesco.org/en/social-practices-rituals-and-festive-events-00062",
+        "https://www.youtube.com/watch?v=k23y91b1-2E",
+        "https://www.youtube.com/watch?v=o0_L9e_9c1k",
+        "https://www.quora.com/Which-ancient-civilisation-has-preserved-their-culture-the-best",
+        "https://www.pranavjournals.com/wp-content/uploads/2022/10/IJHSS-V8N2-1.pdf",
+        "https://www.asiainch.org/clay-and-terracotta-of-tamil-nadu/"
+      ],
+      "scraped_at": "2026-06-23T02:11:13.767009Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Tamil Nadu"
+        ],
+        "lat": 11.3323723,
+        "lng": 78.6098639
+      },
+      "resume_analisa": {
+        "description": "The Ayyanar and Mariamman village folk worship with terracotta offerings is a vibrant and ancient tradition primarily practiced in rural Tamil Nadu, India. Ayyanar is revered as a guardian deity who protects village boundaries, ensures agricultural prosperity, and brings rain, often depicted as a warrior prince mounted on a horse. Mariamman is the goddess of rain, fertility, and healing, also associated with diseases like smallpox. A central element of this worship involves the offering of terracotta figures, predominantly large horses, which symbolize Ayyanar's mounts for his nightly patrols to ward off evil spirits. Smaller terracotta horses and other animal or human figures are offered as thanksgiving for wishes fulfilled. These non-Vedic ceremonies are typically led by non-Brahmin priests from the local potter (Velar or Kumbharar) communities. The figures are placed in shrines, usually located on the outskirts of villages, often near sacred trees or water sources.",
+        "cultural_significance": "This tradition holds deep cultural significance, reinforcing community identity and providing a profound sense of protection and well-being for the villagers. The terracotta offerings serve as a tangible link between the human and divine, expressing gratitude for bountiful harvests, protection from calamities, and answered prayers. The practice is integral to the agrarian lifestyle of rural Tamil Nadu. Furthermore, it plays a crucial role in sustaining the traditional craftsmanship and livelihood of the hereditary potter communities, who are not only artisans but often also serve as priests during these rituals. The eventual decay of the clay figures, which are left to return to the earth, symbolizes the cyclical nature of life, death, and rebirth.",
+        "gemini_tags": [
+          "Folk Religion",
+          "Terracotta Craft",
+          "Village Deity Worship",
+          "Ritual Practices",
+          "Community Festival",
+          "Agrarian Culture",
+          "Guardian Deities",
+          "Pottery Tradition",
+          "South Indian Culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship and Social/Religious Ritual",
+        "materials_and_tools": [
+          "Clay (from local riverbeds)",
+          "Straw",
+          "Sand",
+          "Wood (for shaping)",
+          "Traditional pottery tools",
+          "Firewood",
+          "Hay",
+          "Mud paste",
+          "Bright paints (e.g., red, blue)",
+          "Bells",
+          "Mirrors",
+          "Grotesque faces (kirthimukha)",
+          "Crocodiles (makaras) for decoration",
+          "Flowers",
+          "Turmeric",
+          "Kumkum",
+          "Fruits",
+          "Betel leaves",
+          "Areca nuts",
+          "Sweet pongal",
+          "Neem leaves",
+          "Incense sticks",
+          "Camphor",
+          "Milk",
+          "Eggs"
+        ],
+        "step_by_step": [
+          "**1. Pidimann Kuduththal (Clay Collection Ceremony):** The ritual commences with the village head visiting the designated site for silt collection and ceremonially placing the collected silt on the potter's head.",
+          "**2. Clay Preparation:** Clay is meticulously sourced from local riverbeds and then mixed with straw and sand to achieve the desired malleable consistency for sculpting.",
+          "**3. Sculpting the Figures:** Potters, belonging to the Velar or Kumbharar communities, craft various terracotta figures, most notably life-sized horses, but also elephants, cows, human figures, and other animals. For the horses, four clay cylinders are rolled out to form the legs, and the body is gradually built up. Decorative accessories such as bells, mirrors, grotesque faces (kirthimukha), and crocodiles (makaras) are sculpted separately.",
+          "**4. Assembly:** On an auspicious tenth day, the separately crafted parts are joined together. If the figure includes Ayyanar seated on a horse, his features are also added at this stage.",
+          "**5. Firing:** The assembled figures are baked in rustic kilns constructed from straw and dried cow-dung (verati), then sealed with a mud paste. Larger figures may require individual parts to be fired separately before final assembly.",
+          "**6. Painting (Kann Thirappadhu):** After firing, the figures are painted in vibrant colors. The eyes are typically the last feature to be painted, a crucial step known as 'Kann Thirappadhu' (opening the eyes). The entire crafting and painting process can take approximately 14 days.",
+          "**7. Procession (Kutirai Etuppu / Puravi Eduppu):** The completed terracotta figures are lined up at the 'savukkai,' a central village gathering point. From there, they are carried in a unique procession to the Ayyanar temple or sacred grove. This two-day ceremony, known as 'Kutirai Etuppu' or 'Puravi Eduppu' (consecration of the horse), involves special rituals, trances, and in some instances, animal sacrifices.",
+          "**8. Installation and Offerings:** During the 'kayir mattram' stage, the figures are formally handed over to the temple and installed in the shrine, which is often situated on the outskirts of the village, frequently near sacred trees or water bodies. Devotees present offerings such as flowers, turmeric, kumkum, fruits, betel leaves, and areca nuts to Ayyanar. Sweet pongal is a common offering, and sometimes non-vegetarian food or animal sacrifices are made. For Mariamman, offerings include neem leaves, milk, and eggs.",
+          "**9. Decay:** The installed figures remain in the shrine, gradually undergoing natural erosion and decomposition, eventually returning to the earth from which they originated, symbolizing the continuous cycle of life."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Terracotta Craft in India (General)",
+            "relationship_reason": "Terracotta has been an integral part of India's material history for millennia, serving both functional and cultural purposes across various regions, making the crafting of these figures part of a broader Indian tradition."
+          },
+          {
+            "country": "India (West Bengal)",
+            "element_name": "Bankura Horse",
+            "relationship_reason": "Terracotta horse sculptures are found as votive offerings or representations of guardian deities in various parts of India, including the renowned Bankura Horse in West Bengal, sharing the symbolic significance of protection and intercession."
+          },
+          {
+            "country": "Sri Lanka",
+            "element_name": "Ayyanar Worship in Sri Lanka",
+            "relationship_reason": "Ayyanar worship is prevalent among Tamil communities in Sri Lanka, indicating a shared cultural and religious heritage that extends beyond India's borders."
+          },
+          {
+            "country": "Southeast Asia (General)",
+            "element_name": "Ancient Village Deities and Folk Worship",
+            "relationship_reason": "Some studies suggest that Ayyanar may have been worshipped in Southeast Asian countries in the past, and Mariamman worship is also prevalent in Southeast Asia, pointing to broader regional connections for folk deities and their associated rituals."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-21T02:43:44.657282Z",
-    "total_ich_elements": 172,
-    "complete_records": 159,
+    "generated_at": "2026-06-23T02:12:30.890360Z",
+    "total_ich_elements": 174,
+    "complete_records": 161,
     "incomplete_records": 13,
     "categories_breakdown": {
       "Traditional Craftsmanship": 58,
-      "Social Practices & Rituals": 38,
+      "Social Practices & Rituals": 40,
       "Culinary Traditions": 32,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 16,
