@@ -15320,15 +15320,187 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-cf9d690f",
+      "element_name": "Huishan Clay Figures",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Huishan_Clay_Figurines.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Huishan_clay_figurine",
+        "https://www.ihchina.cn/project_details/20427/"
+      ],
+      "scraped_at": "2026-06-25T02:12:00Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Jiangsu"
+        ],
+        "lat": 33.0000001,
+        "lng": 119.9999999
+      },
+      "resume_analisa": {
+        "description": "Huishan Clay Figures (惠山泥人) are a traditional Chinese folk art originating in Wuxi, Jiangsu Province, with a history spanning over 400 years, and potentially dating back over a thousand years to the Southern Dynasties period. These figures are renowned for their concise and full shapes, smooth and lively lines, bright and eye-catching colors, and ingenious designs. The primary raw material is a unique black mud sourced from about one meter below the ground on the northeast slope of Huishan Mountain, characterized by its delicate, soft, and highly plastic qualities, which allow it to be rubbed without纹理, bent without breaking, and dried without cracking. Huishan Clay Figures are categorized into two main types: 'coarse goods' (粗货) and 'fine goods' (细货). 'Coarse goods,' also known as 'playthings,' are typically mold-made, featuring simple, bold, and exaggerated designs, often depicting auspicious themes like 'Da Afu' (大阿福), 'Silkworm Cat,' and 'Old Man of Longevity.' 'Fine goods,' or 'hand-pinched opera figures' (手捏戏文), are entirely hand-sculpted, often portraying characters and scenes from traditional Chinese operas, myths, legends, and folk customs, distinguished by their expressive forms and elegant hues.",
+        "cultural_significance": "Huishan Clay Figures hold significant cultural importance as one of China's three major clay sculptures, alongside Tianjin Clay Figure Zhang and Dawu Clay Sculpture. In 2006, the craft was officially listed as a National Intangible Cultural Heritage of China. The figures embody folk wishes for good luck, prosperity, and happiness, with iconic characters like 'Da Afu' symbolizing good fortune and peace. The art form is deeply intertwined with local Buddhist culture, ancestral hall culture, and traditional opera, drawing inspiration from these elements. Historically, the craft flourished in the Ming and Qing dynasties, with a 'mud figure street' forming around Huishan, where figures were sold as gifts and decorative items, reflecting the vibrant local customs and aesthetic preferences of the Jiangnan region. The Wuxi Chinese Clay Figurine Museum, established in 2011, serves as a testament to its enduring legacy, collecting and showcasing various schools of Chinese clay sculpture.",
+        "gemini_tags": [
+          "Traditional Chinese Folk Art",
+          "Clay Sculpture",
+          "Intangible Cultural Heritage",
+          "Wuxi",
+          "Jiangsu",
+          "Craftsmanship",
+          "Opera Figures",
+          "Auspicious Symbols",
+          "Handicraft",
+          "Chinese Culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Sculpting, Molding, Painting, and Decoration",
+        "materials_and_tools": [
+          "Black mud (from Huishan Mountain foothills)",
+          "Advertising colors or acrylics",
+          "Beeswax (for waterproofing)",
+          "Sculpting tools (various, for shaping and detailing)",
+          "Decorative materials (silk velvet, silk, satin, pom-poms, silk flowers, beads, silk threads, bamboo strips, wooden sticks, rabbit fur, wool, aluminum foil, iron wire, copper wire, chicken feathers, peacock feathers, paper, glue)"
+        ],
+        "step_by_step": [
+          "**1. Preparing Black Mud:** The unique black mud from Huishan Mountain is prepared by hammering to enhance its softness and viscosity, making it more pliable for sculpting.",
+          "**2. Making Clay Blanks (泥坯制作):**",
+          "   * **For 'Coarse Goods' (模印泥人):** Molds are used to create the basic shapes. The process typically involves 'rolling, printing, demolding, and repairing' (一擀、 二印、 三脱、四修) the clay blanks.",
+          "   * **For 'Fine Goods' (手捏戏文):** These are primarily hand-sculpted without molds. The process begins by 'piling up the large shape,' then working 'from the head, then sculpting the body, then dealing with the patterns, and finally fine-grinding and carving until both spirit and form are achieved.' This intricate hand-pinching involves 'eighteen techniques' (手捏十八法), including rubbing, kneading, picking, pinching, pressing, patting, cutting, coloring, pressing, sticking, inlaying, drawing, bending, inserting, pushing, wiping, pasting, and dressing. The sculpting is often a continuous, 'one-go' process, emphasizing the expression of the artist's feeling.",
+          "**3. Coloring (彩绘):** This is a critical stage, often described as 'three parts sculpting, seven parts coloring,' highlighting its importance. Artists use bold and bright primary colors such as crimson, emerald green, golden yellow, and azure. Lines, borders, and silver accents are added, with a focus on strong contrasts that are vibrant yet not garish, aligning with the folk aesthetic. Advertising colors provide transparency and smooth lines, while acrylics offer stronger pigmentation.",
+          "**4. Spraying Paint (喷漆):** After coloring, the figures are typically sprayed with paint, though specific details on this step are less documented.",
+          "**5. Decorating (装銮):** This final step involves skillfully attaching various decorative materials like silk, beads, threads, and feathers to the clay figures. These additions are meticulously integrated to create props, hair, jewelry, flags, and clothing, enhancing the overall visual appeal and bringing the figures to life."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Tianjin Clay Figure Zhang (天津泥人张)",
+            "relationship_reason": "Another famous traditional Chinese clay sculpture, often mentioned alongside Huishan Clay Figures as one of the 'three great clay sculptures of China,' sharing a common heritage in traditional Chinese folk art."
+          },
+          {
+            "country": "China",
+            "element_name": "Dawu Clay Sculpture (大吴泥塑)",
+            "relationship_reason": "Another renowned traditional Chinese clay sculpture, recognized as one of the 'three great clay sculptures of China' alongside Huishan Clay Figures, indicating a shared national tradition of clay artistry."
+          },
+          {
+            "country": "China",
+            "element_name": "Chinese Pottery Figurines (e.g., Han Dynasty pottery figurines, Tang Sancai)",
+            "relationship_reason": "Huishan Clay Figures are part of a broader historical tradition of Chinese clay art, with roots in ancient pottery figurines, Buddhist statues, and Tang Sancai, demonstrating a continuous lineage of clay sculpting in China."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-bc1a4553",
+      "element_name": "Traditional Sea Salt Farming in Phetchaburi, Thailand",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.mdpi.com/2071-1050/15/15/11904&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.mdpi.com/2071-1050/15/15/11904",
+        "https://www.thaipbs.or.th/news/content/337189",
+        "https://www.huahintoday.com/travel-tourism/its-a-unique-experience-how-to-visit-phetchaburis-salt-farms/",
+        "https://www.insightguides.com/articles/salt-farming-in-phetchaburi-province-thailand",
+        "https://www.pata.org/about-phetchaburi",
+        "https://www.bangkokhiking.com/east-side-of-phetchaburi-palace-hill-mangroves-and-salt-fields/",
+        "https://www.bangkokpost.com/travel/710604/a-salt-on-the-senses",
+        "https://sugarpalmestate.com/salt-farming-in-thailand/",
+        "https://wanderlog.com/things-to-do/544374/salt-harvesting-farm-phetchaburi-thailand",
+        "https://peterorsel.com/phetchaburi-salt-flats/",
+        "https://ideas.repec.org/a/gam/jsusta/v15y2023i15p11904-d1933010.html",
+        "https://www.youtube.com/watch?v=sU142B289eM",
+        "https://www.youtube.com/watch?v=l51b8WbM620",
+        "https://www.mak-hill.com/journal/index.php/jts/article/view/106",
+        "https://www.youtube.com/watch?v=wX-j9c-1X0g",
+        "https://so06.tci-thaijo.org/index.php/JATS/article/view/258525",
+        "https://qianxsia.com/thailand-the-coast-devoted-to-an-inexhaustible-resource/",
+        "https://artsandculture.google.com/asset/kusamba-sea-salt-slow-food/uAGvF33v-l0jXQ",
+        "https://ich.unesco.org/en/RL/the-practice-of-making-asin-tibuok-the-artisanal-sea-salt-of-the-boholano-of-bohol-island-philippines-01991",
+        "https://birdeegroup.com/blogs/news/vietnamese-traditional-salt-making-village-a-heritage-from-the-french",
+        "https://www.researchgate.net/publication/371239857_Revitalising_and_representing_the_endangered_intangible_cultural_heritage_of_traditional_salt_making_asin_tibuok_in_Bohol_Philippines"
+      ],
+      "scraped_at": "2026-06-25T02:14:32.053889Z",
+      "location": {
+        "country": "Thailand",
+        "provinces": [
+          "Phetchaburi"
+        ],
+        "lat": 13.0692869,
+        "lng": 99.6044376
+      },
+      "resume_analisa": {
+        "description": "Traditional sea salt farming in Phetchaburi, particularly in the Ban Laem District, is a centuries-old practice deeply rooted in indigenous knowledge and natural resources. It involves a labor-intensive process of channeling seawater into shallow ponds and allowing it to evaporate under the sun to form salt crystals. This traditional livelihood has been passed down through generations of local farmers.",
+        "cultural_significance": "The practice holds significant historical value, tracing its origins back to at least the Ayutthaya period (14th to 18th centuries), when Phetchaburi's sea salt was a crucial commodity and a source of state revenue. It embodies both tangible and intangible cultural traits, including associated ceremonies, foods, crafts, and tools, which collectively contribute to the distinct cultural identity of the area. The annual Salt Field Ceremony, for instance, celebrates the importance of salt production and acknowledges the dedication of salt farmers, underscoring the profound connection between families, the land, and their cultural heritage. Phetchaburi is recognized as Thailand's leading salt producer, and salt is an essential ingredient in the province's local cuisine. The Tourism Authority of Thailand (TAT) Phetchaburi actively promotes this heritage through events like the 'Art of Salt' to highlight its beauty and importance in sustaining traditional livelihoods.",
+        "gemini_tags": [
+          "Traditional Craft",
+          "Community-based Preservation",
+          "Agricultural Heritage",
+          "Thai Culture",
+          "Salt Production",
+          "Coastal Livelihood",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Sea Salt Evaporation",
+        "materials_and_tools": [
+          "Seawater",
+          "Land (divided into concentration and crystallization ponds)",
+          "Traditional wooden tools (for raking/plowing)",
+          "Woven baskets (for transport)"
+        ],
+        "step_by_step": [
+          "**Land Preparation**: An area of approximately 30 rai (4.8 hectares) is prepared, typically starting from the late rainy season or early winter (around October). The salt farm is meticulously divided into five main ponds: four for water storage and sludge separation, and one for salt crystallization.",
+          "**Seawater Collection**: Seawater is collected from the ocean during high tide and directed into the initial salt reservoir, known as Na-Wang.",
+          "**Sedimentation and Filtration**: The seawater in Na-Wang is left to settle, allowing sediments and contaminants to separate, resulting in purified seawater. This stored seawater is then pumped to another reservoir, Natac, for further filtration of dirt and larger impurities.",
+          "**Evaporation and Concentration**: The filtered seawater is then released into a series of shallow ponds (e.g., Na-Shure, then Na-Pong) where it is exposed to intense sunlight for natural evaporation. As the water gradually evaporates, the salt concentration increases, leading to the formation of salt crystals on the water's surface. This evaporation process typically takes about one month.",
+          "**Harvesting**: Once the salt crystals have fully formed and are ready, they are harvested. This involves using traditional wooden tools to rake or plow the salt into long rows, then cutting it into smaller ridges, and finally gathering it into distinctive pyramid shapes.",
+          "**Transportation**: The harvested salt is collected into woven baskets and transported from the fields for subsequent cleaning and distribution.",
+          "**Drying (for Fleur de Sel)**: For the premium 'fleur de sel' (salt flower), the delicate crystals are carefully gathered after noon during the hottest part of the summer and sun-dried for two to three days until all residual seawater has evaporated, ensuring a pure taste."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Vietnam",
+            "element_name": "Traditional Salt Making (e.g., in Thai Thuy District, Thai Binh Province)",
+            "relationship_reason": "Shares similar artisanal production methods involving the natural evaporation of seawater in salt fields, with deep cultural significance and associated festivals."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Kusamba Sea Salt (Bali)",
+            "relationship_reason": "Involves traditional sea salt making through solar evaporation of seawater, often utilizing unique methods like evaporation in beds of black volcanic sands and crystallization in coconut tree log vessels."
+          },
+          {
+            "country": "Philippines",
+            "element_name": "Asin Tibuok (Bohol Island)",
+            "relationship_reason": "A traditional sea salt with a distinct process involving soaking coconut husks in seawater, burning them, and boiling the concentrated brine in clay pots. It is a community and family-based practice with significant cultural importance."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Traditional Salt Making in Bo Kluea (Nan Province)",
+            "relationship_reason": "While using an open-pan method with inland brine rather than sea evaporation, it shares the characteristic of a traditional, community-based salt production practice that has been sustained for centuries."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-23T02:12:30.890360Z",
-    "total_ich_elements": 174,
-    "complete_records": 161,
+    "generated_at": "2026-06-25T02:15:22.342191Z",
+    "total_ich_elements": 176,
+    "complete_records": 163,
     "incomplete_records": 13,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 58,
+      "Traditional Craftsmanship": 60,
       "Social Practices & Rituals": 40,
       "Culinary Traditions": 32,
       "Culinary Traditions | Social Practices & Rituals": 3,
