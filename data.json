@@ -15492,22 +15492,316 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-eda271cc",
+      "element_name": "Bakar Batu (Stone Cooking) Ritual",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bakar_Batu.jpg/1280px-Bakar_Batu.jpg",
+      "source_urls": [
+        "https://www.indonesia.travel/gb/en/destinations/maluku-papua/papua/bakar-batu-tradition",
+        "https://papuaaround.com/papuas-bakar-batu-ritual-a-cultural-heritage-of-warmth-and-togetherness/",
+        "https://www.trek-papua.com/stone-burnt-party-papua/",
+        "https://www.scribd.com/document/336940026/Papuan-Tribes-Bakar-Batu-Tradition",
+        "https://aip.scitation.org/doi/abs/10.1063/5.0068840",
+        "https://asianews.network/buried-fire-shared-roots-a-maori-and-papuan-stone-cooking-bond/",
+        "https://www.coolmaterial.com/food/the-ancient-art-of-cooking-dinner-beneath-your-feet/",
+        "https://en.wikipedia.org/wiki/Earth_oven",
+        "https://www.tracyaviary.org/blog/underground-earth-ovens",
+        "https://commons.wikimedia.org/wiki/File:Bakar_Batu.jpg"
+      ],
+      "scraped_at": "2026-06-27T02:09:39.493643Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Papua",
+          "Central Highlands region of Papua",
+          "Jayawijaya Regency",
+          "Wamena City",
+          "Intan Jaya, Central Papua"
+        ],
+        "lat": -2.4749149,
+        "lng": 138.08485
+      },
+      "resume_analisa": {
+        "description": "Bakar Batu, meaning 'burning stones,' is a unique traditional cooking ritual from Papua, Indonesia. It involves cooking food, typically pork, vegetables (like sweet potatoes, cassava, pumpkin), and sometimes chicken, in a large pit dug in the ground. The food is cooked slowly using the heat from stones that have been heated to high temperatures in a separate fire. The food is often wrapped in banana or other leaves before being placed in the pit. This communal event is not merely a culinary festivity but a profound social practice that symbolizes unity, cooperation, gratitude, and peace among the Papuan people. It is practiced by the Dani, Lani, Damal, and other indigenous tribes in the Central Highlands region of Papua.",
+        "cultural_significance": "Bakar Batu holds deep social and spiritual value, serving as a powerful symbol of unity, cooperation, and togetherness within the community. It is performed for significant events such as births, weddings, welcoming important guests, thanksgiving after a harvest, or as a peace ceremony to resolve disputes between clans. The collective participation, from gathering ingredients to sharing the meal ('makan bersama'), reinforces social bonds, promotes mutual respect, and teaches younger generations about harmony. Traditional prayers and songs often accompany the ritual, expressing gratitude to ancestors and nature. It also connects religious and ethnic differences, fostering tolerance.",
+        "gemini_tags": [
+          "Traditional Cooking",
+          "Earth Oven",
+          "Communal Feast",
+          "Ritual",
+          "Papuan Culture",
+          "Social Cohesion",
+          "Indigenous Practice",
+          "Stone Cooking",
+          "Culinary Heritage",
+          "Conflict Resolution",
+          "Thanksgiving"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Earth Oven / Stone Cooking",
+        "materials_and_tools": [
+          "Stones (not easily broken when heated, round, smooth, dark gray)",
+          "Firewood",
+          "Large pit dug in the ground",
+          "Banana leaves or other foliage (e.g., breadfruit leaves)",
+          "Food (pork/wild boar, chicken, sweet potatoes, cassava, pumpkin, indigenous vegetables, sometimes sago)",
+          "Traditional Papuan spices",
+          "Wooden sticks (Apando) for moving stones",
+          "Large staff"
+        ],
+        "step_by_step": [
+          "Gathering Materials: Community members collectively gather firewood and suitable stones (round, smooth, dark gray, not easily broken when heated).",
+          "Preparing the Pit: A large hole is dug in the ground, the size of which depends on the amount of food to be cooked. The bottom of the hole is sometimes lined with leaves.",
+          "Heating the Stones: A fire is built, often in a separate pile or directly in the pit, using firewood to heat the stones until they reach very high temperatures and glow red. This process can take several hours (e.g., 45 minutes to 3 hours for heating stones).",
+          "Food Preparation: While stones are heating, food ingredients like pork (often killed by arrows), chicken, sweet potatoes, cassava, pumpkin, and other vegetables are prepared. Meat is seasoned with typical Papuan spices and often wrapped in banana leaves or other foliage.",
+          "Layering the Earth Oven: Using wooden sticks (Apando), the hot stones are carefully transferred and placed at the bottom of the dug pit. A layer of leaves (e.g., banana leaves, breadfruit leaves) is placed over the hot stones. The prepared food is then layered on top of the leaves. More hot stones are added, followed by more layers of leaves and food. Sometimes, chicken is placed at the very top so its juices drip down to season the vegetables.",
+          "Sealing the Oven: The entire pit is covered with a thick layer of leaves and grass, and then sealed with soil or a wet cloth and soil to trap the heat and steam, allowing the food to cook slowly and evenly.",
+          "Cooking and Feasting: The food is left to cook for several hours, typically 3 to 10 hours, depending on the quantity. Once cooked, the pit is uncovered, and the community gathers for a communal meal ('makan bersama'), sharing the food as a symbol of unity and solidarity."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "New Zealand",
+            "element_name": "Hāngī",
+            "relationship_reason": "Both are traditional earth oven cooking methods using heated stones, layered food, and foliage in a pit for slow cooking. Hāngī means 'breath of life' and 'spark of the land.'"
+          },
+          {
+            "country": "Hawaii",
+            "element_name": "Imu / Kālua",
+            "relationship_reason": "Similar underground oven cooking technique using heated basalt stones and banana leaves for slow-roasting, often an entire pig."
+          },
+          {
+            "country": "Fiji",
+            "element_name": "Lovo",
+            "relationship_reason": "Traditional Fijian earth oven cooking for ceremonial or celebratory occasions."
+          },
+          {
+            "country": "Mexico",
+            "element_name": "Pib / Barbacoa",
+            "relationship_reason": "Ancient Mayan underground pit-cooking technique (Pib) in Yucatán, and barbacoa (slow-roasted meat in a maguey-lined pit) in Mexico, both using hot stones."
+          },
+          {
+            "country": "Peru",
+            "element_name": "Pachamanka",
+            "relationship_reason": "Andean earth oven cooking, where 'pacha' means earth and 'manka' means pot."
+          },
+          {
+            "country": "Papua New Guinea",
+            "element_name": "Mumu",
+            "relationship_reason": "Another name for underground/earth oven/hot stone cooking in Papua (Oceania)."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-d3f94d8f",
+      "element_name": "Ashik Art of Azerbaijan",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00253-CLT-08-THS-8588-LRG.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/art-of-azerbaijani-ashiqs-00253",
+        "https://en.wikipedia.org/wiki/Ashiqs_of_Azerbaijan",
+        "https://artsandculture.google.com/entity/azerbaijani-ashig-art/m0102127?hl=en",
+        "https://azertag.az/en/xeber/Ashiqs_art___a_music_form_of_oral_art_formed_in_folk_environment-2051666",
+        "https://www.azernews.az/culture/109724.html",
+        "https://sare.um.edu.my/article/view/19223",
+        "https://kuzinthecaucasus.wordpress.com/2014/01/29/azerbaijan-the-ashiq-tradition/"
+      ],
+      "scraped_at": "2026-06-27T02:10:14.745165Z",
+      "location": {
+        "country": "Azerbaijan",
+        "provinces": [
+          "Ganja",
+          "Kalbajar",
+          "Gazakh",
+          "Tovuz",
+          "Borchali",
+          "Shamakhi",
+          "Goycha"
+        ],
+        "lat": 40.6798083,
+        "lng": 46.3597178
+      },
+      "resume_analisa": {
+        "description": "The Ashik art of Azerbaijan is a traditional performance art that integrates poetry, storytelling, dance, and vocal and instrumental music. Characterized by the accompaniment of the saz, a long-necked stringed musical instrument, the classical repertoire of Azerbaijani Ashiks encompasses over 200 songs, approximately 150 literary-musical compositions known as dastans, and nearly 2,000 poems in various traditional poetic forms.. Ashiks are versatile singer-poets, storytellers, and often incorporate dance and acting into their performances, making each presentation a unique spectacle..",
+        "cultural_significance": "Ashik art is considered a profound symbol of Azerbaijani culture and an emblem of national identity.. It plays a crucial role in safeguarding the Azerbaijani language, literature, and music, serving as a repository of the people's wisdom, centuries-old experiences, and cultural heritage.. The tradition also fosters cultural exchange and dialogue, as various ethnic groups within Azerbaijan and across the region perform and appreciate Ashik art.. It is recognized for its richness and diversity of verbal expression, reflecting the simplicity, poetic beauty, and emotional depth of the national language.. The art form was inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2009..",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Storytelling",
+          "Poetry",
+          "Music",
+          "Dance",
+          "Performance Art",
+          "Azerbaijani Culture",
+          "Folk Art",
+          "Intangible Cultural Heritage",
+          "Saz Music"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance and Transmission of Oral Epic Narratives and Poetry",
+        "materials_and_tools": [
+          "Saz (long-necked lute)",
+          "Balaban (optional, double reed cylindrical aerophone)",
+          "Nagara (optional, double-headed drum)",
+          "Wind instrument ensembles (optional)"
+        ],
+        "step_by_step": [
+          "**Learning and Transmission:** Traditionally, Ashiks acquire their art through a master-apprentice (usta-shagird) model, where music and poetry are passed down orally without the use of musical notation.",
+          "**Performance Elements:** An Ashik performance is a synthetic art form, harmoniously blending poetry, storytelling, dance, and vocal and instrumental music into a cohesive artistic expression.",
+          "**Instrumentation:** The primary and indispensable musical instrument for an Ashik is the saz. Performances may also be accompanied by other instruments such as the balaban or nagara, and sometimes by wind instrument ensembles.",
+          "**Repertoire:** The Ashik's repertoire includes a vast collection of songs, dastans (epic literary-musical compositions that narrate heroic deeds, love stories, or historical events), and poems in various traditional forms like goshma, gerayli, and ustadname.",
+          "**Performance Structure:** A typical Ashik performance alternates between sung verses and recitative sections of artistically spoken prose. Each verse often begins with an instrumental introduction, and instrumental solos typically separate the verses.",
+          "**Improvisation:** Ashiks are known for their improvisational skills, allowing them to express diverse themes and emotions dynamically during each performance.",
+          "**Context:** Ashik performances are integral to various social and cultural events, including weddings, friendly gatherings, festive celebrations, and are also presented on concert stages, radio, and television."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Turkey",
+            "element_name": "Ashik/Aşık tradition",
+            "relationship_reason": "The Ashik tradition has deep Turkic cultural roots and is shared across a wide geography, including Turkey, where it is a significant folk art form often accompanied by the saz."
+          },
+          {
+            "country": "Iran",
+            "element_name": "Ashik/Aşıq tradition (Iranian Azerbaijan)",
+            "relationship_reason": "The tradition is prevalent in Iranian Azerbaijan, sharing common Turkic cultural heritage and similar performance practices, with Ashiks acting as guardians of national culture."
+          },
+          {
+            "country": "Georgia",
+            "element_name": "Ashik/Aşıq practice",
+            "relationship_reason": "The Ashik tradition spread to Georgia, particularly among the Azeri-Turk minority in regions like Borchali, where it continues to be practiced and is a source of cultural pride."
+          },
+          {
+            "country": "Armenia",
+            "element_name": "Ashugh tradition",
+            "relationship_reason": "The Ashik tradition, referred to as Ashugh in Armenia, spread to the region between the 16th and 18th centuries, sharing common elements of bardic storytelling and music."
+          },
+          {
+            "country": "Turkmenistan",
+            "element_name": "Ashik tradition",
+            "relationship_reason": "The Ashik tradition is found among Turkic peoples in Turkmenistan, reflecting the broader historical and cultural connections of the Turkic world."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-26f1737d",
+      "element_name": "Karagattam",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Karagattam.webp",
+      "source_urls": [
+        "https://oaklores.com/karagattam-tradition-culture-and-struggle/",
+        "https://www.serendipityartsfestival.com/blog/karagattam-the-good-the-bad-the-ugly",
+        "https://dancesintamilnadu.wordpress.com/karagattam/",
+        "https://www.semanticscholar.org/paper/Dance-form-of-Karagattam-The-Regional-Folk-Dance-in-Dharmalingam-Kanagathara/1557021614948a272763f044033281146241a798",
+        "https://en.wikipedia.org/wiki/Karakattam",
+        "https://testbook.com/question-answer/the-karakattam-karagattam-dance-known-for-its-unique--64e5900508007a3f5a70763a",
+        "http://momscribe.blogspot.com/2011/06/karagattam.html",
+        "https://commons.wikimedia.org/wiki/File:Karagattam.webp",
+        "http://www.tamilvu.org/courses/degree/a051/a0514/html/a051461.htm",
+        "http://gemsoftamilnadu.blogspot.com/2011/07/karagattam.html",
+        "https://www.chronicleindia.in/current-aff/karakattam-dance",
+        "https://seithipunal.com/news/what-is-karagattam-and-its-types-1549",
+        "https://indianexpress.com/article/lifestyle/art-and-culture/in-kerala-practitioners-of-karakattam-dance-form-strive-for-recognition-7786015/",
+        "https://tamilkalam.com/karagattam-history-and-current-status/",
+        "https://www.scribd.com/document/468809460/Presentation-4",
+        "https://prepp.in/news/e-492-karagattam-art-and-culture-notes",
+        "http://www.tamilvu.org/courses/degree/a051/a0514/html/a051451.htm",
+        "https://ta.quora.com/%E0%AE%95%E0%AE%B0%E0%AE%95%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%A9%E0%AF%8D-%E0%AE%B5%E0%AE%B0%E0%AE%B2%E0%AE%BE%E0%AE%B1%E0%AF%81-%E0%AE%8E%E0%AE%A9%E0%AF%8D%E0%AE%A9",
+        "https://www.yumpu.com/en/document/read/68778396/10th-std-6"
+      ],
+      "scraped_at": "2026-06-27T02:10:50.867105Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Tamil Nadu",
+          "Kerala"
+        ],
+        "lat": 11.3323723,
+        "lng": 78.6098639
+      },
+      "resume_analisa": {
+        "description": "Karagattam is a vibrant and ancient folk dance form originating from Tamil Nadu, India, where performers skillfully balance an elaborately decorated clay or brass pot, known as a 'karagam', on their heads without any support. While balancing the pot, dancers execute rhythmic swaying, jumping, and acrobatic movements to the beats of percussion instruments. Rooted in ancient rituals from the Sangam period (circa 300 BCE–300 CE), Karagattam has evolved from priestly offerings during festivals into a structured performance art. It is primarily dedicated to the worship of Mariamman, the rain goddess, symbolizing invocations for prosperity and bountiful harvests. The dance has two main variants: Sakthi Karagattam, a sacred ritual form performed in temple processions, and Aata Karagattam, a professional entertainment version staged for audiences.",
+        "cultural_significance": "Karagattam holds profound religious significance within Hinduism, particularly as a devotional practice dedicated to Mariamman, the goddess of fertility, rain, and protection. It is performed to invoke the goddess's blessings for bountiful monsoons, especially during periods of drought in agrarian communities, serving as a ritual plea for agricultural prosperity and the renewal of life through rainfall. The dance is integral to various festivals like Pongal (harvest festival), Aadi Perukku (river worship), and Mariamman temple fairs. Beyond its religious role, Karagattam preserves Tamil heritage through oral traditions and temple celebrations, and has gained modern visibility through cultural programs, media, and films. It also represents a form of cultural and spiritual harmony in Tamil Nadu.",
+        "gemini_tags": [
+          "Folk Dance",
+          "Tamil Culture",
+          "India",
+          "Ritual Dance",
+          "Pot Balancing",
+          "Mariamman Worship",
+          "Traditional Music",
+          "Performing Arts",
+          "Cultural Heritage",
+          "Agrarian Tradition"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance Art",
+        "materials_and_tools": [
+          "Karagam (decorated clay or brass pot, sometimes filled with water, milk, rice, sand, or pebbles)",
+          "Flowers (for decoration, including neem and oleander)",
+          "Neem leaves",
+          "Coconut",
+          "Lamps (sometimes used in Agni Karagattam)",
+          "Colorful saris (for female performers)",
+          "Turmeric-dyed dhotis (for male performers)",
+          "Sandalwood paste",
+          "Flower garlands",
+          "Ankle bells (salangai)",
+          "Makeup (bright and sparkling)",
+          "Musical instruments: Naiyandi Melam ensemble (thavil, pambai, nadaswaram, urumi, kidukitti, konthalam, chendai, parai)"
+        ],
+        "step_by_step": [
+          "**Karagam Preparation**: The central prop, the karagam, is a semi-cylindrical pot (8-12 inches high) crafted from clay or brass. It is elaborately adorned with flowers, betel leaves, and topped with a coconut or a lamp. The pot may be filled with water, milk, uncooked rice, sand, or pebbles, adding weight and symbolizing offerings. For specific types like Thondi Karagattam, a soil pot with neem leaves is used, and for Agni Karagattam, a pot with holes and a lamp inside is utilized.",
+          "**Performer's Attire and Makeup**: Performers, traditionally women in colorful saris and men in turmeric-dyed dhotis, smear sandalwood paste on their bodies and adorn themselves with flower garlands and strings on their hands. Ankle bells are worn by dancers, similar to Bharatanatyam artists. Bright and sparkling makeup is applied to the face.",
+          "**Initiation of Performance**: The performance typically begins with the dancer offering prayers to the deity, their guru (teacher), and the assembled audience. In some ritualistic forms, the priest places the karagam on the dancer's head after a deep worship.",
+          "**Core Balancing Technique**: The primary technique, known as 'thala adi', involves balancing the decorated karagam on the head without any physical support. Dancers execute rapid and intricate footwork called 'adavus', which include jumps, spins, slides, and rhythmic steps, all while maintaining the pot's equilibrium.",
+          "**Body Coordination and Gestures**: Body coordination integrates 'mudras' (hand gestures), often borrowed from Bharatanatyam, to convey storytelling elements. Hip isolations and shoulder shrugs are also employed to aid in stabilizing the pot atop the head during dynamic movements.",
+          "**Acrobatic Feats**: Karagattam often incorporates dynamic acrobatic elements to enhance the visual spectacle. These can include dancing on rolling wooden blocks, ascending and descending ladders, threading a needle while bending backward, and forming human pyramids.",
+          "**Musical Accompaniment**: The dance is accompanied by a live ensemble, typically consisting of 6-7 musicians, known as the Naiyandi Melam. Core instruments include the thavil (barrel-shaped drum), pambai (pair of double-headed drums), nadaswaram (loud reed instrument), and sometimes urumi, kidukitti, konthalam, chendai, and parai. The energetic folk music provides the rhythmic and melodic foundation, energizing the dancers and invoking devotion."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Trinidad and Guyana",
+            "element_name": "Karagam Puja / Kalasa Puja",
+            "relationship_reason": "An adaptation of Karagattam performed by Tamil diaspora communities, particularly among Indo-Caribbeans, as a ritualistic performance honoring deities like Kanchi Kamakshi and Madurai Meenakshi."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-25T02:15:22.342191Z",
-    "total_ich_elements": 176,
-    "complete_records": 163,
+    "generated_at": "2026-06-27T02:11:28.146589Z",
+    "total_ich_elements": 179,
+    "complete_records": 166,
     "incomplete_records": 13,
     "categories_breakdown": {
       "Traditional Craftsmanship": 60,
       "Social Practices & Rituals": 40,
-      "Culinary Traditions": 32,
+      "Culinary Traditions": 33,
       "Culinary Traditions | Social Practices & Rituals": 3,
-      "Performing Arts": 16,
+      "Performing Arts": 17,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 12,
+      "Oral Traditions": 13,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
