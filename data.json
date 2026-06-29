@@ -15786,17 +15786,177 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-d5180b69",
+      "element_name": "German Bread Culture",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//breadvillage.com/blogs/news/what-makes-german-bread-culture-unique&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://breadvillage.com/blogs/news/what-makes-german-bread-culture-unique",
+        "https://www.deutschland.de/en/topic/culture/german-bread-and-bread-culture",
+        "https://www.germanfoods.org/german-food-facts/guide-to-german-bread-and-cereals/",
+        "https://deutale.com/german-bread-types/",
+        "https://discovergermany.eu/culinary-experiences/the-secrets-of-german-bread-unveiling-the-craft-behind-germanys-beloved-loaves",
+        "https://www.pema.de/en/german-culture-and-tradition",
+        "https://www.goethe.de/en/kul/mol/21356501.html",
+        "https://ravencakesbakery.com/german-rye-bread-recipe/"
+      ],
+      "scraped_at": "2026-06-29T02:31:15.607104Z",
+      "location": {
+        "country": "Germany",
+        "provinces": [
+          "Bavaria",
+          "Westphalia",
+          "Rhineland",
+          "Northern Germany",
+          "Southern Germany",
+          "Swabia",
+          "Franconia",
+          "Berlin",
+          "Hamburg"
+        ],
+        "lat": 48.9467562,
+        "lng": 11.4038717
+      },
+      "resume_analisa": {
+        "description": "German Bread Culture encompasses an extraordinary diversity of over 3,000 officially recognized types of bread and 1,200 different mini breads and baked products, making it one of the richest bread cultures globally. Unlike many other European breads, German breads are typically dark, dense, and chewy, primarily made from whole grains such as rye, spelt, and millet, with wheat often playing a secondary role. Rye, a staple grain in German bread, particularly in the colder northern regions, contributes to a distinctive sharp, often sour flavor due to its longer fermentation requirements and lower gluten content. Sourdough (Sauerteig) is a fundamental element in many German breads, enhancing both flavor and digestibility through natural fermentation processes that can last up to 24 hours. The emphasis is on high-quality, often stone-ground, traditional grains and the critical role of water quality in regions like the Black Forest. This rich variety is a result of historical, geographical, and climatic factors, with regional specialties evolving over centuries.",
+        "cultural_significance": "Bread holds a profound cultural significance in Germany, extending beyond a mere staple food to embody a sense of home, hospitality, and community bonding. It is a central component of daily meals, notably breakfast ('Frühstück'), snack times ('Pausenbrot' or 'Brotzeit'), and the traditional cold evening meal ('Abendbrot' or 'Vesper'). The terms 'Pausenbrot,' 'Brotzeit,' and 'Abendbrot' are deeply integrated into the German language, highlighting bread's indispensable role in everyday life. Traditional bread-making festivals, such as Brotfest, bring communities together to celebrate and honor the craft. The daily visit to a local bakery ('Bäckerei') is a cherished ritual, with bakeries serving as important social hubs. The craft of German bread making is passed down through generations, from master bakers to trainees via rigorous apprenticeship programs, ensuring the preservation of ancient techniques alongside modern insights. In recognition of its unique value, German Bread Culture was inscribed into the nationwide inventory of intangible cultural heritage by the German Commission for UNESCO in 2014.",
+        "gemini_tags": [
+          "German cuisine",
+          "Bread making",
+          "Sourdough",
+          "Rye bread",
+          "Traditional craftsmanship",
+          "Culinary heritage",
+          "Intangible Cultural Heritage",
+          "German culture",
+          "Bakery traditions",
+          "Whole grain bread"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "General Traditional German Bread Making Process (Sourdough-based)",
+        "materials_and_tools": [
+          "Various flours (rye, wheat, spelt, whole grain)",
+          "Water (often filtered)",
+          "Sourdough starter (Sauerteig)",
+          "Yeast (optional, often for quicker rise or specific types)",
+          "Salt",
+          "Optional additions: seeds (sunflower, pumpkin, flax, caraway), malt, sugar beet syrup, buttermilk, beer, spices",
+          "Mixing bowls",
+          "Dough scraper",
+          "Proofing basket (Brotform/banneton)",
+          "Oven (often with steam capability or Dutch oven)",
+          "Baking sheet/stone"
+        ],
+        "step_by_step": [
+          "**1. Prepare Preferment/Sourdough Starter:** A preferment (e.g., poolish) or sourdough starter is typically prepared 10-24 hours in advance by mixing flour, water, and a small amount of yeast or active sourdough starter. This long fermentation develops flavor and texture.",
+          "**2. Combine Main Dough Ingredients:** The preferment/sourdough is combined with additional flours (rye, wheat, spelt, etc., often whole grains), water, salt, and sometimes a small amount of commercial yeast. Other ingredients like seeds, malt, buttermilk, or beer may be added depending on the specific bread type.",
+          "**3. Kneading/Mixing:** The ingredients are mixed until a cohesive dough forms. For high-rye breads, extensive kneading is often not required; a thorough mixing is sufficient due to rye's sticky nature and lower gluten content.",
+          "**4. Bulk Fermentation (First Rise):** The dough is covered and left to ferment at room temperature for several hours (e.g., 1.5 to 24 hours), allowing it to rise and flavors to develop. Longer fermentation times are characteristic of German breads.",
+          "**5. Shaping:** The risen dough is gently transferred to a floured surface and shaped into the desired form (e.g., round loaf, oblong, rolls).",
+          "**6. Proofing (Final Rise):** The shaped dough is placed in a floured proofing basket (banneton) or on a baking sheet, often seam-side down, and allowed to proof (final rise) for a shorter period, usually until slightly puffy.",
+          "**7. Preheating Oven and Steam:** The oven is preheated to a high temperature, often with a baking stone or steel inside. A tray of hot water is typically placed at the bottom of the oven or a Dutch oven is used to generate steam, which helps create a crusty exterior.",
+          "**8. Scoring and Baking:** The proofed dough is inverted onto parchment paper or directly onto the hot baking surface. The top of the loaf is often scored with a sharp knife to allow for controlled expansion during baking. It is then baked, initially with steam, and then often at a slightly lower temperature for a longer duration to achieve a dark, crusty exterior and thoroughly baked interior. Baking times can vary significantly, with some breads like Pumpernickel baking for 16-24 hours at low temperatures.",
+          "**9. Cooling:** The baked bread is removed from the oven and cooled completely on a wire rack for several hours before slicing. This is crucial for the internal structure and flavor to set."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "France",
+            "element_name": "Baguette",
+            "relationship_reason": "Comparison point for unique German bread diversity; French bread often uses different grains and fermentation methods."
+          },
+          {
+            "country": "Italy",
+            "element_name": "Ciabatta",
+            "relationship_reason": "Comparison point for unique German bread diversity; Italian bread often uses different grains and fermentation methods."
+          },
+          {
+            "country": "Worldwide",
+            "element_name": "Bread making traditions",
+            "relationship_reason": "While bread making is a global practice, Germany's distinct approach in terms of grain variety, sourdough use, and density sets its bread culture apart."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-d9f5150a",
+      "element_name": "Al-Qatt Al-Asiri",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Al-Qatt_Al-Asiri_Art.jpg/1200px-Al-Qatt_Al-Asiri_Art.jpg",
+      "source_urls": [
+        "https://www.saudipedia.com/en/article/al-qatt-al-asiri",
+        "https://saudicultures.com/al-qatt-al-asiri-aseers-painted-walls-women-keep-them-alive/",
+        "https://ich.unesco.org/en/RL/al-qatt-al-asiri-female-traditional-interior-wall-decoration-in-asir-saudi-arabia-01256",
+        "https://www.lavishconcepts.com/blogs/news/al-qatt-al-asiri-saudi-patterns-meaning-and-modern-craft",
+        "https://www.divazmagazine.com/al-qatt-al-asiri",
+        "https://www.2markers.com/en/saudi-arabia/asir-region/coordinates/",
+        "https://www.wikiwand.com/en/Asir_Province",
+        "https://www.unesco.org/en/ich/RL/01256",
+        "https://www.unesco.org/en/countries/saudi-arabia/ich"
+      ],
+      "scraped_at": "2026-06-29T02:32:12.787616Z",
+      "location": {
+        "country": "Saudi Arabia",
+        "provinces": [
+          "Asir Province"
+        ],
+        "lat": 19.166667,
+        "lng": 43.166667
+      },
+      "resume_analisa": {
+        "description": "Al-Qatt Al-Asiri is an ancient decorative art form originating from the Asir region in southwestern Saudi Arabia, primarily practiced by women. It involves adorning the interior walls of homes, especially guest reception rooms, with bold, symmetrical designs and vibrant geometric patterns. The term 'Al-Qatt' refers to the horizontal divisions that structure the wall patterns, often layered with motifs such as triangles, rhombi, zigzags, and floral-inspired icons. Traditionally, the art is created freehand, without prior sketching or the use of templates, relying on memory, rhythm, and a strong sense of balance.",
+        "cultural_significance": "Al-Qatt Al-Asiri is a key element of identity for the Asir region and a living emblem of its heritage. Historically, these paintings were created to beautify and protect homes, symbolizing hospitality and warmth. The complexity and mastery of the designs could also indicate the wealth and affluence of a family. The practice is deeply communal, often involving the lady of the house inviting female relatives of various age groups to help, which strengthens social bonds and fosters a sense of belonging. It is also noted for its therapeutic effect, bringing comfort and serenity to the women who practice it. The art form has been recognized by UNESCO as an Intangible Cultural Heritage of Humanity since 2017.",
+        "gemini_tags": [
+          "Traditional Art",
+          "Wall Painting",
+          "Geometric Patterns",
+          "Saudi Arabian Heritage",
+          "Women's Craft",
+          "Communal Practice",
+          "Intangible Cultural Heritage",
+          "Asir Region"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Painting/Decoration",
+        "materials_and_tools": [
+          "Traditional pigments: green from crushed fresh grass, red from Al Mishka (local stone), yellow from turmeric roots or Thurb tree bark, black from charcoal and candle soot, white from gypsum.",
+          "Traditional brushes: goat tail hair bundles, acacia thorns for fine lines, branches for bold outlines.",
+          "Modern materials: synthetic paints and modern brushes (increasingly used, though traditional methods are still honored in workshops).",
+          "Wall surfaces (interior walls of homes, especially guest reception rooms)."
+        ],
+        "step_by_step": [
+          "Prepare the wall: The interior wall, typically in guest reception rooms, is coated with a base layer of white gypsum or, in some areas, a pale blue wash.",
+          "Establish horizontal divisions: The process begins by drawing a line in the middle of the wall, horizontally dividing it into two halves. This initial 'cutting' (Al-Qatt) establishes the fundamental structure for the patterns.",
+          "Paint intricate designs freehand: Women spontaneously paint intricate designs directly onto this foundation without prior sketching, relying on their accumulated knowledge, observation, practice, memory, rhythm, and a strong sense of balance.",
+          "Apply motifs and colors: Bold, symmetrical designs are created using a variety of geometric shapes and symbols, including triangles, rhombi, zigzags, and floral-inspired icons. Traditionally, colors were derived from natural pigments found in the local environment.",
+          "Engage in communal practice: The decoration process is often a communal event, where the lady of the house invites female relatives of various age groups to join her, fostering social bonds and transmitting the knowledge across generations."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.9,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-27T02:11:28.146589Z",
-    "total_ich_elements": 179,
-    "complete_records": 166,
+    "generated_at": "2026-06-29T02:33:28.482171Z",
+    "total_ich_elements": 181,
+    "complete_records": 168,
     "incomplete_records": 13,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 60,
+      "Traditional Craftsmanship": 61,
       "Social Practices & Rituals": 40,
-      "Culinary Traditions": 33,
+      "Culinary Traditions": 34,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 17,
       "Social Practices & Rituals | Performing Arts": 3,
