@@ -15946,16 +15946,357 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-16c1dae7",
+      "element_name": "Àgbéjọ́ró: Communal Decision-Making and Conflict Resolution",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//nationallibraryofnigeriaoyostatebranch.wordpress.com/2024/05/29/forms-of-government/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://nationallibraryofnigeriaoyostatebranch.wordpress.com/2024/05/29/forms-of-government/",
+        "https://www.academia.edu/28956903/Culture_and_Conflict_Management_among_the_Yoruba_of_South_Western_Part_of_Nigeria_A_Historico_Development_Approach",
+        "https://repository.kulib.kyoto-u.ac.jp/dspace/",
+        "https://dailyifa.com/the-role-of-yoruba-culture-in-conflict-de-escalation-and-peace-maintenance/",
+        "https://rsisinternational.org/journals/ijriss/articles/sociolinguistic-analysis-of-yoruba-conflict-resolution-proverbs/",
+        "https://www.davidpublishing.com/journals_info.asp?id=5163"
+      ],
+      "scraped_at": "2026-07-01T02:32:11.762866Z",
+      "location": {
+        "country": "Nigeria",
+        "provinces": [
+          "Ogun",
+          "Lagos",
+          "Oyo",
+          "Osun",
+          "Ondo",
+          "Ekiti"
+        ],
+        "lat": 6.9788582,
+        "lng": 3.4389293
+      },
+      "resume_analisa": {
+        "description": "Àgbéjọ́ró represents the traditional Yoruba practice of communal decision-making and conflict resolution, deeply embedded in their societal structure. Issues affecting the community are typically resolved through dialogue, led by elders, community leaders, and stakeholders. This system emphasizes consensual governance, aiming to resolve disputes, make collective decisions, and ensure social harmony. It operates through both formal and informal institutions, where figures like Baálès (local chiefs) and Obas (kings) guide the community using traditional wisdom. Elder councils, such as \"Ogboni\" or \"Oyomesi,\" serve as advisory bodies and custodians of traditional wisdom and justice, playing a crucial role in community administration.",
+        "cultural_significance": "Àgbéjọ́ró is fundamental to the conservation of Yoruba cultural identity and the maintenance of social cohesion. It ensures fairness, strengthens community bonds, and promotes the continuity of cultural norms, including the management of land rights, traditional festivals, and the protection of sacred sites across generations. The practice highlights the Yoruba emphasis on inclusion, responsibility, and communal harmony. The wisdom and knowledge of elders, often conveyed through proverbs, carry significant moral weight and social authority in these processes.",
+        "gemini_tags": [
+          "Yoruba culture",
+          "communal governance",
+          "conflict resolution",
+          "social practice",
+          "traditional institutions",
+          "cultural preservation",
+          "Nigeria"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Social Process",
+        "materials_and_tools": [
+          "Dialogue",
+          "Traditional wisdom",
+          "Proverbs",
+          "Community leaders (Baálès, Obas)",
+          "Elders (Agba, Ogboni, Oyomesi)",
+          "Stakeholders"
+        ],
+        "step_by_step": [
+          "Identification of issues affecting the community or disputes between individuals/groups.",
+          "Convening of a dialogue session led by elders, community leaders, and relevant stakeholders.",
+          "Discussion and deliberation, where traditional wisdom and proverbs are often employed to guide the conversation, mediate disputes, and inspire reconciliation.",
+          "Negotiation and consensus-building to arrive at collective decisions or resolutions that reflect communal interests and restore peace and harmony.",
+          "The decisions made by elders and leaders are highly respected and aim to ensure fairness and strengthen community bonds."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Brazil",
+            "element_name": "Candomblé",
+            "relationship_reason": "The principles of communal decision-making and community-led conflict resolution, foundational to Àgbéjọ́ró, have been adapted and maintained within Yoruba diaspora communities, influencing their social and religious structures."
+          },
+          {
+            "country": "Cuba",
+            "element_name": "Santería",
+            "relationship_reason": "The principles of communal decision-making and community-led conflict resolution, foundational to Àgbéjọ́ró, have been adapted and maintained within Yoruba diaspora communities, influencing their social and religious structures."
+          },
+          {
+            "country": "United States",
+            "element_name": "Yoruba cultural practices in diaspora",
+            "relationship_reason": "The principles of communal decision-making and community-led conflict resolution, foundational to Àgbéjọ́ró, have been adapted and maintained within Yoruba diaspora communities, influencing their social and religious structures."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-4e98db75",
+      "element_name": "Paper Crafting Technique (紮作技藝)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Lion_Dance_Head_in_Hong_Kong.jpg/1200px-Lion_Dance_Head_in_Hong_Kong.jpg",
+      "source_urls": [
+        "https://www.lcsd.gov.hk/CE/Museum/ICHO/en_US/web/icho/paper_crafting_technique.html",
+        "https://www.hkmemory.hk/collections/intangible_cultural_heritage/ich_items/ich_item_5_41/index.html",
+        "https://www.hkmemory.hk/collections/intangible_cultural_heritage/ich_items/ich_item_5_41_4/index.html",
+        "https://www.ichplus.org.hk/en/ich-items/paper-crafting-technique",
+        "https://www.madamefigaro.com.hk/art/hong-kong-traditional-crafts-paper-crafting-technique-334399",
+        "https://www.i-cable.com/%E6%96%B0%E8%81%9E%E8%B3%87%E8%A8%8A/209689/%E5%AE%B6%E5%9C%8B%E5%A4%A9%E4%B8%8B%EF%BD%9C%E5%82%B3%E7%B5%B1%E7%A5%AD%E7%A5%84%E6%96%87%E5%8C%96%E6%8C%81%E7%BA%8C%E5%B8%AB%E5%82%85%EF%BC%9A%E7%B4%AE%E4%BD%9C%E4%BB%8D%E6%9C%89%E7%94%9F%E5%AD%98%E7%A9%BA%E9%96%93",
+        "https://www.hactl.com/news/hactlink/breathing-new-life-into-traditional-crafts/",
+        "https://www.alokya.co/blog/the-importance-of-preserving-traditional-crafts-for-future-generations",
+        "https://www.wealddown.co.uk/blog/crafting-culture-the-importance-of-heritage-crafts-skills/",
+        "https://www.worldofikat.com/blogs/news/the-importance-of-preserving-traditional-crafts",
+        "https://www.awesomepatternstudio.com/blogs/educational/the-history-and-evolution-of-handmade-crafts-and-traditional-art-forms",
+        "https://www.awesomepatternstudio.com/blogs/educational/the-history-of-traditional-craftsmanship",
+        "https://www.madebox.com.au/blogs/news/artisan-crafts-preserving-cultural-heritage",
+        "https://www.heritageartisan.com/traditional-crafts-techniques-examples",
+        "https://www.unesco.org/culture/ich/en/traditional-craftsmanship-00057",
+        "https://www.vaia.com/en/wiki/traditional-crafts",
+        "https://www.jccfs.org/blog/traditional-craft-skills-to-learn-this-year/",
+        "https://www.neatlittlesweethome.com/my-10-must-have-craft-tools-and-supplies/",
+        "https://www.crafterscompanion.com/us/blog/11-essential-craft-supplies-for-beginners/",
+        "https://www.mmnewman.com/blog/your-must-have-hot-tools-for-arts-crafts-projects/",
+        "https://www.google.com/search?q=latitude+longitude+Hong+Kong",
+        "https://www.geodatos.net/en/coordinates/hong-kong",
+        "https://www.latitudelongitude.org/hong-kong/",
+        "https://www.landsd.gov.hk/en/about/hong_kong_geographic_data.html",
+        "https://www.chinaculture.org/cn/info/2020-09/17/content_135118.htm",
+        "https://www.ihchina.cn/article-detail_23853.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.ihchina.cn/article-detail_22453.html",
+        "https://www.chinaculture.org/cn/info/2018-01/05/content_134598.htm",
+        "https://www.ccfparis.org/zh-hans/node/142",
+        "https://siu-tshui.com/traditional-crafts/",
+        "https://www.taiwan.gov.tw/content_3.php?id=125",
+        "https://www.news-hub.hk/post/%E9%A6%99%E6%B8%AF%E7%80%A7%E8%87%A8%E5%A4%B1%E5%82%B3%E5%98%85%E5%82%B3%E7%B5%B1%E6%89%8B%E5%B7%A5%E8%97%9D%EF%BC%9A%E7%B4%B0%E6%95%B85%E7%A8%AE%E5%80%BC%E5%BE%97%E4%BF%9D%E7%95%99%E5%98%85%E6%96%87%E5%8C%96%E7%91%A0%E7%92%85"
+      ],
+      "scraped_at": "2026-07-01T02:32:49.552038Z",
+      "location": {
+        "country": "Hong Kong",
+        "provinces": [
+          "Hong Kong"
+        ],
+        "lat": 22.2818333,
+        "lng": 114.1582831
+      },
+      "resume_analisa": {
+        "description": "Paper Crafting Technique (紮作技藝) is a long-established folk art in Hong Kong that combines paper crafting and drawing. Craftsmen utilize simple materials such as bamboo strips, metal wire, tissue paper, colored paper, and fabrics to construct three-dimensional structures. These structures are then meticulously painted and assembled to create a diverse range of paper products. Common examples include flower cannons, effigies of the Ghost King (\"Dai Si Wong\"), lanterns, dragons, lions, qilin, and various paper offerings.",
+        "cultural_significance": "This traditional craft plays a vital role in Hong Kong's traditional festival celebrations and folk religious rituals. It embodies the rich history and culture of different ethnic groups and holds significant social and cultural value within the community. Paper crafting serves as a tangible link to the past, preserving the stories, customs, and histories of the community, thereby acting as a crucial means of cultural preservation and identity expression. Recognizing its importance, the \"紮作技藝\" was officially listed in the first batch of Hong Kong's Intangible Cultural Heritage Representative List in 2017.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Paper Art",
+          "Folk Art",
+          "Hong Kong Culture",
+          "Ritual Objects",
+          "Festival Decorations",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Manual Crafting / Paper Crafting",
+        "materials_and_tools": [
+          "Bamboo strips (竹篾)",
+          "Gauze paper (紗紙)",
+          "Colored paper (色紙)",
+          "Silk fabric (絹布)",
+          "Metal wire (鐵線)",
+          "Paste (made from flour, glutinous rice flour, and alum)",
+          "Cutting tools (scissors, craft knife)",
+          "High heat source (for bending bamboo)"
+        ],
+        "step_by_step": [
+          "**Conception and Measurement**: The craftsman begins by conceiving the external form, realism, and specific features of the paper craft. Reference dimensions are then measured to accurately determine the size and proportion of the final piece.",
+          "**Material Selection**: Appropriate bamboo strips and paper are carefully chosen based on the specific type of paper craft to be created.",
+          "**Framing (紮 - \"Za\")**: Bamboo strips are meticulously shaved to the required thickness and width. These strips are then securely tied together using gauze paper strips to form the foundational skeleton. For creating curved structures, bamboo strips are bent into shape using high heat, a technique known as \"彈火\" (\"Tan Huo\" or \"springing fire\").",
+          "**Pasting (撲 - \"Pok\")**: Gauze paper is carefully pasted along the bamboo frame to establish the overall outline of the paper craft. Alternatively, paper can be folded into a three-dimensional shape and then fitted onto the frame, secured with a special paste made from flour, glutinous rice flour, and alum.",
+          "**Painting and Decoration (寫 - \"Se\" and 裝 - \"Zong\")**: The paper craft is then adorned using various techniques, including colorful painting, intricate cutting and pasting, and decorative paper folding. After the piece has dried, additional decorative elements, such as velvet balls, may be added as a final touch."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China (Mainland)",
+            "element_name": "Various traditional paper crafts (e.g., paper offerings, lanterns)",
+            "relationship_reason": "Hong Kong's paper crafting tradition was inherited from the Canton area of mainland China, and similar paper crafts are widely practiced in China for festivals and rituals."
+          },
+          {
+            "country": "Taiwan",
+            "element_name": "Taiwanese traditional paper crafts (e.g., paper offerings for rituals)",
+            "relationship_reason": "Taiwan's traditional crafts, including paper crafts, also have roots in Chinese immigrant traditions from the Ming and Qing dynasties, indicating a shared cultural origin and similar practices for rituals and celebrations."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-8553b0cb",
+      "element_name": "Cob Building",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Cob_house_in_Devon.jpg/640px-Cob_house_in_Devon.jpg",
+      "source_urls": [
+        "https://naturalbuildingcolloquium.org/history-of-cob/",
+        "https://naturalbuildingalliance.org/cob/",
+        "https://homedesignlover.com/cob-house-architecture/",
+        "https://coblife.org/",
+        "https://thecobwall.com/history-of-cob-construction/",
+        "https://naturalbuildingblog.com/the-best-introduction-to-cob-houses-and-cob-building/",
+        "https://hutterarchitects.com/cob-building-techniques/",
+        "https://tomkeelingcarpenter.com/how-to-build-a-cob-house/",
+        "https://yearofmud.com/building-with-cob-how-to-mix-a-batch-of-cob/",
+        "https://heritagecrafts.org.uk/craft/cob-building/",
+        "https://ecobnb.com/blog/2023/01/cob-houses/",
+        "https://www.motherearthnews.com/homesteading-and-livestock/modern-cob-house-building-zmaz00jazsel/",
+        "https://thehollies.ie/natural-building/natural-building-with-cob/",
+        "https://pseconsultingengineers.com/cob-home-engineering-design/",
+        "https://www.youtube.com/watch?v=kL-81bE265c",
+        "https://naturalbuildingblog.com/cob-building-ingredients-how-to-choose-the-right-materials/",
+        "https://thehollies.ie/natural-building/cob-building-what-is-cob/",
+        "https://www.dezeen.com/2025/08/11/cob-building-earthen-construction-guide/",
+        "https://heritagecobandlime.com/why-ancient-cob-will-always-have-a-place-in-our-modern-world/"
+      ],
+      "scraped_at": "2026-07-01T02:33:29.184497Z",
+      "location": {
+        "country": "United Kingdom",
+        "provinces": [
+          "Southwestern England",
+          "Wales",
+          "Devon",
+          "Cornwall"
+        ],
+        "lat": 54.7023545,
+        "lng": -3.2765753
+      },
+      "resume_analisa": {
+        "description": "Cob building is an ancient, natural construction technique that utilizes a pliable mixture of clay-rich subsoil, sand, straw, and water to create monolithic, hand-sculpted walls. This method does not typically use forms, allowing for organic shapes, curved walls, arches, and niches. Cob structures are renowned for their durability, fire resistance, and excellent thermal mass properties, which help regulate indoor temperatures.",
+        "cultural_significance": "Cob building is one of the world's oldest and most eco-friendly construction methods, with a history spanning thousands of years across various cultures. It embodies sustainable living principles by using readily available, local, and inexpensive natural materials, thereby minimizing environmental impact. This traditional practice often fosters community participation and cooperation, reflecting the cultural heritage of the communities where it is found and promoting a shared responsibility towards well-being.",
+        "gemini_tags": [
+          "Traditional Building Technique",
+          "Sustainable Architecture",
+          "Earth Construction",
+          "Natural Materials",
+          "Vernacular Architecture",
+          "Community Practice",
+          "Ecological Design"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand-sculpted monolithic wall construction",
+        "materials_and_tools": [
+          "Clay-rich subsoil (15-25% clay content)",
+          "Coarse sand/aggregate (around 80% of the mix, can be masonry or concrete sand, or gravel up to ¼ inch)",
+          "Straw (long-stranded, for reinforcement and tensile strength)",
+          "Water",
+          "Tarp (for mixing)",
+          "Feet (for stomping/mixing, also known as 'cob dance') or mechanical mixer",
+          "Shovels/digging tools",
+          "Wooden stakes and string (for marking foundations)",
+          "Compacting tools (hands or feet)",
+          "Trimming tools (for shaping walls)",
+          "Post and water level",
+          "Sticks (for stabbing holes to aid drying)",
+          "Lime or earthen plaster (for finishing)"
+        ],
+        "step_by_step": [
+          "**Site Preparation and Foundation**: Clear vegetation and topsoil from the building site. Mark out the perimeter of the structure. Dig trenches for foundations and drainage. Construct a raised stone or concrete foundation (referred to as 'good boots') to protect the cob walls from ground moisture.",
+          "**Material Sourcing and Testing**: Gather clay-rich subsoil, coarse sand/aggregate, and straw. It is crucial to test the soil mixture to achieve optimal proportions, as the ideal ratio can vary. A basic mixture often includes one-part wet clay, four parts sand, and one part straw.",
+          "**Mixing the Cob**: Spread sand on a large tarp, create a depression in the center, and add wet clay, followed by water. Mix the ingredients by stomping with bare feet (the 'cob dance') or using mechanical mixers. Gradually incorporate straw, stomping it in until a thick, sticky, dough-like consistency is achieved. The mixture should be firm enough to retain its shape.",
+          "**Building the Walls**: Form softball-sized lumps or 'loaves' of the cob mixture. Lay these lumps in successive layers (known as courses or lifts), compacting them by hand or foot and melding them together to form solid, monolithic walls. To prevent slumping, avoid building up too quickly; a recommended daily lift is approximately 60 cm. Stab holes into the wet cob with sticks to facilitate the drying process. Walls are typically 18-24 inches thick.",
+          "**Sculpting and Shaping**: As the cob is laid, it can be freely sculpted and trimmed to create desired architectural features such as curved walls, arches, niches, and other organic forms.",
+          "**Drying**: Allow each layer of cob to dry gradually before adding the next. This slow drying process is essential for the structural integrity of the wall and to prevent cracking or collapse.",
+          "**Finishing**: Apply a breathable lime or earthen plaster to the exterior walls. This finish protects the cob from weather while allowing moisture to escape. Additionally, ensure the roof has wide overhangs (the 'good hat' principle) to shield the walls from rain."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "North Africa",
+            "element_name": "Cob-like walls",
+            "relationship_reason": "Historical origin, with cob-like walls appearing in the 11th century."
+          },
+          {
+            "country": "Arabian Peninsula (Yemen)",
+            "element_name": "Cob structures",
+            "relationship_reason": "Evidence of ancient cob history, with structures over 700 years old and nine stories tall."
+          },
+          {
+            "country": "Western and Central Europe, Ukraine, Middle East, India, China, Sahel and equatorial Africa, American Southwest",
+            "element_name": "Similar forms of mud building",
+            "relationship_reason": "Endemic presence of similar mud building techniques throughout these regions."
+          },
+          {
+            "country": "New Zealand",
+            "element_name": "Cob houses",
+            "relationship_reason": "British settlers introduced the technique, constructing at least 8,000 cob houses."
+          },
+          {
+            "country": "Australia",
+            "element_name": "Cob buildings",
+            "relationship_reason": "Used by settlers, with some buildings surviving in New South Wales, Queensland, and Melbourne."
+          },
+          {
+            "country": "North America (USA, Canada)",
+            "element_name": "Cob buildings",
+            "relationship_reason": "Technique brought by British settlers and experiencing a modern revival."
+          },
+          {
+            "country": "Spain/Portugal (al-Andalus)",
+            "element_name": "Tabya (cob construction)",
+            "relationship_reason": "Historical recordings of cob construction in the 11th and 12th centuries."
+          },
+          {
+            "country": "Afghanistan",
+            "element_name": "Cob construction",
+            "relationship_reason": "Some of the oldest man-made structures are of cob construction."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-06-29T02:33:28.482171Z",
-    "total_ich_elements": 181,
-    "complete_records": 168,
+    "generated_at": "2026-07-01T02:34:37.937005Z",
+    "total_ich_elements": 184,
+    "complete_records": 171,
     "incomplete_records": 13,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 61,
-      "Social Practices & Rituals": 40,
+      "Traditional Craftsmanship": 63,
+      "Social Practices & Rituals": 41,
       "Culinary Traditions": 34,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 17,
