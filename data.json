@@ -16392,22 +16392,291 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5383c2e0",
+      "element_name": "Altai Magtaal (Praise of the Altai Mountains)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//bimongol.blogspot.com/2011/09/blog-post_06.html&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://bimongol.blogspot.com/2011/09/blog-post_06.html",
+        "https://dorgio.mn/p/4442",
+        "https://opac.nlc.mn/record/12185",
+        "https://mongoliaexpeditions.com/eva-schubert-research-on-altai-magtaal/",
+        "https://en.wikipedia.org/wiki/Altai_Uriankhai",
+        "https://www.youtube.com/watch?v=fPqPD2fiPTU",
+        "https://grokipedia.org/wiki/Uriankhai",
+        "https://zindaa.mn/121115",
+        "https://joshuaproject.net/people_groups/10394/MG",
+        "https://harzed.blogspot.com/2015/10/blog-post_9.html",
+        "https://www.reddit.com/r/mongolia/comments/153t59w/are_tyvans_uriankhai/",
+        "https://www.youtube.com/watch?v=fPqPD2fiPTU",
+        "https://www.youtube.com/watch?v=kR2g_9Nf_4Y",
+        "https://en.wikipedia.org/wiki/Altai_Khairkhan",
+        "https://altai-travel.com/6-sacred-facts-about-altai-shaman-rituals/",
+        "https://www.facemusic.ch/duo-temuzhin-mongolia-altain-magtaal-khangain-ayalguu-songs-album-text-in-english/",
+        "https://altai-republic.ru/en/articles/mountain-altai-rituals/",
+        "https://www.youtube.com/watch?v=0hY48qj6x6Q",
+        "https://www.youtube.com/watch?v=52G4c944H6A"
+      ],
+      "scraped_at": "2026-07-05T02:02:19.256321Z",
+      "location": {
+        "country": "Mongolia",
+        "provinces": [
+          "Khovd Province",
+          "Bayan-Ölgii Province",
+          "Uvs Province"
+        ],
+        "lat": 46.8997977,
+        "lng": 92.2959651
+      },
+      "resume_analisa": {
+        "description": "Altai Magtaal, or 'Praise of the Altai Mountains,' is an ancient Mongolian oral tradition deeply intertwined with heroic epics and ritualistic practices. It is a unique form of folk literature where epic singers, known as 'tuulich,' improvise poetic verses to extol the natural beauty and richness of the Altai Mountains. The content encompasses the diverse flora and fauna, distinctive rock formations, pure springs, valuable minerals, and the overall abundance of the region. Unlike a memorized text, the Magtaal is a spontaneous creation, often performed in a semi-conscious state, accompanied by traditional instruments like the tovshuur. The recitation can follow a structured approach, such as describing the four cardinal directions, from the peaks to the valleys, or according to the changing seasons.",
+        "cultural_significance": "Altai Magtaal holds profound cultural and spiritual significance for the nomadic communities of Western Mongolia. It is considered an indispensable part of heroic epics and serves a vital ritualistic purpose. The performance aims to appease and delight the spirits and deities of nature, particularly those associated with mountains and water, thereby inviting good fortune and protection for the year. It is believed to help individuals and communities achieve balance with nature, seek favors, receive benefits, and guard against the wrath of supernatural beings. This tradition is often performed on significant occasions such as New Year's Eve (Bituun) and during periods of drought to pray for rain, symbolizing a deep connection to the environment and the nomadic cultural heritage.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Mongolian Folklore",
+          "Ritual Practice",
+          "Altai Mountains",
+          "Uriankhai Culture",
+          "Epic Singing",
+          "Nature Worship",
+          "Nomadic Heritage",
+          "Traditional Music"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Performance and Ritualistic Recitation",
+        "materials_and_tools": [
+          "Tuulich (epic singer/performer)",
+          "Tovshuur (traditional two-stringed lute-like instrument)",
+          "Morin Khuur (horsehead fiddle, sometimes used in broader musical performances of Altai praise)",
+          "Yatga (plucked zither, sometimes used in broader musical performances of Altai praise)",
+          "Offerings (e.g., dairy products, cooked meats, aromatic substances like junipers and wormwood, ceremonial scarves/jalama) - in the context of broader mountain worship rituals that may include Magtaal."
+        ],
+        "step_by_step": [
+          "**Preparation**: The tuulich and the audience prepare for the performance. The ritual is often performed on specific dates, such as New Year's Eve (Bituun) or during dry spells to pray for rain.",
+          "**Setting**: The performance typically takes place in a traditional Mongolian ger (yurt) or a designated 'Khan Tuulis' (Epic Palace). In the broader context of mountain worship, it may be performed at sacred sites (ovoo) in nature.",
+          "**Recitation (Khaillah)**: The tuulich begins the melodic recitation of the Altai Magtaal. This is not a memorized text but an improvised poetic creation, often performed in a semi-conscious, trance-like state, accompanied by the traditional tovshuur instrument.",
+          "**Content and Structure**: The praise describes the majestic beauty and abundant resources of the Altai Mountains, including its landscapes, animals, plants, and natural features. The recitation may follow a structured pattern, such as describing the four cardinal directions, from the highest peaks to the lowest valleys, or according to the seasons.",
+          "**Ritualistic Purpose**: The performance is intended to appease the spirits of nature, particularly the mountain and water deities, and to invoke blessings for good fortune, health, and success for the community. It is believed to ensure harmony between humans and the natural world.",
+          "**Duration**: A complete Altai Magtaal performance can last 30 minutes or more, with each tuulich bringing their unique words and imagery to the improvisation."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Russia",
+            "element_name": "Altai Koomei (Overtone Singing)",
+            "relationship_reason": "Altai Magtaal is performed by various groups in the Altai region, including Turkic tribes. Overtone singing (Khöömii in Mongolian, Koomei in Altai) is often an integral part of these performances, and is a shared vocal tradition across the Altai-Sayan region."
+          },
+          {
+            "country": "Kazakhstan",
+            "element_name": "Dombra music and epic traditions",
+            "relationship_reason": "The Dombra, a long-necked lute, is a traditional instrument typical of Western Mongolia and Kazakh people, sometimes used to accompany Altai Magtaal. Kazakh communities also reside in the Altai region of Mongolia and share similar nomadic traditions and oral literature forms."
+          },
+          {
+            "country": "Tuva (Russia)",
+            "element_name": "Tuvan Khoomei (Throat Singing) and epic traditions",
+            "relationship_reason": "The Uriankhai people, key bearers of Altai Magtaal, have historical and cultural connections with Tuvans. The term 'Uriankhai' was historically applied to various groups in the Altai-Sayan region, including Tuvans. Tuvan Khoomei is a related overtone singing style, and epic traditions are common in the region."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a0406853",
+      "element_name": "La Danza de los Diablos (The Dance of the Devils)",
+      "category": "Performing Arts | Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.vivapuerto.com/viva-puerto-12/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.vivapuerto.com/viva-puerto-12/",
+        "https://fresnostatefocus.com/2019/11/05/dancing-with-the-devils/",
+        "https://prezi.com/p/k7j4f762f0t_/la-danza-de-los-diablos-afro-mexican-heritage-in-guerrero/",
+        "https://www.youtube.com/watch?v=k_l2jXz9F2A",
+        "https://karmatrails.com/blog/traditional-dances-of-mexico-la-danza-de-los-diablos/",
+        "https://studiochannelislands.org/event/la-danza-de-los-diablos-performance/",
+        "https://es.wikipedia.org/wiki/Danza_de_los_diablos",
+        "https://whitecenternow.com/2009/05/28/the-origins-of-the-son-de-los-diablos-dance/",
+        "https://www.researchgate.net/publication/381711739_Dance_and_Resistance_The_Tradition_of_the_Diablos_in_Afro-Mexican_Communities",
+        "https://scholarworks.calstate.edu/concern/presentations/w0892c90h",
+        "https://www.emaze.com/@AOTQQLZFI/museo-virtual-de-la-danza-de-los-diablos-de-cuajinicuilapa",
+        "https://www.gob.mx/cultura/prensa/la-danza-de-los-diablos-patrimonio-afromexicano-en-la-costa-chica-de-guerrero",
+        "http://www.seg.gob.mx/difusioneducativa/los-diablos/",
+        "https://www.youtube.com/watch?v=68S8b_h495k",
+        "https://www.etsy.com/listing/1572911913/danza-de-los-diablos-tigrera-instrument",
+        "https://www.youtube.com/watch?v=yYJ4T_Qf7iI",
+        "https://www.youtube.com/watch?v=s5FzF71bL40",
+        "https://www.youtube.com/watch?v=Fj-yL-44T3Y",
+        "https://secondface.org/devil-mask/",
+        "https://www.youtube.com/watch?v=Q-97f22uN34",
+        "https://www.youtube.com/watch?v=h0b3q-9yL-0",
+        "https://oncenoticias.tv/nacional/danza-de-los-diablos-tradicion-afrodescendiente-en-la-costa-de-guerrero-y-oaxaca",
+        "https://www.youtube.com/watch?v=7X-19h-o-0Y",
+        "https://www.youtube.com/watch?v=hV15Nl1cT44"
+      ],
+      "scraped_at": "2026-07-05T02:02:50.875026Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "Oaxaca",
+          "Guerrero"
+        ],
+        "lat": 17.0,
+        "lng": -96.5
+      },
+      "resume_analisa": {
+        "description": "La Danza de los Diablos, or The Dance of the Devils, is an Afro-Mexican traditional dance primarily performed in the Costa Chica region of Oaxaca and Guerrero, Mexico. It is characterized by dancers wearing elaborate masks, often crafted from deer skin, horse tails, leather, cardboard, or wood, featuring horns (from goats, deer, or cows) and sometimes animal jaws. The costumes vary, ranging from old, tattered clothes to brown pants and shirts, or entirely red attire. The 'Diablo Mayor' (main devil) often wears leather chaps. The dance involves vigorous footwork ('zapateado'), an inclined body, grunts resembling roars, and dynamic movements such as circles, front-and-back motions, and forceful actions. It is accompanied by unique musical instruments.",
+        "cultural_significance": "The dance originated during the colonial period as a ritual dedicated to the African god Ruja, through which enslaved Africans prayed for freedom from oppression. It also served as a powerful form of protest against the harsh conditions of slavery. Over time, the dance integrated Catholic and Indigenous influences, evolving into a potent symbol of resistance, cultural identity, and resilience for Afro-Mexican communities. It is predominantly performed during the Day of the Dead celebrations (November 1st and 2nd) to invite deceased loved ones to visit the living and partake in the festivities. Additionally, it is performed on other significant religious dates, such as the days of San Nicolás and the Virgin of Guadalupe. The Danza de los Diablos embodies the rich Afro-Mexican heritage and functions as a living archive of resistance against cultural erasure.",
+        "gemini_tags": [
+          "Afro-Mexican heritage",
+          "Traditional dance",
+          "Ritual",
+          "Resistance",
+          "Cultural identity",
+          "Day of the Dead",
+          "Oaxaca",
+          "Guerrero",
+          "Folkloric dance",
+          "Community practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Dance performance / Ritual",
+        "materials_and_tools": [
+          "Masks: Made from deer skin, horse tails/manes, leather, cardboard, or wood, often with horns (goat, deer, cow) and animal jaws.",
+          "Costumes: Varying from old/tattered clothes to brown pants and shirts, or all red. The 'Diablo Mayor' often wears leather chaps. Some costumes include chivarras (goatskin chaps), chicotes (whips), boots, jackets, scarves/handkerchiefs, and gloves.",
+          "Musical Instruments: Bote del diablo (also known as arcusa or tigrera, a friction drum), charrasca (a percussion instrument made from a donkey's or horse's jawbone), armónica (a wind instrument), violín (violin), and sometimes trumpets.",
+          "Cencerro (bell): Carried by the 'Diablo Mayor'.",
+          "Chicote (whip): Carried by the 'Diablo Mayor' to mark rhythm and discipline other devils."
+        ],
+        "step_by_step": [
+          "Preparation: Dancers, typically 12 to 36 men, including two principal characters – the 'Diablo Mayor' (also called 'Tenango' or 'Terrón') and 'La Minga' (the mother of the devils) – prepare their elaborate masks and costumes.",
+          "Musical Accompaniment: Musicians play traditional instruments such as the bote, charrasca, armónica, and sometimes violin or trumpet, often performing 'Chilenas' music.",
+          "Performance: The dance involves vigorous footwork ('zapateado'), an inclined body, grunts that mimic roars, and movements like circles, front and back movements, and forceful actions. The 'Diablo Mayor' leads the dance, setting the rhythm with a bell and whip.",
+          "Interaction: The devils may playfully chase attendees, and humor is a significant element of the performance. 'La Minga' and the 'Diablo Mayor' sometimes request 'sones' (musical pieces) as offerings, often incorporating playful or mischievous verses.",
+          "Context: The dance is performed during important cultural events, primarily the Day of the Dead, but also on other religious feast days like those of San Nicolás and the Virgin of Guadalupe."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Peru",
+            "element_name": "Son de los Diablos (Dance of the Devils)",
+            "relationship_reason": "Both 'La Danza de los Diablos' in Mexico and 'Son de los Diablos' in Peru originated during the colonial period among Afro-descendant communities. They served as expressions of cultural resistance against oppression and incorporate 'devil' imagery. The Peruvian 'Son de los Diablos' emerged from Corpus Christi celebrations in Lima and was appropriated by Afro-Peruvians as a symbol of cultural resistance during carnival."
+          },
+          {
+            "country": "Spain",
+            "element_name": "Dances depicting battles between Christians and Moors",
+            "relationship_reason": "Some accounts suggest that 'La Danza de los Diablos' in Mexico is also linked to Spanish traditions of performing dances that depict battles between Christians and Moors, adding a layer of European cultural influence to its rich tapestry."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-6112d7f7",
+      "element_name": "Makonde Carvings",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.shutterstock.com/image-photo/intricate-makonde-wooden-carving-revealing-260nw-2234053579.jpg",
+      "source_urls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJnyMxKXqKZKuk8iOt7UUEE3q6wX1JpI7DW-veC7h-W6JZ1cDZMQoEGMNCAQdduoy2-vXyJq1AlOwpXGo4RlOlqY_UZnPphAAEwjgul5ram_DNNs3NrNxgvDvXH2eoIEp8HgKa4mfK",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHOaXQucX9LbKvLQw-cqMQpxsKUS2MrtZo_wbnDaU5gOwrCPv6pCogoPRMDmhY1fiQVy9Gh0a16tlkNqfOT-KjdVqyk7wrJy2ju0gwVveFVRLgSw_HfZcNbYZwhXHUx38rM3kgzmq333aobX1q1VTWSNHFDSlZXvY18RtVeQmERLta0cMmkY7W9w==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoD7YcWDCt9mw40OECqerc22nBvXqAsF5AuuCESyzBahHl8GBXc5CezBXAZZSTmuHGDym6ldAyRE2AUAcGgdDRZ8SLgjFHn2jufgMpeeKOdmY6QXGUzH3UxLgtyt5E9mUk6hLIoE466TM==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6odMq9qVSzVujCL9r7gUiAuGkhh9S1uswLVxLSEhvh8wZRgsn3E0JZqfrqz-6RI8gLgm4BoWM97KRKibl19pt1vDq0sP1jFL5o1kQEjrtOvurvHFprmspIk1oD0CphDkJm7wOMA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiKnrWqOdldXOCCIeL4CSf6O_L_y2fH8mywtOZexC--RsFBI9eRiBYQHblUaFXiofvDBQdg_gbpazSz7U0cXo7IcKVTp9MPA-uOVMPmoOm-wCJSweTWSoaW5UF9f-AkH92F43yDs-GL-Qbalw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkqp8K9Sx2IZB97klRJ6X0MwLbIjteGPbTZ5Xqnze9-qHUzL5CP3mmKNNMQkj6CqqP4RrGWcKKAvmYb9YOmElP6mpPP0Me2pvjO36oS6RFUzKMglu-FkPMJMMUWjlYgUxtdL2fRRSH",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_TmCxaK4g59NoJ8RynbYVClOTL5kyFvpcbiYvoUtSd-Ld0Zbkk079bAO_G_t14BZskISED7zDfK1zkvekDqqcLOuIM65qGE9XOXFrXp2WS5wxk5cy4d0_6a4eGF_aXjC4qnrUOT4J5C1iqci79kgeY5Y1fr8dxDqb4uSb5QvdYzR6Z7qepEWHoHlmaq-1PafFdBeS9ZJxob4x60sY-mq8doVYRQalY6l4fXXezVXxLeUcTbb0RIAMqRshFFMpRtqu",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPCH7BLZVKG5mHKCKJ6OH2zTCeJR38Q_qd99rHLATe0BdUInFT_Y73IsopouOQ2Yo9UgXS6L_9eXrOAm1MWQ3A9kbsImelkdFeXubKdUvJVFmc5pvd2oyXJJaJZCQ3ukjCEzXgBA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3LX2LwxHPdri9zn2inwdwh6XrRMeZtHY7C9hYi_VjU30GNMqrR8t9207kus_2EzIWdx8kyTA9xDhy5pFYoHA3CmkxRyZdo6Tb2Gt4wHbEtVM8GnMMYrc=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZTsrfD91XaJ2mAhK4Xvi8jOEnSFjoymXuJNcrJ4IIi4pgSeItbVNZT5Jx83fpoTNwfy_ca8GqcpAPaykwtOb5Sr6aAkvdu0k1e5_H3zpJ02cvnhoWONM_FQ6DNlj-zV6bCXPXS8oE_VxM",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS0e9y4LEdqQZ1UJQi-la50NirbMaZHeMmEyQwhSQnjNi00ZRKxZWCEmMowLrp-CtIAu6qqG7VizyIkDL8-axcqudr-LXQf1tvGftFDJMSCxxNY1tUoKn5YpDmZu9ln6LpnQw8KoM70ASGzNt-g0K3UN35DfD07JnHeq4lvOJn1Imza16VdTksPnI2W1tbYttju4znprb1OxV8",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkZtnJnQlaxIgVwE7D5NToLzRUpci-c3P8EgQeJyXpSt5f5yxE28R60iBtrUfYj2LW7sDnzWCtirjvX8_oIYOtZN83VmWf4rKXrVcbZW8veGop-kftw_94yLgL",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDNrOeDg25zTw_CtxIfJxMXYRx40lQ89x_2qc0Ru6cuqFhyQcOV9sSALl0FTGMnvGIrx1F2fbWqptfW12hmWyk5V8j6j_MPcy4TVE38MGuLluOD55-NOr4pclBDxqV1xnADlcSBx2KpmMe50xxJoZe-eg=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbi3dIEQL5sauiESC3wVm-6VKl2bP3-JMBMgmynMD8CrV3g_zsGaypU988YWLE8tiYffG5kxRUe7HPvJDB6n1ZleSNma8QlM9UtbG6dReK3PwRmoaG6gXre1BcFDa_cwd0i9OnV7_a4RM=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpuvv7lSkvt11rzW1Mt3mptr5qYC5eG44B3buSPQmYwBitsB9ZCK07PuUrMIzUfB90ErVJOoXhzy8fVLPdCPwUMAyGrOg8jCDh43NJ6QUtEZiawtCoxuKe1lSpLP4hi6faQEa8D-VfAwk8dGPYoMsi_EwjxgrHY5qcWrBSHyZrGMM6yegMdwVJhTFUwmuD7BHcOz_P6NTpXnbHvJ1fyxedpQ1otnjJwWRvsGl4z1lld8lhui6Q8NTb4nlzhIzvWuNpQTl0axD_k0x4gp22AiyeL0sVTR7PFViK5gH7Hhtt6-deDvHOCvoL8G_694uiIh3SOwt87YsF0j376J7YPoPZ3ZYN42FL2mRpAy-mN8ws0zv0H1y__laoEszJ9dXzdaxENUYSGoENKqAn8Y00JLFss1VY22YCY3FhPjpA4nlvs3nT7bpwPB8c063UR4zI"
+      ],
+      "scraped_at": "2026-07-05T02:03:39.012131Z",
+      "location": {
+        "country": "Tanzania",
+        "provinces": [
+          "Mtwara Region",
+          "Lindi Region"
+        ],
+        "lat": -10.6990264,
+        "lng": 39.0217984
+      },
+      "resume_analisa": {
+        "description": "Makonde carvings are intricate wood sculptures crafted by the Makonde people, an ethnic group residing in southeastern Tanzania and northeastern Mozambique. These renowned works often depict human figures (Binadamu), ancestral spirits (Shetani), and communal unity, famously represented by the 'Ujamaa' or 'Tree of Life' sculptures. The primary material used is Mpingo wood, also known as African blackwood, prized for its exceptional hardness and dark, rich color.",
+        "cultural_significance": "Makonde carvings are deeply embedded in the cultural identity and historical narratives of the Makonde people. They serve as a vital medium for preserving oral traditions, transmitting cultural values, and educating younger generations about their ancestry, spiritual beliefs, and daily life. The 'Tree of Life' sculptures, in particular, symbolize the profound interconnectedness of all living beings and the paramount importance of family and community bonds. Additionally, masks known as 'Mapiko' are carved for men's initiation ceremonies and are believed to embody ancestral spirits. The intricate art form is traditionally passed down through generations, often from father to son, ensuring its continuity and cultural resonance.",
+        "gemini_tags": [
+          "Wood Carving",
+          "Traditional Craftsmanship",
+          "Tanzanian Culture",
+          "Mozambican Culture",
+          "African Blackwood",
+          "Shetani Sculpture",
+          "Ujamaa Sculpture",
+          "Oral Traditions",
+          "Matrilineal Society",
+          "Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Wood Carving",
+        "materials_and_tools": [
+          "Mpingo wood (African blackwood)",
+          "Axe",
+          "Adze (hooked cutting tool)",
+          "Chisels",
+          "Mallet",
+          "Knives",
+          "Rasps",
+          "Sandpaper",
+          "Natural wax or lemon oil (for finishing)"
+        ],
+        "step_by_step": [
+          "**Wood Selection**: A solid trunk or block of Mpingo wood is carefully chosen, with consideration for its grain and inherent hardness.",
+          "**Conceptualization**: The carver typically visualizes the design mentally, often without prior sketching, perceiving the figures and forms within the raw log.",
+          "**Rough Carving**: An axe or adze is used to remove excess wood and establish the basic, rough shape of the intended sculpture.",
+          "**Detail Carving**: Chisels and smaller knives are then employed to meticulously refine the figures, shape intricate features, and hollow out spaces, particularly for complex designs such as the 'Tree of Life' with its interlocking human forms.",
+          "**Smoothing and Polishing**: The carved piece is sanded to achieve a smooth surface, which also serves to enhance the natural beauty of the wood's grain.",
+          "**Finishing Touches**: Natural wax or lemon oil may be applied to enrich the wood's color and provide a protective finish.",
+          "**Storytelling/Signature**: The artisan often imbues the finished piece with elements of storytelling or a personal signature, reflecting the narrative and cultural significance of the carving."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Mozambique",
+            "element_name": "Makonde Carvings",
+            "relationship_reason": "The Makonde people are indigenous to both southeastern Tanzania and northeastern Mozambique, sharing a common cultural heritage and traditional carving practices across this transboundary region."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-03T01:56:46.579931Z",
-    "total_ich_elements": 185,
-    "complete_records": 172,
+    "generated_at": "2026-07-05T02:04:10.106974Z",
+    "total_ich_elements": 188,
+    "complete_records": 175,
     "incomplete_records": 13,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 63,
+      "Traditional Craftsmanship": 64,
       "Social Practices & Rituals": 41,
       "Culinary Traditions": 35,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 17,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 13,
+      "Oral Traditions": 14,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
@@ -16415,7 +16684,8 @@
       "Social Practices & Rituals | Traditional Craftsmanship": 1,
       "Performing Arts | Traditional Craftsmanship": 1,
       "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1,
-      "Oral Traditions | Performing Arts | Social Practices & Rituals": 1
+      "Oral Traditions | Performing Arts | Social Practices & Rituals": 1,
+      "Performing Arts | Social Practices & Rituals": 1
     }
   }
 }
