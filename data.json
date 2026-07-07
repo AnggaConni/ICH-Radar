@@ -16661,16 +16661,100 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2b60e6c3",
+      "element_name": "Minangkabau Matrilineal System and Adat",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://www.dreamstime.com/traditional-minangkabau-house-west-sumatra-indonesia-featuring-distinctive-multi-tiered-curved-roof-pointed-ends-resembling-buffalo-horns-image280140730.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Minangkabau_culture",
+        "https://en.wikipedia.org/wiki/Minangkabau_marriage",
+        "https://www.britannica.com/topic/Minangkabau",
+        "https://factsanddetails.com/southeast-asia/Indonesia/sub5_4a/entry-3987.html",
+        "https://www.ebsco.com/products/research-databases/research-starters/minangkabau-people",
+        "https://www.journal.uii.ac.id/LexRenaissance/article/view/26993",
+        "https://www.theknot.com/content/indonesian-wedding-traditions",
+        "https://www.stronggergirl.com/2016/07/baralek-gadang-traditional-wedding.html",
+        "https://www.dreamstime.com/traditional-minangkabau-house-west-sumatra-indonesia-featuring-distinctive-multi-tiered-curved-roof-pointed-ends-resembling-buffalo-horns-image280140730.jpg",
+        "https://www.simple.wikipedia.org/wiki/West_Sumatra",
+        "https://www.gps-coordinates.net/latitude-longitude/padang-indonesia",
+        "https://feminismandreligion.com/2018/05/07/how-egalitarian-matriarchy-works-among-the-minangkabau-of-west-sumatra-by-carol-p-christ/",
+        "https://museumvolunteersjmm.wordpress.com/2016/04/04/the-minangkabau-of-negeri-sembilan/"
+      ],
+      "scraped_at": "2026-07-07T02:02:39.517527Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "West Sumatra"
+        ],
+        "lat": -0.5827529,
+        "lng": 100.6133379
+      },
+      "resume_analisa": {
+        "description": "The Minangkabau are the world's largest matrilineal society, indigenous to West Sumatra, Indonesia. Their social structure is characterized by a system where property, family name, and land are passed down from mother to daughter. While men traditionally hold responsibility for religious and political affairs, women play significant roles in these areas and often manage the household and lineage. The traditional domestic unit is the 'rumah gadang' (big house), which is under the control of a head woman and inhabited by her female relatives, including her sisters and their daughters. Husbands are traditionally considered guests in their wives' homes.",
+        "cultural_significance": "The Minangkabau matrilineal system is deeply intertwined with 'adat' (customary law), a comprehensive system that governs social organization, inheritance, marriage, and ritual practices. This adat coexists with Islamic influences, as encapsulated in the philosophy 'Adat basandi syarak, syarak basandi Kitabullah' (Customs are based on Islamic Law, Islamic Law is based on the Quran). This unique integration has afforded Minangkabau women a relatively advantageous position in society compared to many patriarchal cultures, with women holding significant authority in family matters and economic assets often passing through female lines. The system emphasizes community, mutual responsibility, and the importance of elders, with sayings and cultural expressions like ceremonial orations and folk theater reinforcing these values.",
+        "gemini_tags": [
+          "Matrilineal Society",
+          "Customary Law",
+          "Indigenous Knowledge",
+          "Social Structure",
+          "Inheritance System",
+          "Cultural Identity",
+          "Gender Roles",
+          "Community Practices",
+          "Oral Traditions",
+          "Religious Syncretism"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Marriage Practices",
+        "materials_and_tools": [
+          "Betel in 'Carano' (a traditional container)",
+          "Groom's traditional clothes",
+          "Yellow rice with chicken singgang (traditional food)",
+          "Side dishes, pastries, and fruits (as gifts)",
+          "Elaborate gold headdresses (for brides, e.g., Suntiang)",
+          "Songket (traditional woven fabric)",
+          "Gold jewelry",
+          "Talempong (small kettle gongs)",
+          "Gendang (drums)",
+          "Pencak Silat (martial arts performance)",
+          "Brightly colored cloth canopy"
+        ],
+        "step_by_step": [
+          "**Maresek (Engagement/Proposal)**: A member of the prospective bride's family initiates the courtship by seeking the agreement of the prospective groom's family. The bride's maternal family, particularly the women, are heavily involved in making the marriage proposal and negotiating the terms.",
+          "**Malam Bainai (Henna Night)**: The night before the wedding, the bride's female friends and relatives gather for a henna night. This ceremony symbolizes the bride's transition from maidenhood and includes festive singing and the application of henna designs believed to bring blessings.",
+          "**Baralek Gadang (Wedding Ceremony)**: This is a grand series of ceremonies that can last for several days or even up to two weeks, involving extensive participation from both families.",
+          "**Japuik Marapulai (Picking up the Groom)**: The bride's family formally goes to the groom's home to pick him up. This procession is often accompanied by traditional Minangkabau music (talempong, gendang) and 'Galombang Pasambahan' dancers performing a martial dance (pencak silat) to clear a symbolic path.",
+          "**Exchange of Gifts**: During the Japuik Marapulai, the bride's family brings gifts such as betel in a 'Carano', the groom's clothes, yellow rice with chicken singgang, side dishes, pastries, and fruits as a sign of goodwill. The bride's clan may also provide gifts like songket, food, traditional cakes, and gold jewelry to support the new household.",
+          "**Granting Title to the Groom**: In some instances, a traditional title is bestowed upon the groom during the procession, signifying his maturity and new status within the community.",
+          "**Basandiang**: The bride and groom, adorned in elaborate traditional Minangkabau wedding attire (including a golden Suntiang headdress for the bride), sit side-by-side on an aisle to greet guests.",
+          "**Post-Marriage Residence**: Following the marriage, the husband traditionally moves into the wife's maternal home, although historically he was considered a visiting guest who would return to his mother's home."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Malaysia",
+            "element_name": "Adat Perpatih",
+            "relationship_reason": "The Minangkabau matrilineal system, known as Lareh Bodi-Caniago, is also practiced as Adat Perpatih in Negeri Sembilan, Malaysia. Minangkabau communities in Negeri Sembilan maintain this unique matrilineal customary system, which shares fundamental principles with its Indonesian counterpart."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-05T02:04:10.106974Z",
-    "total_ich_elements": 188,
-    "complete_records": 175,
+    "generated_at": "2026-07-07T02:03:12.461073Z",
+    "total_ich_elements": 189,
+    "complete_records": 176,
     "incomplete_records": 13,
     "categories_breakdown": {
       "Traditional Craftsmanship": 64,
-      "Social Practices & Rituals": 41,
+      "Social Practices & Rituals": 42,
       "Culinary Traditions": 35,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 17,
