@@ -16745,15 +16745,93 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-86994698",
+      "element_name": "Ghalamzani (Persian Metal Engraving)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//craftihouse.com/blogs/news/the-art-of-persian-ghalamzani-a-tradition-of-metalwork&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://craftihouse.com/blogs/news/the-art-of-persian-ghalamzani-a-tradition-of-metalwork",
+        "https://toirantour.com/ghalamzani-a-persian-tradition-in-metal-engraving/",
+        "https://tappersia.com/blog/metalworkengraving-or-ghalamzani/",
+        "https://sermeh.com/traditional-hand-engraving-ghalamzani-archives/",
+        "https://persiscollection.com/blogs/news/ghalam-zani-art",
+        "https://www.tehrantimes.com/news/490407/Isfahan-s-ancient-art-of-Ghalamzani-gains-international-recognition",
+        "https://persiada.com/ghalamzani-artistic-persian-hand-engraving-on-metals/",
+        "https://irandoostan.com/qalamzani-ghalamzani-iranian-ancient-metalwork-art/",
+        "https://ivisitiran.com/about-ghalamzani/",
+        "https://persiscollection.com/blogs/news/introduction-to-the-art-of-ghalam-zani",
+        "https://www.mehrnews.com/news/6134371/Discover-Soul-of-Iran-A-Deep-Dive-into-Persian-Handicrafts",
+        "https://www.persiancarpetguide.com/blog/how-to-identify-authentic-persian-ghalamzani-metalwork",
+        "https://persianatravel.com/ghalamzani-of-isfahan/",
+        "https://www.imna.ir/news/600746/persian-ghalamzani-photo-and-history"
+      ],
+      "scraped_at": "2026-07-09T01:56:58.424534Z",
+      "location": {
+        "country": "Iran",
+        "provinces": [
+          "Isfahan"
+        ],
+        "lat": 32.6707877,
+        "lng": 51.6650002
+      },
+      "resume_analisa": {
+        "description": "Ghalamzani, also known as Persian metal engraving, is an ancient Iranian art form involving the engraving of intricate patterns and designs on various metals such as copper, brass, silver, and gold. The term 'Ghalamzani' is derived from the Persian words 'Ghalam' (pen) and 'Zani' (engraving), literally meaning 'pen engraving'. This meticulous craft transforms raw metal into stunning works of art through precise carving and hammering.",
+        "cultural_significance": "Ghalamzani boasts a rich history spanning over a thousand years, with its origins tracing back to the Scythians and flourishing during the Sassanid (224-651 CE) and Safavid (1501-1736 CE) eras. Initially used for decorating armor and household items, it later evolved into elaborate decorative pieces, reflecting the spiritual and cultural practices of ancient Iran. The designs are deeply inspired by Iran's rich cultural heritage, featuring intricate floral patterns (Gol-o-Morgh), geometric shapes, calligraphy (often with quotes from the Quran or Persian poetry), hunting scenes, and royal scenes. Ghalamzani is a testament to the enduring artistic traditions of Persia and has been recognized by UNESCO as an intangible cultural heritage of Iran. Recently, it also received an international Geographical Indication (GI), highlighting Isfahan as its primary hub and safeguarding its authenticity against claims by other countries.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Metalwork",
+          "Engraving",
+          "Iranian Art",
+          "Cultural Heritage",
+          "Isfahan Handicrafts",
+          "Ancient Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship Process",
+        "materials_and_tools": [
+          "Metals (copper, brass, silver, gold)",
+          "Hammers",
+          "Chisels (engraving needles/pens of different shapes and sizes)",
+          "Gypsum and bitumen mixture (or tar)",
+          "Charcoal powder (or soot/blackening materials)",
+          "Bending machines (for shaping metal)",
+          "Anvils",
+          "Calipers",
+          "Electric ovens (for heating metal/tar)",
+          "Brushes",
+          "Waxes",
+          "Dyes",
+          "Sanding materials",
+          "Polishing materials"
+        ],
+        "step_by_step": [
+          "**Preparation of the Metal Object**: The chosen metal object (e.g., tray, plate, vase) is initially shaped, sometimes heated, and hammered to achieve a smooth surface.",
+          "**Filling the Object**: The inside or backside of the metal object is filled with a mixture of gypsum and bitumen (or tar). This layer serves to reduce noise during engraving, absorb the shock from hammer blows, and prevent the metal from piercing.",
+          "**Drawing the Design**: The artisan carefully draws or copies the desired intricate pattern onto the surface of the metal.",
+          "**Engraving the Design**: Using a variety of specialized chisels (also called pens) and a hammer, the artisan meticulously engraves the patterns onto the metal. Different techniques are employed:\n    *   **Background Engraving**: The background is carved out, leaving the main design raised (embossed) on the metal sheet.\n    *   **Chasing/Etching**: Shallow hammering is used to trace fine, delicate lines into the metal.\n    *   **Relief (Masheh)**: Deep, three-dimensional embossing is created by hammering from both the front and the back of the metal sheet.\n    *   **Metal Removing**: In some methods, parts of the metal are removed using steel tools, depressing the surface.\n    *   **Isfahan Style**: Engraving is primarily achieved by striking the chisel with a hammer.\n    *   **Tabriz Style**: The pressure for moving the chisel and engraving is applied by the artisan's wrist.",
+          "**Detaching the Filling**: Once the engraving is complete, the gypsum and bitumen mixture (or tar) is detached from the metal object by applying heat.",
+          "**Cleaning and Darkening**: The engraved grooves and chiseled areas are then covered with charcoal powder, soot, or other blackening materials. This process enhances contrast, making the intricate designs more visible and complex.",
+          "**Finishing**: The final steps involve cleaning and polishing the piece. Sometimes, the engraved metal is coated with gold or silver to further enhance its beauty. Other finishing techniques may include applying waxes, dyes, sanding, and additional polishing."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-07T02:03:12.461073Z",
-    "total_ich_elements": 189,
-    "complete_records": 176,
+    "generated_at": "2026-07-09T01:57:27.016397Z",
+    "total_ich_elements": 190,
+    "complete_records": 177,
     "incomplete_records": 13,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 64,
+      "Traditional Craftsmanship": 65,
       "Social Practices & Rituals": 42,
       "Culinary Traditions": 35,
       "Culinary Traditions | Social Practices & Rituals": 3,
