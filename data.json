@@ -16823,16 +16823,260 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7a5a9dce",
+      "element_name": "Koh Kret Pottery",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.shutterstock.com/image-photo/heap-orange-brown-unglazed-terracotta-149679077.jpg",
+      "source_urls": [
+        "https://thailandnow.in.th/culture-and-society/koh-kret-a-pottery-haven-preserves-its-thai-mon-heritage/",
+        "https://www.l3nr.org/posts/500549",
+        "https://www.l3nr.org/posts/500550",
+        "https://www.nationthailand.com/thailand/economy/40024976",
+        "https://www.colossalvacation.com/explore-the-thai-pottery-village-on-koh-kret-a-timeless-craft-of-tradition/",
+        "https://www.sawasdee.thaiairways.com/article/spend-time-crafting-pottery-in-a-workshop-on-koh-kret/",
+        "https://www.thelostpassport.com/koh-kret-pottery-village-brewery/",
+        "https://www.youtube.com/watch?v=kR2t19c118I",
+        "https://www.dreamstime.com/kret-pottery-stock-photos-free-royalty-free-stock-photos-from-dreamstime-image278381830",
+        "https://www.academia.edu/40899450/The_Current_Situation_and_Use_of_Pottery_in_Myanmar",
+        "https://www.alixknipeceramics.com/blog/2010/10/19/kyauk-myaung-one-of-largest-southeast-asian-pottery-communities",
+        "https://www.dreamstime.com/traditional-thai-mon-pottery-local-craft-market-koh-kret-village-center-pottery-production-thailand-image119279092",
+        "https://asia.si.edu/research/ceramics-in-burma-myanmar/",
+        "https://www.youtube.com/watch?v=11X75z-0-48",
+        "https://www.peek.com/dt/koh-kret-island-mon-culture-pottery-tour-book-tours-activities-at-peekcom/",
+        "https://www.istockphoto.com/photos/koh-kret",
+        "https://www.youtube.com/watch?v=Fj7r94n907g",
+        "https://www.asiantourmyanmar.com/mon-tribe/"
+      ],
+      "scraped_at": "2026-07-11T01:43:12.677031Z",
+      "location": {
+        "country": "Thailand",
+        "provinces": [
+          "Nonthaburi"
+        ],
+        "lat": 13.8610918,
+        "lng": 100.3456772
+      },
+      "resume_analisa": {
+        "description": "Koh Kret Pottery is a traditional handicraft originating from Koh Kret, an island in the Chao Phraya River in Nonthaburi Province, Thailand. It is renowned for its distinctive unglazed terracotta clay, which is fine, dense, and non-grainy, making it ideal for intricate shaping and carving. The local clay contains small amounts of iron, which imparts a natural reddish-orange hue to the pottery after firing. Mon-style pottery often features beautifully carved patterns inspired by nature, such as lotus blossoms, leaves, and the 'Kranok' (triangular flame motif). While traditionally used for household items, Koh Kret pottery has evolved to include souvenirs and modern decorative pieces, adapting to contemporary demands.",
+        "cultural_significance": "Koh Kret Pottery represents a valuable cultural heritage of the Mon Thai people, whose ancestors settled on Koh Kret during the Thonburi and Rattanakosin periods, bringing their unique pottery-making techniques. This ancient craft has been passed down through generations, reflecting the island's cultural pride and the enduring Mon heritage. In 2010, it was registered as a Geographical Indication (GI) product by the Department of Intellectual Property, Ministry of Commerce, to safeguard its unique identity and enhance its economic value. Contemporary efforts focus on preserving the traditional craft while adapting it through workshops for visitors and the development of modern designs to ensure its continued relevance and sustainability.",
+        "gemini_tags": [
+          "Pottery",
+          "Ceramics",
+          "Traditional Craftsmanship",
+          "Mon Culture",
+          "Thai Handicraft",
+          "Terracotta",
+          "Cultural Heritage",
+          "Nonthaburi"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand-built and wheel-thrown pottery, traditionally unglazed and fired in kilns. Pit-firing is also used for specific blackware.",
+        "materials_and_tools": [
+          "Fine terracotta clay (sourced from Chao Phraya River on Koh Kret)",
+          "Water",
+          "Sawdust (for blackware)",
+          "Clay mixer (เครื่องกวนดิน)",
+          "Sieve for filtering gravel and sand (ตะแกรงกรองกรวดทราย)",
+          "Dewatering machine (เครื่องรีดน้ำ)",
+          "Clay kneading machine (เครื่องนวดดิน)",
+          "Potter's wheel (แป้นหมุนขึ้นรูป)",
+          "Carving tools (แป้นแกะสลัก, มีดแกะสลัก, ชุดอุปกรณ์แกะสลัก, creative DIY tools like toy car wheels or pen caps)",
+          "Traditional wood-fired kilns (เตาฟืน) or modern gas/electric kilns (เตาแบบใช้แก๊สเป็นเชื้อเพลิง หรือเตาไฟฟ้า)"
+        ],
+        "step_by_step": [
+          "1. Clay Preparation: The raw clay is mixed, filtered to remove impurities like gravel and sand, dewatered, and then thoroughly kneaded. This process ensures the clay is fine, dense, sticky, and has the appropriate moisture content for shaping.",
+          "2. Shaping (Throwing): The prepared clay is placed onto a potter's wheel and skillfully shaped by hand into the desired form, such as cups, pots, or vases.",
+          "3. Initial Drying: Once the desired shape is achieved, the piece is carefully cut from the potter's wheel using a thin wire. It is then left to air dry for approximately 12 hours, or until it reaches a semi-dry, firm consistency suitable for carving.",
+          "4. Carving: While the clay is still firm but not fully dry, intricate traditional patterns, including lotus motifs, leaves, or the 'Kranok' (triangular flame motif), are meticulously hand-carved onto the surface using various carving knives and specialized tools. Artisans may also employ creative, repurposed tools.",
+          "5. Final Drying: The carved pottery pieces are then left to dry completely, ensuring all moisture has evaporated before firing.",
+          "6. Firing: The dried pieces are fired in kilns. Traditionally, open bonfires or brick kilns were used, but many modern potters use gas or electric kilns. Some traditional wood-fired kilns are still utilized, especially for specific color outcomes. The firing process is critical for the pottery's strength and color consistency.",
+          "7. Temperature and Duration: Wood-fired kilns typically operate around 400 degrees Celsius and can take up to four days, starting with low heat and gradually increasing. Other kilns may reach higher temperatures (800-1400 degrees Celsius).",
+          "8. Color Variation: The natural iron in Koh Kret clay produces a reddish-orange color when fired. To achieve black pottery, a re-firing process is used where already-fired red pottery is re-fired with raw sawdust from hardwood, allowing carbon to be absorbed into the clay. Grey pottery can result from uneven heating and carbon absorption during this black firing process."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Myanmar",
+            "element_name": "Mon Pottery",
+            "relationship_reason": "The pottery tradition on Koh Kret is directly linked to the Mon ethnic group, who migrated from Mon State in southern Myanmar to Thailand. Mon people in Myanmar have a long and active history of pottery making, and some Mon-built kilns in Thailand are nearly identical to those found in Myanmar, indicating a shared heritage and transfer of pottery-making techniques."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a5fe29c9",
+      "element_name": "Rare Dutch Domestic Animal Breeds (Zeldzame Nederlandse Huisdierrassen)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://www.szh.nl/wp-content/uploads/2021/03/Lakenvelder-koe-SZH.jpg",
+      "source_urls": [
+        "https://www.szh.nl/over-szh/",
+        "https://nl.wikipedia.org/wiki/Stichting_Zeldzame_Huisdierrassen",
+        "https://chaamshoen.nl/over-stichting-zeldzame-huisdierrassen/",
+        "https://makblokweer.nl/zeldzame-huisdierrassen/",
+        "https://www.wur.nl/en/research-results/chairgroups/centre-for-genetic-resources-the-netherlands-cgn/animal-genetic-resources.htm",
+        "https://livestockconservancy.org/heritage-breeds/heritage-breed-details/dutch-belted-cattle/",
+        "https://www.culturecheesemag.com/farm-animal/dutch-belted-cows"
+      ],
+      "scraped_at": "2026-07-11T01:43:46.290249Z",
+      "location": {
+        "country": "Netherlands",
+        "provinces": [
+          "All provinces",
+          "Gelderland",
+          "Friesland",
+          "Noord-Holland"
+        ],
+        "lat": 52.2434979,
+        "lng": 5.6343227
+      },
+      "resume_analisa": {
+        "description": "Rare Dutch Domestic Animal Breeds, known as 'Zeldzame Nederlandse Huisdierrassen', encompass old, original Dutch breeds of farm and domestic animals that are threatened with extinction or are kept in very small numbers. These breeds represent a significant part of the Netherlands' living heritage and are actively preserved by organizations like the Stichting Zeldzame Huisdierrassen (SZH). They are valued for their unique biological and cultural-historical characteristics, embodying centuries of traditional breeding and adaptation to local conditions. Examples include the Lakenvelder cow, Drenthe Heath Sheep, and Bonte Bentheimer pig.",
+        "cultural_significance": "These rare breeds are considered 'living heritage' because they are integral to the cultural identity and agricultural history of the Netherlands. They are crucial for maintaining genetic diversity, which is essential for future food security and the resilience of agricultural systems against diseases and changing environmental conditions, supporting a transition to circular agriculture. Beyond their agricultural value, they contribute to nature and landscape management, serve educational purposes in children's farms and open-air museums, and offer recreational value due to their diverse forms and colors. Community involvement in their preservation is fostered through events like the 'Levend Erfgoed Dagen' (Living Heritage Days), which connect the public with these animals and their dedicated keepers.",
+        "gemini_tags": [
+          "Living Heritage",
+          "Animal Husbandry",
+          "Biodiversity Conservation",
+          "Cultural Identity",
+          "Agricultural Heritage",
+          "Community Practice",
+          "Netherlands"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Conservation and Breeding Practices",
+        "materials_and_tools": [
+          "Genetic material (sperm, embryos, oocytes, DNA)",
+          "Gene banks (cryopreservation facilities)",
+          "Breeding programs and herd books",
+          "Educational materials and public outreach programs",
+          "Financial support and subsidies",
+          "Dedicated breeders, farmers, and hobbyists"
+        ],
+        "step_by_step": [
+          "Identification and Registration: Rare and endangered Dutch breeds are identified, and their populations are monitored through herd books and registries maintained by breed organizations and the SZH.",
+          "In Situ Conservation (Live Animals): Support is provided to individuals and communities who keep and breed these animals in their natural environments. This includes promoting new roles for the breeds in sustainable agriculture, nature and landscape management, education, recreation, and therapy. Public events like 'Levend Erfgoed Dagen' are organized to raise awareness and encourage participation in their preservation.",
+          "Ex Situ Conservation (Gene Banks): Genetic material, such as sperm, embryos, oocytes, and DNA, is collected and cryopreserved in gene banks, notably by the Centre for Genetic Resources, the Netherlands (CGN). This serves as a safeguard against extinction and a resource for reintroducing genetic diversity if needed.",
+          "Knowledge Exchange and Promotion: Efforts are made to disseminate knowledge about the breeds, their history, and their importance through publications (e.g., 'Zeldzaam huisdier' magazine) and educational initiatives. Advocacy and lobbying for supportive legislation and policies are also undertaken.",
+          "Research and Development: Ongoing research focuses on improving cryopreservation techniques and understanding genetic diversity to enhance conservation strategies."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "United States",
+            "element_name": "Dutch Belted Cattle (Lakenvelder)",
+            "relationship_reason": "The Dutch Belted cattle, known as Lakenvelder in the Netherlands, were imported to the United States in the 19th century. They were maintained and bred there, and at one point, American genetic material was used to help revive the dwindling population of the breed in its native Holland, demonstrating a significant shared heritage and genetic exchange."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-963db1e3",
+      "element_name": "Wiwitan",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.traveloka.com/explore/activities/upacara-wiwitan-jawa/161491&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.traveloka.com/explore/activities/upacara-wiwitan-jawa/161491",
+        "https://salam.slemankab.go.id/first/artikel/122-Tradisi-wiwitan-Cara-Masyarakat-Jawa-Bersyukur-Atas-Hasil-Panen",
+        "https://www.detik.com/edu/detikpedia/d-7128695/tradisi-wiwitan-cara-petani-jawa-mengungkapkan-syukur-saat-musim-panen-tiba",
+        "https://kabargerbangmadu.slemankab.go.id/first/artikel/172-Lestarikan-Tradisi-Jawa--Petani-Bintaran-Wetan-Gelar-Upacara-Adat-Wiwitan",
+        "https://pendowoharjo.bantulkab.go.id/first/artikel/1932-Lestarikan-Budaya-Jawa--Poktan-Sumber-Makmur-Diro-Lakukan-Wiwitan",
+        "https://budaya-indonesia.org/Tradisi-Upacara-Wiwit-Menyambut-Panen"
+      ],
+      "scraped_at": "2026-07-11T01:44:20.696928Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Central Java",
+          "Special Region of Yogyakarta",
+          "East Java"
+        ],
+        "lat": -7.3032412,
+        "lng": 110.0044145
+      },
+      "resume_analisa": {
+        "description": "Wiwitan is a traditional Javanese ritual performed by farmers before the main rice harvest begins. The name \"Wiwitan\" originates from the Javanese word \"wiwit,\" meaning \"to start\" or \"to begin,\" signifying the commencement of the rice harvest. It marks a sacred moment before the traditional 'ani-ani' (a small hand-held rice knife) touches the rice stalks.",
+        "cultural_significance": "This ritual serves as an expression of profound gratitude to God (or Dewi Sri, the Rice Goddess, in older indigenous Javanese beliefs) for the abundant harvest. Historically, Wiwitan is rooted in the indigenous Javanese belief system (Kejawen) that venerates Dewi Sri as the Goddess of Rice and a symbol of fertility. It also embodies respect for the earth, considered 'sedulur sikep' (human's sibling), which must be honored and preserved as the source of life. The communal meal, known as 'kembul bujana,' held after the prayers, symbolizes social equality among landowners and farm laborers, strengthening community bonds and preventing social conflicts. Despite advancements in modern agricultural technology, the Wiwitan tradition continues to be widely practiced in rural areas, preserving local wisdom and the agrarian identity of the nation.",
+        "gemini_tags": [
+          "Javanese Culture",
+          "Harvest Ritual",
+          "Agrarian Tradition",
+          "Gratitude Ceremony",
+          "Dewi Sri",
+          "Communal Meal",
+          "Indonesian Folklore",
+          "Social Practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual steps and communal feast",
+        "materials_and_tools": [
+          "Sesaji (offerings) including: Nasi tumpeng (conical rice mound), Ingkung ayam (whole roasted chicken), Nasi gurih (savory rice), Sayur nangka (jackfruit vegetable dish), Krupuk (crackers), Tahu tempe (tofu and tempeh), Gereh pethek (small fried fish), Peyek (peanut brittle crackers), Jajan kecil (small snacks), Telur (eggs), Thonto (processed coconut food), Kuluban (boiled vegetables like turi and dadap leaves), Sambel gepeng (soybean chili sauce), Sekol sepuh (crispy rice from cooked rice).",
+          "Dupa (incense).",
+          "Ani-ani (traditional rice harvesting knife).",
+          "Tikar pandan (pandan mat)."
+        ],
+        "step_by_step": [
+          "**Preparation of Offerings**: The farmer's family, particularly the wife, meticulously prepares all the offerings, known as 'sesaji' or 'ubarampe'.",
+          "**Gathering at the Field**: Farmers and other villagers gather at the edge of the rice field, typically sitting on pandan mats.",
+          "**Ritual Leadership**: The ceremony is led by a 'Mbah Kaum' or a respected village elder, who possesses deep knowledge of customary procedures and prayers.",
+          "**Prayers and Offerings**: The Mbah Kaum recites prayers, seeking a smooth harvest and continued fertility of the land. Incense is often burned during this phase. The prepared offerings are placed at a designated corner of the rice field.",
+          "**Symbolic First Harvest**: A symbolic portion of the rice is cut using an 'ani-ani', marking the official beginning of the harvest season.",
+          "**Communal Meal (Kembul Bujana)**: Following the prayers and symbolic harvest, the offerings are not taken home but are shared and consumed together by everyone present at the rice field. This communal eating symbolizes social equality and strengthens the bonds of brotherhood within the community."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Indonesia (Sunda)",
+            "element_name": "Seren Taun",
+            "relationship_reason": "A traditional harvest festival expressing gratitude for abundant rice harvests, similar to Wiwitan's core purpose."
+          },
+          {
+            "country": "Indonesia (Dayak Wehea)",
+            "element_name": "Lom Plai",
+            "relationship_reason": "The peak of the harvest festival, involving various pre-processions and expressions of gratitude for the harvest."
+          },
+          {
+            "country": "Indonesia (Dayak Kanayatn)",
+            "element_name": "Naik Dango",
+            "relationship_reason": "A yearly ritual expressing gratitude to the creator for abundant harvest."
+          },
+          {
+            "country": "Indonesia (Lio Ende)",
+            "element_name": "Mbama",
+            "relationship_reason": "A harvest thanksgiving ritual involving prayers, offerings, and communal activities."
+          },
+          {
+            "country": "Indonesia (Toraja)",
+            "element_name": "Sisemba",
+            "relationship_reason": "A post-harvest foot-kicking ritual expressing gratitude for the harvest and believed to ensure future abundance, often followed by a communal meal."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-09T01:57:27.016397Z",
-    "total_ich_elements": 190,
-    "complete_records": 177,
+    "generated_at": "2026-07-11T01:44:50.868251Z",
+    "total_ich_elements": 193,
+    "complete_records": 180,
     "incomplete_records": 13,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 65,
-      "Social Practices & Rituals": 42,
+      "Traditional Craftsmanship": 66,
+      "Social Practices & Rituals": 44,
       "Culinary Traditions": 35,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 17,
