@@ -17067,15 +17067,317 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-149251ce",
+      "element_name": "Kiyiz Basuu (Felt Making)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/05907-CLT-ICH-WEB-THUMB.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/USL/ala-kiyiz-and-shyrdak-art-of-kyrgyz-traditional-felt-carpets-00693",
+        "https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1003&context=textileart",
+        "https://www.selvedge.org/blogs/selvedge/traditional-kyrgyz-felting",
+        "https://neprajz.hu/en/collections/kyrgyz-shyrdak",
+        "https://en.wikipedia.org/wiki/Ala_kiyiz",
+        "https://daryo.uz/en/2026/05/26/kyrgyzstan-seeks-to-add-felt-craft-to-unescos-intangible-heritage-list",
+        "https://abaicenter.kz/en/felt-in-the-culture-of-the-peoples-of-the-great-steppe/",
+        "https://ich.unesco.org/en/videos/ak-kalpak-craftsmanship-traditional-knowledge-and-skills-in-making-and-wearing-kyrgyz-mens-headwear-00569",
+        "https://www.coolhunting.com/culture/learning-about-felt-in-kyrgyzstan/",
+        "https://www.cosmonautmag.com/2025/07/making-a-felt-rug-in-kyrgyzstan/",
+        "https://kiyiz.com/pages/process",
+        "https://aigine.kg/en/handicrafts/"
+      ],
+      "scraped_at": "2026-07-13T01:48:05.252766Z",
+      "location": {
+        "country": "Kyrgyzstan",
+        "provinces": [
+          "Naryn Region",
+          "Issyk-Kul Region",
+          "Chuy Region",
+          "Jalal-Abad Region",
+          "Batken Region"
+        ],
+        "lat": 41.2845348,
+        "lng": 75.4606289
+      },
+      "resume_analisa": {
+        "description": "Kiyiz basuu, or felt making, is a deeply rooted traditional craft of the Kyrgyz people, involving the intricate process of transforming sheep wool into a durable, non-woven fabric. This craft produces a variety of essential items such as felt carpets (ala-kiyiz and shyrdak), traditional men's hats (ak-kalpak), clothing, and decorations for yurts, the nomadic dwelling. The process relies on the natural properties of wool to shrink and mat under the influence of heat, moisture, and agitation.",
+        "cultural_significance": "Felt making is intrinsically linked to the nomadic lifestyle and cultural identity of the Kyrgyz people. Felt products provide crucial insulation for yurts against harsh Central Asian climates and serve as a canvas for artistic expression through symbolic patterns and vibrant colors. The craft fosters community cohesion, with knowledge and skills traditionally transmitted from older women to younger generations within families and communities. The designs often reflect pre-Islamic, shamanistic beliefs, incorporating motifs of flora, fauna, and geometric shapes that symbolize prosperity, protection, and a harmonious relationship with nature. The traditional art of making Kyrgyz felt carpets, ala-kiyiz and shyrdak, was inscribed on the UNESCO List of Intangible Cultural Heritage in Need of Urgent Safeguarding in 2012, and the craftsmanship of ak-kalpak was added in 2019, highlighting its global cultural importance.",
+        "gemini_tags": [
+          "Kyrgyz culture",
+          "traditional craft",
+          "felt making",
+          "nomadic lifestyle",
+          "textile art",
+          "wool craft",
+          "Central Asian heritage",
+          "UNESCO intangible heritage",
+          "shyrdak",
+          "ala-kiyiz",
+          "ak-kalpak"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Wet felting",
+        "materials_and_tools": [
+          "Sheep wool (preferably autumn-shorn)",
+          "Reed mat (chiy/thatch mat)",
+          "Hot water",
+          "Soap (optional, for fulling)",
+          "Rope",
+          "Metal rods (for beating wool)"
+        ],
+        "step_by_step": [
+          "**Shearing and Preparing Wool**: Sheep are sheared, and the wool, ideally from autumn shearing, is thoroughly cleaned, washed, and cleared of impurities like burrs and sticks.",
+          "**Beating and Tearing Wool**: The cleaned wool is beaten with metal rods (a process called 'saboo') and fluffed by hand to separate and align the fibers, preparing it for felting.",
+          "**Dyeing (Optional)**: If desired, the wool is dyed in advance to achieve various colors for patterned felts.",
+          "**Layering Wool on Mat**: Small quantities of the prepared wool are carefully and evenly spread onto a large reed mat (chiy or thatch mat). Multiple layers, typically two or three, are often applied.",
+          "**Wetting the Wool**: Hot water is poured over the layered wool to dampen it thoroughly, which facilitates the felting process.",
+          "**Rolling and Tying the Mat**: The reed mat, with the wet wool inside, is tightly rolled up and securely tied with a rope to form a compact bundle.",
+          "**Felting/Kneading**: The rolled mat is then subjected to continuous pressure and agitation. This involves rolling it back and forth on the ground, pressing it with elbows and forearms, or even stomping on it. More hot water is poured over the mat throughout this stage to aid the merging and shrinking of the wool fibers. For larger pieces, a stick might be placed in the center, and the bundle pulled by an animal to assist in rolling.",
+          "**Checking and Adjusting**: Periodically, the mat is unrolled to inspect the felt for evenness. Any thin or thick areas are stretched and adjusted to ensure a uniform thickness and texture.",
+          "**Finishing**: Once the desired density and quality are achieved, the felt is removed from the mat. For further refinement and durability, it may be rolled independently. For intricate designs like shyrdaks, dyed felt pieces are cut into specific patterns, combined in contrasting colors, and then meticulously sewn and embroidered onto a felt base."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Kazakhstan",
+            "element_name": "Kiyiz, Syrmaq, Tekemet",
+            "relationship_reason": "Shared nomadic lifestyle, similar felt making techniques and products (yurt coverings, carpets, clothing), and common Turkic heritage."
+          },
+          {
+            "country": "Mongolia",
+            "element_name": "Felt (Ger coverings, carpets)",
+            "relationship_reason": "Shared nomadic traditions, extensive use of felt for yurts (gers), and similar historical roots in felt production dating back millennia."
+          },
+          {
+            "country": "Uzbekistan",
+            "element_name": "Felt products",
+            "relationship_reason": "Shared Central Asian nomadic heritage and similar traditional felt making practices."
+          },
+          {
+            "country": "Tajikistan",
+            "element_name": "Felt products",
+            "relationship_reason": "Shared Central Asian nomadic heritage and similar traditional felt making practices."
+          },
+          {
+            "country": "Turkmenistan",
+            "element_name": "Felt products",
+            "relationship_reason": "Shared Central Asian nomadic heritage and similar traditional felt making practices."
+          },
+          {
+            "country": "Azerbaijan",
+            "element_name": "Felt products",
+            "relationship_reason": "Shared Central Asian nomadic heritage and similar traditional felt making practices."
+          },
+          {
+            "country": "Iran",
+            "element_name": "Felt products",
+            "relationship_reason": "Shared Central Asian nomadic heritage and similar traditional felt making practices."
+          },
+          {
+            "country": "Turkey",
+            "element_name": "Felt products",
+            "relationship_reason": "Shared Turkic heritage and similar traditional felt making practices."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5cbab8ea",
+      "element_name": "Artesanato em barro do Vale do Jequitinhonha (Clay craftsmanship of the Jequitinhonha Valley)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//artesdoimaginariobrasileiro.com.br/explorando-a-riqueza-cultural-do-artesanato-brasil/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://artesdoimaginariobrasileiro.com.br/explorando-a-riqueza-cultural-do-artesanato-brasil/",
+        "https://institutoliberal.org.br/artesanato-geracao-de-renda-e-preservacao-cultural/",
+        "https://relacult.com.br/index.php/relacult/article/view/100",
+        "https://www.revistas.unijui.edu.br/index.php/missoes/article/view/3990",
+        "https://fcs.mg.gov.br/a-arte-popular-como-patrimonio-cultural-imaterial/",
+        "https://www.artiz.com.br/o-papel-das-artesas-na-salvaguarda-do-patrimonio-imaterial-relacionado-as-suas-praticas-texteis/",
+        "https://pt.wikipedia.org/wiki/Artesanato",
+        "https://ich.unesco.org/en/traditional-craftsmanship-00057",
+        "https://journals.openedition.org/sociologia/2932",
+        "https://journals.openedition.org/sociologia/2932",
+        "https://www.scielo.br/j/rdt/a/jL94s7b7S7XF4599z39xY9N/",
+        "https://emporiovoolivia.com.br/como-o-artesanato-do-jequitinhonha-e-feito/",
+        "https://www.iepha.mg.gov.br/images/Patrimonio_Cultural/Cadernos_do_Patrimonio/Artesanato_em_Barro_do_Jequitinhonha.pdf",
+        "https://emporiovoolivia.com.br/artesanato-do-vale-do-jequitinhonha-historia-tradicao-e-cultura/",
+        "https://casacor.abril.com.br/noticias/vale-do-jequitinhonha-artesanato/",
+        "https://www.ufmg.br/polojequitinhonha/noticias/ceramica-do-vale-patrimonio-imaterial-de-minas-gerais/",
+        "https://minasgerais.agenciasebrae.com.br/noticia/a-forca-do-barro-que-molda-vidas-no-vale-do-jequitinhonha/",
+        "https://www.oneplanetnetwork.org/case_studies/womens-work-clay-jequitinhonha-valley",
+        "https://www.anpap.org.br/anais/2014/simposios/simposio12/camila_da_costa_lima.pdf",
+        "https://www.youtube.com/watch?v=0hX0C2y031c",
+        "https://maos.art.br/vale-do-jequitinhonha",
+        "https://loja.emporiovoolivia.com.br/jequitinhonha",
+        "https://pt.scribd.com/document/512964993/Artesanato-em-Barro-do-Vale-do-Jequitinhonha",
+        "https://www.youtube.com/watch?v=k_l_w3k0P1Y",
+        "https://ambiental.tur.br/artesanato-com-alma-turismo-e-protagonismo-feminino-no-vale-do-jequitinhona-mg/",
+        "https://loja.paiol.com.br/ceramica-vale-do-jequitinhonha"
+      ],
+      "scraped_at": "2026-07-13T01:48:53.523736Z",
+      "location": {
+        "country": "Brazil",
+        "provinces": [
+          "Minas Gerais"
+        ],
+        "lat": -18.5264844,
+        "lng": -44.1588654
+      },
+      "resume_analisa": {
+        "description": "The clay craftsmanship of the Jequitinhonha Valley is a rich cultural expression from Minas Gerais, Brazil, primarily developed by women. It involves transforming local clay into various artistic and utilitarian pieces such as dolls, pots, and sculptures. These pieces reflect the daily life, faith, and imagination of the people, preserving ancestral knowledge and traditions. The art is characterized by its authenticity, unique forms, and delicate details.",
+        "cultural_significance": "This craft was recognized in 2018 as Intangible Cultural Heritage of the State of Minas Gerais, encompassing both the 'Forms of Expression of Clay Craftsmanship' and the 'Craft of the Clay Artisan'. It is deeply rooted in the daily life and narratives of the region, intrinsically connected to its socio-biodiversity. The craftsmanship represents a valuable legacy passed down through generations, primarily by women, contributing to their autonomy, family sustenance, and strengthening their presence in the Brazilian cultural scene. The pieces are considered more than mere objects; they are a living testament to the resilience, creativity, and female protagonism in shaping Mineira identity. The tradition is ancestral, passed from indigenous peoples to the current generations without losing its characteristics.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Ceramics",
+          "Clay Art",
+          "Brazilian Culture",
+          "Intangible Cultural Heritage",
+          "Women's Craft",
+          "Folk Art",
+          "Minas Gerais",
+          "Jequitinhonha Valley"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Clay Craftsmanship / Ceramic Production",
+        "materials_and_tools": [
+          "Clay (barro), abundant in the region",
+          "Water",
+          "Wood for firing kilns",
+          "Natural pigments (from local clay or vegetables, e.g., white from 'barro tabatinga', red from 'barro tauá', orange from mixing them)",
+          "Simple tools, including a wooden platform called 'gangorra' and a stone pestle for pounding clay",
+          "Small plant branches and feathers for painting"
+        ],
+        "step_by_step": [
+          "**Clay Collection:** Clay is collected from local 'barreiros' (clay pits) once a year, with care to preserve the soil and prevent scarcity. The collected clay is then stored, protected from rain and water.",
+          "**Pounding (Socagem):** Dry clay is placed on a wooden platform called 'gangorra' and pounded in a stone pestle. The artisan controls the 'gangorra' with their feet and a rope, repeatedly pounding the clay.",
+          "**Sifting and Kneading:** After pounding, the clay is sifted until it becomes a fine powder. Water is then added, and the clay is kneaded to achieve the right consistency for molding.",
+          "**Modeling:** Pieces are sculpted either by hand or using molds, with artisans shaping the clay into various forms like dolls, pots, and animals.",
+          "**Drying and Pigmentation:** After modeling, the pieces are dried. Natural pigments, often derived from local clays (like 'tabatinga' for white and 'tauá' for red) or vegetables, are prepared. These pigments are mixed with water to create a mixture called 'oleio'.",
+          "**Painting:** The 'oleio' is applied to the pieces using simple tools like small plant branches and feathers, creating characteristic reddish, brown, and white tones.",
+          "**Firing:** The finished and painted pieces are fired in large wood-fired kilns."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Brazil",
+            "element_name": "Indigenous Ceramics (general)",
+            "relationship_reason": "Ancestral techniques and the use of natural materials for pottery are common among various indigenous groups in Brazil, influencing the Jequitinhonha Valley's craft."
+          },
+          {
+            "country": "Global",
+            "element_name": "Traditional Pottery/Ceramics",
+            "relationship_reason": "The fundamental process of transforming clay into objects through molding and firing is a universal traditional craft found in many cultures worldwide."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-27d3f610",
+      "element_name": "Kuna Mola",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Mola_with_birds_and_geometric_patterns.jpg/1280px-Mola_with_birds_and_geometric_patterns.jpg",
+      "source_urls": [
+        "https://benton.uconn.edu/collections/molas-textile-designs-of-the-guna-indians-of-panama/",
+        "https://mnch.uoregon.edu/collections/kuna-molas",
+        "https://blogs.missouristate.edu/arthistory/2023/01/15/20th-century-guna-culture-molas-from-panama-by-kylei-giles-brianna-shatto-and-melissa-payte/",
+        "https://www.smithsonianmag.com/travel/colorful-history-behind-panamas-mola-180980509/",
+        "https://www.atlasobscura.com/articles/kuna-mola-panama-history",
+        "https://www.selvedge.org/blogs/selvedge/mola-textiles-of-panama",
+        "https://www.thecraftatlas.com/crafts/molas",
+        "https://www.panamasanblastours.com/what-are-molas/",
+        "https://www.indiartscollective.com/blogs/culture-ethics-latin-america/the-making-molas",
+        "https://www.fashionrevolution.org/meet-the-guna-makers-of-molas/",
+        "https://www.dma.org/uncrated/panamanian-molas-made-and-women",
+        "https://www.molamuseum.org/about-us/",
+        "https://www.santarosa.edu/multicultural-museum/virtual-exhibits/mola-textiles-of-san-blas-island-panama",
+        "https://en.wikipedia.org/wiki/Mola_(art_form)"
+      ],
+      "scraped_at": "2026-07-13T01:49:21.398127Z",
+      "location": {
+        "country": "Panama",
+        "provinces": [
+          "Guna Yala (San Blas Islands)",
+          "Darién Province"
+        ],
+        "lat": 9.1875975,
+        "lng": -77.8713723
+      },
+      "resume_analisa": {
+        "description": "Kuna Mola (or Guna Mola) is a vibrant, hand-sewn textile art form created by the indigenous Guna (Kuna) women of Panama and parts of Colombia. It consists of multi-layered cotton panels with intricate designs, traditionally forming the front and back of a woman's blouse. The word 'mola' itself means 'shirt' or 'clothing' in the Guna language. These panels are renowned for their complex patterns, often depicting animals, plants, geometric motifs, and scenes from daily life or mythology. The art form evolved from earlier traditions of body painting, with designs transferred to fabric after the introduction of European materials like cloth, needles, and scissors. Each mola is unique, reflecting the individual artisan's skill and creativity.",
+        "cultural_significance": "Molas are a central and powerful symbol of Guna cultural identity, heritage, worldview, and spirituality. They represent a tangible expression of the Guna people's deep connection to the natural world and their beliefs about the universe. The making of molas is an exclusively female task, passed down through generations from mothers and grandmothers to young girls, serving as a source of pride and status among Guna women. Historically, molas also became a symbol of political resistance during the 1925 Guna Revolution, when the Panamanian government attempted to suppress Guna culture and traditional dress. Today, while still worn as everyday attire and for special occasions, molas are also an important source of income through tourism, contributing to the economic sustainability of Guna women and communities.",
+        "gemini_tags": [
+          "Textile Art",
+          "Indigenous Craft",
+          "Panamanian Culture",
+          "Guna People",
+          "Reverse Appliqué",
+          "Cultural Identity",
+          "Traditional Clothing",
+          "Folk Art",
+          "Handicraft",
+          "Central American Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Reverse Appliqué Textile Art",
+        "materials_and_tools": [
+          "Multiple layers (typically 2 to 7) of different colored cotton cloth",
+          "Thread (often matching the fabric layer being sewn)",
+          "Needles (fine needles for intricate stitching)",
+          "Scissors (sharp scissors for cutting designs)",
+          "Basting thread (optional, for temporarily holding layers)"
+        ],
+        "step_by_step": [
+          "Select and layer two to seven pieces of different colored cotton cloth, basting them loosely together. The bottom-most layer often serves as the foundation and remains uncut.",
+          "Draw the desired design onto the top layer of fabric. Designs can be geometric, representational (animals, plants, daily life), or inspired by mythology and modern culture.",
+          "Carefully cut out patterns through the top layer or layers with sharp scissors to reveal the colors of the underlying fabrics.",
+          "Fold under the cut edges of each layer and meticulously stitch them down with minute, often nearly invisible, hand stitches. The thread color typically matches the fabric layer being sewn.",
+          "Repeat the cutting, folding, and stitching process for subsequent layers, progressively revealing different colors and creating concentric outlines or varied color sequences. Small scraps of contrasting fabric may be inserted between layers or worked into slits for additional detail.",
+          "Once the mola panels are complete, they are traditionally sewn onto a yoke and sleeves to form a woman's blouse. Molas are typically created in pairs for the front and back of a blouse, often with similar but not identical designs."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Colombia",
+            "element_name": "Guna (Kuna) textile art",
+            "relationship_reason": "The Guna people, creators of Molas, reside in both Panama and parts of neighboring Colombia, sharing this textile tradition across national borders."
+          },
+          {
+            "country": "Various (historical influence)",
+            "element_name": "Body painting and tattooing traditions",
+            "relationship_reason": "The organic and geometric designs in Mola textiles are believed to have originated from the Kuna tradition of body painting and tattooing, which predates the textile art form."
+          },
+          {
+            "country": "Europe (historical influence)",
+            "element_name": "Introduction of cotton cloth, needles, and scissors",
+            "relationship_reason": "The development of Mola as a textile art was influenced by the introduction of European materials (cotton cloth, needles, and scissors) through trade and missionaries, which allowed the Guna to transfer their body painting designs to fabric."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-11T01:44:50.868251Z",
-    "total_ich_elements": 193,
-    "complete_records": 180,
+    "generated_at": "2026-07-13T01:50:20.973472Z",
+    "total_ich_elements": 196,
+    "complete_records": 183,
     "incomplete_records": 13,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 66,
+      "Traditional Craftsmanship": 69,
       "Social Practices & Rituals": 44,
       "Culinary Traditions": 35,
       "Culinary Traditions | Social Practices & Rituals": 3,
