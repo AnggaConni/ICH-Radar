@@ -17369,15 +17369,90 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-004ea646",
+      "element_name": "Saw U (ซออู้)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://images.metmuseum.org/CRDImages/mi/original/DP-13230-001.jpg",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=0w5_v0z_J-4",
+        "https://en.wikipedia.org/wiki/Saw_u",
+        "https://maemai.wordpress.com/2020/07/27/%E0%B8%8B%E0%B8%AD%E0%B8%AD%E0%B8%B9%E0%B9%89-saw-u/",
+        "https://seathencity.com/bowed-strings/",
+        "https://organology.weebly.com/saw-u.html",
+        "https://www.metmuseum.org/art/collection/search/50171067"
+      ],
+      "scraped_at": "2026-07-15T01:22:15.320028Z",
+      "location": {
+        "country": "Thailand",
+        "provinces": [
+          "Samut Songkhram",
+          "Chonburi"
+        ],
+        "lat": 13.3576862,
+        "lng": 99.9619685
+      },
+      "resume_analisa": {
+        "description": "The Saw U (ซออู้) is a traditional Thai bowed string instrument, distinguished by its rich, dark, and mellow tone. It is the lowest-sounding member of the Thai 'saw' family of fiddles. The instrument's unique soundbox is crafted from a coconut shell, often a rare 'Phaya Sor' coconut, which is then covered on its open front with cowhide. It features two silk strings that are played with a bow made of horsehair. The Saw U is held vertically and traditionally played while seated on the lap.",
+        "cultural_significance": "The Saw U holds significant cultural importance in Thailand, serving as an essential component in various traditional Thai musical ensembles, including the renowned pi phat ensemble. Its creation reflects a deep-rooted Thai craftsmanship tradition that values the transformation of humble, natural materials into sophisticated works of art. The instrument's historical origins can be traced back to the Ayutthaya period (c. 1700-1767) or the early Bangkok period (c. 1782), highlighting its long-standing presence in Thai cultural heritage.",
+        "gemini_tags": [
+          "Thai musical instrument",
+          "Bowed string instrument",
+          "Traditional craftsmanship",
+          "Coconut craft",
+          "Performing arts",
+          "Folk instrument",
+          "Thai culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting a musical instrument",
+        "materials_and_tools": [
+          "Phaya Sor coconut shell (triangular, three-sided, dried for 4-5 days)",
+          "Cowhide",
+          "Silk strings",
+          "Wood (for the neck, pegbox, pegs, and bow stick)",
+          "Horsehair (for the bow)",
+          "Rosin",
+          "Carving tools/knife",
+          "Scour (a specialized carving tool)"
+        ],
+        "step_by_step": [
+          "**Selection and Preparation of Coconut Shell**: A rare 'Phaya Sor' coconut, ideally triangular and three-sided, is carefully selected. The chosen coconut is then dried for four to five days to prepare it for crafting.",
+          "**Carving the Soundbox**: The dried coconut shell is meticulously carved with intricate patterns, traditional motifs, and mythical scenes, elevating it into an artistic component of the instrument.",
+          "**Covering the Soundbox**: The open front of the carved coconut shell is covered with a piece of cowhide. This leather is stretched tightly over the opening to create the resonator for the instrument.",
+          "**Attaching the Neck**: A wooden neck, which often includes a pegbox and pegs, is securely attached to the coconut shell body.",
+          "**Adding the Strings**: Two silk strings are then fastened to the instrument, running from the pegbox down to the base of the soundbox.",
+          "**Crafting the Bow**: A separate bow is crafted from a wooden stick and strung with horsehair. Rosin is applied to the horsehair to facilitate sound production when drawn across the silk strings."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Hu Hu",
+            "relationship_reason": "Reliable evidence suggests that the pattern and design of the Saw U were likely adapted from the Chinese two-stringed instrument known as the Hu Hu."
+          },
+          {
+            "country": "Cambodia",
+            "element_name": "Tro U",
+            "relationship_reason": "The Saw U shares significant similarities with the Cambodian bowed string instrument called the Tro U."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-13T01:50:20.973472Z",
-    "total_ich_elements": 196,
-    "complete_records": 183,
+    "generated_at": "2026-07-15T01:23:34.269167Z",
+    "total_ich_elements": 197,
+    "complete_records": 184,
     "incomplete_records": 13,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 69,
+      "Traditional Craftsmanship": 70,
       "Social Practices & Rituals": 44,
       "Culinary Traditions": 35,
       "Culinary Traditions | Social Practices & Rituals": 3,
