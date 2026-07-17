@@ -17444,22 +17444,277 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0baf7489",
+      "element_name": "Griot Oral Tradition of West Africa",
+      "category": "Oral Traditions | Performing Arts | Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Griot_playing_kora_in_Senegal.jpg/800px-Griot_playing_kora_in_Senegal.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Griot",
+        "https://ourancestories.com/blogs/news/griots-living-historians-and-musicians-of-west-africa",
+        "https://www.ebsco.com/products/research-databases/research-starters/griot",
+        "https://playingforchange.com/inside-west-africa-griot-culture-prince-diabate-marks-park/",
+        "https://www.metmuseum.org/blogs/now-at-the-met/2020/griot-west-africa-oral-tradition",
+        "https://seckoukeita.com/my-culture/"
+      ],
+      "scraped_at": "2026-07-17T01:45:05.287512Z",
+      "location": {
+        "country": "West Africa",
+        "provinces": [
+          "Mali",
+          "Senegal",
+          "Gambia",
+          "Guinea",
+          "Niger",
+          "Nigeria",
+          "Burkina Faso",
+          "Guinea-Bissau",
+          "Côte d'Ivoire",
+          "Mauritania",
+          "Ghana"
+        ],
+        "lat": 12.64059,
+        "lng": -8.0273189
+      },
+      "resume_analisa": {
+        "description": "Griots are West African historians, storytellers, praise singers, poets, and musicians who are masters of communicating stories and history orally. They preserve and transmit the oral traditions of their communities, often accompanying their narratives with musical instruments.",
+        "cultural_significance": "Griots hold a crucial role in West African societies as custodians of community histories, genealogists, advisors, and mediators. They are responsible for keeping the stories of individual tribes and families alive, enriching significant events like weddings with ancestral tales and mediating disputes. The profound loss of a griot is often metaphorically compared to 'the burning down of a library,' underscoring their vital role in preserving knowledge and cultural heritage.",
+        "gemini_tags": [
+          "Oral Storytelling",
+          "Traditional Music",
+          "West African Culture",
+          "Hereditary Tradition",
+          "Historians",
+          "Mediators",
+          "Praise Singers",
+          "Genealogy",
+          "Performing Arts"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral transmission through a hereditary apprenticeship system",
+        "materials_and_tools": [
+          "Kora (21-string lute)",
+          "Balafon (wooden xylophone)",
+          "Ngoni (lute-like instrument)",
+          "Khalam (or Xalam)",
+          "Kontigi",
+          "Goje (or n'ko)",
+          "Junjung"
+        ],
+        "step_by_step": [
+          "Griot traditions are passed down from generation to generation through a hereditary apprenticeship system within families.",
+          "Children born into griot families begin their training at an early age, typically around seven or eight years old, focusing on verbal art, music, and genealogy.",
+          "Learning occurs through extensive observation of elder griots, repetition of stories and songs, and guided participation in performances.",
+          "Trainees must master a vast repertoire of knowledge, including historical accounts, genealogies, and hundreds of songs and stories.",
+          "Instrumental specialization is common, with males often associated with instruments such as the kora, balafon, or ngoni, while females typically focus on vocal performance and praise singing.",
+          "Griots learn not only to memorize but also to interpret and adapt their performances to specific audiences and social contexts, often weaving in their own experiences and contemporary details to keep narratives relevant and engaging across generations.",
+          "The rigorous training process can continue for many years, with mastery of instruments and the full repertoire often achieved around the age of eighteen."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Mali",
+            "element_name": "Epic of Sundiata",
+            "relationship_reason": "The Epic of Sundiata, which recounts the founding of the Mali Empire, is a central and highly celebrated narrative transmitted by griots, particularly by the Kouyaté line of griots."
+          },
+          {
+            "country": "Senegal",
+            "element_name": "Wolof oral traditions",
+            "relationship_reason": "Griots play a vital role in preserving and transmitting the cultural values and histories of the Wolof people in Senegal, many of whom rely on griots for knowledge of their culture."
+          },
+          {
+            "country": "Guinea",
+            "element_name": "Malinke griot families and kora tradition",
+            "relationship_reason": "Prominent griot families, such as the Diabaté family, originate from Guinea and are renowned for their mastery of the kora and their contributions to the griot tradition."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-4bb465e2",
+      "element_name": "The Legend of Lake Toba",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Legenda_Danau_Toba.png/500px-Legenda_Danau_Toba.png",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lake_Toba",
+        "https://earthstoriez.com/2019/01/26/indonesia-on-legend-and-folklore-of-lake-toba/",
+        "https://folkloreforkids.com/the-legend-of-lake-toba/",
+        "https://www.traveloka.com/en-id/explore/destination/history-of-lake-toba-acc/249960",
+        "https://medium.com/@delarosaeloise/the-story-of-lake-toba-is-a-famous-indonesian-folktale-from-north-sumatra-265d956a62c6",
+        "https://www.indoindians.com/stories-and-myths-from-lake-toba-sumatra/",
+        "https://daerahkita.com/the-legend-of-lake-toba-folklore-from-north-sumatra/",
+        "https://easystoriesinenglish.com/lake/"
+      ],
+      "scraped_at": "2026-07-17T01:45:32.706730Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "North Sumatra"
+        ],
+        "lat": 2.1923519,
+        "lng": 99.3812201
+      },
+      "resume_analisa": {
+        "description": "The Legend of Lake Toba is a prominent Indonesian folktale from North Sumatra that explains the origin of Lake Toba and the island of Samosir. The story centers on a poor farmer named Toba who, after a long day of fishing, catches a magical golden fish. This fish transforms into a beautiful woman, and Toba falls in love with her. She agrees to marry him on one strict condition: he must never reveal her true origin as a fish. They live happily and have a son named Samosir. However, one day, when Samosir fails to deliver food to his father in the fields and eats it instead, Toba loses his temper and, in a fit of rage, curses his son by calling him a 'son of a fish.' This act breaks Toba's sacred promise to his wife. Upon hearing this, the wife and son disappear, and a massive flood engulfs the valley, creating the vast Lake Toba, with the hill where Samosir stood becoming Samosir Island.",
+        "cultural_significance": "This legend holds deep cultural significance for the Batak Toba people, who are indigenous to the Lake Toba region. It serves as an origin myth for one of Indonesia's most iconic natural landmarks, intertwining geological history with a moral narrative. The tale emphasizes the importance of keeping promises, controlling one's emotions, and respecting the origins of others. It also highlights the severe consequences of betrayal and anger. The story is passed down through generations, reinforcing community values and the spiritual connection between the Batak people and their ancestral land.",
+        "gemini_tags": [
+          "Indonesian folklore",
+          "Origin myth",
+          "Lake Toba",
+          "Batak culture",
+          "Moral tale",
+          "Supernatural",
+          "Transformation legend",
+          "Oral tradition",
+          "North Sumatra"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Malin Kundang",
+            "relationship_reason": "Shares the theme of an ungrateful child and divine retribution, where a broken promise or disrespect leads to a physical transformation (Malin Kundang turned to stone)."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Keong Emas (The Golden Snail)",
+            "relationship_reason": "Shares the theme of magical transformation of a human into an animal (princess into a golden snail) and the breaking of a curse through love or a specific condition."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Timun Mas (The Golden Cucumber)",
+            "relationship_reason": "Shares themes of magical birth/origin and a child escaping a perilous fate, often involving magical items or transformations."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-51547efd",
+      "element_name": "Gamelan",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Gamelan_ensemble_in_Yogyakarta.jpg/1200px-Gamelan_ensemble_in_Yogyakarta.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/gamelan-01607",
+        "https://en.wikipedia.org/wiki/Gamelan",
+        "https://www.ebsco.com/products/research-databases/research-starters/gamelan-music",
+        "https://kura2bus.com/blog/balinese-gamelan-history-and-unesco-recognition/",
+        "https://www.wesleyan.edu/music/etmus/gamelan/intro.html",
+        "https://www.antaranews.com/berita/2544198/gamelan-another-indonesian-tradition-on-the-unesco-representative",
+        "https://www.anthropology-news.org/articles/how-to-start-playing-javanese-gamelan/",
+        "https://www.roots.gov.sg/collections/intangible-cultural-heritage/gamelan-music",
+        "https://www.britannica.com/art/gamelan",
+        "https://emmaterrell.wordpress.com/2017/11/30/how-balinese-gamelan-is-made/",
+        "https://ich.unesco.org/en/multimedia/gamelan-01607",
+        "https://ii.umich.edu/cseas/news-events/all-news/news/on-the-spirit-of-tuning.html",
+        "https://songtive.com/blog/gamelan-music-tonal-landscape/",
+        "https://kura2bus.com/blog/balinese-gamelan-class/",
+        "https://rivercampuswm1.wordpress.com/2011/11/23/gamelan-of-the-islands-an-indonesian-identity/",
+        "https://www.gamelan.org.sg/about-gamelan-music",
+        "https://direct.mit.edu/comj/article-abstract/47/2/8/116900/Exploring-the-Many-Tunings-of-Balinese-Gamelan",
+        "https://www.arts.unsw.edu.au/our-research/research-centres-institutes/interactive-gamelan",
+        "https://www.scribd.com/document/436660144/How-to-Play-Gamelan-Instruments",
+        "https://www.gamelan.org.uk/resources/Balinese%20Gamelan%20Gong%20Kebyar%20-%20A%20Player's%20Handbook.pdf",
+        "https://culturalheritage.online/gamelan"
+      ],
+      "scraped_at": "2026-07-17T01:46:00.677929Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Java (Central Java, East Java, West Java/Sunda, Yogyakarta)",
+          "Bali",
+          "Sumatra",
+          "Madura",
+          "Lombok",
+          "South Kalimantan",
+          "West Sumatra",
+          "Lampung"
+        ],
+        "lat": -6.7115076,
+        "lng": 110.6337137
+      },
+      "resume_analisa": {
+        "description": "Gamelan is a traditional Indonesian musical ensemble primarily composed of percussive instruments such as gongs, metallophones, and drums, often complemented by bamboo flutes, bowed string instruments, and vocals. The music is performed collectively, emphasizing harmony and cooperation rather than individual virtuosity, and is characterized by its layered sound and cyclical melodic structures.",
+        "cultural_significance": "Gamelan is an integral part of Indonesian identity, deeply intertwined with religious rituals, traditional ceremonies, dance-drama, theatre (like wayang kulit), festivals, and concerts across the archipelago. It carries profound philosophical and spiritual meanings, reflecting values such as balance in life, harmony between humans and nature, and the importance of communal cooperation and mutual respect. Gamelan also serves as an educational tool and a social binder within communities, reinforcing inclusivity and shared responsibility. In 2021, Gamelan was officially inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity, recognizing its global cultural significance.",
+        "gemini_tags": [
+          "Traditional Music",
+          "Percussion Ensemble",
+          "Indonesian Culture",
+          "Intangible Cultural Heritage",
+          "Performing Arts",
+          "Ritual Music",
+          "Community Practice",
+          "Javanese Gamelan",
+          "Balinese Gamelan",
+          "Sundanese Gamelan"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Musical Performance / Learning",
+        "materials_and_tools": [
+          "Gamelan instruments (gongs, metallophones like saron, demung, peking, slenthem, gangsa, bonang, reyong)",
+          "Kendang drums",
+          "Xylophones (gambang)",
+          "Bamboo flutes (suling)",
+          "Bowed string instruments (rebab)",
+          "Plucked zither-like instruments (siter/celempung)",
+          "Mallets (tabuh)",
+          "Hands and fingers"
+        ],
+        "step_by_step": [
+          "**Learning Environment**: Gamelan is traditionally learned aurally through listening, imitating, and observing, often within a communal village setting (banjar) or through formal education in schools and academies.",
+          "**Instrument Familiarization**: Learners are introduced to the names and specific functions of the various Gamelan instruments.",
+          "**Basic Playing Technique (e.g., Saron)**: For metallophones such as the saron, the mallet (tabuh) is held in the right hand, while the left hand is used for damping. The technique involves striking a key with the mallet and immediately damping the previously struck key with the left thumb and index finger to prevent sound blurring due to the instrument's resonance.",
+          "**Rhythmic Leadership**: The kendang (drum) player typically leads the ensemble, setting the tempo and providing rhythmic cues for the other musicians, similar to a conductor in a Western orchestra.",
+          "**Ensemble Coordination**: Gamelan music emphasizes collective harmony and cooperation. Musicians often play interlocking parts, known as 'kotekan' in Balinese gamelan, to create a rich, unified sound rather than focusing on individual virtuosity.",
+          "**Musical Structure**: Compositions generally follow a cyclical structure, with the largest gong (gong ageng) marking the end of a major musical cycle. The music often revolves around a core melody (balungan), which is then elaborated upon by other instruments.",
+          "**Tuning Systems**: Gamelan utilizes two primary non-standardized tuning systems: sléndro (a five-note scale) and pélog (a seven-note scale). Each Gamelan set possesses a unique tuning, meaning instruments from one ensemble cannot typically be interchanged with another.",
+          "**Etiquette**: A deep respect for the instruments is customary. This includes removing shoes before playing, avoiding stepping over instruments, and handling them with care."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Malaysia",
+            "element_name": "Gamelan Melayu",
+            "relationship_reason": "A distinct courtly tradition associated with the Johor–Riau cultural sphere, documented since at least the eighteenth century and still practiced."
+          },
+          {
+            "country": "Singapore",
+            "element_name": "Gamelan (Javanese, Balinese, Sundanese styles)",
+            "relationship_reason": "Practiced by various communities, with archival records indicating its presence for over a century."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-15T01:23:34.269167Z",
-    "total_ich_elements": 197,
-    "complete_records": 184,
-    "incomplete_records": 13,
+    "generated_at": "2026-07-17T01:46:38.720432Z",
+    "total_ich_elements": 200,
+    "complete_records": 186,
+    "incomplete_records": 14,
     "categories_breakdown": {
       "Traditional Craftsmanship": 70,
       "Social Practices & Rituals": 44,
       "Culinary Traditions": 35,
       "Culinary Traditions | Social Practices & Rituals": 3,
-      "Performing Arts": 17,
+      "Performing Arts": 18,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 14,
+      "Oral Traditions": 15,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
@@ -17467,7 +17722,7 @@
       "Social Practices & Rituals | Traditional Craftsmanship": 1,
       "Performing Arts | Traditional Craftsmanship": 1,
       "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1,
-      "Oral Traditions | Performing Arts | Social Practices & Rituals": 1,
+      "Oral Traditions | Performing Arts | Social Practices & Rituals": 2,
       "Performing Arts | Social Practices & Rituals": 1
     }
   }
