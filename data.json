@@ -17699,22 +17699,238 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-4481f7a1",
+      "element_name": "Nahuatl Traditional Pottery",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//nakawetrading.com/blogs/news/oaxaca-pottery-the-process-of-preserving-culture&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://nakawetrading.com/blogs/news/oaxaca-pottery-the-process-of-preserving-culture",
+        "https://en.wikipedia.org/wiki/Mexican_ceramics",
+        "https://demejico.com/blogs/news/mexican-pottery-talavera-guide-authentic-handcrafted-ceramic-pieces",
+        "https://www.youtube.com/watch?v=Fj-w15F2z5A",
+        "https://casamaria.com/blogs/news/mexican-pottery-how-guanajuato-artisans-craft-by-hand",
+        "https://www.mexicolore.co.uk/aztecs/artefacts/aztec-pottery",
+        "https://learningmole.com/aztec-pottery-ancient-art-techniques-and-cultural-significance/",
+        "https://eastindiabloggingco.com/aztec-pottery-what-it-was-used-for-and-how-it-was-made/",
+        "https://sandiafolk.com/blogs/news/the-history-of-mexican-pottery",
+        "https://scholarworks.iu.edu/journals/index.php/jfr/article/download/2397/2405",
+        "https://nahuatl.uoregon.edu/content/apaztli"
+      ],
+      "scraped_at": "2026-07-19T01:43:02.544263Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "Central Mexico",
+          "Oaxaca"
+        ],
+        "lat": 32.7832499,
+        "lng": -108.157365
+      },
+      "resume_analisa": {
+        "description": "Nahuatl traditional pottery refers to the ancient and enduring ceramic traditions of the Nahuatl-speaking people in Mexico, including the Aztecs. This craft dates back thousands of years, predating the Pre-Columbian period, and was considered one of the highest art forms in the Aztec Empire. The knowledge of making pottery was believed to be a divine gift, with some traditions attributing it to the god Quetzalcoatl. Pre-Hispanic pottery was primarily made without the potter's wheel, using techniques such as modeling, coiling, and molding. Pieces were typically burnished with fine clay slips rather than glazed, and often decorated with mineral pigments before or after firing. After the Spanish conquest, European techniques like the potter's wheel and glazing were introduced, leading to a blending of indigenous and new influences, but ancestral methods continue to be practiced by indigenous communities.",
+        "cultural_significance": "Pottery holds immense cultural significance for the Nahuatl people and other indigenous communities in Mexico, deeply embedded in their identity and daily life. It served both utilitarian purposes, such as storing water and cooking food, and ceremonial roles, including ritual vessels, incense burners, and offerings to deities. The intricate designs and motifs on pottery often conveyed mythological narratives, religious beliefs, and cosmological concepts, reflecting the Nahuatl worldview. The craft is a vital means of preserving ancestral knowledge and cultural identity, with skills often passed down through generations within families and communities. Potters were highly regarded in Aztec society, highlighting the importance of this art form.",
+        "gemini_tags": [
+          "Nahuatl culture",
+          "Mexican folk art",
+          "Traditional craftsmanship",
+          "Indigenous pottery",
+          "Pre-Hispanic techniques",
+          "Ceramics",
+          "Cultural heritage",
+          "Mexico",
+          "Aztec pottery"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand-molding and firing clay pottery using ancestral methods.",
+        "materials_and_tools": [
+          "Clay (various types, often locally sourced)",
+          "Sharp tools (for carving designs)",
+          "Jicara shells or calabash (used by some artisans for shaping)",
+          "Wood (for firing in kilns or open fires)",
+          "Sawdust (used for darkening pottery during firing)"
+        ],
+        "step_by_step": [
+          "**Preparing the Clay**: Artisans collect and prepare raw clay, which is then cleaned, purified, and sometimes mixed with other materials to achieve the desired texture and consistency.",
+          "**Shaping & Carving**: The clay is molded by hand, often using coiling or molding techniques, as the potter's wheel was unknown in pre-Hispanic times. Sharp tools are used to create intricate cutouts and designs that are culturally significant.",
+          "**Drying**: Once shaped, the pottery pieces are set to dry slowly in the open air. This crucial step removes excess moisture, preventing cracking and warping during the subsequent firing process.",
+          "**Baking & Coloring (Firing)**: The pieces are fired, traditionally in open fires or pits, or in above-ground kilns using wood fires that reach high temperatures. After baking, some pottery is covered in sawdust to reduce oxygen, a technique that darkens the clay and imparts unique color tones.",
+          "**Finishing (Burnishing/Glazing)**: Pre-Hispanic pottery was typically burnished by rubbing with a smooth object to create a sheen, often after applying a fine clay slip, rather than glazed. In modern practices, some artisans may apply glazes to create a glossy effect and make the pottery suitable for holding liquids."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Mexico",
+            "element_name": "Barro Negro (Black Pottery of Oaxaca)",
+            "relationship_reason": "Shares ancestral pottery-making techniques, including specific firing methods to achieve distinct colors, and is a prominent indigenous pottery tradition in Mexico."
+          },
+          {
+            "country": "Mexico",
+            "element_name": "Talavera Pottery (Puebla)",
+            "relationship_reason": "While influenced by Spanish techniques, it represents a blending of indigenous and European ceramic traditions in Mexico, showcasing the evolution of pottery in the region."
+          },
+          {
+            "country": "Mesoamerica (various regions and indigenous groups)",
+            "element_name": "Pre-Columbian Pottery Traditions",
+            "relationship_reason": "Nahuatl pottery shares fundamental pre-Hispanic techniques like coiling, molding, and burnishing, and a deep cultural significance with other ancient Mesoamerican civilizations and indigenous groups."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a5f5da51",
+      "element_name": "Injera Making",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://maskalteff.com/cdn/shop/files/what-is-injera-ethiopian-flatbread-explained_1024x1024.jpg?v=1686774656",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Injera",
+        "https://www.thespicehouse.com/blogs/recipes/injera-ethiopian-flatbread-recipe",
+        "https://www.immaculatebites.com/injera-recipe/",
+        "https://maskalteff.com/pages/how-to-make-injera",
+        "https://simple.wikipedia.org/wiki/Injera",
+        "https://debrasnaturalgourmet.com/blogs/recipes/ethiopian-injera-made-with-teff",
+        "https://www.thedaringgourmet.com/authentic-injera-ethiopian-flatbread/"
+      ],
+      "scraped_at": "2026-07-19T01:43:43.867581Z",
+      "location": {
+        "country": "Ethiopia",
+        "provinces": [],
+        "lat": 10.2116702,
+        "lng": 38.6521203
+      },
+      "resume_analisa": {
+        "description": "Injera is a sour, fermented pancake-like flatbread with a slightly spongy texture, traditionally made of teff flour. It is a staple food in Ethiopia and Eritrea, serving as both a plate and an eating utensil for various stews, vegetables, and meats. Its distinctive tangy flavor and porous surface, known as 'eyes,' are a result of a multi-day fermentation process.",
+        "cultural_significance": "Injera is deeply intertwined with the culture and social practices of Ethiopia and Eritrea, representing more than just a food item. It is central to communal dining, symbolizing unity, community, and respect, with meals often shared from a single large platter. The act of 'gursha,' where one person feeds another an injera-wrapped morsel, is a gesture of love, hospitality, and respect. Injera is a household staple, featured in religious and national holidays, weddings, and birthdays. The cultivation of teff, the primary grain for injera, dates back to 10,000 BC, highlighting its ancient heritage in the Horn of Africa.",
+        "gemini_tags": [
+          "Traditional Food Preparation",
+          "Fermentation",
+          "Flatbread",
+          "Ethiopian Cuisine",
+          "Eritrean Cuisine",
+          "Communal Dining",
+          "Teff Grain",
+          "Sourdough"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Fermentation and Baking",
+        "materials_and_tools": [
+          "Teff flour (sometimes mixed with other flours like barley or wheat)",
+          "Water",
+          "Salt (optional, added before cooking)",
+          "Ersho (starter from previous fermentation batch, for traditional method)",
+          "Large bowl or container (bohaka)",
+          "Cloth or loose lid",
+          "Non-stick griddle or traditional clay plate (mitad)",
+          "Lid for griddle",
+          "Jug (for pouring batter)"
+        ],
+        "step_by_step": [
+          "**1. Starter (Ersho) Preparation:** Mix teff flour with water in a large bowl. For traditional methods, a starter (ersho), a clear yellowish liquid from a previous fermentation, is added. Cover the bowl with a cloth and allow it to ferment at room temperature for 2-3 days, or up to 3-5 days for a more authentic sour taste.",
+          "**2. Dough/Batter Preparation (Leet):** After the initial fermentation, the batter should show bubbles and have a slightly sour aroma. Stir the batter well. Some recipes may involve mixing fresh teff flour and water with a portion of the fermented starter.",
+          "**3. Gelatinization (Absit):** A small portion (about ½ to 1 cup) of the fermented batter is boiled with water to create a thick, porridge-like paste, known as 'absit'. This cooked paste is then mixed back into the main batter. This step is crucial for achieving the desired texture and the characteristic 'eyes' (holes) in the injera.",
+          "**4. Final Fermentation:** The batter, now including the 'absit', is covered loosely and allowed to ferment for an additional 1.5 to 2 hours, or up to 1-2 days depending on the desired sourness and temperature.",
+          "**5. Cooking (Injera Megager):** Heat a large, smooth, circular griddle (mitad) or a non-stick frying pan over medium heat (around 90-95°C). Lightly grease the surface if necessary.",
+          "**6. Pouring and Baking:** Pour about 2/3 liter of the thin batter onto the hot surface in a spiral motion, starting from the outside and working inwards, ensuring the bottom is evenly covered.",
+          "**7. Steaming:** Cook for approximately 50-60 seconds until bubbles form across the surface. Then, cover the griddle with a lid and allow it to steam for another 1-2 minutes. Injera is traditionally cooked on one side only.",
+          "**8. Cooling:** Carefully remove the injera from the griddle. As each piece is cooked, layer them on a plate to keep them soft and pliable."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Eritrea",
+            "element_name": "Injera",
+            "relationship_reason": "Injera is a national staple and cultural symbol in both Ethiopia and Eritrea, central to their culinary identity and communal eating practices."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-e59d10d4",
+      "element_name": "Dreamtime Stories (The Dreaming / Tjukurrpa)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.mandelaboriginalart.com.au/blogs/aboriginal-dreamtime-stories&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.mandelaboriginalart.com.au/blogs/aboriginal-dreamtime-stories",
+        "https://aboriginalart.com.au/dreamtime-stories",
+        "https://www.evolvecommunities.com.au/why-is-dreamtime-important-to-aboriginal-culture",
+        "https://www.kateowengallery.com/aboriginal-dreamtime-stories-jukurrpa",
+        "https://japingkaaboriginalart.com/aboriginal-art/aboriginal-dreamtime-stories/",
+        "https://www.commonground.org.au/learn/the-dreaming",
+        "https://www.aboriginaldreamtimestories.com/",
+        "https://aboriginalcontemporary.com.au/blogs/news/what-is-the-dreamtime-and-dreaming",
+        "https://destinationhistory.com.au/the-dreaming/",
+        "https://ourshadowswillremain.com/dreamtime/",
+        "https://artark.com.au/blogs/news/what-is-the-dreaming-dreamtime-in-aboriginal-culture",
+        "https://study.com/academy/lesson/aboriginal-dreamtime-stories-meaning-art-examples.html",
+        "https://ochreart.com.au/understanding-aboriginal-dreaming/",
+        "https://en.wikipedia.org/wiki/The_Dreaming",
+        "https://parksaustralia.gov.au/kakadu/discover/stories/"
+      ],
+      "scraped_at": "2026-07-19T01:44:18.877447Z",
+      "location": {
+        "country": "Australia",
+        "provinces": [
+          "Northern Territory",
+          "Western Australia",
+          "South Australia",
+          "New South Wales",
+          "Queensland",
+          "Victoria",
+          "Tasmania"
+        ],
+        "lat": -19.8516101,
+        "lng": 133.2303375
+      },
+      "resume_analisa": {
+        "description": "Dreamtime stories, also known as The Dreaming or Tjukurrpa (in some Aboriginal languages), are ancient narratives central to Australian Aboriginal culture. They date back thousands of years and form the spiritual foundation of Aboriginal beliefs, explaining the creation of the world, the landscape, and the laws governing human behavior. These stories are not merely myths or legends but a living cultural heritage passed down through generations orally and through art, dance, and ceremonies. [2, 3, 4] They provide insights into Aboriginal cosmology, the relationship between humans and the environment, and the moral and ethical codes guiding Aboriginal societies. [2] Dreamtime is understood as a continuum of past, present, and future, not a static historical period. [4, 5, 10] The stories often feature ancestral beings, such as the Rainbow Serpent, who shaped the land and established cultural practices. [2, 3, 6, 13, 14]",
+        "cultural_significance": "Dreamtime stories hold immense cultural and spiritual significance for Aboriginal communities. They serve as a vital means of preserving and transmitting cultural knowledge, teaching moral lessons, and reinforcing social structures. [2, 5] These narratives connect Aboriginal people to their land, ancestors, and each other, forming the basis of their identity and worldview. [2] They provide a framework for understanding the world and humanity's place within it, emphasizing the interconnectedness of all living beings and the importance of living in harmony with nature. [2] Dreamtime narratives guide religious rituals, ceremonies, and everyday life, dictating rules for behavior, social interactions, and custodianship of the land. [3, 4, 5, 10] The stories are deeply intertwined with specific landscapes, landmarks, and ecological features, expressing the perception of the land as a spiritual entity imbued with the essence of Ancestral Beings. [13]",
+        "gemini_tags": [
+          "Aboriginal Culture",
+          "Indigenous Australian Heritage",
+          "Oral Traditions",
+          "Creation Myths",
+          "Folklore",
+          "Spirituality",
+          "Cultural Knowledge Transmission",
+          "Ancestral Beings",
+          "Land Connection",
+          "Moral Teachings"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.8,
+        "related_elements": []
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-17T01:46:38.720432Z",
-    "total_ich_elements": 200,
-    "complete_records": 186,
-    "incomplete_records": 14,
+    "generated_at": "2026-07-19T01:44:37.961889Z",
+    "total_ich_elements": 203,
+    "complete_records": 188,
+    "incomplete_records": 15,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 70,
+      "Traditional Craftsmanship": 71,
       "Social Practices & Rituals": 44,
-      "Culinary Traditions": 35,
+      "Culinary Traditions": 36,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 18,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 15,
+      "Oral Traditions": 16,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
