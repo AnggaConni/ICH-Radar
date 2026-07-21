@@ -17915,17 +17915,296 @@
         "related_elements": []
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-86853e92",
+      "element_name": "Akutaq (Eskimo Ice Cream)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.fws.gov/sites/default/files/styles/original/public/thumbnails/image/akutaq_eskimo_ice_cream.jpg",
+      "source_urls": [
+        "https://sweetstateofmine.com/alaska-akutaq-eskimo-ice-cream/",
+        "https://matadornetwork.com/read/alaskan-ice-cream-berries-fish-caribou/",
+        "https://www.tastingtable.com/930776/the-ancient-origins-of-alaskas-traditional-akutaq-ice-cream/",
+        "https://whatscookingamerica.net/History/IceCream/Akutaq.htm",
+        "https://icecreamhistory.net/ice-cream-history/akutaq-eskimo-ice-cream/",
+        "https://grokipedia.org/wiki/Alaskan_ice_cream",
+        "https://foodpassport.com/recipe/akutaq/",
+        "https://www.thefooddictator.com/the-hirshon-northwest-territories-akutaq-eskimo-ice-cream-%E1%90%A0%E1%90%96%E1%90%B1%E1%90%A0%E1%90%91%E1%90%B5/",
+        "https://commons.wikimedia.org/wiki/File:Akutaq.jpg",
+        "https://www.fws.gov/media/akutaq-eskimo-ice-cream",
+        "https://hillcottagerestaurant.com/akutaq-eskimo-ice-cream-two-versions-the-primitive-and-the-indigenous-ancestral-tradition-of-the-inuit-and-yupik-peoples/",
+        "https://www.tasteatlas.com/akutaq",
+        "https://www.youtube.com/watch?v=s_8_Xm-102s"
+      ],
+      "scraped_at": "2026-07-21T01:43:20.197059Z",
+      "location": {
+        "country": "United States",
+        "provinces": [
+          "Alaska"
+        ],
+        "lat": 64.4459613,
+        "lng": -149.680909
+      },
+      "resume_analisa": {
+        "description": "Akutaq, often referred to as 'Eskimo Ice Cream,' is a traditional frozen delicacy of the indigenous peoples of Alaska, particularly the Inuit and Yup'ik communities. The name 'Akutaq' itself is a Yup'ik word meaning 'mix them together.' Traditionally, it is a rich mixture of whipped animal fat (tallow from animals like moose, caribou, seal, bear, or reindeer), seal oil, wild berries (such as blueberries, salmonberries, cranberries, and cloudberries), and sometimes includes snow or water, and even ground fish or meat. Originally, Akutaq served as a vital high-energy survival food for hunters during long excursions in the harsh Arctic climate. While its core ingredients remain, modern adaptations often substitute animal fats with vegetable shortening (like Crisco) and incorporate sugar for added sweetness.",
+        "cultural_significance": "Akutaq holds profound cultural significance as a cornerstone of Alaska Native cuisine and heritage. It is traditionally prepared by women, often after successful hunts, and shared communally during important events such as celebrations, funerals, and ceremonies marking a young boy's first successful hunt. This practice reinforces community bonds and ensures the preservation of ancestral knowledge. The recipe is typically passed down through generations, primarily through observation and hands-on learning, rather than written instructions. A unique aspect of its preparation can include a small ceremony where the person who mixed the ingredients draws a cross shape in the Akutaq and throws a pinch of the mixture and each type of berry into a fire, uttering the Yup'ik phrase 'Tamarpeci nerluci,' meaning 'All of you eat.' Akutaq symbolizes the resilience and cultural pride of Alaskan indigenous communities, showcasing their ingenious methods of utilizing local resources for sustenance and celebration.",
+        "gemini_tags": [
+          "Traditional Food",
+          "Indigenous Cuisine",
+          "Alaskan Native Culture",
+          "Ancestral Recipe",
+          "Survival Food",
+          "Culinary Heritage",
+          "Yup'ik",
+          "Inuit",
+          "Arctic Food"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Food Preparation",
+        "materials_and_tools": [
+          "Large mixing bowl",
+          "Hands (traditional method)",
+          "Whisk or stick (for whipping)",
+          "Freezer"
+        ],
+        "step_by_step": [
+          "**Prepare the fat**: Rendered animal fat (e.g., caribou, moose, seal, bear, walrus tallow) is slowly melted and then allowed to cool until it reaches a soft, pliable, but not liquid consistency. Modern versions often use solid vegetable shortening (Crisco) or lard.",
+          "**Whip the fat**: Place the prepared fat in a large mixing bowl. Whip it vigorously by hand, or using a whisk or stick, for several minutes until it becomes creamy, fluffy, and white. A small amount of cold water or snow can be added to achieve a lighter, softer texture.",
+          "**Incorporate oil**: Drizzle in seal oil (or other animal oil) and continue to whip until it is thoroughly combined and the mixture is homogeneous.",
+          "**Add sweeteners (modern variation)**: If making a modern version, gradually whip in granulated sugar until it dissolves. Traditionally, sweetness was derived solely from the berries.",
+          "**Fold in berries**: Add fresh or frozen wild berries such as blueberries, salmonberries, cranberries, cloudberries, or arctic raspberries. Gently fold them into the mixture, taking care not to crush them.",
+          "**Add savory elements (traditional variation)**: Optionally, crumble and gently mix in dried or lightly cooked fish (e.g., whitefish, pike) or other lean meats for a more savory and hearty traditional version.",
+          "**Chill**: Place the mixture in a freezer for at least two hours, or until it is completely set and frozen.",
+          "**Serve**: Serve Akutaq frozen as a dessert, snack, or a sustaining meal."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Russia",
+            "element_name": "Tolkusha",
+            "relationship_reason": "A very similar type of 'ice cream' exists in the Russian Far East."
+          },
+          {
+            "country": "Canada",
+            "element_name": "Indigenous 'ice cream' varieties",
+            "relationship_reason": "Similar sustenance foods are found among First Nation peoples in northern Canada."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ed758c4a",
+      "element_name": "Art of Pottery-making of Chăm People",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Bau_Truc_pottery_village.jpg/1280px-Bau_Truc_pottery_village.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/USL/01574",
+        "https://www.volotour.com/cham-pottery-the-journey-of-preserving-and-promoting-traditional-handicrafts/",
+        "https://vietnamlawmagazine.vn/bau-truc-potters-traditional-technique-55115.html",
+        "https://vietnamtimes.org.vn/cham-peoples-pottery-making-art-recognised-by-unesco-as-heritage-in-need-of-urgent-safeguarding-52723.html",
+        "https://vietnam.vn/spreading-the-flow-of-cham-pottery-heritage/",
+        "https://www.youtube.com/watch?v=0_0S-4-f6y4",
+        "https://vietnam.travel/things-to-do/bau-truc-pottery-village-quintessence-cham-culture",
+        "https://english.vov.vn/en/culture/bau-truc-pottery-village-to-become-a-model-for-community-based-tourism-1060935.vov",
+        "https://www.xinhuanet.com/english/20221209/4888062b32284c4897f1f3131709403b/c.html",
+        "https://www.cairn.info/revue-ethnologie-francaise-2025-1-page-30.htm",
+        "https://www.unesco.org/archives/multimedia/document-3733-eng"
+      ],
+      "scraped_at": "2026-07-21T01:43:52.843393Z",
+      "location": {
+        "country": "Vietnam",
+        "provinces": [
+          "Ninh Thuận",
+          "Bình Thuận",
+          "Quảng Nam"
+        ],
+        "lat": 11.4639176,
+        "lng": 109.1316501
+      },
+      "resume_analisa": {
+        "description": "The Art of Pottery-making of Chăm People is an ancient traditional craft deeply intertwined with the history and culture of the Chăm ethnic group in central and southern central Vietnam, particularly in provinces like Ninh Thuận and Bình Thuận. This craft is primarily practiced by Chăm women and is recognized as an expression of individual creativity based on knowledge transmitted within the community. Unlike many other pottery traditions, Chăm potters do not use a potter's wheel; instead, they meticulously shape each item by hand while revolving around the clay piece. The pottery is unglazed and fired outdoors using firewood and straw. Products include household utensils, religious objects, and fine art works such as jars, pots, trays, and vases, often adorned with diverse patterns inspired by nature, animals, mythology, and religious symbols.",
+        "cultural_significance": "Chăm pottery holds significant cultural, religious, and spiritual value for the Chăm people. It is an essential part of their daily life and plays a crucial role in spiritual ceremonies, festivals, and traditions, including seasonal festivals, religious ceremonies, and wedding rituals. The craft serves as a demonstration of Chăm women's creativity and enhances their role in society by providing opportunities for productive labor, social interaction, and vocational education for children. It also contributes to family income and helps safeguard the customs, habits, and cultural identity of the Chăm people. The art was inscribed on UNESCO's List of Intangible Cultural Heritage in Need of Urgent Safeguarding in 2022, affirming its importance as a shared heritage of humanity.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Pottery",
+          "Chăm Culture",
+          "Vietnam",
+          "Intangible Cultural Heritage",
+          "Handicraft",
+          "Community Practice",
+          "Women's Craft"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship",
+        "materials_and_tools": [
+          "Clay (red basalt soil, from rice fields near Lu and Quao rivers)",
+          "Sand",
+          "Water",
+          "Firewood",
+          "Straw",
+          "Anvil",
+          "Pedestal (e.g., upside-down water container)",
+          "Small wet cloth",
+          "Comb",
+          "Seashell",
+          "Bamboo loop",
+          "Bamboo hook scrapper polisher",
+          "Weed coil cloth",
+          "Tree sticks",
+          "Natural plant-based glaze/color water (from bark of forest trees, young trees, cashew nut shells)"
+        ],
+        "step_by_step": [
+          "**1. Material Collection**: Collect adhesive clay from rice fields (e.g., near Lu and Quao rivers) after rice harvest, digging 0.3-0.4m deep. Clay is also sourced from Hamu Tanu Halan field and Xuan Quang village.",
+          "**2. Clay Preparation**: Dry the collected clay for 3-4 days to remove water. Smash clay into small pieces. Soak clay in water overnight (10-12 hours) in a hole to loosen it. Mix soaked clay with clean, fine sand (1:1 or 1:2 ratio depending on the item). Knead the clay with feet and hands to remove impurities and gravels and achieve plasticity.",
+          "**3. Shaping**: Place a lump of thoroughly wedged clay on a pedestal (often an upside-down water container) covered with a thin layer of sand. Artisans (women) revolve backward around the clay piece, shaping it with bare hands without a potter's wheel. Turn the clay mass into a pumpkin shape and gradually create a firm bottom. Add banquet-shaped pieces of soil to join and develop the pottery body. Use a small wet cloth to smoothen the surface and inside body. Roll across the mouth of the piece to create a full-blown or cupped mouth. Use a bamboo hook scrapper polisher to scrape the soil and remove finger marks. Wrap a weed coil cloth in hands to scrape and smooth the pottery body. Push the upper edge of the body to shape the shoulder.",
+          "**4. Decorating and Drying**: Impress or carve patterns (jagged lines, waves, plants, flowers, Hindu gods, lotus flowers, dragons, birds, religious symbols) using a comb, seashell, bamboo loop, or sticks. Apply natural plant-based glaze for extra decoration (optional). Leave the piece on the pedestal to dry a little bit more. Move pottery to shady places for a day to dry, then put out to dry for one week to prevent cracking. Remove defects. If slightly dry, adjust by using a small bamboo hoop to scrape its body thinly and shallow its bottom, and use a shell to smooth it. Move to sun until totally dry.",
+          "**5. Open-air Firing**: Arrange firewood (about 20 cm thick) as the base of the furnace. Upturn pottery into two or three layers of firewood, with bigger pottery below and smaller above. Put firewood around the furnace, covered by a layer of stone. Burn the fire from the opposite direction of the wind to prevent quick burning. Firing temperature typically ranges from 800 to 1000 degrees Celsius for seven to eight hours. Immediately after taking pottery out of the fire, splash color water (from bark of forest trees, young trees, cashew nut shells soaked for 1 month) onto the pottery to create natural red and brown patterns/fire flowers."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Cultural motifs and religious symbols",
+            "relationship_reason": "Chăm pottery patterns are influenced by Hindu gods, lotus flowers, and other religious symbols from Indian culture."
+          },
+          {
+            "country": "Southeast Asian cultures",
+            "element_name": "General pottery traditions and cultural motifs",
+            "relationship_reason": "Chăm pottery patterns and techniques show influences from broader Southeast Asian cultures."
+          },
+          {
+            "country": "Global (UNESCO)",
+            "element_name": "Intangible Cultural Heritage of Humanity",
+            "relationship_reason": "The art of pottery-making of the Chăm people has been inscribed on UNESCO's List of Intangible Cultural Heritage in Need of Urgent Safeguarding, making it a shared heritage of humanity."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0d7796d1",
+      "element_name": "Sumba Ikat Weaving",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//karajasumba.com/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://karajasumba.com/",
+        "https://pemimpisumba.com/",
+        "https://maringi.com/",
+        "https://authentic-indonesia.com/",
+        "https://cargoinc.com/",
+        "https://capkaroso.com/",
+        "https://backindo.com/",
+        "https://nihi.com/",
+        "https://ich.unesco.org/",
+        "https://asianinstituteofresearch.org/",
+        "https://alesouk.com/",
+        "https://adventureindonesia.com/",
+        "https://montecristomagazine.com/",
+        "https://janahesse.com/",
+        "https://gardentravelphotojournal.com/",
+        "https://exploresumba.com/",
+        "https://sumbaprivatetour.com/",
+        "https://itpcmilan.com/",
+        "https://www.asiantextilestudies.com/",
+        "https://kainkita.com/",
+        "https://storiesandobjects.com/",
+        "https://www.etsy.com/",
+        "https://artisticartifacts.com/",
+        "https://www.designhotels.com/"
+      ],
+      "scraped_at": "2026-07-21T01:44:28.885192Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "East Nusa Tenggara",
+          "Sumba Island"
+        ],
+        "lat": -8.5656787,
+        "lng": 120.6978581
+      },
+      "resume_analisa": {
+        "description": "Sumba Ikat Weaving, also known as Tenun Ikat Sumba, is a traditional handwoven textile from Sumba Island in Indonesia. It is renowned for its intricate patterns, the use of natural dyes, and its profound cultural significance. The creation of Sumba Ikat involves a meticulous resist-dyeing technique where threads are carefully tied and dyed before they are woven into fabric, a process that can take months to over a year to complete.",
+        "cultural_significance": "Sumba Ikat is deeply embedded in the cultural and traditional life of Sumba, serving as a vital component of social, cultural, and economic life for centuries. It functions as a status marker and is crucial for ceremonial exchanges during significant life events such as marriages, funerals, and other rites. The designs, techniques, and even the way cloths are paired for exchange convey local ideas about rank, reciprocity, and ancestry, often linked to the Marapu ancestral belief system. Motifs frequently depict elements of nature, mythical creatures, ancestral spirits, and cosmological beliefs, symbolizing various aspects like wealth and prestige (horses), ancestral power (skull tree), femininity and fertility (mamuli), eternal life (prawn), power (human-headed lion), social life (floral motifs), and life after death (snakes). Weaving is traditionally a women's craft, with knowledge passed down from mother to daughter, thereby preserving clan memory and providing a source of income.",
+        "gemini_tags": [
+          "Textile Art",
+          "Traditional Weaving",
+          "Resist Dyeing",
+          "Natural Dyes",
+          "Indonesian Culture",
+          "Cultural Heritage",
+          "Women's Craft",
+          "Ceremonial Textiles",
+          "Sumba Island",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "Cotton yarn (traditionally home-grown, sometimes imported machine yarn)",
+          "Natural dyes (Indigofera plants for blue, Morinda citrifolia roots for red-brown, turmeric for yellow, Kayu Kuning tree bark for yellow, iron/tannin mud for black, noni roots for red)",
+          "Bamboo sticks",
+          "Winder",
+          "Backstrap or frame loom (gedongan)",
+          "Rattan stick",
+          "Special bowl with a cotton bow (for fluffing cotton)",
+          "Gewang palm leaves (for tying/binding)"
+        ],
+        "step_by_step": [
+          "Gathering raw materials: Cotton and natural dye ingredients are collected from the forest.",
+          "Lamihi (separating seeds from cotton): Cotton seeds are removed, traditionally by hand or using bamboo rollers, or a cotton mill.",
+          "Preparing cotton: The cotton is beaten with a rattan stick, dried in the sun, and then fluffed in a special bowl with a cotton bow.",
+          "Spinning yarn: The prepared cotton is rolled lengthwise and spun into yarn, often using traditional wooden spinning wheels.",
+          "Stiffening yarn: Cotton fibers are stretched onto bamboo sticks and soaked in water mixed with fine grated rice, then dried.",
+          "Warping: The yarn is stretched onto a binding frame, typically formed by two bamboo tubes.",
+          "Design & binding (Ikat): Patterns are meticulously mapped from memory and tied onto the warp yarns using strips of young gewang palm leaves. These tied sections are designed to resist the dye.",
+          "Natural dyeing: The bound yarns are immersed in natural dye baths multiple times to achieve the desired colors. Common dyes include indigo for blue, morinda roots for red-brown, and iron/tannin mud for black. Layering and over-dyeing are used to build depth and nuance in colors. The blue indigo color is highly prized.",
+          "Weaving: The dyed warp yarns are carefully aligned on a backstrap or frame loom. The warp threads are separated into layers using sticks and a heddle rod, allowing the weft thread to pass through and create the woven fabric.",
+          "Wari rumata (finishing process): The final stage involves a detailed inspection and finishing of the woven cloth."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Patola textiles",
+            "relationship_reason": "Centuries of trade brought Indian patola, beads, and foreign motifs that were reinterpreted within Sumba's own visual language."
+          },
+          {
+            "country": "Indonesia (various regions)",
+            "element_name": "Ikat weaving (general)",
+            "relationship_reason": "Ikat is a widespread resist-dyeing technique found throughout the Indonesian archipelago, with regional variations."
+          },
+          {
+            "country": "Various Asian countries",
+            "element_name": "Ikat (general)",
+            "relationship_reason": "Ikat has been recognized and manufactured in many countries across Asia, and its craft varies widely from country to country and region to region."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-19T01:44:37.961889Z",
-    "total_ich_elements": 203,
-    "complete_records": 188,
+    "generated_at": "2026-07-21T01:45:11.465021Z",
+    "total_ich_elements": 206,
+    "complete_records": 191,
     "incomplete_records": 15,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 71,
+      "Traditional Craftsmanship": 73,
       "Social Practices & Rituals": 44,
-      "Culinary Traditions": 36,
+      "Culinary Traditions": 37,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 18,
       "Social Practices & Rituals | Performing Arts": 3,
