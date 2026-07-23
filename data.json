@@ -18194,16 +18194,171 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a92bc73a",
+      "element_name": "Jesa (Ancestral Rites)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Jesa_spread.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Jesa",
+        "https://grokipedia.org/wiki/Jesa",
+        "https://askakorean.blogspot.com/2010/09/how-to-hold-jesa.html",
+        "https://www.nfm.go.kr/english/folkstory/traditionalRitesAndRituals/view.do?idx=1003",
+        "https://thesoulofseoul.net/2023/04/30/how-to-perform-a-korean-jesa-ceremony-a-step-by-step-guide/",
+        "https://inkas.org/korean-culture/jesa/",
+        "https://www.britannica.com/place/South-Korea/Cultural-life",
+        "https://www.everybodywiki.com/Commemorating_the_Dead:_Korea%27s_%22Jesa%22_Tradition",
+        "https://www.koreatimes.co.kr/www/opinion/2023/01/696_343516.html",
+        "https://www.korea.net/NewsFocus/Culture/view?articleId=134543",
+        "https://www.koreafuneral.or.kr/info/info03_02.php",
+        "https://www.amc.seoul.kr/asan/healthinfo/management/managementDetail.do?managementId=106"
+      ],
+      "scraped_at": "2026-07-23T01:49:51.414205Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [],
+        "lat": 36.638392,
+        "lng": 127.6961188
+      },
+      "resume_analisa": {
+        "description": "Jesa is a traditional Korean ceremonial rite performed to commemorate and honor departed ancestors, expressing filial piety and gratitude, and seeking blessings for the family's well-being. It is performed with utmost sincerity as if the departed ancestor was still alive. There are several types, including Gijesa (held on the anniversary of an ancestor's death), Charye (held on major holidays like Lunar New Year's Day and Chuseok), Sije (seasonal rites), and Myoje (rites performed at gravesites). When Koreans refer to Jesa today, they are most commonly speaking of Gijesa.",
+        "cultural_significance": "Ancestor worship, or Jesa, is a fundamental aspect of Korean culture, deeply rooted in prehistoric shamanistic beliefs and later formalized by Confucian principles of filial piety (hyo). It emphasizes respect for ancestors, age, and seniority, thereby influencing family, work, and social life. The practice strengthens family unity as all family members gather to prepare and perform the rituals together. Traditional Korean belief holds that the spirits of the departed do not leave the earth for several generations and are still considered part of the family, capable of bringing good fortune to the living. Jesa also incorporates elements of Taoism in the specific arrangement of food on the altar. Even in modern times, Jesa remains one of the few traditional ceremonies faithfully observed by Koreans, often irrespective of their religious affiliation.",
+        "gemini_tags": [
+          "Ancestral Rites",
+          "Korean Culture",
+          "Filial Piety",
+          "Confucianism",
+          "Shamanism",
+          "Family Rituals",
+          "Memorial Ceremony",
+          "Traditional Practice",
+          "South Korea"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual",
+        "materials_and_tools": [
+          "Ritual table (low table, makeshift altar)",
+          "Memorial tablet (shinwi or jibang - paper tablet with deceased's name) or portrait of the deceased",
+          "Incense",
+          "Incense holder",
+          "Sand bowl",
+          "Traditional liquor (cheongju)",
+          "Various food offerings (e.g., wine, taro soup, beef, fish, three different colored vegetables, fruits like jujubes, chestnuts, dried persimmons, pears, rice cakes, cooked rice, soup)",
+          "Chopsticks",
+          "Written prayer (chukmun)",
+          "Candles"
+        ],
+        "step_by_step": [
+          "**Setting the Table (Jinseol)**: The ritual table is prepared, typically facing north where the memorial tablet or portrait of the deceased is placed. Food offerings are meticulously arranged in specific rows and positions, often adhering to traditional rules such as 'Hongdongbaekseo' (red fruits on the east, white fruits on the west) and 'Joryulisi' (jujubes, chestnuts, persimmons, and pears arranged from left to right). Rice, soup, and utensils are placed closest to the memorial tablet.",
+          "**Calling the Ancestors (Gangsin)**: The main officiant, known as the Jeju (typically the eldest male heir), kneels before the altar, lights incense, and places it in the incense holder. The Jeju's wife or next of kin pours traditional liquor (cheongju) into a cup, which the Jeju circles over the incense three times before pouring the liquor into a sand bowl in three separate parts. This act is performed to invite the ancestral spirits to the ceremony. All participants then bow twice.",
+          "**Greeting the Ancestors (Chamsin)**: All individuals in attendance collectively bow towards the altar as a formal greeting to the ancestral spirits.",
+          "**First Offering (Choheon)**: The Jeju kneels, and liquor is poured into a cup, which is then circled over the incense three times and placed next to the rice and soup bowls. This process is repeated for each ancestor being honored. The lids of the rice and soup bowls are opened. Participants then stand, bow twice, and return to their original positions.",
+          "**Reading the Prayer (Dokchuk)**: While all participants kneel, a ritual officiant (Chukgwan) reads a written prayer (chukmun) to the ancestors, expressing gratitude and wishes. After the prayer is read, participants bow twice.",
+          "**Second Offering (Aheon)**: The second offering of liquor is made, traditionally by the wife of the Jeju (the eldest daughter-in-law) or the next closest relative. They perform two bows (women traditionally perform four bows).",
+          "**Third Offering (Jongheon)**: The third and final offering of liquor is made by the next closest relative after the Aheonja. The cup is typically filled approximately 70%.",
+          "**Adding Liquor (Cheomjak)**: After the Jongheon, the Jeju kneels again, and additional liquor is poured into the partially filled cup, filling it completely.",
+          "**Placing Spoon and Chopsticks (Sapsijeongjeo / Yusik)**: A spoon is placed upright in the center of the rice bowl, with the inside facing east. Chopsticks are then placed on top of the rice. This action symbolizes encouraging the ancestors to partake of the food. Participants bow again.",
+          "**Closing the Door (Hapmun)**: Participants temporarily leave the room for a brief period, allowing the ancestors to enjoy the offerings undisturbed. They return after a short interval.",
+          "**Farewell to Spirits (Sasin)**: All participants bow twice to bid farewell to the ancestral spirits. The paper memorial tablet (jibang) and the written prayer (chukmun) are then burned.",
+          "**Sharing the Food (Eumbok)**: The food and liquor that were offered to the ancestors are then shared among the family members. This act symbolizes receiving blessings from the ancestors and is believed to strengthen family bonds."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Ancestor Worship / Confucian Rites",
+            "relationship_reason": "Jesa's origins are deeply influenced by Confucian principles and ancestor worship practices introduced from China. The ritual was formalized during the Joseon Dynasty, drawing heavily from Chinese philosopher Zhu Xi's 'Family Rituals.'"
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-697fb1c1",
+      "element_name": "Okinoshima Sacred Entry Taboos and Rituals",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.nippon.com/en/views/b06801/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.nippon.com/en/views/b06801/",
+        "https://www.gov-online.go.jp/eng/publicity/book/hlj/201804/html/04_04.html",
+        "https://okinoshima-heritage.jp/en/discover/",
+        "https://www.japan.travel/en/world-heritage/sacred-island-okinoshima-associated-sites-munakata-region-unesco/",
+        "https://en.wikipedia.org/wiki/Okinoshima_(Fukuoka)",
+        "https://www.ancient-origins.net/ancient-places-asia/okinoshima-island-0018784",
+        "https://thetruenet.com/forbidden-okinoshima-island/",
+        "https://www.japan.travel/national-parks/okinoshima-island/",
+        "https://okinoshima-heritage.jp/en/discover/okinoshima/",
+        "https://www.experience-japan.jp/heritage/sacred-island-of-okinoshima-and-associated-sites-in-the-munakata-region/",
+        "https://jetsetterweb.wordpress.com/2021/02/13/sacred-island-of-okinoshima-back-to-japan/"
+      ],
+      "scraped_at": "2026-07-23T01:50:34.467978Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Fukuoka Prefecture"
+        ],
+        "lat": 33.6251241,
+        "lng": 130.6180016
+      },
+      "resume_analisa": {
+        "description": "Okinoshima is a sacred island located in the Genkai Sea, approximately 60 kilometers off the coast of Munakata, Fukuoka Prefecture, Japan. The entire island is considered a Shinto kami (deity) and is an integral part of the Munakata Taisha shrine complex. It served as a vital site for ancient rituals dedicated to ensuring safe maritime navigation and fostering trade between Japan, the Korean Peninsula, and China from the 4th to the 9th centuries. The island is renowned for its stringent taboos and highly restricted access, which have played a crucial role in preserving its archaeological sites and artifacts in an almost pristine condition.",
+        "cultural_significance": "The island holds profound significance within Shinto beliefs, embodying the ancient tradition of worshipping a sacred island and the Munakata deities, who are three female goddesses believed to be daughters of the sun goddess Amaterasu. The rituals conducted on Okinoshima were essential for maritime safety and trade, reflecting significant cultural exchanges across East Asia during ancient times. The strict taboos, including the prohibition of women from the island and the mandatory purification rituals for men, underscore the island's sacredness and the paramount importance of purity in Shinto. The remarkable preservation of the island's artifacts, attributed to these enduring taboos, offers invaluable archaeological insights into ancient Japanese religious practices and its historical international relations.",
+        "gemini_tags": [
+          "Shinto Rituals",
+          "Sacred Geography",
+          "Purification Rites",
+          "Gender-based Taboos",
+          "Archaeological Preservation",
+          "Maritime History",
+          "Japanese Folklore"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritualistic Entry and Purification",
+        "materials_and_tools": [
+          "Seawater (for purification)"
+        ],
+        "step_by_step": [
+          "Permission from Munakata Taisha is required to disembark on Okinoshima.",
+          "Only men are permitted to visit the island; women are strictly prohibited, a tradition believed to be rooted in ancient beliefs of menstrual impurity and the need to protect the purity of the rituals.",
+          "Before landing, male visitors must perform a purification ritual known as 'misogi,' which involves stripping naked and cleansing themselves in the ocean.",
+          "Visitors are bound by a sacred vow of secrecy, prohibiting them from divulging any details of their visit or what they have seen or heard on the island.",
+          "No object, not even a single stone or blade of grass, can be removed from the island.",
+          "Historically, offerings such as mirrors, swords, beads, and other valuable items were deposited as prayers for safe passage and successful trade."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Korean Peninsula",
+            "element_name": "Ancient maritime trade and cultural exchange routes",
+            "relationship_reason": "Okinoshima served as a crucial hub for diplomatic and trade relations with the Korean Peninsula from the 4th to the 9th centuries. Numerous archaeological artifacts found on Okinoshima originate from the Korean Peninsula, including gold rings and gilt bronze harnesses, providing evidence of intense exchanges and influences on religious beliefs and rituals."
+          },
+          {
+            "country": "China",
+            "element_name": "Ancient maritime trade and cultural exchange routes",
+            "relationship_reason": "Okinoshima played a significant role in diplomatic and trade relations with China from the 4th to the 9th centuries. Archaeological findings on the island include artifacts from China, such as bronze dragon-head finials, and even glass shards from Persia, demonstrating extensive cultural and economic interchanges that influenced the region's religious practices."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-21T01:45:11.465021Z",
-    "total_ich_elements": 206,
-    "complete_records": 191,
+    "generated_at": "2026-07-23T01:51:42.056055Z",
+    "total_ich_elements": 208,
+    "complete_records": 193,
     "incomplete_records": 15,
     "categories_breakdown": {
       "Traditional Craftsmanship": 73,
-      "Social Practices & Rituals": 44,
+      "Social Practices & Rituals": 46,
       "Culinary Traditions": 37,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 18,
