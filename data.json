@@ -18349,19 +18349,276 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-799f6de8",
+      "element_name": "Busójárás",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bus%C3%B3j%C3%A1r%C3%A1s_2012_Moh%C3%A1cs_%281%29.jpg/1024px-Bus%C3%B3j%C3%A1r%C3%A1s_2012_Moh%C3%A1cs_%281%29.jpg",
+      "source_urls": [
+        "https://whartibus.com/busojaras-festivities-at-mohacs-intangible-cultural-heritage-unesco/",
+        "https://grokipedia.org/wiki/Bus%C3%B3j%C3%A1r%C3%A1s",
+        "https://studyinhungary.hu/blog/busojaras-a-hungarian-tradition-celebrating-the-coming-of-spring",
+        "https://en.wikipedia.org/wiki/Bus%C3%B3j%C3%A1r%C3%A1s",
+        "https://www.atlasobscura.com/places/busojaras-mohacs",
+        "https://www.unesco.org/en/ich/RL/00252",
+        "https://www.hungarytoday.hu/hungarian-traditions-become-unesco-intangible-cultural-heritage/",
+        "https://www.marriott.com/travel-tours/budapest/busojaras-unesco-heritage-folklore-carnival-in-mohacs/",
+        "https://www.hellohungary.com/our-valuable-heritage-busojaras-in-mohacs-and-other-winter-farewells/",
+        "https://www.zsoltvaranka.com/busojaras-mohacs-masks-fire-hungary/"
+      ],
+      "scraped_at": "2026-07-25T01:45:59.369785Z",
+      "location": {
+        "country": "Hungary",
+        "provinces": [
+          "Baranya County"
+        ],
+        "lat": 47.1817585,
+        "lng": 19.5060937
+      },
+      "resume_analisa": {
+        "description": "Busójárás is a six-day annual end-of-winter carnival held in Mohács, Hungary. It features masked participants known as Busós who parade through the town, making loud noises and performing rituals to symbolically drive away winter and welcome spring. The festival culminates in the burning of a coffin representing winter.",
+        "cultural_significance": "The festival has ancient, pre-Christian pagan origins among the Šokci people, a South Slavic ethnic group, serving as a fertility ritual to mark the end of winter and usher in spring, ensuring bountiful harvests. A popular legend also attributes its origin to the Šokci people scaring away Ottoman Turks during their occupation in the 16th-17th centuries by dressing in fearsome masks and creating a cacophony of noise. Busójárás is a vibrant expression of community identity and cultural continuity, recognized by UNESCO in 2009 and inscribed on the Representative List of the Intangible Cultural Heritage of Humanity.",
+        "gemini_tags": [
+          "Carnival",
+          "Festival",
+          "Winter Expulsion",
+          "Spring Welcome",
+          "Masked Ritual",
+          "Folkloric Performance",
+          "Community Celebration",
+          "Intangible Cultural Heritage",
+          "Hungarian Tradition",
+          "Šokci Culture",
+          "Pagan Origins",
+          "Fertility Ritual"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Festival/Carnival",
+        "materials_and_tools": [
+          "Busó Costumes: Woolly sheepskin cloaks (bunda), straw pants, colorful ribbons, traditional wooden masks (hand-carved from willow wood, often with exaggerated features like horns, fangs, bushy mustaches, painted with natural dyes including animal blood, and attached sheepskin hoods). Women may wear costumes reminiscent of female Ottoman Turks or lace veils/simple masks.",
+          "Noisemakers: Large cowbells suspended from the waist rope, wooden swords and clubs (used as rattlers).",
+          "Ritual Objects: Koporsó (wooden coffin representing winter), straw man."
+        ],
+        "step_by_step": [
+          "The six-day festival typically takes place in late February or early March, ending on Shrove Tuesday (the day before Ash Wednesday).",
+          "Thursday (Opening): Preparatory events and the official opening of the festival occur.",
+          "Friday (Kisfarsang - Little Carnival): Introductory rituals and events are held.",
+          "Sunday (Farsang Sunday - Peak Day): The largest festivities take place. Busós disembark from boats after crossing the Danube River. A grand procession (Busó walk/parade) with thousands of masked participants, often in horse-drawn or motorized fantasy vehicles, moves through the town's historic center (e.g., from Kóló Square to Széchenyi Square). A coffin is dropped from a ship into the Danube. In the evening, a large bonfire is lit, and the coffin is burned.",
+          "Throughout the Festival: Busós circulate among the crowd, pulling pranks, making loud noises with bells and rattles to scare away winter and evil spirits. Folk music, dancing, and feasting (including traditional Hungarian cuisine like spicy sausages, mini doughnuts, lángos, chimney cake) are integral parts of the celebration. Children also participate in costume contests.",
+          "Shrove Tuesday (Farsangtemetés - Burial of Farsang/Winter): The festival culminates with a ceremonial burial of winter, often involving the burning of a straw man or the symbolic coffin in a final bonfire, followed by a last dance in Széchenyi Square."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Croatia",
+            "element_name": "Šokci traditions",
+            "relationship_reason": "The tradition originated with the Šokci, a South Slavic ethnic group, and is also practiced in Croatia."
+          },
+          {
+            "country": "Serbia",
+            "element_name": "Carnival traditions",
+            "relationship_reason": "Guest Busó teams visit the festival from Serbia."
+          },
+          {
+            "country": "Poland",
+            "element_name": "Carnival traditions",
+            "relationship_reason": "Guest Busó teams visit the festival from Poland."
+          },
+          {
+            "country": "Bulgaria",
+            "element_name": "Kukeri",
+            "relationship_reason": "An ancient Thracian festivity with similar masked rituals to drive away evil spirits and welcome spring."
+          },
+          {
+            "country": "Switzerland",
+            "element_name": "Tschäggätte",
+            "relationship_reason": "Carnival masks similar to Busó masks exist in Lötschenthal, Wallis canton."
+          },
+          {
+            "country": "Italy/Sardinia",
+            "element_name": "Mamutones",
+            "relationship_reason": "Participants wear black furs and masks, resembling Busós."
+          },
+          {
+            "country": "Spain",
+            "element_name": "La Vijanera",
+            "relationship_reason": "Features 'zarramacos' whose actions and appearance resemble Busós."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b129f51e",
+      "element_name": "Nohgaku (Noh and Kyogen Theater)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ich.unesco.org/en/RL/nogaku-theatre-00012&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/nogaku-theatre-00012",
+        "https://kyoto.travel/en/see-and-do/nohgaku-noh-and-kyogen-theater",
+        "https://kanazawa-noh.com/en/introduction/nohgaku.html",
+        "https://www.nohgaku.or.jp/en/about",
+        "https://www.nohgaku.or.jp/en/about/history",
+        "https://www.gov-online.go.jp/eng/publicity/book/hlj/202311/pg12.html",
+        "https://www2.ntj.jac.go.jp/d-project/unesco/nohgaku/stage/performance.html",
+        "https://www.nohgaku.or.jp/en/stage/flow",
+        "https://www.japan.travel/japan-cultural-expo/en/discover/five-traditional-japanese-performing-arts-registered-as-unesco-intangible-cultural-heritage/"
+      ],
+      "scraped_at": "2026-07-25T01:46:28.297439Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Tokyo",
+          "Kyoto",
+          "Ishikawa (Kanazawa)",
+          "Fukuoka (Kyushu)"
+        ],
+        "lat": 35.6768601,
+        "lng": 139.7638947
+      },
+      "resume_analisa": {
+        "description": "Nohgaku is a collective term for two distinct yet complementary traditional Japanese theatrical genres: Noh and Kyogen. Noh is a musical dance-drama characterized by the use of masks, elaborate costumes, and highly stylized, reserved gestures to express deep emotions and tell often tragic stories, frequently featuring supernatural beings, gods, or ghosts. Kyogen, on the other hand, is a comedic dialogue-based drama that humorously depicts the daily lives and shortcomings of ordinary people, typically using fewer masks and relying on witty exchanges. Both are performed on the same distinctive Noh stage.",
+        "cultural_significance": "Nohgaku boasts a history of over 650 years, having been perfected by Kan'ami and his son Zeami in the Muromachi Period (14th-15th centuries). It is considered one of the oldest surviving forms of theater in the world. It was designated as an Important Intangible Cultural Property by the Japanese Government in 1957 and was inscribed in 2008 (originally proclaimed in 2001) on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity. Nohgaku has profoundly influenced various other Japanese performing arts, such as Bunraku and Kabuki, and has also had a global impact on modern drama, dance, and music. It serves as a symbol of Japanese aesthetics and spiritual culture, shaping the sensibilities of the Japanese people.",
+        "gemini_tags": [
+          "Traditional Japanese Theater",
+          "Masked Drama",
+          "Comedy",
+          "Dance-Drama",
+          "Intangible Cultural Heritage",
+          "Performing Arts",
+          "Noh",
+          "Kyogen",
+          "Japanese Culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance and Training",
+        "materials_and_tools": [
+          "Noh masks (for Noh roles like ghosts, women, children, old people, demons)",
+          "Elaborate costumes (shozoku)",
+          "Props (e.g., fans)",
+          "Noh stage (butai) with a distinctive roof and a pine tree painting (kagamiita) on the back wall",
+          "Hashigakari (walkway linking the stage to the 'hall of mirrors' backstage)",
+          "Flute (fue)",
+          "Small hand drum (ko-tsuzumi)",
+          "Large hand drum (o-tsuzumi)",
+          "Large drum (taiko)"
+        ],
+        "step_by_step": [
+          "**Roles and Ensemble:** A Nohgaku performance involves highly trained actors and musicians. Key roles include the Shite (main actor, often masked), Waki (supporting actor, unmasked), Tsure (assistant roles), Kyogen-kata (comic actors, also act as interlude narrators), Jiutai (chorus, providing narration and chanting), and Hayashi-kata (musicians playing fue, ko-tsuzumi, o-tsuzumi, and taiko). Koken (stage assistants) are also present.",
+          "**Stage Setting:** The performance takes place on a unique Noh stage, typically a square platform with a roof, a painted pine tree backdrop, and a 'hashigakari' walkway for entrances and exits.",
+          "**Performance Flow (Example of Mugen Noh):** A typical performance begins with an empty stage. The sound of instruments signals the start. Performers, including singers and instrumentalists, appear. Stage props are brought in. The Waki (supporting actor) appears and gives a self-introduction. The Shite (main actor) then appears. The first half of the play concludes. A Kyogen performer may then appear to explain the story during an interlude. The Shite performs a dance and exits the stage, followed by other performers, leaving an empty stage once more.",
+          "**Fundamental Movements (Kamae and Hakobi):** Actors utilize basic postures and movements. 'Kamae' is a stable standing posture with slightly bent knees and a low center of gravity. 'Hakobi' is a characteristic sliding walk where the feet remain close to the floor, maintaining a constant height of the body's center of gravity. These movements are highly stylized and convey emotions and actions with minimal, precise gestures.",
+          "**Expression and Masks:** In Noh, emotions are conveyed through stylized conventional gestures and the subtle manipulation of Noh masks. The masks, though immobile, appear to change expression with slight tilts of the actor's head, emphasized by light and shadow.",
+          "**Training:** Becoming a Nohgaku performer requires extensive and rigorous training. Institutions like the National Noh Theatre offer courses to train actors in the leading roles."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Sangaku",
+            "relationship_reason": "Nohgaku originated in the 8th century when Sangaku, a form of performance featuring acrobatics, song, dance, and comic sketches, was transmitted from China to Japan."
+          },
+          {
+            "country": "Korean Peninsula",
+            "element_name": "Sarugaku (performance art forms)",
+            "relationship_reason": "The origin of Nohgaku lies in 'Sarugaku,' performance art forms centered on nature and Buddhism, which were brought to Japan from the Korean Peninsula and mainland China, merging with indigenous Japanese faith."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-bf8ad8dd",
+      "element_name": "Traditional skills of carpet weaving in Kashan",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/doc/src/00383-PH-2009-000408.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/traditional-skills-of-carpet-weaving-in-kashan-00383"
+      ],
+      "scraped_at": "2026-07-25T01:47:38.617652Z",
+      "location": {
+        "country": "Iran",
+        "provinces": [
+          "Isfahan Province"
+        ],
+        "lat": 33.1881386,
+        "lng": 52.4981635
+      },
+      "resume_analisa": {
+        "description": "Kashan is a long-standing center for fine carpets, with almost one in three residents employed in carpet-making, predominantly women. The carpet-weaving process begins with a design, elaborated from among a series of established styles, including motifs such as flowers, leaves, branches, animals, and scenes taken from history. Carpets are woven on a loom known as a 'dar', where the warp and woof are typically made of cotton or silk. The pile is created by knotting wool or silk yarns to the warp using the distinctive Farsi (asymmetrical) knot, which is then held in place by a row of woven woof and beaten with a comb. The Farsi weaving style is applied with exemplary delicacy in Kashan, resulting in a finely and evenly knotted reverse side of the carpet.",
+        "cultural_significance": "The traditional skills of carpet weaving in Kashan are deeply rooted, with a significant portion of the population engaged in this craft. This heritage is passed down through generations, with mothers and grandmothers instructing daughters in the art of weaving, and fathers teaching sons skills such as designing, dyeing, shearing, loom-building, and tool-making. The designs often reflect aspects of nomadic life and local culture. The use of natural dyes derived from madder root, walnut skin, pomegranate skin, and vine leaves underscores a profound connection to local resources and traditional knowledge. UNESCO recognized these traditional skills in 2010, acknowledging not only the finished rug as an object but also the entire living tradition encompassing natural dyeing knowledge, design transmission, and the cultural practices interwoven into the craft.",
+        "gemini_tags": [
+          "Persian carpet weaving",
+          "Kashan",
+          "Traditional craftsmanship",
+          "Textile art",
+          "Natural dyes",
+          "Intangible Cultural Heritage",
+          "Iran"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional hand-knotting",
+        "materials_and_tools": [
+          "Wool or silk yarn (for pile)",
+          "Cotton or silk (for warp and woof)",
+          "Natural dyes (madder root, walnut skin, pomegranate skin, vine leaves, indigo, lettuce leaf, cherry stem)",
+          "Loom (dar)",
+          "Spinning wheels",
+          "Comb (for beating the woof)",
+          "Shearing tools"
+        ],
+        "step_by_step": [
+          "Local men shear wool, typically in spring or autumn.",
+          "Women convert the shorn wool into yarn using spinning wheels.",
+          "Yarns are dyed using natural substances such as madder root, indigo, lettuce leaf, walnut skin, cherry stem, pomegranate skin, and vine leaves, to produce a range of colors including reds, blues, browns, and whites.",
+          "Men construct the horizontal carpet loom, known as a 'dar', on the ground.",
+          "Women are responsible for the design and selection of colors. Designs are developed from established styles, incorporating motifs like flowers, leaves, branches, animals, and historical scenes. Weavers often create designs without a pre-drawn cartoon, reflecting scenes from their nomadic lives.",
+          "Cotton or silk warp and woof threads are set up on the loom. The pile is created by knotting wool or silk yarns to the warp using the distinctive Farsi (asymmetrical) knot.",
+          "After each row of knots is completed, a row of woven woof is inserted and then beaten down with a comb to secure the knots firmly in place.",
+          "To finish the carpet, the sides are sewn, any extra wool (naps) is carefully burned away to enhance the vividness of the designs, and the carpet undergoes a final cleaning.",
+          "The skills and knowledge are traditionally transferred orally and through practical example; mothers train their daughters in the use of materials, tools, and weaving techniques, while fathers train their sons in wool shearing and loom construction."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Iran (Fars Province)",
+            "element_name": "Traditional skills of carpet weaving in Fars",
+            "relationship_reason": "Both are recognized by UNESCO as part of Persian carpet weaving, sharing similar techniques, materials, and cultural significance, but with regional variations in design and specific practices."
+          },
+          {
+            "country": "Azerbaijan, Turkey, Central Asia",
+            "element_name": "Various carpet weaving traditions",
+            "relationship_reason": "Persian carpet weaving has a long history of influence and trade along the Silk Road, impacting weaving traditions in neighboring countries and regions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-23T01:51:42.056055Z",
-    "total_ich_elements": 208,
-    "complete_records": 193,
+    "generated_at": "2026-07-25T01:48:21.809487Z",
+    "total_ich_elements": 211,
+    "complete_records": 196,
     "incomplete_records": 15,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 73,
-      "Social Practices & Rituals": 46,
+      "Traditional Craftsmanship": 74,
+      "Social Practices & Rituals": 47,
       "Culinary Traditions": 37,
       "Culinary Traditions | Social Practices & Rituals": 3,
-      "Performing Arts": 18,
+      "Performing Arts": 19,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 16,
