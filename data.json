@@ -18606,19 +18606,313 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-30a2545f",
+      "element_name": "La Danza de los Viejitos (Dance of the Little Old Men)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//es.wikipedia.org/wiki/Danza_de_los_Viejitos&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://es.wikipedia.org/wiki/Danza_de_los_Viejitos",
+        "https://www.mexicodesconocido.com.mx/la-danza-de-los-viejitos-un-baile-de-origen-ancestral.html",
+        "https://www.xcaret.com/es/noticias/la-danza-de-los-viejitos-simbolo-de-la-cultura-michoacana/",
+        "https://en.wikipedia.org/wiki/Danza_de_los_Viejitos",
+        "https://www.xcaret.com/es/blog/danza-de-los-viejitos-michoacan/",
+        "https://www.milenio.com/cultura/danza-de-los-viejitos-origen-e-historia",
+        "https://experienciapatzcuaro.com/danza-de-los-viejitos-origen-significado-y-resistencia-purepecha/",
+        "https://www.lavozdemichoacan.com.mx/cultura/danza-de-los-viejitos-conoces-su-significado/",
+        "https://frontera.library.ucla.edu/recordings/musica-de-la-danza-de-los-viejitos",
+        "https://julisasculturalblog.wordpress.com/2019/09/02/la-danza-de-los-viejitos/",
+        "https://tnartscommission.org/folklife/vasquez-and-galvan-traditional-dance-of-michoacan/",
+        "https://www.mexicanfolkloric.org/mich_dances.html",
+        "https://sonesdemexico.org/danza-de-los-viejitos-mask-making-workshop/",
+        "https://villapatzcuaro.com/danza-de-los-viejitos-el-significado-oculto-del-sol-y-la-resistencia/",
+        "https://karmatrails.com/blog/traditional-dances-of-mexico-la-danza-de-los-viejitos/"
+      ],
+      "scraped_at": "2026-07-27T01:55:50.721534Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "Michoacán"
+        ],
+        "lat": 19.207098,
+        "lng": -101.878113
+      },
+      "resume_analisa": {
+        "description": "La Danza de los Viejitos is a traditional folk dance originating from the state of Michoacán, Mexico, deeply rooted in the Purépecha culture, particularly in communities around Lake Pátzcuaro. The dance humorously portrays old age, with performers initially moving slowly and hunched over, simulating the physical limitations of advanced years. This is unexpectedly followed by energetic, acrobatic foot-stomping movements (zapateados), symbolizing the vitality and festive spirit inherent in the Purépecha tradition.",
+        "cultural_significance": "The origins of La Danza de los Viejitos are traced back to pre-Hispanic times, where it was known as T'arche Uarakua and served as a sacred ritual. It was performed by four wise elders, or 'petámunis', to honor the Old God or Sun God (Tata Jurhiata or Kurikaveri), seeking good harvests and marking the changes of seasons. The four dancers traditionally represented the four elements (fire, water, earth, air) or the four colors of sacred corn. Following the Spanish conquest, the dance evolved into a form of cultural resistance and satire, where indigenous dancers mimicked and mocked the perceived frailty of the Spanish colonizers, thereby reaffirming the strength and resilience of the indigenous people. It embodies a rich symbolism related to the cycle of life, encompassing themes of old age, death, and spiritual renewal.",
+        "gemini_tags": [
+          "Folk Dance",
+          "Michoacán",
+          "Purépecha Culture",
+          "Pre-Hispanic Ritual",
+          "Cultural Resistance",
+          "Satire",
+          "Life Cycle",
+          "Traditional Costume",
+          "Mexico",
+          "Performing Arts"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performing Arts (Dance)",
+        "materials_and_tools": [
+          "Masks: Crafted from wood, clay, or cornstalk paste, depicting an elderly man with a smiling expression, often featuring long white hair and wrinkles.",
+          "Hat: A straw hat adorned with colorful ribbons that hang down, symbolizing the sun and its rays, as well as the four sacred colors of corn.",
+          "Clothing: Consists of a white manta shirt and trousers, which are sometimes embroidered. A 'jorongo' (also known as a sarape), a blanket worn as a cloak, is donned over the shirt, often featuring diverse designs and colors. A red thread sash (faja) is also part of the attire.",
+          "Footwear: Huaraches, sandals with wooden soles, are worn to produce rhythmic tapping sounds during the dance.",
+          "Cane/Walking Stick: A rustic wooden cane, sometimes carved with a deer motif, used to mimic the fragility of old age and for rhythmic tapping.",
+          "Musical Instruments: The dance is accompanied by traditional string instruments such as violins and guitars, playing 'pirekuas', the characteristic musical genre of the Purépecha people. The jarana is also mentioned as an accompanying instrument."
+        ],
+        "step_by_step": [
+          "Preparation: Dancers, traditionally four men (though modern performances may include more), don the complete traditional costume, which includes masks, hats, white clothing, a jorongo, huaraches, and a cane.",
+          "Initial Movements: The dance commences with slow, hunched, and trembling movements, designed to simulate the physical limitations and frailty associated with old age. Dancers utilize their canes for support during this phase.",
+          "Transition to Vitality: Unexpectedly, the dancers transition into vigorous, rapid, and acrobatic 'zapateados' (foot-stomping movements), showcasing vitality, resistance, and a sense of humor.",
+          "Rhythmic Tapping: A distinctive element of the performance is the rhythmic sound created by the wooden soles of the huaraches striking the ground.",
+          "Musical Accompaniment: The entire dance is performed to the lively rhythm of traditional Purépecha music, primarily 'pirekuas', played by instruments such as violins and guitars.",
+          "Symbolic Representation: Throughout the performance, the movements convey the duality of old age and youthful spirit, the overarching cycle of life, and serve as a historical satire of the Spanish conquerors."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Mexico",
+            "element_name": "Pirekuas (Purépecha traditional music)",
+            "relationship_reason": "La Danza de los Viejitos is performed to the rhythm of Pirekuas, a musical genre of the Purépecha people that has been recognized by UNESCO as Intangible Cultural Heritage."
+          },
+          {
+            "country": "Spain",
+            "element_name": "European musical and dance influences",
+            "relationship_reason": "The music accompanying the dance is a blend of pre-Hispanic and European rhythms, and the dance itself evolved to incorporate satirical elements mocking Spanish colonizers, indicating a shared historical and cultural influence."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-8ba24504",
+      "element_name": "Chopi Timbila Music and Dance",
+      "category": "Performing Arts | Traditional Craftsmanship",
+      "thumbnail_url": "https://www.metmuseum.org/-/media/images/collection/hd/2010/DT10099.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/chopi-timbila-00133",
+        "https://www.melodigging.com/genres/timbila",
+        "https://www.trtAfrika.com/culture/african-heritage-the-timbila-musical-instrument-of-mozambique-20921703",
+        "https://www.allaroundthisworld.com/timbila/",
+        "https://www.academia.edu/1018599/Locating_the_Chopi_Xylophone_Ensembles_of_Southern_Mozambique",
+        "https://www.naxos.com/catalogue/item.asp?item_code=8.60002",
+        "https://ich.unesco.org/en/multimedia/the-chopi-timbila-00133",
+        "https://www.unesco.emb-japan.go.jp/eng/safeguarding_chopi_timbila.htm",
+        "https://ich.unesco.org/en/projects/safeguarding-the-chopi-timbila-tradition-in-mozambique-00133",
+        "https://ich.unesco.org/en/state/mozambique-MZ",
+        "https://www.mapcarta.com/14109489",
+        "https://www.geodatos.net/en/coordinates/mozambique/inhambane",
+        "https://www.mozambiqueexpert.com/inhambane-mozambique/",
+        "https://www.gps-coordinates.net/latitude-longitude/mozambique/zavala-district",
+        "https://www.openstreetmap.org/wiki/Inhambane",
+        "https://www.toponavi.com/mozambique/inhambane-province",
+        "https://www.gps-coordinates.net/latitude-longitude/mozambique/zavala-mozambique",
+        "https://www.wikipedia.org/wiki/Zavala,_Mozambique",
+        "https://www.emkp.org/resonating-mwenje-documenting-the-timbila-making-process-and-the-techniques-of-the-masters-from-zavala-mozambique/",
+        "https://www.musicaparacontemplar.com/instrumentos-del-mundo/timbila/"
+      ],
+      "scraped_at": "2026-07-27T01:56:28.751618Z",
+      "location": {
+        "country": "Mozambique",
+        "provinces": [
+          "Inhambane Province"
+        ],
+        "lat": -22.779116,
+        "lng": 34.5661741
+      },
+      "resume_analisa": {
+        "description": "Chopi Timbila refers to the orchestral music played on wooden xylophones (timbila) by the Chopi people of southern Mozambique, accompanied by elaborate dance and m'zeno songs. Performances are multi-movement suites, blending intricate instrumental interlocking patterns with choral singing and dance, characterized by a distinctive bright, buzzing timbre.",
+        "cultural_significance": "The Chopi Timbila is a vital form of oral history and social commentary, reflecting contemporary social issues, chronicling community events, and providing a socially acceptable forum for criticism of local rulers. It embodies a profound fusion of art, spirituality, and national identity for the Chopi people. Recognized by UNESCO as Intangible Cultural Heritage of Humanity in 2008 (originally proclaimed in 2005), this tradition has persevered through periods of suppression, including during Portuguese colonial rule.",
+        "gemini_tags": [
+          "Xylophone music",
+          "Traditional dance",
+          "Oral history",
+          "Social commentary",
+          "Instrument making",
+          "Mozambican culture",
+          "Chopi people",
+          "Intangible Cultural Heritage",
+          "Orchestral music",
+          "African music"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship (Instrument Making) & Performing Arts (Music and Dance)",
+        "materials_and_tools": [
+          "For instrument making: Mwenje (sneezewort) wood, calabashes, beeswax, nkuso fruit oil, mallets.",
+          "For performance: Timbila instruments, mallets, traditional costumes (implied)."
+        ],
+        "step_by_step": [
+          "**Instrument Making:**",
+          "1. Source highly resonant wooden slats from the slow-growing mwenje (sneezewort) tree.",
+          "2. Carefully manufacture and finely tune these wooden slats to create varying sizes and ranges of pitch for the different timbila instruments.",
+          "3. Fasten calabashes, which serve as resonators, underneath each wooden slat.",
+          "4. Tightly seal the calabashes with beeswax.",
+          "5. Temper the calabashes with the oil of the nkuso fruit to produce the characteristic rich nasal sound and unique vibrations.",
+          "6. Tune the completed instrument using a heptatonic scale.",
+          "**Performance (Ngodo Orchestral Dance Suite):**",
+          "1. An orchestra (migondo) is formed, typically comprising five to thirty timbila of various sizes and pitches, with participation from masters and apprentices across all age groups.",
+          "2. A composer-leader, often also the poet and conductor, creates new multi-movement suites, which frequently incorporate topical poems and social commentary. The musical parts are taught by rote.",
+          "3. The performance commences with an introduction played by a solo timbila.",
+          "4. The orchestra performs intricate, cyclic grooves characterized by complex polyrhythms, where the player's left hand often executes a different rhythm from the right.",
+          "5. Two to twelve dancers perform elaborately choreographed dances in front of the orchestra.",
+          "6. A solemn m'zeno song is performed by the dancers, accompanied by the musicians playing softly and slowly. These songs often contain humor and sarcasm, reflecting contemporary social issues.",
+          "7. The musical suite includes both unison sections (kudingang) and improvisational sections (Kuhambana), guided by calls from the lead musician.",
+          "8. The entire performance, blending instrumental music, choral singing, and dance, typically lasts about one hour."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Javanese and Balinese Gamelans",
+            "relationship_reason": "Scholars have noted similarities in performance genre between Chopi Timbila and Javanese and Balinese Gamelans, leading to theories of Indonesian influence on the African continent. However, some researchers argue that Timbila is distinctly African."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ac402b07",
+      "element_name": "Levantine Arabic Music",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Oud.jpg/1200px-Oud.jpg",
+      "source_urls": [
+        "https://www.melodigging.com/genres/levantine-arabic-music",
+        "https://www.melodigging.com/genres/arabic-music",
+        "https://scholarworks.bgsu.edu/music-arab-america/3/",
+        "https://scholarworks.bgsu.edu/music-arab-america/",
+        "https://projectrevolver.com/10-traditional-songs-from-the-levant/",
+        "https://projectrevolver.com/category/oriental-folk/",
+        "https://www.youtube.com/watch?v=k-yI_m_n_7E",
+        "https://www.youtube.com/watch?v=vV7s7zF_s28",
+        "https://en.wikipedia.org/wiki/Arabic_music",
+        "https://en.wikipedia.org/wiki/Arabic_musical_instruments",
+        "https://www.folkculturebh.org/en/issue/60/article/1175",
+        "https://pressbooks.commons.gc.cuny.edu/music-of-the-arab-world/chapter/chapter-2-the-music-of-the-arab-world/",
+        "https://mdlbeast.com/magazine/music/echoes-of-the-past-tracing-the-history-of-arabic-music"
+      ],
+      "scraped_at": "2026-07-27T01:57:09.362735Z",
+      "location": {
+        "country": "Syria",
+        "provinces": [
+          "Aleppo",
+          "Damascus"
+        ],
+        "lat": 36.19924,
+        "lng": 37.1637253
+      },
+      "resume_analisa": {
+        "description": "Levantine Arabic music encompasses the rich Arab musical traditions of the Eastern Mediterranean, balancing refined urban art music with vibrant village and dance repertories. It is primarily articulated through the Arabic maqam system of melodic modes and cyclical iqaʿ (rhythmic) cycles. Core instruments include the oud, qanun, buzuq, ney, and violin (tuned to Arab scales), complemented by hand percussion such as the riqq and darbuka. Vocal performances are characterized by ornamentation, expressive melismas, and the aesthetic of tarab, which signifies ecstatic musical transport. Key forms within this tradition include muwashshah and qudud Halabiyya (Aleppine songs), mawwal and layali (free-meter vocal improvisations), and popular dabke songs for line-dances. [3, 5, 6, 10, 12, 15]",
+        "cultural_significance": "Levantine Arabic music originated and flourished in urban courts, Sufi lodges, and merchant cities like Aleppo, Damascus, and Beirut. It represents a synthesis of Arab, Ottoman/Turkish, Persian, Byzantine/Syriac liturgical, and Andalusi legacies. This musical tradition has played a crucial role in shaping modern Arabic song while preserving local dialects and rhythms. It is integral to various social practices, being performed at celebrations, parties, commemorations, and even by farmers and shepherds in their daily lives. The music is deeply embedded with concepts of authenticity, heritage, nostalgia, identity, and collective meaning for the communities in the Levant. [3, 5, 8, 9, 12]",
+        "gemini_tags": [
+          "Traditional Music",
+          "Arabic Music",
+          "Levantine Culture",
+          "Maqam",
+          "Iqa",
+          "Oud",
+          "Nay",
+          "Darbuka",
+          "Vocal Music",
+          "Folk Music",
+          "Performing Arts",
+          "Middle Eastern Music",
+          "Cultural Heritage",
+          "Improvisation",
+          "Tarab"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance",
+        "materials_and_tools": [
+          "Oud (fretless lute)",
+          "Qanun (plucked zither)",
+          "Ney (end-blown flute)",
+          "Violin (adapted to Arabic intonation)",
+          "Buzuq",
+          "Riqq (tambourine)",
+          "Darbuka/Tabla (goblet drum)",
+          "Daff (frame drum)",
+          "Mijwiz (double-reed pipe)",
+          "Yarghul (double-reed pipe)",
+          "Zurna (piercing double-reed instrument)",
+          "Human voice"
+        ],
+        "step_by_step": [
+          "**Melodic Foundation (Maqam System):** The performance is built upon the maqam system, which comprises eight commonly used melodic modes (e.g., Bayati, Hijaz, Kurd, Rast, Saba). Each maqam features a distinct seven-note scale, often incorporating microtones (quarter tones) unique to Arabic music, and characteristic melodic phrases. Musicians learn these modes orally and through extensive listening to traditional performances. [1, 2, 3, 10, 12, 15]",
+          "**Rhythmic Structure (Iqaʿat):** Rhythms are organized by cyclical iqaʿat, which are rhythmic patterns of varying durations (e.g., 3, 4, 7, 8, 10 beats, or over 100). These patterns are typically created using two distinct timbres on percussion instruments – a low-pitched 'doum' and a higher, drier 'tek' or 'ka' – interspersed with rests. These patterns are often ornamented during performance. [2, 3, 12, 14, 15]",
+          "**Instrumentation:** Performances commonly feature a takht (chamber ensemble) or, in larger settings, a firqa (orchestra). The core melodic instruments include the oud, qanun, ney, and violin. Percussion is provided by instruments like the riqq, darbuka/tabla, and daff. Other instruments such as the buzuq, mijwiz, yarghul, and zurna are also utilized, particularly in folk and dance music genres. [2, 3, 10, 15, 17, 20]",
+          "**Vocal Performance:** Singing is a central element, characterized by extensive ornamentation, expressive melismas (singing multiple notes on a single syllable), and the pursuit of tarab, an aesthetic of emotional ecstasy. Vocal improvisations, such as mawwal and layali, are often used to introduce the maqam and establish the lyrical mood. [2, 3, 10, 12, 15]",
+          "**Improvisation (Taqsim):** Instrumentalists frequently perform taqsim, an unmetered, improvisational exploration of a specific maqam. This allows the musician to highlight the emotional and artistic essence of the mode and often serves as an introduction to a more structured rhythmic piece. [10, 12, 15]",
+          "**Ensemble Texture (Heterophony):** Levantine Arabic music often employs a heterophonic texture, where multiple instruments simultaneously ornament the same melody with subtle individual variations, creating a rich and layered sound. [12, 15]",
+          "**Musical Forms:** Key musical forms include muwashshah and qudud Halabiyya (strophic songs), mawwal and layali (free-meter vocal improvisations), composed instrumental forms like samaʿi (often in 10/8), longa (2/4), and dulab (short prelude), as well as popular dabke songs that accompany line-dances. [3, 15]"
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Ottoman Empire/Turkey",
+            "element_name": "Ottoman court music",
+            "relationship_reason": "Historical influence and shared court culture, particularly in modal thinking and forms like muwashshah. [3]"
+          },
+          {
+            "country": "Persia",
+            "element_name": "Persian music",
+            "relationship_reason": "Historical influence and cultural exchange, especially during the Islamic Golden Age. [3, 6, 14]"
+          },
+          {
+            "country": "Al-Andalus (Medieval Iberian Peninsula)/Spain",
+            "element_name": "Andalusi music (e.g., muwashshah, Nuubaat, Ma'luf)",
+            "relationship_reason": "Medieval lineage and significant influence on art-song traditions. [3, 6]"
+          },
+          {
+            "country": "Egypt",
+            "element_name": "Egyptian classical music",
+            "relationship_reason": "Shared Ottoman court culture and broader Arab musical traditions, with Cairo being a major center for Arabic music development. [3, 6, 15]"
+          },
+          {
+            "country": "North Africa (Maghreb)",
+            "element_name": "Andalusian-derived music (al-âla, Nuubaat, Ma'luf)",
+            "relationship_reason": "Shared historical and cultural connections through Al-Andalus. [6]"
+          },
+          {
+            "country": "Mesopotamia",
+            "element_name": "Ancient Mesopotamian music",
+            "relationship_reason": "The origins of Arabic music can be traced back to ancient civilizations like Mesopotamia. [14]"
+          },
+          {
+            "country": "Byzantine/Syriac traditions",
+            "element_name": "Byzantine/Syriac liturgical traditions",
+            "relationship_reason": "Synthesized legacies from these traditions. [3, 12]"
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-25T01:48:21.809487Z",
-    "total_ich_elements": 211,
-    "complete_records": 196,
+    "generated_at": "2026-07-27T01:57:50.784838Z",
+    "total_ich_elements": 214,
+    "complete_records": 199,
     "incomplete_records": 15,
     "categories_breakdown": {
       "Traditional Craftsmanship": 74,
       "Social Practices & Rituals": 47,
       "Culinary Traditions": 37,
       "Culinary Traditions | Social Practices & Rituals": 3,
-      "Performing Arts": 19,
+      "Performing Arts": 21,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 16,
@@ -18627,7 +18921,7 @@
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
       "Social Practices & Rituals | Culinary Traditions": 1,
       "Social Practices & Rituals | Traditional Craftsmanship": 1,
-      "Performing Arts | Traditional Craftsmanship": 1,
+      "Performing Arts | Traditional Craftsmanship": 2,
       "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1,
       "Oral Traditions | Performing Arts | Social Practices & Rituals": 2,
       "Performing Arts | Social Practices & Rituals": 1
