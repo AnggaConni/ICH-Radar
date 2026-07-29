@@ -18900,22 +18900,281 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-328e8cf3",
+      "element_name": "Adire Fabric Making",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//lam.wfu.edu/2020/07/10/nigeria-make-a-yoruba-adire-cloth/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://lam.wfu.edu/2020/07/10/nigeria-make-a-yoruba-adire-cloth/",
+        "https://africanstoresonline.com/blogs/news/the-art-of-adire",
+        "https://ankara.com.ng/how-to-make-adire-fabric/",
+        "https://www.quiltingdaily.com/adire-fabric-quilting/",
+        "https://kogireports.com/how-to-create-stunning-adire-fabrics/"
+      ],
+      "scraped_at": "2026-07-29T01:30:45.000158Z",
+      "location": {
+        "country": "Nigeria",
+        "provinces": [
+          "Ogun State",
+          "Southwestern Nigeria"
+        ],
+        "lat": 6.9788582,
+        "lng": 3.4389293
+      },
+      "resume_analisa": {
+        "description": "Adire is a traditional Nigerian textile art form, primarily created and worn by Yoruba women. The word \"adire\" means \"tie and dye\" in Yoruba. It is a resist-dyed fabric, where intricate patterns are created by preventing dye from reaching certain parts of the fabric. Traditionally, adire was dyed with indigo, which remains the most popular color, resulting in vibrant blue hues.",
+        "cultural_significance": "Adire is more than just clothing; it is a form of art that conveys stories through its diverse patterns and rich colors. This vibrant and creative craft has been passed down through generations, particularly among the Yoruba people of West Africa. The entire process, from sourcing the dye to applying the pattern, exemplifies sustainable and thoughtful textile creation perfected over centuries. It serves as a significant expression of Yoruba cultural identity.",
+        "gemini_tags": [
+          "Yoruba culture",
+          "textile art",
+          "resist dyeing",
+          "indigo dye",
+          "traditional craft",
+          "Nigerian heritage",
+          "women's craft"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Resist Dyeing (Textile Art)",
+        "materials_and_tools": [
+          "White cotton fabric (100% cotton recommended)",
+          "Indigo dye (traditional) or synthetic dyes",
+          "Raffia, string, or rubber bands (for tying)",
+          "Cassava starch (for starch resist, Adire Eleko)",
+          "Water and mild soap",
+          "Pots and buckets (for dyeing)",
+          "Protective gloves",
+          "Plastic or plastic sheets (for covering work surface)",
+          "Pins (optional, for complex designs)",
+          "Calabash or foam stamps (for starch resist)",
+          "Brushes or feathers (for applying starch)",
+          "Wooden stirring stick",
+          "Iron (optional)",
+          "Folding board or flat surface",
+          "Measuring cup or spoon",
+          "Dye fixation (optional, for color fastness)"
+        ],
+        "step_by_step": [
+          "**1. Prepare the Fabric:** Wash the white cotton fabric with mild soap to remove any dirt, oils, or starch, which ensures even dye absorption. Avoid using fabric softener. Allow the fabric to dry thoroughly.",
+          "**2. Apply Resist Techniques (Pattern Creation):** Create patterns by preventing dye from reaching specific areas of the fabric. Three primary methods are used:",
+          "    *   **Raffia Resist (Adire Oniko):** Tie raffia tightly around sections of the fabric. Rocks and seeds can also be tied into the fabric, or the fabric can be twisted or folded and then secured with raffia to create various patterns.",
+          "    *   **Starch Resist (Adire Eleko):** Prepare a thick paste by mixing cassava starch with water. Apply this paste to one side of the cloth using intricately carved wooden stencils or by painting freehand. Allow the paste to dry completely before dyeing.",
+          "    *   **Tie-dye/Folding and Binding:** Bunch up the fabric and tie it tightly with string or rubber bands to create circular or spiral patterns. For geometric designs, fold the fabric into pleats and then bind the folds with string or rubber bands. Pinch sections of fabric and tie them tightly to form small dot or circular patterns. The tightness of the knots and bands determines the sharpness of the resulting pattern.",
+          "    *   **Stitching:** Sew patterns into the fabric with thick thread, then pull the thread tight to create resist areas.",
+          "    *   **Wax Resist:** Draw designs on the fabric using melted wax, which will resist the dye.",
+          "**3. Apply the Dye:** Wear protective gloves. Mix the dye (traditionally indigo) according to the package instructions in a large container. Submerge the prepared fabric completely into the dye bath. Gently move the fabric around in the dye for approximately 15-20 minutes. For a deeper color, extend the soaking time or perform multiple dips. After dipping, remove the fabric and expose it to the air to allow the dye molecules to oxidize and develop the characteristic bright blue color (for indigo).",
+          "**4. Remove the Resist and Rinse:** Once the dyeing process is complete and the fabric has oxidized, carefully remove all resist materials. This involves cutting off strings, untying raffia, or scraping off the dried cassava starch. Rinse the fabric thoroughly in cool water until the water runs clear to reveal the unique patterns and designs.",
+          "**5. Finishing Touches (Optional):** In some cases, after dyeing, the cloth is beaten with a mallet to impart a distinctive sheen to the fabric."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Benin",
+            "element_name": "Adire (Yoruba resist-dyed fabric)",
+            "relationship_reason": "The Yoruba people, who create Adire, reside in Nigeria, Benin, Togo, and parts of Ghana, sharing this cultural practice across these regions."
+          },
+          {
+            "country": "Togo",
+            "element_name": "Adire (Yoruba resist-dyed fabric)",
+            "relationship_reason": "The Yoruba people, who create Adire, reside in Nigeria, Benin, Togo, and parts of Ghana, sharing this cultural practice across these regions."
+          },
+          {
+            "country": "Ghana",
+            "element_name": "Adire (Yoruba resist-dyed fabric)",
+            "relationship_reason": "The Yoruba people, who create Adire, reside in Nigeria, Benin, Togo, and parts of Ghana, sharing this cultural practice across these regions."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Shibori",
+            "relationship_reason": "Adire is a resist-dyed fabric, a technique similar in principle to Shibori (Japanese resist dyeing), where parts of the fabric are protected from dye to create patterns."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Batik",
+            "relationship_reason": "Adire employs resist dyeing methods, a technique also central to Batik (Indonesian resist dyeing), where wax or other materials prevent dye absorption in certain areas."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-8ed3db4b",
+      "element_name": "Indigenous Australian Oral Traditions",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://image.shutterstock.com/image-vector/aboriginal-art-vector-painting-abstract-260nw-1934279035.jpg",
+      "source_urls": [
+        "https://www.uts.edu.au/about/uts-epress/uts-epress-journals/uts-law-review/volume-16-2014/what-role-oral-history-and-testimony-building-our-understanding-past",
+        "https://en.wikipedia.org/wiki/Australian_Aboriginal_culture",
+        "https://koorieheritagetrust.com.au/collections/oral-history/",
+        "https://bwtribal.com/blogs/news/aboriginal-storytelling-keeping-oral-histories-alive",
+        "https://www.utas.edu.au/newsroom/2023/tasmanian-aboriginal-oral-traditions-among-the-oldest-recorded-narratives-in-the-world",
+        "https://theconversation.com/rising-seas-and-a-great-southern-star-aboriginal-oral-traditions-stretch-back-more-than-12-000-years-211114",
+        "https://www.monash.edu/news/articles/the-memory-code-how-oral-cultures-memorise-so-much-information",
+        "https://ncheteach.org/storytelling-symbols-interpreting-aboriginal-culture-through-art/",
+        "https://www.ictinc.ca/blog/11-things-you-should-know-about-indigenous-oral-traditions",
+        "https://www.usc.edu.au/about/news/archive/2023/september/evidence-the-oral-stories-of-australias-first-nations-might-be-10000-years-old",
+        "https://www.lib.sfu.ca/help/academic-integrity/research-skills/project-57/week-52",
+        "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/our-breath-being-indigenous-living-through-storying",
+        "https://indigenousfoundations.arts.ubc.ca/oral_traditions/",
+        "https://www.thecanadianencyclopedia.ca/en/article/indigenous-oral-histories-and-primary-sources",
+        "https://www.qcaa.qld.edu.au/senior/australian-curriculum/aboriginal-torres-strait-islander-histories-cultures/oral-histories-aboriginal-torres-strait-islander-communities",
+        "https://www.researchgate.net/publication/280918739_Australian_Aboriginal_Oral_Traditions"
+      ],
+      "scraped_at": "2026-07-29T01:31:36.640655Z",
+      "location": {
+        "country": "Australia",
+        "provinces": [],
+        "lat": -24.7761086,
+        "lng": 134.755
+      },
+      "resume_analisa": {
+        "description": "Indigenous Australian oral traditions are the primary historical and daily records of Aboriginal and Torres Strait Islander peoples, encompassing a variety of interwoven forms. These traditions include narratives, facts, and spiritual beliefs, particularly those related to the Dreamtime or Dreaming, which explain creation and cosmology. They also convey information about family and clan relationships, responsibilities to the land, seas, waterways, sky, and universe, kinship structures, community obligations, and scientific knowledge, such as environmental elements and seasonal patterns. Furthermore, they detail rights and responsibilities concerning art forms like song, dance, music, and visual arts, as well as biographical stories of individuals, personal and community histories of lived experiences, and accounts of early contact with colonists. These oral traditions represent a living chronicle of Indigenous wisdom, language, and ecological knowledge, passed down for 60,000 years or more. They are often supported and expressed through various media, including rock and sand art, body painting, song, dance, and artifacts such as canoes, masks, message sticks, and carvings.",
+        "cultural_significance": "Indigenous Australian oral traditions are vital for preserving history, transmitting knowledge, imparting cultural values, maintaining linguistic diversity, and fostering cultural identity across generations. They serve as a powerful link connecting the past, present, and future, and are fundamental to Indigenous culture and beliefs, especially their deep reverence for the land and the spiritual realm of the Dreamtime. These traditions are a primary means for Indigenous peoples to articulate and teach about their own cultures in their own words. Remarkably, they have demonstrated exceptional accuracy over thousands of years, with some stories recalling geological and astronomical events that occurred over 10,000 to 12,000 years ago, such as rising sea levels and the position of ancient stars. Oral traditions were also crucial in sustaining and preserving Indigenous cultures during periods of forced assimilation and colonization.",
+        "gemini_tags": [
+          "Oral History",
+          "Storytelling",
+          "Dreamtime",
+          "Indigenous Culture",
+          "Australia",
+          "Cultural Transmission",
+          "Traditional Knowledge",
+          "Aboriginal Lore",
+          "Songlines",
+          "Dance",
+          "Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Intergenerational Transmission",
+        "materials_and_tools": [
+          "Spoken word",
+          "Songs",
+          "Dances",
+          "Ceremonies",
+          "Visual arts (rock art, body painting, sand art, bark drawings, carvings)",
+          "Musical instruments (e.g., didgeridoo)",
+          "Sign language",
+          "Message sticks",
+          "Elders and Knowledge Keepers",
+          "Landscape features and ceremonial sites"
+        ],
+        "step_by_step": [
+          "Lore, customs, and stories are learned from childhood, providing foundational knowledge and dictating rules for interacting with the land, kinship, and community.",
+          "Elders and Knowledge Keepers, as respected individuals within communities, are entrusted with the responsibility of sharing and maintaining oral histories, often contextualizing them for specific audiences.",
+          "Knowledge is intricately encoded in song, dance, story, and place. This often involves the 'method of loci,' where memories are associated with specific locations, including landscape features, ceremonial sites, or abstract designs.",
+          "Transmission occurs through diverse performative practices, including narratives, songs, prayers, ceremonies, and teachings. Dance and music during ceremonies and celebrations are crucial for reinforcing cultural values and passing on knowledge.",
+          "Stories are traditionally supported and reinforced through various visual and material media, such as rock and sand art, body painting, song and dance, and artifacts like canoes, masks, message sticks, and carvings.",
+          "Historically, storytelling was a seasonal tradition, often practiced during the winter months when hunting and gathering activities slowed, allowing communities time to relax and share stories.",
+          "The integrity and accuracy of these oral traditions are maintained over thousands of years through rigorous and careful intergenerational transmission, as evidenced by their ability to recall ancient geological and astronomical events with precision."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Canada",
+            "element_name": "Indigenous Oral Traditions (First Nations, Inuit, and Métis)",
+            "relationship_reason": "Similar reliance on oral transmission for preserving history, stories, teachings, cultural values, and identity across generations, with Elders and Knowledge Keepers playing a crucial role. Both faced challenges during periods of forced assimilation."
+          },
+          {
+            "country": "Global Indigenous Cultures",
+            "element_name": "Oral Traditions of Indigenous Peoples",
+            "relationship_reason": "Oral traditions are a fundamental aspect of many Indigenous cultures worldwide, serving as primary means of knowledge reproduction, preservation, and conveyance from generation to generation."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2bc2f811",
+      "element_name": "Ulos weaving (Batak Ulos)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//journal.uniku.ac.id/index.php/JIK/article/download/7027/2972&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://journal.uniku.ac.id/index.php/JIK/article/download/7027/2972",
+        "https://nusantarabulletin.com/index.php/nb/article/download/125/110",
+        "https://en.wikipedia.org/wiki/Ulos",
+        "https://www.indonesia.travel/gb/en/destinations/sumatra/north-sumatra/ulos-fabric-meanings-origins-and-types-of-ulos",
+        "https://www.indoindians.com/ulos-a-batak-symbol-of-warmth-affection-and-social-status/",
+        "https://www.alamy.com/stock-photo-traditional-female-batak-weaver-working-on-a-handwoven-ulos-textile-using-a-backstrap-loom-in-silalahi-village-lake-toba-north-sumatra-indonesia-171804245.html",
+        "https://medium.com/@jesicacaroline/did-you-know-ulos-is-inseparable-from-batak-communities-96101968598a",
+        "https://artsandculture.google.com/story/woven-tales-of-indonesia-ulos/wQWBNi1Yj9tQJg",
+        "http://www.ec-apr.org/crafts/ulos/",
+        "https://talenta.usu.ac.id/ijau/article/view/11692",
+        "https://www.kompas.tv/video/530483/proses-pembuatan-tenun-ulos-tradisional-dari-pewarna-alami-di-desa-papande",
+        "https://www.thejakartapost.com/culture/2023/05/10/a-batak-tale-of-weaving-preserving-tradition-and-beliefs.html",
+        "https://www.kompas.id/baca/english/2025/12/11/en-sehelai-kain-yang-mendampingi-perjalanan-hidup-orang-batak",
+        "https://bataktextiles.com/undocumented-weaving-and-dyeing-techniques-in-silaen/",
+        "https://ijsd.org/index.php/ijsd/article/view/10309"
+      ],
+      "scraped_at": "2026-07-29T01:32:17.499178Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "North Sumatra"
+        ],
+        "lat": 2.1923519,
+        "lng": 99.3812201
+      },
+      "resume_analisa": {
+        "description": "Ulos is a traditional handwoven textile crafted by the Batak people of North Sumatra, Indonesia. It serves as a profound symbol of warmth, affection, social status, and cultural identity. This ancestral heritage is integral to various ceremonies and rituals throughout the Batak life cycle, from birth and marriage to death.",
+        "cultural_significance": "Ulos holds deep cultural and spiritual significance for the Batak people, believed to possess mystical properties and act as a bridge between the material and spiritual realms. It is used to invoke blessings, provide protection, and establish connections with ancestors. Different types, patterns, and colors of Ulos convey specific meanings related to virtues such as courage, wisdom, harmony, fertility, and social status, as well as prayers for prosperity and longevity. The traditional act of giving Ulos, known as 'mangulosi,' is a solemn gesture of love, respect, and the transfer of blessings.",
+        "gemini_tags": [
+          "Traditional Textile",
+          "Handweaving",
+          "Batak Culture",
+          "Indonesian Heritage",
+          "Ritual Object",
+          "Symbolic Fabric",
+          "Cultural Identity",
+          "Natural Dyes"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Handweaving",
+        "materials_and_tools": [
+          "Cotton yarn",
+          "Natural dyes (from indigo plant for blue, sappan wood and noni for red, turmeric for yellow, noni mixed with indigo for black, indigo and turmeric for green)",
+          "Manual loom (backstrap loom)",
+          "Spinner (sorha) for making yarn",
+          "Earthenware pot (palabuan) for coloring water"
+        ],
+        "step_by_step": null
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Ikat weaving",
+            "relationship_reason": "Ulos weaving is a form of traditional handweaving, a practice common across many cultures, particularly in Southeast Asia. It also incorporates specific techniques such as warp ikat."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-27T01:57:50.784838Z",
-    "total_ich_elements": 214,
-    "complete_records": 199,
-    "incomplete_records": 15,
+    "generated_at": "2026-07-29T01:32:54.700511Z",
+    "total_ich_elements": 217,
+    "complete_records": 201,
+    "incomplete_records": 16,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 74,
+      "Traditional Craftsmanship": 76,
       "Social Practices & Rituals": 47,
       "Culinary Traditions": 37,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 21,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 16,
+      "Oral Traditions": 17,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
