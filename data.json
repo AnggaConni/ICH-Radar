@@ -19159,19 +19159,302 @@
         ]
       },
       "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-c6ae54c5",
+      "element_name": "Zulu Ilala Palm Basket Weaving",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://cdn.shopify.com/s/files/1/0073/3509/0244/products/Zulu-Ukhamba-Basket-African-Crafts-Market_1024x1024.jpg?v=1613768565",
+      "source_urls": [
+        "https://thulatula.com/blogs/news/woven-zulu-baskets-cultural-and-religious-significance",
+        "https://twyg.com/qa-bambizulu-baskets-embody-both-craft-and-spiritual-practice/",
+        "https://www.researchgate.net/figure/Zulu-basket-artist-unknown-Ilala-palm-and-grass-natural-dyes-36-cm-high-50-cm_fig9_330685116",
+        "https://injabulo.com/blogs/news/origins-of-zulu-ilala-palm-baskets",
+        "https://theethnichome.com/zulu-ukhamba-and-isichumo-baskets/",
+        "https://theethnichome.com/zulu-ukhamba-and-isichumo-baskets-2/",
+        "https://injabulo.com/blogs/news/zulu-baskets-a-natural-touch-of-colour",
+        "https://vivafairtrade.com/products/zulu-wedding-basket-os23",
+        "https://www.researchgate.net/publication/277002046_Life_in_a_Zulu_Village_Craft_and_the_Art_of_Modernity_in_South_Africa",
+        "https://africancraftsmarket.com/products/zulu-basket-ukhamba",
+        "https://injabulo.com/blogs/news/understanding-the-patterns-on-a-zulu-ilala-palm-basket",
+        "https://bambizulu.com/pages/baskets",
+        "https://lookdeeperzulu.weebly.com/zulu-baskets.html",
+        "https://khumbula.co.za/blogs/news/the-enchanting-story-of-traditional-basket-weaving-throughout-africa",
+        "https://tlmagazine.com/beauty-ngxongo-woven-in-time/"
+      ],
+      "scraped_at": "2026-07-31T01:49:58.616830Z",
+      "location": {
+        "country": "South Africa",
+        "provinces": [
+          "KwaZulu-Natal"
+        ],
+        "lat": -28.503833,
+        "lng": 30.8875009
+      },
+      "resume_analisa": {
+        "description": "Zulu Ilala Palm Basket Weaving is an ancient and intricate craft practiced by the Zulu people, primarily women, in the KwaZulu-Natal region of South Africa. These handmade baskets, such as the Ukhamba (beer basket), Isichumo (water basket), and Imbenge (shallow plate-like basket), are crafted from sustainably harvested Ilala palm fronds and dyed with natural pigments. The craft has a history dating back to the 16th century, though it experienced a decline in the 1930s before a revival in the late 1960s.",
+        "cultural_significance": "Zulu baskets are more than functional items; they are deeply embedded in Zulu culture, serving as sacred objects in rituals, ceremonies, and as symbols of identity, resilience, and connection to ancestors and nature. Patterns and designs on the baskets often carry profound meanings related to cosmology, ancestral reverence, fertility, and life force, and can communicate cultural values and beliefs. The craft also provides economic opportunities for many Zulu weavers, particularly women, and reflects a deep respect for the environment through sustainable practices.",
+        "gemini_tags": [
+          "Zulu culture",
+          "Traditional craftsmanship",
+          "Basket weaving",
+          "Ilala palm",
+          "Natural dyes",
+          "South Africa",
+          "Cultural heritage",
+          "Handmade",
+          "Ancestral techniques",
+          "Sustainable craft",
+          "Ritual objects",
+          "Community practice",
+          "Women's craft"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Coiling technique",
+        "materials_and_tools": [
+          "Ilala palm fronds (Hyphaene coriacea)",
+          "Various wild grasses or reeds",
+          "Natural dyes (derived from roots, leaves, bark, berries, mud, charcoal)",
+          "Strong waxed threads or cords (for durability, for some basket types)"
+        ],
+        "step_by_step": [
+          "Mature Ilala palm fronds are sustainably harvested.",
+          "The fronds are stripped into long, thin, pliable strips. Other materials like grasses or reeds are also collected.",
+          "Natural materials such as roots, leaves, bark, berries, mud, or charcoal are used to create dyes. The palm strips are often boiled with these natural pigments to achieve various colors, then hung to dry.",
+          "The prepared and dyed palm strips (and sometimes grass chords) are tightly coiled and sewn together using a coiling technique. This meticulous process creates a strong, durable, and often watertight structure. Fine weaving spears may be used to manipulate each stitch.",
+          "Geometric patterns and symbolic designs are intricately woven into the basket, often reflecting cultural values, beliefs, and the weaver's personal expression."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Global",
+            "element_name": "Basket Weaving (general)",
+            "relationship_reason": "The fundamental technique of interlacing natural fibers to create containers is a universal human craft found in diverse cultures worldwide."
+          },
+          {
+            "country": "Global",
+            "element_name": "Natural Dyeing",
+            "relationship_reason": "The practice of extracting pigments from plants, minerals, and other natural sources to color materials is common across many traditional societies."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ee09beb4",
+      "element_name": "Makonde Wood Carving",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.africadirect.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/a/makonde_shetani_wood_carving_on_custom_base_tanzania_1.jpg",
+      "source_urls": [
+        "https://www.africandiasporatourism.com/tanzanias-hidden-art-scene-from-street-art-to-traditional-crafts/",
+        "https://www.britannica.com/place/Tanzania/Music-dance-crafts",
+        "https://www.africanblackwood.org/makonde-art",
+        "https://www.youtube.com/watch?v=kYJv-t8hG-A",
+        "https://www.africangalleria.com/blogs/news/ebony-carvings",
+        "https://www.trt.net.tr/swahili/utamaduni-na-sanaa/2023/07/20/uchongaji-wa-kimakonde-kuokoa-urithi-muhimu-wa-tanzania-1250262",
+        "https://www.yorksshona.com/the-makonde-tribe",
+        "https://joshuaproject.net/people_groups/13247/TZ",
+        "https://en.wikipedia.org/wiki/Makonde_people",
+        "https://www.101lasttribes.com/tribes/makonde.html",
+        "https://ethiopia.udaipurvisit.com/the-craft-of-wood-carving-traditions-from-makonde-to-modern-interpretations/",
+        "https://www.makondetreeoflife.com/blogs/news/the-story-behind-each-makonde-tree-of-life-carving",
+        "https://artsandculture.google.com/story/the-makonde-the-story-of-the-mystical-sculptors/4gXh81z836g-Ig",
+        "https://www.bluegecko.org/kenya/tribes/makonde/figurative.htm",
+        "https://en.wikipedia.org/wiki/Makonde_art",
+        "https://hartenbergerworldmusicalinstrumentcollection.com/items/makonde-ujamaa-tree-of-life-a/",
+        "https://www.africadirect.com/makonde-shetani-wood-carving-on-custom-base-tanzania.html",
+        "https://www.alamy.com/african-tribal-art-makonde-southeast-tanzania-made-of-dark-ebony-wood-intricate-ujamaa-column-or-tree-of-life-family-figures-and-ancestral-spirits-image590807669.html",
+        "https://en.wikipedia.org/wiki/Mueda_Plateau"
+      ],
+      "scraped_at": "2026-07-31T01:50:47.064016Z",
+      "location": {
+        "country": "Tanzania",
+        "provinces": [
+          "Mtwara Region",
+          "Cabo Delgado Province",
+          "Mueda Plateau"
+        ],
+        "lat": -10.6990264,
+        "lng": 39.0217984
+      },
+      "resume_analisa": {
+        "description": "Makonde wood carving is a traditional art form primarily practiced by the Makonde people, an ethnic group residing in southeastern Tanzania and northern Mozambique, with a smaller presence in Kenya. The carvings are renowned for their intricate designs and motifs, which narrate stories of local culture, beliefs, and way of life. Key styles include 'Binadamu' (realistic human and animal figures depicting everyday life), 'Ujamaa' (also known as 'Tree of Life' or 'People Poles,' intricate columns of intertwined human figures symbolizing unity, family, and ancestral support), and 'Shetani' (abstract, often grotesque figures representing spirits from Makonde mythology). Traditional carvings also include ritualistic helmet masks called 'Mapiko' and figurines for initiation ceremonies. The art form utilizes dense hardwoods, most notably Mpingo (African blackwood, Dalbergia melanoxylon), valued for its hardness, durability, and rich dark color, though other woods like Ficus sycamorus are used for masks.",
+        "cultural_significance": "Makonde wood carving holds profound cultural significance as a symbol of Tanzanian and Mozambican heritage. It serves as a vital medium for preserving cultural identity, transmitting valuable knowledge, stories, and traditions across generations, particularly in a society with a largely oral history. The carvings reflect the spiritual beliefs and family life of the Makonde people. 'Ujamaa' carvings, often depicting a female figure at the top, symbolize the matrilineal structure of Makonde society and emphasize themes of connectedness, mutual assistance, and ancestral veneration. 'Mapiko' masks are highly spiritual, used in worship and to invoke spirits for protection during significant life events. The art form is not merely aesthetic; it acts as a vessel for education, promoting communal wisdom and addressing contemporary societal issues. Historically, the carvings also provided economic revenue, helping the Makonde people navigate colonial tax burdens and gain international recognition.",
+        "gemini_tags": [
+          "Wood carving",
+          "Tanzanian art",
+          "Mozambican art",
+          "Makonde tribe",
+          "Traditional craft",
+          "Cultural heritage",
+          "Ebony carving",
+          "African art",
+          "Sculpture",
+          "Ancestral spirits",
+          "Matrilineal society",
+          "Oral traditions"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Wood carving",
+        "materials_and_tools": [
+          "Mpingo (African blackwood, Dalbergia melanoxylon)",
+          "Other hardwoods (e.g., Ficus sycamorus for masks, pau-rosa/Swartzia sapini)",
+          "Axe",
+          "Adze (hooked cutting tool)",
+          "Chisels",
+          "Mallet",
+          "Knives",
+          "Sandpaper/abrasives (for smoothing)",
+          "Beeswax (for finishing)",
+          "Human hair (for accentuation in some pieces)"
+        ],
+        "step_by_step": [
+          "**Wood Selection:** Carvers carefully select a suitable piece of wood, often mpingo (African blackwood), considering its grain, hardness, and the potential figures within the raw log.",
+          "**Design Visualization:** The artist typically visualizes the design mentally, 'seeing' the figures and forms within the uncarved wood rather than relying on sketches or blueprints.",
+          "**Rough Carving:** An axe or adze is used to remove large portions of wood and establish the basic, rough shape of the sculpture.",
+          "**Detail Carving:** Chisels and various knives are employed for detailed carving, meticulously shaping the figures, features, and intricate patterns. This stage involves hollowing out spaces and refining forms.",
+          "**Smoothing and Polishing:** The carved piece is then smoothed using abrasives, traditionally natural materials, to achieve the desired texture.",
+          "**Finishing Touches:** Finishing may involve applying beeswax to enhance the wood's natural luster and protect it. In some instances, human hair is incorporated to accentuate patterns or features.",
+          "**Artisan's Mark/Storytelling:** The completed carving often carries the artisan's signature or embodies a specific story or message, reflecting the deep connection between the art and Makonde culture."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Mozambique",
+            "element_name": "Makonde Wood Carving",
+            "relationship_reason": "The Makonde people, and their carving traditions, originated from the Mueda Plateau in northern Mozambique and extend into southeastern Tanzania. Both regions share the same ethnic group and traditional art form."
+          },
+          {
+            "country": "Kenya",
+            "element_name": "Makonde Wood Carving",
+            "relationship_reason": "A small population of Makonde people resides in Kenya, also practicing this traditional art form, reflecting a shared cultural heritage through migration."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5dacb98b",
+      "element_name": "Silat Harimau Minangkabau",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Silek_Harimau.jpg",
+      "source_urls": [
+        "https://id.wikipedia.org/wiki/Silat_Harimau",
+        "https://minangsatu.com/silat-harimau-warisan-leluhur-minangkabau-yang-mendunia/",
+        "https://primenarasi.id/mengenal-tradisi-pencak-silat-warisan-budaya-tak-benda-unesco-dari-indonesia/",
+        "https://www.udemy.com/course/pencak-silat-dasar-pencak-harimau/",
+        "https://www.kompasiana.com/rizkyamalia26/619f71c906310e08f258a172/pencak-silat-warisan-leluhur-yang-harus-dijaga-di-era-masa-kini",
+        "https://gardaanimalia.com/silat-harimau-terhormatnya-harimau-sumatera-inyiak-dalam-alam-pengetahuan-budaya-minangkabau/",
+        "https://bentengsumbar.com/2015/03/silat-harimau-silat-beraliran-keras-asal-minangkabau/",
+        "https://www.wwf.or.id/?28552/HARIMAU-DAN-PENCAK-SILAT",
+        "https://en.wikipedia.org/wiki/Pencak_Silat_Harimau",
+        "https://www.idntimes.com/life/culture/dita-anastasya/kesenian-bela-diri-tradisional-indonesia-c1c2",
+        "https://rri.co.id/jember/budaya/842247/asal-usul-pencak-silat-seni-bela-diri-warisan-nusantara",
+        "https://www.beritasatu.com/nasional/590300/mengenal-7-aliran-pencak-silat-yang-dinobatkan-sebagai-warisan-budaya-bukan-benda",
+        "https://www.youtube.com/watch?v=p0-k4zK-Q7k",
+        "https://tentangindonesia.com/mengenal-silat-harimau-yang-berasal-minangkabau-dan-termasuk-warisan-budaya-indonesia-14972.html",
+        "https://www.kompasiana.com/sufi_sufi/6034960d8ede481546736732/sejarah-dan-perkembangan-silat-harimau-dan-tokoh-besar",
+        "https://www.superlive.id/news/detail/mengenal-silat-harimau-minangkabau-yang-mematikan",
+        "https://www.youtube.com/watch?v=q60t-mD6j_8",
+        "https://www.viva.co.id/gaya-hidup/inspirasi-unik/1880492-menggali-makna-di-balik-kurambik-minangkabau-filosofi-cakar-harimau-menjadi-identitas-bangsa",
+        "https://ejournal.unp.ac.id/index.php/csjar/article/view/106670"
+      ],
+      "scraped_at": "2026-07-31T01:51:29.609207Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "West Sumatra"
+        ],
+        "lat": -0.5827529,
+        "lng": 100.6133379
+      },
+      "resume_analisa": {
+        "description": "Silat Harimau Minangkabau, also known as Silek Harimau, is a traditional Minangkabau martial art originating from West Sumatra, Indonesia. It is characterized by agile, beautiful, and deadly movements that imitate the techniques and philosophy of a tiger. The style often involves low body positions, utilizing both hands and feet simultaneously. Key features include grappling, locks, breaks, arresting holds, and quick, precise attacks aimed at vital areas. A distinctive technique is the use of \"claws\" (cakaran) to attack the neck, face, and vital parts of an opponent. It also employs a traditional weapon called the Karambit (Kurambiak/Karambiak), a small, curved, sharp knife resembling a tiger's claw.",
+        "cultural_significance": "Silat Harimau is more than just a self-defense art; it embodies a strong philosophy of life and is deeply intertwined with Minangkabau culture and customs. It reflects the principle of \"Adat Basandi Syarak, Syarak Basandi Kitabullah\" (Customs based on Islamic law, Islamic law based on the Quran). The practice instills values such as patience, wisdom, and social responsibility, aiming to build strong moral character. Historically, it was taught during wartime and used by royal guards. It also served as a vital skill for Minangkabau people who often traveled or migrated, providing protection against threats. The art is believed to be inspired by the movements and hunting techniques of the Sumatran tiger, reflecting a deep connection with nature and the local environment. The learning process often includes religious lessons to ensure the art is used for good.",
+        "gemini_tags": [
+          "Traditional Martial Arts",
+          "Pencak Silat",
+          "Minangkabau Culture",
+          "Self-Defense",
+          "Indonesian Heritage",
+          "Tiger Style",
+          "Cultural Philosophy",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Martial Arts Techniques",
+        "materials_and_tools": [
+          "Karambit (Kurambiak/Kerambit)"
+        ],
+        "step_by_step": [
+          "Stances and Movement: Often involves low body positions and flexible, low movements (\"Langkah Harimau\") for quick attacks and defense.",
+          "Hand Techniques: Includes 'Cekik' (targeting the neck), 'Tangkis' (parrying opponent's attacks with hands), 'Cengkaman' (catching and locking the opponent firmly), 'Cakaran' (using open palms or \"claws\" to attack vital areas such as the neck, face, and other sensitive parts), and 'Kuncian' (locking the opponent with hands or feet).",
+          "Foot Techniques: Involves 'Sipak' (kicking the opponent), 'Hantam dengan lutut' (striking the opponent's head or stomach with the knee), 'Sipak belakang' (backward kick with the heel), 'Sapuan' (sweeping the opponent's legs to bring them down), 'Baliang' (spinning kick), and 'Guntingan' (scissoring or sweeping the opponent's legs to take them down).",
+          "Combination/Other Techniques: Includes 'Membanting' (throwing the opponent using hands and feet), 'Membuka kuncian dan mengelak dari bantingan' (escaping from locks and throws), 'Lompatan dan Serangan Cepat' (high-speed jumps and attacks to surprise the opponent), and acrobatic movements such as leaping and locking an opponent's neck with legs, then throwing them to the ground and attacking quickly.",
+          "Ground Fighting: Emphasizes ground fighting techniques with grappling, locks, breaks, and arresting holds.",
+          "Training Elements: Incorporates special warm-up exercises and breathing techniques.",
+          "Philosophical Stances: Movements like 'Salam Sambah' (surrendering to the creator), 'Balabeh' (readiness for training or attack), 'Langkah Empat' and 'Langkah Tiga' (footwork), 'Simpia' (beautifying movements and maintaining balance), and 'Gelek' (evading attacks) carry symbolic meanings."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Pencak Silat (general)",
+            "relationship_reason": "Silat Harimau Minangkabau is a specific style or aliran within the broader Indonesian Pencak Silat tradition, which is recognized as UNESCO Intangible Cultural Heritage."
+          },
+          {
+            "country": "Malaysia",
+            "element_name": "Silat",
+            "relationship_reason": "Pencak Silat, including its various forms, is widely known and practiced in Malaysia, Brunei, Singapore, the Philippines, and Thailand, indicating a shared martial arts heritage across Southeast Asia."
+          },
+          {
+            "country": "Brunei",
+            "element_name": "Silat",
+            "relationship_reason": "Pencak Silat, including its various forms, is widely known and practiced in Malaysia, Brunei, Singapore, the Philippines, and Thailand, indicating a shared martial arts heritage across Southeast Asia."
+          },
+          {
+            "country": "Singapore",
+            "element_name": "Silat",
+            "relationship_reason": "Pencak Silat, including its various forms, is widely known and practiced in Malaysia, Brunei, Singapore, the Philippines, and Thailand, indicating a shared martial arts heritage across Southeast Asia."
+          },
+          {
+            "country": "Philippines",
+            "element_name": "Silat",
+            "relationship_reason": "Pencak Silat, including its various forms, is widely known and practiced in Malaysia, Brunei, Singapore, the Philippines, and Thailand, indicating a shared martial arts heritage across Southeast Asia."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Silat",
+            "relationship_reason": "Pencak Silat, including its various forms, is widely known and practiced in Malaysia, Brunei, Singapore, the Philippines, and Thailand, indicating a shared martial arts heritage across Southeast Asia."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-29T01:32:54.700511Z",
-    "total_ich_elements": 217,
-    "complete_records": 201,
+    "generated_at": "2026-07-31T01:52:14.695324Z",
+    "total_ich_elements": 220,
+    "complete_records": 204,
     "incomplete_records": 16,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 76,
+      "Traditional Craftsmanship": 78,
       "Social Practices & Rituals": 47,
       "Culinary Traditions": 37,
       "Culinary Traditions | Social Practices & Rituals": 3,
-      "Performing Arts": 21,
+      "Performing Arts": 22,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 17,
