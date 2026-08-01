@@ -19442,22 +19442,300 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-83146635",
+      "element_name": "Zanzibar Carved Doors",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ngorongoroconservationarea.org/zanzibar-doors-tanzania-cultural-tour/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ngorongoroconservationarea.org/zanzibar-doors-tanzania-cultural-tour/",
+        "https://artaminechronicles.com/zanzibari-doors-portals-to-different-worlds/",
+        "https://www.artofzanzibardoors.com/what-the-carvings-truly-mean/",
+        "https://www.michaelbackmanltd.com/exploring-the-carved-wooden-doors-of-zanzibar/",
+        "https://stickymangorice.com/zanzibar-doors-a-closer-look-at-stone-towns-wooden-masterpieces/",
+        "https://thenest.art/zanzibar-art-traditional-arts-in-tanzania/",
+        "https://www.theworldlytravels.com/doors-of-zanzibar/",
+        "https://memoriesofhome.co.za/the-doors-of-zanzibar/",
+        "https://www.zanzibartours.com/the-zanzibar-door-history-symbolism-and-how-these-architectural-masterpieces-became-iconic-works-of-art/",
+        "https://bizarreglobehopper.com/zanzibar-doors-stone-town-tanzania/",
+        "https://www.luxurysafaris.co.za/a-journey-through-stone-towns-carved-secrets/",
+        "https://tours-zanzibar.com/zanzibars-art-and-crafts-a-journey-through-local-creativity/",
+        "https://www.scispace.com/paper/the-messages-behind-carved-swahili-doors-field-report-on-predissertation-research-in-tanzania-kenya-and-ghana-P8ik360538",
+        "https://jambointernationaltour.com/stone-towns-carved-doors-architectural-wonders-of-zanzibar/",
+        "https://tingatinga.info/stone-town-where-zanzibars-history-meets-art/",
+        "https://uhasselt.be/documents_server/document_server/documents/2023/2023_0036.pdf",
+        "https://atlasobscura.com/places/zanzibar-doors",
+        "https://yconaresort.com/wood-art-painting-weaving-in-zanzibar/",
+        "https://www.africabib.org/rec.php?objID=11843",
+        "https://en.wikipedia.org/wiki/Swahili_door",
+        "https://malegado.com/traditional-swahili-craft-the-zanzibar-carved-door/",
+        "https://gardenofkomba.com/our-workshops/"
+      ],
+      "scraped_at": "2026-08-01T01:51:10.667064Z",
+      "location": {
+        "country": "Tanzania",
+        "provinces": [
+          "Zanzibar Urban/West Region"
+        ],
+        "lat": -6.1653854,
+        "lng": 39.2386951
+      },
+      "resume_analisa": {
+        "description": "Zanzibar Carved Doors, also known as Swahili doors, are massive, elaborately carved wooden doors that are a prominent architectural feature, particularly in Stone Town, Zanzibar. These doors are not merely functional entrances but serve as intricate storytellers, symbols of status, and spiritual guardians. They represent a unique fusion of African (Swahili), Arab, and Indian influences, reflecting Zanzibar's rich history as a major trade hub in the Indian Ocean.",
+        "cultural_significance": "The carved doors of Zanzibar hold deep cultural significance, acting as a visual biography of the homeowner and their family. Their size, style, and intricate decorations were direct indicators of wealth, social status, profession, faith, and family background. Historically, the door was the first element to be built for a new house, with the rest of the structure constructed around it, emphasizing its paramount importance in Swahili culture. The heavy brass studs, a distinctive feature, initially served as a defense against war elephants in India but became a purely decorative element in Zanzibar, symbolizing strength and protection. Common motifs carved into the wood, such as ropes and chains, symbolize unity and security; fish represent good fortune and economic success for coastal communities; and flowers and vines signify growth and fertility. Arabic inscriptions, often Quranic verses, dates of completion, or the owner's name, are frequently found on the lintels, adding a spiritual dimension. The doors are considered spiritual thresholds by the Swahili people.",
+        "gemini_tags": [
+          "Woodcarving",
+          "Architectural Heritage",
+          "Swahili Culture",
+          "Tanzanian Craftsmanship",
+          "Zanzibar History",
+          "Cultural Fusion",
+          "Symbolism in Art",
+          "Traditional Doors"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Oman",
+            "element_name": "Omani Woodcarving / Architecture",
+            "relationship_reason": "Omani Arabs introduced rectangular door styles, heavy brass studs, Quranic writing, arabesque patterns, and geometric carvings to Zanzibar. Swahili craftsmen were also commissioned to carve doors for palaces in Muscat."
+          },
+          {
+            "country": "India",
+            "element_name": "Indian Door Carving / Architecture (Gujarati style)",
+            "relationship_reason": "Indian merchants, particularly Gujaratis, introduced arched doorframes, elaborate floral designs (like lotus flowers and vines), and the use of brass studs (originally to deter war elephants) to Zanzibar."
+          },
+          {
+            "country": "Kenya",
+            "element_name": "Swahili Carved Doors (Lamu, Mombasa)",
+            "relationship_reason": "The tradition of Swahili carved doors is also prevalent along the Kenyan coast in towns like Lamu and Mombasa, sharing similar styles, motifs, and cultural significance due to the broader Swahili cultural heritage."
+          },
+          {
+            "country": "Mozambique",
+            "element_name": "Swahili Carved Doors (Mozambique Island)",
+            "relationship_reason": "The oldest Swahili doors are found along the East African coast from Mozambique Island, indicating a shared heritage across the Swahili littoral."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-3e8bda74",
+      "element_name": "African Oral Storytelling (Contes Africains)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/African_storytelling.jpg/1024px-African_storytelling.jpg",
+      "source_urls": [
+        "https://www.jaylit.com/the-evolution-of-african-storytelling-from-oral-traditions-to-digital-narratives/",
+        "https://en.wikipedia.org/wiki/Griot",
+        "https://www.allgoodtales.com/storytelling-traditions-across-the-world-west-africa/",
+        "https://www.ebsco.com/products/research-databases/research-starters/social-sciences-and-humanities/griot",
+        "https://www.britannica.com/topic/African-American-folktale",
+        "https://globalacademicgroup.com/journals/global%20journal%20of%20humanities/The%20Roles%20of%20Griots%20in%20African%20Oral%20Tradition%20among%20the%20Manding.pdf",
+        "https://www.britannica.com/art/griot",
+        "https://seckoukeita.com/my-culture/",
+        "https://teachers.yale.edu/curriculum/unit/09.01.08",
+        "https://fr.wikipedia.org/wiki/Conte_oral_en_Afrique",
+        "https://static1.squarespace.com/static/54b1f24fe4b01e3b5e40632a/t/552a460ce4b0680a6b484555/1428876812829/The+Oral+Traditions+of+Africa.pdf",
+        "https://study.com/academy/lesson/african-folktales-overview-importance-examples.html",
+        "https://primer.africa/the-role-of-storytelling-and-oral-traditions-in-preserving-african-culture/",
+        "https://noyamjournals.org/index.php/noj/article/view/100/100",
+        "https://africakidsbookclub.com/blogs/news/why-african-storytellers-hold-the-key-to-our-past-and-present",
+        "https://www.metmuseum.org/art/collection/search/318047",
+        "https://medium.com/the-bruised-chapters/the-role-of-storytelling-in-african-cultures-7505353926c4",
+        "https://www.maatene.com/contes/",
+        "https://www.radiookapi.net/2025/08/25/culture/les-contes-africains-entre-tradition-orale-et-transmission-ecrite-le-professeur-butoa-balingene-partage-la-sagesse-africaine-a-travers-son-livre-recueil-de-proverbes-africains",
+        "https://www.ncte.org/blog/2024/11/be-coming-an-african-immigrant-family-the-african-oral-traditional-storytelling-framework-in-practice/",
+        "https://medium.com/@irishangelene/the-elements-of-african-folklore-30113824f215",
+        "https://www.smithsonianlibraries.si.edu/story/african-folktale/",
+        "https://ultimesgriots.com/le-role-des-anciens-dans-la-transmission-du-savoir-en-afrique/"
+      ],
+      "scraped_at": "2026-08-01T01:51:40.877710Z",
+      "location": {
+        "country": "Africa",
+        "provinces": [
+          "West Africa (Mali, Senegal, Gambia, Burkina Faso, Guinea, Côte d'Ivoire, Liberia, Niger, Chad, Guinea-Bissau)",
+          "Nigeria",
+          "Tanzania",
+          "Democratic Republic of Congo",
+          "Cameroon"
+        ],
+        "lat": -33.6524848,
+        "lng": 19.4537058
+      },
+      "resume_analisa": {
+        "description": "African Oral Storytelling encompasses a rich and diverse array of spoken word traditions passed down through generations across the African continent. These traditions serve as a primary means of transmitting history, cultural values, social norms, and practical knowledge within communities. They include various forms such as folktales, fables, myths, epic narratives, proverbs, riddles, songs, and poetry. Often, these stories feature anthropomorphic animals, brave heroes, or mystical beings, and are characterized by non-linear narratives and multiple layers of meaning. In West Africa, professional storytellers known as griots (jeliw in Mande, gewel in Wolof) play a crucial hereditary role as historians, genealogists, poets, musicians, and advisors, preserving the collective memory of their people.",
+        "cultural_significance": "African Oral Storytelling is profoundly significant for cultural preservation, serving as a 'living archive' of African heritage. It is vital for maintaining cultural identity, language, and philosophical worldviews, especially in societies where written traditions were historically less prevalent. These narratives are essential educational tools, imparting moral lessons, ethical guidance, and life skills to younger generations, fostering virtues like courage, honesty, respect, and solidarity. Storytelling sessions are communal and participatory experiences that strengthen social bonds, unite communities, and reinforce a shared sense of identity. They also provide entertainment and a means for individuals to connect with their ancestral roots and collective memory. The loss of a griot, for example, is often equated to 'the burning down of a library,' underscoring their irreplaceable role in safeguarding knowledge.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Storytelling",
+          "African Folklore",
+          "Griots",
+          "Elders",
+          "Cultural Preservation",
+          "Moral Education",
+          "Community Practice",
+          "West African Culture",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Transmission and Performance",
+        "materials_and_tools": [
+          "Storyteller (often an elder or a professional griot)",
+          "Audience (community members of all ages)",
+          "Voice modulation, gestures, facial expressions, body movements",
+          "Songs, riddles, proverbs",
+          "Musical instruments (e.g., kora, ngoni, balafon, drums, rattles - particularly in West Africa)",
+          "Occasional use of masks and costumes"
+        ],
+        "step_by_step": [
+          "**Setting the Scene:** Storytelling typically occurs in communal gatherings, often in the evening after daily work, under the moonlight, around a village fire or beneath a significant tree.",
+          "**Role of the Storyteller:** The storyteller, who can be an elder, a parent, or a professional griot, acts as the custodian of the community's stories, history, and genealogies. They are highly respected for their knowledge and artistry.",
+          "**Engaging Performance:** The storyteller employs a range of performance techniques, including dramatic voice modulation, expressive gestures, impersonations of characters, singing, and incorporating riddles and proverbs. In some regions, especially West Africa, musical instruments like the kora, ngoni, or balafon accompany the narration.",
+          "**Audience Participation:** Storytelling is a dynamic, interactive experience. The audience actively participates through listening, responding to questions, repeating phrases, singing along, and reacting with laughter or expressions of emotion, fostering a strong connection with the narrative and the storyteller.",
+          "**Intergenerational Transmission:** Stories are not merely recited but are lived and re-told over time, allowing for variations and adaptations that keep them relevant to contemporary audiences while preserving their core essence. Younger generations learn by observing, listening, and eventually practicing the art of storytelling, thereby ensuring the continuous transmission of cultural knowledge and values."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "United States",
+            "element_name": "African American Folktales",
+            "relationship_reason": "African American folktales are a direct evolution and continuation of African oral storytelling traditions, brought to the Americas by enslaved people and adapted over time while retaining original themes and cultural functions."
+          },
+          {
+            "country": "Canada / North America",
+            "element_name": "Indigenous Oral Traditions",
+            "relationship_reason": "Indigenous oral traditions in Canada and North America share a similar fundamental function with African oral storytelling, serving as the primary means of transmitting history, cultural knowledge, spiritual teachings, and survival skills across generations through spoken word, often by respected elders."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-e91b811c",
+      "element_name": "Wianki (Wreaths Festival / Midsummer's Eve)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://krakow.travel/images/2022/06/wianki-2022-1200x630.jpg",
+      "source_urls": [
+        "https://www.walkative.eu/blog/wianki-midsummer-festival-krakow-history-events",
+        "https://en.wikipedia.org/wiki/Wianki",
+        "https://krakow.travel/en/wianki",
+        "https://xperiencepoland.com/wianki-festival-gdansk/",
+        "https://takeyourbackpack.com/wianki-festival-guide-poland/",
+        "https://krakow.pl/english/visit_krakow/198759,artykul,wianki_2026.html",
+        "https://www.partykrakow.co.uk/krakow-abc/wianki-festival-in-krakow",
+        "https://folkways.today/wianki-polish-midsummer-student-observations/",
+        "https://www.festivalfinder.eu/festivals/wianki-krakow",
+        "https://careersinpoland.com/blog/wianki-ancient-polish-tradition-modern-times/",
+        "https://altao.pl/tradycje/wianki-kultywowanie-slowianskiej-tradycji-na-polskiej-wsi/",
+        "https://pisanezalasem.pl/2020/06/18/wianek-w-tradycji-swietojanski-slubny-panienski/",
+        "https://www.radiokrakow.pl/aktualnosci/wianki-tradycja-skad-wzial-sie-ten-zwyczaj-dlaczego-puszczamy-wianki",
+        "https://kbf.krakow.pl/en/wianki-festival-associated-with-nature-water-fire-growth-and-good-fortune-was-celebrated-throughout-europe-during-the-summer-solstice-the-shortest-night-of-the-year-in-poland-during/",
+        "https://zakulisami.com.pl/tradycje-nocy-swietojanskiej-zaproszenie-na-wianki/",
+        "https://modr.pl/legendy-o-obrzadowosci-swietojanskiej/",
+        "https://wnsocial.com/wianki-a-culture-event-guide-2022/",
+        "https://lamusdworski.wordpress.com/2016/06/08/wianki-wreaths-in-polish-folk-beliefs-connected-to-summer-solstice/",
+        "https://www.midsummeronthevistula.com/wianki-festival-krakow-hotel-guide/"
+      ],
+      "scraped_at": "2026-08-01T01:52:10.723117Z",
+      "location": {
+        "country": "Poland",
+        "provinces": [
+          "Lesser Poland (Małopolska)",
+          "Pomerania",
+          "Kuyavia-Pomerania"
+        ],
+        "lat": 49.790952,
+        "lng": 20.3793521
+      },
+      "resume_analisa": {
+        "description": "Wianki, meaning 'wreaths' in English, is a traditional Polish festival celebrating the summer solstice, deeply rooted in ancient Slavic pagan customs. Originally known as Noc Kupały or Kupalnocka, it was a pagan religious event honoring fire, water, fertility, love, and joy, typically held on the shortest night of the year around June 21st or 23rd. After the adoption of Christianity, the tradition evolved into 'Sobótka' or 'Noc Świętojańska' (St. John's Night), aligning with the eve of St. John the Baptist's Day (June 24th), though many pagan elements persisted. The festival's central ritual involves young, unmarried women weaving floral wreaths and floating them on rivers or lakes to predict their romantic futures. Historically, men would light bonfires and jump over them, and people would search for the mythical fern flower, believed to bring health, happiness, and wealth. While the fortune-telling aspect is now largely a playful nod to history, the core tradition of floating wreaths remains a beloved practice. In its modern form, particularly in Kraków, Wianki has become a large-scale cultural event, often spanning several days, featuring open-air concerts, workshops (including wreath-making), silent discos, and light shows along the Vistula River. The emphasis has shifted from agrarian survival to a broader celebration of community and the arrival of summer.",
+        "cultural_significance": "Wianki holds significant cultural importance as a celebration of the summer solstice, symbolizing life, fertility, and the cyclical nature of the seasons. It is deeply connected to ancient Slavic beliefs surrounding fire and water, which were considered to possess purifying and protective powers. The floating of wreaths was a crucial fortune-telling ritual for young women, predicting marriage and luck in love. The festival also served as a time for community gathering, joyous celebration, and a symbolic welcome to summer. Historically, it was also a patriotic manifestation in Kraków during the Austrian annexation. Today, it continues to be a vibrant expression of Polish heritage, blending ancient customs with modern entertainment, fostering a sense of shared identity and connection to nature.",
+        "gemini_tags": [
+          "Summer Solstice",
+          "Pagan Rituals",
+          "Slavic Traditions",
+          "Wreath Floating",
+          "Fortune-telling",
+          "Community Festival",
+          "Polish Culture",
+          "Midsummer Celebration",
+          "Fire and Water Rituals"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual/Ceremony",
+        "materials_and_tools": [
+          "Wild herbs",
+          "Wildflowers",
+          "Candles (optional)",
+          "Rivers or lakes"
+        ],
+        "step_by_step": [
+          "**Traditional Practice (Pagan/Early Christian Era):**",
+          "1. Young, unmarried women would gather various wild herbs and wildflowers, sometimes specifically chosen for their perceived magical properties (e.g., mugwort, burdock, sundew, sage, St. John's wort, rue, mullein).",
+          "2. These herbs and flowers were intricately woven into circular wreaths.",
+          "3. Often, a lit candle would be placed within the wreath.",
+          "4. At dusk or night, the women would float their handcrafted wreaths onto the nearest river or lake.",
+          "5. The fate of the floating wreath was then observed for divination: a smoothly floating wreath indicated good fortune and impending marriage, a sinking wreath foretold bad luck or death, an entangled wreath suggested spinsterhood, and an extinguished candle meant a fading love.",
+          "6. Young men would often wait downstream to try and catch the wreaths, hoping to identify the owner and find their future spouse.",
+          "7. Simultaneously, bonfires were lit, and people would sing, dance, and sometimes jump over the fires for purification and good luck.",
+          "8. Some would also search for the mythical fern flower, believed to bloom only on this night and grant great fortune.",
+          "**Modern Festival (e.g., in Kraków):**",
+          "1. The festival typically takes place over several days around the summer solstice in June, primarily along the Vistula River.",
+          "2. Attendees can participate in wreath-making workshops, often held in designated 'Wreath-weaving Villages'.",
+          "3. Floral crowns are worn by many participants throughout the day.",
+          "4. In the evening, there is a collective floating of handcrafted floral wreaths on the Vistula River, often accompanied by acoustic folk performances.",
+          "5. The festival includes a diverse program of free outdoor concerts across multiple stages, featuring various music genres from folk to pop and rock.",
+          "6. Other modern attractions may include silent discos in historical venues, barge cruises, and light shows or fireworks (though fireworks have been replaced by light shows in some areas due to bans)."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Ukraine",
+            "element_name": "Ivan Kupala",
+            "relationship_reason": "Wianki shares common pagan origins and rituals (like wreath floating, bonfires, and fortune-telling) with other Slavic Midsummer celebrations, notably Ivan Kupala in Ukraine and Russia."
+          },
+          {
+            "country": "Russia",
+            "element_name": "Ivan Kupala",
+            "relationship_reason": "Similar to Ukraine, Russia celebrates Ivan Kupala with traditions rooted in the summer solstice, involving water, fire, and fertility rites, reflecting a shared Slavic heritage with Wianki."
+          },
+          {
+            "country": "Various European Countries",
+            "element_name": "Midsummer / Summer Solstice Celebrations",
+            "relationship_reason": "The Wianki festival has analogues and shares a broader connection with Midsummer or summer solstice celebrations found throughout Europe, which often involve similar themes of nature, fire, water, and fertility."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-07-31T01:52:14.695324Z",
-    "total_ich_elements": 220,
-    "complete_records": 204,
-    "incomplete_records": 16,
+    "generated_at": "2026-08-01T01:52:44.413398Z",
+    "total_ich_elements": 223,
+    "complete_records": 206,
+    "incomplete_records": 17,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 78,
-      "Social Practices & Rituals": 47,
+      "Traditional Craftsmanship": 79,
+      "Social Practices & Rituals": 48,
       "Culinary Traditions": 37,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 22,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
-      "Oral Traditions": 17,
+      "Oral Traditions": 18,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
