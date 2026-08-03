@@ -19720,19 +19720,324 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-3592f89e",
+      "element_name": "Chinese Paper Cutting (剪纸, Jiǎnzhǐ)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Chinese_paper_cutting&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Chinese_paper_cutting",
+        "https://www.culturally.sg/chinese-paper-cutting-history",
+        "https://paper.gatech.edu/chinese-paper-cutting",
+        "https://www.asianstudies.org/publications/eaa/archives/a-glimpse-of-chinese-culture-through-papercuts/",
+        "https://pearlriver.com/blogs/news/chinese-paper-cutting-from-sacred-rituals-to-contemporary-art",
+        "https://ich.unesco.org/en/RL/chinese-paper-cut-00219",
+        "https://www.papercutting.art/chinese-paper-cutting-tutorial/",
+        "https://www.lapl.org/blogs/lapl/chinese-paper-cutting",
+        "https://www.lenorelook.com/a-globby-bloogie-by-lenore-look/2014/2/11/how-to-make-chinese-paper-cuts.html",
+        "https://www.instructables.com/How-to-Make-a-Chinese-Paper-Cut-Art/",
+        "https://www.chinahighlights.com/travelguide/chinese-new-year/how-to-make-fu-paper-cutting.htm",
+        "https://asia.si.edu/learn/for-educators/cultural-resources/chinese-paper-cutting/",
+        "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%89%AA%E7%BA%B8",
+        "https://edu.chinadaily.com.cn/a/202404/16/WS661e479aa3109f7860dd39e2.html",
+        "http://www.chinatoday.com.cn/lishi/2017-05/09/content_799516.htm",
+        "https://www.travelchinaguide.com/culture/handicraft/paper-cut.htm",
+        "https://www.mapiful.com/blog/chinese-paper-cutting-tutorial/",
+        "http://www.chinadaily.com.cn/culture/2021-05/07/content_37562473.htm",
+        "https://sichuan.sina.cn/culture/2017-07-27/detail-ifyinryq9707954.d.html",
+        "https://www.culturaltreasuresofchina.com/papercutting",
+        "https://www.asianbrushpainter.com/products/cai-lun-rosewood-chinese-paper-cutting-knive"
+      ],
+      "scraped_at": "2026-08-03T01:50:14.307467Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Xinjiang",
+          "Shanxi",
+          "Hebei",
+          "Shaanxi",
+          "Shandong",
+          "Jiangsu",
+          "Zhejiang",
+          "Guangdong",
+          "Hubei",
+          "Anhui",
+          "Jiangxi",
+          "Henan",
+          "Guizhou",
+          "Sichuan",
+          "Yunnan"
+        ],
+        "lat": 42.4804953,
+        "lng": 85.4633464
+      },
+      "resume_analisa": {
+        "description": "Chinese paper cutting, known as Jiǎnzhǐ (剪纸), is a traditional folk art involving the intricate cutting of patterns into paper using scissors or a sharp knife. This distinctive visual art form may date back to the 2nd century CE, coinciding with the invention of paper by Cai Lun, although similar carving techniques on other thin materials like leaves, silk, or leather existed even earlier. The art form became popular as paper became more accessible and is often characterized by its use of red paper, which symbolizes happiness and festivity in Chinese culture.",
+        "cultural_significance": "Chinese paper cutting is deeply embedded in Chinese social life and expresses the moral principles, philosophies, and aesthetic ideals of its practitioners. It serves various decorative purposes, particularly during festivals such as the Lunar New Year, weddings, and childbirth celebrations, adorning windows, doors, walls, lamps, and lanterns. Specific motifs carry rich symbolic meanings; for instance, the character '福' (fú) represents blessing and good luck, '囍' (xǐ) signifies double happiness for weddings, a lotus with fish symbolizes continuous wealth, and pomegranates indicate a wish for prosperity and fertility. Historically, paper cuts were also used as stencils for embroidery and lacquer work. The tradition is predominantly a female pursuit, often passed down from mother to daughter in rural areas. In 2009, Chinese paper cutting was officially inscribed on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity.",
+        "gemini_tags": [
+          "Folk Art",
+          "Paper Craft",
+          "Traditional Chinese Art",
+          "Cultural Heritage",
+          "Decorative Art",
+          "Symbolic Art",
+          "Intangible Cultural Heritage",
+          "Chinese New Year Tradition"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Cutting and carving",
+        "materials_and_tools": [
+          "Paper (often red, various types like maobian, xuan, lianshi, or printer paper for practice)",
+          "Scissors (small, sharp scissors are recommended for beginners)",
+          "Sharp knife / Craft knife / Engraving knife",
+          "Pencil",
+          "Eraser",
+          "Stapler (optional, for holding multiple layers of paper)",
+          "Flat work surface"
+        ],
+        "step_by_step": [
+          "1. Prepare materials: Select suitable paper, often red and thinner for easier folding and cutting. Ensure the paper is a perfect square if a symmetrical, folded design is intended. Gather scissors or a craft knife, and a pencil.",
+          "2. Fold the paper: Fold the paper multiple times to create a symmetrical base for the design. The number of folds depends on the desired pattern (e.g., folding in half twice creates a four-fold design).",
+          "3. Draw the pattern: With a pencil, draw the desired pattern onto the folded paper. It's crucial to identify the 'positive space' (paper that remains), 'negative space' (paper to be removed), and 'bridges' (narrow connections that hold the design together).",
+          "4. Cut the design: Carefully cut along the drawn lines. If using scissors, some artisans employ a 'turn the paper, not the knife' technique for smooth curves. When working with multiple layers, a stapler can secure the paper. It is generally advised to cut interior openings first, followed by the outer contour, ensuring that all 'bridges' are left uncut to maintain the design's integrity.",
+          "5. Unfold: Gently unfold the cut paper to reveal the complete intricate design.",
+          "6. Optional enhancements: For added complexity, the paper cut can be colored, shaded, or combined with other colored sheets in a 'patchwork' style.",
+          "7. Display: The finished paper cut is then pasted onto windows, doors, walls, or other surfaces as a decoration, often to invite good luck and express wishes."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Kirigami",
+            "relationship_reason": "An art form involving cutting paper, which spread from China."
+          },
+          {
+            "country": "Philippines",
+            "element_name": "Pabalat (Bulacan province)",
+            "relationship_reason": "A traditional paper cutting art form, influenced by the spread of Chinese paper cutting."
+          },
+          {
+            "country": "Mexico",
+            "element_name": "Papel Picado",
+            "relationship_reason": "A decorative paper cutting tradition, which shares a common origin or influence from the spread of Chinese paper cutting."
+          },
+          {
+            "country": "Various countries",
+            "element_name": "Other paper cutting traditions",
+            "relationship_reason": "The art form spread to other parts of the world, with different regions adopting their own cultural styles."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a56c26d2",
+      "element_name": "Pansori (판소리)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00070-754-Medium.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/pansori-epic-chant-00070",
+        "https://en.wikipedia.org/wiki/Pansori",
+        "https://www.atts.org/pansori-the-art-of-storytelling/",
+        "https://www.britannica.com/art/pansori",
+        "https://koreanow.com/culture/1000000206/the-20000-li-journey-of-the-soul-pansori-koreas-timeless-sound",
+        "https://www.unesco.or.kr/kor/unesco/unesco_02_01_02.asp",
+        "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?VdkVgwKey=13,00050000,33",
+        "https://www.gugak.go.kr/site/gugak/archive/dictionary/view?menuId=002001002001&idx=100",
+        "https://encykorea.aks.ac.kr/Article/E0059328",
+        "https://folkency.nfm.go.kr/kr/topic/detail/1393",
+        "https://www.koreapansori.or.kr/info/pansori.php",
+        "https://www.korea.net/AboutKorea/Culture-and-the-Arts/Pansori"
+      ],
+      "scraped_at": "2026-08-03T01:50:47.244388Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [
+          "Jeolla-do (Southwest Korea)",
+          "Gyeonggi-do",
+          "Chungcheong-do"
+        ],
+        "lat": 34.6429669,
+        "lng": 126.4014288
+      },
+      "resume_analisa": {
+        "description": "Pansori is a traditional Korean genre of musical storytelling performed by a single vocalist, known as a 'sorikkun' or 'gwangdae', accompanied by a single drummer, or 'gosu', playing a barrel drum called a 'buk'.. The performance combines expressive singing ('chang'), stylized speech or narration ('aniri'), and dramatic gestures or body movements ('ballim' or 'neoreumsae') to narrate long epic stories, often lasting several hours, sometimes up to eight hours.. The term 'Pansori' is derived from 'pan', meaning 'a place where many people gather' or 'an arena', and 'sori', meaning 'song' or 'sound'.. It originated in the 17th century in the southwestern regions of Korea, likely as a new expression of the narrative songs of shamans..",
+        "cultural_significance": "Pansori is considered a quintessential Korean traditional performing art, embracing both elite and folk culture.. It vividly depicts the joys and sorrows of the masses, expresses hopes for a better society, and promotes social integration through shared enjoyment.. The art form was designated a National Intangible Cultural Property of Korea in 1964 and was inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2003, recognizing its outstanding cultural and technical value.. Pansori has also played a significant role in the popularization of prose in Korean literature.. The audience's active participation through 'chuimsae' (exclamations of encouragement) is a unique characteristic, fostering a strong rapport between performers and spectators..",
+        "gemini_tags": [
+          "Korean traditional music",
+          "Musical storytelling",
+          "Performing arts",
+          "Intangible Cultural Heritage",
+          "Vocal music",
+          "Drumming",
+          "Oral tradition",
+          "Narrative song",
+          "Folk opera",
+          "Shamanic influence",
+          "Korean culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance and Training",
+        "materials_and_tools": [
+          "Singer (sorikkun/gwangdae)",
+          "Drummer (gosu)",
+          "Buk (barrel drum)",
+          "Fan",
+          "Audience"
+        ],
+        "step_by_step": [
+          "**Performance Structure**: A single singer, holding a fan, performs a long narrative story..",
+          "**Vocal and Narrative Elements**: The singer utilizes three main components: 'chang' (expressive singing), 'aniri' (stylized speech or narration), and 'ballim' or 'neoreumsae' (dramatic gestures and body movements) to convey the story and emotions..",
+          "**Musical Accompaniment**: A single drummer (gosu) accompanies the singer on a 'buk' (barrel drum), providing rhythmic patterns ('jangdan') and interjecting 'chuimsae' (exclamations like 'eolssu!' or 'jota!') to encourage the singer and heighten the performance..",
+          "**Audience Interaction**: The audience is an integral part of the performance, actively participating by shouting 'chuimsae' to show appreciation and engagement, influencing the flow and energy of the performance..",
+          "**Repertoire**: Traditional Pansori typically comprises five surviving epic stories, known as 'Pansori Five Madang': 'Chunhyangga' (Song of Chunhyang), 'Simcheongga' (Song of Sim Cheong), 'Heungboga' (Song of Heungbo), 'Sugungga' (Song of the Underwater Palace), and 'Jeokbyeokga' (Song of Red Cliffs)..",
+          "**Training (Deugeum)**: Pansori singers undergo long and rigorous training, often involving extreme dedication and solitary practice, sometimes by waterfalls, to master a wide range of distinct vocal timbres and memorize complex repertoires. This arduous process is known as 'deugeum' (gaining voice).. Apprenticeship under master singers is a traditional method of transmission.."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "East Asia",
+            "element_name": "Shamanic narrative songs",
+            "relationship_reason": "Pansori is believed to have originated from shamanic narrative songs in southwest Korea, suggesting a connection to broader East Asian shamanistic traditions that often involve storytelling and music."
+          },
+          {
+            "country": "China",
+            "element_name": "Chinese folklore",
+            "relationship_reason": "Some of the early Pansori repertoire, such as 'Jeokbyeokga' (Song of Red Cliffs), was derived from Chinese folklore, particularly 'Romance of the Three Kingdoms'.."
+          },
+          {
+            "country": "China",
+            "element_name": "Korean-Chinese Pansori",
+            "relationship_reason": "Pansori practiced by ethnic Koreans in China (Yanbian Korean Autonomous Prefecture and Tieling) has also been nominated as a UNESCO intangible cultural heritage, indicating a shared cultural practice across borders.."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-f77abc7e",
+      "element_name": "Jang-making (Korean Fermented Sauces and Pastes)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Jangdokdae_at_Jongga_House_in_Gyeongju.jpg/1280px-Jangdokdae_at_Jongga_House_in_Gyeongju.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/knowledge-beliefs-and-practices-related-to-jang-making-in-the-republic-of-korea-02024",
+        "https://www.korea.net/NewsFocus/Culture/view?articleId=241512",
+        "https://jungdam.com/blogs/news/what-is-jang-korean-fermented-sauces-explained",
+        "https://hot-thai-kitchen.com/how-to-make-soy-sauce/",
+        "http://www.kimchimom.com/2012/04/11/homemade-makjang-or-instant-dwaenjang-fermented-soybean-paste/",
+        "https://www.masterclass.com/articles/doenjang-recipe",
+        "https://www.youtube.com/watch?v=vV1i9j3-0eQ",
+        "https://www.koreana.or.kr/user/bbs/koreana/14/405/view.do",
+        "https://kimcmarket.com/blogs/korean-food-guide/the-art-of-korean-fermented-soy-sauces-cheongjang-ganjang-and-jinjang",
+        "https://kimcmarket.com/blogs/korean-food-guide/the-alchemy-of-korean-fermentation-doenjang-ganjang-gochujang",
+        "https://www.koreanbapsang.com/how-to-make-gochujang/",
+        "https://thehansang.com/blogs/recipes/traditional-homemade-gochujang-recipe"
+      ],
+      "scraped_at": "2026-08-03T01:51:30.367629Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [
+          "Nationwide",
+          "Jeollabuk-do",
+          "South Jeolla Province"
+        ],
+        "lat": 36.638392,
+        "lng": 127.6961188
+      },
+      "resume_analisa": {
+        "description": "Jang refers to a family of traditional Korean fermented sauces and pastes, primarily including ganjang (soy sauce), doenjang (fermented soybean paste), and gochujang (fermented chili paste). These essential condiments are crafted using soybeans, salt, and water, undergoing natural fermentation processes in distinctive earthenware jars known as onggi or jangdok. The practice encompasses the entire cycle from preparing ingredients to fermentation, aging, storage, and consumption.",
+        "cultural_significance": "Jang is considered the soul of Korean cuisine, indispensable for achieving the complex and balanced flavors found in countless dishes. It embodies Korea's historical and communal identity, with traditions meticulously passed down through generations within families, often from mothers and mothers-in-law to their daughters and daughters-in-law. Jang-making is a seasonal and communal event, deeply tied to agricultural cycles. The use of porous onggi jars and the careful placement of jangdokdae (platforms for these jars) are crucial for optimal fermentation, reflecting a profound connection to nature, seasons, and the local climate. The practice also incorporates related cultural elements, such as the use of amulets or the performance of specific rites to ensure successful fermentation. Beyond its culinary role, Jang provides essential amino acids and probiotic benefits, contributing to the nutritional balance of the rice-based Korean diet.",
+        "gemini_tags": [
+          "Korean cuisine",
+          "Fermentation",
+          "Traditional food",
+          "Soy sauce",
+          "Soybean paste",
+          "Chili paste",
+          "Intangible Cultural Heritage",
+          "Culinary tradition",
+          "Community practice",
+          "Earthenware jars",
+          "Onggi",
+          "Jangdokdae"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Fermentation",
+        "materials_and_tools": [
+          "Soybeans",
+          "Korean sea salt",
+          "Water",
+          "Rice straw (for meju fermentation)",
+          "Onggi (earthenware jars)",
+          "Charcoal",
+          "Dried chili peppers",
+          "Jujubes (for ganjang/doenjang)",
+          "Sweet rice/grains",
+          "Gochugaru (Korean red chili peppers)",
+          "Meju garu (fermented soybean powder)",
+          "Rice syrup/plum extract",
+          "Baekseju or Soju (for gochujang)",
+          "Kelp (for gochujang)"
+        ],
+        "step_by_step": [
+          "**1. Making Meju (Fermented Soybean Blocks - Base for Ganjang & Doenjang):**",
+          "Thoroughly clean and soak soybeans overnight.",
+          "Boil or steam the soaked soybeans until very soft.",
+          "Mash the cooked soybeans and shape them into rectangular or spherical blocks, known as meju.",
+          "Air-dry the meju blocks for approximately one month, often by hanging them, to allow natural bacteria (such as Bacillus subtilis) and fungi to develop and initiate fermentation. This stage may involve drying near a heat source and regularly turning the blocks.",
+          "**2. Making Ganjang (Soy Sauce) & Doenjang (Soybean Paste) from Meju:**",
+          "In late winter or early spring, place the dried meju blocks into onggi (earthenware jars).",
+          "Pour a salt brine solution (made with water and Korean sea salt) over the meju blocks in the onggi.",
+          "Add charcoal, dried chili peppers, and jujubes to the jars, which are believed to ward off evil spirits and aid fermentation.",
+          "Allow the mixture to ferment in the onggi for several months, typically 60 to 70 days, or even longer (ranging from months to years). The porous nature of the onggi facilitates the 'breathing' process essential for fermentation.",
+          "After sufficient fermentation, separate the liquid, which is ganjang (soy sauce), from the solid paste, which is doenjang (soybean paste). The ganjang can be further aged, sometimes for decades, to develop deeper flavors (e.g., jinjang), while the doenjang is mashed and stored.",
+          "**3. Making Gochujang (Red Chili Paste):**",
+          "Soak glutinous rice, then finely grind it and cook with water (and sometimes dashi powder) until it thickens into a paste. Allow the paste to cool completely.",
+          "Mix the cooled rice paste with meju garu (fermented soybean powder), gochugaru (Korean red chili peppers), salt, and rice syrup (or plum extract). Baekseju or soju can be added as a preservative.",
+          "Place the mixture in onggi jars, often topping it with salt and a soju-brushed kelp sheet.",
+          "Ferment the gochujang in a cool, shaded area for a few days to one week, then transfer it to a refrigerator for 3 to 6 months or up to a year for further aging."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Miso",
+            "relationship_reason": "Both are fermented soybean pastes, but traditional Korean doenjang typically does not use wheat or added koji mold (relying on natural fermentation of meju), while Japanese miso often incorporates rice or barley koji and wheat."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Shoyu (Japanese Soy Sauce)",
+            "relationship_reason": "Both are soy sauces, but traditional Korean ganjang is typically made without wheat, whereas Japanese shoyu commonly includes wheat in its fermentation process."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-01T01:52:44.413398Z",
-    "total_ich_elements": 223,
-    "complete_records": 206,
+    "generated_at": "2026-08-03T01:52:16.331098Z",
+    "total_ich_elements": 226,
+    "complete_records": 209,
     "incomplete_records": 17,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 79,
+      "Traditional Craftsmanship": 80,
       "Social Practices & Rituals": 48,
-      "Culinary Traditions": 37,
+      "Culinary Traditions": 38,
       "Culinary Traditions | Social Practices & Rituals": 3,
-      "Performing Arts": 22,
+      "Performing Arts": 23,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 1,
       "Oral Traditions": 18,
