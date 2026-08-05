@@ -20025,26 +20025,272 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-84e22b6b",
+      "element_name": "Yeye (Fayeye)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://pkpa.org/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-21-at-13.33.22-1.jpeg",
+      "source_urls": [
+        "https://pkpa.org/permainan-tradisional-tumbuhkan-ikatan-sosial-anak/",
+        "https://jurnal.pusdikra.id/index.php/linguistik/article/view/100/80",
+        "https://www.detik.com/edu/detikpedia/d-7072467/7-permainan-tradisional-yang-sudah-terlupakan-nostalgia-bareng-yuk",
+        "https://vimora.id/permainan-tradisional-yang-mulai-terlupakan-oleh-zaman/",
+        "https://osc.medcom.id/community/10-permainan-tradisional-yang-mulai-ditinggalkan-25036"
+      ],
+      "scraped_at": "2026-08-05T01:31:01.004135Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "North Sumatra",
+          "Nias Island"
+        ],
+        "lat": 2.1923519,
+        "lng": 99.3812201
+      },
+      "resume_analisa": {
+        "description": "Yeye, also known as Fayeye, is a traditional group game primarily played by girls in Nias, an island located in North Sumatra, Indonesia. It utilizes a rope crafted from numerous interwoven rubber bands. The game involves two players holding the ends of this rubber band rope at varying heights, while other participants take turns jumping over it or performing specific rhythmic movements with their legs around the rope. It is a dynamic game that emphasizes agility, coordination, and social interaction.",
+        "cultural_significance": "Yeye plays a significant role in fostering togetherness, strengthening social bonds, and promoting direct interaction among children, offering a valuable alternative to modern digital entertainment. The game is believed to instill important values such as obedience to norms, which is considered crucial for maintaining harmonious communal life within Indonesian society. Beyond entertainment, traditional games like Yeye contribute to children's holistic development by enhancing motor skills, encouraging cooperation, teaching sportsmanship, and building social relationships.",
+        "gemini_tags": [
+          "Traditional Children's Game",
+          "Group Play",
+          "Social Interaction",
+          "Physical Activity",
+          "Nias Culture",
+          "Indonesian Heritage",
+          "Rubber Band Game"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Group Game (Jumping Rope Variation)",
+        "materials_and_tools": [
+          "Rubber bands (often collected from used food packaging)"
+        ],
+        "step_by_step": [
+          "Gather a sufficient quantity of rubber bands, typically those collected from used food packaging.",
+          "Weave the collected rubber bands together to form a long, interconnected rope that is both sturdy and flexible.",
+          "Two players position themselves opposite each other, holding the ends of the rubber band rope. The initial height of the rope is usually low, such as at ankle or heel level.",
+          "Other players, either individually or in turns, then attempt to jump over the rope without touching it.",
+          "In some variations, a player may perform specific movements, such as winding one leg around the rubber-band rope multiple times and then unwinding it, repeating the action with the other leg.",
+          "As players successfully clear the rope at lower heights, the two players holding the rope gradually increase its height (e.g., from ankle to knee, waist, shoulder, and even overhead), making the game progressively more challenging. If a player touches the rope or fails to complete a jump or movement, they may be eliminated from the round or switch roles with one of the rope holders."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.85,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Lompat Tali (Jump Rope)",
+            "relationship_reason": "Yeye is a specific regional variation of the broader 'Lompat Tali' (Jump Rope) game, which is widely played across Indonesia, often utilizing ropes made from rubber bands or other materials."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Permainan Karet (Rubber Band Game)",
+            "relationship_reason": "The core concept of using interwoven rubber bands to create a play implement, as seen in Yeye, is a common practice in various 'Permainan Karet' (Rubber Band Games) found throughout Indonesia."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5a840579",
+      "element_name": "Kimjang, making and sharing kimchi",
+      "category": "Social Practices & Rituals | Culinary Traditions",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00881-800x450-PH-CLT-ICH-00881-2012.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/kimjang-making-and-sharing-kimchi-in-the-republic-of-korea-00881",
+        "http://english.cha.go.kr/cha/heritage/search/selectHeritageInfoDetail.action?ccbaKdcd=13&ccbaCtcd=00&ccbaCpnt=00&ccbaAsno=00881000&ccbaCnno=1",
+        "https://en.wikipedia.org/wiki/Kimchi",
+        "https://www.heritagefund.org.uk/stories/kimjang-making-and-sharing-kimchi",
+        "https://content.ces.ncsu.edu/how-to-make-kimchi-food-safety",
+        "https://happymothering.com/recipes/easy-kimchi-recipe/",
+        "https://butfirstwebrunch.com/moms-kimchi-recipe-perfect-for-beginners/",
+        "https://exploreyeast.com/how-to-make-kimchi-your-easy-step-by-step-guide/",
+        "https://www.joshuaweissman.com/post/kimchi",
+        "https://countrytrading.co/blogs/fermentation/how-to-make-kimchi",
+        "https://heartbeetkitchen.com/homemade-kimchi-recipe/",
+        "https://www.freshpreserving.com/homemade-kimchi-recipe---ball-and-kerr-fresh-preserving-br1154.html",
+        "https://news.wttw.com/2023/10/20/how-traditional-korean-act-making-kimchi-preserves-vegetables-memories-and-community",
+        "https://thekitchenapothecary.com.au/how-to-make-kimchi/",
+        "https://mykoreankitchen.com/kimchi-recipe/",
+        "https://ahnestkitchen.com/moms-traditional-kimchi/",
+        "https://www.feastingathome.com/easy-kimchi-recipe/",
+        "https://www.oneofeverything.ca/blog/kimchi-the-beginners-guide-to-fermenting",
+        "https://www.liveeatlearn.com/how-to-make-kimchi/",
+        "https://www.thekoreanvegan.com/white-kimchi-recipe/"
+      ],
+      "scraped_at": "2026-08-05T01:31:29.781198Z",
+      "location": {
+        "country": "Republic of Korea",
+        "provinces": [],
+        "lat": 36.638392,
+        "lng": 127.6961188
+      },
+      "resume_analisa": {
+        "description": "Kimjang is the traditional communal practice of preparing large quantities of kimchi for the long, harsh winter months in the Republic of Korea. It is a social ritual deeply embedded in Korean life, where families, friends, and neighbors gather to chop, salt, season, and pack vegetables in a shared act of sustenance and solidarity. Kimchi, the national dish of Korea, is a traditional fermented vegetable dish, primarily made from napa cabbage seasoned with various spices and fermented seafood. The practice follows a yearly cycle, with specific preparations made in spring, summer, and late summer leading up to the main Kimjang season in late autumn.",
+        "cultural_significance": "Kimjang holds immense cultural significance in Korea, strengthening community bonds and fostering cooperation among participants. It is a vital means of transmitting traditional knowledge and skills across generations, often from mother-in-law to daughter-in-law. The practice reaffirms Korean identity and provides a sense of belonging among community members. Kimjang also serves as a reminder for Koreans to live in harmony with nature, as its preparation is closely tied to seasonal cycles and the harvesting of ingredients. Kimchi itself is considered an indispensable part of Korean meals and a powerful symbol of the nation's culinary ingenuity and communal values. It is recognized by UNESCO as an Intangible Cultural Heritage of Humanity.",
+        "gemini_tags": [
+          "Fermentation",
+          "Communal Practice",
+          "Food Preservation",
+          "Korean Culture",
+          "Intangible Cultural Heritage",
+          "Traditional Food",
+          "Social Ritual",
+          "Intergenerational Transmission",
+          "Culinary Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Fermentation of vegetables",
+        "materials_and_tools": [
+          "Napa cabbage",
+          "Coarse sea salt (non-iodized)",
+          "Water (filtered/unchlorinated)",
+          "Korean red pepper flakes (gochugaru)",
+          "Garlic (minced/grated)",
+          "Ginger (minced/grated)",
+          "Daikon radish (julienned/shredded)",
+          "Green onions (sliced/chopped)",
+          "Fish sauce (optional, or miso paste for vegetarian)",
+          "Sweet rice flour (glutinous rice flour)",
+          "Sugar (brown sugar, raw sugar, or Asian pear)",
+          "Carrots (julienned/shredded)",
+          "Asian pear (optional)",
+          "Onion (sliced/chopped)",
+          "Fermented salted shrimp (saeujeot) (optional)",
+          "Large mixing bowls",
+          "Large jars or food-grade containers (glass or plastic, not metal)",
+          "Wooden spoon (do not use metal)",
+          "Cutting board",
+          "Sharp knife",
+          "Food processor or blender (optional)",
+          "Disposable food handler gloves",
+          "Colander",
+          "Weights (e.g., plate with heavy object, fermentation weights) (optional)"
+        ],
+        "step_by_step": [
+          "Prepare the cabbage: Remove bruised outer leaves, quarter the napa cabbage lengthwise, and then cut into smaller pieces or leave as quarters.",
+          "Salt the cabbage: Rinse the cabbage, then sprinkle and massage coarse sea salt between the leaves. Let it rest for 1.5 to 8 hours, turning or mixing periodically, until the cabbage softens and releases water. Discard the salty water or reserve some for later if needed.",
+          "Rinse and drain cabbage: Thoroughly rinse the salted cabbage under cold running water 3-4 times to remove excess salt, then squeeze out as much water as possible and drain in a colander for at least 30 minutes.",
+          "Prepare the kimchi paste (yangnyeom): In a separate bowl, combine minced/grated garlic, ginger, Korean red pepper flakes (gochugaru), fish sauce (if using), sugar (or Asian pear), and other aromatics like onion. Some recipes include making a sweet rice flour porridge first, cooling it, and then mixing it with the other paste ingredients.",
+          "Prepare other vegetables: Julienne or chop daikon radish, carrots, and green onions.",
+          "Combine and coat: In a large mixing bowl, combine the rinsed cabbage with the prepared kimchi paste and other chopped vegetables. Wear gloves and thoroughly massage the paste into the cabbage leaves, ensuring even coating.",
+          "Pack into jars: Tightly pack the kimchi mixture into sterilized glass jars or food-grade containers, pressing down firmly to remove air pockets and ensure the vegetables are submerged in any liquid. Leave headspace at the top.",
+          "Ferment: Loosely cover the jars (to allow gas to escape) and let them ferment at room temperature for 1 to 7 days, depending on desired flavor and temperature. Bubbles indicate fermentation is active.",
+          "Refrigerate: Once the kimchi reaches the desired level of fermentation and tanginess, tighten the lids and transfer to the refrigerator to slow down fermentation and store for several months."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Democratic People's Republic of Korea",
+            "element_name": "Tradition of kimchi-making in the Democratic People's Republic of Korea",
+            "relationship_reason": "North Korean kimchi-making is also inscribed on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity, sharing the core practice of kimchi preparation, though with some regional differences in ingredients and spice levels."
+          },
+          {
+            "country": "Global",
+            "element_name": "Fermented vegetable traditions (e.g., sauerkraut, pickles)",
+            "relationship_reason": "The fundamental practice of preserving vegetables through fermentation is a widespread human tradition found across various cultures and continents, reflecting a universal need for food preservation."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2e56baea",
+      "element_name": "Al-Sirah Al-Hilaliyyah (Sirat Bani Hilal)",
+      "category": "Oral Traditions | Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Sirat_Bani_Hilal&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sirat_Bani_Hilal",
+        "https://ich.unesco.org/en/RL/al-sirah-al-hilaliyyah-epic-00017",
+        "https://www.aramcoworld.com/Articles/November-2016/The-Great-Migration-of-the-Bani-Hilal",
+        "https://siratbanihilal.org/en/",
+        "https://www.esft.org.eg/al-sirah-al-hilaliyyah-project-activities/"
+      ],
+      "scraped_at": "2026-08-05T01:32:15.111714Z",
+      "location": {
+        "country": "Egypt",
+        "provinces": [
+          "Upper Egypt"
+        ],
+        "lat": 26.0,
+        "lng": 32.0
+      },
+      "resume_analisa": {
+        "description": "Al-Sirah Al-Hilaliyyah, also known as Sirat Bani Hilal, is an Arabic epic oral poem that recounts the journey of the Bedouin tribe of the Banu Hilal. The epic details their migration from Najd in the Arabian Peninsula to Tunisia and Algeria via Egypt, built around historical events that occurred in the 11th century. It is one of the longest oral epic poems, with some notable versions containing up to 1,000,000 lines, and can take a poet about 100 hours to sing. Among the major oral epic poems that developed within the Arab folk tradition, Sirat Bani Hilal is today the only one still performed in its integral musical form.",
+        "cultural_significance": "The epic exalts courage, heroism, honor, and revenge, while also incorporating themes of war and romance. It serves as a vital record of Arab folk history, customs, beliefs, symbolism, traditions, and the food, clothing, and lifestyles of these communities across time. The epic has played a significant role in shaping Arab identity in North Africa and influencing the spread of Islam across the Sahara. Proverbs and puzzles derived from the epic are often part of everyday conversation in many areas of the Middle East. Its unique literary and musical form led to its inscription in 2008 on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity.",
+        "gemini_tags": [
+          "Oral Epic",
+          "Arabic Folklore",
+          "Storytelling",
+          "Musical Performance",
+          "Bedouin Culture",
+          "North African History",
+          "Cultural Migration",
+          "Intangible Cultural Heritage",
+          "Epic Poetry"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral musical performance",
+        "materials_and_tools": [
+          "Rababa (two-string spike fiddle)",
+          "Percussion instruments (e.g., tabla, tambourine)",
+          "Simsimiyya (lyre)",
+          "Wind instruments (salamiyyah, zummarah, mizmar, arghul, nay)"
+        ],
+        "step_by_step": [
+          "Apprenticeship for performers typically begins at the age of five and lasts for at least ten years.",
+          "During this demanding training, poets perfect their memory, singing, and instrument-playing skills.",
+          "Performers learn the art of extemporaneous commentary to make traditional plots relevant to contemporary audiences.",
+          "Traditionally, performances take place at social and private events such as weddings, circumcision ceremonies, and private gatherings, as well as in public cafés.",
+          "Performances can be very long, often lasting between 50 and 100 hours, sometimes over several days.",
+          "The epic is performed by master poets who sing the verses while providing their own musical accompaniment on instruments like the rababa or percussion instruments.",
+          "Performers utilize a theatrical style, employing different vocal sounds, changing voices to suit various characters, and using hands, facial expressions, and body movements to act out parts of the narrative."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Mauritania",
+            "element_name": "T'heydinn",
+            "relationship_reason": "Both Al-Sirah Al-Hilaliyyah and T'heydinn are oral epics inscribed on the Intangible Cultural Heritage List, and both derive from the source material of the exploits of the Beni Hilal tribe."
+          },
+          {
+            "country": "Various Arab countries (e.g., Morocco, Algeria, Libya, Tunisia, Sudan, Chad, Nigeria, Yemen, Saudi Arabia, Oman, Palestine, Lebanon, Syria, Iraq)",
+            "element_name": "Sirat Bani Hilal narratives/tales",
+            "relationship_reason": "Narratives, tales, legends, proverbs, and poems about the Bani Hilal tribe have been passed down through oral tradition across a broad geographic distribution throughout the Arab world, with modern communities in these regions claiming descent from the Banu Hilal."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-03T01:52:16.331098Z",
-    "total_ich_elements": 226,
-    "complete_records": 209,
+    "generated_at": "2026-08-05T01:32:41.058644Z",
+    "total_ich_elements": 229,
+    "complete_records": 212,
     "incomplete_records": 17,
     "categories_breakdown": {
       "Traditional Craftsmanship": 80,
-      "Social Practices & Rituals": 48,
+      "Social Practices & Rituals": 49,
       "Culinary Traditions": 38,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 23,
       "Social Practices & Rituals | Performing Arts": 3,
-      "Oral Traditions | Performing Arts": 1,
+      "Oral Traditions | Performing Arts": 2,
       "Oral Traditions": 18,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 2,
-      "Social Practices & Rituals | Culinary Traditions": 1,
+      "Social Practices & Rituals | Culinary Traditions": 2,
       "Social Practices & Rituals | Traditional Craftsmanship": 1,
       "Performing Arts | Traditional Craftsmanship": 2,
       "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1,
