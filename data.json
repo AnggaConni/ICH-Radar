@@ -20271,16 +20271,207 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-47280b61",
+      "element_name": "Shyrdak Felt Carpets",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Shyrdak&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Shyrdak",
+        "https://en.wikipedia.org/wiki/Ala_kiyiz",
+        "https://ich.unesco.org/en/RL/ala-kiyiz-and-shyrdak-art-of-kyrgyz-traditional-felt-carpets-00623",
+        "https://nomads.life/culture-and-traditions-of-kyrgyzstan/shyrdak/",
+        "https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1000&context=textileart",
+        "https://coolhunting.com/travel/learning-about-felt-in-kyrgyzstan/",
+        "https://kyrgies.com/pages/kyrgyz-wool-and-felting",
+        "https://facts-and-details.com/central-asia/Kyrgyzstan/sub8_7b/entry-4785.html",
+        "https://www.selvedgemagazine.com/blog/microcosms-in-felt-traditional-kyrgyz-textiles",
+        "https://www.fao.org/family-farming/detail/en/c/1057475/",
+        "https://www.dorisleslieblau.com/blog/making-shyrdak/",
+        "https://folkcostume.blogspot.com/2013/07/ala-kiiz-and-shyrdak-felts-of-kirghiz.html",
+        "https://cosmonautmag.com/2023/07/making-a-felt-rug-in-kyrgyzstan/",
+        "https://kabar.kg/eng/news/shyrdak-kyrgyzstan-s-fine-art-of-traditional-felt-carpets/",
+        "https://belindaschneider.wordpress.com/2007/08/07/making-shyrdaks/",
+        "https://fashiontextilecostumelibrarians.wordpress.com/2024/12/10/felted-memories-the-kyrgyz-art-of-building-ancestral-relationships-beyond-utilitarian-necessity/",
+        "https://kyrgizwhat.com/kyrgyzstan-kingdom-of-felt/",
+        "https://creative-sphere.blogspot.com/2012/11/shyrdak.html",
+        "https://callieeh.com/the-art-of-shyrdak-making/",
+        "https://rees.sas.upenn.edu/ala-kiyiz-making",
+        "https://nomad-lodge.com/kyrgyz-felt-art/",
+        "https://eurasia.travel/about-central-asia/kyrgyzstan/ala-kiyiz-felt-carpets/",
+        "https://littlefootyurts.ca/2023/11/06/15-shyrdak/",
+        "https://www.historiskmuseum.no/english/collections/ethnography/asia/central-asia/felt-carpets-and-yurts.html",
+        "https://discovercentralasia.org/ethnography-of-silk-road/"
+      ],
+      "scraped_at": "2026-08-07T02:06:05.210494Z",
+      "location": {
+        "country": "Kyrgyzstan",
+        "provinces": [
+          "Naryn Region",
+          "Issyk-Kul Region",
+          "Jalal-Abad Region"
+        ],
+        "lat": 41.2845348,
+        "lng": 75.4606289
+      },
+      "resume_analisa": {
+        "description": "Shyrdak are traditional Kyrgyz felt carpets, renowned for their vibrant colors, intricate mosaic, and appliqué designs. These handmade rugs are an essential part of nomadic life, serving as durable floor and wall coverings in yurts, offering insulation against both cold and heat. They are known for their exceptional durability, with some lasting up to 100 years. Another related felt carpet, Ala-kiyiz, is made by pressing wet, soaped wool of various colors together to form felt, resulting in softer, more blurred patterns.",
+        "cultural_significance": "Shyrdak felt carpets are deeply intertwined with Kyrgyz nomadic culture, identity, and spiritual beliefs. They are highly valued household items, traditionally forming an indispensable part of a girl's dowry, symbolizing wishes for prosperity, wellbeing, and peace for the new family. The craft is primarily a women's tradition, passed down from mother to daughter, fostering community unity as families and neighbors often collaborate in the laborious process. The patterns and motifs, often derived from nature (e.g., ram's horns, mountains, water), reflect pre-Islamic, shamanistic beliefs and carry symbolic messages from the creator to the recipient. In 2012, the art of Kyrgyz traditional felt carpets, Ala-kiyiz and Shyrdak, was inscribed on the UNESCO List of Intangible Cultural Heritage in Need of Urgent Safeguarding, highlighting its importance and the need for preservation.",
+        "gemini_tags": [
+          "Felt making",
+          "Textile craft",
+          "Nomadic culture",
+          "Kyrgyzstan",
+          "Traditional carpets",
+          "Cultural heritage",
+          "Appliqué",
+          "Mosaic technique",
+          "Dowry items",
+          "Symbolic art",
+          "Central Asian crafts",
+          "Wool craftsmanship"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional wet felting with mosaic and appliqué techniques",
+        "materials_and_tools": [
+          "Sheep's wool (from 4-6 sheep for one shyrdak)",
+          "Hot water",
+          "Soap (vegetable-based or cottonseed oil soap)",
+          "Reed mat (chiy mat)",
+          "Sharp knife or shearing scissors",
+          "Chalk or charcoal for marking patterns",
+          "Camel-hair thread or hoona threads",
+          "Needles",
+          "Natural dyes (plant roots, onion peel, pomegranate bark, walnut peel, birch leaves, currant berries, clover, etc.)"
+        ],
+        "step_by_step": [
+          "**Wool Collection and Preparation**: Sheep are shorn, typically in autumn for the best quality wool. The raw wool is then cleaned by beating, washing, and drying thoroughly to remove dirt and fluff the fibers.",
+          "**Dyeing**: If colored felt is desired, the cleaned wool is dyed using natural plant-based dyes or sometimes synthetic dyes.",
+          "**Felt Sheet Creation (Kiyiz/Ala-kiyiz)**: Layers of prepared wool are spread onto a large reed mat (chiy mat). Hot, soapy water is sprinkled over the wool. The mat is then tightly rolled up and subjected to vigorous physical agitation, such as rolling, pressing, kicking, stomping, or even being pulled by a horse or donkey, to interlock the wool fibers into dense felt. This process is repeated multiple times, with more water added as needed, until the felt is firm. The felt is then unrolled, washed, and left to dry.",
+          "**Shyrdak Patterning (Mosaic/Appliqué)**: For Shyrdak, two contrasting layers of felt are laid on top of each other. Patterns and ornaments are drawn onto the top layer using chalk or soap.",
+          "**Cutting and Arranging Patterns**: The drawn patterns are meticulously cut out through both felt layers using a sharp knife or scissors. This process yields both 'positive' (cut-out shapes) and 'negative' (background) pieces. These contrasting pieces are then interchanged and arranged to create a mosaic design on a base felt layer, ensuring a striking visual effect where the background and pattern have equal prominence.",
+          "**Stitching and Quilting**: The arranged felt pieces are stitched together, often using camel-hair or hoona thread, with a cord inserted along the edges of the patterns to give definition and enhance durability. The entire surface of the shyrdak is then quilted (a process called 'shyryk') following the ornamental lines, which connects the upper and lower layers and adds strength and texture.",
+          "**Edging**: A braided cord, often homemade and dyed, is stitched around the outer edges of the carpet, attaching both layers and providing a finished look."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Kazakhstan",
+            "element_name": "Syrmak (felt carpets), Felt production, Yurts",
+            "relationship_reason": "Kazakhs traditionally make syrmaks (similar to shyrdaks). Shared nomadic lifestyle, historical ties, common felt production techniques, and use of felt for yurts and household items across Central Asia."
+          },
+          {
+            "country": "Mongolia",
+            "element_name": "Felt production, Gers (yurts)",
+            "relationship_reason": "Nomadic peoples in Mongolia have a long history of felt production and use felt for their traditional dwellings (gers/yurts)."
+          },
+          {
+            "country": "Turkmenistan",
+            "element_name": "Felt production",
+            "relationship_reason": "Felt making is a traditional craft among Turkic-speaking nomadic peoples of Central Asia, including Turkmen."
+          },
+          {
+            "country": "Uzbekistan",
+            "element_name": "Felt production (Karakalpaks), Silk and felt crafts",
+            "relationship_reason": "Karakalpaks, a Turkic-speaking people in Uzbekistan, also have traditions of felt production. Silk and felt scarves are made by Kyrgyz mountain women, with silk sourced from Margilan city in Fergana Valley, Uzbekistan, highlighting historical trade routes like the Silk Road."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7c942f86",
+      "element_name": "Adat Pernikahan di Desa Diwet (Traditional Wedding in Diwet Village)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=http%3A//ejournal.unesa.ac.id/index.php/jurnal-tata-boga/article/view/9779&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "http://ejournal.unesa.ac.id/index.php/jurnal-tata-boga/article/view/9779",
+        "https://kedungboto.kec-bangil.pasuruankab.go.id/first/artikel/126",
+        "http://etheses.uin-malang.ac.id/2070/",
+        "https://www.bridestory.com/blog/traditional-javanese-wedding-rituals-and-their-modern-interpretations",
+        "https://prosiding.ikippgribali.ac.id/index.php/semdikjar/article/view/100",
+        "https://jurnal.uns.ac.id/haluansastra/article/view/3910",
+        "https://www.detik.com/jateng/budaya/d-7009407/15-rangkaian-prosesi-pernikahan-adat-jawa-rundown-tujuan-makna-filosofinya",
+        "https://www.gramedia.com/literasi/upacara-pernikahan-adat-sunda/",
+        "https://www.scribd.com/document/365511394/Prosesi-Pernikahan-Adat-Sunda",
+        "https://dewiweddings.com/rundown-upacara-pernikahan-adat-sunda/",
+        "https://www.theknot.com/content/indonesian-wedding-traditions"
+      ],
+      "scraped_at": "2026-08-07T02:07:46.535439Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "East Java"
+        ],
+        "lat": -7.6977397,
+        "lng": 112.4914199
+      },
+      "resume_analisa": {
+        "description": "The \"Adat Pernikahan di Desa Diwet\" is a traditional Javanese wedding ceremony practiced in Diwet Village, Bangil District, Pasuruan Regency, East Java, Indonesia. It is a hereditary custom involving a series of five main stages: proposal (lamaran), testimony (kesaksian), standby/preparation (siaga), a series of ceremonies (rangkaian upacara), and the peak ceremony of religious vows (ijab qobul) and ring exchange. The rituals are accompanied by specific food offerings, each carrying profound symbolic meanings.",
+        "cultural_significance": "This wedding tradition is considered sacred, binding the vows between a man and a woman according to religious, legal, and social norms. The ceremonies are deeply rooted in Javanese beliefs and are performed to ensure a blessed, prosperous, and happy life for the couple. The various food offerings, such as *jadah* (symbolizing strong family ties), *lapis* (layered blessings), *wajik* (harmony), *jenang* (life's journey), fruits (fruitful love), and *daun sirih* (unity), all contribute to the philosophical and spiritual depth of the ritual, reflecting hopes for the couple's future.",
+        "gemini_tags": [
+          "Traditional Wedding",
+          "Javanese Culture",
+          "Village Ritual",
+          "Social Practices",
+          "Rituals",
+          "Folklore",
+          "Indonesia",
+          "Pasuruan",
+          "Symbolic Food"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Wedding Ritual Steps",
+        "materials_and_tools": [
+          "Food offerings for *srah-srahan*: jadah, lapis, wajik, jenang, fruits, betel leaves, jenang blowok",
+          "Food offerings for *pasang tarub*: pisang raja (king banana), pisang pulut, nasi liwet, kopi pahit (bitter coffee), roti tawar (plain bread), jadah bakar (grilled jadah), tempe keripik (tempeh chips), tumpeng gundul"
+        ],
+        "step_by_step": [
+          "**Lamaran (Application/Proposal)**: The initial stage where the families formally discuss the marriage.",
+          "**Kesaksian (Testimony)**: A stage involving witnesses.",
+          "**Siaga (Standby/Preparation)**: Preparations for the main ceremony.",
+          "**Rangkaian Upacara (Series of Ceremonies)**: A sequence of various ceremonial activities.",
+          "**Upacara Puncak Ijab Qobul dan Tukar Cincin (Peak Ceremony of Ijab Qobul and Ring Exchange)**: This is the main religious vow (Ijab Qobul) and the exchange of rings, signifying the official union."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Indonesia (Java)",
+            "element_name": "Javanese Wedding Rituals (general)",
+            "relationship_reason": "The 'Adat Pernikahan di Desa Diwet' is a specific manifestation of broader Javanese wedding traditions, sharing core elements like *lamaran*, *ijab qobul*, and the use of symbolic food offerings."
+          },
+          {
+            "country": "Indonesia (Sunda)",
+            "element_name": "Sundanese Wedding Rituals",
+            "relationship_reason": "Similar pre-wedding rituals like *siraman* (purification bath) and the concept of *seserahan* (gift exchange) are also found in Sundanese wedding traditions, indicating shared cultural influences within Indonesia."
+          },
+          {
+            "country": "Indonesia (General/Villages)",
+            "element_name": "Kenduri Nikah (Wedding Feast)",
+            "relationship_reason": "The practice of holding a communal feast to celebrate and pray for the newlyweds is a common tradition in many Indonesian villages."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-05T01:32:41.058644Z",
-    "total_ich_elements": 229,
-    "complete_records": 212,
+    "generated_at": "2026-08-07T02:08:20.928813Z",
+    "total_ich_elements": 231,
+    "complete_records": 214,
     "incomplete_records": 17,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 80,
-      "Social Practices & Rituals": 49,
+      "Traditional Craftsmanship": 81,
+      "Social Practices & Rituals": 50,
       "Culinary Traditions": 38,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 23,
