@@ -20462,19 +20462,182 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-cb9848ca",
+      "element_name": "Bat Trang Pottery",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vietnamlawmagazine.vn/making-ceramics-in-bat-trang-traditional-craft-village-25769.html&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://vietnamlawmagazine.vn/making-ceramics-in-bat-trang-traditional-craft-village-25769.html",
+        "https://www.thekitchn.com/how-pottery-is-made-in-bat-trang-vietnam-259838",
+        "https://vietpowertravel.com/bat-trang-pottery-village-hanoi-traditional-ceramic-guide/",
+        "https://hanoitimes.vn/bat-trang-the-soul-of-vietnamese-pottery-in-the-integration-stream-326938.html",
+        "https://vietnamnews.vn/life-style/1660053/preserving-traditional-cultural-values-in-bat-trang-ancient-pottery-village.html",
+        "https://vietnam.travel/media-centre/news/bat-trang-pottery-recognized-national-intangible-cultural-heritage",
+        "https://vi.wikipedia.org/wiki/G%E1%BB%91m_B%C3%A1t_Tr%C3%A0ng"
+      ],
+      "scraped_at": "2026-08-09T00:54:03.779917Z",
+      "location": {
+        "country": "Vietnam",
+        "provinces": [
+          "Hanoi",
+          "Hung Yen"
+        ],
+        "lat": 21.0283334,
+        "lng": 105.854041
+      },
+      "resume_analisa": {
+        "description": "Bat Trang pottery is a renowned traditional Vietnamese ceramic art originating from Bat Trang village, located near Hanoi. With a history spanning over 700 years, this craft is celebrated for its durability, intricate hand-painted designs, and a diverse range of glazes, including distinctive crackle glaze and classic blue-and-white patterns. Artisans in Bat Trang produce a wide array of ceramic items, from essential household wares like bowls, cups, and dishes, to elaborate decorative pieces and architectural ceramics.",
+        "cultural_significance": "Bat Trang pottery holds significant cultural importance as a symbol of traditional craft villages in Vietnam and a vital component of the nation's artisanal identity. The craft represents a harmonious blend of ancient traditions and continuous innovation, with techniques meticulously passed down through generations. It is considered to embody the 'soul of Vietnamese land' and its culture, acting as a cultural ambassador that connects Hanoi and Vietnam to the global stage through its widely exported products. In recognition of its exceptional value, Bat Trang pottery was officially included in Vietnam's National Intangible Cultural Heritage List in 2019.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Pottery",
+          "Ceramics",
+          "Vietnamese Culture",
+          "Handicraft",
+          "Cultural Heritage",
+          "Glaze",
+          "Clay Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Pottery making (Ceramic production)",
+        "materials_and_tools": [
+          "Clay (white clay/kaolin)",
+          "Glazes (ash glaze, brown glaze, crackle glaze, blue glaze, crystalline glaze, fire-changing glaze)",
+          "Pottery wheel (foot-operated)",
+          "Molds",
+          "Carving tools",
+          "Paintbrushes",
+          "Kilns (wood-fired, dust coal-fuelled, modern kilns)"
+        ],
+        "step_by_step": [
+          "**1. Preparing Raw Materials:** The process begins with selecting and preparing the clay. Historically, local clay was used, but now kaolin is also a primary material. The clay is dyed, refined to ensure smoothness, and thoroughly wedged to remove air bubbles and achieve the right consistency.",
+          "**2. Shaping Clay:** Clay is shaped either by pouring it into molds or, for handmade items, by using a foot-operated pottery wheel (a technique known as 'throwing'). Potters use their hands to squeeze and shape the clay as the wheel turns, sometimes employing a pottery rib to remove excess clay. After shaping, the 'greenware' pieces are left to dry until they reach a leather-hard state. Traditionally, this involved air-drying in cool places; modern methods may use kilns with slowly increasing temperatures for gradual evaporation.",
+          "**3. Decorating and Glazing:** Once dry, the pieces are meticulously cleaned and smoothed to eliminate any jagged edges. Decoration is then applied using various methods such as stickers, carving tools, or paintbrushes, often featuring traditional Vietnamese motifs like dragons, phoenixes, and lotuses. Glazing follows, applied by pouring glaze for the interior, dipping for an overall coating, or spraying for larger products. Any glaze defects are carefully removed before the next stage.",
+          "**4. Firing:** The glazed ceramic items are then fired in kilns. Historically, wood or dust coal-fuelled kilns were used, but modern kilns are also employed today. This crucial firing process transforms the clay into durable ceramics and significantly influences the final appearance and quality of the finished product."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Jingdezhen porcelain",
+            "relationship_reason": "Bat Trang ceramics were historically traded to China and share a common heritage with major pottery centers like Jingdezhen, reflecting mutual influences in ceramic traditions and trade routes."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Arita pottery",
+            "relationship_reason": "Bat Trang pottery has been exported to Japan and is recognized globally alongside prominent ceramic traditions such as Arita pottery, indicating shared international recognition and historical trade connections."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-8f2c6112",
+      "element_name": "Cud mniemany, czyli Krakowiacy i Górale (The Pretended Miracle, or Cracovians and Highlanders)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Cud_mniemany%2C_czyli_Krakowiacy_i_G%C3%B3rale_-_Film_nr_9-10_-_1947-01-01.JPG/800px-Cud_mniemany%2C_czyli_Krakowiacy_i_G%C3%B3rale_-_Film_nr_9-10_-_1947-01-01.JPG",
+      "source_urls": [
+        "https://pl.wikipedia.org/wiki/Krakowiacy_i_G%C3%B3rale",
+        "https://www.britannica.com/biography/Wojciech-Boguslawski",
+        "https://www.polskieradio.pl/8/405/Artykul/1090159,Krakowiacy-i-Gorale-czyli-niesmiertelne-wolanie-o-pokoj-miedzy-ludzmi",
+        "https://www.encyklopediateatru.pl/artykuly/1155/cud-mniemany-czyli-krakowiacy-i-gorale",
+        "https://commons.wikimedia.org/wiki/File:Cud_mniemany,_czyli_Krakowiacy_i_G%C3%B3rale_-_Film_nr_9-10_-_1947-01-01.JPG"
+      ],
+      "scraped_at": "2026-08-09T00:55:06.123284Z",
+      "location": {
+        "country": "Poland",
+        "provinces": [
+          "Masovian Voivodeship",
+          "Lesser Poland Voivodeship"
+        ],
+        "lat": 52.5461934,
+        "lng": 21.2073404
+      },
+      "resume_analisa": {
+        "description": "“Cud mniemany, czyli Krakowiacy i Górale” (The Pretended Miracle, or Cracovians and Highlanders) is a patriotic comic opera, also described as a singspiel or vaudeville, with music composed by Jan Stefani and a libretto written by Wojciech Bogusławski. It premiered on March 1, 1794, at the National Theatre in Warsaw, and is widely regarded as the first Polish national opera. The work is deeply rooted in Polish national folklore, incorporating traditional Polish rhythms and folk dances such as the polonaise, krakowiak, and mazur. The narrative revolves around a love story, intrigues, and conflicts between the inhabitants of the Kraków region (Krakowiacy) and the Highlanders (Górale) from the Podhale region, often serving as an allegory for broader societal issues and national struggles.",
+        "cultural_significance": "This opera holds immense cultural and historical significance in Poland. Its premiere, occurring just a month before the Kościuszko Uprising, imbued the work with strong patriotic and political undertones. It was widely interpreted as a call for national unity and a protest against foreign oppression, with its themes of freedom and national identity resonating deeply with the audience. The opera's enduring popularity is evidenced by its continuous adaptations and performances throughout Polish history, demonstrating its lasting importance in shaping and reflecting Polish culture and its ability to be reinterpreted in various historical and political contexts.",
+        "gemini_tags": [
+          "Polish National Opera",
+          "Comic Opera",
+          "Vaudeville",
+          "Singspiel",
+          "Polish Folklore",
+          "Patriotic Work",
+          "Performing Arts",
+          "Oral Traditions",
+          "Folk Dance",
+          "Polish Music",
+          "Historical Drama",
+          "National Identity"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Theatrical Performance",
+        "materials_and_tools": [
+          "Libretto (Wojciech Bogusławski)",
+          "Musical score (Jan Stefani)",
+          "Costumes (reflecting traditional Krakovian and Highlander folk attire)",
+          "Stage design and scenery",
+          "Orchestra",
+          "Choir",
+          "Solo vocalists",
+          "Folk dancers"
+        ],
+        "step_by_step": [
+          "The performance begins with an overture, setting the mood for the unfolding drama.",
+          "Actors and vocalists, portraying characters from both Krakovian and Highlander communities, deliver spoken dialogue to advance the plot.",
+          "Musical numbers, including arias, duets, and choral pieces, are performed by soloists and the choir, accompanied by a live orchestra.",
+          "Traditional Polish folk dances, such as the polonaise, krakowiak, and mazur, are integrated into the performance by dancers, often in elaborate folk costumes, visually representing the cultural elements of the regions.",
+          "The narrative, typically divided into acts (originally two, later adapted to four), unfolds through a combination of singing, acting, and dancing, depicting the conflicts and resolutions between the two groups.",
+          "The performance utilizes stage design and props to create the rural Polish landscape and settings, such as a mill and an inn, where the action takes place."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.85,
+        "related_elements": [
+          {
+            "country": "Italy",
+            "element_name": "Opera Buffa",
+            "relationship_reason": "The genre of 'Cud mniemany, czyli Krakowiacy i Górale' is compared to Italian opera buffa due to its comic nature and structural similarities."
+          },
+          {
+            "country": "France",
+            "element_name": "Opéra Comique",
+            "relationship_reason": "The work shares characteristics with French opéra comique, particularly its blend of light comedy with spoken dialogue and musical numbers."
+          },
+          {
+            "country": "Slovakia",
+            "element_name": "Goral culture and music",
+            "relationship_reason": "The opera features the Górale (Highlanders), an ethnographic group with historical ties and shared cultural elements, including music, costumes, and traditions, found in both southern Poland and northern Slovakia."
+          },
+          {
+            "country": "Czech Republic",
+            "element_name": "Silesian Gorals",
+            "relationship_reason": "The Goral ethnographic group, central to the opera's theme, also extends into the Czech Republic, where they are known as Silesian Gorals, indicating a shared cultural heritage across the Carpathian region."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-07T02:08:20.928813Z",
-    "total_ich_elements": 231,
-    "complete_records": 214,
+    "generated_at": "2026-08-09T00:55:48.354673Z",
+    "total_ich_elements": 233,
+    "complete_records": 216,
     "incomplete_records": 17,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 81,
+      "Traditional Craftsmanship": 82,
       "Social Practices & Rituals": 50,
       "Culinary Traditions": 38,
       "Culinary Traditions | Social Practices & Rituals": 3,
-      "Performing Arts": 23,
+      "Performing Arts": 24,
       "Social Practices & Rituals | Performing Arts": 3,
       "Oral Traditions | Performing Arts": 2,
       "Oral Traditions": 18,
