@@ -20625,15 +20625,249 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-8f0efdd1",
+      "element_name": "Sephardic Piyyut Tradition",
+      "category": "Performing Arts | Oral Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.asefamusic.com/programming&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.asefamusic.com/programming",
+        "https://elioritzkovitz.com/en/the-connection-between-jewish-music-and-piyyut-a-tradition-through-generations/",
+        "https://en.wikipedia.org/wiki/Piyyut",
+        "https://www.britannica.com/art/piyyut",
+        "https://en.wikipedia.org/wiki/Authors_of_Piyyut",
+        "https://www.asefamusic.com/programming-for-shabbaton-lectures-performances",
+        "https://religion.fandom.com/wiki/Piyyut",
+        "https://zeek.net/803arnoff/",
+        "https://www.asefamusic.com/",
+        "https://en.wikipedia.org/wiki/Scholars_of_Piyyut",
+        "https://www.asefamusic.com/news-archive",
+        "https://en.wikipedia.org/wiki/Akdamut",
+        "https://elioritzkovitz.com/en/the-role-of-music-in-jewish-spirituality/",
+        "https://www.facebook.com/sepharadismo/posts/the-beauty-of-sephardic-culturein-america-did-know-that-there-are-between-20/2443048739121975/",
+        "https://rosenschool.org/piyyut/",
+        "https://www.sefaria.org/Akdamut_Milin",
+        "https://scriptureanalysis.com/exploring-sephardic-traditions-a-rich-cultural-heritage/",
+        "https://blogs.timesofisrael.com/akdamut-millin-a-masterpiece-of-piyyut-for-shavuot/",
+        "https://elioritzkovitz.com/en/moroccan-style-piyyutim-at-emotional-events-with-elior-itzkovitz-cohen/",
+        "https://festivalsefarad.nyc/",
+        "https://www.ou.org/holidays/shavuot/akdamut_and_ketubah/",
+        "https://elioritzkovitz.com/en/singer-for-a-henna-party-an-exciting-jewish-musical-experience-with-elior-itskovitz-cohen/",
+        "https://www.jewishboston.com/tasting-the-symphony-a-gastronomic-experience-celebrating-sephardic-food-and-music/",
+        "https://ethnomusicologyreview.ucla.edu/journal/volume/19/article/160",
+        "https://elioritzkovitz.com/en/hasidic-klezmer-band-for-jewish-events-the-musical-experience-with-elior-itzkovitz-cohen/",
+        "https://www.researchgate.net/publication/380753580_The_Secret_of_Many_Voices_Blended_Prayers_in_Israel_from_a_Historic_Perspective",
+        "https://jewish-music.huji.ac.il/content/jerusalem-sephardic-tradition",
+        "https://www.wssm.org/sephardic-piyut",
+        "https://www.youtube.com/watch?v=s5R-v656W_M",
+        "https://www.e-mago.co.il/Editor/culture-2250.htm",
+        "https://www.piyut.org.il/articles/100.html"
+      ],
+      "scraped_at": "2026-08-11T00:56:01.679698Z",
+      "location": {
+        "country": "Israel",
+        "provinces": [
+          "Jerusalem",
+          "Dimona",
+          "Sderot",
+          "Ofaqim",
+          "Beit Shean",
+          "Ashdod",
+          "North Africa",
+          "Middle East (Syria, Lebanon, Egypt, Iraq)",
+          "Turkey",
+          "Balkan countries",
+          "Spain (historical)"
+        ],
+        "lat": 31.7788472,
+        "lng": 35.2257856
+      },
+      "resume_analisa": {
+        "description": "Piyyut (plural: piyyutim) is a genre of Hebrew religious poetry, often sung, that has been an integral part of Jewish liturgical and paraliturgical traditions for centuries. It combines poetry with prayer, expressing a range of human emotions towards the Divine, including praise, adoration, joy, sorrow, lamentation, and longing. The Sephardic Piyyut tradition, particularly the \"Jerusalem-Sephardic\" style, is characterized by its musical basis in the maqam system, which is influenced by Arabic and Turkish music. Piyyutim are performed in synagogues, at life-cycle events, and communal gatherings, serving as a powerful tool for emotional and spiritual connection.",
+        "cultural_significance": "Piyyut serves as a vital link between the past and present, preserving the Hebrew language, Jewish history, mysticism, and philosophy. It fosters a strong sense of communal identity, bridging geographical locations and connecting generations of Jewish people. Piyyutim are a means of spiritual expression, enhancing prayer, and celebrating significant life events and holidays such as Shabbat, weddings, brit milah, and bar mitzvahs. The recent revival of piyyut in Israel and the diaspora highlights its enduring importance in connecting diverse Jewish communities and contributing to a new form of Israeli cultural creativity.",
+        "gemini_tags": [
+          "Jewish liturgical poetry",
+          "Hebrew poetry",
+          "Sephardic music",
+          "Oral tradition",
+          "Performing arts",
+          "Religious practice",
+          "Community rituals",
+          "Maqam music",
+          "Israeli culture",
+          "Jewish folklore"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral transmission and musical performance",
+        "materials_and_tools": [
+          "Hebrew texts (piyyutim)",
+          "Musical instruments (historically oud, qanun, darbuka; in modern contexts also Western instruments like violin and piano)",
+          "Human voice"
+        ],
+        "step_by_step": [
+          "**Composition**: Piyyutim are religious poems, often using acrostic forms (e.g., alphabetical or spelling out the author's name) and drawing from the full range of Jewish religious literature, including the Bible, Midrash, and Kabbalah.",
+          "**Learning and Transmission**: Traditionally, piyyutim are learned by rote, especially by children who listen and sing with their fathers in synagogues and at communal events. Workshops are also held to teach piyyutim, including their textual and musical aspects.",
+          "**Musical Adaptation**: Piyyutim are set to melodies, often based on the Arabic maqam system. The choice of maqam can be determined by the theme of the text or the weekly Pentateuch chapter, allowing for improvisation within the modal system.",
+          "**Performance**: Piyyutim are performed by cantors (hazzanim) and congregations in synagogues during prayer services for Shabbat, holidays, and High Holy Days. They are also sung at paraliturgical events such as *baqqashot* (communal singing before sunrise on Shabbat), life-cycle events (weddings, brit milah, bar mitzvah, simhat habat), and other joyous occasions. The congregation often assists the cantor in chanting melodies.",
+          "**Improvisation**: Skilled cantors and young musicians continue to study and improvise based on different maqamat, contributing to the dynamic nature of the tradition."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Spain",
+            "element_name": "Judeo-Andalusian poetry/Piyyut",
+            "relationship_reason": "The Sephardic Piyyut tradition has deep roots in medieval Spain (al-Andalus), with prominent poets like Rabbi Yehuda Halevi, Rabbi Shlomo Ibn Gabirol, and Rabbi Avraham Ibn Ezra composing foundational liturgical poems."
+          },
+          {
+            "country": "Ottoman Empire (Turkey, Balkan countries, Syria, Lebanon, Egypt)",
+            "element_name": "Ottoman/Arabic musical traditions (Maqam system)",
+            "relationship_reason": "The Sephardic Piyyut tradition, particularly the Jerusalem-Sephardic style, developed significantly under Turkish-Ottoman and Arabic musical influences, adopting and utilizing the maqam system as its central musical principle."
+          },
+          {
+            "country": "North Africa (e.g., Morocco, Libya, Tunisia)",
+            "element_name": "North African Jewish musical traditions",
+            "relationship_reason": "Piyyut originated mainly in Sephardic and Mizrahi Jewish communities, including those in North Africa, and is strongly influenced by North African music and styles, such as Moroccan piyyutim."
+          },
+          {
+            "country": "Iraq (Babylonian Jewish community)",
+            "element_name": "Iraqi Jewish musical traditions/Piyyutim",
+            "relationship_reason": "The piyyut repertoire includes selections from various Eastern communities, such as the Jewish community of Iraq, and the Aleppan Jewish community's piyyutim (pizmonim) have become common among many Sephardic and Eastern communities."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5e2f53fa",
+      "element_name": "T'nalak Weaving",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/T%27nalak_Weaving_at_Lake_Sebu.jpg/530px-T%27nalak_Weaving_at_Lake_Sebu.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/T%27nalak",
+        "https://criticalfilamhistories.pressbooks.com/chapter/tnalak-the-land-of-the-dreamweavers/",
+        "https://www.narrastudio.com/blogs/news/the-tnalak-of-the-tboli-cultural-significance-of-dreamweaving",
+        "https://www.thetextileatlas.com/craft-stories/tnalak-weaving-philippines",
+        "https://www.gmanetwork.com/news/lifestyle/travel/841804/discover-how-t-nalak-fabrics-are-made/story/",
+        "https://manilafame.com/en/articles/dreamweavers-the-t-nalak-of-the-t-boli-people",
+        "https://tnalakwovenlegacy.wordpress.com/2023/11/20/the-sacred-art-of-tnalak-weaving-by-the-tboli-people/",
+        "https://clothroads.com/woven-dreams-of-tnalak-ikat/",
+        "https://www.scribd.com/document/705703274/T-nalak-Weaving-Cultural-Heritage-of-T-boli",
+        "https://www.facebook.com/catrionagray/posts/tnalak-is-a-sacred-cloth-woven-by-the-tboli-people-in-the-communities-around-la/10159495392077289/",
+        "https://www.vogue.ph/fashion/tnalak-weavers-lake-sebu/",
+        "https://www.youtube.com/watch?v=k_jH644g-xQ",
+        "https://pia.gov.ph/features/2023/07/21/tnalak-festival-weaving-traditions-bridging-history-and-cultural-resilience",
+        "https://pia.gov.ph/features/2023/07/25/tnalak-festival-weaving-traditions-bridging-history-and-cultural-resilience",
+        "https://en.wikipedia.org/wiki/Lake_Sebu_(municipality)",
+        "https://en.wikipedia.org/wiki/Lake_Sebu",
+        "https://www.maptons.com/Philippines/South-Cotabato/Lake-Sebu/map",
+        "https://www.gps-coordinates.net/latitude-longitude/6.2167/124.7000/Lake-Sebu,-South-Cotabato,-Philippines",
+        "https://www.theindianlooms.com/blogs/news/types-of-ikat-around-the-world",
+        "https://textileartscenter.com/blog/2011/2/2/ikat-weaving-around-the-world",
+        "https://clothroads.com/ikat-the-world-over/",
+        "https://www.cottonmill.com/blogs/news/ikat-cottons-around-the-world-global-influences",
+        "https://en.wikipedia.org/wiki/Ikat",
+        "https://commons.wikimedia.org/wiki/File:T%27nalak_Weaving_at_Lake_Sebu.jpg"
+      ],
+      "scraped_at": "2026-08-11T00:56:46.618853Z",
+      "location": {
+        "country": "Philippines",
+        "provinces": [
+          "South Cotabato"
+        ],
+        "lat": 6.2855239,
+        "lng": 124.9333096
+      },
+      "resume_analisa": {
+        "description": "T'nalak is a sacred hand-woven cloth indigenous to the T'boli people of South Cotabato, Philippines. It is crafted from meticulously prepared abaca fibers and is distinctive for its tri-color scheme, primarily black, white, and red. The intricate patterns are not learned but are believed to be revealed to the women weavers in their dreams by Fu Dalu, the T'boli Goddess of abaca, earning them the moniker 'dreamweavers'. Each T'nalak cloth is thus a unique and spiritual artifact, reflecting the weaver's vision and the T'boli's connection to nature and their rich cultural heritage.",
+        "cultural_significance": "T'nalak holds a profound and central place in T'boli culture, serving as a medium for storytelling, beliefs, myths, and even religion. It is ever-present in significant life events such as birth (a piece is placed on the mother's stomach during labor), marriage (used as a wedding blanket), and death, sanctifying these rites. The weaving process, passed down through maternal relatives, empowers women in the community. The cloth also conveys class and individual status, with high-quality T'nalak being exchanged for valuable goods like horses, water buffalos, and gongs. The T'nalak weaving tradition is acknowledged as part of the intangible cultural heritage of the T'boli people and the Philippines, with a T'nalak design pattern featured on the reverse side of the one thousand-peso note. The annual T'nalak Festival in South Cotabato celebrates this heritage.",
+        "gemini_tags": [
+          "Textile Art",
+          "Indigenous Craft",
+          "Dreamweaving",
+          "Filipino Heritage",
+          "Abaca Weaving",
+          "Cultural Preservation",
+          "Mindanao",
+          "Resist Dyeing",
+          "Ikat"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand-weaving with resist-dyeing (Ikat technique)",
+        "materials_and_tools": [
+          "Abaca fibers (krungon)",
+          "Natural dyes (from bark, roots, and leaves of plants; e.g., cannalum tree for black, knalum leaves for black, loko roots for red)",
+          "Beeswax (for resist-dyeing)",
+          "Backstrap loom (legogong)",
+          "Two metal blades (for stripping abaca)",
+          "Cowrie shell (for burnishing)",
+          "Nut oil (for conditioning fabric)"
+        ],
+        "step_by_step": [
+          "**Harvesting and Preparation of Abaca Fibers (Kedungon):** Abaca fibers are carefully selected, stripped from the stalk using two metal blades to remove the pulp, sun-dried, and then worked by hand into fine threads.",
+          "**Connecting Threads (Tembong):** Individual abaca threads are meticulously connected end to end to create longer strands for weaving.",
+          "**Dreaming the Design (Kena):** T'boli women, known as 'dreamweavers,' receive intricate patterns and designs from Fu Dalu, the T'boli Goddess of abaca, in their dreams. These dream-inspired patterns guide the subsequent dyeing process.",
+          "**Resist-Dyeing (Temogo / Ikat):** This is a complex tie-dye process. Sections of the abaca threads are coated with a wax-resistant substance (beeswax) to protect them from dye. The fibers are first boiled in a black dye (from plants like knalum leaves) for several weeks. After this, the patterns intended to remain red are tightly tied. The abaca then undergoes another dyeing process, turning the remaining untied portions red (from plants like loko roots). Finally, the ties are removed, revealing the distinctive tri-colored pattern of black, white (natural abaca color), and red.",
+          "**Weaving (Mewel):** The dyed strings are carefully strung onto a backstrap loom (legogong). The weaver then passes a shuttle across the warp threads and beats it down with a rod. Weaving a single piece of T'nalak cloth can take up to a month or more of uninterrupted work, depending on the intricacy of the dream-inspired design.",
+          "**Finishing (Semaki):** The final stage involves burnishing (polishing) the woven fabric with a heated cowrie shell. Nut oil is then applied to condition the fabric and impart a characteristic sheen."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Ikat weaving",
+            "relationship_reason": "T'nalak utilizes the ikat resist-dyeing technique, which is also a prominent textile tradition in Indonesia."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Ikat weaving",
+            "relationship_reason": "Ikat weaving, including warp and weft ikat, is also found in Japan."
+          },
+          {
+            "country": "Uzbekistan",
+            "element_name": "Ikat weaving (Adras or Atlas)",
+            "relationship_reason": "Uzbekistan is known for its silk ikat textiles, sharing the resist-dyeing technique."
+          },
+          {
+            "country": "Guatemala",
+            "element_name": "Ikat weaving",
+            "relationship_reason": "Ikat weaving is present in various forms in Central and South American countries, including Guatemala."
+          },
+          {
+            "country": "India",
+            "element_name": "Ikat weaving (Patola)",
+            "relationship_reason": "India has a rich tradition of ikat weaving, known as Patola, which also involves resist-dyeing yarns before weaving."
+          },
+          {
+            "country": "Laos",
+            "element_name": "Weft Ikat weaving",
+            "relationship_reason": "Laos practices weft ikat weaving, a form of the resist-dyeing technique."
+          },
+          {
+            "country": "Ecuador",
+            "element_name": "Warp Ikat weaving",
+            "relationship_reason": "Ecuador is known for traditional warp ikat textiles."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-09T00:55:48.354673Z",
-    "total_ich_elements": 233,
-    "complete_records": 216,
+    "generated_at": "2026-08-11T00:57:59.992992Z",
+    "total_ich_elements": 235,
+    "complete_records": 218,
     "incomplete_records": 17,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 82,
+      "Traditional Craftsmanship": 83,
       "Social Practices & Rituals": 50,
       "Culinary Traditions": 38,
       "Culinary Traditions | Social Practices & Rituals": 3,
@@ -20649,7 +20883,8 @@
       "Performing Arts | Traditional Craftsmanship": 2,
       "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1,
       "Oral Traditions | Performing Arts | Social Practices & Rituals": 2,
-      "Performing Arts | Social Practices & Rituals": 1
+      "Performing Arts | Social Practices & Rituals": 1,
+      "Performing Arts | Oral Traditions": 1
     }
   }
 }
