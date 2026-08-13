@@ -20859,15 +20859,285 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-6fe5a168",
+      "element_name": "Al-Hakawati (The Storyteller)",
+      "category": "Oral Traditions | Performing Arts | Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ar.wikipedia.org/wiki/%25D8%25A7%25D9%2584%25D8%25AD%25D9%2583%25D9%2588%25D8%25A7%25D8%25AA%25D9%258A&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D9%83%D9%88%D8%A7%D8%AA%D9%8A",
+        "https://en.wikipedia.org/wiki/Al-Qaskhun",
+        "https://www.lebanontraveler.com/magazine/the-hakawati-storyteller/",
+        "https://scoopempire.com/the-hakawati-legacy-storytelling-in-the-middle-east-then-and-now/",
+        "https://www.albayan.ae/five-senses/2005-10-13-1.1213076",
+        "https://www.pnt-pal.org/",
+        "https://www.jerusalemstory.com/en/article/palestinian-national-theatre-el-hakawati",
+        "https://howlround.com/palestinian-storytelling",
+        "https://www.canon-me.com/view/hakawaty/",
+        "https://arab-ency.com/detail/1000",
+        "https://makkahnewspaper.com/article/717812/%D8%A7%D9%86%D9%81%D9%88%D8%AC%D8%B1%D8%A7%D9%81%D9%8A%D9%83/%D9%85%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D8%A7%D8%AA%D9%8A",
+        "https://www.rabihalameddine.com/the-hakawati",
+        "https://www.goodreads.com/book/show/1585257.The_Hakawati",
+        "https://www.goethe.de/ins/eg/ar/kul/mag/22904077.html",
+        "https://www.aljazeera.net/culture/2022/4/9/%D8%A3%D8%B3%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D8%A7%D8%AA%D9%8A-%D9%85%D8%A4%D9%84%D9%81-%D9%85%D8%BA%D8%B1%D8%A8%D9%8A-%D9%8A%D8%BA%D9%88%D8%B5-%D9%81%D9%8A",
+        "https://www.middleeasteye.net/discover/forget-game-thrones-master-cliffhanger-back-middle-east",
+        "https://www.britannica.com/topic/Hakawati"
+      ],
+      "scraped_at": "2026-08-13T01:03:44.867019Z",
+      "location": {
+        "country": "Middle East",
+        "provinces": [
+          "Levant (Syria, Lebanon, Palestine, Jordan)",
+          "Egypt",
+          "Iraq",
+          "Morocco",
+          "Algeria"
+        ],
+        "lat": 44.869496,
+        "lng": -68.935089
+      },
+      "resume_analisa": {
+        "description": "Al-Hakawati, meaning 'the storyteller' in Arabic, refers to a traditional master storyteller who would captivate audiences with tales, myths, and moral lessons. The term is derived from 'hekaye' (story) and 'haki' (to talk). Hakawatis were revered figures in ancient times across the Arab world, performing in public spaces such as coffeehouses, markets, and homes. They were known for their dramatic flair, using rich metaphors, rhymes, lively exaggerations, and physical expressions to embody characters and events. Often seen as a one-man theatrical phenomenon, they would engage audiences through voice modulation, gestures, and direct interaction.",
+        "cultural_significance": "The Hakawati tradition played a vital role in preserving and transmitting cultural heritage, folklore, history, and moral values across generations. Before the advent of modern media, Hakawatis served as a primary source of entertainment and education, fostering community gatherings and cultural discourse. Their repertoire included historical epics like the tales of King Baybars, Antar, Al-Zir Salem, and stories from One Thousand and One Nights, as well as fables and narratives addressing contemporary social issues. The tradition is currently experiencing a revival, particularly during cultural events like Ramadan, as a means to reconnect with heritage and explore modern societal themes.",
+        "gemini_tags": [
+          "Oral Storytelling",
+          "Traditional Performance",
+          "Middle Eastern Folklore",
+          "Cultural Preservation",
+          "Community Practice",
+          "Arabic Heritage",
+          "Public Entertainment",
+          "Folk Tales",
+          "Epic Poetry",
+          "Social Ritual"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance Art",
+        "materials_and_tools": [
+          "Elevated chair (for visibility)",
+          "Cane (used for emphasis, as a prop, or to represent a sword)",
+          "Book (sometimes used as a prop, even if reciting from memory)"
+        ],
+        "step_by_step": [
+          "The Hakawati typically positions themselves on a raised chair in a public setting, such as a coffeehouse, to ensure visibility for the assembled audience.",
+          "The performance begins with engaging verbal introductions and anecdotes designed to warm up the audience and establish a connection, often drawing on local life experiences.",
+          "Tales are narrated with dramatic flair, employing varied vocal tones, pitches, and accents to impersonate different characters within the story.",
+          "The storyteller uses extensive gestures, body movements, and the cane as a prop to physically embody characters, actions (e.g., sword fights), and emotions, immersing the audience in the narrative.",
+          "Improvisation is a key element, with the Hakawati adapting the dramatic context to suit the moment and interacting directly with the audience, sometimes inviting participation or assigning roles.",
+          "Sessions frequently conclude with a cliffhanger, a technique used to build suspense and encourage the audience to return for subsequent installments of the serialized sagas, which could span weeks or months.",
+          "Throughout the storytelling, moral lessons, cultural values, and subtle social commentaries are interwoven into the narratives, serving an educational and ethical function alongside entertainment."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Egypt",
+            "element_name": "Sha'ir (poet)",
+            "relationship_reason": "Traditional storyteller often accompanied by a rababah (stringed instrument)."
+          },
+          {
+            "country": "Iraq",
+            "element_name": "Al-Qaskhun",
+            "relationship_reason": "Historic occupation of professional narrators specializing in storytelling, particularly in Baghdad coffeehouses."
+          },
+          {
+            "country": "Morocco",
+            "element_name": "Al-Halayqi",
+            "relationship_reason": "A performer in a public circle, similar to a storyteller."
+          },
+          {
+            "country": "Algeria",
+            "element_name": "Al-Qawwal, Al-Maddah",
+            "relationship_reason": "Terms used for storytellers in Algerian dialect."
+          },
+          {
+            "country": "Global",
+            "element_name": "Traditional storytellers, bards, griots, troubadours",
+            "relationship_reason": "Universal practice of oral storytelling found in various cultures worldwide."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-135130e6",
+      "element_name": "Mudhif (Al-Mudhif)",
+      "category": "Traditional Craftsmanship | Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mudhif_in_the_Hawizeh_Marshes.jpg/1200px-Mudhif_in_the_Hawizeh_Marshes.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Mudhif",
+        "https://ich.unesco.org/en/RL/01950",
+        "https://www.dvidshub.net/news/47690/mudhif-houses-capture-spirit-iraqi-culture",
+        "https://www.wananews.ir/news/17307/the-mudhif-a-heritage-of-reeds-flavored-with-coffee",
+        "https://www.witpress.com/elibrary/wit-transactions-on-ecology-and-the-environment/113/92",
+        "https://www.aramcoworld.com/Articles/January-2024/Mudhif-in-Houston-Reviving-Iraq-s-Marshland-Herita",
+        "https://www.archiam.org/projects/documenting-the-endangered-reed-architecture-of-the-iraqi-marshes",
+        "https://www.tehrantimes.com/news/492576/Iran-seeks-UNESCO-heritage-status-for-Mudhif-an-arched-structure",
+        "https://www.atlasobscura.com/places/mudhif-houses-al-chibayish",
+        "https://toolshed.org/tools/reed-bundle-construction",
+        "https://brill.com/view/journals/jmcmw/3/1/article-p161_9.xml",
+        "https://www.aramcoworld.com/Articles/April-2024/Lesson-Plan-Building-a-Mudhif",
+        "https://www.youtube.com/watch?v=kYv_4r620pA"
+      ],
+      "scraped_at": "2026-08-13T01:05:50.888410Z",
+      "location": {
+        "country": "Iraq",
+        "provinces": [
+          "Southern Iraq",
+          "Mesopotamian Marshes",
+          "Tigris-Euphrates Rivers marshes",
+          "Al-Chibayish"
+        ],
+        "lat": 33.0955793,
+        "lng": 44.1749775
+      },
+      "resume_analisa": {
+        "description": "The Mudhif (or Al-Mudhif) is a traditional reed house constructed by the Ahwari people, also known as Marsh Arabs or Ma'dan, in the swamps of southern Iraq. These large, arched ceremonial buildings have been a part of the region's culture for at least 5,000 years, with carved depictions dating back to around 3,300 BCE found at Uruk. Constructed entirely from locally harvested reeds and papyrus, Mudhifs serve as important communal spaces.",
+        "cultural_significance": "The Mudhif is a profound symbol of respect, hospitality, and communal identity for the Marsh Arabs. It functions as a central gathering place for various social practices and rituals, including weddings, funerals, religious ceremonies, and national celebrations. It's a venue for community members to exchange knowledge, address conflicts, share experiences, and tell stories. The Mudhif also plays a crucial role in transmitting traditional knowledge, values, handicraft skills, norms, and customs to younger generations. Its design reflects cultural values: the absence of a door signifies open hospitality, and the low entrance requires guests to bow as a sign of respect. Traditionally, the entrance often faces Mecca. A central ritual within the Mudhif is the serving of highly sweetened coffee, which symbolizes welcome, enjoyment, and a bond of brotherhood between host and guest.",
+        "gemini_tags": [
+          "Traditional Architecture",
+          "Ecological Building",
+          "Reed Construction",
+          "Vernacular Architecture",
+          "Iraqi Culture",
+          "Marsh Arabs",
+          "Sustainable Building",
+          "Community Gathering Place",
+          "Cultural Heritage",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Reed Construction",
+        "materials_and_tools": [
+          "Reeds (Phragmites and papyrus)",
+          "Ropes (made of crushed reeds)",
+          "Woven mats (made of reeds)",
+          "Soil/mud for foundation"
+        ],
+        "step_by_step": [
+          "Reeds, primarily Phragmites, are collected from the marshes.",
+          "Lengths of reeds, typically around 10 meters long, are bundled together to form thick columns.",
+          "Larger and thicker bundled reeds are inserted into the soil at opposing angles, approximately one meter deep. These bundles are then bent towards each other and securely tied at the top to create huge, parabolic arches. This pre-stressing technique provides structural stability. An odd number of pillars is traditionally used.",
+          "A series of these arches defines the overall form of the building. Smaller bundled reeds are laid across the arches as long cross beams and tied into place.",
+          "Woven mats made from reeds are used to form the roof and side walls of the Mudhif. Some mats are woven with perforations, known as 'mshebbech', to allow for natural light and ventilation. The front and back walls are also constructed from woven mats and attached to vertical bundled reed columns.",
+          "Optionally, additional bundles of reeds may be arranged in decorative patterns on the façade, serving as a tribal identifier.",
+          "Mudhifs typically require rebuilding approximately every ten years."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Iran",
+            "element_name": "Mudhif (Al-Mudhif)",
+            "relationship_reason": "The tradition of constructing Mudhif structures is also practiced by the Arab communities in Khuzestan province, southern Iran. Iran has actively sought joint UNESCO registration for the Mudhif, emphasizing the deep cultural ties and shared heritage between the two nations."
+          },
+          {
+            "country": "United States",
+            "element_name": "Mudhif construction project in Houston, Texas",
+            "relationship_reason": "A community in Houston, Texas, including Iraqi Americans, undertook a project to construct a Mudhif. This initiative aimed to preserve traditional construction techniques and knowledge, foster a sense of community, and share insights into this ancient Iraqi culture."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7e704bea",
+      "element_name": "Carrickmacross Lace Making",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Carrickmacross_lace.jpg/500px-Carrickmacross_lace.jpg",
+      "source_urls": [
+        "https://nationalinventoryich.chg.gov.ie/carrickmacross-lace-making/",
+        "https://en.wikipedia.org/wiki/Carrickmacross_lace",
+        "https://www.carrickmacrosslace.ie/",
+        "https://www.lacesofireland.ie/carrickmacross-lace/",
+        "https://www.ulsterfolkmuseum.org/collections/textiles/lacemaking",
+        "https://www.sewingcollection.com/education/carrickmacross-lace-making",
+        "https://trc-leiden.nl/trc-needles/regional-studies/europe-and-north-america/carrickmacross-lace",
+        "https://www.metmuseum.org/art/collection/search/200921",
+        "https://www.carrickmacrosslace.ie/history-of-carrickmacross-lace",
+        "https://www.carrickmacrosslace.ie/about-us",
+        "https://www.carrickmacrosslace.ie/location"
+      ],
+      "scraped_at": "2026-08-13T01:06:18.921649Z",
+      "location": {
+        "country": "Ireland",
+        "provinces": [
+          "County Monaghan"
+        ],
+        "lat": 54.1610664,
+        "lng": -6.9463648
+      },
+      "resume_analisa": {
+        "description": "Carrickmacross Lace is a distinctive style of needle lace originating from Carrickmacross, County Monaghan, Ireland. It is characterized by appliquéing fine cotton organdie onto a delicate machine-made net ground. The designs are outlined with a couched cord, and then the excess organdie is meticulously cut away, revealing an elegant pattern. The lace is further embellished with a variety of decorative filling stitches, such as 'pops' (small button-holed rings) and 'guipure' (linking areas of the pattern with bars), and finished with a characteristic looped edge.",
+        "cultural_significance": "Introduced around 1820 by Mrs. Grey Porter, Carrickmacross Lace was initially a means to provide much-needed employment for young women in rural Ireland, particularly during periods of hardship like the Great Famine. It became a significant source of income and a vehicle for survival for many families. The tradition was sustained and revived through the establishment of lace schools by figures like Miss Reed and the St. Louis Sisters, and continues today through organizations like the Carrickmacross Lace Co-Op. The lace has gained international recognition, being used by renowned designers and featured in royal weddings, including those of Princess Diana and Kate Middleton. It represents a rich tradition of meticulous needlecraft and is a cherished part of Ireland's intangible cultural heritage.",
+        "gemini_tags": [
+          "Irish Lace",
+          "Needle Lace",
+          "Appliqué Lace",
+          "Traditional Craftsmanship",
+          "Textile Art",
+          "Handicraft",
+          "Cultural Heritage Ireland",
+          "Monaghan Craft",
+          "Lace Making"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Appliqué Needle Lace",
+        "materials_and_tools": [
+          "Fine needles (e.g., size 10 embroidery needle, size 9 quilting needle)",
+          "Fine cotton organdie fabric",
+          "Machine-made hexagonal net (tulle)",
+          "Fine cotton sewing thread (e.g., No. 50 or 60, Coats or Gramman pure cotton)",
+          "Thicker mercer crochet cord (e.g., No. 40 or 60 crochet thread for couching)",
+          "Lace-making scissors (special scissors with a small bulb at one end to prevent cutting the net)",
+          "Pattern (drawn on butter paper or fine tracing paper with a waterproof pen)",
+          "Several layers of tissue paper (for padding and protecting the pattern)",
+          "Pins"
+        ],
+        "step_by_step": [
+          "**Preparation:** Create a three-layer 'sandwich' by placing several layers of tissue paper at the bottom, followed by the pattern, then the machine-made net, and finally the cotton organdie on top. Pin and tack all layers securely in place.",
+          "**Outlining (Couching):** Hold the thicker crochet cord (outlining thread) in place with one hand and couch it along the lines of the pattern. This is done using a fine sewing thread and a quilting needle, stitching through the net and fabric layers.",
+          "**Loop Edge:** Finish the outer edge of the design with a distinctive looped (picot) edge.",
+          "**Removal of Backing:** Once the couching and outlining are complete, gently remove the tissue paper and pattern from the back of the work.",
+          "**Washing:** Wash the piece.",
+          "**Cutting and Filling (Appliqué and Guipure):** Carefully cut away unwanted organdie from suitable areas of the design using special lace-making scissors. Fill these cut-away areas and other parts of the design with various decorative embroidery stitches, such as bars, pops, and cobweb, using an embroidery needle and cotton sewing thread.",
+          "**Final Cut:** Very carefully, underneath the looped edge, cut away both the net and organdie layers to reveal the complete lace piece."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Italy",
+            "element_name": "Italian Appliqué Lace",
+            "relationship_reason": "Carrickmacross Lace was directly inspired by examples of Italian appliqué lace that Mrs. Grey Porter brought back from her honeymoon in Italy in 1816. She then adapted these designs and techniques to create the unique Carrickmacross style."
+          },
+          {
+            "country": "Ireland",
+            "element_name": "Limerick Lace",
+            "relationship_reason": "Both Carrickmacross Lace and Limerick Lace are significant forms of Irish lace, originating in the 1820s, and share similarities as embroidery on net. They are both recognized as part of Ireland's intangible cultural heritage, and there are ongoing collaborations and shared initiatives between lacemaker groups in both regions, such as the 'Laces of Ireland' project."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-11T00:57:59.992992Z",
-    "total_ich_elements": 235,
-    "complete_records": 218,
+    "generated_at": "2026-08-13T01:10:19.809154Z",
+    "total_ich_elements": 238,
+    "complete_records": 221,
     "incomplete_records": 17,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 83,
+      "Traditional Craftsmanship": 84,
       "Social Practices & Rituals": 50,
       "Culinary Traditions": 38,
       "Culinary Traditions | Social Practices & Rituals": 3,
@@ -20877,12 +21147,12 @@
       "Oral Traditions": 18,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
-      "Traditional Craftsmanship | Social Practices & Rituals": 2,
+      "Traditional Craftsmanship | Social Practices & Rituals": 3,
       "Social Practices & Rituals | Culinary Traditions": 2,
       "Social Practices & Rituals | Traditional Craftsmanship": 1,
       "Performing Arts | Traditional Craftsmanship": 2,
       "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1,
-      "Oral Traditions | Performing Arts | Social Practices & Rituals": 2,
+      "Oral Traditions | Performing Arts | Social Practices & Rituals": 3,
       "Performing Arts | Social Practices & Rituals": 1,
       "Performing Arts | Oral Traditions": 1
     }
