@@ -21129,17 +21129,269 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c1a3e0c7",
+      "element_name": "Teko Porã (The Philosophy of Good Living)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//wheretheleavesfall.com/read/teko-pora&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://wheretheleavesfall.com/read/teko-pora",
+        "https://www.bauhaus-imaginista.org/articles/5403/teko-pora",
+        "https://onlineradiobox.com/py/panambivera/",
+        "https://mandalalunar.com.br/teko-pora-o-sistema-milenar-educativo-de-equilibrio/",
+        "https://franklywithtainanfranco.com/teko-pora-and-life-in-the-guarani-village-of-rio-silveira/",
+        "https://revistafiquebem.com.br/teko-pora-a-filosofia-do-bem-viver-na-sabedoria-guarani/",
+        "https://www.facebook.com/tekopora.atelier/",
+        "https://www.youtube.com/watch?v=U_uwE4cH6xo",
+        "https://ich.unesco.org/en/state/paraguay-PY"
+      ],
+      "scraped_at": "2026-08-15T00:38:48.954645Z",
+      "location": {
+        "country": "Brazil, Paraguay",
+        "provinces": [
+          "São Paulo",
+          "Guairá"
+        ],
+        "lat": -18.5886272,
+        "lng": -57.5303444
+      },
+      "resume_analisa": {
+        "description": "Teko Porã, also translated as 'Bem Viver' or 'Good Living,' is a profound Guarani philosophical, political, social, and spiritual concept. It signifies a beautiful way of being and living in harmony with the community, encompassing both human and more-than-human elements, and the environment. This ancestral wisdom guides the daily lives of Indigenous peoples, particularly the Guarani, emphasizing balance, respect, and interconnectedness. It stands in contrast to the individualistic, consumerist, and technologically unbalanced aspects of the modern world, advocating for resistance and resilience to maintain ancestral essence. The concept is deeply rooted in Indigenous cosmology and their way of life, promoting a sustainable existence and a respectful relationship with nature.",
+        "cultural_significance": "The cultural significance of Teko Porã lies in its role as a foundational principle for the Guarani people, influencing their social organization, spiritual practices, and relationship with the land. It represents a collective opportunity to construct new forms of life based on equilibrium, respect, and harmony among all beings. This philosophy is seen as a way to challenge and transform human relationships, urging a return to respecting all forms of life on Earth. It also highlights the importance of ancestral knowledge, traditional agriculture, and community well-being as alternatives to the 'tekó vai' (bad living) brought about by unrestrained consumption and environmental degradation. The concept is actively promoted by Indigenous leaders and educators as a pathway to a more conscious and sustainable future.",
+        "gemini_tags": [
+          "Guarani culture",
+          "Indigenous philosophy",
+          "Good living",
+          "Environmental harmony",
+          "Social practice",
+          "Spiritual concept",
+          "Brazil",
+          "Paraguay",
+          "Ancestral wisdom",
+          "Community well-being"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "South Africa",
+            "element_name": "Ubuntu",
+            "relationship_reason": "Both 'Teko Porã' and 'Ubuntu' are philosophical concepts that emphasize interconnectedness, community, and the idea of 'I am because we are,' highlighting the interdependence of individuals within a collective."
+          },
+          {
+            "country": "Andean Region (e.g., Bolivia, Ecuador)",
+            "element_name": "Sumak Kawsay (Quechua) / Suma Qamaña (Aymara)",
+            "relationship_reason": "Similar to Teko Porã, Sumak Kawsay (Quechua) and Suma Qamaña (Aymara) are Indigenous philosophies from the Andean region that also translate to 'good living' or 'living well,' advocating for a harmonious relationship between humans and nature."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-53244d40",
+      "element_name": "Bakhshi Art",
+      "category": "Performing Arts | Oral Traditions",
+      "thumbnail_url": "https://ich.unesco.org/doc/src/14673-THUMB.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/bakhshi-art-01795",
+        "https://uza.uz/en/posts/unesco-inscribes-the-bakhshi-art-on-the-list-of-intangible-cultural-heritage_321111",
+        "https://en.wikipedia.org/wiki/List_of_Intangible_Cultural_Heritage_elements_in_Uzbekistan"
+      ],
+      "scraped_at": "2026-08-15T00:39:14.782738Z",
+      "location": {
+        "country": "Uzbekistan",
+        "provinces": [
+          "Khorezm Region",
+          "Karakalpakstan",
+          "Surkhandarya Region",
+          "Qashqadaryo Region"
+        ],
+        "lat": 41.808374,
+        "lng": 60.0847076
+      },
+      "resume_analisa": {
+        "description": "Bakhshi art is the performance of epic stories, known as 'dostons', accompanied by traditional musical instruments, primarily the dombra (a stringed instrument) and the kobuz (a bowed instrument). The storytellers, called bakhshis, narrate heroic, historical, and romantic epic poems derived from myths, legends, folk tales, and legendary chants. Bakhshis are skilled improvisers of words and stories, musicians, and singers who engage their audience with captivating melodies, creative language, word games, proverbs, phrases, and sometimes mimicry and plastique.",
+        "cultural_significance": "Bakhshi art is a fundamental aspect of the Uzbek lifestyle, with bakhshis being esteemed guests at family ceremonies, rituals, public holidays, and local festivities. It forms a crucial part of the musical and poetic heritage of the Uzbek and Karakalpak peoples. This ancient art form serves to preserve and transmit the rich history, traditions, and memories of the people, encompassing themes of war, conquests, and love. The tradition is perpetuated through intergenerational oral transfer within families and formal bakhshi schools, following the 'ustoz-shogird' (master-apprentice) methodology. The government of Uzbekistan actively supports this art, recognizing outstanding folk narrators with the honorary title 'People's Bakhshi of Uzbekistan'.",
+        "gemini_tags": [
+          "Epic poetry",
+          "Storytelling",
+          "Traditional music",
+          "Oral tradition",
+          "Uzbekistan",
+          "Performing arts",
+          "Folkloric performance",
+          "Musical instruments",
+          "Cultural identity",
+          "Apprenticeship"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral transmission and performance art",
+        "materials_and_tools": [
+          "Dombra (stringed instrument)",
+          "Kobuz (bowed instrument)",
+          "Guttural voice (boghiq ovoz)"
+        ],
+        "step_by_step": [
+          "Undergo rigorous apprenticeship and training within families or formal bakhshi schools, following the 'ustoz-shogird' (master-apprentice) methodology, focusing on oral transfer of singing skills and techniques.",
+          "Memorize extensive epic poems (dostons) and develop improvisation techniques.",
+          "Perform epic stories and original compositions using a recitative-declamatory singing style, often employing a special guttural voice ('boghiq ovoz') and short tunes ('naghma').",
+          "Accompany the vocal performance with traditional musical instruments, primarily the dombra and kobuz.",
+          "Engage the audience through captivating melodies, interesting narration, creative use of language, word games, proverbs, phrases, and sometimes mimicry and plastique."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Karakalpakstan (Uzbekistan)",
+            "element_name": "Bakhshi Art / Epic traditions",
+            "relationship_reason": "Shared tradition among Uzbek and Karakalpak people, with specific mention of baksys of Karakalpakstan."
+          },
+          {
+            "country": "Central Asia",
+            "element_name": "Folk epic traditions",
+            "relationship_reason": "Bakhshi is a folk singer/performer of folklore among Turkic peoples of Central Asia."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-79322569",
+      "element_name": "Hakka Abacus Seeds (Suan Pan Zi)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Hakka_abacus_seeds.jpg/1280px-Hakka_abacus_seeds.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Abacus_seeds",
+        "https://hungrypeepor.com/2019/08/17/simply-chewy-hakka-abacus-seed-%E5%AE%A2%E5%AE%B6%E7%AE%97%E7%9B%98%E5%AD%90/",
+        "https://budgetpantry.com/hakka-abacus-seeds/",
+        "https://themoonberryblog.com/abacus-seeds-hakka-suan-pan-zi/",
+        "https://woonheng.com/hakka-taro-yam-abacus-seeds/",
+        "https://hawker.substack.com/p/hakka-abacus-seeds",
+        "https://summerlotus.net/2021/05/26/why-you-must-taste-the-hakka-abacus-seeds-dish/",
+        "https://whattocooktoday.com/hakka-abacus-beads.html",
+        "https://www.lemon8-app.com/sg/lemon8food/7300302821102940677?type=post",
+        "https://www.mysingaporefood.com/heritage-recipes/hakka-abacus-seeds-%E7%AE%97%E7%9B%98%E5%AD%90/",
+        "https://vegforward.com/try-some-hakka-yam-abacus-seeds-that-signifies-family-reunion/",
+        "https://www.nlb.gov.sg/main/articles/20000000/2026/07/29/abacus-seeds-a-hakka-classic",
+        "https://www.sbs.com.au/food/recipes/count-success-these-hakka-abacus-beads",
+        "https://www.geokeo.com/geocode/24.3400/116.6430",
+        "https://en.wikipedia.org/wiki/Dabu_County"
+      ],
+      "scraped_at": "2026-08-15T00:39:45.669064Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Guangdong Province"
+        ],
+        "lat": 23.1357694,
+        "lng": 113.1982688
+      },
+      "resume_analisa": {
+        "description": "Hakka Abacus Seeds (Suan Pan Zi) is a traditional Hakka Chinese dish consisting of dimpled, disc-shaped dumplings made primarily from mashed taro (yam) and tapioca flour. These chewy dumplings are typically stir-fried with a savory mix of ingredients such as minced pork, shiitake mushrooms, dried shrimp, dried cuttlefish, and firm bean curd (tau kwa). The dish is known for its unique 'QQ' (chewy and springy) texture on the outside and a soft yam interior, coated in a flavorful stir-fry.",
+        "cultural_significance": "This dish holds significant cultural importance for the Hakka community, particularly during festive occasions like Chinese New Year, weddings, and ancestral veneration meals. Its name and shape, resembling the beads of a traditional Chinese abacus (suan pan), symbolize wealth, prosperity, and the wish for abundant money to count in the coming year. The round shape of the 'seeds' also represents family reunion and good health. Historically, Hakka women prepared this dish for men venturing out for work, symbolizing a wish for their success. The labor-intensive preparation, especially the hand-shaping of each 'seed,' often makes it a home-cooked dish, fostering family bonding during its creation.",
+        "gemini_tags": [
+          "Hakka cuisine",
+          "Chinese New Year food",
+          "traditional dumplings",
+          "taro dish",
+          "prosperity food",
+          "stir-fry",
+          "cultural heritage",
+          "ancestral recipe",
+          "Chinese diaspora food"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Stir-fried dumplings (from scratch)",
+        "materials_and_tools": [
+          "For Abacus Seeds Dough:",
+          "500g taro (yam), peeled and sliced/diced",
+          "200-300g tapioca flour/starch",
+          "1-1.5 tsp salt",
+          "1 tsp sugar (optional, for dough)",
+          "150-180ml boiling water (adjust as needed)",
+          "For Stir-fry (common ingredients):",
+          "250g minced pork (or chicken, or vegetarian alternatives like tofu/mock char siew)",
+          "100g dried shiitake mushrooms, soaked and sliced",
+          "50g dried shrimp, soaked and pounded/chopped finely",
+          "30g dried squid, soaked overnight and cut into strips (optional)",
+          "2-3 cloves garlic, finely chopped",
+          "2 cloves shallots, finely chopped",
+          "1 piece palm-sized black fungus, soaked and sliced (optional)",
+          "Half piece firm tau kwa (firm bean curd), sliced into strips (optional)",
+          "1 big red chili, sliced (optional)",
+          "1-2 stalks spring onions, chopped (for garnish)",
+          "1-2 sprigs coriander (for garnish)",
+          "3 tbsp cooking oil",
+          "For Seasoning Sauce:",
+          "1-2 tbsp light soy sauce",
+          "1 tsp dark soy sauce (for color)",
+          "1-2 tbsp oyster sauce (vegetarian oyster sauce for vegan version)",
+          "1 tbsp fish sauce (optional, or adjust to taste)",
+          "2 tbsp Shaoxing wine (Chinese cooking wine)",
+          "1/2 tsp ground white pepper",
+          "3 tablespoons water (for sauce)",
+          "Tools:",
+          "Steamer or pot for boiling taro",
+          "Large mixing bowl",
+          "Fork or potato masher",
+          "Wok or large frying pan",
+          "Colander",
+          "Gloves (for handling taro, optional)"
+        ],
+        "step_by_step": [
+          "1. Prepare Taro: Peel and slice the taro. Steam the taro slices for about 15-25 minutes until very soft and easily mashed. Alternatively, boil diced taro in just enough water until tender, then drain any excess moisture.",
+          "2. Mash Taro: While the taro is still hot, mash it thoroughly with a fork or potato masher until it forms a fine paste. Some small lumps can be retained for texture.",
+          "3. Make Dough: In a large mixing bowl, combine the hot mashed taro with tapioca flour, salt, and optional sugar. Gradually add boiling water, mixing and kneading until a soft, smooth, and non-sticky dough forms. The amount of water may vary depending on the taro's moisture content.",
+          "4. Shape Abacus Seeds: Pinch off small portions of the dough (about a teaspoon each). Roll each portion into a small ball. Then, gently flatten each ball into a disc and use your thumb or a chopstick to create an indentation in the center, resembling an abacus bead. Cover shaped seeds with a damp cloth to prevent drying.",
+          "5. Cook Abacus Seeds: Bring a large pot of water to a rolling boil. Add the shaped abacus seeds in batches, stirring gently to prevent sticking. Cook until they float to the surface (about 30 seconds after floating).",
+          "6. Chill Seeds: Scoop out the cooked abacus seeds and immediately transfer them into a bowl of chilled water or rinse them under cold water. This helps maintain their chewy texture. Drain well and toss lightly with a little cooking oil to prevent them from sticking together.",
+          "7. Prepare Stir-fry Ingredients: While the seeds are cooking, prepare the stir-fry ingredients: chop garlic and shallots, slice mushrooms, chop dried shrimp, cut pork/chicken/tofu into desired pieces.",
+          "8. Stir-fry: Heat cooking oil in a wok over medium-high heat. Sauté shallots and garlic until fragrant. Add minced pork (or other protein) and stir-fry until cooked through. Add dried mushrooms, dried shrimp, dried cuttlefish, black fungus, and tau kwa (if using), and continue to stir-fry for a few minutes.",
+          "9. Combine and Season: Add the cooked abacus seeds to the wok. Pour in the seasoning sauce (light soy sauce, dark soy sauce, oyster sauce, fish sauce, Shaoxing wine, white pepper, and water). Stir-fry everything together until the seeds are evenly coated with the sauce and heated through.",
+          "10. Garnish and Serve: Taste and adjust seasoning if needed. Garnish with chopped spring onions and coriander. Serve hot."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Malaysia",
+            "element_name": "Hakka Abacus Seeds",
+            "relationship_reason": "Shared Hakka diaspora culinary tradition, commonly found in Malaysian Hakka cuisine."
+          },
+          {
+            "country": "Singapore",
+            "element_name": "Hakka Abacus Seeds",
+            "relationship_reason": "Shared Hakka diaspora culinary tradition, commonly found in Singaporean Hakka cuisine."
+          },
+          {
+            "country": "Taiwan",
+            "element_name": "Hakka Abacus Seeds",
+            "relationship_reason": "Shared Hakka diaspora culinary tradition, commonly found in Taiwanese Hakka cuisine."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-13T01:10:19.809154Z",
-    "total_ich_elements": 238,
-    "complete_records": 221,
-    "incomplete_records": 17,
+    "generated_at": "2026-08-15T00:40:15.926257Z",
+    "total_ich_elements": 241,
+    "complete_records": 223,
+    "incomplete_records": 18,
     "categories_breakdown": {
       "Traditional Craftsmanship": 84,
-      "Social Practices & Rituals": 50,
-      "Culinary Traditions": 38,
+      "Social Practices & Rituals": 51,
+      "Culinary Traditions": 39,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 24,
       "Social Practices & Rituals | Performing Arts": 3,
@@ -21154,7 +21406,7 @@
       "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1,
       "Oral Traditions | Performing Arts | Social Practices & Rituals": 3,
       "Performing Arts | Social Practices & Rituals": 1,
-      "Performing Arts | Oral Traditions": 1
+      "Performing Arts | Oral Traditions": 2
     }
   }
 }
