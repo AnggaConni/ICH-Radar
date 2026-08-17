@@ -21381,20 +21381,354 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-69f98126",
+      "element_name": "Semba",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Semba_dance_in_Angola.jpg/640px-Semba_dance_in_Angola.jpg",
+      "source_urls": [
+        "https://melodigging.com/genres/semba",
+        "https://www.scribd.com/document/654848372/Semba-Music-and-Dance-Intro",
+        "https://www.facebook.com/kizombaloveacademy/posts/history-of-kizomba-and-semba-dance-in-angola-semba-has-been-part-of-angolan-cult/10158498877190008/",
+        "https://kizombaindar.com/exploring-the-vibrant-world-of-semba-music-and-its-instruments/",
+        "https://kizombaloveacademy.com/history-of-semba/",
+        "https://en.wikipedia.org/wiki/Semba",
+        "https://www.theworldfolio.com/news/from-semba-to-kizomba-exploring-angolas-musical-sensuality/3268/",
+        "https://kizombakatxupa.com/semba/",
+        "https://ich.unesco.org/en/photos/semba-music-and-dance-in-angola-019496",
+        "https://www.youtube.com/watch?v=k_jH5U8-b2I",
+        "https://www.geodatos.net/en/coordinates/angola/luanda"
+      ],
+      "scraped_at": "2026-08-17T00:38:01.200871Z",
+      "location": {
+        "country": "Angola",
+        "provinces": [
+          "Luanda"
+        ],
+        "lat": -8.8272699,
+        "lng": 13.2439512
+      },
+      "resume_analisa": {
+        "description": "Semba is a lively, guitar-driven dance music from Angola, characterized by buoyant 4/4 grooves, call-and-response vocals, and witty, narrative lyrics. Its name is related to a playful, belly-to-belly dance move called 'umbigada' or 'massemba', symbolizing its social and communal spirit. Emerging in Luanda's musseques (working-class neighborhoods) in the 1950s, Semba blends Angolan traditional rhythms with Afro-Atlantic influences, notably Cuban son and Congolese rumba, absorbed through radio, records, and port exchanges. It is considered foundational for modern Angolan popular music, having directly influenced the development of Kizomba and Kuduro.",
+        "cultural_significance": "Semba is an important part of Angolan culture and identity, reflecting broader social changes and serving as a symbol of cultural resistance during the colonial period. Its lyrics often convey stories about daily life, social events, love, humor, and social critique, and before Angola's independence in 1975, it was used to subtly communicate messages of freedom. Semba is a constant expression in Angolan life, present at various social gatherings, including carnivals, weddings, baptisms, and even funerals. It acts as a chronicle of the nation, a vehicle for cultural identity, and a bridge between generations.",
+        "gemini_tags": [
+          "Angolan music",
+          "Angolan dance",
+          "Traditional music",
+          "Traditional dance",
+          "Performing arts",
+          "Cultural heritage",
+          "African rhythms",
+          "Social dance",
+          "Storytelling",
+          "Cultural resistance",
+          "Luanda culture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Music and Dance",
+        "materials_and_tools": [
+          "Guitar (violão)",
+          "Cavaquinho",
+          "Pandeiro",
+          "Atabaque",
+          "Handclaps",
+          "Dikanza/reco-reco (scraper)",
+          "Congas",
+          "Shakers",
+          "Drum kit",
+          "Marimba",
+          "Sanza kissanje (mbira)",
+          "Accordion",
+          "Piano",
+          "Ngoma (drums)",
+          "Bombola (drums)",
+          "Ukelele"
+        ],
+        "step_by_step": [
+          "Music typically features buoyant 4/4 grooves, call-and-response vocals, and witty, narrative lyrics.",
+          "Ensembles often include interlocking guitars, bass with anticipatory syncopations, and hand percussion.",
+          "Percussion involves layering a steady shaker pattern with syncopated conga phrases.",
+          "Bass lines are tumbao-like and anticipatory, often outlining I–IV–V or I–V–IV movements.",
+          "Dance movements include a characteristic 'umbigada' or 'massemba' (belly-to-belly touch).",
+          "Dancers perform energetic, wide steps with room for improvisation.",
+          "Basic dance steps for Semba include side-to-side movements, walking steps, 'marca', balance steps, 'estrela' (clockwise rotation), 'shuffle turns' (counterclockwise rotation), and men's and ladies' 'saidas'."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Brazil",
+            "element_name": "Samba",
+            "relationship_reason": "Semba is widely believed to have contributed to the birth of Brazilian Samba, with enslaved Africans carrying these music traditions to Brazil, where they evolved into distinctly Brazilian forms incorporating elements of Semba."
+          },
+          {
+            "country": "Angola",
+            "element_name": "Kizomba",
+            "relationship_reason": "Semba is the direct precursor to Kizomba, which emerged in Angola in the late 1970s to early 1980s, evolving into a slower, smoother, and more sensual style."
+          },
+          {
+            "country": "Angola",
+            "element_name": "Kuduro",
+            "relationship_reason": "Semba is foundational for modern Angolan popular music and helped shape Kuduro's urban energy and rhythmic DNA."
+          },
+          {
+            "country": "Cuba",
+            "element_name": "Cuban Son",
+            "relationship_reason": "Semba blends Angolan traditional rhythms with Afro-Atlantic currents, including Cuban son, absorbed via radio, records, and port exchanges."
+          },
+          {
+            "country": "Democratic Republic of Congo",
+            "element_name": "Congolese Rumba (Soukous)",
+            "relationship_reason": "Semba blends Angolan traditional rhythms with Afro-Atlantic currents, including Congolese rumba (which later evolved into soukous), absorbed via radio, records, and port exchanges."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-d50afdec",
+      "element_name": "Moroccan Zellige Tilework",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Zellij_in_Fes.jpg/1200px-Zellij_in_Fes.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Zellij",
+        "https://www.ottotiles.com/blogs/news/exploring-the-rich-history-of-zellige-tiles",
+        "https://leighvaeth.com/blogs/news/history-of-zellige",
+        "https://mosaicmorocco.com/blogs/the-mosaic-morocco-blog/the-history-behind-moroccan-zellige",
+        "https://arttravelmorocco.com/moroccan-zellij-history-craftsmanship-and-cultural-significance/",
+        "https://mosaics-tiles.com/how-zellige-tiles-are-made/",
+        "https://driftwooddesignlab.com/pages/handmade-tile-zellige",
+        "https://www.cletile.com/blogs/news/what-is-zellige-tile-how-is-it-made",
+        "https://paristiles.com/blogs/news/how-zellige-tiles-are-made",
+        "https://zelligetile.com/blogs/news/zellige-tiles-a-story-of-art-craft-and-culture",
+        "https://www.villalagoontile.com/blogs/news/exploring-the-unique-patterns-of-zellige-tiles",
+        "https://www.detegel.nl/en/blog/background-and-history-of-traditional-zelliges",
+        "https://moroccantraveltrips.com/moroccan-crafts-what-to-buy-where-to-find-them-how-to-choose-authentic-handmade-pieces/",
+        "https://www.getyourguide.com/marrakech-l193/marrakech-crafts-t55604/",
+        "https://badia.design/blogs/news/a-history-of-moroccan-tile-and-its-enduring-design-appeal",
+        "https://theculturetrip.com/africa/morocco/articles/moroccan-craft-traditions-the-complete-guide/",
+        "https://www.insightguides.com/destinations/africa-middle-east/morocco/cultural-features/arts-and-crafts",
+        "https://www.discovermorocco.com/moroccan-traditional-crafts",
+        "https://lasignaturemarrakech.com/blogs/news/exploring-the-art-of-zellij",
+        "https://leighvaeth.com/blogs/news/all-about-moroccan-zellige-tile",
+        "https://zelligetile.com/blogs/news/the-history-and-benefits-of-zellige-tiles",
+        "https://mytindy.com/blogs/news/traditional-crafts-of-morocco-where-to-buy-genuine-work",
+        "https://www.tileshop.com/blog/10-unique-zellige-bathroom-tile-ideas/",
+        "https://newyorkcementtile.com/blogs/news/the-story-of-zellige",
+        "https://www.mytiles.com/blog/moroccan-tiles-history-sizes-designs-prices-and-maintenance",
+        "https://meer.com/en/51076-moroccan-zellij-artisans-and-their-timeless-craft",
+        "https://www.frommers.com/destinations/morocco/arts--crafts",
+        "https://notscaredofjetlag.com/moroccan-souvenirs-where-to-buy/",
+        "https://benjliktile.com/blogs/news/the-ancient-process-of-making-moroccan-zellige-tiles",
+        "https://terrabellainteriors.com/blogs/news/how-we-make-our-handmade-zellige-and-bejmat-tiles",
+        "https://www.riadtile.com/blogs/news/our-rouge-zellige-tile-helped-designer-alexandra-gater-transform-a-tiny-kitchen"
+      ],
+      "scraped_at": "2026-08-17T00:38:31.628892Z",
+      "location": {
+        "country": "Morocco",
+        "provinces": [
+          "Fez",
+          "Meknes",
+          "Marrakech",
+          "Casablanca",
+          "Salé"
+        ],
+        "lat": 34.0346534,
+        "lng": -5.0161926
+      },
+      "resume_analisa": {
+        "description": "Moroccan Zellige (also spelled Zellij or Zillij) is a traditional form of mosaic tilework made from individually hand-chiseled tile pieces. It is characterized by intricate geometric patterns and vibrant colors, and is a hallmark of Moroccan design and Islamic art. Zellige tiles are handmade terracotta tiles known for their glossy finish, saturated color, and subtle imperfections, with no two tiles being exactly alike. These variations in surface texture and color contribute to their unique allure and charm.",
+        "cultural_significance": "Zellige tilework holds profound cultural and religious significance in Morocco and the broader Islamic world. It symbolizes artisan pride, spiritual expression through symmetry and pattern, and cultural identity rooted in Moroccan tradition. The geometric and repetitive patterns are deeply rooted in Islamic theology, symbolizing the infinite nature of creation and the unity of the divine, while avoiding the portrayal of living things. Historically, Zellige adorned mosques, madrasas, palaces, fountains, courtyards, and homes, signifying wealth, power, and artistic skill. It is a living tradition, with techniques passed down through generations of master craftsmen, known as maâlems.",
+        "gemini_tags": [
+          "Moroccan craftsmanship",
+          "Mosaic art",
+          "Geometric patterns",
+          "Islamic art",
+          "Traditional tiles",
+          "Handmade",
+          "Terracotta",
+          "Cultural heritage",
+          "Fez",
+          "Morocco",
+          "Artisanal skill",
+          "Architectural decoration",
+          "Traditional knowledge",
+          "Cultural identity"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Tile Making and Mosaic Assembly",
+        "materials_and_tools": [
+          "Natural clay (primarily from the Fez region)",
+          "Water",
+          "Natural pigments/glazes (e.g., cobalt blue, green, yellow, red, earthy tones)",
+          "Wood-fired kilns (traditional bee-hive kilns fueled by olive branches/pits)",
+          "Wooden molds (for shaping raw clay)",
+          "Wooden mallet",
+          "Spatula",
+          "Metal guide (for cutting square/rectangular shapes)",
+          "Menkach (a sharp tool resembling a combination of an axe and hammer, for intricate cutting)",
+          "Metal chisels (for intricate cutting)",
+          "Natural rock (for sharpening tools)",
+          "Glue, mesh, and cement (for mounting mosaic patterns into sheets)"
+        ],
+        "step_by_step": [
+          "**1. Clay Sourcing and Preparation:** High-quality natural clay, typically sourced from the Fez region, is collected. The dry clay is soaked in water for several days until it becomes soft and malleable. It is then manually mixed, filtered by hand to remove impurities, kneaded to the correct plasticity, and left to rest.",
+          "**2. Molding and Shaping:** The prepared wet clay is hand-pressed into square or rectangular wooden molds to form basic tile shapes. Skilled craftsmen flatten the clay by hand, ensuring it is compact and free of air bubbles.",
+          "**3. Drying:** The raw clay tiles, known as 'ferrach', are sun-dried outdoors for several days until they are leather-hard, a slow process that ensures strength and flexibility.",
+          "**4. Initial Firing (Bisque Firing):** The dried tiles are fired in traditional kilns at high temperatures to harden the clay, transforming them into a warm, earthy terracotta.",
+          "**5. Glazing:** The fired tiles are hand-dipped or brushed with glazes made from natural mineral pigments, creating deep, luminous, and vibrant colors.",
+          "**6. Second Firing (Glaze Firing):** The glazed tiles are placed back into natural wood-fired kilns, often bee-hive kilns fueled by olive pits or branches, and fired overnight. The uneven heat distribution in these kilns creates subtle tonal variations and movement, contributing to the unique character of each tile.",
+          "**7. Intricate Hand-Cutting (Tessellation):** After the second firing, master craftsmen (Maâlems) use a specialized sharp hammer called a 'menqach' and metal chisels to precisely cut the fired tiles into intricate geometric fragments, or tesserae (e.g., stars, crosses, triangles, lozenges, diamonds). This step requires astonishing precision, dexterity, and years of apprenticeship. The artisan often draws the shape onto the tile before cutting.",
+          "**8. Mosaic Assembly:** The small, hand-cut Zellige pieces are meticulously assembled by master craftsmen into elaborate mosaic patterns. This is a multi-step process where the artisan lays and fits each piece one by one, typically assembling the pattern face-down on a flat surface to ensure a smooth glazed surface.",
+          "**9. Mounting (for sheets):** For creating Zellige sheets, glue, mesh, and cement are carefully added to the back of the assembled pattern to create a rigid sheet that can be easily installed. This multi-day process allows all elements to dry thoroughly."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Spain",
+            "element_name": "Moorish Art / Andalusian Mosaics",
+            "relationship_reason": "The origins of Zellige tilework date back to the Muslim inhabitants of North Africa and the Mediterranean, flourishing in the cultural crosscurrents of Andalusian Spain and North Africa. It was influenced by Roman, Byzantine, and Persian mosaic patterns, with early examples found in Andalusian Spain and Morocco."
+          },
+          {
+            "country": "Algeria",
+            "element_name": "Zellij (similar mosaic tilework)",
+            "relationship_reason": "Zellij is found in the architecture of Morocco, Algeria, early Islamic sites in Tunisia, and in the historic monuments of al-Andalus."
+          },
+          {
+            "country": "Tunisia",
+            "element_name": "Zellij (similar mosaic tilework)",
+            "relationship_reason": "Zellij is found in the architecture of Morocco, Algeria, early Islamic sites in Tunisia, and in the historic monuments of al-Andalus."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-78139f48",
+      "element_name": "Diablos y Congos Festival",
+      "category": "Social Practices & Rituals | Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Diablos_y_Congos_de_Portobelo.jpg/1200px-Diablos_y_Congos_de_Portobelo.jpg",
+      "source_urls": [
+        "https://www.transamericasjourney.com/diablos-y-congos-festival-portobelo-panama/",
+        "https://www.panamaamerica.com.pa/panorama/portobelo-diablos-congos-y-un-homenaje-la-memoria-1200234",
+        "https://www.anconexpeditions.com/panama-travel-blog/festive-expressions-of-panamas-congo-culture",
+        "https://storymaps.arcgis.com/stories/1a3f5a23071b4020a5e55768d6e96f13",
+        "https://www.atp.gob.pa/portobelo-se-prepara-para-el-14-festival-de-diablos-y-congos-2025/",
+        "https://clubrotariopenonome.org/nuestras-tradiciones-dia-de-los-diablos-y-congos-en-colon-tradicion-y-cultura-viva/",
+        "https://www.colonlogistics.com/festival-of-diablos-and-congos/",
+        "https://lacabanga.com/portobelo-tierra-de-diablos-y-congos/",
+        "https://www.alamy.com/stock-photo/festival-de-congos-y-diablos.html",
+        "https://www.bancogeneral.com/blog/la-cultura-congo-vive-en-portobelo/",
+        "https://quexopapanama.com/2015/03/19/that-one-time-we-hitchhiked-home-from-the-festival-of-devils/",
+        "https://digitalportobelo.org/about-congo-carnival/",
+        "https://www.visitpanama.com/things-to-do/culture-arts/congo-culture/",
+        "https://www.panamaamerica.com.pa/cultura/portobelo-diablos-congos-y-un-homenaje-la-memoria-1200234",
+        "https://sicultura.gob.pa/festival-de-la-pollera-congo-y-de-mascaras-de-diablos-congos/",
+        "https://www.panama.com/culture/congo-culture-panama/",
+        "https://www.panama.com/activities-festivals/congo-culture-in-portobelo-panama/",
+        "https://www.panama.com/places-to-visit/portobelo/culture-arts/congo-culture/",
+        "https://www.latinexcursions.com/blog/congo-culture-on-the-other-side-of-panama"
+      ],
+      "scraped_at": "2026-08-17T00:40:46.333374Z",
+      "location": {
+        "country": "Panama",
+        "provinces": [
+          "Colón"
+        ],
+        "lat": 9.3553005,
+        "lng": -79.8974085
+      },
+      "resume_analisa": {
+        "description": "The Diablos y Congos Festival is a vibrant and symbolic re-enactment of the historical struggle between enslaved Africans (Congos) and their Spanish colonizers (Diablos) in Portobelo, Panama. This passionate and chaotic spectacle involves hundreds of participants and thousands of spectators, featuring elaborate costumes, rhythmic music, and expressive dances. It serves as a powerful parody of Spanish colonizers and a celebration of the resilience and eventual freedom of the Afro-descendant community.",
+        "cultural_significance": "This festival holds profound cultural significance as a living act of resistance, identity, and Afro-colonial pride for the Afro-descendant community in Panama. It preserves the historical memory of enslaved Africans, known as 'cimarrones,' who escaped and formed free communities, fiercely fighting for their liberty. The ritual and festive expressions of the Congo culture, including this festival, were recognized by UNESCO in 2018 as Intangible Cultural Heritage of Humanity, highlighting their importance in Panamanian identity and heritage.",
+        "gemini_tags": [
+          "Afro-Panamanian culture",
+          "festival",
+          "dance",
+          "music",
+          "colonial history",
+          "slavery",
+          "resistance",
+          "cultural heritage",
+          "Panama",
+          "Portobelo",
+          "performance",
+          "ritual",
+          "cimarrones",
+          "masks",
+          "costumes"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Performance/Ritual",
+        "materials_and_tools": [
+          "Congo costumes (old clothes worn inside out, adorned with found objects like dolls, rags, colorful fabrics)",
+          "Diablo costumes (intricate and grotesque masks, red and black attire, whips, bells)",
+          "Angel costumes (white attire)",
+          "Drums (for rhythmic music)",
+          "Musical instruments (for Afro-Caribbean beats)",
+          "Found objects (for Congo costume adornment)"
+        ],
+        "step_by_step": [
+          "The festival typically takes place two weeks after Carnival, marking the start of Lent, or around May 3rd, or every two years on the Saturday after Ash Wednesday, with specific dates varying.",
+          "Participants assume roles as 'Diablos' (devils, symbolizing Spanish colonizers), 'Congos' (enslaved Africans who resisted), and 'Angels' (who protect the Congos).",
+          "Congos prepare their attire by wearing old clothes inside out, adorned with various found objects, mimicking how their ancestors creatively modified their limited clothing. Female Congos wear vibrant, pleated skirts, off-the-shoulder blouses, and multiple necklaces, a simpler form of the traditional Panamanian pollera.",
+          "Diablos don elaborate, often frightening masks (some crafted in nearby Puerto Lindo) and distinctive red and black costumes, carrying whips to symbolize their oppressive role.",
+          "The festival unfolds in the streets of Portobelo, featuring both spontaneous and scheduled performances. The air is filled with vigorous dance, powerful drum rhythms, and expressive songs and chants.",
+          "A central element is the symbolic confrontation where the Congos, often protected by Angels, engage in a playful yet meaningful battle with the Diablos, evading their whips and mocking their authority.",
+          "The celebration includes the crowning of a Congo King and Queen, and during the 'Congo season,' a matriarchal society led by the queen and her court is symbolically staged, with everyone protecting the queen from the devils.",
+          "The climax of the festival often involves the 'baptism' of the Diablos by the Congos, symbolizing their conversion to good and representing the ultimate triumph of freedom and resistance over historical oppression."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Cuba",
+            "element_name": "Congo traditions/Cimarron communities",
+            "relationship_reason": "Shared African roots, traditions of resistance by enslaved people, and cultural expressions developed in the Americas."
+          },
+          {
+            "country": "Jamaica",
+            "element_name": "Congo traditions/Cimarron communities",
+            "relationship_reason": "Shared African roots, traditions of resistance by enslaved people, and cultural expressions developed in the Americas."
+          },
+          {
+            "country": "Venezuela",
+            "element_name": "Congo traditions/Cimarron communities",
+            "relationship_reason": "Shared African roots, traditions of resistance by enslaved people, and cultural expressions developed in the Americas."
+          },
+          {
+            "country": "Brazil",
+            "element_name": "Congo traditions/Cimarron communities",
+            "relationship_reason": "Shared African roots, traditions of resistance by enslaved people, and cultural expressions developed in the Americas."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-15T00:40:15.926257Z",
-    "total_ich_elements": 241,
-    "complete_records": 223,
+    "generated_at": "2026-08-17T00:41:21.798323Z",
+    "total_ich_elements": 244,
+    "complete_records": 226,
     "incomplete_records": 18,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 84,
+      "Traditional Craftsmanship": 85,
       "Social Practices & Rituals": 51,
       "Culinary Traditions": 39,
       "Culinary Traditions | Social Practices & Rituals": 3,
-      "Performing Arts": 24,
-      "Social Practices & Rituals | Performing Arts": 3,
+      "Performing Arts": 25,
+      "Social Practices & Rituals | Performing Arts": 4,
       "Oral Traditions | Performing Arts": 2,
       "Oral Traditions": 18,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
