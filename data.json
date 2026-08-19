@@ -21715,15 +21715,296 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-06f794a5",
+      "element_name": "Família Vitalino's Clay Figurines (Arte em Barro da Família Vitalino)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Caruaru-Casa-museu-Mestre-Vitalino.jpg/800px-Caruaru-Casa-museu-Mestre-Vitalino.jpg",
+      "source_urls": [
+        "https://www.ebiografia.com/mestre_vitalino/",
+        "https://museudopontal.org.br/mestre-vitalino/",
+        "https://museuafrobrasil.org.br/pesquisa/acervo/mestre-vitalino-vitalino-pereira-dos-santos",
+        "https://vitalino3d.com.br/mestre-vitalino/",
+        "https://pt.wikipedia.org/wiki/Mestre_Vitalino",
+        "https://www.airial.com/destinations/alto-do-moura-caruaru-brazil",
+        "https://www.airial.com/destinations/casa-museu-mestre-vitalino-caruaru-brazil",
+        "https://www.indigoarts.com/gallery/clay-vitalino-figures-brazil",
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/vitalino-pereira-dos-santos-mestre-1909-1963",
+        "https://www.airial.com/destinations/casa-do-artesao-caruaru-brazil",
+        "https://www.youtube.com/watch?v=02f1r27129w",
+        "https://acessacaruaru.com.br/familia-vitalino-e-reconhecida-como-patrimonio-vivo-de-pernambuco/",
+        "https://www.folhape.com.br/cultura/familia-vitalino-e-reconhecida-como-patrimonio-vivo-de-pernambuco/291669/",
+        "https://www.youtube.com/watch?v=kY67_1V_w-8",
+        "https://www.youtube.com/watch?v=1F3x0K4j91c",
+        "https://artsandculture.google.com/entity/vitalino/m03f024?hl=en",
+        "https://www.youtube.com/watch?v=x0XG9K3D_iE",
+        "https://www.diariodepernambuco.com.br/noticias/cultura/2026/07/de-caruaru-para-o-mundo-o-legado-de-mestre-vitalino.html",
+        "https://streetsmartbrazil.com/meet-mestre-vitalino/",
+        "https://redegn.com.br/noticias/familia-vitalino-agora-e-patrimonio-vivo-da-cultura-e-celebra-a-cultura-popular/",
+        "https://g1.globo.com/pernambuco/noticia/2013/08/50-anos-apos-morte-de-vitalino-filho-netos-e-ate-bisnetos-mantem-tradicao.html",
+        "https://www.youtube.com/watch?v=wiVF7z1TCZM",
+        "https://www.youtube.com/watch?v=gT837z6i4-Y",
+        "https://www.mapcarta.com/19225732",
+        "https://www.caruaru.pe.gov.br/conheca-caruaru/geografia/",
+        "https://www.tomeconta.tce.pe.gov.br/municipio/caruaru/geografia",
+        "https://www.dreamstime.com/mestre-vitalino-little-brazilian-clay-sculptures-made-caruaru-pernambuco-brazil-representing-forro-musicians-playing-songs-image81942338",
+        "https://www.shutterstock.com/search/mestre-vitalino",
+        "https://commons.wikimedia.org/wiki/File:Caruaru-Casa-museu-Mestre-Vitalino.jpg"
+      ],
+      "scraped_at": "2026-08-19T00:38:16.216483Z",
+      "location": {
+        "country": "Brazil",
+        "provinces": [
+          "Pernambuco"
+        ],
+        "lat": -8.4116316,
+        "lng": -37.5919699
+      },
+      "resume_analisa": {
+        "description": "The art of clay figurines by Família Vitalino originates from Mestre Vitalino (Vitalino Pereira dos Santos, 1909-1963) in Caruaru, Pernambuco, Brazil. He began molding small animals from leftover clay at age six. His work, and that of his descendants, depicts scenes of daily life, popular beliefs, and rituals of the Northeastern sertão, including figures like cangaceiros, vaqueiros, and scenes of popular festivities. The Alto do Moura district in Caruaru is recognized as one of the largest centers of figurative art in the Americas, continuing this tradition.",
+        "cultural_significance": "This craftsmanship is a significant symbol of Brazilian popular culture, authentically reflecting the life and traditions of the Northeastern sertão. It is a living heritage, transmitted across generations, with artisans actively conducting workshops to pass on their knowledge and techniques. Mestre Vitalino's innovative approach brought everyday scenes of the Northeastern people, previously overlooked by erudite art, into national and international prominence.",
+        "gemini_tags": [
+          "Clay Art",
+          "Folk Art",
+          "Brazilian Culture",
+          "Northeastern Brazil",
+          "Traditional Craftsmanship",
+          "Figurative Art",
+          "Living Heritage",
+          "Community Practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Clay Modeling and Painting",
+        "materials_and_tools": [
+          "Clay (traditionally from the Ipojuca River banks)",
+          "Hands",
+          "Basic modeling tools",
+          "Industrial paints"
+        ],
+        "step_by_step": [
+          "Clay is extracted, traditionally from riverbanks.",
+          "The clay is molded by hand into various figures, often depicting scenes from daily life, animals, and local characters. Simple and rudimentary tools may be used.",
+          "The molded pieces are allowed to dry.",
+          "The dried clay sculptures are fired.",
+          "After firing, the pieces are painted, often with industrial paints, to add color and detail."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Global",
+            "element_name": "Folk Art/Ceramics influenced by Mestre Vitalino",
+            "relationship_reason": "Mestre Vitalino's works have been exhibited in over 20 countries, including Europe and the Vatican, and his artistic style has inspired numerous artists globally, establishing a significant international cultural exchange and influence in folk art and ceramics."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-f2bd4568",
+      "element_name": "Horezu Ceramics",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Horezu_pottery.jpg",
+      "source_urls": [
+        "https://cabanacare.com/blogs/magazine/the-history-of-horezu-pottery",
+        "https://en.wikipedia.org/wiki/Horezu_ceramics",
+        "https://ich.unesco.org/en/RL/craftsmanship-of-horezu-ceramics-00610",
+        "https://livetheworld.com/articles/romania/the-ancestral-craftsmanship-of-horezu-e1b1",
+        "https://www.facebook.com/RumKulturinstitutWien/posts/craftsmanship-of-horezu-ceramics-is-part-of-the-unesco-intangible-cultural-herit/4704797086200234/",
+        "https://www.ceramica-horezu.com/horezu-pottery-plate-manufacturing",
+        "https://romaniatravel.guide/folklore/horezu-ceramics/",
+        "https://thesmallhome.co.uk/blogs/news/the-celebrated-ceramics-of-horezu",
+        "https://internationalwardrobe.com/ceramics-from-horezu/",
+        "https://visitbucharest.today/day-trip-to-horezu/",
+        "https://www.artandcraft.ro/blog/a-foray-into-the-history-of-the-horezu-pottery-center-n103",
+        "https://www.facebook.com/RomaniaUNESCO/posts/rom%C3%A2nia-ceramics-from-horezu-v%C3%A2lcea-horezu-ceramics-is-a-unique-type-of-romanian/3400569770005391/",
+        "https://www.romania-insider.com/unesco-horezu-ceramics-intangible-cultural-heritage-2012",
+        "https://visiteurope.com/explore-your-creativity-in-romania/",
+        "https://traditiivii.ro/en/horezu-ceramics/"
+      ],
+      "scraped_at": "2026-08-19T00:38:51.635360Z",
+      "location": {
+        "country": "Romania",
+        "provinces": [
+          "Vâlcea County"
+        ],
+        "lat": 45.1064811,
+        "lng": 24.3631917
+      },
+      "resume_analisa": {
+        "description": "Horezu ceramics is a unique type of traditional Romanian pottery, handmade in the northern part of Vâlcea County, particularly in the town of Horezu and the village of Olari. This craft, recognized by UNESCO in 2012 as part of the Intangible Cultural Heritage of Humanity, reflects generations of knowledge and skills development. The production process traditionally involves a division of labor, with men typically extracting and preparing the clay and shaping the vessels, while women handle the intricate decoration. The ceramics are distinguished by their unique style, vivid colors, and traditional motifs.",
+        "cultural_significance": "Horezu ceramics play a vital role in preserving regional identity and artistry, connecting the present with the spirit of the past. The craft is deeply linked to the historical and cultural development of the region, gaining prominence in the late 17th century during Prince Constantin Brâncoveanu's era. These ceramics serve both decorative purposes and are used in daily life, festive gatherings, weddings, and religious feasts. The traditional motifs, such as the 'Cocoșul de Horezu' (Horezu rooster), symbolize pride, strength, luck, new beginnings, and protection against the unknown. Other common symbols include the snake, tree of life, spiral (representing the whirlwind of life, sun, energy, and life cycle), sun, peacock tail, stars, flowers, and wheat ears (signifying prosperity). The craft gives the community a strong sense of identity and maintains a social function in everyday existence, being transmitted through families, workshops, and at fairs and exhibitions.",
+        "gemini_tags": [
+          "Pottery",
+          "Ceramics",
+          "Traditional Craftsmanship",
+          "Romanian Culture",
+          "UNESCO Intangible Cultural Heritage",
+          "Handicraft",
+          "Folk Art",
+          "Clay Work",
+          "Decoration",
+          "Firing",
+          "Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "High-quality red clay (from Dealul Ulmetului or Hurezu Peak Monastery)",
+          "Natural colors (vivid shades of dark brown, red, green, blue, 'Horezu ivory')",
+          "Mixer (for cleaning earth)",
+          "Potter's wheel (manual/kick-wheel)",
+          "Comb (for shaping)",
+          "Hollowed-out bull's horn (with a goose feather, for fine lines/decoration)",
+          "Gaiță (simple wooden tool with a metal tip, for very fine patterns like spider web motif)",
+          "Knife (for finishing after drying)",
+          "Traditional wood-fired kiln"
+        ],
+        "step_by_step": [
+          "**Clay Extraction and Preparation**: Men select and extract high-quality clay from local areas like Dealul Ulmetului or Hurezu Peak Monastery. The clay is then cleaned, cut, watered, kneaded (by hand, feet, or wooden hammer), trampled, and mixed to remove impurities and achieve a suitable consistency, transforming it into red clay.",
+          "**Modeling/Shaping**: The prepared clay is shaped by potters on a manual potter's wheel using a special finger technique that requires concentration, strength, and agility. Each potter has their own shaping technique, but the sequence of operations is respected.",
+          "**Drying**: The shaped ceramic objects are left to dry naturally for several days (e.g., about 10 days) to prevent cracking during subsequent stages.",
+          "**Finishing Touches (Pre-decoration)**: After drying, excess clay is removed with a knife to give a smooth finish, and features like holes for hanging or a signature may be applied.",
+          "**Color Preparation**: Natural colors, extracted from the earth in solid form, are meticulously prepared with water and passed through a 'rasnita' (grinder) until they become liquid and ready for application.",
+          "**Decoration**: Women traditionally decorate the dried, shaped ceramics before the first firing. They use specific techniques and tools, such as a hollowed-out bull's horn fitted with a goose feather (acting like a pen for fine lines) and a 'gaiță' (a fine wire-tipped stick for very fine patterns like the spider web motif), to draw traditional motifs. The skill in combining decoration and color defines the personality and uniqueness of each piece. The traditional painting method 'jirăvirea' involves joining the edges of a spiral with its center while the paint is still wet.",
+          "**First Firing**: The decorated objects undergo a first firing in a traditional wood-fired kiln.",
+          "**Glazing**: After the first firing, the vessel is coated with a layer of transparent glaze, which will give the object a glossy finish.",
+          "**Second Firing**: The glazed object is put back in the kiln for a second firing. This process fixes the glaze and colors, transforming the piece into a durable and resistant object.",
+          "**Cooling and Final Finishing**: After the second firing, the plate is left to cool, completing the process."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Orient/Levant",
+            "element_name": "Luxury tableware",
+            "relationship_reason": "The artisans of Horezu skillfully combined local traditions with influences brought by imported luxury tableware from the Orient/Levant during the late 17th century."
+          },
+          {
+            "country": "Romania",
+            "element_name": "Romanian embroidery",
+            "relationship_reason": "Traditional decorative elements found on Horezu ceramics, such as snakes, the tree of life, wavy lines, wheat ears, and stars, also appear in Romanian embroidery, indicating shared cultural motifs."
+          },
+          {
+            "country": "Byzantine Empire",
+            "element_name": "Byzantine art/culture",
+            "relationship_reason": "Horezu ceramics display Byzantine influences in their techniques and decorative elements."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-01fd7053",
+      "element_name": "Oral Heritage of Gelede",
+      "category": "Performing Arts | Social Practices & Rituals",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00002-RL-EN-00002.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/oral-heritage-of-gelede-00002",
+        "https://en.wikipedia.org/wiki/Gelede",
+        "https://cystads.com/blog/the-importance-of-the-gelede-festival-in-yoruba-land/",
+        "https://www.artic.edu/artworks/14981/headdress-for-gelede-igi",
+        "https://www.balogunooodua.com/gelede-african-ritual-festival/",
+        "https://www.facebook.com/AfricanCultures1565441490412548/posts/oral-heritage-of-gelede-benin-nigeria-togo-inscribed-in-2008-on-the-representati/1749896798633682/",
+        "https://www.britannica.com/topic/Yoruba",
+        "https://www.eirapublisher.com/journal/eja/article/view/105",
+        "https://www.fatherlandgazette.com/nigerian-people-and-culture-the-gelede-spectacle/",
+        "https://www.masksoftheworld.com/gelede-mask/",
+        "https://www.africamuseum.be/en/collections/explore/human_sciences/ethno/gelede_masks",
+        "https://www.randafricanart.com/Yoruba_Gelede_mask_with_birds.html",
+        "https://www.brooklynmuseum.org/opencollection/objects/170942",
+        "https://www.alamy.com/stock-photo/gelede-masquerade.html",
+        "https://www.facebook.com/IfaOrisaMuseumOfVirtualArt/posts/gelede-the-festival-that-honours-womens-power-theres-a-yoruba-saying-%E1%BA%B9s%E1%BB%8D-lay%E1%BA%BD-meaning-th/2026850257462002/",
+        "https://storiesfromthemuseumfloor.wordpress.com/2016/10/14/gelede-masks-the-ultimate-spectacle/"
+      ],
+      "scraped_at": "2026-08-19T00:39:28.463537Z",
+      "location": {
+        "country": "Nigeria",
+        "provinces": [
+          "Ogun State",
+          "Lagos State",
+          "Oyo State",
+          "Osun State",
+          "Ondo State",
+          "Ekiti State",
+          "Isale Eko",
+          "Badagry",
+          "Ilaro",
+          "Igbobi-Sabe",
+          "Imeko",
+          "Iwoye"
+        ],
+        "lat": 6.9788582,
+        "lng": 3.4389293
+      },
+      "resume_analisa": {
+        "description": "The Oral Heritage of Gelede is a vibrant Yoruba masquerade that combines art, music, and ritual dance to entertain, educate, and inspire worship. It is a public display characterized by elaborate carved masks, colorful costumes, and chants sung in the Yoruba language. The performances are primarily given by men, who often masquerade as women, to honor and placate 'Mothers' (awon iya wa), a group that includes female ancestors, deities, and elderly women of the community. The festival typically includes an all-night concert called Efe, where a male mask uses satire and songs for social commentary.",
+        "cultural_significance": "Gelede pays tribute to the primordial mother Iyà Nlà and the crucial role women play in social organization and development. It celebrates female spiritual power, motherhood, fertility, and the mystical powers of female ancestors and deities. The tradition promotes social harmony, unity, peace, and cooperation within the community. It serves as an important avenue for cultural education, addressing social issues, reinforcing traditional values, and ensuring prosperity. The performances also transmit history and community values, helping younger generations maintain a connection with their cultural roots.",
+        "gemini_tags": [
+          "Yoruba culture",
+          "masquerade",
+          "traditional dance",
+          "ritual",
+          "women empowerment",
+          "intangible heritage",
+          "Nigeria",
+          "Benin",
+          "Togo",
+          "oral tradition",
+          "folklore",
+          "community practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual Performance/Masked Dance Festival",
+        "materials_and_tools": [
+          "Carved wooden masks (headdresses, often with superstructures depicting scenes, animals, people, or objects like sewing machines and talking drums)",
+          "Elaborate cloth costumes (emphasizing breasts and buttocks, representing desired fatness of a beautiful woman)",
+          "Metal anklets",
+          "Drums (especially Gangan, a talking drum)",
+          "Other musical instruments"
+        ],
+        "step_by_step": [
+          "**Timing**: The festival is typically held annually after harvests, usually between March and May, or during important community events, droughts, or epidemics. The exact dates are often determined through divination.",
+          "**Announcement and Preparation**: The Iyalase (female head of the Gelede society) notifies the paramount chief and other important chiefs. Messages are sent to all Gelede society members to return home for the celebration. A herald masquerade, Amukoko, may parade for days to announce the upcoming festival. Dancers prepare in a designated house, and significant craftwork, particularly mask carving and costume making, is undertaken.",
+          "**Efe Night (Opening Night)**: The festival often begins with an all-night concert called Efe. This features the Efe male mask, who uses satire, songs, and jests to entertain, educate, and provide social commentary, sometimes calling out community leaders or wrongdoers.",
+          "**Gelede Daytime Performance**: On the following day, masked dancers, accompanied by singers, drummers, and an orchestra, appear in a public square, often near the marketplace or shrine. Men wear elaborate costumes and carved wooden masks, frequently masquerading as women. The performance involves carefully choreographed dances, with drum rhythms guiding the movements. The performances convey oral heritage through epic and lyric verses, often incorporating irony and mockery.",
+          "**Thematic Focus**: Performances center on themes of fertility, motherhood, and appropriate social behavior. Prayers for fertility, peace, and protection are an integral part of the rituals."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Benin",
+            "element_name": "Oral Heritage of Gelede",
+            "relationship_reason": "The Gelede masquerade is performed by the Yoruba-Nago community, which is spread across Benin, Nigeria, and Togo."
+          },
+          {
+            "country": "Togo",
+            "element_name": "Oral Heritage of Gelede",
+            "relationship_reason": "The Gelede masquerade is performed by the Yoruba-Nago community, which is spread across Benin, Nigeria, and Togo."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-17T00:41:21.798323Z",
-    "total_ich_elements": 244,
-    "complete_records": 226,
+    "generated_at": "2026-08-19T00:40:00.731040Z",
+    "total_ich_elements": 247,
+    "complete_records": 229,
     "incomplete_records": 18,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 85,
+      "Traditional Craftsmanship": 87,
       "Social Practices & Rituals": 51,
       "Culinary Traditions": 39,
       "Culinary Traditions | Social Practices & Rituals": 3,
@@ -21739,7 +22020,7 @@
       "Performing Arts | Traditional Craftsmanship": 2,
       "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1,
       "Oral Traditions | Performing Arts | Social Practices & Rituals": 3,
-      "Performing Arts | Social Practices & Rituals": 1,
+      "Performing Arts | Social Practices & Rituals": 2,
       "Performing Arts | Oral Traditions": 2
     }
   }
