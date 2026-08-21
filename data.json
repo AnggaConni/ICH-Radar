@@ -21996,17 +21996,306 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-1ff653c0",
+      "element_name": "Atole de Pinole",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://muybuenoblog.com/wp-content/uploads/2025/04/Atole-de-Pinole-1-scaled.jpg",
+      "source_urls": [
+        "https://insidemexico.com/atole/",
+        "https://newworldfood.wordpress.com/2013/10/23/atole-atolli/",
+        "https://mexiconewsdaily.com/mexico-travel/taste-of-mexico-atole/",
+        "https://www.facebook.com/MexicoTaste/posts/atole-from-nahuatl-%C4%81t%C5%8Dlli-also-known-as-atolli-and-atol-de-elote-is-a-traditional-h/10159495094935401/",
+        "https://spanishinstitute.com.mx/blog/the-atole/",
+        "https://culinarybackstreets.com/cities-12/mexico-city/mexico-city-eat-guides/atole-mexicos-corn-fueled-beverage/",
+        "https://villacocina.com/atole-de-elote-recipe/",
+        "https://growinguppbilingual.com/easy-recipe-for-atol-de-elote-guatemalteco/",
+        "https://www.latimes.com/food/story/2024-01-12/atole-pinole-pre-hispanic-drink-mexico",
+        "https://www.maricruzavalos.com/atole-de-pinole-recipe/",
+        "http://awesomecookery.com/atole-and-pinole/",
+        "https://www.mamalatinatips.com/atole-de-pinole-mexican-drink-recipe/",
+        "https://www.facebook.com/SaltyCocina/posts/prepare-this-comforting-atole-with-pinole-which-is-prepared-with-a-variety-of-gr/7750125705001556/",
+        "https://muybuenoblog.com/atole-de-pinole-recipe/",
+        "https://en.wikipedia.org/wiki/Aztec_cuisine",
+        "https://amexicancook.wordpress.com/2014/12/12/champurrado-rediscovering-home-made-atoles/",
+        "https://mexicofinder.com/nahuatl-delicacies/",
+        "https://kitchengidget.com/atole-de-elote-recipe/",
+        "https://www.youtube.com/watch?v=2-5rW95H64A",
+        "https://www.travelpulse.com/destinations/mexico/acapulco/nahuatl-history-cuisine-and-culture-in-acapulco",
+        "https://www.mexicoinmykitchen.com/sweet-corn-atole-and-masa-harina-atole/",
+        "https://www.youtube.com/watch?v=3-5rW95H64A",
+        "https://blog.xcaret.com/en/dishes-pre-hispanic-heritage-tlaxcala/",
+        "https://experiencemayahuel.com/foods-of-the-aztec/"
+      ],
+      "scraped_at": "2026-08-21T00:40:26.962571Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "Mexico City",
+          "Tlaxcala",
+          "Mesoamerica (general)"
+        ],
+        "lat": 19.3207722,
+        "lng": -99.1514678
+      },
+      "resume_analisa": {
+        "description": "Atole de Pinole is a traditional hot Mexican beverage made from pinole, which is roasted and ground cornmeal, often from blue or purple corn. It is typically mixed with milk or water, sweetened with piloncillo (unrefined cane sugar) or honey, and flavored with cinnamon and sometimes vanilla. This thick, creamy, and nourishing drink is considered a comforting food and can be described as a drinkable porridge.",
+        "cultural_significance": "Atole de Pinole holds deep ancestral roots, with its name deriving from the Nahuatl word 'pinolli,' meaning 'flour from corn.' This beverage is an ancient pre-Hispanic staple, believed to be over 9,000 years old, and was highly valued by indigenous cultures in Mesoamerica. It was consumed daily, used in special ceremonies and rituals, and served as a significant source of nourishment. In modern times, it continues to be a popular comfort food, especially during colder months and holidays like Day of the Dead and Las Posadas. It is also traditionally given to breastfeeding mothers to support lactation, to the sick for recovery, and as a baby's first solid food, symbolizing an 'embrace of our ancestors' and the activation of the genetic memory of maíz. The Tarahumara people of Northern Mexico are known to have consumed pinole for energy during long-distance running.",
+        "gemini_tags": [
+          "Nahuatl",
+          "Traditional Mexican Beverage",
+          "Corn-based drink",
+          "Pre-Hispanic cuisine",
+          "Ancestral knowledge",
+          "Culinary heritage",
+          "Comfort food",
+          "Ritual food",
+          "Mexico",
+          "Pinole"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Beverage preparation",
+        "materials_and_tools": [
+          "Pinole flour",
+          "Water",
+          "Milk (whole milk, plant-based milk, or evaporated milk)",
+          "Piloncillo (unrefined cane sugar) or brown sugar",
+          "Cinnamon stick (Mexican canela)",
+          "Vanilla extract (optional)",
+          "Pot or saucepan",
+          "Mixing bowl",
+          "Whisk or spoon"
+        ],
+        "step_by_step": [
+          "In a mixing bowl, dissolve the pinole flour in 1 cup of room temperature water, mixing until no lumps remain. Set aside.",
+          "In a medium-sized pot, combine 4 cups of milk (or water), piloncillo (or brown sugar), and a cinnamon stick. Bring the mixture to a gentle boil over medium-high heat.",
+          "Simmer for approximately 5 minutes, stirring constantly, to allow the cinnamon to infuse its flavor into the milk.",
+          "Slowly pour the dissolved pinole mixture into the simmering pot, continuously stirring to prevent lumps from forming.",
+          "Reduce the heat to medium-low and continue to cook for about 10 minutes, stirring frequently, until the atole thickens to a creamy consistency that coats the back of a spoon.",
+          "Adjust sweetness to taste by adding more sugar or piloncillo if desired. Stir in vanilla extract (if using).",
+          "Remove the cinnamon stick and serve the Atole de Pinole warm in mugs."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Guatemala",
+            "element_name": "Atole (general)",
+            "relationship_reason": "Atole, particularly corn-based varieties like atole de elote, is a traditional beverage with pre-Hispanic origins in Guatemala, where Mayan cultures also held corn as a sacred crop."
+          },
+          {
+            "country": "United States",
+            "element_name": "Atole (general)",
+            "relationship_reason": "Atole is a traditional comfort food in communities with Mexican cultural roots across the United States."
+          },
+          {
+            "country": "Mesoamerica and North of South America",
+            "element_name": "Atole (general)",
+            "relationship_reason": "Atole is a prehistoric beverage consumed not only in Mexico but also in other parts of Mesoamerica and the north of South America."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b5294cd2",
+      "element_name": "Iyomante (Ainu Bear Sending Ceremony)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Iomante&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Iomante",
+        "https://wefreespirits.com/iyomante-ainu-bear-sending-ceremony/",
+        "https://mellonprojects.uchicago.edu/ainu-world/iyomante",
+        "https://sites.google.com/site/buanthropologywiki/ainu-bear-worship-sacrifice",
+        "https://alphapolis.co.jp/essay/721245059/1199344400",
+        "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%AA%E3%83%9E%E3%83%B3%E3%83%86",
+        "https://www.discoverjapan.co.jp/iyomante-sacred-ceremony-of-the-ainu-forgotten-indigenous-people-of-japan-part-4/",
+        "https://greenshinto.com/2014/08/27/ainu-spirituality/",
+        "https://www.jnto.go.jp/eng/spot/cultural/ainu-culture-hokkaido.html",
+        "https://ezoshimakikou.com/iomante-origin/",
+        "https://note.com/ina_tabi/n/n4f323861214e",
+        "https://jtco.or.jp/nihon-no-dentou/iyomante/",
+        "https://www.hokkaidolikers.com/articles/2026",
+        "https://imidas.jp/words/100558",
+        "https://www.japan.travel/japan-tourism-agency/search/details/20200810010001.html",
+        "https://nazology.net/archives/140925",
+        "https://note.com/toyohei_azuma/n/n802613d2a715",
+        "https://www.reddit.com/r/todayilearned/comments/4b9q2x/til_the_ritual_iomante_among_the_ainu_of_japan/",
+        "https://ainu-project.jp/interview/koga_yasuko/",
+        "https://japanknowledge.com/library/detail/80101000000000000000/80101000000000000000-00201000000000000000",
+        "https://note.com/shinshukaz/n/n9c43d2621456",
+        "https://www.facebook.com/TheHistoryOfJapan/posts/for-the-indigenous-ainu-of-northern-japan-a-captured-bear-cub-was-raised-within/10153835002206127/",
+        "https://www.hokudai.ac.jp/bunya/okhotsk/pdf/okhotsk09_02.pdf",
+        "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A4%E3%83%8C",
+        "https://medium.com/@Ko_32713/considering-environmental-issues-through-the-ainu-concept-of-iyomante-e69212c75a9d",
+        "https://note.com/shinshukaz/n/n33a040b2b575",
+        "https://www.samurai-archives.com/iyomante.html",
+        "https://greenshinto.com/tag/iyomante/",
+        "https://yukomaru.com/ainu-iomante/"
+      ],
+      "scraped_at": "2026-08-21T00:41:06.973916Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Hokkaido",
+          "Sakhalin (historically)"
+        ],
+        "lat": 43.4519831,
+        "lng": 142.8197834
+      },
+      "resume_analisa": {
+        "description": "The Iyomante, also known as Iomante, is a profound and sacred traditional ceremony of the Ainu people, indigenous to Hokkaido and historically Sakhalin. It is often translated as the \"bear sending ceremony\" or \"bear festival.\" The ritual centers on the belief that gods (kamuy) visit the human world in the guise of animals, particularly the brown bear, which is revered as the greatest of mountain gods, bringing gifts of meat and fur. The ceremony involves raising a captured bear cub within the community, treating it with immense care and respect, and then ritually killing it to respectfully send its spirit back to the divine world (Kamuy Mosir). This act is a demonstration of gratitude and a plea for the bear god to return with more blessings in the future.",
+        "cultural_significance": "Iyomante is considered one of the most important and elaborate rituals in Ainu culture, embodying their deep spiritual connection with nature and their animistic worldview, where spirits are believed to inhabit all living things and natural phenomena. It reinforces the reciprocal relationship between humans and the divine, demonstrating profound respect for the natural world and ensuring the continuity of its bounty. Beyond its spiritual aspects, the ceremony also serves to strengthen community bonds through collective preparation, feasting, singing, and dancing. Historically, the Iyomante was suppressed and outlawed by the Japanese government as part of assimilation policies, but it has seen revival efforts in recent decades as a symbol of Ainu cultural pride and identity.",
+        "gemini_tags": [
+          "Ainu culture",
+          "Indigenous rituals",
+          "Animism",
+          "Nature worship",
+          "Bear ceremony",
+          "Spirit sending",
+          "Hokkaido tradition",
+          "Hunter-gatherer practices",
+          "Traditional ecological knowledge",
+          "Social practices",
+          "Ritual sacrifice",
+          "Kamuy belief"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual Ceremony",
+        "materials_and_tools": [
+          "Brown bear cub",
+          "Wooden cage (heper-set)",
+          "High-quality food for the bear",
+          "Rope",
+          "Blunted ceremonial arrows (hana ya, heper-ay)",
+          "Logs (for ritual killing)",
+          "Inau (intricately carved wooden prayer sticks/shavings)",
+          "Nusasan (offering altar/sacred space)",
+          "Sake (rice wine)",
+          "Dango (dumplings)",
+          "Kurumi (walnuts)",
+          "Pelt and meat of the bear",
+          "Traditional Ainu clothing",
+          "Musical instruments (e.g., mukkuri, tonkori - for accompanying dances)"
+        ],
+        "step_by_step": [
+          "**Capture and Raising**: In late winter or early spring, Ainu hunters capture a bear cub, often after hunting its mother, and bring it back to the village.",
+          "**Domestic Rearing**: The cub is initially raised indoors like a human child, sometimes even breastfed by Ainu women, fostering a deep bond.",
+          "**Caging**: As the cub grows (typically around weaning), it is moved to a sturdy outdoor wooden cage (heper-set). It continues to be fed high-quality, human-grade food, treated as an honored guest and a visiting deity. This rearing period usually lasts for one to two, or sometimes three, years.",
+          "**Preparation (Weeks before)**: Approximately two weeks before the main ceremony, extensive preparations begin. This includes brewing sake (rice wine) and making dango (dumplings). Men enter the mountains to gather materials for ceremonial tools and altars, meticulously crafting dozens of types of intricately carved inau (wooden prayer sticks).",
+          "**Preliminary Rituals (Day before)**: On the day before the main event, prayers are offered to the fire goddess (Apehuci Kamuy), as she is believed to facilitate communication with other deities. This is followed by communal celebrations, including traditional Ainu dances (like 'rimuse'), songs, and storytelling, which can extend late into the night.",
+          "**Ceremony Day - Morning Prayers**: The main day of the Iyomante commences with further prayers to the fire god. Inau are strategically arranged to form an altar-like structure, known as a nusasan, a sacred space for offerings.",
+          "**Bringing out the Bear**: After a communal lunch, the bear is carefully led out of its cage and tied to a post in the center of the village.",
+          "**Ceremonial Shooting**: Men then engage in a ritualistic shooting of the bear with blunted, ornamental arrows (hana ya or heper-ay). These arrows are designed to lightly penetrate the skin without causing severe injury and are considered offerings to the bear god. This phase can last until sunset.",
+          "**Ritual Killing**: The bear is then ritually killed, traditionally by strangulation between two logs, an act believed to release its spirit to return to Kamuy Mosir. Historically, in some regions, sharp-tipped arrows might have been used after the blunted ones.",
+          "**Offerings to the Spirit**: Following the killing, prayers are offered to the bear's spirit. Dango and kurumi (walnuts) are placed near the body, and sometimes dropped from the roof of the house, symbolizing gifts for the bear to take to the divine world. A young man shoots an arrow towards the East, a sacred direction in Ainu belief.",
+          "**Processing and Feast**: The bear is then skinned, and its meat is carefully prepared, distributed, and consumed by the villagers in a communal feast. This act symbolizes the sharing of divine blessings from the visiting god.",
+          "**Skull Adornment and Display**: The bear's skull is cleaned, adorned with numerous inau (wood shavings), and often wrapped in its own fur to create a revered \"doll\" or effigy. This adorned skull is then prominently placed on a pole (nusa) at the entrance of the kotan (village) or on the nusasan (offering altar), serving as an object of worship and honoring the bear for years to come.",
+          "**Concluding Festivities**: The ceremony culminates with continued feasting, singing, and dancing, celebrating the bear's successful return to the spirit realm and expressing hope for its future visits."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Siberia (Russia)",
+            "element_name": "Bear worship/sending ceremonies",
+            "relationship_reason": "Similar ritualistic killing of bears, often involving raising cubs and sending their spirits back to a divine realm, found among circumpolar hunting cultures. The Ainu Iyomante is considered one type of these widespread bear-sending rituals."
+          },
+          {
+            "country": "North America (e.g., Inuit, Chukchi, Aleuts, Indigenous peoples of Canada)",
+            "element_name": "Bear worship/sending ceremonies",
+            "relationship_reason": "Similar ritualistic killing of bears, often involving raising cubs and sending their spirits back to a divine realm, found among circumpolar hunting cultures. The Ainu Iyomante is considered one type of these widespread bear-sending rituals."
+          },
+          {
+            "country": "Finland",
+            "element_name": "Karhunpeijaiset (Bear Feast)",
+            "relationship_reason": "Similar bear-sending rituals, including the practice of hanging the bear's skull on a tree to return its soul to the heavens."
+          },
+          {
+            "country": "Amur River basin (e.g., Nivkh, Nanai, Oroch, Uilta, Negidal, Ulch)",
+            "element_name": "Bear sending ceremonies",
+            "relationship_reason": "Similar 'cub-raising bear sending' (Omante-type) rituals are practiced in this limited region, suggesting a shared cultural influence or origin."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-30933539",
+      "element_name": "Fried Wheat Gluten (Mianjin)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://passtheflamingo.com/wp-content/uploads/2020/01/IMG_20200112_170703-1024x768.jpg",
+      "source_urls": [
+        "https://passtheflamingo.com/2020/01/13/a-historical-chinese-recipe/"
+      ],
+      "scraped_at": "2026-08-21T00:41:00Z",
+      "location": {
+        "country": "China",
+        "provinces": [],
+        "lat": 34.5412252,
+        "lng": 108.9237067
+      },
+      "resume_analisa": {
+        "description": "Mianjin, or wheat gluten, is a traditional Chinese food product created by washing wheat flour dough to remove the starch, leaving behind a sticky, protein-rich gluten mass. This ingredient has been consumed in China for centuries and is notably used as a meat substitute in Buddhist vegetarian cuisine. A historical Song Dynasty recipe details its preparation by frying it with chives and calabash.",
+        "cultural_significance": "Mianjin holds significant historical and cultural importance within Chinese culinary traditions, particularly in the context of vegetarian diets, especially those observed by Buddhist monks. Its unique preparation method, which involves the separation of gluten from starch, exemplifies ancient Chinese food processing techniques. The longevity of its use underscores its enduring role in Chinese cuisine.",
+        "gemini_tags": [
+          "Chinese cuisine",
+          "Vegetarian food",
+          "Buddhist cuisine",
+          "Traditional food processing",
+          "Wheat gluten",
+          "Song Dynasty food"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Food preparation technique and recipe (frying gluten)",
+        "materials_and_tools": [
+          "Wheat flour dough",
+          "Water",
+          "Oil (for frying)",
+          "Chives (for the Song Dynasty recipe)",
+          "Calabash (for the Song Dynasty recipe)",
+          "Bowl/basin",
+          "Sieve (implied for washing out starch)",
+          "Wok/frying pan"
+        ],
+        "step_by_step": [
+          "Prepare wheat flour dough.",
+          "Wash the dough thoroughly in water, scrubbing it until all the starch has been removed. This process will leave behind a cohesive clump of wheat gluten.",
+          "The resulting gluten can then be prepared by boiling, frying, or steaming.",
+          "For a traditional Song Dynasty preparation, the gluten is fried in oil along with chives and calabash."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Seitan",
+            "relationship_reason": "Seitan is a food made from wheat gluten, widely utilized in Japanese and other East Asian vegetarian cuisines as a meat substitute, sharing a similar functional and culinary role with Mianjin in China."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-19T00:40:00.731040Z",
-    "total_ich_elements": 247,
-    "complete_records": 229,
+    "generated_at": "2026-08-21T00:42:13.339653Z",
+    "total_ich_elements": 250,
+    "complete_records": 232,
     "incomplete_records": 18,
     "categories_breakdown": {
       "Traditional Craftsmanship": 87,
-      "Social Practices & Rituals": 51,
-      "Culinary Traditions": 39,
+      "Social Practices & Rituals": 52,
+      "Culinary Traditions": 41,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 25,
       "Social Practices & Rituals | Performing Arts": 4,
