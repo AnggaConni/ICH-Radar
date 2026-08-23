@@ -22285,22 +22285,279 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-18349328",
+      "element_name": "Course Camarguaise",
+      "category": "Social Practices & Rituals | Performing Arts",
+      "thumbnail_url": "https://www.shutterstock.com/image-photo/raseteur-performs-front-bull-during-260nw-2365985063.jpg",
+      "source_urls": [
+        "https://www.lesbainsgardians.com/la-course-camarguaise-un-sport-local-qui-respecte-le-taureau/",
+        "https://www.avignon-et-provence.com/en/traditions/course-camarguaise-camargue-bullfighting",
+        "https://www.francetraveltips.com/la-course-camarguaise-and-the-cocarde-dor-event-in-arles/",
+        "https://travelphotography.blog/course-camarguaise-bull-race/",
+        "https://www.tripusafrance.com/blog/art-of-the-razeteurs-course-camarguaise-in-the-south-of-france",
+        "https://www.alpillesenprovence.com/fr/decouvrir/traditions-taurines",
+        "https://www.saintesmariesdelamer.com/fr/je-decouvre/les-traditions/la-course-camarguaise",
+        "https://www.vauvert.com/decouvrir-vauvert/traditions/",
+        "https://www.portsaintlouis.fr/tourisme/decouvrir/traditions-taurines",
+        "https://www.facebook.com/tripusafrance/posts/how-does-course-camarguaise-bullfighting-work-in-the-camargue-region-of-southern/5184654968254249/",
+        "https://www.saintesmariesdelamer.com/en/discover/experiences/bulls-race-of-camargue",
+        "https://www.atlasobscura.com/articles/course-camarguaise-france-bullfighting",
+        "https://fr.wikipedia.org/wiki/Course_camarguaise",
+        "https://www.ffcc.fr/",
+        "https://www.ot-paysdelunel.fr/la-course-camarguaise/"
+      ],
+      "scraped_at": "2026-08-23T00:41:02.852615Z",
+      "location": {
+        "country": "France",
+        "provinces": [
+          "Provence-Alpes-Côte d'Azur",
+          "Occitanie",
+          "Bouches-du-Rhône",
+          "Gard",
+          "Hérault",
+          "Vaucluse"
+        ],
+        "lat": 44.0580563,
+        "lng": 6.0638506
+      },
+      "resume_analisa": {
+        "description": "Course Camarguaise is a traditional Provençal sport and cultural event, often referred to as Camargue bullfighting or a bloodless bull race, practiced in the Camargue region of Southern France. It involves young men, known as 'raseteurs,' dressed in white, who attempt to remove various attributes (ribbons, tassels, and a cockade/rosette) affixed to the horns and forehead of a Camargue bull, called a 'cocardier' or 'biòu,' using a four-bladed hook (crochet). Unlike Spanish bullfighting (corrida), the Course Camarguaise is non-lethal and does not harm the bull, which is considered the true star of the spectacle.",
+        "cultural_significance": "Deeply rooted in the historical and cultural heritage of the Camargue, the Course Camarguaise serves to preserve the region's equestrian and ranching traditions. It reinforces community identity and elevates the Camargue bull to the status of a cultural icon. The sport, which dates back to the early 15th century (with the earliest recorded event in Arles in 1402), was codified in the early 20th century by figures like Folco de Baroncelli. The French Federation of Camargue Racing (FFCC), established in 1975, officially recognizes and governs the sport. The 'Croix Camarguaise' (Camargue Cross), designed by Baroncelli, symbolizes the region's values of faith, hope, and charity, further highlighting the cultural depth of this tradition.",
+        "gemini_tags": [
+          "Traditional Sport",
+          "Cultural Festival",
+          "Bull Culture",
+          "French Heritage",
+          "Camargue Tradition",
+          "Bloodless Bullfighting",
+          "Community Practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Sport / Spectacle",
+        "materials_and_tools": [
+          "Camargue bulls (cocardiers/biòu)",
+          "Raseteurs (athletes)",
+          "White attire (including tight white pants) for raseteurs",
+          "Ribbons, tassels, and a cockade (rosette) affixed to the bull's horns",
+          "Four-bladed hook (crochet)",
+          "Arenas (often Roman amphitheaters or purpose-built village arenas)",
+          "Presidency (jury) to oversee rules and award prizes"
+        ],
+        "step_by_step": [
+          "The event typically takes place from spring through autumn in various arenas across the Camargue region and surrounding departments.",
+          "A 'Capelado' (parade and salute) often initiates the event, where raseteurs, sometimes accompanied by individuals in traditional Provençal costumes, parade and salute the public and the presidency.",
+          "Six to seven different bulls may participate in a single course, with each bull typically staying in the arena for about 15 minutes.",
+          "Raseteurs actively provoke and distract the bull, running around and towards it to gain its attention.",
+          "The primary objective for the raseteurs is to use their specialized hook (crochet) to remove the 'attributes' (strings, tassels, and the cockade) from between the bull's horns.",
+          "Points and cash prizes are awarded to the raseteurs for each attribute successfully removed.",
+          "Raseteurs demonstrate agility and speed, often needing to jump over the arena barriers into the bleachers to evade the charging bull's horns.",
+          "The bull, revered as the star, actively defends its attributes, showcasing its speed, intelligence, and temperament. A bull successfully protecting its ribbons is highly celebrated.",
+          "At the conclusion of each round, the famous aria from Georges Bizet's opera 'Carmen' is played, signaling the end of that segment.",
+          "Prestigious annual events, such as the 'Cocarde d'Or' (Golden Rosette) in Arles, honor the best raseteur of the year."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Spain",
+            "element_name": "Corrida de Toros (Spanish Bullfighting)",
+            "relationship_reason": "Both traditions involve bulls and arenas, but Course Camarguaise is a bloodless sport focused on the agility of the raseteurs and the bravery of the bull, which is never harmed or killed. In contrast, Spanish Corrida de Toros is a lethal ritual where the bull is ultimately killed. This fundamental difference highlights a shared 'bull culture' but with vastly divergent practices and ethical approaches."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-eaa39f5e",
+      "element_name": "Duma (Ukrainian Epic Poem)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ostap_Veresai.jpg/220px-Ostap_Veresai.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Duma_(epic)",
+        "https://www.folklore.ee/folklore/vol95/lisniak_cherneta.pdf",
+        "https://encyclopediaofukraine.com/display.asp?linkpath=pages%5CD%5CU%5CDuma.htm",
+        "https://artsandculture.google.com/story/duma-as-kozak-national-song-cfc-big-ideas-in-association-with-the-ministry-of-culture-and-information-policy/3wXh78g31l04LA",
+        "https://www.researchgate.net/publication/38302062_Ukrainian_Folk_Dumy_Problems_of_Historical_Development_and_Modern_Performance",
+        "https://united24media.com/culture/blind-minstrels-kobzars-once-guarded-ukraines-history-they-still-do-457",
+        "https://www.utoronto.ca/news/blind-minstrels-kobzars-once-guarded-ukraine%E2%80%99s-history-they-still-do",
+        "https://www.worldoftales.com/Ukrainian_folktales.html",
+        "https://www.authenticity.com.ua/en/oral-traditions-and-forms-of-expression",
+        "https://www.authenticity.com.ua/en/oral-traditions-and-forms-of-expression/duma-as-a-special-genre-of-folklore",
+        "https://www.authenticity.com.ua/en/all-articles-with-tag-oral-traditions-and-forms-of-their-expression",
+        "https://www.erudit.org/en/journals/ethno/2019-v41-n1-ethno04724/1063628ar/",
+        "https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199935371.001.0001/oxfordhb-9780199935371-e-21",
+        "https://www.ukrainians.ca/traditional-ukrainian-songs-and-music",
+        "https://www.ukrainians.ca/traditional-music-and-instruments-from-the-ukraine-text-in-english"
+      ],
+      "scraped_at": "2026-08-23T00:41:33.796317Z",
+      "location": {
+        "country": "Ukraine",
+        "provinces": [
+          "Volyn Oblast",
+          "Podillia",
+          "Kharkiv Oblast"
+        ],
+        "lat": 51.5451167,
+        "lng": 24.6627893
+      },
+      "resume_analisa": {
+        "description": "Dumy are oral epic poems that originated in Ukraine during the Cossack Era in the sixteenth century, possibly based on earlier Kyivan epic forms. They are lengthy lyrical compositions of an epic character, characterized by uneven syllabic lines, monorhymes, and the absence of stanzas. Dumy record popular interpretations of historical events from the 15th to 17th centuries, including Tatar-Turkish captivity, Polish-Lithuanian oppression, and the heroism of Ukrainian Cossacks. They embody moral principles associated with national independence and personal dignity, deeply rooted in mythical and poetical thinking.",
+        "cultural_significance": "Dumy are a significant phenomenon associated with Ukrainian national identity, serving as a powerful means of preserving and perpetuating historical memory, especially during periods of foreign rule. The performers, known as *kobzari*, were revered as transmitters of national consciousness and were often blind itinerant musicians. The tradition was suppressed during the Soviet period, with *kobzar tsekh* (guilds) being destroyed and performers forced to create 'Soviet dumy'. However, the duma tradition has been revived since Ukraine's independence in 1991. In 2024, the practices of kobza, bandura, and lyre playing, integral to duma performance, were recognized by UNESCO as an intangible cultural heritage of humanity.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Epic Poetry",
+          "Ukrainian Folklore",
+          "Cossack Era",
+          "Kobzari",
+          "Bandura",
+          "Kobza",
+          "Lira",
+          "National Identity",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Poland",
+            "element_name": "Polish Ballades (Dumy)",
+            "relationship_reason": "The term 'duma' for Ukrainian epic songs is a Polonism, borrowed from Polish, where it was used for their own ballades and foreign ones."
+          },
+          {
+            "country": "Serbia",
+            "element_name": "Serbian Epic Poetry",
+            "relationship_reason": "The poetics of the duma are similar in some ways to that of Serbian epic poetry."
+          },
+          {
+            "country": "Uzbekistan",
+            "element_name": "Alpamysh (Epic)",
+            "relationship_reason": "Uzbek 'Alpamysh' is considered a 'peer' of Ukrainian dumy in the context of world epics."
+          },
+          {
+            "country": "Kyrgyzstan",
+            "element_name": "Manas (Epic)",
+            "relationship_reason": "Kyrgyz 'Manas' is considered a 'peer' of Ukrainian dumy in the context of world epics."
+          },
+          {
+            "country": "Kalmykia (Russia)",
+            "element_name": "Dzhangar (Epic)",
+            "relationship_reason": "Kalmyk 'Dzhangar' is considered a 'peer' of Ukrainian dumy in the context of world epics."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-e3528947",
+      "element_name": "Jaipur Blue Pottery",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ceramicartsnetwork.org/daily/clay-culture/clay-bodies/earthenware-clay-bodies/clay-culture-jaipur-blue-pottery/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ceramicartsnetwork.org/daily/clay-culture/clay-bodies/earthenware-clay-bodies/clay-culture-jaipur-blue-pottery/",
+        "https://maverickbird.com/jaipur-blue-pottery-turbulent-tale-of-no-clay-art/",
+        "https://itokri.com/blogs/articles/blue-pottery-of-jaipur",
+        "https://ebazaar.rajasthan.gov.in/blog/reviving-the-artistry-exploring-the-timeless-beauty-of-blue-pottery-in-jaipur",
+        "https://aavyaan.com/blogs/news/the-14-step-process-behind-every-piece-of-jaipur-blue-pottery",
+        "https://en.wikipedia.org/wiki/Blue_pottery_of_Jaipur",
+        "https://www.dsource.in/resource/blue-pottery-jaipur/making-process",
+        "https://homegrown.co.in/article/804000/from-persia-to-pink-city-the-multicultural-history-of-jaipurs-blue-pottery",
+        "https://rudhigat.com/blogs/news/history-of-rajasthans-blue-pottery",
+        "https://medium.com/@zilpharodrigues/mould-paint-and-flame-a-journey-of-jaipurs-blue-pottery-48a623722009",
+        "https://www.dsource.in/resource/blue-pottery-jaipur/tools-and-raw-materials",
+        "https://thepalkhi.com/blogs/news/unveiling-the-artisanal-legacy-exploring-the-history-and-roots-of-beautiful-blue-pottery-in-rajasthan",
+        "https://handmadeinrajasthan.com/blue-pottery/",
+        "https://gaatha.org/craft-archive/blue-pottery/",
+        "https://cottage9.com/blogs/news/blue-pottery-rajasthan-s-traditional-craft",
+        "https://www.memeraki.com/blogs/indian-art-forms/indian-blue-pottery",
+        "https://madhues.com/blogs/news/the-story-behind-blue-pottery-history-craft-modern-interior-decoration-ideas"
+      ],
+      "scraped_at": "2026-08-23T00:42:00.898960Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Rajasthan",
+          "Jaipur",
+          "Sanganer",
+          "Mahalan",
+          "Neota"
+        ],
+        "lat": 26.8105777,
+        "lng": 73.7684549
+      },
+      "resume_analisa": {
+        "description": "Jaipur Blue Pottery is a distinctive traditional craft from Jaipur, Rajasthan, renowned for its vibrant blue and turquoise hues and intricate hand-painted designs. Unlike conventional pottery, it is a 'no-clay' product, with its body made from a unique dough composed primarily of quartz powder, powdered glass, Multani Mitti (Fuller's Earth), borax, gum, and water. The craft produces a variety of decorative items such as vases, plates, bowls, tiles, and other ornamental pieces.",
+        "cultural_significance": "Blue Pottery holds profound cultural significance in Jaipur and Rajasthan, embodying a rich fusion of Persian, Mughal, and Indian artistic traditions. Historically, these exquisite creations adorned royal palaces and mansions, serving as symbols of prestige and prosperity, and are now often cherished as family heirlooms. The craft is a vital source of livelihood for many artisans and stands as an iconic representation of Jaipur's artistic heritage. The art form faced near extinction by the 1950s but was successfully revived through the dedicated efforts of painter and muralist Kripal Singh Shekhawat, supported by patrons like Maharani Gayatri Devi.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Pottery",
+          "Ceramics",
+          "Indian Heritage",
+          "Rajasthan",
+          "Jaipur",
+          "Decorative Arts",
+          "Cultural Fusion",
+          "Traditional Knowledge Preservation"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craft Process",
+        "materials_and_tools": [
+          "Dough ingredients: Quartz powder, powdered glass (scrap glass/cullet), Multani Mitti (Fuller's Earth), borax, gum (Katira Gond powder), soda bicarbonate (Saaji), water",
+          "Glaze ingredients: Powdered glass, borax, zinc oxide, potassium nitrate, boric acid, maida (flour), water",
+          "Colors: Cobalt oxide (dark blue), copper oxide (green/turquoise), chromium (green), iron (brown), cadmium (yellow), manganese (purple), white (slip)",
+          "Tools: Plaster of Paris molds, raakh (burnt wood ash/dust), thepai (traditional wooden flattening tool), sandpaper, koochi (small broom made of husk), potter's wheel (for attaching base), knives, brushes (squirrel hair brushes), kiln (coal or wood-fired, sometimes diesel heaters), cemented plates, terracotta stands"
+        ],
+        "step_by_step": [
+          "1. Dough Preparation: Raw materials including quartz powder, powdered glass, Multani Mitti, borax, gum (Katira Gond), and soda bicarbonate (Saaji) are measured and mixed with water. This mixture is kneaded into a non-sticky dough. The dough is then rested for 7-8 hours or overnight to allow the gum to fully hydrate and improve workability.",
+          "2. Mold Preparation: Plaster of Paris molds of various desired shapes (e.g., bowls, plates, vases) are prepared, cleaned, and dried.",
+          "3. Shaping/Casting: The prepared dough is rolled out into a flat, circular shape, often referred to as a 'chappati', using a traditional wooden tool called a 'thepai'. This flattened dough is then carefully pressed or rolled into the molds, ensuring an even thickness and eliminating any air pockets. Burnt wood ash (raakh) is often used to fill the inside of the mold to prevent accidental deformation.",
+          "4. Initial Drying: The molded piece, along with the raakh, is left to dry for 1-2 days until it stiffens and holds its shape.",
+          "5. Scrubbing and Finishing: After drying, the raakh is removed, and any excess ash is brushed off using a small broom (koochi). The surface of the item is then manually polished and smoothed with sandpaper to remove irregularities.",
+          "6. Attaching the Base (if required): For items that need a base, the dried form is placed upside down on a potter's wheel. The attachment area is moistened, and a small amount of dough is used to form and affix the base. The product is then left to dry again for 1-2 days.",
+          "7. Smoothening/Slip Coating: A slurry mixture of dough and water is applied to the dried product to fill any major holes. Once dried, it is rubbed with sandpaper. A second coating is then applied by dipping the product in a slurry made from quartz powder, powdered glass, maida (edible flour), and water. This is followed by another round of sanding.",
+          "8. Bisque Firing (Optional): Some processes include a bisque firing in a kiln at approximately 800-900°C to harden the body without full vitrification, creating a stable surface for decoration. (Note: Some sources indicate that Jaipur potters do not bisque fire, and the pottery is fired only once.)",
+          "9. Decoration: Designs are first sketched lightly in pencil on the smoothed surface. The outlines are then drawn using cobalt oxide. Intricate patterns, including floral motifs, geometric designs, animals (like elephants and peacocks), birds, and Mughal arabesque patterns, are hand-painted freehand using various mineral oxides mixed with water (e.g., cobalt for blue, copper for green, iron for brown, cadmium for yellow, manganese for purple).",
+          "10. Glaze Preparation: A special glaze is prepared by mixing powdered glass, borax, zinc oxide, potassium nitrate, and boric acid. This mixture is heated until it melts, then allowed to cool and solidify into lumps. These lumps are ground into a fine powder (frit), which is then mixed with maida (flour) and water to create a final glaze slurry.",
+          "11. Glazing: The decorated and dried pieces are dipped into the prepared glaze solution to ensure an even coating. The glazed items are then dried in the sun.",
+          "12. Final Firing: The glazed products are carefully placed in a closed kiln (traditionally coal or wood-fired, though diesel heaters are now sometimes used) and fired at low temperatures, typically between 800-900°C. This final firing melts the glaze, creating the characteristic smooth, glassy surface. The entire process, from raw materials to the finished product, typically takes approximately 10-20 days."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Persia (Iran) / Central Asia / Afghanistan",
+            "element_name": "Persian ceramic style, Islamic pottery, Chinese glazing technology",
+            "relationship_reason": "The art form originated in Persia/Central Asia and was introduced to India via early Turkic conquests and Mughal courts in the 14th century, blending Chinese glazing technology with Persian decorative arts and motifs."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-21T00:42:13.339653Z",
-    "total_ich_elements": 250,
-    "complete_records": 232,
-    "incomplete_records": 18,
+    "generated_at": "2026-08-23T00:42:36.584582Z",
+    "total_ich_elements": 253,
+    "complete_records": 234,
+    "incomplete_records": 19,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 87,
+      "Traditional Craftsmanship": 88,
       "Social Practices & Rituals": 52,
       "Culinary Traditions": 41,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 25,
-      "Social Practices & Rituals | Performing Arts": 4,
+      "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 2,
-      "Oral Traditions": 18,
+      "Oral Traditions": 19,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
