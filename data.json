@@ -22542,22 +22542,237 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0638b24c",
+      "element_name": "Engklek",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Engklek.jpg/1200px-Engklek.jpg",
+      "source_urls": [
+        "https://milwaukeedowntown.com/news/engklek-traditional-indonesian-childhood-game-in-detail/",
+        "https://www.scribd.com/document/633441589/Engklek-Traditional-Indonesian-Hopscotch",
+        "https://medium.com/@irfandi.id/engklek-unveiled-exploring-the-timeless-joy-of-indonesias-traditional-game-6f7f6a70e70a",
+        "https://www.detik.com/edu/detikpedia/d-7073281/7-permainan-tradisional-yang-sudah-terlupakan-nostalgia-bareng-yuk",
+        "https://klinikmusik.wordpress.com/2014/10/13/29-permainan-tradisional-yang-terlupakan/",
+        "https://www.indonesiana.id/read/1000020119/mengenal-jenis-jenis-permainan-tradisional-anak-anak-indonesia",
+        "https://www.youtube.com/watch?v=kYv_64x0a4Y",
+        "https://www.scribd.com/document/675868615/Juknis-Permainan-Engklek-Tradisional",
+        "https://www.detik.com/edu/detikpedia/d-7073281/7-permainan-tradisional-yang-sudah-terlupakan-nostalgia-bareng-yuk",
+        "https://osc.medcom.id/news/read/2023-04-04/KOf4r3rK-10-permainan-tradisional-yang-mulai-ditinggalkan",
+        "https://regional.kompas.com/read/2022/02/21/135943678/permainan-engklek-sejarah-cara-bermain-manfaat-dan-alat-yang-digunakan?page=all",
+        "https://www.kalurahan-pleret.com/first/artikel/111-ragam-jenis-permainan-tradisional"
+      ],
+      "scraped_at": "2026-08-25T00:39:00.638048Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Java",
+          "Various regions across Indonesia"
+        ],
+        "lat": -7.3279694,
+        "lng": 109.613911
+      },
+      "resume_analisa": {
+        "description": "Engklek is a traditional Indonesian children's game, often described as a variation of hopscotch. It involves drawing a series of boxes or shapes on the ground, typically with chalk or a stick. Players toss a small, flat object, known as a 'gaco' (such as a piece of tile, stone, or beanbag), into the squares and hop through the course, skipping the square where the gaco landed. The objective is to complete the course without stepping on lines or losing balance. The game is usually played by two or more children.",
+        "cultural_significance": "Engklek is a cherished part of Indonesian cultural heritage, symbolizing a simpler, more active, and community-oriented childhood. It significantly contributes to children's physical development by enhancing gross motor skills, balance, and coordination through running, hopping, and jumping. The game also fosters social interaction, teamwork, and sportsmanship as children learn to play cooperatively and take turns. Cognitively, Engklek promotes strategic thinking, spatial awareness, counting, and problem-solving abilities. Its widespread popularity is attributed to its simplicity and adaptability, requiring only a flat surface, a drawing tool, and a small object, which are readily available in most communities. It is often played in the afternoons or during school holidays.",
+        "gemini_tags": [
+          "Traditional Game",
+          "Children's Game",
+          "Indonesia",
+          "Hopscotch",
+          "Outdoor Play",
+          "Physical Activity",
+          "Social Interaction",
+          "Strategy Game",
+          "Cultural Heritage",
+          "Motor Skills",
+          "Balance",
+          "Coordination",
+          "Teamwork",
+          "Problem Solving"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Game",
+        "materials_and_tools": [
+          "Flat playing surface (ground, pavement, field)",
+          "Chalk, charcoal, or a stick for drawing lines",
+          "Gaco (small, flat object like a piece of tile, stone, or beanbag)"
+        ],
+        "step_by_step": [
+          "Draw the playing field: A series of boxes or shapes are drawn on the ground. Common patterns include eight boxes and one 'mountain' shape, or five vertical rectangles with two additional rectangles on the sides. The pattern can vary by region.",
+          "Determine player order: Players decide who goes first, often through 'hompimpa' (a traditional Indonesian counting-out game) or 'suit' (rock-paper-scissors).",
+          "Throw the gaco: The first player throws their 'gaco' into the first square. The gaco must land entirely within the square without touching the lines.",
+          "Hop through the course: The player then hops through the squares with one foot, skipping the square where their gaco landed. They must maintain balance and not step on any lines.",
+          "Retrieve the gaco: Upon completing the hopping sequence (reaching the end and turning around), the player hops back to the square before the gaco, bends down (while still on one foot), picks up the gaco, and completes the hop to the starting point.",
+          "Continue turns: The player then throws the gaco into the next sequential square and repeats the hopping process.",
+          "Winning the game: A player wins a square by successfully completing the entire course with their gaco in that square. They then mark that square with their symbol (e.g., a star). Other players cannot step on squares owned by an opponent. The game continues until one player has marked all the squares or has the most marked squares.",
+          "Losing a turn: A player loses their turn if they: throw the gaco outside the designated square or on a line; step on a line or outside the playing field; lose balance and put both feet down (unless in a designated 'rest' square); step on a square where the gaco is located; or step on an opponent's marked square."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Global",
+            "element_name": "Hopscotch",
+            "relationship_reason": "Engklek is a traditional Indonesian game that is a variation of hopscotch, sharing the fundamental concept of hopping through drawn squares while tossing a marker."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-42ec59ba",
+      "element_name": "Shuoshu (Chinese Storytelling)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Pingshu&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Pingshu",
+        "https://www.britannica.com/art/Chinese-music/Other-vocal-and-instrumental-genres#ref235544",
+        "http://www.shuoshu.org/",
+        "https://www.chinadaily.com.cn/a/202501/20/WS65aa0504a3104ef6b7b75270.html"
+      ],
+      "scraped_at": "2026-08-25T00:39:27.657303Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Northern China",
+          "Southern China",
+          "Jiangsu (Yangzhou)",
+          "Shaanxi (Shanbei)"
+        ],
+        "lat": 22.1535271,
+        "lng": 113.5594359
+      },
+      "resume_analisa": {
+        "description": "Shuoshu (說書), also known as Pingshu (评书) in northern China and Pinghua (评话) in southern China, is a traditional Han Chinese performing art of storytelling without musical accompaniment. It is a diverse art form encompassing over 300 genres with a history traceable to the Tang and Song dynasties. Performers typically wear changshan, stand behind a table, and utilize props such as a folded fan and a gavel. They often interject their own commentaries, blending entertainment with educational insights.",
+        "cultural_significance": "Shuoshu has historically served as a vital cultural institution, often referred to as the 'university' of ordinary people, where culture and knowledge were disseminated in an engaging and accessible manner. It profoundly influenced the development of written literary genres, including novels and short stories. This art form has held significant mass appeal, providing both entertainment and moral education to its audiences.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Storytelling",
+          "Chinese Culture",
+          "Performing Arts",
+          "Intangible Cultural Heritage",
+          "Folk Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Performance",
+        "materials_and_tools": [
+          "Folded fan",
+          "Gavel (xingmu or zhiyu)",
+          "Handkerchief",
+          "Small stick"
+        ],
+        "step_by_step": null
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Rakugo",
+            "relationship_reason": "Rakugo is a similar traditional storytelling art form in Japan, sharing characteristics with Shuoshu as a solo oral performance."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
+    },
+    {
+      "id": "ich-58aabffd",
+      "element_name": "Filoxenia (Greek Hospitality)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.globalvolunteers.org/simply-greek-cultures-and-traditions-of-civilizations-birthplace/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.globalvolunteers.org/simply-greek-cultures-and-traditions-of-civilizations-birthplace/",
+        "https://www.greektripplanner.com/greek-customs-traditions/",
+        "https://www.discovergreece.com/blog/greek-customs-traditions",
+        "https://traversejourneys.com/traditions-in-greece/",
+        "https://medium.com/@suatdinc/all-about-greeces-culture-and-traditions-3151b7596b42",
+        "https://www.greece-is.com/philoxenia-whats-in-a-word/",
+        "https://www.kalivianihotel.gr/blog/filoxenia-the-heartbeat-of-greek-hospitality/",
+        "https://worldwidegreeks.com/forum/threads/what-is-philoxenia.105/",
+        "https://greekreporter.com/2023/07/07/philoxenia-ancient-roots-greek-hospitality/",
+        "https://avaxdevelopment.com/filoxenia-the-greek-value-that-will-welcome-you-home/",
+        "https://greektownchicago.org/the-greek-value-of-filoxenia/",
+        "https://secretgreekescape.com/philoxenia-friend-to-the-stranger/",
+        "https://www.greeka.com/culture/",
+        "https://www.greekpod101.com/blog/2021/04/23/a-brief-overview-of-greek-culture/",
+        "https://www.greekcourses.com/blog/what-makes-greek-culture-unique"
+      ],
+      "scraped_at": "2026-08-25T00:39:55.275270Z",
+      "location": {
+        "country": "Greece",
+        "provinces": [],
+        "lat": 38.9953683,
+        "lng": 21.9877132
+      },
+      "resume_analisa": {
+        "description": "Filoxenia (φιλοξενία) is the Greek word for hospitality, literally translating to 'love of strangers' or 'friend to a stranger'. It is a deeply ingrained cultural value and a fundamental aspect of Greek life, extending beyond mere politeness to a profound mindset. This tradition involves warmly welcoming guests, offering food, drink, and shelter, and making them feel at home, often without formal invitations. Greek homes are frequently open to visitors, and hosts are expected to be prepared for unexpected guests. The practice fosters genuine connections, long conversations, and shared meals, reflecting a strong emphasis on human interaction and community. Filoxenia is observed across Greece, particularly in smaller towns and island communities, where strangers may be greeted with waves, chats, or offerings from gardens.",
+        "cultural_significance": "Filoxenia is more than a custom; it's a living value that shapes social behavior and expectations within Greek society. Its roots trace back to ancient Greece, where hospitality was considered a sacred duty, often associated with Zeus Xenios, the protector of guests. This tradition reinforces strong family bonds and communal joy, creating a warm, expressive, and deeply human cultural experience. It is a source of national pride and identity, celebrated in literature, art, and folklore. The value of filoxenia is so strong that declining offerings of food or drink can be considered impolite. It contributes to the unique rhythm of Greek life, where spending time together is a cultural priority, and social interaction reflects centuries of shared ideas and collaboration.",
+        "gemini_tags": [
+          "Hospitality",
+          "Greek Culture",
+          "Social Practice",
+          "Ritual",
+          "Community",
+          "Mediterranean Tradition",
+          "Ancient Roots"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Social Interaction Protocol",
+        "materials_and_tools": [
+          "Welcoming home environment",
+          "Food and drink (e.g., coffee, traditional dishes, local spirits like raki)",
+          "Time and willingness to engage in conversation",
+          "Respect and generosity towards guests"
+        ],
+        "step_by_step": [
+          "**Openness to visitors:** Greek homes are often open, and formal invitations are not always necessary for friends, family, or even new acquaintances to visit.",
+          "**Immediate offerings:** Guests are typically invited to sit down immediately and offered food and drink, regardless of the time of day. This can include coffee, pastries, local delicacies, or a full meal.",
+          "**Generosity of the host:** Hosts are expected to have something available for unexpected visitors, demonstrating a spirit of abundance and willingness to share.",
+          "**Communal eating:** Food customs often center on communal eating, with dishes ordered for the table and shared among everyone, rather than individual portions.",
+          "**Long, unhurried meals and conversations:** Meals are typically long and relaxed, providing ample opportunity for conversation, connection, and strengthening social bonds.",
+          "**Gracious acceptance by guests:** Guests are generally expected to graciously accept food and drink offerings, as declining might be considered impolite."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Mediterranean Region",
+            "element_name": "Hospitality traditions",
+            "relationship_reason": "Filoxenia shares a common cultural value of welcoming strangers and guests, often rooted in ancient traditions and geographical proximity, with many other Mediterranean cultures."
+          },
+          {
+            "country": "Balkan Region",
+            "element_name": "Hospitality customs",
+            "relationship_reason": "Due to historical and cultural ties, there is a similar emphasis on generosity and welcoming guests in many Balkan countries."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-23T00:42:36.584582Z",
-    "total_ich_elements": 253,
-    "complete_records": 234,
-    "incomplete_records": 19,
+    "generated_at": "2026-08-25T00:40:35.492970Z",
+    "total_ich_elements": 256,
+    "complete_records": 236,
+    "incomplete_records": 20,
     "categories_breakdown": {
       "Traditional Craftsmanship": 88,
-      "Social Practices & Rituals": 52,
+      "Social Practices & Rituals": 54,
       "Culinary Traditions": 41,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 25,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 2,
-      "Oral Traditions": 19,
+      "Oral Traditions": 20,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
