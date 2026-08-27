@@ -22757,15 +22757,250 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-bec79a14",
+      "element_name": "Primitive Pottery Making",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//makingartfun.com/ancient-pottery-techniques-made-simple-for-beginners/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://makingartfun.com/ancient-pottery-techniques-made-simple-for-beginners/",
+        "https://ceramicartsnetwork.org/daily/handbuilding-techniques/",
+        "https://atelierforma.com/blogs/news/handbuilding-pottery-techniques",
+        "https://www.pottery.com/pottery-guide/",
+        "https://www.primitiveways.com/primitive_pottery.html",
+        "https://www.colorado.edu/classics/2018/06/15/production-pottery",
+        "https://www.oattravel.com/community/the-culture-of-dirt/articles/unesco-pottery-traditions",
+        "https://www.ceramicturkey.com/beliefs-taboos-and-rituals-in-primitive-pottery/",
+        "https://www.theculturalheritage.com/ancient-craftsmanship-exploring-the-rich-tradition-of-indigenous-pottery-and-basketry/",
+        "https://www.npm.gov.tw/english/Article.aspx?sNo=04009387",
+        "https://www.artisanat.com/blogs/news/the-power-of-ancient-pottery-how-ceramic-artifacts-serve-as-windows-into-cultural-history",
+        "https://www.instructables.com/Clay-the-Ancient-WaySort-Of/",
+        "https://www.wildclay.com/primitive-pottery",
+        "https://www.azom.com/article.aspx?ArticleID=1190",
+        "https://www.indianartsandculture.org/pottery-techniquesstyles-across-pueblos",
+        "https://www.youtube.com/watch?v=H723gB-n0fM",
+        "https://www.theculturalheritage.com/unraveling-the-past-the-significance-of-pottery-in-ancient-cultures/",
+        "https://farzanehartstudio.com/pottery-and-ceramics-a-bridge-for-cultural-transmission/",
+        "https://www.peachstatearchaeologicalsociety.org/index.php/artifacts/primitive-skills/217-making-native-american-pottery",
+        "https://www.goshen.edu/art/clay/Pages/Steps.html"
+      ],
+      "scraped_at": "2026-08-27T05:41:32.419508Z",
+      "location": {
+        "country": "Global",
+        "provinces": [
+          "New Mexico",
+          "Arizona"
+        ],
+        "lat": 35.5318876,
+        "lng": -108.5954008
+      },
+      "resume_analisa": {
+        "description": "Primitive pottery making is an ancient hand-building technique that involves creating ceramic forms without the use of a potter's wheel, utilizing natural materials and simple tools. This craft dates back thousands of years, with the oldest known ceramic artifact dating to 28,000 BCE, and was historically used for practical purposes such as cooking, storing food and water, and trade, as well as for ritual and ceremonial purposes. [1, 5, 14, 15] Early products were often dried in the sun or fired at low temperatures in rudimentary kilns or open fires. [15]",
+        "cultural_significance": "Primitive pottery serves as a tangible connection to the land, local customs, beliefs, and older generations, embodying know-how and skills passed down through generations. [7, 9] It reflects social values, spiritual beliefs, and ancestral connections, playing integral roles in rituals and storytelling traditions. [8, 9, 12] In some cultures, it also promotes gender equality, as the craft is often traditionally practiced by women. [7] The designs, shapes, and materials used in ancient pottery provide valuable insights into the social, cultural, and economic conditions of ancient civilizations, acting as a means of communication, education, and preservation of cultural history. [12, 18, 19] Beliefs, taboos, and rituals are often associated with all stages of pottery production, from clay mining to firing. [8, 11]",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Pottery",
+          "Hand-building",
+          "Ancient Techniques",
+          "Cultural Heritage",
+          "Indigenous Craft",
+          "Ceramics",
+          "Folklore",
+          "Artisanal Skills",
+          "Prehistoric Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "Natural clay (wild clay)",
+          "Temper (sand, gravel, grog, volcanic ash, plant fibers)",
+          "Water",
+          "Hands and fingers",
+          "Simple tools (scraper, smooth stone/anvil, wooden paddle, sharp tools for incising)",
+          "Fire pit or primitive kiln",
+          "Wood or manure (for fuel)"
+        ],
+        "step_by_step": [
+          "**1. Finding and Processing Clay**: Locate natural clay deposits. If the clay is damp, allow it to dry thoroughly. Grind the dry clay into a coarse powder, traditionally by pounding it between stones or with a rock. [5, 33, 34]",
+          "**2. Adding Temper**: Mix approximately 20% temper (non-plastic material such as sand, volcanic ash, ground-up fired pottery, or plant fibers) with the processed clay. This addition is crucial to prevent the pottery from cracking during drying and firing. Gradually add water and knead the mixture thoroughly until it forms a plastic, workable mass. [5, 9, 33, 34]",
+          "**3. Forming the Pot (Hand-building)**: Several traditional hand-building methods can be employed:",
+          "    *   **Pinch Pot Method**: Start with a fist-sized ball of clay. Insert a thumb into the center and gradually pinch and rotate the clay between the thumb and fingers, working outwards and upwards to thin out and raise the walls of the vessel. [1, 2, 3, 4, 6]",
+          "    *   **Coil Building Technique**: Roll the prepared clay into long, snake-like coils. Stack these coils in successive layers, joining them one on top of the other, to build the desired shape and height of the vessel walls. Smooth the coils together to create a unified surface. [1, 3, 4, 6]",
+          "    *   **Slab Construction Method**: Roll out clay into flat sheets or slabs. Cut these slabs into desired shapes and then join them together to construct the pottery form. [1, 3, 4]",
+          "    *   **Paddle and Anvil Technique**: After initial shaping, a wooden paddle is used on the exterior while a smooth stone (anvil) is held against the interior to thin and shape the vessel walls, creating a symmetrical form. [1, 11]",
+          "**4. Drying**: Once the pot is shaped, it must be allowed to dry slowly and thoroughly. Initially, it dries to a 'leather-hard' state, where it is firm but still workable for trimming or decorating. The pot then needs to dry completely, often for several days or weeks, to remove all moisture before firing, which prevents cracking. [1, 5, 6]",
+          "**5. Decorating (Optional)**: Designs can be incised or carved directly into the wet or leather-hard clay using sharp tools. Natural pigments or slips (a liquid clay mixture) can also be applied for decorative patterns before firing. [1, 6, 9]",
+          "**6. Firing**: The thoroughly dried pottery is placed in an open fire pit or a primitive kiln. Fuel such as wood or manure is piled around and over the pots, then ignited. The pottery is fired at relatively low temperatures (typically below 1,000°C) until hardened. The potter visually monitors the temperature and firing process. [1, 5, 6, 11, 15, 16, 17]"
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "United States",
+            "element_name": "Pueblo Pottery",
+            "relationship_reason": "Traditional hand-built pottery, often coil-built and pit-fired, with distinctive styles and deep cultural significance among various Pueblo Indian communities in New Mexico and Arizona. [16]"
+          },
+          {
+            "country": "Taiwan",
+            "element_name": "Indigenous Taiwanese Pottery (Amis and Tao tribes)",
+            "relationship_reason": "Traditional soft pottery, hand-moulded and fired in firewood piles on the ground, with specific gender restrictions and taboos associated with its making. [11]"
+          },
+          {
+            "country": "Peru",
+            "element_name": "Awajún Pottery",
+            "relationship_reason": "Hand-built pottery by the indigenous Awajún community, adorned with patterns inspired by native animals, plants, and landscapes, and coated in gloss made from plant resin. [7]"
+          },
+          {
+            "country": "Tunisia",
+            "element_name": "Sejnane Pottery",
+            "relationship_reason": "Traditional hand-built pottery crafted by women in Sejnane village, where clay is extracted from wadis and pots are adorned with motifs drawn from traditional tattoos and Berber weaving. [7]"
+          },
+          {
+            "country": "Botswana",
+            "element_name": "Kgafela Pottery",
+            "relationship_reason": "Pottery making within the Kgafela community is a spiritual practice, involving rituals during clay gathering and the use of finished pots for ancestral worship and healing. [7]"
+          },
+          {
+            "country": "India, Africa, Mexico",
+            "element_name": "Various Traditional Pottery",
+            "relationship_reason": "Families in these regions continue to practice pottery making in traditional ways, utilizing simple tools and locally sourced materials, reflecting ancient methods. [14]"
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-cf056ba0",
+      "element_name": "Aksara Ka Ga Nga",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aksara_Rejang.svg/1200px-Aksara_Rejang.svg.png",
+      "source_urls": [
+        "https://anjunganbengkulu.wordpress.com/ka-ga-nga/",
+        "https://howtoreadandhowtowritethekagangarejangscript.wordpress.com/",
+        "https://www.scribd.com/document/500174092/Aksara-Ka-Ga-Nga-Panduan-Lengkap",
+        "https://www.kompasiana.com/fathiyyah/5cc7e510bde57f07e532b272/menelusuri-jejak-aksara-ka-ga-nga-naskah-bengkulu-kuno-di-museum-negeri-bengkulu",
+        "https://bengkuluinteraktif.com/aksara-kaganga-bengkulu",
+        "https://kaganga.wordpress.com/2008/02/22/kaganga-rejang/",
+        "https://ejournal.unib.ac.id/index.php/kaganga/article/view/3990",
+        "https://jogja.antaranews.com/berita/238122/aksara-kaganga-suku-rejang-diuri-uri",
+        "https://menulistradisi.wordpress.com/2018/02/24/surat-ulu-the-rejang-extensions/",
+        "https://www.youtube.com/watch?v=115-9hW0v3c",
+        "https://en.wikipedia.org/wiki/Makasar_script",
+        "https://www.facebook.com/ASEANWorld24/posts/surat-ulu-the-ancient-writing-tradition-of-malay-people-in-southern-sumatra-the/1221124401377507/",
+        "https://merahputih.com/post/read/kaganga-aksara-tertua-di-dunia-tetap-lestari",
+        "https://ejournal.unib.ac.id/index.php/kaganga/article/view/2816/2422",
+        "https://www.youtube.com/watch?v=7uJt1wQzJ-g",
+        "https://omniglot.com/writing/kagangana.htm",
+        "https://en.wikipedia.org/wiki/Rejang_alphabet",
+        "https://omniglot.com/writing/rejang.htm",
+        "https://www.scribd.com/document/500174092/Aksara-Ka-Ga-Nga-Panduan-Lengkap",
+        "https://ejournal.unib.ac.id/index.php/kaganga/article/view/2816",
+        "https://www.kompas.com/skola/read/2025/12/03/170000369/aksara-jawa--a-comprehensive-guide-to-the-javanese-script",
+        "https://en.wikipedia.org/wiki/Ulu_scripts",
+        "https://www.kompas.com/skola/read/2026/08/20/170000869/aksara-jawa-martinah--unlocking-the-secrets-of-javanese-script",
+        "https://www.unesco.org/en/articles/making-indonesian-indigenous-language-scripts-available-online",
+        "https://id.wikipedia.org/wiki/Surat_Ulu",
+        "https://ejournal.unib.ac.id/index.php/jb/article/view/1012/912",
+        "https://www.infinityfoundation.com/mandala/i_es/i_es_shah_indian_knowledge_systems_frameset.htm",
+        "https://en.wikipedia.org/wiki/Javanese_script"
+      ],
+      "scraped_at": "2026-08-27T05:43:31.323340Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Bengkulu",
+          "South Sumatra",
+          "Lampung",
+          "Jambi"
+        ],
+        "lat": -4.0035183,
+        "lng": 101.8393474
+      },
+      "resume_analisa": {
+        "description": "Aksara Ka Ga Nga, also known as Rejang script or Surat Ulu, is an abugida writing system originating from the Brahmic family of scripts. It consists of 27 to 28 letters, including 19 single letters and 8 to 9 compound letters, along with 13 to 15 punctuation marks. This script is characterized by its angular and rigid lines. Historically, it evolved from the Pallawa and Kawi scripts, which were prevalent during the Srivijaya kingdom. Aksara Ka Ga Nga was traditionally inscribed on various natural materials such as bamboo, bamboo strips (locally called 'gelumpai'), rattan, tree bark ('daluang'), animal horns, and stone, before the introduction of paper. The writing was done using sharp implements like pointed stones or nails. The content of these manuscripts is diverse, encompassing customary laws, traditional medical practices, prayers, mantras, historical accounts, genealogies, poetry, and folk tales.",
+        "cultural_significance": "Aksara Ka Ga Nga holds significant cultural importance as a symbol of identity for the Rejang people and serves as a guide for preserving their local wisdom and values. It represents a rich writing tradition that predates the Srivijaya kingdom. Efforts are actively being made to ensure its preservation and continuity. These initiatives include integrating Aksara Ka Ga Nga into the local school curricula (muatan lokal) in Bengkulu, incorporating its symbols into batik motifs, and using it for street signage. Although it is recognized as an Intangible Cultural Heritage (WBTB) of Indonesia, it is not officially listed by UNESCO. However, UNESCO supports the digitization of Indonesian indigenous scripts, including Rejang, to enhance their online presence and ensure their survival in the digital age.",
+        "gemini_tags": [
+          "Traditional Script",
+          "Abugida",
+          "Indonesian Heritage",
+          "Rejang Culture",
+          "Sumatran Scripts",
+          "Intangible Cultural Heritage",
+          "Traditional Craftsmanship",
+          "Oral Traditions"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Writing System",
+        "materials_and_tools": [
+          "Bamboo",
+          "Bamboo strips (gelumpai)",
+          "Rattan",
+          "Tree bark (daluang)",
+          "Animal horns",
+          "Stone",
+          "Paper (later use)",
+          "Pointed stone or nail (for inscribing)"
+        ],
+        "step_by_step": [
+          "Maintain an inclination of 45 to 50 degrees when forming letters.",
+          "Write from left to right, moving from the bottom-left corner towards the top-right corner. Exceptions apply to letters that feature straight vertical lines at their beginning or end.",
+          "Ensure that vertical lines are half the height of the main letter.",
+          "Vary the thickness of lines: lines drawn upwards should be thin, while lines drawn downwards should be thick or bold.",
+          "Separate each word with a space equivalent to one or two letters.",
+          "For words beginning with the vowels Ē, E, I, O, or U, start with the letter 'A' and then modify its sound using appropriate diacritics.",
+          "Attach vowel diacritics to a base letter to alter its inherent 'a' sound to other vowel sounds (e.g., 'i', 'u', 'e', 'o').",
+          "Represent consonants at the end of a syllable using diacritics, such as a virama (a 'killer stroke'), which suppresses the inherent vowel of the consonant.",
+          "Utilize compound consonants (e.g., NGK, NGG, NT, ND, MP, MB, NJ) when a consonant sound appears in the middle of a word and is followed by specific subsequent letters.",
+          "Employ square grid patterns as a guide to ensure uniformity in writing and prevent misinterpretation.",
+          "Note that Latin letters F, V, Q, X, and Z do not have direct equivalents in Aksara Ka Ga Nga; F and V are typically replaced by the letter 'PA'."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Brahmi Script",
+            "relationship_reason": "Aksara Ka Ga Nga is a descendant of the Brahmi script, likely through the Kawi script."
+          },
+          {
+            "country": "Indonesia (Sumatra)",
+            "element_name": "Surat Ulu scripts (e.g., Lampung, Kerinci, Ogan)",
+            "relationship_reason": "Aksara Ka Ga Nga is part of a family of related scripts known as Surat Ulu, which includes other scripts from southern Sumatra."
+          },
+          {
+            "country": "Indonesia (Sumatra)",
+            "element_name": "Batak Script",
+            "relationship_reason": "The Batak script is also related to the Surat Ulu group, though it has a different letter order."
+          },
+          {
+            "country": "Indonesia (Sulawesi)",
+            "element_name": "Buginese (Lontara) Script",
+            "relationship_reason": "Some sources suggest a kinship between Aksara Ka Ga Nga and scripts found in Bugis, Sulawesi."
+          },
+          {
+            "country": "Indonesia (Java)",
+            "element_name": "Javanese Script (Aksara Jawa)",
+            "relationship_reason": "Both Aksara Ka Ga Nga and Javanese script are abugida writing systems derived from Brahmi scripts, sharing a common Indic origin."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-25T00:40:35.492970Z",
-    "total_ich_elements": 256,
-    "complete_records": 236,
+    "generated_at": "2026-08-27T05:44:02.817888Z",
+    "total_ich_elements": 258,
+    "complete_records": 238,
     "incomplete_records": 20,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 88,
+      "Traditional Craftsmanship": 90,
       "Social Practices & Rituals": 54,
       "Culinary Traditions": 41,
       "Culinary Traditions | Social Practices & Rituals": 3,
