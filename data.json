@@ -2671,47 +2671,78 @@
         "https://www.researchgate.net/publication/282299837_Ethnomedical_survey_of_plants_used_by_the_Bateq_in_Kuala_Koh",
         "https://www.researchgate.net/publication/262295604_Illness_Perception_and_Healing_Practices_among_the_Batek_Tribe_in_Kuala_Koh_Kelantan_Malaysia",
         "https://medic.upm.edu.my/upload/dokumen/20250212104523Qualitative_Exploration_of_the_Use_Knowledge_and_Perceptions_of_Medicinal_Plants_Among_Bateq_Villagers_in_Taman_Negara_Malaysia.pdf",
-        "https://artsandculture.google.com/story/the-bateq-people-their-ancient-folklores-ler-wei-rong/DwVR443p731bJA"
+        "https://artsandculture.google.com/story/the-bateq-people-their-ancient-folklores-ler-wei-rong/DwVR443p731bJA",
+        "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/batek-de-malaysia"
       ],
-      "scraped_at": "2026-03-14T22:33:42.075983Z",
+      "scraped_at": "2026-08-30T11:55:27.808617Z",
       "location": {
         "country": "Malaysia",
         "provinces": [
           "Kelantan",
-          "Pahang"
+          "Pahang",
+          "Terengganu"
         ],
-        "lat": 5.4021302,
-        "lng": 102.0635972
+        "lat": 4.5693754,
+        "lng": 102.2656823
       },
       "resume_analisa": {
-        "description": "The Batek people, an indigenous (Orang Asli) hunter-gatherer community residing in the tropical rainforests of Peninsular Malaysia, possess a rich and orally transmitted traditional medicine knowledge heritage. Their healing system addresses both spiritual and physical ailments. For spiritual illnesses, faith-healing is practiced, often involving shamans who invoke forest spirits through chanting. For physical conditions, they utilize a wide array of medicinal plants gathered from their forest environment. This traditional knowledge is deeply intertwined with their intimate relationship with nature and is crucial for their survival and well-being.",
-        "cultural_significance": "This traditional medicine knowledge is a cornerstone of Batek culture and identity. It represents generations of accumulated wisdom about their environment and its resources, demonstrating their symbiotic relationship with the forest. The oral transmission of this knowledge from elders to younger generations is vital for cultural continuity and the preservation of their unique way of life. It provides a holistic approach to health, encompassing both physical and spiritual dimensions, and reinforces community bonds through shared healing practices.",
+        "description": "The Batek people, an indigenous Orang Asli group primarily inhabiting the rainforests of Peninsular Malaysia, particularly around Taman Negara National Park, maintain a rich tradition of medicinal knowledge and healing practices. These practices are deeply integrated with their nomadic hunter-gatherer lifestyle and their profound connection to the forest. Their understanding of illness encompasses both spiritual factors, such as harassment by supernatural powers and faint-heartedness, and physical factors, including environmental changes and human impact on natural resources. Healing involves a dual approach: faith-healing, often led by shamans (hala') who invoke forest spirits and use chants, and the application of medicinal plants gathered from their natural surroundings. This knowledge is orally transmitted across generations, forming a crucial part of their cultural heritage.",
+        "cultural_significance": "Traditional medicinal knowledge is fundamental to the Batek's survival, cultural identity, and their symbiotic relationship with the rainforest. Their belief system, which attributes certain illnesses like 'ke'oy' (fever, depression, weakness) to social disharmony, encourages peaceful community interactions [cite: 3 from previous search]. The rituals and use of specific plants reinforce their worldview, emphasizing the interconnectedness of humans, nature, and the spiritual realm. The intergenerational transmission of this knowledge through oral traditions and cultural practices is vital for sustaining their socio-ecological resilience.",
+        "drr_relevance": true,
+        "drr_mechanism": "The Batek's traditional medicinal knowledge fosters ecological resilience and climate adaptation through their extensive understanding and sustainable stewardship of forest resources. Their reliance on forest herbs for healing underscores the necessity of preserving biodiversity and healthy ecosystems, which are essential for mitigating environmental changes and their impacts. Their Traditional Ecological Knowledge (TEK) enables them to observe and respond to local climate variations, manage customary lands and resources to ensure food and resource security, and maintain robust social networks for collective action during environmental challenges. The holistic perspective embedded in TEK promotes maintaining natural balance, which is critical for addressing the complex, interconnected issues presented by climate change.",
         "gemini_tags": [
-          "Indigenous Medicine",
-          "Herbal Medicine",
-          "Shamanism",
-          "Oral Tradition",
+          "Indigenous Knowledge",
+          "Traditional Medicine",
           "Ethnobotany",
-          "Malaysian Heritage",
-          "Healing Rituals",
-          "Forest Dwellers"
+          "Healing Practices",
+          "Batek People",
+          "Malaysia",
+          "Rainforest",
+          "Cultural Heritage",
+          "Ecological Resilience",
+          "Climate Adaptation",
+          "Oral Tradition",
+          "Social Practices",
+          "Shamanism",
+          "Medicinal Plants"
         ]
       },
       "resume_tata_cara": {
-        "type": "Herbal Remedy Preparation and Faith-Healing Rituals",
+        "type": "ritual_sequence/medicinal_preparation",
         "materials_and_tools": [
-          "Medicinal plants (e.g., Spatholobus ferrugineus, Eurycoma longifolia, Spondias pinnata, Saraca cauliflora, Peliosanthes teta)",
-          "water",
-          "containers for preparation"
+          "Medicinal plants (leaves, barks, roots, seeds, berries)",
+          "Water",
+          "Herbal preparation tools (pots for boiling, straining materials)",
+          "For spiritual healing: Shamans (hala')",
+          "Chants and invocations"
         ],
-        "step_by_step": null
+        "step_by_step": [
+          "Diagnosis and identification of illness cause: Illnesses are perceived to stem from either spiritual factors (e.g., supernatural harassment, faint-heartedness) or physical factors (e.g., natural phenomena changes, human negligence).",
+          "Selection of healing approach: Based on the perceived cause, either faith-healing or herbal application is chosen.",
+          "For spiritual illnesses (faith-healing): A shaman (hala') performs rituals involving chants and invocations of forest spirits. Specific actions may include applying folk remedies, cooling the victim's heart, blowing on their chest, and symbolically removing the disease [cite: 3 from previous search].",
+          "For physical illnesses (herbal application): Plant collection: Medicinal plants are gathered from the forest, sometimes according to specific lunar phases, with the shaman's wisdom guiding the selection of ingredients. Leaves are the most frequently used plant part.",
+          "Preparation (e.g., Decoction): For tougher plant parts like roots, barks, and seeds, decoction is a common method. This typically involves chopping or crushing the plant material to increase surface area, placing the material in water (e.g., 1 part herb to 4 parts water), bringing the mixture to a boil and simmering for 15-45 minutes, and straining the liquid to remove solid residues.",
+          "Administration: Prepared remedies, often decoctions, are frequently administered orally.",
+          "Knowledge Transfer: This knowledge is passed down through verbal communication from elders to younger generations, though systematic documentation is often absent."
+        ]
       },
       "shared_heritage_detection": {
-        "is_shared": false,
-        "confidence_score": 0.8,
-        "related_elements": []
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Canada",
+            "element_name": "Traditional Ecological Knowledge (TEK) in Climate Change Adaptation",
+            "relationship_reason": "The Batek's traditional medicinal knowledge, deeply rooted in their understanding of the rainforest ecosystem, exemplifies Traditional Ecological Knowledge (TEK) which is a shared heritage among indigenous communities globally, including those in Canada, for climate adaptation and fostering ecological resilience [cite: 11 from previous search, 15 from previous search, 17 from previous search, 19 from previous search]."
+          },
+          {
+            "country": "Pakistan",
+            "element_name": "Traditional medicinal knowledge and practices among the tribal communities of Thakht-e-Sulaiman Hills",
+            "relationship_reason": "Similar to the Batek, tribal communities in Pakistan also rely on traditional medicinal knowledge, encompassing the use of medicinal plants and spiritual healing practices, passed down through oral traditions, to address various ailments and maintain well-being [cite: 20 from previous search]."
+          }
+        ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-7c3c1098",
@@ -2903,44 +2934,69 @@
         "https://www.scribd.com/document/381665427/Philippine-Oral-Lore",
         "https://www.researchgate.net/publication/371986422_Kami_Kadto_and_the_Power_of_Oral_Traditions_in_Shaping_Philippine_Heritage",
         "https://tabletwelve.wordpress.com/2023/12/09/the-enduring-legacy-of-storytelling-in-filipino-culture/",
-        "https://www.britannica.com/place/Philippines/Culture-and-diversity"
+        "https://www.britannica.com/place/Philippines/Culture-and-diversity",
+        "https://www.aswangproject.com/summary-sugidanon-epics-central-panay/"
       ],
-      "scraped_at": "2026-03-15T01:22:48.959360Z",
+      "scraped_at": "2026-08-30T11:56:07.811413Z",
       "location": {
         "country": "Philippines",
         "provinces": [
-          "Central Panay"
+          "Iloilo",
+          "Capiz",
+          "Aklan",
+          "Antique"
         ],
-        "lat": 11.701064,
-        "lng": 122.3670311
+        "lat": 12.7503486,
+        "lng": 122.7312101
       },
       "resume_analisa": {
-        "description": "Suguidanon is a centuries-old oral tradition of epic chanting performed by the Panay Bukidnon communities in upland Central Panay, Philippines. It encompasses ten epics that articulate their spiritual worldview, customs, and identity. This practice is a fundamental means of transmitting knowledge, ideas, and culture from one generation to the next, reflecting the interconnectedness between past generations and the living culture.",
-        "cultural_significance": "Suguidanon serves as both entertainment and a vital medium for transmitting cultural knowledge during social and spiritual gatherings. It plays a crucial role in shaping Filipino heritage by acting as a conduit for memory, identity, and continuity, conveying genealogies, historical accounts, values, ethics, and the spirituality of the community. The oral traditions, including epics, preserve social beliefs and values, ensuring the survival of cultural knowledge across generations and strengthening the social fabric.",
+        "description": "Suguidanon is a centuries-old oral tradition of epic chanting performed by the Panay Bukidnon communities in upland Central Panay, Philippines. It encompasses ten epics that reflect their spiritual worldview, customs, and identity. Traditionally performed by 'manugsuguidanon' (chanters), 'binukot' (secluded maidens), and 'babaylan' (shamans), the chanting is complex, uses Old Kinaray-a, and requires great memorization and vocal skill, often taking days to complete. The narratives preserve representations of hospitality, kinship, marriage negotiations, ritual obligations, customary justice, environmental boundaries, and 'tuos' (a pledge or agreement).",
+        "cultural_significance": "Suguidanon serves as both entertainment and a vital medium for transmitting cultural knowledge, history, moral values, and social norms across generations during social and spiritual gatherings, rituals, harvests, or as lullabies. It reinforces communal identity, fosters a deep connection to ancestral heritage, and instills pride in the Panay Bukidnon's unique culture. The tradition has been documented by anthropologists like Felipe Landa Jocano and Dr. Alicia P. Magos, with efforts to preserve it through Schools for Living Traditions and the recognition of master chanters like Federico 'Tuohan' Caballero as National Living Treasures.",
+        "drr_relevance": true,
+        "drr_mechanism": "The Suguidanon epics contribute to ecological resilience and climate adaptation by serving as a repository of traditional ecological knowledge. The narratives transmit ancestral wisdom, moral values, and social norms that emphasize respect for nature, environmental boundaries, and sustainable living. This deep connection to the natural world, embedded in the stories, fosters a community's understanding of its environment and its vulnerabilities, thereby building adaptive capacity to environmental changes and potential disasters.",
         "gemini_tags": [
           "Oral Tradition",
           "Epic Chanting",
-          "Philippine Folklore",
-          "Indigenous Culture",
           "Panay Bukidnon",
-          "Cultural Transmission",
+          "Philippines",
+          "Intangible Cultural Heritage",
+          "Indigenous Knowledge",
+          "Cultural Preservation",
+          "Disaster Risk Reduction",
+          "Ecological Resilience",
+          "Climate Adaptation",
           "Performing Arts",
-          "Intangible Cultural Heritage"
+          "Storytelling"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "ritual_sequence",
+        "materials_and_tools": [
+          "Voice",
+          "Memory",
+          "Traditional knowledge of epics",
+          "Old Kinaray-a language"
+        ],
+        "step_by_step": [
+          "Learning: The tradition is acquired orally from elders, 'binukot' (secluded maidens), or experienced 'manugsugidanon' (chanters) through apprenticeship and immersion in the community's cultural life, often beginning in childhood.",
+          "Preparation: Extensive memorization of the lengthy narratives (up to ten epics, some taking days to complete) and mastery of complex vocal skills and traditional chanting styles in Old Kinaray-a are required.",
+          "Performance Context: Suguidanon is performed during various social gatherings, spiritual rituals, harvests, or as lullabies. Historically, 'binukot' and 'babaylan' (shamans) were key performers.",
+          "Delivery: The chanting is characterized by its rhythmic and melodic delivery, utilizing specific vocal tones and timbre, often accompanied by humming ('pangalimog').",
+          "Function: The performance serves as a multifaceted cultural practice, providing entertainment, transmitting historical and moral knowledge, and reinforcing communal identity and spiritual connections."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
-        "confidence_score": 0.8,
+        "confidence_score": 0.95,
         "related_elements": [
           {
-            "country": "Global",
-            "element_name": "Oral Storytelling and Epic Traditions",
-            "relationship_reason": "The practice of transmitting history, literature, and cultural knowledge through oral storytelling and epic chanting is a widespread human tradition found in numerous indigenous and ancient cultures worldwide, serving similar functions of cultural preservation and identity formation."
+            "country": "...",
+            "element_name": "...",
+            "relationship_reason": "..."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-e8c9a11f",
@@ -4081,117 +4137,91 @@
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTvgno-_UUSIKrly_zUcLbfyYNlXwNUH3kMfi-DMU4qXpg6xdz5XP202qGeDe9bgeLDwd2xCln894NQREgWvekrPHvPS4rePymiujPti2RtaIic5bBTludJBGfxvE=",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHctC8r2peTd9ceWAcGCinUEx08aITl88pUuze339QvT2GiQCrsxSp5GZp_OMTP1hX2pGbbBOtzDzXBN8iV-zyRPiXQyeGhhQ6jENMPDfCTyIqZvdbGNp25IZks2URTPiQShDokQ==",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECoT46G02CjQ6meDoL-HnlDafQ3lD38qDPnOXJ-JOByb-AmooUJZAqSHw_lZ_Zt7hBduXUo2Vf7td-MgUBuO6zd3TH-R4hajubLUfCSInMyjvtX0RqtOymCXZbfoXbXRi1RkrUdKc0SaFPfG1z-ZoNrWupcbf7Vu42JOcF4LgoFUzz",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8S8-N0qgzS6XAG93RW2UpzBuNUvTe6fisCnZONxyNFo6WJSgWcilvehqyYyZ4WFOZ2brvilBWvy1sVWt4cm-qM6kovirgTrXvjHp53esobt3Sy7jAzuDgd7diUcDZYb-rzX0eOheeKWrDw4At7sdYNN_XXZf4mky_yiaNM8Dqh1BFFVi_Rn3dFEQw_4PW-tw",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8S8-N0qgzS6XAG93RW2UpzBuNUvTe6fisCnZONxyNFo6WJSgWcilvehqyYyZ4WFOZ2brvilBWvy1sVWt4cm-qM6kovirgTrXvjHp53esobt3Sy7jAzuDgd7diUcDZYb-rzX0eOheeKWrDw4At7sdNNN_XXZf4mky_yiaNM8Dqh1BFFVi_Rn3dFEQw_4PW-tw",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRH44fxCOY6cx6BEsIg_TLc7ApbmabdWEYT8govXC1dTSEvxOj92mf_62P-4aucFxXgx0g7i_QwO3cehWZpRUrh_dR9TaTWTqaX7V568rR0SYtFe9Wwb25ApI0HtF3oR87qDnR8IVa4SzDQS2LHQ==",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9jTHUY4odzESZGCxgFgbdQ125N2LRuFrtPAnwESJANEp845qIJzubyyXdM9P3SkD-bdZSHU8EnFmpnSHteFG9vnpZ4bR3YxayLAWWd6d1UX_R3xt_sxwFo759dQ2IQdBGL7DIVZHOWxd0b1QUCTBRezF8Yxcbf-cT",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXo1S7zO_wjnreVCW7e60C1Myna4r0dhZPFLpbnSxl26I2X_RhIduqhw9GzcN9hLQ17RhjdKLPi9NPdrNHvY6HX8EzCJ1qrAzFy_Im8Ku5FFSjqoCE-OwWkKHIUMAvbqvWi9qA8fxyWqKC66cPj9Hb_ZslJI7_ORAa2Hc1nFw6iPSCJphzDwuRIPPCoz94",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpfXYwVCF2RBGbflKc3Xst4SS2QyX4NOqc6jCSQLDVeI2GdzREFXPtb75Nj4LoLTcaItDdRPs4kTrwdIE82p8J3hDsfaAIy8Ke7Y3bwh_mS5RfQ9Lr-pRbYta6laaoAG2kPgO8M_JhDQ7DYJG8Bs4URZhf22Hz363My_SK",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9B6ISZvkXsPU0vMPirwBR9psrAZ-YoiR-D6dFnT5KPqXk2-s9eNPt2TWP8w1xNZSbI8JqVsSXKj98B8wz7VYfJDdf7DoNALJMTB-fea9kAp8alCVQGoQBqOCpcI-aJg8GTBfZDU2pO13dOKWBXA==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdg8H0ZzVJP3qcodA6wnMFMBgc7DgtzgSXkaj4uIYfHZ3lZOBe5_gerkAVjPBGgYiWgNwI7_6EQO_T9dRoFGqdLEQy88GQ5LrDK7-n2_BHwuggyihZlq82WO3NXptTa4str-ROLburuD_WDVQbN-NwwV5NiWzjW7Oh-F2aekDfSiLqTCAXMF_2Bvtr0otGZNzBNjPWtGtd",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdg8H0ZzVJP3qcodA6wnMFMBgc7DgtzgSXkaj4uIYfHZ3lZOBe5_gerjAVjPBGgYiWgNwI7_6EQO_T9dRoFGqdLEQy88GQ5LrDK7-n2_BHwuggyihZlq82WO3NXptTa4str-ROLburuD_WDVQbN-NwwV5NiWzjW7Oh-F2aekDfSiLqTCAXMF_2Bvtr0otGZNzBNjPWtGtd",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBaund3I5GyYinnoFxhOL5esgRWJLNDclyX0ptDAuR_ahYi8vR6w-PSARLJGtejgzJgX5qM_3i8aQ5Tczy7BFdiIWVLZmm8jZMnjLJIVSi0tLV53dJ-xcGRlmJWtCnfT_mBBG56OJXJkSg-lVfbuqbAZjkDDuGU31nH8ZppVDUJdBrh594m2-sUkRu",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoc1zQ7ABBr3s6gK_Ikamo85LgldATP9Pd1078igoonaBRyMDRp-7gL8S6ZyFXwy-NDcIqdgs15mv0b-IEha6Y-Kxo9CeR5e1xKnVoURRqhOrP9ngnpxdXn04dsHAyr0nV9RYmv4x90jE=",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEqPF6kGzuuiuH7ZU1XrehxquSBTYHAd-wJ1Ne0KNCETYZ12_jBGkZYGj3O5lMYTGVStXK-XszP0wXNSEDhFhItrMNFLN-6AsGvvSDpGG-4YAYtpJTpQ6MQQ3fcyR86pzbAbgendfdjDUHh-yZU7rqstCD2jOM7RiqgaoiMhYK-kqfEdt0PuCWMpB8pLcpzD1-Usk9",
         "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3M0f5RTfm44jtGyZ4AvptuiCCz1WJfEs87cgXhtm9F3wsrKdsJCAqQMvGIqSV-W3vdSZnagCVLniF8oiTnjqQZZ3hTYEM9zgaY0Fj3PkGMvmzZQaGRe9swrSFYhZ2lVpbvLtd7p7h58gh65ZUgVEMjyp0",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvswLKmM05ViXEKbxV-gZkJNN-mF5WT646I30isGOVegOUIVL9_DPN7xPPfcCTEsqG5SQ8-sdLwLrpQBmiycLweB0xzQ79O7TR6JKsFycQCH9i5I9Inu-xqRXxz0sYA-V518_HJSpdnOW1MqyZs26wcWcLSGn1THWdpt0="
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvswLKmM05ViXEKbxV-gZkJNN-mF5WT646I30isGOVegOUIVL9_DPN7xPPfcCTEsqG5SQ8-sdLwLrpQBmiycLweB0xzQ79O7TR6JKsFycQCH9i5I9Inu-xqRXxz0sYA-V518_HJSpdnOW1MqyZs26wcWcLSGn1THWdpt0=",
+        "https://en.wikipedia.org/wiki/Paiwan_people"
       ],
-      "scraped_at": "2026-03-22T14:09:27.848996Z",
+      "scraped_at": "2026-08-30T11:56:32.229219Z",
       "location": {
         "country": "Taiwan",
         "provinces": [
           "Pingtung County",
           "Taitung County"
         ],
-        "lat": 22.6828017,
-        "lng": 120.487928
+        "lat": 23.9739374,
+        "lng": 120.9820179
       },
       "resume_analisa": {
-        "description": "The Masalut, or Millet Harvest Thanksgiving Festival, is one of the most significant annual rituals for the Paiwan indigenous people of Taiwan. It marks the successful completion of the millet harvest and symbolizes the passing of a year and the dawn of a new beginning. This festival is deeply intertwined with their agricultural lifestyle, serving as a time to worship ancestral spirits and offer prayers for a prosperous harvest in the upcoming year. The ceremony involves the active participation of the community, with priests and shamans playing crucial roles in presiding over the various rituals.",
-        "cultural_significance": "Millet holds profound cultural and traditional significance for the Paiwan people, being a staple crop that has sustained them for generations. The Masalut festival strengthens community bonds, expresses collective gratitude for the earth's bounty, and reinforces the spiritual connection between the Paiwan and their ancestral spirits. It is a vibrant occasion for communal gatherings, the sharing of traditional foods, and the preservation of their unique cultural identity through the practice of their language, songs, and traditional dances. The festival also underscores the importance of the social hierarchy within Paiwan society, with chiefs playing pivotal roles in organizing and leading the rituals and feasts.",
+        "description": "The Masalut, or Millet Harvest Thanksgiving Festival, is the most important annual ritual for the Paiwan people, held after the millet harvest. It symbolizes the passing of a year and the beginning of a new one. The festival involves a series of rituals including storing millet in the barn, praying for blessings, and selecting seeds for the coming year. On the second day, the chief, shaman, and priest bestow blessings and inspect the harvest of each household, with offerings made to ancestral spirits. The festival also features cultural performances, such as the Paiwan Warrior Dance and traditional folk songs, and a communal feast with millet-based dishes.",
+        "cultural_significance": "Millet holds profound significance as a traditional and culturally central crop for the Paiwan people. The Masalut festival reinforces community bonds, expresses gratitude for a bountiful harvest, and strengthens the connection between the living and ancestral spirits. It serves as a crucial 'time' indicator in their agricultural calendar, marking both an end and a vibrant new beginning. The ceremonies, led by chiefs and shamans, are essential for worshipping ancestral spirits and praying for future harvests, ensuring the well-being and prosperity of the tribe.",
+        "drr_relevance": true,
+        "drr_mechanism": "The festival's inherent focus on millet cultivation and the selection of seeds for the coming year directly supports agricultural biodiversity and adaptation to local environmental conditions, which are vital for food security and resilience against environmental changes. Beyond the festival, the broader Paiwan traditional ecological knowledge, accumulated over generations, provides deep insights into local topography, climate, and natural resources. This knowledge is crucial for informed decision-making regarding land use, post-disaster relocation, and developing effective strategies to reduce risks from natural hazards like landslides and typhoons.",
         "gemini_tags": [
           "Indigenous culture",
-          "Harvest festival",
-          "Thanksgiving",
           "Taiwan",
+          "Harvest festival",
           "Paiwan",
+          "Masalut",
           "Millet",
           "Rituals",
-          "Ancestor worship",
-          "Community",
-          "Traditional food",
-          "Social Practices"
+          "Ancestral worship",
+          "Traditional agriculture",
+          "Ecological knowledge",
+          "Disaster risk reduction",
+          "Climate adaptation",
+          "Social practices"
         ]
       },
       "resume_tata_cara": {
-        "type": "Social Practices & Rituals / Festival",
+        "type": "ritual_sequence",
         "materials_and_tools": [
-          "Newly harvested millet (for offerings and food)",
-          "Traditional Paiwan clothing",
-          "Offerings for ancestral spirits (often include food and drinks)",
-          "Ceremonial trays",
-          "Millet cakes (qavai)",
-          "Leaf-wrapped food (cinavu, millet dumplings with pork wrapped in false roselle leaves)"
+          "Millet (harvested)",
+          "Barn (for storage)",
+          "Offerings (from harvest)",
+          "Ancestral spirit house",
+          "Ceremonial headgear",
+          "Traditional clothing",
+          "Nose flutes (traditionally used in harvest festivals)"
         ],
         "step_by_step": [
-          "The festival is held annually after the millet harvest, signifying the completion of agricultural activities and the transition to a new year.",
-          "Specific rituals are observed at various stages of millet cultivation, including land clearing, sowing, weeding, mowing, and the final harvest.",
-          "On the first day of the festival, the community gathers to store the newly harvested millet in barns. Prayers for blessings are offered, and seeds are carefully selected for the upcoming planting season.",
-          "On the second day, the chief convenes the shaman and priest to bestow blessings upon the community and inspect the harvest of each household.",
-          "A portion of the harvested millet is then taken by the chief as offerings for the ancestral spirits, which are placed in the ancestral spirit house.",
-          "Following the offerings, the shaman performs a ritual before the remaining harvest is stored in new millet barns.",
-          "Throughout the festival, especially on the main day, the households of the chiefs prepare elaborate tribal feasts, shared generously among tribal members and visitors.",
-          "Traditional millet-based dishes, such as 'cinavu' (millet dumplings often filled with pork and wrapped in false roselle leaves), are prominently featured in the communal meals.",
-          "The festival includes vibrant cultural performances, such as the Paiwan Warrior Dance performed by young men and hunters, accompanied by traditional folk songs.",
-          "On the evening of the main festival day, a 'Night of Beauty pageant' takes place, where all tribal members participate dressed in their most traditional and complete outfits, joining hands in a communal circle dance for several hours.",
-          "A ball-shooting ritual, known as 'kadjuq', is also a component of the Masalut, though specific details of its execution are not extensively described in the available information."
+          "Rituals are performed at each stage of millet cultivation, including land clearing, sowing, weeding, and mowing.",
+          "On the first day of the festival, harvested millet is stored in the barn.",
+          "Prayers for blessings are offered, and seeds are selected for the upcoming year's planting.",
+          "On the second day, the chief summons the shaman and priest to bestow blessings upon the community.",
+          "The chief, shaman, and priest inspect the harvest of each household.",
+          "A portion of the harvest is taken by the chief to be used as offerings for ancestral spirits in the ancestral spirit house.",
+          "On the main festival day, cultural performances, such as the Paiwan Warrior Dance and traditional folk songs, are presented at the chiefs' residences.",
+          "An abundant tribal feast, featuring various millet-based dishes like Cinavu, is prepared and shared among tribal members and visitors.",
+          "Overall ceremonies are led by chiefs and shamans to worship ancestral spirits and pray for a bountiful harvest in the coming year."
         ]
       },
       "shared_heritage_detection": {
         "is_shared": true,
-        "confidence_score": 0.9,
+        "confidence_score": 0.8,
         "related_elements": [
           {
-            "country": "United States",
-            "element_name": "Thanksgiving",
-            "relationship_reason": "Both are harvest festivals expressing gratitude for a bountiful crop and involve communal feasts."
+            "country": "Taiwan",
+            "element_name": "Amis Harvest Festival (Ilisin)",
+            "relationship_reason": "Similar cultural practice of celebrating harvest and ancestral spirits among Taiwanese indigenous peoples."
           },
           {
-            "country": "Germany",
-            "element_name": "Erntedankfest",
-            "relationship_reason": "A harvest thanksgiving festival celebrated with church services, processions, and folk dances."
-          },
-          {
-            "country": "Ireland",
-            "element_name": "Samhain",
-            "relationship_reason": "An ancient Celtic festival marking the end of harvest and the beginning of winter, involving bonfires and storytelling."
-          },
-          {
-            "country": "India",
-            "element_name": "Pongal",
-            "relationship_reason": "A four-day thanksgiving festival for the sun god, celebrating the rice harvest with offerings and communal meals."
-          },
-          {
-            "country": "Japan",
-            "element_name": "Akimatsuri",
-            "relationship_reason": "An autumn festival celebrating agricultural riches."
-          },
-          {
-            "country": "Peru",
-            "element_name": "Fiesta de la Papa (Potato Festival)",
-            "relationship_reason": "A harvest festival dedicated to a staple crop, similar to the Paiwan's focus on millet."
-          },
-          {
-            "country": "China",
-            "element_name": "Zhongqiu Jie (Mid-Autumn Festival)",
-            "relationship_reason": "A harvest festival characterized by mooncakes and lanterns, celebrating the harvest moon."
-          },
-          {
-            "country": "Philippines",
-            "element_name": "Punnuk rice harvest ritual (Ifugao)",
-            "relationship_reason": "A ritual celebrating the end of the growing season and offering respect to deities for abundance."
+            "country": "Taiwan",
+            "element_name": "Rukai Harvest Festival",
+            "relationship_reason": "Similar cultural practice of celebrating harvest and ancestral spirits among Taiwanese indigenous peoples."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-e8d329f9",
@@ -23339,7 +23369,7 @@
           "Mediterranean & Alpine Mountain Regions"
         ],
         "lat": 43.7102,
-        "lng": 7.2620
+        "lng": 7.262
       },
       "resume_analisa": {
         "description": "Dry stone walling is the ancient craft of assembling and interlocking natural stones without the use of mortar, cement, or adhesive binders. Structural stability is achieved exclusively through careful stone selection, gravitational load distribution, friction, and interlocking alignment. Widely utilized across steep European mountain slopes and Mediterranean landscapes, this practice creates agricultural terrace systems, property enclosures, and runoff mitigation retaining walls.",
@@ -23700,7 +23730,7 @@
           "Pirojpur",
           "Barisal"
         ],
-        "lat": 22.7010,
+        "lat": 22.701,
         "lng": 90.3535
       },
       "resume_analisa": {
@@ -24628,7 +24658,7 @@
           "Rajasthan (Alwar, Jaipur, Dausa districts)",
           "Haryana"
         ],
-        "lat": 27.5530,
+        "lat": 27.553,
         "lng": 76.6346
       },
       "resume_analisa": {
@@ -24680,17 +24710,278 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-eeb9276d",
+      "element_name": "Falaj Irrigation Systems",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Aflaj_Irrigation_Systems_of_Oman&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Aflaj_Irrigation_Systems_of_Oman",
+        "https://whc.unesco.org/en/list/1207/",
+        "https://www.omanobserver.om/article/1152010/oman/aflaj-system-endures-as-living-water-heritage",
+        "https://www.un-ihe.org/news/aflaj-systems-oman-community-led-water-management-practice",
+        "https://www.watermuseums.net/omani-aflaj/",
+        "https://artsandculture.google.com/asset/aflaj-irrigation-systems-of-oman/1gG1wK5i-1kM8Q"
+      ],
+      "scraped_at": "2026-08-30T11:57:07.203133Z",
+      "location": {
+        "country": "Oman",
+        "provinces": [
+          "Al Dakhiliyah",
+          "Al Sharqiyah",
+          "Al Batinah",
+          "Muscat Governorate"
+        ],
+        "lat": 22.67,
+        "lng": 57.5
+      },
+      "resume_analisa": {
+        "description": "The Falaj Irrigation Systems (Aflaj, plural) are ancient gravity-fed water networks in Oman that channel water from underground sources, springs, or wadis (dry riverbeds) to agricultural lands and settlements. These systems consist of subterranean tunnels and surface channels, some dating back as far as 2500 BC, with a refined qanat falaj technology believed to be from the Iron Age (around 540 BCE). There are three main types: Daudi (underground channels with perennial flow), Ghaili (seasonal flow from wadis), and Aini (fed directly from mountain springs).",
+        "cultural_significance": "Deeply rooted in Omani history and culture, the Aflaj systems represent human ingenuity in adapting to and thriving in an arid environment. They are a symbol of water conservation and sustainable agricultural practices, embodying a complex socio-technical system that reflects the integration of Arab-Omani tribal structure with Ibadi jurisprudence, emphasizing cooperation, equity, fairness, and conflict avoidance. The communal management and equitable water sharing, often guided by astronomical observations, are crucial to their enduring legacy and social cohesion. Five of these systems were inscribed on the UNESCO World Heritage List in 2006.",
+        "drr_relevance": true,
+        "drr_mechanism": "The Falaj systems are a prime example of sustainable water management in a desert region, providing a continuous and reliable water supply for agriculture and domestic use, thereby contributing significantly to drought resilience and climate adaptation. Their gravity-fed design ensures that water use is inherently sustainable and does not exceed water availability, requiring no external energy input. The communal governance model, with precise, time-based water allocation systems, ensures equitable access and distribution, which is vital during periods of water scarcity and fluctuating availability. This traditional knowledge system fosters community awareness of farsighted water use and adaptation to drier environments.",
+        "gemini_tags": [
+          "Traditional Water Management",
+          "Irrigation Systems",
+          "Community Governance",
+          "Drought Resilience",
+          "Climate Adaptation",
+          "Omani Heritage",
+          "Sustainable Practices",
+          "Ancient Engineering",
+          "Social Cohesion"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Water Management System / Traditional Engineering",
+        "materials_and_tools": [
+          "Traditional digging tools",
+          "Masonry for channels",
+          "Burnt clay rings for shaft mouths"
+        ],
+        "step_by_step": [
+          "**Source Identification**: Water is sourced from underground aquifers (mother wells), natural springs, or surface runoff collected from wadis.",
+          "**Tunnel/Channel Excavation**: Gently sloping subterranean tunnels (for Daudi falaj) are dug to tap groundwater, often extending for kilometers and reaching depths of tens of meters. Vertical access shafts are constructed at regular intervals (approximately every 20-50 meters) for excavation, ventilation, and maintenance. Open surface channels are used for Ghaili and Aini falaj.",
+          "**Gravity Flow Design**: The channels are meticulously designed with a precise, gentle gradient to allow water to flow continuously by gravity from the source to the distribution areas without the need for mechanical pumps.",
+          "**Water Distribution**: Water is channeled to agricultural lands for irrigating crops like date palms, grains, and vegetables, and also to villages for domestic use.",
+          "**Communal Management and Allocation**: Water rights are carefully apportioned among families and farms based on precise, time-based allocations (e.g., using sundials during the day and star positions at night). This communal schedule is managed by a traditional official called the `arif al falaj` (falaj overseer) or `wakil`, who adjudicates disputes and maintains records.",
+          "**Maintenance**: Regular maintenance, including clearing silt and repairing masonry, is a collective effort overseen by the `arif al falaj` or `wakil` to ensure the longevity and purity of the water supply."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Iran",
+            "element_name": "Qanat (Kariz) irrigation system",
+            "relationship_reason": "The Falaj systems, particularly the Daudi type, are technically similar to the Qanat (or Kariz) irrigation systems found in Iran. While some literature suggests the origin of qanat in Persia, archaeological evidence in Oman indicates that irrigation systems, including refined qanat-like technology, may have existed independently or even earlier in the Hajar Mountains of Oman."
+          },
+          {
+            "country": "Afghanistan",
+            "element_name": "Qanat/Kariz",
+            "relationship_reason": "The same qanat technology, which involves underground channels and vertical shafts, is also found in Afghanistan, indicating a shared historical spread of this water management technique."
+          },
+          {
+            "country": "North Africa",
+            "element_name": "Qanat/Foggara",
+            "relationship_reason": "Similar gravity-fed underground water systems, often referred to as foggara or qanat, spread across North Africa as part of historic Islamic practices."
+          },
+          {
+            "country": "Spain",
+            "element_name": "Qanat/Galerías",
+            "relationship_reason": "The technology of qanats also spread to parts of Spain, reflecting a broader diffusion of this ancient irrigation method."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-03f06897",
+      "element_name": "Queijo Artesanal da Serra da Canastra",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Queijo_da_Canastra.jpg/1200px-Queijo_da_Canastra.jpg",
+      "source_urls": [
+        "https://forbes.com.br/forbesagro/2024/12/queijo-minas-artesanal-se-torna-patrimonio-cultural-imaterial-da-humanidade/",
+        "https://pt.wikipedia.org/wiki/Queijo_canastra",
+        "https://www.serradacanastra.com.br/o-queijo-da-canastra",
+        "https://industriarural.com.br/noticia/quer-fazer-queijo-canastra-aqui-o-passo-a-passo-e-os-segredos",
+        "https://queijocanastra.com.br/queijo-canastra-fabricacao-caseira/",
+        "https://www.milkpoint.com.br/noticias-e-mercado/artigos/o-que-o-queijo-canastra-tem-de-diferente-por-que-e-tao-especial-257619n.aspx",
+        "https://aupa.com.br/queijo-canastra-demonstra-impacto-positivo-de-saberes-tradicionais/",
+        "https://jornalponto.com.br/queijaria-de-piumhi-aposta-na-sustentabilidade-e-agrega-valor-ao-queijo-canastra/",
+        "https://agroemcampo.com.br/queijo-da-canastra-e-produzido-debaixo-de-floresta/",
+        "https://www.youtube.com/watch?v=F0_M_X_S_0Q"
+      ],
+      "scraped_at": "2026-08-30T11:57:46.825468Z",
+      "location": {
+        "country": "Brazil",
+        "provinces": [
+          "Minas Gerais"
+        ],
+        "lat": -18.5264844,
+        "lng": -44.1588654
+      },
+      "resume_analisa": {
+        "description": "Queijo Artesanal da Serra da Canastra is a traditional Brazilian cheese produced for over two centuries in the Serra da Canastra region of Minas Gerais. It is made from raw cow's milk, without pasteurization, which contributes to its complex and distinctive flavor profile. The cheese typically features a firm, yellowish rind and a soft, flavorful interior, often described as strong, dense, and with a slightly spicy or acidic taste. The unique 'terroir' of the Serra da Canastra, encompassing its climate, altitude, native pastures, and water sources, is considered fundamental to the development of its singular characteristics.",
+        "cultural_significance": "The Queijo Artesanal da Serra da Canastra is more than just a food product; it is deeply embedded in the cultural identity of Minas Gerais, embodying centuries of history, tradition, and authenticity. Its production technique is a heritage passed down through generations, reflecting the intimate connection between the people, the land, and the craft. This artisanal cheese supports the livelihoods of thousands of local producers, generating significant employment and boosting gastronomic tourism in the region. It has been recognized as an Intangible Cultural Heritage of Humanity by UNESCO (as of February 2025/December 2024) and previously as Brazilian Intangible Cultural Heritage by IPHAN in 2008, highlighting its profound cultural value and the dedication of its producers.",
+        "drr_relevance": true,
+        "drr_mechanism": "The traditional production methods of Queijo Canastra, particularly when integrated with modern sustainable practices, contribute significantly to ecological resilience and climate adaptation. The reliance on raw milk from cows grazing on native pastures promotes the preservation of the local biome and its biodiversity. Some producers have adopted regenerative agricultural practices, including agroforestry, animal welfare, and the reuse of waste products like whey to feed livestock, transforming environmental liabilities into assets. This approach fosters ecological balance, reduces dependency on external inputs, and enhances the self-sufficiency of the community, thereby strengthening its resilience against environmental changes and contributing to sustainable land management.",
+        "gemini_tags": [
+          "Culinary Tradition",
+          "Intangible Cultural Heritage",
+          "Brazil",
+          "Minas Gerais",
+          "Cheese Making",
+          "Traditional Food",
+          "Sustainable Practices",
+          "Ecological Resilience",
+          "Climate Adaptation",
+          "Rural Economy"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Cheesemaking",
+        "materials_and_tools": [
+          "Raw whole cow's milk",
+          "Rennet (coalho), liquid or diluted powder",
+          "'Pingo' (liquid starter culture from previous day's production, or grated high-quality cheese as substitute)",
+          "Coarse salt",
+          "Nylon filters",
+          "Cylindrical molds",
+          "Wooden shelves for curing"
+        ],
+        "step_by_step": [
+          "**Milk Collection and Filtration**: Immediately after milking, raw milk is transported to the cheese house, ideally located near the corral. The milk is filtered through nylon filters to maintain temperature and minimize contamination, ensuring it reaches the cheese house within 40 minutes.",
+          "**Coagulation**: Rennet (liquid or diluted powder) is added to the milk.",
+          "**Addition of 'Pingo'**: 'Pingo', a liquid starter culture obtained from the previous day's cheese production, is added (approximately 0.5% of the milk volume). If 'pingo' is unavailable, about 150g of grated high-quality cheese can be used as a substitute.",
+          "**Resting for Coagulation**: The mixture of milk, rennet, and 'pingo' is left to rest for about 2 hours, allowing the microorganisms to act and coagulate the milk.",
+          "**Cutting the Curd**: The curd's readiness for cutting is checked by its firmness; it should be firm, and whey should appear quickly and clearly when broken. The curd is then carefully cut, avoiding excessively small grains to prevent yield reduction.",
+          "**Second Rest**: After cutting, the curd grains are allowed to rest for approximately 15 minutes to form a more resistant film.",
+          "**Whey Drainage and Hand Pressing**: The whey is separated from the curd, which is then collected and placed into cylindrical molds, often lined with cotton or synthetic fabric. Manual pressure is applied to press the cheese, aiding in further whey expulsion and shaping.",
+          "**Salting**: Coarse salt is sprinkled dry onto one side of the cheese. After a period ranging from 6 to 12 hours, the cheese is flipped, and the salting process is repeated on the other side.",
+          "**Curing/Maturation**: The cheese undergoes curing or maturation, traditionally on wooden shelves, with regular turning. The curing period typically varies from 7 to 30 days, or longer for more aged varieties. The low relative humidity characteristic of the Serra da Canastra region contributes to the formation of its firm, yellowish rind."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Portugal",
+            "element_name": "Queijo de São Jorge (Azores)",
+            "relationship_reason": "Queijo Canastra is considered a distant cousin of Queijo de São Jorge from the Azores, Portugal. This connection stems from Portuguese immigrants who brought cheesemaking traditions during the 18th-century gold cycle. While sharing common ancestral techniques, Queijo Canastra developed unique characteristics due to the distinct 'terroir' of the Serra da Canastra."
+          },
+          {
+            "country": "France",
+            "element_name": "Various artisanal cheeses (e.g., Comté, Mont d'Or)",
+            "relationship_reason": "While not a direct lineage, the artisanal cheese production in Minas Gerais, including Queijo Canastra, shares a philosophical alignment with European artisanal cheesemaking traditions, particularly French ones. This involves a focus on small-scale, traditional production methods and the development of regional distinctiveness, often referred to as 'terroir'."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-3b5cb178",
+      "element_name": "Hanji Papermaking (한지 제작)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Hanji_paper.jpg/800px-Hanji_paper.jpg",
+      "source_urls": [
+        "https://www.talasonline.com/Hanji-The-Enduring-Craftsmanship-of-Korean-Paper",
+        "https://en.wikipedia.org/wiki/Korean_paper",
+        "https://www.hanjimuseum.co.kr/process/process.php",
+        "https://www.antiquealive.com/Culture/Hanji/Hanji_main.html",
+        "https://www.daebakbox.com/blogs/korean-culture/korean-hanji-guide",
+        "https://peum.co/blogs/culture/what-is-hanji-korean-paper",
+        "https://unesco.mofa.go.kr/korean/eu/unesco/news/news/index.jsp?menu_cd=1010100&idx=128507",
+        "https://english.cha.go.kr/news/newsView.do?mc=NS_04_02_01&idx=1273",
+        "https://encykorea.aks.ac.kr/Article/E0062322"
+      ],
+      "scraped_at": "2026-08-30T11:58:26.424772Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [
+          "Jeollabuk-do (Jeonju)",
+          "Gyeongsangnam-do (Uiryeong)",
+          "Gyeonggi-do (Gapyeong)",
+          "Gyeongsangbuk-do (Mungyeong)"
+        ],
+        "lat": 35.8198999,
+        "lng": 127.109
+      },
+      "resume_analisa": {
+        "description": "Hanji is traditional Korean handmade paper, crafted from the inner bark of the paper mulberry tree (Broussonetia papyrifera, known as 'daknamu'). Renowned for its exceptional durability, unique texture, and versatility, it is often referred to as 'thousand-year paper' due to its remarkable longevity, with documented specimens surviving over 1,000 years. The intricate production process involves numerous steps, traditionally numbering around one hundred, and relies on skilled craftsmanship and natural materials.",
+        "cultural_significance": "Hanji has been an integral part of Korean culture for over a millennium, serving as a fundamental material for writing, printing Buddhist sutras, court records, and official documents. Its use extended beyond texts to everyday life, including window coverings, fans, shoes, ceremonial objects, clothing, and even armor. It is recognized by the Korean government as an Important Intangible Cultural Property, and efforts are underway to list 'Traditional knowledge and skills associated with the production of Hanji and related cultural practices' on UNESCO's Representative List of Intangible Cultural Heritage. Hanji embodies Korean craftsmanship, cultural pride, and a philosophy of patience and harmony with nature.",
+        "drr_relevance": true,
+        "drr_mechanism": "Hanji production contributes to ecological resilience and climate adaptation through its sustainable practices. The primary material, mulberry trees, regenerates fully within 3-5 years, making it a renewable resource. The traditional manufacturing process avoids synthetic bleaches, optical brighteners, and petrochemical binders, resulting in a fully compostable and environmentally friendly product with a significantly lower ecological footprint than modern wood-pulp paper. In traditional Korean architecture, Hanji's hygroscopic properties allow it to absorb moisture during high humidity and release it when the air is dry, acting as a natural humidity regulator, reducing condensation, and improving indoor air quality. Its inherent durability and neutral to slightly alkaline pH also make it an excellent material for archival preservation, protecting historical documents from degradation for centuries.",
+        "gemini_tags": [
+          "Traditional Craft",
+          "Papermaking",
+          "Intangible Cultural Heritage",
+          "Korean Culture",
+          "Sustainability",
+          "Ecological Resilience",
+          "Archival Material"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Papermaking",
+        "materials_and_tools": [
+          "Inner bark of paper mulberry tree (닥나무, daknamu)",
+          "Mucilage from hibiscus roots (황촉규, Hwangchokgyu or 닥풀, dakpul)",
+          "Alkaline solution (lye, traditionally from burnt plant ashes like bean, buckwheat, or rice straw stems; sometimes caustic soda)",
+          "Clean water",
+          "Steaming equipment (iron pot, straw sacks)",
+          "Boiling pot",
+          "Pestle and flat stone or wooden mallets",
+          "Bamboo screen (발, bal) and frame (발틀)",
+          "Pressing equipment (wooden sticks, heavy stones, levers)",
+          "Drying surface (heated wooden boards or drying plates)"
+        ],
+        "step_by_step": [
+          "Harvest 1-year-old paper mulberry branches, typically in late autumn or winter (November-February), when fibers are strongest.",
+          "Steam the harvested branches for several hours (e.g., 4-8 hours) to loosen the bark.",
+          "Peel off the outer bark (흑피, heukpi) by hand, keeping only the inner white bark (백피, baekpi).",
+          "Soak the baekpi in flowing clean water for at least 10 hours to further ease processing and remove impurities.",
+          "Boil the inner bark in an alkaline solution (lye, traditionally from plant ashes) for 3-5 hours to soften and purify the fibers, removing lignin.",
+          "Thoroughly wash the boiled fibers in clean running water to remove alkaline residue and impurities. Natural bleaching may occur by soaking in water and sunlight for several days.",
+          "Place the clean fibers on a flat stone or board and pound them with a wooden pestle or mallets for 1-2 hours until they separate into a soft, fine pulp. This process lengthens and separates the fibers.",
+          "Disperse the pounded fibers in a large vat of water. Add mucilage (닥풀, dakpul) extracted from hibiscus roots, which helps suspend the fibers evenly and aids in sheet formation.",
+          "Using a bamboo screen (발, bal) on a frame (발틀), scoop the fiber-mucilage mixture from the vat. The papermaker moves the screen in a distinctive multi-directional motion (known as 'we bal' or '앞물질, 옆물질') to interlock the fibers in multiple directions, creating a strong, tear-resistant sheet.",
+          "Stack the newly formed wet sheets (습지, seupji) and press them to remove excess water, often using heavy stones or levers overnight.",
+          "Separate the pressed, damp sheets one by one. Traditionally, they are dried on heated wooden boards or drying plates, or sometimes hung to dry.",
+          "The dried sheets undergo a finishing process called 'dochim,' where they are pounded with a pestle. This compacts the fibers, increases density, enhances smoothness, creates a shine, and improves ink retention."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Traditional Chinese Papermaking",
+            "relationship_reason": "Papermaking originated in China around the 4th century and was introduced to Korea. Korean artisans then developed their own distinct methods and materials, adapting the techniques to native mulberry trees."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Washi Papermaking",
+            "relationship_reason": "Korean papermaking techniques and paper were exported to Japan. While both Hanji and Washi are handmade mulberry papers, they differ in production techniques (e.g., Hanji's multi-directional fiber interlocking vs. Washi's single-directional lift) and resulting properties (Hanji's higher pH, longer lifespan, and denser sheet)."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-30T10:22:02.611935Z",
-    "total_ich_elements": 261,
-    "complete_records": 242,
-    "incomplete_records": 19,
+    "generated_at": "2026-08-30T11:59:02.723370Z",
+    "total_ich_elements": 284,
+    "complete_records": 268,
+    "incomplete_records": 16,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 90,
-      "Social Practices & Rituals": 55,
-      "Culinary Traditions": 42,
+      "Traditional Craftsmanship": 98,
+      "Social Practices & Rituals": 56,
+      "Culinary Traditions": 43,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 25,
       "Social Practices & Rituals | Performing Arts": 5,
@@ -24706,7 +24997,10 @@
       "Oral Traditions | Performing Arts | Social Practices & Rituals": 3,
       "Performing Arts | Social Practices & Rituals": 2,
       "Performing Arts | Oral Traditions": 2,
-      "Oral Traditions | Social Practices & Rituals": 1
+      "Oral Traditions | Social Practices & Rituals": 1,
+      "Oral Traditions and Expressions": 1,
+      "Knowledge and Practices Concerning Nature and the Universe": 9,
+      "Social Practices, Rituals and Festive Events": 3
     }
   }
 }
