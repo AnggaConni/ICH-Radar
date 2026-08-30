@@ -800,7 +800,7 @@ def audit_inventory(inventory):
 # ======================================================================
 
 def call_gemini(api_key, prompt):
-    url = "[https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent](https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent)"
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
     
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
