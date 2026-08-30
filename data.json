@@ -1588,60 +1588,76 @@
         "https://www.youtube.com/watch?v=sI917w32b00",
         "https://www.youtube.com/watch?v=3-wE_1t_n4I",
         "https://www.youtube.com/watch?v=U_uwE4cH6xo",
-        "https://www.youtube.com/watch?v=1Tx1pfDuPg8"
+        "https://www.youtube.com/watch?v=1Tx1pfDuPg8",
+        "https://www.institutotekopora.org.br/"
       ],
-      "scraped_at": "2026-03-13T09:44:12.628671Z",
+      "scraped_at": "2026-08-30T10:16:26.237704Z",
       "location": {
-        "country": "Paraguay",
-        "provinces": [],
-        "lat": -23.3165935,
-        "lng": -58.1693445
+        "country": "South America",
+        "provinces": [
+          "Brazil",
+          "Paraguay",
+          "Bolivia",
+          "Argentina"
+        ],
+        "lat": -21.0002179,
+        "lng": -61.0006565
       },
       "resume_analisa": {
-        "description": "Teko Porã is a profound Guarani concept that translates to 'Good Living' or 'Bem Viver' (in Portuguese). It encompasses a political, cultural, philosophical, and spiritual worldview, emphasizing a harmonious existence with the community (both human and more-than-human) and the environment. It represents a good and beautiful way of being within one's territory, advocating for balance, respect, and interconnectedness in all aspects of life. This ancestral indigenous philosophy contrasts sharply with the Western pursuit of unlimited economic growth and individualism, which often leads to an unbalanced and unsustainable world. Teko Porã is seen as a path of resistance and resilience, encouraging a return to ancestral wisdom and a re-evaluation of human relationships with nature and each other.",
-        "cultural_significance": "The cultural significance of Teko Porã lies in its role as a foundational principle for indigenous communities, particularly the Guarani people, guiding their social, political, and spiritual practices. It promotes a holistic understanding of health and well-being, extending beyond individualistic notions to encompass the health of the community and the planet. Teko Porã is deeply intertwined with indigenous educational practices, which aim to instill values of respect, generosity, and responsibility towards the Earth and all its inhabitants. It serves as a powerful counter-narrative to the destructive impacts of colonialism and modern consumerism, advocating for a sustainable and equitable way of life rooted in ancestral knowledge and a deep reverence for nature. The concept highlights the importance of renewing personal and communal inter-relations, balancing good feelings, good thoughts, and good actions.",
+        "description": "Teko Porã is a profound Guarani concept that translates to 'Good Living' or 'a beautiful way of being in your territory'. It encompasses a political, cultural, philosophical, and spiritual notion emphasizing balance, respect, and harmony within the community (human and more-than-human) and with the natural environment. It stands in contrast to 'tekó vai' (bad living), which is characterized by unrestrained consumption, individualism, and disrespect for nature. The concept highlights the deep interdependence of the cosmos, environment, and all living beings, challenging anthropocentric views and promoting a way of life that is intrinsically linked to the health and well-being of the land.",
+        "cultural_significance": "Teko Porã is an ancestral philosophy that has guided the Guarani people for centuries, shaping their worldview and daily practices. It is fundamental to their cosmology, asserting that there is no 'teko' (way of being) without 'tekoha' (a place for being), thereby linking culture, art, and knowledge inextricably to the land, forests, and waterways. The practice involves following the spiritual teachings of Nhanderú and Tupã, maintaining traditional rituals, and cultivating sacred plants. It also emphasizes educational practices that instill respect for the Earth and foster collective well-being, serving as a form of cultural resistance against destructive modern practices and colonial educational models.",
+        "drr_relevance": true,
+        "drr_mechanism": "Teko Porã significantly contributes to Disaster Risk Reduction (DRR), ecological resilience, and climate adaptation through its embodiment of Traditional Ecological Knowledge (TEK). The concept promotes living in harmony with nature, fostering sustainable practices that reduce environmental degradation and enhance ecosystem health. It provides a framework for understanding natural signs (e.g., birdsong, thunder, wind) as early warning systems and guides adaptive strategies that are ecologically friendly. By emphasizing collective well-being and a respectful relationship with the environment, Teko Porã strengthens community resilience, enabling better preparedness, response, and recovery from environmental hazards and climate change impacts. It also actively resists practices that lead to increased vulnerability, such as unsustainable resource exploitation.",
         "gemini_tags": [
-          "Indigenous Philosophy",
+          "Guarani",
+          "Indigenous Knowledge",
           "Good Living",
-          "Guarani Culture",
+          "Bem Viver",
           "Environmental Harmony",
-          "Community Practices",
-          "Ancestral Wisdom",
-          "Social Philosophy",
-          "Spiritual Concept",
-          "Latin American Indigenous Cultures",
-          "Sustainability",
-          "Holistic Well-being"
+          "Cultural Philosophy",
+          "Spiritual Practice",
+          "Ecological Resilience",
+          "Climate Adaptation",
+          "Disaster Risk Reduction",
+          "Traditional Ecological Knowledge",
+          "South America",
+          "Social Practice"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "social_practices_and_philosophy",
+        "materials_and_tools": [
+          "Sacred plants (corn, cotton, pumpkin, tobacco, cassava, medicinal herbs)",
+          "Takuapu (percussion instrument)",
+          "Prayer houses"
+        ],
+        "step_by_step": [
+          "Cultivating sacred plants and maintaining biodiversity for sustenance and healing.",
+          "Engaging in prayers and rituals within prayer houses, often accompanied by traditional instruments like the takuapu, to connect with spiritual entities and reinforce community bonds.",
+          "Observing and interpreting natural signs (e.g., birdsong, weather patterns, animal behavior) as guidance for daily life and environmental understanding.",
+          "Practicing educational methods that instill profound respect for nature, community, and ancestral wisdom in younger generations.",
+          "Promoting collective well-being and decision-making over individualistic pursuits, ensuring harmony within the human and more-than-human community.",
+          "Maintaining a respectful and reciprocal relationship with the land, forests, and waterways, recognizing them as integral to one's identity and existence.",
+          "Engaging in 'oguata' (walking, going, moving) as a cosmological practice, signifying continuous transit and adaptation within ancestral territories."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
-        "confidence_score": 1.0,
+        "confidence_score": 0.95,
         "related_elements": [
           {
-            "country": "Ecuador",
-            "element_name": "Sumak Kawsay",
-            "relationship_reason": "Equivalent concept of 'Good Living' in Quechua, emphasizing a harmonious and balanced life in community with nature."
-          },
-          {
             "country": "Bolivia",
-            "element_name": "Suma Qamaña",
-            "relationship_reason": "Equivalent concept of 'Good Living' in Aymara, reflecting a similar indigenous worldview of collective well-being and respect for the environment."
+            "element_name": "Suma Qamaña (Aymara concept of Good Living)",
+            "relationship_reason": "Both are indigenous concepts of 'Good Living' from South America, emphasizing harmony with nature and community well-being, representing alternatives to Western development paradigms."
           },
           {
-            "country": "Chile",
-            "element_name": "Küme Mogen",
-            "relationship_reason": "Equivalent concept of 'Good Living' in Mapuche, sharing the core principles of living in harmony with the land and community."
-          },
-          {
-            "country": "Argentina",
-            "element_name": "Küme Mogen",
-            "relationship_reason": "Equivalent concept of 'Good Living' in Mapuche, sharing the core principles of living in harmony with the land and community."
+            "country": "Ecuador",
+            "element_name": "Sumak Kawsay (Kichwa concept of Good Living)",
+            "relationship_reason": "Both are indigenous concepts of 'Good Living' from South America, emphasizing harmony with nature and community well-being, representing alternatives to Western development paradigms."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-0637c01d",
@@ -23068,17 +23084,184 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7fe15f21",
+      "element_name": "Hudhud Chants of the Ifugao",
+      "category": "Oral Traditions | Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ich.unesco.org/en/RL/hudhud-chants-of-the-ifugao-00015&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/hudhud-chants-of-the-ifugao-00015",
+        "https://www.scribd.com/document/329528657/Ifugao-Hudhud-Chants-Overview",
+        "https://www.facebook.com/Igorotage/posts/the-hudhud-chants-of-ifugao-a-tradition-for-honoring-the-departedthe-hudhud-cha/892408985655060/",
+        "https://www.ethnicgroupsphilippines.com/2022/04/01/hudhud-tradition-of-the-ifugao/",
+        "https://simple.wikipedia.org/wiki/Hudhud",
+        "https://www.facebook.com/PHinGermany/videos/hudhud-live-in-berlinwhere-the-cordillera-people-flourish-the-enchanting-living/1169738090670008/",
+        "https://www.reddit.com/r/FilipinoHistory/comments/wk4j6x/belated_for_araw_ng_mga_katutuboindigenous/",
+        "https://ich.unesco.org/en/projects/safeguarding-and-transmission-of-the-hudhud-chants-of-the-ifugao-00015",
+        "https://unipro.org.ph/hudhud-and-darangen-voices-from-pre-colonial-philippines/",
+        "https://www.facebook.com/NationalCommissionforCultureandtheArts/posts/the-hudhud-consists-of-narrative-chants-traditionally-performed-by-the-ifugao-co/3074558509237699/",
+        "https://www.researchgate.net/publication/378419614_A_Living_Shamanistic_Oral_Tradition_Ifugao_hudhud_the_Philippines",
+        "https://www.semanticscholar.org/paper/The-Hudhud-Chants-of-the-Ifugao/0203f9b2d07525287f73c683713f873752e26922",
+        "https://www.researchgate.net/publication/378419614_A_Living_Shamanistic_Oral_Tradition_Ifugao_hudhud_the_Philippines",
+        "https://www.facebook.com/NationalCommissionforCultureandtheArts/posts/hudhud-epic-chantthe-hudhud-is-not-a-ritual-associated-chant-it-is-actually-a-ma/1218585648168324/",
+        "https://www.facebook.com/globalpinoysvlogs/videos/the-hudhud-chants-of-the-ifugao-a-unesco-intangible-heritage-performed-during-go/1239923000282126/"
+      ],
+      "scraped_at": "2026-08-30T10:19:51.595341Z",
+      "location": {
+        "country": "Philippines",
+        "provinces": [
+          "Ifugao"
+        ],
+        "lat": 16.87,
+        "lng": 121.22
+      },
+      "resume_analisa": {
+        "description": "The Hudhud chants are narrative chants traditionally performed by the Ifugao community, renowned for their rice terraces in the northern Philippine archipelago. Thought to have originated before the seventh century, the Hudhud comprises over 200 chants, each divided into 40 episodes, with a complete recitation potentially lasting several days. The chants are performed during the rice sowing season, at harvest time, and at funeral wakes and rituals. The language of the stories is rich in figurative expressions, repetitions, metonymy, metaphor, and onomatopoeia, making transcription very difficult. The narrators, primarily elderly women, hold significant positions in the community as both historians and preachers. The Hudhud epic is chanted alternately by a lead narrator (munhaw-e) and a choir (mun-abbuy), employing a single melody for all verses.",
+        "cultural_significance": "The Hudhud chants are a vital part of Ifugao heritage, reflecting ancestral heroes, customary law, religious beliefs, and traditional practices, particularly the importance of rice cultivation. This oral tradition reinforces community values such as bravery, kinship, and respect, and serves to preserve collective memory. In funeral practices, the chants assist the deceased in their transition to the afterlife and provide support to the bereaved by reminding them of their ancestral and community ties. The Ifugao's matrilineal culture is also reflected, with the wife often taking the main part in the chants. The Hudhud was proclaimed by UNESCO as a 'Masterpiece of the Oral and Intangible Heritage of Humanity' in 2001 and inscribed on the Representative List of the Intangible Cultural Heritage of Humanity in 2008.",
+        "drr_relevance": true,
+        "drr_mechanism": "The Hudhud chants are deeply intertwined with the Ifugao's traditional rice cultivation and their sustainable rice terracing system. While not a direct disaster mitigation practice, the preservation and transmission of these chants contribute to ecological resilience by maintaining traditional knowledge of agriculture and the socio-ecological system of the rice terraces. This traditional knowledge, embedded within the chants, can inform sustainable land management and resource use, which are crucial for adapting to environmental changes. Furthermore, the chants foster strong community identity and social cohesion, which are essential for collective action, mutual support, and resilience in the face of various challenges, including environmental stressors and disasters.",
+        "gemini_tags": [
+          "Oral Tradition",
+          "Community Ritual",
+          "Ifugao Culture",
+          "Philippines",
+          "Rice Cultivation",
+          "Intangible Cultural Heritage",
+          "Matrilineal Culture",
+          "Ecological Resilience",
+          "Community Cohesion"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Performance",
+        "materials_and_tools": [
+          "Human voice"
+        ],
+        "step_by_step": [
+          "The performance typically involves a lead narrator, usually an elderly woman (munhaw-e), and a choir of women (mun-abbuy).",
+          "The lead narrator and the choir alternate in chanting the verses.",
+          "A single melody is employed for all the verses throughout the chant.",
+          "The chants are performed on specific occasions: during the rice sowing season, at harvest time, and at funeral wakes and rituals.",
+          "A complete recitation of the Hudhud, which consists of over 200 chants with 40 episodes each, can last for several days."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Philippines",
+            "element_name": "Baya-o",
+            "relationship_reason": "Similar chant tradition found in Mountain Province, among the Igorot people, showing cultural connection within the Cordillera region."
+          },
+          {
+            "country": "Philippines",
+            "element_name": "Bangil",
+            "relationship_reason": "Similar chant tradition found in Benguet, among the Igorot people, showing cultural connection within the Cordillera region."
+          },
+          {
+            "country": "Philippines",
+            "element_name": "Darangen",
+            "relationship_reason": "The Darangen epic of the Maranao people is, along with the Hudhud, one of only two Philippine traditions proclaimed by UNESCO as masterpieces of oral and intangible heritage of humanity."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-63447295",
+      "element_name": "L'arte dei pizzaiuoli napoletani (The Art of Neapolitan Pizzamakers)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Pizzaiolo_at_work.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/art-of-neapolitan-pizzaiuolo-01293",
+        "https://www.lifeandthyme.com/food/the-art-of-the-neapolitan-pizza-maker/",
+        "https://www.whartibus.com/art-of-pizzaiuolo-naples-intangible-cultural-heritage-unesco/",
+        "https://www.agriturismolamorella.it/blog/l-arte-dei-pizzaioli-napoletani-e-patrimonio-unesco",
+        "https://www.caputoflour.com/blogs/news/mastering-unescos-intangible-cultural-heritage",
+        "https://www.italynotes.com/neapolitan-pizza-an-experience-that-changed-my-perception-of-pizza/",
+        "https://www.pizzaintheworld.com/art-of-neapolitan-pizzaiuoli-in-unescos-list/",
+        "https://www.assoveracepizzanapoletana.eu/en/news/5-anniversario-de-l-arte-del-pizzaiuolo-napoletano-nella-lista-del-patrimonio-culturale-immateriale-dell-umanita-unesco",
+        "https://www.fondazioneuniverde.it/en/the-art-of-neapolitan-pizzaiuoli/"
+      ],
+      "scraped_at": "2026-08-30T10:20:52.067687Z",
+      "location": {
+        "country": "Italy",
+        "provinces": [
+          "Campania"
+        ],
+        "lat": 40.860672,
+        "lng": 14.843984
+      },
+      "resume_analisa": {
+        "description": "The Art of Neapolitan Pizzamakers (L'arte dei pizzaiuoli napoletani) is a culinary practice deeply rooted in Naples, Italy. It encompasses four distinct phases: the preparation of the dough, a specific handling technique involving rotatory movements and throwing the dough into the air, the application of toppings, and baking in a wood-fired oven. This art is characterized by unique gestures, songs, visual expressions, and local jargon, all contributing to the pizzaiuolo's ability to expertly handle the pizza dough.",
+        "cultural_significance": "This culinary art is a vital social ritual that fosters gatherings and intergenerational exchange within the community. It provides a strong sense of identity for Neapolitan citizens and can offer a path for social redemption for young people. The 'bottega' (workshop) serves as a crucial space for the transmission of knowledge and skills, where apprentices learn from masters. The Art of Neapolitan Pizzamakers is recognized as a significant symbol of 'Made in Italy' and a cherished tradition passed down through generations.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Culinary Heritage",
+          "Traditional Craftsmanship",
+          "Social Practices",
+          "Oral Traditions",
+          "Italy",
+          "Naples",
+          "Pizza Making",
+          "Intangible Cultural Heritage",
+          "Foodways"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Recipe / Traditional Craft Process",
+        "materials_and_tools": [
+          "Soft wheat flour (Type 0 or 00)",
+          "Fresh brewer's yeast",
+          "Water",
+          "Salt",
+          "San Marzano tomatoes",
+          "Buffalo mozzarella or traditional mozzarella",
+          "Fresh basil",
+          "Extra virgin olive oil",
+          "Wood-fired oven"
+        ],
+        "step_by_step": [
+          "**Dough Preparation**: Kneading the dough (flour, water, salt, yeast) for at least 15 minutes, traditionally by hand.",
+          "**First Leavening**: Allowing the dough to rise for approximately 12 hours.",
+          "**Forming Dough Balls**: Dividing the risen dough into individual balls.",
+          "**Second Leavening**: Allowing the dough balls to rise again.",
+          "**Stretching the Dough**: Stretching the dough by hand, from the center outwards, without a rolling pin. This technique involves creating the characteristic 'cornicione' (raised edge) and often includes hurling the dough into the air to achieve the desired consistency and oxygenation.",
+          "**Topping**: Applying the ingredients (tomato, mozzarella, basil, olive oil) from the center outwards with a spiral, clockwise movement.",
+          "**Baking**: Cooking the pizza in a wood-fired oven at very high temperatures (around 485°C / 905°F) for no more than 60-90 seconds, with the pizzaiuolo performing a rotatory movement to ensure even cooking."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Ancient Rome",
+            "element_name": "Focaccia and various flatbreads with toppings",
+            "relationship_reason": "Historical precursor to pizza, demonstrating a shared culinary concept of baked dough with ingredients."
+          },
+          {
+            "country": "Global",
+            "element_name": "Various pizza styles worldwide",
+            "relationship_reason": "The Neapolitan art has inspired countless variations and adaptations of pizza globally, though often diverging from the strict traditional methods. UNESCO acknowledges its role in fostering dialogue with other communities practicing similar food-related arts."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-30T10:10:37.608586Z",
-    "total_ich_elements": 259,
-    "complete_records": 239,
-    "incomplete_records": 20,
+    "generated_at": "2026-08-30T10:22:02.611935Z",
+    "total_ich_elements": 261,
+    "complete_records": 242,
+    "incomplete_records": 19,
     "categories_breakdown": {
       "Traditional Craftsmanship": 90,
       "Social Practices & Rituals": 55,
-      "Culinary Traditions": 41,
+      "Culinary Traditions": 42,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 25,
       "Social Practices & Rituals | Performing Arts": 5,
@@ -23093,7 +23276,8 @@
       "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions": 1,
       "Oral Traditions | Performing Arts | Social Practices & Rituals": 3,
       "Performing Arts | Social Practices & Rituals": 2,
-      "Performing Arts | Oral Traditions": 2
+      "Performing Arts | Oral Traditions": 2,
+      "Oral Traditions | Social Practices & Rituals": 1
     }
   }
 }
