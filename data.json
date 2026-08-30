@@ -22992,16 +22992,92 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a9f137fb",
+      "element_name": "Festa dei Ceri (Festival of the Candles)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.sagr.it/festa-dei-ceri-gubbio/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.sagr.it/festa-dei-ceri-gubbio/",
+        "https://ciutravel.com/gubbio-festa-dei-ceri/",
+        "https://secretumbria.it/festa-dei-ceri-history-and-tradition-in-gubbio/",
+        "https://www.umbriatourism.it/en/festa-dei-ceri-gubbio",
+        "https://www.mykindofitaly.com/gubbio-festa-dei-ceri/",
+        "https://www.italia.it/en/umbria/gubbio/festa-dei-ceri",
+        "https://www.comune.gubbio.pg.it/pagina219_festa-dei-ceri.html",
+        "https://www.thecrowdedplanet.com/i-ceri-di-gubbio/"
+      ],
+      "scraped_at": "2026-08-30T10:05:05.252300Z",
+      "location": {
+        "country": "Italy",
+        "provinces": [
+          "Umbria"
+        ],
+        "lat": 42.965916,
+        "lng": 12.490236
+      },
+      "resume_analisa": {
+        "description": "The Festa dei Ceri, also known as the Festival of the Candles or Saint Ubaldo Day, is an ancient and deeply rooted traditional festival celebrated annually on May 15th in Gubbio, a medieval town in the Umbria region of Italy. This vibrant event honors Saint Ubaldo, the patron saint of Gubbio, and is characterized by a spectacular procession involving three enormous wooden structures called 'Ceri'. Each Cero stands approximately 4-5 meters tall and weighs around 300 kg, topped with statues of Saint Ubaldo, Saint George, and Saint Anthony respectively. Teams of 'ceraioli' (Ceri bearers) carry these heavy structures in a demanding 'race' through the narrow, historic streets of Gubbio and up to the Basilica of Sant'Ubaldo on Mount Ingino. The festival is a unique blend of pagan traditions, possibly linked to fertility and harvest rites, and Christian devotion, with its origins tracing back to at least the 12th century following the death of Saint Ubaldo in 1160. It is a powerful and passionate display of community cohesion, tradition, spirituality, and civic pride that transforms the entire city into a lively arena of sound, color, and movement.",
+        "cultural_significance": "The Festa dei Ceri holds immense cultural significance as a profound symbol of local identity and an intangible cultural asset of extraordinary value to the Gubbio community. It serves as a living testament to the city's historical roots, cultural richness, and spiritual devotion, having remarkably endured through centuries of wars, emigration, and significant societal changes. The festival plays a crucial role in fostering strong community bonds and instilling a deep sense of pride among the Eugubini (people of Gubbio). Each of the three Ceri is dedicated to a patron saint representing ancient medieval guilds: Sant'Ubaldo for masons and bricklayers, San Giorgio for merchants and artisans, and Sant'Antonio Abate for farmers and peasants. Since 1973, the three Ceri have also been recognized as a symbol of the Umbria Region, highlighting the festival's broader regional importance. It is considered one of Italy's oldest, most authentic, and deeply felt festivals, offering a rare window into faithfully preserved medieval traditions.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Traditional Festival",
+          "Religious Ritual",
+          "Community Practice",
+          "Italian Folklore",
+          "Procession",
+          "Intangible Cultural Heritage",
+          "Medieval Tradition"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Festive Event / Ritual Procession",
+        "materials_and_tools": [
+          "Three enormous wooden structures called 'Ceri' (approx. 4-5 meters tall, 300 kg each)",
+          "Statues of Saint Ubaldo, Saint George, and Saint Anthony",
+          "H-shaped stretchers (gurneys) for carrying the Ceri",
+          "Traditional clothing for 'ceraioli': white pants, red sashes, colored shirts (yellow for Sant'Ubaldo, blue for San Giorgio, black for Sant'Antonio), and red scarves",
+          "Terracotta jugs (used by Capodieci during the 'Alzata')",
+          "Drums and trumpets"
+        ],
+        "step_by_step": [
+          "**Preparations (Weeks before May 15th)**: Artisanal construction and restoration of the Ceri structures take place, along with rigorous training for the 'ceraioli' (Ceri bearers) who will carry them.",
+          "**First Sunday of May**: The Ceri are ceremonially brought down in a horizontal position from the Basilica of Sant'Ubaldo on Mount Ingino into the city of Gubbio for public display, marking the beginning of a month of festivities.",
+          "**May 14th Evening (7:00 PM)**: The 'Campanone' (great bell of the Palazzo dei Consoli) is rung, signaling the start of the more intense celebrations. Traditional 'Baccalà alla ceraiola' (salt cod) is served, and improvised bands fill the streets with music and dancing.",
+          "**May 15th - Early Morning (5:30 AM)**: The day begins with drummers waking the 'Capodieci' (leaders of each Cero team) with the 'Marcia dei Ceri' drum roll, followed by various traditional duties and formalities. A tribute to fallen ceraioli is often held at the Civic Cemetery.",
+          "**Morning**: The Investiture of the First Captain takes place, an important ceremonial act.",
+          "**Midday (Piazza Grande)**: The spectacular 'Alzata' (raising of the Ceri) occurs. The Capodieci perform a final salute by smashing large terracotta jugs before the Ceri are raised vertically. Immediately after, the Ceri are carried three dizzying times around Piazza Grande.",
+          "**Exhibition/Parade ('Mostra')**: Each Cero then follows its own designated route through the city's streets, paying homage to former Capodieci or significant symbolic locations. This period is a more relaxed phase, allowing spectators to get closer to and even touch the Ceri.",
+          "**Procession**: The Ceri are paraded through the streets, following the race route in reverse, before being temporarily placed in Via Savelli Della Porta, awaiting the start of the main race.",
+          "**The Race ('Corsa dei Ceri') (6:00 PM)**: The climax of the festival. Led by their Capodieci, the Ceri are carried by rotating teams of 'ceraioli' (each 'muta' or team consists of sixteen men) through the narrow, steep streets of Gubbio and up the challenging ascent to the Basilica of Sant'Ubaldo on Mount Ingino. The objective is to complete a 'clean run,' keeping the Cero as vertical as possible and avoiding falls or collisions with walls. Overtaking is strictly prohibited, and by tradition, the Ceri always finish in a specific order: Sant'Ubaldo first, followed by San Giorgio, and then Sant'Antonio.",
+          "**Arrival at Basilica**: Upon reaching the Basilica, the ceraioli express their profound devotion as they bring the Ceri inside, where they will remain until the first Sunday of May the following year. The statues of the Saints are then brought back to the city amidst songs and torchlight processions.",
+          "**Post-Race**: Although there is no official winner, the outcome of the race often leads to lengthy debates and friendly rivalry among the participating families and supporters, adding to the festival's enduring charm."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "United States",
+            "element_name": "Saint Ubaldo Day (in Jessup, Pennsylvania)",
+            "relationship_reason": "Italian immigrants from Gubbio brought the tradition of the Festa dei Ceri to Jessup, Pennsylvania, in the early 1900s, where it is now celebrated annually on Memorial Day weekend as Saint Ubaldo Day."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-27T05:44:02.817888Z",
-    "total_ich_elements": 258,
-    "complete_records": 238,
+    "generated_at": "2026-08-30T10:10:37.608586Z",
+    "total_ich_elements": 259,
+    "complete_records": 239,
     "incomplete_records": 20,
     "categories_breakdown": {
       "Traditional Craftsmanship": 90,
-      "Social Practices & Rituals": 54,
+      "Social Practices & Rituals": 55,
       "Culinary Traditions": 41,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 25,
