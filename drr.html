@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICH DRR Radar — Indigenous Knowledge for Disaster Risk Reduction</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88 88.1 88.1 0 0 1-88 88Zm40-88a40 40 0 1 1-40-40 40 40 0 0 1 40 40Z' fill='%230284c7'/%3E%3Cpath d='M128 72v56l40 24' fill='none' stroke='%23ea580c' stroke-width='16' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            hazard: {
+              tsunami: '#0284c7', // Sky blue
+              quake: '#d97706',   // Amber
+              drought: '#ea580c', // Orange/Flame
+              flood: '#059669',   // Emerald
+              typhoon: '#7c3aed', // Violet
+              fire: '#dc2626',    // Crimson
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Leaflet MarkerCluster -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Apache ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+
+  <style>
+    /* ── Custom Animations & Effects ── */
+    @keyframes pulseHazard {
+      0%   { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(2, 132, 199, 0.7); }
+      70%  { transform: scale(1.15); box-shadow: 0 0 0 10px rgba(2, 132, 199, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(2, 132, 199, 0); }
+    }
+    .marker-pulse-tsunami { animation: pulseHazard 2s infinite; background: #0284c7; }
+    .marker-pulse-quake   { animation: pulseHazard 2s infinite; background: #d97706; }
+    .marker-pulse-drought { animation: pulseHazard 2s infinite; background: #ea580c; }
+    .marker-pulse-flood   { animation: pulseHazard 2s infinite; background: #059669; }
+    .marker-pulse-typhoon { animation: pulseHazard 2s infinite; background: #7c3aed; }
+    .marker-pulse-fire    { animation: pulseHazard 2s infinite; background: #dc2626; }
+
+    .glowing-hazard-line {
+      stroke-dasharray: 6 6;
+      animation: dashMove 2.5s linear infinite;
+    }
+    @keyframes dashMove { to { stroke-dashoffset: -24; } }
+
+    /* Custom Leaflet Light Popup */
+    .leaflet-popup-content-wrapper {
+      background: #ffffff !important;
+      color: #0f172a !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 12px !important;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+    }
+    .leaflet-popup-tip { background: #ffffff !important; }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- Top Announcement / Live DRR Alert Bar -->
+  <div class="bg-gradient-to-r from-blue-700 via-indigo-700 to-sky-700 text-white text-xs py-2 px-6 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 font-medium">
+      <div class="flex items-center gap-2">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+        </span>
+        <span class="font-bold tracking-wide uppercase font-mono text-[11px] text-sky-200">Global DRR Intelligence:</span>
+        <span id="ticker-text" class="truncate">Monitoring 20+ ancestral nature-based resilience mechanisms...</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] text-sky-100">
+        <span>Sendai Framework 2015–2030 Aligned</span>
+        <span>•</span>
+        <span>Eco-DRR Living Heritage</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 shadow-inner">
+          <i class="ph-fill ph-shield-check text-2xl animate-pulse"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="font-display font-bold text-xl text-slate-900 tracking-tight">ICH <span class="text-blue-600">Disaster Resilience</span> Radar</h1>
+            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold font-mono px-2 py-0.5 rounded-full border border-blue-200">DRR SPECIAL EDITION</span>
+          </div>
+          <p class="text-xs text-slate-500">Indigenous Knowledge & Living Heritage Safeguarding Communities Worldwide</p>
+        </div>
+      </div>
+
+      <!-- Actions & External Link to General Radar -->
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+        
+        <!-- Link Back to General Radar -->
+        <a href="https://anggaconni.github.io/ICH-Radar/radar.html" target="_blank"
+           class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold shadow-sm transition-all hover:scale-[1.02]"
+           title="Go to General Shared Heritage Radar">
+          <i class="ph ph-globe-hemisphere-east text-base text-sky-400"></i>
+          <span>General Heritage Radar</span>
+          <i class="ph ph-arrow-up-right text-xs opacity-70"></i>
+        </a>
+
+        <!-- Flow Matrix Modal Button -->
+        <button onclick="openMatrixModal()" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 text-xs font-semibold transition-colors">
+          <i class="ph ph-git-branch text-base"></i>
+          <span>Resilience Matrix</span>
+        </button>
+
+        <!-- Sendai Framework Guide Modal Button -->
+        <button onclick="openGuideModal()" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 text-xs font-semibold transition-colors">
+          <i class="ph ph-info text-base"></i>
+          <span>DRR Framework</span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-grow max-w-7xl mx-auto px-6 py-8 w-full flex flex-col gap-8">
+
+    <!-- KPI Metric Cards -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="kpi-container">
+      <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex items-center justify-between">
+        <div>
+          <p class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Total DRR Elements</p>
+          <p class="text-2xl font-display font-bold text-slate-900 mt-1" id="kpi-total">0</p>
+        </div>
+        <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xl">
+          <i class="ph ph-shield-star"></i>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex items-center justify-between">
+        <div>
+          <p class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Zero-Energy Pasif</p>
+          <p class="text-2xl font-display font-bold text-emerald-600 mt-1">100%</p>
+        </div>
+        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
+          <i class="ph ph-leaf"></i>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex items-center justify-between">
+        <div>
+          <p class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Sendai 4-Phase Match</p>
+          <p class="text-2xl font-display font-bold text-amber-600 mt-1">Active</p>
+        </div>
+        <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center text-xl">
+          <i class="ph ph-chart-pie-slice"></i>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex items-center justify-between">
+        <div>
+          <p class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Hazard Typologies</p>
+          <p class="text-2xl font-display font-bold text-purple-600 mt-1">6 Global</p>
+        </div>
+        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-xl">
+          <i class="ph ph-fire"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Hazard Threat Simulator Bar -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col gap-3">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+        <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider font-bold text-slate-500">
+          <i class="ph-fill ph-lightning text-amber-500 text-base"></i>
+          <span>Disaster Scenario Simulator & Hazard Filter:</span>
+        </div>
+        <span class="text-xs text-slate-400 italic">Select a disaster threat to filter matching ancestral defenses</span>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2" id="hazard-pill-container">
+        <button onclick="filterByHazard('all')" class="hazard-btn active px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-slate-900 text-white shadow-sm" data-hazard="all">
+          All Threats (Global)
+        </button>
+        <button onclick="filterByHazard('tsunami')" class="hazard-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-sky-50 hover:bg-sky-100 text-sky-700 border border-sky-200" data-hazard="tsunami">
+          🌊 Tsunami & Coastal Surge
+        </button>
+        <button onclick="filterByHazard('earthquake')" class="hazard-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-amber-50 hover:bg-amber-100 text-amber-700 border border-amber-200" data-hazard="earthquake">
+          🌋 Seismic & Earthquakes
+        </button>
+        <button onclick="filterByHazard('drought')" class="hazard-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-orange-50 hover:bg-orange-100 text-orange-700 border border-orange-200" data-hazard="drought">
+          ☀️ Drought, Heatwave & Desert
+        </button>
+        <button onclick="filterByHazard('flood')" class="hazard-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200" data-hazard="flood">
+          🌿 Monsoonal Flood & Landslide
+        </button>
+        <button onclick="filterByHazard('typhoon')" class="hazard-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-purple-50 hover:bg-purple-100 text-purple-700 border border-purple-200" data-hazard="typhoon">
+          🌀 Super Typhoon & Cyclone
+        </button>
+        <button onclick="filterByHazard('wildfire')" class="hazard-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-red-50 hover:bg-red-100 text-red-700 border border-red-200" data-hazard="wildfire">
+          🔥 Wildfire & Megafire
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs (Directory vs Interactive Map) -->
+    <div class="flex border-b border-slate-200 gap-2">
+      <button id="tab-btn-directory" onclick="switchMainTab('directory')" class="px-5 py-3 font-bold text-sm text-blue-700 border-b-2 border-blue-600 flex items-center gap-2 transition-all">
+        <i class="ph ph-squares-four text-lg"></i>
+        <span>DRR Blueprint Catalog</span>
+        <span id="tab-count-badge" class="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded-full font-mono font-bold">0</span>
+      </button>
+
+      <button id="tab-btn-map" onclick="switchMainTab('map')" class="px-5 py-3 font-bold text-sm text-slate-500 hover:text-slate-800 border-b-2 border-transparent flex items-center gap-2 transition-all">
+        <i class="ph ph-map-trifold text-lg"></i>
+        <span>Hazard Overlay Network Map</span>
+      </button>
+    </div>
+
+    <!-- TAB 1: DIRECTORY GRID -->
+    <div id="tab-view-directory" class="flex flex-col gap-6">
+      <div id="drr-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Dynamic Cards Injected Here -->
+      </div>
+    </div>
+
+    <!-- TAB 2: INTERACTIVE LEAFLET MAP -->
+    <div id="tab-view-map" class="hidden flex flex-col gap-3">
+      <div class="flex flex-wrap items-center justify-between bg-white border border-slate-200 p-3 rounded-xl gap-4 shadow-sm">
+        <div class="flex items-center gap-2">
+          <i class="ph-fill ph-map-pin text-blue-600 text-lg"></i>
+          <span class="text-xs font-bold text-slate-700 font-mono uppercase">Global Hazard Belts vs Living Defenses</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-4 text-xs font-medium text-slate-600">
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-sky-500"></span> Coastal/Tsunami</span>
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-amber-500"></span> Seismic</span>
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-orange-500"></span> Drought/Heat</span>
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-emerald-500"></span> Flood/Landslide</span>
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-purple-500"></span> Cyclone/Wind</span>
+          <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500"></span> Wildfire</span>
+        </div>
+      </div>
+      <div id="drr-map" class="w-full h-[540px] rounded-2xl border border-slate-200 bg-slate-100 shadow-inner z-10"></div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 mt-auto py-6">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-mono">
+      <div class="flex items-center gap-2">
+        <i class="ph-fill ph-shield-check text-blue-600 text-base"></i>
+        <span>ICH Disaster Resilience Intelligence • Automated Grounded Verification</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://anggaconni.github.io/ICH-Radar/radar.html" class="hover:text-blue-600 transition-colors">General Radar</a>
+        <span>•</span>
+        <a href="https://www.undrr.org/implementing-sendai-framework" target="_blank" class="hover:text-blue-600 transition-colors">Sendai Framework</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- MODAL: DRR VERNACULAR BLUEPRINT DETAIL                         -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div id="blueprint-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-slate-900/60 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300">
+    <div class="bg-white border border-slate-200 rounded-3xl w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300" id="modal-wrapper">
+      
+      <!-- Modal Header -->
+      <div class="flex justify-between items-start p-6 border-b border-slate-200 bg-slate-50/50">
+        <div>
+          <div class="flex items-center gap-2 mb-1.5" id="modal-hazard-badge">
+            <!-- Dynamic Badge -->
+          </div>
+          <h3 class="font-display font-bold text-2xl text-slate-900 pr-4 leading-tight" id="modal-title">Element Name</h3>
+          <p class="text-xs text-slate-500 mt-1 font-mono flex items-center gap-1.5" id="modal-location">
+            <i class="ph-fill ph-map-pin text-blue-600"></i> Location details
+          </p>
+        </div>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-700 bg-slate-100 hover:bg-slate-200 p-2.5 rounded-full transition-colors">
+          <i class="ph ph-x text-lg"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto space-y-6 text-sm text-slate-700 leading-relaxed" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- MODAL: RESILIENCE FLOW MATRIX (ECHARTS SANKEY)                 -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div id="matrix-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-slate-900/70 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300">
+    <div class="bg-white border border-slate-200 rounded-3xl w-full max-w-5xl h-[85vh] flex flex-col overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300" id="matrix-modal-wrapper">
+      
+      <div class="flex justify-between items-center p-6 border-b border-slate-200 bg-slate-50">
+        <div>
+          <h3 class="font-display font-bold text-xl text-slate-900 flex items-center gap-2">
+            <i class="ph-fill ph-git-branch text-blue-600"></i>
+            <span>Disaster-to-Resilience Flow Matrix (Sankey Flow)</span>
+          </h3>
+          <p class="text-xs text-slate-500 font-mono mt-0.5">Tracing how indigenous heritage domains mechanically resolve natural hazards</p>
+        </div>
+        <button onclick="closeMatrixModal()" class="text-slate-400 hover:text-slate-700 bg-slate-100 hover:bg-slate-200 p-2.5 rounded-full transition-colors">
+          <i class="ph ph-x text-lg"></i>
+        </button>
+      </div>
+
+      <div id="echarts-sankey" class="flex-grow w-full h-full bg-slate-50 p-4"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- MODAL: SENDAI FRAMEWORK GUIDE                                  -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <div id="guide-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-slate-900/60 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300">
+    <div class="bg-white border border-slate-200 rounded-3xl w-full max-w-2xl flex flex-col overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300" id="guide-modal-wrapper">
+      
+      <div class="flex justify-between items-center p-6 border-b border-slate-200 bg-slate-50">
+        <h3 class="font-display font-bold text-xl text-slate-900 flex items-center gap-2">
+          <i class="ph-fill ph-info text-blue-600"></i>
+          <span>Sendai Framework & Living Heritage</span>
+        </h3>
+        <button onclick="closeGuideModal()" class="text-slate-400 hover:text-slate-700 bg-slate-100 hover:bg-slate-200 p-2 rounded-full transition-colors">
+          <i class="ph ph-x text-lg"></i>
+        </button>
+      </div>
+
+      <div class="p-6 overflow-y-auto space-y-4 text-sm text-slate-600 leading-relaxed max-h-[70vh]">
+        <p>The <strong class="text-slate-900">ICH Disaster Resilience Radar</strong> operationalizes the <em>Sendai Framework for Disaster Risk Reduction 2015–2030 (Priority 1 & Priority 4)</em> and the <em>2020 UNESCO Operational Principles for Safeguarding ICH in Emergencies</em>.</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+          <div class="p-3.5 rounded-xl border border-sky-200 bg-sky-50/50">
+            <p class="font-bold text-sky-900 text-xs uppercase font-mono mb-1">Priority 1: Understanding Risk</p>
+            <p class="text-xs text-sky-800">Indigenous warning lore (e.g., Smong, Pranata Mangsa) provides hyper-localized hazard predictive capacity.</p>
+          </div>
+          <div class="p-3.5 rounded-xl border border-emerald-200 bg-emerald-50/50">
+            <p class="font-bold text-emerald-900 text-xs uppercase font-mono mb-1">Priority 2: Strengthening Governance</p>
+            <p class="text-xs text-emerald-800">Customary water and fire institutions (Subak, Valencia Water Court) govern resource crises peacefully.</p>
+          </div>
+          <div class="p-3.5 rounded-xl border border-amber-200 bg-amber-50/50">
+            <p class="font-bold text-amber-900 text-xs uppercase font-mono mb-1">Priority 3: Resilience Investing</p>
+            <p class="text-xs text-amber-800">Vernacular architecture (Kigumi, Ivatan) provides passive, zero-energy structural resilience.</p>
+          </div>
+          <div class="p-3.5 rounded-xl border border-purple-200 bg-purple-50/50">
+            <p class="font-bold text-purple-900 text-xs uppercase font-mono mb-1">Priority 4: Build Back Better</p>
+            <p class="text-xs text-purple-800">Traditional mutual-aid and wetland systems (Baira, Gotong Royong) ensure rapid community post-disaster food recovery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- JAVASCRIPT LOGIC                                               -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <script>
+    // ───────────────────────────────────────────────────────────────
+    // 1. EMBEDDED FALLBACK DRR DATASET
+    // ───────────────────────────────────────────────────────────────
+    const FALLBACK_DRR_DATA = {
+      "inventory": [
+        {
+          "id": "ich-drr-01-smong",
+          "element_name": "Oral Tradition of Smong (Simeulue Indigenous Tsunami Early Warning)",
+          "category": "Oral Traditions and Expressions",
+          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Simeulue_Island_Coast.jpg/1200px-Simeulue_Island_Coast.jpg",
+          "source_urls": ["https://ich.kemdikbud.go.id/cerita/smong-kearifan-lokal-mitigasi-tsunami", "https://unesdoc.unesco.org/ark:/48223/pf0000375685"],
+          "location": { "country": "Indonesia", "provinces": ["Aceh (Simeulue Island)"], "lat": 2.6166, "lng": 96.0833 },
+          "resume_analisa": {
+            "description": "Smong is an indigenous oral warning system transmitting the distinct tri-phase tsunami sequence: violent earthquake, receding sea exposing fish, followed by catastrophic ocean rushes inland.",
+            "cultural_significance": "Saved over 99% of Simeulue Island's population during the 2004 Indian Ocean tsunami (less than 10 casualties recorded despite extreme epicenter proximity).",
+            "drr_relevance": true,
+            "drr_mechanism": "Tri-phase oral mnemonic protocol triggering instantaneous vertical hill evacuation without telecommunications.",
+            "gemini_tags": ["Tsunami Early Warning", "Oral Tradition", "Simeulue Heritage", "Zero-Tech DRR"]
+          },
+          "resume_tata_cara": {
+            "type": "Early Warning Protocol",
+            "materials_and_tools": ["Oral lullabies (Nanga-nanga)", "Poetic verses (Nafi-nafi)", "Prayer hall drums (Bedug)"],
+            "step_by_step": ["Identify high-intensity prolonged shaking.", "Observe rapid coastal recession (do not harvest fish).", "Shout warning alarm: 'Smong! Smong!'", "Flee immediately to higher hills (Ehe Teppo)."]
+          }
+        },
+        {
+          "id": "ich-drr-02-dry-stone-walling",
+          "element_name": "Art of Dry Stone Walling, Knowledge and Techniques",
+          "category": "Traditional Craftsmanship",
+          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Dry_stone_wall_terraces_in_Greece.jpg/1200px-Dry_stone_wall_terraces_in_Greece.jpg",
+          "source_urls": ["https://ich.unesco.org/en/RL/art-of-dry-stone-walling-knowledge-and-techniques-01393"],
+          "location": { "country": "Multi-National (Croatia, Cyprus, France, Greece, Italy, Spain, Switzerland)", "provinces": ["Mediterranean & Alpine Regions"], "lat": 43.7102, "lng": 7.2620 },
+          "resume_analisa": {
+            "description": "The ancient craft of assembling natural stones without mortar or cement. Structural stability relies on gravitational load distribution, friction, and interlocking alignment.",
+            "cultural_significance": "Inscribed on UNESCO Representative List. Porous stone structure relieves groundwater hydrostatic pressure, preventing mountain landslides and halting hillside topsoil erosion.",
+            "drr_relevance": true,
+            "drr_mechanism": "Permeable mortarless stone matrix relieves hydrostatic pressure, stopping hillside landslides and buffering flash flood torrents.",
+            "gemini_tags": ["Landslide Prevention", "Eco-DRR", "Soil Conservation", "Flood Buffer"]
+          },
+          "resume_tata_cara": {
+            "type": "Dry Masonry Technique",
+            "materials_and_tools": ["Quarried stones", "Walling hammers", "Plumb lines", "Porous packing gravel"],
+            "step_by_step": ["Excavate stable foundation trench.", "Build with inward batter slope.", "Pack interior void with permeable gravel.", "Place transverse through-stones.", "Lock with heavy coping stones."]
+          }
+        },
+        {
+          "id": "ich-drr-03-kigumi-woodcraft",
+          "element_name": "Traditional Skills of Wooden Architecture and Kigumi Joinery in Japan",
+          "category": "Traditional Craftsmanship",
+          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/To-kyo_bracket_complex.jpg/1200px-To-kyo_bracket_complex.jpg",
+          "source_urls": ["https://ich.unesco.org/en/RL/traditional-skills-techniques-and-knowledge-for-the-conservation-and-transmission-of-wooden-architecture-in-japan-01618"],
+          "location": { "country": "Japan", "provinces": ["Kyoto", "Nara", "Ishikawa"], "lat": 35.0116, "lng": 135.7681 },
+          "resume_analisa": {
+            "description": "Nail-free timber architectural construction utilizing hand-carved interlocking joints (Tsugite & Shiguchi) resting on unanchored stone plinths and suspended central pendulum pillars (Shinbashira).",
+            "cultural_significance": "Inscribed on UNESCO Representative List (2020). World's oldest base-isolation and seismic dissipation engineering; temples have survived 1,300+ years of M8.0+ earthquakes.",
+            "drr_relevance": true,
+            "drr_mechanism": "Friction-fit interlocking joints and suspended pendulum pillars dissipate kinetic earthquake waves without brittle structural fracture.",
+            "gemini_tags": ["Seismic Resilience", "Earthquake-Proof", "Kigumi", "Base-Isolation"]
+          },
+          "resume_tata_cara": {
+            "type": "Seismic Carpentry System",
+            "materials_and_tools": ["Aged Hinoki & Sugi timber", "Precision hand chisels (Nomi)", "Unanchored foundation stones (Ishiba-date)"],
+            "step_by_step": ["Place posts on unanchored plinths.", "Carve precision mortise-and-tenon joints.", "Assemble nail-free interlocking frame.", "Suspend central Shinbashira pendulum.", "Install multi-tiered Tokyō roof brackets."]
+          }
+        },
+        {
+          "id": "ich-drr-04-waru-waru",
+          "element_name": "Waru Waru (Camellones) Indigenous Flood, Drought and Frost Agriculture",
+          "category": "Knowledge and Practices Concerning Nature",
+          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Waru_Waru_system_Puno_Peru.jpg/1200px-Waru_Waru_system_Puno_Peru.jpg",
+          "source_urls": ["https://www.fao.org/giahs/giahs-around-the-world/latin-america-and-the-caribbean/waru-waru-peru/"],
+          "location": { "country": "Peru & Bolivia", "provinces": ["Puno (Altiplano Plateau)"], "lat": -15.8402, "lng": -69.3374 },
+          "resume_analisa": {
+            "description": "Pre-Incan high-altitude agro-hydrological engineering alternating elevated planting beds with perimeter canals, regulating microclimates above 3,800m ASL.",
+            "cultural_significance": "Multi-hazard DRR system: canals drain extreme floods, store water for droughts, and radiate diurnal solar heat at night to raise crop temperatures by 2°C–4°C against frost kill.",
+            "drr_relevance": true,
+            "drr_mechanism": "Canals absorb excess flood runoff, store moisture for dry spells, and release stored solar thermal heat to shield crops from night frost.",
+            "gemini_tags": ["Frost Mitigation", "Flood Control", "Andean Agro-Ecology", "Multi-Hazard"]
+          },
+          "resume_tata_cara": {
+            "type": "Microclimate Engineering",
+            "materials_and_tools": ["Andean foot-plows (Chakitaklla)", "Organic canal silt", "Native perennial grass"],
+            "step_by_step": ["Survey topography and solar exposure.", "Excavate alternating canal trenches.", "Construct raised earthen planting beds.", "Fertilize with dredged organic canal muck.", "Plant frost-hardy native tubers and quinoa."]
+          }
+        },
+        {
+          "id": "ich-drr-05-aflaj",
+          "element_name": "Al Aflaj Traditional Subterranean Irrigation System",
+          "category": "Knowledge and Practices Concerning Nature",
+          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Falaj_Dariss_Nizwa_Oman.jpg/1200px-Falaj_Dariss_Nizwa_Oman.jpg",
+          "source_urls": ["https://ich.unesco.org/en/RL/al-aflaj-traditional-irrigation-network-system-in-the-uae-oral-traditions-knowledge-and-skills-of-construction-maintenance-and-equitable-water-distribution-01576"],
+          "location": { "country": "United Arab Emirates & Oman", "provinces": ["Al Ain", "Ad Dakhiliyah"], "lat": 24.2185, "lng": 55.7626 },
+          "resume_analisa": {
+            "description": "Gravity-fed underground aqueduct channels tapping mountain aquifers and delivering freshwater across hyper-arid deserts without mechanical energy.",
+            "cultural_significance": "UNESCO Inscribed (2020). Prevents evaporative water loss during 50°C summer heatwaves, secures drought drinking water, and diverts flash flood wadis.",
+            "drr_relevance": true,
+            "drr_mechanism": "Subterranean tunnels eliminate solar evaporation during extreme heatwaves and protect water reserves against desert dust storms.",
+            "gemini_tags": ["Drought Resilience", "Extreme Heat Adaptation", "Desert Hydrology"]
+          },
+          "resume_tata_cara": {
+            "type": "Hydraulic Engineering",
+            "materials_and_tools": ["Mother-well winches", "Water sundials (Mizwala)", "Stone flow splitters"],
+            "step_by_step": ["Locate mountain alluvial aquifer.", "Excavate gently sloped horizontal tunnel.", "Build surface diversion overflow weirs.", "Allocate water via celestial sundials."]
+          }
+        },
+        {
+          "id": "ich-drr-07-baira-floating-gardens",
+          "element_name": "Baira Traditional Floating Agricultural System",
+          "category": "Knowledge and Practices Concerning Nature",
+          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Floating_agriculture_in_Bangladesh.jpg/1200px-Floating_agriculture_in_Bangladesh.jpg",
+          "source_urls": ["https://www.fao.org/giahs/giahs-around-the-world/asia-and-the-pacific/floating-garden-agricultural-system-in-bangladesh/"],
+          "location": { "country": "Bangladesh", "provinces": ["Gopalganj", "Barisal"], "lat": 22.7010, "lng": 90.3535 },
+          "resume_analisa": {
+            "description": "Hydroponic cultivation beds made of woven aquatic weeds (water hyacinth) that float dynamically with fluctuating monsoon water surges and tidal floods.",
+            "cultural_significance": "FAO Globally Important Agricultural Heritage. Secures zero-soil food production during 6-9 months of continuous annual farmland submergence.",
+            "drr_relevance": true,
+            "drr_mechanism": "Buoyant hydroponic weed mats rise and fall with monsoonal deluges, preventing crop loss and seedling wash-out.",
+            "gemini_tags": ["Flood Resilience", "Floating Agriculture", "Monsoon Adaptation", "Food Security"]
+          },
+          "resume_tata_cara": {
+            "type": "Wetland Hydroponics",
+            "materials_and_tools": ["Water hyacinths", "Bamboo stabilization poles", "Sprout balls (Tema)"],
+            "step_by_step": ["Collect floating water hyacinth biomass.", "Weave multi-layered floating raft.", "Allow compost crust to form.", "Transplant seed balls onto raft."]
+          }
+        },
+        {
+          "id": "ich-drr-09-cultural-burning",
+          "element_name": "Aboriginal Cultural Burning and Fire Management (Cool Burning)",
+          "category": "Knowledge and Practices Concerning Nature",
+          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Prescribed_burning_Arnhem_Land.jpg/1200px-Prescribed_burning_Arnhem_Land.jpg",
+          "source_urls": ["https://www.undrr.org/news/indigenous-fire-management-nature-based-solution-wildfire-risk"],
+          "location": { "country": "Australia", "provinces": ["Arnhem Land", "Cape York"], "lat": -12.4634, "lng": 130.8456 },
+          "resume_analisa": {
+            "description": "Ancient low-intensity, cool patch burns conducted early in the dry season guided by phenological cues, clearing fine fuel loads without harming canopy habitats.",
+            "cultural_significance": "Premier Nature-based Solution for Wildfire DRR: prevents catastrophic late-season megafires, protects rural settlements, and cuts greenhouse gas emissions.",
+            "drr_relevance": true,
+            "drr_mechanism": "Low-temperature early dry-season burns remove combustible fine litter, creating natural firebreaks against devastating wildfire infernos.",
+            "gemini_tags": ["Wildfire Mitigation", "Cool Burning", "Indigenous Fire Stewardship", "Megafire Prevention"]
+          },
+          "resume_tata_cara": {
+            "type": "Pyrological Stewardship",
+            "materials_and_tools": ["Native fire-drills", "Paperbark torches", "Seasonal wind calendars"],
+            "step_by_step": ["Assess grass curing and morning dew levels.", "Light low-flame spot fires with bark torches.", "Ensure tree canopies remain unburnt.", "Extinguish naturally into moist creeks."]
+          }
+        },
+        {
+          "id": "ich-drr-14-ivatan-typhoon-craft",
+          "element_name": "Ivatan Vernacular Architecture and Typhoon Resilience (Sinadumparan)",
+          "category": "Traditional Craftsmanship",
+          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/House_of_Dakiaw_Ivatan_House.jpg/1200px-House_of_Dakiaw_Ivatan_House.jpg",
+          "source_urls": ["https://whc.unesco.org/en/tentativelists/521/"],
+          "location": { "country": "Philippines", "provinces": ["Batanes Archipelago"], "lat": 20.4485, "lng": 121.9708 },
+          "resume_analisa": {
+            "description": "Storm-hardened masonry structures built with meter-thick slaked lime and stone walls, aerodynamic four-slope thatched roofs, and anchored rattan net matrices (panungtung).",
+            "cultural_significance": "Withstands Category 5 super typhoons (>250 km/h) and severe earthquakes without roof detachment or structural collapse.",
+            "drr_relevance": true,
+            "drr_mechanism": "Meter-thick lime masonry and anchored exterior rattan nets dissipate cyclonic wind shear forces during super typhoons.",
+            "gemini_tags": ["Super Typhoon Shield", "Extreme Wind DRR", "Ivatan Heritage", "Seismic Resilience"]
+          },
+          "resume_tata_cara": {
+            "type": "Cyclonic Structural Engineering",
+            "materials_and_tools": ["Basalt & coral stone", "Slaked lime mortar", "Cogon thatch", "Braided rattan nets (Panungtung)"],
+            "step_by_step": ["Orient blind wall toward prevailing monsoon gale.", "Construct meter-thick lime-bonded stone walls.", "Frame aerodynamic hip roof.", "Lash thatch with exterior rattan anchor nets."]
+          }
+        },
+        {
+          "id": "ich-drr-16-badgir-windcatcher",
+          "element_name": "Badgir Vernacular Windcatcher and Desert Passive Thermal Regulation",
+          "category": "Traditional Craftsmanship",
+          "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Yazd_Windcatcher_Dowlatabad.jpg/1200px-Yazd_Windcatcher_Dowlatabad.jpg",
+          "source_urls": ["https://whc.unesco.org/en/list/1544/"],
+          "location": { "country": "Iran", "provinces": ["Historic City of Yazd"], "lat": 31.8974, "lng": 54.3569 },
+          "resume_analisa": {
+            "description": "Passive zero-energy architectural cooling towers capturing high-altitude desert breezes and routing air across subterranean Qanat water streams.",
+            "cultural_significance": "UNESCO World Heritage. Lowers indoor temperatures by 12°C–18°C during lethal 50°C summer heatwaves completely without electricity.",
+            "drr_relevance": true,
+            "drr_mechanism": "Multi-shaft passive aerodynamic convection and evaporative subterranean cooling mitigates deadly urban heatwave mortality.",
+            "gemini_tags": ["Heatwave DRR", "Passive Cooling", "Zero-Energy", "Thermal Resilience"]
+          },
+          "resume_tata_cara": {
+            "type": "Aerodynamic Thermodynamics",
+            "materials_and_tools": ["Adobe mudbricks (Khesht)", "Straw-mud plaster (Kahgel)", "Subterranean Qanat water basins"],
+            "step_by_step": ["Orient vents toward cool atmospheric winds.", "Erect high-thermal-mass adobe tower.", "Partition interior into vertical airflow shafts.", "Couple airflow with subterranean Qanat pool."]
+          }
+        }
+      ]
+    };
+
+    // ───────────────────────────────────────────────────────────────
+    // 2. STATE & VARIABLES
+    // ───────────────────────────────────────────────────────────────
+    let drrInventory = [];
+    let activeFilter = 'all';
+    let leafletMap = null;
+    let mapMarkerLayer = null;
+    let hazardBeltLayer = null;
+    let sankeyChart = null;
+
+    // ───────────────────────────────────────────────────────────────
+    // 3. HAZARD CLASSIFICATION HELPER
+    // ───────────────────────────────────────────────────────────────
+    function getHazardType(item) {
+      const text = `${item.element_name} ${item.resume_analisa?.description || ''} ${item.resume_analisa?.drr_mechanism || ''} ${(item.resume_analisa?.gemini_tags || []).join(' ')}`.toLowerCase();
+      
+      if (text.includes('tsunami') || text.includes('marine surge') || text.includes('coastal recession')) return 'tsunami';
+      if (text.includes('earthquake') || text.includes('seismic') || text.includes('kigumi') || text.includes('ground shaking')) return 'earthquake';
+      if (text.includes('drought') || text.includes('heatwave') || text.includes('desert') || text.includes('badgir') || text.includes('aflaj') || text.includes('tanka')) return 'drought';
+      if (text.includes('flood') || text.includes('landslide') || text.includes('floating') || text.includes('stone wall') || text.includes('baira')) return 'flood';
+      if (text.includes('typhoon') || text.includes('cyclone') || text.includes('ivatan') || text.includes('gale')) return 'typhoon';
+      if (text.includes('fire') || text.includes('burning') || text.includes('wildfire') || text.includes('biomass')) return 'wildfire';
+      return 'flood';
+    }
+
+    function getHazardMeta(type) {
+      const map = {
+        tsunami:   { label: 'Tsunami & Coastal Surge', color: 'bg-sky-500', text: 'text-sky-700', bgLight: 'bg-sky-50', border: 'border-sky-200', icon: 'ph-waves', hex: '#0284c7' },
+        earthquake:{ label: 'Seismic & Earthquake', color: 'bg-amber-500', text: 'text-amber-700', bgLight: 'bg-amber-50', border: 'border-amber-200', icon: 'ph-activity', hex: '#d97706' },
+        drought:   { label: 'Drought & Heatwave', color: 'bg-orange-500', text: 'text-orange-700', bgLight: 'bg-orange-50', border: 'border-orange-200', icon: 'ph-sun', hex: '#ea580c' },
+        flood:     { label: 'Flood & Landslide', color: 'bg-emerald-500', text: 'text-emerald-700', bgLight: 'bg-emerald-50', border: 'border-emerald-200', icon: 'ph-drop', hex: '#059669' },
+        typhoon:   { label: 'Super Typhoon & Gale', color: 'bg-purple-500', text: 'text-purple-700', bgLight: 'bg-purple-50', border: 'border-purple-200', icon: 'ph-wind', hex: '#7c3aed' },
+        wildfire:  { label: 'Wildfire & Bushfire', color: 'bg-red-500', text: 'text-red-700', bgLight: 'bg-red-50', border: 'border-red-200', icon: 'ph-fire', hex: '#dc2626' }
+      };
+      return map[type] || map.flood;
+    }
+
+    // ───────────────────────────────────────────────────────────────
+    // 3b. HAZARD SVG ICONOGRAPHY (replaces stock photo thumbnails)
+    // Each icon is a small, purpose-built diagram of the hazard type
+    // ───────────────────────────────────────────────────────────────
+    function getHazardIconSVG(type, hex) {
+      const svgs = {
+        tsunami: `
+          <svg viewBox="0 0 200 140" class="w-24 h-24" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="waveGrad-${hex.slice(1)}" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="${hex}" stop-opacity="0.95"/>
+                <stop offset="100%" stop-color="${hex}" stop-opacity="0.55"/>
+              </linearGradient>
+            </defs>
+            <path d="M0 95 Q 20 75, 40 95 T 80 95 T 120 95 T 160 95 T 200 95 V140 H0 Z" fill="url(#waveGrad-${hex.slice(1)})"/>
+            <path d="M0 115 Q 25 100, 50 115 T 100 115 T 150 115 T 200 115 V140 H0 Z" fill="${hex}" opacity="0.35"/>
+            <circle cx="100" cy="40" r="16" fill="${hex}" opacity="0.18"/>
+            <path d="M84 46 h32 M78 40 h44 M84 34 h32" stroke="${hex}" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+          </svg>`,
+        earthquake: `
+          <svg viewBox="0 0 200 140" class="w-24 h-24" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="70" width="180" height="16" fill="${hex}" opacity="0.25"/>
+            <rect x="10" y="90" width="180" height="14" fill="${hex}" opacity="0.15"/>
+            <path d="M10 70 L45 70 L58 45 L75 90 L92 30 L110 95 L128 55 L145 70 L190 70"
+                  fill="none" stroke="${hex}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="92" cy="30" r="5" fill="${hex}"/>
+            <path d="M92 30 m-14,-4 a14,14 0 1,1 -0.1,0" fill="none" stroke="${hex}" stroke-width="2" opacity="0.4"/>
+          </svg>`,
+        drought: `
+          <svg viewBox="0 0 200 140" class="w-24 h-24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="42" r="22" fill="${hex}" opacity="0.85"/>
+            <g stroke="${hex}" stroke-width="4" stroke-linecap="round" opacity="0.7">
+              <line x1="100" y1="4" x2="100" y2="14"/>
+              <line x1="100" y1="70" x2="100" y2="80"/>
+              <line x1="62" y1="42" x2="72" y2="42"/>
+              <line x1="128" y1="42" x2="138" y2="42"/>
+              <line x1="74" y1="16" x2="80" y2="24"/>
+              <line x1="120" y1="24" x2="126" y2="16"/>
+              <line x1="74" y1="68" x2="80" y2="60"/>
+              <line x1="120" y1="60" x2="126" y2="68"/>
+            </g>
+            <path d="M0 110 L28 95 L50 112 L78 92 L104 114 L132 90 L158 113 L200 96 V140 H0 Z" fill="${hex}" opacity="0.25"/>
+            <path d="M20 118 v14 M60 112 v18 M100 118 v14 M140 112 v18 M180 118 v14" stroke="${hex}" stroke-width="2" opacity="0.6"/>
+          </svg>`,
+        flood: `
+          <svg viewBox="0 0 200 140" class="w-24 h-24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100 10 C 80 45, 60 60, 60 85 a40 40 0 0 0 80 0 C 140 60, 120 45, 100 10 Z" fill="${hex}" opacity="0.85"/>
+            <path d="M10 120 Q 30 108, 50 120 T 90 120 T 130 120 T 170 120 T 200 120 V140 H0 V120 Z" fill="${hex}" opacity="0.3"/>
+            <path d="M10 105 Q 30 95, 50 105 T 90 105 T 130 105 T 170 105 T 200 105" fill="none" stroke="${hex}" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+          </svg>`,
+        typhoon: `
+          <svg viewBox="0 0 200 140" class="w-24 h-24" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(100 68)">
+              <path d="M0 0 C 30 -6, 46 10, 40 34 C 36 52, 16 58, 0 50" fill="none" stroke="${hex}" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+              <path d="M0 0 C -26 4, -40 -14, -30 -34 C -22 -50, -2 -54, 12 -46" fill="none" stroke="${hex}" stroke-width="7" stroke-linecap="round" opacity="0.65"/>
+              <path d="M0 0 C 14 12, 10 30, -8 34" fill="none" stroke="${hex}" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+              <circle cx="0" cy="0" r="4" fill="${hex}"/>
+            </g>
+          </svg>`,
+        wildfire: `
+          <svg viewBox="0 0 200 140" class="w-24 h-24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100 20 C 80 45, 70 60, 78 78 C 82 88, 94 92, 100 84 C 104 92, 118 90, 120 76 C 122 62, 110 55, 112 40 C 106 52, 96 48, 100 20 Z" fill="${hex}" opacity="0.9"/>
+            <path d="M92 70 C 90 80, 98 88, 106 84 C 112 81, 112 72, 106 66 C 106 76, 98 78, 92 70 Z" fill="#fff" opacity="0.5"/>
+            <path d="M20 118 L40 100 L55 118 L75 96 L95 118 L115 98 L135 118 L155 100 L180 118" fill="none" stroke="${hex}" stroke-width="3" opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>`
+      };
+      return svgs[type] || svgs.flood;
+    }
+
+    // ───────────────────────────────────────────────────────────────
+    // 4. INITIALIZATION & DATA LOADING
+    // ───────────────────────────────────────────────────────────────
+    async function initDRRRadar() {
+      try {
+        const response = await fetch('data.json');
+        if (!response.ok) throw new Error('data.json not found');
+        const rawData = await response.json();
+        
+        const rawList = Array.isArray(rawData) ? rawData : (rawData.inventory || []);
+        
+        // FILTER: Only elements that have "drr" in ID or drr_relevance = true
+        drrInventory = rawList.filter(item => 
+          (item.id && item.id.toLowerCase().includes('drr')) || 
+          (item.resume_analisa && item.resume_analisa.drr_relevance === true)
+        );
+
+        if (drrInventory.length === 0) throw new Error('No DRR items in data.json');
+      } catch (err) {
+        console.warn('Using embedded fallback DRR data:', err);
+        drrInventory = FALLBACK_DRR_DATA.inventory;
+      }
+
+      document.getElementById('kpi-total').innerText = drrInventory.length;
+      document.getElementById('tab-count-badge').innerText = drrInventory.length;
+      document.getElementById('ticker-text').innerText = `Monitoring ${drrInventory.length} verified indigenous disaster mitigation mechanisms globally`;
+
+      renderCards();
+      initLeafletMap();
+      renderMapMarkers();
+    }
+
+    // ───────────────────────────────────────────────────────────────
+    // 5. RENDER BLUEPRINT CATALOG CARDS
+    // ───────────────────────────────────────────────────────────────
+    function renderCards() {
+      const grid = document.getElementById('drr-grid');
+      grid.innerHTML = '';
+
+      const filtered = activeFilter === 'all' 
+        ? drrInventory 
+        : drrInventory.filter(item => getHazardType(item) === activeFilter);
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-16 text-center text-slate-400 font-mono">
+            <i class="ph ph-shield-slash text-4xl mb-2 text-slate-300"></i>
+            <p>No living heritage records match this specific disaster scenario.</p>
+          </div>`;
+        return;
+      }
+
+      filtered.forEach(item => {
+        const hazardType = getHazardType(item);
+        const meta = getHazardMeta(hazardType);
+
+        const card = document.createElement('div');
+        card.className = "bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-blue-400 hover:shadow-lg transition-all duration-300 flex flex-col group";
+
+        card.innerHTML = `
+          <div class="h-44 w-full relative overflow-hidden flex items-center justify-center"
+               style="background: linear-gradient(135deg, ${meta.hex}14, ${meta.hex}03);">
+            <div class="transition-transform duration-500 group-hover:scale-110">
+              ${getHazardIconSVG(hazardType, meta.hex)}
+            </div>
+
+            <!-- Hazard Category Badge -->
+            <div class="absolute top-3 left-3">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold font-mono tracking-wide ${meta.bgLight} ${meta.text} border ${meta.border} shadow-sm backdrop-blur-sm">
+                <i class="ph-fill ${meta.icon}"></i> ${meta.label}
+              </span>
+            </div>
+
+            <!-- Zero Energy Tag -->
+            <div class="absolute top-3 right-3">
+              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold font-mono bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-sm">
+                <i class="ph-fill ph-leaf"></i> 100% Pasif
+              </span>
+            </div>
+          </div>
+
+          <div class="p-5 flex flex-col flex-grow justify-between gap-4">
+            <div>
+              <p class="text-xs text-slate-400 font-mono font-medium uppercase mb-1">
+                <i class="ph-fill ph-map-pin text-blue-500 mr-1"></i>${item.location?.country || 'Global'}
+              </p>
+              <h4 class="font-display font-bold text-lg text-slate-900 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+                ${item.element_name}
+              </h4>
+              <p class="text-xs text-slate-600 line-clamp-3 mt-2 leading-relaxed">
+                ${item.resume_analisa?.description || '-'}
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 flex flex-col gap-3">
+              <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-100 text-xs">
+                <span class="font-bold text-slate-700 block mb-0.5 text-[11px] uppercase font-mono">
+                  <i class="ph-fill ph-gear text-amber-500 mr-1"></i>Mitigation Mechanism:
+                </span>
+                <span class="text-slate-600 line-clamp-2 italic">
+                  "${item.resume_analisa?.drr_mechanism || item.resume_analisa?.cultural_significance || 'Community-led resilience protocol.'}"
+                </span>
+              </div>
+
+              <button onclick="openBlueprintModal('${item.id}')" class="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="ph ph-file-text text-base"></i>
+                <span>View DRR Blueprint</span>
+              </button>
+            </div>
+          </div>`;
+
+        grid.appendChild(card);
+      });
+    }
+
+    // ───────────────────────────────────────────────────────────────
+    // 6. HAZARD FILTER SIMULATOR INTERACTION
+    // ───────────────────────────────────────────────────────────────
+    function filterByHazard(type) {
+      activeFilter = type;
+      
+      document.querySelectorAll('.hazard-btn').forEach(btn => {
+        if (btn.getAttribute('data-hazard') === type) {
+          btn.className = "hazard-btn active px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-slate-900 text-white shadow-sm";
+        } else {
+          btn.className = "hazard-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200";
+        }
+      });
+
+      renderCards();
+      renderMapMarkers();
+    }
+
+    // ───────────────────────────────────────────────────────────────
+    // 7. LEAFLET MAP WITH HAZARD BELTS OVERLAY
+    // ───────────────────────────────────────────────────────────────
+    function initLeafletMap() {
+      if (leafletMap) return;
+
+      leafletMap = L.map('drr-map', { zoomControl: true, scrollWheelZoom: true }).setView([18, 10], 2);
+      
+      // Standard OpenStreetMap raster tiles (no API key / no watermark required)
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19
+      }).addTo(leafletMap);
+
+      hazardBeltLayer = L.layerGroup().addTo(leafletMap);
+      mapMarkerLayer = L.markerClusterGroup({ chunkedLoading: true, maxClusterRadius: 35 });
+      leafletMap.addLayer(mapMarkerLayer);
+
+      // Draw Global Threat Belts
+      drawGlobalHazardBelts();
+    }
+
+    function drawGlobalHazardBelts() {
+      // 1. Pacific Ring of Fire (Seismic / Tsunami Belt)
+      const ringOfFire = [
+        [-45, 168], [-20, 180], [0, 128], [15, 120], [35, 140], [55, 160], [60, -170], 
+        [55, -135], [35, -120], [15, -95], [0, -80], [-20, -70], [-45, -75]
+      ];
+      L.polyline(ringOfFire, {
+        color: '#d97706', weight: 2.5, opacity: 0.6, className: 'glowing-hazard-line'
+      }).bindTooltip("<b>Pacific Ring of Fire:</b> High Seismic & Tsunami Subduction Zone", { sticky: true }).addTo(hazardBeltLayer);
+
+      // 2. Sahelian Desertification & Drought Corridor
+      const sahelCorridor = [
+        [18, -17], [18, 38], [10, 38], [10, -17]
+      ];
+      L.polygon(sahelCorridor, {
+        color: '#ea580c', weight: 1, fillColor: '#ea580c', fillOpacity: 0.08, dashArray: '4 4'
+      }).bindTooltip("<b>Sahelian Aridity Belt:</b> Extreme Drought & Soil Crusting Zone", { sticky: true }).addTo(hazardBeltLayer);
+    }
+
+    function renderMapMarkers() {
+      if (!leafletMap || !mapMarkerLayer) return;
+      mapMarkerLayer.clearLayers();
+
+      const filtered = activeFilter === 'all' 
+        ? drrInventory 
+        : drrInventory.filter(item => getHazardType(item) === activeFilter);
+
+      filtered.forEach(item => {
+        const lat = item.location?.lat;
+        const lng = item.location?.lng;
+        if (!lat || !lng) return;
+
+        const hazardType = getHazardType(item);
+        const meta = getHazardMeta(hazardType);
+
+        const customIcon = L.divIcon({
+          className: '',
+          html: `<div class="w-4 h-4 rounded-full border-2 border-white shadow-md marker-pulse-${hazardType}"></div>`,
+          iconSize: [16, 16],
+          iconAnchor: [8, 8]
+        });
+
+        const marker = L.marker([lat, lng], { icon: customIcon });
+        
+        marker.bindPopup(`
+          <div class="p-1 min-w-[200px]">
+            <span class="inline-block px-2 py-0.5 rounded text-[9px] font-bold font-mono ${meta.bgLight} ${meta.text} border ${meta.border} mb-1.5">
+              ${meta.label}
+            </span>
+            <h5 class="font-display font-bold text-sm text-slate-900 leading-tight">${item.element_name}</h5>
+            <p class="text-xs text-slate-500 mt-1">${item.location?.country || ''}</p>
+            <p class="text-xs text-slate-700 italic mt-2 border-t border-slate-100 pt-1.5">"${item.resume_analisa?.drr_mechanism || ''}"</p>
+            <button onclick="openBlueprintModal('${item.id}')" class="mt-3 w-full py-1.5 bg-slate-900 text-white rounded text-[11px] font-bold hover:bg-blue-600 transition">
+              Open Blueprint
+            </button>
+          </div>
+        `, { maxWidth: 260 });
+
+        mapMarkerLayer.addLayer(marker);
+      });
+    }
+
+    // ───────────────────────────────────────────────────────────────
+    // 8. TABS SWITCHER (DIRECTORY vs MAP)
+    // ───────────────────────────────────────────────────────────────
+    function switchMainTab(tab) {
+      const tabDir = document.getElementById('tab-view-directory');
+      const tabMap = document.getElementById('tab-view-map');
+      const btnDir = document.getElementById('tab-btn-directory');
+      const btnMap = document.getElementById('tab-btn-map');
+
+      if (tab === 'map') {
+        tabDir.classList.add('hidden');
+        tabMap.classList.remove('hidden');
+
+        btnMap.className = "px-5 py-3 font-bold text-sm text-blue-700 border-b-2 border-blue-600 flex items-center gap-2 transition-all";
+        btnDir.className = "px-5 py-3 font-bold text-sm text-slate-500 hover:text-slate-800 border-b-2 border-transparent flex items-center gap-2 transition-all";
+
+        if (leafletMap) setTimeout(() => leafletMap.invalidateSize(), 150);
+      } else {
+        tabMap.classList.add('hidden');
+        tabDir.classList.remove('hidden');
+
+        btnDir.className = "px-5 py-3 font-bold text-sm text-blue-700 border-b-2 border-blue-600 flex items-center gap-2 transition-all";
+        btnMap.className = "px-5 py-3 font-bold text-sm text-slate-500 hover:text-slate-800 border-b-2 border-transparent flex items-center gap-2 transition-all";
+      }
+    }
+
+    // ───────────────────────────────────────────────────────────────
+    // 9. MODAL: DRR BLUEPRINT
+    // ───────────────────────────────────────────────────────────────
+    function openBlueprintModal(itemId) {
+      const item = drrInventory.find(i => i.id === itemId);
+      if (!item) return;
+
+      const hazardType = getHazardType(item);
+      const meta = getHazardMeta(hazardType);
+
+      document.getElementById('modal-title').innerText = item.element_name;
+      document.getElementById('modal-location').innerHTML = `<i class="ph-fill ph-map-pin text-blue-600"></i> ${item.location?.country || 'Global'} (${(item.location?.provinces || []).join(', ') || '-'})`;
+      
+      document.getElementById('modal-hazard-badge').innerHTML = `
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold font-mono ${meta.bgLight} ${meta.text} border ${meta.border}">
+          <i class="ph-fill ${meta.icon}"></i> ${meta.label}
+        </span>
+        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold font-mono bg-emerald-50 text-emerald-700 border border-emerald-200">
+          <i class="ph-fill ph-leaf"></i> Zero-Energy Eco-DRR
+        </span>`;
+
+      const stepsHtml = (item.resume_tata_cara?.step_by_step || []).map((step, idx) => `
+        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+          <span class="w-6 h-6 rounded-full bg-slate-900 text-white font-mono font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">${idx + 1}</span>
+          <p class="text-xs text-slate-700 leading-relaxed">${step.replace(/\*\*/g, '')}</p>
+        </div>
+      `).join('');
+
+      const toolsHtml = (item.resume_tata_cara?.materials_and_tools || []).map(t => `
+        <span class="bg-white border border-slate-200 px-3 py-1 rounded-lg text-xs font-mono text-slate-700">${t}</span>
+      `).join('');
+
+      document.getElementById('modal-body').innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 rounded-2xl bg-blue-50/60 border border-blue-100 col-span-2">
+            <h5 class="text-xs uppercase font-mono font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+              <i class="ph-fill ph-shield-check"></i> Engineered Resilience Mechanism
+            </h5>
+            <p class="text-sm text-blue-950 font-medium leading-relaxed">
+              "${item.resume_analisa?.drr_mechanism || item.resume_analisa?.cultural_significance || '-'}"
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-center">
+            <span class="text-[11px] font-mono text-slate-400 uppercase font-semibold">Category Domain</span>
+            <span class="text-sm font-bold text-slate-900 mt-0.5">${item.category}</span>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="text-xs uppercase font-mono font-bold text-slate-400 mb-2">Detailed Narrative & Context</h5>
+          <p class="text-sm text-slate-700 leading-relaxed bg-slate-50/50 p-4 rounded-2xl border border-slate-100">${item.resume_analisa?.description || '-'}</p>
+        </div>
+
+        ${toolsHtml ? `
+        <div>
+          <h5 class="text-xs uppercase font-mono font-bold text-slate-400 mb-2">Native Materials & Vernacular Tools</h5>
+          <div class="flex flex-wrap gap-2">${toolsHtml}</div>
+        </div>` : ''}
+
+        ${stepsHtml ? `
+        <div>
+          <h5 class="text-xs uppercase font-mono font-bold text-slate-400 mb-2">Operational Protocol & Step-by-Step Sequence</h5>
+          <div class="space-y-2">${stepsHtml}</div>
+        </div>` : ''}
+
+        <div>
+          <h5 class="text-xs uppercase font-mono font-bold text-slate-400 mb-2">Field Verification Sources</h5>
+          <div class="space-y-1.5">${(item.source_urls || []).map(url => `
+            <a href="${url}" target="_blank" class="flex items-center gap-2 text-xs font-mono text-blue-600 hover:underline truncate">
+              <i class="ph ph-arrow-square-out shrink-0"></i> <span class="truncate">${url}</span>
+            </a>`).join('')}</div>
+        </div>
+      `;
+
+      const modal = document.getElementById('blueprint-modal');
+      const wrapper = document.getElementById('modal-wrapper');
+      modal.classList.remove('hidden');
+      void modal.offsetWidth;
+      modal.classList.remove('opacity-0');
+      wrapper.classList.remove('scale-95');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('blueprint-modal');
+      const wrapper = document.getElementById('modal-wrapper');
+      modal.classList.add('opacity-0');
+      wrapper.classList.add('scale-95');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    // ───────────────────────────────────────────────────────────────
+    // 10. MODAL: SANKEY RESILIENCE MATRIX (ECHARTS)
+    // ───────────────────────────────────────────────────────────────
+    function openMatrixModal() {
+      const modal = document.getElementById('matrix-modal');
+      const wrapper = document.getElementById('matrix-modal-wrapper');
+      modal.classList.remove('hidden');
+      void modal.offsetWidth;
+      modal.classList.remove('opacity-0');
+      wrapper.classList.remove('scale-95');
+
+      setTimeout(() => renderSankeyFlow(), 250);
+    }
+
+    function closeMatrixModal() {
+      const modal = document.getElementById('matrix-modal');
+      const wrapper = document.getElementById('matrix-modal-wrapper');
+      modal.classList.add('opacity-0');
+      wrapper.classList.add('scale-95');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    function renderSankeyFlow() {
+      const chartDom = document.getElementById('echarts-sankey');
+      if (!sankeyChart) {
+        sankeyChart = echarts.init(chartDom);
+        window.addEventListener('resize', () => sankeyChart.resize());
+      }
+
+      const nodes = [
+        // 1. Hazards
+        { name: '🌊 Coastal Surge & Tsunami' },
+        { name: '🌋 Seismic Shaking' },
+        { name: '☀️ Hyper-Arid Drought' },
+        { name: '🌿 Deluge & Flash Floods' },
+        { name: '🌀 Super Typhoon Gale' },
+        { name: '🔥 Forest Megafires' },
+
+        // 2. Heritage Domains
+        { name: 'Oral Traditions' },
+        { name: 'Vernacular Carpentry' },
+        { name: 'Traditional Hydrology' },
+        { name: 'Agro-Ecosystems' },
+        { name: 'Dry Masonry' },
+        { name: 'Customary Governance' },
+
+        // 3. Sendai Outcomes
+        { name: 'Priority 1: Early Warning' },
+        { name: 'Priority 3: Structural Defense' },
+        { name: 'Priority 3: Water Security' },
+        { name: 'Priority 4: Food Resilience' },
+        { name: 'Eco-DRR Landslide Prevention' },
+        { name: 'Wildfire Biomass Control' }
+      ];
+
+      const links = [
+        { source: '🌊 Coastal Surge & Tsunami', target: 'Oral Traditions', value: 4 },
+        { source: 'Oral Traditions', target: 'Priority 1: Early Warning', value: 4 },
+
+        { source: '🌋 Seismic Shaking', target: 'Vernacular Carpentry', value: 5 },
+        { source: 'Vernacular Carpentry', target: 'Priority 3: Structural Defense', value: 5 },
+
+        { source: '☀️ Hyper-Arid Drought', target: 'Traditional Hydrology', value: 6 },
+        { source: 'Traditional Hydrology', target: 'Priority 3: Water Security', value: 6 },
+
+        { source: '🌿 Deluge & Flash Floods', target: 'Agro-Ecosystems', value: 5 },
+        { source: 'Agro-Ecosystems', target: 'Priority 4: Food Resilience', value: 5 },
+
+        { source: '🌿 Deluge & Flash Floods', target: 'Dry Masonry', value: 4 },
+        { source: 'Dry Masonry', target: 'Eco-DRR Landslide Prevention', value: 4 },
+
+        { source: '🌀 Super Typhoon Gale', target: 'Dry Masonry', value: 3 },
+        { source: '🌀 Super Typhoon Gale', target: 'Vernacular Carpentry', value: 3 },
+
+        { source: '🔥 Forest Megafires', target: 'Customary Governance', value: 4 },
+        { source: 'Customary Governance', target: 'Wildfire Biomass Control', value: 4 }
+      ];
+
+      sankeyChart.setOption({
+        tooltip: { trigger: 'item', triggerOn: 'mousemove' },
+        series: [
+          {
+            type: 'sankey',
+            layout: 'none',
+            emphasis: { focus: 'adjacency' },
+            data: nodes,
+            links: links,
+            lineStyle: { color: 'gradient', curveness: 0.5 },
+            label: { color: '#1e293b', fontSize: 11, fontFamily: 'Inter' }
+          }
+        ]
+      });
+    }
+
+    // ───────────────────────────────────────────────────────────────
+    // 11. MODAL: SENDAI GUIDE
+    // ───────────────────────────────────────────────────────────────
+    function openGuideModal() {
+      const modal = document.getElementById('guide-modal');
+      const wrapper = document.getElementById('guide-modal-wrapper');
+      modal.classList.remove('hidden');
+      void modal.offsetWidth;
+      modal.classList.remove('opacity-0');
+      wrapper.classList.remove('scale-95');
+    }
+
+    function closeGuideModal() {
+      const modal = document.getElementById('guide-modal');
+      const wrapper = document.getElementById('guide-modal-wrapper');
+      modal.classList.add('opacity-0');
+      wrapper.classList.add('scale-95');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    // Keyboard & Outer Click Dismissals
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') { closeModal(); closeMatrixModal(); closeGuideModal(); }
+    });
+
+    window.onload = initDRRRadar;
+  </script>
+</body>
+</html>
