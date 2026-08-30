@@ -1013,6 +1013,8 @@ const COUNTRY_CENTROIDS = {
       `;
     }
 
+    const safeCategoryLabel = categoryLabel.toUpperCase().replace(/&/g, '&amp;');
+
     const rawSvg = `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
       <defs>
@@ -1132,6 +1134,12 @@ const COUNTRY_CENTROIDS = {
       sel.appendChild(o);
     });
   }
+
+  window.handleFallbackImage = function(imgElement, category) {
+  imgElement.onerror = null; // Cegah infinite loop jika SVG-nya juga gagal
+  imgElement.removeAttribute('loading'); // Paksa browser render saat itu juga
+  imgElement.src = getCategoryFallbackSvg(category);
+};
 
   // ═══════════════════════════════════════════════════════════════
   //  UI RENDERING
