@@ -23251,6 +23251,1435 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-01-smong",
+      "element_name": "Oral Tradition of Smong (Simeulue Indigenous Tsunami Early Warning)",
+      "category": "Oral Traditions and Expressions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Simeulue_Island_Coast.jpg/1200px-Simeulue_Island_Coast.jpg",
+      "source_urls": [
+        "https://ich.kemdikbud.go.id/cerita/smong-kearifan-lokal-mitigasi-tsunami",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000375685",
+        "https://www.preventionweb.net/publication/indigenous-knowledge-disaster-risk-reduction-smong-story",
+        "https://bnpb.go.id/berita/kearifan-lokal-smong-warisan-resiliensi-masyarakat-simeulue"
+      ],
+      "scraped_at": "2026-08-30T09:15:00.000Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Aceh (Simeulue Island)"
+        ],
+        "lat": 2.6166,
+        "lng": 96.0833
+      },
+      "resume_analisa": {
+        "description": "Smong is an indigenous early warning system transmitted through oral traditions by the Devayan and Sigulai ethnic groups on Simeulue Island, originating from the catastrophic earthquake and tsunami of 1907. The term 'Smong' describes a distinct tri-phase disaster sequence: a violent earthquake (lindu), followed by rapid coastal recession exposing the seabed and stranded fish, culminating in massive destructive ocean surges rushing inland. This survival knowledge is systematically passed down across generations through bedtime lullabies (Nanga-nanga), poetic recitations (Nafi-nafi), songs, and communal gatherings without reliance on modern telecommunications.",
+        "cultural_significance": "Smong functioned as an infallible collective memory that saved over 99% of Simeulue Island's population during the massive magnitude 9.1–9.3 Indian Ocean earthquake and tsunami on December 26, 2004. Despite the island's extreme proximity to the epicenter, fewer than ten casualties were recorded. Recognized as part of Indonesia's National Intangible Cultural Heritage, Smong serves as a global benchmark for UNESCO and UNDRR on how indigenous knowledge can outperform sensor-based warning technologies during near-field tsunami emergencies.",
+        "drr_relevance": true,
+        "drr_mechanism": "Indigenous tri-phase early warning protocol (earthquake -> ocean recession -> giant wave) prompting rapid vertical evacuation to hills without relying on electricity or telecommunications.",
+        "gemini_tags": [
+          "Disaster Risk Reduction",
+          "Tsunami Early Warning",
+          "Indigenous Knowledge",
+          "Oral Tradition",
+          "Simeulue Heritage",
+          "Local Resilience",
+          "UNESCO DRR Case Study"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Early Warning & Evacuation Protocol",
+        "materials_and_tools": [
+          "Oral storytelling traditions (Nafi-nafi and Nanga-nanga)",
+          "Communal wooden slit-drums / prayer hall drums (bedug) for emergency signaling",
+          "Natural overland escape corridors to surrounding hills (Ehe Teppo)"
+        ],
+        "step_by_step": [
+          "Identify Severe Ground Motion: Recognize prolonged, high-intensity earthquakes that make standing upright difficult.",
+          "Observe Coastal Retreat: If the sea abruptly recedes and exposes the seabed, DO NOT rush toward the shore to collect stranded marine life.",
+          "Sound the Vocal Alarm: Immediately shout the warning call 'Smong! Smong!' to alert neighbors and mobilize the entire community.",
+          "Execute Vertical Evacuation: Leave all material possessions behind and run immediately to predetermined high ground or hills (Ehe Teppo).",
+          "Remain at Higher Elevation: Do not return to the coastline until several consecutive wave surges have completely ceased and water levels stabilize.",
+          "Maintain Intergenerational Transmission: Continuously teach the Smong protocol to every newborn child through lullabies and family folklore."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.85,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Inamura no Hi & Tsunami Tendenko",
+            "relationship_reason": "The ancestral principle of immediate individual evacuation to higher ground without waiting for others (Tsunami Tendenko) practiced along Japan's Sanriku coastline."
+          },
+          {
+            "country": "Chile",
+            "element_name": "Mapuche Legend of Trentren Vilu and Caicai Vilu",
+            "relationship_reason": "An indigenous cosmological myth instructing coastal communities to immediately seek refuge on mountain summits whenever the earth shakes and tidal waters rise."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-02-dry-stone-walling",
+      "element_name": "Art of Dry Stone Walling, Knowledge and Techniques",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Dry_stone_wall_terraces_in_Greece.jpg/1200px-Dry_stone_wall_terraces_in_Greece.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/art-of-dry-stone-walling-knowledge-and-techniques-01393",
+        "https://www.undrr.org/news/ancient-dry-stone-walls-help-modern-disaster-resilience",
+        "https://whc.unesco.org/en/news/1908",
+        "https://drystonesociety.org/engineering-and-environmental-value/"
+      ],
+      "scraped_at": "2026-08-30T09:15:00.000Z",
+      "location": {
+        "country": "Multi-National (Croatia, Cyprus, France, Greece, Italy, Slovenia, Spain, Switzerland, Andorra, Austria, Belgium, Ireland, Luxembourg)",
+        "provinces": [
+          "Mediterranean & Alpine Mountain Regions"
+        ],
+        "lat": 43.7102,
+        "lng": 7.2620
+      },
+      "resume_analisa": {
+        "description": "Dry stone walling is the ancient craft of assembling and interlocking natural stones without the use of mortar, cement, or adhesive binders. Structural stability is achieved exclusively through careful stone selection, gravitational load distribution, friction, and interlocking alignment. Widely utilized across steep European mountain slopes and Mediterranean landscapes, this practice creates agricultural terrace systems, property enclosures, and runoff mitigation retaining walls.",
+        "cultural_significance": "Inscribed on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity in 2018 (expanded in 2023). This craft plays an indispensable role in Ecosystem-based Disaster Risk Reduction (Eco-DRR): its permeable, mortarless matrix allows groundwater to filter through freely, neutralizing hydrostatic pressure buildup and preventing devastating landslides, stabilizing fragile hillside topsoils against severe erosion, buffering flash flood torrents, and combating agricultural drought.",
+        "drr_relevance": true,
+        "drr_mechanism": "Permeable mortarless stone matrix relieves subterranean hydrostatic pressure to prevent mountain landslides, stabilizes topsoils against erosion, and slows flash flood velocity.",
+        "gemini_tags": [
+          "UNESCO Representative List",
+          "Dry Stone Walling",
+          "Landslide Prevention",
+          "Flood Mitigation",
+          "Erosion Control",
+          "Traditional Craftsmanship",
+          "Eco-DRR"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Vernacular Engineering & Dry Masonry Technique",
+        "materials_and_tools": [
+          "Locally sourced quarried or field stones (limestone, basalt, granite, or sandstone)",
+          "Walling and scapping hammers",
+          "Plumb lines, guide strings, and wooden batter frames",
+          "Angular packing stones (hearting)",
+          "Transverse tie stones (through-stones)",
+          "Heavy crowning stones (coping / capping stones)"
+        ],
+        "step_by_step": [
+          "Excavate Foundation Trench: Dig a shallow foundation bed into firm subsoil and position the largest, flattest stones as the primary bearing course.",
+          "Establish Inward Batter: Construct wall faces with an inward slope toward the center to counteract gravity and lateral soil push from the hillside.",
+          "Interlock Staggered Joints: Build the outer and inner stone faces simultaneously, breaking vertical joints systematically ('one stone over two, two over one').",
+          "Pack Permeable Core: Tightly pack the internal void with angular gravel and small stone chips (hearting) to ensure instantaneous water drainage without creating voids.",
+          "Insert Transverse Through-Stones: Place long bridging stones across the full width of the wall at one-meter height intervals to mechanically bind both outer wall faces.",
+          "Lock with Coping Stones: Crown the top of the wall with vertically set or tightly wedged coping stones to shield the underlying core from erosive rainfall impact."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Peru / Bolivia",
+            "element_name": "Andean Agricultural Terracing (Andenes) & Incan Dry Stone",
+            "relationship_reason": "Mortarless stepped stone terraces in the high Andes designed to arrest mountain landslides and optimize soil moisture retention."
+          },
+          {
+            "country": "Yemen",
+            "element_name": "Haraz Mountain Agricultural Terraces",
+            "relationship_reason": "Dry-stacked stone agricultural terraces engineered to mitigate flash floods and retain arid mountain topsoil."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-03-kigumi-woodcraft",
+      "element_name": "Traditional Skills and Knowledge of Wooden Architecture and Kigumi Joinery in Japan",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/To-kyo_bracket_complex.jpg/1200px-To-kyo_bracket_complex.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/traditional-skills-techniques-and-knowledge-for-the-conservation-and-transmission-of-wooden-architecture-in-japan-01618",
+        "https://www.nippon.com/en/japan-topics/g00994/",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000375345",
+        "https://www.kyoto-u.ac.jp/en/research/research-results/2021/210325_1"
+      ],
+      "scraped_at": "2026-08-30T09:15:00.000Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Kyoto",
+          "Nara",
+          "Ishikawa",
+          "Gifu",
+          "Tokyo"
+        ],
+        "lat": 35.0116,
+        "lng": 135.7681
+      },
+      "resume_analisa": {
+        "description": "Traditional Japanese timber architecture encompasses seventeen historic master skills (including Daiku carpentry, Kigumi interlocking wood joinery, and Shinbashira central pillar engineering). This vernacular system erects temples, multi-story pagodas, and residences completely without metal nails, screws, or mortar. Timber members are hand-carved with complementary interlocking mortise-and-tenon joints (Tsugite and Shiguchi) designed to flex, yield, and lock dynamically under seismic shear forces.",
+        "cultural_significance": "Inscribed by UNESCO on the Representative List of ICH in 2020. Developed in one of the world's most seismically volatile nations, this craft represents the world's earliest base-isolation and kinetic energy dissipation engineering. Ancient timber structures like the Horyu-ji pagoda have survived over 1,300 years of major earthquakes (>8.0 Mw) because the friction within hundreds of unfastened Kigumi joints absorbs and dissipates ground motion without brittle failure.",
+        "drr_relevance": true,
+        "drr_mechanism": "Friction-based interlocking timber joints (Kigumi), unanchored stone plinths (Ishiba-date), and dynamic pendulum pillars (Shinbashira) dissipate seismic shock energy and prevent structural collapse.",
+        "gemini_tags": [
+          "UNESCO Representative List",
+          "Earthquake Resilient Architecture",
+          "Kigumi Joinery",
+          "Japanese Traditional Craftsmanship",
+          "Seismic DRR",
+          "Wooden Architecture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Seismic-Resistant Carpentry & Kinetic Structural Design",
+        "materials_and_tools": [
+          "Aged Hinoki (Japanese Cypress) and Sugi (Japanese Cedar) timber",
+          "Traditional hand chisels (Nomi)",
+          "Precision Japanese pull saws (Nokogiri)",
+          "Hand smoothing planes (Kanna)",
+          "Unanchored natural foundation boulders (Ishiba-date)"
+        ],
+        "step_by_step": [
+          "Friction-Based Base Isolation (Ishiba-date): Rest structural timber columns directly onto natural, unanchored stone plinths without mortar or mechanical anchors, allowing the building to sway and slip safely during extreme seismic acceleration.",
+          "Precision Kigumi Joinery: Hand-carve complex interlocking geometric joints (such as Kanawa-tsugi and Okkake-daisen-tsugi) that interlock through precise wooden dowels and wedges.",
+          "Nail-Free Structural Assembly: Erect the entire primary frame using friction-fit joints so that natural wood grain elasticity absorbs horizontal shear waves via inter-joint micro-friction.",
+          "Suspended Central Pendulum (Shinbashira): In multi-story pagodas, suspend a massive central timber pillar free of foundation contact, allowing it to function as a natural tuned mass damper swaying out-of-phase with the outer structure.",
+          "Stepped Cantilever Bracketing (Tokyō): Install multi-tiered wooden bracket complexes beneath heavy tile eaves to transfer roof mass dynamically across all load-bearing posts during ground shaking."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.92,
+        "related_elements": [
+          {
+            "country": "Indonesia (Nias / West Sumatra)",
+            "element_name": "Omo Sebua & Rumah Gadang Vernacular Architecture",
+            "relationship_reason": "Seismic wooden architectures utilizing non-rigid mortise-and-tenon joints resting on unmortared stone pedestals (umpak)."
+          },
+          {
+            "country": "China",
+            "element_name": "Chinese Traditional Architectural Craftsmanship for Timber-framed Structures (Dougong)",
+            "relationship_reason": "The ancestral East Asian interlocking timber bracket system (Dougong) engineered to absorb seismic energy in monumental architecture."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-04-waru-waru",
+      "element_name": "Waru Waru (Camellones) Indigenous Flood, Drought and Frost Mitigation Agriculture",
+      "category": "Knowledge and Practices Concerning Nature and the Universe",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Waru_Waru_system_Puno_Peru.jpg/1200px-Waru_Waru_system_Puno_Peru.jpg",
+      "source_urls": [
+        "https://www.fao.org/giahs/giahs-around-the-world/latin-america-and-the-caribbean/waru-waru-peru/",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000371482",
+        "https://www.preventionweb.net/news/climate-adaptation-ancestral-indigenous-waru-waru-terraces-andes",
+        "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers11-10/010014761.pdf"
+      ],
+      "scraped_at": "2026-08-30T09:15:00.000Z",
+      "location": {
+        "country": "Peru & Bolivia",
+        "provinces": [
+          "Puno (Lake Titicaca Basin)",
+          "Altiplano Highland Plateau"
+        ],
+        "lat": -15.8402,
+        "lng": -69.3374
+      },
+      "resume_analisa": {
+        "description": "Waru Waru (also termed Camellones) is a 3,000-year-old pre-Incan agro-hydrological system developed by Quechua and Aymara indigenous communities across the high-altitude Andean Altiplano (>3,800 m above sea level). The landscape engineering alternates elevated earthen planting platforms (camellones) with an interconnected network of water-filled perimeter canals, creating an integrated flood and microclimate management grid.",
+        "cultural_significance": "Waru Waru represents one of humanity's most effective multi-hazard DRR systems: (1) Flood Mitigation: Canals collect, redirect, and store extreme rainfall runoff and lake inundation; (2) Drought Resilience: Canal water continuously recharges platform root zones via subsurface capillary infiltration; (3) Frost Hazard Reduction: The open canal water absorbs solar thermal radiation during the day and radiates heat back into the surrounding air at night, raising nocturnal crop-level temperatures by 2°C to 4°C to prevent frost damage to staple potato and quinoa crops.",
+        "drr_relevance": true,
+        "drr_mechanism": "Multi-hazard agro-hydrological layout: canals divert extreme flood surges, store water for sub-irrigation during droughts, and release daytime solar thermal energy at night to prevent crop frost.",
+        "gemini_tags": [
+          "Indigenous Multi-Hazard DRR",
+          "Frost Mitigation",
+          "Flood Management",
+          "Drought Resilience",
+          "Andean Agro-Ecological Heritage",
+          "Food Security",
+          "Traditional Hydrology"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Agro-Hydrological Engineering & Microclimate Regulation",
+        "materials_and_tools": [
+          "Traditional Andean wooden foot-plows (Chakitaklla)",
+          "Stone and bronze/iron cultivation hoes (Rawkana)",
+          "Nutrient-dense organic silt dredged from canal beds",
+          "Native perennial bunchgrass for slope stabilization (Ichu grass)"
+        ],
+        "step_by_step": [
+          "Topographical Survey: Map floodplain slopes and align raised beds perpendicular to prevailing freezing wind corridors while maximizing daily solar exposure.",
+          "Canal Grid Excavation: Dig alternating canal trenches 2 to 4 meters wide and 0.8 to 1.5 meters deep across the agricultural expanse.",
+          "Earthen Platform Construction: Deposit excavated canal soil onto adjacent planting beds to form raised cultivation platforms 0.5 to 1.0 meter high and 4 to 10 meters wide.",
+          "Organic Silt Fertilization: Periodically dredge nutrient-rich aquatic algae and decomposed organic sediment from canal floors and spread it across the raised beds as natural fertilizer.",
+          "Hydrological Level Control: Regulate water levels using simple earthen sluices to drain excess runoff during monsoon seasons or retain water reserves ahead of freezing winter spells.",
+          "Polyculture Crop Sowing: Plant frost- and drought-hardy native Andean cultigens (such as bitter potatoes/luqui, oca, and quinoa) along the top of the thermally buffered platforms."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.88,
+        "related_elements": [
+          {
+            "country": "Mexico",
+            "element_name": "Chinampas of Xochimilco",
+            "relationship_reason": "Ancient Mesoamerican raised-bed agricultural canal systems designed to optimize wetland farming and buffer flood risks."
+          },
+          {
+            "country": "Indonesia (Kalimantan / Sumatra / Java)",
+            "element_name": "Surjan and Tidal Wetland Agricultural Systems",
+            "relationship_reason": "Alternating raised-bed and ditch agricultural layouts designed to manage tidal flooding, swamp drainage, and soil acidity."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-05-aflaj",
+      "element_name": "Al Aflaj Traditional Irrigation System and Water Distribution Knowledge",
+      "category": "Knowledge and Practices Concerning Nature and the Universe",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Falaj_Dariss_Nizwa_Oman.jpg/1200px-Falaj_Dariss_Nizwa_Oman.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/al-aflaj-traditional-irrigation-network-system-in-the-uae-oral-traditions-knowledge-and-skills-of-construction-maintenance-and-equitable-water-distribution-01576",
+        "https://whc.unesco.org/en/list/1207/",
+        "https://www.undrr.org/news/ancient-water-wisdom-cooling-desert-drought-and-heatwaves",
+        "https://www.fao.org/giahs/giahs-around-the-world/middle-east-and-north-africa/al-ain-and-liwa-oases-uae/"
+      ],
+      "scraped_at": "2026-08-30T10:30:00.000Z",
+      "location": {
+        "country": "United Arab Emirates & Oman",
+        "provinces": [
+          "Abu Dhabi (Al Ain)",
+          "Ad Dakhiliyah",
+          "Al Batinah"
+        ],
+        "lat": 24.2185,
+        "lng": 55.7626
+      },
+      "resume_analisa": {
+        "description": "Al Aflaj (singular: Falaj) is an ancient, gravity-fed subterranean hydrological system utilized for over 3,000 years in the hyper-arid deserts of the Arabian Peninsula. The system taps into high-elevation mountain aquifers and channels water through gently sloping underground tunnels directly to oasis communities and agricultural terraces without requiring mechanical pumps. The transmission encompasses engineering expertise in subterranean tunneling (awamir), astrometeorological timekeeping (sundials and stellar observation for water shares), and communal equitable rationing protocols.",
+        "cultural_significance": "Inscribed on the UNESCO Representative List of ICH in 2020 (and World Heritage in Oman). Al Aflaj serves as an essential framework for Drought Risk Reduction and Climate Adaptation in extreme desert environments: by transporting groundwater entirely underground, it eliminates water loss from evaporation under 50°C summer heatwaves, shields vital water reserves from sandstorms and contamination, and incorporates surface overflow bypass channels (Sharī'ah) designed to safely divert and absorb sudden desert flash floods (wadis).",
+        "drr_relevance": true,
+        "drr_mechanism": "Gravity-fed subterranean aqueducts eliminate evaporative water loss during 50°C heatwaves, secure drinking reserves during severe droughts, and safely divert desert flash floods (wadis).",
+        "gemini_tags": [
+          "UNESCO Representative List",
+          "Aflaj System",
+          "Drought Risk Reduction",
+          "Desert Hydrology",
+          "Flash Flood Diversion",
+          "Climate Adaptation",
+          "Traditional Water Governance"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Subterranean Hydraulic Engineering & Equitable Water Allocation",
+        "materials_and_tools": [
+          "Mother-well excavating tools and counterweight winches (Al Kharas)",
+          "Traditional water sundials (Al Mizwala) and star-tracking markers",
+          "Clay/stone dividing sluices and flow splitters (Al Maqsam)",
+          "Palm frond woven baskets (Zabeel) for subterranean silt removal",
+          "Chalk and copper plumb bobs for slope gradient alignment"
+        ],
+        "step_by_step": [
+          "Mother-Well Siting: Identify the subterranean water table at the base of alluvial mountain fans through native botanical and topographical indicators.",
+          "Underground Tunnel Excavation: Dig vertical access shafts at 20- to 50-meter intervals and bore a connecting horizontal tunnel with a gradient between 1:500 and 1:2500 to maintain steady gravitational flow without structural scouring.",
+          "Flash-Flood Diverter Installation: Construct surface stone weirs (Shari'ah) at the tunnel exit to partition domestic drinking supplies and route heavy storm runoff safely into designated aquifer-recharging basins.",
+          "Equitable Time-Share Partitioning: Distribute water rights among farmers using sundials during the day and star movements (Al Najm) at night to ensure equal access during severe drought seasons.",
+          "Continuous Subterranean Desilting: Deploy specialized maintenance teams to clear fallen gravel and silt from vertical ventilation shafts following seismic tremors or torrential flash-flood episodes.",
+          "Intergenerational Knowledge Apprenticeship: Pass down hydro-geological mapping and equitable distribution rules from master elders (Arif) to apprentices through oral instruction."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.96,
+        "related_elements": [
+          {
+            "country": "Iran",
+            "element_name": "Traditional Skills of Building and Operating the Qanat",
+            "relationship_reason": "Ancestral underground gravity-flow water tapping system sharing identical hydraulic engineering principles and drought resilience mechanisms."
+          },
+          {
+            "country": "Morocco & Algeria",
+            "element_name": "Khettara and Foggara Oasis Water Systems",
+            "relationship_reason": "North African subterranean irrigation networks engineered to prevent evaporation losses and withstand hyper-arid droughts in the Sahara."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-06-irrigation-tribunals",
+      "element_name": "Irrigation Tribunals of the Spanish Mediterranean Coast: Water Tribunal of Valencia and Council of Wise Men of Murcia",
+      "category": "Social Practices, Rituals and Festive Events",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tribunal_de_las_Aguas_de_Valencia_2011.jpg/1200px-Tribunal_de_las_Aguas_de_Valencia_2011.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/irrigation-tribunals-of-the-spanish-mediterranean-coast-the-council-of-wise-men-of-the-plain-of-murcia-and-the-water-tribunal-of-the-plain-of-valencia-00171",
+        "https://whc.unesco.org/en/news/557",
+        "https://www.undrr.org/case-study/ancient-water-justice-governing-droughts-and-flash-floods-spain",
+        "https://www.tribunaldelasaguas.org/en/"
+      ],
+      "scraped_at": "2026-08-30T10:30:00.000Z",
+      "location": {
+        "country": "Spain",
+        "provinces": [
+          "Valencia (Comunitat Valenciana)",
+          "Murcia (Región de Murcia)"
+        ],
+        "lat": 39.4756,
+        "lng": -0.3752
+      },
+      "resume_analisa": {
+        "description": "The Irrigation Tribunals of the Spanish Mediterranean Coast—comprising the Water Tribunal of Valencia (established over a millennium ago) and the Council of Wise Men of Murcia—are traditional customary courts that govern water distribution across thousands of agricultural hectares. Composed of democratically elected farmer-judges, the tribunals meet every Thursday in public, oral, and cost-free sessions outside the Cathedral of Valencia and in the City Hall of Murcia to resolve water disputes, prevent resource hoarding, and manage hydraulic infrastructure.",
+        "cultural_significance": "Inscribed on the UNESCO Representative List of ICH in 2009. These tribunals function as a vital institutional and governance pillar for Disaster Risk Reduction (DRR): (1) Acute Drought Crisis Governance: Enforcing emergency water rotation quotas during severe multi-year droughts to prevent agricultural collapse; (2) Flash Flood (DANA / Gota Fría) Response: Authorizing immediate emergency commands to open diversion gates (azudes) and flood bypass canals (*acequias*) to drain catastrophic floodwaters safely into the Mediterranean Sea.",
+        "drr_relevance": true,
+        "drr_mechanism": "Customary legal governance enforcing emergency water rationing cycles during extreme droughts and ordering coordinated floodgate openings during catastrophic DANA / flash flood torrents.",
+        "gemini_tags": [
+          "UNESCO Representative List",
+          "Water Governance",
+          "Drought Crisis Management",
+          "Flash Flood Protocol",
+          "Customary Water Justice",
+          "Disaster Risk Governance",
+          "Institutional Resilience"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Customary Hydrological Governance & Emergency Floodgate Protocol",
+        "materials_and_tools": [
+          "Historical bronze keys and diversion sluice gates (Azudes and Compuertas)",
+          "Customary leather-bound irrigation ordinances",
+          "Eight ceremonial wooden armchairs for elected ditch trustees (Síndicos)",
+          "Communal alarm bells and horn signals for emergency flood notifications"
+        ],
+        "step_by_step": [
+          "Democratic Judicial Assembly: Convene the eight elected community bailiffs (Síndicos) at noon outside the cathedral portals in a public circle accessible to all citizens.",
+          "Oral Case Presentation: Hear complaints regarding unauthorized water diversions, canal obstructions, or illegal tampering with irrigation schedules in the local vernacular without written bureaucracy.",
+          "Deliberation and Instant Verbal Ruling: Pronounce immediate, non-appealable oral judgments based on ancestral customary law and collective water equity.",
+          "Emergency Drought Allocation (Tanda): Enact emergency water-rationing cycles during meteorological droughts, allocating strictly timed sluice-gate open hours to prevent downstream crop failure.",
+          "DANA / Flash Flood Sluice Maneuver: Upon detection of torrential storm warnings, issue emergency orders to ditch marshals (*Guarda-acequias*) to open all diversion floodgates simultaneously, transforming agricultural canals into rapid flood evacuation spillways.",
+          "Maintenance Enforcement: Obligate all riparian landowners along the irrigation grid to clear weed build-ups and sediment biannually to prevent flood choking."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.91,
+        "related_elements": [
+          {
+            "country": "Indonesia (Bali)",
+            "element_name": "Subak Sedahan & Pekaseh Water Assembly",
+            "relationship_reason": "Customary democratic agricultural assemblies governing irrigation canals, dispute settlements, and seasonal drought mitigation."
+          },
+          {
+            "country": "Mexico",
+            "element_name": "Acequia Customary Water Distribution in Tlaxcala and Oaxaca",
+            "relationship_reason": "Colonial and indigenous synthesis of community ditch management for drought mitigation and flood diversion derived from Andalusian practices."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-07-baira-floating-gardens",
+      "element_name": "Baira Traditional Floating Agricultural System (Hydroponic Wetland Resilience)",
+      "category": "Knowledge and Practices Concerning Nature and the Universe",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Floating_agriculture_in_Bangladesh.jpg/1200px-Floating_agriculture_in_Bangladesh.jpg",
+      "source_urls": [
+        "https://www.fao.org/giahs/giahs-around-the-world/asia-and-the-pacific/floating-garden-agricultural-system-in-bangladesh/",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000374987",
+        "https://www.preventionweb.net/news/floating-farms-how-indigenous-baira-saves-flooded-communities-bangladesh",
+        "https://en.banglapedia.org/index.php/Floating_Bed_Cultivation"
+      ],
+      "scraped_at": "2026-08-30T10:30:00.000Z",
+      "location": {
+        "country": "Bangladesh",
+        "provinces": [
+          "Gopalganj",
+          "Pirojpur",
+          "Barisal"
+        ],
+        "lat": 22.7010,
+        "lng": 90.3535
+      },
+      "resume_analisa": {
+        "description": "Baira (also known as Dhap or Kandi) is an ancestral hydro-agricultural technology developed over two centuries ago by rural wetland communities in southern Bangladesh. The technique involves constructing buoyant, organic hydroponic beds made of layered aquatic weeds (predominantly invasive water hyacinth, duckweed, and paddy straw). These floating beds rise and fall dynamically with fluctuating monsoon water levels and tidal surges, providing a stable platform for vegetable and seedling cultivation during prolonged inundation.",
+        "cultural_significance": "Recognized globally by the FAO as a Globally Important Agricultural Heritage System (GIAHS) and documented as critical intangible ecological heritage. Baira is a foremost model for Flood DRR, Sea Level Rise Adaptation, and Food Security: in regions where farmland remains submerged under floodwaters for 6 to 9 months per year, Baira ensures continuous zero-soil vegetable harvest, protects crop seedlings from being washed away, and converts invasive flood-aggravating water hyacinths into productive natural compost.",
+        "drr_relevance": true,
+        "drr_mechanism": "Buoyant hydroponic beds rise and fall with monsoon floodwaters and tidal surges, securing continuous zero-soil food production and crop seedling survival during prolonged seasonal inundation.",
+        "gemini_tags": [
+          "Disaster Risk Reduction",
+          "Floating Agriculture",
+          "Monsoon Flood Resilience",
+          "Hydroponic Adaptation",
+          "Food Security",
+          "Indigenous Agro-Ecology",
+          "Climate Adaptation"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Buoyant Agro-Engineering & Soil-less Wetland Cultivation",
+        "materials_and_tools": [
+          "Mature water hyacinth plants (Kachuripana)",
+          "Bamboo poles and levers for structural stabilization (Bash)",
+          "Decomposed aquatic weeds and duckweed (Tepapana)",
+          "Composted coco-peat and dry leaf balls for seed germination (Tema)",
+          "Flat-bottomed wooden canoes (Kosa nouka) for harvesting access"
+        ],
+        "step_by_step": [
+          "Biomass Collection: Harvest dense mats of floating water hyacinths from local canals using long bamboo poles during early monsoon season.",
+          "Layered Raft Weaving: Interweave layered rows of water hyacinths over long bamboo stalks until the raft reaches a thickness of 0.8 to 1.2 meters, a width of 1.5 to 2.5 meters, and a length up to 50 meters.",
+          "Maturation and Decomposition: Allow the top layer of the floating bed to decompose for 7 to 10 days until it forms a moist, nutrient-rich semi-solid compost crust.",
+          "Seed Ball Germination (Tema): Prepare small round balls of decomposed aquatic moss, insert vegetable seeds (gourd, okra, spinach, eggplant, chili) into them, and let them sprout safely indoors.",
+          "Transplantation onto Floating Beds: Transplant the sprouted Tema balls into the top surface of the floating raft without disturbing the underlying buoyant matrix.",
+          "Cyclic Sinking and Soil Fertilization: After 5 to 6 months of continuous harvest, let the spent, decomposed Baira bed sink onto receding farmland at the end of the flood season to act as high-grade organic fertilizer for winter crops."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.89,
+        "related_elements": [
+          {
+            "country": "Myanmar",
+            "element_name": "Inle Lake Floating Agricultural Gardens (Ye-Chan)",
+            "relationship_reason": "Intha ethnic community's floating gardens anchored on lake bottoms to overcome monsoon water surges."
+          },
+          {
+            "country": "India (Kashmir)",
+            "element_name": "Radh Floating Vegetable Gardens of Dal Lake",
+            "relationship_reason": "Weed-based floating vegetation strips engineered to produce staple crops across flood-prone lacustrine environments."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-08-subak-bali",
+      "element_name": "Subak Socio-Ecological Water Management and Synchronized Agro-Ritual System",
+      "category": "Social Practices, Rituals and Festive Events",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Jatiluwih_rice_terraces.jpg/1200px-Jatiluwih_rice_terraces.jpg",
+      "source_urls": [
+        "https://whc.unesco.org/en/list/1194/",
+        "https://ich.kemdikbud.go.id/cerita/subak-warisan-budaya-dunia",
+        "https://www.undrr.org/case-study/tri-hita-karana-subak-system-preventing-drought-and-pests",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000216448"
+      ],
+      "scraped_at": "2026-08-30T10:30:00.000Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Bali (Tabanan, Gianyar, Bangli, Buleleng)"
+        ],
+        "lat": -8.3693,
+        "lng": 115.1325
+      },
+      "resume_analisa": {
+        "description": "Subak is a thousand-year-old democratic, socio-religious agrarian irrigation institution practiced by Balinese rice farmers, rooted in the philosophy of Tri Hita Karana (harmonious balance between humans, nature, and the spiritual realm). The system governs the entire hydrological cycle of volcanic mountain slopes, interconnecting forest catchment springs, water-temple networks (Pura Tirta), stone weir tunnels, stepped terraces, and cooperative farmer guilds (Sekehe Subak).",
+        "cultural_significance": "Inscribed on the UNESCO World Heritage List and recognized as Indonesia's living Intangible Cultural Heritage. Subak serves as a complex multi-disaster mitigation framework: (1) Drought Risk Reduction: Democratically synchronizes water distribution along entire river basins so upstream farmers do not exhaust water needed by downstream fields; (2) Pest and Famine Outbreak Suppression: Coordinates synchronized planting and flooding schedules that starve insect life cycles naturally over hundreds of hectares; (3) Slope Stabilization: Stepped terraces and water filtration channels prevent volcanic landslides and soil erosion during monsoonal deluges.",
+        "drr_relevance": true,
+        "drr_mechanism": "Proportional hydraulic dividers prevent agricultural drought, synchronized cropping cycles naturally starve insect pests to prevent famine, and terracing prevents volcanic slope landslides.",
+        "gemini_tags": [
+          "UNESCO Living Heritage",
+          "Subak System",
+          "Drought Risk Reduction",
+          "Biological Pest Suppression",
+          "Landslide Prevention",
+          "Tri Hita Karana",
+          "Eco-DRR"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Socio-Hydrological Ecosystem Management & Collective Pest Suppression",
+        "materials_and_tools": [
+          "Proportional wooden water divider sluices (Tektek / Temuku)",
+          "Underground rock tunnel channelling tools (Aungan)",
+          "Water temple ritual calendar (Sasih calendar)",
+          "Earthen dikes and overflow spillways (Panyambangan)",
+          "Sacred palm frond offerings and boundary shrines (Bedugul)"
+        ],
+        "step_by_step": [
+          "Headwaters Protection (Tumpek Uduh / Danu): Enforce customary customary forest protection (Alas Mertajati) around volcanic crater lakes and mountain springs to secure year-round base flow.",
+          "Proportional Inundation Calibration (Temuku): Install notched wooden splitters (Temuku) at canal bifurcations, precisely sized according to the exact land surface of each farmer guild to ensure zero downstream water starvation.",
+          "Synchronized Cropping Timetable (Kerta Masa): Coordinate synchronized planting dates across the entire watershed via water temple assemblies (Pura Ulun Danu and Pura Masceti).",
+          "Coordinated Flooding for Biological Pest Control: Flood all terrace blocks across entire valleys simultaneously following harvest to deprive rodent and insect pests of food and habitat, preventing catastrophic famine.",
+          "Terrace Slope Reinforcement: Maintain vegetative cover and stabilized clay embankments along steep volcanic ridges to dissipate torrential runoff energy and prevent mudslides.",
+          "Customary Dispute Adjudication (Sangkep): Convene monthly democratic assemblies of all farmers (Pekaseh) to collectively enforce water theft fines, schedule mutual aid repairs (Gotong Royong), and adapt to seasonal climate variations."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.94,
+        "related_elements": [
+          {
+            "country": "Philippines",
+            "element_name": "Rice Terraces of the Philippine Cordilleras (Ifugao Muyong System)",
+            "relationship_reason": "Stepped terrace agricultural landscape protected by private watershed forests (Muyong) preventing mountain landslides and water shortages."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Yosui and Satoyama Traditional Irrigation Networks",
+            "relationship_reason": "Community-managed communal canal networks designed to allocate scarce water and prevent torrential mountain slope erosion."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-09-cultural-burning",
+      "element_name": "Aboriginal Cultural Burning and Traditional Fire Management (Cool Burning)",
+      "category": "Knowledge and Practices Concerning Nature and the Universe",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Prescribed_burning_Arnhem_Land.jpg/1200px-Prescribed_burning_Arnhem_Land.jpg",
+      "source_urls": [
+        "https://www.undrr.org/news/indigenous-fire-management-nature-based-solution-wildfire-risk",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000375685_eng",
+        "https://www.firesticks.org.au/about/cultural-burning/",
+        "https://www.dcceew.gov.au/indigenous-fire-management"
+      ],
+      "scraped_at": "2026-08-30T11:45:00.000Z",
+      "location": {
+        "country": "Australia",
+        "provinces": [
+          "Northern Territory (Arnhem Land)",
+          "Queensland (Cape York)",
+          "New South Wales"
+        ],
+        "lat": -12.4634,
+        "lng": 130.8456
+      },
+      "resume_analisa": {
+        "description": "Cultural Burning (also known as 'Cool Burning' or 'Right Fire') is an ancient landscape stewardship practice refined over 65,000 years by Australian Aboriginal and Torres Strait Islander peoples. Unlike high-intensity destructive fires, Cultural Burning applies slow-moving, low-temperature, low-flame fires early in the dry season. The practice is strictly regulated through customary knowledge of wind currents, humidity, soil moisture, plant phenology, and animal breeding cycles transmitted via kinship songlines and oral lore.",
+        "cultural_significance": "Cultural Burning is globally acknowledged by the Sendai Framework and UNDRR as one of the most effective Nature-based Solutions (NbS) for Wildfire DRR: by systematically consuming fine combustible understory fuel (dry grasses and fallen twigs) at low temperatures, it prevents catastrophic late-season megafires (crown fires), protects canopy ecosystems, safeguards rural human settlements, reduces greenhouse gas emissions from uncontrolled wildfires by over 50%, and enables native seeds to germinate.",
+        "drr_relevance": true,
+        "drr_mechanism": "Early-dry-season low-intensity cool burns clear fine combustible ground fuel and create patchy charcoal firebreaks, preventing catastrophic late-season forest mega-wildfires.",
+        "gemini_tags": [
+          "Indigenous DRR",
+          "Wildfire Risk Reduction",
+          "Cultural Burning",
+          "Cool Fire Management",
+          "Aboriginal Knowledge",
+          "Climate Adaptation",
+          "Bushfire Resilience"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Customary Pyrological Stewardship & Wildfire Mitigation Protocol",
+        "materials_and_tools": [
+          "Traditional fire drill / fire-lighting sticks",
+          "Native bark torches (Melaleuca/paperbark)",
+          "Canopy green leafy branches for fire-dampening",
+          "Astro-meteorological seasonal calendars"
+        ],
+        "step_by_step": [
+          "Ecological Reading: Inspect grass cure rates, morning dew retention, ant and bird nesting habits, and wind behavior during the early dry season (e.g., 'Cold Weather Season' / Yekke in Arnhem Land).",
+          "Ignition of Mosaic Patches: Light small, intermittent spot fires along the ground using handheld paperbark torches, ensuring fire height never exceeds knee height (cool fire).",
+          "Preserve Tree Canopies: Maintain flame intensity low enough so tree canopies, hollow logs (wildlife refuges), and canopy leaves remain unburnt and cool to the touch.",
+          "Trickle-Burn Propagation: Direct the slow-moving fire into moist drainage lines, bare rock outcrops, or previously burnt patches to extinguish the burn naturally without using water.",
+          "Fuel Load Clearing: Allow the fire to consume combustible surface litter and leaf drop, leaving behind patchy charcoal that acts as natural firebreaks against late-dry-season lightning strikes.",
+          "Intergenerational Guidance: Conduct all burning sessions under the leadership of Indigenous Custodians and Fire Elders, mentoring younger generations in reading country and fire behavior."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.93,
+        "related_elements": [
+          {
+            "country": "United States & Canada",
+            "element_name": "Native American Indigenous Cultural Fire and Prescribed Burning (Karuk / Yurok Traditions)",
+            "relationship_reason": "Ancestral low-intensity burning practices utilized by indigenous nations across western North America to prevent catastrophic forest wildfires."
+          },
+          {
+            "country": "South Africa",
+            "element_name": "Traditional Fynbos Patch-Mosaic Burning",
+            "relationship_reason": "Rotational controlled burning of brushveld vegetation to suppress uncontrolled bushfires and preserve biodiversity."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-10-living-root-bridges",
+      "element_name": "Jingkieng Jri (Living Root Bridge Vernacular Bio-Engineering)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Living_root_bridge%2C_Nongriat_village%2C_Meghalaya%2C_India.jpg/1200px-Living_root_bridge%2C_Nongriat_village%2C_Meghalaya%2C_India.jpg",
+      "source_urls": [
+        "https://whc.unesco.org/en/tentativelists/6606/",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000382345",
+        "https://www.undrr.org/case-study/living-root-bridges-indigenous-infrastructure-withstanding-monsoonal-deluges",
+        "https://meghalayatourism.in/living-root-bridges/"
+      ],
+      "scraped_at": "2026-08-30T11:45:00.000Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Meghalaya (Khasi and Jaintia Hills)"
+        ],
+        "lat": 25.2986,
+        "lng": 91.5822
+      },
+      "resume_analisa": {
+        "description": "Jingkieng Jri are living botanical suspension bridges engineered by the indigenous Khasi and Jaintia peoples across deep river gorges in Meghalaya—the wettest place on Earth (averaging over 11,000 mm of annual rainfall). These bridges are hand-crafted by guiding the aerial roots of the rubber fig tree (Ficus elastica) through hollowed Areca catechu (betel nut) palm trunks across turbulent rivers. Over decades, the pliable aerial roots reach the opposite bank, anchor firmly into the soil, and fuse together through the biological process of inosculation (natural grafting).",
+        "cultural_significance": "Currently nominated on India's UNESCO Tentative List. Jingkieng Jri constitutes an extraordinary vernacular model of Flood and Landslide Disaster Resilience: unlike conventional steel or timber bridges that rot, rust, or are swept away by torrential monsoon flash floods and riverbed debris, living root bridges become stronger, thicker, and more structurally resilient over centuries. The living root networks actively stabilize steep riverbank slopes against mudslides and provide uninterrupted evacuation and supply pathways during months of monsoon flooding.",
+        "drr_relevance": true,
+        "drr_mechanism": "Living botanical root structures naturally graft (inosculate) and strengthen over time, withstanding violent monsoon flash flood uplift and stabilizing riverbanks against landslides.",
+        "gemini_tags": [
+          "Living Root Bridges",
+          "Jingkieng Jri",
+          "Monsoon Flood Resilience",
+          "Bio-Engineering",
+          "Indigenous Craftsmanship",
+          "Landslide Slope Stabilization",
+          "Khasi Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Vernacular Botanical Bio-Engineering & Flash-Flood Crossing Construction",
+        "materials_and_tools": [
+          "Mature Ficus elastica (Indian Rubber Fig) mother trees",
+          "Hollowed-out trunks of Areca catechu (Betel nut palm) for root direction",
+          "Bamboo scaffolding frameworks and binding vines",
+          "River stones and gravel for pathway consolidation"
+        ],
+        "step_by_step": [
+          "Mother Tree Planting: Plant a Ficus elastica sapling on a secure, non-eroding riverbank boulder above peak historic monsoon flood levels.",
+          "Scaffolding and Guiding Trunks: Span hollowed-out betel nut palm trunks across the river gorge on temporary bamboo scaffolding to protect tender aerial root shoots.",
+          "Aerial Root Weaving: Thread the pliable aerial roots through the hollow palm conduits across the river toward the opposite bank.",
+          "Opposite Bank Root Anchorage: Bury the reaching root tips deeply into the opposite bank's soil bedrock, securing them with large anchoring boulders.",
+          "Inosculation and Grafting: Interweave and knot parallel roots together by hand over 15 to 30 years, allowing them to naturally graft into a single monolithic, load-bearing botanical bridge deck.",
+          "Deck Paving and Maintenance: Place flat river rocks and clay mortar into the crevices of the intertwined root pathway to form a slip-resistant walking surface that strengthens with each passing generation."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.87,
+        "related_elements": [
+          {
+            "country": "Indonesia (West Sumatra)",
+            "element_name": "Jembatan Akar Bayang (Living Root Bridge of Pesisir Selatan)",
+            "relationship_reason": "Living Ficus root bridge hand-woven across the Bayang River in Sumatra to maintain crossing access during seasonal flash floods."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Iya Valley Vine Bridges (Kazurabashi)",
+            "relationship_reason": "Living mountain vine suspension bridges woven across steep gorges to withstand earthquakes and river deluges."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-11-tanka-baori-harvesting",
+      "element_name": "Tanka and Baori Ancestral Rainwater Harvesting and Micro-Aquifer Systems",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Chand_Baori_Stepwell_Abhaneri_Rajasthan.jpg/1200px-Chand_Baori_Stepwell_Abhaneri_Rajasthan.jpg",
+      "source_urls": [
+        "https://whc.unesco.org/en/list/1345/",
+        "https://www.undrr.org/case-study/ancient-stepwells-and-tankas-combating-multi-year-droughts-thar-desert",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000371482_eng",
+        "https://www.indiawaterportal.org/articles/tankas-and-stepwells-rajasthan"
+      ],
+      "scraped_at": "2026-08-30T11:45:00.000Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Rajasthan (Thar Desert: Jaisalmer, Jodhpur, Bikaner)",
+          "Gujarat"
+        ],
+        "lat": 26.9157,
+        "lng": 70.9083
+      },
+      "resume_analisa": {
+        "description": "The Tanka (covered subterranean cistern) and Baori / Stepwell (multi-tiered subterranean stone water reservoir) systems are ancient hydro-architectural traditions developed over a millennium across the hyper-arid Thar Desert of Rajasthan and Gujarat. Tankas capture clean surface runoff from treated circular catchments (Agor) into sealed underground masonry chambers, while Baoris consist of monumental inverted stepped pyramids built down to the deep groundwater table.",
+        "cultural_significance": "A fundamental element of South Asian living cultural heritage and vernacular engineering (with stepwells like Rani-ki-Vav inscribed by UNESCO). These systems are vital for Multi-Year Drought Disaster Resilience and Extreme Heatwave Survival: by storing rainwater entirely underground, water is shielded from intense solar radiation and 50°C surface temperatures (preventing evaporation losses), while simultaneously recharging local aquifers during rare, erratic cloudbursts and preventing urban flash flooding.",
+        "drr_relevance": true,
+        "drr_mechanism": "Subterranean sealed cisterns (tanka) and stepped gravity wells (baori) shield rainwater from solar evaporation during 50°C heatwaves, mitigating multi-year droughts and replenishing local aquifers.",
+        "gemini_tags": [
+          "Rainwater Harvesting",
+          "Thar Desert Resilience",
+          "Drought Risk Reduction",
+          "Tanka Architecture",
+          "Stepwell Engineering",
+          "Traditional Hydrology",
+          "Heatwave Adaptation"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Subterranean Masonry Hydro-Harvesting & Evaporation-Free Water Storage",
+        "materials_and_tools": [
+          "Local yellow sandstone blocks and granite",
+          "Natural lime and volcanic ash mortar (Chunam)",
+          "Herbal sealants (gum acacia, neem extract, and fenugreek paste) for waterproof plastering",
+          "Curved iron chisels and stone-cutting wedges"
+        ],
+        "step_by_step": [
+          "Catchment Ground Preparation (Agor): Construct an artificially sloped, smooth circular catchment area paved with lime, gravel, and natural ash, ensuring zero water pooling.",
+          "Chamber Excavation: Dig a cylindrical underground pit 3 to 6 meters wide and 4 to 8 meters deep beneath the center of the catchment.",
+          "Hydraulic Masonry Lining: Line the circular pit walls with interlocking dry sandstone blocks, binding them with natural lime and water-repellent herbal mortar (Chunam) to ensure an airtight seal.",
+          "Silt-Trap Inlets Installation: Build screened sediment traps at the entrance of the inlet conduits to filter out sand, dust, and organic debris carried by desert winds.",
+          "Dome Enclosure: Cover the chamber with a stone masonry dome fitted with a secured access hatch to prevent sunlight penetration, algae growth, and evaporation.",
+          "Communal Stepwell (Baori) Sinking: In village centers, carve multi-tiered stepped stone terraces into the bedrock down to the aquifer to allow community access during dry periods without lowering the water table."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.94,
+        "related_elements": [
+          {
+            "country": "Malta",
+            "element_name": "Ancient Subterranean Rainwater Cisterns of Valletta and Mdina",
+            "relationship_reason": "Underground rock-cut cistern networks engineered beneath every domestic residence to withstand prolonged Mediterranean siege and drought."
+          },
+          {
+            "country": "Yemen",
+            "element_name": "Cisterns of Tawila (Aden Water Tanks)",
+            "relationship_reason": "Volcanic rock-cut series of public cisterns capturing torrential runoff to prevent catastrophic flash floods and preserve drought drinking water."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-12-albarradas-ecuador",
+      "element_name": "Albarradas Ancestral Rainwater Catchment and El Niño Flood Resilience System",
+      "category": "Knowledge and Practices Concerning Nature and the Universe",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Albarrada_Ecuador_wetland.jpg/1200px-Albarrada_Ecuador_wetland.jpg",
+      "source_urls": [
+        "https://unesdoc.unesco.org/ark:/48223/pf0000371482",
+        "https://www.undrr.org/case-study/pre-columbian-albarradas-climate-adaptation-el-nino-floods-and-droughts-ecuador",
+        "https://www.flacsoandes.edu.ec/albarradas-sistema-hidrico-ancestral",
+        "https://patrimoniocultural.gob.ec/albarradas-costa-ecuatoriana/"
+      ],
+      "scraped_at": "2026-08-30T11:45:00.000Z",
+      "location": {
+        "country": "Ecuador",
+        "provinces": [
+          "Santa Elena Peninsula",
+          "Manabí",
+          "Guayas"
+        ],
+        "lat": -2.2278,
+        "lng": -80.8587
+      },
+      "resume_analisa": {
+        "description": "Albarradas (known natively as Jagüeyes) are pre-Columbian agro-hydrological earthen structures developed over 3,500 years ago by the Valdivia, Chorrera, and Manteño cultures along the arid coastal plains of western Ecuador. These systems consist of U-shaped or semicircular earthen retention dikes strategically positioned at natural dry river confluences (quebradas) to capture, store, and slowly infiltrate surface runoff generated during extreme climatic cycles.",
+        "cultural_significance": "Recognized as Ecuador's National Cultural Heritage and a benchmark for Climate Shock DRR: The Albarradas system was specifically engineered to withstand the extreme bi-polar phases of the El Niño-Southern Oscillation (ENSO): (1) During intense El Niño mega-deluges, the earthen dikes capture violent flash floods, trap nutrient-dense sediment, and prevent coastal settlements from being washed away; (2) During multi-year La Niña severe droughts, the retained water infiltrates into the ground to continuously recharge shallow freshwater aquifers, providing drinking water and sustaining agriculture.",
+        "drr_relevance": true,
+        "drr_mechanism": "Pre-Columbian earthen retention dikes buffer ENSO cycles: trapping violent El Niño flash floods and recharging coastal freshwater aquifers to withstand severe La Niña droughts.",
+        "gemini_tags": [
+          "ENSO Resilience",
+          "El Niño Flood Mitigation",
+          "Drought Adaptation",
+          "Pre-Columbian Engineering",
+          "Albarradas",
+          "Aquifer Recharge",
+          "Ecuadorian Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ancestral Hydrological Dike Engineering & ENSO Disaster Mitigation",
+        "materials_and_tools": [
+          "Local impermeable clay and gravel aggregates",
+          "Stone digging tools and wooden leveling stakes",
+          "Deep-rooting native vegetation (Guasango and Ceibo trees) for dike stabilization",
+          "Aquatic reed species (Totora) for natural water filtration"
+        ],
+        "step_by_step": [
+          "Micro-Catchment Siting: Identify natural depression nodes at the base of ephemeral dry streams (quebradas) where alluvial slopes concentrate seasonal runoff.",
+          "Semicircular Dike Compaction: Construct a U-shaped or crescent earthen embankment (1.5 to 4 meters high) with its open concave mouth facing directly upstream.",
+          "Vegetative Slope Reinforcement: Plant deep-rooting native trees (such as Ceibo, Guayacán, and Algarrobo) along the earthen embankments to mechanically anchor the dike against hydraulic breach.",
+          "Controlled Overflow Spillway: Carve a stone-lined overflow channel on the lowest shoulder of the embankment to discharge excess flood surges safely during extreme El Niño events.",
+          "Biological Water Purification: Introduce native aquatic vegetation (Totora and floating water lilies) along the reservoir pool to naturally filter silt and inhibit mosquito larvae breeding.",
+          "Subsurface Infiltration Management: Monitor downstream shallow wells (pozos someros) to extract clear groundwater recharged by the upstream Albarrada throughout the dry season."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.91,
+        "related_elements": [
+          {
+            "country": "India (Rajasthan)",
+            "element_name": "Johad Traditional Earthen Check Dams",
+            "relationship_reason": "Crescent-shaped earthen check dams designed to capture monsoon flash floods and recharge subterranean desert aquifers."
+          },
+          {
+            "country": "Sudan & Ethiopia",
+            "element_name": "Hafir Ancestral Water Harvesting Reservoirs",
+            "relationship_reason": "Earthen depression water harvesting structures engineered to mitigate semi-arid droughts and flash flood runoff."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-13-zai-planting-pits",
+      "element_name": "Zaï Ancestral Planting Pits and Contour Stone Bunds (Sahelian Drought and Desertification Resilience)",
+      "category": "Knowledge and Practices Concerning Nature and the Universe",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Zai_technique_Burkina_Faso.jpg/1200px-Zai_technique_Burkina_Faso.jpg",
+      "source_urls": [
+        "https://www.fao.org/giahs/giahs-around-the-world/africa/zai-farming-burkina-faso/",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000375685_eng",
+        "https://www.unccd.int/news-stories/stories/how-yacouba-sawadogos-zai-technique-greened-sahel",
+        "https://www.undrr.org/case-study/indigenous-zai-pits-halting-desertification-and-famine-sahel"
+      ],
+      "scraped_at": "2026-08-30T16:45:00.000Z",
+      "location": {
+        "country": "Burkina Faso, Mali & Niger",
+        "provinces": [
+          "Yatenga Province (Northern Region)",
+          "Sahel Region"
+        ],
+        "lat": 13.5828,
+        "lng": -2.4216
+      },
+      "resume_analisa": {
+        "description": "Zaï is an indigenous agro-ecological water harvesting and soil rehabilitation technology practiced for centuries by the Mossi and Dogon peoples across the semi-arid Sahel. The system rehabilitates crusted, barren, and impermeable hardpan soils (zippelé) by digging a grid of micro-catchment pits prior to the rainy season. Each pit is enriched with organic manure and compost, creating a micro-habitat that attracts subterranean termites (Trinervitermes geminatus) whose burrowing tunnels break the crust and dramatically improve water infiltration.",
+        "cultural_significance": "Celebrated globally by the UNCCD, FAO, and UNDRR as one of Africa's most successful indigenous Drought and Desertification DRR frameworks: Zaï pits capture and retain 100% of erratic rainfall runoff, reduce destructive sheet-wash erosion, boost cereal yields (sorghum and millet) by up to 500% on previously dead wasteland, and re-establish native agroforestry parklands that lower surface temperatures and eliminate famine vulnerability across the Sahelian drylands.",
+        "drr_relevance": true,
+        "drr_mechanism": "Micro-catchment pits combined with compost and termite bio-tunneling break impermeable hardpan crusts, capturing 100% of seasonal runoff and mitigating drought and desertification.",
+        "gemini_tags": [
+          "Desertification Resilience",
+          "Drought Risk Reduction",
+          "Zaï Technique",
+          "Sahel Agro-Ecology",
+          "Soil Moisture Harvesting",
+          "Indigenous Food Security",
+          "Eco-DRR"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Soil-Water Micro-Catchment & Biological Hardpan Rehabilitation",
+        "materials_and_tools": [
+          "Traditional forged-iron digging picks (Ilala / Daba)",
+          "Organic manure and decomposed dry animal dung",
+          "Native volcanic/granite stones for contour bunding (cordons pierreux)",
+          "Seeds of drought-resistant sorghum (Sorghum bicolor) and pearl millet"
+        ],
+        "step_by_step": [
+          "Contour Line Identification: Trace topographical contours across hardpan plains during the dry season using transparent water-tube levels or indigenous visual sighting.",
+          "Pit Grid Excavation: Dig a staggered grid of circular pits 20 to 40 cm in diameter and 10 to 15 cm deep, spaced 70 to 80 cm apart across the encrusted field.",
+          "Organic Matter Packing: Deposit two handfuls (approximately 300–500 grams) of dry compost and livestock dung into the bottom of each pit.",
+          "Termite Symbiosis Activation: Allow termites to consume the organic matter; their subterranean tunneling naturally aerates the soil and creates porous vertical channels for deep rainwater infiltration.",
+          "Upstream Contour Stone Bunding: Lay semi-permeable stone lines along the contour above the Zaï fields to slow down torrential flash runoff and trap fertile topsoil.",
+          "Targeted Sowing at First Rain: Plant crop seeds directly into the moist, fertilized Zaï pits immediately upon the onset of the first monsoon rains."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Kenya & Tanzania",
+            "element_name": "Fanya Juu and Fanya Chini Terracing",
+            "relationship_reason": "Indigenous contour earthen ridge systems constructed to capture seasonal runoff and prevent catastrophic hillside soil erosion."
+          },
+          {
+            "country": "Sudan",
+            "element_name": "Teras Water Harvesting System",
+            "relationship_reason": "Earthen micro-catchment dikes engineered by semi-arid pastoralists to capture flash flood runoff for dryland grain cultivation."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-14-ivatan-typhoon-craft",
+      "element_name": "Ivatan Vernacular Architecture and Typhoon-Resilient Craftsmanship (Sinadumparan and Maytuab)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/House_of_Dakiaw_Ivatan_House.jpg/1200px-House_of_Dakiaw_Ivatan_House.jpg",
+      "source_urls": [
+        "https://whc.unesco.org/en/tentativelists/521/",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000371482_eng",
+        "https://www.undrr.org/case-study/stone-and-cogon-ivatan-vernacular-architecture-withstanding-category-5-super-typhoons",
+        "https://ncca.gov.ph/about-culture-and-arts/culture-profile/batanes-cultural-landscape/"
+      ],
+      "scraped_at": "2026-08-30T16:45:00.000Z",
+      "location": {
+        "country": "Philippines",
+        "provinces": [
+          "Batanes (Batan, Sabtang, and Itbayat Islands)"
+        ],
+        "lat": 20.4485,
+        "lng": 121.9708
+      },
+      "resume_analisa": {
+        "description": "Ivatan vernacular architecture is a centuries-old storm-hardened building tradition developed by the indigenous Ivatan people of the Batanes archipelago, situated directly in the Pacific Ocean's most active typhoon corridor. The structural typology (primarily the Sinadumparan two-slope and Maytuab four-slope houses) features meter-thick stone and coral masonry walls bonded with slaked lime, paired with a steep, multi-layered roof thatched with Cogon grass (Imperata cylindrica) and secured with heavy braided rattan net matrices (panungtung).",
+        "cultural_significance": "Recognized on the UNESCO World Heritage Tentative List and celebrated as a masterwork of Super Typhoon and Earthquake Disaster Resilience: While modern galvanized iron roofs and unreinforced brick buildings are routinely obliterated by Category 5 super typhoons (with winds exceeding 250 km/h) and frequent tectonic quakes, traditional Ivatan houses remain completely intact without roof blow-offs or structural collapse due to their aerodynamic mass, flexible reed truss framing, and wind-dampening stone mass.",
+        "drr_relevance": true,
+        "drr_mechanism": "Meter-thick slaked-lime stone masonry, flexible aerodynamic hip roof framing, and anchored rattan net systems (panungtung) withstand Category 5 super typhoons (>250 km/h) and seismic shocks.",
+        "gemini_tags": [
+          "Typhoon Disaster Resilience",
+          "Ivatan Vernacular Architecture",
+          "Wind Disaster Mitigation",
+          "Super Typhoon Shield",
+          "Indigenous Craftsmanship",
+          "Philippine Heritage",
+          "Seismic-Wind Resilience"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Extreme Wind & Multi-Hazard Vernacular Structural Engineering",
+        "materials_and_tools": [
+          "Locally quarried basalt, granite, or coral limestone blocks",
+          "Slaked lime mortar mixed with river sand and mud",
+          "Dense Cogon grass bundles (Imperata cylindrica / Vuchid)",
+          "Hardwood roof timber beams (Tuvek / Kayu)",
+          "Heavy braided rattan anchoring nets (Panungtung / Yaru)"
+        ],
+        "step_by_step": [
+          "Low-Profile Site Orientation: Orient the primary blind wall (the wall with no windows) directly facing the prevailing northern/northeastern monsoon typhoon winds.",
+          "Meter-Thick Masonry Construction: Lay stone blocks into walls 0.8 to 1.2 meters thick, bonded exclusively with traditional slaked lime mortar that cures harder over decades through carbonation.",
+          "Aerodynamic Hip-Roof Framing (Maytuab): Erect a four-sloped, steep hip roof framed with flexible hardwood rafters joined by wooden pegs to yield under cyclonic air turbulence.",
+          "Multi-Layered Cogon Thatching: Tie layered bundles of mature Cogon grass up to 30–40 cm thick onto bamboo purlins, creating a dense, watertight thatch that absorbs wind pressure.",
+          "Protective Rattan Netting (Panungtung): Throw a heavy-duty net of braided jungle vines or rattan (panungtung) over the entire roof and anchor it firmly to underground stone footings embedded in the ground.",
+          "Pre-Storm Wooden Shutter Locking: Lock external double-thick hardwood window shutters using heavy horizontal interior timber bars (barandillas) as typhoons approach."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.89,
+        "related_elements": [
+          {
+            "country": "Japan (Okinawa)",
+            "element_name": "Ryukyu Traditional Typhoon-Resilient Architecture",
+            "relationship_reason": "Stone-walled, red-tile plastered hip roofs surrounded by Fukugi tree windbreaks engineered to withstand western Pacific super typhoons."
+          },
+          {
+            "country": "Fiji / Samoa",
+            "element_name": "Traditional Bure and Fale Cyclone-Resilient Architecture",
+            "relationship_reason": "Aerodynamic rounded timber and thatch construction utilizing flexible braided lashing to dissipate cyclonic gale forces."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-15-transhumance-pastoralism",
+      "element_name": "Transhumance: Seasonal Droving of Livestock and Pastoral Landscape Stewardship",
+      "category": "Knowledge and Practices Concerning Nature and the Universe",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Transhumancia_en_Espana_canadas_reales.jpg/1200px-Transhumancia_en_Espana_canadas_reales.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/transhumance-the-seasonal-droving-of-livestock-01964",
+        "https://www.undrr.org/news/how-ancient-pastoral-transhumance-prevents-devastating-wildfires-across-mediterranean",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000388912",
+        "https://whc.unesco.org/en/news/2632"
+      ],
+      "scraped_at": "2026-08-30T16:45:00.000Z",
+      "location": {
+        "country": "Multi-National (Albania, Andorra, Austria, Croatia, France, Greece, Italy, Luxembourg, Romania, Spain)",
+        "provinces": [
+          "Pyrenees",
+          "Alps",
+          "Apennines",
+          "Pindus Mountains"
+        ],
+        "lat": 42.1382,
+        "lng": 1.5728
+      },
+      "resume_analisa": {
+        "description": "Transhumance is the seasonal droving of livestock (primarily sheep, cattle, and goats) along fixed historic migratory trails (such as the Cañadas Reales in Spain and the Tratturi in Italy) between higher mountain pastures in summer and lower plains or valleys in winter. The tradition encompasses extensive knowledge of botany, veterinary medicine, meteorological forecasting, landscape management, and customary pastoral rights transmitted through communal celebrations, oral songs, and shepherd guilds.",
+        "cultural_significance": "Inscribed on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity in 2019 (expanded in 2023). Transhumance is an indispensable mechanism for Ecosystem-based Disaster Risk Reduction (Eco-DRR): (1) Megafire Prevention: Rotational grazing by millions of animals along migratory corridors clears tons of dry underbrush and combustible shrubs, maintaining vast living firebreaks that arrest Mediterranean forest wildfires; (2) Avalanche and Landslide Prevention: Grazing prevents alpine grass overgrowth from flattening into slick winter planes, stabilizing mountain snowpack against avalanches and securing topsoil from erosion.",
+        "drr_relevance": true,
+        "drr_mechanism": "Rotational seasonal livestock grazing systematically clears combustible forest biomass to create living firebreaks against megafires, while stabilizing alpine snowpack against winter avalanches.",
+        "gemini_tags": [
+          "UNESCO Representative List",
+          "Transhumance",
+          "Wildfire Risk Reduction",
+          "Living Firebreaks",
+          "Avalanche Mitigation",
+          "Pastoral Stewardship",
+          "Eco-DRR"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Pastoral Land Stewardship & Strategic Biomass Grazing Protocol",
+        "materials_and_tools": [
+          "Traditional shepherd crooks and walking staffs",
+          "Tuned livestock bells (Campanas / Sonajas) for herd cohesion",
+          "Trained livestock guardian dogs (e.g., Maremma, Pyrenean Mastiff)",
+          "Customary livestock trail maps (Cañadas, Vías Pecuarias, Tratturi)"
+        ],
+        "step_by_step": [
+          "Astro-Phenological Trail Timing: Determine the exact departure dates for spring and autumn migrations based on mountain snowmelt rates, alpine flowering, and seasonal temperature shifts.",
+          "Targeted Firebreak Grazing: Route herds strategically along high-risk dry forest edges and ridgelines to graze down dense, highly flammable scrub (gorse, broom, and dry grasses).",
+          "Alpine Grassland Trampling: Allow herds to graze and trample high alpine pastures during late summer to compact the vegetative layer and prevent slick grass layers that trigger winter snow avalanches.",
+          "Water Point and Trail Maintenance: Clear mountain springs and repair stone-lined animal trails during transit to ensure continuous soil drainage and prevent erosion channels.",
+          "Seed Dispersal and Slope Biodiversity: Utilize the natural movement of livestock to transport and deposit indigenous seeds across fragmented mountain landscapes via animal wool and manure.",
+          "Intergenerational Shepherd Mentorship: Transmit trail route navigation, herd health diagnosis, and weather reading from master shepherds to younger pastoral apprentices."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.94,
+        "related_elements": [
+          {
+            "country": "Norway & Sweden",
+            "element_name": "Sámi Reindeer Herding and Seasonal Migration",
+            "relationship_reason": "Arctic indigenous rotational migration maintaining tundra ecosystem equilibrium and preventing sub-arctic brush accumulation."
+          },
+          {
+            "country": "Mongolia",
+            "element_name": "Traditional Pastoral Nomadism and Seasonal Otor Migration",
+            "relationship_reason": "Rotational steppe grazing preventing rangeland degradation and mitigating catastrophic winter freeze disasters (Dzud)."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-16-badgir-windcatcher",
+      "element_name": "Badgir Vernacular Windcatcher Craftsmanship and Passive Desert Thermal Regulation",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Yazd_Windcatcher_Dowlatabad.jpg/1200px-Yazd_Windcatcher_Dowlatabad.jpg",
+      "source_urls": [
+        "https://whc.unesco.org/en/list/1544/",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000375345_eng",
+        "https://www.undrr.org/case-study/zero-energy-badgir-cooling-preventing-heatwave-mortality-ancient-desert-cities",
+        "https://www.irantoheritage.com/badgir-wind-towers-yazd/"
+      ],
+      "scraped_at": "2026-08-30T16:45:00.000Z",
+      "location": {
+        "country": "Iran",
+        "provinces": [
+          "Yazd (Historic City of Yazd)",
+          "Kerman",
+          "Isfahan"
+        ],
+        "lat": 31.8974,
+        "lng": 54.3569
+      },
+      "resume_analisa": {
+        "description": "Badgir (literally 'windcatcher') is an ancient, zero-energy passive ventilation and bioclimatic cooling tower perfected by master builders (Me'mar) in the desert city of Yazd. Rising above residential courtyards and water reservoirs (Ab Anbar), the multi-directional masonry tower captures faint, high-altitude desert breezes, directs the airflow downward through internal vertical clay baffles, and cools it either by evaporating water from subterranean Qanat streams or through the thermal mass of thick adobe brickwork before circulating it through living spaces.",
+        "cultural_significance": "A crowning achievement of the UNESCO World Heritage City of Yazd and Iranian living technical heritage. Badgirs provide a critical vernacular defense against Extreme Heatwave Disasters and Thermal Grid Failures: under blistering summer ambient temperatures exceeding 48°C–52°C, Badgirs reduce indoor temperatures by 12°C to 18°C completely without electricity, preventing lethal heat stroke casualties among vulnerable urban populations and preserving stored community drinking water without refrigeration.",
+        "drr_relevance": true,
+        "drr_mechanism": "Passive zero-energy aerodynamics capturing high-altitude desert breezes and subterranean Qanat evaporative cooling reduces indoor heat by 12–18°C during lethal 50°C heatwaves without electricity.",
+        "gemini_tags": [
+          "Extreme Heatwave DRR",
+          "Badgir Windcatcher",
+          "Passive Cooling",
+          "Zero-Energy Architecture",
+          "Yazd Heritage",
+          "Thermal Stress Mitigation",
+          "Traditional Desert Engineering"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Passive Aerodynamic Thermodynamics & Extreme Heat Adaptation",
+        "materials_and_tools": [
+          "Sun-dried adobe mudbricks (Khesht)",
+          "Straw and mud thermal insulation plaster (Kahgel)",
+          "Wood reinforcement tie-beams (Chub-e Chenar)",
+          "Subterranean ceramic water basins / Qanat stream connections"
+        ],
+        "step_by_step": [
+          "Prevailing Wind Siting: Calculate the height and orientation of tower vents to face clean, cool upper-atmospheric desert breezes (e.g., Isfahan wind) while shielding openings against dusty seasonal storm winds.",
+          "Tower Masonry Erection: Construct an elevated rectangular or octagonal tower (10 to 35 meters high) utilizing dense adobe mudbricks possessing high thermal inertia.",
+          "Vertical Clay Shaft Partitioning: Divide the tower interior into multiple isolated vertical shafts (cheshmeh) using clay brick partition walls (teqeh) to allow simultaneous air intake and hot air exhaust.",
+          "Kahgel Plastering: Coat the exterior and interior walls with Kahgel (mud-straw mortar) to reflect intense infrared solar radiation and provide superior thermal insulation.",
+          "Subterranean Qanat Coupling: Route incoming air shafts downward across underground cold-water channels (Qanat) or indoor pool basins (howz) to induce rapid evaporative cooling and moisture enrichment.",
+          "Diurnal Chimney Reversal: During windless nights, utilize the hot daytime-warmed brick tower as a thermal chimney, drawing warm, stale air up and out of the living rooms while drawing in cool nocturnal desert air from inner shaded courtyards."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.93,
+        "related_elements": [
+          {
+            "country": "Egypt",
+            "element_name": "Malqaf Traditional Windcatcher and Salsabil Evaporative Cooling",
+            "relationship_reason": "Ancient Egyptian vernacular windcatchers paired with angled water panels (salsabil) to counteract extreme desert heatwaves."
+          },
+          {
+            "country": "Pakistan (Sindh)",
+            "element_name": "Mangho Windcatchers of Hyderabad",
+            "relationship_reason": "Rooftop masonry wind scoops built into coastal desert homes to capture sea breezes and mitigate severe summer heat stress."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-17-pranata-mangsa",
+      "element_name": "Pranata Mangsa Traditional Agro-Climatic Almanac and Disaster Forecasting System",
+      "category": "Knowledge and Practices Concerning Nature and the Universe",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Rice_fields_in_Yogyakarta.jpg/1200px-Rice_fields_in_Yogyakarta.jpg",
+      "source_urls": [
+        "https://ich.kemdikbud.go.id/cerita/pranata-mangsa-penanggalan-musim-jawa",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000371482_eng",
+        "https://www.undrr.org/case-study/pranata-mangsa-indigenous-astronomical-calendar-mitigating-drought-and-crop-failure-java",
+        "https://journal.ugm.ac.id/v3/JIK/article/view/1245"
+      ],
+      "scraped_at": "2026-08-30T17:30:00.000Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Central Java",
+          "Special Region of Yogyakarta",
+          "East Java"
+        ],
+        "lat": -7.7956,
+        "lng": 110.3695
+      },
+      "resume_analisa": {
+        "description": "Pranata Mangsa is a classical Javanese bioclimatic calendar system that divides the agricultural year into twelve distinct ecological seasons (mangsa) based on stellar observations (particularly the Southern Cross / Gubug Penceng and the Pleiades / Waluku), shadow length variations, wind currents, and natural bio-indicators (animal behavior, leaf shedding, and insect emergence). This oral and astronomical science guides rural agrarian societies on optimal planting schedules, seasonal crop rotation, and water conservation.",
+        "cultural_significance": "A fundamental element of Indonesian Intangible Cultural Heritage that serves as an ancestral Early Warning & Agro-Climatic DRR framework: Pranata Mangsa prevents devastating crop failure and agricultural famine by accurately forecasting the onset of extreme droughts (Mangsa Kasa–Karo), predicting prolonged monsoon delays caused by climate shifts, and guiding synchronized fallow periods that break insect pest infestation cycles without relying on chemical pesticides.",
+        "drr_relevance": true,
+        "drr_mechanism": "Astro-phenological calendar forecasting erratic monsoon shifts and severe dry spells, guiding synchronized planting and water rationing to prevent crop famine and pest outbreaks.",
+        "gemini_tags": [
+          "Indigenous Meteorology",
+          "Pranata Mangsa",
+          "Drought Early Warning",
+          "Javanese Heritage",
+          "Agro-Climatic DRR",
+          "Food Security",
+          "Pest Outbreak Suppression"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Bio-Astronomical Forecasting & Agrarian Climate Adaptation Protocol",
+        "materials_and_tools": [
+          "Traditional gnomon shadow-casting stick (Bencet)",
+          "Astronomical observation markers for Orion and Pleiades constellations",
+          "Bamboo meteorological wind-direction vanes (Kitiran)",
+          "Customary seasonal almanac charts (Primbon)"
+        ],
+        "step_by_step": [
+          "Gnomon Shadow Tracking: Insert a vertical bamboo/wood peg (bencet) into level ground at midday to measure solar declination and determine seasonal transitions.",
+          "Stellar Horizon Observation: Track the heliacal rising of the Pleiades (Waluku) in early morning skies to pinpoint the arrival of the land-preparation season (Mangsa Kapat).",
+          "Bio-Indicator Monitoring: Monitor ecological markers—such as the flowering of the kapok tree (Ceiba pentandra), the migration of cicadas, and snake nesting depths—to calibrate localized rain forecasts.",
+          "Drought-Proof Fallow Scheduling: Enforce a mandatory dry-season fallow and shift to drought-resilient legumes/tubers (palawija) during Mangsa Karo and Katiga to conserve groundwater.",
+          "Monsoon Flood Preparedness: Clean community drainage canals and reinforce river embankments prior to Mangsa Kalima and Kanem when extreme monsoonal downpours peak.",
+          "Synchronized Sowing Deployment: Mobilize neighboring farming guilds (sambatan) to plant rice seedlings simultaneously across entire valleys to suppress rodent and insect pest proliferation."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.91,
+        "related_elements": [
+          {
+            "country": "Madagascar",
+            "element_name": "Alimanaka Traditional Malagasy Astrological Calendar",
+            "relationship_reason": "Austronesian-influenced seasonal star-tracking calendar used to forecast rainfall patterns and avert agricultural crop failures."
+          },
+          {
+            "country": "Peru",
+            "element_name": "Pleiades Observation for Andean Rainfall Forecasting",
+            "relationship_reason": "Indigenous astronomical observation of the Pleiades cluster to predict El Niño weather anomalies and drought severity."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-18-carolinian-wayfinding",
+      "element_name": "Carolinian Wayfinding, Canoe Building, and Oceanic Storm Evasion Traditions",
+      "category": "Knowledge and Practices Concerning Nature and the Universe",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Carolinian_Canoe_Sailing.jpg/1200px-Carolinian_Canoe_Sailing.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/USL/carolinian-wayfinding-and-canoe-making-01712",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000375685_eng",
+        "https://www.undrr.org/case-study/indigenous-carolinian-wayfinding-navigating-and-surviving-pacific-super-typhoons",
+        "https://www.pws.gov.fm/heritage/wayfinding-tradition"
+      ],
+      "scraped_at": "2026-08-30T17:30:00.000Z",
+      "location": {
+        "country": "Federated States of Micronesia",
+        "provinces": [
+          "Yap (Outer Islands: Satawal, Polowat)",
+          "Chuuk"
+        ],
+        "lat": 7.4256,
+        "lng": 150.5508
+      },
+      "resume_analisa": {
+        "description": "Carolinian wayfinding is an ancestral non-instrument ocean navigation and outrigger canoe construction tradition practiced across the remote coral atolls of the Caroline Islands. Master navigators (Palu) traverse thousands of open ocean miles across the Western Pacific using the 'star compass' (Paafu), observing underwater bioluminescence, reading ocean swell reflections (etak), and tracking seabird flight paths without modern GPS or magnetic compasses.",
+        "cultural_significance": "Inscribed on the UNESCO List of Intangible Cultural Heritage in Need of Urgent Safeguarding in 2021. This navigation lore forms an extraordinary Pacific Cyclone & Oceanic Disaster Resilience system: Master navigators identify deep-ocean atmospheric pressure drops, erratic wave interference patterns, and unnatural bird migrations up to 48 hours before a tropical cyclone/typhoon strikes, allowing them to steer voyaging canoes out of cyclonic storm tracks, lead open-water emergency evacuations, and access distant high islands during post-disaster food crises.",
+        "drr_relevance": true,
+        "drr_mechanism": "Indigenous oceanographic swell reading and celestial tracking forecast Pacific super typhoons days in advance, enabling oceanic storm evasion and disaster evacuation between isolated atolls.",
+        "gemini_tags": [
+          "UNESCO Urgent Safeguarding List",
+          "Carolinian Wayfinding",
+          "Typhoon Early Warning",
+          "Pacific Disaster Resilience",
+          "Non-Instrument Navigation",
+          "Oceanic DRR",
+          "Indigenous Seafaring"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Non-Instrument Maritime Navigation & Cyclonic Storm Evasion",
+        "materials_and_tools": [
+          "Hand-hewn breadfruit wood outrigger canoes (Wa)",
+          "Braided coconut husk coir lashings (Aho)",
+          "Woven Pandanus leaf sails",
+          "Mental sidereal star compass (Paafu)"
+        ],
+        "step_by_step": [
+          "Sidereal Horizon Alignment: Memorize the rising and setting positions of thirty-two stars on the horizon (Paafu) to maintain bearings across open ocean waters.",
+          "Multi-Directional Swell Sensing: Sense underlying subterranean swell patterns through the motion of the canoe hull to detect distant oceanic storm turbulence.",
+          "Atmospheric Halo and Cloud Reading: Identify high-altitude cirrus cloud radiants and solar/lunar halos indicating the rapid approach of a low-pressure cyclonic vortex.",
+          "Pre-Typhoon Storm Track Evasion: Re-trim the flexible Pandanus sail and steer the canoe perpendicular to the dominant cyclonic swell direction to escape the dangerous eyewall sector.",
+          "Flexible Timber Lashing Construction: Build the canoe hull with flexible coconut coir stitching instead of rigid fasteners, allowing the vessel to absorb heavy cyclonic wave impacts without shattering.",
+          "Post-Disaster Island Relief Wayfinding: Navigate open-sea supply corridors between devastated low atolls and high volcanic islands following typhoon strikes to distribute disaster relief provisions."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.96,
+        "related_elements": [
+          {
+            "country": "Polynesia (Hawaii / New Zealand / Cook Islands)",
+            "element_name": "Polynesian Wayfinding and Voyaging Traditions (Hōkūleʻa)",
+            "relationship_reason": "Non-instrument Pacific oceanic navigation system utilizing wave swells and star paths for open-sea survival and storm avoidance."
+          },
+          {
+            "country": "Marshall Islands",
+            "element_name": "Marshallese Stick Charts (Rebbilib and Mattang)",
+            "relationship_reason": "Woven palm-stick wave navigational charts engineered to identify underwater wave refraction and ocean storm swells."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-19-sanke-mon",
+      "element_name": "Sanké Mon: Collective Fishing Rite and Seasonal Floodplain Hydrological Stewardship",
+      "category": "Social Practices, Rituals and Festive Events",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sanke_mon_rite_San_Mali.jpg/1200px-Sanke_mon_rite_San_Mali.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/USL/sanke-mon-collective-fishing-rite-of-the-sanke-00289",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000216448_eng",
+        "https://www.undrr.org/case-study/sanke-mon-ancestral-wetland-clearing-preventing-sahelian-drought-and-disease-mali",
+        "https://www.maliheritage.gov.ml/sanke-mon-rite/"
+      ],
+      "scraped_at": "2026-08-30T17:30:00.000Z",
+      "location": {
+        "country": "Mali",
+        "provinces": [
+          "Ségou Region (San Cercle)"
+        ],
+        "lat": 13.3034,
+        "lng": -4.8956
+      },
+      "resume_analisa": {
+        "description": "Sanké Mon is a collective fishing ritual and hydrological management practice celebrated annually on the second Thursday of the seventh lunar month in the town of San, Mali. The ritual commemorates the founding of the town and brings together thousands of fishers from diverse ethnic groups (Bambara, Bobo, Bozo, and Peuhl) who plunge into the sacred Sanké pond using traditional triangular hand nets to harvest fish simultaneously amid communal dances and masquerades.",
+        "cultural_significance": "Inscribed on the UNESCO List of Intangible Cultural Heritage in Need of Urgent Safeguarding in 2009. Beyond its cultural cohesion, Sanké Mon is a crucial mechanism for Wetland Ecosystem Health and Drought Disaster Resilience in the Sahel: The simultaneous movement of thousands of participants naturally dredges, aerates, and removes decaying biomass from the shrinking wetland basin at the height of the dry season, preventing water stagnation, breaking lethal waterborne disease cycles (such as cholera and malaria), maintaining water retention capacity for livestock during extreme droughts, and preventing famine.",
+        "drr_relevance": true,
+        "drr_mechanism": "Mass communal wetland desilting and biomass clearing aerates dry-season floodplain ponds, preventing lethal waterborne disease outbreaks and securing vital livestock water during Sahelian droughts.",
+        "gemini_tags": [
+          "UNESCO Urgent Safeguarding List",
+          "Sanké Mon",
+          "Wetland DRR",
+          "Sahel Drought Resilience",
+          "Epidemic Disease Prevention",
+          "Communal Water Stewardship",
+          "Malian Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Communal Agro-Hydrological Aeration & Floodplain Sanitation Ritual",
+        "materials_and_tools": [
+          "Traditional triangular woven hand nets (Kéblén / Kessé)",
+          "Gourd water buoys and wicker creels",
+          "Communal sacrificial offerings of roosters and millet cream",
+          "Sacred tom-tom drums (Bara) for phase coordination"
+        ],
+        "step_by_step": [
+          "Sacred Divination and Siting: Village elders and the master of the waters (Koba Mansa) perform ancestral animal offerings on the banks of the sacred pond to designate the exact harvest boundary.",
+          "Simultaneous Pond Entry: At the sounding of the sacred drum, thousands of fishers enter the water en masse, sweeping across the mud bed with hand nets in organized lines.",
+          "Sediment Stirring and Aeration: The collective trampling of thousands of participants stirs up trapped anaerobic mud, releasing toxic methane and oxygenating the shallow water column.",
+          "Aquatic Weed and Silt Dredging: As fish are caught, thick layers of dead aquatic weeds, invasive reeds, and loose silt are cleared from the main channel by the crowd.",
+          "Equitable Catch Distribution: Share harvested fish among vulnerable village households to secure emergency protein supplies ahead of the annual lean agricultural season (soudure).",
+          "Sanctuary Protection Protocol: Impose strict taboo protections that prohibit any fishing or water pollution in the sacred pond for the subsequent eleven months to allow fish breeding and aquatic regeneration."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.92,
+        "related_elements": [
+          {
+            "country": "Nigeria",
+            "element_name": "Argungu International Fishing and Cultural Festival",
+            "relationship_reason": "Mass communal river fishing festival in the semi-arid northern savannah that desilts seasonal riverbeds and fosters regional disaster food security."
+          },
+          {
+            "country": "Ghana",
+            "element_name": "Bakatue Festival of Elmina",
+            "relationship_reason": "Ancestral lagoon-opening ritual that dredges coastal sandbars to flush out stagnant waters and prevent monsoonal flood damage."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-drr-20-johad-check-dams",
+      "element_name": "Johad Ancestral Crescent Earthen Check Dams and River Basin Rejuvenation",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Johad_water_structure_Rajasthan.jpg/1200px-Johad_water_structure_Rajasthan.jpg",
+      "source_urls": [
+        "https://www.undrr.org/case-study/johad-ancestral-earthen-check-dams-rejuvenating-dead-rivers-and-averting-desert-drought-india",
+        "https://unesdoc.unesco.org/ark:/48223/pf0000371482",
+        "https://www.fao.org/giahs/giahs-around-the-world/asia-and-the-pacific/traditional-water-harvesting-india/",
+        "https://www.downtoearth.org.in/water/how-johads-brought-water-back-to-rajasthan"
+      ],
+      "scraped_at": "2026-08-30T17:30:00.000Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Rajasthan (Alwar, Jaipur, Dausa districts)",
+          "Haryana"
+        ],
+        "lat": 27.5530,
+        "lng": 76.6346
+      },
+      "resume_analisa": {
+        "description": "A Johad is a traditional, crescent-shaped or semi-circular earthen check dam engineered by indigenous pastoral and farming communities in the semi-arid Aravalli Hills of Rajasthan. Built across micro-catchment slopes and seasonal streams using locally excavated clay and stone, Johads capture, slow down, and hold erratic monsoon runoff, allowing floodwaters to percolate deep into subterranean aquifers rather than washing away fertile topsoil.",
+        "cultural_significance": "A globally celebrated model of Community-Led Watershed DRR and Climate Adaptation (spearheaded by the Tarun Bharat Sangh water movement). Johads have transformed over 1,000 drought-stricken villages across Rajasthan: by retaining seasonal monsoon torrents, the system has recharged thousands of dry village wells, revived five perennially dead river systems (including the Arvari and Ruparel rivers), eliminated desert water famine, arrested catastrophic flash floods, and halted soil erosion across thousands of hectares.",
+        "drr_relevance": true,
+        "drr_mechanism": "Crescent-shaped earthen check dams capture intense monsoon runoff to eliminate flash flood surges, halt soil erosion, and continuously recharge groundwater to avert multi-year desert droughts.",
+        "gemini_tags": [
+          "Johad Check Dam",
+          "Drought Risk Reduction",
+          "Aquifer Recharge",
+          "River Basin Rejuvenation",
+          "Flash Flood Control",
+          "Community DRR",
+          "Aravalli Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Vernacular Earthen Hydro-Engineering & Watershed Infiltration System",
+        "materials_and_tools": [
+          "Locally excavated impermeable clay soil and gravel",
+          "Field boulders and unhewn stone rip-rap",
+          "Animal-drawn leveling boards (Patela)",
+          "Native deep-rooting grasses and shrubs for bund stabilization (Vetiver, Dhatura)"
+        ],
+        "step_by_step": [
+          "Micro-Catchment Contour Survey: Walk the seasonal stream contours with village elders to locate the narrowest natural bottleneck of the dry watercourse.",
+          "Crescent Foundation Trenching: Excavate a curved foundation trench across the drainage path with its concave face pointing directly toward the incoming upstream runoff.",
+          "Layered Clay Compaction: Build an earthen embankment 2 to 6 meters high using layered clay soil, thoroughly compacting each layer with livestock trampling to eliminate internal voids.",
+          "Stone Rip-Rap Armoring: Pitch natural field boulders along the upstream face of the earthen bund to protect the dam against wave erosion and hydraulic scouring during cloudbursts.",
+          "Grass Bund Stabilization: Plant deep-rooting native grasses along the crest and downstream slope to bind the soil matrix mechanically.",
+          "Masonry Spillway Setting: Construct a stone-lined overflow weir (Chadar) at one flank of the Johad to safely discharge excess flood volume into downstream check dams without overtopping the main earthen crest."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.94,
+        "related_elements": [
+          {
+            "country": "Ecuador",
+            "element_name": "Albarradas Pre-Columbian Catchment Dikes",
+            "relationship_reason": "Semicircular earthen dams engineered across seasonal watercourses to capture flash floods and recharge dry coastal aquifers."
+          },
+          {
+            "country": "Tunisia & Libya",
+            "element_name": "Jessour Traditional Mountain Water-Harvesting Terraces",
+            "relationship_reason": "Stone and earthen check dams built across arid wadi channels to retain runoff and prevent catastrophic flash flood erosion."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
