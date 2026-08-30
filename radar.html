@@ -129,6 +129,21 @@
     box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
   }
 
+  /* Style untuk Tombol Filter yang Sedang Aktif */
+    .theme-filter-btn.active-pill {
+    background-color: #0d9488 !important; /* warna aksen */
+    color: #ffffff !important;
+    border-color: #0d9488 !important;
+    box-shadow: 0 2px 8px rgba(13, 148, 136, 0.3);
+    }
+
+    /* Khusus tombol Shared Heritage aktif */
+    .theme-filter-btn[data-filter="rel_shared"].active-pill {
+    background-color: #d97706 !important;
+    border-color: #d97706 !important;
+    box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+    }
+
   </style>
   
 </head>
@@ -246,6 +261,75 @@
     </div>
 
     <div id="tab-directory" class="flex flex-col gap-4 mt-4">
+
+        <!-- ========================================== -->
+<!-- THEMATIC FILTER BAR (EXPLORE, TYPE, LENS, RELATIONSHIP) -->
+<!-- ========================================== -->
+<div class="bg-brand-800 border border-brand-700 rounded-xl p-4 flex flex-col gap-4 shadow-sm">
+  
+  <!-- Group 1: Explore -->
+  <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+    <span class="text-xs font-mono font-bold uppercase tracking-wider text-gray-500 sm:w-36 shrink-0">Explore</span>
+    <div class="flex flex-wrap gap-2">
+      <button onclick="setThemeFilter('all')" data-filter="all" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all active-pill">
+        🗺️ All ICH
+      </button>
+    </div>
+  </div>
+
+  <div class="border-t border-brand-700"></div>
+
+  <!-- Group 2: Heritage Type -->
+  <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+    <span class="text-xs font-mono font-bold uppercase tracking-wider text-gray-500 sm:w-36 shrink-0">Heritage Type</span>
+    <div class="flex flex-wrap gap-2">
+      <button onclick="setThemeFilter('type_culinary')" data-filter="type_culinary" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border border-brand-700 bg-brand-900 text-gray-400 hover:text-brand-accent hover:border-brand-accent transition-all">
+        🍲 Culinary
+      </button>
+      <button onclick="setThemeFilter('type_craft')" data-filter="type_craft" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border border-brand-700 bg-brand-900 text-gray-400 hover:text-brand-accent hover:border-brand-accent transition-all">
+        🎨 Craftsmanship
+      </button>
+      <button onclick="setThemeFilter('type_social')" data-filter="type_social" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border border-brand-700 bg-brand-900 text-gray-400 hover:text-brand-accent hover:border-brand-accent transition-all">
+        🎭 Social Practices & Rituals
+      </button>
+    </div>
+  </div>
+
+  <div class="border-t border-brand-700"></div>
+
+  <!-- Group 3: Thematic Lens -->
+  <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+    <span class="text-xs font-mono font-bold uppercase tracking-wider text-gray-500 sm:w-36 shrink-0">Thematic Lens</span>
+    <div class="flex flex-wrap gap-2">
+      <button onclick="setThemeFilter('lens_disaster')" data-filter="lens_disaster" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border border-brand-700 bg-brand-900 text-gray-400 hover:text-brand-accent hover:border-brand-accent transition-all">
+        🌪️ Disaster Resilience
+      </button>
+      <button onclick="setThemeFilter('lens_nature')" data-filter="lens_nature" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border border-brand-700 bg-brand-900 text-gray-400 hover:text-brand-accent hover:border-brand-accent transition-all">
+        🌱 Nature & Traditional Knowledge
+      </button>
+      <button onclick="setThemeFilter('lens_oral')" data-filter="lens_oral" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border border-brand-700 bg-brand-900 text-gray-400 hover:text-brand-accent hover:border-brand-accent transition-all">
+        🗣️ Living / Oral Heritage
+      </button>
+      <button onclick="setThemeFilter('lens_intergen')" data-filter="lens_intergen" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border border-brand-700 bg-brand-900 text-gray-400 hover:text-brand-accent hover:border-brand-accent transition-all">
+        👶 Intergenerational Transmission
+      </button>
+    </div>
+  </div>
+
+  <div class="border-t border-brand-700"></div>
+
+  <!-- Group 4: Relationship -->
+  <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+    <span class="text-xs font-mono font-bold uppercase tracking-wider text-gray-500 sm:w-36 shrink-0">Relationship</span>
+    <div class="flex flex-wrap gap-2">
+      <button onclick="setThemeFilter('rel_shared')" data-filter="rel_shared" class="theme-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border border-brand-700 bg-brand-900 text-gray-400 hover:text-brand-secondary hover:border-brand-secondary transition-all">
+        🌐 Shared Heritage
+      </button>
+    </div>
+  </div>
+
+</div>
+
       <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
         <div class="flex items-center gap-2 shrink-0">
           <i class="ph ph-books text-xl text-brand-secondary"></i>
@@ -1301,24 +1385,98 @@ const COUNTRY_CENTROIDS = {
   // ═══════════════════════════════════════════════════════════════
   //  FILTERS & SORT
   // ═══════════════════════════════════════════════════════════════
-  function applyFilters() {
-    const statusVal  = document.getElementById('filter-status').value;
-    const countryVal = document.getElementById('filter-country').value;
-    const sortVal    = document.getElementById('sort-order').value;
+    // State filter tema aktif
+    let currentThemeFilter = 'all';
+
+    // Fungsi saat tombol filter diklik
+    function setThemeFilter(filterKey) {
+    currentThemeFilter = filterKey;
+
+    // Update style aktif pada tombol
+    document.querySelectorAll('.theme-filter-btn').forEach(btn => {
+        if (btn.getAttribute('data-filter') === filterKey) {
+        btn.classList.add('active-pill');
+        } else {
+        btn.classList.remove('active-pill');
+        }
+    });
+
+    // Terapkan filter ke data
+    applyFilters();
+    }
+
+    // Perbarui fungsi applyFilters() yang sudah ada
+    function applyFilters() {
+    const statusVal  = document.getElementById('filter-status')?.value || 'all';
+    const countryVal = document.getElementById('filter-country')?.value || 'all';
+    const sortVal    = document.getElementById('sort-order')?.value || 'newest';
+
     let result = [...globalData.inventory];
+
+    // 1. Filter Status Bawaan
     if (statusVal === 'COMPLETE')    result = result.filter(i => i.completion_status === 'COMPLETE');
     else if (statusVal === 'INCOMPLETE') result = result.filter(i => i.completion_status !== 'COMPLETE');
     else if (statusVal === 'SHARED') result = result.filter(i => i.shared_heritage_detection?.is_shared);
+
+    // 2. Filter Negara
     if (countryVal !== 'all') result = result.filter(i => i.location?.country === countryVal);
+
+    // 3. FILTER THEMATIC (EXPLORE, TYPE, LENS, RELATIONSHIP)
+    if (currentThemeFilter !== 'all') {
+        result = result.filter(item => {
+        const cat = (item.category || '').toLowerCase();
+        const desc = (item.resume_analisa?.description || '').toLowerCase();
+        const sig = (item.resume_analisa?.cultural_significance || '').toLowerCase();
+        const tags = (item.resume_analisa?.gemini_tags || []).map(t => t.toLowerCase());
+        const allText = `${cat} ${desc} ${sig} ${tags.join(' ')}`;
+
+        switch (currentThemeFilter) {
+            // --- HERITAGE TYPE ---
+            case 'type_culinary':
+            return cat.includes('culinary') || cat.includes('food') || cat.includes('beverage') || cat.includes('kuliner') || tags.some(t => t.includes('food') || t.includes('recipe') || t.includes('cacao') || t.includes('beverage'));
+
+            case 'type_craft':
+            return cat.includes('craft') || cat.includes('kerajinan') || cat.includes('weapon') || tags.some(t => t.includes('metal') || t.includes('craft') || t.includes('textile') || t.includes('wood'));
+
+            case 'type_social':
+            return cat.includes('social') || cat.includes('ritual') || cat.includes('festive') || cat.includes('performing') || cat.includes('upacara') || cat.includes('dance') || cat.includes('tari');
+
+            // --- THEMATIC LENS ---
+            case 'lens_disaster':
+            return /disaster|resilience|bencana|gempa|tsunami|climate|flood|crisis|adaptation|mitigasi|survival/.test(allText);
+
+            case 'lens_nature':
+            return /nature|alam|traditional knowledge|universe|medicine|herb|tanaman|pertanian|agriculture|environment|ecology|hutan/.test(allText);
+
+            case 'lens_oral':
+            return /oral|lisan|storytelling|folklore|cerita|language|bahasa|singing|chant|epic|music|tradisi lisan/.test(allText);
+
+            case 'lens_intergen':
+            return /intergenerational|generation|generasi|transmission|youth|elder|education|learning|master|apprentice|pewarisan|turun temurun/.test(allText);
+
+            // --- RELATIONSHIP ---
+            case 'rel_shared':
+            return item.shared_heritage_detection?.is_shared === true;
+
+            default:
+            return true;
+        }
+        });
+    }
+
+    // 4. Pengurutan Data (Sort)
     result.sort((a,b) => {
-      const dA = new Date(a.scraped_at||0), dB = new Date(b.scraped_at||0);
-      return sortVal === 'newest' ? dB - dA : dA - dB;
+        const dA = new Date(a.scraped_at || 0), dB = new Date(b.scraped_at || 0);
+        return sortVal === 'newest' ? dB - dA : dA - dB;
     });
+
     filteredData = result;
     currentPage = 1;
+
+    // Render ulang UI Grid Direktori dan Marker Peta
     renderGrid(filteredData);
     drawMapElements(filteredData);
-  }
+    }
 
   function setupEventListeners() {
     document.getElementById('filter-status').addEventListener('change', applyFilters);
