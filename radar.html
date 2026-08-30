@@ -1030,7 +1030,7 @@ const COUNTRY_CENTROIDS = {
         ${iconSvg}
       </g>
       <text x="300" y="245" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="${themeColor}" letter-spacing="1">
-        ${categoryLabel.toUpperCase()}
+        ${safeCategoryLabel}
       </text>
       <text x="300" y="272" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="16" fill="#f8fafc">
         Image Unavailable
@@ -1228,7 +1228,7 @@ const COUNTRY_CENTROIDS = {
        // PERHATIKAN PENAMBAHAN loading="lazy" DI TAG IMG BAWAH INI
        card.innerHTML = `
          <div class="h-48 w-full bg-brand-900 relative overflow-hidden">
-          <img src="${safeImg}" alt="${escapeXML(item.element_name)}" loading="lazy" data-fallback="${fallbackSvg}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" onerror="this.onerror=null; this.removeAttribute('loading'); this.src=this.dataset.fallback;">
+          <img src="${safeImg}" alt="${escapeXML(item.element_name)}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" onerror="handleFallbackImage(this, '${escapeXML(item.category || '')}')">
           <div class="absolute top-3 right-3 flex gap-2">
              ${isShared ? '<span class="bg-brand-secondary text-brand-900 text-[10px] font-bold px-2 py-1 rounded shadow"><i class="ph-fill ph-link"></i> SHARED</span>' : ''}
             <span class="${isComplete ? 'bg-brand-accent text-brand-900' : 'bg-red-500 text-slate-900'} text-[10px] font-bold px-2 py-1 rounded shadow">${isComplete ? 'COMPLETE' : 'INCOMPLETE'}</span>
@@ -1679,7 +1679,7 @@ const COUNTRY_CENTROIDS = {
         <div class="flex flex-col gap-4">
           
           <!-- Foto / SVG Fallback Kategori -->
-          <img src="${safeImg}" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-sm" onerror="this.onerror=null;this.src='${fallbackSvg}'">
+          <img src="${safeImg}" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-sm" onerror="handleFallbackImage(this, '${escapeXML(item.category || '')}')">
           
           <!-- Kotak Manifesto Penjelasan Digital Preservation -->
           ${preservationNoticeHtml}
