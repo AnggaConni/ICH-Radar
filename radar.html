@@ -244,18 +244,19 @@
           <h2 class="font-display font-bold text-lg" data-i18n="mapTitle">Heritage Network Map</h2>
         </div>
 
-        <div class="flex items-center gap-4 text-xs text-slate-500">
-          <span class="flex items-center gap-1.5">
-            <span class="inline-block w-3 h-3 rounded-full bg-[#00ffcc]"></span> ICH Element
-          </span>
-          <span class="flex items-center gap-1.5">
-            <span class="inline-block w-3 h-3 rounded-full bg-[#facc15]"></span> Related Heritage
-          </span>
-          <span class="flex items-center gap-1.5">
-            <svg width="24" height="8"><line x1="0" y1="4" x2="24" y2="4" stroke="#00ffcc" stroke-width="2" stroke-dasharray="4 3"/></svg>
+        <div class="flex items-center gap-4 text-xs text-slate-600 font-medium">
+        <span class="flex items-center gap-1.5">
+            <span class="inline-block w-3 h-3 rounded-full bg-[#0d9488]"></span> ICH Element
+        </span>
+        <span class="flex items-center gap-1.5">
+            <span class="inline-block w-3 h-3 rounded-full bg-[#d97706]"></span> Related Heritage
+        </span>
+        <span class="flex items-center gap-1.5">
+            <svg width="24" height="8"><line x1="0" y1="4" x2="24" y2="4" stroke="#0d9488" stroke-width="2" stroke-dasharray="4 3"/></svg>
             Connection
-          </span>
+        </span>
         </div>
+
       </div>
       <div id="map" class="w-full h-[460px] rounded-xl border border-brand-700 bg-brand-800 z-10"></div>
     </div>
@@ -957,14 +958,111 @@ const COUNTRY_CENTROIDS = {
   // ═══════════════════════════════════════════════════════════════
   //  IMAGE HELPERS
   // ═══════════════════════════════════════════════════════════════
-  const FALLBACK_IMAGE = "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22 viewBox=%220 0 600 400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%23141414%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2216%22 fill=%22%23555%22%3EImage Unavailable%3C/text%3E%3C/svg%3E";
+    // ═══════════════════════════════════════════════════════════════
+    //  THEMATIC SVG FALLBACK GENERATOR (OSINT DIGITAL PRESERVATION)
+    // ═══════════════════════════════════════════════════════════════
+    function getCategoryFallbackSvg(categoryName = '') {
+    const cat = (categoryName || '').toLowerCase();
+    
+    // Tentukan Ikon & Warna Aksen berdasarkan Kategori
+    let iconSvg = '';
+    let themeColor = '#0d9488'; // Default Teal
+    let categoryLabel = categoryName || 'Cultural Heritage';
 
-  function getValidImageUrl(url) {
-    if (!url || url === "N/A" || url.trim() === "") return FALLBACK_IMAGE;
+    if (cat.includes('culinary') || cat.includes('food') || cat.includes('kuliner')) {
+        themeColor = '#d97706'; // Amber hangat
+        categoryLabel = 'Culinary Heritage';
+        iconSvg = `
+        <path d="M12 2a4 4 0 0 0-4 4v1H6a2 2 0 0 0-2 2v2a8 8 0 0 0 16 0V9a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4zm0 2a2 2 0 0 1 2 2v1h-4V6a2 2 0 0 1 2-2zm-6 7h12v1a6 6 0 0 1-12 0v-1z" fill="${themeColor}"/>
+        <path d="M4 18h16v2H4z" fill="${themeColor}" opacity="0.6"/>
+        `;
+    } else if (cat.includes('craft') || cat.includes('kerajinan') || cat.includes('weapon')) {
+        themeColor = '#0284c7'; // Sky Blue
+        categoryLabel = 'Traditional Craftsmanship';
+        iconSvg = `
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6-8.5 8.5a2 2 0 0 1-.9.5l-3.9 1a1 1 0 0 1-1.2-1.2l1-3.9a2 2 0 0 1 .5-.9l8.5-8.5 1.6 1.6a1 1 0 0 0 1.4 0l1.4-1.4a3 3 0 0 0-4.2-4.2l-1.4 1.4z" fill="${themeColor}"/>
+        <path d="M18 14v6h2v-6h-2z" fill="${themeColor}" opacity="0.6"/>
+        `;
+    } else if (cat.includes('nature') || cat.includes('universe') || cat.includes('alam')) {
+        themeColor = '#16a34a'; // Emerald Green
+        categoryLabel = 'Nature & Universe Knowledge';
+        iconSvg = `
+        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 17.93V17a3 3 0 0 0-3-3H9v-2h1a2 2 0 0 0 2-2V8h2a2 2 0 0 0 2-2V4.07A8.001 8.001 0 0 1 13 19.93z" fill="${themeColor}"/>
+        <circle cx="12" cy="12" r="3" fill="${themeColor}" opacity="0.5"/>
+        `;
+    } else if (cat.includes('social') || cat.includes('ritual') || cat.includes('performing') || cat.includes('festive') || cat.includes('dance')) {
+        themeColor = '#9333ea'; // Purple
+        categoryLabel = 'Rituals & Performing Arts';
+        iconSvg = `
+        <path d="M12 2a9 9 0 0 0-9 9c0 4.2 3.1 7.7 7.2 8.8L12 22l1.8-2.2C17.9 18.7 21 15.2 21 11a9 9 0 0 0-9-9zm-3 8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-3 6c-2.2 0-3.5-1.2-3.8-1.5l1.4-1.4c.1.1.9.9 2.4.9s2.3-.8 2.4-.9l1.4 1.4c-.3.3-1.6 1.5-3.8 1.5z" fill="${themeColor}"/>
+        `;
+    } else if (cat.includes('oral') || cat.includes('lisan') || cat.includes('language') || cat.includes('expression')) {
+        themeColor = '#ea580c'; // Orange
+        categoryLabel = 'Oral Traditions & Lore';
+        iconSvg = `
+        <path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM7 9h10v2H7V9zm7 4H7v-2h7v2zm3-6H7V5h10v2z" fill="${themeColor}"/>
+        `;
+    } else {
+        // Default Heritage Icon
+        iconSvg = `
+        <path d="M12 3L2 9l10 6 10-6-10-6zm0 8.55L5.45 8 12 4.09 18.55 8 12 11.55zM3 12v6l9 5 9-5v-6l-9 5-9-5z" fill="${themeColor}"/>
+        `;
+    }
+
+    // Template SVG Beresolusi Tinggi & Elegan
+    const svgString = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+        <defs>
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#18181b"/>
+            <stop offset="100%" stop-color="#09090b"/>
+        </linearGradient>
+        <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+        </pattern>
+        </defs>
+
+        <!-- Background -->
+        <rect width="600" height="400" fill="url(#bgGrad)"/>
+        <rect width="600" height="400" fill="url(#grid)"/>
+
+        <!-- Lingkaran Aksen Halus -->
+        <circle cx="300" cy="160" r="90" fill="${themeColor}" opacity="0.08"/>
+        <circle cx="300" cy="160" r="60" fill="${themeColor}" opacity="0.12"/>
+
+        <!-- Ikon Kategori -->
+        <g transform="translate(276, 136) scale(2)">
+        ${iconSvg}
+        </g>
+
+        <!-- Label Kategori -->
+        <text x="300" y="245" text-anchor="middle" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="700" font-size="14" fill="${themeColor}" letter-spacing="1.5" text-transform="uppercase">
+        ${categoryLabel}
+        </text>
+
+        <!-- Status Image Unavailable -->
+        <text x="300" y="272" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="15" fill="#f4f4f5">
+        The Image is Unavailable
+        </text>
+
+        <!-- Subteks Arsip Digital OSINT -->
+        <rect x="140" y="295" width="320" height="26" rx="13" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+        <text x="300" y="312" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#a1a1aa" font-weight="500">
+        🛡️ Historical Data Preserved by OSINT AI Engine
+        </text>
+    </svg>`;
+
+    return `data:image/svg+xml;utf8,${encodeURIComponent(svgString)}`;
+    }
+
+    function getValidImageUrl(url, category = '') {
+    if (!url || url === "N/A" || url.trim() === "") {
+        return getCategoryFallbackSvg(category);
+    }
     const cleanUrl = url.trim();
     if (cleanUrl.includes('api.microlink.io')) return cleanUrl;
     return `https://wsrv.nl/?url=${encodeURIComponent(cleanUrl)}&w=600&fit=cover`;
-  }
+    }
 
   // ═══════════════════════════════════════════════════════════════
   //  MOCK FALLBACK DATA
@@ -1031,9 +1129,9 @@ const COUNTRY_CENTROIDS = {
     updateScraperTicker();
     initMap();
     setupEventListeners();
-    applyFilters();
-    lucide.createIcons();
-  }
+        applyFilters();
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
 
   function populateCountryFilter() {
     const sel = document.getElementById('filter-country');
@@ -1129,12 +1227,13 @@ const COUNTRY_CENTROIDS = {
       const tagsHtml   = tags.map(t => `<span class="bg-brand-700 text-xs px-2 py-1 rounded-md text-slate-600">#${t}</span>`).join('');
       const card = document.createElement('div');
       card.className = "bg-brand-800 border border-brand-700 rounded-xl overflow-hidden hover:border-brand-500 transition-colors group flex flex-col";
-      const safeImg = getValidImageUrl(item.thumbnail_url);
+        const fallbackSvg = getCategoryFallbackSvg(item.category);
+        const safeImg = getValidImageUrl(item.thumbnail_url, item.category);
 
        // PERHATIKAN PENAMBAHAN loading="lazy" DI TAG IMG BAWAH INI
        card.innerHTML = `
          <div class="h-48 w-full bg-brand-900 relative overflow-hidden">
-          <img src="${safeImg}" alt="${item.element_name}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100" onerror="this.onerror=null;this.src='${FALLBACK_IMAGE}'">
+          <img src="${safeImg}" alt="${item.element_name}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" onerror="this.onerror=null;this.src='${fallbackSvg}'">
           <div class="absolute top-3 right-3 flex gap-2">
              ${isShared ? '<span class="bg-brand-secondary text-brand-900 text-[10px] font-bold px-2 py-1 rounded shadow"><i class="ph-fill ph-link"></i> SHARED</span>' : ''}
             <span class="${isComplete ? 'bg-brand-accent text-brand-900' : 'bg-red-500 text-slate-900'} text-[10px] font-bold px-2 py-1 rounded shadow">${isComplete ? 'COMPLETE' : 'INCOMPLETE'}</span>
@@ -1505,12 +1604,31 @@ const COUNTRY_CENTROIDS = {
     const dict = i18n[currentLang];
     document.getElementById('modal-title').innerText = item.element_name;
 
+    // 1. Siapkan Gambar Fallback Cerdas Berdasarkan Kategori
+    const fallbackSvg = getCategoryFallbackSvg(item.category);
+    const safeImg = getValidImageUrl(item.thumbnail_url, item.category);
+    const isImageDead = !item.thumbnail_url || item.thumbnail_url === "N/A" || item.thumbnail_url.trim() === "";
+
+    // 2. Kotak Manifesto OSINT (Hanya muncul jika gambar aslinya mati/hilang)
+    const preservationNoticeHtml = isImageDead ? `
+      <div class="bg-amber-500/10 border border-amber-500/30 rounded-xl p-4 flex items-start gap-3 text-xs leading-relaxed text-slate-700 shadow-sm">
+        <i class="ph-fill ph-shield-check text-amber-600 text-xl shrink-0 mt-0.5"></i>
+        <div>
+          <strong class="text-amber-800 block mb-1 font-mono uppercase tracking-wider text-[11px]">Digital Preservation Notice (OSINT Archive)</strong>
+          <p class="text-slate-600 italic">
+            "I built an OSINT scraper that automatically gathers online documents on ICH elements. For now, you'll see concrete proof that original source links may have gone dead (the thumbnail is gone or blank), but the historical records, descriptions, and underlying data remain safely backed up by my AI-based search engine."
+          </p>
+        </div>
+      </div>
+    ` : '';
+
+    // 3. Render Alat & Bahan dan Langkah-langkah
     let toolsHtml = '', stepsHtml = '';
     if (item.resume_tata_cara?.step_by_step) {
       if (item.resume_tata_cara.materials_and_tools) {
         toolsHtml = `<div class="mb-4">
           <h5 class="text-brand-secondary font-bold text-sm mb-2"><i class="ph-fill ph-toolbox mr-2"></i>${dict.modalTools}</h5>
-          <div class="flex flex-wrap gap-2">${item.resume_tata_cara.materials_and_tools.map(m=>`<span class="bg-brand-700 px-3 py-1 rounded text-sm">${m}</span>`).join('')}</div>
+          <div class="flex flex-wrap gap-2">${item.resume_tata_cara.materials_and_tools.map(m=>`<span class="bg-brand-700 px-3 py-1 rounded text-sm text-slate-700 font-medium">${m}</span>`).join('')}</div>
         </div>`;
       }
       stepsHtml = `<div>
@@ -1518,84 +1636,90 @@ const COUNTRY_CENTROIDS = {
         <div class="space-y-3">${item.resume_tata_cara.step_by_step.map(s=>`<div class="bg-slate-50 p-3 rounded-lg border border-brand-700 text-sm text-slate-600 leading-relaxed">${s.replace(/\*\*/g,'')}</div>`).join('')}</div>
       </div>`;
     } else {
-      stepsHtml = `<div class="p-4 bg-slate-50 rounded-lg border border-brand-700 text-red-400 text-sm text-center"><i class="ph ph-warning-circle mr-1"></i>${dict.modalIncomplete}</div>`;
+      stepsHtml = `<div class="p-4 bg-slate-50 rounded-lg border border-brand-700 text-red-500 text-sm text-center font-medium"><i class="ph ph-warning-circle mr-1"></i>${dict.modalIncomplete}</div>`;
     }
 
+    // 4. Render Hubungan Shared Heritage
     let sharedHtml = '';
     if (item.shared_heritage_detection?.is_shared) {
-      sharedHtml = `<div class="bg-brand-900/80 p-5 rounded-xl border border-brand-secondary/30 mt-4">
+      sharedHtml = `<div class="bg-amber-500/5 p-5 rounded-xl border border-brand-secondary/30 mt-4">
         <h4 class="font-bold text-brand-secondary flex items-center gap-2 mb-4"><i class="ph-fill ph-share-network"></i>${dict.modalShared} (Confidence: ${(item.shared_heritage_detection.confidence_score*100).toFixed(0)}%)</h4>
         <div class="space-y-4">${item.shared_heritage_detection.related_elements.map(r=>`
           <div class="pl-4 border-l-2 border-brand-secondary/50">
-            <p class="font-bold text-slate-900">${r.element_name} <span class="text-gray-500 font-normal">(${r.country})</span></p>
-            <p class="text-sm text-slate-500 mt-1">"${r.relationship_reason}"</p>
+            <p class="font-bold text-slate-900">${r.element_name} <span class="text-slate-500 font-normal">(${r.country})</span></p>
+            <p class="text-sm text-slate-600 mt-1 italic">"${r.relationship_reason}"</p>
           </div>`).join('')}</div>
       </div>`;
     }
 
-    // --- MULAI KODE YOUTUBE CAROUSEL ---
-     const ytLinks = (item.source_urls || []).map(url => {
-       const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
-       return match ? match[1] : null;
-     }).filter(Boolean);
+    // 5. Ekstrak Media Video YouTube jika ada
+    const ytLinks = (item.source_urls || []).map(url => {
+      const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
+      return match ? match[1] : null;
+    }).filter(Boolean);
 
-     let ytHtml = '';
-     if (ytLinks.length > 0) {
+    let ytHtml = '';
+    if (ytLinks.length > 0) {
       const ytSlides = ytLinks.map(id => `
         <div class="snap-center shrink-0 w-full">
-        <iframe class="w-full aspect-video rounded-lg border border-brand-700 shadow-sm"
-                   src="https://www.youtube.com/embed/${id}"
-                   allowfullscreen></iframe>
-       </div>
-       `).join('');
-
-         ytHtml = `
-         <div class="bg-brand-900 p-4 rounded-lg border border-brand-700 flex flex-col gap-2">
-        <p class="text-[10px] text-gray-500 uppercase tracking-wider"><i class="ph-fill ph-youtube-logo text-red-500 text-sm align-middle mr-1"></i> Video Media</p>
-         <div class="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-1 scrollbar-thin scrollbar-thumb-brand-700">
-         ${ytSlides}
+          <iframe class="w-full aspect-video rounded-lg border border-brand-700 shadow-sm"
+                  src="https://www.youtube.com/embed/${id}"
+                  allowfullscreen></iframe>
         </div>
-        </div>
-   `;
-  }
-    // --- AKHIR KODE YOUTUBE CAROUSEL ---
+      `).join('');
 
-    const safeImg = getValidImageUrl(item.thumbnail_url);
-      document.getElementById('modal-body').innerHTML = `
+      ytHtml = `
+        <div class="bg-slate-50 p-4 rounded-lg border border-brand-700 flex flex-col gap-2">
+          <p class="text-[10px] text-slate-500 uppercase tracking-wider font-bold"><i class="ph-fill ph-youtube-logo text-red-500 text-sm align-middle mr-1"></i> Video Media</p>
+          <div class="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-1 scrollbar-thin scrollbar-thumb-brand-700">
+            ${ytSlides}
+          </div>
+        </div>
+      `;
+    }
+
+    // 6. Masukkan Seluruh HTML ke dalam Modal
+    document.getElementById('modal-body').innerHTML = `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="flex flex-col gap-4">
-          <img src="${safeImg}" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-lg" onerror="this.onerror=null;this.src='${FALLBACK_IMAGE}'">
           
+          <!-- Foto / SVG Fallback Kategori -->
+          <img src="${safeImg}" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-sm" onerror="this.onerror=null;this.src='${fallbackSvg}'">
+          
+          <!-- Kotak Manifesto Penjelasan Digital Preservation -->
+          ${preservationNoticeHtml}
+          
+          <!-- Mini Map -->
           <div id="mini-map" class="w-full h-48 rounded-xl border border-brand-700 bg-brand-800 z-10"></div>
           
-           <div class="grid grid-cols-2 gap-3">
-
-            <div class="bg-brand-900 p-3 rounded-lg border border-brand-700">
-              <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-1">${dict.modalOrigin}</p>
-              <p class="font-bold text-sm">${item.location?.country||'-'}</p>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-slate-50 p-3 rounded-lg border border-brand-700">
+              <p class="text-[10px] text-slate-500 uppercase tracking-wider mb-1 font-bold">${dict.modalOrigin}</p>
+              <p class="font-bold text-sm text-slate-900">${item.location?.country||'-'}</p>
               <p class="text-xs text-slate-500 mt-1">${(item.location?.provinces||[]).join(', ')}</p>
             </div>
-            <div class="bg-brand-900 p-3 rounded-lg border border-brand-700">
-              <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-1">${dict.modalCategory}</p>
-              <p class="font-bold text-sm leading-tight">${item.category}</p>
+            <div class="bg-slate-50 p-3 rounded-lg border border-brand-700">
+              <p class="text-[10px] text-slate-500 uppercase tracking-wider mb-1 font-bold">${dict.modalCategory}</p>
+              <p class="font-bold text-sm text-slate-900 leading-tight">${item.category}</p>
             </div>
           </div>
 
-          <div class="bg-brand-900 p-4 rounded-lg border border-brand-700">
-             <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-2">${dict.modalSignificance}</p>
-             <p class="text-sm text-brand-accent leading-relaxed">${item.resume_analisa?.cultural_significance||'-'}</p>
-             </div>
+          <div class="bg-slate-50 p-4 rounded-lg border border-brand-700">
+            <p class="text-[10px] text-slate-500 uppercase tracking-wider mb-2 font-bold">${dict.modalSignificance}</p>
+            <p class="text-sm text-brand-accent font-medium leading-relaxed">${item.resume_analisa?.cultural_significance||'-'}</p>
+          </div>
 
-             ${ytHtml}
+          ${ytHtml}
 
-             <div>
-            <p class="text-[10px] text-gray-500 uppercase tracking-wider mb-2">${dict.modalSources}</p>
+          <div>
+            <p class="text-[10px] text-slate-500 uppercase tracking-wider mb-2 font-bold">${dict.modalSources}</p>
             <div class="flex flex-col gap-2">${formatSourceLinks(item.source_urls, dict)}</div>
-            </div>
+          </div>
 
         </div>
+
         <div class="flex flex-col">
-          <h4 class="font-display font-bold text-lg mb-2">${dict.modalDesc}</h4>
+          <h4 class="font-display font-bold text-lg text-slate-900 mb-2">${dict.modalDesc}</h4>
           <p class="text-sm text-slate-600 leading-relaxed mb-6">${item.resume_analisa?.description||'-'}</p>
           ${toolsHtml}${stepsHtml}${sharedHtml}
         </div>
@@ -1608,64 +1732,51 @@ const COUNTRY_CENTROIDS = {
     modal.classList.remove('opacity-0');
     wrapper.classList.remove('scale-95');
 
-// --- MULAI LOGIKA MINI MAP ---
+    // 7. Render Mini Map
     setTimeout(() => {
-      // Hapus peta lama jika ada (mencegah error saat ganti elemen)
       if (window.miniMapInstance) {
         window.miniMapInstance.remove();
       }
 
-      // Ambil kordinat elemen yang sedang dibuka
       const mainLat = item.location?.lat;
       const mainLng = item.location?.lng;
 
-      // Jika tidak ada kordinat, jangan tampilkan peta
       if (!mainLat || !mainLng) {
-         document.getElementById('mini-map').style.display = 'none';
-         return;
+        const miniMapEl = document.getElementById('mini-map');
+        if (miniMapEl) miniMapEl.style.display = 'none';
+        return;
       }
 
-      // Inisialisasi Mini Map
       window.miniMapInstance = L.map('mini-map', { 
-        zoomControl: false, // Sembunyikan tombol zoom agar bersih
-        scrollWheelZoom: false, // Cegah zoom saat scroll mouse
-        dragging: false // Cegah geser peta
+        zoomControl: false, 
+        scrollWheelZoom: false, 
+        dragging: false 
       }).setView([mainLat, mainLng], 3);
 
-        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
         maxZoom: 16
-        }).addTo(window.miniMapInstance);
+      }).addTo(window.miniMapInstance);
 
-      // Buat Layer Khusus untuk Garis
       const miniMapLines = L.layerGroup().addTo(window.miniMapInstance);
-
-      // Gambar Marker Utama
       L.marker([mainLat, mainLng], { icon: makeMainIcon(1) }).addTo(window.miniMapInstance);
 
-      // Gambar Koneksi Shared Heritage (jika ada)
       if (item.shared_heritage_detection?.is_shared) {
-        let bounds = L.latLngBounds([[mainLat, mainLng]]); // Mulai batas dari titik utama
+        let bounds = L.latLngBounds([[mainLat, mainLng]]);
 
         item.shared_heritage_detection.related_elements.forEach(rel => {
           const relCoords = coordsForCountry(rel.country);
           if (relCoords) {
-            // Gambar Marker Terkait
             L.marker(relCoords, { icon: relatedIcon }).addTo(window.miniMapInstance);
-            
-            // Gambar Garis
             L.polyline([[mainLat, mainLng], relCoords], {
               className: 'glowing-line', weight: 1.8, opacity: 0.85
             }).addTo(miniMapLines);
-
-            bounds.extend(relCoords); // Perluas batas agar mencakup titik ini
+            bounds.extend(relCoords);
           }
         });
 
-        // Sesuaikan zoom agar semua titik dan garis terlihat
         window.miniMapInstance.fitBounds(bounds, { padding: [20, 20], maxZoom: 4 });
       }
-    }, 300); // Tunggu 300ms agar animasi modal selesai sebelum merender peta
-    // --- AKHIR LOGIKA MINI MAP ---
+    }, 300);
   }
 
   function closeModal() {
@@ -1895,7 +2006,7 @@ const COUNTRY_CENTROIDS = {
     if (!item) return;
 
     const dict = i18n[currentLang];
-    const safeImg = getValidImageUrl(item.thumbnail_url);
+    const safeImg = getValidImageUrl(item.thumbnail_url, item.category);
 
     // 1. Ekstrak otomatis Thumbnail YouTube dari link sumber
     const ytLinksForPrint = (item.source_urls || []).map(url => {
