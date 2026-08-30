@@ -1,6 +1,6 @@
 """
 =======================================================================
-  ICH SHARED HERITAGE RADAR v6.1 — Global Intelligence Engine
+  ICH SHARED HERITAGE RADAR v6.3 — Global Intelligence Engine
   AI Engine : Google Gemini 2.5 Flash (Google Search Grounding)
   Mode      : 2-Phase (Enrichment of Incomplete Data -> Discovery)
   Feature   : Quality over Quantity (Iterative Looping), Anti-Redundancy, Wikimedia Fallback
@@ -800,18 +800,17 @@ def audit_inventory(inventory):
 # ======================================================================
 
 def call_gemini(api_key, prompt):
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+    url = "[https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent](https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent)"
     
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "tools": [{"googleSearch": {}}],
         "generationConfig": {
-            "temperature": 0.4, # Lower temperature for strictly formatted output
+            "temperature": 0.4,
             "maxOutputTokens": 8192
         }
     }
 
-    # API Key dimasukkan dengan aman melalui Header
     headers = {
         'Content-Type': 'application/json',
         'x-goog-api-key': api_key
@@ -826,13 +825,28 @@ def call_gemini(api_key, prompt):
         data = response.json()
         text = data['candidates'][0]['content']['parts'][0]['text']
         
-        # Extract JSON from Markdown code blocks
-        clean_text = text.replace('```json', '').replace('```', '')
-        start_idx = clean_text.find('[') if '[' in clean_text else clean_text.find('{')
-        end_idx = clean_text.rfind(']') if clean_text.rfind(']') > clean_text.rfind('}') else clean_text.rfind('}')
+        # 1. Ekstraksi via Regex untuk Blok Markdown ```json ... ```
+        match = re.search(r'```(?:json)?\s*([\s\S]*?)\s*```', text)
+        clean_text = match.group(1).strip() if match else text.strip()
         
-        if start_idx != -1 and end_idx != -1:
-            return json.loads(clean_text[start_idx:end_idx+1])
+        # 2. Slicing Fallback jika tidak ada tag markdown
+        if not match:
+            start_idx = clean_text.find('[') if '[' in clean_text else clean_text.find('{')
+            end_idx = clean_text.rfind(']') if clean_text.rfind(']') > clean_text.rfind('}') else clean_text.rfind('}')
+            if start_idx != -1 and end_idx != -1:
+                clean_text = clean_text[start_idx:end_idx+1]
+
+        return json.loads(clean_text)
+
+    except json.JSONDecodeError as je:
+        # Fallback ekstraksi JSON murni jika ada karakter nyasar di akhir
+        try:
+            json_match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', text)
+            if json_match:
+                return json.loads(json_match.group(0))
+        except Exception:
+            pass
+        log.error(f"Gemini API failure (JSON Parse Error): {je}")
         return None
     except Exception as e:
         log.error(f"Gemini API failure: {e}")
