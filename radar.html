@@ -558,19 +558,67 @@
 
 
 <div id="graph-modal" class="fixed inset-0 z-[110] flex items-center justify-center hidden modal-blur bg-slate-900/40 p-4 opacity-0 transition-opacity duration-300">
-    <div class="bg-brand-800 border border-brand-700 rounded-2xl w-full max-w-6xl h-[85vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300" id="graph-modal-wrapper">
-      <div class="flex justify-between items-center p-6 border-b border-brand-700 bg-slate-50">
-        <div>
-          <h3 class="font-display font-bold text-2xl flex items-center gap-2"><i class="ph-fill ph-share-network text-brand-accent"></i> Cultural Similarity & Diffusion Graph</h3>
-          <p class="text-xs text-slate-500 mt-1">Interactive network mapping of shared heritage across borders.</p>
-        </div>
-        <button onclick="closeGraphModal()" class="text-slate-500 hover:text-slate-900 transition-colors bg-brand-700 p-2 rounded-full">
-          <i class="ph ph-x text-xl"></i>
-        </button>
+  <div class="bg-brand-800 border border-brand-700 rounded-2xl w-full max-w-6xl h-[85vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300 shadow-2xl" id="graph-modal-wrapper">
+    
+    <!-- Header Modal -->
+    <div class="flex justify-between items-center p-5 border-b border-brand-700 bg-slate-50 shrink-0">
+      <div>
+        <h3 class="font-display font-bold text-2xl flex items-center gap-2 text-slate-900">
+          <i class="ph-fill ph-share-network text-brand-accent"></i> Cultural Connection Map
+        </h3>
+        <p class="text-xs text-slate-500 mt-1">Explore how cultural practices connect across communities and borders.</p>
       </div>
-      <div id="echarts-container" class="flex-grow w-full h-full bg-white"></div>
+      <button onclick="closeGraphModal()" class="text-slate-500 hover:text-slate-900 transition-colors bg-brand-700 p-2 rounded-full">
+        <i class="ph ph-x text-xl"></i>
+      </button>
     </div>
+
+    <!-- Filter / Control Panel -->
+    <div class="bg-white border-b border-brand-700 p-4 flex flex-wrap items-center gap-4 shrink-0 text-sm">
+      
+      <!-- Filter: Country -->
+      <div class="flex flex-col gap-1">
+        <label class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Origin Country</label>
+        <select id="graph-filter-country" onchange="renderDiffusionGraph()" class="bg-brand-900 border border-brand-700 text-slate-700 rounded-lg px-3 py-1.5 focus:outline-none focus:border-brand-accent shadow-sm w-40">
+          <option value="all">All Countries</option>
+          <!-- Option akan diisi via JS -->
+        </select>
+      </div>
+
+      <!-- Filter: Cultural Lens / Theme -->
+      <div class="flex flex-col gap-1">
+        <label class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Cultural Lens</label>
+        <select id="graph-filter-theme" onchange="renderDiffusionGraph()" class="bg-brand-900 border border-brand-700 text-slate-700 rounded-lg px-3 py-1.5 focus:outline-none focus:border-brand-accent shadow-sm w-48">
+          <option value="all">🌐 All Heritage Types</option>
+          <option value="type_culinary">🍲 Culinary & Food</option>
+          <option value="type_craft">🎨 Craftsmanship</option>
+          <option value="type_social">🎭 Rituals & Social</option>
+          <option value="lens_nature">🌿 Nature & Agriculture</option>
+          <option value="lens_oral">🗣️ Oral Traditions</option>
+        </select>
+      </div>
+
+      <!-- Filter: Confidence Score -->
+      <div class="flex flex-col gap-1 flex-grow">
+        <label class="text-[10px] font-bold text-slate-500 uppercase tracking-wider flex justify-between">
+          <span>Min. Confidence Score</span>
+          <span id="graph-confidence-val" class="text-brand-accent">0.50</span>
+        </label>
+        <input type="range" id="graph-filter-confidence" min="0.0" max="1.0" step="0.05" value="0.50" oninput="updateConfidenceLabel(this.value)" onchange="renderDiffusionGraph()" class="w-full h-2 bg-brand-700 rounded-lg appearance-none cursor-pointer accent-brand-accent">
+      </div>
+
+      <!-- Info Counter -->
+      <div class="flex flex-col items-end gap-1 ml-auto border-l border-brand-700 pl-4">
+        <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Found</span>
+        <span id="graph-node-count" class="font-mono font-bold text-slate-900 text-base leading-none">0</span>
+      </div>
+
+    </div>
+
+    <!-- Area ECharts -->
+    <div id="echarts-container" class="flex-grow w-full h-full bg-white relative"></div>
   </div>
+</div>
 
   <script>
   // ═══════════════════════════════════════════════════════════════
@@ -1850,13 +1898,38 @@ const COUNTRY_CENTROIDS = {
 
 
   // ═══════════════════════════════════════════════════════════════
-  //  CULTURAL DIFFUSION GRAPH (ECHARTS)
+  //  CULTURAL CONNECTION GRAPH (ECHARTS) - REVAMPED
   // ═══════════════════════════════════════════════════════════════
   let diffChart = null;
+
+  function updateConfidenceLabel(val) {
+    document.getElementById('graph-confidence-val').innerText = parseFloat(val).toFixed(2);
+  }
+
+  function populateGraphCountryFilter() {
+    const sel = document.getElementById('graph-filter-country');
+    // Clear existing options except 'All'
+    sel.innerHTML = '<option value="all">All Countries</option>';
+    const countries = new Set();
+    globalData.inventory.forEach(item => {
+      if (item.location?.country && item.shared_heritage_detection?.is_shared) {
+        countries.add(item.location.country);
+      }
+    });
+    Array.from(countries).sort().forEach(c => {
+      const o = document.createElement('option');
+      o.value = c; o.innerText = c;
+      sel.appendChild(o);
+    });
+  }
 
   function openGraphModal() {
     const modal = document.getElementById('graph-modal');
     const wrapper = document.getElementById('graph-modal-wrapper');
+    
+    // Populate Country Dropdown khusus graph (hanya yang punya shared heritage)
+    populateGraphCountryFilter();
+    
     modal.classList.remove('hidden');
     void modal.offsetWidth; // trigger reflow
     modal.classList.remove('opacity-0');
@@ -1879,51 +1952,76 @@ const COUNTRY_CENTROIDS = {
   function renderDiffusionGraph() {
     const chartDom = document.getElementById('echarts-container');
     if (!diffChart) {
-      diffChart = echarts.init(chartDom, null);      // Resize chart saat window berubah
+      diffChart = echarts.init(chartDom, null);
       window.addEventListener('resize', () => diffChart.resize());
     }
 
+    // Ambil nilai dari filter
+    const countryFilter = document.getElementById('graph-filter-country').value;
+    const themeFilter = document.getElementById('graph-filter-theme').value;
+    const minConfidence = parseFloat(document.getElementById('graph-filter-confidence').value);
+
     let nodes = [];
     let links = [];
-    let categories = [
-      { name: 'Main Heritage', itemStyle: { color: '#00ffcc' } },
-      { name: 'Related Element', itemStyle: { color: '#facc15' } }
+    let connectionCount = 0;
+
+    const categories = [
+      { name: 'Origin Heritage', itemStyle: { color: '#0d9488' } }, // Teal (Main)
+      { name: 'Related Element', itemStyle: { color: '#d97706' } }  // Amber (Related)
     ];
 
-    // Ekstrak data jaringan dari globalData
+    // Filter Data Berdasarkan Pilihan User
     globalData.inventory.forEach(item => {
       if (!item.shared_heritage_detection?.is_shared) return;
+      
+      // 1. Check Country
+      if (countryFilter !== 'all' && item.location?.country !== countryFilter) return;
 
-      // Tambah Node Utama
-      const mainNodeId = `main_${item.id}`;
-      nodes.push({
-        id: mainNodeId,
-        name: item.element_name,
-        category: 0,
-        symbolSize: 35,
-        itemStyle: { color: '#00ffcc', borderColor: '#ffffff', borderWidth: 2 },
-        // Tooltip sederhana untuk node utama
-        tooltip: { formatter: `<div style="padding: 4px;"><b>${item.element_name}</b><br/><span style="color:#aaa;font-size:11px;">Origin: ${item.location?.country || '-'}</span><br/><br/><span style="color:#00ffcc;font-size:10px;">► Click to view details</span></div>` }
-      });
+      // 2. Check Theme / Lens
+      if (themeFilter !== 'all') {
+        const cat = (item.category || '').toLowerCase();
+        const tags = (item.resume_analisa?.gemini_tags || []).map(t => t.toLowerCase()).join(' ');
+        const allText = cat + ' ' + tags;
 
-      // Tambah Node Cabang & Garis
+        let passTheme = false;
+        if (themeFilter === 'type_culinary' && /culinary|food|beverage|cacao|recipe/.test(allText)) passTheme = true;
+        if (themeFilter === 'type_craft' && /craft|weapon|textile|metal/.test(allText)) passTheme = true;
+        if (themeFilter === 'type_social' && /social|ritual|festive|performing|dance/.test(allText)) passTheme = true;
+        if (themeFilter === 'lens_nature' && /nature|universe|agriculture|medicine|environment/.test(allText)) passTheme = true;
+        if (themeFilter === 'lens_oral' && /oral|storytelling|language|chant|song/.test(allText)) passTheme = true;
+
+        if (!passTheme) return;
+      }
+
+      // Track apakah node utama ini punya edge yang lolos threshold confidence
+      let hasValidEdge = false;
+
+      // Proses Node Cabang & Garis (Tergantung Confidence Filter)
       item.shared_heritage_detection.related_elements.forEach((rel, index) => {
-        const relNodeId = `rel_${item.id}_${index}`;
         const score = item.shared_heritage_detection.confidence_score || 0.5;
         
+        // 3. Check Confidence Score
+        if (score < minConfidence) return;
+
+        hasValidEdge = true;
+        connectionCount++;
+        
+        const mainNodeId = `main_${item.id}`;
+        const relNodeId = `rel_${item.id}_${index}`;
+        
+        // Node Cabang
         nodes.push({
           id: relNodeId,
           name: rel.element_name || rel.country,
           category: 1,
-          symbolSize: 20,
-          itemStyle: { color: '#facc15' },
-          // Tooltip dengan formatting HTML agar rapi
+          symbolSize: 22,
+          itemStyle: { color: '#d97706', borderColor: '#fff', borderWidth: 1 },
           tooltip: { 
             formatter: `
-              <div style="padding: 4px;">
-                <b style="color:#facc15">${rel.element_name || 'Similar Practice'}</b><br/>
-                <span style="color:#aaa;font-size:11px;">Location: ${rel.country}</span>
-                <div style="margin-top:8px; padding-top:8px; border-top:1px solid #444; color:#ddd; font-style:italic; font-size:12px; line-height:1.4;">
+              <div style="padding: 4px; font-family: sans-serif;">
+                <b style="color:#d97706; font-size: 13px;">${rel.element_name || 'Related Practice'}</b><br/>
+                <span style="color:#64748b; font-size:11px;">📍 ${rel.country}</span>
+                <div style="margin-top:6px; padding-top:6px; border-top:1px solid #e2e8f0; color:#475569; font-style:italic; font-size:11px; line-height:1.4;">
                   "${rel.relationship_reason}"
                 </div>
               </div>
@@ -1931,25 +2029,48 @@ const COUNTRY_CENTROIDS = {
           }
         });
 
+        // Hubungan (Edge)
         links.push({
           source: mainNodeId,
           target: relNodeId,
           value: score,
-          lineStyle: { width: score * 5, curveness: 0.2, opacity: 0.7 },
-          label: { show: false }
+          lineStyle: { width: score * 6, curveness: 0.1, opacity: 0.6 }
         });
       });
+
+      // Tambahkan Node Utama HANYA jika ia memiliki minimal 1 koneksi yang lolos filter
+      if (hasValidEdge) {
+        const mainNodeId = `main_${item.id}`;
+        nodes.push({
+          id: mainNodeId,
+          name: item.element_name,
+          category: 0,
+          symbolSize: 38,
+          itemStyle: { color: '#0d9488', borderColor: '#ffffff', borderWidth: 2, shadowColor: 'rgba(13, 148, 136, 0.4)', shadowBlur: 10 },
+          tooltip: { 
+            formatter: `
+              <div style="padding: 4px; font-family: sans-serif;">
+                <b style="font-size: 14px;">${item.element_name}</b><br/>
+                <span style="color:#64748b; font-size:11px;">📍 ${item.location?.country || '-'}</span><br/>
+                <span style="color:#0d9488; font-size:10px; font-weight: bold; margin-top: 6px; display: block;">► Click to view full details</span>
+              </div>
+            ` 
+          }
+        });
+      }
     });
 
+    // Update Label Counter di UI
+    document.getElementById('graph-node-count').innerText = connectionCount;
+
     const option = {
-      backgroundColor: 'transparent',
-      // INI PERBAIKAN TOOLTIP-NYA:
+      backgroundColor: '#f8fafc', // Warna background serasi dengan tema web
       tooltip: { 
         trigger: 'item',
-        extraCssText: 'max-width: 320px; white-space: normal; word-wrap: break-word; background-color: #ffffff; color: #1e293b; border: 1px solid #cbd5e1; border: 1px solid #333; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);'
+        extraCssText: 'max-width: 280px; white-space: normal; word-wrap: break-word; background-color: #ffffff; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);'
       },
-      legend: { data: ['Main Heritage', 'Related Element'], textStyle: { color: '#aaa' } },
-      animationDurationUpdate: 1500,
+      legend: { data: ['Origin Heritage', 'Related Element'], textStyle: { color: '#475569', fontWeight: 'bold' }, bottom: 10 },
+      animationDurationUpdate: 1000,
       animationEasingUpdate: 'quinticInOut',
       series: [
         {
@@ -1959,23 +2080,40 @@ const COUNTRY_CENTROIDS = {
           links: links,
           categories: categories,
           roam: true, // Bisa di-zoom & digeser
-          label: { show: true, position: 'right', formatter: '{b}', color: '#1e293b', fontSize: 11 },
+          
+          // KUNCI UTAMA PENGHILANG NOISE: Label disembunyikan by default
+          label: { 
+            show: false, // Label OFF by default
+            position: 'right', 
+            formatter: '{b}', 
+            color: '#1e293b', 
+            fontSize: 12,
+            backgroundColor: 'rgba(255,255,255,0.8)',
+            padding: [2, 4],
+            borderRadius: 4
+          },
+          
+          // Label hanya muncul saat Node/Garis disorot (Hover)
+          emphasis: {
+            focus: 'adjacency',
+            lineStyle: { width: 8, opacity: 1 },
+            label: { show: true }
+          },
+          
           force: {
-            repulsion: 400, // Jarak tolak menolak antar node
-            edgeLength: [50, 150], // Panjang garis
+            repulsion: 800,      // Jarak tolak antar node diperbesar agar tidak menumpuk
+            edgeLength: [80, 200], // Panjang garis dinamis
             gravity: 0.1
           },
-          lineStyle: { color: 'source', curveness: 0.3 }
+          lineStyle: { color: 'source', curveness: 0.2 }
         }
       ]
     };
 
-    diffChart.setOption(option);
+    diffChart.setOption(option, true); // True = overwrite data sebelumnya
 
-    // Mencegah penumpukan event click jika fungsi dipanggil ulang
-    diffChart.off('click'); 
-    
     // Event Listener: Klik Node membuka Detail Modal
+    diffChart.off('click'); 
     diffChart.on('click', function (params) {
       if (params.dataType === 'node' && params.data.id && params.data.id.startsWith('main_')) {
         const itemId = params.data.id.replace('main_', ''); // Ambil ID asli
