@@ -640,7 +640,19 @@ KEYWORDS = [
     "traditional festival ceremony heritage",
     "fiesta tradicional patrimonio vivo",
     "fête traditionnelle patrimoine immatériel",
-    "伝統的祭り 文化遺産"
+    "伝統的祭り 文化遺産",
+
+    # ─────────────────────────────────────────────
+    # DISASTER RISK REDUCTION (DRR) & CLIMATE RESILIENCE
+    # ─────────────────────────────────────────────
+    "traditional disaster risk reduction practices",
+    "indigenous early warning systems nature",
+    "kearifan lokal mitigasi bencana",
+    "pengetahuan tradisional tanda alam tsunami gempa",
+    "traditional climate resilience folklore",
+    "mitigación de desastres conocimientos tradicionales",
+    "savoirs traditionnels prévention des catastrophes",
+    "防災の伝統的知識"
 ]
 
 # ======================================================================
@@ -859,6 +871,7 @@ def enrich_incomplete_items(api_key, inventory):
         {image_instruction}
         
         IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
+        Analyze if this cultural practice contributes to Disaster Risk Reduction (DRR), ecological resilience, or climate adaptation. If yes, set "drr_relevance" to true and explain the "drr_mechanism".
         
         Respond ONLY with a JSON object representing the UPDATED element.
         Ensure ALL output data values and keys are strictly in ENGLISH.
@@ -878,7 +891,13 @@ def enrich_incomplete_items(api_key, inventory):
                         "lat": null, 
                         "lng": null 
         }},
-            "resume_analisa": {{ "description": "...", "cultural_significance": "...", "gemini_tags": ["..."] }},
+            "resume_analisa": {{ 
+            "description": "...", 
+            "cultural_significance": "...", 
+            "drr_relevance": true, 
+            "drr_mechanism": "Brief explanation if it helps in disaster mitigation (e.g., earthquake-resistant, tsunami warning), otherwise null",
+            "gemini_tags": ["..."] 
+        }},
             "resume_tata_cara": {{ "type": "crafting_process/culinary_recipe/ritual_sequence", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
             "shared_heritage_detection": {{ "is_shared": true, "confidence_score": 0.95, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
             "completion_status": "COMPLETE"
@@ -926,9 +945,10 @@ def discover_new_items(api_key, inventory):
         1. The element DOES NOT need to be officially recognized by UNESCO. It can be a local tradition, unregistered heritage, rare recipe, or community practice found on local blogs or regional news.
         2. DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL (e.g. wikipedia.org, localnews.com, etc).
         3. Analyze the element, its location, its shared heritage connections with other countries/regions, and its process/recipe.
-        4. Output ALL data values strictly in ENGLISH, and keep all JSON keys strictly in English.
-        5. If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
-        6. If you find all information, set "completion_status" to "COMPLETE".
+        4. Analyze if this cultural practice contributes to Disaster Risk Reduction (DRR), ecological resilience, or climate adaptation. If yes, set "drr_relevance" to true and explain the "drr_mechanism".
+        5. Output ALL data values strictly in ENGLISH, and keep all JSON keys strictly in English.
+        6. If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
+        7. If you find all information, set "completion_status" to "COMPLETE".
         
         Output strictly as a JSON ARRAY containing ONE highly detailed object with this structure:
         [
@@ -945,7 +965,12 @@ def discover_new_items(api_key, inventory):
                         "lat": null, 
                         "lng": null 
         }},
-            "resume_analisa": {{ "description": "...", "cultural_significance": "...", "gemini_tags": ["..."] }},
+            "resume_analisa": {{ 
+            "description": "...", 
+            "cultural_significance": "...", 
+            "drr_relevance": true, 
+            "drr_mechanism": "Brief explanation if it helps in disaster mitigation (e.g., earthquake-resistant, tsunami warning), otherwise null",
+            "gemini_tags": ["..."] }},
             "resume_tata_cara": {{ "type": "...", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
             "shared_heritage_detection": {{ "is_shared": true/false, "confidence_score": 0.0-1.0, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
             "completion_status": "COMPLETE or INCOMPLETE"
