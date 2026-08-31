@@ -5171,68 +5171,70 @@
         "https://beritajakarta.id/read/47035/story-of-silat-cingkrik-from-rawa-belong",
         "https://id.wikipedia.org/wiki/Silat_Cingkrik",
         "https://www.openstreetmap.org/node/2085784999",
-        "https://commons.wikimedia.org/wiki/File:PENCAK_SILAT_-_Indonesian_martial_art_performance.jpg"
+        "https://commons.wikimedia.org/wiki/File:PENCAK_SILAT_-_Indonesian_martial_art_performance.jpg",
+        "https://www.kebudayaanbetawi.com/2021/06/silat-cingkrik-maen-pukulan-khas-betawi.html"
       ],
-      "scraped_at": "2026-03-29T01:25:22.581751Z",
+      "scraped_at": "2026-08-31T02:14:01.580477Z",
       "location": {
         "country": "Indonesia",
         "provinces": [
-          "Special Capital Region of Jakarta",
-          "West Jakarta"
+          "Jakarta"
         ],
-        "lat": -6.1754049,
-        "lng": 106.827168
+        "lat": -2.4833826,
+        "lng": 117.8902853
       },
       "resume_analisa": {
-        "description": "Silat Cingkrik is a traditional Betawi Pencak Silat style that originated in the Rawa Belong area of Kebon Jeruk subdistrict, West Jakarta, Indonesia, around the 1920s. It was created by Ki Maing (Ismail bin Muayad), who was inspired by the agile movements of a monkey. The name 'Cingkrik' is believed to be derived from the Betawi words 'jingkrak-jingkrik' or 'cingrak-cingkrik', meaning agile. This martial art emphasizes fast, agile, and evasive movements, often targeting the face, throat, and groin, and incorporates various throwing techniques.",
-        "cultural_significance": "Silat Cingkrik holds significant cultural importance as an integral part of Betawi heritage. It is often associated with the legendary Betawi rebel fighter Si Pitung, though historical accounts suggest Cingkrik's creation might be later than Pitung's era. Beyond self-defense, it serves as a performing art, a means of preserving cultural identity, and a practice that strengthens comradeship and maintains social order within the community.",
+        "description": "Silat Cingkrik is a traditional Betawi martial art, also known as 'maen pukulan', originating from the Rawa Belong area of West Jakarta, Indonesia. The name 'Cingkrik' is believed to derive from the Betawi words 'jingkrak-jingkrik' or 'cingrak-cingkrik', meaning agile or nimble, reflecting the art's dynamic and evasive movements. Its techniques are often inspired by the agile movements of monkeys. The practice emphasizes quick reflexes, hand and foot movements, and includes various takedowns and throws.",
+        "cultural_significance": "Silat Cingkrik holds significant cultural importance for the Betawi people, particularly in Rawa Belong, its birthplace. Beyond being a martial art, it serves as a profound cultural expression imbued with life values, philosophy, and spiritual connections. The practice instills core values such as discipline, honor, mutual respect, and a commitment to peace. It is a living tradition passed down through generations, fostering strong community bonds and preserving local values. Performances of Silat Cingkrik are often featured in cultural events and ceremonies. The legendary Betawi hero Si Pitung is frequently associated with Silat Cingkrik, though historical accounts regarding this connection vary among elders.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
         "gemini_tags": [
-          "Indonesian martial art",
-          "Betawi culture",
-          "Pencak Silat style",
-          "self-defense",
-          "traditional performance",
-          "intangible cultural heritage"
+          "Pencak Silat",
+          "Martial Arts",
+          "Betawi Culture",
+          "Indonesian Traditional Art",
+          "Self-defense",
+          "Rawa Belong",
+          "Cultural Heritage",
+          "Performing Arts",
+          "Traditional Sport"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "ritual_sequence",
+        "materials_and_tools": [
+          "No specific materials or tools are required, as it primarily involves body movements and techniques."
+        ],
+        "step_by_step": [
+          "Learn the 12 basic 'jurus' (forms/techniques), which typically include: Keset Bacok, Keset Gedor, Cingkrik, Langkah Tiga, Langkah Empat, Buka Satu, Saup, Macan, Tiktuk, Singa, Lokbe, and Longok.",
+          "Practice the 3 'sambut' (paired fighting techniques): Sambut Tujuh Muka, Sambut Gulung, and Sambut Habis (or Sambut Detik).",
+          "Combine the 12 basic jurus into a unified sequence known as 'Bongbang', often performed in martial arts demonstrations.",
+          "Training focuses on developing speed, reflex movements, and the application of takedowns and throws.",
+          "Explore different 'aliran' (streams) such as Cingkrik Goning and Cingkrik Sinan, which feature variations in footwork and hand movements (e.g., Cingkrik Goning typically has wider movements, while Cingkrik Sinan employs shorter, more compact movements)."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
-        "confidence_score": 0.9,
+        "confidence_score": 0.95,
         "related_elements": [
           {
             "country": "Malaysia",
-            "element_name": "Pencak Silat",
-            "relationship_reason": "Pencak Silat is a broad martial art tradition shared across the Malay Archipelago, including Malaysia."
-          },
-          {
-            "country": "Singapore",
-            "element_name": "Pencak Silat",
-            "relationship_reason": "Pencak Silat is a broad martial art tradition shared across the Malay Archipelago, including Singapore."
+            "element_name": "Silat",
+            "relationship_reason": "Pencak Silat is a broader category of martial arts shared across the Malay Archipelago, with various regional styles."
           },
           {
             "country": "Brunei",
-            "element_name": "Pencak Silat",
-            "relationship_reason": "Pencak Silat is a broad martial art tradition shared across the Malay Archipelago, including Brunei."
+            "element_name": "Silat",
+            "relationship_reason": "Pencak Silat is a broader category of martial arts shared across the Malay Archipelago, with various regional styles."
           },
           {
-            "country": "Netherlands",
-            "element_name": "Silat Cingkrik Goning",
-            "relationship_reason": "A style of Silat Cingkrik, Cingkrik Goning, has spread to the Netherlands through Indonesian practitioners."
-          },
-          {
-            "country": "Indonesia",
-            "element_name": "Beksi",
-            "relationship_reason": "Beksi is another prominent Betawi Pencak Silat style, often mentioned alongside Cingkrik."
-          },
-          {
-            "country": "Indonesia",
-            "element_name": "Kwitang",
-            "relationship_reason": "Kwitang is another well-known Betawi Pencak Silat style."
+            "country": "Singapore",
+            "element_name": "Silat",
+            "relationship_reason": "Pencak Silat is a broader category of martial arts shared across the Malay Archipelago, with various regional styles."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-bb711f45",
@@ -6653,71 +6655,68 @@
         "https://cyberleninka.ru/article/n/geography-of-bylinas-in-semantic-opposition-own-alien",
         "https://www.masterclass.com/articles/what-is-an-epic-poem",
         "https://en.wikipedia.org/wiki/Epic_poetry",
-        "https://www.versologie.cz/pdf/2014_2_konashkov.pdf"
+        "https://www.versologie.cz/pdf/2014_2_konashkov.pdf",
+        "https://www.rusartnet.com/culture/literature/folk-tale/bylina"
       ],
-      "scraped_at": "2026-04-09T01:15:12.333765Z",
+      "scraped_at": "2026-08-31T02:14:26.123103Z",
       "location": {
         "country": "Russia",
         "provinces": [
-          "Arkhangelsk Oblast",
-          "Olonetsky Krai",
-          "Pechora region",
-          "Karelia",
-          "Siberia",
-          "Kievan Rus' (historical region)"
+          "Northwestern Federal District (e.g., Onega, Pechora, Arkhangelsk regions)",
+          "Siberian Federal District",
+          "Urals Federal District"
         ],
-        "lat": 63.5589686,
-        "lng": 43.1221646
+        "lat": 64.6863136,
+        "lng": 97.7453061
       },
       "resume_analisa": {
-        "description": "Byliny (Russian: былина; plural: byliny) are traditional Old Russian narrative poems, a form of oral epic poetry, also popularly known as *stariny* (Russian: старины), meaning \"old songs\". These epics combine elements of history and fantasy, focusing on the heroic deeds of *bogatyrs* (legendary knights) who defend Russian lands from enemies. Byliny originated in the medieval period of Kievan Rus' (roughly 10th–13th centuries) and were transmitted orally by *skomorokhi* (itinerant performers), *kaliki perekhozhie* (religious pilgrims), and later by peasant singers. They were often performed by a single individual, sometimes accompanied by a *gusli*, a harp-like instrument. Byliny typically follow a linear structure comprising an introduction, a narrative portion, and an epilogue, often employing exaggerated details and hyperbole to make the stories more exciting. They are characterized by their rhythmic, poetic structure and the use of formulaic elements, including specific beginnings (*zachin*) and endings (*kontsovka*). Famous heroes include Ilya Muromets, Dobrynya Nikitich, and Alyosha Popovich.",
-        "cultural_significance": "Byliny hold a unique and enduring place in the cultural landscape of Russia, serving as a living bridge between the past and present, and an oral archive of history, mythology, values, and national identity. They are considered emblematic of the Russian soul and spirit, reflecting themes of national identity, valor, and folklore motifs. These epic poems were crucial in preserving ancient beliefs, worldviews, and historical information across generations, often presenting a folk history that could diverge from official accounts. Byliny blend pagan and Christian elements, glorifying warrior exploits and princely courts. During the Soviet era, the heroic themes of byliny were popularized, and their heroes were featured in inspirational films. Even today, byliny continue to influence Russian literature, arts, and modern adaptations, underscoring their lasting legacy in Slavic cultural studies.",
+        "description": "Byliny, also known as stariny (songs of old times), are a traditional form of Russian oral epic poetry. They recount heroic narratives, often loosely based on historical events, but greatly embellished with fantasy and hyperbole. These poems feature legendary heroes called bogatyrs, such as Ilya Muromets, Dobrynya Nikitich, and Alyosha Popovich. Byliny originated in the era of Kievan Rus' (10th-12th century) and were primarily preserved in the remote northern regions of European Russia and parts of Siberia by the 19th and 20th centuries.",
+        "cultural_significance": "Byliny hold significant cultural importance as a form of folk history, sometimes presenting narratives that diverge from official historical accounts. They embody national identity, extolling the strength, nobility, and wit of their heroes who defended Russian lands and people from enemies and forces of evil. The narratives blend Christian beliefs with older pre-Christian pagan ideas and mythological elements. Although the active tradition of composing and chanting byliny has largely diminished with the spread of literacy, they continue to be studied and preserved as vital cultural and historical sources, influencing Russian art, literature, and even modern pop culture.",
+        "drr_relevance": true,
+        "drr_mechanism": "While not directly addressing natural disasters, Byliny contribute to disaster risk reduction indirectly by fostering community resilience and cultural memory. The heroic narratives of bogatyrs defending their land and people against various threats (invasions, monsters, injustice) reinforce a collective identity and a sense of perseverance. These stories, passed down through generations, can serve as a form of cultural memory, preserving traditional values, coping mechanisms, and a shared history of overcoming adversity, which are crucial elements for societal cohesion and resilience in the face of any challenge, including environmental or other disasters.",
         "gemini_tags": [
           "Oral Tradition",
           "Epic Poetry",
           "Russian Folklore",
-          "Heroic Narrative",
-          "Storytelling",
-          "Slavic Culture",
-          "Medieval History",
-          "Bogatyrs",
-          "Gusli",
+          "Heroic Narratives",
+          "Bogatyr",
+          "Kievan Rus'",
+          "Cultural Memory",
+          "Community Resilience",
           "Intangible Cultural Heritage"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "oral_performance_and_transmission",
+        "materials_and_tools": [
+          "Gusli (a harp-like stringed instrument, traditionally used for accompaniment, though later performances were often unaccompanied)"
+        ],
+        "step_by_step": [
+          "Byliny were traditionally performed by a narrator, who would either speak or sing the epic poem.",
+          "The poems were composed without rhyme, typically featuring a loose line structure with approximately three strong stresses per line.",
+          "Performances were improvisational, allowing for variations based on the individual talents and preferences of the performer.",
+          "The poetic language employed a solemn, melodious, and rhythmically organized style, utilizing comparisons, metaphors, and epithets to create vivid imagery.",
+          "The tradition was passed down orally from one singer or storyteller to another across generations.",
+          "In later periods, particularly the 19th and 20th centuries, byliny were often performed by non-professional singers, including both men and women, in community gatherings such as 'posidelki' (courtship parties)."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
-        "confidence_score": 1.0,
+        "confidence_score": 0.95,
         "related_elements": [
           {
-            "country": "Ancient Greece",
-            "element_name": "Iliad and Odyssey (Homer's epics)",
-            "relationship_reason": "Both are foundational oral epic poems, sharing characteristics like heroic narratives, formulaic structures, and transmission through performance, serving to transmit shared myths and histories across generations."
+            "country": "Greece",
+            "element_name": "Homeric Epics (e.g., Iliad, Odyssey)",
+            "relationship_reason": "Both are ancient oral epic poems featuring heroic deeds and foundational myths of a culture."
           },
           {
-            "country": "Mesopotamia",
-            "element_name": "Epic of Gilgamesh",
-            "relationship_reason": "Considered one of the oldest surviving epic poems, it shares the characteristic of being a lengthy narrative about extraordinary deeds and characters, often with a blend of human and divine elements."
-          },
-          {
-            "country": "Germany",
-            "element_name": "Nibelungenlied",
-            "relationship_reason": "A heroic epic poem from medieval Europe, reflecting similar themes of heroism, national identity, and legendary narratives."
-          },
-          {
-            "country": "England",
-            "element_name": "Beowulf",
-            "relationship_reason": "An Old English epic poem, sharing heroic themes, an oral tradition background, and the recounting of extraordinary feats of warriors."
-          },
-          {
-            "country": "India",
-            "element_name": "Mahabharata and Ramayana",
-            "relationship_reason": "Ancient Indian epic poems composed in Sanskrit, demonstrating the global prevalence of epic poetry as a means of preserving cultural histories and communal values."
+            "country": "Various (e.g., Scandinavia, Anglo-Saxon England)",
+            "element_name": "Oral Sagas and Epic Poetry (e.g., Beowulf, Norse Sagas)",
+            "relationship_reason": "Similar to other European oral epic traditions, Byliny share characteristics of heroic narratives, oral transmission, and cultural significance in pre-literate or semi-literate societies."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-d47c6240",
@@ -7284,62 +7283,61 @@
         "https://www.thinkchina.sg/mask-speaks-unmasking-spirit-sichuan-opera-eye-on-sichuan-series",
         "https://www.chicagochinanews.com/news/2010/01/30/2529.html",
         "https://www.chinacourt.org/article/detail/2024/08/id/7702890.shtml",
-        "https://asia.si.edu/learn/for-educators/teaching-china-with-the-smithsonian/videos/face-changing/"
+        "https://asia.si.edu/learn/for-educators/teaching-china-with-the-smithsonian/videos/face-changing/",
+        "https://www.travelchinaguide.com/attraction/sichuan/chengdu/sichuan-opera.htm"
       ],
-      "scraped_at": "2026-04-13T01:32:13.920356Z",
+      "scraped_at": "2026-08-31T02:14:48.514438Z",
       "location": {
         "country": "China",
         "provinces": [
           "Sichuan"
         ],
-        "lat": 30.5000001,
-        "lng": 102.4999999
+        "lat": 34.5412252,
+        "lng": 108.9237067
       },
       "resume_analisa": {
-        "description": "Sichuan Opera Face-Changing (Bian Lian) is a highly specialized and captivating theatrical technique within Sichuan Opera, a traditional Chinese art form. Performers rapidly change their facial masks or makeup to dramatically portray sudden shifts in a character's emotions and personality. This ancient art is renowned for its speed, mystery, and the seemingly magical transformations that occur in the blink of an eye. It serves as a romanticized method to externalize the complex inner thoughts and feelings of the characters on stage.",
-        "cultural_significance": "Sichuan Opera Face-Changing is considered a 'theatrical marvel' and a 'national treasure' of Chinese intangible cultural heritage. It is a cornerstone of Sichuan Opera, enriching its narrative by vividly expressing the emotional spectrum of its characters. Beyond its artistic value, Bian Lian has become a powerful symbol of Chinese culture, frequently showcased in international cultural exchanges and performances, captivating audiences worldwide and fostering a deeper appreciation for traditional Chinese performing arts.",
+        "description": "Sichuan Opera Face-Changing, known as Bian Lian (变脸), is a unique and highly skilled dramatic art form integral to Sichuan Opera. Performers, often in vibrant costumes, rapidly change their masks or facial makeup multiple times in quick succession, sometimes dozens of changes in a minute, to express a character's shifting emotions and inner thoughts. The transformations are achieved through various secret techniques, making it a captivating and mysterious spectacle for audiences. It is considered a national intangible cultural heritage in China.",
+        "cultural_significance": "Bian Lian is a cornerstone of Sichuan Opera, vividly portraying the psychological and emotional changes of characters through instantaneous facial transformations. Different mask colors hold symbolic meanings, such as red for loyalty and courage, black for honesty and firmness, white for cunning, and green for brutality or despotism. The art form has a rich history, evolving from ancient practices of face painting to ward off wild animals, and later becoming a sophisticated theatrical technique. Traditionally, the secrets of Bian Lian were closely guarded and passed down through generations, often from father to son or master to chosen apprentice, emphasizing its profound cultural value and the dedication required for its mastery. It serves as a powerful medium for storytelling and emotional expression within the opera.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
         "gemini_tags": [
-          "Chinese Opera",
-          "Traditional Performance",
-          "Mask Changing",
+          "Sichuan Opera",
+          "Bian Lian",
+          "Face-Changing",
+          "Chinese Performing Arts",
           "Intangible Cultural Heritage",
-          "Sichuan Culture",
-          "Performing Arts",
-          "Theatrical Technique",
-          "Cultural Exchange"
+          "Masks",
+          "Traditional Theatre",
+          "China"
         ]
       },
       "resume_tata_cara": {
-        "type": "The techniques of Sichuan Opera Face-Changing are broadly categorized into four main methods: Smearing Face (抹脸), Blowing Face (吹脸), Pulling Masks (扯脸), and the legendary Qi-gong Face-Changing (运气变脸).",
+        "type": "ritual_sequence",
         "materials_and_tools": [
-          "Oil-based makeup (for smearing)",
-          "Powdered makeup (e.g., gold, silver, black powder for blowing)",
-          "Silk masks (layered, pre-painted for pulling)",
-          "Fine silk threads (for pulling masks)",
-          "Elaborate costumes (to conceal mechanisms and threads)",
-          "Fans",
-          "Swords",
-          "Capes (used to aid in mask changes)"
+          "Silk masks (layered, painted)",
+          "Damask fabric (for masks)",
+          "Silk threads (hidden, attached to masks and costume)",
+          "Cosmetic paint (greasepaint, concealed)",
+          "Powder cosmetics (gold, silver, ink powders)",
+          "Small boxes or cups (for powder)"
         ],
         "step_by_step": [
-          "**Smearing Face (抹脸)**: Performers pre-apply oil-based makeup to specific areas of their face (e.g., forehead, eyebrows, nose). During the performance, with a swift hand gesture, they smear the makeup across their face, instantly transforming their facial color or pattern.",
-          "**Blowing Face (吹脸)**: This technique involves powdered makeup. A small container of colored powder is discreetly placed on the stage. During a dance movement, the performer quickly approaches the container, blows the powder onto their face (which has been pre-oiled to make the powder stick), and instantly changes their facial color. Performers must close their eyes, mouth, and hold their breath during this action.",
-          "**Pulling Masks (扯脸)**: This is the most intricate and commonly seen method. Multiple pre-painted silk masks are layered onto the performer's face, each fitted with a fine silk thread. These threads are cleverly hidden within the performer's elaborate costume. Through precise movements, often aided by props like fans or capes, the performer subtly pulls a thread, causing a mask to instantly peel away and reveal the next one underneath. The masks and their mechanisms are custom-made for each performer to ensure a seamless and rapid change.",
-          "**Qi-gong Face-Changing (运气变脸)**: This is a legendary and rarely practiced method, said to involve a performer using internal 'qi' (life energy) to change their facial complexion to reflect deep emotional shifts, such as a change from red to white to blue to express fear after relief. The exact mechanism remains a closely guarded secret."
+          "**Historical Origin**: The practice of face painting is said to have originated in ancient times when people painted their faces to scare away wild animals.",
+          "**Early Techniques (Qing Dynasty, 18th century)**: Early opera masters changed face colors by blowing into bowls of red, black, or gold powder, which adhered to oiled skin. Another method involved actors smearing their faces with colored paste concealed in their palms.",
+          "**Evolution of Masks (1920s onwards)**: By the 1920s, opera masters began using layers of masks made of oiled paper or dried pig bladder. Modern masters primarily use full-face painted silk masks, worn in multiple layers.",
+          "**Three Main Techniques for Face-Changing**: Performers utilize highly secretive and skilled methods during a performance:",
+          "  *   **Pulling Mask (扯脸 - che lian)**: This is the most complex and frequently used technique. Multiple thin, painted silk masks are layered on the performer's face. Each mask is attached with a fine silk thread, which is then fastened and hidden in an inconspicuous part of the costume. With a swift movement, such as a flick of a cloak, a raise of the hand, a swing of a sleeve, or a toss of the head, the performer pulls a thread, causing one mask to be whisked away, instantly revealing the next.",
+          "  *   **Wiping Mask (抹脸 - mo lian)**: Cosmetic paint (greasepaint) is cleverly hidden in specific areas on the performer's face, such as the eyebrows, temples, cheeks, or nose. During the performance, the actor quickly wipes or smears this concealed paint across their face to achieve a rapid change in color or expression.",
+          "  *   **Blowing Mask (吹脸 - chui lian)**: This technique involves the use of powder cosmetics (e.g., gold, silver, or ink powders). The powder might be hidden in a small box placed on the stage or in a cup. The performer approaches the hidden powder and blows at it, causing the powder to puff up and adhere to their face, instantly changing its color.",
+          "**Qigong (less common)**: Some masters have also been known to use Qigong movements to change the pallor of their face, altering colors from red to white, then white to black."
         ]
       },
       "shared_heritage_detection": {
         "is_shared": false,
-        "confidence_score": 0.9,
-        "related_elements": [
-          {
-            "country": "Various (International)",
-            "element_name": "Chinese Cultural Performances Abroad",
-            "relationship_reason": "While the origin and specific techniques of Sichuan Opera Face-Changing are unique to China, the art form is widely performed internationally in various countries (e.g., USA, Europe, Singapore, Thailand) as a representation of Chinese culture, fostering global appreciation and cultural exchange."
-          }
-        ]
+        "confidence_score": null,
+        "related_elements": []
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-1e324eb7",
@@ -24974,10 +24972,10 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-08-30T11:59:02.723370Z",
+    "generated_at": "2026-08-31T02:15:26.804339Z",
     "total_ich_elements": 284,
-    "complete_records": 268,
-    "incomplete_records": 16,
+    "complete_records": 271,
+    "incomplete_records": 13,
     "categories_breakdown": {
       "Traditional Craftsmanship": 98,
       "Social Practices & Rituals": 56,
