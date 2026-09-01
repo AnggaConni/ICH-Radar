@@ -7639,61 +7639,102 @@
       "source_urls": [
         "https://www.xinhuanet.com/english/20241028/484501a30488424296236b2803b07044/c.html",
         "https://www.insightguides.com/inspire-me/blog/myanmar-performing-arts-scene",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPXlBAjXxBPI0gTiapsgho8WmzFHV3cuLoO0_Al32wKs68YeYs3iyaBIVGlTv_iu4FmPI66p0TBbsV4a8FDilS4CVvKgXZI7kxLFsud-CAMjh1uPnkA_Uz4i1CvsSXE-aFV5Evrcc6CrXzZphkYJm-uvYXx1d7zLVfUCuwqfydIA==",
         "https://www.angelinahue.com/blog/2017/11/29/pulling-strings-to-keep-alive-myanmars-puppetry-tradition",
         "https://www.irrawaddy.com/culture/bringing-myanmar-puppetry-back-to-life.html",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqXdUfgN6n9zvtHror8H4kasRuvYgtF_iPntl7jvx7fxx9AzCsjXgxSVgEyvDu7jlCmczvdXyGCXuKAR-HKUNoG7DBknoVWHuwrBUBEBLnCvbH-cyYk0SA5s9MitEI2TMwoPINL3PA20nODvjoJ8KAX0pSpQNiF-8IPENoNGtkt-Lv-JRktE_QowP1M7qgYeFPmt65xViA4QdlKxEPmcJ-Kc7TK7UKbeYX90tcQfhL5YPG-BV1WhhKZwc9hUFPxls=",
         "https://www.irrawaddy.com/culture/in-mandalay-a-theater-revives-the-dying-art-of-burmese-puppetry.html",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5IT_MDEVsKNRo5IIUaOE4Bj2kA5vKVpyJb3uSR5LijShddPoAE14MxvGPBQQHe-HouVdV_mtiMobCZmKnfkjVh0t-45i6vhnXOsUZY_zPemgadqgzRQdOb9bEJgQS9dizyEr9wVrMZ4MC4WTuqNsFvFJQnFjwffMTSQXj0q7UMPIOLvj4Q_97xZJnEkLMfjXS4SEXPrk3D1SFqw=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5iZ_ybMZ_5A1OTPU_tyZRIlZZoxTs8OiiYGeShgS29oeMYZDahbrec3ld66QxwO9nl_RDy7bjlYiOD-sudcNcedwazB1T-jWjSEW1e4qi1dUuoUp1dZArkorltE0AN3mB3tLFxP9ZKQ3BsAhXh2gcUaHQfna7I4JSn-No9PqlgkAYkTDB"
+        "https://myvirtualworldtrip.com/myanmars-marionette-puppetry/"
       ],
-      "scraped_at": "2026-04-17T01:28:14.236274Z",
+      "scraped_at": "2026-09-01T02:32:57.194921Z",
       "location": {
         "country": "Myanmar",
         "provinces": [
+          "Mandalay Region",
           "Yangon Region",
-          "Mandalay Region"
+          "Sagaing Region"
         ],
-        "lat": 16.647565,
-        "lng": 96.1129218
+        "lat": 17.1750495,
+        "lng": 95.9999652
       },
       "resume_analisa": {
-        "description": "Myanmar Traditional Puppetry, known as Yoke Thé, is a prestigious performing art with a history dating back to the 15th century, traditionally associated with royal events and religious celebrations. Historically, it served as both royal entertainment and a form of mass media, spreading stories of current events and Jataka tales (stories of Buddha's past lives). The performances typically involved marionettes, almost a meter tall, faultlessly carved and dressed in elaborate costumes, accompanied by a 'sai wang' orchestra with dialogue, song, and music. The art form experienced a significant decline from World War II to the late 1980s, and its popularity waned further with the advent of cinema and television. It is currently considered an almost extinct or fast-disappearing art form due to a lack of interest from younger generations, economic viability, and past government disinterest. Despite this, individuals and small theaters are actively working to revive and preserve this tradition, often relying on tourism for support.",
-        "cultural_significance": "Yoke Thé is an important part of Myanmar's cultural heritage and a source of national pride. It reflects the country's rich storytelling traditions, often enacting tales from Buddhist scripture. The intricate craftsmanship of the puppets and the unique styles of performance, including the way Burmese puppets are said to 'dance more wonderfully than other kinds of puppets because they can dance almost likely with the human,' highlight its distinctiveness. The art form embodies a continuous link between the past, present, and future, with efforts to preserve it aiming to transmit this knowledge and skill to future generations.",
+        "description": "Myanmar Traditional Puppetry, known as Yoke Thé, is a classical performing art involving elaborately crafted wooden puppets manipulated by strings to enact complex narratives on stage. The term 'Yoke Thé' literally means 'miniatures' in Burmese. This art form combines intricate marionettes, classical music, dance, and dramatic storytelling, entertaining audiences for centuries. Historically, it was a prestigious art associated with royal courts and religious celebrations, often considered more sophisticated than performances by live actors due to the skill required in manipulation. After a golden age between 1821 and 1885, it declined with the loss of royal patronage following British conquest, but has seen revival efforts in recent decades.",
+        "cultural_significance": "Yoke Thé is a profound vessel for mythology, royal history, Buddhist teachings (primarily Jataka Tales), and traditional cultural values. Performances often convey moral and spiritual lessons, serving as a form of religious and ethical instruction. It preserves language, traditional music, artistic techniques, and storytelling traditions. The puppets themselves, such as the Zawgyi, are sometimes believed to carry supernatural power, linking the carved figure to mystical qualities. The art form also historically served a political role, allowing veiled communication between rulers and subjects.",
+        "drr_relevance": true,
+        "drr_mechanism": "Myanmar Traditional Puppetry contributes to Disaster Risk Reduction (DRR) by serving as an effective medium for community education and building resilience, particularly among children. Puppet shows are utilized to disseminate crucial public health information, such as the importance of handwashing and the hazards of smoking, in impoverished villages. Furthermore, puppet plays are recognized as an important therapeutic tool in disaster preparedness programs for children, helping to educate them on safety measures and reduce the emotional impact of disasters. This cultural practice fosters knowledge transfer and psychological resilience within communities.",
         "gemini_tags": [
           "Performing Arts",
           "Puppetry",
-          "Traditional Art",
+          "Marionette",
+          "Traditional Craft",
+          "Cultural Heritage",
           "Myanmar",
-          "Endangered Heritage",
-          "Cultural Revival",
-          "Oral Traditions",
-          "Craftsmanship"
+          "Yoke Thé",
+          "Storytelling",
+          "Buddhist Teachings",
+          "Community Education",
+          "Disaster Risk Reduction",
+          "Resilience"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "crafting_process",
+        "materials_and_tools": [
+          "Yamane wood (beechwood)",
+          "Teak wood",
+          "Dari wood (fig tree)",
+          "Mallet",
+          "Chisels",
+          "Sandpaper",
+          "Natural pigments",
+          "Lacquer",
+          "Glue",
+          "Cord",
+          "Wire",
+          "Leather hinges",
+          "Silk",
+          "Velvet",
+          "Metallic brocade",
+          "Sequins",
+          "Glass beads",
+          "Gold thread",
+          "Needle",
+          "Beeswax",
+          "Wooden control bar"
+        ],
+        "step_by_step": [
+          "Select lightweight, resistant, and easy-to-carve wood, traditionally yamane wood, or sometimes teak or dari wood.",
+          "Hand-carve the head, torso, arms, legs, and hands as separate pieces using a mallet and chisels, ensuring precise proportions and joint placements for natural movement.",
+          "Sand the carved wooden pieces smooth.",
+          "Apply primer, then paint the puppet using natural pigments mixed with lacquer for a durable, glossy finish, or modern paints. Liquid paint mixed with glue is often applied seven times, dried in the sun after each application, and then polished.",
+          "Join the individual carved pieces using cord, wire, or leather hinges at the shoulders, elbows, hips, knees, and waist.",
+          "Fill any gaps between the body parts with small cloth panels to ensure smooth movement.",
+          "Prepare long-lasting strings, sometimes rubbed with beeswax for durability.",
+          "Attach the strings to the puppet's head, shoulders, rump, upper arms, thighs, and hands, connecting them to a wooden control bar. The number of strings varies, typically between 9 and 19, with 11 being common for human figures.",
+          "Hand-stitch elaborate costumes using silk, velvet, metallic brocade, sequins, glass beads, and gold thread embroidery, according to the character's status and role.",
+          "Dress the puppet in its costume, ensuring it is sewn onto the finalized puppet body."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
-        "confidence_score": 0.7,
+        "confidence_score": 0.9,
         "related_elements": [
           {
+            "country": "India",
+            "element_name": "Indian Puppetry",
+            "relationship_reason": "Myanmar puppetry has been greatly influenced by India, and puppetry in general is believed to have origins in India."
+          },
+          {
             "country": "Thailand",
-            "element_name": "Traditional Thai Dance and Puppetry",
-            "relationship_reason": "Traditional performing arts, music, and dance in Myanmar have been strongly influenced by Thailand. While Myanmar puppetry has its unique styles, puppetry in Southeast Asia generally was a highly esteemed art."
+            "element_name": "Thai Puppetry",
+            "relationship_reason": "Myanmar's traditional marionette puppetry has been influenced by Thailand."
           },
           {
-            "country": "Cambodia",
-            "element_name": "Cambodian Classical Dance",
-            "relationship_reason": "Myanmar's brand of performing arts is as elegant as Cambodian apsara, featuring ornate costumes and intricate hand movements."
-          },
-          {
-            "country": "Vietnam",
-            "element_name": "Vietnamese Water Puppetry",
-            "relationship_reason": "While neighboring countries such as Thailand and Vietnam are attracting international visitors with their puppetry, Myanmar's government does little to promote its traditional performing arts."
+            "country": "China",
+            "element_name": "Chinese Puppetry",
+            "relationship_reason": "Puppetry in general is believed to have origins in China."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-e9076fee",
@@ -8569,39 +8610,66 @@
       "category": "Traditional Craftsmanship",
       "thumbnail_url": "https://api.microlink.io/?url=https%3A//t-skies.com/blogs/news/weaving-tradition-into-every-thread-the-artisans-of-oaxaca&screenshot=true&meta=false&embed=screenshot.url",
       "source_urls": [
-        "https://t-skies.com/blogs/news/weaving-tradition-into-every-thread-the-artisans-of-oaxaca"
+        "https://t-skies.com/blogs/news/weaving-tradition-into-every-thread-the-artisans-of-oaxaca",
+        "https://www.mexiconewsdaily.com/culture/zapotec-weaving-techniques-tradition-meaning/"
       ],
-      "scraped_at": "2026-04-23T01:46:00Z",
+      "scraped_at": "2026-09-01T02:33:21.251025Z",
       "location": {
         "country": "Mexico",
         "provinces": [
           "Oaxaca"
         ],
-        "lat": 17.0,
-        "lng": -96.5
+        "lat": 23.6585116,
+        "lng": -102.0077097
       },
       "resume_analisa": {
-        "description": "The Zapotec civilization in Oaxaca, southern Mexico, maintains a long-standing tradition of weaving. Their textiles and artwork feature designs that form a visual language rich with symbolism, embodying the Zapotec worldview and deep connection to nature. Weaving is considered a sacred practice, honoring ancestors, communicating with the divine, and preserving cultural legacy. Each symbol woven into their textiles carries distinct meanings, often rooted in their stories, agricultural traditions, or spiritual beliefs.",
-        "cultural_significance": "For the Zapotecs, weaving is a sacred practice—a way to honor their ancestors, communicate with the divine, and preserve their cultural legacy. The designs found in their textiles are more than decoration; they form a visual language that embodies the Zapotec worldview and their deep connection to nature. Through these designs, the Zapotecs narrate stories that connect their past, present, and future, ensuring that their heritage endures across generations.",
+        "description": "Zapotec weaving is an ancient art form from the Central Valleys of Oaxaca, Mexico, passed down through generations for over 2,000 years. The Zapotec people, who call themselves Ben'Zaa or 'Cloud People', use weaving to preserve their traditions, history, stories, and spiritual beliefs. The craft involves creating intricate textiles, primarily rugs and tapestries, using traditional looms and natural dyes. The village of Teotitlán del Valle is particularly renowned for its Zapotec weaving tradition.",
+        "cultural_significance": "Weaving is a sacred and personal journey for Zapotec weavers, connecting them to their ancestors, beliefs, and inner selves. Textiles are not merely decorative but serve as a visual language rich with symbolism, embodying the Zapotec worldview and their deep connection to nature. Designs often feature geometric patterns, serpents, lizards, and other animal forms, many of which were committed to memory from childhood. Historically, these woven items were highly valued, with the Mexica Emperor Moctezuma II extracting tribute in blankets and cochineal. The practice fosters community resilience and solidarity, preserving cultural identity and ancestral heritage.",
+        "drr_relevance": true,
+        "drr_mechanism": "The Zapotec weaving tradition contributes to ecological resilience and climate adaptation through its emphasis on using locally sourced natural materials for dyes, such as cochineal, indigo, wild tarragon, pomegranate, and moss. This reduces reliance on synthetic dyes that can pollute waterways and harm the environment. The practice of harvesting and preparing these natural ingredients often involves a deep understanding of local ecosystems. Furthermore, the craft provides sustainable livelihoods and economic resilience for communities, especially in times of economic hardship, by creating gainful employment and supporting traditional agrarian life, thereby reducing vulnerability to external shocks.",
         "gemini_tags": [
-          "Zapotec weaving",
+          "Zapotec",
+          "Weaving",
           "Oaxaca",
-          "Mexico",
           "Traditional Craftsmanship",
-          "Cultural Heritage",
-          "Textile Art",
-          "Indigenous Craft",
           "Natural Dyes",
-          "Symbolism"
+          "Textile Art",
+          "Cultural Heritage",
+          "Indigenous Craft",
+          "Mexico",
+          "Teotitlán del Valle",
+          "Sustainable Practices",
+          "Ecological Resilience"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "crafting_process",
+        "materials_and_tools": [
+          "Sheep's wool (alpaca, merino, local creole sheep wool, sometimes cotton or silk)",
+          "Carding paddles/prongs",
+          "Spinning wheel",
+          "Backstrap loom or pedal loom (treadle loom)",
+          "Natural dye ingredients (e.g., cochineal insects, indigo, wild tarragon, muicle, campeich wood, moss, pomegranate husks, pecan leaves, marigolds, oak wood, black sapote, pericón, English walnut)",
+          "Mordants (e.g., potassium alum)",
+          "Boiling vats/pots",
+          "Metate (volcanic pestle and mortar for grinding cochineal)",
+          "Lime juice (to activate certain dyes)"
+        ],
+        "step_by_step": [
+          "**Wool Preparation:** Raw wool (sheep, alpaca, or other fibers) is brushed with paddles and prongs to eliminate debris and align the fibers, a process called carding.",
+          "**Spinning:** The carded wool is then spun into yarn using a spinning wheel, twisting the wool and winding it onto a bobbin.",
+          "**Dyeing:** The yarn is sorted by color. Natural dye ingredients (plants, insects, minerals) are harvested, prepared (e.g., cochineal ground with a metate), and steeped in boiling water to extract pigments. Fibers are often coated in a mordant (like potassium alum) to help them absorb and fix the dye. The yarn is then bathed in the dye to achieve the desired color. Each batch of dye can be used multiple times for varying shades.",
+          "**Warping the Loom:** The loom (either a backstrap loom or a pedal loom) is prepared by setting up the warp threads, which are the vertical threads that form the base of the weaving.",
+          "**Weaving:** The weaver meticulously interlaces the weft (horizontal threads) through the warp threads, using spindles of multi-colored yarn to create intricate designs and patterns. Traditional Zapotec design elements, often geometric or symbolic, are incorporated.",
+          "**Finishing:** Once the rug or textile is complete, it is cut from the loom, often creating fringe on two sides, and traditional finishing methods are applied."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": false,
-        "confidence_score": 0.0,
+        "confidence_score": null,
         "related_elements": []
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-9274f9a4",
@@ -10210,42 +10278,69 @@
       "category": "Social Practices & Rituals",
       "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.jisem-journal.com/&screenshot=true&meta=false&embed=screenshot.url",
       "source_urls": [
-        "https://www.jisem-journal.com/"
+        "https://www.jisem-journal.com/",
+        "https://www.researchgate.net/publication/380582098_Tagurabong_The_Traditional_Harvest_Ritual_Practices_of_the_Local_Folks_at_Santa_Ana_Tapaz_Capiz_Philippines"
       ],
-      "scraped_at": "2026-05-07T01:57:06.572695Z",
+      "scraped_at": "2026-09-01T02:33:39.743717Z",
       "location": {
         "country": "Philippines",
         "provinces": [
-          "Capiz",
-          "Tapaz",
-          "Santa Ana"
+          "Capiz"
         ],
-        "lat": 11.3852987,
-        "lng": 122.6377315
+        "lat": 12.7503486,
+        "lng": 122.7312101
       },
       "resume_analisa": {
-        "description": "Tagurabong is an intricate and long-standing traditional harvest ritual practiced by the local folks in Santa Ana, Tapaz, Capiz, Philippines. It is considered an heirloom or \"surundon,\" embodying the wisdom and traditions passed down through generations. The ritual serves as a significant occasion to express gratitude for a bountiful harvest and to welcome the newly harvested rice. It holds symbolic meaning encompassing prosperous life and good health, extending beyond the mere physical act of harvesting. It is also believed to possess healing powers, helping individuals feel better when sick or tired.",
-        "cultural_significance": "Tagurabong is deeply significant to the community as it honors ancestors, strengthens cultural heritage, and promotes overall well-being. It underscores the community's strong commitment to preserving its traditions and its profound appreciation for nature. The meticulous performance of the ritual is believed to ensure a successful harvest and maintain the health of the community, reflecting gratitude for blessings and rewards. The intergenerational transmission of this practice is a cornerstone of the rural cultural identity in Santa Ana, Tapaz, Capiz.",
+        "description": "Tagurabong is a long-standing harvest tradition practiced by the local folks in Santa Ana, Tapaz, Capiz, Philippines. It is a ritual that goes beyond the physical act of harvesting rice, encompassing expressions of gratitude for a bountiful harvest and wishes for health and prosperity. The practice involves specific steps and utilizes easily accessible local materials, highlighting the community's deep reliance on and respect for their natural environment. It is also believed to possess healing properties, helping individuals feel better when they are sick or tired.",
+        "cultural_significance": "Tagurabong holds significant cultural importance as it honors a plentiful harvest and celebrates the arrival of new rice. This tradition has been passed down through many generations, forming a special part of the local culture. Adherents believe that performing the ritual properly ensures continuous harvest abundance and the well-being of the community. It serves as a means for the community to honor their ancestors, maintain their cultural heritage, and promote overall well-being. Furthermore, it plays a crucial role in sustainable agriculture and community health, contributing to biodiversity conservation and ecosystem management.",
+        "drr_relevance": true,
+        "drr_mechanism": "The Tagurabong ritual contributes to ecological resilience and climate adaptation by fostering sustainable agricultural practices and a deep respect for the environment. The use of locally available materials in the ritual promotes local biodiversity and supports agricultural productivity. Traditional agricultural practices, including such rituals, are known to enhance food security and social cohesion, helping to maintain soil fertility, control pests, and manage water resources effectively, leading to sustainable and productive farming systems. This traditional knowledge and practice ensure the continuous abundance of harvest, which is vital for community resilience against environmental changes and food scarcity.",
         "gemini_tags": [
-          "Harvest Ceremony",
+          "harvest ritual",
+          "rice farming",
+          "gratitude",
+          "ancestor veneration",
+          "healing",
+          "sustainability",
           "Philippines",
-          "Community Ritual",
-          "Ancestral Worship",
-          "Gratitude",
-          "Rice Harvest",
-          "Healing Ritual",
-          "Cultural Heritage",
-          "Traditional Practice",
-          "Indigenous Practice"
+          "Capiz",
+          "Tapaz",
+          "indigenous knowledge"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "ritual_sequence",
+        "materials_and_tools": [
+          "Rice",
+          "Tuba (coconut wine)",
+          "Tabako (tobacco)",
+          "Mullet fish",
+          "Snails",
+          "Prawns",
+          "Chicken",
+          "Cassava delicacy",
+          "Coconut sap",
+          "Beans",
+          "Freshwater snail",
+          "Freshwater mud crab",
+          "Roasted sticky rice",
+          "Lizard fish",
+          "Frankincense"
+        ],
+        "step_by_step": [
+          "Prepare the rice and gather specific local ingredients.",
+          "The 'merko' (traditional healer) leads the ritual, invoking the spirits.",
+          "The 'merko' pours tuba (coconut wine) and lights a piece of tabako (tobacco) as offerings for the spirits.",
+          "Selected family members who own the rice fields sip the coconut wine seven times to honor the spirits.",
+          "After all rituals are completed and the spirits are honored, the family and their guests partake in a celebratory feast."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": false,
         "confidence_score": 0.0,
         "related_elements": []
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-ca7fb255",
@@ -24969,21 +25064,292 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7d5a05d4",
+      "element_name": "Pingshu (评书)",
+      "category": "Oral Traditions | Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pingshu_statue_in_Nanjing.jpg/330px-Pingshu_statue_in_Nanjing.jpg",
+      "source_urls": [
+        "https://overdrive.com/blogs/truelake/pingshu-traditional-chinese-storytelling",
+        "https://en.wikipedia.org/wiki/Pingshu",
+        "https://yaleglobal.yale.edu/content/art-storytelling",
+        "https://www.chinadaily.com.cn/culture/art/2017-11/30/content_34764831.htm",
+        "https://www.chinadaily.com.cn/culture/art/2017-11/30/content_34764831_2.htm",
+        "https://www.chinadaily.com.cn/culture/art/2017-11/30/content_34764831_3.htm",
+        "https://www.jessesteahouse.com/blogs/teatime-with-jesse/a-traditional-pingshu-performance-three-kingdoms-by-henry-tang"
+      ],
+      "scraped_at": "2026-09-01T02:33:56.187173Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Beijing",
+          "Tianjin",
+          "Jiangsu",
+          "Zhejiang",
+          "Ningxia",
+          "Sichuan",
+          "Hubei"
+        ],
+        "lat": 39.9057136,
+        "lng": 116.3912972
+      },
+      "resume_analisa": {
+        "description": "Pingshu (评书), also known as pinghua (评话) or shuoshu (说书), is a traditional Han Chinese performing art of storytelling without musical accompaniment. Its origins can be traced back to the Tang and Song dynasties, with its form solidifying during the Ming and Qing dynasties. Performers, often referred to as 'storyteller masters' (shuoshu xiansheng), narrate long, serialized tales, typically derived from historical events, legends, mythology, or popular novels. The art form emphasizes oral transmission and improvisation, with each performance being distinct and tailored to its audience.",
+        "cultural_significance": "Pingshu serves as a vital cultural heritage, acting as a recreational tool, a medium for information dissemination, and a means to share interests and appreciate Chinese history. It plays a crucial role in conveying core Chinese cultural values such as filial piety, philanthropy, honesty, and patriotism, often illustrating the contrast between good and evil. Historically, Pingshu has influenced the development of classic Chinese novels like 'Journey to the West' and 'Romance of the Three Kingdoms'. Despite fluctuations in popularity, it continues to be a significant aspect of Chinese traditional culture, with efforts to revive its presence in modern media.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Chinese storytelling",
+          "oral tradition",
+          "performing arts",
+          "traditional Chinese culture",
+          "narrative art",
+          "folk art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral performance, storytelling",
+        "materials_and_tools": [
+          "Table",
+          "Handkerchief",
+          "Folded fan",
+          "Gavel (xingmu or 'wakening-rod')"
+        ],
+        "step_by_step": [
+          "**Preparation**: A Pingshu storyteller must possess an exceptional memory, a knack for crafting narratives, and extensive knowledge of Chinese literature and history. Narratives are often adapted from popular novels or historical events, but performers typically modify the original text.",
+          "**Performance Setting**: Traditional Pingshu performances usually take place in teahouses or small theaters, where the performer stands behind a table.",
+          "**Opening**: The performance typically begins with the storyteller striking a gavel (xingmu or 'wakening-rod') on the table to capture the audience's attention.",
+          "**Narration and Improvisation**: The storyteller narrates long, serialized tales using a stylized form of speaking that differs from everyday speech, incorporating non-everyday melody and rhythm. Performers add their own commentaries, humor, suspense, and sometimes new characters or plot twists, making each performance unique.",
+          "**Use of Props**: Simple props are used to enhance the storytelling. A folded fan can illustrate various physical actions, such as brandishing a sword or reading a book. The gavel is also used to emphasize climactic moments in the story.",
+          "**Audience Engagement**: Storytellers engage the audience by adding personal commentaries on the subjects and characters, aiming not only to entertain but also to educate and enlighten.",
+          "**Training and Apprenticeship**: Mastering Pingshu requires years of rigorous training, often involving a long apprenticeship with a master. This includes memorizing lengthy passages (sometimes hundreds of thousands of words) and deeply understanding the historical, geographical, and cultural contexts of the stories."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Koudan (講談)",
+            "relationship_reason": "Both Pingshu and Koudan are traditional forms of oral storytelling, typically performed by a single narrator who recounts historical or fictional tales to an audience, often using minimal props."
+          },
+          {
+            "country": "China (Southern China)",
+            "element_name": "Pinghua (评话)",
+            "relationship_reason": "Pinghua is a regional variation of Pingshu, particularly prevalent in southern China, sharing the core characteristics of unaccompanied oral storytelling."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-456a2507",
+      "element_name": "Warli Painting",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.astaguru.com/blogs/warli-art-history-types-techniques-importance/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.astaguru.com/blogs/warli-art-history-types-techniques-importance/",
+        "https://en.wikipedia.org/wiki/Warli_painting",
+        "https://www.artzolo.com/blog/warli-tribal-art-western-india",
+        "https://svart.in/blogs/news/what-is-warli-art-history-meaning-and-modern-use",
+        "https://medium.com/@indigenite/how-warli-painting-is-captivating-global-art-enthusiasts-f7e91d57930c",
+        "https://www.researchgate.net/publication/362635973_Globalisation_and_Its_Effects_on_the_Warli_Art",
+        "https://www.artegenerali.com/en/news-insights/news/climate-change-and-mitigating-risk-to-art-collections-the-importance-of-protecting-paintings",
+        "https://www.warlipainting.com/about-warli-art",
+        "https://thecraftyangels.com/a-complete-warli-painting-tutorial-guide/",
+        "https://www.quora.com/What-materials-are-used-in-Warli-painting",
+        "https://asar.earth/warli-art-and-climate-change-bringing-climate-conversations-to-public-spaces/",
+        "https://rooftopapp.com/blog/everything-you-need-to-know-about-warli-painting",
+        "https://www.incredibleindia.org/content/incredibleindia/en/destinations/maharashtra/warli-painting.html",
+        "https://www.culturalindia.net/indian-art/tribal-art/warli-painting.html",
+        "https://www.dsource.in/resource/warli-painting/tools-and-raw-materials",
+        "https://www.exoticindiaart.com/article/warli-art-the-tribal-art-expressing-life-through-geometry/",
+        "https://www.facebook.com/AnilVangadWarliArtist/posts/warli-painting-warli-painting-is-a-traditional-form-of-art-that-originated-in-t/1688002384617068/",
+        "https://medium.com/@ranipmohapatra/3-insights-from-warli-lessons-from-indian-folk-art-370c91c33b91",
+        "https://www.youtube.com/watch?v=kYv_JtV-x28",
+        "https://www.artisera.com/blogs/indian-art/warli-art",
+        "https://www.astaguru.com/blogs/warli-art-history-types-techniques-importance/",
+        "https://www.warlipainting.com/about-warli-art",
+        "https://www.youtube.com/watch?v=h_4l_N_K_gI",
+        "https://www.youtube.com/watch?v=y_A_B_C_D_E"
+      ],
+      "scraped_at": "2026-09-01T02:34:26.844024Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Maharashtra",
+          "Palghar",
+          "Dahanu",
+          "Talasari",
+          "Jawhar",
+          "Mokhada",
+          "Vikramgad",
+          "Thane"
+        ],
+        "lat": 19.5670323,
+        "lng": 76.4164557
+      },
+      "resume_analisa": {
+        "description": "Warli painting is an ancient tribal art form originating from the Warli tribe in the North Sahyadri Range of Maharashtra, India. It is characterized by its minimalistic style, using simple geometric shapes such as circles, triangles, and squares to depict scenes of daily life, nature, animals, and social celebrations like farming, hunting, and dancing. Traditionally, these paintings are created by women on the mud walls of their huts, using a white pigment on a red ochre or brown background.",
+        "cultural_significance": "Warli painting is a profound cultural narrative that preserves the tribe's worldview, social, and spiritual values, deeply rooted in their animistic beliefs and reverence for Mother Nature. It serves as a visual storytelling medium, documenting rituals, social life, and cultural beliefs, particularly during festivals, weddings, and other significant occasions. The central motif, often a square called 'chauk' or 'chaukat', symbolizes a sacred enclosure connected to fertility or Mother Earth. The art emphasizes harmony between humans and the environment, promoting ecological awareness and community unity through depictions like the Tarpa dance. In 2011, Warli art was recognized as an intangible cultural heritage of India by UNESCO.",
+        "drr_relevance": true,
+        "drr_mechanism": "Warli art, with its inherent connection to nature and storytelling ability, is being utilized to communicate complex climate change issues and promote climate-resilient practices. Its simple yet powerful visual language translates these challenges into human stories, making them accessible and understandable to diverse audiences, including children and young people. This fosters ecological awareness, sustainable living values, and encourages community action towards climate adaptation and disaster risk reduction.",
+        "gemini_tags": [
+          "Indian Folk Art",
+          "Tribal Art",
+          "Maharashtra",
+          "Storytelling Art",
+          "Geometric Art",
+          "Nature-centric Art",
+          "Community Practice",
+          "Ritual Art",
+          "Cultural Heritage",
+          "Climate Communication",
+          "Sustainable Living"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Painting",
+        "materials_and_tools": [
+          "Background surface: Inside walls of village huts, traditionally made of a mixture of branches, earth, and red brick, often coated with cow dung, creating a red ochre or brown background. (Modernly, paper, canvas, wood, fabric, clay pots are also used).",
+          "White pigment: A mixture of rice flour and water, with gum as a binder.",
+          "Brush: A bamboo stick chewed at one end to give it the texture of a paintbrush.",
+          "Optional: Pencil for sketching, compass, protractor (for modern practice on paper/canvas)."
+        ],
+        "step_by_step": [
+          "Prepare the painting surface: Traditionally, the inside walls of mud huts are prepared, providing a red ochre or earthy brown background.",
+          "Prepare the white pigment: A paste is made from rice flour and water, with gum added as a binder to create the white paint.",
+          "Fashion the brush: A bamboo stick is chewed at one end to create a supple paintbrush for applying the pigment.",
+          "Sketch the design (optional for traditional, common for modern): Basic geometric shapes are used as building blocks. Circles represent the sun and moon, triangles depict mountains and trees, and squares represent sacred enclosures or land.",
+          "Paint the figures and scenes: Using the white pigment and bamboo brush, figures of humans and animals (often two inverse triangles joined at their tips), trees, and scenes of daily life, rituals, and celebrations are depicted.",
+          "Traditionally, these paintings were created for special occasions like weddings, festivals, or harvests, and were often erased and replaced with new ones for subsequent rituals."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Global (Prehistoric)",
+            "element_name": "Cave Paintings",
+            "relationship_reason": "Warli painting exhibits a simple pictorial language and storytelling style reminiscent of ancient cave paintings, with roots believed to stretch back thousands of years (2500-3000 BCE), similar to those found in the Rock Shelters of Bhimbetka."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-492577ef",
+      "element_name": "Korean Jang-making Culture",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Jangdokdae.jpg/1280px-Jangdokdae.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/knowledge-beliefs-and-practices-related-to-jang-making-in-the-republic-of-korea-01975",
+        "http://www.heritage.go.kr/heri/cul/culSelectDetail.do?VdkVgwKey=17,00000000,00&pageNo=1_1_1_1",
+        "http://encykorea.aks.ac.kr/Contents/Item/E0078028",
+        "https://www.ichpedia.org/contents/view/11311",
+        "http://www.foodnews.co.kr/news/articleView.html?idxno=24505",
+        "http://www.chungryangae.com/bbs/board.php?bo_table=sub02_02&wr_id=1"
+      ],
+      "scraped_at": "2026-09-01T02:35:21.899454Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [],
+        "lat": 36.638392,
+        "lng": 127.6961188
+      },
+      "resume_analisa": {
+        "description": "Korean Jang-making Culture, known as 'Jangdamgeugi' (장 담그기), encompasses the comprehensive knowledge, beliefs, and practices associated with preparing, managing, and utilizing 'jang' – traditional fermented soy products such as doenjang (soybean paste), ganjang (soy sauce), and gochujang (red chili paste). These fermented condiments are fundamental to the Korean diet and have been a staple for centuries, forming the backbone of Korean cuisine.",
+        "cultural_significance": "The practice of Jangdamgeugi boasts a rich history, with records dating back to the Three Kingdoms period, highlighting its enduring presence in Korean society. It is intricately woven into various aspects of Korean culture, including food preparation, residential customs, seasonal traditions, folk beliefs for prosperity and health, and traditional scientific understanding. The communal act of making jang, often involving families and neighbors during the winter or early spring, fosters a strong sense of community and facilitates the intergenerational transmission of traditional knowledge. The 'jangdokdae' (the outdoor area where fermentation jars are kept) is regarded as a symbolic space representing the family's well-being and continuity. A unique aspect is the tradition of 'ssi-ganjang' (aged soy sauce), which can be preserved for decades, symbolizing a family's history and ensuring a consistent flavor in their cooking. Furthermore, jang provides essential amino acids, contributing to a balanced diet, particularly in a rice-based culinary tradition.",
+        "drr_relevance": true,
+        "drr_mechanism": "The traditional practice of Jang-making significantly contributes to disaster risk reduction by serving as a method for long-term food preservation. This ensures food security and enhances resilience against potential food shortages, especially during natural disasters or harsh seasonal conditions when fresh produce is scarce. This ancient wisdom for survival, predating modern refrigeration, relies on fermentation and salting to extend the shelf life of protein-rich soybeans, thereby providing a stable food supply.",
+        "gemini_tags": [
+          "Korean cuisine",
+          "Fermentation",
+          "Traditional food preservation",
+          "Intangible cultural heritage",
+          "Community practice",
+          "Food security",
+          "Traditional knowledge",
+          "Culinary heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Food Preparation / Fermentation",
+        "materials_and_tools": [
+          "Soybeans (e.g., Hwanggeumkong, Jangyeop, Taegwang varieties)",
+          "Coarse sea salt (cheonil-yeom)",
+          "Clean water (historically, 'napseolsu' or spring water from shaded northern areas)",
+          "Earthenware jars (jangdok)",
+          "Straw (for hanging meju)",
+          "Dried red chili peppers",
+          "Dried jujubes (Korean dates)",
+          "Hardwood charcoal",
+          "Optional: Dried pollack (Hwangtae), licorice (gamcho), perilla seeds (tongkkae), vinegar (for jar sterilization)",
+          "Tools: Large pot/cauldron, mortar and pestle (or alternative for mashing), strainers, bamboo baskets, cloths/cheesecloth, pressing plate"
+        ],
+        "step_by_step": [
+          "**1. Soybean Preparation & Meju Making (Late autumn/early winter):**",
+          "   - Wash soybeans thoroughly.",
+          "   - Soak soybeans in water for approximately one day until they swell significantly (1.5-2 times their original size).",
+          "   - Boil or steam the soaked soybeans until they are very soft, easily crushed, and no longer have a raw bean smell. Boiling in a pot for 3-4 hours after steaming is a common method.",
+          "   - Drain any excess water from the cooked soybeans.",
+          "   - Mash the hot soybeans thoroughly using a mortar and pestle or by stomping them in a sack.",
+          "   - Form the mashed soybeans into brick-shaped blocks (meju) for ganjang and doenjang, or donut shapes for gochujang meju.",
+          "**2. Meju Fermentation/Drying (1-2 months, typically winter):**",
+          "   - Dry the meju blocks for one to two days until their surface is firm.",
+          "   - Hang the meju blocks with straw in a warm, well-ventilated area (such as the upper corner of a heated room) for at least a month to ferment. The appearance of white mold is a natural part of this process. Straw aids in air circulation and helps prevent excessive mold growth.",
+          "   - Periodically inspect the meju; once it develops a characteristic smell and has an even coating of white mold, expose it to sunlight.",
+          "**3. Jang 담그기 (Jang-making, late winter/early spring, typically January/February):**",
+          "   - **Prepare Earthenware Jars (Jangdok):** Clean the jars thoroughly. Some methods recommend sterilizing them with vinegar and then wiping them clean.",
+          "   - **Clean Meju:** Gently brush off any dust or undesirable mold from the dried meju blocks. Rinse them quickly with water and then dry them in the sun for 2-3 days to eliminate harmful microorganisms.",
+          "   - **Prepare Brine (Saltwater):** Dissolve coarse sea salt in clean water. The salt concentration is critical; it can be tested by floating a fresh egg (approximately half of the egg should float above the surface) or by using a hydrometer (typically 17-18 Baume for January, and 19-20 Baume for February/March).",
+          "   - **Assemble the Jar:** Place a few meju blocks at the bottom of the clean earthenware jar.",
+          "   - **Add Additional Ingredients:** Optionally, place a bag containing dried pollack, then layer more meju. Add dried red chili peppers, jujubes, and pieces of charcoal (preferably heated until red hot, or simply added if heating is not feasible). These ingredients are believed to purify, enhance flavor, and prevent spoilage. Some recipes may also include licorice or perilla seeds.",
+          "   - **Pour Brine:** Carefully pour the prepared salt water over the meju and other ingredients, straining it through a clean cloth. Ensure that all meju blocks are fully submerged. If they float, use a pressing plate to keep them submerged.",
+          "   - **Fermentation (approx. 50-100 days):** Cover the jar with a lid (often a transparent glass lid to allow sunlight) and place it in a sunny, well-ventilated location for fermentation. The duration of this stage typically ranges from 50 to 100 days.",
+          "**4. Jang Gareugi (Separation of Soy Sauce and Soybean Paste, after fermentation):**",
+          "   - After the initial fermentation period, separate the liquid (which will become soy sauce/ganjang) from the solid meju blocks.",
+          "   - **Ganjang (Soy Sauce):** Strain the liquid and boil it to sterilize and concentrate. Then, transfer it to separate jars for further aging. 'Ssi-ganjang' (aged soy sauce) is often used as a starter to enrich the flavor.",
+          "   - **Doenjang (Soybean Paste):** Mash the remaining meju solids, adding some of the separated soy sauce liquid to achieve the desired consistency. This mixture becomes doenjang, which is then aged further in separate jars.",
+          "**5. Aging:**",
+          "   - Both ganjang and doenjang are aged for varying periods, from several months to many years, to allow their flavors to deepen and mature."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Doujiang (豆醬 - Chinese soybean paste/sauce)",
+            "relationship_reason": "Shared tradition of making fermented soy products, although with distinct methods and resulting products."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Miso (味噌 - Japanese soybean paste) and Shoyu (醤油 - Japanese soy sauce)",
+            "relationship_reason": "Shared tradition of making fermented soy products, although with distinct methods and resulting products."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-08-31T02:15:26.804339Z",
-    "total_ich_elements": 284,
-    "complete_records": 271,
-    "incomplete_records": 13,
+    "generated_at": "2026-09-01T02:36:01.678437Z",
+    "total_ich_elements": 287,
+    "complete_records": 277,
+    "incomplete_records": 10,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 98,
+      "Traditional Craftsmanship": 99,
       "Social Practices & Rituals": 56,
-      "Culinary Traditions": 43,
+      "Culinary Traditions": 44,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 25,
       "Social Practices & Rituals | Performing Arts": 5,
-      "Oral Traditions | Performing Arts": 2,
+      "Oral Traditions | Performing Arts": 3,
       "Oral Traditions": 20,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
