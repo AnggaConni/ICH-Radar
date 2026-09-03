@@ -13962,52 +13962,76 @@
         "https://www.mkukinanyota.com/product/tales-of-abunuwas-and-other-stories/",
         "https://www.textbookcentre.com/hekaya-za-abunuwas-na-hadithi-nyingine-moran",
         "https://archive.org/details/talesofabunuwaso00lewi",
-        "https://moranpublishers.com/product/hekaya-za-abunuasi-na-hadithi-nyingine/"
+        "https://moranpublishers.com/product/hekaya-za-abunuasi-na-hadithi-nyingine/",
+        "https://afromillenial.com/swahili-folklore-abunuwasi-juha-kalulu-mtema-kuni/"
       ],
-      "scraped_at": "2026-06-05T02:17:08.654719Z",
+      "scraped_at": "2026-09-03T01:59:42.899143Z",
       "location": {
-        "country": "East Africa",
+        "country": "Kenya",
         "provinces": [
-          "Kenya",
-          "Tanzania",
-          "Zanzibar",
-          "Comoros",
-          "Mozambique"
+          "Coast Region"
         ],
-        "lat": -1.2686662,
-        "lng": 36.8161377
+        "lat": 0.2793165,
+        "lng": 37.5164935
       },
       "resume_analisa": {
-        "description": "Hekaya za Abunuwasi, or Tales of Abunuwasi, are a collection of captivating and humorous oral narratives integral to Swahili literature and culture in East Africa. These stories feature Abunuwasi (also known as Abu Nawas), a clever and often deceptive trickster figure. The tales are rich in wisdom, ideas on justice, and morality, frequently depicting wit triumphing over brute force. They serve as both entertainment and a means to impart virtues such as honesty, respect, and bravery to younger generations. The stories reflect the nuances of Swahili life, cultural beliefs, and traditions.",
-        "cultural_significance": "Hekaya za Abunuwasi hold significant cultural importance as they are a cornerstone of Swahili oral traditions and literature. They play a crucial role in transmitting cultural heritage and moral values, fostering community engagement, and preserving Swahili identity across generations. The narratives are used to teach children about virtues and to connect individuals with their roots and societal roles. The enduring popularity of these tales underscores their deep integration into the cultural fabric of the Swahili-speaking communities.",
+        "description": "Hekaya za Abunuwasi, or the Tales of Abunuwasi, are traditional Swahili stories featuring the witty and humorous trickster character Abunuwasi. These tales are an integral part of Swahili literature and oral tradition along the East African coast. The character Abunuwasi is associated with the historical Arab poet Abu Nuwas, who lived in Baghdad around 800 CE. His stories spread across the Arab world, Turkey, Uzbekistan, and are also found in collections like One Thousand and One Nights. In the Swahili context, Abunuwasi is depicted as a cunning yet endearing figure who often outsmarts the greedy and selfish, challenges authority, and navigates life's difficulties through intelligence and humor.",
+        "cultural_significance": "The Hekaya za Abunuwasi hold significant cultural importance, serving multiple purposes within the communities where they are told. They function as tools for moral education, imparting values such as honesty, humility, wisdom, and patience. The tales also provide social commentary, highlighting societal issues, class dynamics, and human follies, while reinforcing linguistic expressions and cultural norms. Beyond their educational role, these stories are a vital source of entertainment and humor, cherished by both young and old. They contribute to social cohesion and cultural preservation by being passed down through generations.",
+        "drr_relevance": true,
+        "drr_mechanism": "While not directly addressing physical disaster mitigation, the Hekaya za Abunuwasi contribute to Disaster Risk Reduction (DRR) and resilience indirectly by fostering critical thinking, problem-solving skills, and community cohesion. The moral lessons and social commentary embedded in these tales encourage wisdom, adaptability, and resourcefulness, which are crucial elements for communities to understand and respond to challenges, including those related to environmental changes or crises. Oral traditions that transmit indigenous knowledge and promote shared values can strengthen a community's social fabric and its capacity for collective action and adaptive strategies.",
         "gemini_tags": [
-          "Oral Traditions",
+          "Oral Tradition",
+          "Swahili Literature",
+          "Trickster Tales",
           "Folklore",
-          "Swahili Culture",
           "East Africa",
+          "Moral Education",
+          "Social Commentary",
+          "Cultural Preservation",
           "Storytelling",
-          "Didactic Literature",
-          "Trickster Tales"
+          "Abunuwasi",
+          "Abu Nuwas",
+          "Shared Heritage",
+          "Community Resilience"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "ritual_sequence",
+        "materials_and_tools": [
+          "Storyteller",
+          "Audience",
+          "Oral narration techniques (voice modulation, gestures)"
+        ],
+        "step_by_step": [
+          "The tales are transmitted orally, often by skilled storytellers, within family settings, community gatherings, or during festivals.",
+          "Storytellers employ expressive voice modulation, gestures, and an understanding of cultural context to engage the audience and convey the narrative effectively.",
+          "The stories are listened to and internalized by the audience, particularly children, who learn moral values and cultural insights through the narratives.",
+          "Over time, these stories are retold and adapted, ensuring their continuity across generations.",
+          "In modern contexts, the tales are also documented in written forms (books, comic books) and adapted into various media like radio and animated videos for wider dissemination and preservation."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
-        "confidence_score": 0.9,
+        "confidence_score": 0.95,
         "related_elements": [
           {
             "country": "Iraq",
-            "element_name": "Abu Nawas (original character)",
-            "relationship_reason": "The character of Abu Nawas originated in Baghdad, Iraq, during the reign of Harun Al Rashid (763-809). His tales spread widely across Arab countries, Turkey, Uzbekistan, and subsequently to East Africa through centuries of contact with Arab traders and Islamic scholars."
+            "element_name": "Tales of Abu Nuwas",
+            "relationship_reason": "The character Abunuwasi originates from the historical Arab poet Abu Nuwas of medieval Basra, Iraq, whose tales spread to the Swahili coast."
           },
           {
-            "country": "Middle East/Arabian Peninsula",
-            "element_name": "One Thousand and One Nights (Arabian Nights)",
-            "relationship_reason": "Many of the Abunuwasi tales also appear in the classic collection 'One Thousand and One Nights', which features Harun Al Rashid as a central figure. This highlights a shared literary tradition with the broader Middle Eastern and Arabian storytelling heritage."
+            "country": "Turkey",
+            "element_name": "Tales of Nasreddin Hodja",
+            "relationship_reason": "Similar trickster tales featuring a wise and humorous character are found in other Muslim countries, such as the tales of Nasreddin in Turkey."
+          },
+          {
+            "country": "Nigeria",
+            "element_name": "Hausa Folktales (Hekaya za Abunuwasi)",
+            "relationship_reason": "Hekaya za Abunuwasi are also an integral part of Hausa storytelling tradition in West Africa, particularly in Nigeria and Niger, featuring the same witty character."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-72fd6d50",
@@ -14102,76 +14126,72 @@
         "https://ich.unesco.org/en/USL/handmade-weaving-in-upper-egypt-saeed-01591",
         "https://www.elwatannews.com/news/details/4969299",
         "https://www.dandarah.com/blogs/news/nagada-weaving-a-craft-dating-back-to-pharaonic-times",
-        "https://www.fairtradeegypt.org/blogs/news/akhmim-4000-years-of-textile-innovation"
+        "https://www.fairtradeegypt.org/blogs/news/akhmim-4000-years-of-textile-innovation",
+        "https://www.unicef.org/egypt/stories/weaving-more-resilient-future"
       ],
-      "scraped_at": "2026-06-07T02:34:57.883760Z",
+      "scraped_at": "2026-09-03T02:00:11.174627Z",
       "location": {
         "country": "Egypt",
         "provinces": [
-          "Upper Egypt (Sa'eed)",
-          "Sohag (Akhmim)",
-          "Qena (Naqada)"
+          "Upper Egypt",
+          "Aswan Governorate",
+          "Sohag Governorate",
+          "Naqada",
+          "Akhmim"
         ],
-        "lat": 27.2481556,
-        "lng": 33.8231416
+        "lat": 26.2540493,
+        "lng": 29.2675469
       },
       "resume_analisa": {
-        "description": "Handmade weaving in Upper Egypt (Sa'eed) is a complex craft tradition that demands time, effort, patience, and practice. It encompasses various stages including loom preparation, threading, and the intricate process of weaving to achieve the final textile product. This craft has been meticulously passed down through generations by both men and women, who utilize their inherited knowledge and artistic talent. The fundamental principles of this weaving tradition have largely remained unchanged since ancient times, employing natural materials such as linen, cotton, wool, and silk. Despite its rich history, the craft currently faces significant challenges, including a decline in profitability, the high cost of raw materials, and difficulties in transmitting these skills to younger generations.",
-        "cultural_significance": "This handloom weaving is a profound source of identity and pride for the communities in Upper Egypt. Akhmim, a prominent center for this craft, boasts a textile production history spanning over 4,000 years, known as 'Panopolis' to the Greeks and 'Shemin' to early Christians. Akhmim textiles historically integrated Egyptian, Greek, and later Christian and Islamic artistic patterns. Nagada, another significant weaving hub, has maintained its traditions since Pharaonic times. In 2020, UNESCO officially inscribed 'Handmade weaving in Upper Egypt (Sa'eed)' on its List of Intangible Cultural Heritage in Need of Urgent Safeguarding. This recognition underscores its immense cultural significance and highlights the critical need for protection, community support, and the preservation of this invaluable heritage.",
+        "description": "Handmade weaving in Upper Egypt (Sa'eed) is a complex and intricate craft, deeply rooted in ancient Egyptian history, requiring significant skill, time, and patience. It involves preparing natural fibers like linen, cotton, wool, and silk, and using traditional looms to create textiles such as bed covers, shawls, scarves, and various home items. The craft has been passed down through generations, often orally within families and workshops. This practice was inscribed in 2020 on the UNESCO List of Intangible Cultural Heritage in Need of Urgent Safeguarding.",
+        "cultural_significance": "This practice is a profound source of identity and pride for the communities in Upper Egypt, with its terminology reflecting its deep-rooted importance. It represents a living cultural legacy, blending everyday life scenes with ancient Egyptian symbolism and contributing to the preservation of a disappearing culture. The craft serves as a family legacy and a profession, with looms often identical to those depicted in ancient temples. Weaving in Upper Egypt dates back to at least 4000 B.C., with towns like Naqada and Akhmim being historical weaving centers.",
+        "drr_relevance": true,
+        "drr_mechanism": "The practice contributes to ecological resilience and climate adaptation through its inherent sustainability. It relies on natural, locally sourced, and eco-friendly materials, reducing environmental waste. Initiatives like using discarded palm tree waste for handicrafts demonstrate a circular economy approach, mitigating pollution from burning waste. Furthermore, by providing sustainable livelihoods and economic empowerment, especially for women and youth, it strengthens community resilience against economic vulnerabilities, which can be exacerbated by climate change impacts.",
         "gemini_tags": [
-          "Traditional Craftsmanship",
+          "Traditional Craft",
           "Weaving",
-          "Textile Art",
-          "Egyptian Heritage",
-          "Intangible Cultural Heritage",
-          "Handloom",
-          "Akhmim",
-          "Nagada",
+          "Textile",
           "Upper Egypt",
-          "Cultural Identity",
-          "UNESCO"
+          "Cultural Heritage",
+          "Sustainability",
+          "Economic Empowerment",
+          "Waste Reduction",
+          "Handicrafts",
+          "Intangible Cultural Heritage"
         ]
       },
       "resume_tata_cara": {
-        "type": "Handloom Weaving",
+        "type": "crafting_process",
         "materials_and_tools": [
-          "Looms (traditional pit looms, newer handlooms, simple Jaquard looms)",
-          "Linen",
+          "Linen (from flax)",
           "Cotton",
           "Wool",
           "Silk",
-          "Animal fibers",
-          "Plant fibers",
-          "Insect fibers (silkworms)",
-          "Thread table (Neer)",
-          "Ball weft",
-          "Comb",
-          "Shuttle"
+          "Palm fronds (for specific items)",
+          "Looms (horizontal and upright)",
+          "Spindle",
+          "Shuttle",
+          "Pirn",
+          "Foot pedals",
+          "Hand movements",
+          "Two-barred loom",
+          "Two-eyed needle (for 'tulle bi telli' embroidery)"
         ],
         "step_by_step": [
-          "Loom preparation: Setting up the weaving apparatus, which can include traditional pit looms or newer handlooms.",
-          "Threading: Arranging and attaching the warp threads to the loom. The 'Neer' (thread table) is used to control the spaces of the warp.",
-          "Weaving: Interlacing the weft threads through the warp. This involves using a ball weft to expand the thread as needed, and a shuttle to carry the weft across. A comb is used to push the shuttle and ensure the desired width of the fabric.",
-          "Post-weaving processes: These can include washing, dyeing, ironing, cutting, sewing, and pattern making, depending on the final product."
+          "Fiber Preparation: For flax, stalks are boiled, beaten, cleaned by hand or comb, moistened, and twisted. For cotton, fibers are ginned (separated from seeds), then carded (cleaned, disentangled, aligned), and sometimes combed for finer yarns.",
+          "Yarn Production: Fibers are spun into yarn using a spindle, often by rubbing the stick down the thigh and allowing it to twist freely. The 'spliced and twisted' method was used for linen yarn.",
+          "Loom Preparation: This involves warping, where yarn is arranged lengthwise according to the planned width and length of the cloth, and then threading the loom with the warp yarns.",
+          "Weaving: The process involves interlacing warp (vertical) and weft (horizontal) threads on a loom. Weavers use foot pedals and hand movements to coordinate shuttle movement and thread lifting. Weft yarn is wound onto a pirn inside the shuttle, and changing weft colors can create 'shot' effects.",
+          "Techniques: Various weaving techniques are employed, including tabby weave, half basket weave, looped or soumak, brocading, and tapestry. The Copts also invented the 'flying shuttle' technique.",
+          "Product Creation: The weaving results in various textiles such as bed covers, shawls, scarves, galabeyas, and other home items. Some artisans also craft baskets, handbags, and lamps from materials like palm fronds."
         ]
       },
       "shared_heritage_detection": {
-        "is_shared": true,
-        "confidence_score": 0.9,
-        "related_elements": [
-          {
-            "country": "Sudan",
-            "element_name": "Farka (scarf or sari-like cloth)",
-            "relationship_reason": "Nagada weavers in Upper Egypt historically produced and exported 'Farka' in large quantities to Sudan, where it was traditionally worn by Sudanese brides."
-          },
-          {
-            "country": "Sudan",
-            "element_name": "Weaving sheep hair",
-            "relationship_reason": "Traditional weaving practices, such as weaving sheep hair, exist in Sudan and face similar challenges regarding the transmission of skills to younger generations and competition from imported goods."
-          }
-        ]
+        "is_shared": false,
+        "confidence_score": 0.0,
+        "related_elements": []
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-a309a1b4",
@@ -25335,19 +25355,210 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-fb21d73e",
+      "element_name": "Olaria Pedrada de Nisa",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//jornaldenisa.com/index.php/2024/10/10/nisa-a-nova-vida-da-olaria-pedrada/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://jornaldenisa.com/index.php/2024/10/10/nisa-a-nova-vida-da-olaria-pedrada/",
+        "https://saberesfazer.pt/patrimonio/olaria-de-nisa/",
+        "https://estremozguide.com/nisa-land-of-ceramics-embroidery-cheese/",
+        "https://www.authenticportuguesecrafts.com/nisa-pottery/",
+        "https://artesdaterra.blogspot.com/2016/06/a-olaria-de-nisa.html",
+        "https://www.cm-nisa.pt/museus/museu-do-bordado-e-do-barro/historia-e-caracteristicas/barro/",
+        "https://www.tapaaosal.pt/olaria-pedrada-de-nisa/",
+        "https://nisaglobal.pt/produto/barril-pequeno-olaria-pedrada-de-segunda/",
+        "https://inmotion.pt/patrimonio/olaria-pedrada-de-nisa/",
+        "https://www.cm-nisa.pt/museus/museu-do-bordado-e-do-barro/historia-e-caracteristicas/barro-video/",
+        "https://www.youtube.com/watch?v=kR2a2j7M0lQ"
+      ],
+      "scraped_at": "2026-09-03T02:01:16.472987Z",
+      "location": {
+        "country": "Portugal",
+        "provinces": [
+          "Alentejo"
+        ],
+        "lat": 38.0551003,
+        "lng": -7.8605799
+      },
+      "resume_analisa": {
+        "description": "Olaria Pedrada de Nisa, also known as Barro de Nisa, is a traditional pottery art originating from the Alto Alentejo region of Portugal, specifically the town of Nisa. It is distinguished by the unique technique of manually embedding small fragments of milky quartz stones into the clay pieces. Historically, these ceramic items served utilitarian purposes, primarily for preserving and transporting water, exemplified by traditional vessels like \"moringues,\" \"bilhas,\" and \"cantarinhas.\" Over time, particularly from the latter half of the 20th century, the craft evolved to encompass decorative and artistic functions, with artisans creating a variety of items such as plates, platters, miniatures, and animal figures. The decorative patterns typically feature symmetrical floral motifs, as well as naturalistic and geometric designs, which are meticulously scratched onto the fresh clay surface using a needle.",
+        "cultural_significance": "This art form holds deep historical roots in Nisa, reflecting the region's rich cultural, geographical, and historical heritage. It embodies centuries of adaptation to the local environment and creative responses to daily necessities. The knowledge and techniques involved in Olaria Pedrada are traditionally passed down through generations, often within families, ensuring the continuity of this ancestral craft. The distinctive \"empedrado\" (stoning) technique, predominantly carried out by women known as \"pedradeiras,\" is a hallmark of Nisa's pottery, making it easily recognizable. It is considered a unique art in Portugal, and its dwindling number of practitioners underscores the importance of its preservation. The municipality of Nisa actively supports and promotes this tradition through various initiatives, including courses, exhibitions, and logistical assistance to artisans.",
+        "drr_relevance": true,
+        "drr_mechanism": "The original utilitarian function of Olaria Pedrada was to keep water fresh, which was vital for daily life in a region like Alentejo, known for its high temperatures. This traditional practice, by providing a means to store and cool water without modern technology, contributed to local resilience and well-being, especially in times when access to refrigeration was limited. The use of locally sourced materials (clay and quartz) also highlights a sustainable approach to resource management, fostering ecological resilience.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Pottery",
+          "Ceramics",
+          "Cultural Heritage",
+          "Portugal",
+          "Alentejo",
+          "Nisa",
+          "Quartz Incrustation",
+          "Water Preservation",
+          "Local Materials",
+          "Sustainable Practice",
+          "Folk Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Pottery with Quartz Incrustation",
+        "materials_and_tools": [
+          "Clay (black, white, and red clay, with black and white extracted locally in Nisa)",
+          "Water",
+          "Quartz stones (milky quartz, previously cooked at high temperatures and broken into small fragments)",
+          "Barreiro (tank for clay preparation)",
+          "Sieve (for removing impurities)",
+          "Potter's wheel (traditional foot-operated or electric)",
+          "Sewing needle (for drawing designs)",
+          "Oven (gas ovens)"
+        ],
+        "step_by_step": [
+          "**Clay Extraction and Preparation**: Black and white clays are extracted locally in Nisa. These clays are then placed in a \"barreiro\" (tank) and mixed with water to form a semi-liquid paste. Impurities are subsequently removed using a sieve in a separate tank.",
+          "**Clay Kneading and Drying**: The prepared clay is kneaded in small portions, referred to as \"pélas.\" It is then \"aventado\" (thrown against a wall) to eliminate excess water, preparing it for shaping.",
+          "**Modeling**: The clay is shaped on a potter's wheel, which can be either a traditional foot-operated wheel or a modern electric one, to create the desired form of the pottery piece.",
+          "**Tingimento (Coloring)**: The raw clay piece is submerged in \"engobe,\" a mixture made by diluting red clay in water, to impart an orange/red base color.",
+          "**Drawing Designs**: While the clay is still in its raw state, decorative motifs—often symmetrical floral patterns, or naturalistic and geometric designs—are meticulously drawn onto the external surface of the piece using a sewing needle.",
+          "**Empedramento (Quartz Incrustation)**: Small fragments of milky quartz stones, which have been previously cooked at high temperatures and then broken, are carefully placed one by one into the scratched designs on the clay piece. This intricate step is primarily performed by women, known as \"pedradeiras.\"",
+          "**Firing**: After the incrustation is complete, the decorated pottery piece is fired in gas ovens at temperatures ranging between 800°C and 900°C for approximately eight hours, which hardens and finalizes the piece."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Portugal",
+            "element_name": "Olaria de Estremoz (Estremoz Pottery)",
+            "relationship_reason": "Practices a decorative incrustation technique in clay, though with some differentiated characteristics compared to Nisa."
+          },
+          {
+            "country": "Spain",
+            "element_name": "Enchinado de Ceclavín (Ceclavín Pottery)",
+            "relationship_reason": "Practices a decorative incrustation technique (\"empedrado\" or \"enchinado\") in the contiguous region of Alta Extremadura."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-24d8eedf",
+      "element_name": "Tuvan Throat Singing (Khoomei)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//alashensemble.com/about-tuvan-throat-singing/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://alashensemble.com/about-tuvan-throat-singing/",
+        "https://en.wikipedia.org/wiki/Tuvan_throat_singing",
+        "https://ru.wikipedia.org/wiki/%D0%A5%D0%BE%D0%BE%D0%BC%D0%B5%D0%B9",
+        "https://didgeproject.com/tuvan-throat-singing-basics/",
+        "https://ismy.net/tuvan-throat-singing-style/",
+        "https://www.wikihow.com/How-to-Throat-Sing",
+        "https://news.arizona.edu/story/researchers-solve-mystery-tuvan-throat-singing",
+        "https://xn--80aab1bgn5c.xn--p1ai/objects/tuvinskoe-gorlovoe-penie-hoomej",
+        "https://nasledie.tuvaculture.ru/stili-gorlovogo-peniya/",
+        "https://digitalcommons.csumb.edu/cgi/viewcontent.cgi?article=1073&context=caps_thes",
+        "https://v-z.ru/muzyka/tuva/tuva.html",
+        "http://www.khoomei.com/types.htm",
+        "https://toke-cha.ru/tuvinskoe-gorlovoe-penie/",
+        "https://www.youtube.com/watch?v=A2dCqQ2sQ8A",
+        "https://www.britannica.com/art/throat-singing",
+        "http://www.fotuva.org/music/emory.html",
+        "https://medium.com/travel-memoirs/what-in-the-heck-is-tuvan-throat-singing-and-where-is-tuva-d6b334584283",
+        "https://jakobmoberly.com/the-origins-of-throat-singing-in-tuvan-culture-and-nomadic-life/",
+        "https://www.reddit.com/r/singing/comments/16479b/with_proper_technique_is_tuvan_throat_singing/",
+        "https://www.sciencefriday.com/segments/the-science-of-tuvan-throat-singing/",
+        "https://medium.com/@fromthemindofmichaelcline/the-biggest-myths-about-tuvan-throat-singing-d996903e110c"
+      ],
+      "scraped_at": "2026-09-03T02:01:50.122473Z",
+      "location": {
+        "country": "Russia",
+        "provinces": [
+          "Tuva Republic"
+        ],
+        "lat": 51.4017149,
+        "lng": 93.8582593
+      },
+      "resume_analisa": {
+        "description": "Tuvan throat singing, known as Khoomei (xöömei), is a unique vocal technique originating from the Tuva Republic in southern Siberia, Russia. It allows a single singer to produce two or more distinct pitches simultaneously by manipulating their vocal tract to amplify specific overtones or undertones above a fundamental drone pitch. This ancient tradition developed among the nomadic herdsmen of Inner Asia and is deeply intertwined with their spiritual connection to nature.",
+        "cultural_significance": "Khoomei is an integral part of the ancient pastoral animism practiced in the Tuva region. Singers traditionally mimic and interact with the sounds of the natural world, such as whistling birds, bubbling streams, blowing wind, or the deep growl of a camel, to connect with the environment and its spiritual power. While historically performed outdoors, it is now also presented in concert halls and at music festivals. Beyond entertainment, throat singing has served various traditional purposes, including lulling babies to sleep, luring wild and semi-domesticated animals, seeking favor from local spirits, and summoning shamanic spirits and Buddhist gods. It is a vital part of Tuvan identity and is actively preserved through organizations, universities, and competitions that encourage young singers.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Throat Singing",
+          "Overtone Singing",
+          "Traditional Music",
+          "Siberian Culture",
+          "Nomadic Culture",
+          "Vocal Technique",
+          "Animism",
+          "Folk Music",
+          "Russian Heritage",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Vocal Technique",
+        "materials_and_tools": [
+          "Vocal cords",
+          "Vocal tract (mouth, tongue, lips, larynx)",
+          "Diaphragm"
+        ],
+        "step_by_step": [
+          "**Relaxation:** Begin by relaxing the jaw, lips, and the back of the throat. The mouth should be slightly open, with a small gap between the upper and lower teeth.",
+          "**Base Note (Khorekteer):** Sing a comfortably low 'base' note from the chest, aiming for a deep pitch without going into a full vocal fry. This involves generating a small bubbling sensation in the larynx, creating the 'chest voice' or khorekteer.",
+          "**Khoomei (General Technique):** While maintaining the khorekteer voice, shape the lips and mouth into a small circular opening to create a resonating chamber. The pitch of the melodic harmonic is manipulated by subtle movements of the lips, throat, tongue, or jaw. The tongue typically remains quietly seated between the lower teeth, with the root of the tongue and epiglottis adjusted to select the desired harmonic.",
+          "**Sygyt (Whistling Style):** To achieve the high-pitched, whistling sound of Sygyt, continue the Khoomei technique but bring the tongue to the top of the jaw, filtering the sound through a small opening, often between the teeth. The lips are shaped into a bell-like form, usually with an 'ee' vowel, to direct the sound.",
+          "**Kargyraa (Deep Growling Style):** This style produces a deep, almost growling sound. It involves constricting the larynx to bring the vestibular folds (also known as 'false vocal cords') together, causing them to vibrate simultaneously with the vocal cords. This creates two connected sound sources and can produce an undertone at half the frequency of the fundamental. The technique often begins with a closed mouth for back pressure, followed by a squeeze of the larynx (like clearing the throat) before opening the mouth to experiment with vowel sounds.",
+          "**Practice:** Mastering Tuvan throat singing requires years of dedicated practice and precise control over the vocal tract muscles."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Mongolia",
+            "element_name": "Mongolian Throat Singing (Höömii/Khöömii/Xöömii)",
+            "relationship_reason": "Tuvan throat singing shares a common origin with Mongolian throat singing among the Turko-Mongol tribes of Inner Asia. Both traditions employ similar vocal techniques to produce multiple pitches simultaneously and hold deep cultural and spiritual significance."
+          },
+          {
+            "country": "Russia",
+            "element_name": "Altai Kai, Khakass Khai, Bashkir throat singing",
+            "relationship_reason": "Similar throat singing traditions are found among indigenous peoples in other parts of Russia, such as the Altai, Khakassia, and Bashkortostan. These practices stem from shared cultural roots in the Altai and Sayan mountains region."
+          },
+          {
+            "country": "China",
+            "element_name": "Inner Mongolian throat singing",
+            "relationship_reason": "Throat singing is also practiced in Inner Mongolia, reflecting the broader cultural area of Inner Asia and shared nomadic traditions."
+          },
+          {
+            "country": "Canada",
+            "element_name": "Inuit Throat Singing",
+            "relationship_reason": "While distinct in its cultural context, purpose, and specific techniques, Inuit throat singing in Northern Canada is another form of polyphonic overtone singing practiced by indigenous communities, demonstrating a broader human capacity for this vocal art."
+          },
+          {
+            "country": "South Africa",
+            "element_name": "Xhosa overtone singing",
+            "relationship_reason": "The Xhosa people of South Africa also have a tradition of overtone singing, though it takes on various styles and meanings compared to the Central Asian traditions, highlighting the diverse manifestations of this vocal technique globally."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-01T02:36:01.678437Z",
-    "total_ich_elements": 287,
-    "complete_records": 277,
-    "incomplete_records": 10,
+    "generated_at": "2026-09-03T02:02:30.464321Z",
+    "total_ich_elements": 289,
+    "complete_records": 281,
+    "incomplete_records": 8,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 99,
+      "Traditional Craftsmanship": 100,
       "Social Practices & Rituals": 56,
       "Culinary Traditions": 44,
       "Culinary Traditions | Social Practices & Rituals": 3,
-      "Performing Arts": 25,
+      "Performing Arts": 26,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
       "Oral Traditions": 20,
