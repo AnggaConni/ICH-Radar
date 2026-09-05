@@ -14499,9 +14499,10 @@
         "https://www.jamiiforums.com/threads/mila-na-desturi-zetu.722621/",
         "https://fermentingforfoodies.com/togwa-recipe-tanzanian-fermented-maize-drink/",
         "https://www.youtube.com/watch?v=vS0uUMEHMj8",
-        "https://orantcharitiesafrica.org/how-to-make-thobwa-malawian-recipes/"
+        "https://orantcharitiesafrica.org/how-to-make-thobwa-malawian-recipes/",
+        "https://www.our-africa.org/tanzania/people-culture"
       ],
-      "scraped_at": "2026-06-15T02:44:12.714567Z",
+      "scraped_at": "2026-09-05T01:55:42.537769Z",
       "location": {
         "country": "Tanzania",
         "provinces": [],
@@ -14509,43 +14510,52 @@
         "lng": 35.7878438
       },
       "resume_analisa": {
-        "description": "This cultural practice involves specific culinary and social rituals extended to a son-in-law when he visits his in-laws, serving as a profound demonstration of respect. The ritual typically begins with a special breakfast of 'Ikirunguri cha Bhairwa', a porridge made from millet flour and cow fat. Following this, 'Ubhusara' (also known as Togwa), a traditional fermented millet drink, is offered in a distinctive container called 'Ikisonzo' while the son-in-law awaits lunch. The lunch itself is a significant meal, often featuring 'Ugali wa Udaga' (ugali made from a mixture of millet and cassava flour) accompanied by beef or goat meat and a side dish called 'Kichuri'.",
-        "cultural_significance": "These hospitality rituals are deeply embedded in the community's cultural fabric, symbolizing 'HESHIMA YA PEKEE' (special respect) for the son-in-law. They reinforce familial bonds, demonstrate generosity, and uphold the traditional values of welcoming and honoring guests, particularly those who have married into the family. The specific foods and their presentation carry symbolic weight, signifying the importance of the relationship and the family's regard for their new member.",
+        "description": "While the specific ritual named 'Ikirunguri cha Bhairwa and Ubhusara' for a son-in-law is not widely documented under these exact terms, the practice likely refers to traditional hospitality customs extended to a son-in-law in Tanzania or Malawi. These rituals often involve welcoming important guests, including in-laws, with special food and drink. Traditional fermented beverages like Togwa (Tanzania) or Thobwa (Malawi/Zambia), made from maize and millet/sorghum, are central to such hospitality, symbolizing community, sharing, and respect. The terms 'Ikirunguri' and 'Bhairwa' do not appear to directly relate to hospitality rituals in the region based on available information, with 'Ikirunguri' typically meaning heartburn/nausea in Kirundi/Kinyarwanda and 'Bhairwa' referring to a Hindu deity. It is possible these are highly localized terms, misspellings, or metaphorical usages.",
+        "cultural_significance": "Hospitality is a cornerstone of Tanzanian and Malawian cultures, emphasizing respect for elders and guests, and strengthening family and community bonds. Welcoming a son-in-law with special rituals and offerings, such as traditional fermented drinks, signifies acceptance into the extended family and fosters goodwill. These practices reinforce social structures, demonstrate appreciation, and ensure harmonious relationships between families. The sharing of traditional foods and beverages like Togwa or Thobwa is a powerful symbol of unity, celebration, and the agricultural heritage of the communities.",
+        "drr_relevance": true,
+        "drr_mechanism": "By strengthening social cohesion and inter-family relationships, these hospitality rituals contribute to community resilience. Strong social networks facilitate mutual support, resource sharing, and collective action during times of crisis or disaster, thereby indirectly aiding in disaster risk reduction and recovery.",
         "gemini_tags": [
-          "Tanzanian culture",
-          "hospitality",
-          "traditional food",
-          "millet porridge",
-          "fermented drink",
-          "family rituals",
-          "East African traditions",
-          "culinary heritage"
+          "Hospitality",
+          "Family Rituals",
+          "Son-in-Law",
+          "Togwa",
+          "Thobwa",
+          "Fermented Drinks",
+          "Tanzanian Culture",
+          "Malawian Culture",
+          "Social Cohesion",
+          "Community Resilience"
         ]
       },
       "resume_tata_cara": {
-        "type": "Culinary preparation and serving ritual",
+        "type": "ritual_sequence",
         "materials_and_tools": [
-          "Millet flour (for Ikirunguri cha Bhairwa and Ugali wa Udaga)",
-          "Cow fat (for Ikirunguri cha Bhairwa)",
-          "Maize or millet flour (for Ubhusara/Togwa)",
-          "Water (for Ubhusara/Togwa)",
-          "Sugar (optional, for Ubhusara/Togwa)",
-          "Cardamom powder (optional, for Ubhusara/Togwa)",
-          "Cassava flour (for Ugali wa Udaga)",
-          "Beef or goat meat",
-          "Ingredients for 'Kichuri' (side dish)",
-          "Pots",
-          "Stirring utensils",
-          "Ikisonzo (traditional serving container for Ubhusara)"
+          "Maize flour (m'gaiwa)",
+          "Millet or sorghum flour (maŵele/ichimela)",
+          "Water",
+          "Large cooking pot (mbiya)",
+          "Stirring spoon",
+          "Sieve/cloth for straining",
+          "Serving containers (e.g., cups, calabashes)",
+          "Optional: sugar, salt, ginger powder"
         ],
         "step_by_step": [
-          "**Ikirunguri cha Bhairwa Preparation (Breakfast)**: Prepare a porridge using millet flour and cow fat. The specific step-by-step process for 'Ikirunguri cha Bhairwa' is not detailed in the available information. Serve this porridge as breakfast to the son-in-law.",
-          "**Ubhusara (Togwa) Preparation (Mid-morning drink)**:",
-          "1.  **Make the Uji Base (Thin Porridge)**: In a bowl, mix maize or millet flour with cold water until smooth, ensuring no lumps. Bring 700ml of water to a boil in a medium pot. Reduce the heat to a gentle simmer and slowly pour in the flour-water mixture while stirring continuously. Stir constantly for 5-8 minutes as it thickens until the porridge is smooth, thick, and has lost its raw flour taste.",
-          "2.  **Cool**: Allow the cooked porridge to cool down to room temperature (approximately 25-30°C or 77-86°F).",
-          "3.  **Ferment**: Transfer the cooled porridge to a clean, non-reactive container. Cover it loosely and let it ferment at room temperature for 24-48 hours. Stir occasionally during this period. The fermentation is complete when the mixture develops a mildly sour taste and a slightly bubbly appearance.",
-          "4.  **Thin and Serve**: The fermented Togwa will typically be thick. Gradually add cold, clean water and stir until the desired drinking consistency is achieved, ranging from a thin porridge to an almost juice-like liquid. For a smoother texture, it can be strained through cheesecloth or a fine mesh strainer. Serve the prepared Ubhusara in an 'Ikisonzo', a traditional container.",
-          "**Lunch Preparation**: Prepare 'Ugali wa Udaga' by cooking a mixture of millet and cassava flour. This ugali is traditionally served with beef or goat meat and a side dish known as 'Kichuri'."
+          "**Preparation of Traditional Drink (e.g., Thobwa/Togwa):**",
+          "Boil 6 cups of water in a large pot.",
+          "In a separate bowl, mix maize flour with 2 cups of cold water to create a smooth paste.",
+          "Gradually add the maize paste to the boiling water, stirring continuously to avoid lumps.",
+          "Reduce heat and simmer for about 30 minutes, stirring occasionally until thickened.",
+          "Remove from heat and let it cool to room temperature.",
+          "Once cooled, add remaining water and millet/sorghum flour, mixing well.",
+          "Cover the mixture and let it ferment at room temperature for 1-3 days, depending on desired fermentation level.",
+          "After fermentation, strain the liquid through a fine sieve or cloth into a clean container.",
+          "Serve chilled or at room temperature, with optional sugar, salt, or ginger powder.",
+          "**Hospitality Ritual (General Principles for Son-in-Law):**",
+          "The son-in-law is formally welcomed into the home, often by the wife's family or community elders.",
+          "Traditional greetings are exchanged, emphasizing respect and goodwill.",
+          "The prepared traditional drink (e.g., Togwa/Thobwa) is offered as a primary gesture of hospitality and welcome.",
+          "Other traditional foods may be served, and conversations are held to strengthen familial bonds.",
+          "The ritual reinforces the acceptance of the son-in-law into the extended family and community."
         ]
       },
       "shared_heritage_detection": {
@@ -14554,17 +14564,22 @@
         "related_elements": [
           {
             "country": "Malawi",
-            "element_name": "Thobwa",
-            "relationship_reason": "Thobwa is a traditional Malawian fermented beverage made from cornflour and sorghum, sharing similarities with Togwa (Ubhusara) as a fermented grain drink common in East Africa."
+            "element_name": "Thobwa (Fermented Maize Drink)",
+            "relationship_reason": "Thobwa is a culturally significant fermented maize drink in Malawi and Zambia, similar to Togwa in Tanzania, often served as a symbol of hospitality and community."
           },
           {
-            "country": "Southern Africa",
-            "element_name": "Mahewu",
-            "relationship_reason": "Togwa (Ubhusara) is described as a 'Southern African cousin' to Mahewu, indicating a broader regional tradition of fermented grain-based drinks."
+            "country": "Zambia",
+            "element_name": "Thobwa (Fermented Maize Drink)",
+            "relationship_reason": "Thobwa is a traditional fermented drink shared by Malawian and Zambian cultures, used in hospitality and celebrations."
+          },
+          {
+            "country": "Kenya",
+            "element_name": "Okhwingisa (Son's Welcome Ceremony for Parents)",
+            "relationship_reason": "While different in specific naming and focus, the Okhwingisa ritual among the Abanyala ba Kakamega in Kenya highlights the importance of formal welcoming ceremonies for parents and, subsequently, in-laws, reflecting a broader regional emphasis on family integration and respect."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-92077eef",
@@ -18034,46 +18049,64 @@
         "https://study.com/academy/lesson/aboriginal-dreamtime-stories-meaning-art-examples.html",
         "https://ochreart.com.au/understanding-aboriginal-dreaming/",
         "https://en.wikipedia.org/wiki/The_Dreaming",
-        "https://parksaustralia.gov.au/kakadu/discover/stories/"
+        "https://parksaustralia.gov.au/kakadu/discover/stories/",
+        "https://museum.wa.gov.au/explore/online-exhibitions/tjukurpa-and-tingari-aboriginal-knowledge-and-ancient-ancestors"
       ],
-      "scraped_at": "2026-07-19T01:44:18.877447Z",
+      "scraped_at": "2026-09-05T01:56:57.145801Z",
       "location": {
         "country": "Australia",
-        "provinces": [
-          "Northern Territory",
-          "Western Australia",
-          "South Australia",
-          "New South Wales",
-          "Queensland",
-          "Victoria",
-          "Tasmania"
-        ],
-        "lat": -19.8516101,
-        "lng": 133.2303375
+        "provinces": [],
+        "lat": -24.7761086,
+        "lng": 134.755
       },
       "resume_analisa": {
-        "description": "Dreamtime stories, also known as The Dreaming or Tjukurrpa (in some Aboriginal languages), are ancient narratives central to Australian Aboriginal culture. They date back thousands of years and form the spiritual foundation of Aboriginal beliefs, explaining the creation of the world, the landscape, and the laws governing human behavior. These stories are not merely myths or legends but a living cultural heritage passed down through generations orally and through art, dance, and ceremonies. [2, 3, 4] They provide insights into Aboriginal cosmology, the relationship between humans and the environment, and the moral and ethical codes guiding Aboriginal societies. [2] Dreamtime is understood as a continuum of past, present, and future, not a static historical period. [4, 5, 10] The stories often feature ancestral beings, such as the Rainbow Serpent, who shaped the land and established cultural practices. [2, 3, 6, 13, 14]",
-        "cultural_significance": "Dreamtime stories hold immense cultural and spiritual significance for Aboriginal communities. They serve as a vital means of preserving and transmitting cultural knowledge, teaching moral lessons, and reinforcing social structures. [2, 5] These narratives connect Aboriginal people to their land, ancestors, and each other, forming the basis of their identity and worldview. [2] They provide a framework for understanding the world and humanity's place within it, emphasizing the interconnectedness of all living beings and the importance of living in harmony with nature. [2] Dreamtime narratives guide religious rituals, ceremonies, and everyday life, dictating rules for behavior, social interactions, and custodianship of the land. [3, 4, 5, 10] The stories are deeply intertwined with specific landscapes, landmarks, and ecological features, expressing the perception of the land as a spiritual entity imbued with the essence of Ancestral Beings. [13]",
+        "description": "Dreamtime Stories, also known as The Dreaming or Tjukurrpa, are ancient narratives fundamental to Australian Aboriginal culture. They are not merely myths or legends but a living cultural heritage that dates back thousands of years, explaining the creation of the world, the landscape, and the laws governing human behavior. The term 'Dreamtime' was coined by early anthropologists, but 'The Dreaming' or specific language terms like 'Tjukurrpa' (Warlpiri) or 'Altyerr' are often preferred by Indigenous Australians, as they better convey a timeless, ever-present reality rather than a past event or a literal dream. These stories are living repositories of knowledge, embodying moral codes, survival techniques, and profound environmental understanding.",
+        "cultural_significance": "The Dreaming is the foundation of Aboriginal spiritual beliefs and a complex, all-encompassing belief system that defines religion, law, and moral systems for Indigenous Australians. It provides identity, dictates spirituality, and establishes intricate relationships between individuals, the land, animals, and other people. Ancestral Beings, who shaped the land and established cultural practices, are central to these narratives, and their spirits are believed to remain present in the country, animals, places, and people. The stories serve to preserve and transmit cultural knowledge, teach moral lessons, and reinforce social structures, connecting Aboriginal people to their land, ancestors, and each other, forming the basis of their worldview.",
+        "drr_relevance": true,
+        "drr_mechanism": "Dreamtime Stories contribute significantly to Disaster Risk Reduction (DRR), ecological resilience, and climate adaptation by embedding traditional ecological knowledge (TEK) and long-term environmental observations. These narratives contain vital information on fire management practices (cultural burning), sustainable hunting methods, plant harvesting cycles, and weather prediction systems. Aboriginal climate culture, rooted in observations of plants, animals, and landscape reactions to weather, is intrinsically linked to Dreamtime spirituality, as seen in stories like the Rainbow Serpent, which reflects understanding of water systems. Furthermore, Dreamtime stories have preserved accurate climate history over millennia, including records of sea-level changes and extreme environmental shifts, demonstrating a deep, generational understanding of environmental dynamics crucial for adaptation. This traditional knowledge is increasingly recognized and integrated into modern DRR strategies for its proven effectiveness in managing natural hazards and building community resilience.",
         "gemini_tags": [
+          "Oral Tradition",
           "Aboriginal Culture",
-          "Indigenous Australian Heritage",
-          "Oral Traditions",
-          "Creation Myths",
-          "Folklore",
-          "Spirituality",
-          "Cultural Knowledge Transmission",
+          "Dreaming",
+          "Tjukurrpa",
+          "Indigenous Knowledge",
+          "Creation Stories",
+          "Cultural Heritage",
+          "Australia",
+          "Traditional Ecological Knowledge",
+          "Disaster Risk Reduction",
+          "Climate Adaptation",
+          "Ecological Resilience",
+          "Storytelling",
           "Ancestral Beings",
-          "Land Connection",
-          "Moral Teachings"
+          "Cultural Burning"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "ritual_sequence",
+        "materials_and_tools": [
+          "Oral narration",
+          "Art (paintings, rock art)",
+          "Dance",
+          "Song",
+          "Ceremonies",
+          "Rituals",
+          "The 'Country' (landscapes where stories took place)"
+        ],
+        "step_by_step": [
+          "Transmission through oral narration: Elders and older community members verbally share stories with younger generations, often adapting them to contemporary contexts while maintaining spiritual essence.",
+          "Artistic representation: Stories are depicted through various art forms, including paintings, rock art, and ceremonial objects, which serve as visual records and teaching tools.",
+          "Performance through song and dance: Ceremonial songs and dances are integral to sharing and reinforcing Dreamtime narratives, often detailing journeys of Ancestral Spirits and embedding knowledge about land, plants, and animals.",
+          "Ceremonial practices: Rituals and ceremonies are performed to connect with the Ancestral Spirits and the 'Dreaming', often taking place on specific sites where the stories originated.",
+          "Learning 'on Country': Young people are taken by Elders to specific landforms and sites where stories took place, allowing them to learn the narratives in their geographical and spiritual context, a process often referred to as 'going through Law'."
+        ]
+      },
       "shared_heritage_detection": {
-        "is_shared": false,
-        "confidence_score": 0.8,
+        "is_shared": true,
+        "confidence_score": 0.95,
         "related_elements": []
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-86853e92",
@@ -25546,17 +25579,194 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7b2a7753",
+      "element_name": "The Art of the Neapolitan Pizzaiuolo",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00722-2015-EN-00003.jpg",
+      "source_urls": [
+        "https://www.caputoflour.com/blog/mastering-unescos-intangible-cultural-heritage/",
+        "https://ich.unesco.org/en/RL/art-of-neapolitan-pizzaiuolo-00722",
+        "https://banjaranfoodie.com/the-art-of-neapolitan-pizzaiuolo-unesco-intangible-cultural-heritage/",
+        "https://whartibus.com/art-of-pizzaiuolo-naples-intangible-cultural-heritage-unesco/",
+        "https://www.smithsonianmag.com/smart-news/mamma-mia-naples-pizza-making-process-gets-unesco-heritage-status-180967527/",
+        "https://lifeandthyme.com/food/the-art-of-the-neapolitan-pizza-maker/",
+        "https://www.b-rent.it/en/unesco-heritage-pizza/",
+        "https://www.greatitalianchefs.com/stories/food-and-drink-news/neapolitan-pizza-unesco-status",
+        "https://www.caputoflour.com/recipes/authentic-neapolitan-pizza-recipe/",
+        "https://www.orsongygi.com/ingredients-for-neapolitan-style-pizza/",
+        "https://ich.unesco.org/doc/src/12.COM-11.B.17-EN.docx",
+        "https://nikodouniko.com/neapolitan-pizza-dough-masterclass/",
+        "https://www.youtube.com/watch?v=R9K4vL3f69Y",
+        "https://gozney.com/blogs/recipes/neapolitan-pizza-dough-recipe",
+        "https://www.mdpi.com/2304-8158/14/5/1049",
+        "https://www.eurekaselect.com/article/122119",
+        "https://www.researchgate.net/publication/358983177_Carbon_Footprint_of_a_Typical_Neapolitan_Pizzeria",
+        "https://ich.unesco.org/foto/00722-2015-EN-00003.jpg",
+        "https://ich.unesco.org/foto/00722-2015-EN-00004.jpg",
+        "https://ich.unesco.org/foto/00722-2015-EN-00005.jpg",
+        "https://www.gettyimages.com/detail/news-photo/neapolitan-pizza-makers-pose-with-a-pizza-to-celebrate-the-news-photo/887105268",
+        "https://www.figandoliveplatter.com/homemade-neapolitan-pizza/",
+        "https://alittlespoon.com/classic-neapolitan-style-margherita-pizza/",
+        "https://murmursofricotta.com/neapolitan-pizza-dough/",
+        "https://www.pizzanapoletana.org/en/ricetta_pizza_napoletana",
+        "https://lacoquette.com/authentic-margherita-pizza-recipe/"
+      ],
+      "scraped_at": "2026-09-05T01:57:21.006838Z",
+      "location": {
+        "country": "Italy",
+        "provinces": [
+          "Campania"
+        ],
+        "lat": 40.860672,
+        "lng": 14.843984
+      },
+      "resume_analisa": {
+        "description": "The Art of the Neapolitan 'Pizzaiuolo' is a culinary practice deeply rooted in Naples, Italy, comprising four distinct phases: dough preparation, leavening, shaping, and baking in a wood-fired oven. This traditional craft involves a specific rotatory movement by the baker and is passed down through generations.",
+        "cultural_significance": "This art form is a strong marker of identity for the Neapolitan community, fostering social gatherings and intergenerational exchange. It is considered a social ritual where the pizzaiuolo's bench and oven act as a 'stage' for performance and sharing. For many young practitioners, learning this art also provides a path to avoid social marginalization. It has become a global symbol of sharing, joy, and 'Made in Italy' excellence.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Neapolitan Pizza",
+          "Italian Cuisine",
+          "Traditional Craftsmanship",
+          "Food Heritage",
+          "UNESCO Intangible Cultural Heritage",
+          "Naples",
+          "Pizzaiuolo",
+          "Culinary Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Culinary Process",
+        "materials_and_tools": [
+          "Soft wheat flour (preferably '00' type, such as Caputo '00' Pizzeria Flour)",
+          "Fresh brewer's yeast",
+          "Water (room temperature)",
+          "Salt",
+          "San Marzano peeled tomatoes (crushed by hand)",
+          "Fresh mozzarella (buffalo mozzarella or fior di latte)",
+          "Fresh basil leaves",
+          "Extra virgin olive oil",
+          "Wood-fired oven (reaching extremely high temperatures, 450-500°C / 840-930°F)",
+          "Mixing bowl or mixer with dough hook attachment",
+          "Dough cutter/scraper",
+          "Dough trays (for proofing)",
+          "Pizza peel"
+        ],
+        "step_by_step": [
+          "**Dough Preparation:** Dissolve fresh yeast and salt in room temperature water. Gradually add '00' flour to the liquid, mixing by hand or with a dough hook until a smooth, elastic dough is formed and comes away from the sides of the bowl.",
+          "**First Leavening (Bulk Fermentation):** Allow the dough to rest in a covered bowl at room temperature for at least 30 minutes, or overnight (around 12-16 hours) for optimal digestibility and flavor development.",
+          "**Dough Balling:** Divide the dough into individual balls (approximately 180-250g each) and shape them by hand, ensuring a smooth surface.",
+          "**Second Leavening (Proofing):** Place the dough balls in trays, cover them, and let them rise again at room temperature for several hours (typically 4-8 hours), until they are light and airy.",
+          "**Shaping the Pizza:** Gently stretch each dough ball by hand, working from the center outwards to create a round disk with a raised edge (cornicione) without using a rolling pin. The pizzaiuolo often hurls the dough into the air to achieve the desired shape and texture.",
+          "**Topping:** For a Margherita, spread hand-crushed San Marzano tomatoes from the center in a spiraling, clockwise motion. Add fresh mozzarella, a few basil leaves, and a drizzle of extra virgin olive oil. For a Marinara, use tomato, garlic, oregano, and olive oil.",
+          "**Baking:** Transfer the topped pizza to a preheated wood-fired oven (450-500°C / 840-930°F). Bake for approximately 60-90 seconds, continuously rotating the pizza with a peel to ensure even cooking and a perfectly charred, puffy crust."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Global",
+            "element_name": "Pizza (various styles and adaptations)",
+            "relationship_reason": "The Neapolitan 'Pizzaiuolo' art is the origin of pizza, which has since spread and been adapted into countless variations worldwide, fostering cultural exchange and culinary innovation in different regions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-893ece71",
+      "element_name": "Hungarian Traditional Pottery",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//kepmas.hu/korond-es-a-korongok-egy-erdelyi-telepules-ahol-minden-ember-fazekas-is&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://kepmas.hu/korond-es-a-korongok-egy-erdelyi-telepules-ahol-minden-ember-fazekas-is",
+        "https://www.youtube.com/watch?v=R_b_i-19G2Y",
+        "https://wayfaringlondoner.wordpress.com/2016/12/28/korond-pottery-the-workshop-of-ilyes-veszti-mihaly/",
+        "https://ich.unesco.org/en/files-2026-under-process-01614",
+        "https://ceramicartsnetwork.org/daily/keeping-the-hungarian-folk-pottery-tradition-alive/"
+      ],
+      "scraped_at": "2026-09-05T01:58:31.006922Z",
+      "location": {
+        "country": "Hungary",
+        "provinces": [
+          "Transylvania (now Romania - Harghita County, Korond)",
+          "Csongrád-Csanád County (Hódmezővásárhely)",
+          "Hajdú-Bihar County (Nádudvar)",
+          "Jász-Nagykun-Szolnok County (Mezőtúr)",
+          "Vas County (Magyarszombatfa, Őrség region)",
+          "Jász-Nagykun-Szolnok County (Tiszafüred)"
+        ],
+        "lat": 35.1982216,
+        "lng": -82.7724889
+      },
+      "resume_analisa": {
+        "description": "Hungarian traditional pottery is an ancient craft involving the creation of functional and decorative ceramic objects from locally sourced clay. It is characterized by distinct regional styles, forms, and ornamentation, and has been a vital part of Hungarian folk art and daily life for centuries.",
+        "cultural_significance": "This craft holds deep cultural significance, having provided essential household items like cooking pots, storage jars, and plates. It also served as a medium for artistic expression, with motifs often reflecting local traditions, beliefs (e.g., flowers representing love, family life, faith), and customer demands. The knowledge and skills are traditionally passed down through generations, often within families, and the craft has been a source of livelihood for entire villages, sometimes involving bartering goods for crops. Pottery centers like Hódmezővásárhely were once major hubs, with a potting tradition predating written history by approximately 7000 years. The craft has evolved to incorporate new techniques like glazing while preserving archaic patterns and forms. The 'Miska jug' is a notable example of a traditional Hungarian pottery form. The tradition is recognized for its importance, with a nomination for the UNESCO Representative List.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Pottery",
+          "Ceramics",
+          "Hungarian Folk Art",
+          "Cultural Heritage",
+          "Handicraft",
+          "Clay Work",
+          "Folk Traditions",
+          "Hungary",
+          "Transylvania"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Craft",
+        "materials_and_tools": [
+          "Clay (locally mined, cleaned, mixed, stamped, sliced, refined)",
+          "Potter's wheel (traditional kick wheel or modern electric wheel)",
+          "Water",
+          "Glazes (lead glaze, white glaze, blue, black, red pigments)",
+          "Kiln (wood-fired kilns, electric kilns)",
+          "Tools for shaping, carving, decorating (e.g., fingers, wooden knife, incising tools, brushes)"
+        ],
+        "step_by_step": [
+          "**Clay Preparation:** Clay is mined, cleaned, mixed, stamped with bare feet, sliced, and refined over several days to achieve the desired consistency. It is then formed into lumps of various sizes.",
+          "**Shaping (Throwing):** The prepared clay is placed on a potter's wheel. The potter uses their feet to tread the larger, lower wheel (for kick wheels) while shaping the clay on the smaller upper wheel with their hands, pulling it to the desired form and size.",
+          "**Drying:** The shaped pots are set aside to dry until they reach a 'leather hard' state.",
+          "**Priming (Optional):** Some pottery is primed with a white base color.",
+          "**Decoration:** This involves engraving, striping, or painting. Traditional motifs often include flowers (tulips, family tree), birds (bird of peace), and coats of arms, with symbolic meanings. Decoration is traditionally done by women in some regions like Korond.",
+          "**First Firing (Bisque Firing/Zsengélés):** The decorated (or unglazed) vessels undergo an initial firing in a kiln, often around 900-1000 degrees Celsius, which sets the designs and colors.",
+          "**Glazing:** After the first firing, lead glaze or other glazes are poured over the vessel. Glazing was historically simple and practical, mostly applied inside and around the rim and handle for everyday pots. Fully glazed items were more unique and expensive.",
+          "**Second Firing (Glaze Firing):** The glazed pottery is fired again at high temperatures (e.g., over 900 degrees Celsius for Korond pottery, 1796°F/980°C for Hódmezővásárhely pottery) to melt and fuse the glaze, creating a durable, often glossy, finish. The kiln is then allowed to cool slowly with the pottery inside.",
+          "**Black Pottery (Specific Technique):** For black pottery, a reduction firing method is used where oxygen is removed from the kiln (reaching nearly 1,000°C). Soot, smoke, and debris particles get trapped in the clay, turning it pitch black. Designs are then painted with a polishing liquid."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Multiple (e.g., Mexico, Spain, France, Morocco, Greece, Japan, Portugal)",
+            "element_name": "Various traditional pottery/ceramic traditions",
+            "relationship_reason": "Pottery is a universal ancient craft with shared techniques (e.g., reduction firing for black pottery) and global presence of folk art ceramics."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-03T02:02:30.464321Z",
-    "total_ich_elements": 289,
-    "complete_records": 281,
-    "incomplete_records": 8,
+    "generated_at": "2026-09-05T01:59:15.894805Z",
+    "total_ich_elements": 291,
+    "complete_records": 285,
+    "incomplete_records": 6,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 100,
+      "Traditional Craftsmanship": 101,
       "Social Practices & Rituals": 56,
-      "Culinary Traditions": 44,
+      "Culinary Traditions": 45,
       "Culinary Traditions | Social Practices & Rituals": 3,
       "Performing Arts": 26,
       "Social Practices & Rituals | Performing Arts": 5,
