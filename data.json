@@ -17722,56 +17722,55 @@
         "https://www.traveloka.com/en-id/explore/destination/history-of-lake-toba-acc/249960",
         "https://medium.com/@delarosaeloise/the-story-of-lake-toba-is-a-famous-indonesian-folktale-from-north-sumatra-265d956a62c6",
         "https://www.indoindians.com/stories-and-myths-from-lake-toba-sumatra/",
-        "https://daerahkita.com/the-legend-of-lake-toba-folklore-from-north-sumatra/",
-        "https://easystoriesinenglish.com/lake/"
+        "https://daerahkita.com/the-legend-of-lake_toba-folklore-from-north-sumatra/",
+        "https://easystoriesinenglish.com/lake/",
+        "https://www.iucn.org/news/commission-environmental-economic-and-social-policy/202311/lake-toba-and-batak-legacy-harmonising-indigenous-wisdom-conservation"
       ],
-      "scraped_at": "2026-07-17T01:45:32.706730Z",
+      "scraped_at": "2026-09-07T01:47:24.575443Z",
       "location": {
         "country": "Indonesia",
         "provinces": [
           "North Sumatra"
         ],
-        "lat": 2.1923519,
-        "lng": 99.3812201
+        "lat": -2.4833826,
+        "lng": 117.8902853
       },
       "resume_analisa": {
-        "description": "The Legend of Lake Toba is a prominent Indonesian folktale from North Sumatra that explains the origin of Lake Toba and the island of Samosir. The story centers on a poor farmer named Toba who, after a long day of fishing, catches a magical golden fish. This fish transforms into a beautiful woman, and Toba falls in love with her. She agrees to marry him on one strict condition: he must never reveal her true origin as a fish. They live happily and have a son named Samosir. However, one day, when Samosir fails to deliver food to his father in the fields and eats it instead, Toba loses his temper and, in a fit of rage, curses his son by calling him a 'son of a fish.' This act breaks Toba's sacred promise to his wife. Upon hearing this, the wife and son disappear, and a massive flood engulfs the valley, creating the vast Lake Toba, with the hill where Samosir stood becoming Samosir Island.",
-        "cultural_significance": "This legend holds deep cultural significance for the Batak Toba people, who are indigenous to the Lake Toba region. It serves as an origin myth for one of Indonesia's most iconic natural landmarks, intertwining geological history with a moral narrative. The tale emphasizes the importance of keeping promises, controlling one's emotions, and respecting the origins of others. It also highlights the severe consequences of betrayal and anger. The story is passed down through generations, reinforcing community values and the spiritual connection between the Batak people and their ancestral land.",
+        "description": "The Legend of Lake Toba is a famous Indonesian folktale from North Sumatra that explains the origin of Lake Toba and Samosir Island. It tells the story of a poor farmer named Toba who catches a magical fish that transforms into a beautiful woman. They marry under the condition that Toba never reveals her true identity. They have a son, but Toba eventually breaks his promise in a fit of anger, leading to a catastrophic flood that forms the vast lake and the island in its center.",
+        "cultural_significance": "This legend is a cornerstone for the Batak community, symbolizing themes of loyalty, betrayal, and supernatural intervention. It emphasizes the importance of keeping promises and highlights the dire consequences of breaking them, reflecting cultural values of integrity and accountability. The narrative also underscores the spiritual and moral interconnectedness of human emotions with nature, suggesting that human transgressions can lead to natural calamities. For the indigenous Batak people, Lake Toba is considered the source and soul of their life and land.",
+        "drr_relevance": true,
+        "drr_mechanism": "The legend serves as a cautionary tale, implicitly promoting responsible behavior and respect for the environment by depicting a catastrophic flood as a consequence of human actions and broken promises. This narrative fosters a harmonious relationship with nature, contributing to ecological resilience and indirectly to disaster risk reduction by discouraging actions that could lead to environmental degradation. The story's moral lesson about the severe consequences of disrespect for nature can be seen as a traditional way of understanding and communicating the potential for natural disasters and the importance of ethical conduct. Furthermore, the cultural values of the Batak Toba tribe, as influenced by their deep connection to Lake Toba, foster the sustainability of the lake's ecosystem services, including protection against environmental threats.",
         "gemini_tags": [
-          "Indonesian folklore",
-          "Origin myth",
-          "Lake Toba",
-          "Batak culture",
-          "Moral tale",
-          "Supernatural",
-          "Transformation legend",
-          "Oral tradition",
-          "North Sumatra"
+          "Folklore",
+          "Origin Story",
+          "Batak Culture",
+          "North Sumatra",
+          "Oral Tradition",
+          "Moral Tale",
+          "Environmental Ethics",
+          "Disaster Myth"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "narrative_sequence",
+        "materials_and_tools": [],
+        "step_by_step": [
+          "A poor farmer named Toba lives in North Sumatra, sustaining himself through farming and fishing.",
+          "While fishing, Toba catches a magical fish that transforms into a beautiful woman, sometimes named Siti.",
+          "They fall in love and marry, with the woman imposing a strict condition: Toba must never reveal her origin as a fish.",
+          "They have a son, often named Simalang or Samosir.",
+          "In a moment of anger or frustration, Toba breaks his sacred promise by calling his son a 'fish child' or 'son of a fish.'",
+          "Heartbroken by the betrayal, the woman returns to her original form or disappears into the water.",
+          "A catastrophic flood ensues, engulfing the land and forming the vast body of water known as Lake Toba.",
+          "The son, Simalang/Samosir, is often associated with the island that emerges in the middle of the newly formed lake."
+        ]
+      },
       "shared_heritage_detection": {
-        "is_shared": true,
-        "confidence_score": 0.7,
-        "related_elements": [
-          {
-            "country": "Indonesia",
-            "element_name": "Malin Kundang",
-            "relationship_reason": "Shares the theme of an ungrateful child and divine retribution, where a broken promise or disrespect leads to a physical transformation (Malin Kundang turned to stone)."
-          },
-          {
-            "country": "Indonesia",
-            "element_name": "Keong Emas (The Golden Snail)",
-            "relationship_reason": "Shares the theme of magical transformation of a human into an animal (princess into a golden snail) and the breaking of a curse through love or a specific condition."
-          },
-          {
-            "country": "Indonesia",
-            "element_name": "Timun Mas (The Golden Cucumber)",
-            "relationship_reason": "Shares themes of magical birth/origin and a child escaping a perilous fate, often involving magical items or transformations."
-          }
-        ]
+        "is_shared": false,
+        "confidence_score": null,
+        "related_elements": []
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-51547efd",
@@ -19303,54 +19302,61 @@
         "https://www.thejakartapost.com/culture/2023/05/10/a-batak-tale-of-weaving-preserving-tradition-and-beliefs.html",
         "https://www.kompas.id/baca/english/2025/12/11/en-sehelai-kain-yang-mendampingi-perjalanan-hidup-orang-batak",
         "https://bataktextiles.com/undocumented-weaving-and-dyeing-techniques-in-silaen/",
-        "https://ijsd.org/index.php/ijsd/article/view/10309"
+        "https://ijsd.org/index.php/ijsd/article/view/10309",
+        "https://www.kompas.tv/video/530483/proses-pembuatan-tenun-ulos-tradisional-dari-pewarna-alami-di-desa-papande"
       ],
-      "scraped_at": "2026-07-29T01:32:17.499178Z",
+      "scraped_at": "2026-09-07T01:47:48.324111Z",
       "location": {
         "country": "Indonesia",
         "provinces": [
           "North Sumatra"
         ],
-        "lat": 2.1923519,
-        "lng": 99.3812201
+        "lat": -2.4833826,
+        "lng": 117.8902853
       },
       "resume_analisa": {
-        "description": "Ulos is a traditional handwoven textile crafted by the Batak people of North Sumatra, Indonesia. It serves as a profound symbol of warmth, affection, social status, and cultural identity. This ancestral heritage is integral to various ceremonies and rituals throughout the Batak life cycle, from birth and marriage to death.",
-        "cultural_significance": "Ulos holds deep cultural and spiritual significance for the Batak people, believed to possess mystical properties and act as a bridge between the material and spiritual realms. It is used to invoke blessings, provide protection, and establish connections with ancestors. Different types, patterns, and colors of Ulos convey specific meanings related to virtues such as courage, wisdom, harmony, fertility, and social status, as well as prayers for prosperity and longevity. The traditional act of giving Ulos, known as 'mangulosi,' is a solemn gesture of love, respect, and the transfer of blessings.",
+        "description": "Ulos is a traditional handwoven textile of the Batak people of North Sumatra, Indonesia. It initially served as a functional blanket for warmth in cold mountainous regions and evolved into a sacred symbol used in significant life moments and traditional ceremonies, from birth and marriage to death. Each Ulos carries deep philosophical meaning through its unique colors, geometric motifs, and specific uses, symbolizing blessings, affection, protection, and social status.",
+        "cultural_significance": "Ulos is inseparable from Batak communities, deeply tied to their adat (customary laws) and essential in ceremonial contexts. It symbolizes warmth, affection, social status, and cultural identity. The act of mangulosi (giving ulos) is a symbol of love and blessings, often performed by those of higher social status or family relationship. Different types of Ulos (e.g., Ragidup, Ragi Hotang, Sibolang) have specific meanings and uses in various rituals like weddings, births, and funerals, representing life, happiness, fertility, protection, and respect. It is also considered an intangible cultural heritage of Indonesia.",
+        "drr_relevance": true,
+        "drr_mechanism": "The traditional practice of Ulos weaving, particularly the use of natural dyes, contributes to ecological resilience and sustainability. It promotes the conservation of local plant species used for dyes, which are often threatened by over-exploitation and environmental changes. This practice encourages sustainable dye-plant management and preserves traditional dyeing techniques, making the industry more environmentally friendly compared to synthetic dyes. Furthermore, the weaving tradition fosters community cohesion and the intergenerational transfer of knowledge, which are crucial for cultural resilience in the face of external influences and modernization. The cultural values embedded in Ulos, such as respect for the environment, can also bolster participation in environmental preservation efforts.",
         "gemini_tags": [
-          "Traditional Textile",
+          "Traditional textile",
           "Handweaving",
-          "Batak Culture",
-          "Indonesian Heritage",
-          "Ritual Object",
-          "Symbolic Fabric",
-          "Cultural Identity",
-          "Natural Dyes"
+          "Batak culture",
+          "North Sumatra",
+          "Cultural heritage",
+          "Natural dyes",
+          "Sustainable craftsmanship",
+          "Community resilience",
+          "Intangible cultural heritage",
+          "Indigenous knowledge"
         ]
       },
       "resume_tata_cara": {
-        "type": "Handweaving",
+        "type": "crafting_process",
         "materials_and_tools": [
-          "Cotton yarn",
-          "Natural dyes (from indigo plant for blue, sappan wood and noni for red, turmeric for yellow, noni mixed with indigo for black, indigo and turmeric for green)",
-          "Manual loom (backstrap loom)",
-          "Spinner (sorha) for making yarn",
-          "Earthenware pot (palabuan) for coloring water"
+          "Cotton threads/yarn",
+          "Natural dyes from plants (indigo for blue, sappan wood and noni for red, turmeric for yellow, noni with indigo for black, indigo and turmeric for green, Ketapang tree for dyes)",
+          "Manual loom (backstrap loom/body tension loom/gedogan)",
+          "Spinner (Sorha)",
+          "Palabuan (earthenware pot)"
         ],
-        "step_by_step": null
-      },
-      "shared_heritage_detection": {
-        "is_shared": true,
-        "confidence_score": 0.7,
-        "related_elements": [
-          {
-            "country": "Indonesia",
-            "element_name": "Ikat weaving",
-            "relationship_reason": "Ulos weaving is a form of traditional handweaving, a practice common across many cultures, particularly in Southeast Asia. It also incorporates specific techniques such as warp ikat."
-          }
+        "step_by_step": [
+          "Spinning cotton: Cotton threads are spun into yarn using a tool called sorha (spinner).",
+          "Dyeing the yarn: Yarn is colored by soaking it in natural dyes derived from plants. Specific plants include indigo for blue, sappan wood and noni for red, turmeric for yellow, a mix of noni and indigo for black, and indigo and turmeric for green. The coloring process might involve storing dye in an earthenware pot called palabuan.",
+          "Preparing the warp (Garip process): The yarn is strung in a standard size, and sometimes re-colored. The warp threads are often prepared for warp ikat technique.",
+          "Weaving: The textile is woven on a manual loom, typically a backstrap or body tension loom, where tension is created by the weaver's body weight. Weaving is traditionally done by women, often during their leisure time, and can take months for a single piece due to the intricate process and meticulous attention to detail.",
+          "Specific techniques: Ulos weaving can involve various techniques like warp ikat, jugia (supplementary warp), jungkit (supplementary weft), twining, and beading weft. For Ulos Ragidup, the weaving is done in three parts, with the third part (connecting two parts of the loom with a thread-splicing strategy called mangarapot or manuluki) being the most challenging.",
+          "Finishing: Narrow borders might be woven separately and then sewn onto the main cloth. The ends are often finished with weft twining. For Ulos Ragidup, two red side strips are sewn onto the main piece.",
+          "Rituals during weaving: Some weavers perform rituals, such as cooking buffalo meat and its thickened blood, before starting the most challenging weaving stages, especially for ragidup ulos."
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 1.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-c6ae54c5",
@@ -25756,18 +25762,160 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-9603bca3",
+      "element_name": "Kimjang (Kimchi-making and sharing culture)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00881-CLT-1234-LRG.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/kimjang-making-and-sharing-kimchi-in-the-republic-of-korea-00881",
+        "https://onggi.us/blogs/news/kimjang-is-community",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9209564/",
+        "https://koreangourmethunters.com/kimjang/",
+        "https://koreakimchi.com/blogs/news/kimjang",
+        "https://kimchimari.com/kimjang-day-part-1-how-its-done/",
+        "https://mykoreanscribbles.com/kimjang-kimchi-making-experience-%EA%B9%80%EC%9E%A5/",
+        "https://en.wikipedia.org/wiki/Gimjang"
+      ],
+      "scraped_at": "2026-09-07T01:49:41.185887Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [],
+        "lat": 36.638392,
+        "lng": 127.6961188
+      },
+      "resume_analisa": {
+        "description": "Kimjang is the traditional practice of preparing and sharing large quantities of kimchi in late autumn to ensure enough food for the long, harsh winter in Korea. This annual tradition typically occurs when temperatures drop enough to slow fermentation, allowing kimchi to develop properly through the winter months. It involves families, relatives, and neighbors working together to collectively make and share kimchi.",
+        "cultural_significance": "Kimjang transcends simple food preparation, embodying Korean values of family cooperation, seasonal wisdom, and community support. It strengthens intergenerational connections as recipes and techniques are passed down from elders to younger generations. The collective practice reaffirms Korean identity and emphasizes living in harmony with nature. It is considered a major household event and a symbol of sharing and cooperation within communities. Kimjang was recognized as a UNESCO Intangible Cultural Heritage of Humanity in 2013.",
+        "drr_relevance": true,
+        "drr_mechanism": "Kimjang contributes to food security by providing a nutritious food source throughout the winter when fresh vegetables are scarce, acting as a form of resilience against seasonal resource scarcity. The communal aspect of Kimjang fosters social cohesion and strengthens community ties, which are vital for collective action and support during times of crisis or disaster. The traditional practice of preserving locally grown food also enhances self-sufficiency and reduces vulnerability to disruptions in food supply chains.",
+        "gemini_tags": [
+          "Korean culture",
+          "Food preservation",
+          "Community practice",
+          "Fermentation",
+          "Winter preparation",
+          "Social cohesion",
+          "Food security",
+          "Intangible cultural heritage",
+          "Culinary tradition"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Food Preparation Process",
+        "materials_and_tools": [
+          "Napa cabbage (baechu)",
+          "Korean radish (moo)",
+          "Sea salt (with bittern removed)",
+          "Red chili powder (gochugaru)",
+          "Garlic",
+          "Ginger",
+          "Green onions",
+          "Fermented seafood (e.g., anchovy brine, salted shrimp)",
+          "Optional: Mustard greens, water parsley, pears, persimmons, starch",
+          "Tools: Knives, cutting boards, large bowls (jabaegi), sieves, traditionally onggi (earthenware pots) for storage, modern kimchi refrigerators or large plastic containers"
+        ],
+        "step_by_step": [
+          "**Yearly Cycle Preparation (Spring to Late Summer):** In spring, households procure shrimp, anchovy, and other seafood for salting and fermenting. In summer, they buy sea salt for the brine. In late summer, red chili peppers are dried and ground into powder.",
+          "**Cabbage Preparation (Late Autumn/Early Winter):** Chop napa cabbages into halves or quarters. Salt them thoroughly with sea salt and brine, ensuring salt is applied between the leaves. Let them sit for a period (e.g., 30 minutes to overnight) to cure and draw out moisture. Rinse the salted cabbages thoroughly with water and drain excess water using a sieve.",
+          "**Seasoning (Yangnyeom) Preparation:** Prepare the spicy paste (yangnyeom) by mixing red pepper powder, julienned Korean radish, sliced green onions, minced garlic, minced ginger, and fermented seafood sauce. Some family recipes may include additional ingredients like mustard powder, water parsley, pears, persimmons, or starch for sweetness and texture.",
+          "**Stuffing the Cabbage:** Apply the prepared yangnyeom paste generously between each leaf of the brined cabbage, starting from the outer leaves and working towards the center.",
+          "**Storage:** Traditionally, the stuffed kimchi is stored in large earthenware pots called onggi. These onggi are often buried in the ground to maintain a stable, cool temperature, which is crucial for slow and proper fermentation throughout the winter. Modern households often use specialized kimchi refrigerators or large plastic containers for storage.",
+          "**Fermentation:** The kimchi is left to ferment, typically for a period ranging from a couple of days to up to two months, depending on desired taste and temperature, developing its characteristic tangy and complex flavor."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 1.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-0e093f24",
+      "element_name": "Kimjang (Kimchi-making and storage in Jangdokdae/Onggi)",
+      "category": "Culinary Traditions | Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.facebook.com/koreafood/posts/traditional-korean-food-preservation-methods-kimchi-is-the-most-iconic-tradition/10158223961223126/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.facebook.com/koreafood/posts/traditional-korean-food-preservation-methods-kimchi-is-the-most-iconic-tradition/10158223961223126/",
+        "https://www.koreanculture.org/food/traditional-fermentation-food",
+        "https://www.gatewaykorea.org/korean-food",
+        "https://kpcshop.com/blogs/news/jangdokdae-preserving-koreas-art-of-fermentation",
+        "https://www.wttw.com/articles/2023/10/20/how-traditional-korean-act-making-kimchi-preserves-vegetables-memories-and-community"
+      ],
+      "scraped_at": "2026-09-07T01:50:10.054850Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [],
+        "lat": 36.638392,
+        "lng": 127.6961188
+      },
+      "resume_analisa": {
+        "description": "Kimjang is the traditional communal practice of making large quantities of kimchi in late autumn to prepare for the winter. The freshly made kimchi is then packed into onggi (earthenware pots) and stored in a jangdokdae, an outdoor platform where these pots are placed, often partially buried underground, for fermentation and long-term preservation.",
+        "cultural_significance": "Kimjang is a deeply rooted Korean tradition that fosters community spirit, sharing, and the intergenerational transfer of knowledge and recipes. It was historically essential for survival during harsh winters, ensuring food security when fresh produce was unavailable. The jangdokdae, the platform for the onggi pots, is considered a symbol of heritage and community within the household. The act of making kimchi together connects families and neighbors, reinforcing social bonds.",
+        "drr_relevance": true,
+        "drr_mechanism": "The practice of Kimjang and the storage of kimchi in onggi buried underground is a traditional food preservation method that ensures food security during long, cold winters when fresh produce is scarce. This contributes significantly to resilience against seasonal food shortages and harsh climatic conditions. The porous structure of onggi clay pots allows for optimal slow, natural fermentation, and burying them underground maintains a stable cool temperature (around 5°C), preventing freezing and spoilage. This ingenious method serves as a form of climate adaptation, allowing communities to sustain themselves through challenging environmental conditions.",
+        "gemini_tags": [
+          "Korean culinary tradition",
+          "fermentation",
+          "food preservation",
+          "community practice",
+          "earthenware",
+          "seasonal ritual",
+          "food security",
+          "climate adaptation",
+          "cultural resilience"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Food Preservation and Preparation (Fermentation)",
+        "materials_and_tools": [
+          "Napa cabbage",
+          "Radish",
+          "Sea salt",
+          "Spices (garlic, ginger, gochugaru/chili flakes, jeotgal/fermented fish sauce)",
+          "Onggi (earthenware pots/clay jars)",
+          "Jangdokdae (outdoor platform for onggi)"
+        ],
+        "step_by_step": [
+          "Harvest vegetables, primarily napa cabbage and radish, before the first frost, typically in late autumn.",
+          "Brine the napa cabbage heads with sea salt.",
+          "Prepare a pungent paste by mixing red chili peppers (gochugaru), garlic, ginger, and jeotgal (fermented fish sauce).",
+          "Rub the prepared paste onto the salted cabbage.",
+          "Pack the kimchi into onggi (handmade clay jars).",
+          "Bury the onggi underground in a jangdokdae area to maintain a stable cool temperature (around 5°C), which is ideal for slow, natural fermentation and long-term storage throughout the winter."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Tsukemono (pickling/fermentation practices)",
+            "relationship_reason": "Similar traditional methods of food preservation through fermentation."
+          },
+          {
+            "country": "China",
+            "element_name": "Pao cai (fermented vegetables), Earthenware food storage",
+            "relationship_reason": "Similar traditional methods of food preservation through fermentation and the use of natural materials (like clay pots) for storage to ensure food security."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-05T01:59:15.894805Z",
-    "total_ich_elements": 291,
-    "complete_records": 285,
-    "incomplete_records": 6,
+    "generated_at": "2026-09-07T01:50:34.508696Z",
+    "total_ich_elements": 293,
+    "complete_records": 289,
+    "incomplete_records": 4,
     "categories_breakdown": {
       "Traditional Craftsmanship": 101,
-      "Social Practices & Rituals": 56,
+      "Social Practices & Rituals": 57,
       "Culinary Traditions": 45,
-      "Culinary Traditions | Social Practices & Rituals": 3,
+      "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 26,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
