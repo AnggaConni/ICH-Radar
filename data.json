@@ -21342,52 +21342,71 @@
         "https://revistafiquebem.com.br/teko-pora-a-filosofia-do-bem-viver-na-sabedoria-guarani/",
         "https://www.facebook.com/tekopora.atelier/",
         "https://www.youtube.com/watch?v=U_uwE4cH6xo",
-        "https://ich.unesco.org/en/state/paraguay-PY"
+        "https://ich.unesco.org/en/state/paraguay-PY",
+        "https://www.appai.org.br/tekopora-o-caminho-do-bem-viver/"
       ],
-      "scraped_at": "2026-08-15T00:38:48.954645Z",
+      "scraped_at": "2026-09-09T02:04:27.119667Z",
       "location": {
-        "country": "Brazil, Paraguay",
+        "country": "Brazil",
         "provinces": [
           "São Paulo",
-          "Guairá"
+          "Mato Grosso do Sul"
         ],
-        "lat": -18.5886272,
-        "lng": -57.5303444
+        "lat": -10.3333333,
+        "lng": -53.2
       },
       "resume_analisa": {
-        "description": "Teko Porã, also translated as 'Bem Viver' or 'Good Living,' is a profound Guarani philosophical, political, social, and spiritual concept. It signifies a beautiful way of being and living in harmony with the community, encompassing both human and more-than-human elements, and the environment. This ancestral wisdom guides the daily lives of Indigenous peoples, particularly the Guarani, emphasizing balance, respect, and interconnectedness. It stands in contrast to the individualistic, consumerist, and technologically unbalanced aspects of the modern world, advocating for resistance and resilience to maintain ancestral essence. The concept is deeply rooted in Indigenous cosmology and their way of life, promoting a sustainable existence and a respectful relationship with nature.",
-        "cultural_significance": "The cultural significance of Teko Porã lies in its role as a foundational principle for the Guarani people, influencing their social organization, spiritual practices, and relationship with the land. It represents a collective opportunity to construct new forms of life based on equilibrium, respect, and harmony among all beings. This philosophy is seen as a way to challenge and transform human relationships, urging a return to respecting all forms of life on Earth. It also highlights the importance of ancestral knowledge, traditional agriculture, and community well-being as alternatives to the 'tekó vai' (bad living) brought about by unrestrained consumption and environmental degradation. The concept is actively promoted by Indigenous leaders and educators as a pathway to a more conscious and sustainable future.",
+        "description": "Teko Porã is a Guarani philosophical, political, cultural, social, and spiritual concept meaning 'good living' or 'a beautiful way of being in your territory'. It emphasizes balance, respect, harmony, and the profound interconnectedness of all life forms, including humans, nature, and community. It stands in opposition to 'Teko Vai,' or 'bad living,' which is characterized by individualism, unrestrained consumption, and environmental destruction.",
+        "cultural_significance": "Teko Porã is central to the Guarani way of life, guiding their relationship with the land, community, and spirituality. It represents an ancestral wisdom that promotes collective well-being, sharing, and a deep respect for nature, serving as a form of resistance against colonial models, ethnocide, and ecocide. It shapes their educational practices, community organization, and spiritual rituals, ensuring the transmission of traditional knowledge and values across generations.",
+        "drr_relevance": true,
+        "drr_mechanism": "Teko Porã contributes to ecological resilience and climate adaptation through its core principles of harmony with nature, sustainable resource management, and deep understanding of ecosystems. The Guarani's traditional ecological knowledge (TEK), which is integral to Teko Porã, enables them to interpret natural signs for early warning and informs practices that maintain ecosystem health, crucial for adapting to environmental changes. Furthermore, its emphasis on collective living and shared responsibility strengthens community cohesion, enhancing their capacity to respond to and recover from disasters. The philosophy also drives resistance against destructive external forces like agribusiness, which degrade land and increase vulnerability, thus acting as a mechanism for protecting their territories and livelihoods from environmental risks.",
         "gemini_tags": [
-          "Guarani culture",
-          "Indigenous philosophy",
+          "Guarani philosophy",
+          "Indigenous knowledge",
           "Good living",
-          "Environmental harmony",
-          "Social practice",
-          "Spiritual concept",
+          "Ecological resilience",
+          "Climate adaptation",
+          "Social harmony",
+          "Cultural resistance",
           "Brazil",
           "Paraguay",
-          "Ancestral wisdom",
-          "Community well-being"
+          "South America",
+          "Traditional Ecological Knowledge",
+          "Community resilience"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "set_of_principles_and_practices",
+        "materials_and_tools": [
+          "Ancestral wisdom",
+          "Nature (forest, rivers, plants, animals)",
+          "Community (elders, children, collective)",
+          "Language (Guarani)",
+          "Rituals (prayers, songs, naming ceremonies)",
+          "Traditional ecological knowledge (herbs, natural signs)"
+        ],
+        "step_by_step": [
+          "Cultivating a deep respect and understanding of nature, recognizing its sacredness and interconnectedness with all life.",
+          "Practicing collective living, sharing resources, and fostering collaboration within the community, prioritizing the well-being of all over individual accumulation.",
+          "Listening to and interpreting signs from nature (e.g., birdsong, weather patterns) as guidance for daily life and anticipating environmental changes.",
+          "Transmitting ancestral knowledge and values through education, storytelling, songs, and rituals, ensuring children learn respect for the Earth and community.",
+          "Maintaining a strong connection to 'tekohá' (cultural territory), which provides the conditions for their way of life, and resisting forces that threaten its integrity.",
+          "Engaging in spiritual practices, including prayers and songs, to maintain harmony and balance within oneself and with the cosmos.",
+          "Utilizing traditional medicinal knowledge, derived from plants and herbs, for health and well-being."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
-        "confidence_score": 0.9,
+        "confidence_score": 0.95,
         "related_elements": [
           {
-            "country": "South Africa",
-            "element_name": "Ubuntu",
-            "relationship_reason": "Both 'Teko Porã' and 'Ubuntu' are philosophical concepts that emphasize interconnectedness, community, and the idea of 'I am because we are,' highlighting the interdependence of individuals within a collective."
-          },
-          {
-            "country": "Andean Region (e.g., Bolivia, Ecuador)",
-            "element_name": "Sumak Kawsay (Quechua) / Suma Qamaña (Aymara)",
-            "relationship_reason": "Similar to Teko Porã, Sumak Kawsay (Quechua) and Suma Qamaña (Aymara) are Indigenous philosophies from the Andean region that also translate to 'good living' or 'living well,' advocating for a harmonious relationship between humans and nature."
+            "country": "Bolivia",
+            "element_name": "Sumak Kawsay (Buen Vivir)",
+            "relationship_reason": "Similar indigenous philosophy of 'good living' or 'well-being' emphasizing harmony with nature and community, found in Andean cultures."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-53244d40",
@@ -22590,68 +22609,77 @@
         "https://www.erudit.org/en/journals/ethno/2019-v41-n1-ethno04724/1063628ar/",
         "https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199935371.001.0001/oxfordhb-9780199935371-e-21",
         "https://www.ukrainians.ca/traditional-ukrainian-songs-and-music",
-        "https://www.ukrainians.ca/traditional-music-and-instruments-from-the-ukraine-text-in-english"
+        "https://www.ukrainians.ca/traditional-music-and-instruments-from-the-ukraine-text-in-english",
+        "https://fordham.bepress.com/cgi/viewcontent.cgi?article=1073&context=ulra"
       ],
-      "scraped_at": "2026-08-23T00:41:33.796317Z",
+      "scraped_at": "2026-09-09T02:04:58.353091Z",
       "location": {
         "country": "Ukraine",
         "provinces": [
-          "Volyn Oblast",
-          "Podillia",
-          "Kharkiv Oblast"
+          "Poltava Oblast",
+          "Chernihiv Oblast",
+          "Sumy Oblast"
         ],
-        "lat": 51.5451167,
-        "lng": 24.6627893
+        "lat": 49.4871968,
+        "lng": 31.2718321
       },
       "resume_analisa": {
-        "description": "Dumy are oral epic poems that originated in Ukraine during the Cossack Era in the sixteenth century, possibly based on earlier Kyivan epic forms. They are lengthy lyrical compositions of an epic character, characterized by uneven syllabic lines, monorhymes, and the absence of stanzas. Dumy record popular interpretations of historical events from the 15th to 17th centuries, including Tatar-Turkish captivity, Polish-Lithuanian oppression, and the heroism of Ukrainian Cossacks. They embody moral principles associated with national independence and personal dignity, deeply rooted in mythical and poetical thinking.",
-        "cultural_significance": "Dumy are a significant phenomenon associated with Ukrainian national identity, serving as a powerful means of preserving and perpetuating historical memory, especially during periods of foreign rule. The performers, known as *kobzari*, were revered as transmitters of national consciousness and were often blind itinerant musicians. The tradition was suppressed during the Soviet period, with *kobzar tsekh* (guilds) being destroyed and performers forced to create 'Soviet dumy'. However, the duma tradition has been revived since Ukraine's independence in 1991. In 2024, the practices of kobza, bandura, and lyre playing, integral to duma performance, were recognized by UNESCO as an intangible cultural heritage of humanity.",
+        "description": "A duma (Ukrainian: дума, plural dumy) is an oral epic poem that originated in Ukraine during the Cossack era, roughly from the 15th to 17th centuries. These lyrico-epic works are performed in a recitative (chanting) style by itinerant bards, historically known as kobzari, bandurysty, or lirnyky, who accompany themselves on instruments such as the kobza, bandura, or lira. Dumy narrate historical events, particularly the struggles against foreign invaders (like Tatar-Turkish captivity and Polish-Lithuanian oppression) and internal conflicts, while also conveying profound moral messages about family, community, and national identity.",
+        "cultural_significance": "Dumy represent a special genre of Ukrainian folklore, serving as powerful evidence of the rich culture and talent of the Ukrainian people. They are deeply intertwined with the formation of Ukrainian national identity and the idea of statehood, embodying moral principles associated with national independence and personal dignity. These epic poems preserve historical memory, extol virtues of freedom, self-sacrifice, and loyalty to comrades and homeland. They provide a crucial means for communities to process historical trauma, learn from past adversities, and maintain cultural cohesion and a sense of purpose. The performance tradition, particularly by the blind kobzari, was highly revered as they were seen as transmitters of national consciousness.",
+        "drr_relevance": true,
+        "drr_mechanism": "Duma contributes to social and cultural resilience by preserving historical memory of struggles and fostering national identity, unity, and moral values. These narratives help communities learn from past adversities, maintain cohesion, and inspire collective action in the face of challenges, including conflicts, occupation, and cultural suppression, thereby strengthening the social fabric against various forms of societal 'disasters'.",
         "gemini_tags": [
-          "Oral Tradition",
-          "Epic Poetry",
+          "Oral Epic Poem",
           "Ukrainian Folklore",
           "Cossack Era",
           "Kobzari",
           "Bandura",
-          "Kobza",
           "Lira",
           "National Identity",
-          "Intangible Cultural Heritage"
+          "Historical Memory",
+          "Cultural Resilience",
+          "Moral Values"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "ritual_sequence",
+        "materials_and_tools": [
+          "Kobza",
+          "Bandura",
+          "Lira (relya)"
+        ],
+        "step_by_step": [
+          "Apprenticeship: A novice would typically apprentice to a recognized master (kobzar) to learn the intricate art of duma performance.",
+          "Performance Setting: Traditionally, itinerant bards, often blind, would travel and perform dumy in various towns and villages.",
+          "Recitative Style: The duma is performed in a recitative (chanting) style, which often begins with an exclamation.",
+          "Musical Accompaniment: The performance is accompanied by traditional Ukrainian instruments such as the kobza, bandura, or lira.",
+          "Structure: Dumy consist of uneven periods, or tirades, without a fixed strophic structure, where each period conveys a complete thought. The lines vary significantly in length, and rhyme plays an important role, frequently carried by verbs.",
+          "Content Delivery: The narratives detail historical events, often focusing on military actions, captivity, and social themes, interwoven with religious and moralistic elements.",
+          "Ending: The performance typically concludes with the glorification of its heroes, featuring ornamental cadences and instrumental sections."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
         "confidence_score": 0.8,
         "related_elements": [
           {
-            "country": "Poland",
-            "element_name": "Polish Ballades (Dumy)",
-            "relationship_reason": "The term 'duma' for Ukrainian epic songs is a Polonism, borrowed from Polish, where it was used for their own ballades and foreign ones."
-          },
-          {
             "country": "Serbia",
-            "element_name": "Serbian Epic Poetry",
-            "relationship_reason": "The poetics of the duma are similar in some ways to that of Serbian epic poetry."
+            "element_name": "Serbian epic poetry",
+            "relationship_reason": "The poetics of the duma share similarities with those of Serbian epic poetry."
           },
           {
-            "country": "Uzbekistan",
-            "element_name": "Alpamysh (Epic)",
-            "relationship_reason": "Uzbek 'Alpamysh' is considered a 'peer' of Ukrainian dumy in the context of world epics."
+            "country": "Ancient Greece",
+            "element_name": "Iliad and Odyssey",
+            "relationship_reason": "Duma is recognized as part of the world's epic traditions, alongside ancient Greek epic poems like the Iliad and Odyssey."
           },
           {
-            "country": "Kyrgyzstan",
-            "element_name": "Manas (Epic)",
-            "relationship_reason": "Kyrgyz 'Manas' is considered a 'peer' of Ukrainian dumy in the context of world epics."
-          },
-          {
-            "country": "Kalmykia (Russia)",
-            "element_name": "Dzhangar (Epic)",
-            "relationship_reason": "Kalmyk 'Dzhangar' is considered a 'peer' of Ukrainian dumy in the context of world epics."
+            "country": "Sumer/Akkad",
+            "element_name": "Epic of Gilgamesh",
+            "relationship_reason": "Duma belongs to the epics of the world nations, similar to the Sumerian-Akkadian Epic of Gilgamesh."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-e3528947",
@@ -25904,15 +25932,225 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-3e60931e",
+      "element_name": "Armenian Carpet Weaving",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Armenian_carpet_with_dragon_and_phoenix_motif,_17th_century,_Victoria_and_Albert_Museum.jpg/800px-Armenian_carpet_with_dragon_and_phoenix_motif,_17th_century,_Victoria_and_Albert_Museum.jpg",
+      "source_urls": [
+        "https://www.nazmiyalantiquerugs.com/antique-rugs/armenian-rugs/armenian-carpet-making-history/",
+        "https://polyglotclub.com/news/armenian-culture-the-art-of-carpet-weaving",
+        "https://www.hyurservice.com/en/blog/armenian-carpets-history-and-symbolism-of-patterns",
+        "https://armenianweekly.com/2014/02/11/an-ancient-art-century-old-carpet-manufacturer-uses-natural-dyes-and-armenian-designs/",
+        "https://armenianweekly.com/2026/02/10/artsakh-carpets-as-historical-memory-culture-identity-and-the-struggle-against-oblivion/",
+        "https://hyperallergic.com/624921/a-war-over-patterns-symbols-and-the-cultural-heritage-of-karabakhs-carpets/",
+        "https://www.salamuzik.com/karabakh-carpets/",
+        "https://www.araratrugs.com/history-of-armenian-rug-weaving-culture/",
+        "https://festival.si.edu/2018/armenia/carpets",
+        "https://www.arttowalkon.com/armenian-carpets-artifacts",
+        "https://en.wikipedia.org/wiki/Karabakh_carpet",
+        "https://realartsakh.com/karabakh-carpets/",
+        "https://artsandculture.google.com/entity/karabakh-carpets/m0g2401?hl=en",
+        "https://slubbed.com/blogs/news/an-introduction-to-armenian-carpet-weaving-knotting",
+        "https://www.facebook.com/agbu.org/videos/the-art-of-rug-weaving-is-an-age-old-tradition-of-the-armenian-people-tracing-it/2464169720301479/",
+        "https://www.armenia.travel/en/blog/armenian-rug-weaving-traditions",
+        "https://www.araratrugs.com/natural-dye-traditions/",
+        "https://www.azernews.az/culture/175895.html",
+        "https://www.reddit.com/r/armenia/comments/cnv37p/even_though_armenian_carpet_making_is_one_of_the/"
+      ],
+      "scraped_at": "2026-09-09T02:06:04.916598Z",
+      "location": {
+        "country": "Armenia",
+        "provinces": [
+          "Karabakh (Artsakh)",
+          "Gyumri",
+          "Zangezur",
+          "Ashotsk",
+          "Gegharkunik",
+          "Vayots Dzor"
+        ],
+        "lat": 39.9534796,
+        "lng": 47.0541746
+      },
+      "resume_analisa": {
+        "description": "Armenian carpet weaving is a traditional craftsmanship involving the creation of handmade carpets and rugs, known for their artistic beauty, distinctive designs, patterns, and vibrant colors. This ancient art form dates back thousands of years, with archaeological evidence suggesting its presence from the late second and early first millennia BCE. Armenian carpets are considered woven stories, reflecting the land, people, and their traditions.",
+        "cultural_significance": "Carpet weaving is a profound symbol of Armenian identity and a significant medium for artistic expression and historical reference. Traditionally, carpets served various purposes, including floor coverings, wall hangings, prayer rugs, valuable trade items, gifts, and elements in religious and ceremonial settings. The designs are rich in symbolism, incorporating motifs such as dragons (representing strength and guardianship), eagles, crosses (signifying Christian faith), stars and diamonds (symbolizing eternity, harmony, and balance), ram's horns (for prosperity and fertility), and water or wave patterns (denoting life and continuity). The act of weaving itself was often a communal and ritualistic practice, sometimes accompanied by song, passing skills and knowledge through generations.",
+        "drr_relevance": true,
+        "drr_mechanism": "The traditional practice of Armenian carpet weaving contributes to ecological resilience through its reliance on natural, locally sourced materials for dyes, such as plants, roots, minerals, and insects (like Armenian cochineal). This approach minimizes dependence on industrial chemicals, promoting sustainable practices and ecological balance. Furthermore, the craft's enduring ability to persist and revive through periods of political turmoil, mass migrations, and even attempts at cultural erasure demonstrates significant cultural resilience and adaptation.",
+        "gemini_tags": [
+          "Armenian culture",
+          "Traditional craftsmanship",
+          "Carpet weaving",
+          "Textile art",
+          "Natural dyes",
+          "Cultural heritage",
+          "Symbolism",
+          "Ecological resilience",
+          "Cultural resilience",
+          "Handicrafts"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Handwoven pile rugs (gorg) and flatweaves (karpets).",
+        "materials_and_tools": [
+          "Wool (from local sheep, hand-spun)",
+          "Silk (for more precious pieces)",
+          "Cotton (for warp and weft in some cases)",
+          "Natural dyes (from perennial flowers, pomegranate peel, white mulberry tree husk, madder, indigo, Armenian cochineal/Vordan Karmir)",
+          "Mordants (alum, tartar)",
+          "Loom",
+          "Hook/knife (for cutting weft)",
+          "Steel comb (for compacting weft)",
+          "Scraper (for removing lint)",
+          "Electric razors (for achieving an even finish)"
+        ],
+        "step_by_step": [
+          "**1. Wool Sourcing and Preparation**: Select high-quality wool, often sourced from various regions of Armenia such as Zangezur, Ashotsk, Gegharkunik, and Vayots Dzor. The wool is then hand-carded and hand-spun.",
+          "**2. Dyeing**: Prepare natural dyes by grinding materials like plants, roots, minerals, and insects. Common dye sources include madder for reds, pomegranate peel for yellows and reds, walnut hulls for browns, and the Armenian cochineal (Vordan Karmir) for a distinctive red. Indigo is typically imported. These natural dyeing processes can take several days. Mordants like alum and tartar are used to fix and preserve the colors.",
+          "**3. Loom Preparation**: Set up the weaving loom, typically with thick cotton yarn as the warp threads, which form the foundation of the carpet.",
+          "**4. Weaving the Foundation**: Weave the initial foundation of the carpet using horizontal and vertical threads.",
+          "**5. Knotting**: Begin inserting the knots to create the carpet's design. The most prevalent technique is the double-knot (also known as the Armenian rug knot or Ghiordes knot), where wool or silk fibers are tied around two warp threads. The Senneh knot, a finer knot for more intricate designs, is also used. After each knot, the weft thread is cut with a hook/knife.",
+          "**6. Weft Insertion and Compacting**: After a row of knots, a single thread of cotton (weft) is woven horizontally to strengthen the carpet's structure. A steel comb is then used to vigorously hammer down each line of weft and knots, ensuring a tight and durable weave.",
+          "**7. Finishing**: Once the weaving is complete, the carpet undergoes several finishing stages. It is scraped to remove any loose lint, and electric razors may be used to achieve a smooth and even pile. Finally, the rugs are washed to enhance the colors and designs, sheared to remove any excess wool, and stretched for at least 24 hours to ensure proper shape and tension."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Azerbaijan",
+            "element_name": "Traditional art of Azerbaijani carpet weaving",
+            "relationship_reason": "Armenian and Azerbaijani carpet weaving traditions share historical roots, particularly in the Karabakh (Artsakh) region. Both countries have strong claims to the heritage of Karabakh carpets, and Azerbaijani carpet weaving is also recognized by UNESCO. This has led to historical disputes over the origin and ownership of certain carpet styles."
+          },
+          {
+            "country": "Turkey",
+            "element_name": "Carpet weaving traditions",
+            "relationship_reason": "Historical Armenia encompassed parts of present-day Turkey, and Armenian weavers migrated throughout the Middle East, influencing and being influenced by regional carpet weaving styles."
+          },
+          {
+            "country": "Iran",
+            "element_name": "Carpet weaving traditions",
+            "relationship_reason": "Historical Armenia also included parts of present-day Iran. Armenian weavers' migrations and trade along the Silk Road facilitated cultural exchange, contributing to a shared broader tradition of carpet weaving in the region."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-fdc2e115",
+      "element_name": "Yangliuqing Nianhua (Yangliuqing New Year Pictures)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQ7qkh7fpDfbFt7aRBMdxjFNX6-A9Zb9Ig_kq-8U_x8FBmd6Lw408W27cJnLP5qgsS16i6LsaK6DvD-MBlvZhytek5B4GIfScJ-zPtMnS-slCBufydzGn3n2sbiNNu9iQho-ZjNV6OuDqDTEMjPkuDdzfSJ7CItUZtw_hJ8_ocKbpOn0ww8Xg%3D&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQ7qkh7fpDfbFt7aRBMdxjFNX6-A9Zb9Ig_kq-8U_x8FBmd6Lw408W27cJnLP5qgsS16i6LsaK6DvD-MBlvZhytek5B4GIfScJ-zPtMnS-slCBufydzGn3n2sbiNNu9iQho-ZjNV6OuDqDTEMjPkuDdzfSJ7CItUZtw_hJ8_ocKbpOn0ww8Xg=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmS1MZej1KoUT76YyDrFWhuqdnMi-N8giynWdSVPb5e4yK2jsv2yp-GLIr_IdLhd0WeSYHzrArIvZksx6pV6jnDoSdUVUZWVhGiMZXBe019oO5f1B_i9NdSYV3yfIUnPiRaeNcVJzw3O5hbU9YHd6Glg3l4Lqy_mEdMGyKzefbNtu3bKTnULkLo5rv",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBHvhyFG52ClMX_chFrQSvzNTsN36jst65fqJVD3sGwJikqqA8s6RYhx2g9b0nNwF7Uwx-_jJyTPMn8u_FxJSEe685zKljMoUeygLCAhrMpeQ06uZOfWdoWDaatUEQr80lEFGBhgbWnV1mlK2bRp1lFYl0xOzWviT3dtCBlw==",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQHZWTnS4rJrrSwajBDSK9Uq7Mc7TS-gRlp0e05-CcWbOR3Nu7ToWuZ5IgJjw0IDKjwBBOYW3_R79kXeYPiloedC9WYqTo3wqNmu141kyEw4hlEj7FkeFbo86Xf2zn7FZIQP9Ut60AAT15ioQuS6zU3Y02kPhPnRwFAF7s_94m0pC6o5VTw87kRVCX",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGljzdWImz6R_vQirqNOQYPJ-sIovtut3bV7t9bg8Gjpjg_lgCgCOFzz_dnFDStspgIIbJ_qIgqFNMqfyWRyBH1BeOCxRzdrCIX3EuDXcKrz8iJu_qCm4wYn9cMRkYCXXTkT-ft2sQ1xA0=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1WA4eJszs5lQqXxJVRZFappd0wYlDr0y45hNjaAka14AlqdjZZ5CXpeGNHKAK14_9UDTCDTqzY025AMAOBnGwnffR5ohzzSUrQ5VimBvvgOwLJsLUntRtQdHWWB_qsxzXz6km3xtgE1sXPABINB3R4HVjufYo95Vg-5L0L9gfOA==",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQWG4OwaSE14n72eyDUnD2EYq4NWFU_jIOMDJMM9WnOpGXmqvanBzKddKqr88r1Sgzjs2x_-LgPi-ztyxKq_Blb8bp7-ZRSTtpyv3kd1RQzUK_11rsfCZ6UssoNDRNHNhuXQlh2h3AVvvqQApUFszFxbhpm7UwTxgywlI2Nsp1Dc1PtsYDyCJyzMal1MuFBn3wa7rH0d1pmNXNDjMsY1eJS8ggW-32qYS7C2A=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcreYu6abGO3p--hiDFMIIzITqIODeUuO4ANYp53U0DcrSXdPLmGA5GAYxTPg2mpTNeeojOsMqhcBtEtOeHFt4PbkAN17EUOA-3ZVL5rkQmTCf-uvcmSO1fUD1WRai22ynzatVNTNXOlkycpo1OQ==",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwk2CXaiahfymmFKQrqp1PXnSsC5tcEFHnGy8yFl3slsK20LxGVZ-pIITBswY2zpeGOYGr5UEl56c_to2jK3YgKBSUkeu-T_ulnPcCFHgmKIDmws-1LBgtQqBL_fd0LmB737b5k72mdC2qaF2nUdIKmj7zU9M=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJQACtU0W3cLoPVQoTNr5-e8vDJvLlSzb9byr8fKLdtfPEWY2px42E2-XOpmXgMouA7ONPgRnbL1w3ItJ2JLFYMuZEmbwkHA49ENFbT7bxVAsHqFP0TMcvudY1WeiN-5S6pL4Xpfx6QWJNhfU=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4w_kS7Y48Fy0laJk_a23GV3CFN4yrJPRvwvQ-2WL5O40hV2dB22GWkCVixTWm4UgLokVxUWdLrsEeatzZHSvwLA55LJJ0fZGbESCxF5wrXCa_tuGOQyIGrV5vDZW2qw9BAAL_V7efu_em5Sw4OythknE6y5vdRf7luo=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_EwKK81AeuNKF63VZYIDmHubASMzDsI0KA0K2soNO-fnoJNN95qsovE4UzGwEnATWdN6zg2vKERhJcCm0sUMcI4LljXoCiKnnAt64IZ18JLI0LqeiLwsXaE89X0U2aOjNKrYmYLMY8mp-wdBDQ8rVMGV8JCHuQpgYHQ==",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0N6HIMVVMK72IZoAPi1J_dAdLD-rXjA4GSxGdVvCMilx7uk4m8vVH3KEblYamwoELwuzdtNB0V5DQ1dIdcBmd5MhfV-et2nnkI7jqxig6nisd2byBpLwQN1V7XlTcgNgmJZTokrJGYScNJNQlaw0L6L_wDjkyN2_3YP-SAFlYqQ==",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE21s8V4bJJDmR4XnwBYMqMSQXdljHRFek33egb9uLeuQ2tmaWAS0XXT2rw06xmk2lXJ4F5_XdiUebFbnOEXAoPss6B2fCRCOwQb7Y5zZT-fPw9FQ_rcXTjTOEHlqZnE_VatQv3wKUN_W453ls84ctM9u7dmI5RcqJx8dG8xCX3lGDQi4koN8QzJ8SzzVijGXlAH2-o9mQRIguQao4UiPE5VjVKIwN-",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSXIfTHpirxJDXMh3tHx86O3wwwwQgOZcW_VoOMOE8JqKFNWNm9_ZnritFFSMZP2Ev4enN2Yh3ItWKqR0_r4n5wmiBS61ZVCpNaeJudsNESbjUBD20nW5HUaBkwRCRtivSj5grSOoTtuE=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3MryfrbdrV5FrZf0KMy_HDcLA_wqUyVIJBMOJHxL9-LFW7Ha4VtGbuC9oJYiElc1ih5HIzekWCXt-sGxOavkGksaRw6706o94LIkEBNkle1pqF64TG4zPanxpsYqhLqWfAATtIoOR_bMLoeRH929gmwRGXPtiIsITPquDgPz7Zlw=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPvdkuWsyxjkmHlT_tjsGF179lFj3-BbHVs04JIIY9I0U8KcUglqHo5XKGFhef8mBycW5w-5r9EpLmdwsQEm-W7YRsemqT66-GiGHfscUHvhx45LTOuT8Czy3zAISwAfq2JZqOCPd0vHM9rPFxPsD-y47Nwo6tSNdmT0OpCBJgSA23z3_gE91LKEyeCsME0U-QhgHsyoIpf_1s9JURqe1__EnqqEWJFdS82lzA2N-s6wt2DiQ096VYI0D6uHJm",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw79jq0Mae-bPcF_Id9VYRs3vFSoaLO4GViU8emCVVbIq2UDUmjDjAaNcNugf2zqPFift3tB8aLegT6UMBtVLddPVUZvhug--fElfqxmRjBmeg_aP8fsdkKlQVyvFKQ5KZa9hUXv_AHkTdECUKYnngWH_XmD2tEGJf5KwjRPnI",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjn4GlFFIdwgfJchFvloVrnsx_QzpRgsO1wyQRCCVwbU9ukgcqfmdPlmjCKGwCyl6aTXl-dMI-Ke4D27V9Z4CMQoZ0tQKJ5Jq8i7MdlG83YPeW_jw40Mnzt46N582IiZKP3SpTFb1Wfy8ERRIhTgvof3QydgGHnA_VYTUr3b5rVf73fA==",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZM7eQQd0TIOv9qgfavQdGNnj-Ey0G9tQwpuPTZk1CDqTfHLHH1h-oLNBMIlhxbywnCL6qbBinjQz0okaBI2CBM0xVya0w3Kdi33C-tFZHhOkoAUeQ3tGGnEvNd5smrk-rfNyZWwx8sMwltvI=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGl3pWf2WDBi2B8Cvmll4ONUxeoBTuz8rX2y-n8K6V_TLdUjjnY0yV3wjInn7ecxxaQ-fe_R1GEyXratviZzT9M73WwqFjvTtN8D5OIcSGfKhh1vV_t-GcDeAIjqXl6cbVSbns=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmA6F_TndVWtU6TpOXRZxZKuSTGAxluWF0fiqm_pqQIu0VcAR6oh2If7cLp0Vqfmy9y_FpCX5N8poV53S2UWp2VdhAvMz0OS0Wt7pvKtGNIGg73zIucMbT0dpWpU_miqQE3eXGwFjOZQn41U_NTqRDNHgEIfHy6wdoOXi_84IW2D72rhLdxLx8iHU=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHZKzssxyBekrxZ0nKGFyoYFytVr4mx8YQJ8hC_MEBFFHx4ZxGlpODSGNMN6hJBrcCgKA_HS69hqq49lAce2RZ3KbGivQWU7QjPu1IVdtsfB60JvM0N3ftP8e100sul7BPPdi2dw==",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw0OqVBi7V_-_O8zvk8pwQ8DcEVZHy1HNaEi1jmx9RjcGqsdAe-5HTal4UN9hBLAGSaN37LIbNRYCKRLZhxf21QGDOr-AuLdJ3zSlpoD5f_I4TJ_bqnJ2E0k23DmzBr68fiTM2d5F9hmwmCXypBfYjQ1WTH9R5QdAdORqvfF6GyK4BI-l_5ndu3cnwNC-eBIHTN2NjXsca",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwya0XCQEsY_hQsxntozxws-dVPEHporQ4Ii9Nmi1RAO3FEOJNYBkQtSoALvVJDL-d6xIX6XruqU017OYewR54qy89g5f5Q9j9KednQInerXScLUGQM36CH2YH4NlkoncE9QheJl6GSre87OpSoHMqKCDSH-Lsu3xksOvTPG9HPHCpBHOHiOELkgMAelsckOk-ksI441wo2k-LJe6eMXe70lB8jDxK",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLAOBlgl3bV7r5XI2XlgtN5IycuzfrC_BwL8qUHoWhxvo1hVUepsUHikFgMSSIyg6BUZvYtnpt6GNJIDnVhkCtTVT1k4RUHBujybNtdCVNNytNQWKc8lmdCsgmbZkZ5fujcv5lh8DuLQ==",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbZGdrsH0pxZ57B0oXgzcoW4en8Ibcd4phsFfKG-jLxBKvAJ0OmaTewduKhArfarOgdKQrQA6NgLxECRz1ET8vjpYblNe8NOVVgWM36rFvj-K1Bq1Hf5ntTW-91kIcaTPzAgcIeVnPN9dUIrBKhCnsUV_Kta6LpThUAC_MaUrhIkFLvXWOusks4M_y4L2afobGH7GdRw==",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf8zQGEQCKP8tLvqdv9Pfp_-AJ-9jERYfyGlmNe8d-6N02m0pMwNsWsFAtG4O1VgMYgJCOBLqQo31SaCd8ohSWlktPP-lBTLPQA8GP4aaP7-ZKSn9mqsLdqDrPp5iBoxE_QOJC8oKbDSLJVZxu20rHUBeh2alk6rR4YlkZ4INfv-hthNun1GzzE8mburBQxdGGct7KNYM9WA-xGgcbNKd6mw=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHY151_FDGWdNaqfdwHsWcT61sn02lfYFOtgXFhOy33qb7vBGG7yrlurpmlPpqXNf1lhKdctb0oeQPLg1EugdUrgL5n13l8RF2DrZT5yqmwQMA21s5Rnx6cZpp77bl0r0F_ftvtSAQyPZtPM1kmDLA_nm7fdi3O46C2pKyoBB2xTRmekMNYPN1hZ6SzIOhVbDK4ytjv3QEKBb-eC9_R0PDUFX48wRNXG95k6l4aOybHPw0ZKmLALg==",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbtx5p_u0Bd4mFa4XgVJ2Cmz57la8azZzGcwITSJUu3yx9gAg3K7_FV1co3sx1oHXinOsVu4Nc4tLXOfJldgfHT5cytNZUQuT3FY3zuSF4A1Jw1JXZcej9Te27O7BdPnnAqNth9OTDXlZ09G9i6-6IGvsw_-tAwE0cAB7s_nc4CRvdgmJbd6OfhOZtlLReLmEPpdr0C8nru-D7426Y3QxSzoWhdpYFEdPea7dfA6AJ2fV32kgU4dWDYiq0XFS3QEzNfKsmUTD0CIc=",
+        "https://www.vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-LmiG4qehiqDQXnuJ-zQnKDP7Kh0rm_AFT25HPe-UDmOHkYwfLLloQddoPOfYWvY1d7ZreE4FO5jB5trAsS7kvaxlqRqm7vdWNR0amsk_--bX_iD00E38ENA57mYVNyMgjMz-yqc-A-Xvuege6OczjEV68uSOxIFyfOh3pvyXKprmFPPNx8KMJR5zYbWaSUS8eFvSsVPHFAIyjT5GOlOflrQHoHlYsvM1x8dw18otYkEigzpMVAKnVCb8DxB7faoCKznA="
+      ],
+      "scraped_at": "2026-09-09T02:06:45.901561Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Tianjin"
+        ],
+        "lat": 39.3032619,
+        "lng": 117.4163641
+      },
+      "resume_analisa": {
+        "description": "Yangliuqing Nianhua, also known as Yangliuqing New Year Pictures, is a distinctive form of Chinese folk art originating from Yangliuqing Town in the Xiqing District of Tianjin. These vibrant artworks are colored woodblock prints, characterized by a unique combination of woodblock carving and intricate hand painting. They typically feature vivid colors, graceful lines, and a rich array of traditional subjects.",
+        "cultural_significance": "Yangliuqing Nianhua are deeply embedded in Chinese New Year (Spring Festival) celebrations, serving as popular decorative items for doors, windows, and walls. Their primary purpose is to usher in good luck, ward off evil spirits, and express heartfelt wishes for happiness, prosperity, and abundant harvests in the coming year. The themes depicted often include ancient beauties, charming children, folk customs, scenes from classical operas, myths, legends, and historical events, reflecting the people's aspirations and aesthetic values. The tradition of replacing old Nianhua with new ones annually symbolizes 'saying goodbye to the Past and welcoming the Future'. In recognition of its cultural importance, Yangliuqing Nianhua was inscribed on China's National Intangible Cultural Heritage list in 2006.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Chinese folk art",
+          "Woodblock printing",
+          "New Year pictures",
+          "Traditional craftsmanship",
+          "Cultural heritage",
+          "Tianjin",
+          "Spring Festival",
+          "Decorative art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "Pear wood (for carving blocks)",
+          "Rough edge paper or thin tissue paper (for drafts and printing)",
+          "Carving knives (e.g., horseshoe knife, scraper, drill knife)",
+          "Brushes (for painting and applying ink/sizing)",
+          "Ink",
+          "Various pigments (e.g., yellow, blue, purple, orange, red, gold powder)",
+          "Paste/sizing (e.g., alum glue water)",
+          "Painting table"
+        ],
+        "step_by_step": [
+          "**I. Sketching**: Artists begin by drawing a first draft and then a final, detailed draft on paper, which serves as the foundational outline for the artwork.",
+          "**II. Plate Carving**: The final paper draft is carefully pasted in reverse onto a smoothly planed pear wood block. Carvers then meticulously engrave the ink lines and remove the non-printing (blank) areas to create the primary ink-line plate. Subsequently, painters prepare an ink-color board with various colors, which carvers use as a guide to create separate woodblocks for each color.",
+          "**III. Printing**: Hundreds of sheets of paper are prepared and positioned precisely on a painting table. The ink-line plate is placed face up, and paper is laid over it. Printers use their left hand to hold the paper and their right hand to brush the paper, ensuring the ink outline is uniformly transferred. This process is repeated for each color plate, applying different pigments in a specific order, typically starting with yellow, then blue (which mixes with yellow to create green), followed by purple, orange, red, and sometimes a final touch of gold powder. This stage establishes the 'half-printed' aspect of the art.",
+          "**IV. Color Painting (Hand Coloring)**: After the initial woodblock printing, the 'half-painted' stage begins. Painters meticulously hand-color the prints, filling in details and adding vibrancy. This involves applying rouge to faces, delicately drawing eyebrows and eyes, and adding color to uncolored clothes and ornaments. This hand-painting process gives Yangliuqing Nianhua its distinctive delicate and vivid appearance, making each piece a unique creation."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Taohuawu New Year Paintings (Suzhou)",
+            "relationship_reason": "Taohuawu is another major center for Nianhua production in China, often paired with Yangliuqing as 'South Taohuawu, North Yangliuqing,' indicating a shared national tradition of woodblock printing for festive decorations."
+          },
+          {
+            "country": "China",
+            "element_name": "Yangjiabu New Year Pictures (Shandong), Wuqiang New Year Pictures (Hebei), Mianzhu New Year Pictures (Sichuan), Fengxiang New Year Pictures (Shaanxi)",
+            "relationship_reason": "These are other historically significant production centers for Nianhua across China, sharing the broader cultural practice of creating New Year pictures through woodblock printing."
+          },
+          {
+            "country": "Japan, Korea, South Asia, North Africa, Tibet, Vietnam, Mongolia, Arabic-speaking world, Latin Europe",
+            "element_name": "Woodblock printing (general technique)",
+            "relationship_reason": "The fundamental technique of woodblock printing originated in China during the Tang Dynasty (7th century) and subsequently spread across East Asia (Korea, Japan) by the 8th century, and later to other regions including South Asia, North Africa, and eventually Europe, demonstrating a shared technological and artistic heritage in printmaking."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-07T01:50:34.508696Z",
-    "total_ich_elements": 293,
-    "complete_records": 289,
-    "incomplete_records": 4,
+    "generated_at": "2026-09-09T02:07:33.951545Z",
+    "total_ich_elements": 295,
+    "complete_records": 293,
+    "incomplete_records": 2,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 101,
+      "Traditional Craftsmanship": 103,
       "Social Practices & Rituals": 57,
       "Culinary Traditions": 45,
       "Culinary Traditions | Social Practices & Rituals": 4,
