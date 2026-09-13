@@ -19668,59 +19668,78 @@
         "https://www.africabib.org/rec.php?objID=11843",
         "https://en.wikipedia.org/wiki/Swahili_door",
         "https://malegado.com/traditional-swahili-craft-the-zanzibar-carved-door/",
-        "https://gardenofkomba.com/our-workshops/"
+        "https://gardenofkomba.com/our-workshops/",
+        "https://www.facebook.com/BespokeTravelConcierge/posts/the-art-of-zanzibari-carved-doors-is-a-centuries-old-tradition-dating-back-over-/931221768019056/"
       ],
-      "scraped_at": "2026-08-01T01:51:10.667064Z",
+      "scraped_at": "2026-09-13T01:58:33.950895Z",
       "location": {
         "country": "Tanzania",
         "provinces": [
-          "Zanzibar Urban/West Region"
+          "Zanzibar Urban/West Region",
+          "Unguja"
         ],
-        "lat": -6.1653854,
-        "lng": 39.2386951
+        "lat": -6.5247123,
+        "lng": 35.7878438
       },
       "resume_analisa": {
-        "description": "Zanzibar Carved Doors, also known as Swahili doors, are massive, elaborately carved wooden doors that are a prominent architectural feature, particularly in Stone Town, Zanzibar. These doors are not merely functional entrances but serve as intricate storytellers, symbols of status, and spiritual guardians. They represent a unique fusion of African (Swahili), Arab, and Indian influences, reflecting Zanzibar's rich history as a major trade hub in the Indian Ocean.",
-        "cultural_significance": "The carved doors of Zanzibar hold deep cultural significance, acting as a visual biography of the homeowner and their family. Their size, style, and intricate decorations were direct indicators of wealth, social status, profession, faith, and family background. Historically, the door was the first element to be built for a new house, with the rest of the structure constructed around it, emphasizing its paramount importance in Swahili culture. The heavy brass studs, a distinctive feature, initially served as a defense against war elephants in India but became a purely decorative element in Zanzibar, symbolizing strength and protection. Common motifs carved into the wood, such as ropes and chains, symbolize unity and security; fish represent good fortune and economic success for coastal communities; and flowers and vines signify growth and fertility. Arabic inscriptions, often Quranic verses, dates of completion, or the owner's name, are frequently found on the lintels, adding a spiritual dimension. The doors are considered spiritual thresholds by the Swahili people.",
+        "description": "Zanzibar Carved Doors are elaborate, hand-carved wooden doors found predominantly in Stone Town, Zanzibar. These massive structures, often made from durable woods like teak and mahogany, serve as more than just entrances; they are significant cultural artifacts. They reflect a rich history of trade and cultural exchange, showcasing a unique blend of Swahili, Arab, Indian, and Persian influences in their design and symbolism. Each door is a unique masterpiece, with intricate carvings and metal studs that convey stories of the owner's wealth, social status, religious beliefs, and occupation.",
+        "cultural_significance": "The Zanzibar Carved Doors are profound symbols of status, wealth, and identity, deeply embedded in the cultural heritage of Zanzibar. Historically, they were often the first part of a house to be constructed, signifying the family's importance and providing protection. The diverse motifs, such as ropes, chains, fish, lotus flowers, rosettes, vines, stars, and moons, carry symbolic meanings related to security, good fortune, fertility, growth, and religious devotion. The distinct styles (Arab, Indian, Swahili) narrate the island's multi-ethnic history and its role as a central hub for trade and cultural exchange in the Indian Ocean. They are considered living parts of households, documenting the island's turbulent past and its enduring artistry.",
+        "drr_relevance": true,
+        "drr_mechanism": "The Zanzibar Carved Doors contribute to ecological resilience through the traditional selection and use of dense, durable, and climate-resistant woods such as teak, mahogany, and Mninga. This choice of material ensures the longevity and structural integrity of the doors, making them resistant to Zanzibar's humid climate and environmental stressors. This inherent durability of the doors, as a component of the built environment, indirectly enhances the resilience of the historic coral-stone buildings they adorn, which are otherwise vulnerable to rising sea levels and storms.",
         "gemini_tags": [
-          "Woodcarving",
+          "Traditional Craftsmanship",
+          "Wood Carving",
           "Architectural Heritage",
-          "Swahili Culture",
-          "Tanzanian Craftsmanship",
-          "Zanzibar History",
           "Cultural Fusion",
-          "Symbolism in Art",
-          "Traditional Doors"
+          "Swahili Culture",
+          "Zanzibar",
+          "Stone Town",
+          "Symbolism",
+          "Historic Doors",
+          "East Africa",
+          "Indian Ocean Trade"
         ]
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "crafting_process",
+        "materials_and_tools": [
+          "Durable woods (Burmese teak, East African teak, African ebony, Mninga/African Mahogany, mango wood, jackfruit wood)",
+          "Brass",
+          "Cast iron",
+          "Hand carving tools"
+        ],
+        "step_by_step": [
+          "Select dense and durable wood, traditionally Burmese teak, East African teak, African ebony, Mninga, mango, or jackfruit wood, known for its resistance to the humid climate.",
+          "Construct the basic door structure, which typically comprises seven elements: two vertical side posts, a heavy lintel at the top, two main door panels, a large vertical center post, and a heavy threshold at the base.",
+          "Hand-carve intricate designs onto the door frame and the lintel, as these are the most decorative parts of the door. The carvings are often customized to reflect the owner's social status, religious practices, and occupation.",
+          "Incorporate symbolic motifs into the carvings, such as ropes and chains for security, fish for good fortune and fertility, flowers and vines for growth, stars and moons for religious devotion, and rosettes for reproductive power or family size.",
+          "Adorn the door panels with horizontally studded metal tiers, typically made of brass or cast iron. These studs, while purely decorative in Zanzibar, historically served as protection against war elephants in India.",
+          "In some cases, inscribe Quranic verses, the family name, or the date of construction onto the lintel.",
+          "The entire crafting process is meticulous and can take several months to complete for each door."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
-        "confidence_score": 0.9,
+        "confidence_score": 0.95,
         "related_elements": [
           {
+            "country": "Kenya",
+            "element_name": "Swahili Door Carving",
+            "relationship_reason": "The tradition of Swahili door carving is found along the entire East African coast, including Kenya, with shared architectural styles and cultural influences."
+          },
+          {
             "country": "Oman",
-            "element_name": "Omani Woodcarving / Architecture",
-            "relationship_reason": "Omani Arabs introduced rectangular door styles, heavy brass studs, Quranic writing, arabesque patterns, and geometric carvings to Zanzibar. Swahili craftsmen were also commissioned to carve doors for palaces in Muscat."
+            "element_name": "Omani Architecture/Wood Carving",
+            "relationship_reason": "Zanzibar was historically under the rule of the Omani Sultanate, and Omani Arab influence is evident in the architectural styles and door designs, including the use of Quranic inscriptions."
           },
           {
             "country": "India",
-            "element_name": "Indian Door Carving / Architecture (Gujarati style)",
-            "relationship_reason": "Indian merchants, particularly Gujaratis, introduced arched doorframes, elaborate floral designs (like lotus flowers and vines), and the use of brass studs (originally to deter war elephants) to Zanzibar."
-          },
-          {
-            "country": "Kenya",
-            "element_name": "Swahili Carved Doors (Lamu, Mombasa)",
-            "relationship_reason": "The tradition of Swahili carved doors is also prevalent along the Kenyan coast in towns like Lamu and Mombasa, sharing similar styles, motifs, and cultural significance due to the broader Swahili cultural heritage."
-          },
-          {
-            "country": "Mozambique",
-            "element_name": "Swahili Carved Doors (Mozambique Island)",
-            "relationship_reason": "The oldest Swahili doors are found along the East African coast from Mozambique Island, indicating a shared heritage across the Swahili littoral."
+            "element_name": "Indian Wood Carving/Architectural Elements",
+            "relationship_reason": "Indian merchants and craftsmen significantly influenced Zanzibar's door designs, introducing features like arched frames, floral motifs (lotus), and heavy brass studs."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-3e8bda74",
@@ -22858,54 +22877,73 @@
         "https://en.wikipedia.org/wiki/Pingshu",
         "https://www.britannica.com/art/Chinese-music/Other-vocal-and-instrumental-genres#ref235544",
         "http://www.shuoshu.org/",
-        "https://www.chinadaily.com.cn/a/202501/20/WS65aa0504a3104ef6b7b75270.html"
+        "https://www.chinadaily.com.cn/a/202501/20/WS65aa0504a3104ef6b7b75270.html",
+        "https://www.overdrive.com/blogs/pingshu-traditional-chinese-storytelling"
       ],
-      "scraped_at": "2026-08-25T00:39:27.657303Z",
+      "scraped_at": "2026-09-13T01:59:02.403177Z",
       "location": {
         "country": "China",
         "provinces": [
-          "Northern China",
-          "Southern China",
-          "Jiangsu (Yangzhou)",
-          "Shaanxi (Shanbei)"
+          "Jiangsu",
+          "Shaanxi",
+          "Ningxia",
+          "Sichuan",
+          "Hubei",
+          "Fujian",
+          "Shanghai",
+          "Hangzhou"
         ],
-        "lat": 22.1535271,
-        "lng": 113.5594359
+        "lat": 34.5412252,
+        "lng": 108.9237067
       },
       "resume_analisa": {
-        "description": "Shuoshu (說書), also known as Pingshu (评书) in northern China and Pinghua (评话) in southern China, is a traditional Han Chinese performing art of storytelling without musical accompaniment. It is a diverse art form encompassing over 300 genres with a history traceable to the Tang and Song dynasties. Performers typically wear changshan, stand behind a table, and utilize props such as a folded fan and a gavel. They often interject their own commentaries, blending entertainment with educational insights.",
-        "cultural_significance": "Shuoshu has historically served as a vital cultural institution, often referred to as the 'university' of ordinary people, where culture and knowledge were disseminated in an engaging and accessible manner. It profoundly influenced the development of written literary genres, including novels and short stories. This art form has held significant mass appeal, providing both entertainment and moral education to its audiences.",
+        "description": "Shuoshu (Chinese Storytelling) is a traditional Han Chinese performing art of storytelling, often presented without musical accompaniment. [10] This ancient tradition, with over 300 genres, has been a popular form of entertainment and education since the Song dynasty (960-1279). [3, 6] Storytellers, once established figures in marketplaces and bazaars, acted as a 'university' for ordinary people, conveying culture and knowledge in an engaging manner. [3] The art continues today in purely narrative, sung, or mixed styles. [5] Typically, a single artist, often male, performs at a table with minimal props such as a small stick (xingmu), a handkerchief, and a fan. [6, 10] Performers frequently incorporate improvisation, adding commentaries, humor, suspense, and new elements to their narratives, which are often derived from popular novels or historical events. [8, 10]",
+        "cultural_significance": "Shuoshu holds significant cultural importance in China, serving as a vital means of educating illiterate populations about history and customs. [11] It played a crucial role in communicating culture and knowledge, influencing the development of written genres like novels and short stories. [3] The stories often impart core Chinese cultural values, including patriotism, filial piety, philanthropy, and honesty, frequently exploring themes of good versus evil. [9] This oral tradition is recognized as an essential component of intangible cultural heritage across various regions of China. [7]",
+        "drr_relevance": true,
+        "drr_mechanism": "As a traditional art form, storytelling is recognized for its contributions to Disaster Risk Reduction (DRR). [12] It helps preserve collective memory and strengthens social cohesion, both vital for building community resilience to disasters. [12] Through storytelling, communities can process shared experiences, maintain cultural identity, and mobilize collective action for disaster preparedness, response, and recovery, thereby making DRR efforts more accessible, inclusive, and culturally relevant. [12] It also aids in strengthening culturally embedded risk awareness. [12]",
         "gemini_tags": [
           "Oral Tradition",
           "Storytelling",
           "Chinese Culture",
           "Performing Arts",
           "Intangible Cultural Heritage",
-          "Folk Art"
+          "Folk Art",
+          "Disaster Risk Reduction",
+          "Cultural Resilience",
+          "Pingshu",
+          "Pinghua"
         ]
       },
       "resume_tata_cara": {
-        "type": "Oral Performance",
+        "type": "ritual_sequence",
         "materials_and_tools": [
-          "Folded fan",
-          "Gavel (xingmu or zhiyu)",
+          "Table",
+          "Folding fan",
+          "Gavel (xingmu or 'wakening-rod')",
           "Handkerchief",
-          "Small stick"
+          "Changshan (traditional gown)"
         ],
-        "step_by_step": null
+        "step_by_step": [
+          "**Apprenticeship and Training**: Aspiring storytellers undergo extensive training, often through an apprenticeship with a master. This includes performing household duties, memorizing lengthy narratives (potentially hundreds of thousands of words), and acquiring deep knowledge of the customs, character backgrounds, history, and geography pertinent to their stories. [9, 11]",
+          "**Performance Setup**: The storyteller, typically dressed in a changshan, performs either sitting or standing behind a table. [9, 10]",
+          "**Props Utilization**: Simple props are integral to the performance, including a folding fan, a handkerchief, and a gavel (xingmu). The xingmu is used to initiate the performance, capture audience attention, or emphasize climactic moments in the narrative. [6, 9, 10]",
+          "**Narrative Delivery**: The storyteller delivers long, often serialized tales, fluidly transitioning between prose and poetry. These performances can extend over several months, presented in daily installments. [6]",
+          "**Improvisation and Commentary**: Performers engage in significant improvisation, adapting original texts, interjecting commentaries, humor, and suspense, and introducing new characters or plot twists to customize the performance for their audience. [8, 10]",
+          "**Vocal and Expressive Techniques**: The delivery is highly stylized, characterized by non-everyday melodies, rhythms, and heightened vocal expressions. Some genres may also incorporate musical instruments or stylized body movements inspired by Chinese opera. [11]"
+        ]
       },
       "shared_heritage_detection": {
         "is_shared": true,
-        "confidence_score": 0.8,
+        "confidence_score": 0.95,
         "related_elements": [
           {
-            "country": "Japan",
-            "element_name": "Rakugo",
-            "relationship_reason": "Rakugo is a similar traditional storytelling art form in Japan, sharing characteristics with Shuoshu as a solo oral performance."
+            "country": "...",
+            "element_name": "...",
+            "relationship_reason": "..."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
     },
     {
       "id": "ich-58aabffd",
@@ -26142,22 +26180,331 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-89cebf1b",
+      "element_name": "Griot Tradition",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ourancestories.com/blogs/news/griots-living-historians-and-musicians-of-west-africa&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ourancestories.com/blogs/news/griots-living-historians-and-musicians-of-west-africa",
+        "https://en.wikipedia.org/wiki/Griot",
+        "https://www.britannica.com/art/griot",
+        "https://www.ebsco.com/products/research-starters/griot",
+        "https://www.metmuseum.org/blogs/now-at-the-met/2020/how-griots-tell-legendary-epics-through-stories-and-songs-in-west-africa",
+        "https://seckoukeita.com/my-culture/",
+        "https://www.undrr.org/publication/words-action-using-traditional-and-indigenous-knowledges-disaster-risk-reduction",
+        "https://iccrom.org/news/welcome-new-platform-embracing-indigenous-and-traditional-knowledge-disaster-risk-reduction"
+      ],
+      "scraped_at": "2026-09-13T01:59:23.887972Z",
+      "location": {
+        "country": "West Africa",
+        "provinces": [
+          "Mali",
+          "Senegal",
+          "Gambia",
+          "Guinea",
+          "Burkina Faso",
+          "Mauritania",
+          "Niger",
+          "Chad",
+          "Nigeria"
+        ],
+        "lat": 12.64059,
+        "lng": -8.0273189
+      },
+      "resume_analisa": {
+        "description": "Griots are hereditary West African storytellers, historians, praise singers, poets, and musicians who serve as custodians of oral traditions, genealogies, and historical narratives. They undergo rigorous training from a young age to master eloquent speech, lyrical expression, and musical prowess. Griots are known by various names across different ethnic groups, such as \"jali\" or \"jeli\" among the Mande, \"guewel\" in Wolof, and \"arokin\" in Yoruba. They often accompany their narratives with traditional instruments like the kora, balafon, ngoni, and khalam.",
+        "cultural_significance": "The Griot tradition is central to West African societies, preserving the collective memory of generations by meticulously recording births, deaths, marriages, and community histories. Griots play a crucial role in maintaining social cohesion by transmitting cultural values, educating communities, and uniting people through their captivating performances. They also act as advisors to leaders and mediators in disputes, drawing upon their deep respect and familiarity within the community to initiate peace negotiations. Their narratives, often accompanied by music, are an essential part of West African events like weddings, initiations, and funerals, connecting the past with the present.",
+        "drr_relevance": true,
+        "drr_mechanism": "The Griot tradition, as a form of traditional and indigenous knowledge, contributes to Disaster Risk Reduction (DRR) and climate adaptation by preserving and transmitting historical narratives and community memory. Griots, as living archives, can hold accounts of past environmental events, hazards, and traditional coping mechanisms. Their role as respected community figures, advisors, and mediators can facilitate the communication of risk, foster community-level preparedness, and aid in consensus-building for adaptation strategies, drawing upon historical precedents and cultural values to build resilience.",
+        "gemini_tags": [
+          "Oral Traditions",
+          "Storytelling",
+          "Music",
+          "History",
+          "West Africa",
+          "Cultural Heritage",
+          "Social Practices",
+          "Mediation",
+          "Genealogy",
+          "Disaster Risk Reduction",
+          "Climate Adaptation"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Oral Storytelling and Musical Performance",
+        "materials_and_tools": [
+          "Kora (21-string harp-lute)",
+          "Balafon (wooden xylophone)",
+          "Ngoni (lute-like instrument)",
+          "Khalam (or xalam, a stringed instrument, ancestor of the banjo)",
+          "Kontigi",
+          "Goje (or n'ko)",
+          "Junjung (drum)"
+        ],
+        "step_by_step": [
+          "**Hereditary Apprenticeship**: The Griot tradition is passed down through generations within specific families, often from father to son or mother to daughter, emphasizing the inherited aspect of the role.",
+          "**Early Training**: Children born into griot families begin their rigorous training at a young age, typically around seven or eight years old, immersing themselves in verbal art, music, and genealogy.",
+          "**Mastery of Repertoire**: Training involves years of intensive listening and memorization to acquire a vast repertoire of hundreds of songs, stories, epic poems (like the Epic of Sundiata), and detailed historical accounts, including genealogies of families and empires.",
+          "**Instrumental Proficiency**: Aspiring griots learn to play traditional instruments such as the kora, balafon, ngoni, or khalam. Some are also taught to build these instruments, receiving their own instrument after years of study, often around 18 years old.",
+          "**Adaptation and Interpretation**: Griots are trained not only in memorization but also in interpretation and adaptation, learning to tailor their performances to specific audiences and social contexts, weaving in contemporary details and their own experiences to keep the narratives vibrant and relevant.",
+          "**Performance**: Griot performances involve the narration of stories and histories, accompanied by music and song. These performances are integral to various West African events, serving to educate, entertain, and preserve cultural heritage."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Mali",
+            "element_name": "Jali or Jeli",
+            "relationship_reason": "Alternative name for griots among the Mande peoples, signifying their deep connection to spiritual, social, or political powers."
+          },
+          {
+            "country": "Senegal",
+            "element_name": "Guewel, Kewel, or Okawul",
+            "relationship_reason": "Alternative names for griots among the Wolof people."
+          },
+          {
+            "country": "Senegal",
+            "element_name": "Gawlo",
+            "relationship_reason": "Alternative name for griots among the Serer and Pulaar (Fula) peoples."
+          },
+          {
+            "country": "Mauritania",
+            "element_name": "Iggawen",
+            "relationship_reason": "Alternative name for griots among the Hassaniyan people."
+          },
+          {
+            "country": "Nigeria",
+            "element_name": "Arokin",
+            "relationship_reason": "Alternative name for griots among the Yoruba people."
+          },
+          {
+            "country": "Mali",
+            "element_name": "Diari or Gesere",
+            "relationship_reason": "Alternative name for griots among the Soninke people."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-cd85a7fc",
+      "element_name": "Dokra Metal Craft",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.artflute.com/blogs/art-guide/dhokra-art-a-complete-guide-to-indias-traditional-lost-wax-metal-craft&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.artflute.com/blogs/art-guide/dhokra-art-a-complete-guide-to-indias-traditional-lost-wax-metal-craft",
+        "https://stringofstories.com/blogs/news/from-the-heart-of-tribes-the-enduring-magic-of-dokra",
+        "https://artzolo.com/blog/dokra-art-meaning-techniques-history-types-explained",
+        "https://forwardpress.in/2013/08/dokra-a-fading-leaf-in-the-culture-of-bengal/",
+        "https://impart.org.in/crafts/dhokra/",
+        "https://ihar.org.in/dokra-folk-art-of-west-bengal-utkalika-sahoo/",
+        "https://ich.unesco.org/en/NGO/00645",
+        "https://www.dhokra.in/",
+        "https://rcch.in/dokra/",
+        "https://www.handsondastkar.com/blogs/news/the-ancient-craft-of-dhokra",
+        "https://dokraarts.com/",
+        "https://www.youtube.com/watch?v=kYJj7b1r-gY",
+        "https://enar.ai/blogs/journal/what-is-dokra",
+        "https://indiacurrents.com/dhokra-art-is-a-sustainable-tribal-legacy/",
+        "https://oaklores.com/blogs/news/metal-magic-the-traditional-dhokra-craft-of-west-bengal",
+        "https://www.facebook.com/CaringBeyondBounds/posts/dokra-has-been-part-of-indias-artistic-traditions-for-generations-with-each-piec/2507963309341492/",
+        "https://www.bongoniketan.com/pages/bengal-dokra",
+        "https://www.astaguru.com/art-encyclopedia/dhokra-art-indias-ancient-lost-wax-metal-craft",
+        "https://zola.in/blogs/news/dhokra-metal-craft",
+        "https://www.jeenalavie.com/dhokra-art-an-ancient-metal-art-that-stood-the-test-of-time/",
+        "https://craftmark.org/crafts/dhokra",
+        "https://www.facebook.com/risa.in/posts/from-the-heartlands-of-india-dhokra-craft-reflects-a-legacy-of-resilience-rich-h/811800294302636/",
+        "https://www.scribd.com/document/730076043/Dokra-Craft-Heritage-and-Challenges-in-West-Bengal",
+        "https://www.facebook.com/priyascuration/posts/problems-facing-the-dokra-craft-artisans-of-bengal-pricura-dokra-tribal-art-of-i/697554905247953/"
+      ],
+      "scraped_at": "2026-09-13T01:59:55.984536Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "West Bengal (Bankura, Purulia, Midnapore, Burdwan/Bardhaman, Bikna, Dariyapur)",
+          "Odisha",
+          "Chhattisgarh",
+          "Jharkhand",
+          "Madhya Pradesh",
+          "Telangana",
+          "Andhra Pradesh",
+          "Kerala",
+          "Rajasthan"
+        ],
+        "lat": 22.9964948,
+        "lng": 87.6855882
+      },
+      "resume_analisa": {
+        "description": "Dokra (also spelled Dhokra) Metal Craft is an ancient form of non-ferrous metal casting that utilizes the lost-wax, or cire perdue, technique to create unique hollow or solid metal objects. The craft is characterized by its distinctive textured surface, often adorned with coiled wires, tiny pellets, and intricate patterns that catch light from various angles. Dating back 4,000 to 5,000 years, its origins can be traced to the Indus Valley Civilization, with the famous 'Dancing Girl' of Mohenjo-daro being an early example.",
+        "cultural_significance": "Named after the Dhokra Damar tribes, who are traditional metalworkers, Dokra art reflects the rich cultural heritage and tribal aesthetics of various communities across India. It is used to create figurines of deities, animals, human figures depicting daily life scenes, ornaments, and ritual objects. The craft embodies patience, creativity, and a deep connection to cultural roots, serving as a living tradition that preserves collective memory and strengthens social bonds. Dokra art from West Bengal received a Geographical Indication (GI) tag in 2018 and has been recognized as an intangible heritage by UNESCO, highlighting its importance in conveying social messages and preserving cultural identity.",
+        "drr_relevance": true,
+        "drr_mechanism": "Dokra Metal Craft is inherently sustainable and eco-friendly, utilizing locally sourced natural materials such as riverbed clay, beeswax, cow dung, rice husk, and recycled scrap metal. The crafting process is largely manual, requiring minimal machinery and leaving no industrial footprint, making it a zero-waste practice where even broken pieces are re-melted into new casts. The craft is also heavily weather-dependent, relying on sun-drying and rain-prepped mud, which demonstrates traditional adaptation to local environmental conditions. By providing livelihoods for tribal communities, particularly in rural areas, it contributes to economic resilience and the sustainable development of these indigenous groups.",
+        "gemini_tags": [
+          "Lost-wax casting",
+          "Metal craft",
+          "Tribal art",
+          "Traditional craftsmanship",
+          "West Bengal",
+          "India",
+          "Sustainable craft",
+          "Indigenous art",
+          "Bronze Age",
+          "Cire perdue"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "Materials: Clay (riverbed clay, local soil), rice husk, coal dust, cow dung, beeswax (or paraffin wax), natural resin (Dammar gum tree resin), nut oil (e.g., mustard oil), brass and bell metal scrap (recycled), firewood/charcoal, water.",
+          "Tools: Hammers, chisels, files, pliers, knives, wire brush, wax extruder/press, tongs, traditional kiln (bhatti, often dug in the ground), metal funnel."
+        ],
+        "step_by_step": [
+          "1. Prepare the clay core: A core resembling the desired final object, but smaller in size, is meticulously molded by hand using a mixture of clay (sourced from riverbeds or local soil), rice husk, coal dust, cow dung, and water.",
+          "2. Dry the clay core: The molded clay core is then left to dry thoroughly in the sun.",
+          "3. Apply wax layer: A layer of wax, typically a mixture of beeswax, natural resin, and oil (such as mustard oil), is pressed and shaped over the dried clay core. Intricate designs and fine details are created by winding elastic, thread-like wax elements around the core.",
+          "4. Apply outer clay mold: The wax model is subsequently covered with several layers of fine clay and mud (often mixed with rice husk and red soil), forming an outer mold. A small opening or hole is left at the top of this mold to facilitate the pouring of molten metal and the draining of wax. This outer mold is also allowed to sun-dry.",
+          "5. Prepare for casting: Chunks of metal (usually brass or bell metal scrap) are either placed in a clay bowl attached to the mold or introduced directly into the mold through a metal funnel.",
+          "6. Fire the mold (Lost-wax process): The prepared mold is placed in a traditional furnace, known as a 'bhatti', which is typically dug into the ground and encircled by bricks. As the furnace heats, the wax inside the mold melts and drains out through the opening, creating a hollow cavity that precisely mirrors the shape of the original wax model.",
+          "7. Pour molten metal: Molten metal (an alloy of brass, bronze, or bell-metal) is then carefully poured into the wax-free cavity, filling the space previously occupied by the wax.",
+          "8. Cool and break the mold: The entire mold is allowed to cool completely. Once the metal has solidified, the hardened outer clay mold is carefully broken away to reveal the finished metal artifact.",
+          "9. Finishing: The final step involves polishing any rough edges and buffing the surface to achieve a desired shine and even finish."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Lost-wax casting (cire perdue)",
+            "relationship_reason": "Dokra is a specific application of the ancient lost-wax casting technique, which has been practiced across various regions of India (including Odisha, Chhattisgarh, Jharkhand, Madhya Pradesh, Telangana, Kerala, and Rajasthan) and dates back to the Indus Valley Civilization (e.g., the 'Dancing Girl' of Mohenjo-daro)."
+          },
+          {
+            "country": "Mesopotamia, Egypt, China, Southeast Asia",
+            "element_name": "Lost-wax casting (cire perdue)",
+            "relationship_reason": "The lost-wax casting method is a globally significant metallurgical technology documented in these ancient civilizations, indicating a shared heritage in metalworking techniques across different cultures."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-5e06233b",
+      "element_name": "Raranga (Māori Weaving)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.naturespic.com/images/rob_suisted/25569XB01_Traditional_Maori_weaving_of_multi_coloured_flax_Raranga.jpg",
+      "source_urls": [
+        "https://teara.govt.nz/en/maori-weaving-and-tukutuku/page-1",
+        "https://www.revelations.co.nz/maori-weaving.html",
+        "https://en.wikipedia.org/wiki/M%C4%81ori_traditional_textiles",
+        "https://www.rotoruatravelsecrets.com/maori-flax-weaving.html",
+        "https://www.tepapa.govt.nz/discover-collections/read-watch-play/maori-culture/maori-weaving",
+        "https://www.newzealand.com/int/feature/maori-weaving/",
+        "https://www.shepherdess.co.nz/articles/i-found-myself-through-weaving-how-raranga-has-helped-one-woman-discover-her-place-in-the-world",
+        "https://www.vice.com/en/article/qjv33w/raranga-maori-flax-weaving",
+        "https://www.raranga.co.nz/",
+        "https://allflax.co.nz/what-is-flax-weaving/",
+        "https://www.youtube.com/watch?v=sYx-e-0m2Lg",
+        "https://www.nativehope.org/en-us/articles/keeping-culture-alive-native-hope-blog",
+        "https://www.quora.com/What-traditional-practices-or-skills-are-still-preserved-and-passed-down-through-Native-American-communities-today",
+        "https://flaxworx.blogspot.com/2012/11/flax-weaving-on-marae.html",
+        "https://www.youtube.com/watch?v=Fj-sY-06a14",
+        "https://www.shepherdess.co.nz/articles/i-found-myself-through-weaving-how-raranga-has-helped-one-woman-discover-her-place-in-the-world",
+        "https://www.vice.com/en/article/qjv33w/raranga-maori-flax-weaving",
+        "https://www.raranga.co.nz/",
+        "https://www.tepapa.govt.nz/discover-collections/read-watch-play/maori-culture/raranga-plaiting",
+        "https://blogs.otago.ac.nz/te-mahi-rangahau/2023/04/07/raranga-the-art-of-weaving/"
+      ],
+      "scraped_at": "2026-09-13T02:00:40.132766Z",
+      "location": {
+        "country": "New Zealand",
+        "provinces": [
+          "North Island",
+          "South Island",
+          "Rotorua",
+          "Whangarei"
+        ],
+        "lat": -38.0035304,
+        "lng": 175.957821
+      },
+      "resume_analisa": {
+        "description": "Raranga is a traditional Māori weaving and plaiting technique that primarily utilizes harakeke (New Zealand flax) to create a diverse range of items. These include practical objects such as baskets (kete) and mats (whāriki), as well as ceremonial garments like cloaks (kākahu and korowai). The practice involves finger weaving or plaiting strips of carefully prepared flax.",
+        "cultural_significance": "Raranga is a living art form deeply intertwined with Māori identity, spirituality, and the ongoing survival of their culture. It embodies ancestral knowledge, stories, and values, meticulously passed down through generations. Weaving is considered sacred, with the artist often viewed as a conduit through whom the gods create. Each woven piece is imbued with symbolism and meaning, representing unity, togetherness, and the profound connection between individuals, tribes, and the broader Māori nation. For example, the kete (basket) symbolizes a container of knowledge and wisdom. Raranga has also served as a powerful symbol of liberation from colonial influences. Skilled weavers hold a revered position within their respective tribes.",
+        "drr_relevance": true,
+        "drr_mechanism": "Raranga contributes to ecological resilience and climate adaptation through its sustainable utilization of local, natural resources, primarily harakeke (New Zealand flax). Māori weavers traditionally harvest flax leaves with great care, ensuring the preservation of the center shoot to guarantee the plant's continuous growth and availability. This practice demonstrates a deep understanding of sustainable harvesting and resource management. The creation of practical items like raincoats (hieke) from harakeke showcases adaptation to the local climate and environment, providing protection from the elements using readily available natural materials. The inherent properties of flax, such as its water resistance when properly prepared, highlight its utility in crafting resilient items for daily life and protection. The emphasis on using diverse local plant materials also aligns with principles of ecological resilience, reducing reliance on single resources.",
+        "gemini_tags": [
+          "Māori culture",
+          "Traditional weaving",
+          "Flax weaving",
+          "New Zealand",
+          "Indigenous craftsmanship",
+          "Cultural heritage",
+          "Sustainable practices",
+          "Ecological resilience",
+          "Climate adaptation",
+          "Raranga",
+          "Harakeke"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Finger weaving/Plaiting (Raranga, Whatu, Whiri)",
+        "materials_and_tools": [
+          "Harakeke (New Zealand flax)",
+          "Muka (flax fibre)",
+          "Kiekie",
+          "Pīngao (golden sand sedge)",
+          "Kākaho (toetoe stems)",
+          "Wharariki",
+          "Tī kōuka",
+          "Tōī",
+          "Nīkau (other plant materials)",
+          "Mussel shell (for stripping/scraping flax)",
+          "Stone pounder (for beating muka)",
+          "Dyes (Paru for black, Raurēkau bark for yellow, Tānekaha bark for tan)",
+          "Alum (potash) for setting colors",
+          "Two pegs or a frame (for larger garments)"
+        ],
+        "step_by_step": [
+          "**Harvesting Harakeke:** Leaves are carefully cut to preserve the center shoot, ensuring the plant's continued growth and sustainability.",
+          "**Preparing Muka (Fibre Extraction):** The flax leaves are stripped, often using a mussel shell, to extract the muka (fibre).",
+          "**Processing Muka:** The extracted muka is washed and then beaten with a stone pounder before being hand-rolled into thread.",
+          "**Dyeing (Optional):** Threads can be dyed using natural materials: paru (mud high in iron salts) for black, raurēkau bark for yellow, and tānekaha bark for a tan color. Alum (potash) is used to set these colors.",
+          "**Weaving/Plaiting (Raranga):** For items like baskets (kete) and mats (whāriki), an even number of weaving strips are plaited, crossing each other diagonally. The weaver typically plaits away from their body. For cloaks (kākahu), a finger weaving technique called whatu is employed, where a cord is stretched between two pegs, with warp threads hanging down and finer weft threads running between them. Modern practices may utilize a frame. Piupiu (skirts) are made by preparing flax leaves to create cylindrical strands with sections of exposed muka to form geometric patterns. Kete often begin with a plaited base (whiri) made from muka.",
+          "**Finishing:** The weaving process is completed, and for certain items such as cloaks, feathers or decorative threads are integrated into the fabric."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Pacific Islands (Polynesia)",
+            "element_name": "Pandanus weaving / Polynesian weaving techniques",
+            "relationship_reason": "Māori ancestors brought weaving techniques from tropical Polynesia to New Zealand, adapting them to local materials like harakeke after pandanus did not thrive in the cooler climate. Raranga has strong links with Pacific Island weaving."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-09T02:07:33.951545Z",
-    "total_ich_elements": 295,
-    "complete_records": 293,
-    "incomplete_records": 2,
+    "generated_at": "2026-09-13T02:01:10.798252Z",
+    "total_ich_elements": 298,
+    "complete_records": 298,
+    "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 103,
+      "Traditional Craftsmanship": 105,
       "Social Practices & Rituals": 57,
       "Culinary Traditions": 45,
       "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 26,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 20,
+      "Oral Traditions": 21,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
