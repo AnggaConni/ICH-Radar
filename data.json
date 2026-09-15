@@ -26489,17 +26489,290 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a0aaed98",
+      "element_name": "Madhubani Painting",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.artzolo.com/blog/madhubani-mithila-art-history-techniques-and-cultural-significance&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.artzolo.com/blog/madhubani-mithila-art-history-techniques-and-cultural-significance",
+        "https://prakritianand.com/how-is-madhubani-art-done-process-materials-techniques/",
+        "https://en.wikipedia.org/wiki/Madhubani_art",
+        "https://www.worldhistory.org/article/1539/madhubani-paintings-peoples-living-cultural-herita/",
+        "https://www.exoticindiaart.com/article/madubani-painting/",
+        "https://www.itokri.com/blogs/articles/origin-history-significance-of-madhubani-paintings",
+        "https://rooftopapp.com/blog/madhubani-painting-bihar-folk-art",
+        "https://www.dailydesignist.com/indian-heritage-and-culture-madhubani-painting/",
+        "https://housenama.com/blog/madhubani-painting-in-6-easy-steps/",
+        "https://www.fevicreate.com/articles/how-to-do-madhubani-art-step-by-step-painting-guide",
+        "https://www.culturati.co/blogs/madhubani-painting",
+        "https://www.vareesha.com/blogs/news/why-is-madhubani-art-famous",
+        "https://www.arts-of-architecture.com/madubani-painting-history-techniques-themes-and-contemporary-relevance/",
+        "https://www.srjana.org/post/the-fading-colors-of-madhubani-a-story-of-survival",
+        "https://www.brownhistory.com/p/the-forgotten-legacy-of-madhubani-art",
+        "https://www.indianheritage.org/art/madhubani-paintings/madhubani-paintings.html",
+        "https://www.dsource.in/resource/madhubani-painting/tools-and-raw-materials",
+        "https://www.youtube.com/watch?v=1u-7tXk3P_A",
+        "https://www.modeldiplomat.com/blog/madhubani-painting-mithila-folk-art",
+        "https://theaspd.com/index.php/ijes/article/download/265/239",
+        "https://www.indulgeexpress.com/culture/how-a-massive-earthquake-led-to-the-creation-of-madhubani-painting-44126",
+        "https://testbook.com/question-answer/which-of-the-following-traditional-gi-tagged-handicrafts--64b711e56d6f2868265a782a",
+        "https://www.borgenmagazine.com/madubani-art-and-poverty-in-bihar/"
+      ],
+      "scraped_at": "2026-09-15T02:22:25.272459Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "Bihar"
+        ],
+        "lat": 25.6440845,
+        "lng": 85.906508
+      },
+      "resume_analisa": {
+        "description": "Madhubani painting, also known as Mithila painting, is a traditional Indian folk art form originating from the Mithila region of Bihar, India, and extending into parts of Nepal. It is characterized by its vivid colors, intricate patterns, bold outlines, and symbolic themes. The art often depicts Hindu mythology, nature, and everyday life, typically covering the entire surface with designs, a style known as 'horror vacui'.",
+        "cultural_significance": "Madhubani painting is an integral part of the Mithila culture, deeply intertwined with social, religious, and ritualistic practices such as weddings, festivals, and ceremonies, where it is believed to bring blessings and good fortune. Traditionally practiced by women, it has significantly contributed to their empowerment by offering a means of creative expression and livelihood. The art form reflects and preserves the values, beliefs, and traditions of the community, thereby maintaining its cultural identity across generations.",
+        "drr_relevance": true,
+        "drr_mechanism": "The commercialization of Madhubani painting, particularly spurred by natural disasters like the 1934 earthquake and mid-20th-century droughts, has provided a crucial and sustainable livelihood for thousands of families in flood-prone Bihar. This economic diversification reduces their vulnerability to agricultural losses, thereby enhancing economic resilience and contributing to disaster risk reduction. Furthermore, the art's traditional use of natural pigments and its frequent depiction of nature foster environmental awareness and promote sustainable practices.",
+        "gemini_tags": [
+          "Indian folk art",
+          "Mithila painting",
+          "Bihar art",
+          "Traditional craftsmanship",
+          "Women empowerment",
+          "Natural pigments",
+          "Mythological themes",
+          "Environmental awareness",
+          "Economic resilience",
+          "Cultural identity"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Process",
+        "materials_and_tools": [
+          "Base Material: Traditionally mud-plastered walls and floors; currently also handmade paper, cloth, or canvas.",
+          "Colors: Natural pigments derived from flowers (e.g., palash for orange, kusum for red, singaar/jasmine for yellow, aparajita for blue), leaves (e.g., wood apple for green, indigo for blue), turmeric for yellow, cow dung mixed with lampblack/soot for greenish black/black, rice paste/powder for white, red clay for Indian red. Binders like gum arabic or goat's milk were traditionally used. Today, acrylic or poster colors are also common.",
+          "Tools: Bamboo or reed pens, twigs, fine-tipped brushes (often nylon), matchsticks, fingers, nib-pens, nib holders, and black marker pens."
+        ],
+        "step_by_step": [
+          "1. Prepare the Surface: Traditionally, fresh mud-plastered walls and floors were prepared. In contemporary practice, handmade paper, cloth, or canvas are used. The surface needs to be clean, stable, and suitable for drawing and coloring. A cow dung wash may be applied to paper to act as an insect repellent and to mimic the traditional wall painting background.",
+          "2. Choose Subject and Plan Composition: Artists decide on themes, which often include Hindu deities, mythological narratives (like scenes from the Ramayana), elements of nature (fish, birds, animals, trees, flowers, sun, moon), marriage imagery, or contemporary social issues. The main figures and motifs are then arranged to create a balanced composition.",
+          "3. Draw Main Outlines: Strong, confident lines are drawn for the main figures and forms. A characteristic technique involves drawing double lines for borders and outlines, with the space between these lines often filled with fine cross-hatching or dots. Traditional tools include bamboo or reed pens, twigs, or brushes; modern artists may use nib pens or marker pens.",
+          "4. Add Patterns and Decorative Details: Once the primary forms are established, the spaces inside the outlined shapes and the background are meticulously filled with intricate patterns, geometric designs, flowers, leaves, dots, lines, and various recurring motifs. The principle of 'horror vacui' (filling almost all empty spaces) is a defining feature of Madhubani painting.",
+          "5. Apply Colors: Colors, traditionally derived from natural pigments, are applied flat without any shading. The choice of colors often carries symbolic meanings; for instance, red may represent love and passion, yellow fertility and prosperity, and green nature and growth.",
+          "6. Final Touches: After the paint dries, the outlines may be traced again with black ink or a marker to enhance the boldness and clarity of the patterns and designs."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Nepal",
+            "element_name": "Mithila Painting",
+            "relationship_reason": "The Mithila region, where Madhubani painting originated and is primarily practiced, spans parts of northern Bihar, India, and extends into the adjoining Terai districts of Nepal. The art form is a shared tradition among the women of various communities in this entire geographical area."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-ca15aa70",
+      "element_name": "Kubaneh (כֻּבַּאנֶה)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Kubaneh%2C_freshly_baked.jpg/1200px-Kubaneh%2C_freshly_baked.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Kubaneh",
+        "https://www.jewishfoodsociety.org/recipes/kubaneh-yemenite-overnight-bread",
+        "https://www.aish.com/jewlish/recipes/breakfast/Kubaneh.html",
+        "https://lionsbread.com/homemade-yemenite-kubaneh-recipe/",
+        "https://reboot.fm/kubaneh/",
+        "https://bakerwithoutborders.net/chocolate-kubaneh-yemeni-bread-recipe-and-history/",
+        "https://cuisinefiend.com/kubaneh/",
+        "https://breadtopia.com/kubaneh-jewish-yemeni-bread/",
+        "https://www.tasteatlas.com/kubaneh"
+      ],
+      "scraped_at": "2026-09-15T02:22:59.570971Z",
+      "location": {
+        "country": "Israel",
+        "provinces": [],
+        "lat": 30.8124247,
+        "lng": 34.8594762
+      },
+      "resume_analisa": {
+        "description": "Kubaneh is a traditional Yemenite Jewish pull-apart yeast bread, typically baked overnight at a low temperature and served for Shabbat breakfast. It is characterized by its rich, buttery, and flaky texture, achieved through a lamination process where butter or oil is spread between layers of dough.",
+        "cultural_significance": "Kubaneh holds significant cultural importance as a central component of the Shabbat morning meal for Yemenite Jews. Its long, slow baking process allows families to enjoy warm, freshly prepared food on Shabbat without violating the prohibition of cooking on the holy day, thus symbolizing rest and adherence to tradition. It is commonly served alongside hard-boiled eggs (haminados), grated tomatoes (resek agvaniyot), and spicy zhug (a Yemenite condiment). In recent years, Kubaneh has expanded beyond the Yemenite Jewish community and is now popular in bakeries and restaurants specializing in Middle Eastern cuisine.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Yemenite Jewish cuisine",
+          "Shabbat food",
+          "traditional bread",
+          "overnight baking",
+          "Middle Eastern cuisine",
+          "Jewish culinary heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Baking (Bread)",
+        "materials_and_tools": [
+          "Flour (all-purpose, bread, or a mix; traditionally sorghum or cornmeal for weekdays, wheat flour for Shabbat)",
+          "Warm water",
+          "Yeast (sourdough starter or active dry yeast)",
+          "Sugar (light brown sugar or honey)",
+          "Salt",
+          "Eggs (optional, for dough enrichment or egg wash)",
+          "Butter (or oil/margarine for parve)",
+          "Nigella seeds (optional)",
+          "Deep round ovenproof pot with a tight-fitting lid (kubaneh pot or Dutch oven)",
+          "Large mixing bowl",
+          "Stand mixer (optional)",
+          "Damp cloth"
+        ],
+        "step_by_step": [
+          "**Prepare the dough**: Combine flour, sugar, salt, and yeast (or a pre-fermented sourdough starter prepared overnight). Gradually add warm water and eggs (if included) to mix thoroughly until a sticky, elastic dough forms.",
+          "**First Rise**: Place the dough in a lightly oiled bowl, cover with a damp cloth, and let it rise in a warm environment until its size has doubled, typically 45-60 minutes, or longer if using sourdough.",
+          "**Lamination and Shaping**: Liberally grease the inside of a deep, ovenproof pot (such as a Dutch oven or a specialized kubaneh pot) with butter or oil, and optionally sprinkle nigella seeds on the bottom. Divide the risen dough into several equal portions. Roll or stretch each portion thinly, spread softened butter (or oil/margarine) over it, and then roll it into a log or shape it into a ball. Arrange the dough pieces snugly in the prepared pot, often placing one in the center and the others around it like flower petals.",
+          "**Second Rise**: Cover the pot with a damp cloth and allow the dough to rise again for an additional 20-30 minutes.",
+          "**Overnight Baking**: Place additional cubes of butter on top of the dough and, if desired, sprinkle with more nigella seeds. Cover the pot tightly with its lid. Bake overnight in a preheated oven at a very low temperature (approximately 215°F / 100°C) for 8-12 hours. A quicker alternative involves baking at a higher temperature (e.g., 350°F / 175°C) for 45-50 minutes, though the overnight method is traditional.",
+          "**Serving**: Serve the Kubaneh warm, traditionally accompanied by hard-boiled eggs (haminados), grated tomatoes, and zhug (a spicy Yemenite condiment)."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Yemen",
+            "element_name": "Kubaneh (original form)",
+            "relationship_reason": "Kubaneh originated in Yemen within the Yemenite Jewish community and was brought to Israel by immigrants."
+          },
+          {
+            "country": "France",
+            "element_name": "Croissant",
+            "relationship_reason": "Some food historians suggest that the lamination technique used in Kubaneh may have influenced the development of the French croissant, with baking practices spreading to Europe when Yemen was part of the Ottoman Empire."
+          },
+          {
+            "country": "India",
+            "element_name": "Paratha bread",
+            "relationship_reason": "It is hypothesized that early Kubaneh bakers might have been inspired by Indian paratha bread, which also features folded layers of fat."
+          },
+          {
+            "country": "Syria",
+            "element_name": "Kubaneh (variation)",
+            "relationship_reason": "Kubaneh is also noted as being popular in Syria."
+          },
+          {
+            "country": "Italy (Libyan Jewish community)",
+            "element_name": "Kubaneh (variation)",
+            "relationship_reason": "A variation of the Kubaneh recipe has been found within the Libyan Jewish community in Italy."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-20ec156a",
+      "element_name": "Ajrak (Block Printing and Resist Dyeing)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//azurak.com/blogs/news/ajrakh-where-tradition-and-sustainable-fashion-intertwine&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://azurak.com/blogs/news/ajrakh-where-tradition-and-sustainable-fashion-intertwine",
+        "https://saqqafat.com/blogs/news/the-significance-of-ajrak-in-sindhi-culture",
+        "https://en.wikipedia.org/wiki/Ajrak",
+        "https://dressherstudio.com/blogs/news/sindhi-ajrak-explained-history-meaning-modern-styling",
+        "https://medium.com/@directcreatecommunity/ajrakh-where-tradition-and-sustainable-fashion-intertwine-1b3b2b3b2b3b",
+        "https://jhooms.com/blogs/news/ajrak-a-symbol-of-life-and-legacy-in-pakistani-culture",
+        "https://ajrakhprints.com/pages/process",
+        "https://www.facebook.com/SindhiCultureOfficial/posts/ajrak-is-a-unique-and-traditional-form-of-block-printed-shawl-or-scarf-that-is-i/10158223403251676/",
+        "https://moomal.pk/blogs/news/ajrak-quintessentially-sindhi",
+        "https://www.itokri.com/blogs/stories/the-origin-of-ajrakh-prints-tales-of-ajrak",
+        "https://indiastreet.co.uk/blogs/news/ajrakh",
+        "https://www.ancient-origins.net/ancient-traditions/small-town-keeps-5000-year-old-ajrak-tradition-alive-pakistan-0018041",
+        "https://www.sahapedia.org/ajrak-the-sacred-cloth-of-sindh",
+        "https://ethnicsofkutch.com/blogs/news/ajrakh-hand-block-printing-with-natural-dyes-organic-colours",
+        "https://www.faridagupta.com/blogs/news/the-complete-ajrakh-making-process-guide",
+        "https://www.luxurionworld.com/blogs/news/ajrakh-blockprint-highest-standard-of-elegance-with-vegetable-dyes",
+        "https://www.dawn.com/news/563852/craftsmanship-the-making-of-ajrak",
+        "https://www.khinkhwab.com/blogs/news/the-intricate-craft-of-ajrakh-the-complete-process",
+        "https://inkriti.com/blogs/news/everything-about-hand-block-printed-ajrakh-a-comprehensive-guide",
+        "https://textiletrails.com/blogs/news/discovering-handmade-textile-treasures-ajrakh-block-printing-and-natural-dyeing",
+        "https://sindhpost.com/2025/08/05/ajrak-is-sindhs-living-heritage/",
+        "https://chidiyaa.com/blogs/chidiyaa-blog/ajrak-the-symphony-of-universe"
+      ],
+      "scraped_at": "2026-09-15T02:23:35.760921Z",
+      "location": {
+        "country": "Pakistan",
+        "provinces": [
+          "Sindh",
+          "South Punjab"
+        ],
+        "lat": 25.5,
+        "lng": 69.0
+      },
+      "resume_analisa": {
+        "description": "Ajrak is a distinctive form of textile block-printing, characterized by its intricate geometric and floral patterns and a rich, earthy color palette, predominantly deep indigo and crimson, accented with white and black. This ancient craft involves printing on both sides of the fabric using meticulously hand-carved wooden blocks and a resist-dyeing technique, passed down through generations. The word 'Ajrak' is believed to derive from the Arabic word 'azrak', meaning 'blue', a prominent color in its designs.",
+        "cultural_significance": "Ajrak holds profound cultural and spiritual significance, serving as a powerful symbol of Sindhi identity, pride, respect, and honor. It is an integral part of Sindhi life, worn on special occasions like weddings and festivals, and presented as a gesture of hospitality to guests. The textile is used from birth to death, symbolizing the values, traditions, and history of Sindh, and its patterns often embody local myths, legends, and historical events. Ajrak Day is celebrated annually to highlight the rich Sindhi culture.",
+        "drr_relevance": true,
+        "drr_mechanism": "The traditional Ajrak craft contributes to ecological resilience and climate adaptation through its reliance on natural, non-toxic, and biodegradable dyes, offering a sustainable alternative to synthetic dyes. Unlike modern textile production that uses harmful chemicals and vast amounts of water, Ajrak's process minimizes environmental impact by utilizing natural water sources and careful water management. The use of plant and mineral-based dyes (such as indigo, madder root, pomegranate, sandalwood, and iron) avoids the environmental pollution and health risks associated with petrochemical-derived synthetic dyes. This commitment to natural materials and traditional, environmentally conscious methods exemplifies environmental stewardship.",
+        "gemini_tags": [
+          "Textile Craft",
+          "Block Printing",
+          "Resist Dyeing",
+          "Natural Dyes",
+          "Sindhi Culture",
+          "Pakistani Heritage",
+          "Indian Heritage",
+          "Sustainable Craft",
+          "Cultural Identity",
+          "Ecological Resilience",
+          "Traditional Craftsmanship"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Block Printing and Resist Dyeing",
+        "materials_and_tools": [
+          "Fabric: Cotton (traditionally Gossypium arboreum/tree cotton)",
+          "Natural Dyes: Indigo (for blue), Madder root (for red), Pomegranate (for yellow), Sandalwood (for brown), Iron (for black), Alizarin, Harda/Myrobalan",
+          "Mordants: Alum, Iron",
+          "Resist Paste Ingredients: Clay, Gum arabic, Lime, Rice paste, Camel dung, Castor oil, Myrrh powder, Arandi oil, Sesame oil, Sakud powder, Cow dung",
+          "Tools: Hand-carved wooden blocks, Copper vats, Large stones (for washing)"
+        ],
+        "step_by_step": [
+          "**Fabric Preparation (Saaj/Washing)**: The cotton fabric is thoroughly washed multiple times to remove impurities, starch, and to soften it. Traditionally, this involves soaking in a mixture of water, camel dung, castor oil, and soda ash for up to 24 hours, followed by repeated washing and drying over several days until the fabric is soft and ready to absorb dye.",
+          "**Mordanting (Kasanu)**: The fabric is treated with natural mordants, such as myrobalan (harda) powder, to prepare it for better dye absorption and to ensure color fastness.",
+          "**Resist Printing (Rekh/Kiryana)**: Hand-carved wooden blocks are used to apply a resist paste (made from ingredients like lime, acacia gum, and rice paste, or a mud-resist mixture) to specific areas of the fabric. This paste prevents dye absorption in these areas, creating intricate patterns and often outlining the designs, especially for black motifs.",
+          "**First Dyeing (Indigo Dip/Bodaw)**: The fabric is submerged in an indigo vat to achieve blue hues. This step typically involves soaking the cloth for a few minutes, then spreading it to dry.",
+          "**Washing and Drying (Tapai)**: After dyeing, the cloth is extensively washed in flowing water (traditionally rivers) to remove excess dye and resist paste. It is then spread out to dry in the sun, with intermittent sprinkling of water. This alternate drenching and drying helps bleach the white areas and deepens the other colors. Camel dung may be used to further clarify the white areas.",
+          "**Second Resist Printing (Gach)**: Another layer of resist paste may be applied to protect areas already dyed or to create new patterns before subsequent dyeing stages. Sometimes, sifted dried cow dung is sprinkled over the resist.",
+          "**Second Dyeing (Alizarin/Madder)**: The fabric is then dyed with madder root or alizarin to achieve deep crimson red colors, often involving boiling the fabric in a solution.",
+          "**Multiple Wash and Print Cycles**: The entire process of applying resist, dyeing, and washing is repeated multiple times, layering patterns and colors to achieve the characteristic depth and intricacy of Ajrak. This multi-stage process can take weeks or even months.",
+          "**Final Washing and Finishing**: The completed Ajrak undergoes a final thorough wash and drying to remove any remaining resist or impurities, preparing it for use."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Ajrakh (Block Printing)",
+            "relationship_reason": "The craft of Ajrak originated in the Indus Valley (now Sindh, Pakistan) and subsequently spread to the Kutch region of Gujarat and parts of Rajasthan in India. This expansion occurred through the migration of artisan families, particularly the Khatris, around the 16th century. Both regions share similar traditional techniques, materials, and cultural significance in the practice of Ajrakh block printing."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-13T02:01:10.798252Z",
-    "total_ich_elements": 298,
-    "complete_records": 298,
+    "generated_at": "2026-09-15T02:24:17.703341Z",
+    "total_ich_elements": 301,
+    "complete_records": 301,
     "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 105,
+      "Traditional Craftsmanship": 107,
       "Social Practices & Rituals": 57,
-      "Culinary Traditions": 45,
+      "Culinary Traditions": 46,
       "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 26,
       "Social Practices & Rituals | Performing Arts": 5,
