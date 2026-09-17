@@ -26762,17 +26762,124 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-70c6fc86",
+      "element_name": "Traditional Maya Chocolate Making",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.dreamstime.com/ancient-mayan-chocolate-making-metate-grinding-stone-guatemala-image277958492",
+      "source_urls": [
+        "https://stonesoup.com/blog/making-mayan-chocolate-in-belize/",
+        "https://moa.wfu.edu/2020/07/mesoamerica-make-your-own-chocolate/",
+        "https://spanishacademyantiguena.com/blog/2022/12/04/hot-chocolate-guatemalan-maya-recipe/",
+        "https://ajeanneinthekitchen.com/making-chocolate-in-belize/",
+        "https://www.mexicolore.co.uk/maya/chocolate/four-thousand-years-of-cacao-cultivation-and-use-in-mesoamerica",
+        "https://revista.drclas.harvard.edu/a-culture-of-cacao-and-chocolate/",
+        "https://naatikmexico.org/cacao-beyond-a-seed-the-treasure-of-ancient-mesoamerica/",
+        "https://orfeve.ch/blogs/news/the-maya-and-cacao-the-origins-of-a-sacred-bond/"
+      ],
+      "scraped_at": "2026-09-17T02:21:31.269087Z",
+      "location": {
+        "country": "Mexico, Guatemala, Belize, Honduras, El Salvador",
+        "provinces": [
+          "Yucatán Peninsula",
+          "Chiapas",
+          "Tabasco",
+          "Toledo District",
+          "Antigua"
+        ],
+        "lat": null,
+        "lng": null
+      },
+      "resume_analisa": {
+        "description": "Traditional Maya chocolate making involves preparing a frothy, bitter beverage from ground cacao beans, often mixed with water and various spices. Unlike modern chocolate, it was typically unsweetened and consumed as a drink, playing a central role in ancient Maya spiritual, social, and economic life. The process emphasizes manual techniques, from cultivation to grinding, reflecting deep cultural knowledge and connection to the cacao plant.",
+        "cultural_significance": "Cacao held profound spiritual significance for the Maya, believed to be a divine gift and linked to creation myths, fertility, and the cycle of life and death, as highlighted in texts like the Popol Vuh. It was integral to rituals such as weddings, funerals, and offerings to deities like Ek Chuah. Beyond its sacred role, cacao beans served as a valuable form of currency and were used for trade, tribute, and even medicinal purposes, symbolizing wealth, power, and connection to the divine.",
+        "drr_relevance": true,
+        "drr_mechanism": "Traditional cacao cultivation methods, such as shade-grown farming and intercropping with taller trees, mimic the natural rainforest habitat. This approach promotes biodiversity, maintains soil health, and enhances ecological resilience by protecting local ecosystems from the impacts of monoculture and large-scale industrial agriculture. Indigenous communities continue to apply ancestral knowledge in sustainable cacao farming, contributing to climate adaptation and the preservation of genetic diversity in cacao varieties.",
+        "gemini_tags": [
+          "Mesoamerican cuisine",
+          "Indigenous traditions",
+          "Cacao",
+          "Chocolate",
+          "Maya culture",
+          "Traditional beverage",
+          "Sustainable agriculture",
+          "Cultural heritage",
+          "Ritual food",
+          "Ecological resilience"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Beverage Preparation",
+        "materials_and_tools": [
+          "Cacao pods/beans",
+          "Water",
+          "Spices (chili peppers, vanilla, annatto, cinnamon, five-spice)",
+          "Honey (optional)",
+          "Maize/cornmeal (optional)",
+          "Knife",
+          "Metate (grinding stone) or manual grinder",
+          "Bowls",
+          "Wooden spoon or molinillo (traditional whisk)",
+          "Vessels for pouring (e.g., gourds or ceramic cups)"
+        ],
+        "step_by_step": [
+          "Harvest ripe cacao pods from the tree.",
+          "Cut open the pods and extract the cacao beans along with their white, sweet pulp.",
+          "Ferment the beans, typically for 5-7 days, to break down the pulp and develop flavor.",
+          "Dry the fermented beans in the sun for several days (e.g., another 7 days) until they turn brown.",
+          "Roast the dried cacao beans, sometimes over an open fire or on a griddle, to enhance their flavor.",
+          "Remove the outer shells from the roasted beans to obtain the cacao nibs.",
+          "Grind the cacao nibs into a thick paste using a metate (a traditional stone grinding tool), often with heat underneath to help melt the nibs.",
+          "Mix the cacao paste with hot water.",
+          "Add desired spices such as chili peppers, vanilla, annatto, cinnamon, or five-spice. Optional sweeteners like honey or maize/cornmeal can also be added.",
+          "Pour the mixture repeatedly back and forth between two vessels to create a frothy layer on top.",
+          "Serve the frothy, bitter drink in special cups, gourds, or ceramic vessels."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Ecuador",
+            "element_name": "Ancient Cacao Cultivation (Mayo-Chinchipe)",
+            "relationship_reason": "Botanical origin of Theobroma cacao and early cultivation practices in South America, which spread to Mesoamerica."
+          },
+          {
+            "country": "Mexico",
+            "element_name": "Olmec Cacao Use",
+            "relationship_reason": "Earliest evidence of cacao domestication and chocolate production in Mesoamerica, predating the Maya."
+          },
+          {
+            "country": "Mexico",
+            "element_name": "Aztec Chocolatl",
+            "relationship_reason": "Continuation and adaptation of cacao beverage traditions by the Aztec (Mexica) empire, where it was also used as currency and in rituals."
+          },
+          {
+            "country": "Guatemala",
+            "element_name": "Traditional Guatemalan Hot Chocolate",
+            "relationship_reason": "Modern continuation of Maya chocolate making, often using similar ingredients and preparation techniques, including the use of a molinillo for frothing."
+          },
+          {
+            "country": "Belize",
+            "element_name": "Traditional Belizean Chocolate Making",
+            "relationship_reason": "Modern continuation of Maya chocolate making, with local communities and artisans offering 'bean-to-bar' experiences and preserving ancient methods."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-15T02:24:17.703341Z",
-    "total_ich_elements": 301,
-    "complete_records": 301,
+    "generated_at": "2026-09-17T02:22:15.996579Z",
+    "total_ich_elements": 302,
+    "complete_records": 302,
     "incomplete_records": 0,
     "categories_breakdown": {
       "Traditional Craftsmanship": 107,
       "Social Practices & Rituals": 57,
-      "Culinary Traditions": 46,
+      "Culinary Traditions": 47,
       "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 26,
       "Social Practices & Rituals | Performing Arts": 5,
