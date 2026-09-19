@@ -26869,17 +26869,186 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-47bbd5ad",
+      "element_name": "Cultivation of Pantelleria Capers (Cappero di Pantelleria IGP)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.greatitalianchefs.com/assets/images/60706_hero-pantelleria-capers.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Pantelleria",
+        "https://www.capperipantelleria.com/il-cappero/",
+        "https://www.sicilianfoodculture.com/en/pantelleria-capers-tradition-history-and-tasty-recipes/",
+        "https://www.valfrutta.it/blog/cappero-di-pantelleria-igp-il-vero-sapore-del-mediterraneo",
+        "https://www.pantelleria.com/eng/caper.htm",
+        "https://www.milioni.com/en/pantelleria-heroic-agriculture/",
+        "https://www.elizabethminchilli.com/2012/09/capers-pantelleria/",
+        "https://upanaro.it/en/pantelleria-capers/",
+        "https://www.tasteatlas.com/cappero-di-pantelleria",
+        "http://www.coribia.it/scheda-cappero-di-pantelleria/",
+        "https://www.conoscerepantelleria.it/i-capperi/",
+        "https://www.gamberorossointernational.com/news/we-are-at-the-mercy-of-nature-the-pantelleria-company-heroically-cultivating-capers-even-at-night/",
+        "https://www.greatitalianchefs.com/features/pantelleria-capers",
+        "https://www.yesmagazine.org/environment/2022/08/19/ancient-farming-climate-solution-terraces",
+        "https://www.parcodeisesi.com/en/hotel-pantelleria-sicily-farm/"
+      ],
+      "scraped_at": "2026-09-19T02:09:44.821873Z",
+      "location": {
+        "country": "Italy",
+        "provinces": [
+          "Sicily",
+          "Trapani"
+        ],
+        "lat": 37.587794,
+        "lng": 14.155048
+      },
+      "resume_analisa": {
+        "description": "The 'Cappero di Pantelleria' refers to the flower bud of the *Capparis spinosa* plant, specifically the *inermis* variety, cultivar Nocellara, cultivated on the volcanic island of Pantelleria. This traditional agricultural practice is deeply rooted in the island's culture and unique environment. The capers are known for their distinctive globular shape, dark green to mustard color, strong aromatic smell, and intense salty flavor, attributed to the island's volcanic soil and arid climate. The cultivation is labor-intensive and performed entirely by hand, often on terraced fields and near dry-stone walls that characterize the island's landscape.",
+        "cultural_significance": "The cultivation of Pantelleria capers is a centuries-old tradition, with references dating back to ancient Greek and Latin literature, and even the Bible, highlighting their medicinal and gastronomic value. It holds significant cultural and economic importance for the island, being a principal product and a source of income for local families. The practice is part of what is known as 'heroic agriculture' due to the challenging environmental conditions, requiring ingenuity, adaptation, and profound respect for the land. The Pantelleria Caper has been recognized with an IGP (Indicazione Geografica Protetta - Protected Geographical Indication) status since 1993, acknowledging its unique qualities tied to its geographical origin and traditional production methods.",
+        "drr_relevance": true,
+        "drr_mechanism": "The traditional cultivation practices of Pantelleria capers, particularly the extensive use of terracing and dry-stone walls, contribute significantly to ecological resilience and climate adaptation. These dry-stone walls, recognized by UNESCO, are crucial for supporting crops against strong winds, preventing soil erosion on steep slopes, and creating microclimates. They store heat during the day and, at night, facilitate the condensation of atmospheric humidity (dew), channeling precious moisture to the thirsty soil in an arid environment with scarce rainfall. Furthermore, well-maintained terraces have demonstrated their effectiveness as firebreaks, halting the advance of wildfires, as observed during an arson incident in 2016. The caper plants themselves are highly adapted to dry farming and the island's challenging climate, thriving in arid, volcanic soil.",
+        "gemini_tags": [
+          "Traditional agriculture",
+          "Food heritage",
+          "Island culture",
+          "Volcanic soil",
+          "Dry farming",
+          "Terracing",
+          "Dry-stone walls",
+          "Manual cultivation",
+          "IGP product",
+          "Mediterranean cuisine",
+          "Ecological resilience",
+          "Climate adaptation",
+          "Intangible cultural heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Cultivation and Traditional Preservation (Salting)",
+        "materials_and_tools": [
+          "Caper plants (Capparis spinosa, variety inermis, cultivar Nocellara)",
+          "Volcanic soil",
+          "Terraces and dry-stone walls",
+          "Coarse sea salt",
+          "Vats or brick containers",
+          "Hands (for harvesting and stirring)"
+        ],
+        "step_by_step": [
+          "**Planting:** Caper seedlings are planted in terraced soils, often in sun-exposed areas. The soil is tilled and fertilized during the winter season.",
+          "**Pruning:** Caper plants are pruned with a certain frequency.",
+          "**Harvesting:** Flower buds are meticulously hand-picked before they open, typically from late May/early June to September/October. This is a continuous process, with harvesting occurring every 5 to 10 days from the same plant. The work is labor-intensive and performed by hand, often in the early morning or late afternoon to avoid the intense heat of the day.",
+          "**First Salting (Fermentation):** After harvesting, the capers are carefully cleaned to remove leaves, earth, and peduncles. They are then placed in vats or special brick containers and covered with coarse sea salt, typically in a proportion of 30-40% of the capers' weight. The mixture is stirred daily for 7 to 10 days. During this phase, the salt draws out vegetation water, forming a natural brine, and initiates lactic fermentation, which is crucial for developing the capers' unique flavor and aroma.",
+          "**Draining and Second Salting:** The vegetation water produced during the first salting is drained. The capers are then salted again, usually with 15-25% of their weight in coarse sea salt, and subjected to daily stirring for an additional 10 days. This process ensures proper maturation and preservation.",
+          "**Sorting and Storage:** Once the maturation process is complete, the capers are sorted into different calibers (sizes: small, medium, large) and then preserved under sea salt, ready for consumption or further processing."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Italy",
+            "element_name": "Caper cultivation in other Sicilian islands (e.g., Salina, Ustica, Favignana, Lipari)",
+            "relationship_reason": "The *Capparis spinosa* plant is typical of the Mediterranean flora, and capers are cultivated in other parts of Sicily and the Mediterranean basin. However, the specific cultivar 'Nocellara' and the traditional cultivation methods on Pantelleria, including the use of dry-stone walls and terraces for climate adaptation and resilience, combined with the unique volcanic soil, distinguish the 'Cappero di Pantelleria' and grant it IGP status."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-b645b0c6",
+      "element_name": "Namahage (なまはげ)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Namahage_costumes.jpg/800px-Namahage_costumes.jpg",
+      "source_urls": [
+        "https://www.arigatotravel.com/blog/namahage-winter-traditions-akita",
+        "https://en.wikipedia.org/wiki/Namahage",
+        "https://namahage.dk/about-namahage/",
+        "https://tofugu.com/japan/namahage/",
+        "https://www.japan-experience.com/plan-your-trip/to-do/cultural-experiences/namahage",
+        "https://www.web-japan.org/kidsweb/folk/namahage/index.html",
+        "https://yokai.com/namahage/",
+        "https://www.oga-kanko.jp/en/namahage/",
+        "https://note.com/bosai_channel/n/n2b22e11a337a"
+      ],
+      "scraped_at": "2026-09-19T02:10:48.845689Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Akita Prefecture"
+        ],
+        "lat": 39.6898802,
+        "lng": 140.342608
+      },
+      "resume_analisa": {
+        "description": "Namahage is a traditional folk ritual from the Oga Peninsula in Akita Prefecture, Japan, primarily observed on New Year's Eve. It involves young men dressing as fearsome demon-like figures (oni) with masks, straw capes, and carrying wooden knives and pails. They visit homes, admonishing children for laziness or bad behavior while also blessing the household with health and prosperity for the coming year. Despite their frightening appearance, Namahage are considered benevolent spirits or messengers of the gods.",
+        "cultural_significance": "The Namahage ritual is a vibrant symbol of Akita's identity, crucial for preserving local folklore and strengthening community ties. It serves to remind people of the values of diligence, respect, and gratitude. The tradition is believed to ward off misfortune and invite good fortune for the new year, encouraging children to obey their parents and behave well. It is both a theatrical performance and a heartfelt community bonding moment, keeping the connection between past and present generations alive.",
+        "drr_relevance": true,
+        "drr_mechanism": "The Namahage ritual contributes to Disaster Risk Reduction (DRR) and ecological resilience in several ways. The Namahage are believed to protect homes from natural disasters and sickness, and to promote good crops. During the Namahage Sedo Festival, sticky rice cakes are distributed, which are believed to ward off disaster. The straw from the Namahage's costume (kede) is collected by families and used to pray for good health, symbolizing protection and well-being. More broadly, the traditional event is seen to contain 'hidden disaster prevention functions' by fostering community cohesion and mutual support, which are vital for effective disaster preparedness and response. It embeds disaster prevention activities into daily life, leading to the maintenance of evacuation routes and training for shelter operations without explicit awareness of DRR.",
+        "gemini_tags": [
+          "Japanese folklore",
+          "New Year's ritual",
+          "community bonding",
+          "moral education",
+          "agricultural blessings",
+          "protective spirits",
+          "masked performance",
+          "intangible cultural heritage",
+          "disaster risk reduction"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritualistic home visitation and festival",
+        "materials_and_tools": [
+          "Oni (ogre) masks (red or blue, varying designs, made from wood, papier-mâché, cardboard, or recycled materials)",
+          "Straw capes (mino, locally called kede or kende)",
+          "Wooden knives (deba knives, typically fake)",
+          "Hand pails (teoke)",
+          "Straw shin guards (habaki)",
+          "Straw snow boots (waragutsu)",
+          "Wooden wands (gohei, sometimes carried)"
+        ],
+        "step_by_step": [
+          "Young male villagers who will portray Namahage purify themselves at a local shrine.",
+          "They dress in fearsome oni masks, straw capes, straw shin guards, and straw snow boots, carrying wooden knives and hand pails.",
+          "Before setting out, the men sit before an offering of traditional Oga foods and drink sake.",
+          "On New Year's Eve (December 31st), Namahage groups (usually two or three figures) visit homes door-to-door in their villages.",
+          "They stomp loudly at the entrance (traditionally 7 times when entering, 5 times before being served food and sake, and 3 times before leaving) and burst into homes.",
+          "Inside, they shout phrases like 'Are there any crybabies here?' or 'Are naughty kids around?' in the local dialect, admonishing laziness and bad behavior, particularly in children and sometimes new brides.",
+          "Families welcome the Namahage with food and sake, and the head of the household engages in a discussion with them, often 'protecting' family members by assuring their good behavior.",
+          "The Namahage then bless the household, wishing them health and prosperity for the coming year.",
+          "Families collect any straw that falls from the Namahage's costume (kede), believing it brings good health.",
+          "Namahage traditionally avoid visiting homes that have experienced a birth or death in the family during the past year, due to Shinto beliefs about defilement."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Other 'visiting deity' rituals (e.g., Koshogatsu traditions)",
+            "relationship_reason": "Similar customs exist in other regions of Japan where masked figures or deities visit homes during the New Year's season to ward off misfortune and bring blessings."
+          },
+          {
+            "country": "Austria",
+            "element_name": "Krampus",
+            "relationship_reason": "Both Namahage and Krampus involve fearsome, demon-like figures who appear around winter holidays to admonish naughty children and reinforce moral discipline."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-17T02:22:15.996579Z",
-    "total_ich_elements": 302,
-    "complete_records": 302,
+    "generated_at": "2026-09-19T02:11:21.968513Z",
+    "total_ich_elements": 304,
+    "complete_records": 304,
     "incomplete_records": 0,
     "categories_breakdown": {
       "Traditional Craftsmanship": 107,
-      "Social Practices & Rituals": 57,
-      "Culinary Traditions": 47,
+      "Social Practices & Rituals": 58,
+      "Culinary Traditions": 48,
       "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 26,
       "Social Practices & Rituals | Performing Arts": 5,
