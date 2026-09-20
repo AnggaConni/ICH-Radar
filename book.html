@@ -298,8 +298,8 @@ body {
 <div id="modal-overlay">
   <div class="modal-card">
     <div class="modal-title">Living Heritage Atlas</div>
-    <p class="modal-body">
-      Sistem gagal memuat data secara otomatis. Silakan pilih <strong>data.json</strong> secara manual di bawah ini untuk melihat koleksi.
+    <p class="modal-body" id="modal-status">
+      Memuat <strong>data.json</strong> secara otomatis… Jika sumber utama tidak dapat diakses, tersedia fallback URL dan upload manual.
     </p>
     <label class="modal-file-label">Pilih data.json</label>
     <input type="file" id="file-input" accept=".json" style="width:100%;font-size:0.75rem;color:var(--ink-soft)">
@@ -391,9 +391,64 @@ function extras(item){
  walk(item);return out.slice(0,16);
 }
 function extraPanel(item){const e=extras(item);return e.length?'<hr class="rule"><div class="panel-header"><i data-lucide="database"></i> Additional Record Data</div><div class="extra-grid">'+e.map(([k,v])=>'<div class="extra-key">'+esc(k)+'</div><div class="extra-val">'+esc(v)+'</div>').join('')+'</div>':'';}
-document.addEventListener('DOMContentLoaded',async()=>{lucide.createIcons();try{const r=await fetch('./data.json',{cache:'no-store'});if(!r.ok)throw new Error('HTTP Error: '+r.status);startAppSafe(await r.json());}catch(e){showError('Gagal memuat data.json otomatis: '+e.message);}window.addEventListener('resize',()=>{const m=innerWidth<720;if(m!==mobile){mobile=m;render();}});});
-function showError(m){const a=document.getElementById('modal-overlay'),b=document.getElementById('error-log');a.style.display='flex';b.style.display='block';b.innerHTML='<strong>System Log:</strong><br>'+esc(m);}
-function loadFile(){const f=document.getElementById('file-input').files[0];if(!f)return alert('Silakan pilih file data.json');const r=new FileReader();r.onload=e=>{try{startAppSafe(JSON.parse(e.target.result));}catch(err){alert('Format JSON tidak valid:\n'+err.message);}};r.readAsText(f);}
+document.addEventListener('DOMContentLoaded',async()=>{
+  lucide.createIcons();
+  const resizeHandler=()=>{
+    const m=window.innerWidth<720;
+    if(m!==mobile){mobile=m;render();}
+  };
+  window.addEventListener('resize',resizeHandler);
+  try{
+    await loadRemoteData();
+  }catch(e){
+    showError('Gagal memuat data.json dari sumber otomatis: '+e.message);
+  }
+});
+
+async function loadRemoteData(){
+  const urls=[
+    './data.json',
+    'https://raw.githubusercontent.com/AnggaConni/ICH-Radar/refs/heads/main/data.json'
+  ];
+  let lastError=null;
+  for(const url of urls){
+    try{
+      const response=await fetch(url,{cache:'no-store',credentials:'omit'});
+      if(!response.ok)throw new Error('HTTP '+response.status+' @ '+url);
+      const text=await response.text();
+      const clean=text.replace(/^\\uFEFF/,'').trim();
+      if(!clean)throw new Error('Response kosong @ '+url);
+      let data;
+      try{data=JSON.parse(clean);}
+      catch(parseError){throw new Error('JSON tidak valid @ '+url+': '+parseError.message);}
+      startAppSafe(data);
+      return;
+    }catch(err){
+      lastError=err;
+    }
+  }
+  throw lastError||new Error('Semua sumber data gagal.');
+}
+
+function showError(m){
+  const a=document.getElementById('modal-overlay'),b=document.getElementById('error-log'),status=document.getElementById('modal-status');
+  a.style.display='flex';
+  if(status)status.innerHTML='Sistem tidak dapat memuat <strong>data.json</strong> otomatis. Silakan gunakan upload manual di bawah.';
+  b.style.display='block';
+  b.innerHTML='<strong>System Log:</strong><br>'+esc(m);
+}
+function loadFile(){
+  const f=document.getElementById('file-input').files[0];
+  if(!f)return alert('Silakan pilih file data.json');
+  const r=new FileReader();
+  r.onload=e=>{
+    try{
+      const text=String(e.target.result).replace(/^\\uFEFF/,'').trim();
+      startAppSafe(JSON.parse(text));
+    }catch(err){alert('Format JSON tidak valid:\\n'+err.message);}
+  };
+  r.readAsText(f);
+}
 function startAppSafe(data){try{rawData=data||{};items=extractItems(data).map(normalize);meta=collectMeta(data);if(!items.length)throw new Error('Tidak ditemukan array record heritage yang dapat dibaca.');items.sort((a,b)=>{const ca=CONT_ORDER.indexOf(continent(country(a))),cb=CONT_ORDER.indexOf(continent(country(b)));return ca!==cb?ca-cb:category(a).localeCompare(category(b));});document.getElementById('modal-overlay').style.display='none';buildTOC();document.getElementById('nav').style.display='flex';document.getElementById('stage').style.display='flex';curPg=mobile?1:0;render();}catch(e){showError('Crash saat membaca data: '+e.message);}}
 /* ── TABLE OF CONTENTS ── */
 function buildTOC(){
