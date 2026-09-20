@@ -1,54 +1,12 @@
 {
-  "generated_at": "2026-09-20T09:47:54.983Z",
+  "generated_at": "2026-09-20T09:48:48.447Z",
   "inventory": [
-    {
-      "id": "ich-364a4afb",
-      "element_name": "Yuki-tsumugi",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEopcmYFV8BDzDNAJdYd6L6KsucNHYP8tA33jFwuPBLnRKq78Yl9D7tOhN9xuNaRnAttBQ1b3xkYwzec8SnD0FwUJ5LfFKr8MHNUGDG4frzKr_5juaERVYZ23MmOqdeDJQcpUBiQ7a85W-ngKQ0-Dwt19FlLUTB&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Japan"
-    },
-    {
-      "id": "ich-b0f059df",
-      "element_name": "Thanaka Face Painting",
-      "category": "Social Practices & Rituals",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS2QTg9ef42kvZPVZZe_QbhidLUQ8u06_7gNW-EQH1uNwsgAVh_dLRcdjGlaug5OPQvvyV79f13t7MvMlNtuMU-oxoVfMKc3Til5nSeIIy2QCSWhZij0FSdfy2u5oSySQfC2Su3JTAyTFBbusxiLqS5HsoVri4c0FWB5f7dttFgg%3D%3D&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Myanmar"
-    },
-    {
-      "id": "ich-ec6118ad",
-      "element_name": "Thai Silk Weaving",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLJF6Va6A8UNRYLOGFOnGvvesS4hL9V3NaTGSw2kctzX5eMd0h-_jy_HYFeJuN9jFlbPgZzAEzL0IuDMkb6XSwEf-JINvQeKzbEsXE0VrTCJvGuHwbUqqzBi-2WWotWSrCUROOMg6XKwxR24doz7nzxCEn&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Thailand"
-    },
-    {
-      "id": "ich-2d42af22",
-      "element_name": "Hadza Hunter-Gatherer Practices",
-      "category": "Social Practices & Rituals",
-      "thumbnail_url": "Image depicting Hadza people hunting with bows and arrows or gathering wild foods.",
-      "country": "Tanzania"
-    },
-    {
-      "id": "ich-24ffc441",
-      "element_name": "Blue Cornmeal Dumplings (kʼíneeshbízhii)",
-      "category": "Culinary Traditions",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//recipes.fandom.com/wiki/Blue_Cornmeal_Dumplings&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "USA"
-    },
     {
       "id": "ich-2c75579d",
       "element_name": "Bunya Nut Festival",
       "category": "Social Practices & Rituals",
       "thumbnail_url": "https://www.slq.qld.gov.au/__data/assets/image/0006/528399/Bunya-Dreaming-Festival-2020-Jo-Anne-Driessens-Image-18374531100-0001-0029.jpg",
       "country": "Australia"
-    },
-    {
-      "id": "ich-df8d78b4",
-      "element_name": "Khokhloma Painting (Хохломская роспись)",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//gw2.ru/en/khokhloma-all-you-need-to-know-about-the-gold-painted-tableware/&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Russia"
     },
     {
       "id": "ich-86fa28f5",
@@ -79,32 +37,11 @@
       "country": "Mexico"
     },
     {
-      "id": "ich-5a6ba7da",
-      "element_name": "La Chandeleur and Crêpes",
-      "category": "Culinary Traditions | Social Practices & Rituals",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "France"
-    },
-    {
       "id": "ich-b30ec0fe",
       "element_name": "Hahoe Byeolsingut Talnori",
       "category": "Performing Arts",
       "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Hahoe_Mask_Dance_Drama_%28Hahoe_Byeolsingut_Talnori%29.jpg/1280px-Hahoe_Mask_Dance_Drama_%28Hahoe_Byeolsingut_Talnori%29.jpg",
       "country": "South Korea"
-    },
-    {
-      "id": "ich-aed11b6b",
-      "element_name": "Pysanka (Ukrainian Easter Egg Decoration)",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Egg_decorating_in_Slavic_culture&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Ukraine"
-    },
-    {
-      "id": "ich-0f32e75e",
-      "element_name": "Sardana",
-      "category": "Performing Arts",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//danceus.org/folk-dance/sardana-dance-traditional-circle-dance-of-catalonia/&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Spain"
     },
     {
       "id": "ich-c88576fc",
@@ -114,32 +51,11 @@
       "country": "Mexico"
     },
     {
-      "id": "ich-c01d788f",
-      "element_name": "Sindhi Ajrak",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.independenturdu.com/node/78766&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Pakistan"
-    },
-    {
-      "id": "ich-2d00544f",
-      "element_name": "Khatamkari (Persian Marquetry)",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.indrastra.com/2022/09/the-art-of-khatam-kari-story-of.html&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Iran"
-    },
-    {
       "id": "ich-680a4062",
       "element_name": "Chicha de Año from Magdalena de Cao",
       "category": "Culinary Traditions",
       "thumbnail_url": "https://elbrujo.pe/wp-content/uploads/2023/07/chicha-de-ano-magdalena-de-cao.jpg",
       "country": "Peru"
-    },
-    {
-      "id": "ich-9cffa5eb",
-      "element_name": "Teko Porã (Guarani concept of Good Living)",
-      "category": "Social Practices & Rituals",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//wheretheleavesfall.com/articles/teko-pora&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "South America"
     },
     {
       "id": "ich-0637c01d",
@@ -149,25 +65,11 @@
       "country": "Ukraine"
     },
     {
-      "id": "ich-16ef557c",
-      "element_name": "Kānga pirau",
-      "category": "Culinary Traditions",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//teara.govt.nz/en/traditional-cooking-and-preserving&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "New Zealand"
-    },
-    {
       "id": "ich-2ba6c99b",
       "element_name": "Wayuu Normative System, applied by the Pütchipü'üi (Palabrero)",
       "category": "Social Practices & Rituals",
       "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/03384-RL-EN.jpg",
       "country": "Colombia"
-    },
-    {
-      "id": "ich-9996e8fc",
-      "element_name": "Artisanal Talavera Pottery of Puebla and Tlaxcala (Mexico)",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Mexico"
     },
     {
       "id": "ich-fa353432",
@@ -205,39 +107,11 @@
       "country": "Brazil"
     },
     {
-      "id": "ich-c3f0e05a",
-      "element_name": "Sichuan Opera Face-Changing (Bian Lian)",
-      "category": "Performing Arts",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.smithsonianmag.com/blogs/national-museum-of-asian-art/2014/07/02/face-changing-sichuan-opera/&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "China"
-    },
-    {
-      "id": "ich-dabd953b",
-      "element_name": "Harvest ceremony of Saghay village",
-      "category": "Social Practices & Rituals",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Iran"
-    },
-    {
       "id": "ich-4e044712",
       "element_name": "Festividad de la Virgen de la Candelaria de Puno",
       "category": "Social Practices & Rituals | Performing Arts",
       "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/La_fiesta_de_la_Virgen_de_la_Candelaria_en_Puno_-_chicas.jpg",
       "country": "Peru"
-    },
-    {
-      "id": "ich-ceb08f09",
-      "element_name": "Traditional Medicinal Knowledge and Healing Practices of the Batek People",
-      "category": "Social Practices & Rituals",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.researchgate.net/publication/282299837_Ethnomedical_survey_of_plants_used_by_the_Bateq_in_Kuala_Koh&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Malaysia"
-    },
-    {
-      "id": "ich-7c3c1098",
-      "element_name": "Traditional Couscous-Making in Kalampaki, Drama",
-      "category": "Culinary Traditions",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.cibum.gr/2025/09/29/pos-ftiaxnoyn-to-paradosiako-koyskous-sto-kalampaki-dramas/&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Greece"
     },
     {
       "id": "ich-35d727fa",
@@ -247,46 +121,11 @@
       "country": "Nigeria"
     },
     {
-      "id": "ich-47af1ec4",
-      "element_name": "Suguidanon (Epic Chanting)",
-      "category": "Oral Traditions | Performing Arts",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//culturalmappingpanayguimaras.wordpress.com/2026/02/18/oral-traditions-and-expressions-including-language-archives/&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Philippines"
-    },
-    {
-      "id": "ich-e8c9a11f",
-      "element_name": "Nanjing Yunjin Brocade",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.chinatoday.com.cn/ctenglish/2018/art/202601/t20260105_800318042.html&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "China"
-    },
-    {
-      "id": "ich-d96694fb",
-      "element_name": "Ainu Oral Literature (Yukara)",
-      "category": "Oral Traditions",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ja.wikipedia.org/wiki/%25E5%258F%25A3%25E6%2589%25BF%25E6%2596%2587%25E8%258A%25B8_%28%25E3%2582%25A2%25E3%2582%25A4%25E3%2583%258C%29&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Japan"
-    },
-    {
       "id": "ich-0153cc3a",
       "element_name": "Pathein Hti (Pathein Umbrella)",
       "category": "Traditional Craftsmanship",
       "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Pathein_Hti.jpg/800px-Pathein_Hti.jpg",
       "country": "Myanmar"
-    },
-    {
-      "id": "ich-1e397911",
-      "element_name": "Arancini (Sicilian Rice Balls)",
-      "category": "Culinary Traditions",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.foodnouveau.com/recipes/savory/how-to-make-arancini/&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Italy"
-    },
-    {
-      "id": "ich-c1365c80",
-      "element_name": "Ka Nua Ritual",
-      "category": "Social Practices & Rituals",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//efws.ac.id/index.php/EFWS/article/view/100&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Indonesia"
     },
     {
       "id": "ich-564ced8e",
@@ -310,25 +149,11 @@
       "country": "Vietnam"
     },
     {
-      "id": "ich-7f7c0ceb",
-      "element_name": "Nanjing Yunjin Brocade Weaving Skills",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.sinocultural.com/blogs/chinese-culture/yun-brocade-yunjin-of-china-nanjing-patterns-material-and-price&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "China"
-    },
-    {
       "id": "ich-8cc8dba2",
       "element_name": "Yoga (Yoga Asanas/Postures)",
       "category": "Social Practices & Rituals",
       "thumbnail_url": "https://images.unsplash.com/photo-1544367524-d44bc404c05c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "country": "India"
-    },
-    {
-      "id": "ich-c28d942e",
-      "element_name": "Hanji (Korean Traditional Handmade Paper)",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Korean_paper&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "South Korea"
     },
     {
       "id": "ich-dbde646d",
@@ -345,46 +170,11 @@
       "country": "United States"
     },
     {
-      "id": "ich-c03661a4",
-      "element_name": "Paiwan Millet Harvest Thanksgiving Festival (Masalut)",
-      "category": "Social Practices & Rituals",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.google.com/search%3Fq%3Dtime%2Bin%2B%25E4%25BF%25A1%25E7%25BE%25A9%25E9%2584%2589%2C%2BTW&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Taiwan"
-    },
-    {
       "id": "ich-e8d329f9",
       "element_name": "Aggadah - House of Jewish Folk Tales",
       "category": "Oral Traditions",
       "thumbnail_url": "https://www.agadah.org.il/wp-content/uploads/2023/07/agada_logo_new.png",
       "country": "Israel"
-    },
-    {
-      "id": "ich-528f0df2",
-      "element_name": "Matoborwa (Processed Sweet Potatoes)",
-      "category": "Culinary Traditions",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.slowfood.org/arkoftaste/matoborwa/&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Tanzania"
-    },
-    {
-      "id": "ich-05ceeeb6",
-      "element_name": "Ohaguro",
-      "category": "Social Practices & Rituals",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Ohaguro&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Japan"
-    },
-    {
-      "id": "ich-382aba0a",
-      "element_name": "Thanjavur Art Plate (தஞ்சாவூர் கலைத் தட்டு)",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.gaatha.org/craft-archive/research/thanjavur-art-plate&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "India"
-    },
-    {
-      "id": "ich-a78124bd",
-      "element_name": "Zellige (Moroccan Mosaic Tiles)",
-      "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//paristile.com/blogs/news/how-zellige-tiles-are-made&screenshot=true&meta=false&embed=screenshot.url",
-      "country": "Morocco"
     },
     {
       "id": "ich-bbde7b94",
@@ -415,11 +205,501 @@
       "country": "Tajikistan"
     },
     {
-      "id": "ich-b7daf62a",
-      "element_name": "Mudmee Silk Weaving",
+      "id": "ich-05d91027",
+      "element_name": "Silat Cingkrik",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/PENCAK_SILAT_-_Indonesian_martial_art_performance.jpg/800px-PENCAK_SILAT_-_Indonesian_martial_art_performance.jpg",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-cbedde3a",
+      "element_name": "Dene Stick Pull",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://www.traditionalgamesalaska.org/uploads/1/0/6/6/106649723/denestickpull_orig.png",
+      "country": "Canada"
+    },
+    {
+      "id": "ich-0467aec8",
+      "element_name": "Kogi Mamo Training (Spiritual Leadership Training)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://fairmined.org/wp-content/uploads/2019/07/Kogi-Mamos-spiritual-leaders-meditating-underneath-a-tree.-Sierra-Nevada-Colombia.-300x200.jpg",
+      "country": "Colombia"
+    },
+    {
+      "id": "ich-60ed8367",
+      "element_name": "Ethiopian Coffee Ceremony",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://www.opaqa.coffee/cdn/shop/articles/Ethiopian_Coffee_Ceremony_Rituals_Culture_Meaning.jpg?v=1704768395",
+      "country": "Ethiopia"
+    },
+    {
+      "id": "ich-93e9fd61",
+      "element_name": "Traditional Argan Oil Extraction by Berber Women",
+      "category": "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions",
+      "thumbnail_url": "https://cdn.shopify.com/s/files/1/0073/7949/0904/files/argan-oil-production.jpg?v=1676646738",
+      "country": "Morocco"
+    },
+    {
+      "id": "ich-245032f1",
+      "element_name": "Lurji Supra (Georgian Blue Tablecloth)",
       "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//surroundliving.com/blogs/news/mudmee-the-story-technique-and-cultural-legacy-of-thailands-iconic-tie-dye-silk&screenshot=true&meta=false&embed=screenshot.url",
+      "thumbnail_url": "https://www.orientotravel.com/wp-content/uploads/2026/01/Lurji-Supra-Georgian-Blue-Tablecloth-Oriento-Travel.jpg",
+      "country": "Georgia"
+    },
+    {
+      "id": "ich-71ec307e",
+      "element_name": "Traditional craftsmanship of the Mongol Ger and its associated customs",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00872-RL-EN-00018-medium.jpg",
+      "country": "Mongolia"
+    },
+    {
+      "id": "ich-c05f3095",
+      "element_name": "Aboriginal Firestick Farming (Cultural Burning)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fire-stick_farming_in_Australia.jpg/1280px-Fire-stick_farming_in_Australia.jpg",
+      "country": "Australia"
+    },
+    {
+      "id": "ich-16a44444",
+      "element_name": "Lakhon Nang Sbek Thom (Khmer Shadow Theatre)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/08468-SM.jpg",
+      "country": "Cambodia"
+    },
+    {
+      "id": "ich-d5ab8573",
+      "element_name": "Gzhel Painting",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gzhel_teapot.jpg/800px-Gzhel_teapot.jpg",
+      "country": "Russia"
+    },
+    {
+      "id": "ich-d47c6240",
+      "element_name": "Traditional Ways of Making Artisanal Minas Cheese (Modo de Fazer Queijo Minas Artesanal)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/02102-CLT-2024-000035-0001.jpg",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-c0d8f5ea",
+      "element_name": "Drowning of Marzanna (Topienie Marzanny)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Marzanna_-_spring_doll.JPG/800px-Marzanna_-_spring_doll.JPG",
+      "country": "Poland"
+    },
+    {
+      "id": "ich-f13a3d5b",
+      "element_name": "Kunqu Opera",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Kunqu_Opera_performer.jpg/800px-Kunqu_Opera_performer.jpg",
+      "country": "China"
+    },
+    {
+      "id": "ich-12e63937",
+      "element_name": "Couscous",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Couscous_with_vegetables_and_meat.jpg",
+      "country": "North Africa"
+    },
+    {
+      "id": "ich-8ebb50f6",
+      "element_name": "Arabic Coffee Rituals (Qahwa)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Arabic_coffee_with_dates.jpg/1200px-Arabic_coffee_with_dates.jpg",
+      "country": "Arabian Peninsula and Levant"
+    },
+    {
+      "id": "ich-465fde21",
+      "element_name": "Myanmar Traditional Puppetry (Yoke Thé)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Burmese_Marionette_Puppet.jpg/800px-Burmese_Marionette_Puppet.jpg",
+      "country": "Myanmar"
+    },
+    {
+      "id": "ich-42342292",
+      "element_name": "Suri (Palm Weevil Larvae)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.rainforestcruises.com/jungle-blog/wp-content/uploads/2016/08/suri-grubs-peru-amazon.jpg",
+      "country": "Peru"
+    },
+    {
+      "id": "ich-6af150a3",
+      "element_name": "Dough Sculpture (Miansu)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Dough_Figurines.jpg/800px-Dough_Figurines.jpg",
+      "country": "China"
+    },
+    {
+      "id": "ich-7e5c4e9c",
+      "element_name": "The Art of Dry Stone Walling, Knowledge and Techniques",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dry_stone_wall_in_the_Yorkshire_Dales.jpg/1200px-Dry_stone_wall_in_the_Yorkshire_Dales.jpg",
+      "country": "Multiple (primarily European countries, also global presence)"
+    },
+    {
+      "id": "ich-44a4e554",
+      "element_name": "Moroccan Zellige Tile Art",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://stockcake.com/moroccan-tile-pattern-image-geometric-moroccan-zellige.jpg",
+      "country": "Morocco"
+    },
+    {
+      "id": "ich-c6c5cfda",
+      "element_name": "Makonde Wood Carving (Ujamaa / Tree of Life)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Makonde_sculpture_Ujamaa_detail.jpg",
+      "country": "Tanzania"
+    },
+    {
+      "id": "ich-37d39c7b",
+      "element_name": "Kimjang (Kimchi-making)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00881-RL-EN-Thumb.jpg",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-1bfc643c",
+      "element_name": "Noken (Multifunctional Knotted or Woven Bag)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Noken_bags.jpg/800px-Noken_bags.jpg",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-9274f9a4",
+      "element_name": "Čičmany Painted Houses and Embroidery",
+      "category": "Traditional Craftsmanship | Social Practices & Rituals",
+      "thumbnail_url": "https://www.alamy.com/stock-photo-traditional-log-houses-decorated-with-white-linear-patterns-in-the-village-of-cicmany-in-zilina-region-in-slovakia-170725227.html",
+      "country": "Slovakia"
+    },
+    {
+      "id": "ich-ebf47c04",
+      "element_name": "Bun Bang Fai (Rocket Festival)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Bun_Bang_Fai_rockets_in_Yasothon.jpg",
       "country": "Thailand"
+    },
+    {
+      "id": "ich-cf379dcb",
+      "element_name": "Ciptagelar Rice Cultivation and Seren Taun Harvest Festival",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Ciptagelar_farmers_carrying_rice_paddy_after_harvest.jpg",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-5782a6f3",
+      "element_name": "Traditional weaving of Al Sadu",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/01586-CLT-13406-EN.jpg",
+      "country": "Saudi Arabia, Kuwait, Qatar, United Arab Emirates"
+    },
+    {
+      "id": "ich-56a24cc4",
+      "element_name": "Anishinaabe Traditional Wild Rice Harvesting (Manoominikewin)",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.nature.org/content/dam/tnc/nature/en/photos/wild-rice-harvest-ojibwe-minnesota.jpg",
+      "country": "United States, Canada"
+    },
+    {
+      "id": "ich-931b73e6",
+      "element_name": "Traditional ways of making Artisan Minas Cheese in Minas Gerais",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.shutterstock.com/image-photo/fresh-brazilian-white-minas-cheese-260nw-2194600129.jpg",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-ddb43183",
+      "element_name": "Obon Festival",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Obon_Festival.jpg/800px-Obon_Festival.jpg",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-b09e3ce8",
+      "element_name": "Wedang Uwuh",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Wedang_Uwuh_Jawa.jpg/1280px-Wedang_Uwuh_Jawa.jpg",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-45cd34a4",
+      "element_name": "Sifnian Pottery",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sifnos_Pottery_Museum_in_Artemonas.jpg/640px-Sifnos_Pottery_Museum_in_Artemonas.jpg",
+      "country": "Greece"
+    },
+    {
+      "id": "ich-362bbc5d",
+      "element_name": "Indigenous Oral Storytelling by Elders",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/African_storytelling.jpg",
+      "country": "Worldwide"
+    },
+    {
+      "id": "ich-99cd846e",
+      "element_name": "Lucha Canaria",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/LuchaCanaria.jpg",
+      "country": "Spain"
+    },
+    {
+      "id": "ich-e1f6e94b",
+      "element_name": "Batik",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Batik_Indonesia.jpg/576px-Batik_Indonesia.jpg",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-2518d8bd",
+      "element_name": "Yerushalmi Kugel",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://image.shutterstock.com/image-photo/traditional-jewish-dish-known-yerushalmi-260nw-1349117672.jpg",
+      "country": "Israel"
+    },
+    {
+      "id": "ich-58bbd176",
+      "element_name": "Myanmar Lacquerware (Bagan Lacquerware)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.turquoisemountain.org/assets/images/_1200x630_crop_center-center_none/TM_Myanmar_Lacquer_01_2017_01_02_13_40_30_c_0.jpg",
+      "country": "Myanmar"
+    },
+    {
+      "id": "ich-a1716961",
+      "element_name": "Ramman Festival",
+      "category": "Social Practices & Rituals | Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ramman_Festival.jpg/640px-Ramman_Festival.jpg",
+      "country": "India"
+    },
+    {
+      "id": "ich-798c1804",
+      "element_name": "Traditional skills, techniques and knowledge for the conservation and transmission of wooden architecture in Japan",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/01618-CL2-2019-000003.jpg",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-13951cec",
+      "element_name": "Vanuatu Sand Drawing (Sandroing)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00073-RL-EN-00073-Thumb.jpg",
+      "country": "Vanuatu"
+    },
+    {
+      "id": "ich-0d391b67",
+      "element_name": "Opera dei Pupi (Sicilian Puppets)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://ich.unesco.org/en/photo-up/opera-dei-pupi-sicilian-puppet-theatre-00011#tabs",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-b1961bbc",
+      "element_name": "Ukrainian Borscht",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://ifoodreal.com/wp-content/uploads/2021/04/ukrainian-borscht-recipe-3.jpg",
+      "country": "Ukraine"
+    },
+    {
+      "id": "ich-89555cd9",
+      "element_name": "Al-Hakawati Storytelling",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hakawati_in_Damascus.jpg/800px-Hakawati_in_Damascus.jpg",
+      "country": "Arab World"
+    },
+    {
+      "id": "ich-32855744",
+      "element_name": "Dong Ho Folk Painting (Nghệ thuật làm tranh dân gian Đông Hồ)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://c8.alamy.com/comp/2B01NTX/vietnam-lao-thu-thu-tan-old-rat-taking-a-bride-traditional-woodblock-painting-of-mice-paying-tribute-to-the-big-cat-china-from-dong-ho-village-bac-ninh-province-20th-century-dong-ho-painting-vietnamese-tranh-ong-h-or-tranh-l-ng-h-full-name-dong-ho-folk-woodcut-painting-tranh-khc-g-dan-gian-ong-h-is-a-genre-of-vietnamese-woodcut-paintings-originating-from-dong-ho-village-l-ng-ong-h-in-bac-ninh-province-vietnam-using-the-traditional-i-p-paper-and-colours-derived-from-nature-craftsmen-print-dong-ho-pictures-of-different-themes-2B01NTX.jpg",
+      "country": "Vietnam"
+    },
+    {
+      "id": "ich-bdaf6663",
+      "element_name": "Maasai Cow Blood Drinking (Osaroi)",
+      "category": "Culinary Traditions | Social Practices & Rituals",
+      "thumbnail_url": "https://www.atlasobscura.com/foods/maasai-cow-blood",
+      "country": "Kenya"
+    },
+    {
+      "id": "ich-2ddcae62",
+      "element_name": "Festa do Divino Espírito Santo (Festival of the Holy Spirit)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Festa_do_Divino_Esp%C3%ADrito_Santo_em_Piren%C3%B3polis_-_Cavalhadas.jpg/1200px-Festa_do_Divino_Esp%C3%ADrito_Santo_em_Piren%C3%B3polis_-_Cavalhadas.jpg",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-eaf54114",
+      "element_name": "Ceramica di Grottaglie",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.thatsarte.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/u/pumo-pugliese-bianco-thatsarte-1.jpg",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-a386b976",
+      "element_name": "Timbila",
+      "category": "Performing Arts | Traditional Craftsmanship",
+      "thumbnail_url": "https://www.trtafrika.com/media/images/2026/01/30/timbila-1-1706606827.jpg",
+      "country": "Mozambique"
+    },
+    {
+      "id": "ich-466b6167",
+      "element_name": "Santons de Provence",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Santons_de_Provence_-_Aix-en-Provence.jpg",
+      "country": "France"
+    },
+    {
+      "id": "ich-ae617db7",
+      "element_name": "Pão de Ló de Ovar",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/P%C3%A3o-de-l%C3%B3_de_Ovar.jpg",
+      "country": "Portugal"
+    },
+    {
+      "id": "ich-fece2976",
+      "element_name": "Jia (or Jaxlil) Oral Tradition of the Miao Ethnic Group",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://img2.chinadaily.com.cn/images/201403/06/53174241a310006a1b02.jpg",
+      "country": "China"
+    },
+    {
+      "id": "ich-b3ea700c",
+      "element_name": "Ceebu Jën",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Ceebu_Jen%2C_Senegalese_dish.jpg",
+      "country": "Senegal"
+    },
+    {
+      "id": "ich-287f3320",
+      "element_name": "Upacara Adat Ngaben",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ngaben_Ceremony.jpg/1280px-Ngaben_Ceremony.jpg",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-88db68d3",
+      "element_name": "Seblang Bakungan",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Seblang_Bakungan_Banyuwangi.jpg/1280px-Seblang_Bakungan_Banyuwangi.jpg",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-8827cc66",
+      "element_name": "Kōauau (Māori Flute)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://images.metmuseum.org/CRDImages/mi/original/89.4.2636_front_CP1.jpg",
+      "country": "New Zealand"
+    },
+    {
+      "id": "ich-f703fbae",
+      "element_name": "Coppa dell'Amicizia and Caffè alla Valdostana",
+      "category": "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Coppa_dell%27amicizia.jpg/330px-Coppa_dell%27amicizia.jpg",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-b814ddb6",
+      "element_name": "Myanmar Lacquerware (Yun-de / Pan-yun)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://c8.alamy.com/comp/BG0DK0/burmese-lacquerware-myanmar-burma-asia-BG0DK0.jpg",
+      "country": "Myanmar"
+    },
+    {
+      "id": "ich-060d514a",
+      "element_name": "Anishinaabe Traditional Wild Rice Harvesting (Manoomin Gaa-miinigoowizid)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://www.glifwc.org/images/Manoomin_brochure_cover.jpg",
+      "country": "United States | Canada"
+    },
+    {
+      "id": "ich-fdcc9973",
+      "element_name": "Busó festivities at Mohács (Busójárás)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/2022_Moh%C3%A1cs_Bus%C3%B3j%C3%A1r%C3%A1s.jpg",
+      "country": "Hungary"
+    },
+    {
+      "id": "ich-3e874b13",
+      "element_name": "Hekaya za Abunuwasi (Tales of Abunuwasi)",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388049219l/19875150.jpg",
+      "country": "Kenya"
+    },
+    {
+      "id": "ich-69c85fd1",
+      "element_name": "Handmade Weaving in Upper Egypt (Sa'eed)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://cdn.shopify.com/s/files/1/0270/2823/products/Solid-Handwoven-Bamboo-Viscose-Scarf-Purple-Dandarah-1_720x.jpg?v=1678822558",
+      "country": "Egypt"
+    },
+    {
+      "id": "ich-227238ff",
+      "element_name": "Anyaman Bambu (Bamboo Weaving)",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/sulawesi/north-sulawesi/anyaman-bambu-sulawesi-utara.jpg",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-746e9986",
+      "element_name": "Longzhou Shehuo (陇州社火)",
+      "category": "Social Practices & Rituals | Performing Arts",
+      "thumbnail_url": "http://www.xinhuanet.com/culture/titlepic/1130089151_1709292800537_title1n.jpg",
+      "country": "China"
+    },
+    {
+      "id": "ich-3abdf822",
+      "element_name": "Ayam Betutu",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://www.segari.id/uploads/resep/resep-ayam-betutu-khas-bali-1711100062.webp",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-c87399c8",
+      "element_name": "Kora",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Kora_instrument.jpg/800px-Kora_instrument.jpg",
+      "country": "West Africa"
+    },
+    {
+      "id": "ich-ec967a31",
+      "element_name": "Bullet Ant Initiation Ritual (Waumat)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Satere-Mawe_bullet_ant_initiation.jpg/640px-Satere-Mawe_bullet_ant_initiation.jpg",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-aee32318",
+      "element_name": "Dziady (Forefathers' Eve)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Dziady_%28restored%29.png",
+      "country": "Poland"
+    },
+    {
+      "id": "ich-714b7ded",
+      "element_name": "Perepechi",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://thumbs.dreamstime.com/b/open-small-pies-baked-oven-front-strong-fire-traditional-udmurt-dish-perepechi-169060558.jpg",
+      "country": "Russia"
+    },
+    {
+      "id": "ich-cf9d690f",
+      "element_name": "Huishan Clay Figures",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Huishan_Clay_Figurines.jpg",
+      "country": "China"
+    },
+    {
+      "id": "ich-eda271cc",
+      "element_name": "Bakar Batu (Stone Cooking) Ritual",
+      "category": "Culinary Traditions",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bakar_Batu.jpg/1280px-Bakar_Batu.jpg",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-d3f94d8f",
+      "element_name": "Ashik Art of Azerbaijan",
+      "category": "Oral Traditions",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00253-CLT-08-THS-8588-LRG.jpg",
+      "country": "Azerbaijan"
     }
   ],
   "articles": [
