@@ -172,6 +172,7 @@ tailwind.config = {
 
       <!-- Desktop nav -->
       <nav class="hidden xl:flex items-center gap-1" aria-label="Section navigation">
+        <a href="#insights"  class="px-3 py-2 rounded-lg text-sm font-medium text-ink-soft hover:text-heritage-600 hover:bg-heritage-50 transition">Insights</a>
         <a href="#heritage"  class="px-3 py-2 rounded-lg text-sm font-medium text-ink-soft hover:text-heritage-600 hover:bg-heritage-50 transition">Living Heritage</a>
         <a href="#inventory" class="px-3 py-2 rounded-lg text-sm font-medium text-ink-soft hover:text-heritage-600 hover:bg-heritage-50 transition">Inventorying</a>
         <a href="#resilience"class="px-3 py-2 rounded-lg text-sm font-medium text-ink-soft hover:text-heritage-600 hover:bg-heritage-50 transition">Resilience</a>
@@ -216,6 +217,7 @@ tailwind.config = {
   <!-- Mobile menu -->
   <div id="mobile-menu" class="xl:hidden hidden border-t border-paper-line bg-white">
     <div class="max-w-7xl mx-auto px-6 py-5 grid gap-1">
+      <a href="#insights"   class="mob-link">Insights</a>
       <a href="#heritage"   class="mob-link">Living Heritage</a>
       <a href="#inventory"  class="mob-link">Inventorying</a>
       <a href="#resilience" class="mob-link">Resilience &amp; DRR</a>
@@ -291,57 +293,74 @@ tailwind.config = {
         </dl>
       </div>
 
-      <!-- App preview -->
-      <div class="relative hidden lg:block animate-float" aria-hidden="true">
+      <!-- Smart heritage preview -->
+      <div class="relative hidden lg:block animate-float" aria-label="Featured living heritage">
         <div class="rounded-3xl bg-white border border-paper-line shadow-lift overflow-hidden">
           <div class="h-12 px-4 flex items-center justify-between border-b border-paper-line bg-paper-warm">
-            <span class="flex items-center gap-2 font-display font-bold text-sm text-ink"><i class="ph-fill ph-globe-hemisphere-east text-heritage-500"></i> ICH Radar OS</span>
-            <span class="flex gap-1.5"><i class="w-3 h-3 rounded-full bg-terra-100 block"></i><i class="w-3 h-3 rounded-full bg-saffron-100 block"></i><i class="w-3 h-3 rounded-full bg-jade-100 block"></i></span>
+            <span class="flex items-center gap-2 font-display font-bold text-sm text-ink">
+              <i class="ph-fill ph-globe-hemisphere-east text-heritage-500"></i>
+              Featured Living Heritage
+            </span>
+            <span class="font-mono text-[9px] uppercase tracking-[.18em] text-ink-mute">Live from data.json</span>
           </div>
-
-          <div class="grid grid-cols-3 divide-x divide-paper-line border-b border-paper-line">
-            <div class="p-4"><p class="font-mono text-[10px] uppercase tracking-widest text-ink-mute">Elements</p><p class="font-display font-bold text-2xl text-ink">2,419</p></div>
-            <div class="p-4"><p class="font-mono text-[10px] uppercase tracking-widest text-ink-mute">Enriched</p><p class="font-display font-bold text-2xl text-jade-500">1,802</p></div>
-            <div class="p-4"><p class="font-mono text-[10px] uppercase tracking-widest text-ink-mute">Shared</p><p class="font-display font-bold text-2xl text-terra-500">456</p></div>
-          </div>
-
-          <div class="p-4 flex gap-4 bg-paper">
-            <div class="flex-1 rounded-2xl border border-paper-line bg-white relative overflow-hidden min-h-[240px] grain">
-              <svg class="absolute inset-0 w-full h-full" viewBox="0 0 300 240" preserveAspectRatio="none">
-                <polyline points="50,160 150,90 250,180" fill="none" class="thread" stroke-width="2.5"/>
-                <circle cx="50" cy="160" r="7" fill="#2D4A7C"/>
-                <circle cx="150" cy="90" r="5" fill="#C9891B"/>
-                <circle cx="250" cy="180" r="7" fill="#2D4A7C"/>
-              </svg>
-              <div class="absolute top-4 left-10 bg-white border border-paper-line shadow-soft rounded-lg px-3 py-2">
-                <p class="font-semibold text-[11px] text-ink">Batik Making</p>
-                <p class="text-[10px] text-terra-500 mt-0.5">Shared node · 2 States</p>
+          <div class="relative aspect-[1.45/1] bg-paper-warm overflow-hidden">
+            <div id="hero-heritage-skeleton" class="absolute inset-0 grid place-items-center bg-gradient-to-br from-heritage-50 via-paper-warm to-saffron-50">
+              <div class="text-center">
+                <i class="ph-fill ph-spinner-gap animate-spin text-3xl text-heritage-500"></i>
+                <p class="font-mono text-[10px] uppercase tracking-widest text-ink-mute mt-3">Loading a living tradition…</p>
               </div>
             </div>
-            <div class="w-44 flex flex-col gap-3">
-              <div class="rounded-2xl border border-paper-line bg-white overflow-hidden shadow-soft">
-                <div class="h-16 bg-gradient-to-br from-saffron-100 to-terra-50 relative">
-                  <span class="absolute top-2 right-2 bg-jade-500 text-white text-[8px] font-bold px-2 py-0.5 rounded-full">COMPLETE</span>
-                </div>
-                <div class="p-3">
-                  <p class="font-mono text-[8px] uppercase tracking-widest text-terra-500">Traditional Craft</p>
-                  <p class="font-display font-bold text-sm text-ink leading-tight mt-1">Keris Forging</p>
-                  <p class="text-[10px] text-ink-mute mt-1">Indonesia</p>
-                </div>
-              </div>
-              <div class="flex-1 rounded-2xl border border-heritage-100 bg-heritage-50 grid place-items-center text-center p-3">
-                <div>
-                  <i class="ph-fill ph-sparkle text-heritage-500 text-xl"></i>
-                  <p class="text-[10px] text-heritage-600 font-semibold mt-1 leading-snug">AI Enrichment<br>Active</p>
-                </div>
-              </div>
+            <img id="hero-heritage-image" src="thum.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" loading="eager" decoding="async">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none"></div>
+            <div class="absolute left-5 right-5 bottom-5 text-white">
+              <p id="hero-heritage-category" class="font-mono text-[10px] uppercase tracking-[.2em] text-white/75 mb-1.5">Living heritage</p>
+              <h2 id="hero-heritage-title" class="font-display font-bold text-2xl leading-tight">Discover a living tradition</h2>
+              <p id="hero-heritage-location" class="text-sm text-white/80 mt-1.5">Exploring the global inventory</p>
             </div>
+          </div>
+          <div class="p-4 flex items-center justify-between gap-4">
+            <p class="text-xs text-ink-soft leading-relaxed">A rotating glimpse from the ICH Radar inventory — selected only when a usable image is available.</p>
+            <a href="radar.html" class="shrink-0 inline-flex items-center gap-2 bg-heritage-500 hover:bg-heritage-600 text-white px-4 py-2.5 rounded-xl font-semibold text-xs shadow-soft transition">
+              Explore <i class="ph-bold ph-arrow-up-right"></i>
+            </a>
           </div>
         </div>
       </div>
 
     </div>
   </div>
+</section>
+
+<!-- ════════════ SMART SECTION · RADAR INSIGHTS ════════════ -->
+<section id="insights" class="py-20 border-t border-paper-line bg-paper weave">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-10">
+      <div class="max-w-3xl">
+        <p class="font-mono text-xs uppercase tracking-[.22em] text-berry-500 mb-4">00 — From the Radar</p>
+        <h2 class="font-display font-bold text-3xl md:text-5xl text-ink leading-tight mb-4">Ideas, reflections &amp; living heritage</h2>
+        <p class="text-ink-soft text-lg leading-relaxed">A small editorial window into the wider Horizon Scan archive — automatically filtered for heritage, culture, safeguarding and related themes.</p>
+      </div>
+      <a href="https://horizon-scanning.org/blog/" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-2 bg-white border border-paper-line hover:border-berry-100 text-ink px-5 py-3.5 rounded-2xl font-semibold shadow-soft transition">
+        <i class="ph-fill ph-notebook text-berry-500"></i> View Horizon Scan <i class="ph-bold ph-arrow-up-right"></i>
+      </a>
+    </div>
+    <div id="ich-insights-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5" aria-live="polite">
+      <article class="insight-card"><div class="insight-media insight-skeleton"></div><div class="p-6"><div class="h-3 w-20 rounded-full bg-paper-warm mb-4"></div><div class="h-5 w-4/5 rounded bg-paper-warm mb-3"></div><div class="h-3 w-full rounded bg-paper-warm mb-2"></div><div class="h-3 w-2/3 rounded bg-paper-warm"></div></div></article>
+      <article class="insight-card hidden md:block"><div class="insight-media insight-skeleton"></div><div class="p-6"><div class="h-3 w-20 rounded-full bg-paper-warm mb-4"></div><div class="h-5 w-4/5 rounded bg-paper-warm mb-3"></div><div class="h-3 w-full rounded bg-paper-warm mb-2"></div><div class="h-3 w-2/3 rounded bg-paper-warm"></div></div></article>
+      <article class="insight-card hidden lg:block"><div class="insight-media insight-skeleton"></div><div class="p-6"><div class="h-3 w-20 rounded-full bg-paper-warm mb-4"></div><div class="h-5 w-4/5 rounded bg-paper-warm mb-3"></div><div class="h-3 w-full rounded bg-paper-warm mb-2"></div><div class="h-3 w-2/3 rounded bg-paper-warm"></div></div></article>
+    </div>
+    <p id="ich-insights-empty" class="hidden mt-6 text-center text-sm text-ink-mute">No heritage-focused articles are available right now.</p>
+  </div>
+  <style>
+    .insight-card{background:#fff;border:1px solid #E7E0D2;border-radius:1.5rem;overflow:hidden;box-shadow:0 1px 2px rgba(31,29,26,.04),0 10px 30px -18px rgba(31,29,26,.18);transition:.22s ease;display:flex;flex-direction:column;min-height:100%}
+    .insight-card:hover{transform:translateY(-4px);border-color:#F2D3E2;box-shadow:0 20px 40px -22px rgba(31,29,26,.28)}
+    .insight-media{height:12rem;position:relative;overflow:hidden;background:#F5F0E6}
+    .insight-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+    .insight-card:hover .insight-media img{transform:scale(1.035)}
+    .insight-skeleton{background:linear-gradient(90deg,#F5F0E6 25%,#FCFAF6 37%,#F5F0E6 63%);background-size:400% 100%;animation:insight-shimmer 1.4s ease infinite}
+    .insight-fallback{display:grid;place-items:center;background:linear-gradient(135deg,#EEF2F9,#FDF6E6);color:#2D4A7C}
+    @keyframes insight-shimmer{0%{background-position:100% 0}100%{background-position:-100% 0}}
+  </style>
 </section>
 
 <!-- ════════════ 1 · LIVING HERITAGE ════════════ -->
@@ -1307,6 +1326,54 @@ tailwind.config = {
 </div>
 
 <script>
+/* ═══ SMART HOMEPAGE DATA ═══ */
+const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+function shuffleCopy(items){ const copy=[...items]; for(let i=copy.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [copy[i],copy[j]]=[copy[j],copy[i]]; } return copy; }
+async function loadFeaturedHeritage(){
+  const img=document.getElementById('hero-heritage-image'), skeleton=document.getElementById('hero-heritage-skeleton'), title=document.getElementById('hero-heritage-title'), category=document.getElementById('hero-heritage-category'), location=document.getElementById('hero-heritage-location');
+  if(!img||!skeleton||!title||!category||!location) return;
+  const fallback=()=>{ img.onerror=null; img.src="thum.png"; img.alt="ICH Radar overview"; img.classList.remove("opacity-0"); skeleton.classList.add("hidden"); title.textContent="Explore living heritage"; category.textContent="ICH Radar inventory"; location.textContent="Open the global radar to explore documented traditions"; };
+  try{
+    const res=await fetch("data.json",{cache:"no-store"}); if(!res.ok) throw new Error("data.json unavailable");
+    const data=await res.json();
+    const candidates=shuffleCopy((data.inventory||[]).filter(item=>item&&item.element_name&&item.thumbnail_url&&typeof item.thumbnail_url==="string"&&item.thumbnail_url.trim()));
+    if(!candidates.length){ fallback(); return; }
+    let pointer=0;
+    const tryNext=()=>{
+      if(pointer>=candidates.length){ fallback(); return; }
+      const item=candidates[pointer++];
+      img.onload=()=>{ img.alt=item.element_name; img.classList.remove("opacity-0"); skeleton.classList.add("hidden"); title.textContent=item.element_name; category.textContent=item.category||"Intangible Cultural Heritage"; location.textContent=item.location?.country||"Global"; };
+      img.onerror=()=>tryNext(); img.src=item.thumbnail_url;
+    };
+    tryNext();
+  }catch(error){ console.warn("Featured heritage preview unavailable:",error); fallback(); }
+}
+function slugifyArticle(title){ return String(title||"").normalize("NFKD").replace(/[^\w\s-]/g,"").trim().toLowerCase().replace(/[\s_-]+/g,"-").replace(/^-+|-+$/g,""); }
+function renderInsightCards(articles){
+  const grid=document.getElementById('ich-insights-grid'), empty=document.getElementById('ich-insights-empty'); if(!grid||!empty) return;
+  if(!articles.length){ grid.innerHTML=""; empty.classList.remove("hidden"); return; }
+  grid.innerHTML=articles.map(article=>{
+    const title=escapeHTML(article.title), excerpt=escapeHTML(article.excerpt||''), category=escapeHTML(article.category||'Horizon Scan'), date=escapeHTML(article.date||''), image=article.imageUrl?'https://horizon-scanning.org/'+String(article.imageUrl).replace(/^\/+/, ''):'';
+    const href='https://horizon-scanning.org/blog/article/'+slugifyArticle(article.title)+'.html';
+    const media=image ? '<img src="'+escapeHTML(image)+'" alt="'+title+'" loading="lazy" decoding="async"><span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm border border-white/60 px-2.5 py-1 rounded-full font-mono text-[9px] uppercase tracking-widest text-berry-600"><i class="ph-fill ph-sparkle"></i> Selected</span>' : '<div class="insight-fallback absolute inset-0"><i class="ph-fill ph-notebook text-4xl"></i></div>';
+    return '<a class="insight-card group" href="'+escapeHTML(href)+'" target="_blank" rel="noopener noreferrer"><div class="insight-media">'+media+'</div><div class="p-6 flex flex-col flex-1"><div class="flex items-center justify-between gap-3 mb-3"><span class="font-mono text-[10px] uppercase tracking-[.16em] text-berry-500">'+category+'</span><span class="font-mono text-[10px] text-ink-mute whitespace-nowrap">'+date+'</span></div><h3 class="font-display font-bold text-xl text-ink leading-tight mb-3 group-hover:text-berry-600 transition">'+title+'</h3><p class="text-sm text-ink-soft leading-relaxed flex-1">'+excerpt+'</p><span class="inline-flex items-center gap-2 mt-5 text-xs font-semibold uppercase tracking-[.14em] text-heritage-600">Read article <i class="ph-bold ph-arrow-up-right transition-transform group-hover:translate-x-0.5"></i></span></div></a>';
+  }).join("");
+  grid.querySelectorAll('.insight-media img').forEach(img=>img.addEventListener('error',()=>{ img.parentElement.classList.add('insight-fallback'); img.remove(); },{once:true}));
+}
+async function loadHeritageInsights(){
+  try{
+    const res=await fetch("https://horizon-scanning.org/blog/data.json",{cache:"no-store"}); if(!res.ok) throw new Error("Horizon Scan blog data unavailable");
+    const items=await res.json();
+    const keywordRx=/intangible cultural heritage|living heritage|cultural heritage|safeguard|safeguarding|UNESCO|heritage &/i;
+    const relevant=(Array.isArray(items)?items:[]).filter(item=>item&&keywordRx.test([item.title,item.excerpt,item.category].filter(Boolean).join(" "))).sort((a,b)=>(Date.parse(b.date||"")||0)-(Date.parse(a.date||"")||0)).slice(0,3);
+    renderInsightCards(relevant);
+  }catch(error){
+    console.warn('Heritage insights unavailable:',error); const grid=document.getElementById('ich-insights-grid'), empty=document.getElementById('ich-insights-empty'); if(grid) grid.innerHTML=''; if(empty){ empty.textContent='The editorial feed is temporarily unavailable. Visit Horizon Scan for the latest articles.'; empty.classList.remove('hidden'); }
+  }
+}
+loadFeaturedHeritage();
+loadHeritageInsights();
+
 /* ═══ NAV ═══ */
 const nav = document.getElementById('navbar');
 addEventListener('scroll', () => nav.classList.toggle('shadow-soft', scrollY > 16), {passive:true});
@@ -1331,7 +1398,7 @@ const spy = new IntersectionObserver(es => es.forEach(e => {
   spyLinks.forEach(l => l.classList.toggle('text-heritage-600', l.hash === '#' + e.target.id));
   spyLinks.forEach(l => l.classList.toggle('bg-heritage-50', l.hash === '#' + e.target.id));
 }), {rootMargin:'-45% 0px -50% 0px'});
-['heritage','inventory','resilience','learn','directives','ecosystem','quiz','faq']
+['insights','heritage','inventory','resilience','learn','directives','ecosystem','quiz','faq']
   .map(id => document.getElementById(id)).filter(Boolean).forEach(s => spy.observe(s));
 
 /* ═══ CAROUSEL ═══ */
@@ -1498,39 +1565,3 @@ function loadRandomQuestion(){
   elTopic.textContent = currentQ.t;
   elQ.textContent = currentQ.q;
   currentQ.opts.forEach((txt, idx) => {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'quiz-option w-full text-left p-4 rounded-2xl border border-paper-line bg-white text-ink-soft font-medium leading-relaxed';
-    b.innerHTML = `<span class="inline-block w-6 font-bold text-heritage-500">${String.fromCharCode(65+idx)}.</span> ${txt}`;
-    b.onclick = () => selectAnswer(idx);
-    elOpts.appendChild(b);
-  });
-  elQ.focus?.();
-}
-
-function selectAnswer(sel){
-  if(answered) return; answered = true;
-  const ok = sel === currentQ.ans;
-  [...elOpts.children].forEach((b, i) => {
-    b.disabled = true;
-    if(i === currentQ.ans){ b.classList.add('quiz-correct'); b.insertAdjacentHTML('afterbegin','<i class="ph-bold ph-check-circle mr-2"></i>'); }
-    else if(i === sel){ b.classList.add('quiz-wrong'); b.insertAdjacentHTML('afterbegin','<i class="ph-bold ph-x-circle mr-2"></i>'); }
-    else b.classList.add('opacity-45');
-  });
-  if(ok){ score += 10; elScore.textContent = score;
-    elFeed.innerHTML = '<i class="ph-fill ph-check-circle text-2xl"></i> Correct';
-    elFeed.className = 'font-display font-bold text-lg flex items-center gap-2 mb-3 text-jade-600';
-  } else {
-    elFeed.innerHTML = '<i class="ph-fill ph-x-circle text-2xl"></i> Not quite';
-    elFeed.className = 'font-display font-bold text-lg flex items-center gap-2 mb-3 text-terra-600';
-  }
-  elDesc.innerHTML = `<strong class="block text-ink mb-1">Context — ${currentQ.t}</strong>${currentQ.d}`;
-  elFB.classList.remove('hidden');
-}
-
-function resetQuiz(){ score = 0; elScore.textContent = '0'; recent = []; loadRandomQuestion(); }
-
-document.addEventListener('DOMContentLoaded', loadRandomQuestion);
-</script>
-</body>
-</html>
