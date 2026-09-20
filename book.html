@@ -575,7 +575,7 @@ function pageLeft(item, idx, sfx) {
   const related = n.related || [];
   const tags = n.tags || [];
   const regions = arr(n.loc?.provinces || n.loc?.regions || n.loc?.province || n.loc?.region);
-  const mapId = 'map-' + (item.id || idx) + sfx;
+  const mapId = 'map-' + idx + (sfx || '');
   const hasCoords = Number.isFinite(n.lat) && Number.isFinite(n.lon) && Math.abs(n.lat) <= 90 && Math.abs(n.lon) <= 180;
   const confRaw = parseFloat(shared.confidence_score ?? shared.confidence ?? 0);
   const conf = Number.isFinite(confRaw) ? Math.max(0, Math.min(1, confRaw)) : 0;
@@ -952,7 +952,7 @@ async function doPrint() {
                } catch(e) {}
              });
 
-             const mapElements = document.querySelectorAll('[id^="map-"]');
+             const mapElements = document.querySelectorAll('.map-box[id^="map-"]');
              const printMaps = [];
              const DOT_LAYER_CLASS = 'atlas-print-dots';
 
@@ -983,6 +983,7 @@ async function doPrint() {
              }
 
              mapElements.forEach(el => {
+                              if (!el.id || document.getElementById(el.id) !== el) return;
                const lat = parseFloat(el.getAttribute('data-lat')) || 0;
                const lon = parseFloat(el.getAttribute('data-lon')) || 0;
                const map = L.map(el.id, { zoomControl:false, fadeAnimation:false, zoomAnimation:false, attributionControl:false }).setView([lat, lon], 4);
