@@ -267,6 +267,7 @@ body {
 .spin { animation: _spin 1s linear infinite; }
 @keyframes _spin { to { transform: rotate(360deg); } }
 #print-wrapper { display: none; }
+.extra-grid{display:grid;grid-template-columns:minmax(105px,.72fr) 1.65fr;gap:0;border:1px solid var(--parchment-dark);border-radius:6px;overflow:hidden;background:#fff}.extra-key,.extra-val{padding:.34rem .45rem;border-bottom:1px solid var(--parchment-mid);font-size:.58rem;line-height:1.45}.extra-key{font-family:'DM Mono',monospace;color:var(--ink-faint);background:rgba(28,18,8,.025);word-break:break-word}.extra-val{color:var(--ink-soft);word-break:break-word;white-space:pre-line}.extra-grid>div:nth-last-child(-n+2){border-bottom:0}
 .map-box { width: 100%; border-radius: 7px; overflow: hidden; border: 1px solid var(--parchment-mid); flex-shrink: 0; background: var(--parchment); }
 
 @media print {
@@ -648,10 +649,11 @@ function spawnMaps(mapsObj, isPrint) {
       L.tileLayer(tileUrl, { maxZoom: 18 }).addTo(map);
       
       // Dots
-      items.slice(0, 60).forEach(it => {
-        const ilat = parseFloat(it?.location?.lat);
-        const ilon = parseFloat(it?.location?.lng || it?.location?.lon);
-        if (!isNaN(ilat) && !isNaN(ilon) && (Math.abs(ilat-lat)>0.01 || Math.abs(ilon-lon)>0.01)) {
+      items.forEach(it => {
+        const nn = it?.__n || {};
+        const ilat = parseFloat(nn.lat);
+        const ilon = parseFloat(nn.lon);
+        if (!isNaN(ilat) && !isNaN(ilon) && (Math.abs(ilat-lat)>0.01 || Math.abs(ilon-lon)>0.01))
           L.circleMarker([ilat,ilon], { radius: 2.5, color: '#B8522A', fillColor: '#B8522A', fillOpacity: 0.28, weight: 0 }).addTo(map);
         }
       });
@@ -749,9 +751,9 @@ async function doPrint() {
     }
 
     // 5. Kumpulkan Koordinat Peta
-    const mapDotsData = items.slice(0, 60).map(it => ({
-        lat: parseFloat(it?.location?.lat),
-        lon: parseFloat(it?.location?.lng || it?.location?.lon)
+    const mapDotsData = items.map(it => ({
+        lat: parseFloat(it?.__n?.lat),
+        lon: parseFloat(it?.__n?.lon)
     })).filter(pos => !isNaN(pos.lat) && !isNaN(pos.lon));
 
     // 6. Buka Tab Baru
