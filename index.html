@@ -1343,63 +1343,92 @@ tailwind.config = {
 /* ═══ SMART HOMEPAGE DATA ═══ */
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
 function shuffleCopy(items){ const copy=[...items]; for(let i=copy.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [copy[i],copy[j]]=[copy[j],copy[i]]; } return copy; }
-async function loadFeaturedHeritage(){
-  const img=document.getElementById('hero-heritage-image'), skeleton=document.getElementById('hero-heritage-skeleton'), title=document.getElementById('hero-heritage-title'), category=document.getElementById('hero-heritage-category'), location=document.getElementById('hero-heritage-location');
-  if(!img||!skeleton||!title||!category||!location) return;
-  const fallback=()=>{ img.onerror=null; img.src="thum.png"; img.alt="ICH Radar overview"; img.classList.remove("opacity-0"); skeleton.classList.add("hidden"); title.textContent="Explore living heritage"; category.textContent="ICH Radar inventory"; location.textContent="Open the global radar to explore documented traditions"; };
+async function fetchHomeFeed(){
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),6000);
   try{
-    const res=await fetch("data.json",{cache:"no-store"}); if(!res.ok) throw new Error("data.json unavailable");
-    const data=await res.json();
-    const candidates=shuffleCopy((data.inventory||[]).filter(item=>item&&item.element_name&&item.thumbnail_url&&typeof item.thumbnail_url==="string"&&item.thumbnail_url.trim()));
-    if(!candidates.length){ fallback(); return; }
+    const res=await fetch("home-feed.json",{cache:"no-store",signal:controller.signal});
+    if(!res.ok) throw new Error("home-feed.json unavailable");
+    return await res.json();
+  }finally{ clearTimeout(timer); }
+}
+async function loadFeaturedHeritage(){
+  const img=document.getElementById("hero-heritage-image"), skeleton=document.getElementById("hero-heritage-skeleton"), title=document.getElementById("hero-heritage-title"), category=document.getElementById("hero-heritage-category"), location=document.getElementById("hero-heritage-location");
+  if(!img||!skeleton||!title||!category||!location) return;
+  const fallback=()=>{
+    img.onerror=null;
+    img.src="thum.png";
+    img.alt="ICH Radar overview";
+    img.classList.remove("opacity-0");
+    skeleton.classList.add("hidden");
+    title.textContent="Explore living heritage";
+    category.textContent="ICH Radar inventory";
+    location.textContent="Open the global radar to explore documented traditions";
+  };
+  try{
+    const data=await fetchHomeFeed();
+    const candidates=shuffleCopy((data.inventory||[]).filter(item=>item&&item.element_name&&item.thumbnail_url));
+    if(!candidates.length){fallback();return;}
     let pointer=0;
     const tryNext=()=>{
-      if(pointer>=candidates.length){ fallback(); return; }
+      if(pointer>=candidates.length){fallback();return;}
       const item=candidates[pointer++];
-      img.onload=()=>{ img.alt=item.element_name; img.classList.remove("opacity-0"); skeleton.classList.add("hidden"); title.textContent=item.element_name; category.textContent=item.category||"Intangible Cultural Heritage"; location.textContent=item.location?.country||"Global"; };
-      img.onerror=()=>tryNext(); img.src=item.thumbnail_url;
+      img.onload=()=>{
+        img.alt=item.element_name;
+        img.classList.remove("opacity-0");
+        skeleton.classList.add("hidden");
+        title.textContent=item.element_name;
+        category.textContent=item.category||"Intangible Cultural Heritage";
+        location.textContent=item.country||"Global";
+      };
+      img.onerror=()=>tryNext();
+      img.src=item.thumbnail_url;
     };
     tryNext();
-  }catch(error){ console.warn("Featured heritage preview unavailable:",error); fallback(); }
+  }catch(error){
+    console.warn("Featured heritage preview unavailable:",error);
+    fallback();
+  }
 }
-function slugifyArticle(title){ return String(title||"").normalize("NFKD").replace(/[^\w\s-]/g,"").trim().toLowerCase().replace(/[\s_-]+/g,"-").replace(/^-+|-+$/g,""); }
 function renderInsightCards(articles){
-  const track=document.getElementById('ich-insights-track'), empty=document.getElementById('ich-insights-empty'), status=document.getElementById('ich-insights-status');
-  const prev=document.getElementById('insight-prev'), next=document.getElementById('insight-next');
+  const track=document.getElementById("ich-insights-track"), empty=document.getElementById("ich-insights-empty"), status=document.getElementById("ich-insights-status");
+  const prev=document.getElementById("insight-prev"), next=document.getElementById("insight-next");
   if(!track||!empty||!status) return;
-  if(!articles.length){ track.innerHTML=""; empty.classList.remove("hidden"); if(prev)prev.disabled=true; if(next)next.disabled=true; return; }
+  if(!articles.length){track.innerHTML="";empty.classList.remove("hidden");if(prev)prev.disabled=true;if(next)next.disabled=true;return;}
   empty.classList.add("hidden");
-  track.innerHTML=articles.map((article,index)=>{
-    const title=escapeHTML(article.title), excerpt=escapeHTML(article.excerpt||''), category=escapeHTML(article.category||'Horizon Scan'), date=escapeHTML(article.date||''), image=article.imageUrl?'https://horizon-scanning.org/'+String(article.imageUrl).replace(/^\/+/, ''):'';
-    const href='https://horizon-scanning.org/blog/article/'+slugifyArticle(article.title)+'.html';
-    const media=image ? '<img src="'+escapeHTML(image)+'" alt="'+title+'" loading="lazy" decoding="async"><span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm border border-white/60 px-2.5 py-1 rounded-full font-mono text-[9px] uppercase tracking-widest text-berry-600"><i class="ph-fill ph-sparkle"></i> Heritage</span>' : '<div class="insight-fallback absolute inset-0"><i class="ph-fill ph-notebook text-4xl"></i></div>';
+  track.innerHTML=articles.map(article=>{
+    const title=escapeHTML(article.title),excerpt=escapeHTML(article.excerpt||""),category=escapeHTML(article.category||"Horizon Scan"),date=escapeHTML(article.date||""),image=article.imageUrl?"https://horizon-scanning.org/"+String(article.imageUrl).replace(/^\/+/, ""):"";
+    const href="https://horizon-scanning.org/blog/article/"+article.slug+".html";
+    const media=image?'<img src="'+escapeHTML(image)+'" alt="'+title+'" loading="lazy" decoding="async"><span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm border border-white/60 px-2.5 py-1 rounded-full font-mono text-[9px] uppercase tracking-widest text-berry-600"><i class="ph-fill ph-sparkle"></i> Heritage</span>':'<div class="insight-fallback absolute inset-0"><i class="ph-fill ph-notebook text-4xl"></i></div>';
     return '<a class="insight-card group" href="'+escapeHTML(href)+'" target="_blank" rel="noopener noreferrer"><div class="insight-media">'+media+'</div><div class="p-6 flex flex-col"><div class="flex items-center justify-between gap-3 mb-3"><span class="font-mono text-[10px] uppercase tracking-[.16em] text-berry-500">'+category+'</span><span class="font-mono text-[10px] text-ink-mute whitespace-nowrap">'+date+'</span></div><h3 class="font-display font-bold text-xl text-ink leading-tight mb-3 group-hover:text-berry-600 transition">'+title+'</h3><p class="text-sm text-ink-soft leading-relaxed">'+excerpt+'</p><span class="inline-flex items-center gap-2 mt-5 text-xs font-semibold uppercase tracking-[.14em] text-heritage-600">Read article <i class="ph-bold ph-arrow-up-right transition-transform group-hover:translate-x-0.5"></i></span></div></a>';
   }).join("");
-  track.querySelectorAll('.insight-media img').forEach(img=>img.addEventListener('error',()=>{img.parentElement.classList.add('insight-fallback');img.insertAdjacentHTML('beforeend','<i class="ph-fill ph-notebook text-4xl"></i>');img.remove();},{once:true}));
+  track.querySelectorAll(".insight-media img").forEach(img=>img.addEventListener("error",()=>{img.parentElement.classList.add("insight-fallback");img.insertAdjacentHTML("beforeend",'<i class="ph-fill ph-notebook text-4xl"></i>');img.remove();},{once:true}));
   const update=()=>{
-    const max=Math.max(0,track.scrollWidth-track.clientWidth), left=track.scrollLeft, canPrev=left>8, canNext=left<max-8;
-    if(prev)prev.disabled=!canPrev; if(next)next.disabled=!canNext;
+    const max=Math.max(0,track.scrollWidth-track.clientWidth),left=track.scrollLeft,canPrev=left>8,canNext=left<max-8;
+    if(prev)prev.disabled=!canPrev;if(next)next.disabled=!canNext;
     const cards=[...track.querySelectorAll(".insight-card")];
-    let idx=0, best=Infinity; cards.forEach((c,i)=>{const d=Math.abs(c.offsetLeft-left); if(d<best){best=d;idx=i;}});
+    let idx=0,best=Infinity;cards.forEach((c,i)=>{const d=Math.abs(c.offsetLeft-left);if(d<best){best=d;idx=i;}});
     status.textContent=`${idx+1} / ${cards.length} · ${cards.length} heritage articles`;
   };
   const step=()=>Math.min(track.clientWidth*.88,track.querySelector(".insight-card")?.getBoundingClientRect().width+20||520);
   prev?.addEventListener("click",()=>track.scrollBy({left:-step(),behavior:"smooth"}));
   next?.addEventListener("click",()=>track.scrollBy({left:step(),behavior:"smooth"}));
   track.addEventListener("scroll",update,{passive:true});
-  track.addEventListener("wheel",e=>{ if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){ e.preventDefault(); track.scrollLeft+=e.deltaY; } },{passive:false});
-  track.addEventListener("keydown",e=>{ if(e.key==="ArrowRight"){e.preventDefault();track.scrollBy({left:step(),behavior:"smooth"});} if(e.key==="ArrowLeft"){e.preventDefault();track.scrollBy({left:-step(),behavior:"smooth"});} });
+  track.addEventListener("wheel",e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();track.scrollLeft+=e.deltaY;}},{passive:false});
+  track.addEventListener("keydown",e=>{if(e.key==="ArrowRight"){e.preventDefault();track.scrollBy({left:step(),behavior:"smooth"});}if(e.key==="ArrowLeft"){e.preventDefault();track.scrollBy({left:-step(),behavior:"smooth"});}});
   requestAnimationFrame(update);
 }
 async function loadHeritageInsights(){
   try{
-    const res=await fetch("https://raw.githubusercontent.com/AnggaConni/HorizonScanning/main/blog/data.json",{cache:"no-store"}); if(!res.ok) throw new Error("Horizon Scan blog data unavailable");
-    const items=await res.json();
-    const keywordRx=/intangible cultural heritage|living heritage|cultural heritage|safeguard|safeguarding|UNESCO|heritage &/i;
-    const relevant=(Array.isArray(items)?items:[]).filter(item=>item&&keywordRx.test([item.title,item.excerpt,item.category].filter(Boolean).join(" "))).sort((a,b)=>(Date.parse(b.date||"")||0)-(Date.parse(a.date||"")||0));
+    const data=await fetchHomeFeed();
+    const relevant=(Array.isArray(data.articles)?data.articles:[]).sort((a,b)=>(Date.parse(b.date||"")||0)-(Date.parse(a.date||"")||0));
     renderInsightCards(relevant);
   }catch(error){
-    console.warn('Heritage insights unavailable:',error); const track=document.getElementById('ich-insights-track'), empty=document.getElementById('ich-insights-empty'); if(track) track.innerHTML=''; if(empty){ empty.textContent='The editorial feed is temporarily unavailable. Visit Horizon Scan for the latest articles.'; empty.classList.remove('hidden'); }
+    console.warn("Heritage insights unavailable:",error);
+    const track=document.getElementById("ich-insights-track"),empty=document.getElementById("ich-insights-empty"),status=document.getElementById("ich-insights-status");
+    if(track) track.innerHTML="";
+    if(status) status.textContent="Feed unavailable";
+    if(empty){empty.textContent="The editorial feed is temporarily unavailable. Please refresh the page.";empty.classList.remove("hidden");}
   }
 }
 loadFeaturedHeritage();
