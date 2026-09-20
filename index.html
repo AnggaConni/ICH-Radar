@@ -1562,8 +1562,27 @@ function renderInsightCards(articles){
     const excerpt = escapeHTML(article.excerpt || "");
     const category = escapeHTML(article.category || "Horizon Scan");
     const date = escapeHTML(article.date || "");
-    const image = article.imageUrl ? "https://horizon-scanning.org/" + String(article.imageUrl).replace(/^\/+/, "") : "";
-    const href = "https://horizon-scanning.org/blog.html" + article.slug + ".html";
+    const imagePath = article.image || article.imageUrl || "";
+    const image = imagePath
+      ? (String(imagePath).startsWith("http")
+          ? String(imagePath)
+          : "https://horizon-scanning.org/" + String(imagePath).replace(/^\/+/, ""))
+      : "";
+
+    // Keep the landing-page link identical to HorizonScanning's generator.
+    // The generated article files are named from the title slug unless data.json
+    // explicitly provides a slug.
+    const slugify = (text) => String(text || "")
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w\-]+/g, "")
+      .replace(/\-\-+/g, "-");
+
+    const slug = article.slug || (article.title ? slugify(article.title) : "");
+    const href = slug
+      ? "https://horizon-scanning.org/blog/article/" + slug + ".html"
+      : "https://horizon-scanning.org/blog.html";
     
     const media = image 
       ? `<img src="${escapeHTML(image)}" alt="${title}" loading="lazy" decoding="async"><span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm border border-white/60 px-2.5 py-1 rounded-full font-mono text-[9px] uppercase tracking-widest text-berry-600"><i class="ph-fill ph-sparkle"></i> Heritage</span>` 
