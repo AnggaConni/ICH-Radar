@@ -1373,14 +1373,6 @@ async function loadFeaturedHeritage(){
     const tryNext=()=>{
       if(pointer>=candidates.length){fallback();return;}
       const item=candidates[pointer++];
-      img.onload=()=>{
-        img.alt=item.element_name;
-        img.classList.remove("opacity-0");
-        skeleton.classList.add("hidden");
-        title.textContent=item.element_name;
-        category.textContent=item.category||"Intangible Cultural Heritage";
-        location.textContent=item.country||"Global";
-      };
       let imageTimer=setTimeout(()=>{ img.onerror=null; img.onload=null; tryNext(); },2500);
       img.onload=()=>{ clearTimeout(imageTimer);
         img.alt=item.element_name;
@@ -1498,12 +1490,3 @@ const CB_DATA = {
     <ul>
       <li><strong>Ethics first:</strong> securing free, prior and informed consent before any documentation begins.</li>
       <li><strong>Techniques:</strong> participatory video, cultural mapping and interviewing, with community members acting as researchers.</li>
-      <li><strong>Data sovereignty:</strong> communities own the knowledge and control access, especially to secret and sacred material.</li>
-    </ul>
-    <h4>Why it matters</h4>
-    <p>Top-down inventories built only by academics alienate the people who actually practise the heritage. CBI builds local capacity and produces data that reflects the community's own worldview.</p>`},
-  safeguarding:{ title:"Developing Safeguarding Plans", icon:"ph-shield-check", color:"#8E2F62", bg:"#FAECF3", content:`
-    <p>Safeguarding means ensuring continuous viability. This module guides practitioners through diagnosing threats and designing effective interventions.</p>
-    <h4>Strategic steps</h4>
-    <ul>
-      <li><strong>Identify threats:</strong> is transmission failing? Is globalisation decontextualising the practice? Are raw materials disappearing?</li>
