@@ -178,6 +178,84 @@
   .modal-tab-panel { display: none; }
   .modal-tab-panel.modal-tab-panel-active { display: block; }
 
+
+  /* ── Header: stable proportions across languages ── */
+  .radar-header-inner{
+    min-height:64px;
+  }
+  .radar-brand{
+    flex:0 0 245px;
+    width:245px;
+    min-width:245px;
+  }
+  .radar-brand-title{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .radar-last-updated{
+    flex:0 0 235px;
+    width:235px;
+    min-width:235px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .radar-header-actions{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:8px;
+    flex:1 1 auto;
+    min-width:0;
+  }
+  .radar-action-btn{
+    height:38px;
+    min-width:62px;
+    padding:0 11px !important;
+    justify-content:center;
+    white-space:nowrap;
+    flex:0 0 auto;
+  }
+  .radar-action-btn--guide{width:66px}
+  .radar-action-btn--diffusion{width:92px}
+  .radar-action-btn--export{width:78px}
+  .radar-action-btn--print{width:68px}
+  .radar-action-btn--journal{width:96px}
+  .radar-lang-wrap{
+    flex:0 0 66px;
+    width:66px;
+    min-width:66px;
+  }
+  #translate-btn{
+    width:66px;
+    min-width:66px;
+    height:38px;
+    justify-content:center;
+    white-space:nowrap;
+  }
+  @media (max-width: 1100px){
+    .radar-brand{flex-basis:210px;width:210px;min-width:210px}
+    .radar-last-updated{flex-basis:190px;width:190px;min-width:190px}
+    .radar-action-btn--diffusion{width:82px}
+    .radar-action-btn--export{width:72px}
+    .radar-action-btn--journal{width:88px}
+  }
+  @media (max-width: 900px){
+    .radar-brand{flex-basis:185px;width:185px;min-width:185px}
+    .radar-last-updated{display:none !important}
+  }
+  @media (max-width: 700px){
+    .radar-header-inner{padding-left:16px !important;padding-right:16px !important}
+    .radar-brand{flex:1 1 auto;width:auto;min-width:0}
+    .radar-header-actions{gap:5px}
+    .radar-action-btn span{display:none !important}
+    .radar-action-btn{min-width:38px;width:38px !important;padding:0 !important}
+    .radar-lang-wrap{width:60px;min-width:60px;flex-basis:60px}
+    #translate-btn{width:60px;min-width:60px}
+    .btn-journal-glow{width:42px;padding:0 !important;height:38px}
+  }
+
   /* ── Detail modal polish: larger type, less empty space, premium tabs ── */
   #modal-tabs {
     padding: 10px 18px 0;
@@ -289,56 +367,50 @@
 <body class="font-sans antialiased min-h-screen flex flex-col">
 
   <!-- Header -->
-  <header class="border-b border-brand-700 bg-brand-900/80 sticky top-0 z-50 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div class="flex items-center gap-3">
-        <i class="ph-fill ph-globe-hemisphere-east text-3xl text-brand-accent animate-pulse"></i>
-        <h1 class="font-display font-bold text-xl tracking-tight" id="app-title">ICH <span class="text-brand-accent">Shared Heritage</span> Radar</h1>
+  <header class="border-b border-brand-700 bg-white/90 sticky top-0 z-50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center gap-5 radar-header-inner">
+      <div class="flex items-center gap-3 radar-brand shrink-0">
+        <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center shrink-0">
+          <i class="ph-fill ph-globe-hemisphere-east text-2xl text-brand-accent"></i>
+        </div>
+        <h1 class="font-display font-bold text-[17px] leading-tight tracking-tight radar-brand-title" id="app-title">ICH <span class="text-brand-accent">Shared Heritage</span> Radar</h1>
       </div>
 
-      <div class="flex items-center gap-2 sm:gap-4">
-        <div class="hidden md:flex text-xs text-slate-500 font-mono items-center gap-1" id="last-updated">
-          <i class="ph ph-clock"></i> <span data-i18n="loading">Loading data...</span>
-         </div>
+      <div class="radar-last-updated hidden md:flex items-center gap-2 text-[11px] text-slate-500 font-mono">
+        <i class="ph ph-clock text-brand-secondary"></i>
+        <span id="last-updated"><span data-i18n="loading">Loading data...</span></span>
+      </div>
 
-          <!-- Header Button / Tombol  -->
-        
-              <button onclick="openGuide()" class="text-slate-600 hover:text-brand-accent transition-colors flex items-center gap-1.5 text-xs font-bold px-2 py-1.5 rounded-md border border-transparent hover:border-brand-700 hover:bg-brand-800" title="How to use">
-          <i class="ph ph-info text-lg"></i> <span class="hidden sm:inline" data-i18n="btnGuide">Guide</span>
-         </button>
+      <div class="radar-header-actions">
+        <button onclick="openGuide()" class="radar-action-btn radar-action-btn--guide text-slate-600 hover:text-brand-accent hover:bg-slate-50 transition-colors flex items-center gap-1.5 text-xs font-bold rounded-lg border border-transparent" title="How to use">
+          <i class="ph ph-info text-lg"></i>
+          <span data-i18n="btnGuide">Guide</span>
+        </button>
 
-              <button onclick="openGraphModal()" class="text-slate-600 hover:text-brand-accent transition-colors flex items-center gap-1.5 text-xs font-bold px-2 py-1.5 rounded-md border border-transparent hover:border-brand-700 hover:bg-brand-800" title="Cultural Diffusion Graph">
-              <i class="ph ph-git-branch text-lg"></i> <span class="hidden sm:inline" data-i18n="btnGraph">Diffusion Map</span>
-            </button>
+        <button onclick="openGraphModal()" class="radar-action-btn radar-action-btn--diffusion text-slate-600 hover:text-brand-accent hover:bg-slate-50 transition-colors flex items-center gap-1.5 text-xs font-bold rounded-lg border border-transparent" title="Cultural Diffusion Graph">
+          <i class="ph ph-git-branch text-lg"></i>
+          <span data-i18n="btnGraph">Diffusion Map</span>
+        </button>
 
-              <button onclick="exportToXML()" class="text-slate-600 hover:text-brand-secondary transition-colors flex items-center gap-1.5 text-xs font-bold px-2 py-1.5 rounded-md border border-transparent hover:border-brand-700 hover:bg-brand-800" title="Export Dublin Core XML">
-              <i class="ph ph-export text-lg"></i> <span class="hidden sm:inline" data-i18n="btnExport">Export XML</span>
-            </button>
+        <button onclick="exportToXML()" class="radar-action-btn radar-action-btn--export text-slate-600 hover:text-brand-secondary hover:bg-amber-50 transition-colors flex items-center gap-1.5 text-xs font-bold rounded-lg border border-transparent" title="Export Dublin Core XML">
+          <i class="ph ph-export text-lg"></i>
+          <span data-i18n="btnExport">Export XML</span>
+        </button>
 
-          <a href="book.html" target="_blank"
-            class="flex items-center gap-1.5 px-3 py-1.5 
-                    bg-emerald-600 hover:bg-emerald-700 
-                    text-slate-900 text-xs font-semibold 
-                    rounded-lg transition-colors">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" 
-                width="16" height="16" 
-                viewBox="0 0 24 24" 
-                fill="none" stroke="currentColor" 
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a4 4 0 0 0-4-4H2z"/>
-              <path d="M22 3h-6a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h6z"/>
-            </svg>
+        <a href="book.html" target="_blank"
+          class="radar-action-btn radar-action-btn--print flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-slate-900 text-xs font-semibold rounded-lg transition-colors"
+          title="Print">
+          <i class="ph ph-printer text-base"></i>
+          <span>Print</span>
+        </a>
 
-            <span class="hidden sm:inline">Print</span>
-          </a>
+        <button class="radar-action-btn radar-action-btn--journal btn-journal-glow flex items-center gap-1.5 rounded-lg font-bold" onclick="window.open('journal.html', '_blank')" title="Journal">
+          <i class="ph ph-book-open text-base"></i>
+          <span>Journal</span>
+        </button>
 
-              <button class="btn-journal-glow" onclick="window.open('journal.html', '_blank')">
-              📖 Journal
-            </button>
-
-              <div class="relative ml-2">
-          <button onclick="openTranslateMenu()" id="translate-btn" class="bg-brand-800 border border-brand-700 hover:border-brand-500 px-3 py-1.5 rounded-md text-xs font-bold transition-colors flex items-center gap-2" aria-haspopup="menu" aria-expanded="false" title="Translate this page">
+        <div class="relative radar-lang-wrap">
+          <button onclick="openTranslateMenu()" id="translate-btn" class="bg-white border border-slate-200 hover:border-brand-accent hover:bg-slate-50 text-slate-600 rounded-lg text-xs font-bold transition-colors flex items-center gap-2" aria-haspopup="menu" aria-expanded="false" title="Translate this page">
             <i class="ph ph-translate text-brand-secondary"></i>
             <span id="lang-label">EN</span>
             <i class="ph ph-caret-down text-[10px]"></i>
@@ -348,9 +420,7 @@
             <div id="translate-options" class="grid gap-1"></div>
           </div>
         </div>
-
-       </div>
-
+      </div>
     </div>
   </header>
 
