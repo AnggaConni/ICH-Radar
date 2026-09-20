@@ -927,8 +927,13 @@ async function doPrint() {
         </style>
       </head>
       <body>
+        <div id="pdf-loading" style="position:fixed;inset:0;z-index:99999;background:#1C1208;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#F7F0E3;font-family:Lora,serif;text-align:center;">
+          <div style="width:42px;height:42px;border:2px solid rgba(196,154,13,.22);border-top-color:#C49A0D;border-radius:50%;animation:pdfspin 1s linear infinite;margin-bottom:18px;"></div>
+          <div style="font-family:Playfair Display,serif;font-size:22px;font-weight:700;">Preparing Heritage Atlas</div>
+          <div style="font-family:DM Mono,monospace;font-size:11px;letter-spacing:.08em;color:rgba(247,240,227,.5);margin-top:8px;">RENDERING MAPS &amp; HERITAGE MARKERS</div>
+        </div>
+        <style>@keyframes pdfspin{to{transform:rotate(360deg)}} .atlas-print-dots{position:absolute!important;inset:0!important}</style>
         ${pwHtml}
-
         <script>
           const mapDots = ${JSON.stringify(mapDotsData)};
 
@@ -948,99 +953,76 @@ async function doPrint() {
              });
 
              const mapElements = document.querySelectorAll('[id^="map-"]');
-             let mapsToLoad = mapElements.length;
              const printMaps = [];
+             const DOT_LAYER_CLASS = 'atlas-print-dots';
 
-             const schedulePrint = () => {
-               if (schedulePrint.done) return;
-               schedulePrint.done = true;
-
-               const paintAndPrint = () => {
-                 printMaps.forEach(({ map }) => {
-                   try {
-                     map.invalidateSize(false);
-                     map.eachLayer(layer => {
-                       if (layer && typeof layer.redraw === 'function') layer.redraw();
-                     });
-                   } catch(e) {}
-                 };
-
-                 requestAnimationFrame(() => {
-                   paintAndPrint();
-                   requestAnimationFrame(() => {
-                     paintAndPrint();
-                     setTimeout(() => window.print(), 2200);
-                   });
+             function buildPrintDots(map, el, focusLat, focusLon) {
+               try {
+                 map.invalidateSize(false);
+                 let dotLayer = el.querySelector('.' + DOT_LAYER_CLASS);
+                 if (!dotLayer) {
+                   dotLayer = document.createElement('div');
+                   dotLayer.className = DOT_LAYER_CLASS;
+                   dotLayer.style.cssText = 'position:absolute;inset:0;z-index:650;pointer-events:none;';
+                   el.appendChild(dotLayer);
+                 } else {
+                   dotLayer.innerHTML = '';
+                 }
+                 const bounds = map.getBounds();
+                 mapDots.forEach(pos => {
+                   if (!bounds.contains([pos.lat, pos.lon])) return;
+                   if (Math.abs(pos.lat-focusLat) < 0.01 && Math.abs(pos.lon-focusLon) < 0.01) return;
+                   const pt = map.latLngToContainerPoint([pos.lat, pos.lon]);
+                   if (!Number.isFinite(pt.x) || !Number.isFinite(pt.y)) return;
+                   if (pt.x < -6 || pt.y < -6 || pt.x > el.clientWidth + 6 || pt.y > el.clientHeight + 6) return;
+                   const dot = document.createElement('span');
+                   dot.style.cssText = 'position:absolute;width:6px;height:6px;border-radius:50%;background:#B8522A;border:1px solid rgba(255,255,255,.95);box-shadow:0 0 3px rgba(0,0,0,.35);transform:translate(-50%,-50%);left:' + pt.x + 'px;top:' + pt.y + 'px;';
+                   dotLayer.appendChild(dot);
                  });
-               };
-
-               if (document.fonts && document.fonts.ready) {
-                 document.fonts.ready.then(paintAndPrint).catch(paintAndPrint);
-               } else {
-                 paintAndPrint();
-               }
-             };
-
-             if (mapsToLoad === 0) {
-               setTimeout(schedulePrint, 1200);
+               } catch(e) {}
              }
 
              mapElements.forEach(el => {
                const lat = parseFloat(el.getAttribute('data-lat')) || 0;
                const lon = parseFloat(el.getAttribute('data-lon')) || 0;
-               const map = L.map(el.id, { zoomControl: false, fadeAnimation: false, zoomAnimation: false, attributionControl: false }).setView([lat, lon], 4);
-               printMaps.push({ map, el });
-
+               const map = L.map(el.id, { zoomControl:false, fadeAnimation:false, zoomAnimation:false, attributionControl:false }).setView([lat, lon], 4);
+               printMaps.push({ map, el, lat, lon });
                const layer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-                 maxZoom: 18,
-                 maxNativeZoom: 19,
-                 attribution: 'Tiles &copy; Esri — Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, METI, Esri Japan, METI, Esri China (Hong Kong), Esri Korea, Esri (Thailand), NGCC, © OpenStreetMap contributors, and the GIS User Community'
+                 maxZoom:18, maxNativeZoom:19,
+                 attribution:'Tiles &copy; Esri — Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, METI, Esri Japan, METI, Esri China (Hong Kong), Esri Korea, Esri (Thailand), NGCC, © OpenStreetMap contributors, and the GIS User Community'
                });
-
-               let layerSettled = false;
-               const settle = () => {
-                 if (layerSettled) return;
-                 layerSettled = true;
-                 mapsToLoad--;
-                 if (mapsToLoad <= 0) schedulePrint();
-               };
-
-               layer.on('load', settle);
-               layer.on('tileerror', settle);
                layer.addTo(map);
-
-               mapDots.forEach(pos => {
-                 if (Math.abs(pos.lat-lat)>0.01 || Math.abs(pos.lon-lon)>0.01) {
-                   L.circleMarker([pos.lat, pos.lon], {
-                     radius: 2.5,
-                     color: '#B8522A',
-                     fillColor: '#B8522A',
-                     fillOpacity: 0.28,
-                     weight: 0
-                   }).addTo(map);
-                 }
-               });
-
                const icon = L.divIcon({
-                 className: '',
-                 html: '<div style="width:13px;height:13px;border-radius:50%;background:#B8522A;border:2px solid white;box-shadow:0 0 4px rgba(0,0,0,0.3)"></div>',
-                 iconSize: [13,13],
-                 iconAnchor: [6,6]
+                 className:'',
+                 html:'<div style="width:13px;height:13px;border-radius:50%;background:#B8522A;border:2px solid white;box-shadow:0 0 4px rgba(0,0,0,0.3)"></div>',
+                 iconSize:[13,13], iconAnchor:[6,6]
                });
                L.marker([lat,lon], { icon }).addTo(map);
-
-               // Force Leaflet to recalculate the map surface before capture.
-               requestAnimationFrame(() => {
-                 try { map.invalidateSize(false); } catch(e) {}
+               map.whenReady(() => {
+                 requestAnimationFrame(() => {
+                   try { map.invalidateSize(false); } catch(e) {}
+                   requestAnimationFrame(() => buildPrintDots(map, el, lat, lon));
+                 });
                });
              });
 
-             // Safety timeout: don't wait forever for an external map tile.
              setTimeout(() => {
-               mapsToLoad = 0;
-               schedulePrint();
-             }, 12000);
-          };
+               printMaps.forEach(({ map, el, lat, lon }) => {
+                 try { map.invalidateSize(false); buildPrintDots(map, el, lat, lon); } catch(e) {}
+               });
+               const loading = document.getElementById('pdf-loading');
+               if (loading) loading.style.display = 'none';
+               requestAnimationFrame(() => {
+                 requestAnimationFrame(() => {
+                   setTimeout(() => window.print(), 500);
+                 });
+               });
+             }, 1800);
+
+             setTimeout(() => {
+               const loading = document.getElementById('pdf-loading');
+               if (loading) loading.style.display = 'none';
+             }, 9000);          };
         <\/script>
       </body>
       </html>
