@@ -953,77 +953,97 @@ async function doPrint() {
              });
 
              const mapElements = document.querySelectorAll('.map-box[id^="map-"]');
-             const printMaps = [];
-             const DOT_LAYER_CLASS = 'atlas-print-dots';
+             const STATIC_MAP_W = 1000;
+             const STATIC_MAP_H = 430;
+             const LON_HALF = 27;
+             const LAT_HALF = 12;
+             const staticMaps = [];
 
-             function buildPrintDots(map, el, focusLat, focusLon) {
-               try {
-                 map.invalidateSize(false);
-                 let dotLayer = el.querySelector('.' + DOT_LAYER_CLASS);
-                 if (!dotLayer) {
-                   dotLayer = document.createElement('div');
-                   dotLayer.className = DOT_LAYER_CLASS;
-                   dotLayer.style.cssText = 'position:absolute;inset:0;z-index:650;pointer-events:none;';
-                   el.appendChild(dotLayer);
-                 } else {
-                   dotLayer.innerHTML = '';
-                 }
-                 const bounds = map.getBounds();
-                 mapDots.forEach(pos => {
-                   if (!bounds.contains([pos.lat, pos.lon])) return;
-                   if (Math.abs(pos.lat-focusLat) < 0.01 && Math.abs(pos.lon-focusLon) < 0.01) return;
-                   const pt = map.latLngToContainerPoint([pos.lat, pos.lon]);
-                   if (!Number.isFinite(pt.x) || !Number.isFinite(pt.y)) return;
-                   if (pt.x < -6 || pt.y < -6 || pt.x > el.clientWidth + 6 || pt.y > el.clientHeight + 6) return;
-                   const dot = document.createElement('span');
-                   dot.style.cssText = 'position:absolute;width:6px;height:6px;border-radius:50%;background:#B8522A;border:1px solid rgba(255,255,255,.95);box-shadow:0 0 3px rgba(0,0,0,.35);transform:translate(-50%,-50%);left:' + pt.x + 'px;top:' + pt.y + 'px;';
-                   dotLayer.appendChild(dot);
-                 });
-               } catch(e) {}
+             function makeStaticMapUrl(lat, lon) {
+               const xmin = Math.max(-180, lon - LON_HALF);
+               const xmax = Math.min(180, lon + LON_HALF);
+               const ymin = Math.max(-84, lat - LAT_HALF);
+               const ymax = Math.min(84, lat + LAT_HALF);
+               const q = new URLSearchParams({
+                 bbox: [xmin,ymin,xmax,ymax].join(','),
+                 bboxSR: '4326',
+                 imageSR: '4326',
+                 size: STATIC_MAP_W + ',' + STATIC_MAP_H,
+                 format: 'jpgpng',
+                 transparent: 'false',
+                 dpi: '96',
+                 f: 'image'
+               });
+               return 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/export?' + q.toString();
+             }
+
+             function addStaticDots(el, lat, lon) {
+               const old = el.querySelector('.atlas-static-overlay');
+               if (old) old.remove();
+               const overlay = document.createElement('div');
+               overlay.className = 'atlas-static-overlay';
+               overlay.style.cssText = 'position:absolute;inset:0;z-index:4;pointer-events:none;overflow:hidden;';
+
+               mapDots.forEach(pos => {
+                 if (pos.lat < lat-LAT_HALF || pos.lat > lat+LAT_HALF || pos.lon < lon-LON_HALF || pos.lon > lon+LON_HALF) return;
+                 if (Math.abs(pos.lat-lat) < 0.01 && Math.abs(pos.lon-lon) < 0.01) return;
+                 const x = ((pos.lon-(lon-LON_HALF))/(LON_HALF*2))*100;
+                 const y = (1-((pos.lat-(lat-LAT_HALF))/(LAT_HALF*2)))*100;
+                 const dot=document.createElement('span');
+                 dot.style.cssText='position:absolute;width:6px;height:6px;border-radius:50%;background:#B8522A;border:1px solid white;box-shadow:0 0 3px rgba(0,0,0,.4);left:'+x+'%;top:'+y+'%;transform:translate(-50%,-50%);';
+                 overlay.appendChild(dot);
+               });
+
+               // The selected heritage record gets a larger focal marker.
+               const focus=document.createElement('span');
+               focus.style.cssText='position:absolute;width:13px;height:13px;border-radius:50%;background:#B8522A;border:2px solid white;box-shadow:0 0 5px rgba(0,0,0,.45);left:50%;top:50%;transform:translate(-50%,-50%);';
+               overlay.appendChild(focus);
+               el.appendChild(overlay);
              }
 
              mapElements.forEach(el => {
-                              if (!el.id || document.getElementById(el.id) !== el) return;
-               const lat = parseFloat(el.getAttribute('data-lat')) || 0;
-               const lon = parseFloat(el.getAttribute('data-lon')) || 0;
-               const map = L.map(el.id, { zoomControl:false, fadeAnimation:false, zoomAnimation:false, attributionControl:false }).setView([lat, lon], 4);
-               printMaps.push({ map, el, lat, lon });
-               const layer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-                 maxZoom:18, maxNativeZoom:19,
-                 attribution:'Tiles &copy; Esri — Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, METI, Esri Japan, METI, Esri China (Hong Kong), Esri Korea, Esri (Thailand), NGCC, © OpenStreetMap contributors, and the GIS User Community'
-               });
-               layer.addTo(map);
-               const icon = L.divIcon({
-                 className:'',
-                 html:'<div style="width:13px;height:13px;border-radius:50%;background:#B8522A;border:2px solid white;box-shadow:0 0 4px rgba(0,0,0,0.3)"></div>',
-                 iconSize:[13,13], iconAnchor:[6,6]
-               });
-               L.marker([lat,lon], { icon }).addTo(map);
-               map.whenReady(() => {
-                 requestAnimationFrame(() => {
-                   try { map.invalidateSize(false); } catch(e) {}
-                   requestAnimationFrame(() => buildPrintDots(map, el, lat, lon));
-                 });
-               });
+               const lat=parseFloat(el.getAttribute('data-lat'));
+               const lon=parseFloat(el.getAttribute('data-lon'));
+               if (!Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat)>84 || Math.abs(lon)>180) return;
+
+               el.innerHTML='';
+               el.style.position='relative';
+               el.style.background='#EDE0C8';
+               el.style.overflow='hidden';
+
+               const img=document.createElement('img');
+               img.alt='Heritage location map';
+               img.src=makeStaticMapUrl(lat,lon);
+               img.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;';
+               img.decoding='sync';
+
+               staticMaps.push(img);
+               img.onload=()=>addStaticDots(el,lat,lon);
+               img.onerror=()=>{ addStaticDots(el,lat,lon); };
+               el.appendChild(img);
              });
 
-             setTimeout(() => {
-               printMaps.forEach(({ map, el, lat, lon }) => {
-                 try { map.invalidateSize(false); buildPrintDots(map, el, lat, lon); } catch(e) {}
-               });
-               const loading = document.getElementById('pdf-loading');
-               if (loading) loading.style.display = 'none';
-               requestAnimationFrame(() => {
-                 requestAnimationFrame(() => {
-                   setTimeout(() => window.print(), 500);
+             const waitForStaticMaps=()=>{
+               const pending=staticMaps.filter(img=>!img.complete);
+               if(pending.length===0){
+                 mapElements.forEach(el=>{
+                   const lat=parseFloat(el.getAttribute('data-lat'));
+                   const lon=parseFloat(el.getAttribute('data-lon'));
+                   if(Number.isFinite(lat)&&Number.isFinite(lon)) addStaticDots(el,lat,lon);
                  });
-               });
-             }, 1800);
+                 const loading=document.getElementById('pdf-loading');
+                 if(loading)loading.style.display='none';
+                 requestAnimationFrame(()=>requestAnimationFrame(()=>setTimeout(()=>window.print(),500)));
+                 return;
+               }
+               setTimeout(waitForStaticMaps,250);
+             };
 
-             setTimeout(() => {
-               const loading = document.getElementById('pdf-loading');
-               if (loading) loading.style.display = 'none';
-             }, 9000);          };
+             setTimeout(waitForStaticMaps,1200);
+             setTimeout(()=>{
+               const loading=document.getElementById('pdf-loading');
+               if(loading)loading.style.display='none';
+             },9000);          };
         <\/script>
       </body>
       </html>
