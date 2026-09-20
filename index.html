@@ -348,7 +348,7 @@ tailwind.config = {
         <button id="insight-next" type="button" aria-label="Next articles" class="grid place-items-center w-12 h-12 rounded-full bg-white border border-paper-line text-ink hover:bg-berry-500 hover:text-white hover:border-berry-500 shadow-soft transition disabled:opacity-40 disabled:cursor-not-allowed">
           <i class="ph-bold ph-arrow-right text-lg"></i>
         </button>
-        <a href="https://horizon-scanning.org/blog/" target="_blank" rel="noopener noreferrer" class="ml-2 inline-flex items-center gap-2 bg-white border border-paper-line hover:border-berry-100 text-ink px-5 py-3.5 rounded-2xl font-semibold shadow-soft transition">
+        <a href="https://horizon-scanning.org/blog.html" target="_blank" rel="noopener noreferrer" class="ml-2 inline-flex items-center gap-2 bg-white border border-paper-line hover:border-berry-100 text-ink px-5 py-3.5 rounded-2xl font-semibold shadow-soft transition">
           <i class="ph-fill ph-notebook text-berry-500"></i> View Horizon Scan <i class="ph-bold ph-arrow-up-right"></i>
         </a>
       </div>
@@ -1563,7 +1563,7 @@ function renderInsightCards(articles){
     const category = escapeHTML(article.category || "Horizon Scan");
     const date = escapeHTML(article.date || "");
     const image = article.imageUrl ? "https://horizon-scanning.org/" + String(article.imageUrl).replace(/^\/+/, "") : "";
-    const href = "https://horizon-scanning.org/blog/article/" + article.slug + ".html";
+    const href = "https://horizon-scanning.org/blog.html" + article.slug + ".html";
     
     const media = image 
       ? `<img src="${escapeHTML(image)}" alt="${title}" loading="lazy" decoding="async"><span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm border border-white/60 px-2.5 py-1 rounded-full font-mono text-[9px] uppercase tracking-widest text-berry-600"><i class="ph-fill ph-sparkle"></i> Heritage</span>` 
