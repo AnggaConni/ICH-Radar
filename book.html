@@ -712,7 +712,7 @@ function spawnMaps(mapsObj, isPrint) {
         const nn = it?.__n || {};
         const ilat = parseFloat(nn.lat);
         const ilon = parseFloat(nn.lon);
-        if (!isNaN(ilat) && !isNaN(ilon) && (Math.abs(ilat-lat)>0.01 || Math.abs(ilon-lon)>0.01))
+        if (!isNaN(ilat) && !isNaN(ilon) && (Math.abs(ilat-lat)>0.01 || Math.abs(ilon-lon)>0.01)) {
           L.circleMarker([ilat,ilon], { radius: 2.5, color: '#B8522A', fillColor: '#B8522A', fillOpacity: 0.28, weight: 0 }).addTo(map);
         }
       });
