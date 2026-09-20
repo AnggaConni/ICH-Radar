@@ -514,115 +514,61 @@ function pageOverview(sfx) {
 }
 
 function pageLeft(item, idx, sfx) {
-  const mapId = `map-${(item?.id||idx)}${sfx}`;
-  const lat = parseFloat(item?.location?.lat) || 0;
-  const lon = parseFloat(item?.location?.lng || item?.location?.lon) || 0;
-  const country   = item?.location?.country || '—';
-  const provinces = (item?.location?.provinces || []).slice(0,2).join(', ');
-  const cont      = continent(country);
-  const tags      = (item?.resume_analisa?.gemini_tags || item?.tags || []).slice(0,7);
-  const isShared  = item?.shared_heritage_detection?.is_shared === true;
-  const conf      = parseFloat(item?.shared_heritage_detection?.confidence_score) || 0;
-  const related   = item?.shared_heritage_detection?.related_elements || [];
-  const catStr    = (item?.category || 'Other').split('|')[0].trim();
-  const incomplete = item?.completion_status === 'INCOMPLETE';
-  const title     = item?.element_name || item?.title || 'Unknown Element';
-
-  return `
-<div class="page-eyebrow">${cont} · ${country}</div>
-<div style="display:flex;align-items:flex-start;gap:0.5rem;margin-bottom:0.35rem">
-  <span class="badge badge-cat">${catStr}</span>
-  ${incomplete ? `<span class="badge badge-warn"><i data-lucide="alert-circle" style="width:9px;height:9px"></i> Incomplete</span>` : `<span class="badge badge-ok"><i data-lucide="check" style="width:9px;height:9px"></i> Documented</span>`}
-</div>
-<h2 style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;line-height:1.25;color:var(--navy);margin-bottom:${provinces?'0.1rem':'0.5rem'}">${title}</h2>
-${provinces ? `<div class="mono-label" style="margin-bottom:0.5rem">${provinces}</div>` : ''}
-
-<div class="map-box" style="height:155px" id="${mapId}" data-lat="${lat}" data-lon="${lon}"></div>
-
-<div style="display:grid;grid-template-columns:auto 1fr;gap:0.15rem 0.5rem;font-size:0.67rem;margin:0.4rem 0">
-  <span style="color:var(--ink-faint)">Country</span><span style="font-weight:600">${country}</span>
-  ${provinces ? `<span style="color:var(--ink-faint)">Region</span><span>${provinces}</span>` : ''}
-  <span style="color:var(--ink-faint)">Coords</span>
-  <span style="font-family:'DM Mono',monospace;font-size:0.58rem">${lat.toFixed(3)}, ${lon.toFixed(3)}</span>
-</div>
-
-${tags.length ? `
-<hr class="rule"><div class="panel-header"><i data-lucide="tag"></i> Cultural Tags</div>
-<div>${tags.map(t=>`<span class="badge badge-tag" style="margin:0.1rem">${t}</span>`).join('')}</div>` : ''}
-
-${isShared && related.length ? `
-<hr class="rule">
-<div class="panel-header"><i data-lucide="share-2"></i> Shared Heritage<span style="margin-left:auto;color:var(--teal);font-size:0.56rem">${Math.round(conf*100)}% confidence</span></div>
-<div class="conf-wrap"><div class="conf-fill" style="width:${(conf*100).toFixed(0)}%"></div></div>
-<div style="margin-top:0.35rem">
-${related.slice(0,3).map(r=>`
-<div class="shared-row">
-  <span class="country-pill">${r?.country||'?'}</span>
-  <div><div class="shared-name">${r?.element_name||''}</div><div class="shared-why">${(r?.relationship_reason||'').slice(0,90)}${(r?.relationship_reason||'').length>90?'…':''}</div></div>
-</div>`).join('')}
-</div>` : `
-<hr class="rule">
-<div class="panel-header"><i data-lucide="shield"></i> Heritage Uniqueness</div>
-<div class="lora-body" style="font-size:0.69rem">This element has no close shared heritage equivalents identified in the dataset — making it a culturally unique tradition of its country.</div>`}
-<div style="margin-top:auto;padding-top:0.3rem"></div>`;
+  const n = item.__n || {};
+  const shared = pick(item, ['shared_heritage_detection','shared_heritage']) || {};
+  const related = n.related || [];
+  const tags = n.tags || [];
+  const regions = arr(n.loc?.provinces || n.loc?.regions || n.loc?.province || n.loc?.region);
+  const mapId = 'map-' + (item.id || idx) + sfx;
+  const hasCoords = Number.isFinite(n.lat) && Number.isFinite(n.lon) && Math.abs(n.lat) <= 90 && Math.abs(n.lon) <= 180;
+  const confRaw = parseFloat(shared.confidence_score ?? shared.confidence ?? 0);
+  const conf = Number.isFinite(confRaw) ? Math.max(0, Math.min(1, confRaw)) : 0;
+  const isShared = shared.is_shared === true || shared.shared === true;
+  const complete = item.completion_status === 'COMPLETE';
+  const h = [];
+  h.push('<div class="page-eyebrow">' + esc(continent(n.country)) + ' · ' + esc(n.country || '—') + '</div>');
+  h.push('<div style="display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin-bottom:.35rem">');
+  h.push('<span class="badge badge-cat">' + esc((n.category || 'Other').split('|')[0].trim()) + '</span>');
+  if (item.completion_status) h.push('<span class="badge ' + (complete ? 'badge-ok' : 'badge-warn') + '"><i data-lucide="' + (complete ? 'check' : 'alert-circle') + '" style="width:9px;height:9px"></i> ' + esc(item.completion_status) + '</span>');
+  h.push('</div>');
+  h.push('<h2 style="font-family:\'Playfair Display\',serif;font-size:1.15rem;font-weight:700;line-height:1.22;color:var(--navy);margin-bottom:.2rem">' + esc(n.title) + '</h2>');
+  if (regions.length) h.push('<div class="mono-label" style="margin-bottom:.45rem">' + esc(regions.join(', ')) + '</div>');
+  if (hasCoords) h.push('<div class="map-box" style="height:150px" id="' + esc(mapId) + '" data-lat="' + n.lat + '" data-lon="' + n.lon + '"></div>');
+  else h.push('<div class="map-box" style="height:85px;display:flex;align-items:center;justify-content:center;background:var(--parchment)"><div class="mono-label">Geographic coordinates not available</div></div>');
+  h.push('<div style="display:grid;grid-template-columns:auto 1fr;gap:.16rem .55rem;font-size:.65rem;margin:.4rem 0">');
+  h.push('<span style="color:var(--ink-faint)">Country</span><span style="font-weight:600">' + esc(n.country || '—') + '</span>');
+  if (regions.length) h.push('<span style="color:var(--ink-faint)">Region</span><span>' + esc(regions.join(', ')) + '</span>');
+  if (hasCoords) h.push('<span style="color:var(--ink-faint)">Coordinates</span><span style="font-family:\'DM Mono\';font-size:.57rem">' + n.lat.toFixed(4) + ', ' + n.lon.toFixed(4) + '</span>');
+  h.push('</div>');
+  if (tags.length) h.push('<hr class="rule"><div class="panel-header"><i data-lucide="tag"></i> Cultural Tags</div><div>' + tags.map(t => '<span class="badge badge-tag" style="margin:.08rem">' + esc(t) + '</span>').join('') + '</div>');
+  if (isShared) {
+    h.push('<hr class="rule"><div class="panel-header"><i data-lucide="share-2"></i> Shared Heritage <span style="margin-left:auto;color:var(--teal)">' + Math.round(conf*100) + '% confidence</span></div>');
+    h.push('<div class="conf-wrap"><div class="conf-fill" style="width:' + Math.round(conf*100) + '%"></div></div>');
+    if (related.length) h.push('<div style="margin-top:.25rem">' + related.map(r => '<div class="shared-row"><span class="country-pill">' + esc(r?.country || '?') + '</span><div><div class="shared-name">' + esc(r?.element_name || r?.name || 'Related element') + '</div><div class="shared-why">' + esc(r?.relationship_reason || r?.reason || 'Shared cultural relationship recorded in the dataset.') + '</div></div></div>').join('') + '</div>');
+  } else {
+    h.push('<hr class="rule"><div class="panel-header"><i data-lucide="shield"></i> Heritage Context</div><div class="lora-body" style="font-size:.68rem">No shared-heritage relationship is explicitly recorded for this record.</div>');
+  }
+  h.push(extraPanel(item));
+  return h.join('');
 }
 
 function pageRight(item, idx, sfx) {
-  const desc  = item?.resume_analisa?.description || item?.description || item?.summary || '';
-  const sig   = item?.resume_analisa?.cultural_significance || '';
-  const proc  = item?.resume_tata_cara || item?.process;
-  
-  const mats  = (proc?.materials_and_tools || proc?.materials_used || []);
-  // Support both array or object for steps
-  let steps = [];
-  if (Array.isArray(proc?.step_by_step)) steps = proc.step_by_step;
-  else if (Array.isArray(proc?.how_it_works)) steps = proc.how_it_works;
-  else if (Array.isArray(proc)) steps = proc; // fallback if process itself is an array
-  
-  const title = item?.element_name || item?.title || 'Unknown Element';
-  const descShow = desc.length > 290 ? desc.slice(0,290)+'…' : desc;
-  const sigShow  = sig.length  > 200 ? sig.slice(0,200)+'…'  : sig;
-
-  return `
-<div class="page-eyebrow">Story · Record ${idx+1} of ${items.length}</div>
-<h2 style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.4rem">${title}</h2>
-<hr class="rule">
-
-<p class="lora-body">${descShow || '<em style="color:#aaa">Description unavailable.</em>'}</p>
-
-${sigShow ? `
-<div style="border-left:2.5px solid var(--gold);padding:0.45rem 0.65rem;margin:0.55rem 0;background:var(--gold-light);border-radius:0 5px 5px 0">
-  <div class="mono-label" style="margin-bottom:0.25rem;color:var(--gold)">Cultural Significance</div>
-  <p style="font-family:'Lora',serif;font-style:italic;font-size:0.71rem;line-height:1.68;color:var(--ink-soft)">${sigShow}</p>
-</div>` : ''}
-
-${proc ? `
-<hr class="rule">
-<div class="panel-header"><i data-lucide="tool"></i> Process & Method</div>
-${mats.length ? `
-<div style="margin-bottom:0.4rem">
-  <div class="mono-label" style="margin-bottom:0.2rem">Materials & Tools</div>
-  <div>${mats.slice(0,8).map(m=>`<span class="chip">${m}</span>`).join('')}${mats.length>8?`<span class="chip" style="color:var(--ink-faint)">+${mats.length-8}</span>`:''}</div>
-</div>` : ''}
-
-${steps.length ? `
-<div class="mono-label" style="margin-bottom:0.25rem">Process Steps</div>
-<div style="overflow-y:auto;max-height:220px">
-${steps.slice(0,7).map((s,i) => {
-  const clean = String(s).replace(/\*\*/g,'').replace(/^\d+\.\s*/,'').replace(/^[A-Z ]+:/,'').trim();
-  const show  = clean.length > 130 ? clean.slice(0,130)+'…' : clean;
-  return `<div class="step-row"><div class="step-dot">${i+1}</div><div class="step-txt">${show}</div></div>`;
-}).join('')}
-${steps.length>7 ? `<div class="mono-label" style="padding-left:0.3rem;margin-top:0.2rem;color:var(--terracotta)">+${steps.length-7} more steps</div>` : ''}
-</div>` : ''}
-` : `
-<div style="flex:1;display:flex;align-items:center;justify-content:center;min-height:80px;opacity:0.25">
-  <div style="text-align:center">
-    <i data-lucide="file-question" style="width:28px;height:28px;color:var(--terracotta);display:block;margin:0 auto 0.5rem"></i>
-    <div class="mono-label">Process details pending documentation</div>
-  </div>
-</div>`}
-<div style="margin-top:auto;padding-top:0.25rem"></div>`;
+  const n = item.__n || {};
+  const proc = n.pr || {};
+  const mats = n.materials || [];
+  const steps = n.steps || [];
+  const h = [];
+  h.push('<div class="page-eyebrow">Story · Record ' + (idx+1) + ' of ' + items.length + '</div>');
+  h.push('<h2 style="font-family:\'Playfair Display\',serif;font-size:1.02rem;font-weight:700;color:var(--navy);line-height:1.28;margin-bottom:.4rem">' + esc(n.title) + '</h2>');
+  h.push('<hr class="rule">');
+  h.push('<div class="panel"><div class="panel-header"><i data-lucide="file-text"></i> Description</div><p class="lora-body" style="white-space:pre-line">' + esc(n.description || 'No narrative description is available for this record.') + '</p></div>');
+  if (n.significance) h.push('<div style="border-left:2.5px solid var(--gold);padding:.6rem .7rem;margin:.6rem 0;background:var(--gold-light);border-radius:0 5px 5px 0"><div class="mono-label" style="margin-bottom:.25rem;color:var(--gold)">Cultural Significance</div><p style="font-family:Lora,serif;font-style:italic;font-size:.71rem;line-height:1.7;color:var(--ink-soft);white-space:pre-line">' + esc(n.significance) + '</p></div>');
+  const processSummary = first(proc.description, proc.summary, proc.method, proc.introduction);
+  if (processSummary) h.push('<div class="panel"><div class="panel-header"><i data-lucide="book-open"></i> Process Overview</div><p class="lora-body" style="white-space:pre-line">' + esc(processSummary) + '</p></div>');
+  if (mats.length) h.push('<div class="panel"><div class="panel-header"><i data-lucide="package"></i> Materials & Tools <span style="margin-left:auto">' + mats.length + '</span></div><div>' + mats.map(m => '<span class="chip">' + esc(typeof m === 'object' ? flat(m,[]).join(' · ') : m) + '</span>').join('') + '</div></div>');
+  if (steps.length) h.push('<div class="panel"><div class="panel-header"><i data-lucide="list-ordered"></i> Process Steps <span style="margin-left:auto">' + steps.length + '</span></div>' + steps.map((s,i) => '<div class="step-row"><div class="step-dot">' + (i+1) + '</div><div class="step-txt" style="white-space:pre-line">' + esc(typeof s === 'object' ? flat(s,[]).join(' · ') : s) + '</div></div>').join('') + '</div>');
+  h.push(extraPanel(item));
+  return h.join('');
 }
 
 /* ── RENDER ENGINE ── */
