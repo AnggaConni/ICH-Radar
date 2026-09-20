@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T09:48:48.447Z",
+  "generated_at": "2026-09-20T16:12:55.041873+00:00",
   "inventory": [
     {
       "id": "ich-2c75579d",
@@ -704,22 +704,13 @@
   ],
   "articles": [
     {
-      "id": "61",
-      "title": "Living Heritage as a Peacebuilder?",
-      "excerpt": "UNESCO catalogs the dances, the crafts, the festivals — but rarely the quiet social technologies that keep a community from tearing itself apart after a conflict. A tour through Japan's Wa, China's He, Korea's Jeong, and Java's Tepa Selira.",
-      "category": "Cultural Heritage & Peacebuilding",
-      "date": "August 19, 2026",
-      "imageUrl": "thum/ichpeacebuilder.png",
-      "slug": "living-heritage-as-a-peacebuilder"
-    },
-    {
-      "id": "53",
-      "title": "The Wars We Never Notice",
-      "excerpt": "Long before a bullet is fired, a war has already begun inside someone's mind. A reflection on UNESCO's founding philosophy, why uncertainty is the mind's real battlefield, and why clarity — not agreement — is the quiet gift that builds peace.",
-      "category": "Behavioral Science & Reflection",
-      "date": "August 12, 2026",
-      "imageUrl": "thum/peaceofmind.png",
-      "slug": "the-wars-we-never-notice"
+      "id": "44",
+      "title": "Why Intangible Cultural Heritage Fascinates Me: A Story About Human Behavior, Not Just Tradition",
+      "excerpt": "Most people think Intangible Cultural Heritage is about dances, music, rituals, and craftsmanship. It is — but those are only the visible outcomes. What fascinates me is the invisible system underneath: human behavior. This is a personal reflection on how a lesson from my father, delivered without a single explanation, taught me to read culture as an accumulation of human decisions — and how nine behavioral science theories, from Bandura to Ostrom, quietly explain why some traditions survive for centuries while others vanish within a single generation.",
+      "category": "Reflection - Heritage & Behavioral Science",
+      "date": "July 29, 2026",
+      "imageUrl": "thum/ICHBehavioralScience.png",
+      "slug": "why-intangible-cultural-heritage-fascinates-me-a-story-about-human-behavior-not-just-tradition"
     },
     {
       "id": "59",
@@ -731,13 +722,22 @@
       "slug": "the-measurement-of-being-human-units-calibration-and-the-limits-of-what-we-can-count"
     },
     {
-      "id": "44",
-      "title": "Why Intangible Cultural Heritage Fascinates Me: A Story About Human Behavior, Not Just Tradition",
-      "excerpt": "Most people think Intangible Cultural Heritage is about dances, music, rituals, and craftsmanship. It is — but those are only the visible outcomes. What fascinates me is the invisible system underneath: human behavior.",
-      "category": "Reflection - Heritage & Behavioral Science",
-      "date": "July 29, 2026",
-      "imageUrl": "thum/ICHBehavioralScience.png",
-      "slug": "why-intangible-cultural-heritage-fascinates-me-a-story-about-human-behavior-not-just-tradition"
+      "id": "61",
+      "title": "Living Heritage as a Peacebuilder?",
+      "excerpt": "UNESCO catalogs the dances, the crafts, the festivals — but rarely the quiet social technologies that keep a community from tearing itself apart after a conflict. A tour through Japan's Wa, China's He, Korea's Jeong, and Java's Tepa Selira, a look at Japan's own two-edged system for when harmony breaks down, and why \"living heritage\" was never supposed to require a UNESCO inscription to be real.",
+      "category": "Cultural Heritage & Peacebuilding",
+      "date": "August 19, 2026",
+      "imageUrl": "thum/ichpeacebuilder.png",
+      "slug": "living-heritage-as-a-peacebuilder"
+    },
+    {
+      "id": "53",
+      "title": "The Wars We Never Notice",
+      "excerpt": "Long before a bullet is fired, a war has already begun inside someone's mind. A reflection on UNESCO's founding philosophy, why uncertainty is the mind's real battlefield, and why clarity — not agreement — is the quiet, rarely-given gift that builds peace.",
+      "category": "Behavioral Science & Reflection",
+      "date": "August 12, 2026",
+      "imageUrl": "thum/peaceofmind.png",
+      "slug": "the-wars-we-never-notice"
     },
     {
       "id": "22",
