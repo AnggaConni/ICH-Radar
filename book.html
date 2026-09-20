@@ -638,7 +638,7 @@ function prevPage() { const s = mobile ? 1 : 2; if (curPg - s >= 0) { curPg -= s
 
 /* ── VISUALIZATIONS ── */
 function spawnMaps(mapsObj, isPrint) {
-  const tileUrl = isPrint ? 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png' : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+  const tileUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}';
   document.querySelectorAll('[id^="map-"]').forEach(el => {
     const id = el.id;
     if (mapsObj[id] || el.children.length > 1) return;
@@ -646,7 +646,11 @@ function spawnMaps(mapsObj, isPrint) {
     const lon = parseFloat(el.getAttribute('data-lon')) || 0;
     try {
       const map = L.map(id, { zoomControl: false, scrollWheelZoom: false, fadeAnimation: !isPrint, zoomAnimation: !isPrint, attributionControl: false }).setView([lat, lon], 4);
-      L.tileLayer(tileUrl, { maxZoom: 18 }).addTo(map);
+      L.tileLayer(tileUrl, {
+        maxZoom: 18,
+        maxNativeZoom: 19,
+        attribution: 'Tiles &copy; Esri — Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, METI, Esri Japan, METI, Esri China (Hong Kong), Esri Korea, Esri (Thailand), NGCC, © OpenStreetMap contributors, and the GIS User Community'
+      }).addTo(map);
       
       // Dots
       items.forEach(it => {
@@ -887,7 +891,11 @@ async function doPrint() {
                const lat = parseFloat(el.getAttribute('data-lat')) || 0;
                const lon = parseFloat(el.getAttribute('data-lon')) || 0;
                const map = L.map(el.id, { zoomControl: false, fadeAnimation: false, zoomAnimation: false, attributionControl: false }).setView([lat, lon], 4);
-               const layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 18 });
+               const layer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+                 maxZoom: 18,
+                 maxNativeZoom: 19,
+                 attribution: 'Tiles &copy; Esri — Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, METI, Esri Japan, METI, Esri China (Hong Kong), Esri Korea, Esri (Thailand), NGCC, © OpenStreetMap contributors, and the GIS User Community'
+               });
                
                layer.on('load', () => { mapsToLoad--; tryPrint(); });
                layer.addTo(map);
