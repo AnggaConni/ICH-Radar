@@ -395,46 +395,19 @@ function showError(m){const a=document.getElementById('modal-overlay'),b=documen
 function loadFile(){const f=document.getElementById('file-input').files[0];if(!f)return alert('Silakan pilih file data.json');const r=new FileReader();r.onload=e=>{try{startAppSafe(JSON.parse(e.target.result));}catch(err){alert('Format JSON tidak valid:\n'+err.message);}};r.readAsText(f);}
 function startAppSafe(data){try{rawData=data||{};items=extractItems(data).map(normalize);meta=collectMeta(data);if(!items.length)throw new Error('Tidak ditemukan array record heritage yang dapat dibaca.');items.sort((a,b)=>{const ca=CONT_ORDER.indexOf(continent(country(a))),cb=CONT_ORDER.indexOf(continent(country(b)));return ca!==cb?ca-cb:category(a).localeCompare(category(b));});document.getElementById('modal-overlay').style.display='none';buildTOC();document.getElementById('nav').style.display='flex';document.getElementById('stage').style.display='flex';curPg=mobile?1:0;render();}catch(e){showError('Crash saat membaca data: '+e.message);}}
 /* ── TABLE OF CONTENTS ── */
-function buildTOC() {
-  const sel = document.getElementById('toc-select');
-  let h = '<option value="" disabled selected>Navigate…</option>';
-  h += '<option value="1">◆ Cover</option>';
-  h += '<option value="2">◆ Global Dashboard</option>';
-  h += '<option value="3">◆ Categories & Overview</option>';
-
-  const byCont = {};
-  items.forEach((item, i) => {
-    const c = continent(item?.location?.country || '');
-    if (!byCont[c]) byCont[c] = [];
-    byCont[c].push({ item, i });
-  });
-
-  CONT_ORDER.forEach(c => {
-    if (!byCont[c]) return;
-    h += `<optgroup label="── ${c} ──">`;
-    byCont[c].forEach(({ item, i }) => {
-      const pg = STATIC + i * 2;
-      h += `<option value="${pg}">${item?.element_name || item?.title || 'Untitled'}</option>`;
-    });
-    h += `</optgroup>`;
-  });
-  sel.innerHTML = h;
+function buildTOC(){
+  const sel=document.getElementById('toc-select');
+  let h='<option value="" disabled selected>Navigate…</option><option value="1">◆ Cover</option><option value="2">◆ Global Dashboard</option><option value="3">◆ Categories & Overview</option>';
+  const byCont={};items.forEach((item,i)=>{const cc=continent(country(item));(byCont[cc]||(byCont[cc]=[])).push({item,i});});
+  CONT_ORDER.forEach(cc=>{if(!byCont[cc])return;h+='<optgroup label="── '+esc(cc)+' ──">';byCont[cc].forEach(({item,i})=>{h+='<option value="'+(STATIC+i*2)+'">'+esc(label(item))+'</option>';});h+='</optgroup>';});
+  sel.innerHTML=h;
 }
-
-function jumpTo(v) {
-  if (!v) return;
-  curPg = parseInt(v);
-  if (!mobile && curPg % 2 !== 0) curPg--;
-  render();
-  document.getElementById('toc-select').selectedIndex = 0;
-}
-
-function total() { return STATIC + items.length * 2; }
+function jumpTo(v){if(!v)return;curPg=parseInt(v);if(!mobile&&curPg%2!==0)curPg--;render();document.getElementById('toc-select').selectedIndex=0;}
+function total(){return STATIC+items.length*2;}
 
 /* ════════════════════════════════════
-   PAGE BUILDERS (BULLETPROOF VERSION)
+   PAGE BUILDERS
 ════════════════════════════════════ */
-
 function pageBlank() {
   return `<div style="flex:1;display:flex;align-items:center;justify-content:center;opacity:0.15">
     <div style="text-align:center">
