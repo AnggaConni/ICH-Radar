@@ -555,7 +555,7 @@ function pageOverview(sfx) {
 <div class="page-eyebrow">Overview · Page 3</div>
 <h2 class="display-title" style="font-size:1.3rem;margin-bottom:0.3rem">Categories &amp; <em style="font-style:italic;color:var(--terracotta)">Diversity</em></h2>
 <hr class="rule">
-<div id="${chartId}" style="width:100%;height:200px;flex-shrink:0" data-donut='${JSON.stringify(donutData)}'></div>
+<div id="${chartId}" style="width:100%;height:170px;flex-shrink:0;margin:0.15rem 0" data-donut='${JSON.stringify(donutData)}'></div>
 <hr class="rule">
 <div class="panel">
   <div class="panel-header"><i data-lucide="route"></i> Journey Structure</div>
@@ -737,8 +737,26 @@ function spawnCharts(chartsObj, isPrint) {
       chart.setOption({
         animation: !isPrint, backgroundColor: 'transparent',
         tooltip: { show: !isPrint, trigger: 'item', formatter: '{b}: {c} ({d}%)' },
-        legend: { orient: 'vertical', right: '4%', top: 'middle', icon: 'circle', itemWidth: 7, itemHeight: 7, textStyle: { fontSize: 9, fontFamily: 'DM Mono', color: 'rgba(28,18,8,0.55)' } },
-        series: [{ type: 'pie', radius: ['38%','65%'], center: ['35%','50%'], label: { show: false }, emphasis: { scale: true, scaleSize: 4 }, data: data, color: PALETTE }]
+        legend: {
+          orient: 'vertical',
+          left: '52%',
+          top: 'middle',
+          width: '44%',
+          height: '82%',
+          icon: 'circle',
+          itemWidth: 7,
+          itemHeight: 7,
+          itemGap: 5,
+          textStyle: {
+            fontSize: 7.5,
+            fontFamily: 'DM Mono',
+            color: 'rgba(28,18,8,0.55)',
+            width: 118,
+            overflow: 'truncate',
+            ellipsis: '…'
+          }
+        },
+        series: [{ type: 'pie', radius: ['34%','57%'], center: ['27%','50%'], label: { show: false }, emphasis: { scale: true, scaleSize: 4 }, data: data, color: PALETTE }]
       });
       chartsObj[id] = chart;
     } catch(e) {}
@@ -924,7 +942,7 @@ async function doPrint() {
                  const chart = echarts.init(el, null, { renderer: 'canvas' });
                  chart.setOption({ 
                      animation: false, 
-                     series: [{ type: 'pie', radius: ['38%','65%'], center: ['35%','50%'], label: { show: false }, data: data, color: ['#B8522A','#1E7B7B','#1A2B52','#C49A0D','#4D7355','#6B3D72','#7A4E1A','#2C6060'] }] 
+                     series: [{ type: 'pie', radius: ['34%','57%'], center: ['27%','50%'], label: { show: false }, data: data, color: ['#B8522A','#1E7B7B','#1A2B52','#C49A0D','#4D7355','#6B3D72','#7A4E1A','#2C6060'] }] 
                  });
                } catch(e) {}
              });
