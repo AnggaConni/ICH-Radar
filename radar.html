@@ -145,6 +145,39 @@
     box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
     }
 
+  /* ── Modal Detail: Fullscreen + Tabs ── */
+  #modal-content-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+  @media (min-width: 768px) {
+    #modal-content-wrapper {
+      width: 94vw;
+      height: 92vh;
+      max-width: 1200px;
+      border-radius: 1rem;
+    }
+  }
+  .modal-tab-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #64748b;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+  }
+  .modal-tab-btn:hover { color: #0d9488; }
+  .modal-tab-btn.modal-tab-active {
+    color: #0d9488;
+    border-bottom-color: #0d9488;
+  }
+  .modal-tab-panel { display: none; }
+  .modal-tab-panel.modal-tab-panel-active { display: block; }
+
   </style>
   
 </head>
@@ -388,11 +421,11 @@
   </main>
 
   <!-- Modal -->
-  <div id="item-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden modal-blur bg-slate-900/30 p-4 opacity-0 transition-opacity duration-300">
-    <div class="bg-brand-800 border border-brand-700 rounded-2xl w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300" id="modal-content-wrapper">
-      
-      <div class="flex justify-between items-center p-6 border-b border-brand-700">
-         <h3 class="font-display font-bold text-2xl pr-4" id="modal-title">Element Name</h3>
+  <div id="item-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden modal-blur bg-slate-900/30 opacity-0 transition-opacity duration-300">
+    <div class="bg-brand-800 border border-brand-700 flex flex-col overflow-hidden transform scale-95 transition-transform duration-300" id="modal-content-wrapper">
+
+      <div class="flex justify-between items-center p-4 sm:p-6 border-b border-brand-700 shrink-0">
+         <h3 class="font-display font-bold text-lg sm:text-2xl pr-4 truncate" id="modal-title">Element Name</h3>
          <div class="flex items-center gap-2 shrink-0">
              <button onclick="printCardPDF()" class="text-slate-500 hover:text-brand-accent transition-colors bg-brand-700 hover:bg-brand-800 p-2 rounded-full" title="Print to PDF">
              <i class="ph ph-printer text-xl"></i>
@@ -403,7 +436,10 @@
         </div>
       </div>
 
-      <div class="p-6 overflow-y-auto flex-grow flex flex-col gap-6" id="modal-body"></div>
+      <!-- Tab nav (built dynamically per-item in openModal) -->
+      <div id="modal-tabs" class="flex gap-1 px-2 sm:px-6 border-b border-brand-700 bg-brand-900/40 overflow-x-auto shrink-0"></div>
+
+      <div class="p-4 sm:p-6 overflow-y-auto flex-grow" id="modal-body"></div>
     </div>
   </div>
 
@@ -898,65 +934,65 @@ const COUNTRY_CENTROIDS = {
   }
 
   // ═══════════════════════════════════════════════════════════════
-  //  GUIDE MODAL & EXPORT XML
-  // ═══════════════════════════════════════════════════════════════
-  function openGuide() {
-    const modal = document.getElementById('guide-modal');
-    const wrapper = document.getElementById('guide-modal-wrapper');
-    modal.classList.remove('hidden');
-    void modal.offsetWidth; // trigger reflow
-    modal.classList.remove('opacity-0');
-    wrapper.classList.remove('scale-95');
-  }
+  //  GUIDE MODAL & EXPORT XML
+  // ═══════════════════════════════════════════════════════════════
+  function openGuide() {
+    const modal = document.getElementById('guide-modal');
+    const wrapper = document.getElementById('guide-modal-wrapper');
+    modal.classList.remove('hidden');
+    void modal.offsetWidth; // trigger reflow
+    modal.classList.remove('opacity-0');
+    wrapper.classList.remove('scale-95');
+  }
 
-  function closeGuide() {
-    const modal = document.getElementById('guide-modal');
-    const wrapper = document.getElementById('guide-modal-wrapper');
-    modal.classList.add('opacity-0');
-    wrapper.classList.add('scale-95');
-    setTimeout(() => modal.classList.add('hidden'), 300);
-  }
+  function closeGuide() {
+    const modal = document.getElementById('guide-modal');
+    const wrapper = document.getElementById('guide-modal-wrapper');
+    modal.classList.add('opacity-0');
+    wrapper.classList.add('scale-95');
+    setTimeout(() => modal.classList.add('hidden'), 300);
+  }
 
-  function escapeXML(str) {
-    if (!str) return '';
-    return str.replace(/[<>&'"]/g, c => {
-      switch (c) {
-        case '<': return '&lt;'; case '>': return '&gt;';
-        case '&': return '&amp;'; case '\'': return '&apos;';
-        case '"': return '&quot;'; default: return c;
-      }
-    });
-  }
+  function escapeXML(str) {
+    if (!str) return '';
+    return str.replace(/[<>&'"]/g, c => {
+      switch (c) {
+        case '<': return '&lt;'; case '>': return '&gt;';
+        case '&': return '&amp;'; case '\'': return '&apos;';
+        case '"': return '&quot;'; default: return c;
+      }
+    });
+  }
 
-  function exportToXML() {
-    if (!globalData || !globalData.inventory) return;
-    
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<metadata xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">\n';
+  function exportToXML() {
+    if (!globalData || !globalData.inventory) return;
+    
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    xml += '<metadata xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">\n';
 
-    globalData.inventory.forEach(item => {
-      xml += '  <oai_dc:dc>\n';
-      xml += `    <dc:identifier>${item.id}</dc:identifier>\n`;
-      xml += `    <dc:title>${escapeXML(item.element_name)}</dc:title>\n`;
-      xml += `    <dc:subject>${escapeXML(item.category)}</dc:subject>\n`;
-      if (item.resume_analisa?.description) xml += `    <dc:description>${escapeXML(item.resume_analisa.description)}</dc:description>\n`;
-      if (item.location?.country) xml += `    <dc:coverage>${escapeXML(item.location.country)}</dc:coverage>\n`;
-      (item.source_urls || []).forEach(url => {
-        xml += `    <dc:source>${escapeXML(url)}</dc:source>\n`;
-      });
-      xml += '  </oai_dc:dc>\n';
-    });
-    
-    xml += '</metadata>';
+    globalData.inventory.forEach(item => {
+      xml += '  <oai_dc:dc>\n';
+      xml += `    <dc:identifier>${item.id}</dc:identifier>\n`;
+      xml += `    <dc:title>${escapeXML(item.element_name)}</dc:title>\n`;
+      xml += `    <dc:subject>${escapeXML(item.category)}</dc:subject>\n`;
+      if (item.resume_analisa?.description) xml += `    <dc:description>${escapeXML(item.resume_analisa.description)}</dc:description>\n`;
+      if (item.location?.country) xml += `    <dc:coverage>${escapeXML(item.location.country)}</dc:coverage>\n`;
+      (item.source_urls || []).forEach(url => {
+        xml += `    <dc:source>${escapeXML(url)}</dc:source>\n`;
+      });
+      xml += '  </oai_dc:dc>\n';
+    });
+    
+    xml += '</metadata>';
 
-    const blob = new Blob([xml], { type: 'application/xml' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'ich_dublin_core_export.xml';
-    a.click();
-    URL.revokeObjectURL(url);
-  }
+    const blob = new Blob([xml], { type: 'application/xml' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'ich_dublin_core_export.xml';
+    a.click();
+    URL.revokeObjectURL(url);
+  }
 
   // Update event listener penutup modal agar bisa klik di luar untuk Guide
    document.addEventListener('click', e => {
@@ -1379,35 +1415,35 @@ const COUNTRY_CENTROIDS = {
   function renderGrid(data) {
     const totalPages = Math.ceil(data.length / itemsPerPage);
     if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
-    const grid = document.getElementById('inventory-grid');
-    const paginationContainer = document.getElementById('pagination-container');
-    const dict = i18n[currentLang];
+    const grid = document.getElementById('inventory-grid');
+    const paginationContainer = document.getElementById('pagination-container');
+    const dict = i18n[currentLang];
 
-    // Bersihkan grid setiap render
-    while (grid.firstChild) grid.removeChild(grid.firstChild);
+    // Bersihkan grid setiap render
+    while (grid.firstChild) grid.removeChild(grid.firstChild);
 
-    if (data.length === 0) {
-      grid.innerHTML = `<div class="col-span-full text-center text-gray-500 py-10">${dict.emptyGrid}</div>`;
-      paginationContainer.classList.add('hidden');
-      return;
-    }
+    if (data.length === 0) {
+      grid.innerHTML = `<div class="col-span-full text-center text-gray-500 py-10">${dict.emptyGrid}</div>`;
+      paginationContainer.classList.add('hidden');
+      return;
+    }
 
     const tabDir = document.getElementById('tab-directory');
     if (tabDir && !tabDir.classList.contains('hidden')) {
       paginationContainer.classList.remove('hidden');
     }
 
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex   = startIndex + itemsPerPage;
-    const pageData   = data.slice(startIndex, endIndex);
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex   = startIndex + itemsPerPage;
+    const pageData   = data.slice(startIndex, endIndex);
 
-    pageData.forEach(item => {
-      const isComplete = item.completion_status === 'COMPLETE';
-      const isShared   = item.shared_heritage_detection?.is_shared;
-      const tags       = item.resume_analisa?.gemini_tags?.slice(0,3) || [];
-      const tagsHtml   = tags.map(t => `<span class="bg-brand-700 text-xs px-2 py-1 rounded-md text-slate-600">#${t}</span>`).join('');
-      const card = document.createElement('div');
-      card.className = "bg-brand-800 border border-brand-700 rounded-xl overflow-hidden hover:border-brand-500 transition-colors group flex flex-col";
+    pageData.forEach(item => {
+      const isComplete = item.completion_status === 'COMPLETE';
+      const isShared   = item.shared_heritage_detection?.is_shared;
+      const tags       = item.resume_analisa?.gemini_tags?.slice(0,3) || [];
+      const tagsHtml   = tags.map(t => `<span class="bg-brand-700 text-xs px-2 py-1 rounded-md text-slate-600">#${t}</span>`).join('');
+      const card = document.createElement('div');
+      card.className = "bg-brand-800 border border-brand-700 rounded-xl overflow-hidden hover:border-brand-500 transition-colors group flex flex-col";
         const fallbackSvg = getCategoryFallbackSvg(item.category);
         const safeImg = getValidImageUrl(item.thumbnail_url, item.category);
 
@@ -1437,72 +1473,72 @@ const COUNTRY_CENTROIDS = {
   }
 
   function changePageSize(size) {
-    itemsPerPage = parseInt(size, 10);
-    currentPage = 1;
-    renderGrid(filteredData);
-    scrollToGrid();
-  }
+    itemsPerPage = parseInt(size, 10);
+    currentPage = 1;
+    renderGrid(filteredData);
+    scrollToGrid();
+  }
 
-  function goToPage(page) {
-    currentPage = page;
-    renderGrid(filteredData);
-    scrollToGrid();
-  }
+  function goToPage(page) {
+    currentPage = page;
+    renderGrid(filteredData);
+    scrollToGrid();
+  }
 
-  function scrollToGrid() {
-    const directoryHeader = document.querySelector('.ph-books').closest('div').parentElement;
-    directoryHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
+  function scrollToGrid() {
+    const directoryHeader = document.querySelector('.ph-books').closest('div').parentElement;
+    directoryHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 
-  function renderPaginationUI(totalItems, startIndex, endIndex) {
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
-    const actualEndIndex = Math.min(endIndex, totalItems);
+  function renderPaginationUI(totalItems, startIndex, endIndex) {
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    const actualEndIndex = Math.min(endIndex, totalItems);
 
-    document.getElementById('pagination-info').innerText = `${startIndex + 1} - ${actualEndIndex} of ${totalItems}`;
+    document.getElementById('pagination-info').innerText = `${startIndex + 1} - ${actualEndIndex} of ${totalItems}`;
 
-    const btnContainer = document.getElementById('pagination-buttons');
-    btnContainer.innerHTML = '';
+    const btnContainer = document.getElementById('pagination-buttons');
+    btnContainer.innerHTML = '';
 
-    // Prev Button
-    const prevBtn = document.createElement('button');
-    prevBtn.innerHTML = '<i class="ph ph-caret-left"></i>';
-    prevBtn.className = `px-3 py-1.5 rounded-md border transition-colors ${currentPage === 1 ? 'border-brand-700 text-gray-600 cursor-not-allowed bg-brand-900' : 'border-brand-700 text-slate-600 hover:border-brand-accent hover:text-brand-900 bg-brand-800 hover:bg-brand-accent'}`;
-    prevBtn.disabled = currentPage === 1;
-    if (!prevBtn.disabled) prevBtn.onclick = () => goToPage(currentPage - 1);
-    btnContainer.appendChild(prevBtn);
+    // Prev Button
+    const prevBtn = document.createElement('button');
+    prevBtn.innerHTML = '<i class="ph ph-caret-left"></i>';
+    prevBtn.className = `px-3 py-1.5 rounded-md border transition-colors ${currentPage === 1 ? 'border-brand-700 text-gray-600 cursor-not-allowed bg-brand-900' : 'border-brand-700 text-slate-600 hover:border-brand-accent hover:text-brand-900 bg-brand-800 hover:bg-brand-accent'}`;
+    prevBtn.disabled = currentPage === 1;
+    if (!prevBtn.disabled) prevBtn.onclick = () => goToPage(currentPage - 1);
+    btnContainer.appendChild(prevBtn);
 
-    // Smart Page Numbers (with ellipsis for large datasets)
-    let pages = [];
-    if (totalPages <= 5) {
-      for (let i = 1; i <= totalPages; i++) pages.push(i);
-    } else {
-      if (currentPage <= 3) pages = [1, 2, 3, 4, '...', totalPages];
-      else if (currentPage >= totalPages - 2) pages = [1, '...', totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
-      else pages = [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
-    }
+    // Smart Page Numbers (with ellipsis for large datasets)
+    let pages = [];
+    if (totalPages <= 5) {
+      for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+      if (currentPage <= 3) pages = [1, 2, 3, 4, '...', totalPages];
+      else if (currentPage >= totalPages - 2) pages = [1, '...', totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+      else pages = [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
+    }
 
-    pages.forEach(p => {
-      const pBtn = document.createElement('button');
-      if (p === '...') {
-        pBtn.innerText = '...';
-        pBtn.className = 'px-2 py-1.5 text-gray-500 cursor-default';
-        pBtn.disabled = true;
-      } else {
-        pBtn.innerText = p;
-        pBtn.className = `px-3 py-1.5 rounded-md border text-sm font-bold transition-colors ${currentPage === p ? 'bg-brand-accent text-brand-900 border-brand-accent' : 'bg-brand-800 border-brand-700 text-slate-600 hover:border-brand-accent hover:text-brand-900 hover:bg-brand-accent'}`;
-        pBtn.onclick = () => goToPage(p);
-      }
-      btnContainer.appendChild(pBtn);
-    });
+    pages.forEach(p => {
+      const pBtn = document.createElement('button');
+      if (p === '...') {
+        pBtn.innerText = '...';
+        pBtn.className = 'px-2 py-1.5 text-gray-500 cursor-default';
+        pBtn.disabled = true;
+      } else {
+        pBtn.innerText = p;
+        pBtn.className = `px-3 py-1.5 rounded-md border text-sm font-bold transition-colors ${currentPage === p ? 'bg-brand-accent text-brand-900 border-brand-accent' : 'bg-brand-800 border-brand-700 text-slate-600 hover:border-brand-accent hover:text-brand-900 hover:bg-brand-accent'}`;
+        pBtn.onclick = () => goToPage(p);
+      }
+      btnContainer.appendChild(pBtn);
+    });
 
-    // Next Button
-    const nextBtn = document.createElement('button');
-    nextBtn.innerHTML = '<i class="ph ph-caret-right"></i>';
-    nextBtn.className = `px-3 py-1.5 rounded-md border transition-colors ${currentPage === totalPages ? 'border-brand-700 text-gray-600 cursor-not-allowed bg-brand-900' : 'border-brand-700 text-slate-600 hover:border-brand-accent hover:text-brand-900 bg-brand-800 hover:bg-brand-accent'}`;
-    nextBtn.disabled = currentPage === totalPages;
-    if (!nextBtn.disabled) nextBtn.onclick = () => goToPage(currentPage + 1);
-    btnContainer.appendChild(nextBtn);
-  }
+    // Next Button
+    const nextBtn = document.createElement('button');
+    nextBtn.innerHTML = '<i class="ph ph-caret-right"></i>';
+    nextBtn.className = `px-3 py-1.5 rounded-md border transition-colors ${currentPage === totalPages ? 'border-brand-700 text-gray-600 cursor-not-allowed bg-brand-900' : 'border-brand-700 text-slate-600 hover:border-brand-accent hover:text-brand-900 bg-brand-800 hover:bg-brand-accent'}`;
+    nextBtn.disabled = currentPage === totalPages;
+    if (!nextBtn.disabled) nextBtn.onclick = () => goToPage(currentPage + 1);
+    btnContainer.appendChild(nextBtn);
+  }
 
 
   // ═══════════════════════════════════════════════════════════════
@@ -1859,20 +1895,16 @@ const COUNTRY_CENTROIDS = {
       `;
     }
 
-    // 6. Masukkan Seluruh HTML ke dalam Modal
-    document.getElementById('modal-body').innerHTML = `
+    // 6. Susun konten per-TAB (bukan satu kolom panjang lagi)
+    const isShared = !!item.shared_heritage_detection?.is_shared;
+    const hasSteps = !!item.resume_tata_cara?.step_by_step;
+
+    const overviewTab = `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="flex flex-col gap-4">
-          
-          <!-- Foto / SVG Fallback Kategori -->
           <img src="${safeImg}" class="w-full rounded-xl border border-brand-700 object-cover aspect-video shadow-sm" onerror="handleFallbackImage(this, '${escapeXML(item.category || '')}')">
-          
-          <!-- Kotak Manifesto Penjelasan Digital Preservation -->
           ${preservationNoticeHtml}
-          
-          <!-- Mini Map -->
           <div id="mini-map" class="w-full h-48 rounded-xl border border-brand-700 bg-brand-800 z-10"></div>
-          
           <div class="grid grid-cols-2 gap-3">
             <div class="bg-slate-50 p-3 rounded-lg border border-brand-700">
               <p class="text-[10px] text-slate-500 uppercase tracking-wider mb-1 font-bold">${dict.modalOrigin}</p>
@@ -1884,27 +1916,51 @@ const COUNTRY_CENTROIDS = {
               <p class="font-bold text-sm text-slate-900 leading-tight">${item.category}</p>
             </div>
           </div>
-
+        </div>
+        <div class="flex flex-col gap-4">
+          <div>
+            <h4 class="font-display font-bold text-lg text-slate-900 mb-2">${dict.modalDesc}</h4>
+            <p class="text-sm text-slate-600 leading-relaxed">${item.resume_analisa?.description||'-'}</p>
+          </div>
           <div class="bg-slate-50 p-4 rounded-lg border border-brand-700">
             <p class="text-[10px] text-slate-500 uppercase tracking-wider mb-2 font-bold">${dict.modalSignificance}</p>
             <p class="text-sm text-brand-accent font-medium leading-relaxed">${item.resume_analisa?.cultural_significance||'-'}</p>
           </div>
-
-          ${ytHtml}
-
-          <div>
-            <p class="text-[10px] text-slate-500 uppercase tracking-wider mb-2 font-bold">${dict.modalSources}</p>
-            <div class="flex flex-col gap-2">${formatSourceLinks(item.source_urls, dict)}</div>
-          </div>
-
-        </div>
-
-        <div class="flex flex-col">
-          <h4 class="font-display font-bold text-lg text-slate-900 mb-2">${dict.modalDesc}</h4>
-          <p class="text-sm text-slate-600 leading-relaxed mb-6">${item.resume_analisa?.description||'-'}</p>
-          ${toolsHtml}${stepsHtml}${sharedHtml}
         </div>
       </div>`;
+
+    const processTab = `<div class="max-w-3xl">${toolsHtml}${stepsHtml}</div>`;
+
+    const sharedTab = isShared
+      ? `<div class="max-w-3xl">${sharedHtml}</div>`
+      : `<div class="p-8 text-center text-slate-400 text-sm"><i class="ph ph-share-network text-3xl block mb-2"></i>No shared heritage connections detected for this element.</div>`;
+
+    const mediaTab = `
+      <div class="max-w-3xl flex flex-col gap-6">
+        ${ytHtml || ''}
+        <div>
+          <p class="text-[10px] text-slate-500 uppercase tracking-wider mb-2 font-bold">${dict.modalSources}</p>
+          <div class="flex flex-col gap-2">${formatSourceLinks(item.source_urls, dict)}</div>
+        </div>
+      </div>`;
+
+    // 7. Bangun daftar tab (Shared Heritage & Media disembunyikan kalau tidak relevan)
+    const tabs = [
+      { id: 'overview', label: 'Overview', icon: 'ph-file-text', html: overviewTab },
+      { id: 'process',  label: dict.modalSteps || 'Process', icon: 'ph-list-numbers', html: processTab },
+      { id: 'shared',   label: dict.modalShared || 'Shared Heritage', icon: 'ph-share-network', html: sharedTab, badge: isShared },
+      { id: 'media',    label: 'Media & Sources', icon: 'ph-link', html: mediaTab }
+    ];
+
+    document.getElementById('modal-tabs').innerHTML = tabs.map((t, i) => `
+      <button type="button" onclick="switchModalTab('${t.id}')" data-modal-tab="${t.id}"
+        class="modal-tab-btn flex items-center gap-1.5 ${i === 0 ? 'modal-tab-active' : ''}">
+        <i class="ph ${t.icon}"></i> ${t.label}
+        ${t.badge ? '<span class="w-1.5 h-1.5 rounded-full bg-brand-secondary"></span>' : ''}
+      </button>`).join('');
+
+    document.getElementById('modal-body').innerHTML = tabs.map((t, i) => `
+      <div class="modal-tab-panel ${i === 0 ? 'modal-tab-panel-active' : ''}" data-modal-panel="${t.id}">${t.html}</div>`).join('');
 
     const modal   = document.getElementById('item-modal');
     const wrapper = document.getElementById('modal-content-wrapper');
@@ -1913,10 +1969,11 @@ const COUNTRY_CENTROIDS = {
     modal.classList.remove('opacity-0');
     wrapper.classList.remove('scale-95');
 
-    // 7. Render Mini Map
+    // 8. Render Mini Map (ada di tab Overview, yang aktif secara default)
     setTimeout(() => {
       if (window.miniMapInstance) {
         window.miniMapInstance.remove();
+        window.miniMapInstance = null;
       }
 
       const mainLat = item.location?.lat;
@@ -1958,6 +2015,24 @@ const COUNTRY_CENTROIDS = {
         window.miniMapInstance.fitBounds(bounds, { padding: [20, 20], maxZoom: 4 });
       }
     }, 300);
+  }
+
+  // Ganti tab aktif di dalam modal detail
+  function switchModalTab(tabId) {
+    document.querySelectorAll('[data-modal-tab]').forEach(btn => {
+      btn.classList.toggle('modal-tab-active', btn.getAttribute('data-modal-tab') === tabId);
+    });
+    document.querySelectorAll('[data-modal-panel]').forEach(panel => {
+      panel.classList.toggle('modal-tab-panel-active', panel.getAttribute('data-modal-panel') === tabId);
+    });
+    // Peta mini di tab Overview butuh invalidateSize setiap kali tab ini ditampilkan kembali,
+    // karena Leaflet salah menghitung ukuran saat kontainernya sempat display:none.
+    if (tabId === 'overview' && window.miniMapInstance) {
+      setTimeout(() => window.miniMapInstance.invalidateSize(), 50);
+    }
+    // Reset scroll ke atas setiap ganti tab
+    const body = document.getElementById('modal-body');
+    if (body) body.scrollTop = 0;
   }
 
   function closeModal() {
