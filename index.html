@@ -118,6 +118,16 @@ tailwind.config = {
   :focus-visible{outline:3px solid #2D4A7C;outline-offset:3px;border-radius:.5rem}
 
   @media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+
+  /* Stack Card Animations */
+  /* Text-Based Stack Card Animations */
+  .hero-card { position: absolute; inset: 0; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); border-radius: 2rem; transform-origin: top center; background: #FFFFFF; }
+  .hero-card[data-state="active"] { transform: translateY(0) scale(1); z-index: 30; opacity: 1; box-shadow: 0 20px 40px -20px rgba(31,29,26,.15); border: 1px solid #E7E0D2; }
+  .hero-card[data-state="next-1"] { transform: translateY(24px) scale(0.94); z-index: 20; opacity: 0.9; box-shadow: 0 10px 20px -10px rgba(31,29,26,.08); border: 1px solid #E7E0D2; }
+  .hero-card[data-state="next-2"] { transform: translateY(48px) scale(0.88); z-index: 10; opacity: 0.5; border: 1px solid #E7E0D2; }
+  .hero-card[data-state="hidden"] { transform: translateY(60px) scale(0.80); z-index: 0; opacity: 0; pointer-events: none; }
+  .hero-card[data-state="out"]    { transform: translateX(-120%) rotate(-8deg); z-index: 40; opacity: 0; pointer-events: none; }
+
 </style>
 
 <!-- ══ STRUCTURED DATA ══ -->
@@ -294,36 +304,27 @@ tailwind.config = {
       </div>
 
       <!-- Smart heritage preview -->
-      <div class="relative hidden lg:block animate-float" aria-label="Featured living heritage">
-        <div class="rounded-3xl bg-white border border-paper-line shadow-lift overflow-hidden">
-          <div class="h-12 px-4 flex items-center justify-between border-b border-paper-line bg-paper-warm">
-            <span class="flex items-center gap-2 font-display font-bold text-sm text-ink">
-              <i class="ph-fill ph-globe-hemisphere-east text-heritage-500"></i>
-              Featured Living Heritage
-            </span>
-            <span class="font-mono text-[9px] uppercase tracking-[.18em] text-ink-mute">Live from data.json</span>
-          </div>
-          <div class="relative aspect-[1.45/1] bg-paper-warm overflow-hidden">
-            <div id="hero-heritage-skeleton" class="absolute inset-0 grid place-items-center bg-gradient-to-br from-heritage-50 via-paper-warm to-saffron-50">
-              <div class="text-center">
-                <i class="ph-fill ph-spinner-gap animate-spin text-3xl text-heritage-500"></i>
-                <p class="font-mono text-[10px] uppercase tracking-widest text-ink-mute mt-3">Loading a living tradition…</p>
-              </div>
-            </div>
-            <img id="hero-heritage-image" src="thum.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" loading="eager" decoding="async">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none"></div>
-            <div class="absolute left-5 right-5 bottom-5 text-white">
-              <p id="hero-heritage-category" class="font-mono text-[10px] uppercase tracking-[.2em] text-white/75 mb-1.5">Living heritage</p>
-              <h2 id="hero-heritage-title" class="font-display font-bold text-2xl leading-tight">Discover a living tradition</h2>
-              <p id="hero-heritage-location" class="text-sm text-white/80 mt-1.5">Exploring the global inventory</p>
+      <!-- Smart heritage preview (Text-Based Data Stack) -->
+      <div class="relative hidden lg:block animate-float pt-4" aria-label="Featured living heritage">
+        
+        <!-- Header Text & Button -->
+        <div class="flex items-center justify-end gap-3 mb-6 pr-2">
+          <span class="font-mono text-xs text-ink-mute font-medium">Click arrow to shuffle <i class="ph-bold ph-arrow-right ml-1"></i></span>
+          <button id="hero-next-btn" class="grid place-items-center w-9 h-9 rounded-full bg-white border border-paper-line text-ink hover:bg-heritage-500 hover:text-white hover:border-heritage-500 transition shadow-soft" aria-label="Next Card">
+            <i class="ph-bold ph-arrows-clockwise"></i>
+          </button>
+        </div>
+
+        <!-- Area Tumpukan Kartu -->
+        <div id="hero-stack-container" class="relative w-full aspect-[1/1.05] perspective-[1000px]">
+          <!-- Loading State -->
+          <div id="hero-loader" class="absolute inset-0 bg-white rounded-[2rem] border border-paper-line shadow-lift grid place-items-center z-50">
+            <div class="text-center">
+              <i class="ph-fill ph-radar animate-spin text-4xl text-heritage-500"></i>
+              <p class="font-mono text-[10px] uppercase tracking-widest text-ink-mute mt-4">Syncing OSINT Data…</p>
             </div>
           </div>
-          <div class="p-4 flex items-center justify-between gap-4">
-            <p class="text-xs text-ink-soft leading-relaxed">A rotating glimpse from the ICH Radar inventory — selected only when a usable image is available.</p>
-            <a href="radar.html" class="shrink-0 inline-flex items-center gap-2 bg-heritage-500 hover:bg-heritage-600 text-white px-4 py-2.5 rounded-xl font-semibold text-xs shadow-soft transition">
-              Explore <i class="ph-bold ph-arrow-up-right"></i>
-            </a>
-          </div>
+          <!-- Cards akan di-inject ke sini oleh JS -->
         </div>
       </div>
 
@@ -1352,86 +1353,323 @@ async function fetchHomeFeed(){
     return await res.json();
   }finally{ clearTimeout(timer); }
 }
-async function loadFeaturedHeritage(){
-  const img=document.getElementById("hero-heritage-image"), skeleton=document.getElementById("hero-heritage-skeleton"), title=document.getElementById("hero-heritage-title"), category=document.getElementById("hero-heritage-category"), location=document.getElementById("hero-heritage-location");
-  if(!img||!skeleton||!title||!category||!location) return;
-  const fallback=()=>{
-    img.onerror=null;
-    img.src="thum.png";
-    img.alt="ICH Radar overview";
-    img.classList.remove("opacity-0");
-    skeleton.classList.add("hidden");
-    title.textContent="Explore living heritage";
-    category.textContent="ICH Radar inventory";
-    location.textContent="Open the global radar to explore documented traditions";
-  };
-  try{
-    const data=await fetchHomeFeed();
-    const candidates=shuffleCopy((data.inventory||[]).filter(item=>item&&item.element_name&&item.thumbnail_url));
-    if(!candidates.length){fallback();return;}
-    let pointer=0;
-    const tryNext=()=>{
-      if(pointer>=candidates.length){fallback();return;}
-      const item=candidates[pointer++];
-      let imageTimer=setTimeout(()=>{ img.onerror=null; img.onload=null; tryNext(); },2500);
-      img.onload=()=>{ clearTimeout(imageTimer);
-        img.alt=item.element_name;
-        img.classList.remove("opacity-0");
-        skeleton.classList.add("hidden");
-        title.textContent=item.element_name;
-        category.textContent=item.category||"Intangible Cultural Heritage";
-        location.textContent=item.country||"Global";
-      };
-      img.onerror=()=>{ clearTimeout(imageTimer); tryNext(); };
-      img.src=item.thumbnail_url;
+
+async function loadFeaturedHeritage() {
+  const container = document.getElementById("hero-stack-container");
+  const loader = document.getElementById("hero-loader");
+  const nextBtn = document.getElementById("hero-next-btn");
+  if(!container) return;
+
+  try {
+    const res = await fetch("https://raw.githubusercontent.com/AnggaConni/ICH-Radar/refs/heads/main/data.json", { cache: "no-store" });
+    if(!res.ok) throw new Error("Data unavailable");
+    const rawData = await res.json();
+    
+    let items = Array.isArray(rawData) ? rawData : (rawData.inventory || rawData.data || []);
+    
+    // Fungsi untuk mengekstrak teks aman dari [object Object]
+    const extractText = (val) => {
+      if (!val) return null;
+      if (typeof val === 'string') return val.trim();
+      if (Array.isArray(val)) return val.filter(v => typeof v === 'string').join(", ").trim();
+      if (typeof val === 'object') return Object.values(val).filter(v => typeof v === 'string').join(" • ").trim();
+      return null;
     };
-    tryNext();
-  }catch(error){
-    console.warn("Featured heritage preview unavailable:",error);
-    fallback();
+
+    // Filter dan acak
+    items = shuffleCopy(items.filter(i => i && i.element_name && (extractText(i.resume_analisa) || extractText(i.description) || extractText(i.snippet)))).slice(0, 10);
+    
+    if(!items.length) throw new Error("No items");
+
+    let cardsHTML = '';
+    items.forEach((item, index) => {
+      
+      const descText = extractText(item.resume_analisa) || extractText(item.description) || extractText(item.snippet) || "Documentation pending...";
+      
+      let tags = [];
+      if (item.resume_analisa && typeof item.resume_analisa === 'object' && Array.isArray(item.resume_analisa.gemini_tags)) {
+        tags = item.resume_analisa.gemini_tags.filter(t => typeof t === 'string').slice(0, 2);
+      }
+      if (tags.length === 0) tags = ["Heritage Data", "OSINT"];
+      const tagsHTML = tags.map(t => `<span class="px-3 py-1.5 rounded-lg border border-paper-line bg-paper-warm text-[10px] font-bold text-ink-soft uppercase tracking-widest">${escapeHTML(t)}</span>`).join('');
+
+      const category = extractText(item.category) || "Living Heritage";
+      const country  = extractText(item.country) || "Global Data";
+      const title    = extractText(item.element_name);
+      const idStr    = item.id ? item.id.split('-')[1]?.substring(0,6).toUpperCase() || "X7B9" : "X7B9";
+      
+      // === LOGIKA STATUS DINAMIS (Shared Heritage / Complete Data) ===
+      let statusLabel = "OSINT Analysis";
+      let statusIcon  = "ph-database";
+      let statusColor = "text-heritage-400";
+      let badgeText   = "VERIFIED";
+      let badgeColor  = "text-heritage-400 bg-heritage-500/20 border-heritage-500/30";
+      let pulseColor  = "bg-heritage-400";
+
+      // 1. Cek Shared Heritage (Jika negaranya lebih dari 1 / ada tanda koma)
+      if (country.includes(",")) {
+        statusLabel = "Shared Heritage";
+        statusIcon  = "ph-share-network";
+        statusColor = "text-saffron-400";
+        badgeText   = "MULTINATIONAL";
+        badgeColor  = "text-saffron-400 bg-saffron-500/20 border-saffron-500/30";
+        pulseColor  = "bg-saffron-400";
+      } 
+      // 2. Cek Complete Data (Jika sudah dianalisa AI dan punya resume_analisa)
+      else if (item.resume_analisa && typeof item.resume_analisa === 'object') {
+        statusLabel = "Complete Data";
+        statusIcon  = "ph-check-circle";
+        statusColor = "text-jade-400";
+        badgeText   = "ENRICHED";
+        badgeColor  = "text-jade-400 bg-jade-500/20 border-jade-500/30";
+        pulseColor  = "bg-jade-400";
+      } 
+      // 3. Data Dasar (Hanya ada di index radar)
+      else {
+        statusLabel = "Base Inventory";
+        statusIcon  = "ph-radar";
+        statusColor = "text-terra-400";
+        badgeText   = "INDEXED";
+        badgeColor  = "text-terra-400 bg-terra-500/20 border-terra-500/30";
+        pulseColor  = "bg-terra-400";
+      }
+
+      cardsHTML += `
+        <div class="hero-card p-7 sm:p-9 flex flex-col cursor-pointer bg-white" data-state="hidden" data-index="${index}" onclick="document.getElementById('hero-next-btn').click()">
+          
+          <!-- Top Row -->
+          <div class="flex items-start justify-between mb-8 shrink-0">
+            <span class="grid place-items-center w-12 h-12 rounded-2xl bg-heritage-50 text-heritage-600 border border-heritage-100 shadow-sm">
+              <i class="ph-bold ph-radar text-2xl"></i>
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-heritage-50 border border-heritage-100 font-mono text-[10px] uppercase tracking-widest text-heritage-600 shadow-sm">
+              <i class="ph-bold ph-check-circle"></i> ${escapeHTML(category)}
+            </span>
+          </div>
+
+          <!-- Title & Meta -->
+          <div class="text-center mb-6 shrink-0">
+            <p class="font-mono text-[10px] uppercase tracking-[.2em] text-ink-mute mb-3 line-clamp-1 flex items-center justify-center gap-1.5">
+              <i class="ph-fill ph-map-pin"></i> ${escapeHTML(country)}
+            </p>
+            <h3 class="font-display font-bold text-2xl md:text-3xl text-ink leading-tight mb-4 line-clamp-2" title="${escapeHTML(title)}">
+              ${escapeHTML(title)}
+            </h3>
+            <div class="flex flex-wrap justify-center gap-2">
+              ${tagsHTML}
+            </div>
+          </div>
+
+          <!-- Description (Diperbesar hingga maksimal 6 baris) -->
+          <p class="text-[15px] text-ink-soft leading-relaxed line-clamp-6 text-center mb-6 px-2">
+            ${escapeHTML(descText)}
+          </p>
+
+          <!-- Bottom Dark Box (Data Metric Dashboard) -->
+          <div class="mt-auto shrink-0 bg-slate-900 rounded-[1.25rem] p-5 flex flex-col border border-slate-800 shadow-inner relative overflow-hidden">
+            <div class="absolute -top-4 -right-2 opacity-5 pointer-events-none">
+               <i class="ph-fill ph-fingerprint text-[7rem] text-white"></i>
+            </div>
+            
+            <div class="flex items-center justify-between mb-4 relative z-10">
+              <span class="flex items-center gap-2 text-white font-medium text-sm">
+                <i class="ph-fill ${statusIcon} ${statusColor}"></i> ${statusLabel}
+              </span>
+              <span class="px-2 py-1 rounded-md font-mono text-[9px] uppercase tracking-widest border flex items-center gap-1.5 ${badgeColor}">
+                <span class="w-1.5 h-1.5 rounded-full ${pulseColor} animate-pulse"></span> ${badgeText}
+              </span>
+            </div>
+            
+            <div class="w-full h-1.5 bg-slate-800 rounded-full mb-3 overflow-hidden relative z-10">
+              <div class="h-full bg-gradient-to-r from-heritage-600 to-heritage-400 rounded-full" style="width: ${Math.floor(Math.random() * 20 + 80)}%"></div>
+            </div>
+            
+            <div class="flex justify-between items-center relative z-10">
+              <p class="font-mono text-[9px] text-slate-400 uppercase tracking-widest">
+                ID: ${idStr}
+              </p>
+              <p class="font-mono text-[9px] text-slate-400 uppercase tracking-widest">
+                System Active
+              </p>
+            </div>
+          </div>
+
+        </div>
+      `;
+    });
+
+    loader.remove();
+    container.insertAdjacentHTML('beforeend', cardsHTML);
+
+    const cardEls = container.querySelectorAll('.hero-card');
+    let currentIndex = 0;
+    const total = cardEls.length;
+
+    function updateCards() {
+      cardEls.forEach((card, i) => {
+        let diff = (i - currentIndex + total) % total;
+        
+        if (i === (currentIndex - 1 + total) % total) {
+          card.setAttribute('data-state', 'out');
+        } else if (diff === 0) {
+          card.setAttribute('data-state', 'active');
+        } else if (diff === 1) {
+          card.setAttribute('data-state', 'next-1');
+        } else if (diff === 2) {
+          card.setAttribute('data-state', 'next-2');
+        } else {
+          card.setAttribute('data-state', 'hidden');
+        }
+      });
+    }
+
+    updateCards();
+
+    nextBtn.addEventListener('click', () => {
+      cardEls[currentIndex].setAttribute('data-state', 'out');
+      currentIndex = (currentIndex + 1) % total;
+      updateCards();
+    });
+
+  } catch(error) {
+    console.warn("Featured heritage preview failed:", error);
+    loader.innerHTML = `<div class="text-center"><i class="ph-fill ph-warning-circle text-4xl text-terra-500 mb-2"></i><p class="font-mono text-xs uppercase tracking-widest text-ink-mute">Data unavailable</p></div>`;
   }
 }
+
 function renderInsightCards(articles){
-  const track=document.getElementById("ich-insights-track"), empty=document.getElementById("ich-insights-empty"), status=document.getElementById("ich-insights-status");
-  const prev=document.getElementById("insight-prev"), next=document.getElementById("insight-next");
-  if(!track||!empty||!status) return;
-  if(!articles.length){track.innerHTML="";empty.classList.remove("hidden");if(prev)prev.disabled=true;if(next)next.disabled=true;return;}
+  const track = document.getElementById("ich-insights-track");
+  const empty = document.getElementById("ich-insights-empty");
+  const status = document.getElementById("ich-insights-status");
+  const prev = document.getElementById("insight-prev");
+  const next = document.getElementById("insight-next");
+
+  if(!track || !empty || !status) return;
+
+  if(!articles.length){
+    track.innerHTML = "";
+    empty.classList.remove("hidden");
+    if(prev) prev.disabled = true;
+    if(next) next.disabled = true;
+    return;
+  }
+  
   empty.classList.add("hidden");
-  track.innerHTML=articles.map(article=>{
-    const title=escapeHTML(article.title),excerpt=escapeHTML(article.excerpt||""),category=escapeHTML(article.category||"Horizon Scan"),date=escapeHTML(article.date||""),image=article.imageUrl?"https://horizon-scanning.org/"+String(article.imageUrl).replace(/^\/+/, ""):"";
-    const href="https://horizon-scanning.org/blog/article/"+article.slug+".html";
-    const media=image?'<img src="'+escapeHTML(image)+'" alt="'+title+'" loading="lazy" decoding="async"><span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm border border-white/60 px-2.5 py-1 rounded-full font-mono text-[9px] uppercase tracking-widest text-berry-600"><i class="ph-fill ph-sparkle"></i> Heritage</span>':'<div class="insight-fallback absolute inset-0"><i class="ph-fill ph-notebook text-4xl"></i></div>';
-    return '<a class="insight-card group" href="'+escapeHTML(href)+'" target="_blank" rel="noopener noreferrer"><div class="insight-media">'+media+'</div><div class="p-6 flex flex-col"><div class="flex items-center justify-between gap-3 mb-3"><span class="font-mono text-[10px] uppercase tracking-[.16em] text-berry-500">'+category+'</span><span class="font-mono text-[10px] text-ink-mute whitespace-nowrap">'+date+'</span></div><h3 class="font-display font-bold text-xl text-ink leading-tight mb-3 group-hover:text-berry-600 transition">'+title+'</h3><p class="text-sm text-ink-soft leading-relaxed">'+excerpt+'</p><span class="inline-flex items-center gap-2 mt-5 text-xs font-semibold uppercase tracking-[.14em] text-heritage-600">Read article <i class="ph-bold ph-arrow-up-right transition-transform group-hover:translate-x-0.5"></i></span></div></a>';
+
+  // Generate HTML Kartu dengan Template Literal agar lebih rapi
+  track.innerHTML = articles.map(article => {
+    const title = escapeHTML(article.title);
+    const excerpt = escapeHTML(article.excerpt || "");
+    const category = escapeHTML(article.category || "Horizon Scan");
+    const date = escapeHTML(article.date || "");
+    const image = article.imageUrl ? "https://horizon-scanning.org/" + String(article.imageUrl).replace(/^\/+/, "") : "";
+    const href = "https://horizon-scanning.org/blog/article/" + article.slug + ".html";
+    
+    const media = image 
+      ? `<img src="${escapeHTML(image)}" alt="${title}" loading="lazy" decoding="async"><span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm border border-white/60 px-2.5 py-1 rounded-full font-mono text-[9px] uppercase tracking-widest text-berry-600"><i class="ph-fill ph-sparkle"></i> Heritage</span>` 
+      : `<div class="insight-fallback absolute inset-0"><i class="ph-fill ph-notebook text-4xl"></i></div>`;
+    
+    return `
+      <a class="insight-card group flex flex-col h-full" href="${escapeHTML(href)}" target="_blank" rel="noopener noreferrer">
+        <div class="insight-media shrink-0">${media}</div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex items-center justify-between gap-3 mb-3">
+            <span class="font-mono text-[10px] uppercase tracking-[.16em] text-berry-500">${category}</span>
+            <span class="font-mono text-[10px] text-ink-mute whitespace-nowrap">${date}</span>
+          </div>
+          <!-- line-clamp-2 membatasi judul maksimal 2 baris -->
+          <h3 class="font-display font-bold text-xl text-ink leading-tight mb-3 group-hover:text-berry-600 transition line-clamp-2" title="${title}">${title}</h3>
+          <!-- line-clamp-3 membatasi deskripsi maksimal 3 baris -->
+          <p class="text-sm text-ink-soft leading-relaxed line-clamp-3 mb-4">${excerpt}</p>
+          <!-- mt-auto akan mendorong tombol ini selalu ke bawah -->
+          <div class="mt-auto pt-2">
+            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[.14em] text-heritage-600">
+              Read article <i class="ph-bold ph-arrow-up-right transition-transform group-hover:translate-x-0.5"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+    `;
   }).join("");
-  track.querySelectorAll(".insight-media img").forEach(img=>img.addEventListener("error",()=>{img.parentElement.classList.add("insight-fallback");img.insertAdjacentHTML("beforeend",'<i class="ph-fill ph-notebook text-4xl"></i>');img.remove();},{once:true}));
-  const update=()=>{
-    const max=Math.max(0,track.scrollWidth-track.clientWidth),left=track.scrollLeft,canPrev=left>8,canNext=left<max-8;
-    if(prev)prev.disabled=!canPrev;if(next)next.disabled=!canNext;
-    const cards=[...track.querySelectorAll(".insight-card")];
-    let idx=0,best=Infinity;cards.forEach((c,i)=>{const d=Math.abs(c.offsetLeft-left);if(d<best){best=d;idx=i;}});
-    status.textContent=`${idx+1} / ${cards.length} · ${cards.length} heritage articles`;
+
+  // Deteksi error gambar
+  track.querySelectorAll(".insight-media img").forEach(img => {
+    img.addEventListener("error", () => {
+      img.parentElement.classList.add("insight-fallback");
+      img.insertAdjacentHTML("beforeend", '<i class="ph-fill ph-notebook text-4xl"></i>');
+      img.remove();
+    }, { once: true });
+  });
+
+  // Logika interaksi Slider / Carousel
+  const update = () => {
+    const max = Math.max(0, track.scrollWidth - track.clientWidth);
+    const left = track.scrollLeft;
+    const canPrev = left > 8;
+    const canNext = left < max - 8;
+    if(prev) prev.disabled = !canPrev;
+    if(next) next.disabled = !canNext;
+    
+    const cards = [...track.querySelectorAll(".insight-card")];
+    let idx = 0, best = Infinity;
+    cards.forEach((c, i) => {
+      const d = Math.abs(c.offsetLeft - left);
+      if(d < best) { best = d; idx = i; }
+    });
+    status.textContent = `${idx + 1} / ${cards.length} · ${cards.length} heritage articles`;
   };
-  const step=()=>Math.min(track.clientWidth*.88,track.querySelector(".insight-card")?.getBoundingClientRect().width+20||520);
-  prev?.addEventListener("click",()=>track.scrollBy({left:-step(),behavior:"smooth"}));
-  next?.addEventListener("click",()=>track.scrollBy({left:step(),behavior:"smooth"}));
-  track.addEventListener("scroll",update,{passive:true});
-  track.addEventListener("wheel",e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();track.scrollLeft+=e.deltaY;}},{passive:false});
-  track.addEventListener("keydown",e=>{if(e.key==="ArrowRight"){e.preventDefault();track.scrollBy({left:step(),behavior:"smooth"});}if(e.key==="ArrowLeft"){e.preventDefault();track.scrollBy({left:-step(),behavior:"smooth"});}});
+
+  const step = () => Math.min(track.clientWidth * .88, track.querySelector(".insight-card")?.getBoundingClientRect().width + 20 || 520);
+  
+  prev?.addEventListener("click", () => track.scrollBy({ left: -step(), behavior: "smooth" }));
+  next?.addEventListener("click", () => track.scrollBy({ left: step(), behavior: "smooth" }));
+  track.addEventListener("scroll", update, { passive: true });
+  track.addEventListener("wheel", e => {
+    if(Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+      e.preventDefault();
+      track.scrollLeft += e.deltaY;
+    }
+  }, { passive: false });
+  track.addEventListener("keydown", e => {
+    if(e.key === "ArrowRight") { e.preventDefault(); track.scrollBy({ left: step(), behavior: "smooth" }); }
+    if(e.key === "ArrowLeft") { e.preventDefault(); track.scrollBy({ left: -step(), behavior: "smooth" }); }
+  });
+  
   requestAnimationFrame(update);
 }
+
 async function loadHeritageInsights(){
-  try{
-    const data=await fetchHomeFeed();
-    const relevant=(Array.isArray(data.articles)?data.articles:[]).sort((a,b)=>(Date.parse(b.date||"")||0)-(Date.parse(a.date||"")||0));
+  try {
+    // 1. Ambil data langsung dari repo HorizonScanning
+    const res = await fetch("https://raw.githubusercontent.com/AnggaConni/HorizonScanning/refs/heads/main/blog/data.json", { cache: "no-store" });
+    
+    if (!res.ok) throw new Error("Blog feed unavailable");
+    const data = await res.json();
+    
+    // 2. Pastikan bentuk datanya berupa array (jaga-jaga jika format JSON-nya langsung array [] atau di dalam object { articles: [] })
+    const articlesArray = Array.isArray(data) ? data : (data.articles || []);
+    
+    // 3. Urutkan berdasarkan tanggal terbaru
+    const relevant = articlesArray.sort((a,b) => (Date.parse(b.date||"")||0) - (Date.parse(a.date||"")||0));
+    
+    // 4. Render ke HTML
     renderInsightCards(relevant);
-  }catch(error){
-    console.warn("Heritage insights unavailable:",error);
-    const track=document.getElementById("ich-insights-track"),empty=document.getElementById("ich-insights-empty"),status=document.getElementById("ich-insights-status");
-    if(track) track.innerHTML="";
-    if(status) status.textContent="Feed unavailable";
-    if(empty){empty.textContent="The editorial feed is temporarily unavailable. Please refresh the page.";empty.classList.remove("hidden");}
+    
+  } catch(error) {
+    console.warn("Heritage insights unavailable:", error);
+    const track = document.getElementById("ich-insights-track");
+    const empty = document.getElementById("ich-insights-empty");
+    const status = document.getElementById("ich-insights-status");
+    
+    if(track) track.innerHTML = "";
+    if(status) status.textContent = "Feed unavailable";
+    if(empty) {
+      empty.textContent = "The editorial feed is temporarily unavailable. Please refresh the page.";
+      empty.classList.remove("hidden");
+    }
   }
 }
+
 loadFeaturedHeritage();
 loadHeritageInsights();
 
