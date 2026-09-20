@@ -1381,7 +1381,16 @@ async function loadFeaturedHeritage(){
         category.textContent=item.category||"Intangible Cultural Heritage";
         location.textContent=item.country||"Global";
       };
-      img.onerror=()=>tryNext();
+      let imageTimer=setTimeout(()=>{ img.onerror=null; img.onload=null; tryNext(); },2500);
+      img.onload=()=>{ clearTimeout(imageTimer);
+        img.alt=item.element_name;
+        img.classList.remove("opacity-0");
+        skeleton.classList.add("hidden");
+        title.textContent=item.element_name;
+        category.textContent=item.category||"Intangible Cultural Heritage";
+        location.textContent=item.country||"Global";
+      };
+      img.onerror=()=>{ clearTimeout(imageTimer); tryNext(); };
       img.src=item.thumbnail_url;
     };
     tryNext();
@@ -1498,13 +1507,3 @@ const CB_DATA = {
     <h4>Strategic steps</h4>
     <ul>
       <li><strong>Identify threats:</strong> is transmission failing? Is globalisation decontextualising the practice? Are raw materials disappearing?</li>
-      <li><strong>Set objectives:</strong> move beyond "protection" (freezing in time) toward "safeguarding" (supporting living evolution).</li>
-      <li><strong>Design measures:</strong> apprenticeships, legal access to natural resources, curriculum integration, bearer support schemes.</li>
-    </ul>
-    <h4>The behavioural link</h4>
-    <p>Effective safeguarding usually requires behaviour change. Planners should assess whether the community has the Capability, Opportunity and Motivation (COM-B) to continue the practice under modern pressure.</p>`},
-  nominations:{ title:"Preparing Nominations", icon:"ph-file-text", color:"#233C68", bg:"#D9E2F1", content:`
-    <p>Inscription on a UNESCO list brings international visibility, but the process is rigorous and unforgiving of shortcuts.</p>
-    <h4>The two main lists</h4>
-    <ul>
-      <li><strong>Representative List (RL):</strong> ensures visibility and awareness of ICH and encourages dialogue.</li>
