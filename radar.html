@@ -21,6 +21,7 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
   
@@ -198,10 +199,17 @@
               📖 Journal
             </button>
 
-              <button onclick="toggleLang()" class="bg-brand-800 border border-brand-700 hover:border-brand-500 px-3 py-1.5 rounded-md text-xs font-bold transition-colors flex items-center gap-2 ml-2">
-          <i class="ph ph-translate text-brand-secondary"></i>
-          <span id="lang-label">EN</span>
-         </button>
+              <div class="relative ml-2">
+          <button onclick="openTranslateMenu()" id="translate-btn" class="bg-brand-800 border border-brand-700 hover:border-brand-500 px-3 py-1.5 rounded-md text-xs font-bold transition-colors flex items-center gap-2" aria-haspopup="menu" aria-expanded="false" title="Translate this page">
+            <i class="ph ph-translate text-brand-secondary"></i>
+            <span id="lang-label">EN</span>
+            <i class="ph ph-caret-down text-[10px]"></i>
+          </button>
+          <div id="translate-menu" class="hidden absolute right-0 top-[calc(100%+8px)] z-[200] w-56 bg-white border border-slate-200 rounded-xl shadow-xl p-2">
+            <p class="px-3 py-2 text-[10px] font-mono uppercase tracking-widest text-slate-400">Translate to</p>
+            <div id="translate-options" class="grid gap-1"></div>
+          </div>
+        </div>
 
        </div>
 
@@ -1009,7 +1017,137 @@ const COUNTRY_CENTROIDS = {
   };
   let currentLang = 'en';
 
-  // ═══════════════════════════════════════════════════════════════
+  const TRANSLATE_LANGS = [
+    {code:'en', label:'English', flag:'🇬🇧'},
+    {code:'id', label:'Bahasa Indonesia', flag:'🇮🇩'},
+    {code:'ar', label:'العربية', flag:'🇸🇦'},
+    {code:'zh-CN', label:'中文', flag:'🇨🇳'},
+    {code:'fr', label:'Français', flag:'🇫🇷'},
+    {code:'ru', label:'Русский', flag:'🇷🇺'},
+    {code:'es', label:'Español', flag:'🇪🇸'}
+  ];
+
+  function googleTranslateElementInit(){
+    if(!window.google || !google.translate) return;
+    new google.translate.TranslateElement({
+      pageLanguage:'en',
+      includedLanguages:'ar,zh-CN,fr,ru,es',
+      autoDisplay:false
+    },'google_translate_element');
+  }
+
+  function buildTranslateMenu(){
+    const host=document.getElementById('translate-options');
+    if(!host) return;
+    host.innerHTML='';
+    TRANSLATE_LANGS.forEach(lang=>{
+      const btn=document.createElement('button');
+      btn.type='button';
+      btn.className='w-full flex items-center justify-between gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 hover:bg-slate-100 transition';
+      btn.innerHTML='<span class="flex items-center gap-2"><span class="text-base">'+lang.flag+'</span><span>'+lang.label+'</span></span><span class="text-[10px] font-mono uppercase text-slate-400">'+lang.code+'</span>';
+      btn.onclick=()=>translateTo(lang.code);
+      host.appendChild(btn);
+    });
+  }
+
+  function openTranslateMenu(){
+    const menu=document.getElementById('translate-menu');
+    const btn=document.getElementById('translate-btn');
+    if(!menu||!btn) return;
+    buildTranslateMenu();
+    const open=menu.classList.toggle('hidden')===false;
+    btn.setAttribute('aria-expanded',String(open));
+  }
+
+  function getPreferredLanguage(){
+    try{
+      const saved=localStorage.getItem('ichRadarLanguage');
+      if(saved && TRANSLATE_LANGS.some(x=>x.code===saved)) return saved;
+    }catch(e){}
+    const browser=(navigator.languages&&navigator.languages[0])||navigator.language||'en';
+    const l=browser.toLowerCase();
+    if(l.startsWith('id')) return 'id';
+    if(l.startsWith('ar')) return 'ar';
+    if(l.startsWith('zh')) return 'zh-CN';
+    if(l.startsWith('fr')) return 'fr';
+    if(l.startsWith('ru')) return 'ru';
+    if(l.startsWith('es')) return 'es';
+    return 'en';
+  }
+
+  function setTranslateLabel(lang){
+    const label=document.getElementById('lang-label');
+    if(!label) return;
+    const short={'en':'EN','id':'ID','ar':'AR','zh-CN':'ZH','fr':'FR','ru':'RU','es':'ES'};
+    label.textContent=short[lang]||'EN';
+    document.documentElement.lang=lang;
+  }
+
+  function clearGoogleTranslateCookie(){
+    document.cookie='googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    document.cookie='googtrans=;path=/;domain='+location.hostname+';expires=Thu, 01 Jan 1970 00:00:00 GMT';
+  }
+
+  function translateTo(lang){
+    const menu=document.getElementById('translate-menu');
+    if(menu) menu.classList.add('hidden');
+
+    if(lang==='en' || lang==='id'){
+      clearGoogleTranslateCookie();
+      try{localStorage.setItem('ichRadarLanguage',lang);}catch(e){}
+      currentLang=lang==='id'?'id':'en';
+      setTranslateLabel(lang);
+      updateLangUI();
+      renderDashboard();
+      updateScraperTicker();
+      applyFilters();
+      closeModal();
+      location.reload();
+      return;
+    }
+
+    try{localStorage.setItem('ichRadarLanguage',lang);}catch(e){}
+    setTranslateLabel(lang);
+
+    const select=document.querySelector('.goog-te-combo');
+    if(select){
+      select.value=lang;
+      select.dispatchEvent(new Event('change'));
+      return;
+    }
+
+    const proxy='https://translate.google.com/translate?sl=en&tl='+encodeURIComponent(lang)+'&u='+encodeURIComponent(location.href);
+    window.open(proxy,'_blank','noopener,noreferrer');
+  }
+
+  function applyPreferredLanguage(){
+    const pref=getPreferredLanguage();
+    setTranslateLabel(pref);
+    if(pref==='id'){
+      currentLang='id';
+      updateLangUI();
+      return;
+    }
+    if(pref==='en'){
+      currentLang='en';
+      updateLangUI();
+      return;
+    }
+    setTimeout(()=>translateTo(pref),1200);
+  }
+
+  function toggleLang(){ openTranslateMenu(); }
+
+  document.addEventListener('click',e=>{
+    if(!e.target.closest('#translate-menu')&&!e.target.closest('#translate-btn')){
+      const menu=document.getElementById('translate-menu');
+      const btn=document.getElementById('translate-btn');
+      if(menu) menu.classList.add('hidden');
+      if(btn) btn.setAttribute('aria-expanded','false');
+    }
+  });
+
+    // ═══════════════════════════════════════════════════════════════
   //  IMAGE HELPERS
   // ═══════════════════════════════════════════════════════════════
    // ═══════════════════════════════════════════════════════════════
@@ -1856,6 +1994,7 @@ const COUNTRY_CENTROIDS = {
   }
 
   window.onload = init;
+  window.addEventListener("load",()=>setTimeout(applyPreferredLanguage,1400));
 
 
   // ═══════════════════════════════════════════════════════════════
@@ -2389,5 +2528,6 @@ const COUNTRY_CENTROIDS = {
   }
 
   </script>
+<div id="google_translate_element" class="hidden" aria-hidden="true"></div>
 </body>
 </html>
