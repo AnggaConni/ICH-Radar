@@ -15,12 +15,15 @@ inventory = []
 for x in ich.get("inventory", []):
     if not x or not x.get("element_name") or not x.get("thumbnail_url"):
         continue
+    thumbnail = str(x.get("thumbnail_url") or "")
+    if not thumbnail.startswith(("http://", "https://")) or "api.microlink.io" in thumbnail:
+        continue
     loc = x.get("location") or {}
     inventory.append({
         "id": x.get("id"),
         "element_name": x.get("element_name"),
         "category": x.get("category"),
-        "thumbnail_url": x.get("thumbnail_url"),
+        "thumbnail_url": thumbnail,
         "country": loc.get("country") or "Global"
     })
 inventory = inventory[:100]
