@@ -338,31 +338,45 @@ tailwind.config = {
       <div class="max-w-3xl">
         <p class="font-mono text-xs uppercase tracking-[.22em] text-berry-500 mb-4">00 — From the Radar</p>
         <h2 class="font-display font-bold text-3xl md:text-5xl text-ink leading-tight mb-4">Ideas, reflections &amp; living heritage</h2>
-        <p class="text-ink-soft text-lg leading-relaxed">A small editorial window into the wider Horizon Scan archive — automatically filtered for heritage, culture, safeguarding and related themes.</p>
+        <p class="text-ink-soft text-lg leading-relaxed">A rotating editorial window into the Horizon Scan archive — heritage-focused essays and reflections, one card at a time.</p>
       </div>
-      <a href="https://horizon-scanning.org/blog/" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-2 bg-white border border-paper-line hover:border-berry-100 text-ink px-5 py-3.5 rounded-2xl font-semibold shadow-soft transition">
-        <i class="ph-fill ph-notebook text-berry-500"></i> View Horizon Scan <i class="ph-bold ph-arrow-up-right"></i>
-      </a>
+      <div class="flex items-center gap-2">
+        <button id="insight-prev" type="button" aria-label="Previous articles" class="grid place-items-center w-12 h-12 rounded-full bg-white border border-paper-line text-ink hover:bg-berry-500 hover:text-white hover:border-berry-500 shadow-soft transition disabled:opacity-40 disabled:cursor-not-allowed">
+          <i class="ph-bold ph-arrow-left text-lg"></i>
+        </button>
+        <button id="insight-next" type="button" aria-label="Next articles" class="grid place-items-center w-12 h-12 rounded-full bg-white border border-paper-line text-ink hover:bg-berry-500 hover:text-white hover:border-berry-500 shadow-soft transition disabled:opacity-40 disabled:cursor-not-allowed">
+          <i class="ph-bold ph-arrow-right text-lg"></i>
+        </button>
+        <a href="https://horizon-scanning.org/blog/" target="_blank" rel="noopener noreferrer" class="ml-2 inline-flex items-center gap-2 bg-white border border-paper-line hover:border-berry-100 text-ink px-5 py-3.5 rounded-2xl font-semibold shadow-soft transition">
+          <i class="ph-fill ph-notebook text-berry-500"></i> View Horizon Scan <i class="ph-bold ph-arrow-up-right"></i>
+        </a>
+      </div>
     </div>
-    <div id="ich-insights-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5" aria-live="polite">
-      <article class="insight-card"><div class="insight-media insight-skeleton"></div><div class="p-6"><div class="h-3 w-20 rounded-full bg-paper-warm mb-4"></div><div class="h-5 w-4/5 rounded bg-paper-warm mb-3"></div><div class="h-3 w-full rounded bg-paper-warm mb-2"></div><div class="h-3 w-2/3 rounded bg-paper-warm"></div></div></article>
-      <article class="insight-card hidden md:block"><div class="insight-media insight-skeleton"></div><div class="p-6"><div class="h-3 w-20 rounded-full bg-paper-warm mb-4"></div><div class="h-5 w-4/5 rounded bg-paper-warm mb-3"></div><div class="h-3 w-full rounded bg-paper-warm mb-2"></div><div class="h-3 w-2/3 rounded bg-paper-warm"></div></div></article>
-      <article class="insight-card hidden lg:block"><div class="insight-media insight-skeleton"></div><div class="p-6"><div class="h-3 w-20 rounded-full bg-paper-warm mb-4"></div><div class="h-5 w-4/5 rounded bg-paper-warm mb-3"></div><div class="h-3 w-full rounded bg-paper-warm mb-2"></div><div class="h-3 w-2/3 rounded bg-paper-warm"></div></div></article>
+
+    <div class="relative">
+      <div id="ich-insights-track" class="insight-track" tabindex="0" aria-label="Heritage article carousel"></div>
+      <div class="flex items-center justify-between mt-5">
+        <p id="ich-insights-status" class="font-mono text-[10px] uppercase tracking-[.18em] text-ink-mute">Loading articles…</p>
+        <span class="font-mono text-[10px] uppercase tracking-[.18em] text-ink-mute">Drag · Wheel · Arrows</span>
+      </div>
     </div>
     <p id="ich-insights-empty" class="hidden mt-6 text-center text-sm text-ink-mute">No heritage-focused articles are available right now.</p>
   </div>
   <style>
-    .insight-card{background:#fff;border:1px solid #E7E0D2;border-radius:1.5rem;overflow:hidden;box-shadow:0 1px 2px rgba(31,29,26,.04),0 10px 30px -18px rgba(31,29,26,.18);transition:.22s ease;display:flex;flex-direction:column;min-height:100%}
+    .insight-track{display:flex;gap:1.25rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;overscroll-behavior-x:contain;padding:0 .1rem .75rem;scrollbar-width:none}
+    .insight-track::-webkit-scrollbar{display:none}
+    .insight-card{position:relative;flex:0 0 min(85vw,31rem);background:#fff;border:1px solid #E7E0D2;border-radius:1.5rem;overflow:hidden;box-shadow:0 1px 2px rgba(31,29,26,.04),0 10px 30px -18px rgba(31,29,26,.18);transition:.22s ease;scroll-snap-align:start}
+    @media(min-width:768px){.insight-card{flex-basis:31rem}}
+    @media(min-width:1280px){.insight-card{flex-basis:calc((100% - 2.5rem)/3)}}
     .insight-card:hover{transform:translateY(-4px);border-color:#F2D3E2;box-shadow:0 20px 40px -22px rgba(31,29,26,.28)}
-    .insight-media{height:12rem;position:relative;overflow:hidden;background:#F5F0E6}
+    .insight-media{height:13rem;position:relative;overflow:hidden;background:#F5F0E6}
     .insight-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
     .insight-card:hover .insight-media img{transform:scale(1.035)}
-    .insight-skeleton{background:linear-gradient(90deg,#F5F0E6 25%,#FCFAF6 37%,#F5F0E6 63%);background-size:400% 100%;animation:insight-shimmer 1.4s ease infinite}
     .insight-fallback{display:grid;place-items:center;background:linear-gradient(135deg,#EEF2F9,#FDF6E6);color:#2D4A7C}
+    .insight-loader{background:linear-gradient(90deg,#F5F0E6 25%,#FCFAF6 37%,#F5F0E6 63%);background-size:400% 100%;animation:insight-shimmer 1.4s ease infinite}
     @keyframes insight-shimmer{0%{background-position:100% 0}100%{background-position:-100% 0}}
   </style>
 </section>
-
 <!-- ════════════ 1 · LIVING HERITAGE ════════════ -->
 <section id="heritage" class="py-24 border-t border-paper-line bg-white">
   <div class="max-w-6xl mx-auto px-6">
@@ -1350,25 +1364,42 @@ async function loadFeaturedHeritage(){
 }
 function slugifyArticle(title){ return String(title||"").normalize("NFKD").replace(/[^\w\s-]/g,"").trim().toLowerCase().replace(/[\s_-]+/g,"-").replace(/^-+|-+$/g,""); }
 function renderInsightCards(articles){
-  const grid=document.getElementById('ich-insights-grid'), empty=document.getElementById('ich-insights-empty'); if(!grid||!empty) return;
-  if(!articles.length){ grid.innerHTML=""; empty.classList.remove("hidden"); return; }
-  grid.innerHTML=articles.map(article=>{
+  const track=document.getElementById('ich-insights-track'), empty=document.getElementById('ich-insights-empty'), status=document.getElementById('ich-insights-status');
+  const prev=document.getElementById('insight-prev'), next=document.getElementById('insight-next');
+  if(!track||!empty||!status) return;
+  if(!articles.length){ track.innerHTML=""; empty.classList.remove("hidden"); if(prev)prev.disabled=true; if(next)next.disabled=true; return; }
+  empty.classList.add("hidden");
+  track.innerHTML=articles.map((article,index)=>{
     const title=escapeHTML(article.title), excerpt=escapeHTML(article.excerpt||''), category=escapeHTML(article.category||'Horizon Scan'), date=escapeHTML(article.date||''), image=article.imageUrl?'https://horizon-scanning.org/'+String(article.imageUrl).replace(/^\/+/, ''):'';
     const href='https://horizon-scanning.org/blog/article/'+slugifyArticle(article.title)+'.html';
-    const media=image ? '<img src="'+escapeHTML(image)+'" alt="'+title+'" loading="lazy" decoding="async"><span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm border border-white/60 px-2.5 py-1 rounded-full font-mono text-[9px] uppercase tracking-widest text-berry-600"><i class="ph-fill ph-sparkle"></i> Selected</span>' : '<div class="insight-fallback absolute inset-0"><i class="ph-fill ph-notebook text-4xl"></i></div>';
-    return '<a class="insight-card group" href="'+escapeHTML(href)+'" target="_blank" rel="noopener noreferrer"><div class="insight-media">'+media+'</div><div class="p-6 flex flex-col flex-1"><div class="flex items-center justify-between gap-3 mb-3"><span class="font-mono text-[10px] uppercase tracking-[.16em] text-berry-500">'+category+'</span><span class="font-mono text-[10px] text-ink-mute whitespace-nowrap">'+date+'</span></div><h3 class="font-display font-bold text-xl text-ink leading-tight mb-3 group-hover:text-berry-600 transition">'+title+'</h3><p class="text-sm text-ink-soft leading-relaxed flex-1">'+excerpt+'</p><span class="inline-flex items-center gap-2 mt-5 text-xs font-semibold uppercase tracking-[.14em] text-heritage-600">Read article <i class="ph-bold ph-arrow-up-right transition-transform group-hover:translate-x-0.5"></i></span></div></a>';
+    const media=image ? '<img src="'+escapeHTML(image)+'" alt="'+title+'" loading="lazy" decoding="async"><span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm border border-white/60 px-2.5 py-1 rounded-full font-mono text-[9px] uppercase tracking-widest text-berry-600"><i class="ph-fill ph-sparkle"></i> Heritage</span>' : '<div class="insight-fallback absolute inset-0"><i class="ph-fill ph-notebook text-4xl"></i></div>';
+    return '<a class="insight-card group" href="'+escapeHTML(href)+'" target="_blank" rel="noopener noreferrer"><div class="insight-media">'+media+'</div><div class="p-6 flex flex-col"><div class="flex items-center justify-between gap-3 mb-3"><span class="font-mono text-[10px] uppercase tracking-[.16em] text-berry-500">'+category+'</span><span class="font-mono text-[10px] text-ink-mute whitespace-nowrap">'+date+'</span></div><h3 class="font-display font-bold text-xl text-ink leading-tight mb-3 group-hover:text-berry-600 transition">'+title+'</h3><p class="text-sm text-ink-soft leading-relaxed">'+excerpt+'</p><span class="inline-flex items-center gap-2 mt-5 text-xs font-semibold uppercase tracking-[.14em] text-heritage-600">Read article <i class="ph-bold ph-arrow-up-right transition-transform group-hover:translate-x-0.5"></i></span></div></a>';
   }).join("");
-  grid.querySelectorAll('.insight-media img').forEach(img=>img.addEventListener('error',()=>{ img.parentElement.classList.add('insight-fallback'); img.insertAdjacentHTML('beforeend','<i class="ph-fill ph-notebook text-4xl"></i>'); img.remove(); },{once:true}));
+  track.querySelectorAll('.insight-media img').forEach(img=>img.addEventListener('error',()=>{img.parentElement.classList.add('insight-fallback');img.insertAdjacentHTML('beforeend','<i class="ph-fill ph-notebook text-4xl"></i>');img.remove();},{once:true}));
+  const update=()=>{
+    const max=Math.max(0,track.scrollWidth-track.clientWidth), left=track.scrollLeft, canPrev=left>8, canNext=left<max-8;
+    if(prev)prev.disabled=!canPrev; if(next)next.disabled=!canNext;
+    const cards=[...track.querySelectorAll(".insight-card")];
+    let idx=0, best=Infinity; cards.forEach((c,i)=>{const d=Math.abs(c.offsetLeft-left); if(d<best){best=d;idx=i;}});
+    status.textContent=`${idx+1} / ${cards.length} · ${cards.length} heritage articles`;
+  };
+  const step=()=>Math.min(track.clientWidth*.88,track.querySelector(".insight-card")?.getBoundingClientRect().width+20||520);
+  prev?.addEventListener("click",()=>track.scrollBy({left:-step(),behavior:"smooth"}));
+  next?.addEventListener("click",()=>track.scrollBy({left:step(),behavior:"smooth"}));
+  track.addEventListener("scroll",update,{passive:true});
+  track.addEventListener("wheel",e=>{ if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){ e.preventDefault(); track.scrollLeft+=e.deltaY; } },{passive:false});
+  track.addEventListener("keydown",e=>{ if(e.key==="ArrowRight"){e.preventDefault();track.scrollBy({left:step(),behavior:"smooth"});} if(e.key==="ArrowLeft"){e.preventDefault();track.scrollBy({left:-step(),behavior:"smooth"});} });
+  requestAnimationFrame(update);
 }
 async function loadHeritageInsights(){
   try{
     const res=await fetch("https://raw.githubusercontent.com/AnggaConni/HorizonScanning/main/blog/data.json",{cache:"no-store"}); if(!res.ok) throw new Error("Horizon Scan blog data unavailable");
     const items=await res.json();
     const keywordRx=/intangible cultural heritage|living heritage|cultural heritage|safeguard|safeguarding|UNESCO|heritage &/i;
-    const relevant=(Array.isArray(items)?items:[]).filter(item=>item&&keywordRx.test([item.title,item.excerpt,item.category].filter(Boolean).join(" "))).sort((a,b)=>(Date.parse(b.date||"")||0)-(Date.parse(a.date||"")||0)).slice(0,3);
+    const relevant=(Array.isArray(items)?items:[]).filter(item=>item&&keywordRx.test([item.title,item.excerpt,item.category].filter(Boolean).join(" "))).sort((a,b)=>(Date.parse(b.date||"")||0)-(Date.parse(a.date||"")||0));
     renderInsightCards(relevant);
   }catch(error){
-    console.warn('Heritage insights unavailable:',error); const grid=document.getElementById('ich-insights-grid'), empty=document.getElementById('ich-insights-empty'); if(grid) grid.innerHTML=''; if(empty){ empty.textContent='The editorial feed is temporarily unavailable. Visit Horizon Scan for the latest articles.'; empty.classList.remove('hidden'); }
+    console.warn('Heritage insights unavailable:',error); const track=document.getElementById('ich-insights-track'), empty=document.getElementById('ich-insights-empty'); if(track) track.innerHTML=''; if(empty){ empty.textContent='The editorial feed is temporarily unavailable. Visit Horizon Scan for the latest articles.'; empty.classList.remove('hidden'); }
   }
 }
 loadFeaturedHeritage();
@@ -1448,53 +1479,3 @@ const CB_DATA = {
     <h4>The two main lists</h4>
     <ul>
       <li><strong>Representative List (RL):</strong> ensures visibility and awareness of ICH and encourages dialogue.</li>
-      <li><strong>Urgent Safeguarding List (USL):</strong> for elements whose viability is at severe risk; requires a robust, funded safeguarding plan.</li>
-    </ul>
-    <h4>Common pitfalls</h4>
-    <p>Files are frequently returned when they use inappropriate vocabulary — "authentic", "original", "unique in the world" — or when they fail to demonstrate genuine community participation in preparing the nomination itself.</p>`},
-  sdg:{ title:"ICH & Sustainable Development", icon:"ph-plant", color:"#2F7A6A", bg:"#EAF5F2", content:`
-    <p>Living heritage is a powerful and frequently overlooked driver of the UN 2030 Agenda.</p>
-    <h4>Key intersections</h4>
-    <ul>
-      <li><strong>Inclusive social development:</strong> traditional health practice, food security systems, education.</li>
-      <li><strong>Environmental sustainability:</strong> ecological knowledge, biodiversity, resilience to natural hazards.</li>
-      <li><strong>Inclusive economic development:</strong> income from craftsmanship and ethically managed cultural tourism.</li>
-      <li><strong>Peace and security:</strong> rituals and social practices that resolve disputes and rebuild cohesion.</li>
-    </ul>
-    <h4>Why it matters</h4>
-    <p>Development policy that ignores cultural context tends to fail. Integrating ICH ensures economic progress does not come at the cost of cultural identity.</p>`},
-  gender:{ title:"Gender and ICH", icon:"ph-gender-intersex", color:"#C2542D", bg:"#FBEFEA", content:`
-    <p>Gender is fundamental to how heritage is created, practised and transmitted. This module explores how to navigate those dynamics ethically.</p>
-    <h4>Understanding the dynamics</h4>
-    <ul>
-      <li><strong>Roles in transmission:</strong> different genders often hold different knowledge and play complementary roles in rituals and crafts.</li>
-      <li><strong>Human rights compatibility:</strong> safeguarding must never justify discrimination — the Convention protects only ICH compatible with international human rights instruments.</li>
-      <li><strong>Evolution:</strong> gender roles inside living traditions adapt over time; plans should support communities in negotiating that change organically.</li>
-    </ul>
-    <h4>Why it matters</h4>
-    <p>Gender-blind plans can inadvertently marginalise key practitioners or freeze a living tradition into an outdated, discriminatory form.</p>`}
-};
-
-let lastFocused = null;
-function openCBModal(id){
-  const d = CB_DATA[id]; if(!d) return;
-  lastFocused = document.activeElement;
-  document.getElementById('cb-modal-title').textContent = d.title;
-  document.getElementById('cb-modal-content').innerHTML = d.content;
-  const ico = document.getElementById('cb-modal-icon');
-  ico.className = 'ph-fill ' + d.icon;
-  ico.style.color = d.color;
-  document.getElementById('cb-modal-icon-container').style.background = d.bg;
-
-  const m = document.getElementById('cb-modal'), w = document.getElementById('cb-modal-wrapper');
-  m.classList.remove('hidden'); m.classList.add('flex');
-  document.body.style.overflow = 'hidden';
-  requestAnimationFrame(() => { m.classList.remove('opacity-0'); w.classList.remove('scale-95'); });
-  m.querySelector('button').focus();
-}
-function closeCBModal(){
-  const m = document.getElementById('cb-modal'), w = document.getElementById('cb-modal-wrapper');
-  m.classList.add('opacity-0'); w.classList.add('scale-95');
-  document.body.style.overflow = '';
-  setTimeout(() => { m.classList.add('hidden'); m.classList.remove('flex'); }, 300);
-  if(lastFocused) lastFocused.focus();
