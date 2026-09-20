@@ -949,41 +949,97 @@ async function doPrint() {
 
              const mapElements = document.querySelectorAll('[id^="map-"]');
              let mapsToLoad = mapElements.length;
+             const printMaps = [];
 
-             if (mapsToLoad === 0) { setTimeout(() => window.print(), 800); return; }
+             const schedulePrint = () => {
+               if (schedulePrint.done) return;
+               schedulePrint.done = true;
 
-             let loadCheckFired = false;
-             const tryPrint = () => {
-                 if (!loadCheckFired && mapsToLoad <= 0) {
-                     loadCheckFired = true;
-                     setTimeout(() => window.print(), 1000); 
-                 }
+               const paintAndPrint = () => {
+                 printMaps.forEach(({ map }) => {
+                   try {
+                     map.invalidateSize(false);
+                     map.eachLayer(layer => {
+                       if (layer && typeof layer.redraw === 'function') layer.redraw();
+                     });
+                   } catch(e) {}
+                 };
+
+                 requestAnimationFrame(() => {
+                   paintAndPrint();
+                   requestAnimationFrame(() => {
+                     paintAndPrint();
+                     setTimeout(() => window.print(), 2200);
+                   });
+                 });
+               };
+
+               if (document.fonts && document.fonts.ready) {
+                 document.fonts.ready.then(paintAndPrint).catch(paintAndPrint);
+               } else {
+                 paintAndPrint();
+               }
              };
+
+             if (mapsToLoad === 0) {
+               setTimeout(schedulePrint, 1200);
+             }
 
              mapElements.forEach(el => {
                const lat = parseFloat(el.getAttribute('data-lat')) || 0;
                const lon = parseFloat(el.getAttribute('data-lon')) || 0;
                const map = L.map(el.id, { zoomControl: false, fadeAnimation: false, zoomAnimation: false, attributionControl: false }).setView([lat, lon], 4);
+               printMaps.push({ map, el });
+
                const layer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
                  maxZoom: 18,
                  maxNativeZoom: 19,
                  attribution: 'Tiles &copy; Esri — Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, METI, Esri Japan, METI, Esri China (Hong Kong), Esri Korea, Esri (Thailand), NGCC, © OpenStreetMap contributors, and the GIS User Community'
                });
-               
-               layer.on('load', () => { mapsToLoad--; tryPrint(); });
+
+               let layerSettled = false;
+               const settle = () => {
+                 if (layerSettled) return;
+                 layerSettled = true;
+                 mapsToLoad--;
+                 if (mapsToLoad <= 0) schedulePrint();
+               };
+
+               layer.on('load', settle);
+               layer.on('tileerror', settle);
                layer.addTo(map);
 
                mapDots.forEach(pos => {
                  if (Math.abs(pos.lat-lat)>0.01 || Math.abs(pos.lon-lon)>0.01) {
-                   L.circleMarker([pos.lat, pos.lon], { radius: 2.5, color: '#B8522A', fillColor: '#B8522A', fillOpacity: 0.28, weight: 0 }).addTo(map);
+                   L.circleMarker([pos.lat, pos.lon], {
+                     radius: 2.5,
+                     color: '#B8522A',
+                     fillColor: '#B8522A',
+                     fillOpacity: 0.28,
+                     weight: 0
+                   }).addTo(map);
                  }
                });
 
-               const icon = L.divIcon({ className: '', html: '<div style="width:13px;height:13px;border-radius:50%;background:#B8522A;border:2px solid white;box-shadow:0 0 4px rgba(0,0,0,0.3)"></div>', iconSize: [13,13], iconAnchor: [6,6] });
+               const icon = L.divIcon({
+                 className: '',
+                 html: '<div style="width:13px;height:13px;border-radius:50%;background:#B8522A;border:2px solid white;box-shadow:0 0 4px rgba(0,0,0,0.3)"></div>',
+                 iconSize: [13,13],
+                 iconAnchor: [6,6]
+               });
                L.marker([lat,lon], { icon }).addTo(map);
+
+               // Force Leaflet to recalculate the map surface before capture.
+               requestAnimationFrame(() => {
+                 try { map.invalidateSize(false); } catch(e) {}
+               });
              });
 
-             setTimeout(() => { if(!loadCheckFired) { mapsToLoad = 0; tryPrint(); } }, 6000);
+             // Safety timeout: don't wait forever for an external map tile.
+             setTimeout(() => {
+               mapsToLoad = 0;
+               schedulePrint();
+             }, 12000);
           };
         <\/script>
       </body>
