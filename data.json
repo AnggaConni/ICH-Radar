@@ -27038,16 +27038,273 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7a9ef14a",
+      "element_name": "Acoma Pueblo Pottery",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://www.skycity.org/images/uploads/Acoma-Pottery-Main.jpg",
+      "source_urls": [
+        "https://www.skycity.org/experience/acoma-pottery",
+        "https://www.savingplaces.org/places/acoma-pueblo",
+        "https://en.wikipedia.org/wiki/Acoma_Pueblo",
+        "https://www.mirappraisal.com/the-history-and-legacy-of-acoma-pottery",
+        "https://www.adobegallery.com/artist/Acoma_Pueblo_Pottery",
+        "https://www.chimayotrading.com/acoma-pottery",
+        "https://www.pueblodirect.com/acoma-pottery-native-american-jewelry",
+        "https://www.alltribes.com/acoma-pottery",
+        "https://www.colorado.edu/cumuseum/2021/11/09/family-tradition-acoma-pottery-cu-and-lewis-family"
+      ],
+      "scraped_at": "2026-09-21T02:15:57.431509Z",
+      "location": {
+        "country": "United States",
+        "provinces": [
+          "New Mexico"
+        ],
+        "lat": 34.5802074,
+        "lng": -105.996047
+      },
+      "resume_analisa": {
+        "description": "Acoma Pueblo pottery is a traditional Native American craft renowned for its exceptionally thin walls, fluted rims, and intricate geometric designs. These unglazed vessels are typically adorned with stark black and white or muted warm colors, and were historically functional, serving purposes such as storage, cooking, and ceremonial use. The Acoma Pueblo, also known as 'Sky City,' is one of the oldest continuously inhabited communities in North America, with a history of pottery making dating back over 1,000 years.",
+        "cultural_significance": "Acoma pottery is deeply intertwined with the identity, spirituality, and economy of the Acoma people, with techniques and knowledge passed down through generations. The designs are profoundly influenced by the natural world and the cycle of life, water, and the sky, often incorporating symbols representing rain, lightning, thunderclouds, and mountains. The Pueblo of Acoma actively preserves this heritage through its Historic Preservation Office, which works to protect and promote traditional skills, including pottery making.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Native American pottery",
+          "Pueblo art",
+          "traditional craftsmanship",
+          "New Mexico culture",
+          "indigenous heritage",
+          "community preservation",
+          "coil and scrape method"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "Clay (collected from specific Acoma lands)",
+          "Finely ground shards of old pottery (temper)",
+          "Water",
+          "White earth slip (e.g., Kaolin, sandstone dirt)",
+          "Smooth stones (for polishing)",
+          "Natural pigments (from minerals, plants, other clays)",
+          "Paintbrushes (made from yucca fibers or human hair)",
+          "Dried cow patties or other fuel (for traditional firing)",
+          "Metal grid and broken pottery pieces (for traditional firing dome)"
+        ],
+        "step_by_step": [
+          "**Gathering Clay**: Clay is meticulously collected from specific, limited sources within the Acoma lands.",
+          "**Preparing Clay**: The collected clay is dried, then soaked in water to remove impurities, and further cleaned by sieving.",
+          "**Adding Temper**: Finely ground shards of old pottery are incorporated into the clay as a temper, which helps to reduce shrinkage and prevent cracking during the drying and firing processes.",
+          "**Forming (Coil and Scrape Method)**: The vessels are hand-formed using the traditional 'coil and scrape' method, which allows for the creation of their characteristic thin yet sturdy walls. While traditional methods are preferred, some modern potters may use molds.",
+          "**Drying**: The formed pottery pieces are carefully allowed to dry.",
+          "**Applying Slip**: A white earth slip, often derived from Kaolin or sandstone dirt and strained through cloth, is applied to the dried pottery.",
+          "**Polishing**: The surfaces of the pottery are then polished using smooth stones to achieve a refined finish.",
+          "**Painting Designs**: Intricate designs are meticulously hand-painted using natural pigments. These designs often include geometric patterns, animal motifs (such as parrots and deer), rainbow bands, and symbols representing rain, lightning, thunderclouds, and mountains. Traditional colors are orange and black, though contemporary artists may introduce new, vibrant colors.",
+          "**Firing**: Traditionally, the pottery is fired at high temperatures using dried cow patties or other natural fuels. A dome for firing is often constructed using a metal grid and broken pottery pieces. Modern artists may sometimes use kilns for firing."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "United States",
+            "element_name": "Laguna Pueblo Pottery",
+            "relationship_reason": "Shares stylistic similarities, particularly in graceful, thin-walled vessels with intricate geometric designs, and historically shared sales venues."
+          },
+          {
+            "country": "United States",
+            "element_name": "Other Southwestern Pueblo Pottery Traditions (e.g., Mimbres, Zia, Hopi)",
+            "relationship_reason": "Part of a broader, continuous ceramic tradition among Pueblo peoples in the American Southwest, with distinct regional styles and influences, such as Mimbres figures."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-d8b4276c",
+      "element_name": "Mummering (or Mumming, Janneying)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.heritage.nf.ca/articles/arts/mummering-janneying.php&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.heritage.nf.ca/articles/arts/mummering-janneying.php",
+        "https://www.heritage.nf.ca/articles/arts/performing-arts.php",
+        "https://mummersfestival.ca/mummering-in-nl/",
+        "https://www.anhistorianabouttown.com/what-is-mummering/",
+        "https://www.newfoundlandlabrador.com/blog/the-many-mummers-of-newfoundland",
+        "https://www.heritagenl.ca/what-we-do/intangible-cultural-heritage/mummering/",
+        "https://www.facebook.com/stjohnsnl/posts/newfoundlands-mummering-tradition-and-historythis-is-its-story-mummering-origina/10158869818817743/",
+        "https://en.wikipedia.org/wiki/Mummering",
+        "https://christmasphere.com/mummering-newfoundland-christmas-folk-tradition/",
+        "https://liveruralnl.com/2011/01/06/a-brief-history-of-mummering/",
+        "https://www.macleans.ca/culture/masks-mops-and-ugly-sticks-a-look-at-newfoundlands-tradition-of-mummering/",
+        "https://www.theguardian.com/world/gallery/2016/dec/21/the-winter-tradition-of-mummering-newfoundland-canada-in-pictures",
+        "https://www.fodors.com/world-parts/canada/newfoundland-and-labrador/experiences/news/are-mummers-allowed-in-the-newfoundland-holiday-tradition-where-disguised-visitors-drink-dance-and-swing-your-granny"
+      ],
+      "scraped_at": "2026-09-21T02:16:39.435302Z",
+      "location": {
+        "country": "Canada",
+        "provinces": [
+          "Newfoundland and Labrador"
+        ],
+        "lat": 53.8217327,
+        "lng": -61.2295532
+      },
+      "resume_analisa": {
+        "description": "Mummering, also known as mumming or janneying, is a Christmastime house-visiting tradition primarily practiced in Newfoundland and Labrador, Canada. Groups of friends or family members disguise themselves using household items, alter their voices and mannerisms, and visit homes in their community. The hosts attempt to guess the identities of the masked visitors, who entertain with dancing, music, and jokes. Once identified, the mummers remove their masks and share in food and drink with the hosts before moving on to the next house.",
+        "cultural_significance": "Mummering is a significant cultural practice that reaffirms community identity and provides a unique form of social interaction during the winter holiday season. It allows for a temporary blurring of social conventions and hierarchies, fostering bonds between hosts and guests. The tradition is deeply tied to the sense of identity and fun-loving spirit of Newfoundland and Labrador. While historically it had darker, sometimes violent, aspects, it has largely evolved into a jovial and cherished custom, partly revitalized by popular culture like 'The Mummer's Song'.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Christmas tradition",
+          "house-visiting",
+          "disguise",
+          "community bonding",
+          "folk tradition",
+          "Newfoundland culture",
+          "social ritual",
+          "performing arts"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Social Practice / Festive Event",
+        "materials_and_tools": [
+          "Costumes: Made from any available household items such as old clothes, lace curtains, pillowcases, stuffed bras, overalls, red union underwear, quilts, and cardboard boxes. The goal is to be unrecognizable, lumpy, and misshapen. Cross-dressing is a common element.",
+          "Masks: Often homemade from pillowcases (with cut-out holes for eyes, nose, and mouth), cardboard, or beer boxes. Faces may also be painted.",
+          "Voice Disguise: Techniques include speaking while inhaling ('janney talk'), using high-pitched or low-pitched voices, remaining mute, or mimicking animal sounds.",
+          "Props: Common props include knotted-wood sticks used as canes, brooms, or mops. Some mummers carry 'ugly sticks,' which are homemade musical instruments typically made from a four-foot stick with bottle caps, tin cans, small bells, and a boot attached, played by thumping and striking with a notched stick."
+        ],
+        "step_by_step": [
+          "**Preparation (Mummering Up)**: Groups of friends or family members gather to create their disguises. They use whatever household items they can find to make themselves unrecognizable, often altering their body shape, size, and gender presentation.",
+          "**House Visit**: Mummers visit several homes within their community, typically unannounced, during the twelve days of Christmas (December 26 to January 6). They knock on the door and traditionally ask, 'Any mummers 'lowed in?'",
+          "**Performance and Interaction**: If welcomed inside, the mummers engage in various forms of entertainment. This can include dancing (often a vigorous stomping step dance, sometimes involving brooms or mops as partners, or pulling hosts into the dance), singing, playing music (with instruments like the 'ugly stick'), telling jokes, reciting poems, or acting out short scenes. They maintain their disguise by distorting their voices and altering their walk and mannerisms.",
+          "**The Guessing Game**: The hosts of the house attempt to guess the identities of the disguised mummers. They may interact with the mummers by poking, prodding, or asking questions to try and deduce who they are.",
+          "**Reveal and Socialization**: Once a mummer's identity is correctly guessed, they remove their mask. Following the reveal, the hosts typically offer the mummers food and drink, such as Christmas cake and homemade blueberry wine. The group then socializes together before the mummers suit up again and proceed to the next house."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "England",
+            "element_name": "Mumming plays, Christmas house-visiting traditions",
+            "relationship_reason": "Mummering in Newfoundland and Labrador is an old Christmas custom brought over by English settlers, tracing its origins back hundreds of years to similar practices in England."
+          },
+          {
+            "country": "Ireland",
+            "element_name": "Mumming traditions",
+            "relationship_reason": "The tradition was also brought to Newfoundland by Irish immigrants, sharing common roots with Irish mumming practices."
+          },
+          {
+            "country": "United States",
+            "element_name": "Mummers Parade (Philadelphia Mummers)",
+            "relationship_reason": "While distinct in its modern form (primarily a parade), the Philadelphia Mummers share the 'mummering' name and the concept of costumed public performance, indicating a shared historical lineage."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-fa560e1c",
+      "element_name": "Transhumance and the Treaty of Astun Pass (Traité de la Vesiau)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5nAB7kSXQdPWOSxaW5WFcRd00KA_9gab0wRpEx4R0LEFb__p6MS2X09ZsPJ1LzKmhyPqMrvmgb6G3KMp8HxUdVR0m5VM84l474yaGWw6u_s4u1VVmAB1oM0niF3-IrtVQNspdQby-RME50XH4zjSu&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5nAB7kSXQdPWOSxaW5WFcRd00KA_9gab0wRpEx4R0LEFb__p6MS2X09ZsPJ1LzKmhyPqMrvmgb6G3KMp8HxUdVR0m5VM84l474yaGWw6u_s4u1VVmAB1oM0niF3-IrtVQNspdQby-RME50XH4zjSu",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvZRXj1DN-8RE8TBKDs2b_ffyyan36nbEHCEZTq2lDbv8NACyZ4AimXcaaIhuyn8W2TIo3Xa9ervLcccsFr4nmcGhjcdygPRIyG2MaUMr-sMerg379lT3IdFdt8EEsaozFOHvpur3d8P99zpSSluJ0Lbntm3Azkjw=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHw8KYxlQkrDSBbszqHLm_FP5yQrdr0qy0GnTO9YfIx7fFJQklOfELNmqHODr3OBLHP75vNU2X2O7SlqyqkKtq3Ey6AYUTOtgRC9S6k1UxnZIDL4rDKVDMalvL-WAf1Ff-m6dUW0vl7cSlJKWsUuq1C1vIUTODMk9MiYbGSrn0ircDMwwbHiwXQHHIspQjpZXAb8NOf1A0NkyCmrbaS4X-JdPZI07oMXx1fT-w=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAe-u1PrSCtoQXz2ON87-xonLZ2mXs79kL0OkJSKoEPshSi4ZKRzB6cDoADXbh35YxmXk2ztdjb_Tb7ps4QKHFS2zm1gvJ9bqMNgZIY2sZTQA2gFBToiRkhkZgnAKuT1qaBY3T4KF6WjM7NtEXFad9DbXLqoX6dQjJhYiMlHhvN2OExP2NVkcCbhBhPAZXGAazPy5wpzwSQmcaIG1l_ENERpbf9ftNPtJGxie0WHwcSp-0FQ==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzcG9xtt4ENCEjTvThx7rUfBGKNRboHyowDVcNEOFmb_E6hIwj_n-rV29vIEkDvl01Dxe4n8FkmOU1JyD8VxzO86MZE4VuxPlJ7aZ7u1L47aUct8pP3ze-1jvDMZXPHPkhu15E8_hFR-DwXAuhMQjG_er3WhgM1CMA1awK7kDAesmMzts_W9riHftbTIyPFBMXHUL-9PcoGfc2emvdgrG40WZ3Yg==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDuqeATS9Q-hjB_Fey9N_ReEllAcqVg5cPlKvL0faEXdhjgb9ZY30hHi9zGCkywaEpYf1GA_I8sETq8crFzoeiVQkrcrQH0kReHJhqA4HHt50i0D0-smYXJN9WpRVIOx4LFpbW91o45ltXYxAyNjt0U0Psv67jw_nqN7HLVB9Xrs6i3mzlGpaomxq1xkIsdYSv6X_DNJhjhiosnFSu7ixwPYoXYJMR8w==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrO0Kceljne8uCnontosu430IiqHTPqWHWLrcN5eZ906GM2QjwsL6OnPG6NEvlDaj-Kl1F0LLzT0cXTaDozFoOb3RJKzyxdbAbeOaEdGeiROSblNfM84rNjL66vDloslzaVJofi4KmJA9lFly0oTEWGhXO1o14hvlTnkuEe1YsfEJ7hHHREDOfc1Cy2a0=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMWCmdPlars6rqWje8xXPxWd2bKfSvGFPkGzTBAV7euRUn8-e__nr4_gsjFlKYy4Abn5pJ2mBFiuW1OIHAcUrH7nP5BuKbJcdcpAkgI_lA22CYLDgw1UVPuThibx454GK_xJsFuaDEVz-sCVMTo5yXchokut7Olfmt2ygcamIeH5TewfHj3KmeUCQdM000qr3R6fAd",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzlFCOj0Td1Re30uj5vYTMt0gx8Je_yDATyQEKEkB5IEsAT6k5f8mFNsMoCJp6wZCVO9PWXo2WI5fTBrpqSoZJAEowShoh2v8jVhn0vB1qyCni9NkqC6XqIBaX6IXoPmWLl86aRUDt9voxO3ua4YOE_oTJ1Xea6w==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdg5WAHyfJEqyfbvKnjQ_5C78z-3JA6Bsw8Jt7FhwfX_iJFeW5LNcDG9dpHWAU_-9khiD6rcBehOoIz8CcfoAVic3i3HCJe1SvQyYN7ZPv7VMoUw6h1liFQpvDIjEl2j2y7I4jTtFZr6IwQWlE8zh9Jxu45MS9GMDIRjVanM89KBxs030NVeU8F61tiKM8F1cVwIap9b5izveWBiPpEnWijFHrTBTaNgs==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvb0uZsEDezn1Gs5qHsLnt9O3Rd9gzMbL9OAqeoXufgoqd9j8OvkYXuteUp9VZrJ3Kro4GZ3nFO7EE1dTHU7WDjp83lFCtpno5aKucRybp6W2kL2GUbAXCEMLBQWVLT4Nz_iYh4wpLP0ylVs-PfNq4nylIxmhJT4EoqZB8lZ_LzEXecNTguMoX77eIOd1H",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbJt5sHr876BHVOnOPbODWuzlE0Q5qlSHQJ5sUbWTuML-1czTeYwYK2sA-ba2t43rH3fYzg9W4ajhCBIZw5UvekDJ42mEqpFR7X1Ptwhb0jNNYmg_-bBi_P7P9AuGuHB2F3JdQhh_kGGg5eMvLogfhBUVM2dMttSRlcjUou6xnRKaTV5vJJHo3_lpi5tx9tvmhFphca6A2XoWIUXcxtH2LUA4WQdxucfMrS_CCTW_ZB2myQGs=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKo-IG4FY76Dqug1LJiv0lGQC4TM3bR-URYkwFS09IvsWHrns3AWJ1Pym8unegYTYXse8FcHNYIg7_TPsc7BkwvGcvsM9micgVx2Q9WM4QxwtR8YpOhYabF3V-D2OXVS_3spP7Eu8Jmcf8LjEnuMPWMmVLMR-oG3-Enj7WBIXhlyGsgyS8gEMrBuq25CpsK1V3RaRsCIHZMRN_4QJSCm-_QnQ4VGhGCg25p52CQWqlKYsHqfHiV-4lTZLAo6wuB5DROC9kMomTnmYIEOWSTHqGGtIj889ez96IA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEttakA_7axZnasM2N6sc7H7k08Vk9zlKyOLdctb9297BFqDcQf25vFfWs-Hu2szt_lYmpH1WY9fsQLWuiQ8Umm6MZWdh_outg2T07_MLly4V7HHaL_ot3Hehp-UEdmXOVgDbh4Y8FTvk1dzSvMQFYewQD0yBOT300xRKVAxrkkJofVkO_9HoVT-V0JJV2ti4QVjv0n2xcYyXHIH9cOYeYLsKp4umPK"
+      ],
+      "scraped_at": "2026-09-21T02:17:11.096712Z",
+      "location": {
+        "country": "France",
+        "provinces": [
+          "Nouvelle-Aquitaine",
+          "Aragon (Spain)"
+        ],
+        "lat": 45.4039367,
+        "lng": 0.3756199
+      },
+      "resume_analisa": {
+        "description": "Transhumance is the seasonal movement of livestock, primarily sheep, cattle, and horses, between lower wintering grounds and higher mountain pastures (estives) in the Pyrenees. This ancient practice is intertwined with the 'Traité du port d'Astun' (Treaty of Astun Pass), also known as 'Traité de la Vesiau' (Treaty of Vesiau), a nearly millennium-old agreement between French and Spanish communities. This treaty, dating back to 1131, grants French shepherds from the Aspe Valley the right to graze their flocks on Spanish territory in Astun, which belongs to the municipality of Jaca. The treaty is formally renewed each year through an official international ceremony at the Somport Pass, attended by the mayors of Jaca (Spain) and the French communes of Urdos, Cette-Eygun, and Etsaut. This ceremony involves recognizing border markers, signing the treaty, and engaging in convivial exchanges of gifts, songs, and dances, symbolizing the enduring friendly ties and solidarity between these cross-border communities.",
+        "cultural_significance": "This practice is a deep-rooted tradition that has profoundly shaped the landscapes and cultural heritage of the Pyrenees for centuries. It embodies a profound connection between humans, animals, and nature, fostering intergenerational knowledge transfer among farmers, shepherds, and local communities. The annual renewal of the Treaty of Astun Pass is a significant social ritual and festive occasion that reinforces the historical bonds and cooperation between the French and Spanish populations. Transhumance is recognized as a manifestation of respectful human-environment interaction, promoting the sustainable use of natural resources and facilitating cultural exchange between distant rural communities. In December 2023, UNESCO inscribed transhumance on its Representative List of the Intangible Cultural Heritage of Humanity, acknowledging its cultural value, importance for biodiversity and ecosystems, and its role in strengthening communities and cultural identity.",
+        "drr_relevance": true,
+        "drr_mechanism": "Transhumance significantly contributes to ecological resilience and disaster risk reduction. By rotating pastures, it prevents overgrazing, thereby maintaining soil health and ecosystem diversity. The grazing activities of livestock help manage landscapes by preventing scrub encroachment, which maintains open areas vital for various plant and animal species and reduces fuel load. This natural vegetation management is crucial in preventing and mitigating forest fires. Furthermore, transhumance is an adaptive strategy that optimizes the use of varying forage availability across seasons and elevations, enhancing the climatic resilience of Mediterranean landscapes, particularly in the face of drought risks and climate change. It promotes the sustainable use of natural resources and reduces reliance on artificial inputs.",
+        "gemini_tags": [
+          "Transhumance",
+          "Pastoralism",
+          "Cross-border tradition",
+          "Pyrenees",
+          "France",
+          "Spain",
+          "Treaty of Astun Pass",
+          "Ecological resilience",
+          "Cultural heritage",
+          "Community practice",
+          "Ritual",
+          "Sustainable agriculture"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Community Practice / Seasonal Livestock Migration and Diplomatic Ritual",
+        "materials_and_tools": [
+          "Livestock (sheep, cattle, horses)",
+          "Shepherds",
+          "Herding dogs",
+          "Traditional pastoral routes (cañadas, carraires)",
+          "Mountain pastures (estives)",
+          "Winter valleys",
+          "Shepherd huts (cabanes)",
+          "Boundary markers (bornes)",
+          "Mayors and community representatives for the treaty ceremony"
+        ],
+        "step_by_step": [
+          "**Spring (May/June):** Shepherds, often accompanied by their families and dogs, guide their herds from the lower wintering grounds in the valleys up to the high mountain pastures (estives). This migration can last several days, traversing challenging terrains like steep paths, forests, and flower-rich meadows.",
+          "**Summer (June-September/October):** The livestock graze freely in the abundant high-altitude pastures. Shepherds remain in the mountains, tending to the animals, while farmers in the valleys focus on harvesting hay and preparing fodder for the upcoming winter months.",
+          "**Annual Treaty Renewal (August):** Around August (historically August 15th or 24th), an official international ceremony takes place at the Somport Pass. The mayors of Jaca (Spain) and the French communes of Urdos, Cette-Eygun, and Etsaut gather to renew the 'Traité de la Vesiau' (Treaty of Astun Pass). This formal ritual includes recognizing the border markers, signing the treaty, and exchanging symbolic gifts such as bouquets of flowers and local cheeses. The event is often accompanied by convivial gatherings featuring songs and dances from Aragonese and Béarnais cultural groups, celebrating the enduring cross-border cooperation.",
+          "**Autumn (September/October-November):** As the first cold weather arrives, the herds are guided back down from the mountain pastures to the valleys, where they will spend the winter.",
+          "**Winter:** Livestock are kept in the valleys, sustained by the fodder and hay prepared during the summer months."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Spain",
+            "element_name": "Transhumance in the Pyrenees",
+            "relationship_reason": "The transhumance practice and the Treaty of Astun Pass directly involve communities and territories in both France and Spain, representing a shared historical and ongoing cultural practice that transcends national borders. The practice itself is recognized by UNESCO as Intangible Cultural Heritage of Humanity, encompassing multiple European countries including France and Spain."
+          },
+          {
+            "country": "France",
+            "element_name": "Transhumance in the Pyrenees",
+            "relationship_reason": "The transhumance practice and the Treaty of Astun Pass directly involve communities and territories in both France and Spain, representing a shared historical and ongoing cultural practice that transcends national borders. The practice itself is recognized by UNESCO as Intangible Cultural Heritage of Humanity, encompassing multiple European countries including France and Spain."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-19T02:11:21.968513Z",
-    "total_ich_elements": 304,
-    "complete_records": 304,
+    "generated_at": "2026-09-21T02:17:53.394143Z",
+    "total_ich_elements": 307,
+    "complete_records": 307,
     "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 107,
-      "Social Practices & Rituals": 58,
+      "Traditional Craftsmanship": 108,
+      "Social Practices & Rituals": 60,
       "Culinary Traditions": 48,
       "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 26,
