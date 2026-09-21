@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T20:54:17.217634+00:00",
+  "generated_at": "2026-09-21T05:04:19.959533+00:00",
   "inventory": [
     {
       "id": "ich-2c75579d",
@@ -703,6 +703,15 @@
     }
   ],
   "articles": [
+    {
+      "id": "66",
+      "title": "Guyub as Living Heritage: Reconciliation, Social Cohesion, and the Everyday Work of Staying Together",
+      "excerpt": "Guyub is more than gathering. This article explores how Javanese relational practices such as rukun, tepa slira, gotong royong and musyawarah can be understood as living heritage: everyday social knowledge that helps people remain in relationship, navigate disagreement, repair trust and transmit ways of living together across generations.",
+      "category": "Living Heritage, Javanese Culture & Reconciliation",
+      "date": "September 21, 2026",
+      "imageUrl": "thum/rukun.png",
+      "slug": "guyub-as-living-heritage-reconciliation-social-cohesion-and-the-everyday-work-of-staying-together"
+    },
     {
       "id": "44",
       "title": "Why Intangible Cultural Heritage Fascinates Me: A Story About Human Behavior, Not Just Tradition",
