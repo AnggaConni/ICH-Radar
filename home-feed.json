@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T05:04:19.959533+00:00",
+  "generated_at": "2026-09-21T12:57:02.748497+00:00",
   "inventory": [
     {
       "id": "ich-2c75579d",
@@ -711,6 +711,15 @@
       "date": "September 21, 2026",
       "imageUrl": "thum/rukun.png",
       "slug": "guyub-as-living-heritage-reconciliation-social-cohesion-and-the-everyday-work-of-staying-together"
+    },
+    {
+      "id": "67",
+      "title": "Living Heritage That Teaches Mental Models for Inclusive Preservation",
+      "excerpt": "What can Husnuzan, Tepa Selira and other living-heritage practices teach us about divergent and convergent reasoning? A deep exploration of why some people diverge first, how hidden variables change our models, why knowledge-zero makes divergence expensive, and how to train a disciplined Diverge → Investigate → Converge → Close loop.",
+      "category": "Living Heritage & Mental Models",
+      "date": "September 21, 2026",
+      "imageUrl": "thum/mentalmodel.png",
+      "slug": "living-heritage-that-teaches-mental-models-for-inclusive-preservation"
     },
     {
       "id": "44",
