@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T05:06:04.528667+00:00",
+  "generated_at": "2026-09-22T11:46:40.417242+00:00",
   "inventory": [
     {
       "id": "ich-2c75579d",
@@ -711,6 +711,15 @@
       "date": "September 22, 2026",
       "imageUrl": "thum/gotong.png",
       "slug": "living-heritage-at-work-how-gotong-royong-can-help-you-coordinate"
+    },
+    {
+      "id": "69",
+      "title": "Living Heritage as Anti-Bullying: Tepa Selira, and Why We Can Be Hurt Without Anyone Meaning It",
+      "excerpt": "What can living heritage teach us about bullying prevention? This article explores Tepa Selira — the Javanese principle of placing yourself in another person's position — and asks a harder question: why some of the deepest hurt comes from things no one ever intended as an attack.",
+      "category": "Living Heritage, Culture & Social Psychology",
+      "date": "September 22, 2026",
+      "imageUrl": "thum/tepaselira.png",
+      "slug": "living-heritage-as-anti-bullying-tepa-selira-and-why-we-can-be-hurt-without-anyone-meaning-it"
     },
     {
       "id": "66",
