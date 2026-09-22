@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T22:01:32.397244+00:00",
+  "generated_at": "2026-09-22T05:06:04.528667+00:00",
   "inventory": [
     {
       "id": "ich-2c75579d",
@@ -703,6 +703,15 @@
     }
   ],
   "articles": [
+    {
+      "id": "68",
+      "title": "Living Heritage at Work: How Gotong Royong Can Help You Coordinate",
+      "excerpt": "What can living heritage teach us about coordination at work? This article explores gotong royong as a living cultural practice of mutual cooperation, shared purpose, complementary contribution, reciprocity, social accountability, and collective problem solving — and explains why focal points and trusted information matter when second-hand communication can drift.",
+      "category": "Living Heritage, Culture & Workplace Coordination",
+      "date": "September 22, 2026",
+      "imageUrl": "thum/gotong.png",
+      "slug": "living-heritage-at-work-how-gotong-royong-can-help-you-coordinate"
+    },
     {
       "id": "66",
       "title": "Guyub as Living Heritage: Reconciliation, Social Cohesion, and the Everyday Work of Staying Together",
