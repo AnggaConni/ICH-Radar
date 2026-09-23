@@ -27295,15 +27295,198 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-bad67403",
+      "element_name": "Nanjing Yunjin Brocade Weaving Technique",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/00007-RL-00299.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00299",
+        "https://www.chinatoday.com.cn/ctenglish/2018/culture/202601/t20260105_800007050.html",
+        "https://sinocultural.com/blogs/news/yun-brocade-of-china-nanjing-patterns-material-and-price-value",
+        "https://www.thecraftatlas.com/crafts/nanjing-yunjin-brocade",
+        "https://www.njyunjin.com/a/about/2024/0410/10.html",
+        "http://www.chiculture.org.hk/tc/china-culture-series/2034/%E5%8D%97%E4%BA%AC%E9%9B%B2%E9%8C%A6-%E6%98%AF%E6%80%8E%E6%A8%A3%E7%B9%94%E6%88%90%EF%BC%9F"
+      ],
+      "scraped_at": "2026-09-23T02:20:31.718988Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Jiangsu"
+        ],
+        "lat": 33.0000001,
+        "lng": 119.9999999
+      },
+      "resume_analisa": {
+        "description": "Nanjing Yunjin Brocade, literally meaning \"cloud brocade,\" is an exquisite silk textile renowned for its cloud-like splendor and intricate patterns. It represents the pinnacle of ancient Chinese silk weaving technology, incorporating luxurious materials such as silk, gold, and peacock feather yarn. Historically, Yunjin was exclusively produced for imperial garments like dragon robes and empresses' dresses, as well as for palace decorations and diplomatic gifts. Today, it continues to be used for high-end attire, souvenirs, and artistic reproductions of ancient textiles.",
+        "cultural_significance": "With a history spanning over 1,500 to 1,600 years, Nanjing Yunjin Brocade originated in the Eastern Jin Dynasty and flourished significantly during the Yuan, Ming, and Qing dynasties, serving as the official brocade of the imperial court. It symbolized immense power and status, making it a precious cultural heritage. The saying 'an inch of brocade, an inch of gold' highlights its extraordinary value, derived from its complex production process and the use of costly materials. In 2009, the craftsmanship of Nanjing Yunjin Brocade was inscribed by UNESCO on the Representative List of the Intangible Cultural Heritage of Humanity, recognizing its universal significance and its status as the 'last milestone in the technological history of Chinese silk fabrics' and the 'Crown Jewel of Brocades'.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Silk Weaving",
+          "Intangible Cultural Heritage",
+          "Chinese Culture",
+          "Imperial Textiles",
+          "Handloom Weaving",
+          "Brocade",
+          "Textile Art"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Handloom Weaving",
+        "materials_and_tools": [
+          "High-quality Mulberry Silk",
+          "Gold thread (pure gold hammered into thin foil, cut into fine threads)",
+          "Silver thread",
+          "Peacock feather threads (carefully selected tail quills, twisted with silk threads)",
+          "Large wooden drawloom (Dahualou loom), typically 5.6 meters long, 4 meters tall, and 1.4 meters wide, composed of 1,924 components",
+          "Pattern cards / Flower pattern program (花本程序)",
+          "Weaving tools (e.g., shuttle, pattern knife)"
+        ],
+        "step_by_step": [
+          "Pattern Design: Craftsmen meticulously draw intricate motifs, such as dragons, phoenixes, auspicious symbols, and floral patterns, taking into account the fabric's intended use and specific dimensions.",
+          "Pattern Drafting / Tying Knots to Indicate the Pattern (挑花结本 - Tiaohua Jieben): This crucial step involves translating the paper design into a 'flower pattern program.' Using silk threads as warp and cotton threads as weft, artisans create a knotted code that records all structural, positional, and color information for each detail of the pattern. This ancient method of data recording is unique to Yunjin weaving.",
+          "Material Preparation: High-grade mulberry silk cocoons are processed and dyed. Gold is hammered into extremely thin foil (as thin as 0.12 micrometers) and then cut into threads. Peacock feathers are carefully treated and twisted with silk threads to create iridescent yarns.",
+          "Loom Preparation (造机): The large wooden drawloom (Dahualou loom) is meticulously set up. This involves installing the warp threads according to the brocade's specific type and specifications, and then connecting these threads to the pre-programmed pattern cards or flower pattern program.",
+          "Weaving (织造): Two highly skilled artisans operate the loom simultaneously. The 'thread puller' (拽花工) sits on the upper part of the loom, lifting specific warp threads according to the pattern program. Concurrently, the 'weaver' (织手) sits below, inserting the weft threads (silk, gold, silver, or peacock feather yarns) and applying colors. This intricate process employs techniques such as 'passing through the warp' and 'cutting off the weft' (通经断纬), and 'brocading with discontinuous supplementary weft threads' (挖花盘织 or duijin for double-sided patterns). Due to its complexity and precision, two artisans can produce only about 5 to 6 centimeters of Yunjin per day."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Shu Brocade (Sichuan)",
+            "relationship_reason": "One of China's 'Four Famous Brocades' (or 'Three Famous Brocades'), sharing a common heritage of intricate silk weaving."
+          },
+          {
+            "country": "China",
+            "element_name": "Song Brocade (Suzhou)",
+            "relationship_reason": "One of China's 'Four Famous Brocades' (or 'Three Famous Brocades'), sharing a common heritage of intricate silk weaving."
+          },
+          {
+            "country": "China",
+            "element_name": "Zhuang Brocade (Guangxi)",
+            "relationship_reason": "One of China's 'Four Famous Brocades', sharing a common heritage of intricate silk weaving."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7a03be1f",
+      "element_name": "Batik Tulis Lasem",
+      "category": "Traditional Craftsmanship",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//sewjahitmakan.com/2020/01/12/batik-tulis-lasem/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://sewjahitmakan.com/2020/01/12/batik-tulis-lasem/",
+        "https://kasihcoop.com/blogs/news/hand-drawn-batik-aka-batik-tulis",
+        "https://jurnal.isi-ska.ac.id/index.php/dewaruci/article/view/1547",
+        "https://www.atlantis-press.com/proceedings/icba-24/125997235",
+        "https://aip.scitation.org/doi/abs/10.1063/5.0048600",
+        "https://www.indonesia.travel/gb/en/destinations/java/rembang/batik-lasem-history-motifs-and-production-centers",
+        "https://batikindonesia.info/batik-lasem-civilization-in-indonesia/",
+        "https://batik.or.id/get-to-know-about-batik-lasem-tiga-negeri-with-unique-motifs/",
+        "https://mutiaraheritage.com/blogs/news/indonesian-batik-patterns-meaning-design",
+        "https://binus.ac.id/malang/2018/09/a-long-history-and-strong-acculturation-of-contrasting-cultural-differences-in-lasems-batik/",
+        "https://jurnal.isi-dps.ac.id/index.php/mudra/article/view/2504",
+        "https://www.researchgate.net/publication/351110729_The_sustainability_of_Batik_tulis_lasem_through_participatory_rural_appraisal_PRA_in_the_new_motif_design",
+        "https://conference.upnvj.ac.id/index.php/senbud/article/view/423",
+        "https://www.asiapacificrayon.com/news-media/the-story-behind-batik-lasem-making",
+        "https://www.australian.museum/learn/cultures/pacific-collection/indonesian-textiles/the-batik-process/",
+        "https://thebatiklibrary.com/blogs/news/the-art-of-making-batik-tulis-a-traditional-craft",
+        "https://www.batikboutique.com/blogs/news/dye-types-in-batik-malaysia-traditional-to-modern",
+        "https://link.springer.com/chapter/10.1007/978-981-99-9231-6_2"
+      ],
+      "scraped_at": "2026-09-23T02:21:17.549212Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Central Java"
+        ],
+        "lat": -7.3032412,
+        "lng": 110.0044145
+      },
+      "resume_analisa": {
+        "description": "Batik Tulis Lasem is a traditional hand-drawn batik originating from the Lasem area in Rembang Regency, Central Java, Indonesia. It is renowned for its distinctive blend of Javanese and Chinese cultural influences, characterized by vibrant colors, particularly a signature deep red often called 'chicken-blood red' (abang getih pithik), and rich symbolic motifs.",
+        "cultural_significance": "This traditional art form serves as a visual narrative of cultural blending and continuity, embodying the history, values, and pride of Lasem's Chinese-Javanese heritage. It is a deeply rooted cultural practice, with knowledge and techniques passed down through generations within families and communities. Historically, the batik industry in Lasem was a primary economic sector, supporting the socio-economic life of almost all households in the area, highlighting its significant role in local livelihoods.",
+        "drr_relevance": true,
+        "drr_mechanism": "Batik Tulis Lasem contributes to ecological resilience through the traditional use of natural dyes sourced from plants, such as noni roots for red, indigo leaves for blue, and various woods like mahogany for brown, which are more environmentally friendly than synthetic alternatives. Furthermore, the industry fosters economic resilience by providing sustainable livelihoods for artisans, particularly women agricultural laborers, and has demonstrated adaptability in the face of challenges, such as pivoting to online shops during the COVID-19 pandemic to maintain market reach and support the local economy.",
+        "gemini_tags": [
+          "Batik",
+          "Textile Art",
+          "Traditional Craftsmanship",
+          "Indonesian Culture",
+          "Chinese-Javanese Acculturation",
+          "Natural Dyes",
+          "Cultural Heritage",
+          "Economic Resilience",
+          "Intangible Cultural Heritage"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Hand-drawn Batik (Batik Tulis)",
+        "materials_and_tools": [
+          "Fabric (e.g., Mori fabric, primisima quality for finest batik)",
+          "Pencil (for sketching initial design)",
+          "Canting (a pen-like tool with a wooden handle and a small copper container with a spout for applying wax)",
+          "Melted wax (traditionally beeswax, or a blend of plant resins and paraffin)",
+          "Dyes (natural dyes like noni root for red, indigo leaves for blue, mahogany/teger/jambal wood for brown; synthetic dyes are also used)",
+          "Stove and small pan (to melt and maintain wax temperature)",
+          "Drawing table (for stability and comfort)",
+          "Boiling pot (plorodan, for wax removal)",
+          "Color-fixing agent"
+        ],
+        "step_by_step": [
+          "**Fabric Preparation**: The chosen fabric is thoroughly washed, kneaded, and dried. Sometimes, oil and a paste made from rice or cassava are applied to prevent the wax from penetrating the fibers too deeply.",
+          "**Design Preparation (Nyoret)**: An artisan sketches the desired pattern onto the white fabric using a pencil. This can be a free-hand drawing or a copied design.",
+          "**Wax Application (Nglowongi / Mencanting)**: Using a canting tool filled with hot, melted wax, the artisan meticulously draws over the penciled design. This wax layer protects the covered areas from dye during the coloring process. For larger patterns, a stiff brush might be used for 'batik lukis' or painted batik.",
+          "**Dyeing (Mewarna / Celup / Colet)**: The fabric is then dyed. This can be done by dipping the entire fabric into a dye bath ('Celup') for a uniform base color, or by applying multiple colors with brushes ('Colet') for intricate, multi-colored designs.",
+          "**Drying and Color Fixing**: After dyeing, the waxed fabric is dried and then soaked in a color-fixing agent to ensure the dyes set permanently.",
+          "**Repeat Waxing and Dyeing**: For multi-layered and multi-colored designs, the waxing and dyeing process is repeated. New wax is applied to protect areas that should retain a specific color, and the fabric is dyed again with different colors.",
+          "**Wax Removal (Melorot)**: Once all dyeing steps are complete, the fabric is boiled in hot water, typically in a 'plorodan', to melt and remove all the wax. The areas that were covered by wax reveal the colors applied in earlier stages or remain the original fabric color.",
+          "**Final Washing and Drying**: The fabric is thoroughly washed in lukewarm water to remove any residual wax or dye, and then dried."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Chinese cultural motifs and colors",
+            "relationship_reason": "Batik Tulis Lasem exhibits strong influences from Chinese culture, evident in its distinctive red color and motifs such as deities, dragons, phoenixes, goldfish, pagodas, Chinese scripts, peonies, and butterflies. This acculturation is a result of a long history of Chinese immigration and cultural exchange in Lasem."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Javanese Batik traditions (e.g., Pekalongan, Surakarta)",
+            "relationship_reason": "While possessing unique characteristics, Batik Tulis Lasem is an integral part of the broader Indonesian Batik genre, incorporating Javanese aesthetics and traditional techniques. It also shares historical connections with other Javanese batik centers, particularly in the 'Batik Tiga Negeri' style, where red is processed in Lasem, blue in Pekalongan, and soga brown in Surakarta (Solo)."
+          },
+          {
+            "country": "Netherlands",
+            "element_name": "Dutch colonial influence",
+            "relationship_reason": "Some historical accounts suggest European influences, particularly Dutch colonial aesthetics, contributed to certain color palettes, such as the indigo blue in the 'Batik Tiga Negeri' style."
+          },
+          {
+            "country": "Malaysia",
+            "element_name": "Malaysian Batik",
+            "relationship_reason": "Both Malaysian and Indonesian batik traditions utilize the same fundamental wax-resist dyeing technique, although they have evolved with distinct styles and motif compositions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-21T02:17:53.394143Z",
-    "total_ich_elements": 307,
-    "complete_records": 307,
+    "generated_at": "2026-09-23T02:22:56.061001Z",
+    "total_ich_elements": 309,
+    "complete_records": 309,
     "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 108,
+      "Traditional Craftsmanship": 110,
       "Social Practices & Rituals": 60,
       "Culinary Traditions": 48,
       "Culinary Traditions | Social Practices & Rituals": 4,
