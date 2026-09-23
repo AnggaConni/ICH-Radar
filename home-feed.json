@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T21:24:25.832466+00:00",
+  "generated_at": "2026-09-23T04:51:04.815395+00:00",
   "inventory": [
     {
       "id": "ich-2c75579d",
@@ -703,6 +703,15 @@
     }
   ],
   "articles": [
+    {
+      "id": "70",
+      "title": "How Living Heritage Teaches Us About Making a Policy",
+      "excerpt": "Tepa Selira is more than empathy: it can inspire a policy stress test. Before a policy is implemented, compare its assumptions with other people's realities, deliberately invite divergent criticism, and test the edge cases before reality becomes the reviewer.",
+      "category": "Living Heritage, Policy Design & Inclusive Systems",
+      "date": "September 23, 2026",
+      "imageUrl": "thum/tepaselira-policy.png",
+      "slug": "how-living-heritage-teaches-us-about-making-a-policy"
+    },
     {
       "id": "68",
       "title": "Living Heritage at Work: How Gotong Royong Can Help You Coordinate",
