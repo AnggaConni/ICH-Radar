@@ -820,6 +820,17 @@ VALID_DRR_CATEGORIES = [
     "Other Disaster Resilience Practice",
 ]
 
+# Hazard vocabulary kept aligned with drr.html's current visual taxonomy.
+VALID_HAZARD_CATEGORIES = [
+    "Tsunami",
+    "Earthquake",
+    "Drought",
+    "Flood",
+    "Typhoon",
+    "Wildfire",
+]
+
+
 
 def normalize_category(value):
     raw = str(value or "").strip().lower()
@@ -889,16 +900,71 @@ def normalize_drr_category(value):
     return None
 
 
+def normalize_hazard_categories(values):
+    """Normalize Gemini hazard labels into the six hazard categories used by drr.html."""
+    if not isinstance(values, list):
+        return []
+
+    aliases = {
+        "tsunami": "Tsunami",
+        "marine surge": "Tsunami",
+        "storm surge": "Tsunami",
+        "earthquake": "Earthquake",
+        "seismic": "Earthquake",
+        "ground shaking": "Earthquake",
+        "drought": "Drought",
+        "heatwave": "Drought",
+        "heat wave": "Drought",
+        "flood": "Flood",
+        "flooding": "Flood",
+        "landslide": "Flood",
+        "typhoon": "Typhoon",
+        "cyclone": "Typhoon",
+        "gale": "Typhoon",
+        "wildfire": "Wildfire",
+        "bushfire": "Wildfire",
+        "forest fire": "Wildfire",
+    }
+
+    result = []
+    for value in values:
+        raw = str(value or "").strip().lower()
+        canonical = aliases.get(raw)
+
+        if not canonical:
+            for key, mapped in aliases.items():
+                if key in raw:
+                    canonical = mapped
+                    break
+
+        if canonical and canonical not in result:
+            result.append(canonical)
+
+    return result
+
+
 def normalize_ai_classification(item):
-    """Enforce canonical heritage and DRR classification fields returned by Gemini."""
+    """Enforce one consistent schema consumed by radar.html and drr.html."""
     category = normalize_category(item.get("category"))
     item["category_valid"] = category is not None
     item["category"] = category or "Unclassified"
 
     analysis = item.setdefault("resume_analisa", {})
+
     drr_category = normalize_drr_category(analysis.get("drr_category"))
-    analysis["drr_category_valid"] = drr_category is not None
+    drr_valid = drr_category is not None
+    analysis["drr_category_valid"] = drr_valid
     analysis["drr_category"] = drr_category or "Not Directly Related to DRR"
+
+    hazards = normalize_hazard_categories(analysis.get("hazard_categories", []))
+    analysis["hazard_categories"] = hazards
+
+    # Compatibility field for the current drr.html.
+    # It is DERIVED from the structured DRR classification, not AI-generated.
+    analysis["drr_relevance"] = (
+        analysis["drr_category"] != "Not Directly Related to DRR"
+        and drr_valid
+    )
 
     return item
 
@@ -1005,7 +1071,18 @@ Use exactly ONE "drr_category" from this controlled vocabulary:
 - Climate Adaptation & Resilience
 - Traditional Healing & Health Resilience
 - Other Disaster Resilience Practice
-Set "drr_category_valid" to true ONLY when the selected category is clearly supported by the evidence. If there is no direct DRR connection, use "Not Directly Related to DRR".
+Set "drr_category_valid" to true ONLY when the selected category is clearly supported by the evidence.
+If there is no direct DRR connection, use "Not Directly Related to DRR".
+
+Also classify which disaster hazards the practice directly helps address.
+Use ZERO OR MORE values from exactly this vocabulary:
+- Tsunami
+- Earthquake
+- Drought
+- Flood
+- Typhoon
+- Wildfire
+Do not infer a hazard merely because the practice exists in a disaster-prone area; select hazards only when the documented mechanism supports the connection.
 Explain the mechanism in "drr_mechanism".
         
         Respond ONLY with a JSON object representing the UPDATED element.
@@ -1034,6 +1111,7 @@ Set "category_valid" to true ONLY when the selected category clearly matches the
             "cultural_significance": "...", 
             "drr_category": "Not Directly Related to DRR",
             "drr_category_valid": true,
+            "hazard_categories": [],
             "drr_mechanism": "Brief evidence-based explanation of the disaster resilience mechanism, otherwise null",
             "gemini_tags": ["..."] 
         }},
@@ -1097,7 +1175,18 @@ Use exactly ONE "drr_category" from this controlled vocabulary:
 - Climate Adaptation & Resilience
 - Traditional Healing & Health Resilience
 - Other Disaster Resilience Practice
-Set "drr_category_valid" to true ONLY when the selected category is clearly supported by the evidence. If there is no direct DRR connection, use "Not Directly Related to DRR".
+Set "drr_category_valid" to true ONLY when the selected category is clearly supported by the evidence.
+If there is no direct DRR connection, use "Not Directly Related to DRR".
+
+Also classify which disaster hazards the practice directly helps address.
+Use ZERO OR MORE values from exactly this vocabulary:
+- Tsunami
+- Earthquake
+- Drought
+- Flood
+- Typhoon
+- Wildfire
+Do not infer a hazard merely because the practice exists in a disaster-prone area; select hazards only when the documented mechanism supports the connection.
 Explain the mechanism in "drr_mechanism".
         5. Output ALL data values strictly in ENGLISH, and keep all JSON keys strictly in English.
 5a. For "category", use exactly ONE of these canonical heritage categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals. Set "category_valid" to true ONLY when the selected category clearly matches the documented practice. Never invent a category name.
@@ -1110,6 +1199,7 @@ Explain the mechanism in "drr_mechanism".
             "id": "will_be_generated",
             "element_name": "...",
             "category": "Culinary Traditions | Traditional Craftsmanship | Performing Arts | Oral Traditions | Social Practices & Rituals",
+            "category_valid": true,
             "thumbnail_url": "",
             "source_urls": ["url1"],
             "scraped_at": "{datetime.now().isoformat()}Z",
@@ -1124,6 +1214,7 @@ Explain the mechanism in "drr_mechanism".
             "cultural_significance": "...", 
             "drr_category": "Not Directly Related to DRR",
             "drr_category_valid": true,
+            "hazard_categories": [],
             "drr_mechanism": "Brief evidence-based explanation of the disaster resilience mechanism, otherwise null",
             "gemini_tags": ["..."] }},
             "resume_tata_cara": {{ "type": "...", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
