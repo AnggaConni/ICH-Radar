@@ -27674,7 +27674,14 @@
     {
       "id": "ich-dd17b606",
       "element_name": "Cantonese Opera (粵劇)",
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals",
+        "Oral Traditions"
+      ],
+      "categories_valid": true,
       "category": "Performing Arts",
+      "category_valid": true,
       "thumbnail_url": "https://images.pexels.com/photos/1032333/pexels-photo-1032333.jpeg",
       "source_urls": [
         "https://www.culturalheritage.mo/en/detail/100040",
@@ -27697,72 +27704,297 @@
         "https://www.chinadaily.com.cn/a/202306/07/WS648011c7a310340adfa64f21.html",
         "https://en.wikipedia.org/wiki/Cantonese_opera",
         "https://www.foyo.cn/china-trip/cantonese-opera-experience-a-cultural-performance-guide",
-        "https://www.hkmemory.hk/collections/hong_kong_culture/arts/performing_arts/cantonese_opera/costumes/index.html"
+        "https://www.hkmemory.hk/collections/hong_kong_culture/arts/performing_arts/cantonese_opera/costumes/index.html",
+        "https://www.gafencu.com/culture/echoes-of-heritage-a-link-to-the-past-that-draws-us-together-cantonese-opera-speaks-to-the-soul-of-hong-kong"
       ],
-      "scraped_at": "2026-09-25T02:26:19.833962Z",
+      "scraped_at": "2026-09-25T06:37:00Z",
       "location": {
         "country": "China",
         "provinces": [
-          "Guangdong Province",
-          "Guangxi Zhuang Autonomous Region",
+          "Guangdong",
+          "Guangxi",
           "Hong Kong S.A.R.",
           "Macao S.A.R."
         ],
-        "lat": 23.1357694,
-        "lng": 113.1982688
+        "lat": 34.5412252,
+        "lng": 108.9237067
       },
       "resume_analisa": {
-        "description": "Cantonese Opera (粵劇), also known as Yueju or Guangdong opera, is a vibrant and traditional form of Chinese opera performed in the Cantonese dialect. It originated in the Guangdong province of southern China during the late Ming and early Qing dynasties. This performing art combines singing, reciting, acting, martial arts, acrobatics, elaborate costumes, and symbolic makeup to tell stories often rooted in Chinese history, classical literature, folk tales, and mythology.",
-        "cultural_significance": "Cantonese Opera holds a significant place in Chinese cultural heritage, particularly in the Cantonese-speaking regions of Guangdong, Guangxi, Hong Kong, and Macau. It is a cultural symbol of the Guangdong region and a sentiment in the hearts of Chinese people worldwide, serving as a powerful link to their ancestral land and identity. The art form is crucial for cultural preservation, fostering community bonds, and transmitting historical, philosophical, and moral values across generations. Cantonese Opera was inscribed onto the first national list of Intangible Cultural Heritage in China in 2006 and recognized by UNESCO in 2009 on the Representative List of the Intangible Cultural Heritage of Humanity.",
-        "drr_relevance": false,
-        "drr_mechanism": null,
+        "description": "Cantonese Opera (粵劇), also known as Yueju, is a traditional Chinese art form originating in southern China's Guangdong Province. It integrates music, singing, theatrical performance, dance, and martial arts to tell stories through its 'four basic skills': singing, acting, delivery of spoken lines, and martial arts. The performances are characterized by unique vocal techniques, stylized movements, bright make-up, and exquisite Cantonese embroidery costumes. It is popular in Cantonese-speaking regions, including Guangdong, Guangxi, Hong Kong, Macau, and among Chinese communities in Southeast Asia. Cantonese Opera was inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2009.",
+        "cultural_significance": "Cantonese Opera holds significant cultural value as a vital thread in the cultural identity of Hong Kong and other Cantonese-speaking regions. It fosters community bonds and nurtures a collective consciousness, serving as a medium for social commentary that reflects societal norms, family values, and historical events. Historically, before widespread formal education, it conveyed morals and messages to its audiences. It can also function as religious drama during thanksgiving rituals or jiao festivals. The art form provides a strong cultural connection for Cantonese speakers globally, helping to maintain interpersonal relationships and promoting successful aging among older generations. It is considered a vessel for cultural heritage, preserving historical memories and expressing the emotions of the people.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Indirectly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "Cantonese Opera fosters community bonds, nurtures collective consciousness, and strengthens cultural identity among Cantonese speakers. This social cohesion and shared cultural heritage can indirectly enhance a community's resilience to various disruptions by strengthening social networks and support systems. It also helps in maintaining interpersonal relationships and promoting successful aging, which contributes to the overall well-being and adaptive capacity of a community.",
         "gemini_tags": [
-          "Chinese opera",
-          "performing arts",
-          "traditional music",
-          "acrobatics",
-          "martial arts",
-          "costumes",
-          "makeup",
-          "storytelling",
-          "cultural heritage",
-          "Lingnan culture"
+          "Cantonese Opera",
+          "Yueju",
+          "Chinese Opera",
+          "Performing Arts",
+          "Intangible Cultural Heritage",
+          "Hong Kong Culture",
+          "Guangdong Culture",
+          "Traditional Theatre",
+          "Social Cohesion"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "performance_elements",
+        "materials_and_tools": [
+          "Costumes (exquisite Cantonese embroidery)",
+          "Stage makeup",
+          "Props",
+          "Traditional Chinese instruments (erhu, pipa, gong, sanxian, yueqin, zhutiqin, xiao)",
+          "Stage"
+        ],
+        "step_by_step": [
+          "Singing: Performers utilize unique vocal techniques, melodic patterns, and intricate ornamentation, often employing a distinct vocalization style known as 'luantan' to convey emotions and portray characters.",
+          "Acting: Highly stylized and symbolic acting involves a range of gestures, facial expressions, and body movements to depict characters and tell stories, with each movement carefully choreographed for specific meanings.",
+          "Delivery of spoken lines: Dialogue is delivered in the Cantonese dialect, which became the primary language for performances around 1912.",
+          "Martial Arts and Acrobatics: Integral to performances, actors showcase impressive physical feats such as somersaults, high jumps, and balancing acts, incorporating Southern School martial arts techniques into dynamic fight scenes."
         ]
       },
-      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Peking Opera",
+            "relationship_reason": "Shares common origins and similar characters with Cantonese Opera."
+          },
+          {
+            "country": "China",
+            "element_name": "Kunqu Opera",
+            "relationship_reason": "Influenced Cantonese Opera and is often considered 'the mother of Chinese operas'."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7f6074e0",
+      "element_name": "Nazri (نذری)",
+      "categories": [
+        "Culinary Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Culinary Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://www.tehrantimes.com/photos/1/151/376269_664.jpg",
+      "source_urls": [
+        "https://www.parsitours.com/iranian-traditions/",
+        "https://mypersiancorner.com/iranian-traditions-customs/",
+        "https://www.tehrantimes.com/news/376269/Nazri-distribution-a-centuries-old-tradition-in-Iranian-village",
+        "https://foodonthemove.blog/2025/03/02/nazr-iranian-religious-culinary-tradition/",
+        "https://www.insideiran.com/culture/nazr/",
+        "https://www.tasnimnews.com/en/news/2023/07/27/2931448/explainer-what-does-nazri-mean-in-religious-beliefs"
+      ],
+      "scraped_at": "2026-09-25T06:37:39.712763Z",
+      "location": {
+        "country": "Iran",
+        "provinces": [],
+        "lat": 32.6475314,
+        "lng": 54.5643516
+      },
+      "resume_analisa": {
+        "description": "Nazri is a deeply rooted Iranian religious-culinary tradition where individuals or families make a solemn vow (nazr) to God or holy figures. In fulfillment of this vow, they prepare and distribute food and drinks in large quantities, free of charge, to a wide range of people, including family, friends, neighbors, passersby, and especially those in need, without discrimination based on familiarity, economic status, or religious beliefs. It is particularly common during religious occasions such as the Islamic month of Muharram (especially Tasua and Ashura) and Ramadan, as well as on the birth and martyrdom anniversaries of Shia Imams.",
+        "cultural_significance": "Nazri holds significant religious and social importance in Iranian culture. It is believed that fulfilling a nazr brings spiritual favor, blessings, and protection for oneself and loved ones. The tradition fosters solidarity, generosity, empathy, and social cohesion within communities, strengthening unity and mutual support. It is a testament to Iranian ethics and values, promoting connections among diverse groups. Eating Nazri food is often believed to bring good fortune.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "Nazri strengthens community bonds and fosters a sense of collective responsibility and support through the act of sharing food and resources. This enhanced social cohesion and mutual aid can be crucial for community resilience, enabling better collective response, support, and recovery during and after times of crisis or hardship, as strong social networks facilitate coordinated action and resource distribution.",
+        "gemini_tags": [
+          "Iranian culture",
+          "religious tradition",
+          "food sharing",
+          "community practice",
+          "social solidarity",
+          "vow",
+          "generosity",
+          "Muharram",
+          "Ramadan"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Community Food Preparation and Distribution",
+        "materials_and_tools": [
+          "Ingredients for traditional dishes (e.g., rice, saffron, legumes, meat, wheat sprouts, sugar, rose water)",
+          "Large cooking pots (cauldrons)",
+          "Serving dishes",
+          "Large kitchen space or communal area for preparation"
+        ],
+        "step_by_step": [
+          "**Making a Vow (Nazr)**: An individual or family makes a solemn commitment to God or a holy figure, promising to prepare and distribute food if a specific prayer is answered or a wish is fulfilled.",
+          "**Ingredient Sourcing and Preparation**: High-quality ingredients are typically sourced. The chosen dish (e.g., Ash-e Reshteh, Sholeh Zard (saffron rice pudding), Gheymeh stew, Samanu, Kaleh Pache (sheep head and feet), Ghormeh Sabzi, Kabob and rice, or simple refreshments like tea and sweets) is prepared in massive quantities, often requiring large cooking pots and communal effort. Some dishes, like Samanu, can take 24-48 hours to prepare, involving arduous steps like grinding wheat sprouts and continuous stirring.",
+          "**Distribution**: The prepared food (Nazri) is then distributed freely to a wide range of people, including family, friends, neighbors, passersby, and especially those in need, without discrimination based on familiarity, economic status, or religious beliefs. This often takes place during religious ceremonies, mourning rituals, or other special occasions.",
+          "**Collective Participation**: The preparation and distribution often involve many community members, reflecting a collective effort and shared responsibility. In some cases, families may contract outside kitchens for large portions or receive help from relatives and neighbors."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
         "confidence_score": 0.9,
         "related_elements": [
           {
-            "country": "China",
-            "element_name": "Peking Opera",
-            "relationship_reason": "Cantonese Opera shares origins and similar characters with Peking Opera. Costume design in Cantonese Opera was also heavily influenced by Peking Opera."
+            "country": "Afghanistan",
+            "element_name": "Votive offerings, charity food distribution",
+            "relationship_reason": "The act of making vows and distributing food for religious merit (Nazr) has roots in Islamic teachings and Persian culture and is observed among followers of various religions, particularly in Muslim-majority countries and among Shia communities worldwide."
           },
           {
-            "country": "China",
-            "element_name": "Kunqu Opera",
-            "relationship_reason": "Kunqu Opera, originating in Suzhou and considered 'the mother of Chinese operas,' had a significant influence on Cantonese Opera."
+            "country": "Tajikistan",
+            "element_name": "Votive offerings, charity food distribution",
+            "relationship_reason": "The act of making vows and distributing food for religious merit (Nazr) has roots in Islamic teachings and Persian culture and is observed among followers of various religions, particularly in Muslim-majority countries and among Shia communities worldwide."
+          },
+          {
+            "country": "Other Muslim-majority countries",
+            "element_name": "Votive offerings, charity food distribution",
+            "relationship_reason": "The act of making vows and distributing food for religious merit (Nazr) has roots in Islamic teachings and Persian culture and is observed among followers of various religions, particularly in Muslim-majority countries and among Shia communities worldwide."
           }
         ]
       },
-      "completion_status": "INCOMPLETE"
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-711ad44f",
+      "element_name": "Pencak Silat Cimande",
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Performing Arts",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//bogordaily.net/mengenal-sejarah-talek-pencak-silat-cimande/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://bogordaily.net/mengenal-sejarah-talek-pencak-silat-cimande/",
+        "https://www.youtube.com/watch?v=Xh3hYJ2c94I",
+        "https://www.kompasiana.com/kompasiana/5c7f897f300a7b686d634202/pencak-silat-cimande-segera-diakui-unesco",
+        "https://bogor.tribunnews.com/2021/10/15/warisan-dari-leluhur-abah-didih-ungkap-filosofi-gerakan-aliran-silat-cimande",
+        "https://sports.okezone.com/read/2022/09/27/43/2675856/mengenal-7-pencak-silat-tertua-di-indonesia-nomor-1-psht",
+        "https://rri.co.id/jember/olahraga/1000858/asal-usul-pencak-silat-seni-bela-diri-warisan-nusantara",
+        "https://www.gramedia.com/literasi/sejarah-pencak-silat/",
+        "https://id.wikipedia.org/wiki/Silat_Cimande",
+        "https://ich.unesco.org/en/RL/traditions-of-pencak-silat-01391",
+        "https://www.tirto.id/aliran-silat-tua-dari-kampung-yang-penuh-petuah-hidup-g98Q",
+        "https://buruan.co/jurus-silat-cimande-membela-diri-bukan-melawan/"
+      ],
+      "scraped_at": "2026-09-25T06:38:19.724263Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "West Java"
+        ],
+        "lat": -6.8891904,
+        "lng": 107.6404716
+      },
+      "resume_analisa": {
+        "description": "Pencak Silat Cimande is an ancient Indonesian martial art, considered one of the oldest and most influential Pencak Silat styles. Originating from West Java, it is renowned for its unique hand movements, defensive philosophy, and strong adherence to traditional customs and spiritual values. It combines self-defense techniques with character building and ethical teachings.",
+        "cultural_significance": "Pencak Silat Cimande is a revered ancestral heritage ('warisan leluhur') of the Indonesian people, particularly in West Java. It serves not only as a means of self-defense but also as a vehicle for character education, instilling values such as patience, perseverance, courage, humility, and respect, largely through its ethical code known as 'Talek Cimande'. Historically, it played a role in the spread of Islam and is a symbol of identity and pride for the community. The village of Cimande is also traditionally known for its bone-setting treatments, associating the martial art with traditional healing practices.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "Pencak Silat Cimande, through its rigorous training and adherence to the 'Talek Cimande' (ethical oath), fosters discipline, courage, humility, and mutual respect among its practitioners. These values strengthen social cohesion within the community, enabling collective action, support, and resilience during and after disruptive events. While not directly addressing natural hazards, the self-defense aspect enhances personal safety, and the associated traditional bone-setting practice in Cimande village provides a local health resilience mechanism for treating physical injuries.",
+        "gemini_tags": [
+          "Pencak Silat",
+          "Martial Arts",
+          "Indonesian Culture",
+          "West Java",
+          "Traditional Practice",
+          "Self-Defense",
+          "Ethical Code",
+          "Community Heritage",
+          "Traditional Healing"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Traditional martial art training and ritualistic practice",
+        "materials_and_tools": [
+          "Traditional Sundanese musical instruments (e.g., gendang, gong) for performances",
+          "Betel leaves and water for the 'Kecer' purification ritual"
+        ],
+        "step_by_step": [
+          "**Talek (Oath):** Prospective students undergo a ritual where they take a solemn oath to themselves and God. This oath outlines a comprehensive code of ethics, emphasizing principles such as obedience to parents, elders, teachers, and government; avoiding vices like gambling, theft, arrogance, adultery, lying, deceit, and intoxication; and refraining from harming others, taking without permission, envy, and jealousy. This 'Talek' is considered the spiritual core of Cimande.",
+          "**Kecer (Purification):** Following the 'Talek' oath, a purification ritual is performed where water is dripped into the eyes of the student using betel leaves, symbolizing inner cleansing and readiness for learning.",
+          "**Basic Movements (Jurus Dasar):** Training commences with fundamental stances and movements, often starting from a sitting position. This initial posture carries a philosophical meaning, symbolizing life's journey where one does not immediately stand or achieve wealth upon birth. The basic training focuses on developing hand strength and dynamic footwork ('kuda-kuda') that can be rapidly shifted for defense and offense.",
+          "**Advanced Techniques:** Students progress to learn a variety of hand-to-hand combat techniques, including specific 'jurus' (forms) such as Kelid, Selup, Pamonyet, Tangkeupan, Timpah Sabeulah, Pangerodan, Teke, and Tewak. Some advanced training may also involve weapon techniques, such as 'pepedangan' using bamboo swords, after mastering unarmed combat.",
+          "**Performance and Accompaniment:** During demonstrations or cultural performances, the martial art movements are often accompanied by traditional Sundanese music, with the tempo and rhythm of instruments like gendang and gong guiding the flow of the movements."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Malaysia",
+            "element_name": "Pencak Silat",
+            "relationship_reason": "Shared traditional martial art with common cultural roots and participation in international organizations like PERSILAT."
+          },
+          {
+            "country": "Singapore",
+            "element_name": "Pencak Silat",
+            "relationship_reason": "Shared traditional martial art with common cultural roots and participation in international organizations like PERSILAT."
+          },
+          {
+            "country": "Brunei Darussalam",
+            "element_name": "Pencak Silat",
+            "relationship_reason": "Shared traditional martial art with common cultural roots and participation in international organizations like PERSILAT."
+          },
+          {
+            "country": "Philippines",
+            "element_name": "Pasilat (Pencak Silat)",
+            "relationship_reason": "Shared traditional martial art with common cultural roots, known by a local variant name."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Bersilat (Pencak Silat)",
+            "relationship_reason": "Shared traditional martial art with common cultural roots, known by a local variant name."
+          },
+          {
+            "country": "Vietnam",
+            "element_name": "Pencak Silat",
+            "relationship_reason": "Pencak Silat has spread to Vietnam through the efforts of Indonesian trainers."
+          },
+          {
+            "country": "Netherlands",
+            "element_name": "Silek Tuo (general Pencak Silat)",
+            "relationship_reason": "Various Pencak Silat styles, including Silek Tuo, have been developed and practiced by Indonesian diaspora."
+          },
+          {
+            "country": "Germany",
+            "element_name": "Pencak Silat",
+            "relationship_reason": "International interest and practice of Pencak Silat."
+          },
+          {
+            "country": "United States",
+            "element_name": "Pencak Silat",
+            "relationship_reason": "International interest and practice of Pencak Silat."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-25T02:26:46.786129Z",
-    "total_ich_elements": 312,
-    "complete_records": 311,
-    "incomplete_records": 1,
+    "generated_at": "2026-09-25T06:39:20.261010Z",
+    "total_ich_elements": 314,
+    "complete_records": 314,
+    "incomplete_records": 0,
     "categories_breakdown": {
       "Traditional Craftsmanship": 110,
-      "Social Practices & Rituals": 61,
-      "Culinary Traditions": 48,
+      "Social Practices & Rituals": 64,
+      "Culinary Traditions": 49,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 27,
+      "Performing Arts": 28,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 21,
+      "Oral Traditions": 22,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
