@@ -257,14 +257,71 @@
     .radar-last-updated{display:none !important}
   }
   @media (max-width: 700px){
-    .radar-header-inner{padding-left:16px !important;padding-right:16px !important;gap:8px}
-    .radar-brand{flex:1 1 auto;width:auto;min-width:0}
-    .radar-header-actions{gap:5px}
+    .radar-header-inner{padding-left:10px !important;padding-right:10px !important;gap:6px}
+    .radar-brand{flex:1 1 auto;width:auto;min-width:0;max-width:calc(100vw - 170px)}
+    .radar-brand-title{font-size:13px !important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .radar-brand > div:first-child{width:36px !important;height:36px !important;border-radius:10px}
+    .radar-brand > div:first-child i{font-size:20px !important}
+    .radar-header-actions{gap:4px;flex:0 0 auto}
     .radar-action-btn span{display:none !important}
-    .radar-action-btn{min-width:38px;width:38px !important;padding:0 !important}
-    .radar-lang-wrap{width:60px;min-width:60px;flex-basis:60px}
-    #translate-btn{width:60px;min-width:60px}
-    .btn-journal-glow{width:42px;padding:0 !important;height:38px}
+    .radar-action-btn{min-width:34px;width:34px !important;height:34px !important;padding:0 !important;border-radius:9px !important}
+    .radar-action-btn i{font-size:16px !important}
+    .radar-lang-wrap{width:48px;min-width:48px;flex-basis:48px}
+    #translate-btn{width:48px;min-width:48px;height:34px !important;padding:0 5px !important;gap:2px !important}
+    #translate-btn .ph-translate{font-size:13px !important}
+    #translate-btn .ph-caret-down{font-size:8px !important}
+    #translate-btn #lang-label{font-size:10px !important}
+    .btn-journal-glow{width:34px !important;height:34px !important;padding:0 !important}
+
+    /* Keep the three primary tabs usable on narrow screens. */
+    .radar-tabs{
+      display:flex !important;
+      width:100%;
+      overflow-x:auto;
+      overflow-y:hidden;
+      scrollbar-width:none;
+      -webkit-overflow-scrolling:touch;
+      white-space:nowrap;
+      padding-bottom:0;
+      gap:4px;
+    }
+    .radar-tabs::-webkit-scrollbar{display:none}
+    .radar-tab-btn{
+      flex:0 0 auto;
+      min-width:max-content;
+      padding:10px 14px !important;
+      font-size:13px !important;
+      line-height:1.2 !important;
+      white-space:nowrap !important;
+      margin-left:0 !important;
+      border-radius:10px 10px 0 0 !important;
+    }
+
+    /* Mobile-friendly map legend and height. */
+    #tab-map > div:first-child{
+      flex-direction:column !important;
+      align-items:flex-start !important;
+      gap:8px !important;
+    }
+    #tab-map > div:first-child > div:last-child{
+      width:100%;
+      overflow-x:auto;
+      display:flex;
+      gap:12px;
+      white-space:nowrap;
+      padding-bottom:2px;
+      -webkit-overflow-scrolling:touch;
+    }
+    #map{
+      height:58vh !important;
+      min-height:360px;
+      max-height:520px;
+    }
+    #tab-map{
+      min-width:0 !important;
+      width:100% !important;
+      overflow:hidden !important;
+    }
   }
 
   /* ── Detail modal polish: larger type, less empty space, premium tabs ── */
@@ -522,14 +579,14 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4" id="stats-container"></div>
 
     <!-- Map -->
-    <div class="flex border-b border-brand-700 mt-2 mb-4">
-      <button id="btn-tab-directory" onclick="switchTab('directory')" class="px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors flex items-center gap-2">
+    <div class="radar-tabs flex border-b border-brand-700 mt-2 mb-4">
+      <button id="btn-tab-directory" onclick="switchTab('directory')" class="radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors flex items-center gap-2">
         <i class="ph ph-books text-xl"></i> Intangible Cultural Heritage Directory
       </button>
-      <button id="btn-tab-map" onclick="switchTab('map')" class="px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2">
+      <button id="btn-tab-map" onclick="switchTab('map')" class="radar-tab-btn px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2">
         <i class="ph ph-map-trifold text-xl"></i> Heritage Network Map
       </button>
-      <button id="btn-tab-deep-dive" onclick="switchTab('deep-dive')" class="px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2">
+      <button id="btn-tab-deep-dive" onclick="switchTab('deep-dive')" class="radar-tab-btn px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2">
         <i class="ph ph-magnifying-glass text-xl"></i> ICH Deep Dive
       </button>
     </div>
@@ -2399,18 +2456,18 @@ const COUNTRY_CENTROIDS = {
     tabDeep.classList.add('hidden');
     if (pagination) pagination.classList.add('hidden');
 
-    const inactive = "px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2";
+    const inactive = "radar-tab-btn px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2";
     btnMap.className = inactive;
     btnDir.className = inactive.replace(" ml-2", "");
     btnDeep.className = inactive;
 
     if (tab === 'map') {
       tabMap.classList.remove('hidden');
-      btnMap.className = "px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";
+      btnMap.className = "radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";
       if (map) setTimeout(() => { map.invalidateSize(); }, 100);
     } else if (tab === 'deep-dive') {
       tabDeep.classList.remove('hidden');
-      btnDeep.className = "px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";
+      btnDeep.className = "radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";
       populateDeepDiveSelect();
       if (!currentDeepDiveItemId && globalData?.inventory?.length) {
         const first = globalData.inventory[0];
@@ -2421,7 +2478,7 @@ const COUNTRY_CENTROIDS = {
       if (currentDeepDiveItemId) renderDeepDive(currentDeepDiveItemId);
     } else {
       tabDir.classList.remove('hidden');
-      btnDir.className = "px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors flex items-center gap-2";
+      btnDir.className = "radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors flex items-center gap-2";
       if (filteredData.length > 0 && pagination) pagination.classList.remove('hidden');
     }
   }
