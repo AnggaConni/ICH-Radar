@@ -890,14 +890,15 @@ def normalize_drr_category(value):
 
 
 def normalize_ai_classification(item):
-    """Enforce canonical category fields returned by Gemini."""
+    """Enforce canonical heritage and DRR classification fields returned by Gemini."""
     category = normalize_category(item.get("category"))
     item["category_valid"] = category is not None
     item["category"] = category or "Unclassified"
 
-    drr_category = normalize_drr_category(item.get("drr_category"))
-    item["drr_category_valid"] = drr_category is not None
-    item["drr_category"] = drr_category or "Not Directly Related to DRR"
+    analysis = item.setdefault("resume_analisa", {})
+    drr_category = normalize_drr_category(analysis.get("drr_category"))
+    analysis["drr_category_valid"] = drr_category is not None
+    analysis["drr_category"] = drr_category or "Not Directly Related to DRR"
 
     return item
 
@@ -1015,7 +1016,7 @@ Explain the mechanism in "drr_mechanism".
         {{
             "id": "{item.get('id')}",
             "element_name": "{element_name}",
-            "category": "{item.get('category', 'Traditional Craftsmanship')}",
+            "category": "Culinary Traditions | Traditional Craftsmanship | Performing Arts | Oral Traditions | Social Practices & Rituals",
             "thumbnail_url": "{item.get('thumbnail_url')}",
             "source_urls": ["<old_url>", "<new_found_url>"],
             "scraped_at": "{datetime.now().isoformat()}Z",
