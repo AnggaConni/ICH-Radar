@@ -1384,8 +1384,9 @@ def generate_quarterly_resume(api_key, inventory):
     total_items = len(inventory)
     categories = {}
     for item in inventory:
-        cat = item.get("category", "Unknown")
-        categories[cat] = categories.get(cat, 0) + 1
+        item_categories = item.get("categories") or [item.get("category", "Unknown")]
+        for cat in item_categories:
+            categories[cat] = categories.get(cat, 0) + 1
         
     resume_db[quarter_str]["statistics"] = {
         "total_items": total_items,
@@ -1406,7 +1407,7 @@ def generate_quarterly_resume(api_key, inventory):
     Current Statistics: Total of {total_items} cultural entities. Category distribution: {json.dumps(categories)}.
     {tren_prompt}
     
-    Your task is to generate a structured narrative. You MUST include a "UNESCO Periodic Report" section that fictitiously discusses institutional capacity and legislative frameworks based on the data.
+    Your task is to generate a structured narrative. Any discussion of institutional capacity, legislation, or Convention implementation MUST be explicitly framed as a data-based observation or limitation, never as verified institutional facts unless the source data supports them.
     
     The structure MUST exactly match this JSON format:
     {{
