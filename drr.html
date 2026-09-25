@@ -727,9 +727,9 @@
 
     function getHazardTypes(item) {
       const structured = item.resume_analisa?.hazard_categories;
-      if (Array.isArray(structured) && structured.length) {
+      if (Array.isArray(structured)) {
         const normalized = structured.map(normalizeHazardKey).filter(Boolean);
-        if (normalized.length) return [...new Set(normalized)];
+        return [...new Set(normalized)];
       }
       const text = [item.element_name || '', item.resume_analisa?.description || '', item.resume_analisa?.drr_mechanism || '', ...(item.resume_analisa?.gemini_tags || [])].join(' ').toLowerCase();
       if (text.includes('tsunami') || text.includes('marine surge') || text.includes('coastal recession')) return ['tsunami'];
