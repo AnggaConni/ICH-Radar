@@ -27979,22 +27979,194 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-43fdb009",
+      "element_name": "Katta Ashula",
+      "categories": [
+        "Performing Arts",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Performing Arts",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ich.unesco.org/en/RL/katta-ashula-00256&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/katta-ashula-00256",
+        "https://ich.uz/en/ich/katta-ashula",
+        "https://www.ichlinks.com/contents/220",
+        "https://bluetreeaudio.com/ferghana-voices-carry-maqom-katta-ashula-and-tanovar/"
+      ],
+      "scraped_at": "2026-09-25T14:08:23.743977Z",
+      "location": {
+        "country": "Uzbekistan",
+        "provinces": [
+          "Ferghana Valley"
+        ],
+        "lat": 41.32373,
+        "lng": 63.9528098
+      },
+      "resume_analisa": {
+        "description": "Katta Ashula, meaning 'big song' or 'tray song,' is a traditional vocal genre originating in the Ferghana Valley of Uzbekistan. It is performed a cappella by two to five singers, who often use a small metal tray or plate (patnis/likobcha) to regulate sound direction and create a specific timbre. This unique art form combines performing arts, singing, Eastern poetry, and sometimes sacred rites, covering themes from love to philosophical and theological concepts. It is characterized by improvisation, a single rhythm, high-pitched vocals, deep breathing techniques, and a free style of performance.",
+        "cultural_significance": "Katta Ashula is a vital expression of Uzbek cultural identity, fostering dialogue between cultures and strengthening community bonds. It is traditionally performed at significant social gatherings, festivities, and celebrations. The knowledge and skills are transmitted orally from master to pupil through a demanding apprenticeship system, known as 'ustoz-shogird' methodology. This oral transmission is crucial for preserving its spiritual values and ensuring its continuity across generations.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "Katta Ashula, by being performed at big gatherings, festivities, and party celebrations, and serving as an important expression of cultural identity, strengthens social cohesion and mutual aid within communities. This shared cultural practice fosters a sense of belonging and collective identity, which can be a foundational element for community resilience and mutual support in times of stress or disaster.",
+        "gemini_tags": [
+          "Uzbekistan",
+          "Ferghana Valley",
+          "Intangible Cultural Heritage",
+          "Performing Arts",
+          "Oral Traditions",
+          "Traditional Music",
+          "A Cappella",
+          "Cultural Identity",
+          "Social Cohesion"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Performing Art",
+        "materials_and_tools": [
+          "Small metal tray or plate (patnis/likobcha)"
+        ],
+        "step_by_step": [
+          "**Ensemble Formation:** Two to five singers, typically of the same vocal range, perform together.",
+          "**A Cappella Performance:** The singing is performed without the accompaniment of musical instruments.",
+          "**Sound Regulation:** Singers hold a small metal tray or plate (patnis/likobcha) near their mouths to regulate the direction of the sound, allowing them to listen to their own voice and that of their companions, and to create a specific sound timbre.",
+          "**Vocal Technique:** Performance involves a high-pitched, wide-ranging voice, deep and wide breath control, and a rhythmically independent singing style.",
+          "**Improvisation and Poetic Texts:** The performance incorporates improvisation and draws on poetic texts, primarily ghazals from classical poets (e.g., Navoi, Lutfi) and sometimes contemporary Uzbek poets.",
+          "**Call and Response/Overlap:** Singers do not simply take turns; one voice launches a phrase, and another continues, overlaps, or answers, maintaining a stable melodic path through collective memory and coordinated breath.",
+          "**Transmission:** The art is passed down orally from master (ustoz) to apprentice (shogird) through a demanding and specialized training methodology."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Kyrgyzstan",
+            "element_name": "Katta Ashula",
+            "relationship_reason": "Shared traditional song genre in the Ferghana Valley region."
+          },
+          {
+            "country": "Tajikistan",
+            "element_name": "Katta Ashula",
+            "relationship_reason": "Shared traditional song genre in the Ferghana Valley region."
+          },
+          {
+            "country": "Kazakhstan",
+            "element_name": "Katta Ashula",
+            "relationship_reason": "Shared traditional song genre in the Ferghana Valley region."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c2a3960e",
+      "element_name": "Seni Pembuatan Perahu Pinisi",
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.kompas.com/klasika/read/2024/04/23/150000366/tak-bisa-sembarangan-ini-proses-pembuatan-kapal-pinisi&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.kompas.com/klasika/read/2024/04/23/150000366/tak-bisa-sembarangan-ini-proses-pembuatan-kapal-pinisi",
+        "https://bumicuek.community/proses-pembuatan-perahu-phinisi/",
+        "https://pb2301perahu.blogspot.com/2017/04/bahan-dan-alat-pembuatan.html",
+        "https://www.scribd.com/document/500040523/Proses-Pembuatan-Perahu-Pinisi-Bulukumba",
+        "https://bobo.grid.id/read/082149021/cara-membuat-perahu-pinisi-perahu-khas-bugis-makassar-yang-sudah-ada-sejak-ratusan-tahun-lalu",
+        "https://www.solarindustri.com/blog/bagian-bagian-kapal-pinisi-serta-proses-pembuatannya/",
+        "https://www.detik.com/jogja/budaya/d-7076718/10-jenis-perahu-tradisional-di-indonesia-salah-satunya-kapal-pinisi",
+        "https://bangkitjayamunggal.com/kapal-pinisi-warisan-budaya-peran-historis-dalam-logistik-nusantara/",
+        "https://www.kompas.tv/lifestyle/195150/fakta-menarik-kapal-pinisi-warisan-budaya-nusantara",
+        "https://www.traveloka.com/id-id/explore/destination/kapal-layar-tradisional-indonesia-acc/228078"
+      ],
+      "scraped_at": "2026-09-25T14:09:13.170627Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "South Sulawesi"
+        ],
+        "lat": -3.6446718,
+        "lng": 119.9471906
+      },
+      "resume_analisa": {
+        "description": "The Pinisi is a traditional Indonesian wooden sailing vessel originating from the Bugis and Makassar people of South Sulawesi. It is characterized by its distinctive design featuring two main masts and seven sails. Uniquely, Pinisi boats are constructed without the use of iron nails, instead relying on intricate wooden pegs and precise joint techniques to assemble the robust wooden components.",
+        "cultural_significance": "The art of Pinisi boat building is deeply embedded in the cultural fabric of the Bugis and Makassar communities, serving as a powerful symbol of Indonesia's maritime heritage. The seven sails are said to symbolize the seven great oceans that the ancestors of Indonesia were capable of navigating. The entire construction process is imbued with spiritual and social significance, involving traditional rituals, such as the selection of an auspicious day and a launching ceremony (Maccera Lopi) with animal sacrifice, to seek blessings and ensure good fortune. This communal effort strengthens social bonds and reflects values like teamwork, hard work, meticulousness, and respect for nature. In 2017, UNESCO officially recognized the Art of Pinisi Boatbuilding as an Intangible Cultural Heritage of Humanity.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Typhoon"
+        ],
+        "drr_mechanism": "The traditional techniques employed in building Pinisi boats result in exceptionally strong and seaworthy vessels capable of navigating challenging maritime conditions, including strong waves and storms (associated with typhoons). This resilience enables coastal communities to maintain their primary livelihoods, such as fishing and trade, even in a dynamic and sometimes hazardous marine environment, thereby contributing to their economic stability and food security.",
+        "gemini_tags": [
+          "traditional boat building",
+          "maritime heritage",
+          "indigenous craftsmanship",
+          "intangible cultural heritage",
+          "indonesia"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Boat Building",
+        "materials_and_tools": [
+          "Wood (Ironwood, Bitti, Kandole/Punaga, Teak)",
+          "Wooden pegs",
+          "Traditional hand tools (e.g., gergaji (saw), katam tangan (hand plane), sapit bakau (pliers for frame assembly))"
+        ],
+        "step_by_step": [
+          "**Determination of an Auspicious Day**: Before commencing any work, an auspicious day is chosen, typically the 5th or 7th day of the month. This selection is accompanied by rituals and prayers to seek blessings for the smooth construction process and future prosperity.",
+          "**Wood Selection and Felling**: Specific types of strong and water-resistant wood, such as ironwood, bitti, kandole/punaga, and teak, are carefully selected from forests.",
+          "**Wood Processing**: The felled timber is then dried and cut according to the required dimensions for various boat components.",
+          "**Component Measurement and Assembly**: The shipbuilders, known as Panrita Lopi, meticulously measure and assemble the boat's components, including the keel and frame. The construction uniquely avoids iron nails, instead utilizing precisely fitted wooden pegs and traditional joint techniques.",
+          "**Finishing**: Once the main structure is complete, the boat undergoes finishing touches, which may include sanding and applying natural protective coatings.",
+          "**Launching Ceremony (Maccera Lopi)**: Prior to the boat's maiden voyage, a purification ceremony called 'Maccera Lopi' is performed. This ritual involves the sacrifice of an animal – a goat for boats under 100 tons or a cow for those exceeding 100 tons – to ensure the safety and success of the vessel.",
+          "**Launching and Buoyancy Test**: Finally, the completed Pinisi boat is launched into the sea, where its buoyancy and stability are tested."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Malaysia",
+            "element_name": "Pinas (traditional sailing vessel)",
+            "relationship_reason": "Historical accounts suggest the Pinisi rig, a hybrid combining local techniques with European and Arab influences, may have been prototyped in Trengganu, Malaysia, around the 1840s, possibly deriving its name from 'pinasse'."
+          },
+          {
+            "country": "Europe/Arab regions",
+            "element_name": "Gaff-rigged ships",
+            "relationship_reason": "The Pinisi rigging developed in the 19th century by combining traditional local sails (layar tanjaq) with fore-and-aft sails observed on European and Arab gaff-rigged ships."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-25T06:39:20.261010Z",
-    "total_ich_elements": 314,
-    "complete_records": 314,
+    "generated_at": "2026-09-25T14:09:54.428118Z",
+    "total_ich_elements": 316,
+    "complete_records": 316,
     "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 110,
-      "Social Practices & Rituals": 64,
+      "Traditional Craftsmanship": 111,
+      "Social Practices & Rituals": 66,
       "Culinary Traditions": 49,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 28,
+      "Performing Arts": 29,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 22,
+      "Oral Traditions": 23,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
