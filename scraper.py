@@ -1506,8 +1506,14 @@ def main():
         
         db["inventory"] = inventory
         
-        # PHASE 3: Generate Quarterly Resume / Journal
-        generate_quarterly_resume(api_key, inventory)
+        # PHASE 3: Optional Quarterly Resume / Journal
+        # Disabled by default so the main scraper focuses on ICH + DRR intelligence.
+        # Set GENERATE_RESUME=true to generate/update resume.json for journal.html.
+        generate_resume = os.environ.get("GENERATE_RESUME", "").strip().lower() in ("1", "true", "yes", "on")
+        if generate_resume:
+            generate_quarterly_resume(api_key, inventory)
+        else:
+            log.info("Quarterly Resume skipped. Set GENERATE_RESUME=true to enable it.")
         
         # Save if there's any modification
         if audited > 0 or enriched > 0 or discovered > 0:
