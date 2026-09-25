@@ -340,6 +340,22 @@
       </div>
     </div>
 
+      <div class="flex flex-col sm:flex-row sm:items-center gap-2 pt-2 border-t border-slate-100">
+        <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider font-bold text-slate-500"><i class="ph-fill ph-shield-check text-blue-500 text-base"></i><span>DRR Mechanism Category:</span></div>
+        <select id="drr-category-filter" onchange="filterByDrrCategory(this.value)" class="w-full sm:w-auto px-3 py-2 rounded-lg text-xs font-bold bg-slate-50 text-slate-700 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-200">
+          <option value="all">All DRR Mechanisms</option>
+          <option value="Indigenous Knowledge & Early Warning">Indigenous Knowledge & Early Warning</option>
+          <option value="Ecosystem-Based Disaster Risk Reduction">Ecosystem-Based Disaster Risk Reduction</option>
+          <option value="Resilient Livelihoods & Food Security">Resilient Livelihoods & Food Security</option>
+          <option value="Resilient Housing & Settlement Practices">Resilient Housing & Settlement Practices</option>
+          <option value="Traditional Emergency Preparedness">Traditional Emergency Preparedness</option>
+          <option value="Social Cohesion & Mutual Aid">Social Cohesion & Mutual Aid</option>
+          <option value="Climate Adaptation & Resilience">Climate Adaptation & Resilience</option>
+          <option value="Traditional Healing & Health Resilience">Traditional Healing & Health Resilience</option>
+          <option value="Other Disaster Resilience Practice">Other Disaster Resilience Practice</option>
+        </select>
+      </div>
+
     <!-- Navigation Tabs (Directory vs Interactive Map) -->
     <div class="flex border-b border-slate-200 gap-2">
       <button id="tab-btn-directory" onclick="switchMainTab('directory')" class="px-5 py-3 font-bold text-sm text-blue-700 border-b-2 border-blue-600 flex items-center gap-2 transition-all">
@@ -687,6 +703,7 @@
     // ───────────────────────────────────────────────────────────────
     let drrInventory = [];
     let activeFilter = 'all';
+    let activeDrrCategory = 'all';
     let leafletMap = null;
     let mapMarkerLayer = null;
     let hazardBeltLayer = null;
@@ -695,16 +712,39 @@
     // ───────────────────────────────────────────────────────────────
     // 3. HAZARD CLASSIFICATION HELPER
     // ───────────────────────────────────────────────────────────────
-    function getHazardType(item) {
-      const text = `${item.element_name} ${item.resume_analisa?.description || ''} ${item.resume_analisa?.drr_mechanism || ''} ${(item.resume_analisa?.gemini_tags || []).join(' ')}`.toLowerCase();
-      
-      if (text.includes('tsunami') || text.includes('marine surge') || text.includes('coastal recession')) return 'tsunami';
-      if (text.includes('earthquake') || text.includes('seismic') || text.includes('kigumi') || text.includes('ground shaking')) return 'earthquake';
-      if (text.includes('drought') || text.includes('heatwave') || text.includes('desert') || text.includes('badgir') || text.includes('aflaj') || text.includes('tanka')) return 'drought';
-      if (text.includes('flood') || text.includes('landslide') || text.includes('floating') || text.includes('stone wall') || text.includes('baira')) return 'flood';
-      if (text.includes('typhoon') || text.includes('cyclone') || text.includes('ivatan') || text.includes('gale')) return 'typhoon';
-      if (text.includes('fire') || text.includes('burning') || text.includes('wildfire') || text.includes('biomass')) return 'wildfire';
-      return 'flood';
+    function normalizeHazardKey(value) {
+      const raw = String(value || '').trim().toLowerCase();
+      const aliases = {
+        'tsunami': 'tsunami', 'marine surge': 'tsunami', 'storm surge': 'tsunami',
+        'earthquake': 'earthquake', 'seismic': 'earthquake', 'ground shaking': 'earthquake',
+        'drought': 'drought', 'heatwave': 'drought', 'heat wave': 'drought',
+        'flood': 'flood', 'flooding': 'flood', 'landslide': 'flood',
+        'typhoon': 'typhoon', 'cyclone': 'typhoon', 'gale': 'typhoon',
+        'wildfire': 'wildfire', 'bushfire': 'wildfire', 'forest fire': 'wildfire'
+      };
+      return aliases[raw] || null;
+    }
+
+    function getHazardTypes(item) {
+      const structured = item.resume_analisa?.hazard_categories;
+      if (Array.isArray(structured) && structured.length) {
+        const normalized = structured.map(normalizeHazardKey).filter(Boolean);
+        if (normalized.length) return [...new Set(normalized)];
+      }
+      const text = [item.element_name || '', item.resume_analisa?.description || '', item.resume_analisa?.drr_mechanism || '', ...(item.resume_analisa?.gemini_tags || [])].join(' ').toLowerCase();
+      if (text.includes('tsunami') || text.includes('marine surge') || text.includes('coastal recession')) return ['tsunami'];
+      if (text.includes('earthquake') || text.includes('seismic') || text.includes('kigumi') || text.includes('ground shaking')) return ['earthquake'];
+      if (text.includes('drought') || text.includes('heatwave') || text.includes('desert') || text.includes('badgir') || text.includes('aflaj') || text.includes('tanka')) return ['drought'];
+      if (text.includes('flood') || text.includes('landslide') || text.includes('floating') || text.includes('stone wall') || text.includes('baira')) return ['flood'];
+      if (text.includes('typhoon') || text.includes('cyclone') || text.includes('ivatan') || text.includes('gale')) return ['typhoon'];
+      if (text.includes('fire') || text.includes('burning') || text.includes('wildfire') || text.includes('biomass')) return ['wildfire'];
+      return ['flood'];
+    }
+
+    function getHazardType(item) { return getHazardTypes(item)[0] || 'flood'; }
+    function getDrrCategory(item) { return item.resume_analisa?.drr_category || 'Not Directly Related to DRR'; }
+    function getDrrRelevance(item) {
+      return item.resume_analisa?.drr_relevance_level || (item.resume_analisa?.drr_relevance === true ? 'Directly Related to DRR' : 'Not Directly Related to DRR');
     }
 
     function getHazardMeta(type) {
@@ -799,11 +839,14 @@
         
         const rawList = Array.isArray(rawData) ? rawData : (rawData.inventory || []);
         
-        // FILTER: Only elements that have "drr" in ID or drr_relevance = true
-        drrInventory = rawList.filter(item => 
-          (item.id && item.id.toLowerCase().includes('drr')) || 
-          (item.resume_analisa && item.resume_analisa.drr_relevance === true)
-        );
+        // FILTER: prefer structured DRR relevance, while keeping legacy records compatible.
+        drrInventory = rawList.filter(item => {
+          const relevance = item.resume_analisa?.drr_relevance_level;
+          const structured = relevance === 'Directly Related to DRR' || relevance === 'Indirectly Related to DRR';
+          const legacy = item.resume_analisa?.drr_relevance === true;
+          const legacyId = item.id && item.id.toLowerCase().includes('drr');
+          return legacyId || structured || legacy;
+        });
 
         if (drrInventory.length === 0) throw new Error('No DRR items in data.json');
       } catch (err) {
@@ -827,9 +870,11 @@
       const grid = document.getElementById('drr-grid');
       grid.innerHTML = '';
 
-      const filtered = activeFilter === 'all' 
-        ? drrInventory 
-        : drrInventory.filter(item => getHazardType(item) === activeFilter);
+      const filtered = drrInventory.filter(item => {
+        const hazardMatch = activeFilter === 'all' || getHazardTypes(item).includes(activeFilter);
+        const categoryMatch = activeDrrCategory === 'all' || getDrrCategory(item) === activeDrrCategory;
+        return hazardMatch && categoryMatch;
+      });
 
       if (filtered.length === 0) {
         grid.innerHTML = `
@@ -921,6 +966,8 @@
       renderMapMarkers();
     }
 
+    function filterByDrrCategory(category) { activeDrrCategory = category; renderCards(); renderMapMarkers(); }
+
     // ───────────────────────────────────────────────────────────────
     // 7. LEAFLET MAP WITH HAZARD BELTS OVERLAY
     // ───────────────────────────────────────────────────────────────
@@ -966,9 +1013,11 @@
       if (!leafletMap || !mapMarkerLayer) return;
       mapMarkerLayer.clearLayers();
 
-      const filtered = activeFilter === 'all' 
-        ? drrInventory 
-        : drrInventory.filter(item => getHazardType(item) === activeFilter);
+      const filtered = drrInventory.filter(item => {
+        const hazardMatch = activeFilter === 'all' || getHazardTypes(item).includes(activeFilter);
+        const categoryMatch = activeDrrCategory === 'all' || getDrrCategory(item) === activeDrrCategory;
+        return hazardMatch && categoryMatch;
+      });
 
       filtered.forEach(item => {
         const lat = item.location?.lat;
@@ -1076,7 +1125,12 @@
 
           <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-center">
             <span class="text-[11px] font-mono text-slate-400 uppercase font-semibold">Category Domain</span>
-            <span class="text-sm font-bold text-slate-900 mt-0.5">${item.category}</span>
+            <span class="text-sm font-bold text-slate-900 mt-0.5">${(item.categories || [item.category || 'Unclassified']).join(' · ')}</span>
+          </div>
+          <div class="p-4 rounded-2xl bg-blue-50/60 border border-blue-100 flex flex-col justify-center">
+            <span class="text-[11px] font-mono text-blue-500 uppercase font-semibold">DRR Relevance</span>
+            <span class="text-sm font-bold text-blue-900 mt-0.5">${getDrrRelevance(item)}</span>
+            <span class="text-[11px] text-slate-500 mt-1">${getDrrCategory(item)}</span>
           </div>
         </div>
 
