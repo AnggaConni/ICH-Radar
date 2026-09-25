@@ -27478,19 +27478,288 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-9a80ca25",
+      "element_name": "Patachitra (Bengal Patachitra)",
+      "category": "Oral Traditions | Traditional Craftsmanship | Performing Arts",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Durga_Patachitra.jpg/330px-Durga_Patachitra.jpg",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Pattachitra",
+        "https://www.cchlearningtogether.com/post/patachitra-a-traditional-way-of-storytelling-in-bengal",
+        "https://www.borderlessjournal.com/the-oral-traditions-of-bengal-stories-and-songs/",
+        "https://www.kalkattevaali.in/blogs/indian-art/pattachitra-art-how-its-made-from-natural-colors-to-intricate-detailing",
+        "https://www.exoticindiaart.com/blog/how-are-pattachitra-paintings-made-a-step-by-step-guide/",
+        "https://catterfly.art/blogs/art-forms/pattachitra-painting-steps-canvas-natural-colours-process-explained",
+        "https://www.dsource.in/resource/patachitra-painting-bhubaneswar-orissa/making-process",
+        "https://medium.com/@gayatreetripathy/the-art-of-pattachitra-considering-the-medium-the-paintings-32f277180424",
+        "https://www.wholesaleindianhandicrafts.com/wholesale-pattachitra-paintings-customization-sustainability-and-profitability/",
+        "https://www.scribd.com/document/511397014/Pattachitra-Tradition-and-Techniques",
+        "https://folkandtribalart.com/blogs/news/tools-and-materials-pattachitra-painting",
+        "https://craftarchive.chitrakala.org/craft/pattachitra",
+        "https://www.artflute.com/blogs/art-forms/what-is-pattachitra-paintings-origin-types-styles-significance",
+        "https://www.chitrapata.com/blogs/news/pattachitra-paintings-visual-storytelling-device-from-odisha",
+        "https://sanglapjournal.in/index.php/sanglap/article/view/180",
+        "https://www.internationalindianfolkartgallery.com/pattachitra-painting",
+        "https://www.dodho.com/patachitra-a-visual-storytelling-tradition-by-arunima-mondal",
+        "https://jetir.org/papers/JETIR2209440.pdf",
+        "https://www.patachitra.com/the-location-the-craft-the-artists-the-raw-materials-the-process-the-products-heritage-education-exchange-collaboration-the-festival-the-folk-art-centre-directory/",
+        "https://www.shutterstock.com/search/pattachitra",
+        "https://www.alamy.com/stock-photo/patachitra-art.html",
+        "https://www.shutterstock.com/search/pattachitra+odisha",
+        "https://www.alamy.com/stock-photo/bengal-pattachitra-art.html",
+        "https://www.shutterstock.com/search/patachitra",
+        "https://www.dreamstime.com/photos/bengal-patachitra-paintings",
+        "https://www.dreamstime.com/photos/bengal-patachitra-painting",
+        "https://www.alamy.com/stock-photo/patachitra.html",
+        "https://www.culturalindia.net/indian-art/paintings/pattachitra.html"
+      ],
+      "scraped_at": "2026-09-25T02:25:09.627126Z",
+      "location": {
+        "country": "India",
+        "provinces": [
+          "West Bengal",
+          "Odisha"
+        ],
+        "lat": 22.9964948,
+        "lng": 87.6855882
+      },
+      "resume_analisa": {
+        "description": "Patachitra, also known as Pattachitra, is a traditional, cloth-based scroll painting and visual storytelling art form originating from the eastern Indian states of Odisha and West Bengal, with presence in parts of Bangladesh. The art form is characterized by intricate details, mythological narratives, and folktales inscribed within the paintings. Practitioners, known as Patuas or Chitrakars, create these vibrant scrolls and perform narrative songs, called 'Pater Gaan', while unrolling them to an audience. The themes depicted are diverse, ranging from religious and mythological stories, historical events, and local folklore to contemporary social issues such as literacy, health, and environmental concerns.",
+        "cultural_significance": "Patachitra is a living tradition passed down through generations, serving as a vital medium for preserving cultural heritage, transmitting moral values, and reflecting the social and cultural life of the region. It is considered by some to be a precursor to modern-day animation due to its sequential narrative style. The tradition often showcases a syncretic culture, incorporating themes and stories that resonate with both Hindu and Muslim communities, highlighting a shared cultural pool.",
+        "drr_relevance": true,
+        "drr_mechanism": "Patachitra actively contributes to disaster risk reduction (DRR), ecological resilience, and climate adaptation by addressing 'social and modern-day problems' and 'social issues, such as literacy, health and environment' in its narratives. By visually and orally communicating these critical issues through engaging storytelling, Patachitra raises awareness within communities about potential risks, promotes understanding of environmental challenges, and encourages the adoption of adaptive behaviors and community-led solutions for mitigation and resilience.",
+        "gemini_tags": [
+          "Oral storytelling",
+          "Scroll painting",
+          "Folk art",
+          "Bengal",
+          "Odisha",
+          "India",
+          "Bangladesh",
+          "Traditional craftsmanship",
+          "Performing arts",
+          "Cultural heritage",
+          "Visual narrative",
+          "Natural pigments",
+          "Community practice"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Painting and Performance",
+        "materials_and_tools": [
+          "Canvas (Patta): Cotton cloth (sometimes old saris or silk)",
+          "Adhesive paste: Crushed tamarind seeds, chalk powder, natural gum (e.g., kaitha gum)",
+          "Natural Colors: Pigments from stones (Haritala for yellow, Hingula/Hingulal for red, Khandneela for blue, Geru for brown), minerals, plants (neem leaves for green, indigo for blue), conch shells (for white), lampblack/soot (for black)",
+          "Brushes: Handmade from animal hair (squirrel, mouse, buffalo neck hair) or plant fibers ('Kiya' root), fixed on bamboo or wooden handles",
+          "Rubbing stones: Khaddar stone (for smoothing), Chikana stone (for shining)",
+          "Stylus (for palm-leaf Patachitra)",
+          "Pencils",
+          "Scissors",
+          "Lacquer (resin)"
+        ],
+        "step_by_step": [
+          "**1. Canvas Preparation (Patta Nirman):** Cotton cloth is soaked in a solution of crushed tamarind seeds and water for 4-5 days, then sun-dried. A paste made from chalk powder, tamarind, and natural gum is applied to both sides of the dried cloth in several layers, followed by further sun-drying. The surface is then smoothed by rubbing with a Khaddar stone and polished to a leathery, firm texture using a Chikana stone.",
+          "**2. Color Preparation:** Natural pigments are meticulously prepared by grinding various stones, shells, and extracting dyes from plants. These pigments are then mixed with natural gum (such as kaitha gum) and water to create smooth, long-lasting colors.",
+          "**3. Sketching the Composition:** Borders are typically drawn first on all four sides of the prepared canvas. The artist then sketches the outlines of the figures and the overall composition, often freehand, using a pencil or fine brush.",
+          "**4. Filling Base Colors (Hues):** Flat areas of bold, natural colors are applied, usually without shading or gradients. This often begins with background colors (e.g., red, known as 'Hingula Banaka'), followed by the body colors of the figures and their attire.",
+          "**5. Detailing and Ornamentation:** Once the base colors are dry, intricate details, expressions, and decorative elements like ornaments ('Gahana Lagi') and textures are added using fine brushes.",
+          "**6. Final Outlining:** Strong, bold outlines, typically in black, are drawn to sharpen the forms, enhance contrast, and give the painting its distinctive visual identity.",
+          "**7. Finishing and Lacquering (Jaulasa):** After the painting is complete, a lacquer coating (made from resin) is applied to the surface. This process, known as 'Jaulasa', gives the painting a shiny finish and ensures its longevity. The artwork is then thoroughly dried and inspected.",
+          "**8. Performance (Pater Gaan):** The Patua (artist) unrolls the long scroll painting panel by panel, simultaneously narrating the story depicted in the visuals through traditional songs known as 'Pater Gaan'. This performance engages the audience with both melodies and visual representations, bringing the characters and narratives to life."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Odisha Pattachitra",
+            "relationship_reason": "Shared art form with regional variations in style, motifs, and materials (e.g., silk in Bengal vs. cotton in Odisha). Both are traditional scroll paintings with mythological and folk themes."
+          },
+          {
+            "country": "Bangladesh",
+            "element_name": "Bangladeshi Patachitra",
+            "relationship_reason": "Shared cultural heritage as part of the broader Bengali narrative art tradition, with Patachitra being practiced in parts of Bangladesh."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-c84ebf9b",
+      "element_name": "Sateré-Mawé Bullet Ant Initiation Ritual (Waumat / Tucandeira Dance)",
+      "category": "Social Practices & Rituals",
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.worldatlas.com/articles/suffering-pain-for-the-sake-of-tradition-bullet-ants-and-the-satere-mawe-people.html&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.worldatlas.com/articles/suffering-pain-for-the-sake-of-tradition-bullet-ants-and-the-satere-mawe-people.html",
+        "https://www.hmc.edu/biology/2026/05/12/coming-of-age-with-ants-the-satere-mawe-tradition-of-wearing-bullet-ant-gloves/",
+        "https://pib.socioambiental.org/en/Povo:Sater%C3%A9_Maw%C3%A9",
+        "https://en.wikipedia.org/wiki/Maw%C3%A9_people",
+        "https://joshuaproject.net/people_groups/14725/BR",
+        "https://www.bbc.co.uk/programmes/articles/5W06J19t2k2G9Z2V3Y2Q2B/in-the-amazon-bullet-ants-deliver-agonising-pain-to-boys-as-young-as-12-heres-why-and-can-steve-backshall-handle-the-heat",
+        "https://sites.google.com/view/bu-anthropology-wiki/satere-mawe-ceremony",
+        "https://www.britannica.com/animal/bullet-ant#ref236688",
+        "https://www.themodsquad.com/something-out-of-the-ordinary-bullet-ant-glove-ritual/",
+        "https://unbelievable-facts.com/2024/08/satere-mawe-bullet-ant-ritual.html",
+        "https://artsandculture.google.com/story/amazonian-resilience-sater%C3%A9-maw%C3%A9/1wXh-o6B_j8tLA"
+      ],
+      "scraped_at": "2026-09-25T02:25:50.320961Z",
+      "location": {
+        "country": "Brazil",
+        "provinces": [
+          "Amazonas",
+          "Pará"
+        ],
+        "lat": 0.6395295,
+        "lng": -50.3706084
+      },
+      "resume_analisa": {
+        "description": "The Sateré-Mawé Bullet Ant Initiation Ritual, also known as Waumat or Tucandeira Dance, is a rite of passage for young Sateré-Mawé men in the Amazon rainforest. It involves inserting their hands into gloves woven with hundreds of live bullet ants (Paraponera clavata), enduring their intensely painful stings for approximately ten minutes. This ordeal is repeated at least 20 times over the course of a man's lifetime. The venom causes excruciating pain, temporary paralysis, trembling, and can induce hallucinations, with symptoms lasting up to 12-24 hours.",
+        "cultural_significance": "This ritual marks the transition from boyhood to manhood and warrior status within the Sateré-Mawé tribe. It serves as a profound test of endurance, strength, and resolve, qualities deemed essential for men who are expected to protect their indigenous community and ancestral lands. The practice reinforces Sateré-Mawé cultural identity and prepares individuals for the challenges of their environment.",
+        "drr_relevance": true,
+        "drr_mechanism": "The ritual directly contributes to disaster risk reduction and ecological resilience by fostering extreme physical and mental endurance, courage, and resilience among the Sateré-Mawé men. These traits are crucial for their role in defending their community and ancestral lands from external threats such as illegal logging, land grabbing, and other environmental and social pressures prevalent in the Amazon rainforest. This strengthens the community's capacity for self-defense and adaptation in the face of ongoing challenges.",
+        "gemini_tags": [
+          "Initiation Rite",
+          "Coming-of-Age",
+          "Indigenous Culture",
+          "Amazon Rainforest",
+          "Brazil",
+          "Pain Endurance",
+          "Warrior Training",
+          "Cultural Resilience",
+          "Social Practices",
+          "Rituals",
+          "Ecological Resilience"
+        ]
+      },
+      "resume_tata_cara": {
+        "type": "Ritual / Initiation Ceremony",
+        "materials_and_tools": [
+          "Bullet ants (Paraponera clavata)",
+          "Natural sedative (chopped cashew leaves or herbal solution)",
+          "Bamboo stick",
+          "Woven gloves made of natural fibers (e.g., palm fronds)",
+          "Red macaw feathers (for decoration)",
+          "White hawk eagle feathers (for decoration)",
+          "Flutes",
+          "Genipapo dye (optional)"
+        ],
+        "step_by_step": [
+          "Villagers locate bullet ant nests, typically found near the base of trees in the rainforest.",
+          "Bullet ants are carefully gathered using a hollow bamboo stick, often accompanied by flute playing.",
+          "The collected ants are submerged in a natural sedative, such as a mixture of water and chopped cashew leaves or a special herbal solution, to render them unconscious for approximately 30 minutes.",
+          "While the ants are sedated, they are meticulously woven into large gloves made from natural fibers, such as palm fronds, ensuring their stingers face inward. The gloves may be adorned with red macaw and white hawk eagle feathers, symbolizing conflict and courage.",
+          "In some instances, the initiate's arm, from the elbow down, may be dyed with genipapo, believed to offer protection from the venom's more dangerous effects.",
+          "Once the ants regain consciousness and become agitated, the young male initiate places his hands into the prepared gloves.",
+          "The initiate must wear the gloves for approximately ten minutes, during which the tribe engages in singing, playing music, and encouraging the initiate to dance as a means of distraction from the intense pain.",
+          "After the designated ten minutes, the gloves are removed. The excruciating pain, temporary paralysis, uncontrollable trembling, and potential hallucinations caused by the ant venom can persist for 12 to 24 hours.",
+          "To be fully recognized as an adult and warrior, the individual is expected to repeat this ritual at least 20 times throughout his lifetime."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.6,
+        "related_elements": [
+          {
+            "country": "Various",
+            "element_name": "Painful initiation rites for manhood",
+            "relationship_reason": "While the specific bullet ant ritual is unique to the Sateré-Mawé, the broader theme of painful initiation rites to test endurance and courage for the transition to adulthood is a common practice across many indigenous cultures worldwide."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-dd17b606",
+      "element_name": "Cantonese Opera (粵劇)",
+      "category": "Performing Arts",
+      "thumbnail_url": "https://images.pexels.com/photos/1032333/pexels-photo-1032333.jpeg",
+      "source_urls": [
+        "https://www.culturalheritage.mo/en/detail/100040",
+        "https://www.cityu.edu.hk/csc/about-us/the-costume-design-and-make-up-of-cantonese-opera",
+        "https://medium.com/@dandelion.hk/the-traditional-artistic-gems-cantonese-opera-1971168019c0",
+        "https://ich.unesco.org/en/RL/peking-opera-00219",
+        "https://www.chinavistas.com/cultural-heritage/cantonese-opera-guangdong/",
+        "https://www.ich.gov.hk/en/web/ich/performing_arts.html",
+        "https://www.rmg.co.uk/stories/topics/cantonese-opera-behind-scenes",
+        "https://colgate.domains.colgate.edu/globaltheater/makeup-in-cantonese-opera/",
+        "https://www.facebook.com/GuangdongCulture/posts/cantonese-opera-a-traditional-chinese-art-form-that-includes-singing-acting-mar/783788293774880/",
+        "https://www.arts.cuhk.edu.hk/research/heritagization-and-institutionalization-of-traditional-chinese-theatre-a-study-of-cantonese-opera-as-an-intangible-cultural-heritage/",
+        "https://www.fringearts.com/blog/the-stagecraft-and-influence-of-classical-chinese-opera/",
+        "https://www.tandfonline.com/doi/full/10.1080/13527258.2024.2302303",
+        "https://www.ich.gov.hk/en/web/ich/what_is_ich.html",
+        "https://www.ich.gov.hk/en/web/ich/performing_arts_2.html",
+        "https://www.ich.unesco.org/en/RL/kun-qu-opera-00065",
+        "https://www.chinadaily.com.cn/a/202306/07/WS648011c7a310340adfa64f21.html",
+        "https://www.gafencu.com/culture/echoes-of-heritage-a-link-to-the-past-that-draws-us-together-cantonese-opera-speaks-to-the-soul-of-hong-kong",
+        "https://www.chinadaily.com.cn/a/202306/07/WS648011c7a310340adfa64f21.html",
+        "https://en.wikipedia.org/wiki/Cantonese_opera",
+        "https://www.foyo.cn/china-trip/cantonese-opera-experience-a-cultural-performance-guide",
+        "https://www.hkmemory.hk/collections/hong_kong_culture/arts/performing_arts/cantonese_opera/costumes/index.html"
+      ],
+      "scraped_at": "2026-09-25T02:26:19.833962Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Guangdong Province",
+          "Guangxi Zhuang Autonomous Region",
+          "Hong Kong S.A.R.",
+          "Macao S.A.R."
+        ],
+        "lat": 23.1357694,
+        "lng": 113.1982688
+      },
+      "resume_analisa": {
+        "description": "Cantonese Opera (粵劇), also known as Yueju or Guangdong opera, is a vibrant and traditional form of Chinese opera performed in the Cantonese dialect. It originated in the Guangdong province of southern China during the late Ming and early Qing dynasties. This performing art combines singing, reciting, acting, martial arts, acrobatics, elaborate costumes, and symbolic makeup to tell stories often rooted in Chinese history, classical literature, folk tales, and mythology.",
+        "cultural_significance": "Cantonese Opera holds a significant place in Chinese cultural heritage, particularly in the Cantonese-speaking regions of Guangdong, Guangxi, Hong Kong, and Macau. It is a cultural symbol of the Guangdong region and a sentiment in the hearts of Chinese people worldwide, serving as a powerful link to their ancestral land and identity. The art form is crucial for cultural preservation, fostering community bonds, and transmitting historical, philosophical, and moral values across generations. Cantonese Opera was inscribed onto the first national list of Intangible Cultural Heritage in China in 2006 and recognized by UNESCO in 2009 on the Representative List of the Intangible Cultural Heritage of Humanity.",
+        "drr_relevance": false,
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Chinese opera",
+          "performing arts",
+          "traditional music",
+          "acrobatics",
+          "martial arts",
+          "costumes",
+          "makeup",
+          "storytelling",
+          "cultural heritage",
+          "Lingnan culture"
+        ]
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Peking Opera",
+            "relationship_reason": "Cantonese Opera shares origins and similar characters with Peking Opera. Costume design in Cantonese Opera was also heavily influenced by Peking Opera."
+          },
+          {
+            "country": "China",
+            "element_name": "Kunqu Opera",
+            "relationship_reason": "Kunqu Opera, originating in Suzhou and considered 'the mother of Chinese operas,' had a significant influence on Cantonese Opera."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-23T02:22:56.061001Z",
-    "total_ich_elements": 309,
-    "complete_records": 309,
-    "incomplete_records": 0,
+    "generated_at": "2026-09-25T02:26:46.786129Z",
+    "total_ich_elements": 312,
+    "complete_records": 311,
+    "incomplete_records": 1,
     "categories_breakdown": {
       "Traditional Craftsmanship": 110,
-      "Social Practices & Rituals": 60,
+      "Social Practices & Rituals": 61,
       "Culinary Traditions": 48,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 26,
+      "Performing Arts": 27,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
       "Oral Traditions": 21,
@@ -27507,7 +27776,8 @@
       "Oral Traditions | Social Practices & Rituals": 1,
       "Oral Traditions and Expressions": 1,
       "Knowledge and Practices Concerning Nature and the Universe": 9,
-      "Social Practices, Rituals and Festive Events": 3
+      "Social Practices, Rituals and Festive Events": 3,
+      "Oral Traditions | Traditional Craftsmanship | Performing Arts": 1
     }
   }
 }
