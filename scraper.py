@@ -796,8 +796,115 @@ def audit_inventory(inventory):
     return audited_count
 
 # ======================================================================
+# CONTROLLED VOCABULARY & NORMALIZATION
+# ======================================================================
+
+VALID_HERITAGE_CATEGORIES = [
+    "Culinary Traditions",
+    "Traditional Craftsmanship",
+    "Performing Arts",
+    "Oral Traditions",
+    "Social Practices & Rituals",
+]
+
+VALID_DRR_CATEGORIES = [
+    "Not Directly Related to DRR",
+    "Indigenous Knowledge & Early Warning",
+    "Ecosystem-Based Disaster Risk Reduction",
+    "Resilient Livelihoods & Food Security",
+    "Resilient Housing & Settlement Practices",
+    "Traditional Emergency Preparedness",
+    "Social Cohesion & Mutual Aid",
+    "Climate Adaptation & Resilience",
+    "Traditional Healing & Health Resilience",
+    "Other Disaster Resilience Practice",
+]
+
+
+def normalize_category(value):
+    raw = str(value or "").strip().lower()
+    aliases = {
+        "culinary": "Culinary Traditions",
+        "culinary tradition": "Culinary Traditions",
+        "culinary traditions": "Culinary Traditions",
+        "traditional cuisine": "Culinary Traditions",
+        "food heritage": "Culinary Traditions",
+        "food traditions": "Culinary Traditions",
+        "gastronomy": "Culinary Traditions",
+        "traditional food": "Culinary Traditions",
+        "traditional craft": "Traditional Craftsmanship",
+        "traditional craftsmanship": "Traditional Craftsmanship",
+        "craft": "Traditional Craftsmanship",
+        "craftsmanship": "Traditional Craftsmanship",
+        "handicraft": "Traditional Craftsmanship",
+        "performing art": "Performing Arts",
+        "performing arts": "Performing Arts",
+        "oral tradition": "Oral Traditions",
+        "oral traditions": "Oral Traditions",
+        "social practice": "Social Practices & Rituals",
+        "social practices": "Social Practices & Rituals",
+        "social practices & rituals": "Social Practices & Rituals",
+        "ritual": "Social Practices & Rituals",
+        "rituals": "Social Practices & Rituals",
+    }
+    if raw in aliases:
+        return aliases[raw]
+    for key, canonical in aliases.items():
+        if key in raw:
+            return canonical
+    return None
+
+
+def normalize_drr_category(value):
+    raw = str(value or "").strip().lower()
+    aliases = {
+        "none": "Not Directly Related to DRR",
+        "not related": "Not Directly Related to DRR",
+        "not directly related": "Not Directly Related to DRR",
+        "early warning": "Indigenous Knowledge & Early Warning",
+        "indigenous knowledge": "Indigenous Knowledge & Early Warning",
+        "indigenous early warning": "Indigenous Knowledge & Early Warning",
+        "ecosystem based drr": "Ecosystem-Based Disaster Risk Reduction",
+        "ecosystem-based drr": "Ecosystem-Based Disaster Risk Reduction",
+        "nature based drr": "Ecosystem-Based Disaster Risk Reduction",
+        "food security": "Resilient Livelihoods & Food Security",
+        "livelihood resilience": "Resilient Livelihoods & Food Security",
+        "resilient livelihoods": "Resilient Livelihoods & Food Security",
+        "resilient housing": "Resilient Housing & Settlement Practices",
+        "settlement resilience": "Resilient Housing & Settlement Practices",
+        "emergency preparedness": "Traditional Emergency Preparedness",
+        "preparedness": "Traditional Emergency Preparedness",
+        "social cohesion": "Social Cohesion & Mutual Aid",
+        "mutual aid": "Social Cohesion & Mutual Aid",
+        "climate adaptation": "Climate Adaptation & Resilience",
+        "climate resilience": "Climate Adaptation & Resilience",
+        "health resilience": "Traditional Healing & Health Resilience",
+        "traditional healing": "Traditional Healing & Health Resilience",
+    }
+    if raw in aliases:
+        return aliases[raw]
+    for key, canonical in aliases.items():
+        if key in raw:
+            return canonical
+    return None
+
+
+def normalize_ai_classification(item):
+    """Enforce canonical category fields returned by Gemini."""
+    category = normalize_category(item.get("category"))
+    item["category_valid"] = category is not None
+    item["category"] = category or "Unclassified"
+
+    drr_category = normalize_drr_category(item.get("drr_category"))
+    item["drr_category_valid"] = drr_category is not None
+    item["drr_category"] = drr_category or "Not Directly Related to DRR"
+
+    return item
+
+# ======================================================================
 # CORE: GEMINI AI INTERACTION
 # ======================================================================
+
 
 def call_gemini(api_key, prompt):
     url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
@@ -885,7 +992,20 @@ def enrich_incomplete_items(api_key, inventory):
         {image_instruction}
         
         IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
-        Analyze if this cultural practice contributes to Disaster Risk Reduction (DRR), ecological resilience, or climate adaptation. If yes, set "drr_relevance" to true and explain the "drr_mechanism".
+        Classify the practice's relationship to Disaster Risk Reduction (DRR).
+Use exactly ONE "drr_category" from this controlled vocabulary:
+- Not Directly Related to DRR
+- Indigenous Knowledge & Early Warning
+- Ecosystem-Based Disaster Risk Reduction
+- Resilient Livelihoods & Food Security
+- Resilient Housing & Settlement Practices
+- Traditional Emergency Preparedness
+- Social Cohesion & Mutual Aid
+- Climate Adaptation & Resilience
+- Traditional Healing & Health Resilience
+- Other Disaster Resilience Practice
+Set "drr_category_valid" to true ONLY when the selected category is clearly supported by the evidence. If there is no direct DRR connection, use "Not Directly Related to DRR".
+Explain the mechanism in "drr_mechanism".
         
         Respond ONLY with a JSON object representing the UPDATED element.
         Ensure ALL output data values and keys are strictly in ENGLISH.
@@ -908,8 +1028,9 @@ def enrich_incomplete_items(api_key, inventory):
             "resume_analisa": {{ 
             "description": "...", 
             "cultural_significance": "...", 
-            "drr_relevance": true, 
-            "drr_mechanism": "Brief explanation if it helps in disaster mitigation (e.g., earthquake-resistant, tsunami warning), otherwise null",
+            "drr_category": "Not Directly Related to DRR",
+            "drr_category_valid": true,
+            "drr_mechanism": "Brief evidence-based explanation of the disaster resilience mechanism, otherwise null",
             "gemini_tags": ["..."] 
         }},
             "resume_tata_cara": {{ "type": "crafting_process/culinary_recipe/ritual_sequence", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
@@ -921,6 +1042,7 @@ def enrich_incomplete_items(api_key, inventory):
 # BARIS DI BAWAH INI SEKARANG SUDAH MASUK KE DALAM LOOP (Indentasi Benar)
         updated_item = call_gemini(api_key, prompt)
         if updated_item and isinstance(updated_item, dict):
+            normalize_ai_classification(updated_item)
             # --- LOGIKA KOORDINAT ---
             country = updated_item.get("location", {}).get("country", "")
             lat, lng = get_coordinates(country)
@@ -959,8 +1081,22 @@ def discover_new_items(api_key, inventory):
         1. The element DOES NOT need to be officially recognized by UNESCO. It can be a local tradition, unregistered heritage, rare recipe, or community practice found on local blogs or regional news.
         2. DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL (e.g. wikipedia.org, localnews.com, etc).
         3. Analyze the element, its location, its shared heritage connections with other countries/regions, and its process/recipe.
-        4. Analyze if this cultural practice contributes to Disaster Risk Reduction (DRR), ecological resilience, or climate adaptation. If yes, set "drr_relevance" to true and explain the "drr_mechanism".
+        4. Classify the practice's relationship to Disaster Risk Reduction (DRR).
+Use exactly ONE "drr_category" from this controlled vocabulary:
+- Not Directly Related to DRR
+- Indigenous Knowledge & Early Warning
+- Ecosystem-Based Disaster Risk Reduction
+- Resilient Livelihoods & Food Security
+- Resilient Housing & Settlement Practices
+- Traditional Emergency Preparedness
+- Social Cohesion & Mutual Aid
+- Climate Adaptation & Resilience
+- Traditional Healing & Health Resilience
+- Other Disaster Resilience Practice
+Set "drr_category_valid" to true ONLY when the selected category is clearly supported by the evidence. If there is no direct DRR connection, use "Not Directly Related to DRR".
+Explain the mechanism in "drr_mechanism".
         5. Output ALL data values strictly in ENGLISH, and keep all JSON keys strictly in English.
+5a. For "category", use exactly ONE canonical heritage category: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, or Social Practices & Rituals. Do not invent category names.
         6. If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
         7. If you find all information, set "completion_status" to "COMPLETE".
         
@@ -982,8 +1118,9 @@ def discover_new_items(api_key, inventory):
             "resume_analisa": {{ 
             "description": "...", 
             "cultural_significance": "...", 
-            "drr_relevance": true, 
-            "drr_mechanism": "Brief explanation if it helps in disaster mitigation (e.g., earthquake-resistant, tsunami warning), otherwise null",
+            "drr_category": "Not Directly Related to DRR",
+            "drr_category_valid": true,
+            "drr_mechanism": "Brief evidence-based explanation of the disaster resilience mechanism, otherwise null",
             "gemini_tags": ["..."] }},
             "resume_tata_cara": {{ "type": "...", "materials_and_tools": ["..."], "step_by_step": ["..."] }},
             "shared_heritage_detection": {{ "is_shared": true/false, "confidence_score": 0.0-1.0, "related_elements": [{{ "country": "...", "element_name": "...", "relationship_reason": "..." }}] }},
@@ -999,6 +1136,7 @@ def discover_new_items(api_key, inventory):
             for item in new_items:
                 name = item.get("element_name", "Unknown")
                 if name.lower() not in existing_names:
+                    normalize_ai_classification(item)
                     item["id"] = generate_id(name)
                     
                     # --- LOGIKA KOORDINAT ---
