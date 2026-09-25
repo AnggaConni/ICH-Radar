@@ -51,12 +51,31 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           git add data.json history.json resume.json || true
-          
+
           if git diff --staged --quiet; then
             echo "No new data to commit."
           else
             git commit -m "ICH Update: Enriched incomplete data & discovered new heritage [skip ci]"
-            git push origin main
+
+            # Another workflow/manual edit can update main while this job is running.
+            # Rebase our generated commit on the latest remote main before pushing.
+            for attempt in 1 2 3; do
+              if git push origin HEAD:main; then
+                echo "Push succeeded on attempt $attempt."
+                exit 0
+              fi
+
+              echo "Push rejected; rebasing on latest origin/main (attempt $attempt)."
+              git fetch origin main
+              git rebase origin/main || {
+                echo "Rebase conflict detected. The generated changes cannot be auto-merged safely."
+                git rebase --abort || true
+                exit 1
+              }
+            done
+
+            echo "Push failed after 3 attempts."
+            exit 1
           fi
