@@ -1010,6 +1010,8 @@ Explain the mechanism in "drr_mechanism".
         
         Respond ONLY with a JSON object representing the UPDATED element.
         Ensure ALL output data values and keys are strictly in ENGLISH.
+        For "category", use exactly ONE of these canonical heritage categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals.
+Set "category_valid" to true ONLY when the selected category clearly matches the documented practice. Never invent a category name.
         If you find the missing data, change "completion_status" to "COMPLETE".
         
         Required JSON Structure:
@@ -1017,6 +1019,7 @@ Explain the mechanism in "drr_mechanism".
             "id": "{item.get('id')}",
             "element_name": "{element_name}",
             "category": "Culinary Traditions | Traditional Craftsmanship | Performing Arts | Oral Traditions | Social Practices & Rituals",
+            "category_valid": true,
             "thumbnail_url": "{item.get('thumbnail_url')}",
             "source_urls": ["<old_url>", "<new_found_url>"],
             "scraped_at": "{datetime.now().isoformat()}Z",
@@ -1097,7 +1100,7 @@ Use exactly ONE "drr_category" from this controlled vocabulary:
 Set "drr_category_valid" to true ONLY when the selected category is clearly supported by the evidence. If there is no direct DRR connection, use "Not Directly Related to DRR".
 Explain the mechanism in "drr_mechanism".
         5. Output ALL data values strictly in ENGLISH, and keep all JSON keys strictly in English.
-5a. For "category", use exactly ONE canonical heritage category: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, or Social Practices & Rituals. Do not invent category names.
+5a. For "category", use exactly ONE of these canonical heritage categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals. Set "category_valid" to true ONLY when the selected category clearly matches the documented practice. Never invent a category name.
         6. If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
         7. If you find all information, set "completion_status" to "COMPLETE".
         
