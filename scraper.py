@@ -1169,7 +1169,7 @@ def enrich_incomplete_items(api_key, inventory):
         Ensure ALL output data values and keys are strictly in ENGLISH.
         For "categories", select ONE OR MORE (maximum 3) of these canonical ICH thematic categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals.
 Use multiple categories when the same living heritage practice genuinely spans more than one domain. Do not add a category merely because it is adjacent or geographically associated.
-Set "category_valid" to true only when at least one selected category is clearly supported by the evidence.
+Set "categories_valid" to true only when at least one selected category is clearly supported by the evidence.
         If you find the missing data, change "completion_status" to "COMPLETE".
         
         Required JSON Structure:
@@ -1179,7 +1179,6 @@ Set "category_valid" to true only when at least one selected category is clearly
             "categories": ["Culinary Traditions"],
             "categories_valid": true,
             "category": "Culinary Traditions",
-            "categories_valid": true,
             "category_valid": true,
             "thumbnail_url": "{item.get('thumbnail_url')}",
             "source_urls": ["<old_url>", "<new_found_url>"],
@@ -1286,7 +1285,6 @@ Explain the mechanism in "drr_mechanism".
             "categories": ["Culinary Traditions"],
             "categories_valid": true,
             "category": "Culinary Traditions",
-            "categories_valid": true,
             "category_valid": true,
             "thumbnail_url": "",
             "source_urls": ["url1"],
