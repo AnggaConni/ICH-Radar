@@ -1129,30 +1129,41 @@ def enrich_incomplete_items(api_key, inventory):
         
         IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
         Classify the practice's relationship to Disaster Risk Reduction (DRR).
-Use exactly ONE "drr_category" from this controlled vocabulary:
-- Not Directly Related to DRR
-- Indigenous Knowledge & Early Warning
-- Ecosystem-Based Disaster Risk Reduction
-- Resilient Livelihoods & Food Security
-- Resilient Housing & Settlement Practices
-- Traditional Emergency Preparedness
-- Social Cohesion & Mutual Aid
-- Climate Adaptation & Resilience
-- Traditional Healing & Health Resilience
-- Other Disaster Resilience Practice
-Set "drr_category_valid" to true ONLY when the selected category is clearly supported by the evidence.
-If there is no direct DRR connection, use "Not Directly Related to DRR".
-
-Also classify which disaster hazards the practice directly helps address.
-Use ZERO OR MORE values from exactly this vocabulary:
-- Tsunami
-- Earthquake
-- Drought
-- Flood
-- Typhoon
-- Wildfire
-Do not infer a hazard merely because the practice exists in a disaster-prone area; select hazards only when the documented mechanism supports the connection.
-Explain the mechanism in "drr_mechanism".
+        
+        First set "drr_relevance_level" to exactly ONE:
+        - Directly Related to DRR
+        - Indirectly Related to DRR
+        - Not Directly Related to DRR
+        
+        Use "Directly Related to DRR" only when the documented practice itself has a clear disaster risk reduction, preparedness, adaptation, resilience, recovery-support, or risk-communication function.
+        Use "Indirectly Related to DRR" when the practice contributes to resilience through a secondary pathway (for example livelihood continuity or social cohesion) but is not itself a direct risk-reduction measure.
+        Use "Not Directly Related to DRR" when no meaningful evidence connects the practice to disaster resilience.
+        
+        Then choose exactly ONE primary "drr_category" from this controlled vocabulary:
+        - Not Directly Related to DRR
+        - Indigenous Knowledge & Early Warning
+        - Ecosystem-Based Disaster Risk Reduction
+        - Resilient Livelihoods & Food Security
+        - Resilient Housing & Settlement Practices
+        - Traditional Emergency Preparedness
+        - Social Cohesion & Mutual Aid
+        - Climate Adaptation & Resilience
+        - Traditional Healing & Health Resilience
+        - Other Disaster Resilience Practice
+        
+        Set "drr_category_valid" to true ONLY when the selected category is clearly supported by the evidence.
+        If there is no meaningful DRR connection, use "Not Directly Related to DRR".
+        
+        Also classify which disaster hazards the practice directly helps address.
+        Use ZERO OR MORE values from exactly this vocabulary:
+        - Tsunami
+        - Earthquake
+        - Drought
+        - Flood
+        - Typhoon
+        - Wildfire
+        Do not infer a hazard merely because the practice exists in a disaster-prone area; select hazards only when the documented mechanism supports the connection.
+        Explain the evidence-based mechanism in "drr_mechanism".
         
         Respond ONLY with a JSON object representing the UPDATED element.
         Ensure ALL output data values and keys are strictly in ENGLISH.
@@ -1168,6 +1179,7 @@ Set "category_valid" to true only when at least one selected category is clearly
             "categories": ["Culinary Traditions"],
             "categories_valid": true,
             "category": "Culinary Traditions",
+            "categories_valid": true,
             "category_valid": true,
             "thumbnail_url": "{item.get('thumbnail_url')}",
             "source_urls": ["<old_url>", "<new_found_url>"],
@@ -1274,6 +1286,7 @@ Explain the mechanism in "drr_mechanism".
             "categories": ["Culinary Traditions"],
             "categories_valid": true,
             "category": "Culinary Traditions",
+            "categories_valid": true,
             "category_valid": true,
             "thumbnail_url": "",
             "source_urls": ["url1"],
