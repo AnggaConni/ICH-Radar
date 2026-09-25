@@ -1239,13 +1239,19 @@ const COUNTRY_CENTROIDS = {
 
   function escapeXML(str) {
     if (!str) return '';
-    return str.replace(/[<>&'"]/g, c => {
+    return String(str).replace(/[<>&'"]/g, c => {
       switch (c) {
         case '<': return '&lt;'; case '>': return '&gt;';
         case '&': return '&amp;'; case '\'': return '&apos;';
         case '"': return '&quot;'; default: return c;
       }
     });
+  }
+
+  // HTML-safe alias used by the Deep Dive UI.
+  // Keep one escaping implementation so dropdowns/cards cannot break init().
+  function escapeHtml(str) {
+    return escapeXML(str);
   }
 
   function exportToXML() {
