@@ -1502,7 +1502,8 @@ def main():
         #   both        = data pipeline + quarterly journal
         #
         # Scheduled runs default to data_only via crawler.yml.
-        crawl_mode = os.environ.get("CRAWL_MODE", "data_only").strip().lower()
+        raw_crawl_mode = os.environ.get("CRAWL_MODE", "Data only").strip().lower()
+        crawl_mode = raw_crawl_mode.replace(" ", "_").replace("-", "_")
         valid_modes = {"data_only", "resume_only", "both"}
         if crawl_mode not in valid_modes:
             log.warning(f"Unknown CRAWL_MODE='{crawl_mode}'. Falling back to data_only.")
