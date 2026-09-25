@@ -1159,7 +1159,8 @@ const COUNTRY_CENTROIDS = {
       xml += '  <oai_dc:dc>\n';
       xml += `    <dc:identifier>${item.id}</dc:identifier>\n`;
       xml += `    <dc:title>${escapeXML(item.element_name)}</dc:title>\n`;
-      xml += `    <dc:subject>${escapeXML(item.category)}</dc:subject>\n`;
+      const exportCategories = getIcmCategories(item);
+      xml += `    <dc:subject>${escapeXML(exportCategories.join('; ') || item.category || 'Unclassified')}</dc:subject>\n`;
       if (item.resume_analisa?.description) xml += `    <dc:description>${escapeXML(item.resume_analisa.description)}</dc:description>\n`;
       if (item.location?.country) xml += `    <dc:coverage>${escapeXML(item.location.country)}</dc:coverage>\n`;
       (item.source_urls || []).forEach(url => {
@@ -1627,6 +1628,8 @@ const COUNTRY_CENTROIDS = {
       const isShared   = item.shared_heritage_detection?.is_shared;
       const tags       = item.resume_analisa?.gemini_tags?.slice(0,3) || [];
       const tagsHtml   = tags.map(t => `<span class="bg-brand-700 text-xs px-2 py-1 rounded-md text-slate-600">#${t}</span>`).join('');
+      const categoryList = getIcmCategories(item);
+      const categoriesHtml = categoryList.map(cat => `<span class="bg-brand-700 text-xs px-2 py-1 rounded-md text-brand-secondary">${escapeXML(cat)}</span>`).join('');
       const card = document.createElement('div');
       card.className = "bg-brand-800 border border-brand-700 rounded-xl overflow-hidden hover:border-brand-500 transition-colors group flex flex-col";
         const fallbackSvg = getCategoryFallbackSvg(item.category);
@@ -1643,7 +1646,7 @@ const COUNTRY_CENTROIDS = {
         </div>
          <div class="p-5 flex flex-col flex-grow gap-3">
         <div>
-             <p class="text-xs text-brand-secondary font-mono mb-1 tracking-widest uppercase">${item.category}</p>
+             <div class="flex flex-wrap gap-1 mb-2">${categoriesHtml || `<span class="text-xs text-brand-secondary font-mono tracking-widest uppercase">${escapeXML(item.category || 'Unclassified')}</span>`}</div>
              <h3 class="font-display font-bold text-xl leading-tight line-clamp-2">${item.element_name}</h3>
              <p class="text-sm text-slate-500 mt-1"><i class="ph-fill ph-map-pin mr-1"></i>${item.location?.country || 'Unknown'}</p>
           </div>
@@ -1907,7 +1910,16 @@ const COUNTRY_CENTROIDS = {
     }
 
     // Perbarui fungsi applyFilters() yang sudah ada
-    function applyFilters() {
+    function getIcmCategories(item) {
+    const values = Array.isArray(item?.categories) ? item.categories : (item?.category ? [item.category] : []);
+    return [...new Set(values.filter(Boolean).map(v => String(v).trim()))];
+  }
+
+  function hasIcmCategory(item, category) {
+    return getIcmCategories(item).some(v => v.toLowerCase() === category.toLowerCase());
+  }
+
+  function applyFilters() {
     const statusVal  = document.getElementById('filter-status')?.value || 'all';
     const countryVal = document.getElementById('filter-country')?.value || 'all';
     const sortVal    = document.getElementById('sort-order')?.value || 'newest';
@@ -1925,22 +1937,22 @@ const COUNTRY_CENTROIDS = {
     // 3. FILTER THEMATIC (EXPLORE, TYPE, LENS, RELATIONSHIP)
     if (currentThemeFilter !== 'all') {
         result = result.filter(item => {
-        const cat = (item.category || '').toLowerCase();
         const desc = (item.resume_analisa?.description || '').toLowerCase();
         const sig = (item.resume_analisa?.cultural_significance || '').toLowerCase();
-        const tags = (item.resume_analisa?.gemini_tags || []).map(t => t.toLowerCase());
-        const allText = `${cat} ${desc} ${sig} ${tags.join(' ')}`;
+        const tags = (item.resume_analisa?.gemini_tags || []).map(t => String(t).toLowerCase());
+        const categories = getIcmCategories(item).map(v => v.toLowerCase());
+        const allText = categories.join(' ') + ' ' + desc + ' ' + sig + ' ' + tags.join(' ');
 
         switch (currentThemeFilter) {
-            // --- HERITAGE TYPE ---
+            // --- HERITAGE TYPE: controlled multi-category schema ---
             case 'type_culinary':
-            return cat.includes('culinary') || cat.includes('food') || cat.includes('beverage') || cat.includes('kuliner') || tags.some(t => t.includes('food') || t.includes('recipe') || t.includes('cacao') || t.includes('beverage'));
+            return hasIcmCategory(item, 'Culinary Traditions');
 
             case 'type_craft':
-            return cat.includes('craft') || cat.includes('kerajinan') || cat.includes('weapon') || tags.some(t => t.includes('metal') || t.includes('craft') || t.includes('textile') || t.includes('wood'));
+            return hasIcmCategory(item, 'Traditional Craftsmanship');
 
             case 'type_social':
-            return cat.includes('social') || cat.includes('ritual') || cat.includes('festive') || cat.includes('performing') || cat.includes('upacara') || cat.includes('dance') || cat.includes('tari');
+            return hasIcmCategory(item, 'Social Practices & Rituals');
 
             // --- THEMATIC LENS ---
             case 'lens_disaster':
