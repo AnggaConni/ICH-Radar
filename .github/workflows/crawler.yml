@@ -9,12 +9,12 @@ on:
       crawl_mode:
         description: 'Choose what to run'
         required: true
-        default: 'data_only'
+        default: 'Data only'
         type: choice
         options:
-          - 'data_only'
-          - 'resume_only'
-          - 'both'
+          - 'Data only'
+          - 'Resume only'
+          - 'Both'
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
