@@ -1490,41 +1490,64 @@ def main():
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not api_key:
         log.error("GEMINI_API_KEY not found or empty!")
-        return 
+        return
 
     try:
         db = load_db()
         inventory = db.get("inventory", [])
-        
-        # PHASE 0: Audit Data (Downgrade status if image is missing)
-        audited = audit_inventory(inventory)
-        
-        # PHASE 1: Enrich Incomplete Data First
-        enriched = enrich_incomplete_items(api_key, inventory)
-        
-        # PHASE 2: Discover New Data
-        discovered = discover_new_items(api_key, inventory)
-        
-        db["inventory"] = inventory
-        
-        # PHASE 3: Optional Quarterly Resume / Journal
-        # Disabled by default so the main scraper focuses on ICH + DRR intelligence.
-        # Set GENERATE_RESUME=true to generate/update resume.json for journal.html.
-        generate_resume = os.environ.get("GENERATE_RESUME", "").strip().lower() in ("1", "true", "yes", "on")
-        if generate_resume:
+
+        # Manual workflow modes:
+        #   data_only   = audit + enrichment + discovery
+        #   resume_only = quarterly journal only
+        #   both        = data pipeline + quarterly journal
+        #
+        # Scheduled runs default to data_only via crawler.yml.
+        crawl_mode = os.environ.get("CRAWL_MODE", "data_only").strip().lower()
+        valid_modes = {"data_only", "resume_only", "both"}
+        if crawl_mode not in valid_modes:
+            log.warning(f"Unknown CRAWL_MODE='{crawl_mode}'. Falling back to data_only.")
+            crawl_mode = "data_only"
+
+        run_data = crawl_mode in ("data_only", "both")
+        run_resume = crawl_mode in ("resume_only", "both")
+
+        audited = 0
+        enriched = 0
+        discovered = 0
+
+        if run_data:
+            # PHASE 0: Audit Data (Downgrade status if image is missing)
+            audited = audit_inventory(inventory)
+
+            # PHASE 1: Enrich Incomplete Data First
+            enriched = enrich_incomplete_items(api_key, inventory)
+
+            # PHASE 2: Discover New Data
+            discovered = discover_new_items(api_key, inventory)
+
+            db["inventory"] = inventory
+
+            # Save any data-pipeline modifications.
+            if audited > 0 or enriched > 0 or discovered > 0:
+                save_db(db)
+                log.info("✅ Data pipeline complete. Audited: %s, Enriched: %s, Discovered: %s. Total DB: %s",
+                         audited, enriched, discovered, len(inventory))
+            else:
+                log.info("Data pipeline complete. No new data added or enriched.")
+        else:
+            log.info("⏭️ Data crawl skipped (resume_only mode).")
+
+        if run_resume:
+            # Quarterly Resume / Journal generation.
+            # resume_only uses the current data.json without crawling new data.
             generate_quarterly_resume(api_key, inventory)
+            log.info("✅ Resume/Journal phase complete.")
         else:
-            log.info("Quarterly Resume skipped. Set GENERATE_RESUME=true to enable it.")
-        
-        # Save if there's any modification
-        if audited > 0 or enriched > 0 or discovered > 0:
-            save_db(db)
-            log.info(f"✅ Run Complete. Audited: {audited}, Enriched: {enriched}, Discovered: {discovered}. Total DB: {len(inventory)}")
-        else:
-            log.info("Run Complete. No new data added or enriched.")
+            log.info("⏭️ Quarterly Resume skipped (data_only mode).")
+
+        log.info("Run Complete. Mode: %s. Total DB: %s", crawl_mode, len(inventory))
 
     except Exception as e:
         log.error(f"Fatal Error during main execution: {e}")
-
 if __name__ == "__main__":
     main()
