@@ -372,6 +372,74 @@
   }
 
 
+
+    .deep-dive-card {
+      border: 1px solid #dbe5e5;
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 18px;
+      min-height: 170px;
+      box-shadow: 0 1px 2px rgba(15,23,42,.03);
+    }
+    .deep-dive-card h3 {
+      margin: 0 0 8px;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 800;
+      color: #0f172a;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .deep-dive-card p, .deep-dive-card li {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #64748b;
+    }
+    .deep-dive-muted {
+      color: #94a3b8 !important;
+      font-style: italic;
+    }
+    .deep-dive-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid #dbe5e5;
+      border-radius: 999px;
+      padding: 4px 8px;
+      margin: 3px 4px 3px 0;
+      font-size: 10px;
+      font-weight: 700;
+      color: #475569;
+      background: #f8fafc;
+    }
+    .deep-dive-source {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 8px 0;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+    .deep-dive-source:last-child { border-bottom: 0; }
+    .deep-dive-progress {
+      height: 7px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #e2e8f0;
+    }
+    .deep-dive-progress > span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: #0d9488;
+    }
+    .deep-dive-status {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
   </style>
   
 </head>
@@ -461,6 +529,9 @@
       <button id="btn-tab-map" onclick="switchTab('map')" class="px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2">
         <i class="ph ph-map-trifold text-xl"></i> Heritage Network Map
       </button>
+      <button id="btn-tab-deep-dive" onclick="switchTab('deep-dive')" class="px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2">
+        <i class="ph ph-magnifying-glass text-xl"></i> ICH Deep Dive
+      </button>
     </div>
 
 <div id="tab-map" class="flex flex-col gap-2 hidden">
@@ -485,6 +556,28 @@
 
       </div>
       <div id="map" class="w-full h-[460px] rounded-xl border border-brand-700 bg-brand-800 z-10"></div>
+    </div>
+
+    <div id="tab-deep-dive" class="hidden flex flex-col gap-4 mt-4">
+      <div class="bg-brand-800 border border-brand-700 rounded-xl p-4 shadow-sm">
+        <div class="flex flex-col lg:flex-row lg:items-end gap-4">
+          <div class="flex-1">
+            <label for="deep-dive-select" class="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2">Select Heritage Element</label>
+            <select id="deep-dive-select" onchange="renderDeepDive(this.value)" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-800 focus:outline-none focus:border-brand-accent">
+              <option value="">Select an element...</option>
+            </select>
+          </div>
+          <div id="deep-dive-status" class="text-xs text-slate-500 lg:w-72"></div>
+        </div>
+      </div>
+
+      <div id="deep-dive-empty" class="bg-white border border-brand-700 rounded-xl p-10 text-center text-slate-400">
+        <i class="ph ph-magnifying-glass text-4xl mb-3"></i>
+        <p class="font-semibold text-slate-700">Select an ICH element to open its Deep Dive.</p>
+        <p class="text-xs mt-1">This view uses the structured fields already stored in data.json.</p>
+      </div>
+
+      <div id="deep-dive-content" class="hidden flex flex-col gap-4"></div>
     </div>
 
     <div id="tab-directory" class="flex flex-col gap-4 mt-4">
@@ -1513,6 +1606,7 @@ const COUNTRY_CENTROIDS = {
   let currentPage   = 1;
   let itemsPerPage = 18;
   let currentActiveItemId = null; // <--- Tambahkan ini
+  let currentDeepDiveItemId = null;
 
   // ═══════════════════════════════════════════════════════════════
   //  INIT
@@ -1527,6 +1621,7 @@ const COUNTRY_CENTROIDS = {
       globalData = MOCK_DATA;
     }
     populateCountryFilter();
+    populateDeepDiveSelect();
     updateLangUI();
     renderDashboard();
     updateScraperTicker();
@@ -2287,37 +2382,226 @@ const COUNTRY_CENTROIDS = {
   function switchTab(tab) {
     const tabMap = document.getElementById('tab-map');
     const tabDir = document.getElementById('tab-directory');
+    const tabDeep = document.getElementById('tab-deep-dive');
     const btnMap = document.getElementById('btn-tab-map');
     const btnDir = document.getElementById('btn-tab-directory');
+    const btnDeep = document.getElementById('btn-tab-deep-dive');
     const pagination = document.getElementById('pagination-container');
 
+    tabMap.classList.add('hidden');
+    tabDir.classList.add('hidden');
+    tabDeep.classList.add('hidden');
+    if (pagination) pagination.classList.add('hidden');
+
+    const inactive = "px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2";
+    btnMap.className = inactive;
+    btnDir.className = inactive.replace(" ml-2", "");
+    btnDeep.className = inactive;
+
     if (tab === 'map') {
-      // 1. Tampilkan Map, Sembunyikan Directory & Pagination
       tabMap.classList.remove('hidden');
-      tabDir.classList.add('hidden');
-      if (pagination) pagination.classList.add('hidden');
-
-      // 2. Ubah Tampilan Tombol Tab Aktif (Map)
       btnMap.className = "px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";
-      btnDir.className = "px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors flex items-center gap-2";
-
-      // 3. SANGAT PENTING: Fix bug rendering Leaflet
-      // Leaflet tidak bisa kalkulasi ukuran jika kontainernya hidden (display: none).
-      // Kita harus perintahkan map untuk update ukuran sesaat setelah dimunculkan.
-      if (map) {
-        setTimeout(() => { map.invalidateSize(); }, 100);
+      if (map) setTimeout(() => { map.invalidateSize(); }, 100);
+    } else if (tab === 'deep-dive') {
+      tabDeep.classList.remove('hidden');
+      btnDeep.className = "px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";
+      populateDeepDiveSelect();
+      if (!currentDeepDiveItemId && globalData?.inventory?.length) {
+        const first = globalData.inventory[0];
+        currentDeepDiveItemId = first?.id || null;
+        const sel = document.getElementById('deep-dive-select');
+        if (sel && currentDeepDiveItemId) sel.value = currentDeepDiveItemId;
       }
+      if (currentDeepDiveItemId) renderDeepDive(currentDeepDiveItemId);
     } else {
-      // 1. Tampilkan Directory, Sembunyikan Map
-      tabMap.classList.add('hidden');
       tabDir.classList.remove('hidden');
-      if (filteredData.length > 0 && pagination) pagination.classList.remove('hidden');
-
-      // 2. Ubah Tampilan Tombol Tab Aktif (Directory)
       btnDir.className = "px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors flex items-center gap-2";
-      btnMap.className = "px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2";
+      if (filteredData.length > 0 && pagination) pagination.classList.remove('hidden');
     }
   }
+
+  function populateDeepDiveSelect() {
+    const sel = document.getElementById('deep-dive-select');
+    if (!sel || !globalData?.inventory) return;
+    const current = sel.value;
+    sel.innerHTML = '<option value="">Select an element...</option>' + globalData.inventory
+      .slice()
+      .sort((a,b) => String(a.element_name||'').localeCompare(String(b.element_name||'')))
+      .map(item => {
+        const label = item.location?.country ? `${item.element_name} — ${item.location.country}` : item.element_name;
+        return `<option value="${escapeHtml(item.id || '')}">${escapeHtml(label || 'Unnamed element')}</option>`;
+      }).join('');
+    if (current && globalData.inventory.some(i => i.id === current)) sel.value = current;
+  }
+
+  function deepDiveFieldStatus(value) {
+    if (Array.isArray(value)) return value.length > 0;
+    return value !== null && value !== undefined && String(value).trim() !== '';
+  }
+
+  function renderDeepDive(itemId) {
+    const content = document.getElementById('deep-dive-content');
+    const empty = document.getElementById('deep-dive-empty');
+    const status = document.getElementById('deep-dive-status');
+    if (!content || !empty || !globalData?.inventory) return;
+
+    const item = globalData.inventory.find(i => i.id === itemId);
+    if (!item) {
+      currentDeepDiveItemId = null;
+      content.classList.add('hidden');
+      empty.classList.remove('hidden');
+      return;
+    }
+
+    currentDeepDiveItemId = itemId;
+    empty.classList.add('hidden');
+    content.classList.remove('hidden');
+
+    const analysis = item.resume_analisa || {};
+    const process = item.resume_tata_cara || {};
+    const shared = item.shared_heritage_detection || {};
+    const categories = Array.isArray(item.categories) && item.categories.length
+      ? item.categories
+      : (item.category ? [item.category] : []);
+    const hazards = Array.isArray(analysis.hazard_categories) ? analysis.hazard_categories : [];
+    const steps = Array.isArray(process.step_by_step) ? process.step_by_step : [];
+    const materials = Array.isArray(process.materials_and_tools) ? process.materials_and_tools : [];
+    const sources = Array.isArray(item.source_urls) ? item.source_urls.filter(Boolean) : [];
+
+    const evidence = [
+      ['Identity', deepDiveFieldStatus(item.element_name)],
+      ['Description', deepDiveFieldStatus(analysis.description)],
+      ['Practice', deepDiveFieldStatus(steps) || deepDiveFieldStatus(materials)],
+      ['DRR', deepDiveFieldStatus(analysis.drr_category)],
+      ['Sources', sources.length > 0],
+      ['Location', deepDiveFieldStatus(item.location?.country)]
+    ];
+    const covered = evidence.filter(x => x[1]).length;
+    const pct = Math.round((covered / evidence.length) * 100);
+
+    if (status) {
+      status.innerHTML = `<span class="deep-dive-status text-brand-accent">${covered}/${evidence.length} core evidence fields present</span>
+        <div class="deep-dive-progress mt-2"><span style="width:${pct}%"></span></div>`;
+    }
+
+    const chipHtml = values => (values || []).map(v => `<span class="deep-dive-chip">${escapeHtml(String(v))}</span>`).join('');
+
+    const missing = [];
+    if (!deepDiveFieldStatus(item.element_name)) missing.push('Identity');
+    if (!deepDiveFieldStatus(analysis.description)) missing.push('Description');
+    if (!deepDiveFieldStatus(steps) && !deepDiveFieldStatus(materials)) missing.push('Practice / Process');
+    if (!deepDiveFieldStatus(item.location?.country)) missing.push('Location');
+    if (!deepDiveFieldStatus(analysis.drr_category)) missing.push('DRR classification');
+    if (!sources.length) missing.push('Sources');
+    missing.push('Practitioner information', 'Transmission evidence', 'Change over time', 'Safeguarding measures');
+    const uniqueMissing = [...new Set(missing)];
+
+    const sourceHtml = sources.length ? sources.map((url, idx) => {
+      let host = url;
+      try { host = new URL(url).hostname.replace(/^www\./,''); } catch(e) {}
+      return `<div class="deep-dive-source"><span class="text-brand-accent font-mono text-[10px]">${String(idx+1).padStart(2,'0')}</span><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-700 hover:text-brand-accent break-all">${escapeHtml(host)}<br><span class="text-[10px] text-slate-400">${escapeHtml(url)}</span></a></div>`;
+    }).join('') : '<p class="deep-dive-muted">No direct source URL stored.</p>';
+
+    const sharedHtml = shared.is_shared
+      ? `<div class="flex items-center gap-2 mb-2"><span class="deep-dive-chip">Shared Heritage</span><span class="text-xs font-bold text-brand-secondary">${Math.round((Number(shared.confidence_score)||0)*100)}% confidence</span></div>
+         <p>Related elements: ${Array.isArray(shared.related_elements) ? shared.related_elements.length : 0}</p>`
+      : '<p class="deep-dive-muted">No shared-heritage connection recorded.</p>';
+
+    content.innerHTML = `
+      <div class="bg-white border border-brand-700 rounded-2xl p-5 shadow-sm">
+        <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
+          <div>
+            <div class="flex flex-wrap gap-1 mb-2">${chipHtml(categories)}</div>
+            <h2 class="font-display text-2xl font-bold text-slate-900">${escapeHtml(item.element_name || 'Unnamed element')}</h2>
+            <p class="text-sm text-slate-500 mt-1">${escapeHtml(item.location?.country || 'Location not recorded')} · Status: <strong class="text-slate-700">${escapeHtml(item.completion_status || 'Unknown')}</strong></p>
+          </div>
+          <div class="text-right text-xs text-slate-400 font-mono">
+            <div>ID: ${escapeHtml(item.id || '—')}</div>
+            <div>Updated: ${escapeHtml(item.scraped_at || '—')}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <section class="deep-dive-card">
+          <h3><span class="text-brand-accent">01</span><i class="ph ph-identification-card"></i> Identity</h3>
+          <p>${escapeHtml(analysis.description || 'No structured description is available in this record.')}</p>
+          <div class="mt-3">${chipHtml(categories)}</div>
+        </section>
+
+        <section class="deep-dive-card">
+          <h3><span class="text-brand-secondary">02</span><i class="ph ph-users-three"></i> People & Community</h3>
+          <p class="deep-dive-muted">No dedicated practitioner/community fields are currently stored in data.json.</p>
+          <p class="mt-2">This is an evidence gap, not an assumption about the heritage community.</p>
+        </section>
+
+        <section class="deep-dive-card">
+          <h3><span class="text-amber-600">03</span><i class="ph ph-wrench"></i> Practice</h3>
+          <p><strong>Type:</strong> ${escapeHtml(process.type || 'Not documented')}</p>
+          ${materials.length ? `<p class="mt-2"><strong>Materials & tools:</strong></p><div>${chipHtml(materials)}</div>` : '<p class="deep-dive-muted mt-2">Materials and tools not documented.</p>'}
+          ${steps.length ? `<p class="mt-2"><strong>${steps.length} documented steps</strong></p><ol class="list-decimal pl-5 mt-1">${steps.slice(0,6).map(s => `<li>${escapeHtml(String(s))}</li>`).join('')}</ol>` : '<p class="deep-dive-muted mt-2">No step-by-step process stored.</p>'}
+        </section>
+
+        <section class="deep-dive-card">
+          <h3><span class="text-violet-600">04</span><i class="ph ph-arrows-clockwise"></i> Transmission</h3>
+          <p class="deep-dive-muted">No structured transmission pathway is currently stored.</p>
+          <p class="mt-2">Future enrichment could capture knowledge holders, apprenticeships, learning settings, and generational transfer.</p>
+        </section>
+
+        <section class="deep-dive-card">
+          <h3><span class="text-sky-600">05</span><i class="ph ph-chart-line-up"></i> Change</h3>
+          <p class="deep-dive-muted">No longitudinal change field is currently stored.</p>
+          <p class="mt-2">Current record timestamp: <strong>${escapeHtml(item.scraped_at || 'not available')}</strong></p>
+        </section>
+
+        <section class="deep-dive-card">
+          <h3><span class="text-red-500">06</span><i class="ph ph-warning"></i> Risks</h3>
+          <p class="deep-dive-muted">No dedicated ICH-threat assessment is currently stored.</p>
+          ${hazards.length ? `<p class="mt-2"><strong>Documented hazard links:</strong></p><div>${chipHtml(hazards)}</div>` : '<p class="mt-2 text-xs text-slate-500">No structured hazard category recorded.</p>'}
+        </section>
+
+        <section class="deep-dive-card">
+          <h3><span class="text-emerald-600">07</span><i class="ph ph-shield-check"></i> Safeguarding</h3>
+          <p class="deep-dive-muted">No dedicated safeguarding-action field is currently stored.</p>
+          <p class="mt-2">Do not infer a safeguarding intervention from the existence of an ICH record alone.</p>
+        </section>
+
+        <section class="deep-dive-card">
+          <h3><span class="text-cyan-600">08</span><i class="ph ph-waves"></i> DRR & Resilience</h3>
+          <p><strong>Relevance:</strong> ${escapeHtml(analysis.drr_relevance_level || 'Not Directly Related to DRR')}</p>
+          <p class="mt-2"><strong>Mechanism:</strong> ${escapeHtml(analysis.drr_mechanism || 'No evidence-based mechanism recorded.')}</p>
+          <div class="mt-2">${analysis.drr_category ? `<span class="deep-dive-chip">${escapeHtml(analysis.drr_category)}</span>` : ''}${chipHtml(hazards)}</div>
+        </section>
+
+        <section class="deep-dive-card">
+          <h3><span class="text-fuchsia-600">09</span><i class="ph ph-magnifying-glass"></i> Evidence Gap</h3>
+          ${uniqueMissing.length ? `<ul class="list-disc pl-5">${uniqueMissing.map(m => `<li>${escapeHtml(m)}</li>`).join('')}</ul>` : '<p class="text-brand-accent font-semibold">No obvious core-data gaps detected.</p>'}
+          <p class="mt-3 deep-dive-muted">Unknown means “not documented in this dataset”, not “does not exist”.</p>
+        </section>
+
+        <section class="deep-dive-card lg:col-span-2">
+          <h3><span class="text-pink-600">10</span><i class="ph ph-books"></i> Sources & Data Lineage</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <div>
+              <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2">Direct Sources</p>
+              ${sourceHtml}
+            </div>
+            <div>
+              <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2">Record Lineage</p>
+              <div class="space-y-2 text-xs text-slate-600">
+                <div><strong>Captured:</strong> ${escapeHtml(item.scraped_at || 'Not recorded')}</div>
+                <div><strong>Status:</strong> ${escapeHtml(item.completion_status || 'Unknown')}</div>
+                <div><strong>Categories:</strong> ${categories.length ? escapeHtml(categories.join(' · ')) : 'Not classified'}</div>
+                <div><strong>Shared heritage:</strong> ${sharedHtml}</div>
+                <div><strong>Derived analysis:</strong> DRR classification, hazards, tags, and category normalization are stored as structured fields.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>`;
+  }
+
+
 
 
   // ═══════════════════════════════════════════════════════════════
