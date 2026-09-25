@@ -686,8 +686,9 @@ def calculate_summary(inventory):
     
     categories = {}
     for item in inventory:
-        cat = item.get("category", "Unknown")
-        categories[cat] = categories.get(cat, 0) + 1
+        item_categories = item.get("categories") or [item.get("category", "Unknown")]
+        for cat in item_categories:
+            categories[cat] = categories.get(cat, 0) + 1
         
     return {
         "generated_at": datetime.now().isoformat() + "Z",
@@ -820,6 +821,12 @@ VALID_DRR_CATEGORIES = [
     "Other Disaster Resilience Practice",
 ]
 
+VALID_DRR_RELEVANCE = [
+    "Directly Related to DRR",
+    "Indirectly Related to DRR",
+    "Not Directly Related to DRR",
+]
+
 # Hazard vocabulary kept aligned with drr.html's current visual taxonomy.
 VALID_HAZARD_CATEGORIES = [
     "Tsunami",
@@ -831,9 +838,15 @@ VALID_HAZARD_CATEGORIES = [
 ]
 
 
+def normalize_categories(value):
+    """Normalize one or more ICH thematic categories into a canonical list."""
+    if isinstance(value, list):
+        values = value
+    elif value:
+        values = [value]
+    else:
+        values = []
 
-def normalize_category(value):
-    raw = str(value or "").strip().lower()
     aliases = {
         "culinary": "Culinary Traditions",
         "culinary tradition": "Culinary Traditions",
@@ -858,12 +871,28 @@ def normalize_category(value):
         "ritual": "Social Practices & Rituals",
         "rituals": "Social Practices & Rituals",
     }
-    if raw in aliases:
-        return aliases[raw]
-    for key, canonical in aliases.items():
-        if key in raw:
-            return canonical
-    return None
+
+    result = []
+    for value in values:
+        raw = str(value or "").strip().lower()
+        canonical = aliases.get(raw)
+
+        if not canonical:
+            for key, mapped in aliases.items():
+                if key in raw:
+                    canonical = mapped
+                    break
+
+        if canonical and canonical not in result:
+            result.append(canonical)
+
+    return [x for x in result if x in VALID_HERITAGE_CATEGORIES]
+
+
+def normalize_category(value):
+    """Backward-compatible helper: return the first canonical ICH category."""
+    categories = normalize_categories(value)
+    return categories[0] if categories else None
 
 
 def normalize_drr_category(value):
@@ -891,6 +920,28 @@ def normalize_drr_category(value):
         "climate resilience": "Climate Adaptation & Resilience",
         "health resilience": "Traditional Healing & Health Resilience",
         "traditional healing": "Traditional Healing & Health Resilience",
+    }
+    if raw in aliases:
+        return aliases[raw]
+    for key, canonical in aliases.items():
+        if key in raw:
+            return canonical
+    return None
+
+
+def normalize_drr_relevance(value):
+    raw = str(value or "").strip().lower()
+    aliases = {
+        "direct": "Directly Related to DRR",
+        "directly related": "Directly Related to DRR",
+        "directly related to drr": "Directly Related to DRR",
+        "indirect": "Indirectly Related to DRR",
+        "indirectly related": "Indirectly Related to DRR",
+        "indirectly related to drr": "Indirectly Related to DRR",
+        "none": "Not Directly Related to DRR",
+        "not related": "Not Directly Related to DRR",
+        "not directly related": "Not Directly Related to DRR",
+        "not directly related to drr": "Not Directly Related to DRR",
     }
     if raw in aliases:
         return aliases[raw]
@@ -944,10 +995,19 @@ def normalize_hazard_categories(values):
 
 
 def normalize_ai_classification(item):
-    """Enforce one consistent schema consumed by radar.html and drr.html."""
-    category = normalize_category(item.get("category"))
-    item["category_valid"] = category is not None
-    item["category"] = category or "Unclassified"
+    """Enforce a multi-category ICH schema plus structured DRR relevance."""
+    raw_categories = item.get("categories")
+    if raw_categories is None:
+        raw_categories = item.get("category")
+
+    categories = normalize_categories(raw_categories)
+    item["categories"] = categories
+    item["categories_valid"] = len(categories) > 0
+
+    # Backward compatibility for radar.html: keep the first category as
+    # the legacy scalar category. New UI code should prefer categories.
+    item["category"] = categories[0] if categories else "Unclassified"
+    item["category_valid"] = len(categories) > 0
 
     analysis = item.setdefault("resume_analisa", {})
 
@@ -956,11 +1016,20 @@ def normalize_ai_classification(item):
     analysis["drr_category_valid"] = drr_valid
     analysis["drr_category"] = drr_category or "Not Directly Related to DRR"
 
+    drr_relevance = normalize_drr_relevance(analysis.get("drr_relevance_level"))
+    if drr_relevance is None:
+        drr_relevance = (
+            "Directly Related to DRR"
+            if analysis["drr_category"] != "Not Directly Related to DRR" and drr_valid
+            else "Not Directly Related to DRR"
+        )
+    analysis["drr_relevance_level"] = drr_relevance
+
     hazards = normalize_hazard_categories(analysis.get("hazard_categories", []))
     analysis["hazard_categories"] = hazards
 
-    # Compatibility field for the current drr.html.
-    # It is DERIVED from the structured DRR classification, not AI-generated.
+    # Compatibility field for current drr.html.
+    # It is derived from the structured DRR classification, not AI-generated.
     analysis["drr_relevance"] = (
         analysis["drr_category"] != "Not Directly Related to DRR"
         and drr_valid
@@ -1087,15 +1156,18 @@ Explain the mechanism in "drr_mechanism".
         
         Respond ONLY with a JSON object representing the UPDATED element.
         Ensure ALL output data values and keys are strictly in ENGLISH.
-        For "category", use exactly ONE of these canonical heritage categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals.
-Set "category_valid" to true ONLY when the selected category clearly matches the documented practice. Never invent a category name.
+        For "categories", select ONE OR MORE (maximum 3) of these canonical ICH thematic categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals.
+Use multiple categories when the same living heritage practice genuinely spans more than one domain. Do not add a category merely because it is adjacent or geographically associated.
+Set "category_valid" to true only when at least one selected category is clearly supported by the evidence.
         If you find the missing data, change "completion_status" to "COMPLETE".
         
         Required JSON Structure:
         {{
             "id": "{item.get('id')}",
             "element_name": "{element_name}",
-            "category": "Culinary Traditions | Traditional Craftsmanship | Performing Arts | Oral Traditions | Social Practices & Rituals",
+            "categories": ["Culinary Traditions"],
+            "categories_valid": true,
+            "category": "Culinary Traditions",
             "category_valid": true,
             "thumbnail_url": "{item.get('thumbnail_url')}",
             "source_urls": ["<old_url>", "<new_found_url>"],
@@ -1111,6 +1183,7 @@ Set "category_valid" to true ONLY when the selected category clearly matches the
             "cultural_significance": "...", 
             "drr_category": "Not Directly Related to DRR",
             "drr_category_valid": true,
+            "drr_relevance_level": "Not Directly Related to DRR",
             "hazard_categories": [],
             "drr_mechanism": "Brief evidence-based explanation of the disaster resilience mechanism, otherwise null",
             "gemini_tags": ["..."] 
@@ -1189,7 +1262,7 @@ Use ZERO OR MORE values from exactly this vocabulary:
 Do not infer a hazard merely because the practice exists in a disaster-prone area; select hazards only when the documented mechanism supports the connection.
 Explain the mechanism in "drr_mechanism".
         5. Output ALL data values strictly in ENGLISH, and keep all JSON keys strictly in English.
-5a. For "category", use exactly ONE of these canonical heritage categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals. Set "category_valid" to true ONLY when the selected category clearly matches the documented practice. Never invent a category name.
+5a. For "categories", select ONE OR MORE (maximum 3) of these canonical ICH thematic categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals. Use multiple categories only when the evidence shows the practice genuinely spans them.
         6. If you CANNOT find a detailed step-by-step process/recipe, set "resume_tata_cara" to null and "completion_status" to "INCOMPLETE".
         7. If you find all information, set "completion_status" to "COMPLETE".
         
@@ -1198,7 +1271,9 @@ Explain the mechanism in "drr_mechanism".
           {{
             "id": "will_be_generated",
             "element_name": "...",
-            "category": "Culinary Traditions | Traditional Craftsmanship | Performing Arts | Oral Traditions | Social Practices & Rituals",
+            "categories": ["Culinary Traditions"],
+            "categories_valid": true,
+            "category": "Culinary Traditions",
             "category_valid": true,
             "thumbnail_url": "",
             "source_urls": ["url1"],
@@ -1214,6 +1289,7 @@ Explain the mechanism in "drr_mechanism".
             "cultural_significance": "...", 
             "drr_category": "Not Directly Related to DRR",
             "drr_category_valid": true,
+            "drr_relevance_level": "Not Directly Related to DRR",
             "hazard_categories": [],
             "drr_mechanism": "Brief evidence-based explanation of the disaster resilience mechanism, otherwise null",
             "gemini_tags": ["..."] }},
