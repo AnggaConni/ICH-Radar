@@ -4,16 +4,17 @@ on:
   schedule:
     # Runs every 2 days to prioritize fixing INCOMPLETE data, then discovers new data
     - cron: "0 0 */2 * *"
-  workflow_dispatch: 
+  workflow_dispatch:
     inputs:
-      force_crawl:
-        description: 'Force crawl now?'
+      crawl_mode:
+        description: 'Choose what to run'
         required: true
-        default: 'false'
+        default: 'data_only'
         type: choice
         options:
-          - 'true'
-          - 'false'
+          - 'data_only'
+          - 'resume_only'
+          - 'both'
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -44,7 +45,7 @@ jobs:
       - name: Run Scraper & Gemini AI
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          FORCE_CRAWL: ${{ github.event.inputs.force_crawl }}
+          CRAWL_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.crawl_mode || 'data_only' }}
         run: python scraper.py
 
       - name: Commit and Push changes
