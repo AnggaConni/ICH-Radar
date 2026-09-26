@@ -182,6 +182,71 @@
   .modal-tab-panel.modal-tab-panel-active { display: block; }
 
 
+  /* ── Cross-cultural heritage ornament system ── */
+  .heritage-ornament{
+    width:100%;
+    height:18px;
+    display:block;
+    opacity:.72;
+    pointer-events:none;
+    overflow:hidden;
+    background:#ffffff;
+  }
+  .heritage-ornament svg{
+    display:block;
+    width:100%;
+    height:18px;
+  }
+  .heritage-section-divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin:-10px 0 -2px;
+    color:#0d9488;
+    opacity:.5;
+  }
+  .heritage-section-divider::before,
+  .heritage-section-divider::after{
+    content:"";
+    height:1px;
+    flex:1;
+    background:linear-gradient(90deg, transparent, #cbd5e1, transparent);
+  }
+  #stats-container > div{
+    position:relative;
+    overflow:hidden;
+  }
+  #stats-container > div::after{
+    content:"";
+    position:absolute;
+    right:-10px;
+    bottom:-8px;
+    width:86px;
+    height:86px;
+    opacity:.08;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%230d9488' stroke-width='2'%3E%3Cpath d='M50 4L66 20L50 36L34 20Z'/%3E%3Cpath d='M50 28L82 60L50 92L18 60Z'/%3E%3Cpath d='M4 50L20 34L36 50L20 66Z'/%3E%3Cpath d='M64 50L80 34L96 50L80 66Z'/%3E%3Ccircle cx='50' cy='50' r='6' fill='%230d9488' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  #stats-container > div:nth-child(2)::after,
+  #stats-container > div:nth-child(4)::after{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23d97706' stroke-width='2'%3E%3Cpath d='M50 6L59 25L79 21L75 41L94 50L75 59L79 79L59 75L50 94L41 75L21 79L25 59L6 50L25 41L21 21L41 25Z'/%3E%3Ccircle cx='50' cy='50' r='13'/%3E%3Cpath d='M50 34L66 50L50 66L34 50Z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  .heritage-card-accent{
+    position:absolute;
+    inset:auto 14px 10px auto;
+    width:54px;
+    height:54px;
+    opacity:.10;
+    pointer-events:none;
+  }
+  .heritage-card-accent svg{
+    width:100%;
+    height:100%;
+    display:block;
+  }
+
   /* ── Header: stable proportions across languages ── */
   .radar-header-inner{
     min-height:64px;
@@ -654,6 +719,20 @@
     </div>
   </header>
 
+  <!-- Cross-cultural geometric heritage ornament: abstract, non-country-specific -->
+  <div class="heritage-ornament" aria-hidden="true">
+    <svg viewBox="0 0 1200 18" preserveAspectRatio="none">
+      <defs>
+        <pattern id="heritageWeaveBand" width="48" height="18" patternUnits="userSpaceOnUse">
+          <path d="M24 1 L35 9 L24 17 L13 9 Z" fill="none" stroke="#0d9488" stroke-width="1.1"/>
+          <path d="M0 9 L13 1 L24 9 L35 1 L48 9 L35 17 L24 9 L13 17 Z" fill="none" stroke="#d97706" stroke-width=".8" opacity=".65"/>
+          <circle cx="24" cy="9" r="1.7" fill="#0d9488"/>
+        </pattern>
+      </defs>
+      <rect width="1200" height="18" fill="url(#heritageWeaveBand)"/>
+    </svg>
+  </div>
+
   <!-- Main -->
   <main class="flex-grow max-w-7xl mx-auto px-6 py-8 w-full flex flex-col gap-8">
 
@@ -672,6 +751,13 @@
 
     <!-- Stats -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4" id="stats-container"></div>
+
+    <div class="heritage-section-divider" aria-hidden="true">
+      <svg width="46" height="14" viewBox="0 0 46 14">
+        <path d="M23 1L29 7L23 13L17 7Z" fill="none" stroke="#0d9488" stroke-width="1.2"/>
+        <circle cx="23" cy="7" r="1.6" fill="#d97706"/>
+      </svg>
+    </div>
 
     <!-- Map -->
     <div class="radar-tabs flex border-b border-brand-700 mt-2 mb-4">
