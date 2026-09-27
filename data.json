@@ -28151,22 +28151,223 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-45b96e31",
+      "element_name": "Le Maloya",
+      "categories": [
+        "Performing Arts",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Performing Arts",
+      "category_valid": true,
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Maloya_danseuse.jpg/800px-Maloya_danseuse.jpg",
+      "source_urls": [
+        "https://fr.wikipedia.org/wiki/Maloya",
+        "https://www.reunion.fr/a-voir-a-faire/culture-et-patrimoine/les-instruments-de-la-musique-reunionnaise/",
+        "https://www.imusic-school.com/blog/encyclopedie-musicale/maloya/",
+        "https://aleksand-saya.com/les-instruments-du-maloya/",
+        "https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Fiches-de-l-Inventaire-national-du-PCI/Le-Maloya",
+        "https://www.cairn.info/revue-etudes-creoles-2015-1-page-11.htm",
+        "https://habiter-la-reunion.re/le-maloya/",
+        "https://ich.unesco.org/fr/RL/le-maloya-00249",
+        "https://www.jumbocar-reunion.com/blog/decouvrir-la-musique-du-maloya-a-la-reunion/",
+        "https://www.reunion.fr/offres/maloya-on-reunion-island-une-tradition-ancestrale-saint-paul-fr_B570000005_B570000009/",
+        "https://www.ouest-lareunion.com/actualites/le-maloya-designe-une-musique-un-chant-une-danse-propres-a-la-reunion",
+        "https://en.wikipedia.org/wiki/Maloya",
+        "https://destination-outremer.com/maloya-musique-resistance/",
+        "https://destination-outremer.com/pourquoi-le-maloya-est-il-bien-plus-quune-simple-musique-pour-les-reunionnais/",
+        "https://blog-reunion.com/comment-lheritage-africain-faconne-t-il-la-musique-et-la-spiritualite-reunionnaise-aujourdhui/",
+        "https://www.reunion.fr/a-voir-a-faire/culture-et-patrimoine/reunion-island-musical-instruments/",
+        "https://www.regionreunion.com/actualite/article/maloya",
+        "https://ich.unesco.org/en/what-is-intangible-heritage-00003",
+        "https://decibel-studio.fr/danse-reunionnaise-au-coeur-des-traditions-creoles/",
+        "https://www.courrierdeslecteurs.fr/le-maloya-symbole-de-la-resistance-dans-les-plantations-et-usines-sucrieres/",
+        "https://ich.unesco.org/en/RL/maloya-00249",
+        "https://www.plantation-esclavage.re/maloya-and-sega-slavery-s-musical-legacy/",
+        "https://www.mediatheques.villeurbanne.fr/decouvrir/le-maloya-une-musique-de-resistance-qui-nourrit-lame/",
+        "https://www.youtube.com/watch?v=R200o_431eI",
+        "https://www.youtube.com/watch?v=i6l3mQ248yU",
+        "https://www.google.com/search?q=Réunion+Island+coordinates",
+        "https://www.mappr.co/where-is-reunion/",
+        "https://www.geodatos.net/en/coordinates/reunion"
+      ],
+      "scraped_at": "2026-09-27T02:25:58.572808Z",
+      "location": {
+        "country": "France",
+        "provinces": [
+          "Réunion"
+        ],
+        "lat": -21.1309332,
+        "lng": 55.5265771
+      },
+      "resume_analisa": {
+        "description": "Le Maloya is a traditional musical genre, song, and dance form originating from Réunion Island, a French overseas department in the Indian Ocean. It is primarily sung in Reunionese Creole and is characterized by its deep historical roots in the experiences of enslaved African and Malagasy people brought to the island's sugar plantations. Initially a clandestine expression of pain, revolt, and spiritual connection, it has evolved into a powerful symbol of Reunionese identity and cultural pride. Maloya performances typically feature a dialogue between a soloist and a choir, accompanied by specific percussion instruments and a musical bow.",
+        "cultural_significance": "Maloya holds immense cultural significance as a living testament to the history of slavery and resistance on Réunion Island. It served as a means for enslaved people to express their suffering, maintain their cultural heritage, and foster solidarity. Historically banned by colonial authorities due to its subversive nature and association with Creole identity and political activism, its public resurgence in the 1970s and subsequent UNESCO recognition in 2009 underscore its role as a cornerstone of Reunionese identity. It is performed in both sacred ancestral rituals (servis kabaré) and festive public gatherings (kabars), embodying a blend of spirituality, memory, and celebration.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "Le Maloya functions as a vital mechanism for social cohesion and mutual aid by providing a collective space for expressing shared experiences, particularly historical trauma and oppression. Born from the suffering of enslaved populations, its music, song, and dance allowed individuals to articulate pain, revolt, and hope, fostering a strong sense of community and collective identity. The practice, especially in 'kabars' and 'servis kabaré,' reinforces social bonds, facilitates the transmission of collective memory, and offers a means of emotional and spiritual healing. This shared cultural expression builds resilience by strengthening community solidarity and enabling collective coping with adversity and historical injustices.",
+        "gemini_tags": [
+          "Maloya",
+          "Réunion Island",
+          "Performing Arts",
+          "Creole Culture",
+          "Intangible Cultural Heritage",
+          "Resistance",
+          "Slavery Legacy",
+          "Music",
+          "Dance",
+          "Oral Traditions",
+          "Social Cohesion",
+          "Cultural Identity",
+          "Ancestral Worship"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Performance (Music, Song, and Dance)",
+        "materials_and_tools": [
+          "Roulèr (large barrel drum, played by straddling and striking with hands)",
+          "Kayamb (flat raft rattle made from sugar cane tubes and seeds, shaken laterally)",
+          "Pikèr (bamboo idiophone, struck with sticks)",
+          "Sati (metal idiophone, often a metal box or sheet, struck with sticks)",
+          "Bobr / Bob (musical bow, with a calabash resonator and metal string)",
+          "Voices (soloist and choir)"
+        ],
+        "step_by_step": [
+          "**Vocal Initiation (Pléré):** A soloist, often referred to as the 'maître de la parole' (master of the word), begins with an a cappella, often plaintive melody in Reunionese Creole. This initial phase sets the emotional tone.",
+          "**Instrumental Entry (Kasé):** The 'pléré' transitions into the 'kasé' as percussion instruments enter, establishing the characteristic ternary rhythms. The roulèr provides the deep bass rhythm, while the kayamb, pikèr, and sati add layers of intricate percussion.",
+          "**Call-and-Response:** A dynamic interaction unfolds between the soloist and a choir, with the choir responding to the soloist's lines, creating a communal vocal texture.",
+          "**Dance Movements:** Dancers perform with fluid, powerful movements, often barefoot, emphasizing connection to the earth. Key movements include hip swaying ('déhanchés'), turning, and a basic step involving placing one foot forward, bending the knees, and slightly lowering the torso, then 'walking' in rhythm.",
+          "**Collective Expression:** The performance is highly communal, with gestures and lyrics often carrying deep meanings related to history, resistance, and ancestral homage. The dance can be collective, symbolizing unity and shared experience.",
+          "**Contextual Adaptation:** Maloya is performed in various settings: 'servis kabaré' (private, sacred ceremonies honoring ancestors, requiring respectful observation) and 'kabars' (public, festive gatherings where dancing is encouraged)."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Madagascar",
+            "element_name": "Various Malagasy musical and ritual practices",
+            "relationship_reason": "Maloya's origins are rooted in the musical and ritual practices brought by enslaved people from Madagascar, including the possible etymology of 'Maloya' from Malagasy expressions of sadness or speaking."
+          },
+          {
+            "country": "Africa (East Africa, Mozambique, Kenya, Comoros)",
+            "element_name": "Various African musical and ritual practices",
+            "relationship_reason": "Maloya incorporates musical influences and instruments (like the kayamb and bobr) from East African and Mozambican traditions, brought by enslaved populations."
+          },
+          {
+            "country": "Mauritius, Rodrigues",
+            "element_name": "Séga Ravan, Séga Tambour",
+            "relationship_reason": "Maloya shares a creolized musical and choreographic heritage with other Indian Ocean islands, particularly with Séga, which also originated from Afro-Malagasy influences and evolved in the plantation context."
+          },
+          {
+            "country": "Brazil",
+            "element_name": "Berimbau",
+            "relationship_reason": "The Maloya instrument 'bobr' (musical bow) is often compared to its cousin, the Berimbau from Brazil, indicating a shared instrument type across Afro-diasporic cultures."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-bb9c05f4",
+      "element_name": "Adumu (Maasai Jumping Dance)",
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Performing Arts",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFs9MjkB-hoGyN0safy6vSo0X3egJ3LQyQcv1zGIGgPoENAD6gpDtby6B94IiYJsnE0MZJshIYqmQVsm58DEWxYsSne7i5T8ivnl_njSFDDskmX13murTG9P1vkS-8c&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFs9MjkB-hoGyN0safy6vSo0X3egJ3LQyQcv1zGIGgPoENAD6gpDtby6B94IiYJsnE0MZJshIYqmQVsm58DEWxYsSne7i5T8ivnl_njSFDDskmX13murTG9P1vkS-8c",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmDpQYZWw0FpzxOciabXw1Q0HIE6OMw6ZslsAihtVhiMVIe8r2PlKoX1V0LGB2l-RONlvV6mnvEi4-KPPlAmfjUopQBopX3QjIv7OCie_qjOXmMbUgE1hYHhCQB7O6wkdb",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKyH61T4EYfFYn03GImclViQBrGzsw2iJ38x4pBr_F9oZPstrrmSdfe4xQmIjDjmtLnnF46qfmdQzaM6dO6XePxnZyCEWFJDbqkbf3xrJu41hlKiVutIWsVCODRqt77NQjRsHjhccY119c6ZvItQHZ9gbQPNVdsw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq8HyMRQLiCjslnPlcl5jQQzn6KHri6upFwT8DpbD_xm3yOYEqoS9K1lkmMaqsr7wYOMCiGX6Dv98JNpg7RWxCOf3g8pMh7tGSZSCy9TGVgttdHutY71YltmOo0gunO3gbkK3BKhrGpjuZb-Xn9nDNyDLzVg==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETUSNzt9vSFVs1SZC6lLRIGC-gUqgMTMwhJVzrcyNc-gCUUktq2sJG9tKVda27PfTFy7fOw-snjm81pwHQ-cQTePt3BcCn8UWKWNtw29CYGWWmlVx8U2eX4rVAz7KVgYFzROv02IQ3m_xxBay4w1LUdVYSJyWwKeoKXfR7rLqpoYF8j5JawNNSySNLMyKc-L5kbeDM8MDya11103AwqpFDkg=="
+      ],
+      "scraped_at": "2026-09-27T02:26:33.728655Z",
+      "location": {
+        "country": "Kenya, Tanzania",
+        "provinces": [],
+        "lat": -0.3372887,
+        "lng": 35.5195707
+      },
+      "resume_analisa": {
+        "description": "The Adumu, also known as the Maasai jumping dance, is an energetic and acrobatic dance performed by the Maasai people of Kenya and Tanzania. It is characterized by a sequence of high, vertical jumps where dancers keep their bodies straight and upright, with heels never touching the ground. The dance is typically performed by young Maasai warriors and is accompanied by traditional Maasai songs and rhythmic chanting. Dancers wear vividly colored shúkàs (traditional clothes) and intricate beaded jewelry.",
+        "cultural_significance": "The Adumu dance holds significant cultural importance as a rite of passage, particularly during the Eunoto ceremony, which marks the transition of junior warriors (morani) to senior warrior status and adulthood. It serves to foster social bonding and unity among warriors and the community, demonstrate physical prowess and agility, and acts as a courtship ritual where young men display their strength to potential brides. The dance is a fundamental part of Maasai identity and is performed at various ceremonial occasions, including weddings and religious rites.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "The Adumu dance, as a central component of the Eunoto ceremony and other community gatherings, significantly strengthens social bonds and unity among Maasai warriors and the broader community. This enhanced social cohesion can facilitate collective action, mutual support, and effective communication among community members during various challenges, including potential disasters, by fostering a sense of shared responsibility and aid.",
+        "gemini_tags": [
+          "Maasai",
+          "Traditional Dance",
+          "Rite of Passage",
+          "Kenya",
+          "Tanzania",
+          "Cultural Identity",
+          "Social Bonding",
+          "Performing Arts"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Dance",
+        "materials_and_tools": [
+          "Vividly colored shúkàs (traditional Maasai clothes)",
+          "Beaded jewelry"
+        ],
+        "step_by_step": [
+          "Young Maasai warriors, the primary performers, form a circle.",
+          "One or two dancers enter the center of the circle to perform.",
+          "The dancers in the center begin to jump high vertically, maintaining a straight and upright body posture, ensuring their heels do not touch the ground.",
+          "The other members forming the circle provide rhythmic accompaniment through chanting and singing in a deep, throaty voice, often raising their voices based on the height of the performers' jumps.",
+          "The height, grace, and dexterity of the jumps are often competitive, allowing warriors to display their strength and agility.",
+          "When a dancer tires, another warrior takes his place in the center of the circle."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Kenya",
+            "element_name": "Adumu (Maasai Jumping Dance)",
+            "relationship_reason": "The Maasai people, who practice the Adumu dance, inhabit both Kenya and Tanzania."
+          },
+          {
+            "country": "Tanzania",
+            "element_name": "Adumu (Maasai Jumping Dance)",
+            "relationship_reason": "The Maasai people, who practice the Adumu dance, inhabit both Kenya and Tanzania."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-25T14:09:54.428118Z",
-    "total_ich_elements": 316,
-    "complete_records": 316,
+    "generated_at": "2026-09-27T02:27:32.840576Z",
+    "total_ich_elements": 318,
+    "complete_records": 318,
     "incomplete_records": 0,
     "categories_breakdown": {
       "Traditional Craftsmanship": 111,
-      "Social Practices & Rituals": 66,
+      "Social Practices & Rituals": 68,
       "Culinary Traditions": 49,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 29,
+      "Performing Arts": 31,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 23,
+      "Oral Traditions": 24,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
