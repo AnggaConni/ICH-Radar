@@ -28352,22 +28352,317 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-937a88d2",
+      "element_name": "Kintsugi (Golden Repair)",
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.britannica.com/art/kintsugi&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.britannica.com/art/kintsugi",
+        "https://inkanazawahouse.com/blogs/kintsugi/kintsugi-tools-materials",
+        "https://www.veltra.com/blog/japan/kintsugi-meaning-symbolism-philosophy/",
+        "https://millenniumgallery.jp/kintsugi-meaning/",
+        "https://www.chimahaga.com/blogs/kintsugi-blog/kintsugi-materials-tools",
+        "https://domestika.org/en/blog/12577-basic-materials-for-starting-out-in-kintsugi",
+        "https://www.japanhouselondon.uk/whats-on/2021/kintsugi-japanese-repair-technique/",
+        "https://www.lakesidepottery.com/kintsugi-repair-instructions/how-kintsugi-is-done.html",
+        "https://en.wikipedia.org/wiki/Kintsugi",
+        "https://www.nomliving.com/blogs/news/kintsugi-a-how-to-guide",
+        "https://www.goenne.com/blogs/news/kintsugi-supply-list-create-your-own-best-kintsugi-kit",
+        "https://www.jamestowndistributors.com/how-to/how-to-kintsugi-repair-a-broken-dish",
+        "https://mollies.co.nz/blogs/news/a-beginners-guide-to-kintsugi-inspired-art",
+        "https://www.lakesidepottery.com/kintsugi-repair-instructions/kintsugi-philosophy.html",
+        "https://somtoseeks.com/kintsugi-villages-japan/",
+        "https://mtthwhgn.com/2024/11/15/applying-the-art-of-kintsugi-to-disaster-recovery/",
+        "https://blackfoxglobal.com/repair-resilience-what-the-ancient-art-of-kintsugi-teaches-us-about-turbulent-times/",
+        "https://millenniumgallery.jp/kintsugi-healing-communities-after-disaster/",
+        "https://lovekintsugi.com/pages/instruction",
+        "https://www.domestika.org/en/blog/12577-basic-materials-for-starting-out-in-kintsugi",
+        "https://www.gotokyo.org/en/story/howto/kintsugi/index.html"
+      ],
+      "scraped_at": "2026-09-29T03:12:29.244680Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [],
+        "lat": 36.5748441,
+        "lng": 139.2394179
+      },
+      "resume_analisa": {
+        "description": "Kintsugi, also known as kintsukuroi, is the traditional Japanese art of repairing broken pottery by mending the areas of breakage with urushi lacquer dusted or mixed with powdered gold, silver, or platinum. Rather than disguising the damage, the technique highlights the cracks, transforming the broken object into something new and often more beautiful.",
+        "cultural_significance": "Kintsugi embodies Japanese culture and is deeply rooted in the philosophy of wabi-sabi, which finds beauty in imperfection, impermanence, and incompleteness. It also draws from Buddhist teachings about suffering, impermanence, and transformation, and the philosophy of mushin, encompassing non-attachment and acceptance of change. The practice teaches resilience, valuing an object's history and journey, and seeing beauty in flaws, extending the life of treasured items rather than discarding them. It became closely associated with ceramic vessels used for the Japanese tea ceremony (chanoyu).",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": false,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Earthquake",
+          "Tsunami",
+          "Typhoon"
+        ],
+        "drr_mechanism": "Kintsugi emerged in Japan, a country historically prone to natural disasters like earthquakes, tsunamis, and typhoons. It provides a guiding philosophical framework to view catastrophe, helping people cope with extreme events, heal themselves and their communities, and regain optimism for the future. The practice emphasizes resilience, transformation, and finding beauty in brokenness, fostering a sense of continuity and hope in the face of loss, which is crucial for post-disaster recovery and psychological well-being.",
+        "gemini_tags": [
+          "Japanese art",
+          "ceramic repair",
+          "wabi-sabi",
+          "resilience",
+          "traditional craft",
+          "cultural philosophy",
+          "disaster recovery"
+        ],
+        "drr_relevance": false
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship / Ceramic Repair",
+        "materials_and_tools": [
+          "Urushi (natural lacquer from the lacquer tree, including ki urushi, mugi urushi, sabi urushi, bengara urushi)",
+          "Powdered precious metals (gold, silver, or platinum)",
+          "Wheat flour (for mugi-urushi paste)",
+          "Tonoko (fine clay powder)",
+          "Kokuso putty (traditional putty made from urushi and clay powder, sometimes with wood powder or hemp fiber)",
+          "Fine brushes",
+          "Bamboo spatulas or toothpicks",
+          "Cotton swabs and soft cloths",
+          "Sandpaper (various grits, e.g., 600-1500 grit)",
+          "Water-resistant gloves and masks (especially when using real urushi)",
+          "Acrylic plate or palette (for mixing)",
+          "Furo (a high-humidity curing chamber, traditionally a wooden cupboard with bowls of hot water)"
+        ],
+        "step_by_step": [
+          "**Preparation**: Carefully clean the broken edges of the ceramic pieces to remove any dust, oils, or residue that could interfere with adhesion.",
+          "**Reassembly**: Apply urushi lacquer to the fractured surfaces to penetrate and stabilize the exposed clay. Reassemble the broken fragments using mugi-urushi, a traditional adhesive made by mixing lacquer with wheat flour paste.",
+          "**Curing (First Stage)**: Allow the reassembled pieces to cure in a high-humidity environment (furo) for several days to weeks, as urushi lacquer hardens slowly.",
+          "**Filling Gaps**: If there are chips or missing fragments, rebuild these sections using a smooth filling material, typically kokuso putty (a paste of urushi and clay powder). These areas are repeatedly shaped, sanded, and refined to blend with the original contours.",
+          "**Layering and Undercoating**: Apply additional layers of lacquer and several rounds of undercoating (often urushi mixed with tonoko, a fine polishing clay powder) to strengthen the repaired foundation. Each layer requires a curing period.",
+          "**Final Lacquer Application**: Apply a final layer of colored urushi (such as bengara urushi, a red ochre pigment mixed with lacquer) to the fracture lines.",
+          "**Metal Powder Application**: While the final lacquer layer is still wet, carefully sprinkle powdered gold, silver, or platinum onto the lacquered lines.",
+          "**Polishing**: After the metal powder has adhered and the lacquer has fully cured, gently polish the surface to reveal the lustrous golden (or silver/platinum) seams."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Chinese ceramics repaired with Kintsugi",
+            "relationship_reason": "Although Kintsugi is a Japanese technique, it has been applied to ceramics originating from China, leaving a recognizable Japanese mark on these objects."
+          },
+          {
+            "country": "Korea",
+            "element_name": "Korean ceramics repaired with Kintsugi",
+            "relationship_reason": "Kintsugi has been applied to ceramics from Korea, similar to its application on Chinese pottery."
+          },
+          {
+            "country": "Global (Philosophical)",
+            "element_name": "Concepts of resilience, transformation, and embracing imperfection",
+            "relationship_reason": "The philosophical underpinnings of Kintsugi, such as finding beauty in imperfection and transforming wounds into wisdom, resonate with concepts across various cultures and faiths, including the Hebrew concept of Tikkun Olam, Christian practices of grace and redemption, Islamic principles of mercy and renewal, and Buddhist teachings on suffering and enlightenment."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-a3b23df1",
+      "element_name": "Maasai Oral Tradition",
+      "categories": [
+        "Oral Traditions",
+        "Social Practices & Rituals",
+        "Performing Arts"
+      ],
+      "categories_valid": true,
+      "category": "Oral Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.tourhq.com/blog/discover-the-cultural-depths-of-the-maasai-people&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.tourhq.com/blog/discover-the-cultural-depths-of-the-maasai-people",
+        "https://englishpluspodcast.com/maasai-oral-tradition-unveiled/",
+        "https://www.worldhistory.org/Maasai/",
+        "https://www.tanzaniaspecialist.com/maasai-culture-tanzania/"
+      ],
+      "scraped_at": "2026-09-29T03:12:57.017550Z",
+      "location": {
+        "country": "Kenya",
+        "provinces": [],
+        "lat": 0.2793165,
+        "lng": 37.5164935
+      },
+      "resume_analisa": {
+        "description": "The Maasai Oral Tradition encompasses the rich body of knowledge, history, customs, and values passed down through generations of the Maasai people primarily through storytelling, songs, and dances. Unlike many other cultures that rely on written scripts, the Maasai have preserved their heritage by word of mouth, with elders acting as custodians of this collective wisdom. This tradition is a dynamic vessel that transmits tales of bravery, morality, the origins of the Maasai people, and their deep connection to the land and livestock.",
+        "cultural_significance": "Oral tradition is central to Maasai identity and cultural continuity. It plays a vital role in preserving the community's collective memory, ensuring that the values and lessons of the past guide future generations. Through stories, songs, and ceremonial dances, social norms are reinforced, historical accounts are maintained, and a sense of belonging is fostered. It educates young people about their roles in society, transfers power between age groups, and preserves indigenous knowledge, allowing the culture to adapt and survive in a changing world.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Drought"
+        ],
+        "drr_mechanism": "Maasai oral traditions transmit crucial indigenous knowledge regarding sustainable pastoralism and environmental stewardship. This knowledge enables the community to adapt and thrive in the savannahs of Kenya and Tanzania, particularly in regions characterized by irregular rainfall and drought. The traditions preserve practices for managing livestock, understanding the environment, and maintaining a food system based on meat, blood, fat, and milk, which are vital for their livelihoods in challenging climatic conditions. Furthermore, the communal nature of oral tradition strengthens social cohesion and mutual aid, essential for collective resilience during crises.",
+        "gemini_tags": [
+          "Maasai culture",
+          "Oral history",
+          "Storytelling",
+          "Indigenous knowledge",
+          "Pastoralism",
+          "East Africa"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Oral and Performance-based Transmission",
+        "materials_and_tools": [
+          "Human voice",
+          "Memory",
+          "Traditional attire (for dances)",
+          "Traditional drums (for dances)"
+        ],
+        "step_by_step": [
+          "Elders, as custodians of wisdom, recount myths, legends, and historical accounts during community gatherings, passing down knowledge of origins, morality, and values.",
+          "Young warriors (morans) engage in singing songs that narrate tales of love, challenges, and victories, often as accompaniment to their dances.",
+          "Ceremonial dances, such as the 'Adumu' (jumping dance), are performed by morans during rites of passage, accompanied by rhythmic chants and traditional drums, serving as displays of strength, unity, and pride.",
+          "Knowledge, history, and customs are continuously transmitted from one generation to the next through word of mouth, ensuring the continuity of cultural values and lessons.",
+          "Every retelling of a story or performance of a song/dance acts as a shared experience, strengthening community bonds and allowing the traditions to dynamically evolve and incorporate contemporary lessons and challenges."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Kenya",
+            "element_name": "Kikuyu Oral Literature",
+            "relationship_reason": "Both are forms of oral tradition in East Africa, serving to transmit cultural knowledge, history, and moral lessons through storytelling, myths, legends, and riddles."
+          },
+          {
+            "country": "Kenya",
+            "element_name": "Swahili Oral Narratives",
+            "relationship_reason": "Both represent significant oral traditions in East Africa, encompassing folktales, proverbs, riddles, and poetry, used for education, cultural preservation, and identity reinforcement."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-d2da9424",
+      "element_name": "Jamu Wellness Culture",
+      "categories": [
+        "Culinary Traditions",
+        "Social Practices & Rituals",
+        "Traditional Craftsmanship"
+      ],
+      "categories_valid": true,
+      "category": "Culinary Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://ich.unesco.org/img/photo/thumb/01968-750x500-20220921-112328.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/jamu-wellness-culture-01968",
+        "https://www.thefermentary.com.au/blogs/recipes/a-recipe-for-a-very-good-homemade-jamu",
+        "https://murexdiveresorts.com/jamu-natural-immune-booster-anti-inflammatory/",
+        "https://www.bali.com/jamu-loloh-indonesias-ancient-herbal-elixirs-for-wellness-healing.html",
+        "https://www.feastingathome.com/jamu-indonesian-turmeric-ginger-drink/",
+        "https://www.djamuvanjava.com/post/the-tradition-of-jamu-in-indonesian-culture",
+        "https://www.foodnroad.com/jamu-with-turmeric-and-tamarind/",
+        "https://www.potatohead.co/bali/editorial/recipe-a-jamu-tonic-to-detox-your-system",
+        "https://www.nationalgeographic.com/travel/article/unesco-protected-health-customs",
+        "https://ich.unesco.org/doc/src/48906.pdf"
+      ],
+      "scraped_at": "2026-09-29T03:13:25.105784Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "Java",
+          "Central Java",
+          "Yogyakarta Special Province",
+          "East Java",
+          "Bali"
+        ],
+        "lat": -7.3279694,
+        "lng": 109.613911
+      },
+      "resume_analisa": {
+        "description": "Jamu is a traditional Indonesian herbal medicine and treatment system, practiced since the 8th century. It involves the preparation and consumption of herbal blends made from natural ingredients such as roots, leaves, bark, flowers, and spices. Jamu is consumed for health, beauty, and happiness, aiming to increase immunity, maintain overall health, and treat various ailments by balancing the body's hot and cold elements. It represents a holistic approach to well-being and is deeply embedded in Indonesian culture.",
+        "cultural_significance": "Jamu is more than just a herbal drink; it embodies Indonesia's philosophy of harmony between humans, nature, and well-being. The knowledge and practices are typically transmitted informally within families, often by women known as 'Mbok Jamu,' and among neighbors, though some practitioners are self-taught or learn in universities. Its historical roots trace back to the Mataram Kingdom (8th-10th century) and are depicted in reliefs at the Borobudur temple. The practice strengthens social ties and provides communities with a sense of identity and continuity. UNESCO recognized Jamu Wellness Culture as Intangible Cultural Heritage in December 2023.",
+        "drr_category": "Traditional Healing & Health Resilience",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "Jamu wellness culture contributes to health resilience by aiming to increase immunity and maintain the overall health of individuals and communities. By promoting general well-being and providing traditional remedies for various ailments, it can indirectly enhance a community's capacity to cope with health challenges, which may be exacerbated during and after disasters. However, it does not directly address specific disaster hazards like floods or earthquakes through mitigation or early warning mechanisms.",
+        "gemini_tags": [
+          "Herbal Medicine",
+          "Traditional Wellness",
+          "Indonesian Culture",
+          "Holistic Health",
+          "Community Practice",
+          "Intangible Cultural Heritage"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Herbal Drink Preparation (Jamu Kunyit Asam - Turmeric Tamarind Jamu)",
+        "materials_and_tools": [
+          "Fresh turmeric root (e.g., 200-400g)",
+          "Fresh ginger root (e.g., 50-300g)",
+          "Fresh galangal (optional, e.g., 50g)",
+          "Tamarind pulp or concentrate (e.g., 60-100g or 3 tbsp concentrate)",
+          "Palm sugar or coconut sugar (e.g., 150-250g, adjust to taste)",
+          "Water (e.g., 1-2 liters)",
+          "Limes or lemons (e.g., 1-2, juiced)",
+          "Sea salt (e.g., ½ teaspoon)",
+          "Black peppercorns (optional, e.g., 1-2g or ½ teaspoon freshly ground)",
+          "Pandan leaves (optional, e.g., 1-2)",
+          "High-powered blender or food processor (or traditional stone grinder/grater)",
+          "Large pot or saucepan",
+          "Fine-mesh strainer or cheesecloth",
+          "Glass bottles for storage",
+          "Gloves (optional, to prevent turmeric staining)"
+        ],
+        "step_by_step": [
+          "Prepare the roots: Scrub fresh turmeric, ginger, and galangal thoroughly. No need to peel if organic and well-cleaned, as skins contain beneficial compounds. Chop roughly into chunks suitable for blending.",
+          "Prepare the tamarind: If using tamarind pulp, pour hot water over it and let it soak for about 10 minutes. Squeeze and massage the pulp to extract the essence, then strain to remove seeds and fibers. If using concentrate, mix with water.",
+          "Blend the roots: Place chopped roots in a blender with a portion of the water (e.g., 500ml). Blend on high speed until a smooth, bright orange-yellow liquid is formed. A finer blend extracts more flavor and medicinal compounds.",
+          "Simmer the jamu: Pour the blended root mixture into a large pot. Add the remaining water, tamarind liquid, palm sugar (or coconut sugar), sea salt, and optional pandan leaves. Bring to a gentle boil, then reduce heat and simmer for 15-30 minutes. This process mellows the raw sharpness and allows flavors to meld.",
+          "Strain the mixture: Remove from heat and allow to cool slightly. Strain the mixture through a fine-mesh strainer or cheesecloth into a clean container or bottles, pressing to extract all liquid. Discard the solids.",
+          "Add final touches: Once cooled (especially if using honey to preserve enzymes), stir in fresh lime or lemon juice and optional black pepper (which enhances turmeric absorption). Adjust sweetness and tanginess to taste.",
+          "Store and serve: Transfer the finished jamu to glass bottles. It can be stored in the refrigerator for 3-5 days. Serve chilled as a refreshing drink or gently reheated as a warm tonic."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Indonesia (various regions)",
+            "element_name": "Loloh, Usada, Sanrego, Ata Mbeko, Swansea, Banyu Kinca, Bii, Batatamba",
+            "relationship_reason": "These are regional variations or similar traditional herbal medicine practices found across different islands and communities in Indonesia, sharing the core concept of using natural ingredients for health and wellness."
+          },
+          {
+            "country": "Various Asian countries",
+            "element_name": "Traditional Herbal Medicines (e.g., Ayurvedic, Traditional Chinese Medicine)",
+            "relationship_reason": "Many Asian cultures have long traditions of herbal medicine that utilize similar ingredients like turmeric and ginger for their medicinal properties, reflecting a shared understanding of natural healing. While distinct in practice, the underlying principle of using botanicals for health is common."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-27T02:27:32.840576Z",
-    "total_ich_elements": 318,
-    "complete_records": 318,
+    "generated_at": "2026-09-29T03:13:54.557891Z",
+    "total_ich_elements": 321,
+    "complete_records": 321,
     "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 111,
-      "Social Practices & Rituals": 68,
-      "Culinary Traditions": 49,
+      "Traditional Craftsmanship": 113,
+      "Social Practices & Rituals": 71,
+      "Culinary Traditions": 50,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 31,
+      "Performing Arts": 32,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 24,
+      "Oral Traditions": 25,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
