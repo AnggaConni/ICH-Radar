@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T22:18:56.831872+00:00",
+  "generated_at": "2026-10-03T05:24:30.339652+00:00",
   "inventory": [
     {
       "id": "ich-2c75579d",
@@ -747,6 +747,15 @@
       "date": "September 21, 2026",
       "imageUrl": "thum/mentalmodel.png",
       "slug": "living-heritage-that-teaches-mental-models-for-inclusive-preservation"
+    },
+    {
+      "id": "71",
+      "title": "Living Heritage: When Foresight Is Right — but Still Wrong",
+      "excerpt": "A foresight model can have good data, a real signal and a plausible causal mechanism, yet still miss the outcome because context changes the pathway. This article explores Context Blindness through career decisions, El Niño, critical technology dependencies, living heritage, hidden variables, structured dissent and resilience.",
+      "category": "Living Heritage, Strategic Foresight & Context Blindness",
+      "date": "October 3, 2026",
+      "imageUrl": "thum/context-blindness-living-heritage.png",
+      "slug": "living-heritage-when-foresight-is-right-but-still-wrong"
     },
     {
       "id": "44",
