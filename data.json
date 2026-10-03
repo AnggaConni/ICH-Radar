@@ -28647,22 +28647,225 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-aabe659e",
+      "element_name": "Fête de la Saint-Jean",
+      "categories": [
+        "Social Practices & Rituals",
+        "Performing Arts",
+        "Oral Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.agriturismohautevue.com/fete-de-la-saint-jean-bonfire-in-valbonne/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.agriturismohautevue.com/fete-de-la-saint-jean-bonfire-in-valbonne/",
+        "https://www.babylangues.com/fete-de-la-saint-jean-french-traditions/",
+        "https://www.ecoleng.fr/coutumes-ancestrales-provence-fete-saint-jean/",
+        "https://www.girlgonegallic.com/fete-de-la-saint-jean/",
+        "https://www.girlgonegallic.com/history-of-the-fete-de-la-saint-jean/",
+        "https://www.mamalisa.com/blog/the-fete-de-la-saint-jean-st-johns-eve/",
+        "https://www.oustau-du-ventoux.com/les-feux-de-la-saint-jean/",
+        "https://www.po-life.com/feux-de-la-saint-jean-ancient-practices-and-white-magic/",
+        "https://www.provenceweb.fr/fete-de-la-saint-jean/",
+        "https://www.purefrance.com/magazine/the-feast-of-saint-jean-celebrate-the-summer-solstice",
+        "https://www.saintebaume-tourisme.com/fetes-de-la-saint-jean-en-provence-la-cadiere-dazur-et-signes/",
+        "https://www.tourism-mediterranean-pyrenees.com/discover/culture-and-heritage/traditions-and-folklore/feux-de-la-saint-jean",
+        "https://www.trafalgartours.com/magazine/french-countryside-festivals-experience-junes-fete-de-la-saint-jean/"
+      ],
+      "scraped_at": "2026-10-03T02:50:05.145716Z",
+      "location": {
+        "country": "France",
+        "provinces": [
+          "Provence-Alpes-Côte d'Azur",
+          "Occitanie"
+        ],
+        "lat": 44.0580563,
+        "lng": 6.0638506
+      },
+      "resume_analisa": {
+        "description": "The Fête de la Saint-Jean, or St. John's Festival, is an annual celebration deeply rooted in French tradition, particularly in rural regions and Provence. It takes place around the summer solstice (June 21st) and commemorates the birth of St. John the Baptist (June 24th). Originally a pagan festival celebrating the sun and fertility, it was later christianized. The festival is characterized by vibrant bonfires, lively music, traditional dancing, and communal gatherings. It is a time for communities to come together, celebrate the longest day of the year, and engage in various rituals that symbolize light, renewal, purification, and protection against evil spirits.",
+        "cultural_significance": "The Fête de la Saint-Jean holds significant cultural importance, marking the summer solstice and symbolizing light, renewal, and protection. Historically, bonfires were believed to ward off evil spirits, ensure good luck, health, fertility, and successful harvests. The act of burning wishes in the bonfire is thought to send them to the heavens, and jumping over the dying embers is a ritual for good fortune, marriage, or health. The festival strengthens community bonds, fostering friendship, sharing, and local identity through collective participation in building bonfires, dancing, and feasting. In regions like Pyrénées-Orientales, it also serves as a celebration of Catalan identity. The tradition is intergenerational, with both young and old participating in the festivities.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "The Fête de la Saint-Jean primarily contributes to disaster resilience by strengthening social cohesion and mutual aid within communities. The communal gatherings, shared rituals, and festive atmosphere reinforce bonds between neighbors and generations. This enhanced social fabric can be crucial in times of crisis, facilitating collective action, support networks, and a more effective community-led response and recovery from various disruptions. While some traditional beliefs involve protection (e.g., from lightning or illness), these are more folklore than documented disaster risk reduction mechanisms.",
+        "gemini_tags": [
+          "Summer Solstice",
+          "Bonfire",
+          "Community Festival",
+          "French Folklore",
+          "Traditional Dance",
+          "Pagan Roots",
+          "Christianized Tradition",
+          "Social Cohesion",
+          "Ritual"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Community Festival / Ritual",
+        "materials_and_tools": [
+          "Wood (logs, branches, dead leaves, old furniture) for bonfires",
+          "Torches",
+          "Scraps of paper for wishes",
+          "Traditional costumes",
+          "Musical instruments (e.g., galoubet, tambourin)",
+          "Special bread (in some regions)",
+          "Herbs (e.g., St. John's Wort, rosemary, thyme, verbena, immortelle, jelly bean plant, walnut)",
+          "Olive oil (for 'red oil')"
+        ],
+        "step_by_step": [
+          "**Preparation (days/weeks before):** Volunteers collect wood (branches, logs, dead leaves, old furniture) to build a large bonfire in a central village location. In some areas, individuals bring bundles of twigs or flowers with handwritten messages/wishes. In Perpignan, grapevine branches are collected, and a sacred flame is maintained at the Castillet. Traditional costumes are prepared, and music and dance groups rehearse. On the eve of St. John's, specific herbs are gathered for good luck, protection, and healing.",
+          "**Eve of St. John (June 23rd):** Locals, often dressed in traditional attire, gather in the main square. A procession, sometimes with torches, leads to the bonfire site. In Provence, a flame from Mont Canigou may be carried by runners. A speech about the festival's origins is often given, followed by a blessing of the bonfire by a local priest.",
+          "**Bonfire Lighting & Rituals:** The bonfire is lit, often by a notable figure like the mayor, using the sacred flame. Wishes written on paper are sometimes placed into the fire to be carried to the heavens.",
+          "**Celebration:** Folk music and traditional dances (such as the farandole or sardana in Catalan regions) accompany the burning bonfire. Fireworks are often part of the festivities.",
+          "**Post-Bonfire Rituals:** Once the fire dies down to embers, participants, particularly young people, may jump over the embers for good luck, fertility, health, or a successful harvest. In some areas, special bread is shared, or communal barbecues are held over the embers. Historically, embers were taken home for protection against house fires and lightning, and ashes for skin ailments. St. John's Wort collected on this day is used to make 'red oil' for rheumatism."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Spain",
+            "element_name": "Fires of St John (Fogueres de Sant Joan)",
+            "relationship_reason": "Common celebration of the summer solstice and/or St. John the Baptist, often involving bonfires and similar rituals, with pagan origins. Explicitly mentioned as being imported from Catalonia."
+          },
+          {
+            "country": "Canada",
+            "element_name": "Fête nationale du Québec (St. Jean Baptiste Day)",
+            "relationship_reason": "Celebration of St. John the Baptist's Day with bonfires, singing, dancing, and parades, brought by French colonists."
+          },
+          {
+            "country": "Scandinavian countries",
+            "element_name": "Midsummer/St. John's Day celebrations",
+            "relationship_reason": "Common celebration of St. John's Day, often with Christian heritage."
+          },
+          {
+            "country": "Hungary",
+            "element_name": "Szent Iván éj (St. John's Night)",
+            "relationship_reason": "Common celebration of St. John's Day, often with Christian heritage."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-2dc82dac",
+      "element_name": "Rendas de Bilro",
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://www.saberfazer.pt/uploads/images/artesanato/renda-de-bilros/renda-de-bilros-01.jpg",
+      "source_urls": [
+        "https://www.saberfazer.pt/artesanato/renda-de-bilros",
+        "https://artsandculture.google.com/story/rendas-de-bilros-tradi%C3%A7%C3%A3o-e-patrim%C3%B3nio-faculdade-de-letras-da-universidade-do-porto/1wURs58aYfXoJQ?hl=pt",
+        "https://www.adapvc.pt/rendas-de-bilros",
+        "https://e-cultura.pt/patrimonio/detalhe/2115",
+        "https://cartasdolitoral.com.br/o-que-e-renda-de-bilro-historia-e-tradicao-em-floripa/",
+        "https://www.avante.pt/2622/rendas-de-bilros-arte-tradicional-para-mostrar-as-novas-geracoes/",
+        "https://www.viladoconde.pt/pages/93?news_id=314",
+        "https://www.saberfazer.pt/rotas/renda-de-bilros",
+        "https://www.portugaltravel.org/museo-da-renda-de-bilros-de-peniche",
+        "https://www.abepem.org.br/anais/index.php/coloquio/article/download/125/116",
+        "https://madeinportugal.pt/renda-de-bilros/"
+      ],
+      "scraped_at": "2026-10-03T02:51:22.583252Z",
+      "location": {
+        "country": "Portugal",
+        "provinces": [
+          "Porto District",
+          "Leiria District",
+          "Santa Catarina (Brazil)"
+        ],
+        "lat": 41.2366885,
+        "lng": -8.3020183
+      },
+      "resume_analisa": {
+        "description": "Rendas de Bilro, or Bobbin Lace, is a traditional manual textile technique involving the intricate intertwining of threads using small wooden bobbins (bilros) over a cushion (almofada) and a pricked pattern (pique) guided by pins. This delicate craft produces elaborate lace patterns used for various ornamental purposes.",
+        "cultural_significance": "With centuries of history, Rendas de Bilro represents a significant part of Portuguese textile heritage, particularly in coastal towns like Vila do Conde and Peniche. It has been a vital cultural expression, transmitted across generations, often from mothers to daughters, and served as a crucial source of income for women in fishing communities. Despite periods of decline due to industrialization, efforts through schools, museums, and events aim to preserve and promote this unique cultural patrimony. The tradition also found a home in Florianópolis, Brazil, carried by Azorean immigrants in the 18th century, becoming a hallmark of their cultural legacy there.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "The practice of Rendas de Bilro provided an alternative or supplementary source of income for families, particularly for women in coastal communities whose male relatives were often engaged in fishing. This diversification of livelihoods contributed to household economic stability and resilience, offering a buffer against potential disruptions to primary income sources, including those caused by environmental changes or economic downturns.",
+        "gemini_tags": [
+          "Bobbin Lace",
+          "Portuguese Craft",
+          "Textile Art",
+          "Traditional Weaving",
+          "Vila do Conde",
+          "Peniche",
+          "Florianópolis Heritage",
+          "Livelihood Resilience"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Craftsmanship",
+        "materials_and_tools": [
+          "Bilros (bobbins - small turned wooden, seed, or bone pieces)",
+          "Almofada (cushion - cylindrical, often filled with dried banana leaves or straw, covered with cotton fabric)",
+          "Piques (patterns/designs pricked onto cardboard)",
+          "Alfinetes (pins)",
+          "Linha (thread - typically 100% mercerized cotton)",
+          "Cavalete (stand for the cushion, often wooden)"
+        ],
+        "step_by_step": [
+          "**Prepare the Pique**: A detailed design is drawn onto cardboard, and then small holes are pricked along the lines of the design. This 'pique' serves as the blueprint, indicating where pins will be placed and how threads should be interwoven. Highly experienced lacemakers may sometimes work without a pre-pricked pique, guiding themselves by experience.",
+          "**Set up the Cushion and Threads**: The cylindrical cushion (almofada) is placed on a stand (cavalete). Threads, usually 100% mercerized cotton, are wound onto pairs of bobbins (bilros).",
+          "**Secure the Pique**: The pricked pique is carefully attached to the cushion, often with a thicker backing paper underneath to provide stability.",
+          "**Begin Weaving**: The lacemaker starts by inserting pins into the designated holes on the pique. Groups of four bobbins (two in each hand) are manipulated simultaneously.",
+          "**Cross and Twist**: The core technique involves a continuous sequence of crossing and twisting the threads. The bobbins are rotated and alternated, guided by the pattern and the pins, to create various stitches and motifs. The sound of the bobbins clicking together is characteristic of the process.",
+          "**Advance the Work**: As sections of the lace are completed, new pins are inserted, and the lacemaker progressively moves the work around the cushion, following the design on the pique. The process requires significant dexterity and practice to achieve mastery and intricate patterns."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Italy",
+            "element_name": "Bobbin Lace (general origin)",
+            "relationship_reason": "Historical evidence suggests bobbin lace originated in Italy in the 15th-16th century before spreading to other parts of Europe."
+          },
+          {
+            "country": "Flanders (historical region, now parts of Belgium, France, Netherlands)",
+            "element_name": "Bobbin Lace (diffusion point)",
+            "relationship_reason": "The technique is believed to have spread to Portugal from Flanders, likely through maritime trade routes."
+          },
+          {
+            "country": "Brazil",
+            "element_name": "Renda de Bilro (Florianópolis)",
+            "relationship_reason": "The practice was introduced to Florianópolis, Brazil, by Azorean immigrants in the 18th century, becoming a significant cultural expression there."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-09-29T03:13:54.557891Z",
-    "total_ich_elements": 321,
-    "complete_records": 321,
+    "generated_at": "2026-10-03T02:51:59.568124Z",
+    "total_ich_elements": 323,
+    "complete_records": 323,
     "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 113,
-      "Social Practices & Rituals": 71,
+      "Traditional Craftsmanship": 114,
+      "Social Practices & Rituals": 73,
       "Culinary Traditions": 50,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 32,
+      "Performing Arts": 33,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 25,
+      "Oral Traditions": 26,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
