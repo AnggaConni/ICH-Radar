@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T05:24:30.339652+00:00",
+  "generated_at": "2026-10-03T11:46:38.062422+00:00",
   "inventory": [
     {
       "id": "ich-2c75579d",
@@ -756,6 +756,15 @@
       "date": "October 3, 2026",
       "imageUrl": "thum/context-blindness-living-heritage.png",
       "slug": "living-heritage-when-foresight-is-right-but-still-wrong"
+    },
+    {
+      "id": "72",
+      "title": "I Thought Inclusion Was Only About Disability. I Was Wrong.",
+      "excerpt": "Inclusion is not only about access. It is also about correctly understanding who is standing in front of us. When misclassification erodes peace of mind, small incidents can become grievances; foresight can model the escalation pathway, while human-centred DRR seeks to interrupt it before friction becomes a larger crisis.",
+      "category": "Living Heritage, Inclusion, Foresight & Disaster Risk Reduction",
+      "date": "October 3, 2026",
+      "imageUrl": "thum/inclusion-tepa-selira-drr.png",
+      "slug": "i-thought-inclusion-was-only-about-disability-i-was-wrong"
     },
     {
       "id": "44",
