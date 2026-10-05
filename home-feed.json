@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T05:49:50.558239+00:00",
+  "generated_at": "2026-10-05T14:51:39.989730+00:00",
   "inventory": [
     {
       "id": "ich-2c75579d",
@@ -747,6 +747,15 @@
       "date": "September 21, 2026",
       "imageUrl": "thum/mentalmodel.png",
       "slug": "living-heritage-that-teaches-mental-models-for-inclusive-preservation"
+    },
+    {
+      "id": "74",
+      "title": "Living Heritage as Propaganda: Foresight & Information Analysis",
+      "excerpt": "What if an existing cultural story could change economic behaviour—and, at a much larger scale, become a demographic or geopolitical instrument? Starting with the real history of the apple proverb, this foresight exercise explores how living heritage, narrative amplification, social norms and systemic effects can interact. The evidence stops where the What-If begins.",
+      "category": "Living Heritage, Foresight & Information Analysis",
+      "date": "October 5, 2026",
+      "imageUrl": "thum/heritagepropaganda.png",
+      "slug": "living-heritage-as-propaganda-foresight-information-analysis"
     },
     {
       "id": "71",
