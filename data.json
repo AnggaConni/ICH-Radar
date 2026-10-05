@@ -28850,22 +28850,85 @@
         ]
       },
       "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-6b81b0c9",
+      "element_name": "Kearifan Lokal Masyarakat Adat Kampung Naga (Local Wisdom of Kampung Naga Indigenous Community)",
+      "categories": [
+        "Social Practices & Rituals",
+        "Traditional Craftsmanship",
+        "Oral Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.kompasiana.com/dedesuryana/62b9a76708a8d11d132338b2/potret-tradisi-kampung-naga-surga-budaya-di-tanah-sunda&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.kompasiana.com/dedesuryana/62b9a76708a8d11d132338b2/potret-tradisi-kampung-naga-surga-budaya-di-tanah-sunda",
+        "https://www.kompasiana.com/muhammadfauzan13446/653e0d8f08a8d1329a7384a2/kampung-naga-keajaiban-budaya-di-tengah-modernisasi",
+        "https://www.journal.unrika.ac.id/index.php/jurnaldms/article/view/7979",
+        "https://journal.unpak.ac.id/index.php/jhss/article/view/106",
+        "https://www.liputan6.com/regional/read/5469033/mengenal-ciri-khas-kampung-naga-warisan-budaya-sunda-yang-lestari",
+        "https://etd.repository.ugm.ac.id/penelitian/detail/109849",
+        "https://ejournal.upi.edu/index.php/JOMSIGN/article/view/77243",
+        "https://journal.ipb.ac.id/index.php/sodality/article/view/45942"
+      ],
+      "scraped_at": "2026-10-05T02:59:17.863763Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "West Java"
+        ],
+        "lat": -6.8891904,
+        "lng": 107.6404716
+      },
+      "resume_analisa": {
+        "description": "Kampung Naga is a traditional Sundanese village located in Desa Neglasari, Kecamatan Salawu, Kabupaten Tasikmalaya, West Java, Indonesia. It is renowned for its steadfast commitment to ancestral traditions and a way of life deeply rooted in harmony with nature. The community actively preserves Sundanese cultural values, which are manifested in their distinctive architectural styles, various rituals, and traditional bamboo craftsmanship. The inhabitants of Kampung Naga lead a simple life, guided by a comprehensive system of customary laws and prohibitions, known as 'pamali,' that govern their daily conduct and interactions with the natural environment.",
+        "cultural_significance": "The local wisdom of Kampung Naga serves as a dynamic value system that profoundly influences social life, promoting core principles such as simplicity, mutual cooperation, self-reliance, and a profound respect for nature. Their traditions encompass a range of rituals, including 'Upacara Menyepi' (a period of quiet contemplation), 'Sasajen' (offering sesaji at sacred places), 'Palintangan' (traditional time calculation for auspicious days), 'Ngukus' (prayer ritual before rice harvest), and 'Ngaruat' (a periodic ritual to ward off misfortune). These practices are vital for maintaining social harmony, honoring their ancestors, and ensuring ecological balance. The community's unwavering dedication to these traditions, even amidst the pressures of modernization, underscores their commitment to preserving their unique cultural identity and ancestral heritage.",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": false,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [
+          "Flood",
+          "Earthquake"
+        ],
+        "drr_mechanism": "The community's adherence to ancestral wisdom, embodied in 'Papagon Hirup' and 'pamali' (prohibitions), dictates their sustainable interaction with the environment. This includes practices such as the preservation of sacred forests ('hutan keramat'), protection of vital water sources, and responsible land management. Their traditional housing, constructed using natural materials like wood and bamboo on stilt foundations, is designed to be resilient and integrated harmoniously with the local ecosystem. This holistic approach to living in balance with nature is explicitly credited with preventing natural disasters such as floods and landslides in Kampung Naga. Furthermore, their traditional house construction is noted for its earthquake resistance.",
+        "gemini_tags": [
+          "Local Wisdom",
+          "Indigenous Community",
+          "Sundanese Culture",
+          "Traditional Architecture",
+          "Environmental Preservation",
+          "Disaster Risk Reduction",
+          "Sustainable Living",
+          "Rituals",
+          "Community Practices"
+        ],
+        "drr_relevance": false
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.0,
+        "related_elements": []
+      },
+      "completion_status": "INCOMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-10-03T02:51:59.568124Z",
-    "total_ich_elements": 323,
+    "generated_at": "2026-10-05T03:00:00.972797Z",
+    "total_ich_elements": 324,
     "complete_records": 323,
-    "incomplete_records": 0,
+    "incomplete_records": 1,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 114,
-      "Social Practices & Rituals": 73,
+      "Traditional Craftsmanship": 115,
+      "Social Practices & Rituals": 74,
       "Culinary Traditions": 50,
       "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 33,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 26,
+      "Oral Traditions": 27,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
