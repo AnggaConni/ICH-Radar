@@ -28871,64 +28871,262 @@
         "https://www.liputan6.com/regional/read/5469033/mengenal-ciri-khas-kampung-naga-warisan-budaya-sunda-yang-lestari",
         "https://etd.repository.ugm.ac.id/penelitian/detail/109849",
         "https://ejournal.upi.edu/index.php/JOMSIGN/article/view/77243",
-        "https://journal.ipb.ac.id/index.php/sodality/article/view/45942"
+        "https://journal.ipb.ac.id/index.php/sodality/article/view/45942",
+        "https://www.kejawa.com/kampung-naga/"
       ],
-      "scraped_at": "2026-10-05T02:59:17.863763Z",
+      "scraped_at": "2026-10-07T03:13:49.859087Z",
       "location": {
         "country": "Indonesia",
         "provinces": [
           "West Java"
         ],
-        "lat": -6.8891904,
-        "lng": 107.6404716
+        "lat": -2.4833826,
+        "lng": 117.8902853
       },
       "resume_analisa": {
-        "description": "Kampung Naga is a traditional Sundanese village located in Desa Neglasari, Kecamatan Salawu, Kabupaten Tasikmalaya, West Java, Indonesia. It is renowned for its steadfast commitment to ancestral traditions and a way of life deeply rooted in harmony with nature. The community actively preserves Sundanese cultural values, which are manifested in their distinctive architectural styles, various rituals, and traditional bamboo craftsmanship. The inhabitants of Kampung Naga lead a simple life, guided by a comprehensive system of customary laws and prohibitions, known as 'pamali,' that govern their daily conduct and interactions with the natural environment.",
-        "cultural_significance": "The local wisdom of Kampung Naga serves as a dynamic value system that profoundly influences social life, promoting core principles such as simplicity, mutual cooperation, self-reliance, and a profound respect for nature. Their traditions encompass a range of rituals, including 'Upacara Menyepi' (a period of quiet contemplation), 'Sasajen' (offering sesaji at sacred places), 'Palintangan' (traditional time calculation for auspicious days), 'Ngukus' (prayer ritual before rice harvest), and 'Ngaruat' (a periodic ritual to ward off misfortune). These practices are vital for maintaining social harmony, honoring their ancestors, and ensuring ecological balance. The community's unwavering dedication to these traditions, even amidst the pressures of modernization, underscores their commitment to preserving their unique cultural identity and ancestral heritage.",
-        "drr_category": "Not Directly Related to DRR",
-        "drr_category_valid": false,
-        "drr_relevance_level": "Not Directly Related to DRR",
+        "description": "The Local Wisdom of Kampung Naga Indigenous Community refers to the traditional knowledge, values, norms, and practices that guide the daily life of the Sundanese people in Kampung Naga, West Java. This wisdom emphasizes living in harmony with nature, adhering to ancestral mandates and taboos, and maintaining a simple lifestyle resistant to excessive modernization. The community's local wisdom encompasses various aspects, including traditional housing, environmental management, agricultural practices, and social and religious rituals. They prioritize collective well-being and the preservation of their cultural identity over external influences.",
+        "cultural_significance": "The local wisdom of Kampung Naga is profoundly significant as it represents a living heritage of Sundanese culture, demonstrating a deep spiritual connection to ancestors and the natural environment. It fosters strong social cohesion through communal activities and shared adherence to customary laws. The practices, including traditional ceremonies and sustainable resource management, serve to transmit cultural values across generations, reinforce community identity, and ensure ecological balance. This wisdom is a testament to their resilience in preserving a unique way of life amidst modern development.",
+        "drr_category": "Resilient Housing & Settlement Practices",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
         "hazard_categories": [
-          "Flood",
-          "Earthquake"
+          "Earthquake",
+          "Flood"
         ],
-        "drr_mechanism": "The community's adherence to ancestral wisdom, embodied in 'Papagon Hirup' and 'pamali' (prohibitions), dictates their sustainable interaction with the environment. This includes practices such as the preservation of sacred forests ('hutan keramat'), protection of vital water sources, and responsible land management. Their traditional housing, constructed using natural materials like wood and bamboo on stilt foundations, is designed to be resilient and integrated harmoniously with the local ecosystem. This holistic approach to living in balance with nature is explicitly credited with preventing natural disasters such as floods and landslides in Kampung Naga. Furthermore, their traditional house construction is noted for its earthquake resistance.",
+        "drr_mechanism": "The traditional stilt houses ('rumah panggung') in Kampung Naga are constructed using flexible wood and bamboo structures on stone foundations, allowing them to absorb seismic vibrations and shift during earthquakes without severe damage. The design also incorporates hallways that serve as drainage, preventing water from entering the houses during floods. The community's strict adherence to preserving 'sacred forests' ('hutan larangan') on surrounding hillsides plays a crucial role in maintaining water systems, preventing soil erosion, and mitigating landslides. Additionally, their traditional agricultural practices, such as planting rice once a year without chemical fertilizers, contribute to ecological balance and can disrupt pest cycles.",
         "gemini_tags": [
           "Local Wisdom",
           "Indigenous Community",
           "Sundanese Culture",
-          "Traditional Architecture",
-          "Environmental Preservation",
-          "Disaster Risk Reduction",
-          "Sustainable Living",
+          "Traditional Housing",
+          "Environmental Management",
           "Rituals",
-          "Community Practices"
+          "Social Cohesion",
+          "Disaster Resilience",
+          "Cultural Preservation",
+          "Sustainable Living"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "principles_of_living_and_construction",
+        "materials_and_tools": [
+          "Wood (for house structure)",
+          "Bamboo (for house structure and walls)",
+          "Stone (for house foundations)",
+          "Palm fiber (for roofs)",
+          "Alang-alang (for roofs)",
+          "Kerosene lamps (for lighting)",
+          "Firewood (for cooking)"
+        ],
+        "step_by_step": [
+          "Adherence to Ancestral Mandates and Taboos: The community strictly follows 'Amanat-Wasiat-Akibat' (mandates, testaments, and consequences) and 'pamali' (taboos) passed down from ancestors, which govern all aspects of life, from social interactions to environmental use. Violations are believed to bring misfortune.",
+          "Traditional House Construction ('Rumah Panggung'): Houses are built uniformly on stilts, oriented east to west, using only natural materials such as wood and bamboo for the structure and walls, stone for foundations, and palm fiber or alang-alang for roofs. The use of cement, paint, or modern building materials is strictly forbidden to maintain harmony with nature and ensure structural flexibility against seismic activity.",
+          "Environmental Management: Strict customary laws dictate the management of natural resources, particularly the 'leuweung larangan' (forbidden forests) on hillsides. Cutting trees in these areas is prohibited to preserve water sources, prevent soil erosion, and mitigate landslides, ensuring the sustainability of the ecosystem.",
+          "Simple Living Practices: The community consciously limits the adoption of modern technology. They do not use electricity from the grid, relying on kerosene lamps for lighting and firewood for cooking. Batteries may be used for some small devices like radios or televisions. Direct communication is preferred over modern communication tools.",
+          "Ritual Performance: Various social and religious ceremonies are regularly performed, including the 'Menyepi' ceremony (silent contemplation on specific days), 'Hajat Sasih' (annual pilgrimage to ancestral graves and purification rituals), 'Seren Taun' (harvest thanksgiving), and life cycle rituals (birth, circumcision, marriage, death). These rituals involve specific preparations, traditional attire, offerings, and communal meals, reinforcing spiritual connections and social bonds."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": null,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-7e93f9bc",
+      "element_name": "Hát Xoan Phú Thọ",
+      "categories": [
+        "Performing Arts",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Performing Arts",
+      "category_valid": true,
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/H%C3%A1t_Xoan_Ph%C3%BA_Th%E1%BB%8D.jpg/1280px-H%C3%A1t_Xoan_Ph%C3%BA_Th%E1%BB%8D.jpg",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/01260",
+        "https://en.wikipedia.org/wiki/Xoan_singing",
+        "https://vietnamnet.vn/en/xoan-singing-heritage-resonating-from-labour-love-of-ancestral-land-V.html",
+        "https://www.ichcap.org/eng/ek/sub3/pdf_file/H%C3%A1t%20Xoan%20in%20Ph%C3%BA%20Th%E1%BB%8D,%20Vietnam.pdf"
+      ],
+      "scraped_at": "2026-10-07T03:14:42.819109Z",
+      "location": {
+        "country": "Vietnam",
+        "provinces": [
+          "Phú Thọ Province"
+        ],
+        "lat": 21.3007538,
+        "lng": 105.1349604
+      },
+      "resume_analisa": {
+        "description": "Hát Xoan is a ritual folk singing genre originating from Phú Thọ Province, Vietnam. It is performed during spring festivals in communal houses and temples to worship the Hùng Kings and village tutelary gods, with prayers for good harvests, health, and good luck. This multi-element art form integrates singing, dancing, drumming, and clapper beating.",
+        "cultural_significance": "Hát Xoan is deeply intertwined with the worship of the Hùng Kings, the legendary founders of Vietnam, and forms a vital part of the spiritual and cultural identity of the people in Phú Thọ. It serves as a valuable repository of the labor, emotions, and customs of agricultural communities in the northern midland region. The performances are communal activities that strengthen social bonds and foster a collective sense of belonging within the community.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "Hát Xoan fosters cultural understanding, community cohesion, and mutual respect among community members through shared rituals, music, and cultural values. This strengthened social fabric can enhance collective action and mutual support, which are vital for a community's resilience in the face of various challenges, including disasters.",
+        "gemini_tags": [
+          "Vietnamese folk music",
+          "Oral tradition",
+          "Ritual performance",
+          "Community practice",
+          "Intangible Cultural Heritage",
+          "Phú Thọ",
+          "Hùng Kings worship"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Performing Art (Vocal, Dance, Instrumental)",
+        "materials_and_tools": [
+          "Drums",
+          "Phách (wooden clappers)"
+        ],
+        "step_by_step": [
+          "**Hát nghi lễ (Ritual singing)**: This opening stage involves solemn songs to invite gods and pray for blessings. Specific songs include 'Giáo trống' (Drum instruction), 'Giáo pháo' (Firecracker instruction), 'Thơ nhang' (Incense poem), and 'Đóng đám' (Closing the ceremony). Some guilds may begin with 'Chào vua' (Greeting the King) or 'Mời vua' (Inviting the King).",
+          "**Hát quả cách (Performance of 'Cách' songs)**: This stage features 14 traditional songs, each with a specific form and style. These songs often convey wishes for prosperity and fame for various social classes (scholars, farmers, craftsmen, merchants) and express human emotions towards nature and the four seasons. Examples include 'Kiều giang cách,' 'Nhàn ngâm cách,' 'Tràng mai cách,' and 'Tứ mùa cách.'",
+          "**Hát giao duyên (Courtship/Festival singing)**: This is a more interactive and lively part, involving exchanges between male singers (kép) and female singers (đào), often engaging the audience. It includes songs like 'Bợm gái,' 'Bỏ bộ,' 'Xin huê - Đố huê,' 'Đố chữ,' 'Hát đúm,' and 'Cài huê,' which reflect themes of love and courtship."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.8,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
+    },
+    {
+      "id": "ich-e7310a34",
+      "element_name": "Wycinanki (Polish Paper Cut-Outs)",
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://polishamericancenter.org/images/wycinanki2.jpg",
+      "source_urls": [
+        "https://crees.ku.edu/wycinanki",
+        "https://en.wikipedia.org/wiki/Slavic_paper_cutting",
+        "https://www.4-h.org/global-cultural-education/crafts-around-the-world-series-europe-polish-wycinanki-traditional-cut-paper",
+        "https://keepersoftradition.com/the-art-of-polish-paper-cut-design/",
+        "https://artwithmisslinda.com/polish-wycinanki-inspired-paper-art/",
+        "https://sitesandstories.wordpress.com/2015/03/30/wycinanki/",
+        "https://www.canr.msu.edu/content/uploads/assets/Crafts_around_the_World_Wycinanki_Polish_Traditional_Cut_Paper.pdf",
+        "https://polishamericancenter.org/wycinanki2.htm",
+        "https://www.dltk-kids.com/crafts/world/m-polish-wycinanki.htm",
+        "https://kidworldcitizen.org/make-wycinanki-polish-folkart-for-kids/",
+        "https://www.youtube.com/watch?v=gT53g2801Fk",
+        "https://culture.pl/en/article/folk-art-at-home-a-diy-guide-to-polish-paper-cut-outs",
+        "https://www.thatartistwoman.org/2011/09/how-to-do-rooster-wycinanki-and.html",
+        "https://www.scribd.com/document/710664687/Polish-Wycinanki-Tradition-Art",
+        "https://heritagemuseumasianart.org/events/intro-to-wycinanki-the-polish-folk-art-of-papercutting",
+        "https://papercraftermagazine.co.uk/blog/the-art-of-wycinanki/",
+        "https://www.youtube.com/watch?v=0h9Vq22k7o0",
+        "https://www.facebook.com/OldWorldWisconsin/posts/pssssst-its-almost-mothers-day-and-a-handmade-wycinanki-might-be-a-great-gift-f/10158223945149302/"
+      ],
+      "scraped_at": "2026-10-07T03:15:15.323871Z",
+      "location": {
+        "country": "Poland",
+        "provinces": [
+          "Kurpie Region",
+          "Łowicz District",
+          "Lubelskie region"
+        ],
+        "lat": 52.215933,
+        "lng": 19.134422
+      },
+      "resume_analisa": {
+        "description": "Wycinanki (pronounced \"vee-chee-non-kee\") are intricate Polish folk art paper cut-outs, characterized by repetitive motifs and symmetrical, rhythmic compositions. These designs often depict elements from nature, such as flowers, spruce trees, and animals, particularly birds like roosters, peacocks, and doves. Geometric shapes, known as 'gwiazdy' (stars), are also common. The art form emerged in the mid-19th century when colorful paper became more accessible to rural populations.",
+        "cultural_significance": "Wycinanki were traditionally used by Polish peasants to decorate their homes, adorning whitewashed interior walls or ceiling rafters, especially during holidays like Easter and Christmas. The practice originated with shepherds cutting designs from tree bark and leather during bad weather, later transferring these skills to paper. This folk art was a form of relaxation in rural Poland, with techniques passed down through generations. The designs, reflecting themes of renewal and life, evolved to become more detailed and intricate, with competitions sometimes held to create the most beautiful pieces. Today, Wycinanki remain a treasured symbol of Polish heritage, surviving through periods of occupation, war, and urbanization, and are popular souvenirs.",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Polish folk art",
+          "Paper cutting",
+          "Traditional craft",
+          "Home decoration",
+          "Cultural heritage",
+          "Symmetry",
+          "Rural tradition"
         ],
         "drr_relevance": false
       },
-      "resume_tata_cara": null,
-      "shared_heritage_detection": {
-        "is_shared": false,
-        "confidence_score": 0.0,
-        "related_elements": []
+      "resume_tata_cara": {
+        "type": "Craft",
+        "materials_and_tools": [
+          "Colored paper (various colors for layered designs)",
+          "Scissors (traditionally sheep shears, modern fine-point scissors)",
+          "Glue stick (for layered designs and mounting)",
+          "Pencil (optional, for tracing designs)",
+          "Templates (optional, for beginners or specific designs)"
+        ],
+        "step_by_step": [
+          "Select colored paper for your design. For Kurpie style, use a single color; for Łowicz style, gather multiple colors for layering.",
+          "Fold the paper in half. For more complex symmetrical designs, fold it multiple times (e.g., into quarters or eighths).",
+          "Draw one half of your desired design on the folded paper along the fold line. Traditional artists often worked freehand, but a pencil can be used for guidance. Common motifs include flowers, roosters, peacocks, or geometric shapes.",
+          "Carefully cut out the design, following the drawn lines (or freehand). Traditionally, large sheep shears were used, but modern sharp, fine-point scissors are also suitable.",
+          "Unfold the paper to reveal the symmetrical paper cut-out.",
+          "For multicolored Łowicz-style Wycinanki, repeat the cutting process with different colored papers for various elements (e.g., flowers, birds).",
+          "Layer the different colored cut-out pieces and glue them together onto a contrasting colored paper or cardstock backing to create a rich, intricate design."
+        ]
       },
-      "completion_status": "INCOMPLETE"
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Ukraine",
+            "element_name": "Vytynanky (Витина́нки)",
+            "relationship_reason": "Vytynanky is the Ukrainian version of papercutting, sharing similar intricate designs and cultural significance as a Slavic art form."
+          },
+          {
+            "country": "Belarus",
+            "element_name": "Vycinanki (Выцінанкі)",
+            "relationship_reason": "Vycinanki is the Belarusian version of papercutting, sharing similar intricate designs and cultural significance as a Slavic art form. 'Vytsinanka, Traditional Art of Paper Cutting in Belarus' was inscribed on the UNESCO Representative List in 2024."
+          },
+          {
+            "country": "Germany",
+            "element_name": "Scherenschnitte",
+            "relationship_reason": "Scherenschnitte is the German and Swiss paper cut-out art, indicating historical cultural and artistic overlap due to geographical proximity."
+          },
+          {
+            "country": "Switzerland",
+            "element_name": "Scherenschnitte",
+            "relationship_reason": "Scherenschnitte is the German and Swiss paper cut-out art, indicating historical cultural and artistic overlap due to geographical proximity."
+          },
+          {
+            "country": "China",
+            "element_name": "Papercutting",
+            "relationship_reason": "Papercutting originated in China in the 4th century and made its way to Europe, becoming popular in Eastern Europe, including Poland."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-10-05T03:00:00.972797Z",
-    "total_ich_elements": 324,
-    "complete_records": 323,
-    "incomplete_records": 1,
+    "generated_at": "2026-10-07T03:15:50.786984Z",
+    "total_ich_elements": 326,
+    "complete_records": 326,
+    "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 115,
-      "Social Practices & Rituals": 74,
+      "Traditional Craftsmanship": 116,
+      "Social Practices & Rituals": 76,
       "Culinary Traditions": 50,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 33,
+      "Performing Arts": 34,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 27,
+      "Oral Traditions": 28,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
