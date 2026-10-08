@@ -1,7 +1,7 @@
 """
 =======================================================================
   ICH SHARED HERITAGE RADAR v6.3 — Global Intelligence Engine
-  AI Engine : Google Gemini 2.5 Flash (Google Search Grounding)
+  AI Engine : Gemini 2.5 Flash (data pipeline) + Gemini 3.5 Flash-Lite (resource intelligence)
   Mode      : Alternating daily pipeline (Discovery/Data -> Resource & Opportunity)
   Feature   : Quality over Quantity (Iterative Looping), Anti-Redundancy, Wikimedia Fallback
 =======================================================================
@@ -1886,7 +1886,7 @@ def main():
             generate_quarterly_resume(api_key, inventory)
             log.info("✅ Resume/Journal phase complete.")
         else:
-            log.info("⏭️ Quarterly Resume skipped (data_only mode).")
+            log.info("⏭️ Quarterly Resume skipped (not requested in this mode).")
 
         log.info("Run Complete. Mode: %s. Total DB: %s", crawl_mode, len(inventory))
 
