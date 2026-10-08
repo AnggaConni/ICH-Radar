@@ -693,7 +693,33 @@
       letter-spacing: .08em;
     }
 
-  </style>
+  
+  .resource-kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+  .resource-kpi{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:15px 16px;box-shadow:0 5px 18px rgba(15,23,42,.045)}
+  .resource-kpi .label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#64748b}.resource-kpi .value{margin-top:4px;font-family:'Space Grotesk',sans-serif;font-size:25px;font-weight:700;color:#0f172a}
+  .resource-panel{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:18px;box-shadow:0 5px 18px rgba(15,23,42,.045)}
+  .resource-panel-title{display:flex;align-items:center;gap:9px;font-family:'Space Grotesk',sans-serif;font-weight:700;color:#0f172a;font-size:16px}.resource-panel-subtitle{margin-top:4px;font-size:12px;color:#64748b;line-height:1.55}
+  .resource-profile-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+  .resource-ecosystem{position:relative;min-height:310px;border:1px solid #e2e8f0;border-radius:16px;background:radial-gradient(circle at center,rgba(13,148,136,.08),transparent 34%),linear-gradient(180deg,#fbfdff 0%,#f8fafc 100%);overflow:hidden}
+  .resource-ecosystem .orbit{position:absolute;left:50%;top:50%;width:210px;height:210px;transform:translate(-50%,-50%);border:1px dashed #cbd5e1;border-radius:50%}
+  .resource-node{position:absolute;transform:translate(-50%,-50%);min-width:116px;text-align:center;padding:9px 10px;border:1px solid #dbe3ec;border-radius:12px;background:#fff;box-shadow:0 4px 14px rgba(15,23,42,.06)}
+  .resource-node .node-title{display:block;font-size:11px;font-weight:800;color:#334155}.resource-node .node-score{display:block;margin-top:2px;font-size:10px;color:#0d9488;font-weight:700}
+  .resource-node.center{left:50%;top:50%;min-width:128px;background:#0d9488;border-color:#0d9488;color:#fff;z-index:2}.resource-node.center .node-title,.resource-node.center .node-score{color:#fff}
+  .resource-node.knowledge{left:50%;top:16%}.resource-node.place{left:18%;top:50%}.resource-node.practice{left:82%;top:50%}.resource-node.connection{left:30%;top:83%}.resource-node.resilience{left:70%;top:83%}
+  .resource-readiness{display:flex;flex-direction:column;gap:10px;margin-top:16px}.readiness-row{display:grid;grid-template-columns:130px 1fr 44px;gap:9px;align-items:center;font-size:11px}
+  .readiness-track{height:8px;background:#eef2f7;border-radius:999px;overflow:hidden}.readiness-fill{height:100%;background:#0d9488;border-radius:999px}.readiness-label{color:#475569;font-weight:700}.readiness-value{color:#64748b;text-align:right}
+  .value-chain{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:16px}.chain-step{position:relative;padding:13px 10px;border-radius:13px;background:#f8fafc;border:1px solid #e2e8f0;min-height:76px}
+  .chain-step::after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);color:#94a3b8;font-weight:700}.chain-step:last-child::after{display:none}
+  .chain-type{display:inline-flex;padding:3px 6px;border-radius:999px;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;background:#e2e8f0;color:#64748b}.chain-step.evidence .chain-type{background:#ccfbf1;color:#0f766e}.chain-step.opportunity .chain-type{background:#fef3c7;color:#92400e}.chain-name{margin-top:7px;font-size:11px;font-weight:800;color:#334155}
+  .lens-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:16px}.lens-card{border:1px solid #e2e8f0;border-radius:13px;padding:13px;background:#fff}.lens-title{display:flex;align-items:center;gap:7px;font-size:11px;font-weight:800;color:#334155}.lens-signal{margin-top:8px;font-size:10px;color:#64748b;line-height:1.45}
+  .lens-pill{margin-top:10px;display:inline-flex;padding:4px 7px;border-radius:999px;font-size:9px;font-weight:800;text-transform:uppercase}.lens-pill.strong{background:#ccfbf1;color:#0f766e}.lens-pill.moderate{background:#fef3c7;color:#92400e}.lens-pill.none{background:#f1f5f9;color:#64748b}
+  .business-gap-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:14px}.business-gap{border:1px dashed #cbd5e1;border-radius:12px;padding:11px;background:#fbfdff}.gap-title{font-size:10px;font-weight:800;color:#475569}.gap-state{margin-top:5px;font-size:10px;color:#94a3b8}
+  #resource-matrix-chart{width:100%;height:410px;margin-top:10px}.resource-filter-row{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:10px;margin-bottom:14px}.resource-filter-row select{width:100%;background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:10px 11px;font-size:12px;font-weight:600;color:#334155;outline:none}
+  .resource-selected-title{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;color:#0f172a}.resource-selected-meta{display:flex;flex-wrap:wrap;gap:6px}.resource-chip{display:inline-flex;align-items:center;padding:5px 8px;border-radius:999px;border:1px solid #e2e8f0;background:#f8fafc;font-size:10px;color:#64748b;font-weight:700}
+  @media (max-width:1000px){.resource-profile-grid{grid-template-columns:1fr}.lens-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.business-gap-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:760px){.resource-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.resource-filter-row{grid-template-columns:1fr}.value-chain{grid-template-columns:repeat(2,minmax(0,1fr))}.chain-step::after{display:none}.lens-grid{grid-template-columns:1fr}.business-gap-grid{grid-template-columns:1fr}#resource-matrix-chart{height:330px}.resource-node{min-width:92px;padding:8px 7px}.resource-ecosystem{min-height:285px}}
+
+</style>
   
 </head>
 <body class="font-sans antialiased min-h-screen flex flex-col">
@@ -807,6 +833,9 @@
       <button id="btn-tab-map" onclick="switchTab('map')" aria-label="Heritage Network Map" title="Heritage Network Map" class="radar-tab-btn px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2">
         <i class="ph ph-map-trifold text-xl"></i><span class="radar-tab-label">Heritage Network Map</span>
       </button>
+      <button id="btn-tab-resource" onclick="switchTab('resource')" aria-label="Resource & Opportunity" title="Resource & Opportunity" class="radar-tab-btn px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2">
+        <i class="ph ph-tree-structure text-xl"></i><span class="radar-tab-label" data-i18n="resourceTab">Resource & Opportunity</span>
+      </button>
       <button id="btn-tab-deep-dive" onclick="switchTab('deep-dive')" aria-label="ICH Deep Dive" title="ICH Deep Dive" class="radar-tab-btn px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2">
         <i class="ph ph-magnifying-glass text-xl"></i><span class="radar-tab-label">ICH Deep Dive</span>
       </button>
@@ -834,6 +863,76 @@
 
       </div>
       <div id="map" class="w-full h-[460px] rounded-xl border border-brand-700 bg-brand-800 z-10"></div>
+    </div>
+
+
+    <div id="tab-resource" class="hidden flex flex-col gap-4 mt-4">
+      <div class="resource-panel">
+        <div class="resource-panel-title"><i class="ph ph-tree-structure text-brand-accent"></i><span data-i18n="resourceTitle">Resource & Opportunity Intelligence</span></div>
+        <div class="resource-panel-subtitle" data-i18n="resourceSubtitle">A structured view of heritage resources, value-chain evidence, and derived opportunity signals. This layer separates documented evidence from hypotheses.</div>
+        <div class="resource-filter-row mt-4">
+          <select id="resource-element-select" onchange="renderResourceOpportunity(this.value)"></select>
+          <select id="resource-country-filter" onchange="renderResourceOpportunity(document.getElementById('resource-element-select').value)"><option value="all">All Countries</option></select>
+          <select id="resource-category-filter" onchange="renderResourceOpportunity(document.getElementById('resource-element-select').value)"><option value="all">All Categories</option></select>
+        </div>
+        <div class="resource-kpi-grid">
+          <div class="resource-kpi"><div class="label">Heritage Elements</div><div id="resource-kpi-total" class="value">—</div></div>
+          <div class="resource-kpi"><div class="label">Resource-Ready Evidence</div><div id="resource-kpi-ready" class="value">—</div></div>
+          <div class="resource-kpi"><div class="label">Shared Heritage</div><div id="resource-kpi-shared" class="value">—</div></div>
+          <div class="resource-kpi"><div class="label">Resilience Linked</div><div id="resource-kpi-resilience" class="value">—</div></div>
+        </div>
+      </div>
+      <div class="resource-profile-grid">
+        <div class="resource-panel">
+          <div class="resource-panel-title"><i class="ph ph-circle-dashed text-brand-secondary"></i><span>Selected Heritage Resource</span></div>
+          <div id="resource-selected-title" class="resource-selected-title mt-2">Select an element</div>
+          <div id="resource-selected-meta" class="resource-selected-meta mt-2"></div>
+          <div class="resource-ecosystem mt-4">
+            <div class="orbit" aria-hidden="true"></div>
+            <div class="resource-node center"><span class="node-title" id="resource-node-center">ICH ELEMENT</span><span class="node-score">core</span></div>
+            <div class="resource-node knowledge"><span class="node-title">Knowledge</span><span class="node-score" id="resource-node-knowledge">—</span></div>
+            <div class="resource-node place"><span class="node-title">Place</span><span class="node-score" id="resource-node-place">—</span></div>
+            <div class="resource-node practice"><span class="node-title">Practice</span><span class="node-score" id="resource-node-practice">—</span></div>
+            <div class="resource-node connection"><span class="node-title">Connections</span><span class="node-score" id="resource-node-connection">—</span></div>
+            <div class="resource-node resilience"><span class="node-title">Resilience</span><span class="node-score" id="resource-node-resilience">—</span></div>
+          </div>
+        </div>
+        <div class="resource-panel">
+          <div class="resource-panel-title"><i class="ph ph-chart-bar text-brand-accent"></i><span>Resource Readiness</span></div>
+          <div class="resource-panel-subtitle">Evidence completeness across fields already stored in <code>data.json</code>.</div>
+          <div id="resource-readiness" class="resource-readiness"></div>
+          <div class="mt-4 p-3 rounded-xl bg-amber-50 border border-amber-100 text-[11px] text-amber-900 leading-relaxed"><strong>Evidence boundary:</strong> community ownership, market demand, costs, revenue, and stakeholder actors are not inferred when they are absent from the dataset.</div>
+        </div>
+      </div>
+      <div class="resource-panel">
+        <div class="resource-panel-title"><i class="ph ph-git-branch text-brand-secondary"></i><span>Value Chain Lens</span></div>
+        <div class="resource-panel-subtitle">Documented nodes are evidence; downstream nodes are opportunity hypotheses for further research.</div>
+        <div class="value-chain">
+          <div class="chain-step evidence"><span class="chain-type">Evidence</span><div class="chain-name">Knowledge</div></div>
+          <div class="chain-step evidence"><span class="chain-type">Evidence</span><div class="chain-name">Materials</div></div>
+          <div class="chain-step evidence"><span class="chain-type">Evidence</span><div class="chain-name">Practice</div></div>
+          <div class="chain-step opportunity"><span class="chain-type">Hypothesis</span><div class="chain-name">Product / Service</div></div>
+          <div class="chain-step opportunity"><span class="chain-type">Hypothesis</span><div class="chain-name">Market / Experience</div></div>
+          <div class="chain-step opportunity"><span class="chain-type">Hypothesis</span><div class="chain-name">Safeguarding Reinvestment</div></div>
+        </div>
+        <div class="lens-grid" id="resource-lens-grid"></div>
+      </div>
+      <div class="resource-panel">
+        <div class="resource-panel-title"><i class="ph ph-chart-scatter text-brand-accent"></i><span>Resource & Resilience Matrix</span></div>
+        <div class="resource-panel-subtitle">X = practice/resource depth; Y = documented resilience relevance. Bubble size reflects evidence readiness.</div>
+        <div id="resource-matrix-chart"></div>
+      </div>
+      <div class="resource-panel">
+        <div class="resource-panel-title"><i class="ph ph-clipboard-text text-brand-secondary"></i><span>Business Planning Inputs — Evidence Gaps</span></div>
+        <div class="resource-panel-subtitle">These are intentionally left open rather than generated as facts. They are the next research fields for a genuine business or resource-mobilization plan.</div>
+        <div class="business-gap-grid">
+          <div class="business-gap"><div class="gap-title">Community / Practitioners</div><div class="gap-state">Not structured in current data</div></div>
+          <div class="business-gap"><div class="gap-title">Market / Customer</div><div class="gap-state">Not structured in current data</div></div>
+          <div class="business-gap"><div class="gap-title">Cost / Unit Economics</div><div class="gap-state">Not structured in current data</div></div>
+          <div class="business-gap"><div class="gap-title">Stakeholders / Finance</div><div class="gap-state">Not structured in current data</div></div>
+          <div class="business-gap"><div class="gap-title">Safeguarding Plan</div><div class="gap-state">Not structured in current data</div></div>
+        </div>
+      </div>
     </div>
 
     <div id="tab-deep-dive" class="hidden flex flex-col gap-4 mt-4">
@@ -1579,6 +1678,7 @@ const COUNTRY_CENTROIDS = {
       totalElements:"Total Elements", completeData:"Complete Data",
       needsEnrichment:"Needs Enrichment", sharedNetwork:"Shared Heritage Network",
       mapTitle:"Heritage Network Map", directoryTitle:"Intangible Cultural Heritage Directory",
+       resourceTab:"Resource & Opportunity", resourceTitle:"Resource & Opportunity Intelligence", resourceSubtitle:"A structured view of heritage resources, value-chain evidence, and derived opportunity signals. This layer separates documented evidence from hypotheses.",
       filterAll:"All Status", filterComplete:"Complete Data",
       filterIncomplete:"Incomplete Data", filterShared:"Shared Heritage Only",
       filterAllCountries:"All Countries", sortNewest:"Newest First", sortOldest:"Oldest First",
@@ -1602,6 +1702,7 @@ const COUNTRY_CENTROIDS = {
       totalElements:"Total Elemen", completeData:"Data Komplit",
       needsEnrichment:"Butuh Pengayaan", sharedNetwork:"Jaringan Shared Heritage",
       mapTitle:"Peta Jaringan Warisan Budaya", directoryTitle:"Direktori Warisan Budaya Takbenda",
+       resourceTab:"Sumber Daya & Peluang", resourceTitle:"Intelijen Sumber Daya & Peluang", resourceSubtitle:"Tampilan terstruktur atas sumber daya warisan, bukti rantai nilai, dan sinyal peluang turunan. Bukti terdokumentasi dipisahkan dari hipotesis.",
       filterAll:"Semua Status", filterComplete:"Data Komplit",
       filterIncomplete:"Data Tidak Komplit", filterShared:"Hanya Shared Heritage",
       filterAllCountries:"Semua Negara", sortNewest:"Terbaru", sortOldest:"Terlama",
@@ -1891,6 +1992,8 @@ const COUNTRY_CENTROIDS = {
   let itemsPerPage = 18;
   let currentActiveItemId = null; // <--- Tambahkan ini
   let currentDeepDiveItemId = null;
+  let currentResourceItemId = null;
+  let resourceMatrixChart = null;
 
   // ═══════════════════════════════════════════════════════════════
   //  INIT
@@ -2647,7 +2750,7 @@ const COUNTRY_CENTROIDS = {
     currentLang = currentLang === 'en' ? 'id' : 'en';
     document.getElementById('lang-label').innerText = currentLang.toUpperCase();
     document.documentElement.lang = currentLang;
-    updateLangUI(); renderDashboard(); updateScraperTicker(); applyFilters(); closeModal();
+    updateLangUI(); renderDashboard(); updateScraperTicker(); applyFilters(); if(currentResourceItemId) renderResourceOpportunity(currentResourceItemId); closeModal();
   }
   function updateLangUI() {
     const dict = i18n[currentLang];
@@ -2665,45 +2768,81 @@ const COUNTRY_CENTROIDS = {
   // ═══════════════════════════════════════════════════════════════
   //  TABS LOGIC (DIRECTORY & MAP)
   // ═══════════════════════════════════════════════════════════════
+
+
+  function resourceArray(v){return Array.isArray(v)?v.filter(Boolean):[]}
+  function resourceEvidence(item){
+    const a=item?.resume_analisa||{},p=item?.resume_tata_cara||{},s=item?.shared_heritage_detection||{},sources=resourceArray(item?.source_urls);
+    const k=[!!a.description,!!a.cultural_significance,resourceArray(a.gemini_tags).length>0];
+    const l=[!!item?.location?.country,resourceArray(item?.location?.provinces).length>0,Number.isFinite(Number(item?.location?.lat)),Number.isFinite(Number(item?.location?.lng))];
+    const pr=[!!p.type,resourceArray(p.materials_and_tools).length>0,resourceArray(p.step_by_step).length>0];
+    const cs=s?.is_shared?Math.round(Math.max(0,Math.min(1,Number(s.confidence_score)||.5))*100):0;
+    const d=String(a.drr_relevance_level||'').toLowerCase(),rs=d.includes('directly')?100:d.includes('indirectly')?65:0;
+    return {knowledge:Math.round(k.filter(Boolean).length/k.length*100),place:Math.round(l.filter(Boolean).length/l.length*100),practice:Math.round(pr.filter(Boolean).length/pr.length*100),connection:cs,resilience:rs,lineage:Math.round([sources.length>0,!!item?.scraped_at].filter(Boolean).length/2*100)}
+  }
+  function resourceMetrics(item){
+    const e=resourceEvidence(item),p=item?.resume_tata_cara||{};
+    return {...e,resourceDepth:Math.round((e.knowledge+e.place+e.practice)/3),overall:Math.round((e.knowledge+e.place+e.practice+e.connection+e.resilience+e.lineage)/6),practiceDepth:Math.min(100,(resourceArray(p.materials_and_tools).length>0?40:0)+(resourceArray(p.step_by_step).length>0?60:0))}
+  }
+  function resourceLensSignals(item){
+    const cats=getIcmCategories(item),a=item?.resume_analisa||{},p=item?.resume_tata_cara||{},s=item?.shared_heritage_detection||{},drr=String(a.drr_relevance_level||'').toLowerCase(),tags=resourceArray(a.gemini_tags).map(x=>String(x).toLowerCase()).join(' '),all=(cats.join(' ')+' '+tags+' '+String(a.description||'')).toLowerCase();
+    const craft=cats.some(x=>/craftsmanship|culinary/i.test(x)),edu=resourceArray(p.step_by_step).length>0||resourceArray(p.materials_and_tools).length>0,exp=!!s.is_shared||cats.some(x=>/performing|social|oral/i.test(x))||/festival|ritual|story|dance|music|performance/i.test(all),res=drr.includes('directly')||drr.includes('indirectly'),live=/resilient livelihoods|food security/i.test(String(a.drr_category||''))||craft;
+    return [
+      {title:'Livelihood',icon:'ph-briefcase',signal:live?'Existing practice/resource base suggests livelihood relevance.':'No strong livelihood signal is structured yet.',level:live?'strong':'none'},
+      {title:'Education',icon:'ph-student',signal:edu?'Documented materials/process can support learning-oriented use.':'Limited process evidence for an education pathway.',level:edu?'strong':'none'},
+      {title:'Tourism / Experience',icon:'ph-map-pin-area',signal:exp?'Cultural experience potential is signalled by practice type or heritage connections.':'No strong experience signal is structured yet.',level:exp?'moderate':'none'},
+      {title:'Creative Industry',icon:'ph-paint-brush',signal:craft?'Craft or culinary characteristics provide a creative-industry lens.':'No direct creative-industry classification is available.',level:craft?'strong':'none'},
+      {title:'Resilience',icon:'ph-shield-check',signal:res?'The dataset documents a DRR/resilience relationship.':'No documented DRR/resilience relevance.',level:res?(drr.includes('directly')?'strong':'moderate'):'none'}
+    ]
+  }
+  function initResourceOpportunity(){
+    const sel=document.getElementById('resource-element-select'),cs=document.getElementById('resource-country-filter'),cat=document.getElementById('resource-category-filter');
+    if(!sel||!cs||!cat||!globalData?.inventory)return;
+    const inv=globalData.inventory.slice().sort((a,b)=>String(a.element_name||'').localeCompare(String(b.element_name||'')));
+    sel.innerHTML='<option value="">Select an element...</option>'+inv.map(i=>'<option value="'+escapeHtml(i.id||'')+'">'+escapeHtml(i.element_name||'Unnamed element')+'</option>').join('');
+    cs.innerHTML='<option value="all">All Countries</option>'+[...new Set(inv.map(i=>i.location?.country).filter(Boolean))].sort().map(x=>'<option value="'+escapeHtml(x)+'">'+escapeHtml(x)+'</option>').join('');
+    cat.innerHTML='<option value="all">All Categories</option>'+[...new Set(inv.flatMap(i=>getIcmCategories(i)))].sort().map(x=>'<option value="'+escapeHtml(x)+'">'+escapeHtml(x)+'</option>').join('');
+    currentResourceItemId=inv[0]?.id||null;if(currentResourceItemId)sel.value=currentResourceItemId;renderResourceOpportunity(currentResourceItemId)
+  }
+  function getResourceFilteredInventory(){
+    const c=document.getElementById('resource-country-filter')?.value||'all',cat=document.getElementById('resource-category-filter')?.value||'all';
+    return(globalData?.inventory||[]).filter(i=>(c==='all'||i.location?.country===c)&&(cat==='all'||hasIcmCategory(i,cat)))
+  }
+  function renderResourceOpportunity(itemId){
+    if(!globalData?.inventory)return;
+    const filtered=getResourceFilteredInventory(),requested=globalData.inventory.find(i=>i.id===itemId),item=requested&&filtered.some(i=>i.id===requested.id)?requested:(filtered[0]||globalData.inventory[0]);currentResourceItemId=item?.id||null;
+    const sel=document.getElementById('resource-element-select');if(sel&&currentResourceItemId)sel.value=currentResourceItemId;
+    document.getElementById('resource-kpi-total').textContent=filtered.length;
+    document.getElementById('resource-kpi-ready').textContent=filtered.filter(i=>resourceMetrics(i).overall>=70).length;
+    document.getElementById('resource-kpi-shared').textContent=filtered.filter(i=>i.shared_heritage_detection?.is_shared).length;
+    document.getElementById('resource-kpi-resilience').textContent=filtered.filter(i=>{const d=String(i.resume_analisa?.drr_relevance_level||'').toLowerCase();return d.includes('directly')||d.includes('indirectly')}).length;
+    if(!item)return;
+    const m=resourceMetrics(item),title=document.getElementById('resource-selected-title'),meta=document.getElementById('resource-selected-meta'),center=document.getElementById('resource-node-center');
+    if(title)title.textContent=item.element_name||'Unnamed element';if(center)center.textContent=item.element_name||'ICH ELEMENT';
+    if(meta)meta.innerHTML=[item.location?.country?'<span class="resource-chip">'+escapeHtml(item.location.country)+'</span>':'',...getIcmCategories(item).map(c=>'<span class="resource-chip">'+escapeHtml(c)+'</span>'),'<span class="resource-chip">Evidence readiness '+m.overall+'%</span>'].filter(Boolean).join('');
+    document.getElementById('resource-node-knowledge').textContent=m.knowledge+'%';document.getElementById('resource-node-place').textContent=m.place+'%';document.getElementById('resource-node-practice').textContent=m.practice+'%';document.getElementById('resource-node-connection').textContent=m.connection+'%';document.getElementById('resource-node-resilience').textContent=m.resilience+'%';
+    const rows=[['Knowledge & Narrative',m.knowledge],['Place',m.place],['Practice & Materials',m.practice],['Heritage Connections',m.connection],['Resilience Evidence',m.resilience],['Source Lineage',m.lineage]];
+    document.getElementById('resource-readiness').innerHTML=rows.map(x=>'<div class="readiness-row"><div class="readiness-label">'+escapeHtml(x[0])+'</div><div class="readiness-track"><div class="readiness-fill" style="width:'+x[1]+'%"></div></div><div class="readiness-value">'+x[1]+'%</div></div>').join('');
+    document.getElementById('resource-lens-grid').innerHTML=resourceLensSignals(item).map(l=>'<div class="lens-card"><div class="lens-title"><i class="ph '+l.icon+' text-brand-accent"></i>'+escapeHtml(l.title)+'</div><div class="lens-signal">'+escapeHtml(l.signal)+'</div><span class="lens-pill '+l.level+'">'+(l.level==='strong'?'Strong signal':l.level==='moderate'?'Moderate signal':'No clear signal')+'</span></div>').join('');
+    renderResourceMatrix()
+  }
+  function renderResourceMatrix(){
+    const dom=document.getElementById('resource-matrix-chart');if(!dom||!window.echarts||!globalData?.inventory)return;
+    const data=getResourceFilteredInventory().map(i=>{const m=resourceMetrics(i);return {value:[m.practiceDepth,m.resilience,Math.max(14,Math.min(46,14+m.overall*.32))],itemId:i.id,name:i.element_name,country:i.location?.country||'Unknown',overall:m.overall,practiceDepth:m.practiceDepth}});
+    if(!resourceMatrixChart){resourceMatrixChart=echarts.init(dom,null,{renderer:'canvas'});resourceMatrixChart.on('click',p=>{if(!p?.data?.itemId)return;renderResourceOpportunity(p.data.itemId);const s=document.getElementById('resource-element-select');if(s)s.value=p.data.itemId});window.addEventListener('resize',()=>resourceMatrixChart&&resourceMatrixChart.resize())}
+    resourceMatrixChart.setOption({animationDuration:350,tooltip:{trigger:'item',formatter:p=>{const d=p.data;return '<div style="padding:4px 2px;font-family:Inter,sans-serif"><div style="font-weight:800;color:#0f172a;margin-bottom:5px">'+escapeHtml(d.name)+'</div><div style="font-size:11px;color:#64748b">'+escapeHtml(d.country)+'</div><div style="margin-top:6px;font-size:11px">Practice depth: <b>'+d.practiceDepth+'%</b></div><div style="font-size:11px">Resilience relevance: <b>'+d.value[1]+'%</b></div><div style="font-size:11px">Evidence readiness: <b>'+d.overall+'%</b></div></div>'}},grid:{left:52,right:18,top:24,bottom:42},xAxis:{type:'value',min:0,max:100,name:'Practice / resource depth',nameLocation:'middle',nameGap:28,axisLine:{lineStyle:{color:'#cbd5e1'}},axisLabel:{color:'#64748b',fontSize:10},splitLine:{lineStyle:{color:'#eef2f7'}}},yAxis:{type:'value',min:0,max:100,name:'Documented resilience relevance',nameLocation:'middle',nameGap:38,axisLine:{lineStyle:{color:'#cbd5e1'}},axisLabel:{color:'#64748b',fontSize:10},splitLine:{lineStyle:{color:'#eef2f7'}}},series:[{type:'scatter',data,symbolSize:v=>v[2],itemStyle:{color:'#0d9488',opacity:.72,borderColor:'#fff',borderWidth:1.5},emphasis:{itemStyle:{color:'#d97706',opacity:1}}}]},true)
+  }
+
   function switchTab(tab) {
-    const tabMap = document.getElementById('tab-map');
-    const tabDir = document.getElementById('tab-directory');
-    const tabDeep = document.getElementById('tab-deep-dive');
-    const btnMap = document.getElementById('btn-tab-map');
-    const btnDir = document.getElementById('btn-tab-directory');
-    const btnDeep = document.getElementById('btn-tab-deep-dive');
-    const pagination = document.getElementById('pagination-container');
-
-    tabMap.classList.add('hidden');
-    tabDir.classList.add('hidden');
-    tabDeep.classList.add('hidden');
-    if (pagination) pagination.classList.add('hidden');
-
-    const inactive = "radar-tab-btn px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2";
-    btnMap.className = inactive;
-    btnDir.className = inactive.replace(" ml-2", "");
-    btnDeep.className = inactive;
-
-    if (tab === 'map') {
-      tabMap.classList.remove('hidden');
-      btnMap.className = "radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";
-      if (map) setTimeout(() => { map.invalidateSize(); }, 100);
-    } else if (tab === 'deep-dive') {
-      tabDeep.classList.remove('hidden');
-      btnDeep.className = "radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";
-      populateDeepDiveSelect();
-      if (!currentDeepDiveItemId && globalData?.inventory?.length) {
-        const first = globalData.inventory[0];
-        currentDeepDiveItemId = first?.id || null;
-        const sel = document.getElementById('deep-dive-select');
-        if (sel && currentDeepDiveItemId) sel.value = currentDeepDiveItemId;
-      }
-      if (currentDeepDiveItemId) renderDeepDive(currentDeepDiveItemId);
-    } else {
-      tabDir.classList.remove('hidden');
-      btnDir.className = "radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors flex items-center gap-2";
-      if (filteredData.length > 0 && pagination) pagination.classList.remove('hidden');
-    }
+    const tabMap=document.getElementById('tab-map'),tabDir=document.getElementById('tab-directory'),tabResource=document.getElementById('tab-resource'),tabDeep=document.getElementById('tab-deep-dive');
+    const btnMap=document.getElementById('btn-tab-map'),btnDir=document.getElementById('btn-tab-directory'),btnResource=document.getElementById('btn-tab-resource'),btnDeep=document.getElementById('btn-tab-deep-dive'),pagination=document.getElementById('pagination-container');
+    tabMap.classList.add('hidden');tabDir.classList.add('hidden');tabResource.classList.add('hidden');tabDeep.classList.add('hidden');if(pagination)pagination.classList.add('hidden');
+    const inactive="radar-tab-btn px-6 py-3 font-bold text-slate-500 bg-brand-800 hover:bg-brand-700 rounded-t-lg transition-colors ml-2 flex items-center gap-2";
+    btnMap.className=inactive;btnDir.className=inactive.replace(" ml-2","");btnResource.className=inactive;btnDeep.className=inactive;
+    if(tab==='map'){tabMap.classList.remove('hidden');btnMap.className="radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";if(map)setTimeout(()=>map.invalidateSize(),100)}
+    else if(tab==='resource'){tabResource.classList.remove('hidden');btnResource.className="radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";renderResourceOpportunity(currentResourceItemId);setTimeout(()=>{if(resourceMatrixChart)resourceMatrixChart.resize()},80)}
+    else if(tab==='deep-dive'){tabDeep.classList.remove('hidden');btnDeep.className="radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors ml-2 flex items-center gap-2";populateDeepDiveSelect();if(!currentDeepDiveItemId&&globalData?.inventory?.length){const first=globalData.inventory[0];currentDeepDiveItemId=first?.id||null;const sel=document.getElementById('deep-dive-select');if(sel&&currentDeepDiveItemId)sel.value=currentDeepDiveItemId}if(currentDeepDiveItemId)renderDeepDive(currentDeepDiveItemId)}
+    else{tabDir.classList.remove('hidden');btnDir.className="radar-tab-btn px-6 py-3 font-bold text-brand-900 bg-brand-accent rounded-t-lg transition-colors flex items-center gap-2";if(filteredData.length>0&&pagination)pagination.classList.remove('hidden')}
   }
 
   function populateDeepDiveSelect() {
