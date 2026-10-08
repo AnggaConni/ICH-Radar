@@ -2,8 +2,10 @@ name: ICH Shared Heritage Auto-Crawler
 
 on:
   schedule:
-    # Runs every 2 days to prioritize fixing INCOMPLETE data, then discovers new data
-    - cron: "0 0 */2 * *"
+    # Run every day. Scheduled runs alternate:
+    # Odd UTC day-of-year  -> discovery + standard data enrichment
+    # Even UTC day-of-year -> Resource & Opportunity enrichment
+    - cron: "0 0 * * *"
   workflow_dispatch:
     inputs:
       crawl_mode:
@@ -13,6 +15,7 @@ on:
         type: choice
         options:
           - 'Data only'
+          - 'Resource enrichment'
           - 'Resume only'
           - 'Both'
 
@@ -22,7 +25,7 @@ env:
 jobs:
   run-scraper-and-ai:
     runs-on: ubuntu-latest
-    
+
     permissions:
       contents: write
 
@@ -42,11 +45,46 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
+      - name: Select daily pipeline
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            case "${{ inputs.crawl_mode }}" in
+              "Data only")
+                echo "CRAWL_MODE_INPUT=data_only" >> "$GITHUB_ENV"
+                ;;
+              "Resource enrichment")
+                echo "CRAWL_MODE_INPUT=resource_enrich" >> "$GITHUB_ENV"
+                ;;
+              "Resume only")
+                echo "CRAWL_MODE_INPUT=resume_only" >> "$GITHUB_ENV"
+                ;;
+              "Both")
+                echo "CRAWL_MODE_INPUT=both" >> "$GITHUB_ENV"
+                ;;
+              *)
+                echo "Unknown manual crawl mode."
+                exit 1
+                ;;
+            esac
+          else
+            DAY_OF_YEAR=$(date -u +%j)
+            DAY_NUMBER=$((10#${DAY_OF_YEAR}))
+            if (( DAY_NUMBER % 2 == 1 )); then
+              echo "CRAWL_MODE_INPUT=data_only" >> "$GITHUB_ENV"
+              echo "Scheduled mode: DATA DISCOVERY / STANDARD ENRICHMENT"
+            else
+              echo "CRAWL_MODE_INPUT=resource_enrich" >> "$GITHUB_ENV"
+              echo "Scheduled mode: RESOURCE & OPPORTUNITY ENRICHMENT"
+            fi
+          fi
+
       - name: Run Scraper & Gemini AI
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          CRAWL_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.crawl_mode || 'data_only' }}
-        run: python scraper.py
+        run: |
+          echo "Running scraper with CRAWL_MODE=$CRAWL_MODE_INPUT"
+          CRAWL_MODE="$CRAWL_MODE_INPUT" python scraper.py
 
       - name: Commit and Push changes
         run: |
@@ -58,7 +96,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new data to commit."
           else
-            git commit -m "ICH Update: Enriched incomplete data & discovered new heritage [skip ci]"
+            git commit -m "ICH Update: alternating discovery & resource intelligence [skip ci]"
 
             # Another workflow/manual edit can update main while this job is running.
             # Rebase our generated commit on the latest remote main before pushing.
