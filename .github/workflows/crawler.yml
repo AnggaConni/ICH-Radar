@@ -68,9 +68,10 @@ jobs:
                 ;;
             esac
           else
-            DAY_OF_YEAR=$(date -u +%j)
-            DAY_NUMBER=$((10#${DAY_OF_YEAR}))
-            if (( DAY_NUMBER % 2 == 1 )); then
+            # Use absolute UTC days since Unix epoch so the pipeline keeps
+            # alternating correctly across month/year boundaries.
+            EPOCH_DAY=$(( $(date -u +%s) / 86400 ))
+            if (( EPOCH_DAY % 2 == 0 )); then
               echo "CRAWL_MODE_INPUT=data_only" >> "$GITHUB_ENV"
               echo "Scheduled mode: DATA DISCOVERY / STANDARD ENRICHMENT"
             else
