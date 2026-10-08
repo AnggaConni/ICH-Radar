@@ -719,6 +719,14 @@
   @media (max-width:1000px){.resource-profile-grid{grid-template-columns:1fr}.lens-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.business-gap-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media (max-width:760px){.resource-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.resource-filter-row{grid-template-columns:1fr}.value-chain{grid-template-columns:repeat(2,minmax(0,1fr))}.chain-step::after{display:none}.lens-grid{grid-template-columns:1fr}.business-gap-grid{grid-template-columns:1fr}#resource-matrix-chart{height:330px}.resource-node{min-width:92px;padding:8px 7px}.resource-ecosystem{min-height:285px}}
 
+  .resource-detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+  .resource-detail-card{border:1px solid #e2e8f0;border-radius:12px;padding:12px;background:#fbfdff}
+  .resource-detail-card h4{font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;color:#64748b}
+  .resource-detail-card ul{margin-top:7px;display:flex;flex-direction:column;gap:6px}
+  .resource-detail-card li{font-size:10px;color:#475569;line-height:1.45}
+  .resource-detail-card .detail-empty{font-size:10px;color:#94a3b8;margin-top:7px}
+  @media (max-width:760px){.resource-detail-grid{grid-template-columns:1fr}}
+
 </style>
   
 </head>
@@ -916,6 +924,7 @@
           <div class="chain-step opportunity"><span class="chain-type">Hypothesis</span><div class="chain-name">Safeguarding Reinvestment</div></div>
         </div>
         <div class="lens-grid" id="resource-lens-grid"></div>
+        <div class="resource-detail-grid" id="resource-detail-grid"></div>
       </div>
       <div class="resource-panel">
         <div class="resource-panel-title"><i class="ph ph-chart-scatter text-brand-accent"></i><span>Resource & Resilience Matrix</span></div>
@@ -2774,27 +2783,54 @@ const COUNTRY_CENTROIDS = {
   function resourceArray(v){return Array.isArray(v)?v.filter(Boolean):[]}
   function resourceEvidence(item){
     const a=item?.resume_analisa||{},p=item?.resume_tata_cara||{},s=item?.shared_heritage_detection||{},sources=resourceArray(item?.source_urls);
+    const rm=item?.resource_mapping||{},vc=item?.value_chain||{},oa=item?.opportunity_analysis||{},mob=item?.resource_mobilization||{};
     const k=[!!a.description,!!a.cultural_significance,resourceArray(a.gemini_tags).length>0];
     const l=[!!item?.location?.country,resourceArray(item?.location?.provinces).length>0,Number.isFinite(Number(item?.location?.lat)),Number.isFinite(Number(item?.location?.lng))];
     const pr=[!!p.type,resourceArray(p.materials_and_tools).length>0,resourceArray(p.step_by_step).length>0];
     const cs=s?.is_shared?Math.round(Math.max(0,Math.min(1,Number(s.confidence_score)||.5))*100):0;
     const d=String(a.drr_relevance_level||'').toLowerCase(),rs=d.includes('directly')?100:d.includes('indirectly')?65:0;
-    return {knowledge:Math.round(k.filter(Boolean).length/k.length*100),place:Math.round(l.filter(Boolean).length/l.length*100),practice:Math.round(pr.filter(Boolean).length/pr.length*100),connection:cs,resilience:rs,lineage:Math.round([sources.length>0,!!item?.scraped_at].filter(Boolean).length/2*100)}
+    const mappingKeys=['knowledge_resources','material_resources','human_resources','place_resources','institutional_resources'];
+    const chainKeys=['production','products','services','experience','education'];
+    const mobilizationKeys=['public_sector','private_sector','academic','community','potential_funding'];
+    const resourceMap=Math.round(mappingKeys.filter(k=>resourceArray(rm[k]).length>0).length/mappingKeys.length*100);
+    const chainMap=Math.round(chainKeys.filter(k=>resourceArray(vc[k]).length>0).length/chainKeys.length*100);
+    const opportunityMap=Math.round(['livelihood_potential','tourism_potential','education_potential','creative_industry_potential','digital_potential'].filter(k=>Number(oa[k]||0)>0).length/5*100);
+    const mobilizationMap=Math.round(mobilizationKeys.filter(k=>resourceArray(mob[k]).length>0).length/mobilizationKeys.length*100);
+    const enrichment=Math.round((resourceMap+chainMap+opportunityMap+mobilizationMap)/4);
+    return {
+      knowledge:Math.max(Math.round(k.filter(Boolean).length/k.length*100),resourceArray(rm.knowledge_resources).length?100:0),
+      place:Math.max(Math.round(l.filter(Boolean).length/l.length*100),resourceArray(rm.place_resources).length?100:0),
+      practice:Math.max(Math.round(pr.filter(Boolean).length/pr.length*100),resourceArray(rm.material_resources).length||resourceArray(vc.production).length?100:0),
+      connection:cs,resilience:rs,
+      lineage:Math.round([sources.length>0,!!item?.scraped_at].filter(Boolean).length/2*100),
+      resourceMap,chainMap,opportunityMap,mobilizationMap,enrichment
+    };
   }
   function resourceMetrics(item){
-    const e=resourceEvidence(item),p=item?.resume_tata_cara||{};
-    return {...e,resourceDepth:Math.round((e.knowledge+e.place+e.practice)/3),overall:Math.round((e.knowledge+e.place+e.practice+e.connection+e.resilience+e.lineage)/6),practiceDepth:Math.min(100,(resourceArray(p.materials_and_tools).length>0?40:0)+(resourceArray(p.step_by_step).length>0?60:0))}
+    const e=resourceEvidence(item),p=item?.resume_tata_cara||{},vc=item?.value_chain||{};
+    const practiceBase=Math.min(100,(resourceArray(p.materials_and_tools).length>0?40:0)+(resourceArray(p.step_by_step).length>0?60:0));
+    const productionBonus=resourceArray(vc.production).length>0?25:0;
+    const productBonus=resourceArray(vc.products).length>0?25:0;
+    return {...e,resourceDepth:Math.round((e.knowledge+e.place+e.practice)/3),overall:Math.round((e.knowledge+e.place+e.practice+e.connection+e.resilience+e.lineage+e.enrichment)/7),practiceDepth:Math.min(100,practiceBase+productionBonus+productBonus)};
   }
   function resourceLensSignals(item){
-    const cats=getIcmCategories(item),a=item?.resume_analisa||{},p=item?.resume_tata_cara||{},s=item?.shared_heritage_detection||{},drr=String(a.drr_relevance_level||'').toLowerCase(),tags=resourceArray(a.gemini_tags).map(x=>String(x).toLowerCase()).join(' '),all=(cats.join(' ')+' '+tags+' '+String(a.description||'')).toLowerCase();
-    const craft=cats.some(x=>/craftsmanship|culinary/i.test(x)),edu=resourceArray(p.step_by_step).length>0||resourceArray(p.materials_and_tools).length>0,exp=!!s.is_shared||cats.some(x=>/performing|social|oral/i.test(x))||/festival|ritual|story|dance|music|performance/i.test(all),res=drr.includes('directly')||drr.includes('indirectly'),live=/resilient livelihoods|food security/i.test(String(a.drr_category||''))||craft;
-    return [
-      {title:'Livelihood',icon:'ph-briefcase',signal:live?'Existing practice/resource base suggests livelihood relevance.':'No strong livelihood signal is structured yet.',level:live?'strong':'none'},
-      {title:'Education',icon:'ph-student',signal:edu?'Documented materials/process can support learning-oriented use.':'Limited process evidence for an education pathway.',level:edu?'strong':'none'},
-      {title:'Tourism / Experience',icon:'ph-map-pin-area',signal:exp?'Cultural experience potential is signalled by practice type or heritage connections.':'No strong experience signal is structured yet.',level:exp?'moderate':'none'},
-      {title:'Creative Industry',icon:'ph-paint-brush',signal:craft?'Craft or culinary characteristics provide a creative-industry lens.':'No direct creative-industry classification is available.',level:craft?'strong':'none'},
-      {title:'Resilience',icon:'ph-shield-check',signal:res?'The dataset documents a DRR/resilience relationship.':'No documented DRR/resilience relevance.',level:res?(drr.includes('directly')?'strong':'moderate'):'none'}
-    ]
+    const a=item?.resume_analisa||{},oa=item?.opportunity_analysis||{},vc=item?.value_chain||{},drr=String(a.drr_relevance_level||'').toLowerCase();
+    const score=k=>Math.max(0,Math.min(100,Number(oa[k]||0)));
+    const educationEvidence=resourceArray(vc.education).length>0;
+    const experienceEvidence=resourceArray(vc.experience).length>0;
+    const productEvidence=resourceArray(vc.products).length>0||resourceArray(vc.services).length>0;
+    const resilience=drr.includes('directly')||drr.includes('indirectly');
+    const labels=[
+      ['Livelihood','ph-briefcase','livelihood_potential',s=>s>=50||resourceArray(vc.production).length>0],
+      ['Education','ph-student','education_potential',s=>s>=50||educationEvidence],
+      ['Tourism / Experience','ph-map-pin-area','tourism_potential',s=>s>=50||experienceEvidence],
+      ['Creative Industry','ph-paint-brush','creative_industry_potential',s=>s>=50||productEvidence],
+      ['Digital','ph-device-mobile','digital_potential',s=>s>=50]
+    ];
+    return labels.map(([title,icon,key,ev])=>{
+      const s=score(key),strong=s>=75||ev(s),moderate=s>=40||ev(s);
+      return {title,icon,signal:s>0?'AI-derived potential score: '+s+'/100 based on current evidence.':'No scored evidence yet; await Resource & Opportunity enrichment.',level:strong?'strong':moderate?'moderate':'none'};
+    });
   }
   function initResourceOpportunity(){
     const sel=document.getElementById('resource-element-select'),cs=document.getElementById('resource-country-filter'),cat=document.getElementById('resource-category-filter');
@@ -2820,12 +2856,49 @@ const COUNTRY_CENTROIDS = {
     if(!item)return;
     const m=resourceMetrics(item),title=document.getElementById('resource-selected-title'),meta=document.getElementById('resource-selected-meta'),center=document.getElementById('resource-node-center');
     if(title)title.textContent=item.element_name||'Unnamed element';if(center)center.textContent=item.element_name||'ICH ELEMENT';
-    if(meta)meta.innerHTML=[item.location?.country?'<span class="resource-chip">'+escapeHtml(item.location.country)+'</span>':'',...getIcmCategories(item).map(c=>'<span class="resource-chip">'+escapeHtml(c)+'</span>'),'<span class="resource-chip">Evidence readiness '+m.overall+'%</span>'].filter(Boolean).join('');
+    if(meta)meta.innerHTML=[item.location?.country?'<span class="resource-chip">'+escapeHtml(item.location.country)+'</span>':'',...getIcmCategories(item).map(c=>'<span class="resource-chip">'+escapeHtml(c)+'</span>'),'<span class="resource-chip">Evidence readiness '+m.overall+'%</span>','<span class="resource-chip">Enrichment '+m.enrichment+'%</span>'].filter(Boolean).join('');
     document.getElementById('resource-node-knowledge').textContent=m.knowledge+'%';document.getElementById('resource-node-place').textContent=m.place+'%';document.getElementById('resource-node-practice').textContent=m.practice+'%';document.getElementById('resource-node-connection').textContent=m.connection+'%';document.getElementById('resource-node-resilience').textContent=m.resilience+'%';
-    const rows=[['Knowledge & Narrative',m.knowledge],['Place',m.place],['Practice & Materials',m.practice],['Heritage Connections',m.connection],['Resilience Evidence',m.resilience],['Source Lineage',m.lineage]];
+    const rows=[['Knowledge & Narrative',m.knowledge],['Place',m.place],['Practice & Materials',m.practice],['Heritage Connections',m.connection],['Resilience Evidence',m.resilience],['Resource Enrichment',m.enrichment]];
     document.getElementById('resource-readiness').innerHTML=rows.map(x=>'<div class="readiness-row"><div class="readiness-label">'+escapeHtml(x[0])+'</div><div class="readiness-track"><div class="readiness-fill" style="width:'+x[1]+'%"></div></div><div class="readiness-value">'+x[1]+'%</div></div>').join('');
+
     document.getElementById('resource-lens-grid').innerHTML=resourceLensSignals(item).map(l=>'<div class="lens-card"><div class="lens-title"><i class="ph '+l.icon+' text-brand-accent"></i>'+escapeHtml(l.title)+'</div><div class="lens-signal">'+escapeHtml(l.signal)+'</div><span class="lens-pill '+l.level+'">'+(l.level==='strong'?'Strong signal':l.level==='moderate'?'Moderate signal':'No clear signal')+'</span></div>').join('');
-    renderResourceMatrix()
+
+    const rm=item.resource_mapping||{},vc=item.value_chain||{},mob=item.resource_mobilization||{};
+    const detailGroups=[
+      ['Knowledge resources',rm.knowledge_resources],
+      ['Material resources',rm.material_resources],
+      ['Human resources',rm.human_resources],
+      ['Place resources',rm.place_resources],
+      ['Institutional resources',rm.institutional_resources],
+      ['Production',vc.production],
+      ['Products',vc.products],
+      ['Services',vc.services],
+      ['Experience',vc.experience],
+      ['Education',vc.education]
+    ];
+    document.getElementById('resource-detail-grid').innerHTML=detailGroups.map(([label,arr])=>{
+      const values=resourceArray(arr);
+      const html=values.slice(0,4).map(v=>{
+        const name=typeof v==='object'?(v.name||v.title||'Unnamed'):String(v);
+        const desc=typeof v==='object'?(v.description||''):'';
+        return '<li><strong>'+escapeHtml(name)+'</strong>'+(desc?' — '+escapeHtml(desc):'')+'</li>';
+      }).join('');
+      return '<div class="resource-detail-card"><h4>'+escapeHtml(label)+'</h4>'+(html?'<ul>'+html+'</ul>':'<div class="detail-empty">No documented entries yet.</div>')+'</div>';
+    }).join('');
+
+    const funding=resourceArray(mob.potential_funding),stakeholders=[...resourceArray(mob.public_sector),...resourceArray(mob.private_sector),...resourceArray(mob.academic),...resourceArray(mob.community)];
+    const gap=document.querySelector('.business-gap-grid');
+    if(gap){
+      const cards=[
+        ['Community / Practitioners',resourceArray(rm.human_resources)],
+        ['Market / Customer',resourceArray(vc.products).concat(resourceArray(vc.services))],
+        ['Cost / Unit Economics',[]],
+        ['Stakeholders / Finance',stakeholders.concat(funding)],
+        ['Safeguarding Plan',resourceArray(vc.education)]
+      ];
+      gap.innerHTML=cards.map(([label,arr])=>'<div class="business-gap"><div class="gap-title">'+escapeHtml(label)+'</div><div class="gap-state">'+(arr.length?escapeHtml((typeof arr[0]==='object'?(arr[0].name||arr[0].title):String(arr[0])))+' · '+arr.length+' documented item(s)':'Not structured / no evidence yet')+'</div></div>').join('');
+    }
+    renderResourceMatrix();
   }
   function renderResourceMatrix(){
     const dom=document.getElementById('resource-matrix-chart');if(!dom||!window.echarts||!globalData?.inventory)return;
