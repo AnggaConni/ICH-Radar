@@ -2,7 +2,7 @@
 =======================================================================
   ICH SHARED HERITAGE RADAR v6.3 — Global Intelligence Engine
   AI Engine : Google Gemini 2.5 Flash (Google Search Grounding)
-  Mode      : 2-Phase (Enrichment of Incomplete Data -> Discovery)
+  Mode      : Alternating daily pipeline (Discovery/Data -> Resource & Opportunity)
   Feature   : Quality over Quantity (Iterative Looping), Anti-Redundancy, Wikimedia Fallback
 =======================================================================
 """
