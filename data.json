@@ -38565,22 +38565,375 @@
         "community": [],
         "potential_funding": []
       }
+    },
+    {
+      "id": "ich-5d64cbf7",
+      "element_name": "Merantau (Minangkabau Out-migration Tradition)",
+      "categories": [
+        "Social Practices & Rituals",
+        "Oral Traditions",
+        "Culinary Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//wjel.sciedupress.com/journal/index.php/wjel/article/view/1376&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://wjel.sciedupress.com/journal/index.php/wjel/article/view/1376",
+        "https://en.wikipedia.org/wiki/Minangkabau_diaspora",
+        "https://roadsandkingdoms.com/2015/07/29/the-wanderers-of-nusantara/",
+        "https://pasbana.com/2024/07/perantau-minang-di-singapura-tahun-1890/",
+        "https://www.antaranews.com/berita/2437561/ini-hasrat-perantau-minang-di-belanda",
+        "https://bukittinggikota.go.id/berita/detail/perantau-minang-menjaga-jati-diri-di-negeri-orang",
+        "https://www.kompasiana.com/deddy_setiawan/645543c708a82d619a6b1022/5-amunisi-untuk-merantau-dan-survive-di-kota-ala-perantau-minang",
+        "https://suryadi.leidenuniv.nl/orang-minang-di-eropa/",
+        "https://migrationletters.com/index.php/ml/article/view/280"
+      ],
+      "scraped_at": "2026-10-08T14:43:54.601844Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "West Sumatra",
+          "Riau",
+          "Jakarta",
+          "Malaysia (Negeri Sembilan)",
+          "Singapore",
+          "Netherlands",
+          "United States",
+          "Saudi Arabia",
+          "Australia",
+          "France"
+        ],
+        "lat": -0.5827529,
+        "lng": 100.6133379
+      },
+      "resume_analisa": {
+        "description": "Merantau is a deeply ingrained, centuries-old tradition among the Minangkabau people of West Sumatra, Indonesia, where young men, and increasingly women, leave their hometowns to seek education, experience, and economic opportunities in other regions and countries. It is considered a crucial rite of passage for achieving maturity and success. This practice is influenced by the Minangkabau's matrilineal kinship system, which encourages men to seek their own fortunes outside the family's inherited property. Perantau (migrants) often establish strong communities in their new locations, maintaining their cultural identity through various practices, including culinary traditions like Padang food restaurants.",
+        "cultural_significance": "The Merantau tradition holds immense cultural significance for the Minangkabau. It serves as a vital rite of passage, enabling young individuals to gain wealth, knowledge, and prestige, which are essential for personal growth and societal contribution. Economically, it fosters self-reliance and provides opportunities for social mobility, with migrants often sending remittances back to their hometowns to support families and invest in local development, such as improving mosques and roads. Culturally, perantau act as ambassadors, preserving and disseminating Minangkabau customs, language, performing arts, and especially their renowned culinary traditions, with Padang food restaurants becoming ubiquitous in many urban centers. The tradition is underpinned by oral traditions, including proverbs like 'Karatau madang di hulu, babuah babungo balun; marantau bujang dahulu, di rumah baguno balun,' which encourages youth to venture out before they can be truly useful at home. Modern interpretations also highlight 'brain circulation,' where knowledge and networks acquired abroad benefit the home region.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "The Merantau tradition enhances resilient livelihoods by encouraging individuals to seek diverse economic opportunities and acquire knowledge outside their hometowns. Remittances sent back by migrants contribute significantly to family income and community development, strengthening economic stability and reducing vulnerability to economic shocks. This financial flow can support families in recovering from various adversities and investing in more secure futures. Furthermore, the strong social networks and mutual support systems among Minangkabau perantau foster social cohesion, which is crucial for collective action and aid during times of crisis, indirectly contributing to overall community resilience.",
+        "gemini_tags": [
+          "Minangkabau",
+          "Merantau",
+          "Out-migration",
+          "Diaspora",
+          "Cultural Heritage",
+          "Indonesia",
+          "Social Practice",
+          "Economic Resilience",
+          "Cultural Preservation",
+          "Padang Food"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Bugis Merantau Tradition",
+            "relationship_reason": "The Bugis people from South Sulawesi also have a strong tradition of out-migration (merantau), particularly as seafarers and traders, establishing communities and influencing regions across the Malay Archipelago, including Malaysia and Singapore."
+          },
+          {
+            "country": "Malaysia",
+            "element_name": "Malay Merantau Tradition",
+            "relationship_reason": "Malay society, particularly in the context of the Malay Archipelago, has a long history of merantau, driven by trade and the establishment of new settlements, connecting communities across various islands and peninsulas."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      }
+    },
+    {
+      "id": "ich-4636fb6f",
+      "element_name": "Ama Divers",
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.kcpintl.com/ukai-a-traditional-japanese-way-of-fishing/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.kcpintl.com/ukai-a-traditional-japanese-way-of-fishing/",
+        "https://www.japan-guide.com/e/e6050.html",
+        "https://www.undrr.org/publication/words-into-action-using-traditional-and-indigenous-knowledges-disaster-risk-reduction",
+        "https://www.japan.travel/en/guide/fishing-in-japan/",
+        "https://www.goaheadtours.com/blog/ama-divers-japan",
+        "https://en.wikipedia.org/wiki/Ama_(diving)",
+        "https://www.undrr.org/news/integrating-traditional-knowledge-drr-planning",
+        "https://www.arigatotravel.com/blog/ama-divers-japan",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6560935/",
+        "https://environmentalmigration.iom.int/indigenous-knowledge-disaster-risk-reduction",
+        "https://iccrom.org/news/welcome-new-platform-embracing-indigenous-and-traditional-knowledge-disaster-risk-reduction",
+        "https://kevinpage.co.uk/the-importance-of-fishing-in-japanese-life-were-hooked/",
+        "https://spinnaker-watches.com/blogs/journal/japan-ama-divers",
+        "https://japaneseonsen.com/ama-divers-japan-guide/",
+        "https://history.princeton.edu/news/deep-dive-nets-casted-onto-haenyeo-divers-south-korea-and-ama-divers-japan",
+        "https://lamourpearls.com/blogs/news/ama-the-women-divers-behind-japans-pearl-legacy",
+        "https://www.fpcj.jp/en/pr_magazine/japan_journal/japan_journal_dec_2012/page_02.html",
+        "https://www.ijih.org/index.php/ijih/article/view/100",
+        "https://www.canada.ca/en/heritage/services/digitizing-intangible-cultural-heritage.html",
+        "https://www.facebook.com/NationalGeographicSociety/posts/in-coastal-japan-the-legendary-ama-divers-have-harvested-the-oceans-bounty-with-/797282835760616/",
+        "https://ich.unesco.org/en/map-of-ich-e-inventories-01121",
+        "https://nautil.us/the-plight-of-japans-ama-divers-279092/",
+        "https://voiijer.com/blog/what-was-it-like-to-freedive-with-the-legendary-ama-from-japan",
+        "https://shechangesclimate.org/blog/the-last-wave-of-ama-divers",
+        "https://ich.unesco.org/en/lists"
+      ],
+      "scraped_at": "2026-10-08T14:47:00Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Mie Prefecture",
+          "Chiba Prefecture",
+          "Ishikawa Prefecture"
+        ],
+        "lat": 34.7339685,
+        "lng": 136.5154489
+      },
+      "resume_analisa": {
+        "description": "Ama (海女, 'sea women') are Japanese female free divers who have for centuries collected seafood, such as abalone, sea urchins, seaweed, and pearls, without the use of modern breathing equipment like scuba tanks or snorkels. They rely solely on breath-holding techniques and an intimate knowledge of the ocean. This ancient practice is primarily carried out by women, many of whom continue diving well into their 70s and 80s.",
+        "cultural_significance": "The Ama diving tradition is an ancient practice, with origins tracing back 2,000 to 5,000 years to the Jomon Period. It is deeply rooted in Japanese coastal culture and is often passed down from mother to daughter, embodying a strong connection to the sea. Ama divers are known for their sustainable approach to fishing, working within the natural limits of the human body and respecting marine ecosystems, which was a practice long before sustainability became a global concern. The community aspect is significant, with strong connections among divers in fishing villages, fostering cooperation and mutual aid. They also perform rituals and prayers to the gods of the ocean for safety and abundant catches, reflecting a deep spiritual connection to their environment. The distinctive 'isobue' (sea whistle) sound they make upon surfacing is a unique cultural identifier and a breathing technique.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "hazard_categories": [
+          "Typhoon",
+          "Flood"
+        ],
+        "drr_mechanism": "Ama divers possess extensive traditional knowledge of the marine environment, including currents, tides, and marine life behavior, which contributes to sustainable resource management and resilient livelihoods. This knowledge aids in understanding and adapting to severe weather events like typhoons and associated coastal flooding. Their sustainable harvesting practices ensure long-term food security, reducing vulnerability to resource depletion. The communal nature of their work fosters social cohesion and mutual aid, providing a crucial support system for disaster preparedness, response, and recovery in coastal areas. Prayers and rituals also reflect a deep awareness of natural dangers and a coping mechanism for the inherent risks of their profession.",
+        "gemini_tags": [
+          "Traditional Fishing",
+          "Free Diving",
+          "Coastal Communities",
+          "Sustainable Practices",
+          "Women's Heritage",
+          "Japanese Culture",
+          "Marine Conservation",
+          "Indigenous Knowledge"
+        ],
+        "drr_relevance_level": "Directly Related to DRR",
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Free diving / Breath-hold diving",
+        "materials_and_tools": [
+          "Diving mask",
+          "Weight belt",
+          "Small pick (for prying abalone)",
+          "Floating net or basket",
+          "Traditional loincloth (historically)",
+          "Bandana (tenugui)",
+          "Wetsuit (modernly)"
+        ],
+        "step_by_step": [
+          "**Learning and Preparation:** Girls typically begin training around 12-13 years old, learning from elder Ama, often their mothers. This involves developing lung capacity, understanding ocean currents, and identifying prime locations for marine life. Before diving, some Ama gather in traditional huts (amagoya) to recite prayers for safety and plentiful catches, and on special occasions, visit local shrines.",
+          "**Descent:** Divers take a deep breath and descend into the water on a single breath, using their feet to propel themselves or heavy weights tied around their waists to aid descent. They can reach depths of 4 to 20 meters (10-65 feet).",
+          "**Harvesting:** Underwater, they quickly search for abalone, sea urchins, seaweed, and other shellfish. A typical dive lasts between 30 seconds to two minutes. A small pick may be used to detach shellfish from rocks.",
+          "**Ascent and Breathing:** Upon resurfacing, Ama divers exhale with a distinctive, long, high-pitched whistling sound called 'isobue' (sea whistle). This technique helps regulate their breathing, cleanse their lungs of carbon dioxide, and prepare for the next dive.",
+          "**Repeat Cycle:** The collected catch is dropped into a floating net or basket. Divers then repeat the process, making between 50 to 100 dives over a session that can last 2 to 4 hours, depending on the diver and conditions.",
+          "**Community Practice:** Harvesting is often a communal activity, with dives scheduled on days when all divers from the villages in the area can participate, reinforcing community bonds."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "South Korea",
+            "element_name": "Haenyeo divers of Jeju Island",
+            "relationship_reason": "Both Ama (Japan) and Haenyeo (South Korea) are communities of female free divers who collect seafood without modern breathing apparatus. They share similar traditional diving techniques, a deep connection to the marine environment, and face similar challenges. There is historical evidence of migration and cooperation between these diving cultures. The Haenyeo of Jeju Island are recognized as a UNESCO Intangible Cultural Heritage."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      }
+    },
+    {
+      "id": "ich-96fbb46a",
+      "element_name": "'Yan Kama Musical Tradition",
+      "categories": [
+        "Performing Arts",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Performing Arts",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqJoAmRHvs8MLsu6UyRquyF5TP3fgWGC2tar7cjogL8a164xkJQXrYbEHacMHmItOKUo1tyjjb1_j0pFep3k1S3H4ln2GiivuRd4quSqFN8HImWQIKsldCJvCucFVFzf4g-rlL8V2nvL1f-t8imaW_FNC51igxK4WFKNOB3gbSVFcKVZ5QLg%3D%3D&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqJoAmRHvs8MLsu6UyRquyF5TP3fgWGC2tar7cjogL8a164xkJQXrYbEHacMHmItOKUo1tyjjb1_j0pFep3k1S3H4ln2GiivuRd4quSqFN8HImWQIKsldCJvCucFVFzf4g-rlL8V2nvL1f-t8imaW_FNC51igxK4WFKNOB3gbSVFcKVZ5QLg==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQv6FBAf9XHT2TLdsGXfvRHPRz71KMU-vHmISIUCtUjGRn6Q1EYkHNllBuH7vIpug96xVEblD3pX6SZbugezf6fkOn9RSJ4ZE1qIh-UyLOrf8IrGYMg5fj3yGcFmPAPXVrRnjA",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcrRX5yxmuLvCqdo32jSiCitCkHlV8vzymq420bENzSMhUMvBWlC7QJZt4oyVj8idCM7eNdnCS_T5R8UiDZu0AnxZHMYSV88f00c_k_aqbbkVNncK2gdvJVw_bsCsV3w4xpY69yBAbfw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzj5ohlxd25QfLDD37WA16GUuDGVkKo_xjSzIjWzYhSgHFMWXitNRAqdTXXw9lXliaRRd5Ir2uwTTc3DO4LYKskAW1FE5FEtQ0g9nNfutKjUV9YBnpwDjUN0-hes9QSYiMzYbYQPYiuDG8DwbT8X2H7gzywzW8AP4M-cIqSOpTCB-lbg==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXAS8J1YIjLRzI-sFhXGsu_TK1mat-rsg1Sx5YOcMQ56GGsImESP4715SlzeS19H1T9R8TENwHwOc0x14IUwDIor4_5jkJh63sJJrAj-xKZ-GqgTe0lT6vDniy2YNxuXf5kFTV2kSwebplBJwudPNnYuUFye6a-o5mASRti0kEhnT-oG1vJcNPayGL5jU=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGp4IYiATWUtE19m5KyQMJ0vO0ynXjAmebBn43Fit9on5GnrJdz3nwlTDIY3Zspg33v8uVkCz5kcS_jYiUcdC1Kl4YEDE2OgqHNkVkO-OsHBF0lWlZyNPJc0xMSOoeqQ9T45hqDMlg=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeZCVs769LLDW2cpkuUUzItQ70wNdfG6tM-IfqsD6EEiid9YEDegnW0q2moEA7D9LuQEBurT3g8pwJdqnxh533yaCnZ9PlyutsGGsRv7wuhldobYf7aAHlO9qDzU6QMKEB4wDffQ==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGySVijITVKqf_mSeAiVLFAYNpR1TG6at-67UbfHD4RK8gxUQZ7rBGVoaLVbyQTdr5LxT80RySFQihuDxFRlfk7R-oyYQ9bEbD4P0gLOw3IJzp_iFZ9SrvKyfavnOd8I0ZPyOjKo6eVvWrSGEBNfgijvZ6QDxY=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHf6K-aj5KXkDieVmvFZRhd2DLmoIIZH9l0dHfVKlRWbfxZkhFVhR6EXJmEx99FJSs1axaBjDKq758GpLbIqKZ0sSlTQFpiFtizmK84TQCurTF1l7QwTd3mfpJ-rHrTah4hBFnbDxT39z3GCQQdLcJJmhGGs_FCpX_4s71P8o0Xy1N74A==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1gDD4IXIefQtSjyDoTgoNLI2Nv7JSlGU7M-yS97plByLOuJeW8z1feuefnILIr1sxK1VPuKzXr31nJKdurXKyIgNxjb8EXw8OTr5OprCYct6K9it_rzwBqP25h9eNLJBb1j1Usc_-H_QvpUYKsQMZE3IGB7Y0P5xMhrTDLhFDcz3BN8x2fKHZV9pxQBJasRLheRosSMx9TZaOZW3J-Fsi4Dqucucm-x1jjNVAxTHhYC5UmNI-hrdl_x2OnywU-vIdxQ3F83-dFcYK8q1UZAI4VQ==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEV_SXe-JCC02YbVVXMsqFGibWgH2hZjteIVcgbngv9gYNbSNR6TOJY4G5JRyUkCqj9QX84CrKSa98x_6BfMOQescZl9fTiv7S4kFMb9SgGjqiBX6q0LMrIUruyLaO5OPiy4EWWq7c=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzzzKPyKGn450L5mYo5WJu4lvWDEJQ3tGdxFC3GYhGUwp_5J2CpDwQqiF7bIoqWZuCXB5sbFSKnOd4Fch9oLnrhXpDQxTUqaxW9jA_u6IcrDcdwEGCL-RxsWQE3-TZCqNsWuXkFGc="
+      ],
+      "scraped_at": "2026-10-08T14:48:36.564619Z",
+      "location": {
+        "country": "Nigeria",
+        "provinces": [
+          "Northern Nigeria"
+        ],
+        "lat": 9.6000359,
+        "lng": 7.9999721
+      },
+      "resume_analisa": {
+        "description": "The 'Yan Kama musical tradition is a unique artistic practice within the Hausa culture, primarily found in Northern Nigeria. These musicians are known for their distinctive style of transforming popular songs into themes centered around food and eating, demonstrating exceptional linguistic skill in manipulating the Hausa language for entertainment. This tradition is currently facing the risk of disappearing due to a lack of younger generations inheriting the practice.",
+        "cultural_significance": "The 'Yan Kama tradition holds significant cultural value as a form of entertainment and a unique expression of Hausa linguistic and musical artistry. It reflects the importance of food and communal eating in Hausa society and serves as a means of preserving the Hausa language through creative adaptation. The potential disappearance of this tradition represents a loss of a distinct cultural heritage and a specific form of oral tradition and performing art.",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Hausa culture",
+          "Traditional music",
+          "Oral tradition",
+          "Performing arts",
+          "Nigeria",
+          "Endangered heritage",
+          "Linguistic artistry",
+          "Food culture"
+        ],
+        "drr_relevance": false
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Niger",
+            "element_name": "Hausa Language and Culture",
+            "relationship_reason": "The Hausa people and their language are a major ethnic group spanning Northern Nigeria and Southern Niger, sharing a common cultural heritage, including musical traditions."
+          },
+          {
+            "country": "Ghana",
+            "element_name": "Hausa Traditional Music",
+            "relationship_reason": "Significant Hausa populations and their folk music traditions are found in Ghana, contributing to the broader West African musical landscape."
+          },
+          {
+            "country": "Cameroon",
+            "element_name": "Hausa Cultural Practices",
+            "relationship_reason": "Hausa communities and their cultural practices, including music, are present in Cameroon, reflecting the widespread influence of Hausa culture across West and Central Africa."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE",
+      "resource_enriched_at": null,
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      }
     }
   ],
   "summary": {
-    "generated_at": "2026-10-08T13:33:03.499075Z",
-    "total_ich_elements": 326,
-    "complete_records": 326,
-    "incomplete_records": 0,
+    "generated_at": "2026-10-08T14:49:09.095692Z",
+    "total_ich_elements": 329,
+    "complete_records": 328,
+    "incomplete_records": 1,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 116,
-      "Social Practices & Rituals": 76,
-      "Culinary Traditions": 50,
+      "Traditional Craftsmanship": 117,
+      "Social Practices & Rituals": 79,
+      "Culinary Traditions": 51,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 34,
+      "Performing Arts": 35,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 28,
+      "Oral Traditions": 30,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
