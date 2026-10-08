@@ -1227,9 +1227,231 @@ Set "categories_valid" to true only when at least one selected category is clear
         
     return enriched_count
 
+
+# ======================================================================
+# RESOURCE & OPPORTUNITY ENRICHMENT
+# Runs on alternating days against existing inventory records.
+# ======================================================================
+
+def resource_schema_defaults(item):
+    """Ensure every record has the Resource & Opportunity schema."""
+    defaults = {
+        "resource_mapping": {
+            "knowledge_resources": [],
+            "material_resources": [],
+            "human_resources": [],
+            "place_resources": [],
+            "institutional_resources": []
+        },
+        "value_chain": {
+            "production": [],
+            "products": [],
+            "services": [],
+            "experience": [],
+            "education": []
+        },
+        "opportunity_analysis": {
+            "livelihood_potential": 0,
+            "tourism_potential": 0,
+            "education_potential": 0,
+            "creative_industry_potential": 0,
+            "digital_potential": 0
+        },
+        "resource_mobilization": {
+            "public_sector": [],
+            "private_sector": [],
+            "academic": [],
+            "community": [],
+            "potential_funding": []
+        }
+    }
+
+    changed = False
+    for section, section_defaults in defaults.items():
+        current = item.get(section)
+        if not isinstance(current, dict):
+            item[section] = section_defaults
+            changed = True
+            continue
+
+        for key, default_value in section_defaults.items():
+            if key not in current or current.get(key) is None:
+                current[key] = default_value
+                changed = True
+
+    return changed
+
+
+def resource_enrichment_score(item):
+    """Lower score = less enriched = higher priority."""
+    resource_schema_defaults(item)
+    r = item.get("resource_mapping", {})
+    v = item.get("value_chain", {})
+    o = item.get("opportunity_analysis", {})
+    m = item.get("resource_mobilization", {})
+
+    populated_lists = 0
+    for section in (r, v, m):
+        populated_lists += sum(
+            1 for value in section.values()
+            if isinstance(value, list) and len(value) > 0
+        )
+
+    populated_scores = sum(
+        1 for key in (
+            "livelihood_potential",
+            "tourism_potential",
+            "education_potential",
+            "creative_industry_potential",
+            "digital_potential"
+        )
+        if isinstance(o.get(key), (int, float)) and o.get(key) > 0
+    )
+
+    return populated_lists + populated_scores
+
+
+def enrich_resource_data(api_key, inventory):
+    """Use Gemini + Google Search to enrich existing ICH records."""
+    for item in inventory:
+        resource_schema_defaults(item)
+
+    candidates = sorted(
+        inventory,
+        key=lambda x: (
+            resource_enrichment_score(x),
+            x.get("scraped_at", "")
+        )
+    )
+
+    target_items = candidates[:3]
+    if not target_items:
+        log.info("No inventory items available for Resource & Opportunity enrichment.")
+        return 0
+
+    enriched_count = 0
+
+    for item in target_items:
+        element_name = item.get("element_name", "")
+        location = item.get("location", {})
+        analysis = item.get("resume_analisa", {})
+        process = item.get("resume_tata_cara", {})
+        existing_sources = item.get("source_urls", [])
+
+        prompt = f"""
+You are a heritage development and cultural economy intelligence analyst.
+
+Use Google Search to enrich ONE EXISTING Intangible Cultural Heritage record:
+- Element: {element_name}
+- Country: {location.get("country", "")}
+- Province(s): {location.get("provinces", [])}
+- Description: {analysis.get("description", "")}
+- Cultural significance: {analysis.get("cultural_significance", "")}
+- Materials/tools: {process.get("materials_and_tools", [])}
+- Process: {process.get("step_by_step", [])}
+- Existing sources: {existing_sources}
+
+OBJECTIVE
+Build a source-grounded Resource & Opportunity profile. This is NOT a business plan and MUST NOT invent market demand, revenue, costs, community ownership, named organizations, or funding opportunities.
+
+EVIDENCE RULES
+1. Search local news, community sites, official government pages, universities, cultural organizations, tourism boards, and other credible public sources.
+2. Prefer evidence directly connected to the specific heritage element and location.
+3. Every named factual resource should have at least one direct evidence URL when available.
+4. If evidence cannot be found, return an empty array rather than guessing.
+5. Opportunity scores are analytical indicators from 0-100, NOT validated market scores.
+6. Consider ICH safeguarding, community agency, intergenerational transmission, and benefit-sharing.
+7. Do not treat generic similarities as proof of a business opportunity.
+
+RETURN ONLY JSON using this EXACT top-level structure:
+{{
+  "resource_mapping": {{
+    "knowledge_resources": [],
+    "material_resources": [],
+    "human_resources": [],
+    "place_resources": [],
+    "institutional_resources": []
+  }},
+  "value_chain": {{
+    "production": [],
+    "products": [],
+    "services": [],
+    "experience": [],
+    "education": []
+  }},
+  "opportunity_analysis": {{
+    "livelihood_potential": 0,
+    "tourism_potential": 0,
+    "education_potential": 0,
+    "creative_industry_potential": 0,
+    "digital_potential": 0
+  }},
+  "resource_mobilization": {{
+    "public_sector": [],
+    "private_sector": [],
+    "academic": [],
+    "community": [],
+    "potential_funding": []
+  }}
+}}
+
+For evidence-based resource/value-chain/mobilization arrays, use objects:
+{{
+  "name": "...",
+  "description": "...",
+  "evidence_urls": ["https://..."]
+}}
+
+For human_resources, use roles/types when named individuals are not reliably documented.
+For public_sector/private_sector/academic/community, use actors or actor-types only when the source supports the connection.
+For potential_funding, use documented funding mechanisms or relevant funding types only when evidence supports them.
+
+SCORING
+0 = no evidence
+1-24 = weak potential
+25-49 = limited
+50-74 = moderate
+75-100 = strong documented signal
+
+Do not use the opportunity scores to imply financial viability.
+"""
+
+        updated = call_gemini(api_key, prompt)
+
+        if isinstance(updated, dict):
+            if isinstance(updated.get("resource_mapping"), dict):
+                item["resource_mapping"] = updated["resource_mapping"]
+            if isinstance(updated.get("value_chain"), dict):
+                item["value_chain"] = updated["value_chain"]
+            if isinstance(updated.get("opportunity_analysis"), dict):
+                raw_scores = updated["opportunity_analysis"]
+                item["opportunity_analysis"] = {
+                    key: max(0, min(100, int(raw_scores.get(key, 0) or 0)))
+                    for key in (
+                        "livelihood_potential",
+                        "tourism_potential",
+                        "education_potential",
+                        "creative_industry_potential",
+                        "digital_potential"
+                    )
+                }
+            if isinstance(updated.get("resource_mobilization"), dict):
+                item["resource_mobilization"] = updated["resource_mobilization"]
+
+            resource_schema_defaults(item)
+            enriched_count += 1
+            log.info("✅ Resource & Opportunity enrichment completed: %s", element_name)
+        else:
+            log.warning("Resource enrichment returned no valid JSON for: %s", element_name)
+
+        time.sleep(5)
+
+    return enriched_count
+
 # ======================================================================
 # PHASE 2: DISCOVERY (Finding New Data)
 # ======================================================================
+
 
 def discover_new_items(api_key, inventory):
     discovered_count = 0
@@ -1497,19 +1719,21 @@ def main():
         inventory = db.get("inventory", [])
 
         # Manual workflow modes:
-        #   data_only   = audit + enrichment + discovery
-        #   resume_only = quarterly journal only
-        #   both        = data pipeline + quarterly journal
+        #   data_only       = audit + enrichment + discovery
+        #   resource_enrich = resource/value-chain/opportunity enrichment
+        #   resume_only     = quarterly journal only
+        #   both            = data pipeline + quarterly journal
         #
         # Scheduled runs default to data_only via crawler.yml.
         raw_crawl_mode = os.environ.get("CRAWL_MODE", "Data only").strip().lower()
         crawl_mode = raw_crawl_mode.replace(" ", "_").replace("-", "_")
-        valid_modes = {"data_only", "resume_only", "both"}
+        valid_modes = {"data_only", "resource_enrich", "resume_only", "both"}
         if crawl_mode not in valid_modes:
             log.warning(f"Unknown CRAWL_MODE='{crawl_mode}'. Falling back to data_only.")
             crawl_mode = "data_only"
 
         run_data = crawl_mode in ("data_only", "both")
+        run_resource = crawl_mode == "resource_enrich"
         run_resume = crawl_mode in ("resume_only", "both")
 
         audited = 0
@@ -1537,6 +1761,26 @@ def main():
                 log.info("Data pipeline complete. No new data added or enriched.")
         else:
             log.info("⏭️ Data crawl skipped (resume_only mode).")
+
+        if run_resource:
+            schema_changed = 0
+            for item in inventory:
+                if resource_schema_defaults(item):
+                    schema_changed += 1
+
+            resource_enriched = enrich_resource_data(api_key, inventory)
+
+            db["inventory"] = inventory
+            if schema_changed > 0 or resource_enriched > 0:
+                save_db(db)
+                log.info(
+                    "✅ Resource enrichment complete. Schema normalized: %s. Enriched: %s. Total DB: %s",
+                    schema_changed,
+                    resource_enriched,
+                    len(inventory)
+                )
+            else:
+                log.info("Resource enrichment complete. No records changed.")
 
         if run_resume:
             # Quarterly Resume / Journal generation.
