@@ -1042,16 +1042,26 @@ def normalize_ai_classification(item):
 # ======================================================================
 
 
-def call_gemini(api_key, prompt):
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+def call_gemini(api_key, prompt, model="gemini-2.5-flash"):
+    """Call Gemini with Google Search grounding and resilient transient-error handling."""
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+
+    # Gemini 3.x uses the current google_search tool name.
+    # Gemini 2.5 keeps the legacy camelCase tool name already used by this repo.
+    search_tool = {"google_search": {}} if model.startswith("gemini-3") else {"googleSearch": {}}
+
+    generation_config = {
+        "maxOutputTokens": 8192
+    }
+
+    # Gemini 3.x no longer needs the old sampling controls used by 2.5.
+    if not model.startswith("gemini-3"):
+        generation_config["temperature"] = 0.2
 
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "tools": [{"googleSearch": {}}],
-        "generationConfig": {
-            "temperature": 0.2,
-            "maxOutputTokens": 8192
-        }
+        "tools": [search_tool],
+        "generationConfig": generation_config
     }
 
     headers = {
@@ -1059,51 +1069,93 @@ def call_gemini(api_key, prompt):
         "x-goog-api-key": api_key
     }
 
-    try:
-        response = requests.post(url, json=payload, headers=headers, timeout=180)
-        if response.status_code != 200:
-            log.error(f"Google API Error: {response.text}")
+    transient_statuses = {408, 429, 500, 502, 503, 504}
+    max_attempts = 4
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            response = requests.post(url, json=payload, headers=headers, timeout=180)
+
+            if response.status_code == 200:
+                data = response.json()
+                text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
+
+                try:
+                    return json.loads(text)
+                except json.JSONDecodeError:
+                    pass
+
+                # Robust fallback: decode the first complete JSON object/array.
+                decoder = json.JSONDecoder()
+                candidates = []
+                for idx, char in enumerate(text):
+                    if char not in "[{":
+                        continue
+                    try:
+                        obj, end_idx = decoder.raw_decode(text[idx:])
+                        trailing = text[idx + end_idx:].strip()
+                        if not trailing:
+                            return obj
+                        candidates.append(obj)
+                    except json.JSONDecodeError:
+                        continue
+
+                if candidates:
+                    return candidates[0]
+
+                raise json.JSONDecodeError(
+                    "No valid standalone JSON document found", text, 0
+                )
+
+            if response.status_code in transient_statuses:
+                if attempt < max_attempts:
+                    delay = min(30, (2 ** (attempt - 1)) + random.uniform(0.25, 1.25))
+                    log.warning(
+                        "Gemini transient HTTP %s on attempt %s/%s for %s. "
+                        "Retrying in %.1fs...",
+                        response.status_code, attempt, max_attempts, model, delay
+                    )
+                    time.sleep(delay)
+                    continue
+
+                log.error(
+                    "Gemini transient HTTP %s persisted after %s attempts for %s: %s",
+                    response.status_code, max_attempts, model, response.text[:1000]
+                )
+                return None
+
+            log.error(
+                "Google API Error (%s) for %s: %s",
+                response.status_code, model, response.text[:1500]
+            )
             return None
 
-        data = response.json()
-        text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
+        except json.JSONDecodeError as je:
+            preview = text[:1200] if "text" in locals() else ""
+            log.error(
+                "Gemini API failure (JSON Parse Error) for %s: %s. Response preview: %s",
+                model, je, preview
+            )
+            return None
 
-        # Fast path: one clean JSON document.
-        try:
-            return json.loads(text)
-        except json.JSONDecodeError:
-            pass
-
-        # Robust fallback: decode the first complete JSON object/array.
-        # This avoids the previous greedy regex that produced "Extra data".
-        decoder = json.JSONDecoder()
-        candidates = []
-        for idx, char in enumerate(text):
-            if char not in "[{":
-                continue
-            try:
-                obj, end_idx = decoder.raw_decode(text[idx:])
-                trailing = text[idx + end_idx:].strip()
-                if not trailing:
-                    return obj
-                candidates.append(obj)
-            except json.JSONDecodeError:
+        except requests.RequestException as exc:
+            if attempt < max_attempts:
+                delay = min(30, (2 ** (attempt - 1)) + random.uniform(0.25, 1.25))
+                log.warning(
+                    "Gemini network error on attempt %s/%s for %s: %s. Retrying in %.1fs...",
+                    attempt, max_attempts, model, exc, delay
+                )
+                time.sleep(delay)
                 continue
 
-        # If the response accidentally contains multiple JSON documents,
-        # return the first complete one rather than rejecting the whole call.
-        if candidates:
-            return candidates[0]
+            log.error("Gemini network failure after %s attempts for %s: %s", max_attempts, model, exc)
+            return None
 
-        raise json.JSONDecodeError("No valid standalone JSON document found", text, 0)
+        except Exception as e:
+            log.error("Gemini API failure for %s: %s", model, e)
+            return None
 
-    except json.JSONDecodeError as je:
-        preview = text[:1200] if "text" in locals() else ""
-        log.error(f"Gemini API failure (JSON Parse Error): {je}. Response preview: {preview}")
-        return None
-    except Exception as e:
-        log.error(f"Gemini API failure: {e}")
-        return None
+    return None
 
 # ======================================================================
 # PHASE 1: ENRICHMENT (Fixing Incomplete Data)
@@ -1216,7 +1268,7 @@ Set "categories_valid" to true only when at least one selected category is clear
         """
         
 # BARIS DI BAWAH INI SEKARANG SUDAH MASUK KE DALAM LOOP (Indentasi Benar)
-        updated_item = call_gemini(api_key, prompt)
+        updated_item = call_gemini(api_key, prompt, model="gemini-2.5-flash")
         if updated_item and isinstance(updated_item, dict):
             normalize_ai_classification(updated_item)
             resource_schema_defaults(updated_item)
@@ -1435,7 +1487,7 @@ Return exactly ONE JSON object and nothing else. Do not return multiple JSON obj
 """
 
 
-        updated = call_gemini(api_key, prompt)
+        updated = call_gemini(api_key, prompt, model="gemini-3.5-flash-lite")
 
         if isinstance(updated, dict):
             if isinstance(updated.get("resource_mapping"), dict):
@@ -1464,7 +1516,7 @@ Return exactly ONE JSON object and nothing else. Do not return multiple JSON obj
         else:
             log.warning("Resource enrichment returned no valid JSON for: %s. Retrying once.", element_name)
             retry_prompt = prompt + "\n\nSTRICT RETRY: Return exactly ONE JSON object matching the requested schema. Do not include prose, Markdown, or additional JSON documents."
-            updated = call_gemini(api_key, retry_prompt)
+            updated = call_gemini(api_key, retry_prompt, model="gemini-3.6-flash")
             if isinstance(updated, dict):
                 if isinstance(updated.get("resource_mapping"), dict):
                     item["resource_mapping"] = updated["resource_mapping"]
@@ -1578,7 +1630,7 @@ Explain the mechanism in "drr_mechanism".
         ]
         """
         
-        new_items = call_gemini(api_key, prompt)
+        new_items = call_gemini(api_key, prompt, model="gemini-2.5-flash")
         
        # PERBAIKAN: Jarak spasi di bawah ini sudah sejajar dengan 'new_items'
         if isinstance(new_items, list):
