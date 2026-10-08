@@ -1042,54 +1042,59 @@ def normalize_ai_classification(item):
 # ======================================================================
 
 
-def call_gemini(api_key, prompt):
+def call_gemini(api_key, prompt, response_schema=None):
     url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
-    
+
+    generation_config = {
+        "temperature": 0.25,
+        "maxOutputTokens": 8192,
+        "responseMimeType": "application/json"
+    }
+    if response_schema:
+        generation_config["responseSchema"] = response_schema
+
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "tools": [{"googleSearch": {}}],
-        "generationConfig": {
-            "temperature": 0.4,
-            "maxOutputTokens": 8192
-        }
+        "generationConfig": generation_config
     }
 
     headers = {
-        'Content-Type': 'application/json',
-        'x-goog-api-key': api_key
+        "Content-Type": "application/json",
+        "x-goog-api-key": api_key
     }
 
     try:
-        response = requests.post(url, json=payload, headers=headers)
+        response = requests.post(url, json=payload, headers=headers, timeout=180)
         if response.status_code != 200:
             log.error(f"Google API Error: {response.text}")
             return None
 
         data = response.json()
-        text = data['candidates'][0]['content']['parts'][0]['text']
-        
-        # 1. Ekstraksi via Regex untuk Blok Markdown ```json ... ```
-        match = re.search(r'```(?:json)?\s*([\s\S]*?)\s*```', text)
-        clean_text = match.group(1).strip() if match else text.strip()
-        
-        # 2. Slicing Fallback jika tidak ada tag markdown
-        if not match:
-            start_idx = clean_text.find('[') if '[' in clean_text else clean_text.find('{')
-            end_idx = clean_text.rfind(']') if clean_text.rfind(']') > clean_text.rfind('}') else clean_text.rfind('}')
-            if start_idx != -1 and end_idx != -1:
-                clean_text = clean_text[start_idx:end_idx+1]
+        text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
 
-        return json.loads(clean_text)
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            pass
+
+        decoder = json.JSONDecoder()
+        for idx, char in enumerate(text):
+            if char not in "[{":
+                continue
+            try:
+                obj, end_idx = decoder.raw_decode(text[idx:])
+                trailing = text[idx + end_idx:].strip()
+                if not trailing:
+                    return obj
+            except json.JSONDecodeError:
+                continue
+
+        raise json.JSONDecodeError("No valid standalone JSON document found", text, 0)
 
     except json.JSONDecodeError as je:
-        # Fallback ekstraksi JSON murni jika ada karakter nyasar di akhir
-        try:
-            json_match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', text)
-            if json_match:
-                return json.loads(json_match.group(0))
-        except Exception:
-            pass
-        log.error(f"Gemini API failure (JSON Parse Error): {je}")
+        preview = text[:1200] if "text" in locals() else ""
+        log.error(f"Gemini API failure (JSON Parse Error): {je}. Response preview: {preview}")
         return None
     except Exception as e:
         log.error(f"Gemini API failure: {e}")
@@ -1422,7 +1427,59 @@ SCORING
 Do not use the opportunity scores to imply financial viability.
 """
 
-        updated = call_gemini(api_key, prompt)
+
+        resource_response_schema = {
+            "type": "OBJECT",
+            "properties": {
+                "resource_mapping": {
+                    "type": "OBJECT",
+                    "properties": {
+                        "knowledge_resources": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "material_resources": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "human_resources": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "place_resources": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "institutional_resources": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}}
+                    },
+                    "required": ["knowledge_resources", "material_resources", "human_resources", "place_resources", "institutional_resources"]
+                },
+                "value_chain": {
+                    "type": "OBJECT",
+                    "properties": {
+                        "production": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "products": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "services": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "experience": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "education": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}}
+                    },
+                    "required": ["production", "products", "services", "experience", "education"]
+                },
+                "opportunity_analysis": {
+                    "type": "OBJECT",
+                    "properties": {
+                        "livelihood_potential": {"type": "INTEGER"},
+                        "tourism_potential": {"type": "INTEGER"},
+                        "education_potential": {"type": "INTEGER"},
+                        "creative_industry_potential": {"type": "INTEGER"},
+                        "digital_potential": {"type": "INTEGER"}
+                    },
+                    "required": ["livelihood_potential", "tourism_potential", "education_potential", "creative_industry_potential", "digital_potential"]
+                },
+                "resource_mobilization": {
+                    "type": "OBJECT",
+                    "properties": {
+                        "public_sector": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "private_sector": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "academic": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "community": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}},
+                        "potential_funding": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {"name": {"type": "STRING"}, "description": {"type": "STRING"}, "evidence_urls": {"type": "ARRAY", "items": {"type": "STRING"}}}, "required": ["name", "description", "evidence_urls"]}}
+                    },
+                    "required": ["public_sector", "private_sector", "academic", "community", "potential_funding"]
+                }
+            },
+            "required": ["resource_mapping", "value_chain", "opportunity_analysis", "resource_mobilization"]
+        }
+
+        updated = call_gemini(api_key, prompt, resource_response_schema)
 
         if isinstance(updated, dict):
             if isinstance(updated.get("resource_mapping"), dict):
@@ -1449,7 +1506,32 @@ Do not use the opportunity scores to imply financial viability.
             enriched_count += 1
             log.info("✅ Resource & Opportunity enrichment completed: %s", element_name)
         else:
-            log.warning("Resource enrichment returned no valid JSON for: %s", element_name)
+            log.warning("Resource enrichment returned no valid JSON for: %s. Retrying once.", element_name)
+            retry_prompt = prompt + "\n\nSTRICT RETRY: Return exactly ONE JSON object matching the requested schema. Do not include prose, Markdown, or additional JSON documents."
+            updated = call_gemini(api_key, retry_prompt, resource_response_schema)
+            if isinstance(updated, dict):
+                if isinstance(updated.get("resource_mapping"), dict):
+                    item["resource_mapping"] = updated["resource_mapping"]
+                if isinstance(updated.get("value_chain"), dict):
+                    item["value_chain"] = updated["value_chain"]
+                if isinstance(updated.get("opportunity_analysis"), dict):
+                    raw_scores = updated["opportunity_analysis"]
+                    item["opportunity_analysis"] = {
+                        key: max(0, min(100, int(raw_scores.get(key, 0) or 0)))
+                        for key in (
+                            "livelihood_potential", "tourism_potential",
+                            "education_potential", "creative_industry_potential",
+                            "digital_potential"
+                        )
+                    }
+                if isinstance(updated.get("resource_mobilization"), dict):
+                    item["resource_mobilization"] = updated["resource_mobilization"]
+                resource_schema_defaults(item)
+                item["resource_enriched_at"] = datetime.now().isoformat() + "Z"
+                enriched_count += 1
+                log.info("✅ Resource & Opportunity enrichment completed on retry: %s", element_name)
+            else:
+                log.error("Resource enrichment retry also failed: %s", element_name)
 
         time.sleep(5)
 
