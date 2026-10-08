@@ -1423,7 +1423,9 @@ def enrich_resource_data(api_key, inventory):
         )
     )
 
-    target_items = candidates[:3]
+    # Resource intelligence is deliberately micro-batched to reduce quota/token pressure.
+    # One run handles at most two records; the cursor/order remains deterministic.
+    target_items = candidates[:2]
     if not target_items:
         log.info("No inventory items available for Resource & Opportunity enrichment.")
         return 0
@@ -1436,6 +1438,11 @@ def enrich_resource_data(api_key, inventory):
         analysis = item.get("resume_analisa", {})
         process = item.get("resume_tata_cara", {})
         existing_sources = item.get("source_urls", [])
+        compact_description = str(analysis.get("description", "") or "")[:900]
+        compact_significance = str(analysis.get("cultural_significance", "") or "")[:700]
+        compact_materials = resourceArray(process.get("materials_and_tools", []))[:3]
+        compact_process = resourceArray(process.get("step_by_step", []))[:3]
+        compact_sources = existing_sources[:3]
 
         prompt = f"""
 You are a heritage development and cultural economy intelligence analyst.
@@ -1444,11 +1451,11 @@ Use Google Search to enrich ONE EXISTING Intangible Cultural Heritage record:
 - Element: {element_name}
 - Country: {location.get("country", "")}
 - Province(s): {location.get("provinces", [])}
-- Description: {analysis.get("description", "")}
-- Cultural significance: {analysis.get("cultural_significance", "")}
-- Materials/tools: {process.get("materials_and_tools", [])}
-- Process: {process.get("step_by_step", [])}
-- Existing sources: {existing_sources}
+- Description: {compact_description}
+- Cultural significance: {compact_significance}
+- Materials/tools: {compact_materials}
+- Process: {compact_process}
+- Existing sources: {compact_sources}
 
 OBJECTIVE
 Build a source-grounded Resource & Opportunity profile. This is NOT a business plan and MUST NOT invent market demand, revenue, costs, community ownership, named organizations, or funding opportunities.
@@ -1513,12 +1520,24 @@ SCORING
 75-100 = strong documented signal
 
 Do not use the opportunity scores to imply financial viability.
-For each resource/value-chain/mobilization array, return at most 3 items.
+For each resource/value-chain/mobilization array, return at most 2 items.
 Return exactly ONE JSON object and nothing else. Do not return multiple JSON objects, arrays, Markdown fences, or explanatory text.
 """
 
 
-        updated = call_gemini(api_key, prompt, model="gemini-3.5-flash-lite")
+        try:
+            updated = call_gemini(
+                api_key,
+                prompt,
+                model="gemini-3.5-flash-lite",
+                max_output_tokens=3072
+            )
+        except GeminiQuotaExhausted:
+            log.error(
+                "🛑 Resource enrichment paused: Gemini project quota exhausted; "
+                "no fallback model will be attempted."
+            )
+            break
 
         if isinstance(updated, dict):
             if isinstance(updated.get("resource_mapping"), dict):
@@ -1547,7 +1566,18 @@ Return exactly ONE JSON object and nothing else. Do not return multiple JSON obj
         else:
             log.warning("Resource enrichment returned no valid JSON for: %s. Retrying once.", element_name)
             retry_prompt = prompt + "\n\nSTRICT RETRY: Return exactly ONE JSON object matching the requested schema. Do not include prose, Markdown, or additional JSON documents."
-            updated = call_gemini(api_key, retry_prompt, model="gemini-3.6-flash")
+            try:
+                updated = call_gemini(
+                    api_key,
+                    retry_prompt,
+                    model="gemini-3.6-flash",
+                    max_output_tokens=3072
+                )
+            except GeminiQuotaExhausted:
+                log.error(
+                    "🛑 Resource enrichment stopped during fallback: Gemini project quota exhausted."
+                )
+                break
             if isinstance(updated, dict):
                 if isinstance(updated.get("resource_mapping"), dict):
                     item["resource_mapping"] = updated["resource_mapping"]
@@ -1572,7 +1602,7 @@ Return exactly ONE JSON object and nothing else. Do not return multiple JSON obj
             else:
                 log.error("Resource enrichment retry also failed: %s", element_name)
 
-        time.sleep(5)
+        time.sleep(15)
 
     return enriched_count
 
