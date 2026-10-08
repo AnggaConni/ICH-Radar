@@ -1440,9 +1440,11 @@ def enrich_resource_data(api_key, inventory):
         existing_sources = item.get("source_urls", [])
         compact_description = str(analysis.get("description", "") or "")[:900]
         compact_significance = str(analysis.get("cultural_significance", "") or "")[:700]
-        compact_materials = resourceArray(process.get("materials_and_tools", []))[:3]
-        compact_process = resourceArray(process.get("step_by_step", []))[:3]
-        compact_sources = existing_sources[:3]
+        raw_materials = process.get("materials_and_tools", [])
+        raw_process = process.get("step_by_step", [])
+        compact_materials = raw_materials[:3] if isinstance(raw_materials, list) else []
+        compact_process = raw_process[:3] if isinstance(raw_process, list) else []
+        compact_sources = existing_sources[:3] if isinstance(existing_sources, list) else []
 
         prompt = f"""
 You are a heritage development and cultural economy intelligence analyst.
