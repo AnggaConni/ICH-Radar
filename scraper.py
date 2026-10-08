@@ -1041,8 +1041,11 @@ def normalize_ai_classification(item):
 # CORE: GEMINI AI INTERACTION
 # ======================================================================
 
+class GeminiQuotaExhausted(RuntimeError):
+    """Project quota/billing allowance is exhausted; stop this run cleanly."""
 
-def call_gemini(api_key, prompt, model="gemini-2.5-flash"):
+
+def call_gemini(api_key, prompt, model="gemini-2.5-flash", max_output_tokens=8192):
     """Call Gemini with Google Search grounding and resilient transient-error handling."""
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
@@ -1051,7 +1054,7 @@ def call_gemini(api_key, prompt, model="gemini-2.5-flash"):
     search_tool = {"google_search": {}} if model.startswith("gemini-3") else {"googleSearch": {}}
 
     generation_config = {
-        "maxOutputTokens": 8192
+        "maxOutputTokens": max_output_tokens
     }
 
     # Gemini 3.x no longer needs the old sampling controls used by 2.5.
@@ -1108,6 +1111,34 @@ def call_gemini(api_key, prompt, model="gemini-2.5-flash"):
                 )
 
             if response.status_code in transient_statuses:
+                error_text = response.text[:2000]
+                error_status = ""
+                error_code = ""
+                error_message = ""
+                try:
+                    error_payload = response.json().get("error", {})
+                    error_status = str(error_payload.get("status", ""))
+                    error_code = str(error_payload.get("code", ""))
+                    error_message = str(error_payload.get("message", ""))
+                except (ValueError, AttributeError):
+                    pass
+
+                hard_quota = (
+                    response.status_code == 429
+                    and (
+                        "exceeded your current quota" in error_message.lower()
+                        or error_code.lower() == "quota_exceeded"
+                        or error_status.upper() == "QUOTA_EXCEEDED"
+                    )
+                )
+                if hard_quota:
+                    log.error(
+                        "Gemini project quota exhausted for %s. Stopping retries for this run: %s",
+                        model,
+                        error_message or error_text
+                    )
+                    raise GeminiQuotaExhausted(error_message or error_text)
+
                 if attempt < max_attempts:
                     delay = min(30, (2 ** (attempt - 1)) + random.uniform(0.25, 1.25))
                     log.warning(
@@ -1120,7 +1151,7 @@ def call_gemini(api_key, prompt, model="gemini-2.5-flash"):
 
                 log.error(
                     "Gemini transient HTTP %s persisted after %s attempts for %s: %s",
-                    response.status_code, max_attempts, model, response.text[:1000]
+                    response.status_code, max_attempts, model, error_text
                 )
                 return None
 
