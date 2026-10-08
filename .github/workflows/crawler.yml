@@ -2,9 +2,9 @@ name: ICH Shared Heritage Auto-Crawler
 
 on:
   schedule:
-    # Run every day. Scheduled runs alternate:
-    # Odd UTC day-of-year  -> discovery + standard data enrichment
-    # Even UTC day-of-year -> Resource & Opportunity enrichment
+    # Run every day. Scheduled runs alternate by absolute UTC day:
+    # One day -> discovery + standard data enrichment
+    # Next day -> Resource & Opportunity enrichment
     - cron: "0 0 * * *"
   workflow_dispatch:
     inputs:
@@ -79,6 +79,9 @@ jobs:
               echo "Scheduled mode: RESOURCE & OPPORTUNITY ENRICHMENT"
             fi
           fi
+
+      - name: Validate Python syntax
+        run: python -m py_compile scraper.py
 
       - name: Run Scraper & Gemini AI
         env:
