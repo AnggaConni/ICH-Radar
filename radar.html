@@ -2814,22 +2814,26 @@ const COUNTRY_CENTROIDS = {
     return {...e,resourceDepth:Math.round((e.knowledge+e.place+e.practice)/3),overall:Math.round((e.knowledge+e.place+e.practice+e.connection+e.resilience+e.lineage+e.enrichment)/7),practiceDepth:Math.min(100,practiceBase+productionBonus+productBonus)};
   }
   function resourceLensSignals(item){
-    const a=item?.resume_analisa||{},oa=item?.opportunity_analysis||{},vc=item?.value_chain||{},drr=String(a.drr_relevance_level||'').toLowerCase();
+    const oa=item?.opportunity_analysis||{};
+    const vc=item?.value_chain||{};
     const score=k=>Math.max(0,Math.min(100,Number(oa[k]||0)));
-    const educationEvidence=resourceArray(vc.education).length>0;
-    const experienceEvidence=resourceArray(vc.experience).length>0;
-    const productEvidence=resourceArray(vc.products).length>0||resourceArray(vc.services).length>0;
-    const resilience=drr.includes('directly')||drr.includes('indirectly');
     const labels=[
-      ['Livelihood','ph-briefcase','livelihood_potential',s=>s>=50||resourceArray(vc.production).length>0],
-      ['Education','ph-student','education_potential',s=>s>=50||educationEvidence],
-      ['Tourism / Experience','ph-map-pin-area','tourism_potential',s=>s>=50||experienceEvidence],
-      ['Creative Industry','ph-paint-brush','creative_industry_potential',s=>s>=50||productEvidence],
-      ['Digital','ph-device-mobile','digital_potential',s=>s>=50]
+      ['Livelihood','ph-briefcase','livelihood_potential'],
+      ['Education','ph-student','education_potential'],
+      ['Tourism / Experience','ph-map-pin-area','tourism_potential'],
+      ['Creative Industry','ph-paint-brush','creative_industry_potential'],
+      ['Digital','ph-device-mobile','digital_potential']
     ];
-    return labels.map(([title,icon,key,ev])=>{
-      const s=score(key),strong=s>=75||ev(s),moderate=s>=40||ev(s);
-      return {title,icon,signal:s>0?'AI-derived potential score: '+s+'/100 based on current evidence.':'No scored evidence yet; await Resource & Opportunity enrichment.',level:strong?'strong':moderate?'moderate':'none'};
+    return labels.map(([title,icon,key])=>{
+      const s=score(key);
+      return {
+        title,
+        icon,
+        signal:s>0
+          ? 'AI-derived potential score: '+s+'/100 based on current evidence.'
+          : 'No scored potential yet; awaiting Resource & Opportunity enrichment.',
+        level:s>=75?'strong':s>=40?'moderate':'none'
+      };
     });
   }
   function initResourceOpportunity(){
@@ -2856,7 +2860,7 @@ const COUNTRY_CENTROIDS = {
     if(!item)return;
     const m=resourceMetrics(item),title=document.getElementById('resource-selected-title'),meta=document.getElementById('resource-selected-meta'),center=document.getElementById('resource-node-center');
     if(title)title.textContent=item.element_name||'Unnamed element';if(center)center.textContent=item.element_name||'ICH ELEMENT';
-    if(meta)meta.innerHTML=[item.location?.country?'<span class="resource-chip">'+escapeHtml(item.location.country)+'</span>':'',...getIcmCategories(item).map(c=>'<span class="resource-chip">'+escapeHtml(c)+'</span>'),'<span class="resource-chip">Evidence readiness '+m.overall+'%</span>','<span class="resource-chip">Enrichment '+m.enrichment+'%</span>'].filter(Boolean).join('');
+    if(meta)meta.innerHTML=[item.location?.country?'<span class="resource-chip">'+escapeHtml(item.location.country)+'</span>':'',...getIcmCategories(item).map(c=>'<span class="resource-chip">'+escapeHtml(c)+'</span>'),'<span class="resource-chip">Evidence readiness '+m.overall+'%</span>','<span class="resource-chip">Enrichment '+m.enrichment+'%</span>',item.resource_enriched_at?'<span class="resource-chip">Updated '+escapeHtml(item.resource_enriched_at.slice(0,10))+'</span>':'' ].filter(Boolean).join('');
     document.getElementById('resource-node-knowledge').textContent=m.knowledge+'%';document.getElementById('resource-node-place').textContent=m.place+'%';document.getElementById('resource-node-practice').textContent=m.practice+'%';document.getElementById('resource-node-connection').textContent=m.connection+'%';document.getElementById('resource-node-resilience').textContent=m.resilience+'%';
     const rows=[['Knowledge & Narrative',m.knowledge],['Place',m.place],['Practice & Materials',m.practice],['Heritage Connections',m.connection],['Resilience Evidence',m.resilience],['Resource Enrichment',m.enrichment]];
     document.getElementById('resource-readiness').innerHTML=rows.map(x=>'<div class="readiness-row"><div class="readiness-label">'+escapeHtml(x[0])+'</div><div class="readiness-track"><div class="readiness-fill" style="width:'+x[1]+'%"></div></div><div class="readiness-value">'+x[1]+'%</div></div>').join('');
@@ -2874,14 +2878,21 @@ const COUNTRY_CENTROIDS = {
       ['Products',vc.products],
       ['Services',vc.services],
       ['Experience',vc.experience],
-      ['Education',vc.education]
+      ['Education',vc.education],
+      ['Public sector',mob.public_sector],
+      ['Private sector',mob.private_sector],
+      ['Academic',mob.academic],
+      ['Community',mob.community],
+      ['Potential funding',mob.potential_funding]
     ];
     document.getElementById('resource-detail-grid').innerHTML=detailGroups.map(([label,arr])=>{
       const values=resourceArray(arr);
       const html=values.slice(0,4).map(v=>{
         const name=typeof v==='object'?(v.name||v.title||'Unnamed'):String(v);
         const desc=typeof v==='object'?(v.description||''):'';
-        return '<li><strong>'+escapeHtml(name)+'</strong>'+(desc?' — '+escapeHtml(desc):'')+'</li>';
+        const urls=typeof v==='object'&&Array.isArray(v.evidence_urls)?v.evidence_urls.filter(Boolean):[];
+        const links=urls.slice(0,2).map(u=>'<a href="'+escapeHtml(u)+'" target="_blank" rel="noopener noreferrer" class="block mt-1 text-[10px] text-brand-accent hover:underline break-all">'+escapeHtml(u)+'</a>').join('');
+        return '<li><strong>'+escapeHtml(name)+'</strong>'+(desc?' — '+escapeHtml(desc):'')+links+'</li>';
       }).join('');
       return '<div class="resource-detail-card"><h4>'+escapeHtml(label)+'</h4>'+(html?'<ul>'+html+'</ul>':'<div class="detail-empty">No documented entries yet.</div>')+'</div>';
     }).join('');
@@ -2894,9 +2905,9 @@ const COUNTRY_CENTROIDS = {
         ['Market / Customer',resourceArray(vc.products).concat(resourceArray(vc.services))],
         ['Cost / Unit Economics',[]],
         ['Stakeholders / Finance',stakeholders.concat(funding)],
-        ['Safeguarding Plan',resourceArray(vc.education)]
+        ['Safeguarding Plan',[]]
       ];
-      gap.innerHTML=cards.map(([label,arr])=>'<div class="business-gap"><div class="gap-title">'+escapeHtml(label)+'</div><div class="gap-state">'+(arr.length?escapeHtml((typeof arr[0]==='object'?(arr[0].name||arr[0].title):String(arr[0])))+' · '+arr.length+' documented item(s)':'Not structured / no evidence yet')+'</div></div>').join('');
+      gap.innerHTML=cards.map(([label,arr])=>'<div class="business-gap"><div class="gap-title">'+escapeHtml(label)+'</div><div class="gap-state">'+(arr.length?escapeHtml((typeof arr[0]==='object'?(arr[0].name||arr[0].title):String(arr[0])))+' · '+arr.length+' documented item(s)':'Not structured / no dedicated evidence field yet')+'</div></div>').join('');
     }
     renderResourceMatrix();
   }
