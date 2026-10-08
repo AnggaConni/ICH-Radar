@@ -73,16 +73,16 @@ The dashboard includes:
 
 ## ⚙️ How It Works
 
-The system operates in **two automatic phases** per scheduled run:
+The system operates in an **alternating daily cycle**:
 
-### Phase 0 — Data Audit
-Before doing anything new, the engine scans existing records for data quality issues — specifically missing or broken thumbnail images. Any `COMPLETE` record with an invalid image is downgraded to `INCOMPLETE` and queued for re-enrichment.
+### Day A — Data Discovery & Standard Enrichment
+The engine audits existing records, enriches up to 3 incomplete records, and discovers up to 3 new heritage elements.
 
-### Phase 1 — Enrichment
-The engine selects up to **3 incomplete records** from the previous run and re-queries Gemini with a targeted prompt to find the missing data — a step-by-step crafting process, a recipe, or a valid source URL with an image. If the missing data is found, the record is upgraded to `COMPLETE`.
+### Day B — Resource & Opportunity Enrichment
+The engine selects up to **3 existing records** with the least Resource & Opportunity coverage and uses Gemini + Google Search to enrich `resource_mapping`, `value_chain`, `opportunity_analysis`, and `resource_mobilization`.
 
-### Phase 2 — Discovery
-The engine randomly selects keywords from a multilingual database of 200+ search patterns and instructs Gemini to discover **2–4 brand-new heritage elements** not already in the inventory. Each new element is geocoded, assigned a thumbnail, and stored.
+### Resource & Opportunity data model
+Each enriched record can now carry four additional analytical layers: resource mapping, value chain, opportunity indicators (0–100), and resource mobilization pathways. These are evidence-grounded analytical fields, not validated business plans.
 
 ```
 Scheduled Trigger (every 2 days)
@@ -169,6 +169,44 @@ The crawler produces and maintains a single `data.json` file that serves as the 
       "Oral Traditions": 36,
       "Social Practices & Rituals": 51
     }
+  }
+}
+```
+
+
+### Resource & Opportunity enrichment
+
+Existing inventory records can be progressively enriched on alternating days:
+
+```json
+{
+  "resource_mapping": {
+    "knowledge_resources": [],
+    "material_resources": [],
+    "human_resources": [],
+    "place_resources": [],
+    "institutional_resources": []
+  },
+  "value_chain": {
+    "production": [],
+    "products": [],
+    "services": [],
+    "experience": [],
+    "education": []
+  },
+  "opportunity_analysis": {
+    "livelihood_potential": 0,
+    "tourism_potential": 0,
+    "education_potential": 0,
+    "creative_industry_potential": 0,
+    "digital_potential": 0
+  },
+  "resource_mobilization": {
+    "public_sector": [],
+    "private_sector": [],
+    "academic": [],
+    "community": [],
+    "potential_funding": []
   }
 }
 ```
@@ -355,12 +393,12 @@ To increase discovery throughput, raise `max_discoveries_per_run`. Keep in mind 
 
 ### GitHub Actions workflow (`crawler.yml`)
 
-The workflow is scheduled via cron. The default runs every 2 days at 02:00 UTC:
+The workflow runs daily at 00:00 UTC (07:00 WIB). Scheduled runs alternate between data discovery/standard enrichment and Resource & Opportunity enrichment:
 
 ```yaml
 on:
   schedule:
-    - cron: '0 2 */2 * *'
+    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       force_run:
