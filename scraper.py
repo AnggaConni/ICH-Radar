@@ -1209,6 +1209,7 @@ Set "categories_valid" to true only when at least one selected category is clear
         updated_item = call_gemini(api_key, prompt)
         if updated_item and isinstance(updated_item, dict):
             normalize_ai_classification(updated_item)
+            resource_schema_defaults(updated_item)
             # --- LOGIKA KOORDINAT ---
             country = updated_item.get("location", {}).get("country", "")
             lat, lng = get_coordinates(country)
@@ -1267,6 +1268,10 @@ def resource_schema_defaults(item):
     }
 
     changed = False
+    if "resource_enriched_at" not in item:
+        item["resource_enriched_at"] = None
+        changed = True
+
     for section, section_defaults in defaults.items():
         current = item.get(section)
         if not isinstance(current, dict):
@@ -1320,7 +1325,8 @@ def enrich_resource_data(api_key, inventory):
         inventory,
         key=lambda x: (
             resource_enrichment_score(x),
-            x.get("scraped_at", "")
+            0 if not x.get("resource_enriched_at") else 1,
+            x.get("resource_enriched_at") or "9999-12-31T23:59:59Z"
         )
     )
 
@@ -1439,6 +1445,7 @@ Do not use the opportunity scores to imply financial viability.
                 item["resource_mobilization"] = updated["resource_mobilization"]
 
             resource_schema_defaults(item)
+            item["resource_enriched_at"] = datetime.now().isoformat() + "Z"
             enriched_count += 1
             log.info("✅ Resource & Opportunity enrichment completed: %s", element_name)
         else:
@@ -1561,6 +1568,7 @@ Explain the mechanism in "drr_mechanism".
                     if not item.get("thumbnail_url"):
                         item["thumbnail_url"] = get_screenshot_url(url_to_screenshot, name)
                     
+                    resource_schema_defaults(item)
                     inventory.append(item)
                     discovered_count += 1
                     log.info(f"Discovered: {name} (Coords: {lat}, {lng})")
@@ -1760,7 +1768,7 @@ def main():
             else:
                 log.info("Data pipeline complete. No new data added or enriched.")
         else:
-            log.info("⏭️ Data crawl skipped (resume_only mode).")
+            log.info("⏭️ Data discovery skipped (non-data mode).")
 
         if run_resource:
             schema_changed = 0
