@@ -4665,78 +4665,197 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:04:47.455235Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Ancestral Fermentation and 12-Month Maceration Techniques",
+            "description": "Generational knowledge preserved by families in Magdalena de Cao regarding the precise twelve-month maceration process, temperature control, and ingredient balancing required to produce Chicha de Año.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Jora Corn and Regional Sugarcane Derivatives",
+            "description": "Raw inputs including malted jora corn, chancaca blocks, and raw cane sugar that constitute the foundational material base of the beverage.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Traditional Brewers and Local Holders",
+            "description": "Local producers and lineage bearers in Magdalena de Cao who safeguard the traditional recipes and pass down preparation secrets from parents to children.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Magdalena de Cao District and El Brujo Archaeological Complex",
+            "description": "The geographical and cultural district in the Chicama Valley, La Libertad, closely linked to Moche heritage and historic culinary traditions.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Regional Government and Tourism Declarations",
+            "description": "Official municipal and regional designations recognizing Chicha de Año as a flagship product and regional heritage of La Libertad.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Artisanal Preparation and 12-Month Maceration",
+            "description": "The end-to-end craft process involving corn germination, cooking with chancaca in clay pots, straining, and prolonged twelve-month aging.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Chicha de Año Bottled Beverage",
+            "description": "The finished fermented alcoholic specialty drink characterized by its cherry liqueur-like sweetness and unique alcohol content resulting from long aging.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Local Gastronomic Tourism and Tastings",
+            "description": "Guided tasting experiences offered to visitors exploring Magdalena de Cao alongside local northern Peruvian cuisine.",
+            "evidence_urls": [
+              "https://elbrujo.pe/6-bebidas-tradicionales-y-deliciosas-de-peru-que-debes-probar/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Cultural Heritage Interpretation Routes",
+            "description": "Visitor engagement combining archaeological exploration at El Brujo with encounters with traditional beverage bearers in Magdalena de Cao.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Knowledge Transmission",
+            "description": "Informal transmission of brewing techniques and cultural history from older practitioners to younger family and community members.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 45,
+        "tourism_potential": 60,
+        "education_potential": 40,
+        "creative_industry_potential": 35,
+        "digital_potential": 20
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Regional Government and Tourism Office Recognition",
+            "description": "Official institutional acknowledgment of Chicha de Año as regional heritage and a flagship product of Magdalena de Cao.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Magdalena de Cao Producer Lineages",
+            "description": "Family networks and local tradition-bearers who maintain control over recipes, preparation timing, and community-based transmission.",
+            "evidence_urls": [
+              "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:04:47.455235Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Small-scale household production provides supplemental local economic value and reinforces community identity through direct sales to visitors.",
+          "evidence_urls": [
+            "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Proximity to the El Brujo Archaeological Complex allows synergy with cultural tourism, drawing visitors seeking authentic regional gastronomy.",
+          "evidence_urls": [
+            "https://elbrujo.pe/6-bebidas-tradicionales-y-deliciosas-de-peru-que-debes-probar/",
+            "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The element serves as a living case study for historical syncretism between Andean corn cultivation and European-introduced sugarcane ingredients.",
+          "evidence_urls": [
+            "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Gastronomic storytelling, culinary documentation, and cultural heritage narratives offer modest pathways for artisan valorization without industrial overreach.",
+          "evidence_urls": [
+            "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited digital documentation exists primarily via cultural promotion articles and museum web features, offering basic awareness rather than active digital commerce.",
+          "evidence_urls": [
+            "https://elbrujo.pe/la-chicha-de-ano-tradicion-e-historia-en-una-bebida/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 2,
+        "evidence_item_count": 17,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:04:47.455235Z",
         "last_error": null
       }
     },
@@ -4827,78 +4946,248 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:05:08.435584Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Guarani Cosmology and Oral Tradition",
+            "description": "Ancestral philosophy and spiritual teachings of Nhanderú and Tupã guiding balance, respect, and the concept of good living.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Ecological Knowledge (TEK)",
+            "description": "Intimate knowledge of forest management, weather interpretation, animal behavior, and native plant identification.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Sacred and Medicinal Plants",
+            "description": "Traditional cultivation of native seeds including corn, cotton, pumpkin, tobacco, cassava, and medicinal herbs.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Takuapu and Ritual Instruments",
+            "description": "Traditional percussion instruments used by women to pulse rhythms into the earth during ceremonies.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Elders, Shamans, and Traditional Knowledge Keepers",
+            "description": "Community leaders and spiritual guides who preserve cosmological narratives, rituals, and language.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Indigenous Educators and Artisans",
+            "description": "Community members fostering cultural transmission, food sovereignty, and traditional craftsmanship.",
+            "evidence_urls": [
+              "https://www.lume.ufrgs.br/handle/10183/166802"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Tekoha (Territory for Being)",
+            "description": "Ancestral lands, forests, and waterways inextricably linked to the Guarani way of life and spiritual practice.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Opy (Prayer Houses)",
+            "description": "Sacred architectural spaces dedicated to community prayers, rituals, and song cycles.",
+            "evidence_urls": [
+              "https://www.ufrgs.br/ufrgstv/projeto-teko-pora/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Guarani Yvyrupa Commission (CGY)",
+            "description": "Indigenous political articulation defending territorial rights, education, and health.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "University Extension and Research Programs",
+            "description": "Academic frameworks supporting intercultural dialogue, community gardens, and documentation.",
+            "evidence_urls": [
+              "https://www.lume.ufrgs.br/handle/10183/166802",
+              "https://www.ufrgs.br/ufrgstv/projeto-teko-pora/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Traditional Agroecology and Seed Saving",
+            "description": "Cultivation of heirloom seeds and maintenance of agrobiodiversity in harmony with forest ecosystems.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Indigenous Handicrafts",
+            "description": "Carved wooden animal figures, woven items, and craft objects embodying cosmological narratives.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Community-Guided Environmental Education",
+            "description": "Ethical guidance and workshops on forest conservation, plant medicine, and alternative philosophies of living.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Community-Managed Cultural Tourism",
+            "description": "Controlled, respectful visits to village spaces, native plant nurseries, and participation in cultural exchanges managed by community members.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intercultural School Curricula",
+            "description": "Bilingual and indigenous-led educational initiatives transmitting traditional ecological knowledge and cosmology to younger generations.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 45,
+        "tourism_potential": 30,
+        "education_potential": 70,
+        "creative_industry_potential": 40,
+        "digital_potential": 15
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "State and Municipal Indigenous Education Secretariats",
+            "description": "Public educational bodies collaborating with indigenous teachers on differentiated school guidelines.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
-        "academic": [],
-        "community": [],
+        "academic": [
+          {
+            "name": "Federal Universities (e.g., UFRGS)",
+            "description": "Academic extension programs, research groups, and community gardens supporting cultural safeguarding.",
+            "evidence_urls": [
+              "https://www.lume.ufrgs.br/handle/10183/166802",
+              "https://www.ufrgs.br/ufrgstv/projeto-teko-pora/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Guarani Village Councils and Elders",
+            "description": "Self-governing community structures determining internal protocols, territorial defense, and ritual life.",
+            "evidence_urls": [
+              "https://wheretheleavesfall.com/articles/teko-pora"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:05:08.435584Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Rooted in community-led agroecology, seed saving, and craft production, supporting localized food sovereignty and small-scale autonomous economies.",
+          "evidence_urls": [
+            "https://wheretheleavesfall.com/articles/teko-pora"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited strictly by the necessity of community consent, cultural preservation, and protection of sacred spaces (opy) from over-commercialization.",
+          "evidence_urls": [
+            "https://wheretheleavesfall.com/articles/teko-pora"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High demand and alignment with intercultural programs, academic partnerships, and ecological frameworks seeking non-anthropocentric philosophies.",
+          "evidence_urls": [
+            "https://www.lume.ufrgs.br/handle/10183/166802",
+            "https://www.ufrgs.br/ufrgstv/projeto-teko-pora/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Expressed through traditional handicraft production, storytelling, visual arts, and documentary collaborations reflecting ancestral worldview.",
+          "evidence_urls": [
+            "https://wheretheleavesfall.com/articles/teko-pora"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Low digital integration due to the oral, land-based, and sacred nature of the knowledge system, where physical presence and territory (tekoha) are essential.",
+          "evidence_urls": [
+            "https://wheretheleavesfall.com/articles/teko-pora"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 23,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:05:08.435584Z",
         "last_error": null
       }
     },
@@ -5006,79 +5295,199 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:05:30.313493Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Traditional Varenyky Recipes and Techniques",
+            "description": "Generational culinary knowledge encompassing unleavened dough preparation, regional fillings (potatoes, cabbage, cherries, cottage cheese), and tactile measuring methods passed down through families.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Varenyky",
+              "https://annasdelights.com/blogs/news/the-history-of-varenyky"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Folklore and Ritual Symbolism",
+            "description": "Cultural narratives linking the crescent shape of varenyky to the new moon, symbolizing fertility, abundance, new beginnings, and their use in seasonal, wedding, and harvest rituals.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Varenyky",
+              "https://www.veselka.com/what-are-varenyky-the-rich-heritage-of-ukrainian-cuisine/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Dough and Filling Ingredients",
+            "description": "Staple raw materials including all-purpose flour, water, salt, eggs, butter, and regional agricultural fillings such as potatoes, mushrooms, cabbage, and seasonal fruits like sour cherries.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Varenyky"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Kitchen Utensils and Tools",
+            "description": "Basic culinary equipment used for preparation, including rolling pins, round pastry cutters or cups, large mixing bowls, and boiling pots.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Varenyky"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Home Cooks and Community Elders",
+            "description": "Keepers of intangible culinary heritage who maintain traditional preparation techniques, communal wrapping sessions, and oral histories across generations.",
+            "evidence_urls": [
+              "https://annasdelights.com/blogs/news/the-history-of-varenyky",
+              "https://www.veselka.com/what-are-veselka-the-rich-heritage-of-ukrainian-cuisine/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Domestic Kitchens and Community Spaces",
+            "description": "Household kitchens and community gathering spaces where collective cooking, family bonding, and transmission of recipes take place.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Varenyky",
+              "https://www.veselka.com/what-are-veselka-the-rich-heritage-of-ukrainian-cuisine/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Handmade Varenyky Production",
+            "description": "The traditional process of kneading unleavened dough, rolling it thin, cutting circles, filling with sweet or savory ingredients, sealing into a half-moon shape, and boiling.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Varenyky"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional Varenyky Dumplings",
+            "description": "Boiled unleavened dumplings featuring various fillings such as mashed potatoes with fried onions, cabbage, mushrooms, cottage cheese, or cherries, served hot with accompaniments like sour cream (smetana) and butter.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Varenyky"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Communal Cooking Workshops",
+            "description": "Gatherings focused on teaching traditional dough-making, shaping techniques, and regional recipes to younger generations and interested participants.",
+            "evidence_urls": [
+              "https://annasdelights.com/blogs/news/the-history-of-varenyky",
+              "https://www.veselka.com/what-are-veselka-the-rich-heritage-of-ukrainian-cuisine/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Festive and Ritual Dining",
+            "description": "Cultural dining experiences tied to calendar holidays (such as Christmas Eve), weddings, harvest celebrations, and family gatherings where varenyky serve as a central ritual dish.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Varenyky",
+              "https://www.veselka.com/what-are-veselka-the-rich-heritage-of-ukrainian-cuisine/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Culinary Heritage Documentation",
+            "description": "Sharing historical accounts, folklore references, and regional variations of varenyky through publications, media, and cultural platforms.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Varenyky",
+              "https://annasdelights.com/blogs/news/the-history-of-varenyky"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
+        "livelihood_potential": 60,
         "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
+        "education_potential": 70,
+        "creative_industry_potential": 40,
         "digital_potential": 0
       },
       "resource_mobilization": {
         "public_sector": [],
-        "private_sector": [],
+        "private_sector": [
+          {
+            "name": "Restaurants and Food Enterprises",
+            "description": "Establishments featuring traditional and contemporary variations of varenyky on commercial menus, contributing to culinary visibility.",
+            "evidence_urls": [
+              "https://www.veselka.com/what-are-veselka-the-rich-heritage-of-ukrainian-cuisine/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "academic": [],
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:05:30.313493Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Varenyky production supports small-scale food artisans, community caterers, and traditional restaurants showcasing Ukrainian cuisine locally and internationally.",
+          "evidence_urls": [
+            "https://www.veselka.com/what-are-veselka-the-rich-heritage-of-ukrainian-cuisine/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
+          "rationale": "Food tourism and cultural festivals centered around Ukrainian cuisine offer visitors immersive culinary and heritage experiences.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High potential for transmitting culinary skills, historical knowledge, and folklore associated with ritual foods through workshops and cultural programming.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Varenyky",
+            "https://www.veselka.com/what-are-veselka-the-rich-heritage-of-ukrainian-cuisine/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Inspiration for culinary literature, cookbooks, media features, and artistic representations in folklore, songs, and visual culture.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Varenyky"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
+          "rationale": "Widely shared online through digital cooking tutorials, recipe blogs, social media demonstrations, and virtual cultural storytelling.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 4,
+        "evidence_item_count": 15,
+        "uncited_item_count": 2,
+        "invalid_evidence_url_count": 9,
+        "opportunity_scores_with_evidence": 3,
+        "opportunity_scores_without_evidence": 2,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T13:05:30.313493Z",
+        "last_error": "resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; resource_mobilization.community[0] had no valid direct evidence URL and was excluded; tourism_potential score reset to 0 because category-specific evidence URLs were absent; digital_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -5146,79 +5555,159 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:05:54.738975Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Traditional Māori Food Preservation and Fermentation Knowledge",
+            "description": "Intergenerational knowledge regarding the selection of maize cultivars, water-curing techniques, and controlled anaerobic fermentation processes used to create kānga pirau and preserve resources.",
+            "evidence_urls": [
+              "https://teara.govt.nz/en/traditional-cooking-and-preserving",
+              "https://www.tepapa.govt.nz/discover-collections/read-watch-play/maori/traditional-maori-food-gathering"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Whole Corn Cobs and Traditional Cultivars",
+            "description": "Specific corn varieties, traditionally historical cultivars such as Kaanga, utilized for optimal fermentation consistency and texture.",
+            "evidence_urls": [
+              "https://teara.govt.nz/en/traditional-cooking-and-preserving"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Woven Flax Bags and Submersion Vats",
+            "description": "Traditional woven flax baskets or contemporary stainless mesh containers used to secure corn cobs during water submersion.",
+            "evidence_urls": [
+              "https://teara.govt.nz/en/traditional-cooking-and-preserving"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "human_resources": [],
-        "place_resources": [],
+        "place_resources": [
+          {
+            "name": "Running Water Streams and Pātaka Kai (Traditional Larders)",
+            "description": "Natural flowing stream environments or slow-moving swamp waters historically and currently used for the lengthy immersion and curing process.",
+            "evidence_urls": [
+              "https://teara.govt.nz/en/traditional-cooking-and-preserving"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
-        "products": [],
+        "production": [
+          {
+            "name": "Submersion and Water Fermentation Processing",
+            "description": "Steeping corn cobs in running water for up to six weeks until kernels soften and settle, fostering butyric-acid fermentation.",
+            "evidence_urls": [
+              "https://teara.govt.nz/en/traditional-cooking-and-preserving",
+              "https://www.tepapa.govt.nz/discover-collections/read-watch-play/maori/traditional-maori-food-gathering"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Kānga Pirau Porridge and Preserved Meal Components",
+            "description": "The finished fermented maize mash served warm or cold, typically balanced with cream and sugar, or dried into flour.",
+            "evidence_urls": [
+              "https://teara.govt.nz/en/traditional-cooking-and-preserving"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "services": [],
         "experience": [],
         "education": []
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
+        "livelihood_potential": 10,
         "tourism_potential": 0,
-        "education_potential": 0,
+        "education_potential": 45,
         "creative_industry_potential": 0,
-        "digital_potential": 0
+        "digital_potential": 30
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Public Cultural Encyclopedias and Libraries",
+            "description": "National digital platforms such as Te Ara: The Encyclopedia of New Zealand and public library archives that document historical practices.",
+            "evidence_urls": [
+              "https://teara.govt.nz/en/traditional-cooking-and-preserving",
+              "https://christchurchcitylibraries.com/learning/maori/kai/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Whānau and Hapū Knowledge Networks",
+            "description": "Local family groups and tribal networks safeguarding and executing the physical techniques of gathering, soaking, and cooking kānga pirau.",
+            "evidence_urls": [
+              "https://www.tepapa.govt.nz/discover-collections/read-watch-play/maori/traditional-maori-food-gathering"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:05:54.738975Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Kānga pirau is primarily an intimate, familial delicacy and deeply traditional cultural food rather than a commercial market commodity, restricting widespread livelihood scaling.",
+          "evidence_urls": [
+            "https://teara.govt.nz/en/traditional-cooking-and-preserving"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
+          "rationale": "While featured at select regional food festivals like Kāwhia, the extreme pungency and specialized nature mean it remains a niche cultural experience rather than mainstream tourism fare.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High potential for cultural education regarding indigenous science, historic preservation methods, and early 19th-century Māori adaptation strategies.",
+          "evidence_urls": [
+            "https://teara.govt.nz/en/traditional-cooking-and-preserving"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
+          "rationale": "Documentary storytelling, short-form digital media series, and cultural reviews effectively document the preparation process and youth reactions for broader audiences.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Enables digital archiving, video recordings of traditional processing methods, and cultural web resources hosted by national encyclopedias and digital platforms.",
+          "evidence_urls": [
+            "https://teara.govt.nz/en/traditional-cooking-and-preserving"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 3,
+        "evidence_item_count": 11,
+        "uncited_item_count": 5,
+        "invalid_evidence_url_count": 11,
+        "opportunity_scores_with_evidence": 3,
+        "opportunity_scores_without_evidence": 2,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T13:05:54.738975Z",
+        "last_error": "resource_mapping.human_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; value_chain.experience[0] had no valid direct evidence URL and was excluded; value_chain.education[0] had no valid direct evidence URL and was excluded; resource_mobilization.academic[0] had no valid direct evidence URL and was excluded; tourism_potential score reset to 0 because category-specific evidence URLs were absent; creative_industry_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -5291,78 +5780,221 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:06:18.719991Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Wayuu Customary Law and Oral Precedents (Sükua’ipa Wayuu)",
+            "description": "An ancestral system of principles, legal procedures, and oral precedents governing social conduct, conflict resolution, and reparation among matrilineal clans.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Oratory and Rhetorical Arts of the Pütchipü'üi",
+            "description": "Specialized rhetorical knowledge, diplomatic methodology, and mediation techniques used by palabreros to negotiate peace and restore social balance.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Traditional Compensation Artifacts and Symbolic Offerings",
+            "description": "Precious stone necklaces, beads, and livestock (cattle, sheep, goats) utilized in ceremonial restitution and dispute settlement rituals.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Pütchipü'üi (Palabreros / Orators)",
+            "description": "Local moral authorities, typically maternal uncles, possessing deep ethical standing, specialized wisdom, and mediation expertise.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Matrilineal Clan Elders and Ethno-educators",
+            "description": "Community leaders and teachers guiding cultural transmission and preserving customary governance.",
+            "evidence_urls": [
+              "https://www.mincultura.gov.co/prensa/noticias/Paginas/Palabrero-Wayuu-Patrimonio.aspx",
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Guajira Peninsula Ancestral Territory",
+            "description": "The shared traditional homeland of the Wayuu people across northern Colombia and northwestern Venezuela where palaver assemblies and reconciliation rites take place.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Junta Mayor Autónoma de Palabreros Wayuu",
+            "description": "An autonomous corporate organization of traditional palabreros established to safeguard the normative system and coordinate protection efforts.",
+            "evidence_urls": [
+              "https://www.mincultura.gov.co/prensa/noticias/Paginas/Palabrero-Wayuu-Patrimonio.aspx"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
+        "production": [
+          {
+            "name": "Inter-clan Mediation and Dispute Resolution Process",
+            "description": "The procedural application of diplomacy, analysis, and dialogue by a Pütchipü'üi upon request from conflicting parties.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "services": [
+          {
+            "name": "Customary Conflict Resolution and Restorative Justice",
+            "description": "Non-violent community arbitration services focused on compensation, reconciliation, and restoring social harmony.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Community-led Cultural Heritage Documentation and Interpretation",
+            "description": "Ethically bound educational presentations and documentation managed directly by the community regarding their legal heritage and worldview.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Ethno-educational Transmission Programs",
+            "description": "Intergenerational transmission frameworks integrated into local schools and community settings to teach Wayuunaiki language, values, and normative principles.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
+        "livelihood_potential": 10,
         "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "education_potential": 60,
+        "creative_industry_potential": 15,
+        "digital_potential": 10
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Ministerio de las Culturas, las Artes y los Saberes (Colombia)",
+            "description": "Provides institutional coordination and safeguarding support for the implementation of the Special Safeguarding Plan (PES).",
+            "evidence_urls": [
+              "https://www.mincultura.gov.co/prensa/noticias/Paginas/Palabrero-Wayuu-Patrimonio.aspx"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
-        "academic": [],
-        "community": [],
-        "potential_funding": []
+        "academic": [
+          {
+            "name": "University and Research Partnerships",
+            "description": "Collaborative academic initiatives supporting research on legal pluralism, indigenous rights, and ethno-education.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Junta Mayor Autónoma de Palabreros Wayuu and Clan Authorities",
+            "description": "The primary governance body leading safeguarding actions, protecting traditional protocols, and maintaining social harmony.",
+            "evidence_urls": [
+              "https://www.mincultura.gov.co/prensa/noticias/Paginas/Palabrero-Wayuu-Patrimonio.aspx",
+              "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "potential_funding": [
+          {
+            "name": "National Heritage Safeguarding Grants",
+            "description": "Public sector heritage funds dedicated to supporting inscribed intangible cultural heritage elements via Special Safeguarding Plans.",
+            "evidence_urls": [
+              "https://www.mincultura.gov.co/prensa/noticias/Paginas/Palabrero-Wayuu-Patrimonio.aspx"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:06:18.719991Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The system is a sacred legal and moral institution centered on peacebuilding and restorative justice rather than commercial livelihood generation, though institutional support mechanisms help sustain cultural practitioners.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
+          "rationale": "Commercial tourism is entirely inappropriate and incompatible with the sensitive, confidential, and sacred nature of internal dispute resolution and customary jurisdiction.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High potential exists for culturally grounded ethno-education projects and intercultural academic exchanges led by the community to transmit oral law and peace values.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited potential in documentary film, oral literature archiving, and cultural expression under strict community governance and prior consent.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/the-wayuu-normative-system-applied-by-the-ptchipii-palabrero-00435"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Restricted scope for digital applications, primarily focused on secure community-managed archives and safeguarding documentation governed by the Junta Mayor Autónoma de Palabreros.",
+          "evidence_urls": [
+            "https://www.mincultura.gov.co/prensa/noticias/Paginas/Palabrero-Wayuu-Patrimonio.aspx"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 2,
+        "evidence_item_count": 19,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 4,
+        "opportunity_scores_without_evidence": 1,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:06:18.719991Z",
         "last_error": null
       }
     },
@@ -5456,78 +6088,189 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:06:40.529168Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Master Earthenware Artisans and Ceramists Oral Tradition",
+            "description": "Expertise in clay preparation, throwing or molding, glazing, pigment preparation, and kiln management, transmitted orally through generations within family settings and workshops.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Natural Regional Clays and Mineral Sands",
+            "description": "Specific regional earth deposits including black sand from Amozoc, white sand from Tecali, and clays from San Pablo del Monte and the Puebla-Tlaxcala basin.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Artisanal_Talavera_of_Puebla_and_Tlaxcala",
+              "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Traditional Workshop Artisans and Painters",
+            "description": "Skilled practitioners specializing in distinct stages of production, from kneading and wheel-throwing to meticulous hand-painting with traditional mineral palettes.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Puebla and Tlaxcala Production Zone",
+            "description": "Designated geographical zone encompassing Puebla city, Atlixco, Cholula, Tecali de Herrera, and San Pablo del Monte.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Artisanal_Talavera_of_Puebla_and_Tlaxcala"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "UNESCO Representative List of the Intangible Cultural Heritage of Humanity",
+            "description": "International recognition supporting the safeguarding of the joint making process of Talavera in Mexico and Spain inscribed in 2019.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
+        "production": [
+          {
+            "name": "Traditional Extraction and Preparation",
+            "description": "Sourcing local clays, soaking in sedimentation tubs, washing, filtering, and kneading by foot to achieve plasticity.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Certified Talavera Earthenware and Architectural Tiles",
+            "description": "Hand-painted utilitarian items, decorative vessels, and architectural tiles (azulejos) featuring milky-white tin glazes and traditional mineral pigments.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462",
+              "https://en.wikipedia.org/wiki/Artisanal_Talavera_of_Puebla_and_Tlaxcala"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "services": [],
-        "experience": [],
-        "education": []
+        "experience": [
+          {
+            "name": "Workshop Heritage Tours and Museum Exhibitions",
+            "description": "Cultural visits to historical workshops and regional collections displaying traditional Talavera pieces in Puebla and Mexico City.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Artisanal_Talavera_of_Puebla_and_Tlaxcala"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Workshop Apprenticeships",
+            "description": "Skill transmission and hands-on learning processes anchored within family settings and traditional artisan workshops.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 60,
+        "tourism_potential": 65,
+        "education_potential": 70,
+        "creative_industry_potential": 65,
+        "digital_potential": 30
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "FONART (National Foundation for the Development of Arts and Crafts)",
+            "description": "National institutional channel supporting Mexican folk art distribution and artisan support structures.",
+            "evidence_urls": [
+              "https://www.loc.gov/item/webpage/talavera-ceramics-at-the-intersection-of-art-history-and-law-in-mexico-in-custodia-legis/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Talavera Workshop Collectives in Puebla and Tlaxcala",
+            "description": "Local artisan communities safeguarding traditional recipes, material extraction sites, and firing standards.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:06:40.529168Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Craft traditions sustain master artisans and workshops through certified production, though limited by labor-intensive processes.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The designated Talavera zone across Puebla and Tlaxcala attracts cultural travelers interested in architectural heritage and studio visits.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Artisanal_Talavera_of_Puebla_and_Tlaxcala"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong potential for intergenerational transmission and documentation of 16th-century ceramic techniques recognized internationally by UNESCO.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Distinct visual identity, historical pigment palette, and unique workshop signatures offer rich assets for design and craft collaborations.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Primarily grounded in tactile, physical material practices and oral transmission, with minimal digital integration in core heritage safeguarding.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/artisanal-production-of-talavera-pottery-of-puebla-and-tlaxcala-mexico-and-ceramics-of-talavera-de-la-reina-and-el-puente-del-arzobispo-spain-01462"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 16,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:06:40.529168Z",
         "last_error": null
       }
     },
@@ -5594,78 +6337,207 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:07:02.367737Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Mythology and Oral Tradition",
+            "description": "Centuries-old legends narrating King Klono Sewandono's journey, Princess Songgolangit, and the mythical battle with Singo Barong.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Reog"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Dadak Merak (Singo Barong mask)",
+            "description": "Massive mask featuring a tiger's head and hundreds of peacock feathers, weighing 50-80 kg, crafted from wood, bamboo, rattan, and tiger skin.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Reog"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Jaran Kepang and Traditional Costumes",
+            "description": "Woven bamboo horses (eblek) for Jathil dancers, red masks for Bujang Ganong, and specialized attire for Warok and Klono Sewandono.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Reog"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Traditional Artisans and Master Performers",
+            "description": "Skilled craftsmen capable of building heavy Dadak Merak masks and experienced practitioners including Warok, Jathil, Bujang Ganong dancers, and gamelan musicians.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Reog"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Ponorogo Regency, East Java",
+            "description": "The geographical and cultural origin point of Reog Ponorogo, hosting local performance troupes, village cultural centers, and purification ceremony sites.",
+            "evidence_urls": [
+              "http://www.eastjava.com/tourism/ponorogo/",
+              "https://en.wikipedia.org/wiki/Reog"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "UNESCO Intangible Cultural Heritage Designation",
+            "description": "Official international recognition highlighting the safeguarding needs and cultural value of Reog Ponorogo performing art.",
+            "evidence_urls": [
+              "https://www.thejakartapost.com/indonesia/2024/12/05/kebaya-reog-ponorogo-now-listed-as-unesco-cultural-heritage.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Traditional Mask and Craft Making",
+            "description": "Handcrafting of wooden frames, bamboo structures, leather components, and assembly of peacock feather arrangements for Singo Barong.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Reog"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Miniature Reog Masks and Artifacts",
+            "description": "Scaled-down craft replicas of Dadak Merak and character masks created for collectors and cultural exhibitions.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Reog"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Live Performance Booking",
+            "description": "Organizing traditional theatrical presentations for weddings, village purification rituals, community festivals, and official receptions.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Reog"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Cultural Tourism and Festival Spectacles",
+            "description": "Immersive audience participation in local festivities, witnessing dramatic battles, gamelan music, and acrobatic dances in East Java.",
+            "evidence_urls": [
+              "http://www.eastjava.com/tourism/ponorogo/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Dance and Martial Arts Transmission",
+            "description": "Community-led transmission of traditional movement, spiritual discipline, and musical skills to younger generations.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Reog"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 70,
+        "education_potential": 60,
+        "creative_industry_potential": 65,
+        "digital_potential": 50
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Regional Government and Tourism Agencies",
+            "description": "Local government bodies in East Java and Ponorogo promoting cultural preservation and festival events.",
+            "evidence_urls": [
+              "http://www.eastjava.com/tourism/ponorogo/",
+              "https://www.thejakartapost.com/indonesia/2024/12/05/kebaya-reog-ponorogo-now-listed-as-unesco-cultural-heritage.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Local Troupes and Artisan Guilds",
+            "description": "Community-based troupes, Warok leaders, and generational craftsmen keeping the performance traditions alive in Ponorogo.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Reog"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:07:02.367737Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Craftsmen and local performers sustain traditional livelihoods through specialized mask-making, costume production, and performance commissions.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Reog"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Inscribed as a UNESCO cultural heritage element originating from East Java, drawing interest for cultural tourism and regional festivals.",
+          "evidence_urls": [
+            "https://www.thejakartapost.com/indonesia/2024/12/05/kebaya-reog-ponorogo-now-listed-as-unesco-cultural-heritage.html",
+            "http://www.eastjava.com/tourism/ponorogo/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Serves as an essential medium for local social education, historical transmission, and safeguarding youth engagement.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Reog"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High potential in artisan craftsmanship, traditional prop fabrication, and performance arts linked to regional creative economies.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Reog"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Opportunities exist for digital archiving, online documentation, and virtual promotion of the theatrical arts to global audiences.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Reog"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 18,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:07:02.367737Z",
         "last_error": null
       }
     },
@@ -5753,78 +6625,178 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:07:23.252093Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Carnival Tradition and Satirical Farce History",
+            "description": "Oral histories and local documentation detailing the medieval roots of the Soufflaculs, including historical analyses by figures like Louis Le Cam regarding anti-clerical satire and social norms inversion.",
+            "evidence_urls": [
+              "https://fr.wikipedia.org/wiki/Soufflaculs"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Traditional Carnival Attire and Bellows",
+            "description": "Specific material items required for the ritual performance, including white cotton nightgowns, white cotton bonnets, clogs, face makeup (flour or soot), and handheld bellows.",
+            "evidence_urls": [
+              "https://fr.wikipedia.org/wiki/Soufflaculs"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Local Carnival Association Volunteers and Participants",
+            "description": "Community members, local organizers, and participants ('Soufflaculs') who sustain the tradition, prepare costumes, build floats, and execute the street processions.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Soufflaculs_of_Nontron"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Historic Streets of Nontron and Saint-Claude",
+            "description": "The public municipal spaces and historic town centers in Dordogne (Nouvelle-Aquitaine) and Jura (Bourgogne-Franche-Comté) where the open-air parades and effigy cremations take place.",
+            "evidence_urls": [
+              "https://fr.wikipedia.org/wiki/Soufflaculs"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "French Inventory of Intangible Cultural Heritage",
+            "description": "Official recognition framework managed under the French Ministry of Culture, listing the element since 2010 to document and safeguard the practice.",
+            "evidence_urls": [
+              "https://fr.wikipedia.org/wiki/Soufflaculs"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
+        "production": [
+          {
+            "name": "Costume and Bellows Preparation",
+            "description": "Local crafting and assembly of white nightgowns, bonnets, and acquisition or adaptation of traditional wooden-and-leather bellows used in the ritual.",
+            "evidence_urls": [
+              "https://fr.wikipedia.org/wiki/Soufflaculs"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "products": [],
         "services": [],
-        "experience": [],
-        "education": []
+        "experience": [
+          {
+            "name": "Pre-Lenten Carnival Procession and Rituals",
+            "description": "Public festive event featuring street parades, satirical performances, the symbolic bellows ritual, brass bands, and the final cremation of the carnival king effigy.",
+            "evidence_urls": [
+              "https://fr.wikipedia.org/wiki/Soufflaculs"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Ethnographic Documentation and Local History Transmission",
+            "description": "Transmission of local folklore and historical lectures or media reports sharing the sociological meaning of medieval soties and regional festive practices.",
+            "evidence_urls": [
+              "https://fr.wikipedia.org/wiki/Soufflaculs"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 10,
+        "tourism_potential": 35,
+        "education_potential": 40,
+        "creative_industry_potential": 15,
+        "digital_potential": 20
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Regional and Municipal Support",
+            "description": "Collaborative municipal frameworks (such as in Nontron and Saint-Claude) and potential regional council subsidies associated with its status on France's Intangible Cultural Heritage inventory.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Soufflaculs_of_Nontron"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Local Festivity Organizing Associations",
+            "description": "Voluntary associations and local committees driving the revival, coordination, and community participation required to stage the carnival editions.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Soufflaculs_of_Nontron"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:07:23.252093Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The festival operates primarily on volunteer efforts and community association frameworks rather than commercial revenue generation or year-round livelihood models.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Soufflaculs_of_Nontron"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Attracts regional visitors and media coverage as a unique surviving pre-Lenten carnival tradition in Nontron and Saint-Claude, though constrained by intermittent event scheduling.",
+          "evidence_urls": [
+            "https://fr.wikipedia.org/wiki/Soufflaculs"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High value for cultural transmission, local history education, and inclusion in national intangible heritage inventories overseen by the Ministry of Culture.",
+          "evidence_urls": [
+            "https://fr.wikipedia.org/wiki/Soufflaculs"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Inspires local performing arts, traditional costuming, brass band participation, and occasional ethnographic documentary filmmaking.",
+          "evidence_urls": [
+            "https://fr.wikipedia.org/wiki/Soufflaculs"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Documented via digital encyclopedias, online cultural inventories, and media/video archiving, though digital outreach remains auxiliary to the physical event.",
+          "evidence_urls": [
+            "https://fr.wikipedia.org/wiki/Soufflaculs"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 2,
+        "evidence_item_count": 15,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:07:23.252093Z",
         "last_error": null
       }
     },
@@ -5914,78 +6886,205 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:07:43.935500Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Resist-Dyeing and Block-Printing Technique",
+            "description": "Multi-step ancestral knowledge system (ranging from 14 to 21 steps) involving complex mordanting, resist-printing, and indigo/madder dyeing passed down through generations in Sindh and South Punjab.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ajrak",
+              "https://qumas.pk/cdn/shop/files/sindhi-ajrak-stole-821794_85fc4444-ae86-4ed3-9d32-70d312f39649.jpg?v=1709024666",
+              "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Hand-Carved Wooden Blocks and Natural Dyes",
+            "description": "Intricately carved teak blocks alongside organic color sources including indigo, madder root, henna, alizarin, turmeric, and pomegranate rind used for traditional cloth ornamentation.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ajrak",
+              "https://www.gaatha.com/crafts/ajrak/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Master Artisans and Specialized Craft Families",
+            "description": "Multi-generational practitioners, block carvers, washers, and dyers operating within artisan clusters and villages across Sindh and South Punjab.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ajrak",
+              "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Indus Valley Craft Villages and Production Centers",
+            "description": "Historical production hubs and rural cluster settlements in Sindh (such as Matiari, Thatta, Bhit Shah, and Moledino Sahito) and South Punjab linked historically to the Indus River basin.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ajrak",
+              "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "National Museum of Pakistan and Heritage Archives",
+            "description": "Public repositories and cultural institutions housing archaeological artifacts (such as the Priest-King bust elements) and historical textile references documenting deep regional roots.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ajrak"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Fabric Preparation and Multi-Stage Resist Printing",
+            "description": "Meticulous washing, harda/mordant treatment, and intricate double-sided resist block printing using natural pastes to protect unprinted white motifs.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ajrak",
+              "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional Ajrak Shawls, Turbans, and Fabrics",
+            "description": "Authentic double-sided printed cotton fabrics utilized as ceremonial shawls, bridal accessories, turbans, bed covers, and tokens of honor or hospitality.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ajrak",
+              "https://vasl.co/blogs/news/the-story-of-ajrak"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Customized Artisan Commissioning and Heritage Craft Workshops",
+            "description": "Direct commission of hand-printed textile goods and field-based craft demonstrations hosted by master artisans for visiting students and researchers.",
+            "evidence_urls": [
+              "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Cultural Heritage Tourism and Village Craft Trails",
+            "description": "Immersive cultural visits to rural artisan villages in Sindh to observe complex natural dyeing vats, block-carving studios, and community-based heritage production.",
+            "evidence_urls": [
+              "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Textile Design Interships and Craft Documentation Programs",
+            "description": "Educational engagement bridging academic design studies with traditional master practitioners to record natural dye recipes and block-printing geometries.",
+            "evidence_urls": [
+              "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 75,
+        "tourism_potential": 45,
+        "education_potential": 60,
+        "creative_industry_potential": 70,
+        "digital_potential": 40
       },
       "resource_mobilization": {
         "public_sector": [],
-        "private_sector": [],
+        "private_sector": [
+          {
+            "name": "Independent Craft Platforms and Ethical Retailers",
+            "description": "Digital storytelling spaces and slow-fashion channels highlighting authentic hand-printed Ajrak heritage goods.",
+            "evidence_urls": [
+              "https://www.gaatha.com/crafts/ajrak/",
+              "https://vasl.co/blogs/news/the-story-of-ajrak"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Village Artisan Collectives and Multi-Generational Guilds",
+            "description": "Local community cooperative networks (such as those centered in rural Sindh printing villages) safeguarding traditional multi-step methods.",
+            "evidence_urls": [
+              "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:07:43.935500Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Ajrak production directly sustains entire rural artisan communities and families across Sindh and South Punjab through multi-step manual textile creation.",
+          "evidence_urls": [
+            "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Specialized cultural heritage travel brings visitors directly to craft villages like Moledino Sahito, though scale is constrained by rural infrastructure.",
+          "evidence_urls": [
+            "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong potential for academic documentation, textile design integration, and studying indigenous natural chemistry and ancient Indus Valley heritage.",
+          "evidence_urls": [
+            "https://bluedotliving.com/the-ancient-art-supporting-a-community-in-pakistan/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High relevance in contemporary slow fashion and sustainable textile design due to its reliance on organic dyes, hand-carved blocks, and zero-synthetic approaches.",
+          "evidence_urls": [
+            "https://www.gaatha.com/crafts/ajrak/",
+            "https://qumas.pk/cdn/shop/files/sindhi-ajrak-stole-821794_85fc4444-ae86-4ed3-9d32-70d312f39649.jpg?v=1709024666"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited digital documentation exists online through artisan showcases and blogs, offering moderate pathways for digital archiving, storytelling, and ethical e-commerce.",
+          "evidence_urls": [
+            "https://vasl.co/blogs/news/the-story-of-ajrak"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 5,
+        "evidence_item_count": 17,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:07:43.935500Z",
         "last_error": null
       }
     },
@@ -6080,78 +7179,243 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:08:05.433751Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Panrita Lopi (Master Shipwright) Oral Tradition",
+            "description": "Generational transmission of shipbuilding knowledge, geometric intuition, and structural design without modern blueprints among Bugis, Makassar, and Konjo communities.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197",
+              "https://www.indonesia.travel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Customary Maritime Rituals",
+            "description": "Inherited ceremonial knowledge accompanying timber selection, keel laying, and vessel launching to express spiritual balance and respect for nature.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Hardwood Timber Reserves",
+            "description": "Locally sourced durable hardwoods including Ironwood (Ulin), Teak (Jati), Bitti, Merbau, and Nyatoh used for shell-first hull construction.",
+            "evidence_urls": [
+              "https://phinisi.co.id",
+              "https://indonesia.travel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Fastenings and Resins",
+            "description": "Wooden pegs (pasak), tongue and groove joinery elements, and natural tree resins utilized for joint sealing.",
+            "evidence_urls": [
+              "https://phinisi.co.id"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Local Shipwright Guilds and Artisans",
+            "description": "Skilled woodworkers, adze and chisel sculptors, and community laborers residing in historical boatbuilding hubs like Tana Beru and Bira.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197",
+              "https://www.indonesia.travel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Coastal Shipyards of Tana Beru and Bira",
+            "description": "Open-beach construction sites and traditional shoreline shipyards in Bulukumba Regency, South Sulawesi.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197",
+              "https://www.indonesia.travel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "UNESCO Representative List Recognition",
+            "description": "International designation safeguarding the art of Pinisi boatbuilding as part of the Intangible Cultural Heritage of Humanity since 2017.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Shell-First Timber Shipbuilding",
+            "description": "Traditional construction process involving timber seasoning, keel laying, hand-sculpting planks with adze and chisel, and securing via wooden dowels without internal frames.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197",
+              "https://phinisi.co.id"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Handcrafted Wooden Vessels",
+            "description": "Two-masted gaff-ketch sailing vessels (Pinisi/Palari) built for cargo transport, inter-island trade, or bespoke commission.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197",
+              "https://indonesia.travel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Custom Maritime Commissioning",
+            "description": "Commission-based building of customized wooden schooners for private ownership or commercial maritime use.",
+            "evidence_urls": [
+              "https://phinisi.co.id",
+              "https://lamima.com"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Cultural Eco-Tourism and Heritage Cruises",
+            "description": "Luxury liveaboard cruises and marine expeditions utilizing adapted Pinisi vessels for travel across Indonesian archipelagic waters.",
+            "evidence_urls": [
+              "https://indonesia.travel",
+              "https://lamima.com"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Craft Apprenticeships",
+            "description": "Informal transmission of maritime knowledge, carpentry techniques, and cultural values from master builders to younger community members.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 75,
+        "tourism_potential": 85,
+        "education_potential": 70,
+        "creative_industry_potential": 60,
+        "digital_potential": 30
       },
       "resource_mobilization": {
-        "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
+        "public_sector": [
+          {
+            "name": "Government Cultural and Tourism Ministries",
+            "description": "National and regional heritage agencies supporting the promotion and safeguarding of UNESCO-listed maritime traditions in South Sulawesi.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197",
+              "https://indonesia.travel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "private_sector": [
+          {
+            "name": "Eco-Tourism and Liveaboard Operators",
+            "description": "Commercial vessel owners and luxury cruise operators partnering with local shipyards for maintenance, commission, and heritage presentation.",
+            "evidence_urls": [
+              "https://indonesia.travel",
+              "https://lamima.com"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "Maritime Research and Documentation Initiatives",
+            "description": "Universities and cultural institutes recording traditional boatbuilding techniques, vernacular naval architecture, and oral histories.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Bugis, Makassar, and Konjo Shipwright Communities",
+            "description": "Local artisan cooperatives and families in Tana Beru and Bira steering the continuity of construction practices and customary rituals.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/01197",
+              "https://phinisi.co.id"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:08:05.433751Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Boatbuilding hubs like Tana Beru and Bira sustain local employment where significant portions of the population engage in maritime trades, carpentry, and associated supply chains.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/01197"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Pinisi vessels serve as a cornerstone for high-end cultural tourism, eco-tourism, and liveaboard dive cruises operating across the Indonesian archipelago.",
+          "evidence_urls": [
+            "https://indonesia.travel",
+            "https://lamima.com"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The oral transmission model and UNESCO safeguarding framework offer structured opportunities for maritime heritage education, documentation, and traditional carpentry workshops.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/01197"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Master craftsmanship intersects with bespoke nautical architecture, scale model building, and global maritime art/exhibition spheres.",
+          "evidence_urls": [
+            "https://phinisi.co.id"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digital documentation, virtual shipyard tours, and online marketing initiatives support international outreach while respecting traditional oral knowledge transmission.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/01197",
+            "https://phinisi.co.id"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 5,
+        "evidence_item_count": 21,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:08:05.433751Z",
         "last_error": null
       }
     },
@@ -55489,7 +56753,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-09T12:57:50.631474Z",
+    "generated_at": "2026-10-09T13:08:27.013056Z",
     "total_ich_elements": 329,
     "complete_records": 328,
     "incomplete_records": 1,
