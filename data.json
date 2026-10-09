@@ -89,7 +89,7 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T10:56:32.675805Z",
       "resource_mapping": {
         "knowledge_resources": [],
         "material_resources": [],
@@ -180,7 +180,7 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T10:57:13.234112Z",
       "resource_mapping": {
         "knowledge_resources": [],
         "material_resources": [],
@@ -38921,7 +38921,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-08T14:49:09.095692Z",
+    "generated_at": "2026-10-09T10:57:28.249772Z",
     "total_ich_elements": 329,
     "complete_records": 328,
     "incomplete_records": 1,
