@@ -27,6 +27,7 @@ def _default_resource_intelligence_review():
         "evidence_url_count": 0, "evidence_item_count": 0, "uncited_item_count": 0,
         "invalid_evidence_url_count": 0, "opportunity_scores_with_evidence": 0,
         "opportunity_scores_without_evidence": len(OPPORTUNITY_SCORE_FIELDS),
+        # Advisory metadata only; this repository has no in-app reviewer or approval workflow.
         "human_review_required": True, "reviewed_by": None, "reviewed_at": None,
         "last_checked_at": None, "last_error": None,
     }
@@ -178,8 +179,9 @@ def _normalize_resource_entries(raw_items, counters, warnings, field_name):
 
 def normalize_resource_payload(payload, checked_at=None):
     """
-    Validate structure and evidence-link syntax. Source content is not independently
-    checked here, so every accepted result still requires human review.
+    Validate response structure and evidence-link syntax for AI research support.
+    Source content is not independently checked; these checks do not constitute
+    human review or approval. The metadata flag is advisory only.
     Returns (normalized_payload, review_metadata, fatal_errors).
     """
     checked_at = checked_at or (datetime.now().isoformat() + "Z")
@@ -541,7 +543,7 @@ Give every field exactly as shown. Return empty arrays rather than unsupported e
 
         _apply_valid_resource_payload(item, normalized, review, checked_at)
         enriched_count += 1
-        logger.info("Resource enrichment accepted for %s: %s evidence URLs, %s evidence items. Human review required.",
+        logger.info("AI research profile generated for %s: %s evidence URLs, %s evidence items. Source content remains unverified; use as human decision support.",
                     name, review["evidence_url_count"], review["evidence_item_count"])
         time.sleep(15)
 
