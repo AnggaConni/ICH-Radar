@@ -387,9 +387,9 @@ Key constants in `scraper.py`:
 |---|---|---|
 | Scheduled workflow | Daily at 00:00 UTC | GitHub Actions alternates between data discovery/standard enrichment and Resource & Opportunity enrichment using the UTC day |
 | `max_discoveries_per_run` | `3` | Maximum new heritage elements requested in a discovery run |
-| Resource enrichment batch | `2` records | Up to two existing records are selected per Resource & Opportunity run |
+| Resource enrichment batch | `2` by default; manual choice `1–10` | Choose the number of existing records when manually running Resource enrichment; scheduled runs keep the default of two |
 
-The automatic schedule is configured in `.github/workflows/crawler.yml`. Run modes can also be selected manually from the Actions tab. Discovery throughput should be balanced against API quotas and data quality.
+The automatic schedule is configured in `.github/workflows/crawler.yml`. When manually selecting `Resource enrichment` from the Actions tab, set **Records to enrich** from 1 to 10. The default is 2; scheduled runs also use 2 unless the workflow code is changed. Larger batches consume more AI requests and can take longer, so increase them when you specifically need broader coverage.
 
 ### GitHub Actions workflow (`crawler.yml`)
 

@@ -723,6 +723,7 @@ def enrich_resource_data(api_key, inventory):
         call_gemini=call_gemini,
         quota_exception=GeminiQuotaExhausted,
         logger=log,
+        max_items=os.environ.get("RESOURCE_ENRICH_LIMIT", "2"),
     )
 
 
