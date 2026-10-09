@@ -10024,24 +10024,78 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T17:04:16.383495Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Traditional Royal Craftsmanship and Multi-Step Umbrella Making Techniques",
+            "description": "Centuries-old knowledge inherited from royal palace artisans (originating from craftsman U Shwe Sar during the Konbaung dynasty) encompassing dozens of specialized production steps for frame shaping, natural glue preparation, and hand-painting.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Pathein_hti"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Taragu Bamboo and Ma U Shwe War Wood",
+            "description": "Mature Taragu bamboo (at least nine years old) used for supporting and branch arms, paired with Ma U Shwe War wood for shafts and handles, plus natural oils (such as sesame oil) and organic glues made from cassava or glutinous rice powder.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Pathein_hti"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "human_resources": [],
-        "place_resources": [],
+        "place_resources": [
+          {
+            "name": "Pathein City and Pathein Cultural Museum",
+            "description": "Pathein Township in the Ayeyarwady Region as the geographic center of production, alongside institutional display spaces like the Pathein Cultural Museum which exhibits regional intangible cultural heritage.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Pathein_hti"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
-        "products": [],
+        "production": [
+          {
+            "name": "Manual Craft Production and Assembly",
+            "description": "A meticulous multi-step handcrafting process involving bamboo selection and soaking, wooden frame assembly without metal parts, natural gluing, oil treatment for water resistance, and hand-painted decorations.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Pathein_hti"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Pathein Hti (Traditional Handmade Umbrellas and Parasols)",
+            "description": "Handcrafted umbrellas featuring bamboo frames, cotton, silk, or paper canopies treated with natural oils, and detailed artistic floral or geometric patterns.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Pathein_hti"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "services": [],
-        "experience": [],
+        "experience": [
+          {
+            "name": "Cultural Heritage Tourism and Festival Decoration",
+            "description": "Immersive cultural experiences involving the use of Pathein umbrellas as ceremonial decorations in traditional festivals, religious events, and regional heritage exhibitions.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Pathein_hti"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "education": []
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
+        "livelihood_potential": 65,
+        "tourism_potential": 70,
         "education_potential": 0,
         "creative_industry_potential": 0,
         "digital_potential": 0
@@ -10053,50 +10107,54 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T17:04:16.383495Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Sustains a localized cottage industry providing income for generational artisan families through manual production of traditional souvenirs.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Pathein_hti"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High visibility as a regional cultural symbol, attracting visitors to local manufacturing workshops and museums in Pathein.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Pathein_hti"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
+          "rationale": "Valuable subject for intangible cultural heritage studies, museum curation, and documentation of traditional Myanmar craftsmanship.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "creative_industry_potential": {
-          "rationale": "",
+          "rationale": "Strong design elements, distinctive calligraphic hand-painting styles, and unique natural materials offer robust prospects for artisan-led craft collaboration and cultural expression.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "digital_potential": {
-          "rationale": "",
+          "rationale": "Limited digital integration presently exists outside of documentary videos, virtual travel vlogs, and online catalog listings.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 1,
+        "evidence_item_count": 8,
+        "uncited_item_count": 7,
+        "invalid_evidence_url_count": 19,
+        "opportunity_scores_with_evidence": 2,
+        "opportunity_scores_without_evidence": 3,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T17:04:16.383495Z",
+        "last_error": "resource_mapping.human_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; value_chain.services[0] had no valid direct evidence URL and was excluded; value_chain.education[0] had no valid direct evidence URL and was excluded; resource_mobilization.public_sector[0] had no valid direct evidence URL and was excluded; resource_mobilization.private_sector[0] had no valid direct evidence URL and was excluded; resource_mobilization.community[0] had no valid direct evidence URL and was excluded; education_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -10217,78 +10275,204 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T17:04:41.934147Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Risotto and Saffron Base Preparation Techniques",
+            "description": "Ancestral methods of preparing saffron-infused risotto, cooling techniques, and specific shaping protocols for spherical or conical forms.",
+            "evidence_urls": [
+              "https://www.foodnouveau.com/recipes/savory/how-to-make-arancini/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Historical Culinary Heritage and Naming Traditions",
+            "description": "Historical knowledge linking the recipe's origin to medieval Arab rule in Sicily and the ongoing linguistic distinction between 'arancina' (western Sicily) and 'arancino' (eastern Sicily).",
+            "evidence_urls": [
+              "https://www.visitsicily.info/wp-content/uploads/2024/11/cibo-arancini-scaled.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Sicilian Agricultural and Dairy Ingredients",
+            "description": "Core raw materials including short-grain rice such as Arborio, Carnaroli, or Vialone Nano, local saffron, and cheeses like caciocavallo and mozzarella.",
+            "evidence_urls": [
+              "https://www.thechoppingblock.com/blog/how-to-make-amazing-arancini"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Sicilian Rosticceri and Home Cooks",
+            "description": "Local culinary practitioners, street vendors, and family cooks maintaining the transmission of hand-crafting, filling, and frying techniques.",
+            "evidence_urls": [
+              "https://blog.dicasainsicilia.it/wp-content/uploads/2025/08/arancino-siciliano-1200x700.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Sicilian Rosticcerias, Markets, and Historic Food Hubs",
+            "description": "Traditional street-food vendor carts, local markets, and family-run bakeries across Palermo, Syracuse, Catania, and Messina.",
+            "evidence_urls": [
+              "https://blog.dicasainsicilia.it/wp-content/uploads/2025/08/arancino-siciliano-1200x700.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Cultural Festivities and Civic Commemorations (Feast of Santa Lucia)",
+            "description": "The institutionalized annual civic celebration on December 13th where local communities commemorate the historic arrival of the grain fleet by abstaining from pasta and bread in favor of arancini.",
+            "evidence_urls": [
+              "https://www.hotelprincedivillafranca.it/santa-lucia-in-palermo-traditions-and-where-to-taste-the-arancine/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Artisanal Rosticceria Production",
+            "description": "The specialized preparation process involving risotto cooking, cooling, filling with ragù or cheese, meticulous breadcrumb coating, and deep-frying.",
+            "evidence_urls": [
+              "https://www.foodnouveau.com/recipes/savory/how-to-make-arancini/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional and Regional Arancini Variations",
+            "description": "Spherical or conical (Etna-shaped) breaded rice balls featuring ragù, peas, butter/ham, pistachio, or sweet chocolate fillings.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Arancini"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Street Food Vending and Specialized Rosticceria Services",
+            "description": "Direct-to-consumer ready-to-eat culinary services provided by local food vendors and specialized shops across Sicily.",
+            "evidence_urls": [
+              "https://blog.dicasainsicilia.it/wp-content/uploads/2025/08/arancino-siciliano-1200x700.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Feast of Santa Lucia Culinary Participation",
+            "description": "Immersive community participation in traditional foodways every December 13th, marking historical solidarity and local devotion.",
+            "evidence_urls": [
+              "https://www.hotelprincedivillafranca.it/santa-lucia-in-palermo-traditions-and-where-to-taste-the-arancine/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Culinary Masterclasses and Transmission Workshops",
+            "description": "Hands-on cooking classes and workshops teaching traditional shaping, filling, and frying methods to visitors and locals.",
+            "evidence_urls": [
+              "https://www.sicilianfoodculture.com/st-lucys-day-and-the-arancine-tradition-in-palermo/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 80,
+        "education_potential": 75,
+        "creative_industry_potential": 50,
+        "digital_potential": 40
       },
       "resource_mobilization": {
         "public_sector": [],
-        "private_sector": [],
+        "private_sector": [
+          {
+            "name": "Local Rosticcerias and Pastry Shops",
+            "description": "Family-run establishments (e.g., Bar Vabres, Pasticceria Oscar) that preserve and daily produce traditional varieties.",
+            "evidence_urls": [
+              "https://www.hotelprincedivillafranca.it/santa-lucia-in-palermo-traditions-and-where-to-taste-the-arancine/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Civic and Neighborhood Networks during Santa Lucia",
+            "description": "Community networks and local participants upholding the annual December 13th dietary and cultural traditions.",
+            "evidence_urls": [
+              "https://www.hotelprincedivillafranca.it/santa-lucia-in-palermo-traditions-and-where-to-taste-the-arancine/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T17:04:41.934147Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Arancini serve as a foundational economic driver for local rosticcerias, small businesses, and food artisans throughout Sicily.",
+          "evidence_urls": [
+            "https://blog.dicasainsicilia.it/wp-content/uploads/2025/08/arancino-siciliano-1200x700.jpg"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "As an internationally recognized symbol of Sicilian street food, arancini heavily attract culinary tourists exploring local markets and historical food itineraries.",
+          "evidence_urls": [
+            "https://blog.dicasainsicilia.it/wp-content/uploads/2025/08/arancino-siciliano-1200x700.jpg"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong potential for culinary workshops, masterclasses, and cultural transmission programs focused on medieval culinary history and recipe execution.",
+          "evidence_urls": [
+            "https://www.sicilianfoodculture.com/st-lucys-day-and-the-arancine-tradition-in-palermo/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Inspires creative media including food photography, cultural storytelling, literary references, and documentary gastronomy.",
+          "evidence_urls": [
+            "https://www.visitsicily.info/wp-content/uploads/2024/11/cibo-arancini-scaled.jpg"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Documented extensively through online cooking tutorials, digital food blogs, and virtual cultural guides examining regional variations.",
+          "evidence_urls": [
+            "https://www.foodnouveau.com/recipes/savory/how-to-make-arancini/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 7,
+        "evidence_item_count": 18,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T17:04:41.934147Z",
         "last_error": null
       }
     },
@@ -10361,78 +10545,186 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T17:05:03.859953Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Bajawa Ancestral Oral Traditions and Genealogies",
+            "description": "Oral accounts detailing ancestral lineage, history, and life guidance imparted during traditional village inauguration rites.",
+            "evidence_urls": [
+              "https://efws.ac.id/index.php/EFWS/article/view/100"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Sacrificial Livestock (Buffaloes and Pigs)",
+            "description": "Livestock raised and gathered in large numbers for ceremonial sacrifice during the peak village inauguration feast.",
+            "evidence_urls": [
+              "https://www.kompas.com/travel/read/2010/12/10/11562916/ka.nua.yang.nyaris.punah"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Musical Instruments (Gong and Drum)",
+            "description": "Indigenous percussion instruments ('go' gongs and 'laba' drums) played to accompany sacred rites and ceremonial dances.",
+            "evidence_urls": [
+              "https://efws.ac.id/index.php/EFWS/article/view/100"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Mosalaki (Customary Village Elders)",
+            "description": "Traditional leaders and elders who hold the authority to govern, coordinate, and execute hierarchical clan ceremonies.",
+            "evidence_urls": [
+              "https://jelajah.kompas.com/read/2010/12/09/1654395/ritual.adat.langka.ka.nua.yang.nyaris.punah"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Nua (Traditional Villages in Ngada)",
+            "description": "Newly established traditional settlement sites featuring megalithic structures that require formal ritual completion.",
+            "evidence_urls": [
+              "https://www.kompas.com/travel/read/2010/12/10/11562916/ka.nua.yang.nyaris.punah"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Indigenous Clan Governance Systems",
+            "description": "Customary social structures uniting kin groups across the Bajawa region to manage communal responsibilities and obligations.",
+            "evidence_urls": [
+              "https://jelajah.kompas.com/read/2010/12/09/1654395/ritual.adat.langka.ka.nua.yang.nyaris.punah"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
+        "production": [
+          {
+            "name": "Traditional Livestock Breeding and Harvesting Preparation",
+            "description": "Long-term rearing of sacrificial buffaloes and pigs alongside agricultural harvesting cycles ('Uma Moni').",
+            "evidence_urls": [
+              "https://www.kompas.com/travel/read/2010/12/10/11562916/ka.nua.yang.nyaris.punah"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "products": [],
         "services": [],
-        "experience": [],
-        "education": []
+        "experience": [
+          {
+            "name": "Village Inauguration Thanksgiving Ceremonies",
+            "description": "Grand communal thanksgiving events encompassing ancestral prayers, livestock processions, and purification rites.",
+            "evidence_urls": [
+              "https://www.kompas.com/travel/read/2010/12/10/11562916/ka.nua.yang.nyaris.punah"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Ancestral Transmission",
+            "description": "Passing down historical knowledge, ethical values, and communal laws from elders to younger generations.",
+            "evidence_urls": [
+              "https://efws.ac.id/index.php/EFWS/article/view/100"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 15,
+        "tourism_potential": 10,
+        "education_potential": 60,
+        "creative_industry_potential": 10,
+        "digital_potential": 10
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
-        "academic": [],
-        "community": [],
+        "academic": [
+          {
+            "name": "Cultural Research and Documentation Initiatives",
+            "description": "Scholarly inquiry and recording of endangered indigenous traditions, rituals, and oral histories by researchers and educational institutions.",
+            "evidence_urls": [
+              "https://efws.ac.id/index.php/EFWS/article/view/100"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Bajawa Indigenous Clan Networks",
+            "description": "Local community kin groups and customary leadership coordinating multi-stage ceremonial obligations and resource pooling.",
+            "evidence_urls": [
+              "https://www.kompas.com/travel/read/2010/12/10/11562916/ka.nua.yang.nyaris.punah"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T17:05:03.859953Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The ritual focuses strictly on sacred community inauguration and spiritual purification rather than commercial livelihoods, though it engages local agricultural and livestock rearing systems.",
+          "evidence_urls": [
+            "https://www.kompas.com/travel/read/2010/12/10/11562916/ka.nua.yang.nyaris.punah"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Due to its extremely rare occurrence (once per village generation over decades) and deeply sacred nature, commercial tourism integration is generally inappropriate, limited, or constrained by customary protocols.",
+          "evidence_urls": [
+            "https://jelajah.kompas.com/read/2010/12/09/1654395/ritual.adat.langka.ka.nua.yang.nyaris.punah"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High potential exists for cultural documentation, academic research, and safeguarding ancestral heritage knowledge regarding megalithic social structures in Flores.",
+          "evidence_urls": [
+            "https://efws.ac.id/index.php/EFWS/article/view/100"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Involves traditional music ('go' and 'laba') and ritual performance arts, though these function strictly within customary ceremonial contexts rather than creative markets.",
+          "evidence_urls": [
+            "https://efws.ac.id/index.php/EFWS/article/view/100"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited scope for digital commercialization given the sacred and rare status of the rite, but archival documentation and cultural mapping initiatives provide digital preservation avenues.",
+          "evidence_urls": [
+            "https://jelajah.kompas.com/read/2010/12/09/1654395/ritual.adat.langka.ka.nua.yang.nyaris.punah"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 16,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T17:05:03.859953Z",
         "last_error": null
       }
     },
@@ -10554,8 +10846,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T17:05:24.641363Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -10585,8 +10877,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -10596,8 +10888,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T17:05:24.641363Z",
+        "last_error": "response must be a JSON object"
       }
     },
     {
@@ -10682,78 +10974,279 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T17:06:22.129519Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Kantha Stitch and Motif Repository",
+            "description": "Centuries-old oral and embodied knowledge of running-stitch variations, symbolic motifs (such as the central lotus, trees of life, and floral patterns), and regional design grammars passed down through generations of women artisans.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Nakshi_kantha"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Literary and Cultural Heritage Documentation",
+            "description": "Historical documentation and poetic embodiment of Nakshi Kantha, notably popularized by Jasim Uddin’s epic poem 'Nakshi Kanthar Math' (The Field of the Embroidered Quilt) and historical texts connecting the craft to regional folklore.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Nakshi_kantha"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Recycled Domestic Textiles",
+            "description": "Traditional raw materials comprising layered worn-out cotton sarees, lungis, and dhotis repurposed to form the structural base and colorful thread elements of the quilts.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Nakshi_kantha"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Geographical Indication (GI) Certified Production Inputs",
+            "description": "Authenticated regional inputs and materials tied to designated production hubs like Jamalpur, incorporating standard cotton anchor threads and tracing tools.",
+            "evidence_urls": [
+              "https://textiletoday.com.bd/nakshi-kantha-traditional-"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Rural Women Artisan Cooperatives and Networks",
+            "description": "Generative networks of skilled female craftspeople across rural clusters in Mymensingh, Jamalpur, Bogra, Rajshahi, Faridpur, Jessore, and Chittagong who execute complex needlework.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Nakshi_kantha"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Master Craftspeople and National Awardees",
+            "description": "Experienced master artisans and recipients of cultural honors who hold advanced technical execution skills and drive peer-to-peer transmission.",
+            "evidence_urls": [
+              "https://houseofwanderingsilk.com/blogs/news/nakshi-kantha-artisans-process"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Rural Household Courtyards and Craft Clusters",
+            "description": "Traditional communal gathering spaces in villages across Bangladesh and eastern India where collective stitching, storytelling, and intergenerational transmission take place.",
+            "evidence_urls": [
+              "https://www.aramcoworld.com/Articles/March-2025/Nakshi-Kantha-Embroidery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Regional Production Hubs",
+            "description": "Designated historical and administrative provinces and districts—including Jamalpur, Rajshahi, Jessore, and West Bengal—acting as geographic centers of practice.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Nakshi_kantha"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Geographical Indication (GI) Registries",
+            "description": "Legal and administrative frameworks recognizing and protecting the origin-based identity of regional Nakshi Kantha production.",
+            "evidence_urls": [
+              "https://textiletoday.com.bd/nakshi-kantha-traditional-"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Museums and Cultural Heritage Archives",
+            "description": "Institutional repositories housing historical heirloom kanthas, documentation, and research collections preserving antique design expressions.",
+            "evidence_urls": [
+              "https://www.aramcoworld.com/Articles/March-2025/Nakshi-Kantha-Embroidery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Fabric Layering and Base Preparation",
+            "description": "Collecting, inspecting, and layering multiple old sarees, lungis, or dhotis, securing them via large running stitches or framing edge-fixation.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Nakshi_kantha"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Motif Transfer and Freehand Stitching",
+            "description": "Executing design layout via traditional freehand needle outlining or modern pinhole tracing with turpentine and fabric dye, followed by intensive kantha stitch embroidery.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Nakshi_kantha"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional Embroidered Quilts (Lep Kantha)",
+            "description": "Heavily padded, multi-layered winter bed coverings and heritage blankets embedded with symbolic narrative iconography.",
+            "evidence_urls": [
+              "https://www.aramcoworld.com/Articles/March-2025/Nakshi-Kantha-Embroidery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Functional Domestic Wraps and Coverlets",
+            "description": "Smaller specialized items including mirror wraps (arshilata), garment covers (bastani), prayer mats, and infant swaddling cloths.",
+            "evidence_urls": [
+              "https://www.aramcoworld.com/Articles/March-2025/Nakshi-Kantha-Embroidery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Custom Heritage Textile Commissioning",
+            "description": "Bespoke creation of narrative-driven embroidered pieces incorporating personalized memories and familial iconography ordered through artisan clusters.",
+            "evidence_urls": [
+              "https://houseofwanderingsilk.com/blogs/news/nakshi-kantha-artisans-process"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Living Heritage and Craft Demonstration Tours",
+            "description": "Cultural immersion experiences in rural villages observing community stitching circles and artisan storytelling sessions.",
+            "evidence_urls": [
+              "https://www.aramcoworld.com/Articles/March-2025/Nakshi-Kantha-Embroidery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Skill Transmission Workshops",
+            "description": "Informal and community-based instruction passing down needle techniques, motif symbolism, and historical context from master makers to younger practitioners.",
+            "evidence_urls": [
+              "https://www.aramcoworld.com/Articles/March-2025/Nakshi-Kantha-Embroidery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 75,
+        "tourism_potential": 45,
+        "education_potential": 60,
+        "creative_industry_potential": 70,
+        "digital_potential": 50
       },
       "resource_mobilization": {
-        "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
-        "potential_funding": []
+        "public_sector": [
+          {
+            "name": "National Intellectual Property and GI Authorities",
+            "description": "Government bodies responsible for granting and safeguarding Geographical Indication tags for regional craft variations like Jamalpur Nakshi Kantha.",
+            "evidence_urls": [
+              "https://textiletoday.com.bd/nakshi-kantha-traditional-"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "private_sector": [
+          {
+            "name": "Fair Trade and Ethical Textile Social Enterprises",
+            "description": "Organizations connecting rural artisan cooperatives with international home decor and fashion markets while emphasizing fair compensation and traceability.",
+            "evidence_urls": [
+              "https://houseofwanderingsilk.com/blogs/news/nakshi-kantha-artisans-process"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "Design Institutes and Cultural Research Centers",
+            "description": "University departments and research initiatives documenting motif taxonomies, ethnography, and sustainable integration into modern textile curricula.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Nakshi_kantha"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Village Women Artisan Collectives",
+            "description": "Self-organized networks of female practitioners maintaining traditional peer-to-peer transmission, collective working sessions, and cultural stewardship.",
+            "evidence_urls": [
+              "https://www.aramcoworld.com/Articles/March-2025/Nakshi-Kantha-Embroidery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "potential_funding": [
+          {
+            "name": "Cottage and SME Development Grants",
+            "description": "Institutional support mechanisms aimed at bolstering micro, small, and medium-sized handicraft enterprises and women-led rural cottage industries.",
+            "evidence_urls": [
+              "https://textiletoday.com.bd/nakshi-kantha-traditional-"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T17:06:22.129519Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Nakshi Kantha serves as a vital decentralized rural industrial model that directly supplements household incomes, employs women artisans across rural clusters, and strengthens local economic resilience.",
+          "evidence_urls": [
+            "https://textiletoday.com.bd/nakshi-kantha-traditional-"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Opportunities exist for cultural tourism centered around artisan clusters in regions like Jamalpur and Rajshahi, though rural infrastructure remains localized and informal.",
+          "evidence_urls": [
+            "https://textiletoday.com.bd/nakshi-kantha-traditional-"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Rich narrative traditions, symbolic folk motifs, and historical literature enable strong educational programming regarding Bengali textile heritage and traditional craft techniques.",
+          "evidence_urls": [
+            "https://www.aramcoworld.com/Articles/March-2025/Nakshi-Kantha-Embroidery"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Geographical Indication (GI) protection, growing international demand for sustainable handmade crafts, and contemporary designer collaborations enhance market positioning within the creative economy.",
+          "evidence_urls": [
+            "https://textiletoday.com.bd/nakshi-kantha-traditional-"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digital platforms and e-commerce channels offer pathways for marketing traceable, origin-verified heritage goods directly to global consumers, supporting broader market visibility.",
+          "evidence_urls": [
+            "https://textiletoday.com.bd/nakshi-kantha-traditional-"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 4,
+        "evidence_item_count": 27,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T17:06:22.129519Z",
         "last_error": null
       }
     },
@@ -10838,79 +11331,187 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T17:06:45.353571Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Traditional Frame Construction and Bamboo Whittling Techniques",
+            "description": "Centuries-old generational knowledge on splitting and bending thin bamboo slats (nứa) into precise concentric circles to form the skeleton of the Nón lá.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1",
+              "https://www.vinpearl.com/en/discovery/non-la-vietnam-vietnamese-national-symbol-of-elegance"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Leaf Preparation and Ironing Lore",
+            "description": "Specialized craft knowledge regarding palm leaf selection, sun-drying, dew-softening, and flattening via heated plowshares or irons.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Palm Leaves and Natural Sheaths",
+            "description": "Raw botanical materials including native palm leaves (lá nón, lá cọ, lá dừa, lá buông, lá hồ, lá dứa, du quy diệp) and dried bamboo sheaths (mo lang).",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Bamboo Slats and Frame Materials",
+            "description": "Supple bamboo (tre, nứa) utilized to build the multi-tiered structural rings and spokes of the conical frame.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Master Artisans and Village Practitioners",
+            "description": "Experienced local craftspeople across historic centers such as Chuông Village, Phủ Cam, Dạ Lê, and Gò Găng who possess complete mastery of hat-making steps.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1",
+              "https://vietnam.travel/things-to-do/vietnamese-conical-hat-non-la"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Phủ Cam and Dạ Lê Craft Localities",
+            "description": "Traditional production clusters in Thừa Thiên Huế famous for delicate craftsmanship, including poem hats (nón bài thơ).",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
-        "products": [],
+        "production": [
+          {
+            "name": "Handmade Nón lá Assembly",
+            "description": "The end-to-end artisanal process of framing, leaf arrangement, layering with bamboo sheaths, and delicate hand-sewing using nylon or silk thread.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Standard Everyday Nón lá",
+            "description": "Lightweight, functional conical hats utilized for daily sun and rain protection in rural settings and agricultural fields.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1",
+              "https://www.vinpearl.com/en/discovery/non-la-vietnam-vietnamese-national-symbol-of-elegance"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Nón Bài Thơ (Hue Poem Hat)",
+            "description": "Artisanal decorative variant incorporating hidden poetic verses or landscape illustrations visible under sunlight.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "services": [],
         "experience": [],
-        "education": []
+        "education": [
+          {
+            "name": "Intergenerational Skill Transmission",
+            "description": "Informal family and community-based teaching frameworks where younger generations learn hat-making practices from elders.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
+        "livelihood_potential": 60,
         "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "education_potential": 55,
+        "creative_industry_potential": 65,
+        "digital_potential": 30
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Village Craft Cooperatives and Families",
+            "description": "Local artisan families in Chuông, Phủ Cam, and other historic settlements safeguarding tactile skills and managing collective production tasks.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T17:06:45.353571Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Hat-making serves as a supplemental or primary household income source for multi-generational families in established rural craft villages.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
+          "rationale": "Craft villages such as Chuông near Hanoi and localities in Huế attract cultural tourists interested in witnessing traditional production firsthand.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The element offers clear pathways for cultural education regarding wet-rice agricultural history, ancient craftsmanship, and folklore.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The iconic shape and aesthetic of the Nón lá inspire applications in interior design, fashion styling alongside the áo dài, and artistic performances.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1",
+            "https://www.vinpearl.com/en/discovery/non-la-vietnam-vietnamese-national-symbol-of-elegance"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited digital documentation exists outside of travel features, cultural articles, and online video documentaries showcasing the making process.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/N%C3%B3n_l%C3%A1"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 3,
+        "evidence_item_count": 15,
+        "uncited_item_count": 2,
+        "invalid_evidence_url_count": 6,
+        "opportunity_scores_with_evidence": 4,
+        "opportunity_scores_without_evidence": 1,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T17:06:45.353571Z",
+        "last_error": "resource_mapping.place_resources[0] had no valid direct evidence URL and was excluded; value_chain.experience[0] had no valid direct evidence URL and was excluded; tourism_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -10995,78 +11596,220 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T17:07:08.291989Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Yijiangtu (Design Draft & Binary-Like Pattern Mapping)",
+            "description": "Hand-drawn cell calculation method and pattern templates functioning as an ancient weaving algorithm that converts artistic motifs into precise technical actions.",
+            "evidence_urls": [
+              "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Mnemonic Ballads",
+            "description": "Rhymed oral formulas sung by weavers while passing warps and splitting wefts to maintain synchronization and transmit technical procedures.",
+            "evidence_urls": [
+              "https://www.unesco.org/archives/multimedia/document-3298"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Giant Traditional Wooden Looms",
+            "description": "Massive structural looms measuring approximately 5.6 meters long and 4 meters high, operated jointly by two artisans.",
+            "evidence_urls": [
+              "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Specialized Sericulture and Precious Metallic Inputs",
+            "description": "High-grade mulberry silk, hammered pure gold threads, and specially preserved peacock feather threads.",
+            "evidence_urls": [
+              "https://www.unesco.org/archives/multimedia/document-3298"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Upper and Lower Loom Artisans",
+            "description": "Specialized craftspeople working in tandem—one perched high to lift harness threads (sorting) and one seated below to insert and beat wefts.",
+            "evidence_urls": [
+              "https://www.unesco.org/archives/multimedia/document-3298"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "National-Level and Provincial Heritage Bearers",
+            "description": "Master practitioners holding accredited knowledge for traditional design, pattern drafting, and structural maintenance of the craft.",
+            "evidence_urls": [
+              "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Nanjing Yunjin Museum of the Past Dynasties",
+            "description": "Exhibition, research, and safeguarding institution located in Nanjing, Jiangsu Province, dedicated to displaying historic garments, ancient looms, and re-woven imperial relics.",
+            "evidence_urls": [
+              "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Nanjing Yunjin Research Institute",
+            "description": "Specialized research and preservation body operating alongside the museum to maintain technical standards and reproduce ancient textile artifacts.",
+            "evidence_urls": [
+              "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Hand-Weaving on Large Wooden Looms",
+            "description": "Complex collaborative production process involving over one hundred sequential micro-procedures, yielding slow daily outputs.",
+            "evidence_urls": [
+              "https://www.unesco.org/archives/multimedia/document-3298"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "High-End Cultural Souvenirs and Replicated Imperial Regalia",
+            "description": "Museum-grade historical fabric replicas, ceremonial wall hangings, and luxury tailored garments incorporating gold and silk.",
+            "evidence_urls": [
+              "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Historical Textile Replication and Conservation Consulting",
+            "description": "Technical services rendered to museums and archaeological teams to reconstruct fragmented ancient silk textiles.",
+            "evidence_urls": [
+              "https://www.sinocultural.com/blogs/chinese-culture/yun-brocade-yunjin-of-china-nanjing-patterns-material-and-price"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Heritage Museum Tours and Loom Interaction",
+            "description": "Guided walkthroughs of historical displays coupled with tactile visitor engagement in beating wefts on demonstration looms.",
+            "evidence_urls": [
+              "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intangible Cultural Heritage Transmission Workshops",
+            "description": "Educational programs demonstrating pattern drafting, jacquard card preparation, and mnemonic singing for students and researchers.",
+            "evidence_urls": [
+              "https://www.unesco.org/archives/multimedia/document-3298"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 45,
+        "tourism_potential": 75,
+        "education_potential": 70,
+        "creative_industry_potential": 65,
+        "digital_potential": 40
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Nanjing Municipal Bureau of Culture and Tourism",
+            "description": "Government body overseeing municipal heritage policies, museum designation updates, and public cultural displays.",
+            "evidence_urls": [
+              "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Local Craftspeople and Inheritor Networks",
+            "description": "Communities of practitioners in Jiangsu province executing transmission of tacit skills and oral mnemonic traditions.",
+            "evidence_urls": [
+              "https://www.unesco.org/archives/multimedia/document-3298"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T17:07:08.291989Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High labor intensity and extended production cycles limit mass livelihood scalability, though master practitioners maintain specialized income streams through bespoke commissions and museum replication.",
+          "evidence_urls": [
+            "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Supported by dedicated infrastructure like the Nanjing Yunjin Museum, the element attracts cultural tourists interested in live demonstrations of ancient imperial crafts.",
+          "evidence_urls": [
+            "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong academic and public interest exists around its 1,600-year history, binary-like design mapping logic, and status as a UNESCO-recognized living fossil.",
+          "evidence_urls": [
+            "https://www.unesco.org/archives/multimedia/document-3298"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Motifs and textures inspire modern fashion designers and high-end textile collaborations looking to integrate traditional Chinese luxury aesthetics.",
+          "evidence_urls": [
+            "https://www.sinocultural.com/blogs/chinese-culture/yun-brocade-yunjin-of-china-nanjing-patterns-material-and-price"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digital archiving and pattern-mapping studies help document complex grid templates, though physical hand-weaving remains strictly analog.",
+          "evidence_urls": [
+            "https://www.chinadaily.com.cn/culture/art/2018-05/22/content_36262968.htm"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 20,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T17:07:08.291989Z",
         "last_error": null
       }
     },
@@ -11140,78 +11883,247 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T17:07:30.234103Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Guru-Shishya Parampara",
+            "description": "Traditional master-pupil transmission lineage through which yoga philosophy, postures, and ethical principles are orally and experientially passed down.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Ancient Texts and Scriptures",
+            "description": "Classical foundational literature including the Rigveda, Upanishads, and specialized yoga texts documented in the Traditional Knowledge Digital Library.",
+            "evidence_urls": [
+              "https://www.tkdl.res.in/tkdl/langdefault/common/Abouttkdl.asp?GL=Eng"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Yoga Mats",
+            "description": "Floor coverings utilized to provide stability, traction, and comfort during the practice of physical postures (asanas).",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Practitioner Attire",
+            "description": "Comfortable, flexible clothing worn to enable freedom of movement during yoga sessions.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Yoga Gurus and Instructors",
+            "description": "Practitioners, teachers, and lineage holders serving as custodians of yoga knowledge, philosophy, and alignment techniques.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Knowledge Experts and Researchers",
+            "description": "Specialists contributing to the documentation, classification, and legal defense of yoga as prior art via repositories like the TKDL.",
+            "evidence_urls": [
+              "https://www.tkdl.res.in/tkdl/langdefault/common/Abouttkdl.asp?GL=Eng"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Yoga Ashrams and Hermitages",
+            "description": "Traditional residential centers dedicated to spiritual discipline, immersive learning, and the practice of yoga.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Community Centers and Educational Institutions",
+            "description": "Public spaces, schools, and universities hosting regular yoga practice and instructional programs.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Traditional Knowledge Digital Library (TKDL)",
+            "description": "A collaborative digital repository established by CSIR and the Ministry of Ayush to prevent misappropriation and patent biopiracy of Indian yoga techniques.",
+            "evidence_urls": [
+              "https://www.tkdl.res.in/tkdl/langdefault/common/Abouttkdl.asp?GL=Eng"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Ministry of Ayush, Government of India",
+            "description": "Government body promoting traditional systems of medicine and holistic health practices including yoga.",
+            "evidence_urls": [
+              "https://www.tkdl.res.in/tkdl/langdefault/common/Abouttkdl.asp?GL=Eng"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Codification of Yoga Techniques",
+            "description": "Systematic documentation and translation of ancient yoga postures and practices into international languages and classification formats.",
+            "evidence_urls": [
+              "https://www.tkdl.res.in/tkdl/langdefault/common/Abouttkdl.asp?GL=Eng"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Digital and Print Literature on Yoga",
+            "description": "Books, manuscripts, and digital database records detailing asanas, breathing exercises, and philosophical principles.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163",
+              "https://www.tkdl.res.in/tkdl/langdefault/common/Abouttkdl.asp?GL=Eng"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Instructional and Training Services",
+            "description": "Guided yoga sessions, wellness classes, and teacher training programs delivered through ashrams, schools, and community centers.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Immersive Ashram Retreats",
+            "description": "Residential community experiences centered on meditation, pranayama, asana practice, and traditional lifestyle immersion.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Guru-Shishya Transmission and Academic Curricula",
+            "description": "Structured learning pathways operating via traditional teacher-disciple relationships as well as formal university programs.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 75,
+        "tourism_potential": 80,
+        "education_potential": 85,
+        "creative_industry_potential": 40,
+        "digital_potential": 70
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Council of Scientific and Industrial Research (CSIR) and Ministry of Ayush",
+            "description": "Public sector bodies driving the maintenance and international patent office integration of the Traditional Knowledge Digital Library.",
+            "evidence_urls": [
+              "https://www.tkdl.res.in/tkdl/langdefault/common/Abouttkdl.asp?GL=Eng"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
-        "academic": [],
-        "community": [],
+        "academic": [
+          {
+            "name": "Universities and Research Institutions",
+            "description": "Academic entities engaging in the study and instruction of yoga philosophy, physical culture, and health benefits.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Yoga Communities and Practitioners",
+            "description": "Grassroots groups, lineage holders, and community members acting as primary bearers and safeguarding agents of the tradition.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/yoga-01163"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T17:07:30.234103Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Yoga generates diverse livelihood opportunities for instructors, wellness practitioners, and administrative staff across ashrams, community centers, and institutional settings.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/yoga-01163"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Heritage and wellness tourism flourish as domestic and international visitors travel to India for immersive ashram stays and authentic training experiences.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/yoga-01163"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The practice is widely integrated into educational curricula, universities, and traditional transmission frameworks globally and locally.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/yoga-01163"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Yoga intersects with publishing, media, and traditional arts, though its core expression remains centered on personal discipline and health rather than commercial creative goods.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/yoga-01163"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digital platforms, social media dissemination, and digital repositories like the TKDL play a significant role in knowledge sharing, global outreach, and heritage protection.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/yoga-01163",
+            "https://www.tkdl.res.in/tkdl/langdefault/common/Abouttkdl.asp?GL=Eng"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 2,
+        "evidence_item_count": 23,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T17:07:30.234103Z",
         "last_error": null
       }
     },
@@ -11307,78 +12219,231 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T17:07:51.937496Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Handcrafting Techniques and Pumasi Labor-Sharing",
+            "description": "Generational knowledge encompassing bark harvesting, steaming, scraping, and sheet formation, supported by communal cooperation systems (pumasi).",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Paper Mulberry Tree (Dak / Broussonetia papyrifera)",
+            "description": "One-year-old branches harvested during winter months for robust inner bark fibers.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Korean_paper"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Dakpul and Natural Lye",
+            "description": "Mucilage from Hibiscus manihot roots (dakpul) used for fiber suspension and lye extracted from plant ashes for boiling bark.",
+            "evidence_urls": [
+              "https://eunahcho.com/hanji-production-process"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Hanji Master Artisans and Local Practitioners",
+            "description": "Skilled craftspeople preserving traditional papermaking methods across regions like Jeonju, Mungyeong, and Wonju.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Historical Production Centers",
+            "description": "Provinces and regional centers including Jeonju, Mungyeong, Wonju, and Goesan deeply associated with Hanji crafting.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Korea Heritage Service and Cultural Organizations",
+            "description": "National bodies and cultural institutions facilitating documentation, safeguarding policies, and international promotion.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Harvesting and Bark Processing",
+            "description": "Winter harvesting of dak branches, steaming, peeling dark bark, soaking, and scraping to produce clean white bark.",
+            "evidence_urls": [
+              "https://eunahcho.com/hanji-production-process"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional and Contemporary Hanji Sheets",
+            "description": "Handmade paper sheets utilized for conservation, calligraphy, artistic creation, and modern design applications.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Korean_paper"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Document Conservation and Restoration Services",
+            "description": "Specialized application of durable Hanji for restoring ancient manuscripts, archives, and historical artifacts.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Korean_paper"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Hanji Cultural Festivals and Exhibitions",
+            "description": "Public events such as the Jeonju Hanji Culture Festival showcasing craft demonstrations, fashion shows, and exhibitions.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Handcraft Workshops and Heritage Education Programs",
+            "description": "Educational initiatives transferring traditional sheet-forming skills and material science awareness to younger generations.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 70,
+        "education_potential": 75,
+        "creative_industry_potential": 70,
+        "digital_potential": 50
       },
       "resource_mobilization": {
-        "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
-        "potential_funding": []
+        "public_sector": [
+          {
+            "name": "Korea Heritage Service Safeguarding Programs",
+            "description": "Government-led documentation, master designation, and nomination efforts for international recognition.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "private_sector": [
+          {
+            "name": "Craft Cooperatives and Design Startups",
+            "description": "Small businesses and independent studios developing commercial applications, fashion items, and interior products.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Korean_paper"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "University Conservation and Material Research Labs",
+            "description": "Academic institutions studying fiber durability, conservation science, and sustainable material properties.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Korean_paper"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Local Artisan Networks and Pumasi Groups",
+            "description": "Practitioner communities upholding traditional collective labor practices and localized knowledge transmission.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "potential_funding": [
+          {
+            "name": "National Heritage Promotion and Cultural Grants",
+            "description": "Public funding allocations directed toward intangible cultural heritage preservation, festival support, and artisan welfare.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T17:07:51.937496Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Sustained demand for specialized artisan paper, restoration materials, and eco-friendly design products supports local maker livelihoods.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Korean_paper"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Regional hubs like Jeonju attract cultural tourists through dedicated festivals, craft villages, and immersive hands-on papermaking experiences.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong institutional interest and safeguarding frameworks facilitate structured transmission programs in schools and heritage workshops.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Artists, designers, and fashion creators continually explore Hanji for contemporary textiles, interior architecture, and fine arts.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Korean_paper"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digital documentation, virtual exhibitions, and online archiving enhance global awareness and academic research access.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/candidature-files/CLT-2026-RL-00000-00000"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 21,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T17:07:51.937496Z",
         "last_error": null
       }
     },
@@ -11466,79 +12531,247 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T17:08:13.265758Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Stoneware Crafting and Glazing Knowledge",
+            "description": "Ancestral techniques spanning the 14th to 16th centuries for high-fired stoneware production, celadon and monochrome glazing, and underglaze black painting.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Turiang Kiln Technology and Operation",
+            "description": "Historical knowledge relating to the structure, stacking, and firing of traditional updraft Turiang kilns used in ancient Sukhothai and Si Satchanalai.",
+            "evidence_urls": [
+              "https://dasta.or.th/en/articles/731"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Local Clay and River Sediment",
+            "description": "Raw clay sourced from local geological sites and mountain areas like Khao Si Lan, processed through filtering and aging.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Natural Mineral and Metallic Oxides",
+            "description": "Local minerals and metal oxides utilized to formulate underglaze black decorations and specialized slips.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Local Artisans and Pottery Craftsmen",
+            "description": "Skilled local community craftspeople carrying forward historical molding, wheel-throwing, engraving, and glazing traditions.",
+            "evidence_urls": [
+              "https://dasta.or.th/en/articles/731"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Mueang Kao Sukhothai Crafting Areas",
+            "description": "The historical production zone and cultural identity center located in Muang Kao Sub-district, Muang District, Sukhothai.",
+            "evidence_urls": [
+              "https://dasta.or.th/en/articles/731"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Si Satchanalai Historical Park Kiln Sites",
+            "description": "Archaeological zones along the Yom River containing ancient kiln complexes such as Ban Ko Noi and Ban Pa Yang.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "DASTA (Designated Areas for Sustainable Tourism Administration)",
+            "description": "Public organization supporting sustainable community development and heritage promotion in Sukhothai.",
+            "evidence_urls": [
+              "https://dasta.or.th/en/articles/731"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Raw Material Processing and Shaping",
+            "description": "Sourcing local mountain clay, filtering, aging, and shaping symmetrical ceramic vessels on a spinning wheel using traditional techniques.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Decoration and High-Temperature Firing",
+            "description": "Applying slip, engraving sgraffito patterns, painting underglaze black motifs, and firing in specialized kilns.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional Stoneware Vessels and Tableware",
+            "description": "Bowls, dishes, covered boxes, jars, and teapots produced using historical glazing styles like celadon and monochrome finishes.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Figurines and Architectural Elements",
+            "description": "Sculptural objects, figurines, and glazed architectural tiles reflecting classical Sukhothai design motifs.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Cultural Souvenir and Craft Distribution",
+            "description": "Provision of authentic locally crafted Sangkhalok ceramics as cultural identity items and souvenirs in Mueang Kao Sukhothai.",
+            "evidence_urls": [
+              "https://dasta.or.th/en/articles/731"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Heritage Site and Ancient Kiln Tourism",
+            "description": "Cultural tourism exploring historic kiln fields, archaeological park zones, and observing traditional pottery craftsmanship.",
+            "evidence_urls": [
+              "https://dasta.or.th/en/articles/731",
+              "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Traditional Pottery Skill Transmission",
+            "description": "Intergenerational transfer of ceramic molding, carving, and glazing practices within the local community.",
+            "evidence_urls": [
+              "https://dasta.or.th/en/articles/731"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
+        "livelihood_potential": 65,
+        "tourism_potential": 70,
+        "education_potential": 60,
+        "creative_industry_potential": 65,
         "digital_potential": 0
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "DASTA Sukhothai Office Support",
+            "description": "Regional development initiatives aimed at promoting sustainable tourism and enhancing community revenue through local heritage assets.",
+            "evidence_urls": [
+              "https://dasta.or.th/en/articles/731"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
-        "academic": [],
-        "community": [],
+        "academic": [
+          {
+            "name": "Archaeological and Historical Research Networks",
+            "description": "Prior academic collaborations and studies concerning ancient kiln structures, ceramic sequences, and maritime trade history.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Mueang Kao Local Craft Communities",
+            "description": "Local practitioners and residents maintaining the cultural identity and craft traditions of Sukhothai stoneware.",
+            "evidence_urls": [
+              "https://dasta.or.th/en/articles/731"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T17:08:13.265758Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Sangkhalok ceramic production serves as a signature handicraft that generates sustainable revenue and income opportunities for local communities in Sukhothai.",
+          "evidence_urls": [
+            "https://dasta.or.th/en/articles/731"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The presence of historical kiln sites, archaeological parks, and cultural zones like Mueang Kao Sukhothai attracts heritage tourists interested in ancient Southeast Asian trade ceramics.",
+          "evidence_urls": [
+            "https://dasta.or.th/en/articles/731",
+            "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Rich historical records, archaeological findings (including shipwreck trade studies), and traditional techniques offer clear pathways for academic and craft-based educational programs.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Distinctive aesthetic elements, historical motifs (such as aquatic life and floral scrolls), and traditional glazing provide strong foundations for contemporary craft design and cultural souvenirs.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Sangkhalok_ceramic_ware",
+            "https://dasta.or.th/en/articles/731"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
+          "rationale": "Limited formalized digital infrastructure or online intangible cultural heritage archiving initiatives are explicitly documented for this element outside basic web presence.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 2,
+        "evidence_item_count": 22,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 4,
+        "opportunity_scores_without_evidence": 1,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T17:08:13.265758Z",
+        "last_error": "digital_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -57698,7 +58931,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-09T13:44:40.170329Z",
+    "generated_at": "2026-10-09T17:08:35.496237Z",
     "total_ich_elements": 329,
     "complete_records": 328,
     "incomplete_records": 1,
