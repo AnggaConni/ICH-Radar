@@ -759,78 +759,239 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T11:50:02.727856Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Sericulture and Silkworm Rearing Knowledge",
+            "description": "Centuries-old indigenous knowledge passed down through generations regarding the cultivation of Bombyx mori silkworms, management of mulberry feeding, and life-cycle synchronization.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/the-making-of-thai-silk/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Mud Mee (Ikat) and Brocade Weaving Techniques",
+            "description": "Specialized craft techniques including tie-dyeing weft yarns prior to weaving (Mud Mee) and supplementary weft patterning (Khit) preserved across rural weaving communities.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/thai-silk-weaving-a-tapestry-of-tradition-innovation-and-cultural-resilience/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Bombyx mori Silkworms and Mulberry Plantations",
+            "description": "Biological resources comprising cultivated mulberry bushes providing exclusive nutrition for silkworms used in producing raw silk threads.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/the-making-of-thai-silk/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Handlooms and Reeling Equipment",
+            "description": "Wooden handlooms and traditional cocoon reeling (Saao Mai) devices used by village artisans to extract and weave fine silk yarns.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/an-introduction-to-thai-traditional-fabric-and-textiles/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Isan Village Artisans and Women Weavers",
+            "description": "Intergenerational network of skilled rural practitioners, predominantly women in Northeastern provinces, holding tacit expertise in spinning, natural dyeing, and loom setup.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/the-making-of-thai-silk/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Northeastern (Isaan) Weaving Villages",
+            "description": "Rural cultural landscapes and community centers across provinces such as Khon Kaen, Surin, Chaiyaphum, and Maha Sarakham where living heritage is practiced.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/thai-silk-weaving-a-tapestry-of-tradition-innovation-and-cultural-resilience/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Queen Sirikit Department of Sericulture and Queen Sirikit Museum of Textiles",
+            "description": "Government bodies and specialized heritage institutions dedicated to safeguarding sericulture traditions, research, and quality standard systems like the Royal Peacock Brand.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/an-introduction-to-thai-traditional-fabric-and-textiles/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Sericulture and Cocoon Harvesting",
+            "description": "Cultivating mulberry leaves, rearing silkworms through larval stages, harvesting cocoons, and performing traditional reeling (Saao Mai) to yield raw silk thread.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/the-making-of-thai-silk/",
+              "https://www.thailandfoundation.or.th/culture_heritage/an-introduction-to-thai-traditional-fabric-and-textiles/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Yarn Preparation and Natural Dyeing",
+            "description": "Washing, degumming, spinning, and dyeing silk yarns using natural color sources such as plant extracts and indigo.",
+            "evidence_urls": [
+              "https://www.mdpi.com/2071-1050/17/17/7802"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Handwoven Mud Mee and Brocade Silk Textiles",
+            "description": "Authentic hand-patterned silk fabrics created via traditional ikat tie-dyeing and supplementary weft techniques bearing regional motifs.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/thai-silk-weaving-a-tapestry-of-tradition-innovation-and-cultural-resilience/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Quality Certification and Standard Verification",
+            "description": "Institutional assessment and grading of silk products under standard markers such as the Royal Peacock certification tiers.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/an-introduction-to-thai-traditional-fabric-and-textiles/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Community-Based Craft Tourism and Village Workshops",
+            "description": "Immersive cultural visitor programs in Isan villages observing silk farming, natural dyeing processes, and traditional handloom operation.",
+            "evidence_urls": [
+              "https://www.cabi.org/digitalibrary/doi/10.5555/20133183574"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Skill Transmission and Heritage Demonstrations",
+            "description": "Informal family and community-led teaching initiatives passing down tacit weaving methods, pattern retention, and ecological knowledge to younger generations.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/thai-silk-weaving-a-tapestry-of-tradition-innovation-and-cultural-resilience/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 85,
+        "tourism_potential": 75,
+        "education_potential": 70,
+        "creative_industry_potential": 80,
+        "digital_potential": 40
       },
       "resource_mobilization": {
-        "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
+        "public_sector": [
+          {
+            "name": "Queen Sirikit Department of Sericulture",
+            "description": "Government agency providing technical support, research, and farmer training programs for silk production across Thailand.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/an-introduction-to-thai-traditional-fabric-and-textiles/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "private_sector": [
+          {
+            "name": "The Thai Silk Company Ltd.",
+            "description": "Enterprise working with rural weaving communities to source handwoven textiles and expand market reach.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/an-introduction-to-thai-traditional-fabric-and-textiles/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "University Research and Trajectory Equifinality Studies",
+            "description": "Academic and institutional documentation investigating sustainable sericulture, plant-based dyeing innovations, and intangible cultural heritage preservation.",
+            "evidence_urls": [
+              "https://www.mdpi.com/2071-1050/17/17/7802"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "The SUPPORT Foundation and Village Weaving Cooperatives",
+            "description": "Royal-patronage and grassroots community groups safeguarding local textile traditions and supporting women artisans in rural areas.",
+            "evidence_urls": [
+              "https://www.thailandfoundation.or.th/culture_heritage/the-making-of-thai-silk/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T11:50:02.727856Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Sericulture and handloom weaving provide established household-level income generation and community-based economic support across rural regions, notably in Isan.",
+          "evidence_urls": [
+            "https://www.thailandfoundation.or.th/culture_heritage/the-making-of-thai-silk/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Cultural heritage tourism models allow visitors to engage directly with weaving villages and observe traditional craft practices firsthand in regions like Khon Kaen and Surin.",
+          "evidence_urls": [
+            "https://www.cabi.org/digitalibrary/doi/10.5555/20133183574"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The craft relies on structured intergenerational transmission, supported by public museums, regional sericulture centers, and institutional documentation of traditional knowledge.",
+          "evidence_urls": [
+            "https://www.thailandfoundation.or.th/culture_heritage/an-introduction-to-thai-traditional-fabric-and-textiles/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Thai silk is integrated into high-fashion design sectors, global collections, and national strategies aimed at positioning traditional textiles within international creative markets.",
+          "evidence_urls": [
+            "https://www.thailandfoundation.or.th/culture_heritage/an-introduction-to-thai-traditional-fabric-and-textiles/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "While digital archives, documentation models, and online promotion exist, core production remains anchored in tactile hand-based knowledge rather than digital scaling.",
+          "evidence_urls": [
+            "https://www.mdpi.com/2071-1050/17/17/7802"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 5,
+        "evidence_item_count": 22,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T11:50:02.727856Z",
         "last_error": null
       }
     },
@@ -966,8 +1127,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T11:50:25.250435Z",
+      "resource_enrichment_status": "insufficient_evidence",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -997,19 +1158,19 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "insufficient_evidence",
+        "validation_status": "passed_with_warnings",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
+        "uncited_item_count": 10,
+        "invalid_evidence_url_count": 14,
         "opportunity_scores_with_evidence": 0,
         "opportunity_scores_without_evidence": 5,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T11:50:25.250435Z",
+        "last_error": "resource_mapping.knowledge_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.knowledge_resources[1] had no valid direct evidence URL and was excluded; resource_mapping.material_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.human_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.place_resources[0] had no valid direct evidence URL and was excluded; value_chain.production[0] had no valid direct evidence URL and was excluded; value_chain.products[0] had no valid direct evidence URL and was excluded; value_chain.experience[0] had no valid direct evidence URL and was excluded"
       }
     },
     {
@@ -54072,7 +54233,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-09T11:48:26.369357Z",
+    "generated_at": "2026-10-09T11:50:48.830943Z",
     "total_ich_elements": 329,
     "complete_records": 328,
     "incomplete_records": 1,
