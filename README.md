@@ -73,19 +73,19 @@ The dashboard includes:
 
 ## ⚙️ How It Works
 
-The system operates in an **alternating daily cycle**:
+The GitHub Actions workflow runs **daily at 00:00 UTC (07:00 WIB)** and alternates between two modes based on the UTC day:
 
-### Day A — Data Discovery & Standard Enrichment
+### Data Discovery & Standard Enrichment
 The engine audits existing records, enriches up to 3 incomplete records, and discovers up to 3 new heritage elements.
 
-### Day B — Resource & Opportunity Enrichment
-The engine selects up to **3 existing records** with the least Resource & Opportunity coverage and uses Gemini + Google Search to enrich `resource_mapping`, `value_chain`, `opportunity_analysis`, and `resource_mobilization`.
+### Resource & Opportunity Enrichment
+The engine selects up to **2 existing records** with the least source-linked Resource & Opportunity coverage and uses Gemini + Google Search to enrich `resource_mapping`, `value_chain`, `opportunity_analysis`, and `resource_mobilization`.
 
 ### Resource & Opportunity data model
-Each enriched record can now carry four additional analytical layers: resource mapping, value chain, opportunity indicators (0–100), and resource mobilization pathways. These are evidence-grounded analytical fields, not validated business plans.
+These fields are automated AI research outputs for human decision support, not verified business plans, market validation, or community-approved decisions. Source URLs are leads to inspect; the crawler checks URL format and response structure, not whether the source page independently supports each claim.
 
 ```
-Scheduled Trigger (every 2 days)
+Scheduled Trigger (daily; the pipeline alternates modes)
          │
          ▼
    Phase 0: Audit
@@ -375,7 +375,7 @@ Go to **Settings → Pages → Source** and set it to **Deploy from a branch**, 
 
 Go to **Actions → ICH Radar Auto-Crawler → Run workflow**.
 
-Set `Force crawl now` to `true` to bypass the 2-day guard and run immediately. This will populate `data.json` for the first time and commit it to your repository, which will trigger a GitHub Pages redeploy.
+Choose a run mode: `Data only`, `Resource enrichment`, `Resume only`, or `Both`. The workflow reads and writes JSON files committed in the repository (including `data.json`); it does not use a separate database. Changed files are committed by the GitHub Actions bot and can trigger the site deployment workflow.
 
 ---
 
@@ -383,46 +383,24 @@ Set `Force crawl now` to `true` to bypass the 2-day guard and run immediately. T
 
 Key constants in `scraper.py`:
 
-| Variable | Default | Description |
+| Setting | Current behaviour | Description |
 |---|---|---|
-| `CRAWL_INTERVAL_DAYS` | `2` | Minimum days between automatic crawler runs |
-| `max_discoveries_per_run` | `3` | Number of new elements to discover per run |
-| `incomplete_items[:3]` | `3` | Maximum incomplete records to enrich per run |
+| Scheduled workflow | Daily at 00:00 UTC | GitHub Actions alternates between data discovery/standard enrichment and Resource & Opportunity enrichment using the UTC day |
+| `max_discoveries_per_run` | `3` | Maximum new heritage elements requested in a discovery run |
+| Resource enrichment batch | `2` records | Up to two existing records are selected per Resource & Opportunity run |
 
-To increase discovery throughput, raise `max_discoveries_per_run`. Keep in mind that each discovery requires one Gemini API call, and the free tier has daily quota limits.
+The automatic schedule is configured in `.github/workflows/crawler.yml`. Run modes can also be selected manually from the Actions tab. Discovery throughput should be balanced against API quotas and data quality.
 
 ### GitHub Actions workflow (`crawler.yml`)
 
-The workflow runs daily at 00:00 UTC (07:00 WIB). Scheduled runs alternate between data discovery/standard enrichment and Resource & Opportunity enrichment:
+The workflow runs daily at 00:00 UTC (07:00 WIB). It alternates automatically between data discovery/standard enrichment and Resource & Opportunity enrichment. A manual run lets you choose one of four modes:
 
-```yaml
-on:
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-    inputs:
-      force_run:
-        description: 'Force crawl now'
-        required: false
-        default: 'false'
-```
+- `Data only`
+- `Resource enrichment`
+- `Resume only`
+- `Both`
 
----
-
-Understanding the Workflow Design:
-Cron Schedule Breakdown (0 0 */2 * *): * 0 ➔ Minute 0
-
-0 ➔ Hour 0 (Midnight UTC)
-
-*/2 ➔ Every 2 days
-
-* ➔ Every month
-
-* ➔ Every day of the week
-
-Manual Trigger (workflow_dispatch): Allows you to manually trigger the scraper at any time directly from the GitHub Actions UI.
-
-Infinite Loop Protection ([skip ci]): The [skip ci] tag acts as a crucial safeguard during the automated git commit, preventing the bot from triggering subsequent workflow runs infinitely.
+The workflow commits updated JSON files back to the repository. The separate website deployment workflow publishes the updated static files. No separate database or in-app reviewer/approval queue is configured.
 
 ## 🔑 Adding More Keywords
 
@@ -504,9 +482,11 @@ This project aligns with the principles of the **UNESCO Convention for the Safeg
 
 ## ⚖️ Disclaimer
 
-This tool is intended solely for **cultural heritage research, documentation, and safeguarding support**. All data is sourced from publicly available online information. The AI enrichment layer summarises and structures existing public knowledge — it does not generate or fabricate cultural information.
+This tool is intended for **cultural heritage research, documentation, and safeguarding support**. AI-generated profiles, classifications, summaries, and opportunity scores are automated research aids designed to support human analysis; they may contain errors, omissions, outdated information, or misinterpretations. They must not be treated as verified findings, official positions, market validation, or final recommendations.
 
-Source URLs for every record are stored and displayed in the dashboard, allowing full traceability back to original sources.
+The system checks data structure and URL format, but it does **not** independently verify that a cited webpage supports each claim. Source URLs are leads for further checking, not proof by themselves. This repository stores its inventory in JSON files and does not currently provide an in-app human-review or approval workflow.
+
+Before acting on a profile, check original sources, consult relevant communities and qualified subject-matter experts, and confirm community consent, safeguarding needs, fair benefit-sharing, feasibility, and context. AI supports human judgement; it does not replace it or override community authority.
 
 Heritage communities and researchers who identify inaccuracies in any record are encouraged to open an issue or pull request.
 
