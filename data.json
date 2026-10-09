@@ -2114,79 +2114,223 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T12:53:18.191213Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Pottery and Modeling Techniques",
+            "description": "Ancestral knowledge of hand-sculpting clay, coiling, slab building, pinching, and applying tule flower fiber (plumilla) passed down through generations of artisan families in Metepec.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Iconographic and Narrative Symbolism",
+            "description": "The complex system of representing biblical narratives, historical events, local flora and fauna, and cultural elements through detailed clay sculptures.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Local Clay Deposits (Barro)",
+            "description": "Natural regional clay resources utilized as the primary physical medium for shaping the core structure and fine figurines of the sculptures.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Tule Flower Fiber (Plumilla)",
+            "description": "Organic additive mixed into the clay compound to reinforce consistency and structural integrity during drying and firing processes.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Master Artisans and Artisan Families",
+            "description": "Experienced local practitioners, including notable multi-generational lineage families like the Soteno family, who preserve and execute the complex craft.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Metepec Pueblo Mágico",
+            "description": "The designated municipality and town in the State of Mexico serving as the historic, cultural, and geographical hub for the creation of the craft.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "System of Cultural Information (SIC Mexico) & State Registries",
+            "description": "Official federal and state cultural inventories recognizing the element as part of Mexico's intangible cultural heritage.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
+        "production": [
+          {
+            "name": "Clay Preparation and Fiber Blending",
+            "description": "Extracting local clay, combining it with water, and mixing in plumilla (tule flower fiber) to prevent cracking.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Hand-Sculpting and Assembly",
+            "description": "Building the main trunk structure using coiling and slab techniques while manually sculpting and wiring diverse decorative elements and figurines.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional and Contemporary Árboles de la Vida",
+            "description": "Intricate clay candelabras and freestanding sculptural trees ranging from miniature tabletop pieces to monumental public installations.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Artisanal Workshop Demonstrations",
+            "description": "Guided visits and instructional sessions hosted by family workshops showcasing traditional pottery techniques and material preparation.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "experience": [],
-        "education": []
+        "education": [
+          {
+            "name": "Intergenerational Craft Transmission",
+            "description": "The direct teaching of tacit skills, clay handling, and symbolic design systems from elders to younger family and community members.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
+        "livelihood_potential": 75,
         "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "education_potential": 65,
+        "creative_industry_potential": 70,
+        "digital_potential": 40
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Secretaría de Cultura (Sistema de Información Cultural)",
+            "description": "Federal and state cultural bodies maintaining the Intangible Cultural Heritage inventory and documentation for the element.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Artisan Lineage Families (e.g., Soteno Family)",
+            "description": "Local family networks that safeguard the technical execution, stylistic evolution, and direct intergenerational transmission of the craft.",
+            "evidence_urls": [
+              "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+              "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:53:18.191213Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The craft serves as an essential economic foundation and source of livelihood for numerous artisan families in Metepec, sustained by domestic and international collector demand.",
+          "evidence_urls": [
+            "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+            "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
+          "rationale": "As a designated Pueblo Mágico, Metepec attracts cultural tourists interested in witnessing pottery traditions, visiting artisan workshops, and viewing monumental public installations.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High potential exists for formal and informal educational programs focused on traditional Mexican folk art, iconography, and the synthesis of pre-Hispanic and colonial influences.",
+          "evidence_urls": [
+            "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20",
+            "https://revistamomexico.com/descubre-el-arte-de-los-arboles-de-la-vida-en-metepec/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The sculptures represent a high-value sector of Mexican folk art and fine crafts, drawing attention from galleries, curators, designers, and national cultural institutions.",
+          "evidence_urls": [
+            "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "While limited due to the physical and tactile nature of clay pottery, digital documentation, inventories, and virtual museum showcases offer moderate scope for international visibility.",
+          "evidence_urls": [
+            "https://sic.cultura.gob.mx/ficha.php?table=patrimonio_cultural_inmaterial&id=20"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 2,
+        "evidence_item_count": 18,
+        "uncited_item_count": 1,
+        "invalid_evidence_url_count": 7,
+        "opportunity_scores_with_evidence": 4,
+        "opportunity_scores_without_evidence": 1,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T12:53:18.191213Z",
+        "last_error": "value_chain.experience[0] had no valid direct evidence URL and was excluded; tourism_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -2273,24 +2417,121 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T12:53:44.173051Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Korvai Weaving Technique",
+            "description": "An intricate traditional handloom technique where the saree body, border, and pallu are woven separately and precisely interlocked.",
+            "evidence_urls": [
+              "https://www.vasumatis.com/blogs/news/how-kanjivaram-sarees-are-made"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Temple Motif Iconography",
+            "description": "Design knowledge systems drawing inspiration from South Indian temple sculptures, mythology, and nature.",
+            "evidence_urls": [
+              "https://www.mokshaa.com/blogs/news/the-heritage-behind-kanchipuram-silk-stories-woven-in-gold"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Pure Mulberry Silk",
+            "description": "High-grade mulberry silk threads utilized as the foundational structural material for durability and texture.",
+            "evidence_urls": [
+              "https://www.mokshaa.com/blogs/news/the-heritage-behind-kanchipuram-silk-stories-woven-in-gold"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Zari Threads",
+            "description": "Gold and silver metallic thread elements incorporated into the weave for ornamentation and borders.",
+            "evidence_urls": [
+              "https://www.mokshaa.com/blogs/news/the-heritage-behind-kanchipuram-silk-stories-woven-in-gold"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Traditional Weavers and Artisans",
+            "description": "Intergenerational weaving communities possessing specialized tacit knowledge of pit-loom operation and design execution.",
+            "evidence_urls": [
+              "https://www.pothys.com/blog/kanchipuram-silk-sarees-royalty-woven-in-tradition/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Kanchipuram Temple Town",
+            "description": "The historic cluster region in Tamil Nadu serving as the geographic and cultural epicentre of production.",
+            "evidence_urls": [
+              "https://www.mokshaa.com/blogs/news/the-heritage-behind-kanchipuram-silk-stories-woven-in-gold"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Handloom Weaving and Interlocking",
+            "description": "Manual fabrication using pit looms and multi-shuttle techniques to assemble body, border, and pallu.",
+            "evidence_urls": [
+              "https://www.vasumatis.com/blogs/news/how-kanjivaram-sarees-are-made"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Kanchipuram Silk Sarees",
+            "description": "Handwoven pure mulberry silk garments featuring heavy zari work and traditional motifs.",
+            "evidence_urls": [
+              "https://www.mokshaa.com/blogs/news/the-heritage-behind-kanchipuram-silk-stories-woven-in-gold"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Customized Heirloom Weaving",
+            "description": "Commission-based creation of bespoke traditional sarees for weddings and significant life-cycle events.",
+            "evidence_urls": [
+              "https://www.pothys.com/blog/kanchipuram-silk-sarees-royalty-woven-in-tradition/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Craft Cluster Heritage Tours",
+            "description": "Visitor engagement with local artisan studios to observe traditional sericulture preparation and handloom weaving.",
+            "evidence_urls": [
+              "https://www.pothys.com/blog/kanchipuram-silk-sarees-royalty-woven-in-tradition/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Weaving Skill Transmission",
+            "description": "Intergenerational transfer of tacit technical skills regarding dyeing, warping, and loom mechanics.",
+            "evidence_urls": [
+              "https://www.mokshaa.com/blogs/news/the-heritage-behind-kanchipuram-silk-stories-woven-in-gold"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
+        "livelihood_potential": 85,
+        "tourism_potential": 60,
         "education_potential": 0,
         "creative_industry_potential": 0,
         "digital_potential": 0
@@ -2302,50 +2543,54 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:53:44.173051Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Sustains thousands of artisan households through traditional handloom production and strong domestic bridal market demand.",
+          "evidence_urls": [
+            "https://www.pothys.com/blog/kanchipuram-silk-sarees-royalty-woven-in-tradition/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The historic temple town context of Kanchipuram attracts cultural heritage visitors interested in textile traditions.",
+          "evidence_urls": [
+            "https://www.mokshaa.com/blogs/news/the-heritage-behind-kanchipuram-silk-stories-woven-in-gold"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
+          "rationale": "Rich repository of indigenous design knowledge, motif symbolism, and handloom techniques suitable for documentation.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "creative_industry_potential": {
-          "rationale": "",
+          "rationale": "High design adaptability allows integration into contemporary fashion textiles while maintaining core heritage markers.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "digital_potential": {
-          "rationale": "",
+          "rationale": "Growing utilization of online documentation, digital storytelling, and e-commerce traceability for GI-certified goods.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 3,
+        "evidence_item_count": 13,
+        "uncited_item_count": 4,
+        "invalid_evidence_url_count": 7,
+        "opportunity_scores_with_evidence": 2,
+        "opportunity_scores_without_evidence": 3,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T12:53:44.173051Z",
+        "last_error": "resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; resource_mobilization.public_sector[0] had no valid direct evidence URL and was excluded; resource_mobilization.academic[0] had no valid direct evidence URL and was excluded; resource_mobilization.community[0] had no valid direct evidence URL and was excluded; education_potential score reset to 0 because category-specific evidence URLs were absent; creative_industry_potential score reset to 0 because category-specific evidence URLs were absent; digital_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -2440,8 +2685,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:54:06.414126Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -2471,8 +2716,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -2482,8 +2727,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T12:54:06.414126Z",
+        "last_error": "response must be a JSON object"
       }
     },
     {
@@ -2598,78 +2843,246 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T12:54:53.712901Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Culinary Heritage and Folklore of La Chandeleur",
+            "description": "Oral and practiced traditions concerning the symbolism of crêpes representing the sun, solar return, and agricultural prosperity rituals.",
+            "evidence_urls": [
+              "https://www.tastefrance.com/us/france/articles/la-chandeleur-frances-festive-day-crepes-and-fortune"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Coin-Flipping and Good Luck Ritual Knowledge",
+            "description": "Traditional know-how regarding fortune rituals, such as flipping a crêpe with the right hand while holding a coin in the left hand.",
+            "evidence_urls": [
+              "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Crêpe Preparation Ingredients",
+            "description": "Basic culinary components including all-purpose or buckwheat flour, eggs, whole milk, butter, sugar, and salt.",
+            "evidence_urls": [
+              "https://couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Baking Tools (Billig and Pans)",
+            "description": "Specialized equipment such as cast-iron pans or traditional Breton billigs used to bake thin crêpes.",
+            "evidence_urls": [
+              "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Home Cooks and Family Intergenerational Transmitters",
+            "description": "Family members and elder practitioners who pass down recipes, coin-flipping techniques, and festive customs to younger generations.",
+            "evidence_urls": [
+              "https://couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Professional Crêpiers and Culinary Experts",
+            "description": "Commercial and artisanal crêpe makers who preserve and showcase regional techniques, particularly in regions like Brittany.",
+            "evidence_urls": [
+              "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Domestic Kitchens across France",
+            "description": "Private domestic spaces where families and friends gather annually on February 2nd to cook and eat together.",
+            "evidence_urls": [
+              "https://couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Crêperies and Local Markets",
+            "description": "Public dining establishments and community markets hosting festive events centered around Candlemas.",
+            "evidence_urls": [
+              "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Cultural Institutes and Language Schools",
+            "description": "Educational bodies promoting French cultural traditions and vocabulary associated with La Chandeleur to learners worldwide.",
+            "evidence_urls": [
+              "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Gastronomic Promotion Organizations",
+            "description": "Entities like Taste France highlighting traditional foodways, festive days, and associated cultural heritage elements.",
+            "evidence_urls": [
+              "https://www.tastefrance.com/us/france/articles/la-chandeleur-frances-festive-day-crepes-and-fortune"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Artisanal Flour and Dairy Sourcing",
+            "description": "Procuring local agricultural ingredients like wheat flour, milk, and butter used as the foundation for batter formulation.",
+            "evidence_urls": [
+              "https://couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional Sweet and Savory Crêpes",
+            "description": "Prepared food products featuring thin golden pancakes served with traditional toppings such as sugar, jam, or cider.",
+            "evidence_urls": [
+              "https://couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Specialized Crêperie Dining Events",
+            "description": "Public or private dining services offering themed menus and communal gatherings on February 2nd.",
+            "evidence_urls": [
+              "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Candlemas Family Celebration and Coin Rituals",
+            "description": "The lived seasonal experience of gathering, batter mixing, flipping crêpes with coins, and celebrating the return of light.",
+            "evidence_urls": [
+              "https://www.tastefrance.com/us/france/articles/la-chandeleur-frances-festive-day-crepes-and-fortune"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Culinary Workshops and Cultural Lessons",
+            "description": "Educational sessions teaching children and culinary students the history of Candlemas alongside practical cooking methods.",
+            "evidence_urls": [
+              "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 25,
+        "tourism_potential": 30,
+        "education_potential": 65,
+        "creative_industry_potential": 35,
+        "digital_potential": 40
       },
       "resource_mobilization": {
         "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
+        "private_sector": [
+          {
+            "name": "Culinary Brands and Food Magazines",
+            "description": "Publishers and culinary platforms generating informational guides, heritage articles, and recipe adaptations for the public.",
+            "evidence_urls": [
+              "https://www.tastefrance.com/us/france/articles/la-chandeleur-frances-festive-day-crepes-and-fortune",
+              "https://couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "Language and Cultural Teaching Programs",
+            "description": "Educational entities incorporating the history of Candlemas and practical cooking vocabulary into French curriculum.",
+            "evidence_urls": [
+              "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Family and Social Networks",
+            "description": "Informal community networks preserving the domestic transmission of festive customs, recipes, and folklore practices.",
+            "evidence_urls": [
+              "https://couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:54:53.712901Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Supports seasonal commercial activity for local crêperies and ingredient producers around February 2nd, though mostly practiced as an informal domestic tradition.",
+          "evidence_urls": [
+            "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Drives specialized culinary tourism and localized events in regions like Brittany and major cultural hubs, though primarily celebrated domestically.",
+          "evidence_urls": [
+            "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Offers strong utility for teaching French language, cultural history, folklore, and culinary arts to younger generations and international learners.",
+          "evidence_urls": [
+            "https://www.accentfrancais.com/en/french-culture/la-chandeleur-the-pancake-festival"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Inspires recipe publications by master pastry chefs, cultural media features, and artistic content focusing on French food heritage.",
+          "evidence_urls": [
+            "https://www.tastefrance.com/us/france/articles/la-chandeleur-frances-festive-day-crepes-and-fortune"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Enables widespread digital engagement through online recipe sharing, cultural explanation videos, and virtual family celebration content.",
+          "evidence_urls": [
+            "https://couleurnature.com/blogs/news/la-chandeleur-a-delicious-french-tradition"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 23,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T12:54:53.712901Z",
         "last_error": null
       }
     },
@@ -2739,78 +3152,237 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T12:55:15.462498Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Hahoe Byeolsingut Talnori Performance Scripts and Episodes",
+            "description": "Traditional knowledge of the eight structured episodes (madang) combining shamanistic rites, satire, and social criticism.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Oracle and Prophecy Ritual Knowledge",
+            "description": "Traditional practices involving the village 'dangsan' mountain owner (sanju) inquiring about the guardian deity's wishes through water offerings.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Hahoetal (Traditional Wooden Masks)",
+            "description": "Eleven historical wooden masks made from alder wood with movable jaws, representing iconic characters like the Nobleman, Monk, and Butcher.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Musical Instruments (Pungmulkkun)",
+            "description": "Farmer's music instruments including kkwaenggwari, taepyeongso, sogo, buk, janggo, and jing used to accompany the dance-drama.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Hahoe Byeolsingut Talnori Safeguarding Association",
+            "description": "Practitioners, designated holders, and trained performers dedicated to preserving, executing, and transmitting the masked dance-drama.",
+            "evidence_urls": [
+              "https://www.korea.net/NewsFocus/Culture/view?articleId=66861"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Hahoe Folk Village",
+            "description": "A UNESCO World Heritage site in Andong, North Gyeongsang Province, serving as the historic cradle and performance backdrop for the ritual.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Hahoe Village Mask Dance Theater",
+            "description": "Dedicated local venue located within Hahoe Village hosting regular performances of the masked dance-drama.",
+            "evidence_urls": [
+              "https://english.cha.go.kr/cha/idx/SubIndex.do?mn=EN_03_02"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Important Intangible Cultural Property Designation (No. 69)",
+            "description": "National legal and administrative framework established in 1980 by South Korea for the safeguarding of the element.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "UNESCO Intangible Cultural Heritage of Humanity",
+            "description": "International recognition status inscribed for Talchum mask dance dramas (including Hahoe Byeolsingut Talnori).",
+            "evidence_urls": [
+              "https://www.korea.net/NewsFocus/Culture/view?articleId=66861"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Mask Carving and Maintenance",
+            "description": "Traditional craftsmanship involved in crafting and maintaining alder wood masks following historic templates.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Miniature Masks and Craft Souvenirs",
+            "description": "Crafted replicas of Hahoetal masks produced as cultural souvenirs for visitors.",
+            "evidence_urls": [
+              "https://english.cha.go.kr/cha/idx/SubIndex.do?mn=EN_03_02"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Guided Heritage Interpretation",
+            "description": "Cultural tourism interpretation detailing the history of the clan village, Confucian architecture, and ritual satire.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Live Mask Dance-Drama Performances",
+            "description": "Regular theatrical presentations of the eight madang episodes staged for visitors at Hahoe Village.",
+            "evidence_urls": [
+              "https://english.cha.go.kr/cha/idx/SubIndex.do?mn=EN_03_02"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Mask Dance Workshops and Transmission Programs",
+            "description": "Educational transmission initiatives where practitioners teach dance steps, musical rhythms, and cultural context to students and public participants.",
+            "evidence_urls": [
+              "https://www.korea.net/NewsFocus/Culture/view?articleId=66861"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 45,
+        "tourism_potential": 85,
+        "education_potential": 70,
+        "creative_industry_potential": 50,
+        "digital_potential": 35
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Cultural Heritage Administration (CHA) of Korea",
+            "description": "National government agency responsible for the statutory designation, protection, and administrative support of Important Intangible Cultural Properties.",
+            "evidence_urls": [
+              "https://english.cha.go.kr/cha/idx/SubIndex.do?mn=EN_03_02"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Andong City Local Government",
+            "description": "Municipal authority supporting local heritage infrastructure, regional tourism promotion, and cultural festivals.",
+            "evidence_urls": [
+              "https://www.korea.net/NewsFocus/Culture/view?articleId=66861"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Hahoe Village Local Community and Pungsan Ryu Clan Descendants",
+            "description": "Residents and lineage holders maintaining the physical fabric of the historic clan village and supporting community-rooted ritual traditions.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:55:15.462498Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Practitioners and local community members sustain limited economic engagement through scheduled performances, localized craft production, and cultural tourism services coordinated around Hahoe Village.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "As part of a designated UNESCO World Heritage Village, the element attracts substantial domestic and international cultural heritage tourism via regular performances at the village theater.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori",
+            "https://english.cha.go.kr/cha/idx/SubIndex.do?mn=EN_03_02"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Clear transmission structures exist through safeguarding associations, offering formal workshops, school presentations, and cultural education programs on traditional Korean mask drama.",
+          "evidence_urls": [
+            "https://www.korea.net/NewsFocus/Culture/view?articleId=66861"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Distinctive visual assets (Hahoetal masks) and satirical narrative plots offer inspiration for visual arts, performing arts adaptation, and localized craft merchandise.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Hahoe_byeolsingut_talnori"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited digital integration exists primarily through archival documentation, virtual showcases by cultural agencies, and recorded video performances available online.",
+          "evidence_urls": [
+            "https://english.cha.go.kr/cha/idx/SubIndex.do?mn=EN_03_02"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 22,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T12:55:15.462498Z",
         "last_error": null
       }
     },
@@ -2950,8 +3522,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:55:36.805210Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -2981,8 +3553,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -2992,8 +3564,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T12:55:36.805210Z",
+        "last_error": "resource_mapping must be an object; value_chain must be an object; resource_mobilization must be an object; opportunity_analysis must be an object; opportunity_score_evidence must be an object"
       }
     },
     {
@@ -3066,78 +3638,203 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T12:56:23.103113Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Sardana Choreographic and Musical Repertoire",
+            "description": "Systematized step structures including curts (short steps), llargs (long steps), and the precise mathematical timing of the repartiment, performed to traditional cobla compositions.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana",
+              "https://www.barcelonayellow.com/bcn-info/sardana-dance"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Cobla Instrumentation",
+            "description": "Traditional 11-person musical ensemble utilizing specialized instruments including the flabiol, tamborí, tibles, tenores, trumpets, fiscorns, trombone, and double bass.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana",
+              "https://danceus.org/folk-dance/sardana-dance-traditional-circle-dance-of-catalonia/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Sardanistes and Colles Sardanistes",
+            "description": "Dedicated community dancers, professional dance groups, and musicians possessing specialized training in sardana execution and transmission.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Town Squares and Plazas of Catalonia, Empordà, and Girona",
+            "description": "Public community spaces, including the esplanade in front of Barcelona Cathedral and local plazas hosting open-air ballades and aplecs.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana",
+              "https://www.barcelonayellow.com/bcn-info/sardana-dance"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Confederació Sardanista de Catalunya",
+            "description": "Centralized umbrella organization uniting local groups, clubs, and cultural associations dedicated to safeguarding and organizing sardana activities.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Cobla Composition and Instrument Crafting",
+            "description": "Musical arrangement of traditional sardana pieces and specialized craftsmanship of unique regional instruments like the tenora and tible.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional Musical Scores and Recordings",
+            "description": "Published sheet music for cobla bands and recordings of historical and modern sardanas.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Live Cobla and Dance Performances",
+            "description": "Staging of public musical performances and organized dance events for local civic celebrations and festivals.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana",
+              "https://www.barcelonayellow.com/bcn-info/sardana-dance"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Aplecs and Ballades Participation",
+            "description": "Open-air community gatherings and weekly public circle dances where locals and visitors can join hands and participate directly.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana",
+              "https://danceus.org/folk-dance/sardana-dance-traditional-circle-dance-of-catalonia/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Sardana Community Transmission and Classes",
+            "description": "Informal and formal instruction by local associations and cultural clubs teaching step patterns, timing, and circle etiquette to new generations.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 30,
+        "tourism_potential": 60,
+        "education_potential": 50,
+        "creative_industry_potential": 40,
+        "digital_potential": 25
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Municipal Cultural Departments",
+            "description": "Local government bodies providing public squares, permits, and logistical support for weekend ballades and town festival celebrations.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana",
+              "https://www.barcelonayellow.com/bcn-info/sardana-dance"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Colles Sardanistes and Local Cultural Associations",
+            "description": "Grassroots civic groups maintaining active practice, organizing regional gatherings (aplecs), and safeguarding community inclusion standards.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sardana"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:56:23.103113Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Professional opportunities are primarily limited to specialized cobla musicians, instructors, and event organizers, functioning largely within a non-profit community and associative framework rather than commercial employment.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Sardana"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Weekly public ballades in prominent civic locations like Barcelona Cathedral square draw cultural tourists and encourage participatory public engagement.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Sardana",
+            "https://www.barcelonayellow.com/bcn-info/sardana-dance"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong community-led transmission models exist through local clubs, schools, and cultural associations dedicated to passing down step structures and social values.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Sardana"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Involves active musical composition for cobla orchestration, live performance recording, and traditional instrument manufacturing, supporting local artistic ecosystems.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Sardana"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited digital integration exists primarily via online archives, community event listings, and video documentation of regional aplecs and tutorials.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Sardana"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 17,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T12:56:23.103113Z",
         "last_error": null
       }
     },
@@ -3219,78 +3916,219 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T12:56:43.916045Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Ancestral Zapotec and Mixtec Ceramic Heritage",
+            "description": "Centuries-old indigenous knowledge of clay behavior, low-oxygen firing techniques, and hand-shaping methods transmitted across generations.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Barro_negro_pottery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Doña Rosa Polishing Innovation",
+            "description": "The mid-20th-century technical breakthrough of burnishing leather-hard clay with quartz stones to achieve a metallic-like glossy black finish.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Barro_negro_pottery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Local Special Black Clay",
+            "description": "Unique mineral-laden, iron-rich black clay sourced specifically from local deposits in San Bartolo Coyotepec, Oaxaca.",
+            "evidence_urls": [
+              "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Burnishing Tools",
+            "description": "Quartz stones and smooth implements used to compress and polish the clay surface prior to firing.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Barro_negro_pottery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Oaxacan Master Artisans and Families",
+            "description": "Indigenous practitioners, multi-generational family workshops, and master potters preserving and evolving the barro negro tradition.",
+            "evidence_urls": [
+              "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "San Bartolo Coyotepec",
+            "description": "The historical town in the Central Valleys of Oaxaca where clay mining, traditional production, and community workshops are concentrated.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Barro_negro_pottery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Friends of Oaxacan Folk Art (FOFA)",
+            "description": "Organization supporting Oaxacan folk artists, documenting ceramic traditions, and maintaining artist directories.",
+            "evidence_urls": [
+              "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Clay Mining and Preparation",
+            "description": "Traditional extraction of raw clay from local deposits, sun-drying, hydration, and meticulous impurity removal.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Barro_negro_pottery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Hand-Shaping and Burnishing",
+            "description": "Hand-molding vessels or using traditional plates/wheels, followed by stone-polishing at the leather-hard stage.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Barro_negro_pottery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Low-Oxygen Firing",
+            "description": "Firing pottery in enclosed or underground kilns utilizing smoke and reduced oxygen to produce the signature black finish.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Barro_negro_pottery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Polished Decorative and Utilitarian Ceramics",
+            "description": "Iconic glossy black vessels, sculptures, figurines, and traditional items such as cántaros crafted with intricate cut-out designs.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Barro_negro_pottery"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Family Workshop Demonstrations",
+            "description": "Guided visits and live crafting demonstrations hosted by local artisan families in San Bartolo Coyotepec.",
+            "evidence_urls": [
+              "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Cultural Heritage Tourism",
+            "description": "Immersive cultural tourism allowing visitors to experience the living heritage and studio practices of Oaxacan potters.",
+            "evidence_urls": [
+              "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Skill Transmission",
+            "description": "Passing down empirical knowledge of clay harvesting, forming techniques, and artistic motifs from elders to younger family members.",
+            "evidence_urls": [
+              "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 75,
+        "tourism_potential": 70,
+        "education_potential": 65,
+        "creative_industry_potential": 80,
+        "digital_potential": 40
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Local Artisan Families and Lineages",
+            "description": "Extended family networks in San Bartolo Coyotepec (such as the Pedro Martínez family and De Nieto Real family) managing production and safeguarding heritage.",
+            "evidence_urls": [
+              "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:56:43.916045Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The craft sustains community households and multi-generational family workshops through direct production and sale of ceramic goods.",
+          "evidence_urls": [
+            "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "San Bartolo Coyotepec attracts cultural travelers interested in witnessing authentic studio practices and purchasing folk art directly from makers.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Barro_negro_pottery"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong framework for intangible cultural heritage transmission via familial apprenticeships and cultural documentation.",
+          "evidence_urls": [
+            "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Recognized globally as a distinctive design object and sculptural medium, bridging traditional folk art with contemporary craft markets.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Barro_negro_pottery"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited digital infrastructure native to the community craft process, though secondary online directories and cultural features exist.",
+          "evidence_urls": [
+            "https://www.friendsofoaxacanfolkart.org/ceramics-black-barro-negro/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 2,
+        "evidence_item_count": 20,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T12:56:43.916045Z",
         "last_error": null
       }
     },
@@ -3408,8 +4246,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:57:05.272338Z",
+      "resource_enrichment_status": "insufficient_evidence",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -3439,19 +4277,19 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "insufficient_evidence",
+        "validation_status": "passed_with_warnings",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
+        "uncited_item_count": 12,
+        "invalid_evidence_url_count": 19,
         "opportunity_scores_with_evidence": 0,
         "opportunity_scores_without_evidence": 5,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T12:57:05.272338Z",
+        "last_error": "resource_mapping.knowledge_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.material_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.human_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.place_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; value_chain.production[0] had no valid direct evidence URL and was excluded; value_chain.products[0] had no valid direct evidence URL and was excluded; value_chain.services[0] had no valid direct evidence URL and was excluded"
       }
     },
     {
@@ -3539,78 +4377,213 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T12:57:29.464429Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Geometric Design and Bundling Know-How (Shamseh)",
+            "description": "Passed-down generational expertise in arranging tiny rods of wood, bone, and metal into precise prismatic geometric bundles and star-shaped mosaics.",
+            "evidence_urls": [
+              "https://www.indrastra.com/2022/09/the-art-of-khatam-kari-story-of.html",
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Raw Inlay Substrates and Elements",
+            "description": "High-quality woods (walnut, rosewood, ebony, teak), animal bone, and metals (brass, silver, copper) utilized for micro-mosaic assembly.",
+            "evidence_urls": [
+              "https://tehranoffers.com/persian-khatamkari/",
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Master Artisans and Craftsmen (Ustadrs)",
+            "description": "Skilled practitioners and workshop masters maintaining the labor-intensive traditions of cutting, gluing, pressing, and slicing khatam rods across historic centers.",
+            "evidence_urls": [
+              "https://iraniansouvenirs.com/khatam/",
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Historic Workshop Hubs and Bazaars",
+            "description": "Traditional artisan workshops located in the historical bazaars and urban centers of Isfahan, Shiraz, and Tehran.",
+            "evidence_urls": [
+              "https://packtoiran.com/media/news/20200208-144621-1740.png",
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Cultural Heritage, Handicrafts and Tourism Organization Workshops",
+            "description": "institutional framework and specialized artisan workshops supporting traditional craft preservation in Iran.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Rod Bundling and Slicing (Khatam-bandi)",
+            "description": "The meticulous process of aligning, gluing, compressing, and slicing multi-material rods into thin veneer sheets for surface application.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Inlaid Decorative and Functional Objects",
+            "description": "Finished goods including jewelry boxes, chessboards, frames, desk sets, trays, and musical instruments adorned with geometric marquetry.",
+            "evidence_urls": [
+              "https://tehranoffers.com/persian-khatamkari/",
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Custom Restoration and Architectural Inlay",
+            "description": "Specialized repair and architectural installation of inlaid panels for historic doors, shrines, and fine furniture.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Heritage Bazaar and Workshop Tours",
+            "description": "Cultural tourism activities allowing visitors to observe live demonstrations of micro-mosaic assembly in traditional workshop environments.",
+            "evidence_urls": [
+              "https://packtoiran.com/media/news/20200208-144621-1740.png"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Master-Apprentice Knowledge Transfer",
+            "description": "Traditional oral and observational transmission of geometry, material preparation, and assembly techniques from master to apprentice.",
+            "evidence_urls": [
+              "https://www.indrastra.com/2022/09/the-art-of-khatam-kari-story-of.html",
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 60,
+        "education_potential": 55,
+        "creative_industry_potential": 65,
+        "digital_potential": 40
       },
       "resource_mobilization": {
-        "public_sector": [],
-        "private_sector": [],
+        "public_sector": [
+          {
+            "name": "Cultural Heritage Organization Inlay Workshops",
+            "description": "State-supported preservation initiatives and workshop spaces dedicated to maintaining traditional inlay arts.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "private_sector": [
+          {
+            "name": "Independent Artisan Workshops and Galleries",
+            "description": "Private family-run workshops and galleries operating within historic urban bazaars to produce and market inlaid pieces.",
+            "evidence_urls": [
+              "https://packtoiran.com/media/news/20200208-144621-1740.png",
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Guilds of Traditional Marquetry Masters",
+            "description": "Informal and formal practitioner networks safeguarding technical standards and intergenerational transmission.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Khatam"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:57:29.464429Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Khatamkari sustains traditional artisan workshops and provides income through the production of intricate handicraft commodities sold locally and internationally.",
+          "evidence_urls": [
+            "https://iraniansouvenirs.com/khatam/",
+            "https://en.wikipedia.org/wiki/Khatam"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Historic workshops in tourism hubs like Isfahan and Shiraz attract cultural travelers interested in witnessing live crafting techniques in traditional bazaars.",
+          "evidence_urls": [
+            "https://packtoiran.com/media/news/20200208-144621-1740.png"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The complex geometric principles and historic methods embedded in the craft offer strong foundations for specialized vocational training and cultural studies.",
+          "evidence_urls": [
+            "https://www.indrastra.com/2022/09/the-art-of-khatam-kari-story-of.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The unique aesthetic and high-precision marquetry can be integrated into high-end interior design, luxury products, and contemporary artistic collaborations.",
+          "evidence_urls": [
+            "https://tehranoffers.com/persian-khatamkari/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digital documentation, online artisan showcases, and virtual museum archives offer moderate avenues for global outreach and geometric pattern archiving.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Khatam"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 5,
+        "evidence_item_count": 18,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T12:57:29.464429Z",
         "last_error": null
       }
     },
@@ -54516,7 +55489,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-09T12:39:05.219763Z",
+    "generated_at": "2026-10-09T12:57:50.631474Z",
     "total_ich_elements": 329,
     "complete_records": 328,
     "incomplete_records": 1,
