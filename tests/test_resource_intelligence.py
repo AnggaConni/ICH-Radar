@@ -47,6 +47,7 @@ class ResourceIntelligenceValidationTests(unittest.TestCase):
         ))
         self.assertFalse(ri._is_direct_evidence_url("javascript:alert(1)"))
         self.assertFalse(ri._is_direct_evidence_url("not-a-url"))
+        self.assertFalse(ri._is_direct_evidence_url("https://direct-source.example/path"))
         self.assertTrue(ri._is_direct_evidence_url("https://museum.example.org/heritage"))
 
     def test_accepts_source_linked_item_and_keeps_score_as_unverified_ai_signal(self):
