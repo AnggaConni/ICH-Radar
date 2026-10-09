@@ -932,6 +932,11 @@
           <div class="resource-guide-card"><span class="resource-guide-number">03</span><h3>What counts as evidence?</h3><p>A URL is a lead to check — not proof by itself. Confirm the page supports the specific claim and is relevant to the place and community.</p><p class="resource-guide-id">Tautan perlu diperiksa isinya. Jangan anggap hasil AI otomatis benar atau sudah disetujui komunitas.</p></div>
         </div>
       </section>
+      <section class="resource-panel resource-ai-disclaimer" role="note">
+        <div class="resource-panel-title"><i class="ph ph-info text-brand-accent"></i><span>AI-generated research support — disclaimer</span></div>
+        <p class="resource-panel-subtitle">This profile is produced automatically by AI from publicly available online sources to support human research and programme planning. It may contain errors, omissions, outdated information or misinterpretations. The system checks response structure and URL format; it does not independently verify that each source page supports its claim, and it does not provide an in-app human-review or approval workflow. Treat profiles and scores as preliminary research leads, not verified facts or final recommendations. Check original sources and consult relevant communities and subject-matter experts before decisions. AI output does not replace human judgement, community authority, consent, safeguarding or fair benefit-sharing.</p>
+        <p class="resource-guide-id">Pernyataan: Profil ini dihasilkan otomatis oleh AI untuk mendukung riset dan perencanaan manusia, bukan sebagai keputusan final. Hasilnya bisa keliru, tidak lengkap, kedaluwarsa, atau salah menafsirkan konteks. Sistem hanya memeriksa struktur keluaran dan format URL—bukan memastikan isi setiap laman mendukung klaim. Belum ada alur persetujuan/review manusia di dalam aplikasi. Periksa sumber asli, libatkan komunitas dan ahli terkait, serta pastikan persetujuan, pelindungan budaya, dan pembagian manfaat sebelum mengambil keputusan.</p>
+      </section>
       <section class="resource-panel resource-score-guide">
         <div class="resource-panel-title"><i class="ph ph-gauge text-brand-secondary"></i><span>How to read the 0–100 opportunity score</span></div>
         <p class="resource-panel-subtitle">Scores are preliminary AI research signals based on linked sources. They are not percentages of success, market demand, revenue, impact or financial viability.</p>
@@ -940,7 +945,7 @@
           <div class="resource-score-band score-low"><strong>1–24 · Weak signal</strong><span>Very limited indications; more research is needed.</span></div>
           <div class="resource-score-band score-limited"><strong>25–49 · Limited</strong><span>Some indications, with important gaps.</span></div>
           <div class="resource-score-band score-moderate"><strong>50–74 · Moderate</strong><span>A stronger indication in available sources; still unverified.</span></div>
-          <div class="resource-score-band score-strong"><strong>75–100 · Strong signal</strong><span>More substantial documented indications; human review is still required.</span></div>
+          <div class="resource-score-band score-strong"><strong>75–100 · Strong signal</strong><span>More substantial indications in available sources; AI-generated and still unverified.</span></div>
         </div>
         <div class="resource-score-footnote"><i class="ph ph-info"></i><span><strong>Important:</strong> Evidence coverage counts categories with item-level source links; it does not grade source quality. A missing score does not mean the culture has no future opportunity.</span></div>
       </section>
@@ -955,7 +960,7 @@
         <div class="resource-kpi-grid">
           <div class="resource-kpi"><div class="label">Elements in this view</div><div id="resource-kpi-total" class="value">—</div></div>
           <div class="resource-kpi"><div class="label">Profiles with linked evidence</div><div id="resource-kpi-ready" class="value">—</div></div>
-          <div class="resource-kpi"><div class="label">Need human review</div><div id="resource-kpi-shared" class="value">—</div></div>
+          <div class="resource-kpi"><div class="label">AI profiles to assess</div><div id="resource-kpi-shared" class="value">—</div></div>
           <div class="resource-kpi"><div class="label">No item-level evidence links</div><div id="resource-kpi-resilience" class="value">—</div></div>
         </div>
       </div>
@@ -969,7 +974,7 @@
             <div class="resource-summary-stat"><span>Unique evidence URLs</span><strong id="resource-node-place">—</strong><small>links attached to these claims</small></div>
             <div class="resource-summary-stat"><span>Entries without item-level links</span><strong id="resource-node-practice">—</strong><small>legacy entries to re-check</small></div>
             <div class="resource-summary-stat"><span>Opportunity categories with sources</span><strong id="resource-node-connection">—</strong><small>of 5 score categories</small></div>
-            <div class="resource-summary-stat resource-summary-status"><span>Review status</span><strong id="resource-node-resilience">—</strong><small>not a quality rating</small></div>
+            <div class="resource-summary-stat resource-summary-status"><span>Research status</span><strong id="resource-node-resilience">—</strong><small>not a quality rating or approval</small></div>
           </div>
           <div id="resource-selected-review" class="resource-review-banner mt-4" role="status"></div>
         </section>
@@ -2912,15 +2917,15 @@ const COUNTRY_CENTROIDS = {
     };
   }
   function resourceStatusLabel(status) {
-    var labels = {needs_review:"Needs human review",insufficient_evidence:"Insufficient linked evidence",
-      validation_failed:"Validation failed",api_error:"Research run did not complete",not_assessed:"Not assessed yet",
-      legacy_needs_review:"Legacy profile — review needed"};
+    var labels = {needs_review:"AI profile · check sources",insufficient_evidence:"Insufficient linked evidence",
+      validation_failed:"Output failed structure checks",api_error:"Research run did not complete",not_assessed:"Not assessed yet",
+      legacy_needs_review:"Legacy profile · check sources"};
     return labels[status] || "Not assessed yet";
   }
   function resourceReviewMessage(metrics) {
     var status = metrics.reviewStatus;
     if (status === "needs_review" || status === "legacy_needs_review")
-      return "Source URLs are attached, but the validator has not checked whether each page supports its claim. Open links and confirm relevance, accuracy and community context before using this profile.";
+      return "This is an AI-generated research lead. The tool checks response structure and URL format only; it does not independently verify page content and has no in-app human-review or approval workflow. Open the original sources and confirm accuracy, relevance and community context before relying on this profile.";
     if (status === "insufficient_evidence")
       return "This run did not find enough usable item-level source links. That is an evidence gap — not proof that resources or opportunities do not exist.";
     if (status === "validation_failed")
