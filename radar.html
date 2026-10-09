@@ -733,7 +733,26 @@
   .resource-guide-number{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:9px;background:#ccfbf1;color:#0f766e;font-weight:800;font-size:11px}
   .resource-guide-card h3{margin:10px 0 6px;font-size:13px;font-weight:800;color:#0f172a}
   .resource-guide-card p{font-size:11px;color:#475569;line-height:1.6;margin:0 0 7px}
-  .resource-guide-card .resource-guide-id{color:#64748b;font-style:italic;border-top:1px solid #e2e8f0;padding-top:7px;margin-top:8px}
+  .resource-ai-disclaimer{display:grid;grid-template-columns:40px minmax(0,1fr);gap:12px;align-items:start;padding:15px 17px;background:linear-gradient(120deg,#f0fdfa 0%,#f8fafc 58%,#f5f7ff 100%);border:1px solid #cfe7e5;border-left:4px solid #0d9488;border-radius:15px;box-shadow:0 4px 16px rgba(15,23,42,.035)}
+  .resource-ai-disclaimer-mark{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:12px;background:#ccfbf1;color:#0f766e;font-size:20px}
+  .resource-ai-disclaimer-heading{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+  .resource-ai-disclaimer-title{font-size:13px;line-height:1.4;font-weight:800;color:#0f172a}
+  .resource-ai-disclaimer-tag{display:inline-flex;align-items:center;border:1px solid #cbd5e1;border-radius:999px;padding:3px 7px;background:rgba(255,255,255,.8);color:#64748b;font-size:9px;font-weight:800;letter-spacing:.07em}
+  .resource-ai-disclaimer p{margin:6px 0 0;color:#475569;font-size:11px;line-height:1.65}
+  .resource-ai-disclaimer details{margin-top:8px;padding-top:8px;border-top:1px solid #dbe7e9}
+  .resource-ai-disclaimer summary{cursor:pointer;list-style:none;color:#0f766e;font-size:11px;font-weight:800}
+  .resource-ai-disclaimer summary::-webkit-details-marker{display:none}
+  .resource-ai-disclaimer summary:after{content:"＋";float:right;font-size:13px}
+  .resource-ai-disclaimer details[open] summary:after{content:"−"}
+  .resource-ai-disclaimer details p{margin-top:7px}
+  .resource-filter-legend{display:flex;flex-wrap:wrap;gap:7px;margin:-3px 0 14px}
+  .resource-filter-legend span{display:inline-flex;align-items:center;gap:6px;padding:5px 8px;border:1px solid #e2e8f0;border-radius:999px;background:#fbfdff;color:#64748b;font-size:10px;font-weight:700}
+  .resource-filter-legend i{font-style:normal;font-size:11px;font-weight:900}
+  .resource-filter-legend .status-linked i{color:#0f766e}
+  .resource-filter-legend .status-unlinked i{color:#b45309}
+  .resource-filter-legend .status-empty i{color:#94a3b8}
+  .resource-filter-row select:focus{border-color:#0d9488;box-shadow:0 0 0 3px rgba(13,148,136,.12)}
+  @media (max-width:760px){.resource-ai-disclaimer{grid-template-columns:30px minmax(0,1fr);gap:9px;padding:12px}.resource-ai-disclaimer-mark{width:30px;height:30px;border-radius:9px;font-size:17px}}
   .resource-score-legend{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:14px}
   .resource-score-band{display:flex;flex-direction:column;gap:6px;border:1px solid #e2e8f0;background:#fff;border-radius:11px;padding:11px;min-width:0}
   .resource-score-band strong{font-size:11px;line-height:1.4;color:#0f172a}.resource-score-band span{font-size:10px;color:#64748b;line-height:1.55}
@@ -927,15 +946,21 @@
         <div class="resource-panel-title"><i class="ph ph-compass text-brand-accent"></i><span>Start here: what this tab does</span></div>
         <p class="resource-panel-subtitle">Use this view to find documented resources, possible safeguarding pathways, and questions that still need research. It supports programme planning; it is not an automatic business plan or a decision on behalf of a community.</p>
         <div class="resource-guide-grid">
-          <div class="resource-guide-card"><span class="resource-guide-number">01</span><h3>What is it for?</h3><p>Connect cultural knowledge, materials, people, places, activities and possible support.</p><p class="resource-guide-id">Untuk memahami sumber daya yang terdokumentasi dan dukungan yang mungkin relevan bagi pelestarian.</p></div>
-          <div class="resource-guide-card"><span class="resource-guide-number">02</span><h3>How do I read it?</h3><p>Select an element, open its source links, read the opportunity signals, then review the gaps below.</p><p class="resource-guide-id">Pilih elemen, buka tautan sumber, baca indikasi peluang, lalu periksa informasi yang masih kurang.</p></div>
-          <div class="resource-guide-card"><span class="resource-guide-number">03</span><h3>What counts as evidence?</h3><p>A URL is a lead to check — not proof by itself. Confirm the page supports the specific claim and is relevant to the place and community.</p><p class="resource-guide-id">Tautan perlu diperiksa isinya. Jangan anggap hasil AI otomatis benar atau sudah disetujui komunitas.</p></div>
+          <div class="resource-guide-card"><span class="resource-guide-number">01</span><h3>Purpose</h3><p>Connect documented cultural knowledge, materials, practitioners, places, activities and potential support.</p></div>
+          <div class="resource-guide-card"><span class="resource-guide-number">02</span><h3>How to use it</h3><p>Select a heritage element, inspect its source links and opportunity signals, then use the research gaps to plan your next questions.</p></div>
+          <div class="resource-guide-card"><span class="resource-guide-number">03</span><h3>How to read the evidence</h3><p>A URL is a research lead, not proof. Check whether the original page supports the specific claim and reflects the relevant community and context.</p></div>
         </div>
       </section>
-      <section class="resource-panel resource-ai-disclaimer" role="note">
-        <div class="resource-panel-title"><i class="ph ph-info text-brand-accent"></i><span>AI-generated research support — disclaimer</span></div>
-        <p class="resource-panel-subtitle">This profile is produced automatically by AI from publicly available online sources to support human research and programme planning. It may contain errors, omissions, outdated information or misinterpretations. The system checks response structure and URL format; it does not independently verify that each source page supports its claim, and it does not provide an in-app human-review or approval workflow. Treat profiles and scores as preliminary research leads, not verified facts or final recommendations. Check original sources and consult relevant communities and subject-matter experts before decisions. AI output does not replace human judgement, community authority, consent, safeguarding or fair benefit-sharing.</p>
-        <p class="resource-guide-id">Pernyataan: Profil ini dihasilkan otomatis oleh AI untuk mendukung riset dan perencanaan manusia, bukan sebagai keputusan final. Hasilnya bisa keliru, tidak lengkap, kedaluwarsa, atau salah menafsirkan konteks. Sistem hanya memeriksa struktur keluaran dan format URL—bukan memastikan isi setiap laman mendukung klaim. Belum ada alur persetujuan/review manusia di dalam aplikasi. Periksa sumber asli, libatkan komunitas dan ahli terkait, serta pastikan persetujuan, pelindungan budaya, dan pembagian manfaat sebelum mengambil keputusan.</p>
+      <section class="resource-panel resource-ai-disclaimer" role="note" aria-label="AI-generated research disclaimer">
+        <div class="resource-ai-disclaimer-mark" aria-hidden="true"><i class="ph ph-sparkle"></i></div>
+        <div class="resource-ai-disclaimer-copy">
+          <div class="resource-ai-disclaimer-heading"><span class="resource-ai-disclaimer-title">AI-generated research support</span><span class="resource-ai-disclaimer-tag">PRELIMINARY · NOT VERIFIED</span></div>
+          <p>These profiles are generated automatically to support human research and planning—not as verified facts or final recommendations. Source links are leads to check; the system validates URL format and response structure, not whether each page substantiates a claim.</p>
+          <details>
+            <summary>Read the full disclaimer</summary>
+            <p>AI-generated profiles, summaries and opportunity scores may contain errors, omissions, outdated information or misinterpretations. They are preliminary research aids, not market validation, official positions or community-approved decisions. Check original sources, consult relevant communities and subject-matter experts, and confirm context, consent, safeguarding, feasibility and fair benefit-sharing before acting. AI supports human judgement; it does not replace it or override community authority. This application does not currently include an in-app human-review or approval workflow.</p>
+          </details>
+        </div>
       </section>
       <section class="resource-panel resource-score-guide">
         <div class="resource-panel-title"><i class="ph ph-gauge text-brand-secondary"></i><span>How to read the 0–100 opportunity score</span></div>
@@ -957,11 +982,16 @@
           <select id="resource-country-filter" aria-label="Filter by country" onchange="renderResourceOpportunity(document.getElementById('resource-element-select').value)"><option value="all">All Countries</option></select>
           <select id="resource-category-filter" aria-label="Filter by category" onchange="renderResourceOpportunity(document.getElementById('resource-element-select').value)"><option value="all">All Categories</option></select>
         </div>
+        <div class="resource-filter-legend" role="note" aria-label="Heritage element data status legend">
+          <span class="status-linked"><i>✓</i> Resource data with source links</span>
+          <span class="status-unlinked"><i>◐</i> Data present, no item-level links</span>
+          <span class="status-empty"><i>○</i> No Resource &amp; Opportunity data yet</span>
+        </div>
         <div class="resource-kpi-grid">
           <div class="resource-kpi"><div class="label">Elements in this view</div><div id="resource-kpi-total" class="value">—</div></div>
           <div class="resource-kpi"><div class="label">Profiles with linked evidence</div><div id="resource-kpi-ready" class="value">—</div></div>
           <div class="resource-kpi"><div class="label">AI profiles to assess</div><div id="resource-kpi-shared" class="value">—</div></div>
-          <div class="resource-kpi"><div class="label">No item-level evidence links</div><div id="resource-kpi-resilience" class="value">—</div></div>
+          <div class="resource-kpi"><div class="label">No linked resource evidence</div><div id="resource-kpi-resilience" class="value">—</div></div>
         </div>
       </div>
       <div class="resource-profile-grid">
@@ -2955,13 +2985,43 @@ const COUNTRY_CENTROIDS = {
       return {title:title,key:key,score:score,hasCitations:urls.length>0,urls:urls,band:band,explanation:explanation};
     });
   }
+  function resourceHasRecordedData(item) {
+    var sections = [item.resource_mapping || {}, item.value_chain || {}, item.resource_mobilization || {}];
+    var hasEntries = sections.some(function(section) {
+      return Object.keys(section).some(function(key) { return resourceArray(section[key]).length > 0; });
+    });
+    if (hasEntries) return true;
+    var scores = item.opportunity_analysis || {}, evidence = item.opportunity_score_evidence || {};
+    var keys = ["livelihood_potential","tourism_potential","education_potential","creative_industry_potential","digital_potential"];
+    return keys.some(function(key) {
+      var detail = evidence[key] || {};
+      return Number(scores[key] || 0) > 0 || (typeof detail.rationale === "string" && detail.rationale.trim().length > 0);
+    });
+  }
+  function resourceDataStatus(item) {
+    var metrics = resourceMetrics(item);
+    if (metrics.sourceUrlCount > 0) return "linked";
+    if (resourceHasRecordedData(item)) return "unlinked";
+    return "empty";
+  }
   function initResourceOpportunity() {
     var sel = document.getElementById("resource-element-select"), countrySelect = document.getElementById("resource-country-filter");
     var categorySelect = document.getElementById("resource-category-filter");
     if (!sel || !countrySelect || !categorySelect || !globalData || !globalData.inventory) return;
     var inventory = globalData.inventory.slice().sort(function(a,b) { return String(a.element_name || "").localeCompare(String(b.element_name || "")); });
-    sel.innerHTML = '<option value="">Select a heritage element...</option>' + inventory.map(function(item) {
-      return '<option value="' + escapeHtml(item.id || "") + '">' + escapeHtml(item.element_name || "Unnamed element") + '</option>';
+    var statusGroups = [
+      {key:"linked", label:"✓ Resource data with source links"},
+      {key:"unlinked", label:"◐ Data present · no item-level links"},
+      {key:"empty", label:"○ No Resource & Opportunity data yet"}
+    ];
+    sel.innerHTML = '<option value="">Select a heritage element...</option>' + statusGroups.map(function(group) {
+      var records = inventory.filter(function(item) { return resourceDataStatus(item) === group.key; });
+      if (!records.length) return "";
+      var options = records.map(function(item) {
+        var prefix = group.key === "linked" ? "✓ " : group.key === "unlinked" ? "◐ " : "○ ";
+        return '<option value="' + escapeHtml(item.id || "") + '">' + prefix + escapeHtml(item.element_name || "Unnamed element") + '</option>';
+      }).join("");
+      return '<optgroup label="' + group.label + ' (' + records.length + ')">' + options + '</optgroup>';
     }).join("");
     countrySelect.innerHTML = '<option value="all">All Countries</option>' +
       Array.from(new Set(inventory.map(function(item) { return item.location && item.location.country; }).filter(Boolean))).sort()
