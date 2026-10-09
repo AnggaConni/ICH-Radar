@@ -1778,8 +1778,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:37:48.919259Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -1809,8 +1809,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -1820,8 +1820,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T12:37:48.919259Z",
+        "last_error": "response must be a JSON object"
       }
     },
     {
@@ -1909,17 +1909,78 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T12:38:40.115775Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Traditional Matyó Motif Pattern Heritage",
+            "description": "Comprises historical and generational knowledge of iconic floral compositions, layout structures, and symbolic meanings such as the Matyó rose, tulips, and curling stems.",
+            "evidence_urls": [
+              "https://matyodesign.hu/en/the-matyo-pattern/",
+              "https://www.americanhungarianmuseum.org/matyo-embroidery/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Hand-Embroidery Execution and Transfer Techniques",
+            "description": "Expertise in flat-stitch execution, thread splitting, color gradations, and freehand or template pattern transfer onto base fabrics.",
+            "evidence_urls": [
+              "https://www.americanhungarianmuseum.org/matyo-embroidery/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Base Fabrics and Textiles",
+            "description": "Traditional linen, cotton, and historical hemp cloth utilized as the foundation for dense embroidery panels.",
+            "evidence_urls": [
+              "https://www.americanhungarianmuseum.org/matyo-embroidery/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Embroidery Threads and Needles",
+            "description": "Specialized embroidery threads (traditionally cotton or silk, dyed in vibrant palettes including red, black, blue, green, yellow, and pink) and fine needles.",
+            "evidence_urls": [
+              "https://www.americanhungarianmuseum.org/matyo-embroidery/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "human_resources": [],
         "place_resources": [],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
-        "products": [],
+        "production": [
+          {
+            "name": "Hand-Embroidered Textile Production",
+            "description": "Creation of dense, colorful flat-stitch panels, apparel components, and decorative home textiles following traditional design patterns.",
+            "evidence_urls": [
+              "https://www.americanhungarianmuseum.org/matyo-embroidery/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional Festive Garments and Apparel",
+            "description": "Authentic shirts, aprons, cuffs, collars, and headwear adorned with rich floral embroidery.",
+            "evidence_urls": [
+              "https://www.americanhungarianmuseum.org/matyo-embroidery/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Contemporary Fashion and Home Decor Items",
+            "description": "Modern adaptations incorporating Matyó motifs into contemporary clothing, cushions, tablecloths, and interior accessories.",
+            "evidence_urls": [
+              "https://matyodesign.hu/en/the-matyo-pattern/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "services": [],
         "experience": [],
         "education": []
@@ -1928,7 +1989,7 @@
         "livelihood_potential": 0,
         "tourism_potential": 0,
         "education_potential": 0,
-        "creative_industry_potential": 0,
+        "creative_industry_potential": 55,
         "digital_potential": 0
       },
       "resource_mobilization": {
@@ -1938,50 +1999,52 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T12:38:40.115775Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
+          "rationale": "Embroidery practice provides auxiliary income opportunities for local women to purchase crafting materials and sustain household economies through craft sales.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "tourism_potential": {
-          "rationale": "",
+          "rationale": "The historic Hadas district in Mezőkövesd, local museums, and artisan workshops attract visitors interested in authentic cultural heritage experiences.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "education_potential": {
-          "rationale": "",
+          "rationale": "Active transmission frameworks like the Borsóka Embroidery Circle ensure that skills and motifs are systematically taught by masters to new generations and learners.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Motifs are successfully integrated into contemporary fashion lines and interior decoration outside of traditional garments.",
+          "evidence_urls": [
+            "https://matyodesign.hu/en/the-matyo-pattern/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
+          "rationale": "Digital integration is currently limited primarily to web showcases, digital archives, and online marketing channels rather than immersive digital platforms.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 2,
+        "evidence_item_count": 8,
+        "uncited_item_count": 9,
+        "invalid_evidence_url_count": 12,
+        "opportunity_scores_with_evidence": 1,
+        "opportunity_scores_without_evidence": 4,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T12:38:40.115775Z",
+        "last_error": "resource_mapping.human_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.human_resources[1] had no valid direct evidence URL and was excluded; resource_mapping.place_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.place_resources[1] had no valid direct evidence URL and was excluded; resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; value_chain.services[0] had no valid direct evidence URL and was excluded; value_chain.experience[0] had no valid direct evidence URL and was excluded; value_chain.education[0] had no valid direct evidence URL and was excluded"
       }
     },
     {
@@ -54453,7 +54516,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-09T11:54:13.632001Z",
+    "generated_at": "2026-10-09T12:39:05.219763Z",
     "total_ich_elements": 329,
     "complete_records": 328,
     "incomplete_records": 1,
