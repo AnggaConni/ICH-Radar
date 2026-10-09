@@ -1249,79 +1249,170 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T11:53:29.711733Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Traditional Navajo Culinary Knowledge of Kʼíneeshbízhii",
+            "description": "Ancestral knowledge detailing the preparation, flat or oval shaping restrictions, seasonal winter timing, and nutritional science of combining blue cornmeal with juniper ash.",
+            "evidence_urls": [
+              "https://recipes.fandom.com/wiki/Blue_Cornmeal_Dumplings",
+              "https://www.nrcnaa.org/pdf/cookbook.pdf"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Blue Cornmeal and Juniper Ash",
+            "description": "Core organic ingredients consisting of finely ground blue cornmeal and nutrient-enhancing culinary juniper ash utilized in traditional cooking.",
+            "evidence_urls": [
+              "https://recipes.fandom.com/wiki/Blue_Cornmeal_Dumplings",
+              "https://www.nrcnaa.org/pdf/cookbook.pdf"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Navajo Elders and Knowledge Keepers",
+            "description": "Community elders and cooks who retain and transmit the culinary techniques, linguistic terminology, and cultural protocols associated with Diné heritage foods.",
+            "evidence_urls": [
+              "https://www.nrcnaa.org/pdf/cookbook.pdf"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "place_resources": [],
-        "institutional_resources": []
+        "institutional_resources": [
+          {
+            "name": "National Resource Center on Native American Aging",
+            "description": "Organization documenting traditional Native American ancestral recipes and foodways to support cultural preservation among tribal communities.",
+            "evidence_urls": [
+              "https://www.nrcnaa.org/pdf/cookbook.pdf"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
+        "production": [
+          {
+            "name": "Juniper Ash Production and Corn Processing",
+            "description": "Foraging and burning juniper branches to create culinary ash, alongside the traditional handling of blue cornmeal used to formulate the dumpling dough.",
+            "evidence_urls": [
+              "https://recipes.fandom.com/wiki/Blue_Cornmeal_Dumplings"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Kʼíneeshbízhii (Blue Cornmeal Dumplings)",
+            "description": "Flat or oval-shaped traditional blue corn dumplings cooked with juniper ash, served in stews or alongside traditional bread.",
+            "evidence_urls": [
+              "https://recipes.fandom.com/wiki/Blue_Cornmeal_Dumplings",
+              "https://www.nrcnaa.org/pdf/cookbook.pdf"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "services": [],
-        "experience": [],
-        "education": []
+        "experience": [
+          {
+            "name": "Seasonal Winter Foodways Preparation",
+            "description": "Intergenerational winter preparation and sharing of traditional dishes that commemorate ancestral resilience, including historical experiences tied to the Long Walk era.",
+            "evidence_urls": [
+              "https://recipes.fandom.com/wiki/Blue_Cornmeal_Dumplings",
+              "https://www.nrcnaa.org/pdf/cookbook.pdf"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Community Recipe Documentation and Transmission",
+            "description": "Educational sharing of ancestral cooking instructions via community cookbooks and digital platforms to maintain cultural survival and heritage awareness.",
+            "evidence_urls": [
+              "https://recipes.fandom.com/wiki/Blue_Cornmeal_Dumplings",
+              "https://www.nrcnaa.org/pdf/cookbook.pdf"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
         "livelihood_potential": 0,
         "tourism_potential": 0,
-        "education_potential": 0,
+        "education_potential": 35,
         "creative_industry_potential": 0,
-        "digital_potential": 0
+        "digital_potential": 20
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Navajo Area Senior Programs and Elders",
+            "description": "Local community elders and senior program networks contributing authentic knowledge and ancestral recipes to safeguard culinary heritage.",
+            "evidence_urls": [
+              "https://www.nrcnaa.org/pdf/cookbook.pdf"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T11:53:29.711733Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
+          "rationale": "Commercialization of kʼíneeshbízhii is generally constrained by its deep cultural, spiritual, and private ceremonial significance within Navajo-Diné tradition, making market-driven livelihood models inappropriate without community governance.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "tourism_potential": {
-          "rationale": "",
+          "rationale": "The element is tied to private seasonal and familial contexts during autumn and winter rather than external tourism products, requiring strict adherence to cultural sensitivity and community consent.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Documented via community-focused recipe publications and cultural preservation resources like the National Resource Center on Native American Aging cookbook, offering pathways for heritage education.",
+          "evidence_urls": [
+            "https://www.nrcnaa.org/pdf/cookbook.pdf"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
+          "rationale": "The practice functions primarily as a living culinary tradition and survival heritage rather than a commercial creative industry commodity.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Recorded across open-access digital recipe wikis, community forums, and online archives that detail ingredient proportions and preparation steps.",
+          "evidence_urls": [
+            "https://recipes.fandom.com/wiki/Blue_Cornmeal_Dumplings",
+            "https://www.reddit.com/r/Navajo/comments/1bd6x2j/kineeshbizhii_dumplings/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 3,
+        "evidence_item_count": 11,
+        "uncited_item_count": 1,
+        "invalid_evidence_url_count": 2,
+        "opportunity_scores_with_evidence": 2,
+        "opportunity_scores_without_evidence": 3,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T11:53:29.711733Z",
+        "last_error": "resource_mapping.place_resources[0] had no valid direct evidence URL and was excluded"
       }
     },
     {
@@ -1391,79 +1482,208 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T11:53:50.244925Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Ecological Knowledge of Bunya Pine Cycles",
+            "description": "Indigenous knowledge held by traditional owners regarding the prediction of bumper Bunya nut harvest cycles occurring every three to four years.",
+            "evidence_urls": [
+              "https://www.slq.qld.gov.au/blog/bountiful-bunyas-charismatic-tree-fascinating-history"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Bunya Pine Cones and Nuts (Araucaria bidwillii)",
+            "description": "Large, sacred native pine cones yielding nutritious ceremonial nuts utilized for large-scale feasting during gathering seasons.",
+            "evidence_urls": [
+              "https://eatwelltraveloften.com.au/the-story-of-the-bunya/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Harvesting Tools",
+            "description": "Sticks, small hand-axes, and climbing vines historically employed to scale towering Bunya pines and harvest heavy cones.",
+            "evidence_urls": [
+              "https://eatwelltraveloften.com.au/the-story-of-the-bunya/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Traditional Custodians and Elders",
+            "description": "Aboriginal language groups including Wakka Wakka, Kabi Kabi (Gubbi Gubbi), Jinibara, Jarowair, and Barrungam holding custodian responsibilities.",
+            "evidence_urls": [
+              "https://www.oric.gov.au/node/10906"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Cultural Practitioners and Rangers",
+            "description": "Community rangers and artists carrying forward cultural practices, language transmission, and management of sacred sites.",
+            "evidence_urls": [
+              "https://www.oric.gov.au/node/10906"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Bunya Mountains (Booburrgan Ngmmunge)",
+            "description": "The primary cultural landscape hosting the world's largest remaining stand of bunya pines and historic inter-tribal gathering grounds.",
+            "evidence_urls": [
+              "https://www.oric.gov.au/node/10906"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Blackall Ranges and Gummingurru Ceremonial Site",
+            "description": "Significant regional landscapes and ancient stone arrangement sites utilized historically and currently by traditional owners for gatherings and ceremonies.",
+            "evidence_urls": [
+              "https://www.qld.gov.au/recreation/arts/heritage/first-nations-tourism"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Bunya Peoples' Aboriginal Corporation (BPAC)",
+            "description": "Corporation established by Bunya Mountains Elders to care for Country, protect culture, and manage regional relationships.",
+            "evidence_urls": [
+              "https://www.oric.gov.au/node/10906"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "State Library of Queensland (John Oxley Library)",
+            "description": "Institutional repository preserving historical accounts, photographs, and documentation of the Bunya Gatherings and modern revivals.",
+            "evidence_urls": [
+              "https://www.slq.qld.gov.au/blog/bountiful-bunyas-charismatic-tree-fascinating-history"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
         "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
+        "products": [
+          {
+            "name": "Traditional Bush Foods and Roasted Bunya Nuts",
+            "description": "Nutritious bunya seeds traditionally eaten raw when young or roasted over campfires, accompanied by regional bush foods.",
+            "evidence_urls": [
+              "https://eatwelltraveloften.com.au/the-story-of-the-bunya/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Guided Cultural and Country Tours",
+            "description": "Ethical tourism experiences led by Traditional Custodians exploring sacred sites, bush universities, and traditional ecological knowledge.",
+            "evidence_urls": [
+              "https://www.qld.gov.au/recreation/arts/heritage/first-nations-tourism"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Bunya Dreaming Festival and Contemporary Gatherings",
+            "description": "Revival events featuring smoking ceremonies, corroborees, traditional dance, storytelling (yarning), and community reconciliation activities.",
+            "evidence_urls": [
+              "https://www.qld.gov.au/recreation/arts/heritage/first-nations-tourism"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "education": []
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
+        "livelihood_potential": 25,
+        "tourism_potential": 50,
         "education_potential": 0,
         "creative_industry_potential": 0,
-        "digital_potential": 0
+        "digital_potential": 15
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "State Library of Queensland",
+            "description": "Supports public archiving, historical preservation, and sharing of community photographs and records of the Bunya gatherings.",
+            "evidence_urls": [
+              "https://www.slq.qld.gov.au/blog/bountiful-bunyas-charismatic-tree-fascinating-history"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Bunya Peoples' Aboriginal Corporation (BPAC)",
+            "description": "Indigenous-governed corporation leading efforts to protect the natural, cultural, and spiritual values of the Bunya Mountains and revive regional gatherings.",
+            "evidence_urls": [
+              "https://www.oric.gov.au/node/10906"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T11:53:50.244925Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Livelihood opportunities are centered on community-led cultural tourism, land management roles, and artisan bush food engagement, controlled carefully to respect cultural protocols.",
+          "evidence_urls": [
+            "https://www.oric.gov.au/node/10906",
+            "https://www.qld.gov.au/recreation/arts/heritage/first-nations-tourism"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong potential exists for sustainable, respectful Indigenous-led tourism through events like the Bunya Dreaming Festival and guided tours of sites like Gummingurru.",
+          "evidence_urls": [
+            "https://www.qld.gov.au/recreation/arts/heritage/first-nations-tourism"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
+          "rationale": "The element features prominently in structured curriculum resources and educational case studies regarding Australian Songlines and Traditional Ecological Knowledge.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "creative_industry_potential": {
-          "rationale": "",
+          "rationale": "Opportunities exist in visual arts, storytelling, traditional performance, and public site interpretations reflecting the deep symbolism of the Bunya Pine.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited formal digital frameworks exist specifically for the festival outside of library archives and digital curriculum platforms, keeping focus primarily on physical on-Country gatherings.",
+          "evidence_urls": [
+            "https://www.slq.qld.gov.au/blog/bountiful-bunyas-charismatic-tree-fascinating-history"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 4,
+        "evidence_item_count": 17,
+        "uncited_item_count": 4,
+        "invalid_evidence_url_count": 7,
+        "opportunity_scores_with_evidence": 3,
+        "opportunity_scores_without_evidence": 2,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T11:53:50.244925Z",
+        "last_error": "resource_mapping.knowledge_resources[1] had no valid direct evidence URL and was excluded; value_chain.production[0] had no valid direct evidence URL and was excluded; value_chain.education[0] had no valid direct evidence URL and was excluded; resource_mobilization.academic[0] had no valid direct evidence URL and was excluded; education_potential score reset to 0 because category-specific evidence URLs were absent; creative_industry_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -54233,7 +54453,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-09T11:50:48.830943Z",
+    "generated_at": "2026-10-09T11:54:13.632001Z",
     "total_ich_elements": 329,
     "complete_records": 328,
     "incomplete_records": 1,
