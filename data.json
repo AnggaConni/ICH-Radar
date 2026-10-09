@@ -7506,78 +7506,214 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:39:37.060123Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Artisanal Milling and Processing Knowledge",
+            "description": "Multi-generational knowledge systems encompassing root selection, cultivation timing, peeling, manual grating, pressing, and wood-fire oven roasting ('forneamento') handed down by indigenous, quilombola, and Euro-descendant communities.",
+            "evidence_urls": [
+              "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Cassava Roots and Specialized Gear",
+            "description": "Various regional cassava varieties, copper roasting pans, wooden presses, handcrafted wooden gears, and cotton bags used in flour production.",
+            "evidence_urls": [
+              "https://slowfoodbrasil.org/fortaleza-dos-engenhos-de-farinha-polvilhada-de-santa-catarina/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Mestres de Engenho and Community Keepers",
+            "description": "Experienced traditional masters, agricultural families, and local artisans who maintain the daily operation and oral transmission of the heritage practices.",
+            "evidence_urls": [
+              "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Engenhos de Farinha (Flour Mills)",
+            "description": "Active traditional mills across municipalities in Santa Catarina serving as production sites and social hubs for community memory and gatherings.",
+            "evidence_urls": [
+              "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "IPHAN National Heritage Registration",
+            "description": "Official inscription in the Book of Knowledge by the Institute of National Historical and Artistic Heritage recognizing the cultural value of the mills.",
+            "evidence_urls": [
+              "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Collaborative Farinhadas",
+            "description": "Collective seasonal harvesting, washing, peeling, grating, and roasting sessions conducted collaboratively during harvest periods.",
+            "evidence_urls": [
+              "https://slowfoodbrasil.org/fortaleza-dos-engenhos-de-farinha-polvilhada-de-santa-catarina/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Farinha Polvilhada",
+            "description": "Traditional fine, white, soft powdered cassava flour with sweet or sour profiles, along with derivative products like polvilho.",
+            "evidence_urls": [
+              "https://slowfoodbrasil.org/fortaleza-dos-engenhos-de-farinha-polvilhada-de-santa-catarina/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Community Milling Services",
+            "description": "Traditional shared infrastructure operations allowing local growers to process harvested roots into stable food staples.",
+            "evidence_urls": [
+              "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Cultural Festivities and Mill Gatherings",
+            "description": "Community celebrations, seasonal festivals, and social gatherings centered around the operational mills and local food culture.",
+            "evidence_urls": [
+              "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Oral Transmission and Documentation",
+            "description": "Passing down empirical knowledge through family participation, documentaries, and academic research partnerships.",
+            "evidence_urls": [
+              "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 60,
+        "tourism_potential": 50,
+        "education_potential": 70,
+        "creative_industry_potential": 45,
+        "digital_potential": 40
       },
       "resource_mobilization": {
-        "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
+        "public_sector": [
+          {
+            "name": "IPHAN (Institute of National Historical and Artistic Heritage)",
+            "description": "Federal agency responsible for the formal registration and safeguarding framework of the tradition.",
+            "evidence_urls": [
+              "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "private_sector": [
+          {
+            "name": "Slow Food Brasil - Fortaleza dos Engenhos de Farinha",
+            "description": "Civil society network supporting the preservation, promotion, and market visibility of artisanal polvilhada flour.",
+            "evidence_urls": [
+              "https://slowfoodbrasil.org/fortaleza-dos-engenhos-de-farinha-polvilhada-de-santa-catarina/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "Federal University of Santa Catarina (UFSC) and NAUI",
+            "description": "Academic entities providing research, documentation, and technical dossiers supporting cultural heritage registration.",
+            "evidence_urls": [
+              "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Rede Catarinense de Engenhos de Farinha",
+            "description": "Grassroots network linking mill owners, traditional practitioners, and community associations across Santa Catarina municipalities.",
+            "evidence_urls": [
+              "https://slowfoodbrasil.org/fortaleza-dos-engenhos-de-farinha-polvilhada-de-santa-catarina/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:39:37.060123Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Support through official heritage recognition and slow food networks helps strengthen local family production economies, though scale remains artisan-focused.",
+          "evidence_urls": [
+            "https://slowfoodbrasil.org/fortaleza-dos-engenhos-de-farinha-polvilhada-de-santa-catarina/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Community-based tourism and seasonal farinhadas attract visitors interested in agro-food heritage, balanced carefully against community safeguarding needs.",
+          "evidence_urls": [
+            "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Extensive documentation, university partnerships (such as UFSC), and audiovisual projects like 'Farinhar' provide strong foundations for educational outreach.",
+          "evidence_urls": [
+            "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Traditional carpentries, wooden gear construction, documentary filmmaking, and artisanal food presentations offer creative economy links.",
+          "evidence_urls": [
+            "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digital mapping, social networking by regional networks, and crowd-funding campaigns help raise visibility for traditional mills.",
+          "evidence_urls": [
+            "https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-saberes-e-praticas-tradicionais-associados-aos-engenhos-de-farinha-de-mandioca-de-sc"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 2,
+        "evidence_item_count": 19,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:39:37.060123Z",
         "last_error": null
       }
     },
@@ -7675,78 +7811,214 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:39:59.554062Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Bian Lian Performance and Transformation Techniques",
+            "description": "Ancestral knowledge encompassing the mechanics of Wiping Mask, Blowing Mask, and Pulling Mask used to visually convey complex psychological shifts.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Bian_lian"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Specialized Opera Costumes and Mask Materials",
+            "description": "Brightly colored theatrical garments, oil-based cosmetic paints, powder cosmetics, and pre-painted damask or silk masks attached with fine silk threads.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Bian_lian"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Sichuan Opera Masters and Inheritors",
+            "description": "Experienced dramatic artists and practitioners who hold the specialized technical competencies and lineage transmission knowledge of Bian Lian.",
+            "evidence_urls": [
+              "https://www.scmp.com/magazines/style/article/3263073/what-face-changing-performance-decoding-mystery-and-mastery-chinas-dazzling-centuries-old-art-form"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Sichuan Opera Theaters and Teahouses in Sichuan and Chongqing",
+            "description": "Traditional performance venues and cultural spaces across Southwest China serving as the geographic and physical core for staging Sichuan Opera.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sichuan_opera"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "National Intangible Cultural Heritage List Listing",
+            "description": "Official state recognition framework established in 2006 designating Sichuan Opera and Bian Lian as protected elements of national cultural heritage.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sichuan_opera"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Mask Fabrication and Costume Tailoring",
+            "description": "Handcrafting and layering of silk or damask masks with precision silk threading alongside the formulation of specialized stage cosmetics.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Bian_lian"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Theatrical Costumes and Replicated Masks",
+            "description": "Physical artistic merchandise, handcrafted props, and cultural artifacts associated with the visual presentation of Sichuan Opera characters.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Bian_lian"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Live Stage Performances and Theatrical Acts",
+            "description": "Professional dramatic presentations featuring rapid mask-changing routines integrated within broader Sichuan Opera narrative productions.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/blogs/national-museum-of-asian-art/2014/07/02/face-changing-sichuan-opera/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Cultural Tourism and Immersive Teahouse Shows",
+            "description": "Live audience engagements in regional teahouses and cultural centers offering direct observation of the mask-changing performance art.",
+            "evidence_urls": [
+              "https://www.scmp.com/magazines/style/article/3263073/what-face-changing-performance-decoding-mystery-and-mastery-chinas-dazzling-centuries-old-art-form"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Master-Apprentice Transmission and Cultural Workshops",
+            "description": "Traditional lineage training and public educational workshops demonstrating historical background and basic performance movements.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Bian_lian"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 60,
+        "tourism_potential": 85,
+        "education_potential": 65,
+        "creative_industry_potential": 50,
+        "digital_potential": 40
       },
       "resource_mobilization": {
-        "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
+        "public_sector": [
+          {
+            "name": "Ministry of Culture Protection and Intangible Heritage Designations",
+            "description": "National framework and historical classifications recognizing the art form's high cultural status and protecting its preservation.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Sichuan_opera"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "private_sector": [
+          {
+            "name": "Theatrical Troupes and Commercial Cultural Venues",
+            "description": "Private and semi-private performing arts organizations that stage commercial Sichuan Opera productions and integrate Bian Lian into tourism offerings.",
+            "evidence_urls": [
+              "https://www.scmp.com/magazines/style/article/3263073/what-face-changing-performance-decoding-mystery-and-mastery-chinas-dazzling-centuries-old-art-form"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "Cultural Research and Museum Institutions",
+            "description": "Museums and research entities, such as the Smithsonian Institution's cultural programs, that document, archive, and exhibit the theatrical traditions of Sichuan Opera.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/blogs/national-museum-of-asian-art/2014/07/02/face-changing-sichuan-opera/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Family Lineages and Practitioner Networks",
+            "description": "Traditional practitioner families and local artist networks responsible for guarding performance secrets and passing down skills across generations.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Bian_lian"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:39:59.554062Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Performers and craftspeople generate income through professional stage contracts, theatrical venues, and specialized prop making, though full-time livelihoods remain closely tied to specialized troupe employment.",
+          "evidence_urls": [
+            "https://www.scmp.com/magazines/style/article/3263073/what-face-changing-performance-decoding-mystery-and-mastery-chinas-dazzling-centuries-old-art-form"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Bian Lian serves as a premier highlight for cultural tourism in Sichuan and Chongqing, regularly featured in regional teahouses, cultural centers, and evening theatrical productions.",
+          "evidence_urls": [
+            "https://www.scmp.com/magazines/style/article/3263073/what-face-changing-performance-decoding-mystery-and-mastery-chinas-dazzling-centuries-old-art-form"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Growing public interest facilitates educational programming, museum exhibitions, and cultural workshops that explain the historical evolution and general techniques of Sichuan Opera.",
+          "evidence_urls": [
+            "https://www.smithsonianmag.com/blogs/national-museum-of-asian-art/2014/07/02/face-changing-sichuan-opera/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The distinctive visual iconography of the masks and dramatic movements offer inspiration for regional craft manufacturing, costume design, and broader performing arts collaborations.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Bian_lian"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digital documentation, short-form video recordings, and online cultural showcases help disseminate awareness of the performance style globally while preserving the strict secrecy of core techniques.",
+          "evidence_urls": [
+            "https://www.smithsonianmag.com/blogs/national-museum-of-asian-art/2014/07/02/face-changing-sichuan-opera/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 4,
+        "evidence_item_count": 19,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:39:59.554062Z",
         "last_error": null
       }
     },
@@ -7821,78 +8093,205 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:40:21.132213Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Ancestral Agricultural Knowledge and Oral Tradition",
+            "description": "Traditional ecological knowledge, prayers, and poems recited by respected village elders to announce and guide the harvest ritual.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Traditional Bread Ingredients and Sacrifice Offerings",
+            "description": "Raw materials required for baking traditional bread and animals (e.g., sheep) designated for ritual sacrifice at Cheshmeh-Ali spring.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Village Elders and Resident Community",
+            "description": "Respected community leaders who orchestrate the proceedings, alongside local residents and displaced former villagers returning for the event.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Mount Pir-e Saqay and Cheshmeh-Ali Spring",
+            "description": "Sacred geographic landmarks in Saghay village, Varzaqan County, serving as the destination for collective processions and ritual activities.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Iran's National Intangible Heritage List",
+            "description": "Official national registration status attained in 2011 CE (1390 SH) recognizing the cultural significance of the ceremony.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Traditional Bread Preparation and Animal Husbandry",
+            "description": "Baking special breads and raising livestock intended for the communal sacrifice and feast.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Ritual Foods and Commemorative Attire",
+            "description": "Shared cooked sacrificial meat, traditional breads, and new festive clothing worn by participants.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Community Food Distribution and Social Networking",
+            "description": "Preparation and equitable distribution of food to attendees and vulnerable community members unable to participate physically, alongside invitation networks extending to diaspora villagers.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Collective Procession and Storytelling Gatherings",
+            "description": "Immersive annual pilgrimage to Mount Pir-e Saqay, communal storytelling, socializing, and prayer performances.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Transmission of Ancestral Customs",
+            "description": "Transfer of agricultural heritage, spiritual values, and ritual protocols from elders to younger generations.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 15,
+        "tourism_potential": 10,
+        "education_potential": 45,
+        "creative_industry_potential": 20,
+        "digital_potential": 15
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "National Heritage Administration Bodies",
+            "description": "Entities responsible for maintaining the registry of Iran's National Intangible Heritage (registered in 2011 CE / 1390 SH).",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
-        "academic": [],
-        "community": [],
+        "academic": [
+          {
+            "name": "Ethnographic and Cultural Researchers",
+            "description": "Researchers studying rural Iranian traditions, agricultural practices, and sacred geography.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Saghay Village Community and Diaspora",
+            "description": "Current village residents, elders, and former villagers who return to uphold ancestral practices and reinforce social cohesion.",
+            "evidence_urls": [
+              "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:40:21.132213Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Commercial livelihoods are secondary to the community-focused, reciprocal nature of the ritual, though localized food sharing and farming support occur.",
+          "evidence_urls": [
+            "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The ritual is deeply sacred and localized around Mount Pir-e Saqay, requiring careful safeguarding rather than mass tourism development.",
+          "evidence_urls": [
+            "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong potential for documenting and teaching intangible cultural heritage, agricultural traditions, and folklore associated with East Azerbaijan.",
+          "evidence_urls": [
+            "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Involves traditional oral poetry, storytelling elements, and culinary arts (bread making) that can inform regional cultural documentation.",
+          "evidence_urls": [
+            "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Opportunities exist for non-invasive digital archiving, ethnographic recording of oral histories, and cataloging national heritage data.",
+          "evidence_urls": [
+            "https://islamic-culture.org/the-harvest-ceremony-of-saghay-village-an-ancient-ritual-intertwined-with-spiritual-beliefs/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 1,
+        "evidence_item_count": 18,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:40:21.132213Z",
         "last_error": null
       }
     },
@@ -7982,78 +8381,212 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:40:42.525882Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Andean Worldview and Syncretism Knowledge",
+            "description": "Shared traditional knowledge linking Catholic devotion with Quechua and Aymara beliefs, agricultural cycles, and the veneration of Pachamama.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Dance, Music, and Choreography Skills",
+            "description": "Mastery of ancestral melodies, rhythms, and choreographies transmitted through intergenerational practice and rehearsals.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Costumes, Masks, and Regalia Production Materials",
+            "description": "Specialized craft inputs used by local workshops to create elaborate embroidered costumes, decorative feathers, and expressive masks.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Andean Instruments",
+            "description": "Physical musical instruments including pinquillos, chaqallos, lawak'umus, sicus, bombos, and zampoñas.",
+            "evidence_urls": [
+              "https://es.wikipedia.org/wiki/Fiesta_de_la_Candelaria_(Puno)"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Dancers, Musicians, and Practitioners",
+            "description": "Tens of thousands of regional and returning members belonging to urban and rural Quechua and Aymara communities who participate as dancers and musicians.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Master Artisans and Workshop Instructors",
+            "description": "Traditional craftspeople and culture-bearers specializing in mask-making, costume tailoring, and musical instruction.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "City of Puno and Lake Titicaca Shorelines",
+            "description": "The urban and regional setting hosting the processions, historical churches, and public gathering spaces.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Puno Cathedral and Local Churches",
+            "description": "Sacred architecture serving as the central node for masses, novenas, and departure points for religious processions.",
+            "evidence_urls": [
+              "https://es.wikipedia.org/wiki/Fiesta_de_la_Candelaria_(Puno)"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Regional Federations of Practitioners",
+            "description": "Organizations such as the Regional Federation of Folklore and Culture of Puno that coordinate celebrations and preserve technical knowledge.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956",
+              "https://machupicchuwayna.com/virgen-de-la-candelaria-en-puno/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
+        "production": [
+          {
+            "name": "Artisanal Crafting of Masks and Costumes",
+            "description": "The manual creation, embroidery, and design of complex ceremonial regalia and masks within specialized local workshops.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "products": [],
         "services": [],
-        "experience": [],
-        "education": []
+        "experience": [
+          {
+            "name": "Ritual Processions and Competitive Dance Events",
+            "description": "The annual sequence of dawn masses, purification ceremonies, native dance contests, and grand street processions.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Practice and Rehearsals",
+            "description": "The transmission of traditional knowledge through community music and choreography rehearsals and artisan workshops.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 85,
+        "education_potential": 75,
+        "creative_industry_potential": 80,
+        "digital_potential": 30
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Ministry of Culture of Peru",
+            "description": "Government body responsible for safeguarding, documentation, and supporting the recognition of the element under national and international frameworks.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Quechua and Aymara Community Groups and Federations",
+            "description": "Local dance ensembles, neighborhood associations, and regional federations coordinating festival activities and preservation.",
+            "evidence_urls": [
+              "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:40:42.525882Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Supports regional artisans, tailors, culture-bearers, and local service providers during peak festival periods.",
+          "evidence_urls": [
+            "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Draws thousands of regional, national, and international visitors as one of Latin America's largest cultural celebrations.",
+          "evidence_urls": [
+            "https://es.wikipedia.org/wiki/Fiesta_de_la_Candelaria_(Puno)",
+            "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Provides strong mechanisms for intergenerational transmission of heritage skills, music, dance, and syncretic traditions.",
+          "evidence_urls": [
+            "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Involves complex craftsmanship in costume embroidery, mask making, traditional music, and extensive performance arts.",
+          "evidence_urls": [
+            "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited direct documentation; digital engagement primarily centers on media coverage, archival records, and promotional streaming.",
+          "evidence_urls": [
+            "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 19,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:40:42.525882Z",
         "last_error": null
       }
     },
@@ -8138,78 +8671,173 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:41:04.981689Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Orally Transmitted Ethnomedical Knowledge",
+            "description": "Intergenerational transmission of plant identification, therapeutic preparation, and spiritual healing practices among the Batek people.",
+            "evidence_urls": [
+              "https://www.researchgate.net/publication/282299837_Ethnomedical_survey_of_plants_used_by_the_Bateq_in_Kuala_Koh"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Rainforest Medicinal Flora",
+            "description": "Leaves, barks, roots, seeds, and berries gathered from the surrounding rainforest environment used for physical ailment treatments.",
+            "evidence_urls": [
+              "https://www.researchgate.net/publication/282299837_Ethnomedical_survey_of_plants_used_by_the_Bateq_in_Kuala_Koh"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Batek Traditional Healers (Hala')",
+            "description": "Shamans and elders possessing specialized knowledge of faith-healing rituals, spirit invocations, and herbal applications.",
+            "evidence_urls": [
+              "https://www.researchgate.net/publication/262295604_Illness_Perception_and_Healing_Practices_among_the_Batek_Tribe_in_Kuala_Koh_Kelantan_Malaysia"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Taman Negara Rainforest Ecosystem",
+            "description": "The ancestral tropical rainforest tracts and settlement areas around Taman Negara and Kuala Koh serving as the living pharmacy and ritual space.",
+            "evidence_urls": [
+              "https://medic.upm.edu.my/upload/dokumen/20250212104523Qualitative_Exploration_of_the_Use_Knowledge_and_Perceptions_of_Medicinal_Plants_Among_Bateq_Villagers_in_Taman_Negara_Malaysia.pdf"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
+        "production": [
+          {
+            "name": "Sustainable Foraging and Harvesting",
+            "description": "Ethical gathering of roots, barks, and leaves by community members based on ecological cues and traditional rules.",
+            "evidence_urls": [
+              "https://www.researchgate.net/publication/282299837_Ethnomedical_survey_of_plants_used_by_the_Bateq_in_Kuala_Koh"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Herbal Remedies and Concoctions",
+            "description": "Traditional decoctions, poultices, and plant extracts prepared using pots and boiling tools for specific physical ailments.",
+            "evidence_urls": [
+              "https://www.researchgate.net/publication/282299837_Ethnomedical_survey_of_plants_used_by_the_Bateq_in_Kuala_Koh"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Faith-Healing and Spiritual Rituals",
+            "description": "Shamanic ceremonies led by the hala' involving chants, cooling the heart, and invocation of forest spirits to address spiritual sickness.",
+            "evidence_urls": [
+              "https://www.researchgate.net/publication/262295604_Illness_Perception_and_Healing_Practices_among_the_Batek_Tribe_in_Kuala_Koh_Kelantan_Malaysia"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "experience": [],
-        "education": []
+        "education": [
+          {
+            "name": "Intergenerational Oral Instruction",
+            "description": "Informal transmission of ecological health philosophies, social harmony concepts (like preventing 'ke'oy'), and plant uses from elders to youth.",
+            "evidence_urls": [
+              "https://www.researchgate.net/publication/262295604_Illness_Perception_and_Healing_Practices_among_the_Batek_Tribe_in_Kuala_Koh_Kelantan_Malaysia"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
+        "livelihood_potential": 10,
         "tourism_potential": 0,
-        "education_potential": 0,
+        "education_potential": 30,
         "creative_industry_potential": 0,
         "digital_potential": 0
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
-        "academic": [],
-        "community": [],
+        "academic": [
+          {
+            "name": "Ethnobotanical and Anthropological Research",
+            "description": "University researchers documenting ethnomedical plants and illness perceptions alongside the Batek community in Kuala Koh.",
+            "evidence_urls": [
+              "https://www.researchgate.net/publication/282299837_Ethnomedical_survey_of_plants_used_by_the_Bateq_in_Kuala_Koh",
+              "https://medic.upm.edu.my/upload/dokumen/20250212104523Qualitative_Exploration_of_the_Use_Knowledge_and_Perceptions_of_Medicinal_Plants_Among_Bateq_Villagers_in_Taman_Negara_Malaysia.pdf"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Batek Knowledge Keepers and Village Elders",
+            "description": "Custodians of oral traditions who maintain the practice of herbal medicine and shamanic healing within rainforest settlements.",
+            "evidence_urls": [
+              "https://www.researchgate.net/publication/262295604_Illness_Perception_and_Healing_Practices_among_the_Batek_Tribe_in_Kuala_Koh_Kelantan_Malaysia"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:41:04.981689Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Commercialization of traditional medicinal knowledge poses risks to community sovereignty and cultural integrity, though baseline internal subsistence value remains high.",
+          "evidence_urls": [
+            "https://www.researchgate.net/publication/262295604_Illness_Perception_and_Healing_Practices_among_the_Batek_Tribe_in_Kuala_Koh_Kelantan_Malaysia"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
+          "rationale": "No current structured cultural tourism framework exists or is safely authorized regarding these sacred healing rituals; commercializing spiritual elements presents severe ethical concerns.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Academic and community documentation initiatives highlight opportunities for culturally grounded educational frameworks respecting indigenous governance.",
+          "evidence_urls": [
+            "https://medic.upm.edu.my/upload/dokumen/20250212104523Qualitative_Exploration_of_the_Use_Knowledge_and_Perceptions_of_Medicinal_Plants_Among_Bateq_Villagers_in_Taman_Negara_Malaysia.pdf"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
+          "rationale": "The practice is rooted in sacred healing and practical survival rather than commercial creative arts or design sectors.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "digital_potential": {
-          "rationale": "",
+          "rationale": "Digital documentation carries intellectual property risks and potential misappropriation concerns without prior free, prior, and informed consent (FPIC).",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 12,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 2,
+        "opportunity_scores_without_evidence": 3,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:41:04.981689Z",
         "last_error": null
       }
     },
@@ -8317,8 +8945,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:41:25.905581Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -8348,8 +8976,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -8359,8 +8987,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T13:41:25.905581Z",
+        "last_error": "response must be a JSON object"
       }
     },
     {
@@ -8495,8 +9123,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:42:11.102380Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -8526,8 +9154,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -8537,8 +9165,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T13:42:11.102380Z",
+        "last_error": "response must be a JSON object"
       }
     },
     {
@@ -8643,8 +9271,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:43:02.263603Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -8674,8 +9302,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -8685,8 +9313,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T13:43:02.263603Z",
+        "last_error": "response must be a JSON object"
       }
     },
     {
@@ -8775,78 +9403,291 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:43:50.351666Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Tiaohua Jieben Pattern-Coding and Programming Technique",
+            "description": "An ancient manual jacquard programming technique involving pattern drafting and knot-tying on textile pattern samples, functioning as historical software code for complex weaving.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Imperial Brocade Aesthetic and Motif System",
+            "description": "A historic repertoire of traditional Chinese motifs, including dragons, phoenixes, clouds, and auspicious symbols governed by rigid hierarchical and symbolic rules.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Fine Silk Threads",
+            "description": "High-grade raw silk utilized as the primary foundation and warp-weft material for building dense, luminous textile surfaces.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Gold and Silver Metallic Threads",
+            "description": "Precious metallic yarns interwoven into the fabric structure to create shimmering royal decorative effects.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Peacock Feather Yarns",
+            "description": "Specialized luxury feathered threads historically and occasionally incorporated into treasured collections for unique iridescent brilliance.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Master Weavers and Hereditary Inheritors",
+            "description": "Highly skilled, certified national- and regional-level inheritors and veteran artisans capable of operating large traditional looms and passing down intricate manual skills.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Dual-Operator Loom Teams",
+            "description": "Pairs of specialized craftspeople coordinating upper-loom thread-sorting and lower-loom shuttle weaving.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Nanjing Yunjin Museum",
+            "description": "A dedicated institutional facility in Nanjing, Jiangsu Province, housing historical garments, giant wooden looms, and exhibition spaces for public education and heritage exchange.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Nanjing Yunjin Brocade Research Institute",
+            "description": "A specialized research and experimental center focused on classical style preservation, technical replication of ancient artifacts, and professional production.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "UNESCO Representative List of the Intangible Cultural Heritage of Humanity",
+            "description": "Global recognition framework providing international visibility and safeguarding commitments following its 2009 inscription.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "National-Level Intangible Cultural Heritage Protection System",
+            "description": "China's domestic heritage conservation framework protecting the wooden-loom Zhuanghua hand-weaving craft since its initial 2006 designation.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Traditional Hand-Weaving on Giant Wooden Looms",
+            "description": "A labor-intensive process requiring two artisans working collaboratively on a 4-meter-high wooden loom, yielding only about five to six centimeters of fabric per day.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Archaeological Textile Replication",
+            "description": "Specialized workshop production dedicated to recreating ancient silk fabrics and imperial garments for academic researchers and museum collections.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "High-End Custom Attire and Fashion Pieces",
+            "description": "Contemporary luxury garments and fashion applications integrating extracted Yunjin cultural and graphical genes.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Heritage Souvenirs and Collectibles",
+            "description": "Handcrafted miniature brocade items, framed art panels, and cultural artifacts produced for visitors and collectors.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Museum Exhibitions and Guided Tours",
+            "description": "Public display services showcasing historical artifacts, imperial robes, and live loom-weaving demonstrations.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Inter-Institutional Cultural Exchanges",
+            "description": "Collaborative museum programs and exhibition exchanges promoting intangible heritage awareness across regions.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Immersive Heritage Tourism and Craft Observation",
+            "description": "Visitor engagement opportunities observing master artisans operate complex wooden looms within dedicated cultural spaces.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Apprenticeship and Institutional Transmission",
+            "description": "Structured transmission models moving from individual master-apprentice training toward organization-based educational programs.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 45,
+        "tourism_potential": 75,
+        "education_potential": 70,
+        "creative_industry_potential": 65,
+        "digital_potential": 50
       },
       "resource_mobilization": {
-        "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
+        "public_sector": [
+          {
+            "name": "Nanjing Culture and Tourism Bureau",
+            "description": "Local government body responsible for administrative oversight, facility designation, and cultural sector guidance for regional heritage sites.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "private_sector": [
+          {
+            "name": "Nanjing Yunjin Brocade Research Institute Company Limited",
+            "description": "Enterprise entity engaged in commercial production, research, preservation, and market dissemination of classical Yunjin brocades.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "University and Heritage Research Teams",
+            "description": "Academic researchers publishing studies on cultural gene extraction, digital knowledge graphs, and institutional safeguarding frameworks.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Practitioner Communities and Hereditary Masters",
+            "description": "Local artisan networks and designated bearers safeguarding tacit knowledge and transmitting traditional skills across generations.",
+            "evidence_urls": [
+              "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:43:50.351666Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High production complexity and extended fabrication time restrict mass commercial scalability, confining direct craft-based livelihoods to a small group of specialized master artisans and research staff.",
+          "evidence_urls": [
+            "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226",
+            "https://www.chinatoday.com.cn/ctenglish/2018/art/202601/t20260105_800318042.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Supported by dedicated physical infrastructure such as the Nanjing Yunjin Museum, the element attracts substantial cultural heritage tourism and visitor engagement through live demonstrations.",
+          "evidence_urls": [
+            "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226",
+            "https://www.chinatoday.com.cn/ctenglish/2018/art/202601/t20260105_800318042.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong institutional backing from research institutes and museums enables active public education, scholastic study of ancient textiles, and structured transmission programs.",
+          "evidence_urls": [
+            "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226",
+            "https://www.chinatoday.com.cn/ctenglish/2018/art/202601/t20260105_800318042.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Motifs and design elements offer rich cultural source material for modern fashion design, high-end apparel, and creative merchandise development.",
+          "evidence_urls": [
+            "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226",
+            "https://www.chinatoday.com.cn/ctenglish/2018/art/202601/t20260105_800318042.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Emerging initiatives in digital archiving, knowledge graphs, and question-answering systems provide avenues for preserving and communicating intangible heritage data.",
+          "evidence_urls": [
+            "https://www.unesco.org/culture/intangible-heritage/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00226",
+            "https://www.chinatoday.com.cn/ctenglish/2018/art/202601/t20260105_800318042.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 2,
+        "evidence_item_count": 28,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-09T13:43:50.351666Z",
         "last_error": null
       }
     },
@@ -8914,79 +9755,183 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-09T13:44:16.622498Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Ainu Oral Literature Corpus (Yukara, Kamuy Yukar, Uwepeker)",
+            "description": "An extensive collection of epic poems, divine songs, and prose narratives preserving the cosmology, history, and ethical principles of the Ainu people.",
+            "evidence_urls": [
+              "https://hokkaido-digital-museum.jp/wp-content/uploads/2021/11/11-0012-297x340-1.jpg",
+              "https://www.akanainu.jp/ainu_culture/oral_literature/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Performance Melodies and Rhythms",
+            "description": "Specific melodic patterns, vocalizations, and rhythmic percussive beats using hand-held wood blocks associated with reciting heroic and mythic epics.",
+            "evidence_urls": [
+              "https://hokkaido-digital-museum.jp/wp-content/uploads/2021/11/11-0012-297x340-1.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Percussive Wooden Blocks",
+            "description": "Hand-held blocks of wood beaten by reciters and listeners to mark time and maintain the rhythmic cadence during epic performances.",
+            "evidence_urls": [
+              "https://hokkaido-digital-museum.jp/wp-content/uploads/2021/11/11-0012-297x340-1.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Yukar-kashi and Uwepeker-kashi (Traditional Storytellers)",
+            "description": "Elders and skilled community practitioners holding deep memory repositories of ancestral texts, performance techniques, and traditional melodies.",
+            "evidence_urls": [
+              "https://www.akanainu.jp/ainu_culture/oral_literature/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Upopoy (National Ainu Museum and Park)",
+            "description": "A national center in Shiraoi, Hokkaido, dedicated to the revival, presentation, and transmission of Ainu culture, arts, and oral traditions.",
+            "evidence_urls": [
+              "https://ainu-upopoy.go.jp/en/wp-content/uploads/sites/2/2026/03/a36aeda8d5a49c9ef9474e7a66ee0c6e.jpg",
+              "https://www.hokkaidoisan.org/heritage/005.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Akan Ainu Kotan",
+            "description": "A traditional Ainu settlement community in Hokkaido actively engaged in preserving and sharing indigenous performing arts and storytelling.",
+            "evidence_urls": [
+              "https://www.akanainu.jp/ainu_culture/oral_literature/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
+        "production": [
+          {
+            "name": "Oral Transmission and Memorization Training",
+            "description": "Intergenerational transmission process where learners memorize lengthy epics through attentive listening to community elders.",
+            "evidence_urls": [
+              "https://hokkaido-digital-museum.jp/wp-content/uploads/2021/11/11-0012-297x340-1.jpg",
+              "https://www.akanainu.jp/ainu_culture/oral_literature/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "products": [],
         "services": [],
-        "experience": [],
-        "education": []
+        "experience": [
+          {
+            "name": "Live Recitation and Storytelling Performances",
+            "description": "Communal presentation sessions featuring traditional vocal melodies, rhythmic wood-beating, and audience exclamations at cultural hubs and museums.",
+            "evidence_urls": [
+              "https://hokkaido-digital-museum.jp/wp-content/uploads/2021/11/11-0012-297x340-1.jpg",
+              "https://ainu-upopoy.go.jp/en/wp-content/uploads/sites/2/2026/03/a36aeda8d5a49c9ef9474e7a66ee0c6e.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Cultural Heritage Interpretation Programs",
+            "description": "Educational workshops and media presentations (such as animated adaptations of legends) designed to teach visitors and youth about Ainu worldview.",
+            "evidence_urls": [
+              "https://ainu-upopoy.go.jp/en/wp-content/uploads/sites/2/2026/03/a36aeda8d5a49c9ef9474e7a66ee0c6e.jpg",
+              "https://www.akanainu.jp/ainu_culture/oral_literature/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 20,
+        "tourism_potential": 60,
+        "education_potential": 85,
+        "creative_industry_potential": 40,
+        "digital_potential": 50
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Akan Ainu Kotan Community Preservation Group",
+            "description": "Local community initiatives safeguarding traditional storytelling, performing arts, and indigenous craftsmanship in Hokkaido.",
+            "evidence_urls": [
+              "https://www.akanainu.jp/ainu_culture/oral_literature/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-09T13:44:16.622498Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Direct commercial monetization of sacred oral literature is constrained by cultural protocols, focusing primarily on community-led preservation rather than market income.",
+          "evidence_urls": [
+            "https://www.akanainu.jp/ainu_culture/oral_literature/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Cultural tourism centers like Upopoy and Akan Ainu Kotan integrate storytelling performances and mythic presentations for visitors exploring Hokkaido heritage.",
+          "evidence_urls": [
+            "https://ainu-upopoy.go.jp/en/wp-content/uploads/sites/2/2026/03/a36aeda8d5a49c9ef9474e7a66ee0c6e.jpg",
+            "https://www.akanainu.jp/ainu_culture/oral_literature/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Extensive institutional frameworks, school programs, and museum initiatives prioritize teaching the oral tradition, language recovery, and indigenous philosophy.",
+          "evidence_urls": [
+            "https://ainu-upopoy.go.jp/en/wp-content/uploads/sites/2/2026/03/a36aeda8d5a49c9ef9474e7a66ee0c6e.jpg"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Elements of oral literature inspire creative adaptations, including illustrated publications, audio recordings, and animated short films based on traditional epics.",
+          "evidence_urls": [
+            "https://ainu-upopoy.go.jp/en/wp-content/uploads/sites/2/2026/03/a36aeda8d5a49c9ef9474e7a66ee0c6e.jpg"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digital archive projects, museum databases, and online audio-visual resources help document and broadcast endangered oral texts and linguistic materials.",
+          "evidence_urls": [
+            "https://hokkaido-digital-museum.jp/wp-content/uploads/2021/11/11-0012-297x340-1.jpg"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 4,
+        "evidence_item_count": 15,
+        "uncited_item_count": 5,
+        "invalid_evidence_url_count": 6,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-09T13:44:16.622498Z",
+        "last_error": "resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; value_chain.products[0] had no valid direct evidence URL and was excluded; resource_mobilization.public_sector[0] had no valid direct evidence URL and was excluded; resource_mobilization.academic[0] had no valid direct evidence URL and was excluded; resource_mobilization.potential_funding[0] had no valid direct evidence URL and was excluded"
       }
     },
     {
@@ -56753,7 +57698,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-09T13:08:27.013056Z",
+    "generated_at": "2026-10-09T13:44:40.170329Z",
     "total_ich_elements": 329,
     "complete_records": 328,
     "incomplete_records": 1,
