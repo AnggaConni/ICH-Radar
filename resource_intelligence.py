@@ -432,8 +432,23 @@ def _apply_valid_resource_payload(item, payload, review, checked_at):
     item["resource_enriched_at"] = checked_at
 
 
-def enrich_resource_data(api_key, inventory, call_gemini, quota_exception, logger):
-    """Enrich two low-coverage records per run, requiring evidence links before acceptance."""
+def normalize_enrichment_limit(value, default=2, maximum=10):
+    """Parse a positive whole-number batch size and keep it within safe bounds."""
+    try:
+        if isinstance(value, bool):
+            raise ValueError("boolean is not a batch size")
+        numeric = float(value)
+        if not numeric.is_integer():
+            raise ValueError("batch size must be a whole number")
+        limit = int(numeric)
+    except (TypeError, ValueError, OverflowError):
+        limit = default
+    return max(1, min(maximum, limit))
+
+
+def enrich_resource_data(api_key, inventory, call_gemini, quota_exception, logger, max_items=2):
+    """Enrich a configurable number of low-coverage records with source-linked evidence."""
+    batch_size = normalize_enrichment_limit(max_items)
     for item in inventory:
         resource_schema_defaults(item)
     candidates = sorted(inventory, key=lambda item: (
@@ -441,7 +456,11 @@ def enrich_resource_data(api_key, inventory, call_gemini, quota_exception, logge
         0 if not item.get("resource_enrichment_attempted_at") else 1,
         item.get("resource_enrichment_attempted_at") or "9999-12-31T23:59:59Z",
     ))
-    target_items = candidates[:2]
+    target_items = candidates[:batch_size]
+    logger.info(
+        "Resource enrichment batch size: %s record(s); %s inventory record(s) available.",
+        len(target_items), len(candidates)
+    )
     if not target_items:
         logger.info("No inventory items available for Resource & Opportunity enrichment.")
         return {"enriched": 0, "metadata_changed": 0}
