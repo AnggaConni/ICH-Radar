@@ -119,7 +119,10 @@ def _is_direct_evidence_url(value):
         parsed = urlparse(candidate)
     except ValueError:
         return False
-    return parsed.scheme.lower() in ("http", "https") and bool(parsed.hostname) and "." in parsed.hostname
+    host = (parsed.hostname or "").lower().rstrip(".")
+    if host.endswith((".example", ".invalid", ".test", ".localhost")):
+        return False
+    return parsed.scheme.lower() in ("http", "https") and bool(host) and "." in host
 
 
 def _normalize_evidence_urls(raw_urls, counters):
