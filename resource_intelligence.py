@@ -374,8 +374,8 @@ def resource_enrichment_score(item):
     return count
 
 
-def _mark_resource_attempt_failure(item, status, message, checked_at):
-    review = item.get("resource_intelligence_review")
+def _mark_resource_attempt_failure(item, status, message, checked_at, base_review=None):
+    review = base_review if isinstance(base_review, dict) else item.get("resource_intelligence_review")
     if not isinstance(review, dict):
         review = _default_resource_intelligence_review()
     review = dict(review)
@@ -524,13 +524,15 @@ Give every field exactly as shown. Return empty arrays rather than unsupported e
             break
         if errors or normalized is None:
             message = "; ".join(errors[:6]) if errors else "No valid structured response"
-            _mark_resource_attempt_failure(item, "validation_failed", message, checked_at)
+            _mark_resource_attempt_failure(item, "validation_failed", message, checked_at, review)
             logger.error("Resource enrichment rejected for %s: %s", name, message)
+            time.sleep(15)
             continue
         if not has_actionable_resource_payload(normalized):
             item["resource_intelligence_review"] = review
             item["resource_enrichment_status"] = "insufficient_evidence"
             logger.warning("No actionable source-backed information for %s; existing data preserved.", name)
+            time.sleep(15)
             continue
 
         _apply_valid_resource_payload(item, normalized, review, checked_at)
