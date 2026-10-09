@@ -1,4 +1,6 @@
+import logging
 import unittest
+from unittest.mock import patch
 
 import resource_intelligence as ri
 
@@ -125,6 +127,44 @@ class ResourceIntelligenceValidationTests(unittest.TestCase):
         self.assertIsNone(normalized)
         self.assertTrue(errors)
         self.assertEqual(review["status"], "validation_failed")
+
+    def test_enrichment_limit_defaults_and_clamps_to_safe_range(self):
+        self.assertEqual(ri.normalize_enrichment_limit(None), 2)
+        self.assertEqual(ri.normalize_enrichment_limit("4"), 4)
+        self.assertEqual(ri.normalize_enrichment_limit(1), 1)
+        self.assertEqual(ri.normalize_enrichment_limit(0), 1)
+        self.assertEqual(ri.normalize_enrichment_limit(25), 10)
+        self.assertEqual(ri.normalize_enrichment_limit("invalid"), 2)
+        self.assertEqual(ri.normalize_enrichment_limit(2.5), 2)
+
+    def test_requested_batch_size_controls_number_of_records(self):
+        inventory = [
+            {"id": f"item-{index}", "element_name": f"Test heritage {index}",
+             "location": {"country": "Testland", "provinces": []},
+             "resume_analisa": {}, "resume_tata_cara": {}, "source_urls": []}
+            for index in range(5)
+        ]
+        payload = blank_payload()
+        payload["resource_mapping"]["knowledge_resources"] = [{
+            "name": "Documented knowledge resource",
+            "description": "A source-linked test item.",
+            "evidence_urls": ["https://museum.example.org/heritage"],
+        }]
+
+        def fake_gemini(*args, **kwargs):
+            return payload
+
+        with patch.object(ri.time, "sleep", return_value=None):
+            result = ri.enrich_resource_data(
+                "test-key", inventory,
+                call_gemini=fake_gemini,
+                quota_exception=RuntimeError,
+                logger=logging.getLogger("test-resource-intelligence"),
+                max_items=3,
+            )
+
+        self.assertEqual(result["enriched"], 3)
+        self.assertEqual(result["metadata_changed"], 3)
 
     def test_priority_score_ignores_legacy_entries_without_evidence_urls(self):
         item = {
