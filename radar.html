@@ -727,6 +727,54 @@
   .resource-detail-card .detail-empty{font-size:10px;color:#94a3b8;margin-top:7px}
   @media (max-width:760px){.resource-detail-grid{grid-template-columns:1fr}}
 
+
+  .resource-guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+  .resource-guide-card{border:1px solid #dbe5e5;border-radius:13px;padding:15px;background:#fbfdff;min-width:0}
+  .resource-guide-number{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:9px;background:#ccfbf1;color:#0f766e;font-weight:800;font-size:11px}
+  .resource-guide-card h3{margin:10px 0 6px;font-size:13px;font-weight:800;color:#0f172a}
+  .resource-guide-card p{font-size:11px;color:#475569;line-height:1.6;margin:0 0 7px}
+  .resource-guide-card .resource-guide-id{color:#64748b;font-style:italic;border-top:1px solid #e2e8f0;padding-top:7px;margin-top:8px}
+  .resource-score-legend{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:14px}
+  .resource-score-band{display:flex;flex-direction:column;gap:6px;border:1px solid #e2e8f0;background:#fff;border-radius:11px;padding:11px;min-width:0}
+  .resource-score-band strong{font-size:11px;line-height:1.4;color:#0f172a}.resource-score-band span{font-size:10px;color:#64748b;line-height:1.55}
+  .resource-score-band.score-zero{background:#f8fafc;border-color:#cbd5e1}.resource-score-band.score-low{background:#fff7ed;border-color:#fed7aa}
+  .resource-score-band.score-limited{background:#fffbeb;border-color:#fde68a}.resource-score-band.score-moderate{background:#eff6ff;border-color:#bfdbfe}
+  .resource-score-band.score-strong{background:#ecfdf5;border-color:#a7f3d0}
+  .resource-score-footnote{display:flex;align-items:flex-start;gap:8px;margin-top:12px;padding:11px 12px;border-radius:10px;background:#f8fafc;border:1px solid #e2e8f0;color:#475569;font-size:11px;line-height:1.6}
+  .resource-score-footnote i{color:#0d9488;font-size:16px;flex:0 0 auto;margin-top:1px}
+  .resource-summary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .resource-summary-stat{display:flex;flex-direction:column;gap:5px;border:1px solid #e2e8f0;border-radius:12px;padding:12px;background:#fbfdff;min-width:0}
+  .resource-summary-stat span{font-size:10px;line-height:1.45;font-weight:800;color:#64748b}
+  .resource-summary-stat strong{font-family:'Space Grotesk',sans-serif;font-size:19px;line-height:1.2;font-weight:700;color:#0f172a;overflow-wrap:anywhere}
+  .resource-summary-stat small{font-size:10px;line-height:1.45;color:#94a3b8}.resource-summary-status strong{font-family:Inter,sans-serif;font-size:12px}
+  .resource-review-banner{border:1px solid #fde68a;background:#fffbeb;color:#78350f;border-radius:12px;padding:13px 14px;font-size:11px;line-height:1.6}
+  .resource-review-banner strong{display:block;font-size:12px;margin-bottom:4px}.resource-review-banner p{margin:0}
+  .resource-review-banner small{display:block;margin-top:7px;font-size:10px;opacity:.8;text-transform:capitalize}
+  .resource-review-banner.status-insufficient_evidence,.resource-review-banner.status-not_assessed{background:#f8fafc;border-color:#cbd5e1;color:#475569}
+  .resource-review-banner.status-validation_failed,.resource-review-banner.status-api_error{background:#fef2f2;border-color:#fecaca;color:#991b1b}
+  .resource-readiness .readiness-row{grid-template-columns:minmax(140px,1fr) minmax(70px,1.2fr) minmax(78px,auto)}
+  .readiness-value{font-size:10px;white-space:nowrap}.readiness-value span{color:#94a3b8}
+  .resource-opportunity-card{border:1px solid #dbe5e5;border-radius:13px;background:#fff;padding:14px;min-width:0}
+  .resource-opportunity-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+  .resource-opportunity-head h3{font-size:12px;font-weight:800;color:#0f172a;line-height:1.4;margin:0}
+  .resource-opportunity-score{flex:0 0 auto;border:1px solid #e2e8f0;border-radius:8px;padding:5px 7px;font-size:12px;font-weight:800;color:#334155;white-space:nowrap}
+  .resource-opportunity-score.score-strong{background:#ecfdf5;border-color:#a7f3d0;color:#065f46}.resource-opportunity-score.score-moderate{background:#eff6ff;border-color:#bfdbfe;color:#1d4ed8}
+  .resource-opportunity-score.score-low{background:#fff7ed;border-color:#fed7aa;color:#9a3412}.resource-opportunity-score.score-zero{background:#f8fafc;border-color:#cbd5e1;color:#475569}
+  .resource-opportunity-band{display:inline-flex;margin-top:9px;border-radius:999px;padding:4px 7px;background:#f1f5f9;color:#475569;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.03em}
+  .resource-opportunity-card p{font-size:11px;line-height:1.6;color:#64748b;margin:9px 0}
+  .resource-opportunity-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:5px;border-top:1px solid #eef2f7;padding-top:8px;color:#94a3b8;font-size:9px}
+  .resource-opportunity-links{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px}
+  .resource-opportunity-links a,.resource-evidence-link{display:inline-block;color:#0f766e;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:7px;padding:5px 7px;font-size:10px;font-weight:700;overflow-wrap:anywhere}
+  .resource-opportunity-links a:hover,.resource-evidence-link:hover{text-decoration:underline}
+  .resource-detail-card h4{font-size:10px;font-weight:800;letter-spacing:.04em;color:#475569}
+  .resource-detail-card li{list-style:none;border-top:1px solid #eef2f7;padding-top:8px;margin:0}.resource-detail-card li:first-child{border-top:0;padding-top:2px}
+  .resource-detail-card li p{margin:4px 0;color:#64748b}.resource-citation-state{display:block;margin-top:5px;font-size:9px;font-weight:700;line-height:1.4}
+  .resource-citation-state.has-citation{color:#0f766e}.resource-citation-state.no-citation{color:#b45309}.resource-detail-card .resource-evidence-link{margin:5px 5px 0 0}
+  @media(max-width:1000px){.resource-guide-grid{grid-template-columns:1fr}.resource-score-legend{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:760px){.resource-score-legend{grid-template-columns:1fr}.resource-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .resource-summary-stat:last-child{grid-column:1/-1}.resource-guide-card{padding:13px}.resource-kpi{padding:12px}
+    .resource-readiness .readiness-row{grid-template-columns:1fr}.readiness-value{text-align:left}#resource-matrix-chart{height:340px}}
+
 </style>
   
 </head>
@@ -875,73 +923,92 @@
 
 
     <div id="tab-resource" class="hidden flex flex-col gap-4 mt-4">
+      <section class="resource-panel resource-howto">
+        <div class="resource-panel-title"><i class="ph ph-compass text-brand-accent"></i><span>Start here: what this tab does</span></div>
+        <p class="resource-panel-subtitle">Use this view to find documented resources, possible safeguarding pathways, and questions that still need research. It supports programme planning; it is not an automatic business plan or a decision on behalf of a community.</p>
+        <div class="resource-guide-grid">
+          <div class="resource-guide-card"><span class="resource-guide-number">01</span><h3>What is it for?</h3><p>Connect cultural knowledge, materials, people, places, activities and possible support.</p><p class="resource-guide-id">Untuk memahami sumber daya yang terdokumentasi dan dukungan yang mungkin relevan bagi pelestarian.</p></div>
+          <div class="resource-guide-card"><span class="resource-guide-number">02</span><h3>How do I read it?</h3><p>Select an element, open its source links, read the opportunity signals, then review the gaps below.</p><p class="resource-guide-id">Pilih elemen, buka tautan sumber, baca indikasi peluang, lalu periksa informasi yang masih kurang.</p></div>
+          <div class="resource-guide-card"><span class="resource-guide-number">03</span><h3>What counts as evidence?</h3><p>A URL is a lead to check — not proof by itself. Confirm the page supports the specific claim and is relevant to the place and community.</p><p class="resource-guide-id">Tautan perlu diperiksa isinya. Jangan anggap hasil AI otomatis benar atau sudah disetujui komunitas.</p></div>
+        </div>
+      </section>
+      <section class="resource-panel resource-score-guide">
+        <div class="resource-panel-title"><i class="ph ph-gauge text-brand-secondary"></i><span>How to read the 0–100 opportunity score</span></div>
+        <p class="resource-panel-subtitle">Scores are preliminary AI research signals based on linked sources. They are not percentages of success, market demand, revenue, impact or financial viability.</p>
+        <div class="resource-score-legend">
+          <div class="resource-score-band score-zero"><strong>0 / Not assessed</strong><span>No category-specific source is attached, or cited sources show no positive signal. This does not mean no opportunity exists.</span></div>
+          <div class="resource-score-band score-low"><strong>1–24 · Weak signal</strong><span>Very limited indications; more research is needed.</span></div>
+          <div class="resource-score-band score-limited"><strong>25–49 · Limited</strong><span>Some indications, with important gaps.</span></div>
+          <div class="resource-score-band score-moderate"><strong>50–74 · Moderate</strong><span>A stronger indication in available sources; still unverified.</span></div>
+          <div class="resource-score-band score-strong"><strong>75–100 · Strong signal</strong><span>More substantial documented indications; human review is still required.</span></div>
+        </div>
+        <div class="resource-score-footnote"><i class="ph ph-info"></i><span><strong>Important:</strong> Evidence coverage counts categories with item-level source links; it does not grade source quality. A missing score does not mean the culture has no future opportunity.</span></div>
+      </section>
       <div class="resource-panel">
-        <div class="resource-panel-title"><i class="ph ph-tree-structure text-brand-accent"></i><span data-i18n="resourceTitle">Resource & Opportunity Intelligence</span></div>
-        <div class="resource-panel-subtitle" data-i18n="resourceSubtitle">A structured view of heritage resources, value-chain evidence, and derived opportunity signals. This layer separates documented evidence from hypotheses.</div>
+        <div class="resource-panel-title"><i class="ph ph-funnel text-brand-accent"></i><span>Choose a heritage element</span></div>
+        <div class="resource-panel-subtitle">Country and category filters narrow the list. Counts and the chart update to match your selection.</div>
         <div class="resource-filter-row mt-4">
-          <select id="resource-element-select" onchange="renderResourceOpportunity(this.value)"></select>
-          <select id="resource-country-filter" onchange="renderResourceOpportunity(document.getElementById('resource-element-select').value)"><option value="all">All Countries</option></select>
-          <select id="resource-category-filter" onchange="renderResourceOpportunity(document.getElementById('resource-element-select').value)"><option value="all">All Categories</option></select>
+          <select id="resource-element-select" aria-label="Select heritage element" onchange="renderResourceOpportunity(this.value)"></select>
+          <select id="resource-country-filter" aria-label="Filter by country" onchange="renderResourceOpportunity(document.getElementById('resource-element-select').value)"><option value="all">All Countries</option></select>
+          <select id="resource-category-filter" aria-label="Filter by category" onchange="renderResourceOpportunity(document.getElementById('resource-element-select').value)"><option value="all">All Categories</option></select>
         </div>
         <div class="resource-kpi-grid">
-          <div class="resource-kpi"><div class="label">Heritage Elements</div><div id="resource-kpi-total" class="value">—</div></div>
-          <div class="resource-kpi"><div class="label">Resource-Ready Evidence</div><div id="resource-kpi-ready" class="value">—</div></div>
-          <div class="resource-kpi"><div class="label">Shared Heritage</div><div id="resource-kpi-shared" class="value">—</div></div>
-          <div class="resource-kpi"><div class="label">Resilience Linked</div><div id="resource-kpi-resilience" class="value">—</div></div>
+          <div class="resource-kpi"><div class="label">Elements in this view</div><div id="resource-kpi-total" class="value">—</div></div>
+          <div class="resource-kpi"><div class="label">Profiles with linked evidence</div><div id="resource-kpi-ready" class="value">—</div></div>
+          <div class="resource-kpi"><div class="label">Need human review</div><div id="resource-kpi-shared" class="value">—</div></div>
+          <div class="resource-kpi"><div class="label">No item-level evidence links</div><div id="resource-kpi-resilience" class="value">—</div></div>
         </div>
       </div>
       <div class="resource-profile-grid">
-        <div class="resource-panel">
-          <div class="resource-panel-title"><i class="ph ph-circle-dashed text-brand-secondary"></i><span>Selected Heritage Resource</span></div>
+        <section class="resource-panel">
+          <div class="resource-panel-title"><i class="ph ph-fingerprint text-brand-secondary"></i><span>Selected heritage element</span></div>
           <div id="resource-selected-title" class="resource-selected-title mt-2">Select an element</div>
           <div id="resource-selected-meta" class="resource-selected-meta mt-2"></div>
-          <div class="resource-ecosystem mt-4">
-            <div class="orbit" aria-hidden="true"></div>
-            <div class="resource-node center"><span class="node-title" id="resource-node-center">ICH ELEMENT</span><span class="node-score">core</span></div>
-            <div class="resource-node knowledge"><span class="node-title">Knowledge</span><span class="node-score" id="resource-node-knowledge">—</span></div>
-            <div class="resource-node place"><span class="node-title">Place</span><span class="node-score" id="resource-node-place">—</span></div>
-            <div class="resource-node practice"><span class="node-title">Practice</span><span class="node-score" id="resource-node-practice">—</span></div>
-            <div class="resource-node connection"><span class="node-title">Connections</span><span class="node-score" id="resource-node-connection">—</span></div>
-            <div class="resource-node resilience"><span class="node-title">Resilience</span><span class="node-score" id="resource-node-resilience">—</span></div>
+          <div class="resource-summary-grid mt-4">
+            <div class="resource-summary-stat"><span>Evidence-linked groups</span><strong id="resource-node-knowledge">—</strong><small>of 20 tracked groups</small></div>
+            <div class="resource-summary-stat"><span>Unique evidence URLs</span><strong id="resource-node-place">—</strong><small>links attached to these claims</small></div>
+            <div class="resource-summary-stat"><span>Entries without item-level links</span><strong id="resource-node-practice">—</strong><small>legacy entries to re-check</small></div>
+            <div class="resource-summary-stat"><span>Opportunity categories with sources</span><strong id="resource-node-connection">—</strong><small>of 5 score categories</small></div>
+            <div class="resource-summary-stat resource-summary-status"><span>Review status</span><strong id="resource-node-resilience">—</strong><small>not a quality rating</small></div>
           </div>
-        </div>
-        <div class="resource-panel">
-          <div class="resource-panel-title"><i class="ph ph-chart-bar text-brand-accent"></i><span>Resource Readiness</span></div>
-          <div class="resource-panel-subtitle">Evidence completeness across fields already stored in <code>data.json</code>.</div>
+          <div id="resource-selected-review" class="resource-review-banner mt-4" role="status"></div>
+        </section>
+        <section class="resource-panel">
+          <div class="resource-panel-title"><i class="ph ph-chart-bar text-brand-accent"></i><span>Evidence coverage</span></div>
+          <p class="resource-panel-subtitle">A category counts only when at least one entry in it has its own evidence URL. General element source links do not automatically verify each resource claim.</p>
           <div id="resource-readiness" class="resource-readiness"></div>
-          <div class="mt-4 p-3 rounded-xl bg-amber-50 border border-amber-100 text-[11px] text-amber-900 leading-relaxed"><strong>Evidence boundary:</strong> community ownership, market demand, costs, revenue, and stakeholder actors are not inferred when they are absent from the dataset.</div>
-        </div>
+          <div class="resource-score-footnote mt-4"><i class="ph ph-shield-check"></i><span>A source link means “ready to check,” not “verified.” Community roles, consent, benefit-sharing, market demand and costs require separate confirmation.</span></div>
+        </section>
       </div>
-      <div class="resource-panel">
-        <div class="resource-panel-title"><i class="ph ph-git-branch text-brand-secondary"></i><span>Value Chain Lens</span></div>
-        <div class="resource-panel-subtitle">Documented nodes are evidence; downstream nodes are opportunity hypotheses for further research.</div>
+      <section class="resource-panel">
+        <div class="resource-panel-title"><i class="ph ph-git-branch text-brand-secondary"></i><span>From documented practice to possible pathways</span></div>
+        <p class="resource-panel-subtitle">Knowledge, materials and practice are documentation inputs. Products, services, experiences and learning activities are research pathways — not proof of demand or permission to commercialise.</p>
         <div class="value-chain">
-          <div class="chain-step evidence"><span class="chain-type">Evidence</span><div class="chain-name">Knowledge</div></div>
-          <div class="chain-step evidence"><span class="chain-type">Evidence</span><div class="chain-name">Materials</div></div>
-          <div class="chain-step evidence"><span class="chain-type">Evidence</span><div class="chain-name">Practice</div></div>
-          <div class="chain-step opportunity"><span class="chain-type">Hypothesis</span><div class="chain-name">Product / Service</div></div>
-          <div class="chain-step opportunity"><span class="chain-type">Hypothesis</span><div class="chain-name">Market / Experience</div></div>
-          <div class="chain-step opportunity"><span class="chain-type">Hypothesis</span><div class="chain-name">Safeguarding Reinvestment</div></div>
+          <div class="chain-step evidence"><span class="chain-type">Document</span><div class="chain-name">Knowledge</div></div>
+          <div class="chain-step evidence"><span class="chain-type">Document</span><div class="chain-name">Materials</div></div>
+          <div class="chain-step evidence"><span class="chain-type">Document</span><div class="chain-name">Practice</div></div>
+          <div class="chain-step opportunity"><span class="chain-type">Explore</span><div class="chain-name">Products / Services</div></div>
+          <div class="chain-step opportunity"><span class="chain-type">Explore</span><div class="chain-name">Learning / Experience</div></div>
+          <div class="chain-step opportunity"><span class="chain-type">Confirm</span><div class="chain-name">Safeguarding & fair benefits</div></div>
         </div>
-        <div class="lens-grid" id="resource-lens-grid"></div>
-        <div class="resource-detail-grid" id="resource-detail-grid"></div>
-      </div>
-      <div class="resource-panel">
-        <div class="resource-panel-title"><i class="ph ph-chart-scatter text-brand-accent"></i><span>Resource & Resilience Matrix</span></div>
-        <div class="resource-panel-subtitle">X = practice/resource depth; Y = documented resilience relevance. Bubble size reflects evidence readiness.</div>
+        <div class="lens-grid" id="resource-lens-grid"></div><div class="resource-detail-grid" id="resource-detail-grid"></div>
+      </section>
+      <section class="resource-panel">
+        <div class="resource-panel-title"><i class="ph ph-chart-scatter text-brand-accent"></i><span>Quick comparison: practice and evidence</span></div>
+        <p class="resource-panel-subtitle">Each dot is one heritage element. Right = more practice details recorded; higher = more categories have their own source links. Larger dots have more unique URLs. This is a documentation view, not a ranking of cultural value or commercial potential. Select a dot to open its profile.</p>
         <div id="resource-matrix-chart"></div>
-      </div>
-      <div class="resource-panel">
-        <div class="resource-panel-title"><i class="ph ph-clipboard-text text-brand-secondary"></i><span>Business Planning Inputs — Evidence Gaps</span></div>
-        <div class="resource-panel-subtitle">These are intentionally left open rather than generated as facts. They are the next research fields for a genuine business or resource-mobilization plan.</div>
+      </section>
+      <section class="resource-panel">
+        <div class="resource-panel-title"><i class="ph ph-clipboard-text text-brand-secondary"></i><span>Questions to answer before planning a programme</span></div>
+        <p class="resource-panel-subtitle">Use these gaps to decide what to research or ask the community. “Not recorded” means the current dataset does not answer the question — it does not mean the resource or activity does not exist.</p>
         <div class="business-gap-grid">
-          <div class="business-gap"><div class="gap-title">Community / Practitioners</div><div class="gap-state">Not structured in current data</div></div>
-          <div class="business-gap"><div class="gap-title">Market / Customer</div><div class="gap-state">Not structured in current data</div></div>
-          <div class="business-gap"><div class="gap-title">Cost / Unit Economics</div><div class="gap-state">Not structured in current data</div></div>
-          <div class="business-gap"><div class="gap-title">Stakeholders / Finance</div><div class="gap-state">Not structured in current data</div></div>
-          <div class="business-gap"><div class="gap-title">Safeguarding Plan</div><div class="gap-state">Not structured in current data</div></div>
+          <div class="business-gap"><div class="gap-title">Community / practitioners</div><div class="gap-state">Not recorded with item-level evidence yet</div></div>
+          <div class="business-gap"><div class="gap-title">Market demand</div><div class="gap-state">Not assessed by this radar</div></div>
+          <div class="business-gap"><div class="gap-title">Costs / financial feasibility</div><div class="gap-state">Not assessed by this radar</div></div>
+          <div class="business-gap"><div class="gap-title">Partners / funding fit</div><div class="gap-state">Not recorded with item-level evidence yet</div></div>
+          <div class="business-gap"><div class="gap-title">Consent / safeguarding / benefit-sharing</div><div class="gap-state">Must be confirmed with the community</div></div>
         </div>
-      </div>
+      </section>
     </div>
 
     <div id="tab-deep-dive" class="hidden flex flex-col gap-4 mt-4">
@@ -2780,142 +2847,279 @@ const COUNTRY_CENTROIDS = {
   // ═══════════════════════════════════════════════════════════════
 
 
-  function resourceArray(v){return Array.isArray(v)?v.filter(Boolean):[]}
-  function resourceEvidence(item){
-    const a=item?.resume_analisa||{},p=item?.resume_tata_cara||{},s=item?.shared_heritage_detection||{},sources=resourceArray(item?.source_urls);
-    const rm=item?.resource_mapping||{},vc=item?.value_chain||{},oa=item?.opportunity_analysis||{},mob=item?.resource_mobilization||{};
-    const k=[!!a.description,!!a.cultural_significance,resourceArray(a.gemini_tags).length>0];
-    const l=[!!item?.location?.country,resourceArray(item?.location?.provinces).length>0,Number.isFinite(Number(item?.location?.lat)),Number.isFinite(Number(item?.location?.lng))];
-    const pr=[!!p.type,resourceArray(p.materials_and_tools).length>0,resourceArray(p.step_by_step).length>0];
-    const cs=s?.is_shared?Math.round(Math.max(0,Math.min(1,Number(s.confidence_score)||.5))*100):0;
-    const d=String(a.drr_relevance_level||'').toLowerCase(),rs=d.includes('directly')?100:d.includes('indirectly')?65:0;
-    const mappingKeys=['knowledge_resources','material_resources','human_resources','place_resources','institutional_resources'];
-    const chainKeys=['production','products','services','experience','education'];
-    const mobilizationKeys=['public_sector','private_sector','academic','community','potential_funding'];
-    const resourceMap=Math.round(mappingKeys.filter(k=>resourceArray(rm[k]).length>0).length/mappingKeys.length*100);
-    const chainMap=Math.round(chainKeys.filter(k=>resourceArray(vc[k]).length>0).length/chainKeys.length*100);
-    const opportunityMap=Math.round(['livelihood_potential','tourism_potential','education_potential','creative_industry_potential','digital_potential'].filter(k=>Number(oa[k]||0)>0).length/5*100);
-    const mobilizationMap=Math.round(mobilizationKeys.filter(k=>resourceArray(mob[k]).length>0).length/mobilizationKeys.length*100);
-    const enrichment=Math.round((resourceMap+chainMap+opportunityMap+mobilizationMap)/4);
+  function resourceArray(v) {
+    return Array.isArray(v) ? v.filter(function(value) { return value !== null && value !== undefined && value !== ""; }) : [];
+  }
+  function resourceValidUrl(value) {
+    if (typeof value !== "string" || !value.trim()) return false;
+    try {
+      var parsed = new URL(value.trim()), host = (parsed.hostname || "").toLowerCase().replace(/\.$/, "");
+      if ((parsed.protocol !== "https:" && parsed.protocol !== "http:") || !host || host.indexOf(".") === -1) return false;
+      if (/(\.example|\.invalid|\.test|\.localhost)$/.test(host)) return false;
+      if (host.indexOf("vertexaisearch.cloud.google.com") !== -1 || host.indexOf("grounding-api-redirect") !== -1) return false;
+      return true;
+    } catch (error) { return false; }
+  }
+  function resourceEntryUrls(entry) {
+    if (!entry || typeof entry !== "object") return [];
+    return resourceArray(entry.evidence_urls).filter(resourceValidUrl);
+  }
+  function resourceHasLinkedEntry(values) {
+    return resourceArray(values).some(function(entry) { return resourceEntryUrls(entry).length > 0; });
+  }
+  function resourceEvidenceEntryCount(values) {
+    return resourceArray(values).filter(function(entry) { return resourceEntryUrls(entry).length > 0; }).length;
+  }
+  function resourceMetrics(item) {
+    var rm = item.resource_mapping || {}, vc = item.value_chain || {}, mob = item.resource_mobilization || {};
+    var scores = item.opportunity_analysis || {}, scoreEvidence = item.opportunity_score_evidence || {};
+    var mappingKeys = ["knowledge_resources","material_resources","human_resources","place_resources","institutional_resources"];
+    var chainKeys = ["production","products","services","experience","education"];
+    var mobilizationKeys = ["public_sector","private_sector","academic","community","potential_funding"];
+    var scoreKeys = ["livelihood_potential","tourism_potential","education_potential","creative_industry_potential","digital_potential"];
+    var mappingWithEvidence = mappingKeys.filter(function(key) { return resourceHasLinkedEntry(rm[key]); }).length;
+    var chainWithEvidence = chainKeys.filter(function(key) { return resourceHasLinkedEntry(vc[key]); }).length;
+    var mobilizationWithEvidence = mobilizationKeys.filter(function(key) { return resourceHasLinkedEntry(mob[key]); }).length;
+    var scoresWithEvidence = scoreKeys.filter(function(key) {
+      var detail = scoreEvidence[key] || {};
+      return resourceArray(detail.evidence_urls).some(resourceValidUrl);
+    }).length;
+    var groupsWithEvidence = mappingWithEvidence + chainWithEvidence + mobilizationWithEvidence + scoresWithEvidence;
+    var uniqueUrls = new Set(), uncitedEntries = 0;
+    [rm,vc,mob].forEach(function(section) {
+      Object.keys(section).forEach(function(key) {
+        resourceArray(section[key]).forEach(function(entry) {
+          var urls = resourceEntryUrls(entry);
+          if (urls.length) urls.forEach(function(url) { uniqueUrls.add(url); });
+          else uncitedEntries++;
+        });
+      });
+    });
+    scoreKeys.forEach(function(key) {
+      var detail = scoreEvidence[key] || {}, urls = resourceArray(detail.evidence_urls).filter(resourceValidUrl);
+      urls.forEach(function(url) { uniqueUrls.add(url); });
+      if (Number(scores[key] || 0) > 0 && !urls.length) uncitedEntries++;
+    });
+    var review = item.resource_intelligence_review || {}, process = item.resume_tata_cara || {};
     return {
-      knowledge:Math.max(Math.round(k.filter(Boolean).length/k.length*100),resourceArray(rm.knowledge_resources).length?100:0),
-      place:Math.max(Math.round(l.filter(Boolean).length/l.length*100),resourceArray(rm.place_resources).length?100:0),
-      practice:Math.max(Math.round(pr.filter(Boolean).length/pr.length*100),resourceArray(rm.material_resources).length||resourceArray(vc.production).length?100:0),
-      connection:cs,resilience:rs,
-      lineage:Math.round([sources.length>0,!!item?.scraped_at].filter(Boolean).length/2*100),
-      resourceMap,chainMap,opportunityMap,mobilizationMap,enrichment
+      mappingWithEvidence:mappingWithEvidence, chainWithEvidence:chainWithEvidence,
+      mobilizationWithEvidence:mobilizationWithEvidence, scoresWithEvidence:scoresWithEvidence,
+      groupsWithEvidence:groupsWithEvidence, evidenceCoverage:Math.round(groupsWithEvidence/20*100),
+      sourceUrlCount:uniqueUrls.size, uncitedEntries:uncitedEntries,
+      practiceDocumentation:Math.min(100,(resourceArray(process.materials_and_tools).length?40:0)+(resourceArray(process.step_by_step).length?60:0)),
+      reviewStatus:review.status || item.resource_enrichment_status || "not_assessed",
+      validationStatus:review.validation_status || "not_run"
     };
   }
-  function resourceMetrics(item){
-    const e=resourceEvidence(item),p=item?.resume_tata_cara||{},vc=item?.value_chain||{};
-    const practiceBase=Math.min(100,(resourceArray(p.materials_and_tools).length>0?40:0)+(resourceArray(p.step_by_step).length>0?60:0));
-    const productionBonus=resourceArray(vc.production).length>0?25:0;
-    const productBonus=resourceArray(vc.products).length>0?25:0;
-    return {...e,resourceDepth:Math.round((e.knowledge+e.place+e.practice)/3),overall:Math.round((e.knowledge+e.place+e.practice+e.connection+e.resilience+e.lineage+e.enrichment)/7),practiceDepth:Math.min(100,practiceBase+productionBonus+productBonus)};
+  function resourceStatusLabel(status) {
+    var labels = {needs_review:"Needs human review",insufficient_evidence:"Insufficient linked evidence",
+      validation_failed:"Validation failed",api_error:"Research run did not complete",not_assessed:"Not assessed yet",
+      legacy_needs_review:"Legacy profile — review needed"};
+    return labels[status] || "Not assessed yet";
   }
-  function resourceLensSignals(item){
-    const oa=item?.opportunity_analysis||{};
-    const vc=item?.value_chain||{};
-    const score=k=>Math.max(0,Math.min(100,Number(oa[k]||0)));
-    const labels=[
-      ['Livelihood','ph-briefcase','livelihood_potential'],
-      ['Education','ph-student','education_potential'],
-      ['Tourism / Experience','ph-map-pin-area','tourism_potential'],
-      ['Creative Industry','ph-paint-brush','creative_industry_potential'],
-      ['Digital','ph-device-mobile','digital_potential']
-    ];
-    return labels.map(([title,icon,key])=>{
-      const s=score(key);
-      return {
-        title,
-        icon,
-        signal:s>0
-          ? 'AI-derived potential score: '+s+'/100 based on current evidence.'
-          : 'No scored potential yet; awaiting Resource & Opportunity enrichment.',
-        level:s>=75?'strong':s>=40?'moderate':'none'
-      };
+  function resourceReviewMessage(metrics) {
+    var status = metrics.reviewStatus;
+    if (status === "needs_review" || status === "legacy_needs_review")
+      return "Source URLs are attached, but the validator has not checked whether each page supports its claim. Open links and confirm relevance, accuracy and community context before using this profile.";
+    if (status === "insufficient_evidence")
+      return "This run did not find enough usable item-level source links. That is an evidence gap — not proof that resources or opportunities do not exist.";
+    if (status === "validation_failed")
+      return "The generated resource profile did not pass the required structure checks. Treat it as unavailable until a later run succeeds.";
+    if (status === "api_error")
+      return "The research run did not complete. This is a technical status, not a finding about the heritage element.";
+    return "This record has not yet completed the new evidence checks. Older entries may be present without their own source links; do not treat them as verified.";
+  }
+  function resourceLensSignals(item) {
+    var scores = item.opportunity_analysis || {}, evidence = item.opportunity_score_evidence || {};
+    var definitions = [["Livelihood","livelihood_potential"],["Tourism / cultural experience","tourism_potential"],
+      ["Education","education_potential"],["Creative industries","creative_industry_potential"],["Digital","digital_potential"]];
+    return definitions.map(function(definition) {
+      var title = definition[0], key = definition[1], detail = evidence[key] || {};
+      var urls = resourceArray(detail.evidence_urls).filter(resourceValidUrl), raw = Number(scores[key]);
+      var score = Number.isFinite(raw) && raw >= 0 && raw <= 100 ? Math.round(raw) : 0, band = "Not assessed";
+      var explanation = "No category-specific source is attached. This does not mean the opportunity does not exist.";
+      if (urls.length) {
+        if (score === 0) band = "No positive signal";
+        else if (score < 25) band = "Weak signal";
+        else if (score < 50) band = "Limited signal";
+        else if (score < 75) band = "Moderate signal";
+        else band = "Strong signal";
+        explanation = detail.rationale || (score === 0 ? "Sources are attached, but no positive signal was recorded for this category." :
+          "Preliminary AI signal based on available sources; not market validation.");
+      }
+      return {title:title,key:key,score:score,hasCitations:urls.length>0,urls:urls,band:band,explanation:explanation};
     });
   }
-  function initResourceOpportunity(){
-    const sel=document.getElementById('resource-element-select'),cs=document.getElementById('resource-country-filter'),cat=document.getElementById('resource-category-filter');
-    if(!sel||!cs||!cat||!globalData?.inventory)return;
-    const inv=globalData.inventory.slice().sort((a,b)=>String(a.element_name||'').localeCompare(String(b.element_name||'')));
-    sel.innerHTML='<option value="">Select an element...</option>'+inv.map(i=>'<option value="'+escapeHtml(i.id||'')+'">'+escapeHtml(i.element_name||'Unnamed element')+'</option>').join('');
-    cs.innerHTML='<option value="all">All Countries</option>'+[...new Set(inv.map(i=>i.location?.country).filter(Boolean))].sort().map(x=>'<option value="'+escapeHtml(x)+'">'+escapeHtml(x)+'</option>').join('');
-    cat.innerHTML='<option value="all">All Categories</option>'+[...new Set(inv.flatMap(i=>getIcmCategories(i)))].sort().map(x=>'<option value="'+escapeHtml(x)+'">'+escapeHtml(x)+'</option>').join('');
-    currentResourceItemId=inv[0]?.id||null;if(currentResourceItemId)sel.value=currentResourceItemId;renderResourceOpportunity(currentResourceItemId)
+  function initResourceOpportunity() {
+    var sel = document.getElementById("resource-element-select"), countrySelect = document.getElementById("resource-country-filter");
+    var categorySelect = document.getElementById("resource-category-filter");
+    if (!sel || !countrySelect || !categorySelect || !globalData || !globalData.inventory) return;
+    var inventory = globalData.inventory.slice().sort(function(a,b) { return String(a.element_name || "").localeCompare(String(b.element_name || "")); });
+    sel.innerHTML = '<option value="">Select a heritage element...</option>' + inventory.map(function(item) {
+      return '<option value="' + escapeHtml(item.id || "") + '">' + escapeHtml(item.element_name || "Unnamed element") + '</option>';
+    }).join("");
+    countrySelect.innerHTML = '<option value="all">All Countries</option>' +
+      Array.from(new Set(inventory.map(function(item) { return item.location && item.location.country; }).filter(Boolean))).sort()
+        .map(function(country) { return '<option value="' + escapeHtml(country) + '">' + escapeHtml(country) + '</option>'; }).join("");
+    categorySelect.innerHTML = '<option value="all">All Categories</option>' +
+      Array.from(new Set(inventory.flatMap(function(item) { return getIcmCategories(item); }))).sort()
+        .map(function(category) { return '<option value="' + escapeHtml(category) + '">' + escapeHtml(category) + '</option>'; }).join("");
+    currentResourceItemId = inventory.length ? inventory[0].id : null;
+    if (currentResourceItemId) sel.value = currentResourceItemId;
+    renderResourceOpportunity(currentResourceItemId);
   }
-  function getResourceFilteredInventory(){
-    const c=document.getElementById('resource-country-filter')?.value||'all',cat=document.getElementById('resource-category-filter')?.value||'all';
-    return(globalData?.inventory||[]).filter(i=>(c==='all'||i.location?.country===c)&&(cat==='all'||hasIcmCategory(i,cat)))
+  function getResourceFilteredInventory() {
+    var country = document.getElementById("resource-country-filter") ? document.getElementById("resource-country-filter").value : "all";
+    var category = document.getElementById("resource-category-filter") ? document.getElementById("resource-category-filter").value : "all";
+    return (globalData && globalData.inventory ? globalData.inventory : []).filter(function(item) {
+      return (country === "all" || (item.location && item.location.country === country)) &&
+        (category === "all" || hasIcmCategory(item,category));
+    });
   }
-  function renderResourceOpportunity(itemId){
-    if(!globalData?.inventory)return;
-    const filtered=getResourceFilteredInventory(),requested=globalData.inventory.find(i=>i.id===itemId),item=requested&&filtered.some(i=>i.id===requested.id)?requested:(filtered[0]||globalData.inventory[0]);currentResourceItemId=item?.id||null;
-    const sel=document.getElementById('resource-element-select');if(sel&&currentResourceItemId)sel.value=currentResourceItemId;
-    document.getElementById('resource-kpi-total').textContent=filtered.length;
-    document.getElementById('resource-kpi-ready').textContent=filtered.filter(i=>resourceMetrics(i).overall>=70).length;
-    document.getElementById('resource-kpi-shared').textContent=filtered.filter(i=>i.shared_heritage_detection?.is_shared).length;
-    document.getElementById('resource-kpi-resilience').textContent=filtered.filter(i=>{const d=String(i.resume_analisa?.drr_relevance_level||'').toLowerCase();return d.includes('directly')||d.includes('indirectly')}).length;
-    if(!item)return;
-    const m=resourceMetrics(item),title=document.getElementById('resource-selected-title'),meta=document.getElementById('resource-selected-meta'),center=document.getElementById('resource-node-center');
-    if(title)title.textContent=item.element_name||'Unnamed element';if(center)center.textContent=item.element_name||'ICH ELEMENT';
-    if(meta)meta.innerHTML=[item.location?.country?'<span class="resource-chip">'+escapeHtml(item.location.country)+'</span>':'',...getIcmCategories(item).map(c=>'<span class="resource-chip">'+escapeHtml(c)+'</span>'),'<span class="resource-chip">Evidence readiness '+m.overall+'%</span>','<span class="resource-chip">Enrichment '+m.enrichment+'%</span>',item.resource_enriched_at?'<span class="resource-chip">Updated '+escapeHtml(item.resource_enriched_at.slice(0,10))+'</span>':'' ].filter(Boolean).join('');
-    document.getElementById('resource-node-knowledge').textContent=m.knowledge+'%';document.getElementById('resource-node-place').textContent=m.place+'%';document.getElementById('resource-node-practice').textContent=m.practice+'%';document.getElementById('resource-node-connection').textContent=m.connection+'%';document.getElementById('resource-node-resilience').textContent=m.resilience+'%';
-    const rows=[['Knowledge & Narrative',m.knowledge],['Place',m.place],['Practice & Materials',m.practice],['Heritage Connections',m.connection],['Resilience Evidence',m.resilience],['Resource Enrichment',m.enrichment]];
-    document.getElementById('resource-readiness').innerHTML=rows.map(x=>'<div class="readiness-row"><div class="readiness-label">'+escapeHtml(x[0])+'</div><div class="readiness-track"><div class="readiness-fill" style="width:'+x[1]+'%"></div></div><div class="readiness-value">'+x[1]+'%</div></div>').join('');
-
-    document.getElementById('resource-lens-grid').innerHTML=resourceLensSignals(item).map(l=>'<div class="lens-card"><div class="lens-title"><i class="ph '+l.icon+' text-brand-accent"></i>'+escapeHtml(l.title)+'</div><div class="lens-signal">'+escapeHtml(l.signal)+'</div><span class="lens-pill '+l.level+'">'+(l.level==='strong'?'Strong signal':l.level==='moderate'?'Moderate signal':'No clear signal')+'</span></div>').join('');
-
-    const rm=item.resource_mapping||{},vc=item.value_chain||{},mob=item.resource_mobilization||{};
-    const detailGroups=[
-      ['Knowledge resources',rm.knowledge_resources],
-      ['Material resources',rm.material_resources],
-      ['Human resources',rm.human_resources],
-      ['Place resources',rm.place_resources],
-      ['Institutional resources',rm.institutional_resources],
-      ['Production',vc.production],
-      ['Products',vc.products],
-      ['Services',vc.services],
-      ['Experience',vc.experience],
-      ['Education',vc.education],
-      ['Public sector',mob.public_sector],
-      ['Private sector',mob.private_sector],
-      ['Academic',mob.academic],
-      ['Community',mob.community],
-      ['Potential funding',mob.potential_funding]
-    ];
-    document.getElementById('resource-detail-grid').innerHTML=detailGroups.map(([label,arr])=>{
-      const values=resourceArray(arr);
-      const html=values.slice(0,4).map(v=>{
-        const name=typeof v==='object'?(v.name||v.title||'Unnamed'):String(v);
-        const desc=typeof v==='object'?(v.description||''):'';
-        const urls=typeof v==='object'&&Array.isArray(v.evidence_urls)?v.evidence_urls.filter(Boolean):[];
-        const links=urls.slice(0,2).map(u=>'<a href="'+escapeHtml(u)+'" target="_blank" rel="noopener noreferrer" class="block mt-1 text-[10px] text-brand-accent hover:underline break-all">'+escapeHtml(u)+'</a>').join('');
-        return '<li><strong>'+escapeHtml(name)+'</strong>'+(desc?' — '+escapeHtml(desc):'')+links+'</li>';
-      }).join('');
-      return '<div class="resource-detail-card"><h4>'+escapeHtml(label)+'</h4>'+(html?'<ul>'+html+'</ul>':'<div class="detail-empty">No documented entries yet.</div>')+'</div>';
-    }).join('');
-
-    const funding=resourceArray(mob.potential_funding),stakeholders=[...resourceArray(mob.public_sector),...resourceArray(mob.private_sector),...resourceArray(mob.academic),...resourceArray(mob.community)];
-    const gap=document.querySelector('.business-gap-grid');
-    if(gap){
-      const cards=[
-        ['Community / Practitioners',resourceArray(rm.human_resources)],
-        ['Market / Customer',resourceArray(vc.products).concat(resourceArray(vc.services))],
-        ['Cost / Unit Economics',[]],
-        ['Stakeholders / Finance',stakeholders.concat(funding)],
-        ['Safeguarding Plan',[]]
-      ];
-      gap.innerHTML=cards.map(([label,arr])=>'<div class="business-gap"><div class="gap-title">'+escapeHtml(label)+'</div><div class="gap-state">'+(arr.length?escapeHtml((typeof arr[0]==='object'?(arr[0].name||arr[0].title):String(arr[0])))+' · '+arr.length+' documented item(s)':'Not structured / no dedicated evidence field yet')+'</div></div>').join('');
+  function renderResourceOpportunity(itemId) {
+    if (!globalData || !globalData.inventory) return;
+    var filtered = getResourceFilteredInventory(), requested = globalData.inventory.find(function(item) { return item.id === itemId; });
+    var item = requested && filtered.some(function(entry) { return entry.id === requested.id; }) ? requested : (filtered[0] || null);
+    currentResourceItemId = item ? item.id : null;
+    var selectedSelect = document.getElementById("resource-element-select");
+    if (selectedSelect) selectedSelect.value = currentResourceItemId || "";
+    document.getElementById("resource-kpi-total").textContent = filtered.length;
+    document.getElementById("resource-kpi-ready").textContent = filtered.filter(function(entry) { return resourceMetrics(entry).sourceUrlCount > 0; }).length;
+    document.getElementById("resource-kpi-shared").textContent = filtered.filter(function(entry) {
+      var status = resourceMetrics(entry).reviewStatus;
+      return status === "needs_review" || status === "legacy_needs_review";
+    }).length;
+    document.getElementById("resource-kpi-resilience").textContent = filtered.filter(function(entry) { return resourceMetrics(entry).sourceUrlCount === 0; }).length;
+    if (!item) {
+      document.getElementById("resource-selected-title").textContent = "No elements match these filters";
+      document.getElementById("resource-selected-meta").innerHTML = "";
+      document.getElementById("resource-selected-review").textContent = "Change the country or category filter to see records.";
+      ["resource-node-knowledge","resource-node-place","resource-node-practice","resource-node-connection","resource-node-resilience"].forEach(function(id) { document.getElementById(id).textContent = "—"; });
+      document.getElementById("resource-readiness").innerHTML = "";
+      document.getElementById("resource-lens-grid").innerHTML = "";
+      document.getElementById("resource-detail-grid").innerHTML = "";
+      renderResourceMatrix();
+      return;
     }
+    var metrics = resourceMetrics(item), title = document.getElementById("resource-selected-title");
+    if (title) title.textContent = item.element_name || "Unnamed element";
+    var categories = getIcmCategories(item), meta = document.getElementById("resource-selected-meta");
+    if (meta) meta.innerHTML = [
+      item.location && item.location.country ? '<span class="resource-chip">' + escapeHtml(item.location.country) + '</span>' : "",
+      categories.map(function(category) { return '<span class="resource-chip">' + escapeHtml(category) + '</span>'; }).join(""),
+      '<span class="resource-chip">Evidence coverage: ' + metrics.evidenceCoverage + '%</span>',
+      '<span class="resource-chip">' + escapeHtml(resourceStatusLabel(metrics.reviewStatus)) + '</span>'
+    ].filter(Boolean).join("");
+    document.getElementById("resource-node-knowledge").textContent = metrics.groupsWithEvidence + " / 20";
+    document.getElementById("resource-node-place").textContent = metrics.sourceUrlCount;
+    document.getElementById("resource-node-practice").textContent = metrics.uncitedEntries;
+    document.getElementById("resource-node-connection").textContent = metrics.scoresWithEvidence + " / 5";
+    document.getElementById("resource-node-resilience").textContent = resourceStatusLabel(metrics.reviewStatus);
+    var banner = document.getElementById("resource-selected-review");
+    if (banner) {
+      banner.className = "resource-review-banner mt-4 status-" + String(metrics.reviewStatus).replace(/[^a-z0-9_-]/gi,"");
+      banner.innerHTML = '<strong>' + escapeHtml(resourceStatusLabel(metrics.reviewStatus)) + '</strong><p>' + escapeHtml(resourceReviewMessage(metrics)) +
+        '</p>' + (metrics.validationStatus && metrics.validationStatus !== "not_run" ?
+        '<small>Structure check: ' + escapeHtml(metrics.validationStatus.replace(/_/g," ")) + '</small>' : "");
+    }
+    function readinessRow(label,count,total) {
+      var pct = total ? Math.round(count/total*100) : 0;
+      return '<div class="readiness-row"><div class="readiness-label">' + escapeHtml(label) +
+        '</div><div class="readiness-track" aria-label="' + pct + '% covered"><div class="readiness-fill" style="width:' + pct + '%"></div></div>' +
+        '<div class="readiness-value">' + count + ' / ' + total + ' <span>(' + pct + '%)</span></div></div>';
+    }
+    document.getElementById("resource-readiness").innerHTML = [
+      readinessRow("Resource mapping areas with source links",metrics.mappingWithEvidence,5),
+      readinessRow("Value-chain areas with source links",metrics.chainWithEvidence,5),
+      readinessRow("Partner / funding areas with source links",metrics.mobilizationWithEvidence,5),
+      readinessRow("Opportunity categories with their own links",metrics.scoresWithEvidence,5)
+    ].join("");
+    document.getElementById("resource-lens-grid").innerHTML = resourceLensSignals(item).map(function(signal) {
+      var links = signal.urls.map(function(url,index) { return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">Open evidence ' + (index+1) + ' ↗</a>'; }).join("");
+      var scoreText = signal.hasCitations ? signal.score + " / 100" : "Not assessed";
+      var scoreClass = signal.hasCitations ? (signal.score >= 75 ? "score-strong" : signal.score >= 50 ? "score-moderate" : signal.score > 0 ? "score-low" : "score-zero") : "score-zero";
+      return '<article class="resource-opportunity-card"><div class="resource-opportunity-head"><h3>' + escapeHtml(signal.title) +
+        '</h3><strong class="resource-opportunity-score ' + scoreClass + '">' + scoreText + '</strong></div>' +
+        '<span class="resource-opportunity-band">' + escapeHtml(signal.band) + '</span><p>' + escapeHtml(signal.explanation) + '</p>' +
+        '<div class="resource-opportunity-foot"><span>' + signal.urls.length + ' category-specific URL(s)</span><span>AI signal · check before use</span></div>' +
+        (links ? '<div class="resource-opportunity-links">' + links + '</div>' : "") + '</article>';
+    }).join("");
+    var rm = item.resource_mapping || {}, vc = item.value_chain || {}, mob = item.resource_mobilization || {};
+    var groups = [
+      ["Knowledge resources",rm.knowledge_resources],["Material resources",rm.material_resources],
+      ["Human resources / practitioners",rm.human_resources],["Places",rm.place_resources],["Institutions",rm.institutional_resources],
+      ["Production",vc.production],["Products",vc.products],["Services",vc.services],["Cultural experiences",vc.experience],["Education",vc.education],
+      ["Public sector",mob.public_sector],["Private sector",mob.private_sector],["Academic partners",mob.academic],["Community actors",mob.community],["Potential funding",mob.potential_funding]
+    ];
+    document.getElementById("resource-detail-grid").innerHTML = groups.map(function(group) {
+      var content = resourceArray(group[1]).map(function(entry) {
+        var obj = entry && typeof entry === "object", name = obj ? (entry.name || entry.title || "Unnamed item") : String(entry);
+        var desc = obj && typeof entry.description === "string" ? entry.description : "", urls = resourceEntryUrls(entry);
+        var links = urls.map(function(url,index) {
+          return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer" class="resource-evidence-link">Open source ' + (index+1) + ' ↗</a>';
+        }).join("");
+        return '<li><strong>' + escapeHtml(name) + '</strong>' + (desc ? '<p>' + escapeHtml(desc) + '</p>' : "") +
+          '<span class="resource-citation-state ' + (urls.length ? "has-citation" : "no-citation") + '">' +
+          (urls.length ? urls.length + ' URL(s) attached · check claim' : 'Legacy / no item-level source attached') + '</span>' + links + '</li>';
+      }).join("");
+      return '<div class="resource-detail-card"><h4>' + escapeHtml(group[0]) + '</h4>' +
+        (content ? '<ul>' + content + '</ul>' : '<div class="detail-empty">No source-linked entries recorded yet.</div>') + '</div>';
+    }).join("");
+    function countCited(groups) { return groups.reduce(function(total,entries) { return total + resourceEvidenceEntryCount(entries); },0); }
+    var communityCount = countCited([rm.human_resources,mob.community]);
+    var partnerCount = countCited([mob.public_sector,mob.private_sector,mob.academic,mob.community,mob.potential_funding]);
+    var gapCards = [
+      ["Community / practitioners",communityCount ? communityCount + " source-linked entries — confirm who holds the knowledge and who can authorise use." : "Not recorded with item-level evidence yet; consult the community."],
+      ["Market demand","Not assessed. A listed product or service does not prove customer demand."],
+      ["Costs / financial feasibility","Not assessed by this radar. No cost or unit-economics model is generated."],
+      ["Partners / funding fit",partnerCount ? partnerCount + " source-linked entries — eligibility, availability and willingness still need confirmation." : "Not recorded with item-level evidence yet; research specific programmes and partners."],
+      ["Consent / safeguarding / benefit-sharing","Not assessed in this dataset. Confirm consent, community priorities, safeguarding risks and fair benefits before planning action."]
+    ];
+    var gapContainer = document.querySelector(".business-gap-grid");
+    if (gapContainer) gapContainer.innerHTML = gapCards.map(function(card) {
+      return '<div class="business-gap"><div class="gap-title">' + escapeHtml(card[0]) + '</div><div class="gap-state">' + escapeHtml(card[1]) + '</div></div>';
+    }).join("");
     renderResourceMatrix();
   }
-  function renderResourceMatrix(){
-    const dom=document.getElementById('resource-matrix-chart');if(!dom||!window.echarts||!globalData?.inventory)return;
-    const data=getResourceFilteredInventory().map(i=>{const m=resourceMetrics(i);return {value:[m.practiceDepth,m.resilience,Math.max(14,Math.min(46,14+m.overall*.32))],itemId:i.id,name:i.element_name,country:i.location?.country||'Unknown',overall:m.overall,practiceDepth:m.practiceDepth}});
-    if(!resourceMatrixChart){resourceMatrixChart=echarts.init(dom,null,{renderer:'canvas'});resourceMatrixChart.on('click',p=>{if(!p?.data?.itemId)return;renderResourceOpportunity(p.data.itemId);const s=document.getElementById('resource-element-select');if(s)s.value=p.data.itemId});window.addEventListener('resize',()=>resourceMatrixChart&&resourceMatrixChart.resize())}
-    resourceMatrixChart.setOption({animationDuration:350,tooltip:{trigger:'item',formatter:p=>{const d=p.data;return '<div style="padding:4px 2px;font-family:Inter,sans-serif"><div style="font-weight:800;color:#0f172a;margin-bottom:5px">'+escapeHtml(d.name)+'</div><div style="font-size:11px;color:#64748b">'+escapeHtml(d.country)+'</div><div style="margin-top:6px;font-size:11px">Practice depth: <b>'+d.practiceDepth+'%</b></div><div style="font-size:11px">Resilience relevance: <b>'+d.value[1]+'%</b></div><div style="font-size:11px">Evidence readiness: <b>'+d.overall+'%</b></div></div>'}},grid:{left:52,right:18,top:24,bottom:42},xAxis:{type:'value',min:0,max:100,name:'Practice / resource depth',nameLocation:'middle',nameGap:28,axisLine:{lineStyle:{color:'#cbd5e1'}},axisLabel:{color:'#64748b',fontSize:10},splitLine:{lineStyle:{color:'#eef2f7'}}},yAxis:{type:'value',min:0,max:100,name:'Documented resilience relevance',nameLocation:'middle',nameGap:38,axisLine:{lineStyle:{color:'#cbd5e1'}},axisLabel:{color:'#64748b',fontSize:10},splitLine:{lineStyle:{color:'#eef2f7'}}},series:[{type:'scatter',data,symbolSize:v=>v[2],itemStyle:{color:'#0d9488',opacity:.72,borderColor:'#fff',borderWidth:1.5},emphasis:{itemStyle:{color:'#d97706',opacity:1}}}]},true)
+  function renderResourceMatrix() {
+    var dom = document.getElementById("resource-matrix-chart");
+    if (!dom || !window.echarts || !globalData || !globalData.inventory) return;
+    var data = getResourceFilteredInventory().map(function(item) {
+      var m = resourceMetrics(item);
+      return {value:[m.practiceDocumentation,m.evidenceCoverage,Math.max(10,Math.min(32,10+m.sourceUrlCount*2))],
+        itemId:item.id,name:item.element_name,country:item.location && item.location.country ? item.location.country : "Unknown",
+        practiceDocumentation:m.practiceDocumentation,evidenceCoverage:m.evidenceCoverage,sourceUrlCount:m.sourceUrlCount};
+    });
+    if (!resourceMatrixChart) {
+      resourceMatrixChart = echarts.init(dom,null,{renderer:"canvas"});
+      resourceMatrixChart.on("click",function(params) {
+        if (!params || !params.data || !params.data.itemId) return;
+        renderResourceOpportunity(params.data.itemId);
+        var select = document.getElementById("resource-element-select");
+        if (select) select.value = params.data.itemId;
+      });
+      window.addEventListener("resize",function() { if (resourceMatrixChart) resourceMatrixChart.resize(); });
+    }
+    resourceMatrixChart.setOption({
+      animationDuration:300,
+      tooltip:{trigger:"item",formatter:function(params) {
+        var d = params.data;
+        return '<div style="padding:4px 2px;font-family:Inter,sans-serif"><div style="font-weight:800;color:#0f172a;margin-bottom:5px">' +
+          escapeHtml(d.name) + '</div><div style="font-size:11px;color:#64748b">' + escapeHtml(d.country) + '</div>' +
+          '<div style="margin-top:6px;font-size:11px">Practice details recorded: <b>' + d.practiceDocumentation + '%</b></div>' +
+          '<div style="font-size:11px">Evidence-linked categories: <b>' + d.evidenceCoverage + '%</b></div>' +
+          '<div style="font-size:11px">Unique source URLs: <b>' + d.sourceUrlCount + '</b></div>' +
+          '<div style="font-size:10px;color:#64748b;margin-top:5px">Documentation comparison only — not a ranking.</div></div>';
+      }},
+      grid:{left:58,right:18,top:24,bottom:48},
+      xAxis:{type:"value",min:0,max:100,name:"Practice details recorded (%)",nameLocation:"middle",nameGap:30,
+        axisLine:{lineStyle:{color:"#cbd5e1"}},axisLabel:{color:"#64748b",fontSize:10},splitLine:{lineStyle:{color:"#eef2f7"}}},
+      yAxis:{type:"value",min:0,max:100,name:"Evidence-linked categories (%)",nameLocation:"middle",nameGap:42,
+        axisLine:{lineStyle:{color:"#cbd5e1"}},axisLabel:{color:"#64748b",fontSize:10},splitLine:{lineStyle:{color:"#eef2f7"}}},
+      series:[{type:"scatter",data:data,symbolSize:function(value){return value[2];},
+        itemStyle:{color:"#0d9488",opacity:.74,borderColor:"#fff",borderWidth:1.5},
+        emphasis:{itemStyle:{color:"#d97706",opacity:1}}}]
+    },true);
   }
 
   function switchTab(tab) {
