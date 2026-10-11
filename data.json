@@ -12881,27 +12881,72 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-11T02:44:39.003158Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Pennsylvania Dutch Culinary Heritage & Oral Traditions",
+            "description": "Generational knowledge of scratch-made pastry dough techniques, apple selection (such as Granny Smith or Honeycrisp), and syrup-baking ratios preserved within Amish and Mennonite communities.",
+            "evidence_urls": [
+              "https://tastesoflizzyt.com/amish-apple-dumplings/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Regional Orchard Produce",
+            "description": "Fresh baking apples sourced from regional agricultural producers and orchards in Pennsylvania, such as Beekman Orchards and local farm markets.",
+            "evidence_urls": [
+              "https://www.paeats.org/wp-content/uploads/2019/10/2019-10_PAE-Apples-4417-1.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "human_resources": [],
         "place_resources": [],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
-        "products": [],
+        "production": [
+          {
+            "name": "Scratch Pastry and Orchard Apple Preparation",
+            "description": "The labor-intensive process of peeling, coring whole apples, mixing flour and fat for flaky dough, and simmering brown sugar cinnamon syrup.",
+            "evidence_urls": [
+              "https://tastesoflizzyt.com/amish-apple-dumplings/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional Baked Apple Dumplings",
+            "description": "Whole or wedged apples encased in pastry dough, baked in a sweet cinnamon-sugar syrup, ready to be served warm.",
+            "evidence_urls": [
+              "https://tastesoflizzyt.com/amish-apple-dumplings/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "services": [],
         "experience": [],
-        "education": []
+        "education": [
+          {
+            "name": "Intergenerational Recipe Transmission",
+            "description": "The passing down of cooking instructions, historical food-waste reduction practices, and heritage baking methods within family and community kitchens.",
+            "evidence_urls": [
+              "https://www.paeats.org/wp-content/uploads/2022/01/P09-Pennsylvania-Dutch-Apple-Dumpling-960x640.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
         "livelihood_potential": 0,
         "tourism_potential": 0,
-        "education_potential": 0,
+        "education_potential": 45,
         "creative_industry_potential": 0,
-        "digital_potential": 0
+        "digital_potential": 20
       },
       "resource_mobilization": {
         "public_sector": [],
@@ -12910,50 +12955,54 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-11T02:44:39.003158Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
+          "rationale": "Apple dumplings serve as a viable seasonal product for small-scale local bakeries, farm markets, and community fundraisers, supporting traditional food artisans during the harvest season.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "tourism_potential": {
-          "rationale": "",
+          "rationale": "High interest from culinary tourists visiting regional landmarks like Philadelphia's Reading Terminal Market and local Pennsylvania fall festivals seeking authentic regional foodways.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Substantial documentation value in teaching historic agricultural practices, vintage American cookery, and zero-waste food traditions tied to Pennsylvania Dutch culture.",
+          "evidence_urls": [
+            "https://www.paeats.org/wp-content/uploads/2022/01/P09-Pennsylvania-Dutch-Apple-Dumpling-960x640.jpg"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
+          "rationale": "Opportunities exist in food media, culinary publishing, documentary storytelling, and heritage recipe demonstrations highlighting vintage baking techniques.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited digital footprint centered around online recipe sharing, video tutorials, and food blog features rather than formal digital infrastructure initiatives.",
+          "evidence_urls": [
+            "https://tastesoflizzyt.com/amish-apple-dumplings/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 3,
+        "evidence_item_count": 7,
+        "uncited_item_count": 7,
+        "invalid_evidence_url_count": 13,
+        "opportunity_scores_with_evidence": 2,
+        "opportunity_scores_without_evidence": 3,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-11T02:44:39.003158Z",
+        "last_error": "resource_mapping.human_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.place_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; value_chain.services[0] had no valid direct evidence URL and was excluded; value_chain.experience[0] had no valid direct evidence URL and was excluded; resource_mobilization.private_sector[0] had no valid direct evidence URL and was excluded; resource_mobilization.community[0] had no valid direct evidence URL and was excluded; livelihood_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -13082,8 +13131,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-11T02:45:03.582262Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -13113,8 +13162,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -13124,8 +13173,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-11T02:45:03.582262Z",
+        "last_error": "resource_mapping must be an object; value_chain must be an object; resource_mobilization must be an object; opportunity_analysis must be an object; opportunity_score_evidence must be an object"
       }
     },
     {
@@ -59423,7 +59472,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-10T03:14:38.637187Z",
+    "generated_at": "2026-10-11T02:45:52.475937Z",
     "total_ich_elements": 332,
     "complete_records": 331,
     "incomplete_records": 1,
