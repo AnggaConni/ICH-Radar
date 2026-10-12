@@ -59312,8 +59312,7 @@
       "element_name": "Kunqu Opera (崑曲)",
       "categories": [
         "Performing Arts",
-        "Oral Traditions",
-        "Social Practices & Rituals"
+        "Oral Traditions"
       ],
       "categories_valid": true,
       "category": "Performing Arts",
@@ -59332,65 +59331,403 @@
         "https://ich.unesco.org/en/projects/safeguarding-revitalization-and-promotion-of-the-kunqu-opera-00004",
         "https://www.lingxian.org/kunqu.html",
         "https://www.globalchinainsights.com/the-beauty-of-kunqu-opera/",
-        "https://www.lcsd.gov.hk/CE/CulturalProgramme/ChineseOperaFestival/en/2024/northern-kunqu-opera-theatre.html"
+        "https://www.lcsd.gov.hk/CE/CulturalProgramme/ChineseOperaFestival/en/2024/northern-kunqu-opera-theatre.html",
+        "https://www.lingoace.com/blog/what-is-kunqu-opera/"
       ],
-      "scraped_at": "2026-10-10T03:14:05.378866Z",
+      "scraped_at": "2026-10-12T03:08:14.196509Z",
       "location": {
         "country": "China",
         "provinces": [
-          "Jiangsu",
-          "Zhejiang",
-          "Shanghai",
-          "Beijing",
-          "Hunan"
+          "Jiangsu"
         ],
-        "lat": 33.0000001,
-        "lng": 119.9999999
+        "lat": 34.5412252,
+        "lng": 108.9237067
       },
       "resume_analisa": {
-        "description": "Kunqu Opera, also known as Kunju or Kun opera, is one of the oldest extant forms of Chinese opera, originating in the city of Kunshan, within the Suzhou region of southeast China, during the Ming dynasty (14th to 17th centuries). It evolved from popular theatre and developed into a major theatrical form characterized by its dynamic structure, melody (kunqiang), and classic pieces such as \"The Peony Pavilion\" and \"The Hall of Longevity\". Kunqu combines song, recital, and a complex system of choreographic techniques, acrobatics, and symbolic gestures. It is renowned for its elegant lyrics, graceful style, and delicate performance, often referred to as \"shuimodiao\" or \"water-polished music,\" due to its mild, exquisite, and sentimental melodies. The opera features various character roles, including young male leads (sheng), female leads (dan), old men, and comic roles (chou), all adorned in traditional costumes. Performances are accompanied by a musical ensemble primarily led by a bamboo flute (dizi), along with other wind, stringed, and percussion instruments like the xiao, sheng, pipa, sanxian, small drum, wooden clappers, gongs, and cymbals, which punctuate actions and emotions on stage.",
-        "cultural_significance": "Kunqu Opera is considered the \"ancestor of a hundred operas\" or \"mother of Chinese opera\" due to its profound influence on more recent forms of Chinese opera, including Sichuan and Beijing opera. It is regarded as a \"living fossil\" of Chinese drama, preserving traditional features of ancient operas and representing the traditional culture and art of the Han nationality. The art form reflects traditional Chinese ideas about expression and balance, valuing subtlety, patience, and expressing meaning through detailed gestures and internal emotions. Its literary value is also very high, carrying forward the tradition of ancient poetry and common speech. Kunqu Opera was proclaimed a Masterpiece of the Oral and Intangible Heritage of Humanity by UNESCO in 2001 and inscribed on the Representative List of the Intangible Cultural Heritage of Humanity in 2008, receiving national and international attention and support for its preservation and revitalization.",
-        "drr_category": "Not Directly Related to DRR",
+        "description": "Kunqu Opera, also known as Kunju, is one of the oldest and most refined forms of traditional Chinese opera, originating in Kunshan, Jiangsu province, during the Ming dynasty in the 14th century. It reached its artistic peak between the 16th and 18th centuries, profoundly influencing many regional opera styles in China, including Peking opera. Renowned for its graceful movements, poetic lyrics, and elegant melodies, Kunqu is characterized by its 'shuimodiao' (water-polished music) style, which features mild, exquisite, and sentimental tunes. Performances integrate song, dance, poetry, and acting, with highly stylized movements, intricate hand gestures, and symbolic choreography. The musical ensemble typically includes a bamboo flute as the lead instrument, accompanied by stringed and percussion instruments like small drums, wooden clappers, gongs, and cymbals. Actors portray standard character types such as male (sheng), female (dan), painted-face warrior (jing), and clown (chou), each with distinctive costumes and makeup. Despite facing decline in the 20th century, Kunqu Opera experienced a significant revival following its inscription by UNESCO as a Masterpiece of the Oral and Intangible Heritage of Humanity in 2001 and on the Representative List in 2008.",
+        "cultural_significance": "Kunqu Opera holds immense cultural significance as a 'living fossil' of Chinese opera and the 'ancestor of a hundred operas,' having a profound influence on later Chinese opera forms. It is deeply associated with classical Chinese literature, with many scripts based on famous literary works like 'The Peony Pavilion' and 'The Palace of Eternal Life,' exploring themes of love, loyalty, and moral conflict. UNESCO recognized Kunqu for its exceptional aesthetic achievement, literary richness, subtle performance techniques, and its comprehensive integration of music, dance, poetry, and drama, making it a vital component of global heritage. It serves as a cultural bridge, connecting past and present, and allows for a deeper understanding of ancient Chinese history, literature, music, and art. The preservation and revitalization efforts, including government support and initiatives like 'Kunqu Opera Goes on Campus,' aim to ensure its continuity and inspire new generations, both nationally and internationally.",
+        "drr_category": "Social Cohesion & Mutual Aid",
         "drr_category_valid": true,
-        "drr_relevance_level": "Not Directly Related to DRR",
+        "drr_relevance_level": "Indirectly Related to DRR",
         "hazard_categories": [],
-        "drr_mechanism": null,
+        "drr_mechanism": "Kunqu Opera, as a performing art, contributes to social cohesion by bringing communities together through shared cultural experiences and fostering a sense of collective identity. This strengthens social bonds, which are crucial for community resilience and mutual aid in the face of disasters. Furthermore, the slow and meditative pace of Kunqu Opera has been noted to help 'release emotion and settle the mind,' potentially offering a form of psychological well-being and stress reduction, which can indirectly support mental health resilience in challenging times.",
         "gemini_tags": [
-          "Chinese Opera",
-          "Performing Arts",
-          "Intangible Cultural Heritage",
-          "Traditional Music",
-          "Dance",
-          "Drama",
+          "Chinese opera",
+          "traditional performing arts",
+          "intangible cultural heritage",
           "Ming Dynasty",
-          "Qing Dynasty"
+          "Qing Dynasty",
+          "classical Chinese literature",
+          "music",
+          "dance",
+          "poetry",
+          "acting",
+          "vocal techniques",
+          "choreography",
+          "cultural preservation",
+          "UNESCO"
         ],
-        "drr_relevance": false
+        "drr_relevance": true
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "ritual_sequence",
+        "materials_and_tools": [
+          "Voice",
+          "Body (gestures, movements, expressions)",
+          "Costumes (silk robes, elaborate embroidery, headdresses, jewels)",
+          "Makeup",
+          "Bamboo flute (di)",
+          "Small drum",
+          "Wooden clappers",
+          "Gongs",
+          "Cymbals",
+          "Stringed instruments",
+          "Props (e.g., folding fan, symbolic stage elements)"
+        ],
+        "step_by_step": [
+          "**Rigorous Training (often starting young):** Performers undergo extensive training to master the art form.",
+          "**Voice Training:** Learn singing, recitation, tone, diction, breath control, and the intricate demands of the 'kunqiang' melody, often sung in 'Zhongzhou rhyme'.",
+          "**Body Technique:** Practice basic steps, leg training, walking patterns, turns, eye focus, and precise gestures. This includes mastering 'sleeve work' and other symbolic movements.",
+          "**Mastering 'Four Skills' (四功):** Develop proficiency in singing (唱), speaking (念), acting (做 - poses, facial expressions, manners), and fighting (打 - martial arts, weapon handling, acrobatics).",
+          "**Mastering 'Five Techniques' (五法):** Refine hand gestures (手), eye expressions (眼), body posture (身), walking steps (步), and overall pose/harmony (法).",
+          "**Specialized Techniques:** Acquire skills in specific performance elements such as long sleeve technique, fan technique, hair waving technique (for male characters), and whisker technique.",
+          "**Role Interpretation:** Learn to embody specific character types (sheng, dan, jing, chou) through their unique movement vocabulary, costumes, and emotional portrayal.",
+          "**Repertoire Transmission:** Study and transmit classic scenes, arias, staging knowledge, and performance interpretations from teachers, often through direct mentorship.",
+          "**Orchestral Coordination:** Rehearse with musicians and percussionists to coordinate timing, emotional punctuation, and the overall musical structure of the performance."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": null,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-2b6f1305",
+      "element_name": "Traditional Kazakh Felt Making (Tekemet and Syrmak)",
+      "categories": [
+        "Traditional Craftsmanship"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://www.shutterstock.com/image-photo/traditional-kazakh-national-ornaments-embroidered-260nw-2313673577.jpg",
+      "source_urls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8ZZPhA_1yRUNPdFMDgCG_SFXU_0gaJ2wHyCIlkaRz-2_kj5aw-hDCuS1Dxk2AAdEw52sNHvK50kzjDEbXgGprpq_uMjyHmoKy4VR7ub8D4NdD4S5WpeM2miaZ6wgplGl2th6-cgB-VVgDt1JPh2HKJ40LQrnLrGT8-0xMXA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkbywz3iU6M8rXGXm1NxA2vuzLaKiFxhCtpktK46DpZyiSHFL_ge9Y8lt2LkX4czoTQPHsj-299bpoChSa4WnZkDlFdrWuW35j6amuyxXRSkWFULwLTkQccjDaHb3IhyDq0gAwEm-R",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEc2moEX7h5qaJUDavUVA_x33ZSHECUcRsPSK7toMKbwLJGIhsrdxKybxeABRMezI1-4DHcgrzyPSfE7K8TPz9KZUcFUwJ_x7NsHTxI0WvD_fEGWqH5GBq6q64=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWGp-iicX0cqL3ugB6rZpqhHh9BLGTE7LWutvZYu6WS3hIiowOQHUcXD2aya8iyJigmVyIOeyVFm4ZEtCKO_aZi6qJv-kF1ell2YPfxd7kPTXpkM2jLhsSb1S5dMqOQU80",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5wDGgGb0EanYphoGsywCGXvhh7A1wYGDxdgNZWA-g-9zEGHFmN2YlUKqAffYsSNyBQteISRe2GqbjH8MpaTujjCRef0KvjOp4YBWgjVkqmEg-4kl_n5zFhh4KVVIJtJNtCQzueyvz4E_0ES52y42wYQbsMOkA=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiNVt2hrG5hw4UEcaoz2vq4B1d4mhHT-PigFkU3fjuKMvKMa7fTLsFgyIB51pTWP8wkqAuZWwLkvunxyHcTNzFlllY_aIfwkaF2c9TRzgZ-53azeR1uJnTTjvchyaScuGVYe0fKdszfatzZoehELI2qLskncej1gPF3DKRJK5nP1Y=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPBScmOqHfgtoXO1fTWQiocKdhNEc16FTyVHaz-p5fXVn5k6iSxuFVetDTjfk4Kc4Ax5UwCkVgOyFJ9mH5BqcSQopajF2x-QUgJb1zyZF1O8k6JnMIWKFvm50v5PRRC9cmpcx4WbGOOJiA5va5ryGvlY2pp0BNFMMf2yd-w4xmi7uRPXGDat1ZjQDuBSomxptFn-8f9ttpzV3CCrp3j7syf0WogOVZlv_thg==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkU9d8Jxf-fMjai3CjIt3fsFfLa2mZv-CHuODGpuf5NnpFv6QFKnvSz_RrBRlSu_USHBbCu5NTTEkJa9_qP7E7pui50GNF9PQpEWkTWzYekn2sCE67ciZwOoZZcTUvWuq8zcJkurm99q_ozDxGFDCKBwpNzMyX_VACq1cWk2X_dtHv-e8qI94E7w==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAK-9TDb-_9tT8ozUyK0g8N9G5I8XAksz-AuLSm8ikYqM4fvaY2x0eDR1UyAGB5DpI6PifwWhntXl0GWKr_g9z2xPAwZQNgEhKF2VX3EFx8SKWpommewf_N4V4",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwD2JKDq7lf5ybmaAQbtvhwyJXNFqvvYTdWSxrNRoVZLRixQ-QfAU2nIIxzfzQQR-6UAAtZW8dFTpnDGIdGQubUdk7SuprRqCEaHLF3iY3EOK_FgkYq4hQAjxiM6jOce2BifvFS5pzt9nobzv2Uqp8PlEKnT2WkdzvTWRseWegN5gY_AA=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhGtfWOX4_0ZJirvAJ8GOfx11aW84wHIZ783bBXY3pSkJha_rL67SF4VhO1MOzFtjV7TbSMWoKrDmzI4repuh_5nyQ0t2K05f_OlqtdwHTLIzN5YKHA16wj9CpR5Q7O6u3Iio5U9ppuG4QryxA27ijM4-mMcFN28MoerIKoiCwXLHLlz4zZnW0AvvSxBA=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgSstEFCuBeBTNjEyau4UFn-INRZuPgd2qXzy_DR9PAzgp-psDtekKqdp_u992UnP8fqb22qP8mQehtHkxpGOA_YWpgl1XX5gRmzc6e7RfK96pRO2y4ElJRFb2GmHn9w=="
+      ],
+      "scraped_at": "2026-10-12T03:08:39.452264Z",
+      "location": {
+        "country": "Kazakhstan",
+        "provinces": [],
+        "lat": 48.1012954,
+        "lng": 66.7780818
+      },
+      "resume_analisa": {
+        "description": "Traditional Kazakh felt making is an ancient art form rooted in the nomadic lifestyle of Central Asia, particularly in Kazakhstan. It involves creating felt (kiyiz) from sheep's wool, which is then used for various products, including yurt coverings, clothing, and decorative rugs like Tekemet and Syrmak. This craft is based on the natural property of wool fibers to bind together when subjected to moisture, heat, and pressure. Felt making has been practiced for thousands of years and remains a significant part of Kazakh cultural heritage.",
+        "cultural_significance": "Felt making holds deep cultural significance for the Kazakh people, reflecting their history, nomadic philosophy, and connection to nature. It is primarily a woman's craft, with skills traditionally passed down from mother to daughter. Felt products, especially Tekemet and Syrmak rugs, are essential for insulating and decorating yurts, which are traditional nomadic dwellings. These items are also used in official celebrations, holidays, and rituals, symbolizing family history, identity, and the unity of humans with nature. Motifs like the 'ram's horn' (koshkar muyiz) symbolize strength, prosperity, and cosmic revival.",
+        "drr_category": "Resilient Housing & Settlement Practices",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "Felt products, particularly those used for covering and insulating yurts, provide crucial protection against extreme temperatures, both harsh winter cold and intense summer heat. This insulation helps create resilient housing, enabling communities to adapt to and withstand challenging climatic conditions inherent to the Central Asian steppes.",
+        "gemini_tags": [
+          "Kazakh crafts",
+          "felt art",
+          "nomadic culture",
+          "textile art",
+          "traditional craftsmanship",
+          "Central Asia",
+          "UNESCO heritage (proposed)",
+          "yurt insulation",
+          "cultural identity"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Wet Felting (for Tekemet) and Appliqué/Mosaic (for Syrmak)",
+        "materials_and_tools": [
+          "Sheep's wool (shorn twice a year, typically autumn shearing)",
+          "Water (often hot)",
+          "Soap or soapy solution",
+          "Reed mats",
+          "Special wooden tools (sabau) for beating/cleaning wool (for Syrmak)",
+          "Natural dyes (for coloring wool)",
+          "Sharp knife or scissors (for Syrmak)",
+          "Needle and thread (for Syrmak)"
+        ],
+        "step_by_step": [
+          "**Wool Preparation:** Sheep are shorn twice a year (spring and autumn). The wool is then washed and meticulously cleaned of burrs and sticks. For Syrmak, the wool is beaten with special wooden tools called sabau.",
+          "**Dyeing (if colored felt is desired):** The cleaned wool is dyed using natural colors.",
+          "**Laying out the Wool:** The wool fibers are carefully laid out on a mat, arranging them to reflect the desired design or pattern.",
+          "**Wet Felting (for Tekemet):** For Tekemet, colored wool is arranged to form patterns directly during the felting process. A foreground and background are cut from different colored felts and pressed into each other, creating a soft color transition.",
+          "**Wet Felting (General Process):** The laid-out wool is soaked with hot water or a soapy solution.",
+          "**Fulling/Rolling:** The wet wool is then rubbed together or rolled repeatedly under pressure, often on reed mats, to bind the fibers tightly together. Artisans may switch places to ensure even compression.",
+          "**Syrmak Specific - Mosaic Technique:** For Syrmak, two prepared sheets of felt (often dyed in contrasting colors) are layered. An ornament is drawn onto the surface, and then the design is cut through both layers simultaneously using a sharp knife or scissors. The cut pieces are then swapped and meticulously sewn back together, creating two mirrored compositions (a positive and a negative image). This results in a flat, durable surface with striking graphic contrast."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
         "confidence_score": 0.9,
         "related_elements": [
           {
-            "country": "China",
-            "element_name": "Sichuan Opera",
-            "relationship_reason": "Kunqu Opera has exerted a dominant influence on more recent forms of Chinese opera, including Sichuan Opera, in terms of musical forms, staging conventions, and acting styles."
+            "country": "Kyrgyzstan",
+            "element_name": "Ala Kiyiz and Shyrdak (felt carpets)",
+            "relationship_reason": "Shared traditional felt carpet-making technique and cultural significance, inscribed on UNESCO List of Intangible Cultural Heritage of Humanity in 2012."
           },
           {
-            "country": "China",
-            "element_name": "Peking Opera (Jingxi)",
-            "relationship_reason": "Kunqu Opera significantly influenced the system of performance for Peking Opera, which gradually replaced Kunqu in popularity during the Qing dynasty."
+            "country": "Mongolia",
+            "element_name": "Traditional felt making",
+            "relationship_reason": "Shared traditional felt making practices among nomadic peoples of Central Asia."
           },
           {
-            "country": "Taiwan",
-            "element_name": "Kunqu Opera performances and collaborations",
-            "relationship_reason": "Kunqu Opera has been passed from mainland China to Taiwan, with frequent communication and co-creation of modern Kunqu Opera works between artists from both sides of the Taiwan Strait, such as the 'Youth Version of The Peony Pavilion'."
+            "country": "Uzbekistan",
+            "element_name": "Traditional felt making",
+            "relationship_reason": "Shared traditional felt making practices among Central Asian peoples."
           },
           {
-            "country": "Japan, United States, Soviet Union (historical), various international stages",
-            "element_name": "Kunqu Opera performances and cultural exchanges",
-            "relationship_reason": "Renowned Kunqu performers like Mei Lanfang performed in Japan, the United States, and the Soviet Union in the early 20th century. More recently, Kunqu Opera has increased its exposure on the international stage through cultural exchanges and performances in major opera houses and universities worldwide."
+            "country": "Azerbaijan",
+            "element_name": "Traditional felt making",
+            "relationship_reason": "Shared traditional felt making practices, proposed for UNESCO Representative List in 2026 alongside Kazakhstan."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-e4496027",
+      "element_name": "Shishi-Odori (Deer Dance)",
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Performing Arts",
+      "category_valid": true,
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Shishi-odori_in_Tono.jpg/1200px-Shishi-odori_in_Tono.jpg",
+      "source_urls": [
+        "https://www.gyozanryu.com/",
+        "https://iwatetabi.jp/spot/detail.php?spot_id=1033",
+        "https://www.hanamaki-kanko.jp/kanko/miru/shishiodori/",
+        "https://www.city.morioka.iwate.jp/kankou/bunka/dentou/1010619.html",
+        "https://www.pref.miyagi.jp/soshiki/bunkazai/ichihasamashishiodori.html",
+        "https://kazumashishiodori.jimdofree.com/",
+        "https://www.miyagi-kankou.or.jp/kakikomi/detail.php?id=7553",
+        "https://www.kokugakuin.ac.jp/encyclopedia/detail/9525"
+      ],
+      "scraped_at": "2026-10-12T03:09:13.089699Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Iwate Prefecture",
+          "Miyagi Prefecture"
+        ],
+        "lat": 39.5713763,
+        "lng": 141.4253574
+      },
+      "resume_analisa": {
+        "description": "Shishi-Odori, or Deer Dance, is a traditional folk performing art primarily found in the Tohoku region of Japan, particularly in Iwate and Miyagi Prefectures. Dancers wear elaborate deer masks with antlers, carry a 'Sasara' (a bundle of thin bamboo slats) on their backs, and beat drums attached to their bodies while singing and dancing in unison. The dance is characterized by its dynamic and energetic movements. There are two main styles in Iwate: the 'Taiko-Odori style,' where dancers carry and beat drums themselves, often performing 'one person, three roles' (dancing, drumming, singing), and the 'Maku-Odori style,' where dancers do not carry drums and are accompanied by separate musicians.",
+        "cultural_significance": "The origins of Shishi-Odori are attributed to various theories, including a ritual to honor the spirits of hunted deer, an imitation of deer playing in the mountains, or a sacred offering linked to Kasuga Taisha Shrine. It evolved from a hunter's ceremony to express profound respect for all living beings, including human spirits. The dance is typically performed during Obon to honor the spirits of the deceased and at shrine festivals to pray for bountiful harvests, ward off evil spirits, ensure good health, and bring protection to the community. It embodies and transmits values such as the 'preciousness of life' and 'coexistence with nature.'",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Tsunami"
+        ],
+        "drr_mechanism": "The revival of Shishi-Odori after the Great East Japan Earthquake and tsunami, particularly in areas like Minamisanriku Town, Miyagi Prefecture, serves as a significant mechanism for community recovery and the rebuilding of social cohesion. Despite the complete loss of traditional costumes and instruments, young dancers successfully revived the tradition. This cultural restoration helps re-establish a sense of identity, continuity, and shared purpose within the community, fostering psychological and social resilience crucial for healing and long-term recovery from immense loss. The dance, performed for remembrance and gratitude, strengthens community bonds and cultural continuity.",
+        "gemini_tags": [
+          "Folk Performing Arts",
+          "Traditional Dance",
+          "Deer Mask",
+          "Tohoku Region",
+          "Japan",
+          "Cultural Revival",
+          "Disaster Recovery",
+          "Community Resilience",
+          "Spiritual Practice",
+          "Harvest Festival",
+          "Obon"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Shishimai (Lion Dance)",
+            "relationship_reason": "Both are traditional Japanese folk dances involving animal masks. However, Shishi-Odori specifically focuses on deer and other mountain beasts, while Shishimai features lions, with distinct origins and performance styles."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Kasuga Taisha Shrine rituals",
+            "relationship_reason": "One of the theories regarding the origin of Shishi-Odori links it to sacred offerings and rituals performed at Kasuga Taisha Shrine in Nara, indicating a broader religious connection within Japan."
+          },
+          {
+            "country": "Various (e.g., US, Russia, Bulgaria, UK)",
+            "element_name": "Japanese Cultural Performances",
+            "relationship_reason": "Specific Shishi-Odori troupes, such as those of the Kanatsu-Ryu style, have performed internationally in countries like the US, Russia, Bulgaria, and the UK, sharing this Japanese cultural heritage with global audiences."
           }
         ]
       },
@@ -59469,19 +59806,177 @@
         "last_checked_at": null,
         "last_error": null
       }
+    },
+    {
+      "id": "ich-bf5a27e8",
+      "element_name": "Ayam Pallu Cuka (Nasu Cukka)",
+      "categories": [
+        "Culinary Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Culinary Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ayam_Pallu_Cuka.jpg/640px-Ayam_Pallu_Cuka.jpg",
+      "source_urls": [
+        "https://wikipangan.id/index.php?title=Ayam_Pallu_Cuka",
+        "https://www.kompas.id/baca/humaniora/2023/11/28/berburu-resep-kuliner-tradisional-hingga-pelosok-negeri",
+        "https://www.youtube.com/watch?v=kY0w2_s_e-c",
+        "https://www.youtube.com/watch?v=r087k52402A"
+      ],
+      "scraped_at": "2026-10-12T03:09:48.640364Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "South Sulawesi"
+        ],
+        "lat": -3.6446718,
+        "lng": 119.9471906
+      },
+      "resume_analisa": {
+        "description": "Ayam Pallu Cuka, also known as Nasu Cukka, is a traditional chicken dish from South Sulawesi, particularly associated with the indigenous Suku Kajang community in Bulukumba. The name 'Pallu' means 'to cook' and 'Cuka' means 'vinegar', indicating a dish of chicken cooked with vinegar. It is characterized by its fresh, sour, and savory taste, often achieved through the use of natural palm vinegar (cuka aren or nira lontar).",
+        "cultural_significance": "Ayam Pallu Cuka is considered an ancestral cuisine ('kuliner leluhur') of the Suku Kajang tribe. The Suku Kajang, residing in Ammatoa, are known for their traditional lifestyle that emphasizes a deep connection with nature and sustainable practices, including 'go local, sustainable, and even biodynamic' concepts. The preparation of this dish, utilizing locally sourced ingredients like free-range chicken and fermented palm vinegar, reflects their traditional wisdom and harmonious relationship with their environment. This culinary practice is a testament to their cultural identity and the preservation of indigenous knowledge through food.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Drought"
+        ],
+        "drr_mechanism": "The reliance on locally sourced ingredients, such as free-range chicken and fermented palm vinegar, and traditional, sustainable cooking methods, contributes to food security and resilience. This practice reduces dependence on external food supply chains, which can be vulnerable during disruptions like droughts. By utilizing resources readily available in their local environment and employing traditional preservation techniques (fermentation of palm vinegar), the Suku Kajang community strengthens its capacity to maintain food access and nutritional well-being, even when external supplies are scarce.",
+        "gemini_tags": [
+          "Traditional Cuisine",
+          "Indigenous Food",
+          "Sustainable Practices",
+          "Fermented Food",
+          "South Sulawesi",
+          "Suku Kajang"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Main Dish",
+        "materials_and_tools": [
+          "Chicken (preferably free-range chicken)",
+          "Natural palm vinegar (cuka aren or nira lontar)",
+          "Shallots (bawang merah)",
+          "Garlic (bawang putih)",
+          "Turmeric (kunyit)",
+          "Coriander (ketumbar)",
+          "Water",
+          "Salt/broth powder",
+          "Chili (optional, as per Bugis Sinjai variation)",
+          "Lemongrass (optional, as per Bugis Sinjai variation)",
+          "Candlenut (kemiri, optional, as per Bugis Sinjai variation)",
+          "Cooking pot/pan"
+        ],
+        "step_by_step": [
+          "Clean the chicken. It can be soaked in vinegar beforehand.",
+          "Prepare the finely ground spices: shallots, garlic, turmeric, and coriander (and optionally chili, lemongrass, candlenut).",
+          "Sauté the ground spices in a cooking pot until fragrant.",
+          "Add the cleaned chicken to the pot and stir until the chicken changes color.",
+          "Pour in enough water and the palm vinegar.",
+          "Cook the mixture until the water reduces, the spices are fully absorbed into the chicken, and the chicken becomes tender.",
+          "Season with salt or broth powder to taste."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Nasu Cukka (Bugis Sinjai)",
+            "relationship_reason": "The term 'Nasu Cukka' is also used for a similar chicken and vinegar dish in Bugis Sinjai, indicating a shared culinary concept within the broader South Sulawesi region, though the specific preparation and cultural ties to fermented aren vinegar are prominent with Suku Kajang."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
     }
   ],
   "summary": {
-    "generated_at": "2026-10-11T02:45:52.475937Z",
-    "total_ich_elements": 332,
-    "complete_records": 331,
+    "generated_at": "2026-10-12T03:10:14.975185Z",
+    "total_ich_elements": 335,
+    "complete_records": 334,
     "incomplete_records": 1,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 118,
+      "Traditional Craftsmanship": 119,
       "Social Practices & Rituals": 81,
-      "Culinary Traditions": 51,
+      "Culinary Traditions": 52,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 37,
+      "Performing Arts": 38,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
       "Oral Traditions": 31,
