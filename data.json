@@ -13776,78 +13776,183 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-15T02:14:37.675201Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Kanemizu Formulation Knowledge",
+            "description": "Historical recipes and chemical knowledge regarding the creation of ferric acetate solution using iron filings or steel wool steeped in vinegar combined with tannin or gallnut powder.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ohaguro"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Raw Reagents (Iron and Tannins)",
+            "description": "Accessible physical components including steel wool, iron filings, apple cider or grape vinegar, and gallnut powder (fushiko) or matcha.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ohaguro"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Kyoto Geiko and Maiko Communities",
+            "description": "Living practitioners within specialized districts who occasionally maintain traditional appearance aspects like teeth blackening for specific ceremonies or historical representations.",
+            "evidence_urls": [
+              "https://www.peterbrown-palaeoanthropology.net/OHAGURO.html",
+              "https://www.livejapan.com/en/in-tokyo/in-pref-tokyo/in_tokyo_sightseeing/article-a0002738.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Historical Districts and Museums of Japan",
+            "description": "Cultural heritage sites, period film sets, kabuki theaters, and traditional urban districts (such as Kyoto's hanamachi) serving as living contexts for historical customs.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ohaguro",
+              "https://www.peterbrown-palaeoanthropology.net/OHAGURO.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Academic and Archaeological Research Institutions",
+            "description": "University departments and dental anthropology projects analyzing historical human remains and material culture from the Kofun to Edo periods.",
+            "evidence_urls": [
+              "https://www.peterbrown-palaeoanthropology.net/OHAGURO.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
+        "production": [
+          {
+            "name": "Historical Dye Preparation",
+            "description": "The specialized compounding of kanemizu and tannin agents following historical preparation processes.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ohaguro"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "products": [],
         "services": [],
-        "experience": [],
-        "education": []
+        "experience": [
+          {
+            "name": "Performing Arts and Period Portrayals",
+            "description": "Live theatrical productions, kabuki performances, historical period films, and festival reenactments showcasing the visual heritage of Ohaguro.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ohaguro"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Cultural History and Museum Interpretation",
+            "description": "Educational documentation outlining the social evolution, symbolism of adulthood, and status markers associated with teeth blackening from the Heian to Edo periods.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ohaguro",
+              "https://www.livejapan.com/en/in-tokyo/in-pref-tokyo/in_tokyo_sightseeing/article-a0002738.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
         "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "tourism_potential": 20,
+        "education_potential": 50,
+        "creative_industry_potential": 30,
+        "digital_potential": 15
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
-        "academic": [],
-        "community": [],
+        "academic": [
+          {
+            "name": "Dental Anthropology and Historical Research Groups",
+            "description": "Researchers studying historical dental health, chemical trace persistence on ancient enamel, and burial excavations from the Kofun and Edo periods.",
+            "evidence_urls": [
+              "https://www.peterbrown-palaeoanthropology.net/OHAGURO.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Traditional Arts and Preservation Practitioners",
+            "description": "Traditional performing arts practitioners and cultural custodians safeguarding historical aesthetics within specialized performance contexts.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Ohaguro",
+              "https://www.peterbrown-palaeoanthropology.net/OHAGURO.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-15T02:14:37.675201Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
+          "rationale": "The custom is obsolete for daily wear and modern livelihoods, surviving strictly as an occasional theatrical or traditional artistic expression.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Cultural tourism centered around Kyoto's historical districts and traditional performing arts offers minor, respectful visibility of historical aesthetics.",
+          "evidence_urls": [
+            "https://www.peterbrown-palaeoanthropology.net/OHAGURO.html",
+            "https://www.livejapan.com/en/in-tokyo/in-pref-tokyo/in_tokyo_sightseeing/article-a0002738.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong academic and museum value exists in examining Japanese social history, beauty standards, and historical practices from the Heian to Edo periods.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Ohaguro",
+            "https://www.livejapan.com/en/in-tokyo/in-pref-tokyo/in_tokyo_sightseeing/article-a0002738.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The element features regularly as a visual design reference in period films, kabuki theater, video games, and historical literature adaptations.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Ohaguro",
+            "https://manekinekogames.vidaennippon.com/ohaguro-the-meaning-and-history-of-japans-black-teeth/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Occasional digital interest arises via viral social media snapshots or history-focused content exploring eccentric or forgotten traditional global beauty customs.",
+          "evidence_urls": [
+            "https://www.nssgclub.com/en/culture/37841/ohaguro-japan-tradition-tiktok"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 5,
+        "evidence_item_count": 14,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 4,
+        "opportunity_scores_without_evidence": 1,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-15T02:14:37.675201Z",
         "last_error": null
       }
     },
@@ -13927,79 +14032,209 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-15T02:14:58.432463Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Tri-Metal Embossing & Engraving Techniques",
+            "description": "Centuries-old inherited knowledge of working with brass, copper, and silver, utilizing beeswax, asphalt beds, and lead molds to create intricate low-relief mythological motifs.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+              "https://www.dsource.in/resource/art-plate-making-thanjavur-tamil-nadu"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Tri-Metal Sheets (Brass, Copper, Silver)",
+            "description": "Core raw materials comprising brass sheets for the structural base plate, alongside thin sheets and foils of copper and silver used for embossed embellishments and deities.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+              "https://www.dsource.in/resource/art-plate-making-thanjavur-tamil-nadu"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Vishwakarma Goldsmith Community",
+            "description": "An exclusive community of traditional male artisans and goldsmith families in Thanjavur who safeguard, practice, and transmit the craft across generations.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+              "https://ancientmadurai.com/thanjavur-art-plate/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Thanjavur Region, Tamil Nadu",
+            "description": "The exclusive geographic cradle and declared cottage-industry zone bound by Geographical Indication (GI) rights where the art plates are traditionally manufactured.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+              "https://ancientmadurai.com/thanjavur-art-plate/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Geographical Indication (GI) Registry of India",
+            "description": "Legal protection framework under item 63 of the Geographical Indications Act 1999, ensuring authentic composition and authorized user standards.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+              "https://www.dsource.in/resource/art-plate-making-thanjavur-tamil-nadu"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
+        "production": [
+          {
+            "name": "Cottage-Industry Metal Embossing",
+            "description": "Home-based workshop production involving brass base cutting, polishing, embedding on wax-asphalt boards, lead mold creation, and manual repoussé hammering.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+              "https://www.dsource.in/resource/art-plate-making-thanjavur-tamil-nadu"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Thanjavur Art Plates and Plaques",
+            "description": "Circular decorative plates and wall hangings featuring embossed figures of Hindu deities (such as Ganesha and Lakshmi), floral patterns, and mythological scenes.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+              "https://gaatha.org/craft-archive/research/thanjavur-art-plate"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "services": [],
-        "experience": [],
-        "education": []
+        "experience": [
+          {
+            "name": "Heritage Craft Appreciations & Cultural Tourism",
+            "description": "Observational engagement where visitors to Thanjavur witness local goldsmiths hammering, chipping, and crafting metalwork in traditional neighborhood settings.",
+            "evidence_urls": [
+              "https://ancientmadurai.com/thanjavur-art-plate/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Family Transmission",
+            "description": "Oral and practical skill transfer practiced within household settings among the Vishwakarma community to pass down heritage techniques to younger generations.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+              "https://ancientmadurai.com/thanjavur-art-plate/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 45,
+        "education_potential": 40,
+        "creative_industry_potential": 60,
+        "digital_potential": 30
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Government Museum, Thanjavur",
+            "description": "Public institution holding historical specimens, such as 20th-century plaques displaying traditional motifs like Nataraja and Sivakami.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Thanjav_Art_Plate"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
-        "academic": [],
-        "community": [],
+        "academic": [
+          {
+            "name": "Design Resource Centers (e.g., D'Source)",
+            "description": "Academic and design documentation platforms providing detailed open-access archives on the manufacturing process and heritage lineage of the craft.",
+            "evidence_urls": [
+              "https://www.dsource.in/resource/art-plate-making-thanjavur-tamil-nadu"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Vishwakarma Artisan Guilds & Households",
+            "description": "The localized network of traditional family units executing household-level manufacturing and safeguarding authorized production standards.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+              "https://www.dsource.in/resource/art-plate-making-thanjavur-tamil-nadu"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-15T02:14:58.432463Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Backed by a formal GI tag that protects authentic producers, the craft provides ongoing cottage-industry employment and domestic gifting market opportunities for artisan households.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+            "https://gaatha.org/craft-archive/research/thanjavur-art-plate"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Thanjavur's deep cultural tourism footprint allows visitors to observe master goldsmiths at work, though structured cultural tourism experiences remain informal.",
+          "evidence_urls": [
+            "https://ancientmadurai.com/thanjavur-art-plate/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Documentation projects (such as D'Source) and craft archives offer strong foundations for educational outreach, though formal transmission remains primarily closed within community bloodlines.",
+          "evidence_urls": [
+            "https://www.dsource.in/resource/art-plate-making-thanjavur-tamil-nadu",
+            "https://gaatha.org/craft-archive/research/thanjavur-art-plate"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The distinct tri-metal aesthetic and historical Maratha royal background lend themselves well to upscale decor, museum partnerships, and high-end handicraft distribution.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Thanjavur_Art_Plate",
+            "https://gaatha.org/craft-archive/research/thanjavur-art-plate"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "While some digital archival mapping and institutional documentation exist online, direct e-commerce integration for authentic GI-certified makers is still developing.",
+          "evidence_urls": [
+            "https://www.dsource.in/resource/art-plate-making-thanjavur-tamil-nadu"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 5,
+        "evidence_item_count": 17,
+        "uncited_item_count": 1,
+        "invalid_evidence_url_count": 1,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-15T02:14:58.432463Z",
+        "last_error": "resource_mobilization.private_sector[0] had no valid direct evidence URL and was excluded"
       }
     },
     {
@@ -60189,7 +60424,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-13T04:24:43.742177Z",
+    "generated_at": "2026-10-15T02:15:20.526377Z",
     "total_ich_elements": 335,
     "complete_records": 334,
     "incomplete_records": 1,
