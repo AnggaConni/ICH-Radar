@@ -14353,8 +14353,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-17T01:59:54.702057Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -14384,8 +14384,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -14395,8 +14395,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-17T01:59:54.702057Z",
+        "last_error": "resource_mapping must be an object; value_chain must be an object; resource_mobilization must be an object; opportunity_analysis must be an object; opportunity_score_evidence must be an object"
       }
     },
     {
@@ -14469,78 +14469,196 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-17T02:00:45.607239Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Oral Tradition and Songlines",
+            "description": "Ancient narrative systems and songlines containing creation laws, geographical maps, and environmental knowledge passed down through generations.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-culture/what-is-aboriginal-dreamtime/",
+              "https://www.artark.com.au/what-is-the-dreaming-dreamtime-in-aboriginal-culture/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Ceremonial and Artistic Media",
+            "description": "Materials used in visual expression and performance, including body paint, ochre, bark, rock surfaces, and canvas.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/",
+              "https://aboriginalcontemporary.com.au/blogs/news/what-is-the-dreamtime-and-dreaming"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Indigenous Elders and Traditional Custodians",
+            "description": "Senior knowledge holders and cultural leaders responsible for safeguarding and authorizing the transmission of 'inside' and 'outside' Dreaming knowledge.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/",
+              "https://www.artark.com.au/what-is-the-dreaming-dreamtime-in-aboriginal-culture/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Country and Sacred Sites",
+            "description": "Ancestral landscapes, waterholes, rock formations, and ecosystems tied directly to Creation events across Australia's states and territories.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/",
+              "https://www.artark.com.au/what-is-the-dreaming-dreamtime-in-aboriginal-culture/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Indigenous Art Centres and Cultural Trusts",
+            "description": "Community-based organizations and trusts supporting cultural preservation, storytelling transmission, and ethical art production.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/",
+              "https://www.artark.com.au/what-is-the-dreaming-dreamtime-in-aboriginal-culture/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Traditional Knowledge Transmission",
+            "description": "Intergenerational teaching through ceremony, song, dance, and mentored visual arts under the guidance of Elders.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/",
+              "https://www.artark.com.au/what-is-the-dreaming-dreamtime-in-aboriginal-culture/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Indigenous Visual Art and Artifacts",
+            "description": "Paintings, carvings, and cultural objects encoding Dreaming narratives, totems, and connection to Country.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/",
+              "https://www.artark.com.au/what-is-the-dreaming-dreamtime-in-aboriginal-culture/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Community-Led Cultural Interpretation",
+            "description": "Guided walks, cave tours, and storytelling services operated by Traditional Owners to share aspects of Country and law.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Country-Based Immersive Tourism",
+            "description": "Ethical, community-governed tourism experiences aligned with the Discover Aboriginal Experiences network.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Cross-Cultural Learning Programs",
+            "description": "Educational initiatives designed to impart foundational knowledge regarding Indigenous worldviews, ecological stewardship, and law.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/",
+              "https://www.artark.com.au/what-is-the-dreaming-dreamtime-in-aboriginal-culture/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 70,
+        "education_potential": 80,
+        "creative_industry_potential": 75,
+        "digital_potential": 40
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Aboriginal Language and Cultural Groups",
+            "description": "Local clans and language groups exercising self-determination over the safeguarding, sharing, and restriction of their Dreaming narratives.",
+            "evidence_urls": [
+              "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-17T02:00:45.607239Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Art production and community-led cultural enterprises support sustainable local economies when managed under Indigenous governance.",
+          "evidence_urls": [
+            "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High international and domestic interest in authentic, community-managed cultural tourism through networks like Discover Aboriginal Experiences.",
+          "evidence_urls": [
+            "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong demand for incorporating Indigenous environmental management, philosophy, and historical knowledge systems into broader educational frameworks.",
+          "evidence_urls": [
+            "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/",
+            "https://www.artark.com.au/what-is-the-dreaming-dreamtime-in-aboriginal-culture/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Global recognition of Aboriginal art movements as vital expressions of contemporary and traditional storytelling.",
+          "evidence_urls": [
+            "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Cautious and selective application required due to strict cultural protocols regarding sacred 'inside' knowledge and digital dissemination limits.",
+          "evidence_urls": [
+            "https://www.aboriginal-art-australia.com/aboriginal-art-australia/what-is-aboriginal-dreamtime/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 4,
+        "evidence_item_count": 16,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-17T02:00:45.607239Z",
         "last_error": null
       }
     },
@@ -60424,7 +60542,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-15T02:15:20.526377Z",
+    "generated_at": "2026-10-17T02:01:07.214872Z",
     "total_ich_elements": 335,
     "complete_records": 334,
     "incomplete_records": 1,
