@@ -60247,66 +60247,67 @@
         "https://www.pref.miyagi.jp/soshiki/bunkazai/ichihasamashishiodori.html",
         "https://kazumashishiodori.jimdofree.com/",
         "https://www.miyagi-kankou.or.jp/kakikomi/detail.php?id=7553",
-        "https://www.kokugakuin.ac.jp/encyclopedia/detail/9525"
+        "https://www.kokugakuin.ac.jp/encyclopedia/detail/9525",
+        "https://www.yokogao.jp/shishi-odori-deer-dance-yulia-skogoreva/"
       ],
-      "scraped_at": "2026-10-12T03:09:13.089699Z",
+      "scraped_at": "2026-10-18T01:59:14.175560Z",
       "location": {
         "country": "Japan",
         "provinces": [
           "Iwate Prefecture",
           "Miyagi Prefecture"
         ],
-        "lat": 39.5713763,
-        "lng": 141.4253574
+        "lat": 36.5748441,
+        "lng": 139.2394179
       },
       "resume_analisa": {
-        "description": "Shishi-Odori, or Deer Dance, is a traditional folk performing art primarily found in the Tohoku region of Japan, particularly in Iwate and Miyagi Prefectures. Dancers wear elaborate deer masks with antlers, carry a 'Sasara' (a bundle of thin bamboo slats) on their backs, and beat drums attached to their bodies while singing and dancing in unison. The dance is characterized by its dynamic and energetic movements. There are two main styles in Iwate: the 'Taiko-Odori style,' where dancers carry and beat drums themselves, often performing 'one person, three roles' (dancing, drumming, singing), and the 'Maku-Odori style,' where dancers do not carry drums and are accompanied by separate musicians.",
-        "cultural_significance": "The origins of Shishi-Odori are attributed to various theories, including a ritual to honor the spirits of hunted deer, an imitation of deer playing in the mountains, or a sacred offering linked to Kasuga Taisha Shrine. It evolved from a hunter's ceremony to express profound respect for all living beings, including human spirits. The dance is typically performed during Obon to honor the spirits of the deceased and at shrine festivals to pray for bountiful harvests, ward off evil spirits, ensure good health, and bring protection to the community. It embodies and transmits values such as the 'preciousness of life' and 'coexistence with nature.'",
+        "description": "Shishi-Odori, or Deer Dance, is an ancient folk ritual and traditional performing art primarily passed down in the Tohoku region of Japan, particularly in Iwate and Miyagi prefectures. It involves dancers wearing intricate masks resembling deer, lions, or dragons, often with antlers, and carrying a 'Sasara' (a bundle of thin bamboo slats) on their backs. The performance is accompanied by rhythmic taiko drums and flutes, with dancers beating drums strapped to their bodies while singing and moving. The term 'shishi' historically referred to the meat of mountain animals like deer and wild boars, and the dancers embody these 'shishi'. The dance is performed at village festivals, during Obon to honor ancestral spirits, and at shrine festivals as a prayer for bountiful harvests.",
+        "cultural_significance": "Shishi-Odori holds profound cultural significance, evolving from hunters' rituals honoring animal spirits into an expression of respect for all living beings, including human spirits. It is performed to honor the spirits of the deceased, pray for bountiful harvests, and repel evil spirits, bringing protection to the community. The dance is deeply connected to nature and ancient Japanese beliefs, with deer considered sacred and often associated with mountain gods and regeneration. There are various styles, such as the 'Drum Dancing Style' (Taikoodori) and 'Curtain Dancing Style' (Makuodori), each with distinct characteristics in costume and performance. The tradition has been designated as a Folk Cultural Property in Miyagi Prefecture, highlighting its historical importance and the efforts to preserve it across generations.",
         "drr_category": "Social Cohesion & Mutual Aid",
         "drr_category_valid": true,
-        "drr_relevance_level": "Directly Related to DRR",
+        "drr_relevance_level": "Indirectly Related to DRR",
         "hazard_categories": [
           "Tsunami"
         ],
-        "drr_mechanism": "The revival of Shishi-Odori after the Great East Japan Earthquake and tsunami, particularly in areas like Minamisanriku Town, Miyagi Prefecture, serves as a significant mechanism for community recovery and the rebuilding of social cohesion. Despite the complete loss of traditional costumes and instruments, young dancers successfully revived the tradition. This cultural restoration helps re-establish a sense of identity, continuity, and shared purpose within the community, fostering psychological and social resilience crucial for healing and long-term recovery from immense loss. The dance, performed for remembrance and gratitude, strengthens community bonds and cultural continuity.",
+        "drr_mechanism": "The Shishi-Odori fosters social cohesion and community resilience by providing a cultural anchor for collective identity and mutual support. This was particularly evident in the aftermath of the 2011 Great East Japan Earthquake and Tsunami, where communities in the Tohoku region revitalized the dance to rebuild and strengthen social bonds, demonstrating remarkable resilience in the face of loss. The practice also serves as a spiritual ritual believed to repel evil spirits and bring protection, contributing to a sense of security and well-being within the community.",
         "gemini_tags": [
-          "Folk Performing Arts",
-          "Traditional Dance",
-          "Deer Mask",
-          "Tohoku Region",
-          "Japan",
-          "Cultural Revival",
-          "Disaster Recovery",
-          "Community Resilience",
-          "Spiritual Practice",
-          "Harvest Festival",
-          "Obon"
+          "Japanese folk dance",
+          "Tohoku region",
+          "Deer dance",
+          "Traditional ritual",
+          "Community resilience",
+          "Performing arts",
+          "Cultural heritage"
         ],
         "drr_relevance": true
       },
-      "resume_tata_cara": null,
-      "shared_heritage_detection": {
-        "is_shared": true,
-        "confidence_score": 0.8,
-        "related_elements": [
-          {
-            "country": "Japan",
-            "element_name": "Shishimai (Lion Dance)",
-            "relationship_reason": "Both are traditional Japanese folk dances involving animal masks. However, Shishi-Odori specifically focuses on deer and other mountain beasts, while Shishimai features lions, with distinct origins and performance styles."
-          },
-          {
-            "country": "Japan",
-            "element_name": "Kasuga Taisha Shrine rituals",
-            "relationship_reason": "One of the theories regarding the origin of Shishi-Odori links it to sacred offerings and rituals performed at Kasuga Taisha Shrine in Nara, indicating a broader religious connection within Japan."
-          },
-          {
-            "country": "Various (e.g., US, Russia, Bulgaria, UK)",
-            "element_name": "Japanese Cultural Performances",
-            "relationship_reason": "Specific Shishi-Odori troupes, such as those of the Kanatsu-Ryu style, have performed internationally in countries like the US, Russia, Bulgaria, and the UK, sharing this Japanese cultural heritage with global audiences."
-          }
+      "resume_tata_cara": {
+        "type": "ritual_sequence",
+        "materials_and_tools": [
+          "Shishi-Gashira (deer head mask, often with antlers, made from wood or genuine deer horn)",
+          "Sasara (bundle of thin bamboo slats, 1 to 3.6 meters long)",
+          "Taiko drums (strapped to the chest or belly)",
+          "Flutes",
+          "Maku (cloth to cover the dancer's face)",
+          "Costumes (often black with dynamic red, white, and blue patterns)"
+        ],
+        "step_by_step": [
+          "Dancers don elaborate costumes, including a Shishi-Gashira mask and a Maku to cover their faces.",
+          "A Sasara, a bundle of bamboo slats, is attached to the dancer's back.",
+          "A taiko drum is strapped to the dancer's chest or belly.",
+          "The performance begins with rhythmic beats of taiko drums and melodic strains of flutes.",
+          "Dancers perform energetic movements, mimicking deer, while beating their drums and singing dance songs.",
+          "In some styles, such as the 'Drum Dancing Style' (Taikoodori), dancers actively hold and beat drums.",
+          "In the 'Curtain Dancing Style' (Makuodori), dancers lower a curtain in both hands, accompanied by flutes and drums.",
+          "A basic formation often involves eight dancers, led by a pair of 'nakadachi' (go-betweens) representing male and female deer."
         ]
       },
-      "completion_status": "INCOMPLETE",
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": null,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE",
       "resource_enriched_at": null,
       "resource_enrichment_attempted_at": null,
       "resource_enrichment_status": "not_assessed",
@@ -60539,22 +60540,333 @@
         "last_checked_at": null,
         "last_error": null
       }
+    },
+    {
+      "id": "ich-15eaea47",
+      "element_name": "Filete Porteño",
+      "categories": [
+        "Traditional Craftsmanship",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//buenosaires.gob.ar/cultura/patrimonio/filete-porteno/origenes-del-filete-porteno&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://buenosaires.gob.ar/cultura/patrimonio/filete-porteno/origenes-del-filete-porteno",
+        "https://www.fileteadoporteno.com/que-es-el-fileteado-porteno",
+        "https://ich.unesco.org/en/RL/filete-porteno-in-buenos-aires-a-traditional-painting-technique-01069",
+        "https://www.domestika.org/es/blog/8227-que-es-el-fileteado-porteno-y-cuales-son-sus-rasgos",
+        "https://buenosaires.gob.ar/cultura/patrimonio/filete-porteno/la-tecnica",
+        "https://blog.pinturaseterna.com.ar/fileteado-porteno/",
+        "https://medium.com/prior-travel/fileteado-porte%C3%B1o-the-re-emergence-of-artistic-cultural-identity-in-buenos-aires-f90370425e4c",
+        "https://totenart.com/noticias/fileteado-porteno-estilo-y-caracteristicas/",
+        "https://www.tutorialesdeartesanias.com/fileteado-porteno/"
+      ],
+      "scraped_at": "2026-10-18T01:59:37.911647Z",
+      "location": {
+        "country": "Argentina",
+        "provinces": [
+          "Buenos Aires"
+        ],
+        "lat": -34.6095579,
+        "lng": -58.3887904
+      },
+      "resume_analisa": {
+        "description": "Filete Porteño is a traditional decorative painting technique originating from Buenos Aires, Argentina. It is characterized by its vibrant colors, specific ornate lettering styles, and three-dimensional effects. This popular art form initially adorned horse-drawn carts, then trucks and urban buses, and is now also seen in signage, home decoration, and various artistic expressions.",
+        "cultural_significance": "The Filete Porteño is a significant cultural emblem of Buenos Aires, reflecting the city's identity and history. It emerged in the late 19th century with influences from European immigrants, particularly Italians, who worked in carriage factories. The art form often incorporates popular sayings, refranes, and images of local icons like Carlos Gardel or the Virgen de Luján, serving as a manifestation of the sociocultural values of the people of Buenos Aires. Its history, like that of tango, is largely reconstructed from oral testimonies, highlighting its popular and community-driven nature. Despite a period of prohibition on public transport in 1975, the practice persisted and was eventually recognized as Intangible Cultural Heritage by UNESCO in 2015, solidifying its role as a strong symbol of local and national identity.",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Argentine art",
+          "Buenos Aires culture",
+          "Traditional painting",
+          "Folk art",
+          "Decorative art",
+          "Intangible Cultural Heritage",
+          "Urban art"
+        ],
+        "drr_relevance": false
+      },
+      "resume_tata_cara": {
+        "type": "Painting Technique",
+        "materials_and_tools": [
+          "Pincel de fileteador (special long-haired, short-handled brush)",
+          "Bandita (a type of ruler or guide)",
+          "Esmalte sintético (synthetic enamel paint)",
+          "Barniz (varnish)",
+          "Hilo y tiza o 'chocla' (thread and chalk for transferring designs)",
+          "Papel y lápices (paper and pencils for sketching)",
+          "Papel manteca (tracing paper)",
+          "Punzó (a tool for perforating stencils)",
+          "Lápiz dermatográfico (dermatographic pencil)",
+          "Soporte (surface like wood, metal, glass)"
+        ],
+        "step_by_step": [
+          "**1. Sketching the Design**: The process begins with creating a detailed drawing or sketch on paper.",
+          "**2. Transferring the Design (Espúlvero)**: The design is then transferred to the chosen surface (e.g., wood, metal, glass) using an 'espúlvero' – a paper stencil perforated with an awl or pin. Chalk or charcoal dust is applied over the stencil to mark the design onto the surface.",
+          "**3. Outlining and Drawing**: The transferred marks are used to draw the main lines and forms of the design on the surface.",
+          "**4. Painting with Synthetic Enamel**: Synthetic enamel paint is applied using a specialized long-haired, short-handled brush. This step requires significant skill and precision to create continuous, harmonious lines and curves.",
+          "**5. Adding Volume and Dimension**: The characteristic three-dimensional effect is achieved through the careful application of half-tones, shadows, and highlights, giving depth to the ornamentation.",
+          "**6. Incorporating Decorative Elements**: Traditional Filete Porteño elements such as flat flowers (typically five or four petals), volutes, acanthus leaves, Argentine ribbons, 'bolitas' (small spheres), and highly stylized lines are meticulously added.",
+          "**7. Lettering and Phrases**: Gothic or elaborately adorned typographies are often included, frequently accompanied by popular sayings, proverbs, or humorous phrases that reflect local culture.",
+          "**8. Varnishing**: A transparent varnish is applied as a final layer to protect the artwork and enhance its colors."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.8,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-67fd69cc",
+      "element_name": "Ryukyuan Traditional Knowledge of Fengshui and Environmental Observation",
+      "categories": [
+        "Social Practices & Rituals",
+        "Oral Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.journals.uchicago.edu/doi/full/10.1086/726185&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.journals.uchicago.edu/doi/full/10.1086/726185",
+        "https://www.hawaiipublicradio.org/the-conversation/2025-11-17/songs-of-okinawa-indigenous-knowledge-shines-light-on-the-islands-climate-history",
+        "https://www.hawaii.edu/news/2025/10/15/okinawan-songs-climate-geology/"
+      ],
+      "scraped_at": "2026-10-18T02:01:11.243675Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Okinawa Prefecture"
+        ],
+        "lat": 26.5707754,
+        "lng": 128.0255901
+      },
+      "resume_analisa": {
+        "description": "This cultural heritage encompasses a systematic body of knowledge and practices developed in the Ryukyu Kingdom (modern-day Okinawa, Japan), influenced by Confucian statecraft and Chinese fengshui. It focuses on establishing a harmonious relationship between human settlements and the natural environment. Key practices include traditional village planning, strategic afforestation using specific trees like fukugi, and the preservation of historical climate and geological information through oral traditions, particularly in traditional songs that document environmental observations during sea voyages.",
+        "cultural_significance": "This knowledge system profoundly shaped the physical environment and social organization of Ryukyuan communities, demonstrating a deep understanding and respect for the local ecology. It reflects a long-standing tradition of adapting to the island's natural conditions, especially its susceptibility to typhoons and other natural hazards. The traditional songs serve as invaluable historical records, preserving centuries of indigenous observations about climate and geology, and highlighting the integration of science and culture in Ryukyuan society.",
+        "drr_category": "Indigenous Knowledge & Early Warning",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Typhoon",
+          "Wildfire",
+          "Tsunami",
+          "Earthquake"
+        ],
+        "drr_mechanism": "The Ryukyuan traditional knowledge, encompassing fengshui principles and observations recorded in songs, serves as a comprehensive system for understanding and adapting to the natural environment. This indigenous knowledge includes understanding optimal site selection for settlements and the properties of local flora, such as fukugi trees (Garcinia subelliptica), which are wind and fire resistant and strategically planted for protection against typhoons and wildfires. Furthermore, traditional songs document historical climate and geological events (e.g., wind patterns, rough seas, volcanic activity), providing a long-term record of environmental changes and hazards that informs community preparedness and resilience strategies.",
+        "gemini_tags": [
+          "Ryukyu Kingdom",
+          "Okinawa",
+          "Fengshui",
+          "Traditional Knowledge",
+          "Environmental Management",
+          "Oral Traditions",
+          "Disaster Risk Reduction",
+          "Indigenous Knowledge",
+          "Climate Adaptation",
+          "Resilient Settlements"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Traditional environmental management and knowledge transmission",
+        "materials_and_tools": [
+          "Natural environment (topography, wind patterns, soil, water sources)",
+          "Fukugi trees (Garcinia subelliptica)",
+          "Oral traditions (songs, storytelling)",
+          "Musical instruments (e.g., sanshin, used in performing the songs)"
+        ],
+        "step_by_step": [
+          "**Site Selection and Village Planning**: Observe topography and apply fengshui principles, including the concept of 'embraced protection' (hōgo), to select optimal locations for settlements and to lay out villages (e.g., grid patterns) to harmonize with natural forces.",
+          "**Afforestation for Protection**: Plant wind and fire-resistant trees, such as fukugi, strategically around homes and villages to create natural windbreaks and firebreaks.",
+          "**Environmental Observation and Recording**: Observe natural phenomena, including wind directions, ocean conditions (waves, currents), and geological events (volcanic activity, earthquakes).",
+          "**Knowledge Transmission through Oral Traditions**: Compose and transmit songs (kuduchi) that chronologically narrate these environmental observations and historical events, ensuring that valuable climate and geological knowledge is passed down through generations."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Fengshui (Chinese Geomancy)",
+            "relationship_reason": "Ryukyuan fengshui practices, including the concept of 'wind and water' (fengshui), are directly influenced by Chinese geomancy, which constituted a systematic body of knowledge about the natural world and shaped landscape and resource management."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
     }
   ],
   "summary": {
-    "generated_at": "2026-10-17T02:01:07.214872Z",
-    "total_ich_elements": 335,
-    "complete_records": 334,
-    "incomplete_records": 1,
+    "generated_at": "2026-10-18T02:01:57.249522Z",
+    "total_ich_elements": 337,
+    "complete_records": 337,
+    "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 119,
-      "Social Practices & Rituals": 81,
+      "Traditional Craftsmanship": 120,
+      "Social Practices & Rituals": 83,
       "Culinary Traditions": 52,
       "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 38,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 31,
+      "Oral Traditions": 33,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
