@@ -14763,79 +14763,228 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-19T02:16:28.625712Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Quechua Oral History & Pallay Symbolism",
+            "description": "Intergenerational transmission of design meanings, stories, and historical records encoded in 'pallay' pick-up patterns.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Andean_textiles"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Natural Dye Extraction Expertise",
+            "description": "Traditional knowledge of harvesting and boiling local plants, minerals, and cochineal insects with mordants to create rich palette colors.",
+            "evidence_urls": [
+              "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Backstrap Loom Toolkits",
+            "description": "Portable, non-mechanized implements constructed from wood, bone (such as the r'uki), and strings.",
+            "evidence_urls": [
+              "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Andean Fiber Supply",
+            "description": "Raw material stocks including baby alpaca, vicuña, llama, sheep wool, and indigenous cotton.",
+            "evidence_urls": [
+              "https://www.awamaki.org/backstrap-weaving-in-peru/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Master Weavers of the Sacred Valley & High Andes",
+            "description": "Quechua-speaking women and artisans across Cusco, Chinchero, Patacancha, Pitumarca, and the Colca Valley possessing advanced tactile mastery.",
+            "evidence_urls": [
+              "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "High Andean Pastoral & Village Lands",
+            "description": "Community geographies in Cusco, Chinchero, Patacancha Valley, and Colca Valley linked with alpaca herding and cultural ceremonies.",
+            "evidence_urls": [
+              "https://www.awamaki.org/backstrap-weaving-in-peru/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Local Weaving Cooperatives & Associations",
+            "description": "Community-based collectives and non-profit centers supporting textile preservation and artisan organization in the Cusco region.",
+            "evidence_urls": [
+              "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Fiber Preparation & Spinning",
+            "description": "Washing raw wool with natural cleansers, and spinning/plying (k'antiy) multiple times to create taut, durable warp yarns.",
+            "evidence_urls": [
+              "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Warping & Motif Layout",
+            "description": "Winding strings between bars to create warp setups with a precise cross, enabling warp-faced pattern execution.",
+            "evidence_urls": [
+              "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional Warp-Faced Textiles",
+            "description": "Authentic straps, carrying cloths (lliqllas/mantas), and garments featuring intricate 'pallay' pick-up geometry.",
+            "evidence_urls": [
+              "https://www.awamaki.org/backstrap-weaving-in-peru/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Master Artisan Demonstrations",
+            "description": "Live community-led exhibitions detailing natural dyeing, warping, and backstrap tension mechanics.",
+            "evidence_urls": [
+              "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Weaving Immersion & Cultural Exchange",
+            "description": "Visitor programs providing supervised engagement with local cooperatives in communities like Patacancha.",
+            "evidence_urls": [
+              "https://www.awamaki.org/backstrap-weaving-in-peru/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Knowledge Transmission",
+            "description": "Practice-based mentoring where younger community members learn spinning, tool curation, and symbolic design vocabulary.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Andean_textiles"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
+        "livelihood_potential": 65,
+        "tourism_potential": 70,
+        "education_potential": 75,
+        "creative_industry_potential": 60,
         "digital_potential": 0
       },
       "resource_mobilization": {
         "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
+        "private_sector": [
+          {
+            "name": "Ethical Artisan Partnerships",
+            "description": "Collaborative non-profit platforms and fair-trade channels working alongside weaving cooperatives to market handmade goods.",
+            "evidence_urls": [
+              "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "Textile Research & Documentation Initiatives",
+            "description": "Documentation partnerships involving independent scholars, museums, and cultural centers studying pre-Columbian and living textile lineages.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Andean_textiles"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Quechua Weaving Associations",
+            "description": "Self-organized cooperative groups across the Sacred Valley and high Andes sustaining mutual aid (ayni) and safeguarding heritage transmission.",
+            "evidence_urls": [
+              "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-19T02:16:28.625712Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Direct source engagement demonstrates that artisan cooperatives create alternative income streams through fair trade retail models, though value retention depends heavily on collective governance.",
+          "evidence_urls": [
+            "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Geographies like Chinchero, Patacancha, and the Sacred Valley are primary nodes for cultural tourism, drawing travelers seeking authentic artisanal encounters and workshops.",
+          "evidence_urls": [
+            "https://www.awamaki.org/backstrap-weaving-in-peru/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High global interest from textile researchers, museums, and students facilitates structured cross-cultural educational programs centered on indigenous technology.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Andean_textiles"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Unique warp-faced techniques and pallay symbology offer design inspiration for contemporary slow fashion and artisan collaboration, provided cultural consent is prioritized.",
+          "evidence_urls": [
+            "https://awamaki.org/blog/andean-artisan-techniques-and-backstrap-weaving/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
+          "rationale": "Limited baseline documentation exists regarding digital asset integration; traditional transmission remains strictly oral and somatic rather than screen-based.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 3,
+        "evidence_item_count": 20,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 4,
+        "opportunity_scores_without_evidence": 1,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-19T02:16:28.625712Z",
+        "last_error": "digital_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -14921,78 +15070,255 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-19T02:16:50.100934Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "The Epic Trilogy of Manas, Semetey, and Seytek",
+            "description": "A monumental oral epic corpus comprising approximately 500,000 lines detailing the history, myths, values, and genealogy of the Kyrgyz people.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Epic_of_Manas",
+              "https://ich.unesco.org/en/RL/kyrgyz-epic-trilogy-manas-semetey-seytek-00875"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Manaschi Oral Transmission and Improvisation Techniques",
+            "description": "Traditional non-formal knowledge system utilized by bards (Manaschis) involving ecstatic memory recall, melodic chanting, and real-time narrative adaptation.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Epic_of_Manas",
+              "https://www.central-asia.guide/kyrgyzstan/culture/manas-epic/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Sagymbay Orozbakov's Handwritten Manuscripts",
+            "description": "A foundational ten-volume documentary heritage collection transcribed between 1922 and 1926, inscribed on the UNESCO Memory of the World Register.",
+            "evidence_urls": [
+              "https://www.unesco.org/en/memory-world/manuscript-kyrgyz-epic-manas-narrator-sagymbay-orozbakov"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Community of Manaschis (Epic Tellers)",
+            "description": "Practitioners of all ages, including master bards and apprentices across Talas, Issyk-Kul, and Chuy regions, who maintain and transmit the oral tradition.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Epic_of_Manas",
+              "https://ich.unesco.org/en/RL/kyrgyz-epic-trilogy-manas-semetey-seytek-00875"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Manasologists and Academic Researchers",
+            "description": "Specialized scholars engaged in 'Manas studies' focusing on the philological, historical, and sociological recording and analysis of the epic.",
+            "evidence_urls": [
+              "https://rees.sas.upenn.edu/node/727"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Manas Ordo Cultural Complex and Mausoleum (Talas Region)",
+            "description": "A sacred heritage site and museum complex in the Talas Region traditionally regarded as the homeland and burial place of Manas.",
+            "evidence_urls": [
+              "https://www.orexca.com/kyrgyzstan/manas-epic.shtml"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "National Academy of Sciences of the Kyrgyz Republic",
+            "description": "Academic body housing specialized research structures dedicated to documenting, archiving, and publishing variations of the epic.",
+            "evidence_urls": [
+              "https://www.unesco.org/en/memory-world/manuscript-kyrgyz-epic-manas-narrator-sagymbay-orozbakov"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Kyrgyz-Turkish Manas University and National Philharmonic",
+            "description": "Public and educational institutions supporting cultural programming, performances, and public recitations by resident Manaschis.",
+            "evidence_urls": [
+              "https://www.advantour.com/kyrgyzstan/manas.htm",
+              "https://www.theorychina.org/xzzx/202305/t20230507_18967.shtml"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Oral Transmission and Apprenticeship",
+            "description": "Non-formal transmission process from master Manaschi to apprentice via oral memorization, intensive listening, and spiritual initiation.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Epic_of_Manas",
+              "https://www.central-asia.guide/kyrgyzstan/culture/manas-epic/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Archival Transcription and Scholarly Publication",
+            "description": "The codification, translation, and publication of oral recitations into printed volumes and scholarly manuscripts.",
+            "evidence_urls": [
+              "https://www.unesco.org/en/memory-world/manuscript-kyrgyz-epic-manas-narrator-sagymbay-orozbakov"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Published Epic Volumes and Critical Translations",
+            "description": "Multi-volume printed editions of the epic in Kyrgyz, Russian, and international languages.",
+            "evidence_urls": [
+              "https://www.advantour.com/kyrgyzstan/manas.htm"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Cultural Guidance and Moral Mentorship",
+            "description": "Spiritual and communal advisory services provided by traditional practitioners during local gatherings, state events, and life-cycle rituals.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Epic_of_Manas",
+              "https://ich.unesco.org/en/RL/kyrgyz-epic-trilogy-manas-semetey-seytek-00875"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Live Melodic Chanting Performances",
+            "description": "Unaccompanied, dramatic public recitations by Manaschis utilizing rhythmic chant, physical gestures, and vocal modulation.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Epic_of_Manas",
+              "https://www.central-asia.guide/kyrgyzstan/culture/manas-epic/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Heritage Tourism at Manas Ordo",
+            "description": "Cultural site visits to the Talas Region encompassing historical interpretation of the mausoleum and monument grounds.",
+            "evidence_urls": [
+              "https://www.orexca.com/kyrgyzstan/manas-epic.shtml"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "School and University Curricula on Manas Studies",
+            "description": "Formal educational modules integrating excerpts of the epic into literature and history programs across Kyrgyz educational institutions.",
+            "evidence_urls": [
+              "https://lossi36.com/2026/09/07/manas-and-the-making-of-kyrgyzstan/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 35,
+        "tourism_potential": 50,
+        "education_potential": 65,
+        "creative_industry_potential": 30,
+        "digital_potential": 40
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "State Sponsorship of Cultural Commemorations",
+            "description": "Government-backed national celebrations, monument maintenance, and support for official cultural institutions.",
+            "evidence_urls": [
+              "https://lossi36.com/2026/09/07/manas-and-the-making-of-kyrgyzstan/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
-        "academic": [],
-        "community": [],
+        "academic": [
+          {
+            "name": "UNESCO and Academic Documentation Programs",
+            "description": "Collaborative cataloging, safeguarding initiatives, and registry inscriptions managed via academic and international heritage frameworks.",
+            "evidence_urls": [
+              "https://www.unesco.org/en/memory-world/manuscript-kyrgyz-epic-manas-narrator-sagymbay-orozbakov",
+              "https://ich.unesco.org/en/RL/kyrgyz-epic-trilogy-manas-semetey-seytek-00875"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Community-Based Bearers and Apprentice Networks",
+            "description": "Intergenerational networks of master storytellers preserving oral customs across regional communities in Talas, Chuy, and Issyk-Kul.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Epic_of_Manas",
+              "https://ich.unesco.org/en/RL/kyrgyz-epic-trilogy-manas-semetey-seytek-00875"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-19T02:16:50.100934Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Practitioners maintain a respected cultural role, but commercial monetization is limited by traditional norms emphasizing sacred transmission over commercial enterprise.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Epic_of_Manas"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Heritage tourism thrives around key nodes like the Manas Ordo complex in Talas, though visitor flows require careful safeguarding to protect sacred sites.",
+          "evidence_urls": [
+            "https://www.orexca.com/kyrgyzstan/manas-epic.shtml"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High institutional integration exists through school curricula, academic Manas studies, and UNESCO Memory of the World educational frameworks.",
+          "evidence_urls": [
+            "https://www.unesco.org/en/memory-world/manuscript-kyrgyz-epic-manas-narrator-sagymbay-orozbakov",
+            "https://lossi36.com/2026/09/07/manas-and-the-making-of-kyrgyzstan/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The epic inspires literature, public monuments, and theatrical arts, though wider creative commercialization remains niche.",
+          "evidence_urls": [
+            "https://lossi36.com/2026/09/07/manas-and-the-making-of-kyrgyzstan/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digitization of historical manuscripts by international bodies creates potential for digital archiving, online access, and educational databases.",
+          "evidence_urls": [
+            "https://www.unesco.org/en/memory-world/manuscript-kyrgyz-epic-manas-narrator-sagymbay-orozbakov"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 9,
+        "evidence_item_count": 23,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-19T02:16:50.100934Z",
         "last_error": null
       }
     },
@@ -60854,7 +61180,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-18T02:01:57.249522Z",
+    "generated_at": "2026-10-19T02:17:13.076904Z",
     "total_ich_elements": 337,
     "complete_records": 337,
     "incomplete_records": 0,
