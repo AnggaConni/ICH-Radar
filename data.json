@@ -61177,22 +61177,493 @@
         "last_checked_at": null,
         "last_error": null
       }
+    },
+    {
+      "id": "ich-9fc26894",
+      "element_name": "Nepali Folk Tales and Oral Storytelling",
+      "categories": [
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Oral Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//digitalmoments.innova.edu.ec/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://digitalmoments.innova.edu.ec/",
+        "https://www.myutahhomesold.com/",
+        "https://www.readglobal.org/",
+        "https://api.whitney.org/",
+        "https://www.honeyguideapps.com/",
+        "https://nepalyouthfoundation.org/",
+        "https://www.youtube.com/watch?v=s5e_j-p2h7Q",
+        "https://www.greathimalayatrails.com/blog/nepali-folk-stories-legends",
+        "https://www.himalayantourtreks.com/",
+        "https://en.wikipedia.org/wiki/Nepalese_folklore",
+        "https://hamrobarnamala.com/",
+        "https://thuprai.com/",
+        "https://genderatwork.org/",
+        "https://www.researchgate.net/",
+        "https://www.aidmi.org/",
+        "https://digitalcommons.macalester.edu/",
+        "https://ebhr.org/",
+        "https://www.youtube.com/watch?v=s5e_j-p2h7Q",
+        "https://www.globalresiliencepartnership.org/",
+        "https://www.manchester.ac.uk/"
+      ],
+      "scraped_at": "2026-10-20T02:30:38.713923Z",
+      "location": {
+        "country": "Nepal",
+        "provinces": [
+          "Bagmati Province",
+          "Gandaki Province",
+          "Lumbini Province",
+          "Madhesh Province",
+          "Koshi Province",
+          "Karnali Province",
+          "Sudurpashchim Province"
+        ],
+        "lat": 27.718333,
+        "lng": 85.5378341
+      },
+      "resume_analisa": {
+        "description": "Nepali folk tales and oral storytelling are a fundamental part of Nepal's rich cultural heritage, serving as a conduit for beliefs, morals, history, and traditions. These narratives, passed down through generations primarily by word of mouth, function not only as entertainment but also as a crucial means of imparting life lessons, preserving historical accounts, and reinforcing community bonds. They vividly reflect Nepal's diverse geographical landscape and cultural mosaic, often featuring deities, spirits, animals, and natural phenomena as central characters and symbols.",
+        "cultural_significance": "The cultural significance of Nepali folk tales is multifaceted. They are vital for the preservation of cultural identity, encapsulating the unique histories and traditions of various ethnic groups and regions across Nepal, thereby helping to maintain local dialects, rituals, and customs that might otherwise be lost to modernization. These tales also serve a significant educational purpose, informally teaching virtues such as honesty, bravery, humility, and kindness to both children and adults. Furthermore, storytelling sessions, especially during festivals and communal gatherings, foster social cohesion and community bonding, making folk tales an essential component of communal life. They also deeply reflect the spiritual beliefs and the intimate relationship between the Nepali people and their natural environment.",
+        "drr_category": "Indigenous Knowledge & Early Warning",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Earthquake",
+          "Flood"
+        ],
+        "drr_mechanism": "Nepali folk tales and oral storytelling serve as a traditional means of transmitting indigenous knowledge and intergenerational experiences related to the natural environment and local hazards. These stories can contain information about past disaster events, environmental indicators, and traditional coping strategies, thus contributing to early warning and preparedness within communities. For instance, communities in Nepal have developed embodied knowledge and practices to assess and respond to hazards like earthquakes, monsoon landslides, and flooding, which are transmitted through longitudinal and intergenerational experience, often via oral traditions.",
+        "gemini_tags": [
+          "oral traditions",
+          "folklore",
+          "storytelling",
+          "Nepal",
+          "cultural heritage",
+          "indigenous knowledge",
+          "community bonding",
+          "cultural identity"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Oral Transmission",
+        "materials_and_tools": [
+          "Storytellers (elders, community members, bards)",
+          "Audience (children, community members)",
+          "Communal gatherings (festivals, family settings)"
+        ],
+        "step_by_step": [
+          "Knowledge acquisition: Storytellers, often elders or traditional bards like the Gandharbs, acquire stories, myths, legends, and historical accounts through their own upbringing and community learning.",
+          "Oral performance: Stories are recounted orally, often during communal gatherings, festivals, or family settings, serving as entertainment and educational tools.",
+          "Intergenerational transfer: The narratives are passed down from older generations to younger ones, ensuring the continuity of cultural knowledge and values.",
+          "Adaptation and variation: The oral nature of these traditions allows for variations and adaptations over time, keeping the stories relevant to contemporary contexts while preserving their core messages.",
+          "Community reinforcement: The act of storytelling strengthens social bonds and reinforces a shared cultural identity within the community."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Global",
+            "element_name": "Cinderella tale-type",
+            "relationship_reason": "Many Nepali folk tales share familiar elements and themes with stories from other cultures worldwide, such as the widespread 'Cinderella tale-type' which has thousands of versions across different cultures including ancient Greece, China, and Germany."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-7d0b4216",
+      "element_name": "Zuni Waffle Garden",
+      "categories": [
+        "Culinary Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Culinary Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://www.notecard.news/wp-content/uploads/2021/10/Zuni-Waffle-Garden.jpg",
+      "source_urls": [
+        "https://greenbeanconnection.com/waffle-gardens-the-roots-of-square-foot-gardening/",
+        "https://notechmagazine.com/2021/11/14/waffle-gardens/",
+        "https://www.nuwao.org/waffle-gardens",
+        "https://www.colorado.edu/wearewater/activity/waffle-garden",
+        "https://pbmg.org/waffle-gardening/",
+        "https://www.marysbloomers.com/ancient-pueblo-farming-waffle-gardens-harvest-rainwater/",
+        "https://resilience.arizona.edu/news/2024-10-25/what-800-year-old-seeds-and-hopi-dryland-farmer-teach-us-about-adaptation-hope"
+      ],
+      "scraped_at": "2026-10-20T02:31:12.511589Z",
+      "location": {
+        "country": "United States",
+        "provinces": [
+          "New Mexico"
+        ],
+        "lat": 34.5802074,
+        "lng": -105.996047
+      },
+      "resume_analisa": {
+        "description": "The Zuni Waffle Garden is an ancient and still-practiced agricultural technique developed by the Zuni people of New Mexico, USA. This method involves creating a grid-like pattern of small, raised earthen walls that form square or rectangular depressions in the soil, resembling a waffle. These depressions are specifically designed to capture and retain rainwater, allowing it to slowly seep into the soil and provide sustained moisture to crops in arid and semi-arid environments. This ingenious system maximizes water efficiency and enables the cultivation of traditional crops such as corn, beans, and squash, which are staples of the Zuni diet.",
+        "cultural_significance": "The Zuni Waffle Garden is profoundly significant to Zuni culture and identity, extending beyond mere food production. It embodies ancestral knowledge, resilience, and a deep, spiritual connection to the land and its resources. The practice ensures food security, supports traditional diets, and reinforces community bonds through shared labor and the continuation of ancient traditions. It represents the Zuni people's sustainable relationship with their environment, their ability to thrive in challenging conditions, and a powerful act of cultural reconnection and a strategy for climate resilience.",
+        "drr_category": "Climate Adaptation & Resilience",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Drought"
+        ],
+        "drr_mechanism": "The Zuni Waffle Garden directly addresses the hazard of drought through its sophisticated water harvesting and conservation design. The raised earthen walls and depressions function as micro-catchments, effectively trapping and holding rainwater, preventing runoff, and significantly reducing evaporation. This design maximizes the infiltration of water into the soil, providing a consistent and localized moisture supply directly to plant roots. This mechanism enables successful crop growth and ensures food security even during prolonged dry periods, thereby enhancing the community's climate adaptation and resilience. The walls also act as a barrier against wind, further reducing moisture loss and protecting young plants.",
+        "gemini_tags": [
+          "Indigenous Knowledge",
+          "Sustainable Agriculture",
+          "Water Conservation",
+          "Drought Resilience",
+          "Traditional Ecological Knowledge",
+          "Food Security",
+          "Climate Adaptation"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Agricultural technique",
+        "materials_and_tools": [
+          "Hand tools (e.g., hoes, shovels)",
+          "Native seeds (e.g., corn, beans, squash)",
+          "Soil (preferably clay-heavy for walls)",
+          "Optional: gravel, sand, or rock mulch"
+        ],
+        "step_by_step": [
+          "**Site Selection**: Choose a relatively flat or gently sloping area suitable for cultivation, often near a water source or at the bottom of a drainage area to maximize water collection.",
+          "**Layout Design**: Mark out a grid pattern on the ground, typically forming squares or rectangles, which will define the individual 'waffle' cells. The pattern can follow the contour of the land.",
+          "**Digging Depressions**: Dig shallow depressions within each marked cell, typically 6 to 12 inches deep.",
+          "**Building Walls**: Use the excavated soil to build up raised earthen walls around the perimeter of each depression, creating distinct borders. These walls help to contain water within the cells and provide a shield from wind. Clay-heavy soil is ideal for building sturdy dikes.",
+          "**Planting**: Plant seeds of traditional crops, such as corn, beans, and squash, within the depressions. Seeds are often planted deeper than conventional methods to access moisture.",
+          "**Mulching (Optional)**: Apply gravel, sand, or rock mulch within the waffle cells to further conserve water by shading the soil, slowing evaporation, and reducing runoff during heavy rains.",
+          "**Maintenance**: Regularly maintain the walls to ensure they remain intact and effective in capturing water and protecting plants."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "United States",
+            "element_name": "Hopi Dryland Farming",
+            "relationship_reason": "Both Zuni and Hopi peoples are indigenous to the American Southwest and have developed sophisticated dryland farming techniques to adapt to arid environments. They share principles of water conservation, deep planting, and traditional ecological knowledge to grow crops without irrigation, highlighting a common heritage of resilience and adaptation."
+          },
+          {
+            "country": "Various arid regions globally",
+            "element_name": "Traditional Water Harvesting Techniques (e.g., terracing, check dams, sunken beds)",
+            "relationship_reason": "The Zuni Waffle Garden shares fundamental principles with other traditional water harvesting and conservation methods found in arid regions worldwide. These practices focus on maximizing water infiltration, minimizing runoff and evaporation, and creating microclimates for agricultural purposes in water-scarce environments."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-ad6d707b",
+      "element_name": "Diablada Puneña",
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Performing Arts",
+      "category_valid": true,
+      "thumbnail_url": "https://www.pexels.com/photo/colorful-diablada-festival-parade-in-puno-peru-18548944/",
+      "source_urls": [
+        "https://es.wikipedia.org/wiki/Diablada_pune%C3%B1a",
+        "https://www.domiruthperutravel.com/blog/the-diablada-dance-of-puno-is-declared-cultural-heritage-of-the-nation",
+        "https://www.brisasdeltiticaca.com/danzas",
+        "https://www.peru.travel/pe/mas-informacion/4-datos-de-la-diablada-punena-una-importante-danza-de-los-andes-peruanos",
+        "https://andina.pe/agencia/noticia-orgullo-del-altiplano-diablada-punena-es-patrimonio-cultural-de-la-nacion-860882.aspx",
+        "https://www.gob.pe/noticia/501337-la-danza-diablada-de-puno-es-declarada-patrimonio-cultural-de-la-nacion",
+        "https://www.cancilleria.gob.bo/webmre/node/1090",
+        "https://www.pexels.com/photo/colorful-diablada-festival-parade-in-puno-peru-18548944/"
+      ],
+      "scraped_at": "2026-10-20T02:31:50.970214Z",
+      "location": {
+        "country": "Peru",
+        "provinces": [
+          "Puno"
+        ],
+        "lat": -15.0,
+        "lng": -70.0
+      },
+      "resume_analisa": {
+        "description": "The Diablada Puneña is a mestizo dance originating from the Puno region of Peru, representing the eternal struggle between good and evil. It is characterized by its vibrant and elaborate costumes and masks, which depict devils, angels, and other mythical characters. The dance combines elements of indigenous Andean religiosity, particularly the adoration of Pachamama, with Christian beliefs introduced during the colonial period. It is a dynamic and exuberant choreographic expression, often performed in groups known as 'comparsas de diablos' led by an angel or archangel.",
+        "cultural_significance": "The Diablada Puneña is a significant cultural manifestation that serves as a vital link between the past and present, fostering community identity and transmitting traditions across generations. It is a central and emblematic dance performed during major celebrations in Puno, most notably as a highlight of the Festividad de la Virgen de la Candelaria, the patron saint of Puno, celebrated annually in February. The dance embodies the syncretism of indigenous and Catholic religious imaginaries, showcasing the multicultural heritage of the Peruvian Altiplano. Its elaborate movements and symbolic attire narrate stories of historical importance and social values, making each performance an educational experience. The Diablada Puneña was declared Cultural Heritage of the Nation by the Peruvian Ministry of Culture in 2021, recognizing its importance in the festive and religious identity of Puno's mestizo and urban population.",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Peruvian Folklore",
+          "Andean Culture",
+          "Traditional Dance",
+          "Religious Festival",
+          "Cultural Heritage",
+          "Puno",
+          "Syncretism",
+          "Diablada"
+        ],
+        "drr_relevance": false
+      },
+      "resume_tata_cara": null,
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Bolivia",
+            "element_name": "Diablada (Carnival of Oruro)",
+            "relationship_reason": "There is a historical and cultural dispute between Peru and Bolivia regarding the origin and ownership of the Diablada dance. Bolivia's Ministry of Culture, Decolonization and Depatriarchalization states that 'La Diablada' is the main dance of the Carnival of Oruro, which was proclaimed by UNESCO as a 'Masterpiece of the Oral and Intangible Heritage of Humanity' in 2001. Both countries claim the dance as part of their national heritage, highlighting its presence in the Andean Altiplano region."
+          }
+        ]
+      },
+      "completion_status": "INCOMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
     }
   ],
   "summary": {
-    "generated_at": "2026-10-19T02:17:13.076904Z",
-    "total_ich_elements": 337,
-    "complete_records": 337,
-    "incomplete_records": 0,
+    "generated_at": "2026-10-20T02:32:18.201833Z",
+    "total_ich_elements": 340,
+    "complete_records": 339,
+    "incomplete_records": 1,
     "categories_breakdown": {
       "Traditional Craftsmanship": 120,
-      "Social Practices & Rituals": 83,
-      "Culinary Traditions": 52,
+      "Social Practices & Rituals": 86,
+      "Culinary Traditions": 53,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 38,
+      "Performing Arts": 39,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 33,
+      "Oral Traditions": 34,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
