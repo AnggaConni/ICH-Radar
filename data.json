@@ -15913,78 +15913,213 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-23T02:25:34.493009Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Ainu Traditional Ecological Knowledge (TEK) & Kamuy Worldview",
+            "description": "An animistic belief system recognizing 'Kamuy' (spirit-deities) across nature, governing sustainable resource management, reciprocity, and seasonal harvesting.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Oral Literature and Language (Itak)",
+            "description": "Traditional stories, placenames, and vocabulary encoding environmental relationships and historical memory.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Traditional Craft Materials and Implements",
+            "description": "Offerings such as inau (carved wooden sticks), sake, animal pelts, furs, and fish skins utilized in traditional apparel and ceremonial contexts.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Ainu Elders, Cultural Practitioners, and Artisans",
+            "description": "Knowledge holders preserving traditional wood carving, embroidery, performing arts, and ecological stewardship practices.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Upopoy National Ainu Museum and Park (Shiraoi, Hokkaido)",
+            "description": "A national center dedicated to the revival and development of Ainu culture, featuring a museum, traditional village (kotan), and natural lakeside spaces.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Foundation for Ainu Culture",
+            "description": "Organization supporting Ainu culture preservation, research, language revitalization, and public dissemination.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Sustainable Resource Gathering and Crafting",
+            "description": "Ethical harvesting of natural materials and creation of traditional crafts adhering to respect for Kamuy.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Traditional Ainu Textiles, Carvings, and Artifacts",
+            "description": "Embroidered garments, wood-carved implements, and ritual items reflecting traditional patterns and cosmology.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Cultural Interpretation and Guided Heritage Tours",
+            "description": "Guided educational programs and contextual explanations of Ainu history and worldview provided at heritage sites.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Interactive Performing Arts and Kotan Visits",
+            "description": "Experiencing traditional dances, songs, and reconstructed dwelling visits at Upopoy's open-air park.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Museum Exhibitions and Educational Workshops",
+            "description": "Public exhibitions, hands-on learning spaces (Tempatempa), and language revitalization programs.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 45,
+        "tourism_potential": 70,
+        "education_potential": 85,
+        "creative_industry_potential": 60,
+        "digital_potential": 50
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "National and Municipal Cultural Agencies",
+            "description": "Government frameworks supporting the Ainu Policy Promotion Act and public facilities like Upopoy.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
-        "academic": [],
-        "community": [],
+        "academic": [
+          {
+            "name": "University Research Centers",
+            "description": "Institutions engaged in collaborative research on Ainu history, language, and indigenous studies.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Ainu Community Associations and Cultural Preservation Groups",
+            "description": "Local groups leading language revitalization, traditional ceremonies, and community-led transmission of heritage.",
+            "evidence_urls": [
+              "https://www.ainu-upopoy.jp/en/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-23T02:25:34.493009Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Opportunities exist for skilled artisans and cultural guides, though commercialization is carefully balanced with community self-determination and respect protocols.",
+          "evidence_urls": [
+            "https://www.ainu-upopoy.jp/en/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High visibility and visitor engagement through the Upopoy National Ainu Museum and Park in Shiraoi provide robust cultural tourism frameworks.",
+          "evidence_urls": [
+            "https://www.ainu-upopoy.jp/en/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Strong institutional backing via national museum exhibits, school programs, and international interest in traditional ecological knowledge and sustainability.",
+          "evidence_urls": [
+            "https://www.ainu-upopoy.jp/en/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Distinctive visual motifs, wood carving, and textile embroidery traditions offer solid potential for ethical creative arts development.",
+          "evidence_urls": [
+            "https://www.ainu-upopoy.jp/en/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Growing digital archiving of oral literature, language resources, and virtual museum features support broader outreach while requiring strict safeguarding.",
+          "evidence_urls": [
+            "https://www.ainu-upopoy.jp/en/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 1,
+        "evidence_item_count": 19,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-23T02:25:34.493009Z",
         "last_error": null
       }
     },
@@ -16064,11 +16199,29 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-23T02:25:54.676890Z",
       "resource_mapping": {
-        "knowledge_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Traditional Jurus and Sambut System",
+            "description": "Comprises 12 basic forms (jurus) like Keset Bacok and Macan, and paired fighting techniques (sambut) passed down through oral tradition.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Cingkrik"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "material_resources": [],
-        "human_resources": [],
+        "human_resources": [
+          {
+            "name": "Betawi Masters and Practitioners (Jawara)",
+            "description": "Local elders, cultural preservationists, and trainers residing in Rawa Belong and surrounding areas who hold lineage knowledge.",
+            "evidence_urls": [
+              "https://www.budaya-indonesia.org/Cingkrik-Silat-Khas-Betawi-Rawa-Belong"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "place_resources": [],
         "institutional_resources": []
       },
@@ -16093,50 +16246,50 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-23T02:25:54.676890Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
+          "rationale": "Direct monetization options are primarily restricted to local instruction or stipend-based cultural programming rather than broad commercial scale.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "tourism_potential": {
-          "rationale": "",
+          "rationale": "Official designation and infrastructure development around Kampung Silat Rawa Belong support cultural tourism growth.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "education_potential": {
-          "rationale": "",
+          "rationale": "The structured curriculum of 12 basic jurus allows for efficient transmission to youth and interested practitioners through workshops and non-formal classes.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "creative_industry_potential": {
-          "rationale": "",
+          "rationale": "Limited commercial product lines exist outside of live cultural performances, community arts, and media storytelling associated with historical figures like Si Pitung.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "digital_potential": {
-          "rationale": "",
+          "rationale": "Documentation occurs via online cultural databases, social media channels, and digital archives, though structured e-learning platforms remain nascent.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 2,
+        "evidence_item_count": 2,
+        "uncited_item_count": 8,
+        "invalid_evidence_url_count": 13,
         "opportunity_scores_with_evidence": 0,
         "opportunity_scores_without_evidence": 5,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-23T02:25:54.676890Z",
+        "last_error": "resource_mapping.place_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; value_chain.production[0] had no valid direct evidence URL and was excluded; value_chain.services[0] had no valid direct evidence URL and was excluded; value_chain.experience[0] had no valid direct evidence URL and was excluded; value_chain.education[0] had no valid direct evidence URL and was excluded; resource_mobilization.public_sector[0] had no valid direct evidence URL and was excluded; resource_mobilization.community[0] had no valid direct evidence URL and was excluded"
       }
     },
     {
@@ -61811,7 +61964,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-21T02:25:43.168610Z",
+    "generated_at": "2026-10-23T02:26:17.376086Z",
     "total_ich_elements": 340,
     "complete_records": 339,
     "incomplete_records": 1,
