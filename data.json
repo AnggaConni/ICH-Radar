@@ -61829,7 +61829,8 @@
       "element_name": "Diablada Puneña",
       "categories": [
         "Performing Arts",
-        "Social Practices & Rituals"
+        "Social Practices & Rituals",
+        "Traditional Craftsmanship"
       ],
       "categories_valid": true,
       "category": "Performing Arts",
@@ -61845,48 +61846,584 @@
         "https://www.cancilleria.gob.bo/webmre/node/1090",
         "https://www.pexels.com/photo/colorful-diablada-festival-parade-in-puno-peru-18548944/"
       ],
-      "scraped_at": "2026-10-20T02:31:50.970214Z",
+      "scraped_at": "2026-10-24T02:23:13.650983Z",
       "location": {
         "country": "Peru",
         "provinces": [
           "Puno"
         ],
-        "lat": -15.0,
-        "lng": -70.0
+        "lat": -6.8699697,
+        "lng": -75.0458515
       },
       "resume_analisa": {
-        "description": "The Diablada Puneña is a mestizo dance originating from the Puno region of Peru, representing the eternal struggle between good and evil. It is characterized by its vibrant and elaborate costumes and masks, which depict devils, angels, and other mythical characters. The dance combines elements of indigenous Andean religiosity, particularly the adoration of Pachamama, with Christian beliefs introduced during the colonial period. It is a dynamic and exuberant choreographic expression, often performed in groups known as 'comparsas de diablos' led by an angel or archangel.",
-        "cultural_significance": "The Diablada Puneña is a significant cultural manifestation that serves as a vital link between the past and present, fostering community identity and transmitting traditions across generations. It is a central and emblematic dance performed during major celebrations in Puno, most notably as a highlight of the Festividad de la Virgen de la Candelaria, the patron saint of Puno, celebrated annually in February. The dance embodies the syncretism of indigenous and Catholic religious imaginaries, showcasing the multicultural heritage of the Peruvian Altiplano. Its elaborate movements and symbolic attire narrate stories of historical importance and social values, making each performance an educational experience. The Diablada Puneña was declared Cultural Heritage of the Nation by the Peruvian Ministry of Culture in 2021, recognizing its importance in the festive and religious identity of Puno's mestizo and urban population.",
-        "drr_category": "Not Directly Related to DRR",
+        "description": "The Diablada Puneña is a mestizo choreographic expression deeply rooted in the festive and celebratory traditions of the Peruvian altiplano. It is recognized as a 'dance in light costumes' and features groups of dancers portraying devils, led by an angel or archangel. These groups perform various movements to the rhythm of marches and huaynos, typically accompanied by musical bands. The dance symbolically represents the eternal struggle between good and evil.",
+        "cultural_significance": "The Diablada Puneña holds profound cultural significance, expressing through its aesthetics and ritualism the rich blend of indigenous, Iberian, and African heritages that define Peru's multicultural, mestizo, and globalized reality. It is a cornerstone of the festive and religious identity for the mestizo and urban population of Puno, particularly during the annual Festivity of the Virgen de la Candelaria. Its origins are traced back to the early stages of Catholic conversion, where missionaries introduced 'autos sacramentales'—dramatized plays depicting the conflict between divine grace and sin—which were subsequently reinterpreted and adopted by indigenous communities. Additionally, the dance incorporates elements from ancient altiplano rituals performed by cattle ranchers, who danced with the heads of sacrificed animals to appease animal spirits.",
+        "drr_category": "Social Cohesion & Mutual Aid",
         "drr_category_valid": true,
-        "drr_relevance_level": "Not Directly Related to DRR",
+        "drr_relevance_level": "Indirectly Related to DRR",
         "hazard_categories": [],
-        "drr_mechanism": null,
+        "drr_mechanism": "The Diablada Puneña, as a central cultural expression and a key component of the Festivity of the Virgen de la Candelaria, significantly strengthens community bonds and collective identity. This enhanced social cohesion can indirectly contribute to disaster resilience by fostering mutual aid networks, collective action, and community support systems during times of crisis or recovery.",
         "gemini_tags": [
-          "Peruvian Folklore",
-          "Andean Culture",
-          "Traditional Dance",
-          "Religious Festival",
-          "Cultural Heritage",
+          "Peruvian folklore",
+          "Andean dance",
+          "Diablada",
           "Puno",
-          "Syncretism",
-          "Diablada"
+          "Virgen de la Candelaria",
+          "Cultural Heritage",
+          "Mestizo culture",
+          "Ritual dance",
+          "Traditional costumes",
+          "Masks"
         ],
-        "drr_relevance": false
+        "drr_relevance": true
       },
-      "resume_tata_cara": null,
+      "resume_tata_cara": {
+        "type": "ritual_sequence/crafting_process",
+        "materials_and_tools": [
+          "Elaborate costumes: gold and silver embroidery, precious stones, rich fabrics (some weighing up to 30kg).",
+          "Masks: plaster, papier-mâché (newspaper and dissolved glue), tinplate, plastic materials.",
+          "Tools for mask making: paper cones, masking tape, scissors, liquid silicone, pencil.",
+          "Musical instruments: sikuris, brass bands (for marches and huaynos).",
+          "Accessories: two handkerchiefs (pañoletas) per dancer."
+        ],
+        "step_by_step": [
+          "**Costume and Mask Crafting:** Costume makers begin preparations as early as August for the February festival. Masks are crafted from materials like plaster, papier-mâché, tinplate, and plastic, often featuring prominent eyes, fangs, and horns. The process for masks can involve creating a base, adding layers of paper with glue, shaping features like eyes and horns from paper cones, and then painting them. Costumes are elaborately embroidered with gold, silver, precious stones, and rich fabrics.",
+          "**Performance Sequence:** The dance is performed by comparsas (groups) of devils, led by an angel or archangel. Dancers form rows and execute various movements to the rhythm of marches and huaynos played by musical bands. The choreography has evolved to be dynamic and forceful. Specific steps involve coordinated leg movements, turns, and arm gestures, often incorporating handkerchiefs. The dance narrates the struggle between good and evil, with Saint Michael the Archangel representing good and the devils embodying evil."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.95,
+        "related_elements": [
+          {
+            "country": "Bolivia",
+            "element_name": "Diablada de Oruro (Carnaval de Oruro)",
+            "relationship_reason": "Shared historical origins, similar thematic elements (struggle between good and evil, devil characters), and costume influences. There is an ongoing debate regarding the primary origin and evolution of the Diablada dance between Peru and Bolivia. Costumes and dance elements have diffused from Oruro to Puno."
+          },
+          {
+            "country": "Chile",
+            "element_name": "Diablada de La Tirana (Fiesta de La Tirana)",
+            "relationship_reason": "The Diablada dance is also performed as a regional variation during the Fiesta de La Tirana in northern Chile, indicating a shared cultural practice across the Andean altiplano."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-95f0b011",
+      "element_name": "Practices and traditional knowledge of Terere in the culture of Pohã Ñana, Guaraní ancestral drink in Paraguay",
+      "categories": [
+        "Social Practices & Rituals",
+        "Culinary Traditions",
+        "Oral Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//ich.unesco.org/en/RL/practices-and-traditional-knowledge-of-terere-in-the-culture-of-poha-nana-guarani-ancestral-drink-in-paraguay-01603&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://ich.unesco.org/en/RL/practices-and-traditional-knowledge-of-terere-in-the-culture-of-poha-nana-guarani-ancestral-drink-in-paraguay-01603",
+        "https://www.yerbamateargentina.org/en/yerba-mate/the-guarani-culture-language-people-and-yerba-mate/",
+        "https://www.britannica.com/place/Paraguay/Culture-Traditions-Cuisine",
+        "https://www.britannica.com/topic/Guarani",
+        "https://en.wikipedia.org/wiki/Paraguayan_cuisine"
+      ],
+      "scraped_at": "2026-10-24T02:23:36.637178Z",
+      "location": {
+        "country": "Paraguay",
+        "provinces": [],
+        "lat": -23.3165935,
+        "lng": -58.1693445
+      },
+      "resume_analisa": {
+        "description": "Terere is a traditional Guaraní ancestral drink prepared in a jug or thermos, where cold water (or citrus juice and ice) is mixed with Pohã Ñana (medicinal herbs) crushed in a mortar. This mixture is then served in a glass pre-filled with yerba mate and consumed through a bombilla (metal or cane straw). The preparation and consumption of Terere is an intimate ritual involving a series of pre-established codes.",
+        "cultural_significance": "The practice of Terere in the culture of Pohã Ñana is deeply ingrained in Guaraní culture and fosters social cohesion, promoting inclusion, friendship, dialogue, respect, and solidarity within communities. It is considered a gift from the gods by the Guaraní people. The traditional knowledge associated with the healing attributes of Pohã Ñana and their correct use is transmitted spontaneously within families, strengthening new generations' appreciation of their rich cultural and botanical heritage.",
+        "drr_category": "Traditional Healing & Health Resilience",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "The traditional knowledge and practices surrounding Pohã Ñana, the medicinal herbs used in Terere, contribute to the health and well-being of the community. This traditional healing system provides a form of health resilience, particularly in contexts where access to conventional medicine might be limited, by utilizing local botanical resources for their health benefits.",
+        "gemini_tags": [
+          "Guaraní culture",
+          "Terere",
+          "Pohã Ñana",
+          "Traditional drink",
+          "Medicinal herbs",
+          "Social ritual",
+          "Paraguay",
+          "Intangible Cultural Heritage",
+          "Yerba Mate"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Beverage preparation",
+        "materials_and_tools": [
+          "Cold water (or citrus juice and ice)",
+          "Pohã Ñana (medicinal herbs)",
+          "Mortar",
+          "Yerba mate",
+          "Jug or thermos",
+          "Glass or gourd (also called mate or porongo)",
+          "Bombilla (metal or cane straw)"
+        ],
+        "step_by_step": [
+          "Crush the Pohã Ñana (medicinal herbs) in a mortar.",
+          "Place yerba mate in a glass or gourd.",
+          "Add the crushed Pohã Ñana to the glass or gourd with the yerba mate.",
+          "Fill a jug or thermos with very cold water (or citrus juice and ice).",
+          "Pour the cold water mixture from the jug/thermos into the glass/gourd containing the yerba mate and Pohã Ñana.",
+          "Sip the prepared drink through a bombilla."
+        ]
+      },
       "shared_heritage_detection": {
         "is_shared": true,
         "confidence_score": 0.9,
         "related_elements": [
           {
+            "country": "Argentina",
+            "element_name": "Yerba Mate / Tereré consumption",
+            "relationship_reason": "Yerba mate and Tereré are widely consumed in Argentina, with shared Guaraní roots and cultural significance."
+          },
+          {
+            "country": "Brazil",
+            "element_name": "Yerba Mate / Tereré consumption",
+            "relationship_reason": "The Guaraní people are spread across Brazil, and yerba mate/Tereré is a traditional beverage in the region."
+          },
+          {
             "country": "Bolivia",
-            "element_name": "Diablada (Carnival of Oruro)",
-            "relationship_reason": "There is a historical and cultural dispute between Peru and Bolivia regarding the origin and ownership of the Diablada dance. Bolivia's Ministry of Culture, Decolonization and Depatriarchalization states that 'La Diablada' is the main dance of the Carnival of Oruro, which was proclaimed by UNESCO as a 'Masterpiece of the Oral and Intangible Heritage of Humanity' in 2001. Both countries claim the dance as part of their national heritage, highlighting its presence in the Andean Altiplano region."
+            "element_name": "Yerba Mate / Tereré consumption",
+            "relationship_reason": "Guaraní communities in Bolivia maintain traditions including the consumption of yerba mate/Tereré."
+          },
+          {
+            "country": "Uruguay",
+            "element_name": "Yerba Mate / Tereré consumption",
+            "relationship_reason": "Yerba mate and Tereré are popular beverages in Uruguay, stemming from shared regional cultural influences."
           }
         ]
       },
-      "completion_status": "INCOMPLETE",
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-15b233a5",
+      "element_name": "Ofício das Paneleiras de Goiabeiras",
+      "categories": [
+        "Traditional Craftsmanship",
+        "Culinary Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//bd.iphan.gov.br/dspace/handle/123456789/220&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://bd.iphan.gov.br/dspace/handle/123456789/220",
+        "https://sebrae.com.br/sites/PortalSebrae/artesanato/paneleiras-de-goiabeiras-conheca-sua-tradicao,9340b95760810810VgnVCM1000004c00210aRCRD",
+        "https://memoriadobarro.com.br/patrimonio/",
+        "https://www.camara.leg.br/tv/200700-paneleiras-de-goiabeiras-brasilidade/",
+        "https://www.agazeta.com.br/es/cotidiano/oficio-das-paneleiras-duas-decadas-de-reconhecimento-1222",
+        "https://www.pontosolidario.org.br/oficio-das-paneleiras-de-goiabeiras-es/",
+        "https://www.vitoria.es.gov.br/turista/paneleiras-de-goiabeiras",
+        "https://www.ipatrimonio.org/espiritosanto/vitoria/oficio-das-paneleiras-de-goiabeiras",
+        "https://memoriadobarro.com.br/panelas-de-barro-de-goiabeiras/",
+        "https://memoriadobarro.com.br/",
+        "https://www.bembrasileiro.com.br/oficio-das-paneleiras-de-goiabeiras/",
+        "https://www.vitoria.es.gov.br/noticia/paneleiras-de-goiabeiras-recebem-certificado-de-melhores-praticas-da-onu-15494",
+        "https://g1.globo.com/es/espirito-santo/noticia/2024/08/06/apos-reconhecimento-de-patrimonio-cultural-imaterial-do-es-paneleiras-pedem-ajuda-para-manter-tradicao.ghtml",
+        "https://www.panrotas.com.br/noticia/destinos/2026/05/paneleiras-de-goiabeiras-em-vitoria-es-unem-tradicao-cultura-e-resistencia_200407.html",
+        "https://www.youtube.com/watch?v=110k2L2197k",
+        "https://acontecenopais.com.br/panelas-de-barro-de-goiabeiras-um-tesouro-cultural-do-espirito-santo-que-une-tradicao-e-identidade/",
+        "https://www.seculodiario.com.br/cultura/oficio-das-paneleiras-de-goiabeiras-e-revalidado-como-patrimonio-cultural-do-brasil",
+        "https://www.youtube.com/watch?v=17X21-41-4Y",
+        "https://www.youtube.com/watch?v=Xh0Y-3L111E",
+        "https://www.vitoria.es.gov.br/noticia/galpao-das-paneleiras-de-goiabeiras-passa-a-funcionar-de-segunda-a-sabado-26034",
+        "https://www.scielo.br/j/inter/a/K69R878534X773wX338578Q/?lang=pt",
+        "https://www.gov.br/pt-br/noticias/cultura/2023/08/iphan-lanca-publicacao-sobre-o-oficio-das-paneleiras-de-goiabeiras",
+        "https://capixabadagema.com.br/paneleiras-de-goiabeiras-visita-historia-e-precos/",
+        "https://www.mapcarta.com/1856526067"
+      ],
+      "scraped_at": "2026-10-24T02:24:01.082465Z",
+      "location": {
+        "country": "Brazil",
+        "provinces": [
+          "Espírito Santo"
+        ],
+        "lat": -19.5687682,
+        "lng": -40.1721991
+      },
+      "resume_analisa": {
+        "description": "The Ofício das Paneleiras de Goiabeiras is the traditional craft of making clay pots by hand, primarily used for preparing and serving typical Capixaba dishes such as moqueca capixaba and torta capixaba. This artisanal practice is deeply rooted in the Goiabeiras Velha neighborhood of Vitória, Espírito Santo, Brazil. It is predominantly a female activity, passed down through generations from mother to daughter, and serves as the main source of income for over 120 families in the community. The craft involves a unique process of extracting special clay from the Vale do Mulembá, molding it manually, drying, polishing, open-air firing, and then impermeabilizing and coloring the pots with tannin extracted from red mangrove bark.",
+        "cultural_significance": "This craft is a vibrant testament to the cultural richness of Espírito Santo and stands as a significant symbol of Capixaba identity. It was the first manual knowledge to be recognized as Intangible Cultural Heritage of Brazil by the Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN) in 2002, being inscribed in the Book of Knowledge. The tradition spans over 400 years, with its techniques originating from indigenous groups, specifically the Tupi-Guarani and Una tribes, and later adopted by colonists and descendants of enslaved Africans who settled in the mangrove region. The pots are not merely utilitarian objects but are considered indispensable for the authentic preparation of iconic local dishes, thus intertwining craftsmanship with culinary heritage. The craft also holds an Indicação Geográfica (Geographical Indication) seal, further affirming its unique origin and quality. In 2011, the Paneleiras de Goiabeiras received the 2010 Best Practices certificate from the UN-Habitat, acknowledging its contributions to civic engagement, cultural vitality, poverty reduction, income generation, gender equality, and social inclusion.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "The Ofício das Paneleiras de Goiabeiras contributes to disaster resilience by fostering resilient livelihoods and food security within the community. It provides a sustainable and culturally significant source of income for over 120 families, strengthening their economic stability and reducing vulnerability to economic shocks. The craft also preserves traditional food preparation methods, ensuring the continuity of local culinary practices essential for cultural identity and sustenance. The sustainable extraction of natural resources (clay and mangrove bark) for the craft, supported by environmental education programs, indirectly contributes to ecosystem health, which can underpin broader environmental resilience. The recognition by UN-Habitat for its role in poverty reduction, income generation, employment, gender equality, and social inclusion further highlights its contribution to community resilience.",
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Culinary Traditions",
+          "Intangible Cultural Heritage",
+          "Brazil",
+          "Espírito Santo",
+          "Goiabeiras",
+          "Clay Pots",
+          "Moqueca Capixaba",
+          "Torta Capixaba",
+          "Indigenous Heritage",
+          "Sustainable Livelihoods"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Artisanal Ceramic Production",
+        "materials_and_tools": [
+          "Special clay from Vale do Mulembá (Mulembá Valley), a mangrove region in Vitória, Espírito Santo.",
+          "Tannin (tanino) extracted from the bark of the red mangrove (mangue-vermelho).",
+          "Rudimentary tools, including 'vassourinha de muxinga' (a type of broom), 'cuia' (gourd), 'arco' (bow), and 'faca' (knife)."
+        ],
+        "step_by_step": [
+          "**Extraction and Preparation of Raw Materials:** Clay is extracted from the Vale do Mulembá, and tannin from the red mangrove bark. Men often assist in the extraction, cleaning, and initial preparation of the clay.",
+          "**Clay Preparation:** The extracted clay undergoes a cleaning and preparation process.",
+          "**Manual Modeling:** The pots are meticulously molded by hand, without the use of modern equipment or a potter's wheel. Each pot is typically crafted by a single individual.",
+          "**Sun Drying:** The freshly molded pots are left to dry naturally under the sun.",
+          "**Polishing:** Once dried, the pots are carefully polished to achieve a smooth finish.",
+          "**Open-Air Firing (Queima):** The pots are fired in open-air bonfires, without the use of enclosed kilns or ovens. Specific 'beds' for firing are prepared outside the workshop.",
+          "**Tannin Application (Impermeabilization and Coloring):** While the pots are still hot from the firing process, the tannin dye is applied. This step imparts the characteristic dark color to the pots and also serves to impermeabilize them."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Brazil",
+            "element_name": "Traditional ceramic practices of Tupi-Guarani and Una indigenous peoples",
+            "relationship_reason": "The technique employed by the Paneleiras has direct indigenous origins, specifically from the Tupi-Guarani and Una tribes, with historical roots extending over 400 years. This ancestral knowledge was subsequently adopted and adapted by colonists and descendants of enslaved Africans who settled in the mangrove region of Goiabeiras. The production process maintains essential characteristics that align with the ceramic practices of native groups across the Americas."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-d29bffa4",
+      "element_name": "Ox's Birthday Festival (牛生日节)",
+      "categories": [
+        "Social Practices & Rituals",
+        "Culinary Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.neac.gov.cn/seac/zt/mzwh/mlz/fsxg.shtml&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.neac.gov.cn/seac/zt/mzwh/mlz/fsxg.shtml",
+        "https://www.chinadragontours.com/mulao-ethnic-group-festivals/ox-birth-festival-of-mulao-ethnic-group.htm",
+        "https://en.wikipedia.org/wiki/Luocheng_Mulao_Autonomous_County",
+        "https://www.factsanddetails.com/china/Minorities_in_Guangxi_Guizhou_and_Southern_China/Mulao_Minority.html",
+        "http://english.scio.gov.cn/culture/2017-06/07/content_40974955.htm",
+        "https://www.intotravelchina.com/china-ethnic-groups/mulao-ethnic.html"
+      ],
+      "scraped_at": "2026-10-24T02:24:42.588729Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Guangxi Zhuang Autonomous Region"
+        ],
+        "lat": 24.0,
+        "lng": 109.0
+      },
+      "resume_analisa": {
+        "description": "The Ox's Birthday Festival (牛生日节) is a traditional festival of the Mulao ethnic group, celebrated annually on the eighth day of the fourth lunar month. It is a day dedicated to honoring and protecting working cattle, which are considered indispensable for agriculture. During this festival, cattle are given a day of rest from farm work, cleaned, and provided with special food, while offerings are made to the 'cattle pen god' and ancestors.",
+        "cultural_significance": "This festival holds deep cultural significance for the Mulao people, expressing their profound gratitude and respect for working cattle. These animals are regarded as 'mankind's good friends' and are crucial for their agricultural livelihoods. The rituals and practices of the festival, including prayers for the cattle's safety and well-being, reflect the community's reliance on these animals for a successful harvest and their overall sustenance.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Drought",
+          "Flood"
+        ],
+        "drr_mechanism": "The Ox's Birthday Festival directly contributes to resilient livelihoods and food security by promoting the health and well-being of working cattle. Through practices such as providing rest, thorough cleaning, and special feeding, the cattle's physical condition is enhanced. The ritualistic insertion of Chinese sweet gum branches on cattle pen gates is specifically aimed at driving away mosquitoes and flies, directly mitigating the risk of insect-borne diseases and pests. In a region where 'insect and animal disasters are also relatively severe', these preventative measures are crucial for protecting the primary agricultural assets, thereby safeguarding the community's food production and economic stability against various environmental stresses and biological hazards. While not directly addressing drought or flood, healthy and well-cared-for cattle are inherently more resilient to harsh environmental conditions, including those that might follow or precede such disasters.",
+        "gemini_tags": [
+          "Mulao ethnic group",
+          "Ox's Birthday Festival",
+          "Cattle worship",
+          "Agricultural traditions",
+          "Guangxi folklore",
+          "Rural community practices",
+          "Animal welfare",
+          "Food security",
+          "Traditional rituals"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Festival/Ritual",
+        "materials_and_tools": [
+          "Good grass",
+          "First-class fodder",
+          "Glutinous rice (specifically black polished glutinous rice meal)",
+          "Wine",
+          "Meat (chicken and ducks for memorial ceremony)",
+          "Branches of Chinese sweet gum",
+          "Soybeans and maize (for well-off families)",
+          "Egg distiller's grains (for well-off families)"
+        ],
+        "step_by_step": [
+          "On the eighth day of the fourth lunar month, every Mulao household gives their oxen a holiday, allowing them to rest from farm work.",
+          "Families thoroughly clean their cattle pens.",
+          "The working cattle are washed clean.",
+          "Branches of the Chinese sweet gum are inserted on the cattle pen gates to ward off mosquitoes and flies.",
+          "Chicken and ducks are prepared to make wine and meat for a memorial ceremony dedicated to the 'cattle pen god'.",
+          "Dark polished glutinous rice meal is prepared as an offering to ancestors.",
+          "Cattle are fed with first-class fodder.",
+          "The cooked black polished glutinous rice is offered to the ox to eat first.",
+          "Well-off families may also prepare a special feed by macerating soybeans and maize, mixed with egg distiller's grains, for their oxen.",
+          "After the cattle have been fed and honored, the community shares the remaining food and celebrates the festival."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Mattu Pongal",
+            "relationship_reason": "A festival dedicated to cattle, expressing gratitude for their role in agriculture."
+          },
+          {
+            "country": "Nepal",
+            "element_name": "Gai Tihar (part of Tihar festival)",
+            "relationship_reason": "A day dedicated to worshipping cows, recognizing their importance in livelihoods and sustenance."
+          },
+          {
+            "country": "Various agricultural societies globally",
+            "element_name": "Reverence for working animals",
+            "relationship_reason": "Many agricultural societies share a deep respect and dedicate specific practices or festivals to working animals, especially cattle, due to their vital role in farming and sustenance."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
       "resource_enriched_at": null,
       "resource_enrichment_attempted_at": null,
       "resource_enrichment_status": "not_assessed",
@@ -61964,19 +62501,19 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-23T02:26:17.376086Z",
-    "total_ich_elements": 340,
-    "complete_records": 339,
-    "incomplete_records": 1,
+    "generated_at": "2026-10-24T02:25:18.726651Z",
+    "total_ich_elements": 343,
+    "complete_records": 343,
+    "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 120,
-      "Social Practices & Rituals": 86,
-      "Culinary Traditions": 53,
+      "Traditional Craftsmanship": 122,
+      "Social Practices & Rituals": 88,
+      "Culinary Traditions": 56,
       "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 39,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 34,
+      "Oral Traditions": 35,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
