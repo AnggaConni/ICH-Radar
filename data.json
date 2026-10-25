@@ -16388,78 +16388,259 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-25T02:10:26.860275Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Cobalt Underglaze Painting Techniques",
+            "description": "Hand-painted techniques using cobalt oxide which appears black before firing and transforms into vibrant blue under white glaze.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Gzhel",
+              "https://bridgetomoscow.com/files/200/1318.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Historical Ceramic Formulations (Semifaience, Faience, and Porcelain)",
+            "description": "Centuries-old regional recipes and formulas for working with local white clay, kaolin, quartz, and feldspar developed across Gzhel villages.",
+            "evidence_urls": [
+              "https://crees.ku.edu/gzhel",
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Local Gzhel Clay Deposits",
+            "description": "Abundant local deposits of white clay and raw ceramic materials historically mined in the Gzhel region southeast of Moscow.",
+            "evidence_urls": [
+              "https://crees.ku.edu/gzhel",
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Cobalt Oxide Pigments and Natural Brushes",
+            "description": "Specialized raw materials including cobalt oxide paint and natural-bristle brushes utilized for intricate floral and animal motifs.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Master Ceramic Artists and Painters",
+            "description": "Skilled local artisans, master painters, and sculptors practicing traditional hand-painted folk art design and multi-stage firing.",
+            "evidence_urls": [
+              "https://crees.ku.edu/gzhel",
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Gzhel Village Cluster and Ramensky District",
+            "description": "A historic cluster of approximately thirty villages located about 60 kilometers southeast of Moscow in Moscow Oblast.",
+            "evidence_urls": [
+              "https://crees.ku.edu/gzhel",
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Regional Production Enterprises and Workshops",
+            "description": "Historic manufacturing enterprises and localized workshops maintaining traditional porcelain production lines and training structures.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Gzhel",
+              "https://russian-crafts.com/gzhel-origins-of-the-russian-craft/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Clay Preparation and Slip Casting",
+            "description": "Cleaning raw clay of impurities, mixing quartz, feldspar, and kaolin, and forming pieces using molds or manual shaping.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Hand-Painting and High-Temperature Firing",
+            "description": "Freehand brush application of cobalt designs followed by glazing and high-temperature kiln firing.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Gzhel",
+              "https://bridgetomoscow.com/files/200/1318.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Blue and White Tableware and Utensils",
+            "description": "Hand-painted ceramic teapots, cups, plates, jugs, and samovars featuring signature cobalt blue floral and animal motifs.",
+            "evidence_urls": [
+              "https://crees.ku.edu/gzhel",
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Decorative Sculptures and Figurines",
+            "description": "Handcrafted ornamental ceramic animal figures, human sculptures, and collectible artistic home decor items.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Custom Ceramic Commissioning",
+            "description": "Bespoke production of hand-painted decorative pieces and custom tableware matching traditional aesthetic standards.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Heritage Factory Tours and Craft Exhibitions",
+            "description": "Cultural tourism visits to manufacturing centers and museum exhibitions showcasing historical evolution and master craftsmanship.",
+            "evidence_urls": [
+              "https://crees.ku.edu/gzhel",
+              "https://bridgetomoscow.com/files/200/1318.jpg"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Pottery and Painting Masterclasses",
+            "description": "Educational workshops demonstrating traditional sketching, clay preparation, underglaze painting, and glazing techniques.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 70,
+        "education_potential": 60,
+        "creative_industry_potential": 75,
+        "digital_potential": 50
       },
       "resource_mobilization": {
-        "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
+        "public_sector": [
+          {
+            "name": "State Historical Museum Collections and Recognition",
+            "description": "Inclusion of premier Gzhel works within state museum sections, validating its status as an advanced art form rather than a simple craft.",
+            "evidence_urls": [
+              "https://russian-crafts.com/gzhel-origins-of-the-russian-craft/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "private_sector": [
+          {
+            "name": "Regional Porcelain Manufactories and Enterprises",
+            "description": "Established commercial workshops and manufacturing complexes maintaining traditional wholesale and retail distribution networks across Russia.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "University Research and Area Studies Centers",
+            "description": "Academic institutions publishing historical overviews, cultural analyses, and material studies concerning the development of Russian ceramics.",
+            "evidence_urls": [
+              "https://crees.ku.edu/gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Local Village Craft Communities",
+            "description": "Generational networks of families and independent local artists preserving traditional hand-painting styles and secret firing methodologies in Ramensky District.",
+            "evidence_urls": [
+              "https://crees.ku.edu/gzhel",
+              "https://en.wikipedia.org/wiki/Gzhel"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-25T02:10:26.860275Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Sustained employment exists for specialized artisans, independent craftspeople, and production staff within the regional cluster of workshops.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Gzhel"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Proximity to Moscow facilitates cultural tourism, factory visits, and excursion travel to the historic village cluster.",
+          "evidence_urls": [
+            "https://crees.ku.edu/gzhel",
+            "https://bridgetomoscow.com/files/200/1318.jpg"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High potential for transmitting historic ceramic recipes, mold-making processes, and brushwork techniques to new generations of practitioners.",
+          "evidence_urls": [
+            "https://crees.ku.edu/gzhel",
+            "https://en.wikipedia.org/wiki/Gzhel"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Gzhel is a highly recognizable national folk art brand with deep integration into Russian decorative arts, museum collections, and high-end design markets.",
+          "evidence_urls": [
+            "https://crees.ku.edu/gzhel",
+            "https://en.wikipedia.org/wiki/Gzhel"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Opportunities exist for digital documentation, virtual museum exhibitions, and online archiving of historic ceramic marks and design portfolios.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Gzhel"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 4,
+        "evidence_item_count": 23,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-25T02:10:26.860275Z",
         "last_error": null
       }
     },
@@ -16611,8 +16792,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-25T02:10:48.507860Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -16642,8 +16823,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -16653,8 +16834,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-25T02:10:48.507860Z",
+        "last_error": "resource_mapping must be an object; value_chain must be an object; resource_mobilization must be an object; opportunity_analysis must be an object; opportunity_score_evidence must be an object"
       }
     },
     {
@@ -62501,7 +62682,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-24T02:25:18.726651Z",
+    "generated_at": "2026-10-25T02:11:35.338254Z",
     "total_ich_elements": 343,
     "complete_records": 343,
     "incomplete_records": 0,
