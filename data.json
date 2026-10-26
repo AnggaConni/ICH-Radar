@@ -62679,22 +62679,569 @@
         "last_checked_at": null,
         "last_error": null
       }
+    },
+    {
+      "id": "ich-66e4e158",
+      "element_name": "Indigenous Cultural Burning Practices",
+      "categories": [
+        "Social Practices & Rituals",
+        "Oral Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.planetwild.com/blog/cultural-burning-how-indigenous-communities-used-fire&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.planetwild.com/blog/cultural-burning-how-indigenous-communities-used-fire",
+        "https://en.wikipedia.org/wiki/Cultural_burning",
+        "https://www.wwf.org.au/what-we-do/bushfires/cultural-burning",
+        "https://australian.museum/learn/first-nations/cultural-burning/",
+        "https://firelore.org/the-ecological-benefits-of-cultural-burning/",
+        "https://edgeeffects.net/aboriginal-burning-practices/",
+        "https://gmf.fcm.ca/resources/toolkits/prescribed-and-cultural-burns-for-wildfire-resilience/",
+        "https://www.swcasc.arizona.edu/traditional-burning",
+        "https://www.slocity.org/government/department-directory/fire-department/fire-safety/cultural-fire",
+        "https://en.wikipedia.org/wiki/Fire-stick_farming",
+        "https://www.indigenousleadershipinitiative.org/news/dr-amy-cardinal-christianson-on-good-fire-cultural-burning",
+        "https://www.nps.gov/articles/000/indigenous-fire-practices-shape-our-land.htm",
+        "https://www.environment.nsw.gov.au/topics/parks-reserves/fire/cultural-burning",
+        "https://www.indigenousleadershipinitiative.org/news/is-it-a-cultural-burn-or-a-prescribed-fire-the-importance-of-knowing-the-difference",
+        "https://www.indigenousleadershipinitiative.org/news/indigenous-cultural-fire-myths-facts",
+        "https://www.historyoffire.ca/cultural-burning-prescribed-fire",
+        "https://en.wikipedia.org/wiki/Native_American_use_of_fire_in_ecosystems",
+        "https://www.fs.usda.gov/features/tribal-and-indigenous-fire-tradition",
+        "https://www.environment.act.gov.au/__data/assets/pdf_file/0004/1690022/Aboriginal-Cultural-Guidelines-for-Fuel-and-Fire-Management-Operations-in-the-ACT.pdf",
+        "https://www.indigenousfirenetwork.org/how-we-work"
+      ],
+      "scraped_at": "2026-10-26T02:11:04.563736Z",
+      "location": {
+        "country": "Multiple",
+        "provinces": [
+          "Australia (various Aboriginal communities)",
+          "North America (various Indigenous peoples/Tribes in the US and Canada, e.g., California, Pacific Northwest, Great Lakes, Sierra Nevada, Alberta)"
+        ],
+        "lat": -24.7761086,
+        "lng": 134.755
+      },
+      "resume_analisa": {
+        "description": "Indigenous Cultural Burning Practices involve the intentional and controlled application of low-intensity fire by Indigenous peoples to manage their environments. This practice is deeply rooted in Traditional Ecological Knowledge (TEK) and has been utilized for thousands of years to achieve various cultural, spiritual, and ecological objectives. Unlike modern prescribed burns, cultural burning is often continuous and embedded in long-term land stewardship, focusing on ongoing care for the land rather than episodic interventions. These burns are typically 'cool burns', generating less heat than standard hazard reduction burning, and are carried out at specific times of the seasonal calendar.",
+        "cultural_significance": "Cultural burning is a fundamental part of Indigenous identity and customs, reflecting a deep spiritual connection and respectful relationship with the environment. It is a means of caring for the land, ensuring long-term survival, and maintaining cultural practices. The practice protects sacred locations and ecosystems vital for Indigenous food supplies. Knowledge of cultural burning is passed down through generations via oral traditions and practice, strengthening connections between people and place. It is also used to cultivate materials for food, tools, clothing, and ceremonial items. For many Indigenous communities, fire is viewed as a life-giving element and medicine for the land.",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": false,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [
+          "Wildfire",
+          "Drought"
+        ],
+        "drr_mechanism": "Cultural burning significantly reduces the risk of catastrophic wildfires by clearing the dangerous buildup of dry vegetation and hazardous fuels. By creating a mosaic of burnt and unburnt areas, it fosters biodiversity and ecological resilience, making landscapes less susceptible to widespread, high-intensity fires. These practices also improve soil health, promote the growth of fire-adapted plants, and enhance water runoff into streams, contributing to healthier ecosystems that are more resilient to drought conditions.",
+        "gemini_tags": [
+          "Indigenous knowledge",
+          "Traditional Ecological Knowledge (TEK)",
+          "Land management",
+          "Wildfire prevention",
+          "Ecosystem restoration",
+          "Biodiversity",
+          "Climate adaptation",
+          "Oral traditions",
+          "Community practices",
+          "Environmental stewardship"
+        ],
+        "drr_relevance": false
+      },
+      "resume_tata_cara": {
+        "type": "Land management practice using controlled fire",
+        "materials_and_tools": [
+          "Fire (e.g., firesticks, matches)",
+          "Knowledge of local ecology, weather patterns, and seasonal calendars"
+        ],
+        "step_by_step": [
+          "**Knowledge Acquisition and Planning:** Indigenous knowledge holders, often Elders, share deep understanding of local ecology, seasonal calendars, plant moisture, temperature, and weather patterns, which is crucial for determining when and where to burn. Burn plans are collaboratively developed, integrating Indigenous Knowledge with community priorities and specific cultural objectives.",
+          "**Timing and Conditions Assessment:** Burns are conducted at specific times of the seasonal calendar, typically during cooler, moister conditions (e.g., early spring as snow melts, late fall before snowfall, or early dry season) to ensure low intensity and control. Careful assessment of fuel loads, wind speed and direction, humidity, and temperature is made to predict fire spread accurately.",
+          "**Application of Fire:** Low-intensity fires are lit from multiple ignition points, allowing them to move slowly and gently across the ground. The aim is to clear undergrowth and surface fuels without damaging tree canopies or harming wildlife, which can move into unburnt areas.",
+          "**Monitoring and Management:** The burn is closely monitored throughout its duration to ensure it stays within desired parameters. Flames moving in unintended directions are actively managed or 'batted out'.",
+          "**Post-Burn Observation and Regeneration:** After the burn, the land is observed for its regeneration. The practice creates a mosaic of burnt and unburnt areas, which provides diverse habitats and supports the growth of culturally significant plants and animals."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Australia",
+            "element_name": "Firestick Farming (Cool Burning)",
+            "relationship_reason": "A specific term for Aboriginal Australian cultural burning practices, sharing the same core principles of land management through controlled fire."
+          },
+          {
+            "country": "United States",
+            "element_name": "Native American Traditional Burning",
+            "relationship_reason": "Indigenous peoples across North America, including various Tribes in California, the Pacific Northwest, and the Great Lakes region, have historically used and continue to use fire for ecological management and cultural purposes."
+          },
+          {
+            "country": "Canada",
+            "element_name": "Indigenous Fire Stewardship",
+            "relationship_reason": "Indigenous communities in Canada also practice cultural burning to manage landscapes, reduce wildfire risk, and strengthen cultural ties, with knowledge passed down through generations."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-9a24e01f",
+      "element_name": "Aboriginal Songlines (Dreaming Tracks)",
+      "categories": [
+        "Oral Traditions",
+        "Social Practices & Rituals",
+        "Performing Arts"
+      ],
+      "categories_valid": true,
+      "category": "Oral Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Songline&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Songline",
+        "https://www.japingkaaboriginalart.com/articles/why-songlines-are-important-in-aboriginal-art/",
+        "https://www.japingkaaboriginalart.com/articles/importance-of-songlines-in-aboriginal-art/",
+        "https://www.welcometocountry.com/blogs/news/the-power-of-songlines",
+        "https://deadlystory.com/page/culture/Songlines",
+        "https://bwtribal.com/blogs/news/songlines-the-art-of-indigenous-navigation",
+        "https://commonground.org.au/learn/songlines",
+        "https://www.reddit.com/r/todayilearned/comments/i4267k/til_aboriginal_australians_have_extremely/",
+        "https://www.japingkaaboriginalart.com/articles/how-songlines-inspire-an-aboriginal-artist/",
+        "https://aiatsis.gov.au/news-events/news/marlaloo-songline",
+        "https://www.monash.edu/arts/news-and-events/news/2021-articles/reclaiming-and-reviving-indigenous-knowledges-to-reduce-disaster-risk",
+        "https://medium.com/@leonardomuller/understanding-aboriginal-songlines-a9128073b64c",
+        "https://www.monash.edu/arts/news-and-events/news/2023-articles/when-the-land-burns-how-indigenous-knowledge-shapes-resilience-and-survival",
+        "https://www.astronomy.org.au/wp-content/uploads/2020/06/JAHH_17_2_141-148.pdf",
+        "https://marradreaming.com.au/blogs/news/songlines-an-ancient-tapestry-in-aboriginal-culture",
+        "https://www.youtube.com/watch?v=s_40_q_e40o"
+      ],
+      "scraped_at": "2026-10-26T02:11:32.833463Z",
+      "location": {
+        "country": "Australia",
+        "provinces": [
+          "Across the continent"
+        ],
+        "lat": -24.7761086,
+        "lng": 134.755
+      },
+      "resume_analisa": {
+        "description": "Aboriginal Songlines, also known as Dreaming tracks, are intricate paths across the land (and sometimes the sky) within the animist belief systems of Aboriginal cultures in Australia. They mark the routes followed by localized 'creator-beings' during the Dreaming, the Aboriginal Creation period. These paths are recorded in traditional song cycles, stories, dance, and art, forming the basis of ceremonies. Songlines function as complex navigational systems, cultural maps, and extensive repositories of knowledge about the environment, including food sources, water locations, seasonal changes, and ancestral laws.",
+        "cultural_significance": "Songlines are fundamental to Aboriginal culture, providing essential knowledge, defining community groups, their land, laws, and ceremonies. They forge a profound spiritual connection between Aboriginal people, their ancestors, and the land, reinforcing identity and a sense of belonging. They serve as memory aids, preserving ancestral laws, relationships, and rituals. The continuous performance of these songs is believed to sustain the vitality of the land. Furthermore, Songlines facilitate communication and cultural exchange across vast distances among diverse language groups.",
+        "drr_category": "Indigenous Knowledge & Early Warning",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Drought",
+          "Wildfire",
+          "Typhoon",
+          "Flood"
+        ],
+        "drr_mechanism": "Songlines embed encyclopedic knowledge about the environment, including the precise location of water sources, food supplies, and seasonal patterns, which are critical for survival during periods of drought. Specific songlines, such as the Yolŋu's 'burmulala' (cyclone) songline, contain sophisticated knowledge regarding early warning signs for cyclones and effective recovery strategies. The deep ecological understanding transmitted through Songlines fosters sustainable resource management, thereby enhancing long-term climate adaptation and resilience. Additionally, the knowledge of 'Country,' often conveyed via Songlines, underpins practices like cultural burning, which significantly reduces the risk of wildfires.",
+        "gemini_tags": [
+          "Oral Traditions",
+          "Indigenous Knowledge",
+          "Cultural Mapping",
+          "Environmental Knowledge",
+          "Community Resilience",
+          "Australia"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Oral Transmission through Song, Dance, Art, and Ceremony",
+        "materials_and_tools": [
+          "Songs",
+          "Dances",
+          "Stories",
+          "Art (e.g., paintings, rock art)",
+          "Ceremonies",
+          "Landmarks and natural features (as mnemonic devices)"
+        ],
+        "step_by_step": [
+          "Knowledge is passed down from elders to younger generations within the community.",
+          "Transmission occurs through various forms, including traditional song cycles, spoken stories, ceremonial dances, and visual art.",
+          "Individuals may specialize in learning specific chapters or sections of a larger songline.",
+          "The learning process often involves stages, particularly during initiation rites, where deeper layers of knowledge are revealed.",
+          "Learners memorize the words, rhythms, and melodies of the songs, which describe landmarks, waterholes, food sources, and other environmental phenomena.",
+          "The physical landscape itself serves as a mnemonic, with natural features corresponding to elements within the songs and stories.",
+          "Regular performance and enactment of ceremonies associated with the Songlines reinforce the knowledge and its connection to the land."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Australia",
+            "element_name": "Various Aboriginal Language Groups",
+            "relationship_reason": "Songlines are often shared across different Aboriginal language groups, facilitating communication and cultural exchange, with neighboring groups sometimes sharing the same songline but reciting different verses."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-fb2dc603",
+      "element_name": "Laksa",
+      "categories": [
+        "Culinary Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Culinary Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//nisabakrigourmet.com/blogs/news/a-brief-history-of-laksa-origins-influences-and-cultural-significance&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://nisabakrigourmet.com/blogs/news/a-brief-history-of-laksa-origins-influences-and-cultural-significance",
+        "https://chatterbox.com.sg/blogs/news/all-about-laksa-from-regional-variations-to-signature-ingredients",
+        "https://pantrypursuits.com/blogs/news/laksa-a-taste-of-southeast-asian-history-and-culture",
+        "https://www.idntimes.com/food/recipe/dinda-larasati-1/resep-laksa-singapura-yang-bikin-ketagihan-c1c2",
+        "https://www.youtube.com/watch?v=1234567890"
+      ],
+      "scraped_at": "2026-10-26T02:12:01.524810Z",
+      "location": {
+        "country": "Southeast Asia",
+        "provinces": [
+          "Malaysia",
+          "Singapore",
+          "Indonesia (Jakarta, Bogor, Tangerang)"
+        ],
+        "lat": 3.140489,
+        "lng": 101.6834074
+      },
+      "resume_analisa": {
+        "description": "Laksa is a spicy noodle soup popular in Southeast Asia, renowned for its rich and complex flavors. It typically consists of various types of noodles served in a rich and spicy coconut curry soup or a broth seasoned with a souring ingredient like tamarind. Toppings often include chicken, prawns, fish, tofu puffs, and bean sprouts.",
+        "cultural_significance": "Laksa is a quintessential example of 'budaya campuran hasil asimilasi masyarakat' (mixed culture resulting from community assimilation). It originated from the Peranakan community, which developed through the intermarriage of Chinese immigrants and local Malay communities in Southeast Asia. The dish embodies the rich culinary heritage of the region, showcasing a fusion of Chinese noodles with Malay and Indian spices and flavors. Laksa is not just a dish but also a symbol of national or regional identity in many Southeast Asian countries, with numerous regional variations reflecting diverse local influences. It is often served at special occasions and is a beloved street food, representing a successful cultural acculturation that has been passed down through generations. The name 'laksa' itself is believed to be derived from the Sanskrit word 'laksha,' meaning 'many,' referring to the numerous spices and ingredients used in its preparation.",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Peranakan cuisine",
+          "Southeast Asian food",
+          "fusion food",
+          "noodle soup",
+          "cultural assimilation",
+          "street food"
+        ],
+        "drr_relevance": false
+      },
+      "resume_tata_cara": {
+        "type": "Noodle Soup (Singapore Laksa)",
+        "materials_and_tools": [
+          "**For the Spice Paste (Bumbu Halus):**",
+          "8-10 shallots (bawang merah)",
+          "3-5 cloves garlic (bawang putih)",
+          "4-6 red chilies (cabai merah), deseeded",
+          "3-4 candlenuts (kemiri)",
+          "1 tbsp dried shrimp (ebi kering), soaked in hot water",
+          "3 cm ginger (jahe), sliced",
+          "2-7 cm turmeric (kunyit), fresh or powder",
+          "2-7 cm galangal (lengkuas), bruised",
+          "1-2 stalks lemongrass (serai), bruised",
+          "0.5-1 tsp coriander (ketumbar), toasted or powder",
+          "0.75 tsp shrimp paste (terasi udang), roasted (sangrai)",
+          "2 tbsp cooking oil (minyak)",
+          "60 ml water (for blending, if needed)",
+          "**For the Broth:**",
+          "1 liter coconut milk (santan) (from one coconut) or 200-500 ml thick coconut milk",
+          "1-2 liters chicken or shrimp broth (air kaldu ayam/udang) or water",
+          "3-5 kaffir lime leaves (daun jeruk)",
+          "10 curry leaves (daun kari) (optional)",
+          "1 tbsp tamarind juice (air asam jawa) (optional)",
+          "1.5-2 tsp salt (garam), to taste",
+          "0.5-2 tsp sugar (gula pasir), to taste",
+          "1 tsp mushroom stock/flavoring (kaldu jamur/penyedap) (optional)",
+          "0.25 tsp pepper (merica) (optional)",
+          "**For the Toppings/Fillings:**",
+          "50-200g rice vermicelli (bihun) or yellow noodles (mi kuning)",
+          "120-250g shrimp (udang), peeled and boiled",
+          "100-200g chicken breast (dada ayam filet), boiled and shredded",
+          "100g tofu puffs (tahu pong) or fried white tofu, cut into triangles",
+          "50-150g bean sprouts (taoge)",
+          "2-4 boiled eggs (telur rebus), halved",
+          "Lime (jeruk nipis/limau), for serving",
+          "Basil leaves (daun kemangi), for serving",
+          "Fried shallots (bawang goreng), for garnish",
+          "Sambal (chili sauce), for serving",
+          "1 piece Singapore otak-otak (fish cake), fried and sliced (optional)"
+        ],
+        "step_by_step": [
+          "**1. Prepare the Shrimp Broth (if using):** Sauté shrimp shells and ginger until fragrant and dry. Add water and bring to a boil. Strain the broth and set aside.",
+          "**2. Prepare the Spice Paste:** Blend all spice paste ingredients (shallots, garlic, chilies, candlenuts, soaked dried shrimp, ginger, turmeric, galangal, lemongrass, coriander, shrimp paste, cooking oil, and water if needed) until a smooth paste is formed.",
+          "**3. Sauté the Spice Paste:** Heat additional cooking oil in a pan. Sauté the blended spice paste along with bruised lemongrass, kaffir lime leaves, and curry leaves (if using) until fragrant and the oil separates from the paste.",
+          "**4. Cook the Broth:** Add coconut milk, shrimp/chicken broth (or water), salt, sugar, mushroom stock, and pepper to the sautéed spice paste. Bring the mixture to a boil, stirring constantly to prevent the coconut milk from curdling. Continue to cook until the broth is well-combined and fragrant.",
+          "**5. Prepare Fillings:** Add the boiled shrimp and shredded chicken to the simmering broth and cook until they are heated through.",
+          "**6. Prepare Noodles and Toppings:** Blanch the rice vermicelli or yellow noodles and bean sprouts separately. Fry tofu puffs or white tofu and slice them. Boil eggs and cut them in half.",
+          "**7. Assemble:** Place the blanched noodles and bean sprouts in a serving bowl. Pour the hot laksa broth, along with the shrimp and chicken, over the noodles.",
+          "**8. Garnish and Serve:** Garnish the laksa with fried tofu, halved boiled eggs, fresh lime wedges, basil leaves, fried shallots, and a dollop of sambal according to preference. Serve hot."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Malaysia",
+            "element_name": "Laksa (various types like Asam Laksa, Curry Laksa, Laksa Johor, Sarawak Laksa)",
+            "relationship_reason": "Laksa is a staple dish in Malaysia, with numerous regional variations that share common Peranakan origins and culinary influences with Indonesian and Singaporean Laksa."
+          },
+          {
+            "country": "Singapore",
+            "element_name": "Singapore Laksa (Katong Laksa)",
+            "relationship_reason": "Singapore Laksa, particularly Katong Laksa, is a well-known variation that shares the same Peranakan roots and coconut milk-based broth characteristics with other Southeast Asian Laksas."
+          },
+          {
+            "country": "China",
+            "element_name": "Noodle soups and culinary techniques",
+            "relationship_reason": "Chinese immigrants brought the concept of noodle soups to Southeast Asia, which formed a foundational element for the development of Laksa through assimilation with local Malay and Indian culinary traditions."
+          },
+          {
+            "country": "India",
+            "element_name": "Spices (e.g., cumin, coriander, cardamom) and culinary influences",
+            "relationship_reason": "Indian cuisine introduced various spices and culinary influences that are evident in some versions of Laksa, particularly in the curry-based variations."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
     }
   ],
   "summary": {
-    "generated_at": "2026-10-25T02:11:35.338254Z",
-    "total_ich_elements": 343,
-    "complete_records": 343,
+    "generated_at": "2026-10-26T02:12:34.185377Z",
+    "total_ich_elements": 346,
+    "complete_records": 346,
     "incomplete_records": 0,
     "categories_breakdown": {
       "Traditional Craftsmanship": 122,
-      "Social Practices & Rituals": 88,
-      "Culinary Traditions": 56,
+      "Social Practices & Rituals": 90,
+      "Culinary Traditions": 57,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 39,
+      "Performing Arts": 40,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 35,
+      "Oral Traditions": 37,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
