@@ -16922,78 +16922,203 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-27T02:47:45.678410Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Inuit Qaujimajatuqangit (IQ) Ecological and Navigation Knowledge",
+            "description": "Comprehensive system of ancestral and contemporary knowledge concerning Arctic ice conditions, weather patterns, animal behavior, celestial navigation cues, and environmental stewardship transmitted across generations.",
+            "evidence_urls": [
+              "https://www.pc.gc.ca/fr/amnc-nmca/cnic-cnic/tallurutiup-imanga/qaujimajatuqangit",
+              "https://www.nirb.ca/fr/qaujimajatuqangit-inuit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Natural Arctic Seascape and Cryosphere",
+            "description": "The natural Arctic environment including sea ice, snow conditions, open water, marine ecosystems, and celestial bodies foundational to Inuit travel and survival.",
+            "evidence_urls": [
+              "https://www.pc.gc.ca/fr/amnc-nmca/cnic-cnic/tallurutiup-imanga/qaujimajatuqangit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Harvesting and Travel Equipment",
+            "description": "Traditional tools, sleds, kayaks, and implements utilized for hunting, fishing, and navigating treacherous Arctic terrains.",
+            "evidence_urls": [
+              "https://polartours.com/fr/qui-sont-les-inuits-cultures-et-traditions-de-larctique/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Inuit Elders and Knowledge Keepers",
+            "description": "Experienced community members holding specialized oral historical, ecological, and navigational expertise who mentor youth and guide governance bodies.",
+            "evidence_urls": [
+              "https://www.nirb.ca/fr/qaujimajatuqangit-inuit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Tallurutiup Imanga National Marine Conservation Area",
+            "description": "A vast Arctic marine protected area and ecological/cultural seascape in Nunavut co-managed by Inuit and Parks Canada, deeply integrated with IQ.",
+            "evidence_urls": [
+              "https://www.pc.gc.ca/fr/amnc-nmca/cnic-cnic/tallurutiup-imanga/qaujimajatuqangit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Qikiqtani Inuit Association (QIA) and Co-Management Boards",
+            "description": "Regional and territorial institutions such as the QIA and the Nunavut Impact Review Board that formally implement Inuit Qaujimajatuqangit in public policy and environmental review.",
+            "evidence_urls": [
+              "https://www.nirb.ca/fr/qaujimajatuqangit-inuit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
+        "production": [
+          {
+            "name": "Traditional Subsistence Harvesting and Environmental Monitoring",
+            "description": "Practices of hunting, fishing, and tracking informed by real-time ecological observation and traditional environmental stewardship rules.",
+            "evidence_urls": [
+              "https://www.pc.gc.ca/fr/amnc-nmca/cnic-cnic/tallurutiup-imanga/qaujimajatuqangit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "services": [
+          {
+            "name": "Environmental Impact Assessment and Co-Management Advisory",
+            "description": "Integration of IQ into regulatory assessments, marine conservation planning, and wildlife management frameworks.",
+            "evidence_urls": [
+              "https://www.nirb.ca/fr/qaujimajatuqangit-inuit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Land-Based Cultural Expeditions and Mentorship Tours",
+            "description": "Guided navigation and educational expeditions across Arctic waters and ice led by Inuit communities honoring local traditions.",
+            "evidence_urls": [
+              "https://polartours.com/fr/qui-sont-les-inuits-cultures-et-traditions-de-larctique/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Oral Transmission and Experiential Learning",
+            "description": "Community-led skill development through observation, storytelling, and direct outdoor participation as framed by the core IQ principles.",
+            "evidence_urls": [
+              "https://www.pc.gc.ca/fr/amnc-nmca/cnic-cnic/tallurutiup-imanga/qaujimajatuqangit",
+              "https://www.nirb.ca/fr/qaujimajatuqangit-inuit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
+        "livelihood_potential": 60,
+        "tourism_potential": 50,
+        "education_potential": 85,
         "creative_industry_potential": 0,
-        "digital_potential": 0
+        "digital_potential": 30
       },
       "resource_mobilization": {
-        "public_sector": [],
+        "public_sector": [
+          {
+            "name": "Parks Canada",
+            "description": "Federal agency collaborating with Inuit on the co-management and operationalization of marine conservation areas like Tallurutiup Imanga.",
+            "evidence_urls": [
+              "https://www.pc.gc.ca/fr/amnc-nmca/cnic-cnic/tallurutiup-imanga/qaujimajatuqangit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Qikiqtani Inuit Association (QIA)",
+            "description": "Organization representing Qikiqtani Inuit, partnering in stewardship, conservation agreements, and marine planning.",
+            "evidence_urls": [
+              "https://www.pc.gc.ca/fr/amnc-nmca/cnic-cnic/tallurutiup-imanga/qaujimajatuqangit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Nunavut Impact Review Board (NIRB) Inuit Qaujimajatuqangit Katimajiit",
+            "description": "Advisory board providing expertise on incorporating IQ into environmental and socio-economic impact assessments.",
+            "evidence_urls": [
+              "https://www.nirb.ca/fr/qaujimajatuqangit-inuit"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-27T02:47:45.678410Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "IQ directly informs sustainable harvesting, co-management employment, and regional stewardship agreements such as the Tallurutiup Imanga Inuit Impact and Benefit Agreement.",
+          "evidence_urls": [
+            "https://www.pc.gc.ca/fr/amnc-nmca/cnic-cnic/tallurutiup-imanga/qaujimajatuqangit"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Opportunities exist for community-guided Arctic expeditions and ecological tourism grounded in respect for Inuit culture, though access is tightly managed to protect local ways of life.",
+          "evidence_urls": [
+            "https://polartours.com/fr/qui-sont-les-inuits-cultures-et-traditions-de-larctique/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High potential for intergenerational knowledge transfer programs, academic environmental studies, and cross-cultural learning frameworks centered on the eight guiding principles of IQ.",
+          "evidence_urls": [
+            "https://www.nirb.ca/fr/qaujimajatuqangit-inuit"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
           "rationale": "",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Emerging initiatives involve digital language glossaries, community mapping databases, and archiving traditional ecological knowledge systems.",
+          "evidence_urls": [
+            "https://www.nirb.ca/fr/qaujimajatuqangit-inuit"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 17,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 4,
+        "opportunity_scores_without_evidence": 1,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-27T02:47:45.678410Z",
         "last_error": null
       }
     },
@@ -17077,78 +17202,203 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-27T02:48:06.805631Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "400-year-old Traditional Gilding and Gold Laminating Techniques",
+            "description": "Ancient knowledge regarding gold and silver leaf beating, specialized ink preparation using resin and longan wood sawdust, and buffalo leather glue processing passed down through generations in Kieu Ky Village.",
+            "evidence_urls": [
+              "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html",
+              "https://vietnamnet.vn/en/visiting-gold-leaf-village-in-hanoi-121921.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Poonah paper (Do paper/rice paper pieces)",
+            "description": "Special traditional paper sheets used as interleaving layers during the meticulous gold and silver beating process.",
+            "evidence_urls": [
+              "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Resin and Longan Wood Sawdust",
+            "description": "Natural ingredients combined and burned below a cast-iron wok to harvest specialized soot for ink creation.",
+            "evidence_urls": [
+              "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Kieu Ky Village Artisans and Craft Practitioners",
+            "description": "Skilled local craftspeople preserving and executing the rare technique of gold/silver beating and architectural/artifact gilding.",
+            "evidence_urls": [
+              "https://hanoitimes.vn/kieu-ky-gilding-craft-revives-thanks-to-artisans-creativity-318357.html",
+              "https://vietnamnet.vn/en/visiting-gold-leaf-village-in-hanoi-121921.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Kieu Ky Village and Founder Worship Temple",
+            "description": "The historic village located in Gia Lam district, Hanoi, featuring a temple dedicated to forefather Nguyen Quy Tri.",
+            "evidence_urls": [
+              "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html",
+              "https://vietnamnet.vn/en/visiting-gold-leaf-village-in-hanoi-121921.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Gold and Silver Leaf Beating",
+            "description": "The manual process of pounding gold and silver into extremely thin leaves using traditional interleaving paper and specialized adhesive mixtures.",
+            "evidence_urls": [
+              "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html",
+              "https://vietnamnet.vn/en/visiting-gold-leaf-village-in-hanoi-121921.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Super-thin Gold and Silver Leaves",
+            "description": "Delicate metallic sheets supplied for decorating religious objects, lacquerware, and architectural details.",
+            "evidence_urls": [
+              "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html",
+              "https://hanoitimes.vn/kieu-ky-gilding-craft-revives-thanks-to-artisans-creativity-318357.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Gilded Religious and Cultural Artifacts",
+            "description": "Adorned items such as Buddha statues, horizontal lacquered boards (hoanh phi), parallel panels (cau doi), and thrones.",
+            "evidence_urls": [
+              "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Traditional Gilding and Restoration Services",
+            "description": "Expert application of gold leaf for temples, pagodas, worship halls, and historic imperial architecture nationwide.",
+            "evidence_urls": [
+              "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html",
+              "https://hanoitimes.vn/kieu-ky-gilding-craft-revives-thanks-to-artisans-creativity-318357.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Craft Village Heritage Tourism",
+            "description": "Cultural visits to Kieu Ky village to observe centuries-old gold leaf beating workshops and local artisan practices.",
+            "evidence_urls": [
+              "https://vietnamnet.vn/en/visiting-gold-leaf-village-in-hanoi-121921.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Craft Transmission",
+            "description": "Passing down technical skills, specialized material preparation, and historical heritage from master artisans to younger villagers.",
+            "evidence_urls": [
+              "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html",
+              "https://hanoitimes.vn/kieu-ky-gilding-craft-revives-thanks-to-artisans-creativity-318357.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 50,
+        "education_potential": 45,
+        "creative_industry_potential": 60,
+        "digital_potential": 20
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Kieu Ky Village Community and Ancestor Worship Association",
+            "description": "Local residents and practitioners who maintain the village temple dedicated to forefather Nguyen Quy Tri and observe his annual death anniversary.",
+            "evidence_urls": [
+              "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-27T02:48:06.805631Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The craft supports local practitioners through specialized production of gold leaves and restoration commissions for nationwide temples, pagodas, and historical structures.",
+          "evidence_urls": [
+            "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html",
+            "https://hanoitimes.vn/kieu-ky-gilding-craft-revives-thanks-to-artisans-creativity-318357.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "As a unique craft village near Hanoi preserving a 400-year-old tradition, Kieu Ky attracts visitors interested in traditional Vietnamese handicraft heritage.",
+          "evidence_urls": [
+            "https://vietnamnet.vn/en/visiting-gold-leaf-village-in-hanoi-121921.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "There are opportunities for transmitting traditional technical knowledge, material preparation processes, and historical context to younger generations and visiting students.",
+          "evidence_urls": [
+            "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Artisans apply gold and silver leaves to high-end lacquerware, artistic objects, and intricate interior/architectural decorations, feeding into broader cultural and decorative industries.",
+          "evidence_urls": [
+            "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html",
+            "https://hanoitimes.vn/kieu-ky-gilding-craft-revives-thanks-to-artisans-creativity-318357.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited formal documentation exists regarding digital archiving, online registries, or e-commerce integration for the element, though general media coverage helps raise awareness.",
+          "evidence_urls": [
+            "https://english.vnanet.vn/vnp/en-0523-gold-laminating-and-gilding-craft-of-kieu-ky-village/50216.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 17,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-27T02:48:06.805631Z",
         "last_error": null
       }
     },
@@ -63229,7 +63479,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-26T02:12:34.185377Z",
+    "generated_at": "2026-10-27T02:48:28.516264Z",
     "total_ich_elements": 346,
     "complete_records": 346,
     "incomplete_records": 0,
