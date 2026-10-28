@@ -63476,17 +63476,551 @@
         "last_checked_at": null,
         "last_error": null
       }
+    },
+    {
+      "id": "ich-8ebd218e",
+      "element_name": "Día de Muertos (Day of the Dead)",
+      "categories": [
+        "Social Practices & Rituals",
+        "Culinary Traditions",
+        "Traditional Craftsmanship"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.mexculture.net/day-of-the-dead&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.mexculture.net/day-of-the-dead",
+        "https://www.britannica.com/topic/Day-of-the-Dead",
+        "https://www.wttc.org/Portals/0/Documents/Reports/WTTC%20Travel%20Hub%20-%20Dia%20de%20los%20Muertos.pdf",
+        "https://www.departurelevel.com/how-to-make-day-of-the-dead-altar-at-home/",
+        "https://www.mexicoinmykitchen.com/traditional-day-of-the-dead-recipes/",
+        "https://farmtojar.com/mexican-celebration-recipes/",
+        "https://johnvena.com/4-traditional-dishes-to-celebrate-dia-de-los-muertos/",
+        "https://reinarabelde.com/blogs/news/10-steps-for-your-own-dia-de-los-muertos-altar-reina-rebelde-style",
+        "https://familiakitchen.com/day-of-the-dead-recipes-food-and-drink-guide/",
+        "https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054",
+        "https://www.thegracemuseum.org/dia-de-los-muertos-symbols-and-traditions",
+        "https://www.remitly.com/gb/en/c/blog/culture/day-of-the-dead-traditions",
+        "https://asesinaloa.gob.mx/dia-de-muertos-tradicion-declarada-patrimonio-de-la-humanidad-por-la-unesco-en-2003/",
+        "https://pinaenlacocina.com/dia-de-los-muertos-recipes-inspired-by-day-of-the-dead/",
+        "https://bsn.eu.com/bsn-voices/dia-de-muertos-history-and-practices-of-mexicos-day-of-the-dead/",
+        "https://clacs.uncc.edu/day-dead-history",
+        "https://muertolandia.com/blogs/news/how-to-create-your-day-of-the-dead-altar",
+        "https://www.sandos.com/blog/how-to-make-an-altar-de-muertos-at-home",
+        "https://www.youtube.com/watch?v=1g013000000",
+        "https://commonthreads.org/dia-de-los-muertos-celebration-and-meaning/",
+        "https://en.wikipedia.org/wiki/Day_of_the_Dead",
+        "https://mexic-artemuseum.org/day-of-the-dead/",
+        "https://www.legacytree.com/blog/dia-de-los-muertos-honoring-ancestors-through-mexican-tradition",
+        "https://www.chicagohistory.org/dia-de-los-muertos-hybrid-identities-and-remembering-loved-ones/",
+        "https://www.postoakschool.org/news/celebrating-dia-de-los-muertos-at-post-oak-and-around-the-world"
+      ],
+      "scraped_at": "2026-10-28T02:55:53.958293Z",
+      "location": {
+        "country": "Mexico",
+        "provinces": [
+          "Oaxaca",
+          "Mexico City",
+          "Puebla",
+          "Michoacán",
+          "Sinaloa",
+          "Guanajuato"
+        ],
+        "lat": 17.0,
+        "lng": -96.5
+      },
+      "resume_analisa": {
+        "description": "Día de Muertos, or Day of the Dead, is a multi-day Mexican holiday, also observed to a lesser extent in other areas of Latin America and in the United States, honoring deceased loved ones and making peace with the eventuality of death by treating it familiarly, without fear and dread. It is a vibrant celebration where families gather to welcome the souls of the dead on their annual visit, sharing food, stories, and music in their memory.",
+        "cultural_significance": "The tradition is rooted in Indigenous Mesoamerican cultures (such as the Aztecs, Toltecs, Olmecs, and Maya) who held a cyclical understanding of life and death, believing that the spirits of the dead remain connected to the living and can return periodically to share in the earthly world. After Spanish colonization, it fused with Catholic holidays like All Saints' Day and All Souls' Day. Día de Muertos emphasizes joy, memory, and connection, rather than mourning, and celebrates death as a natural part of life. It fulfills a significant social function by affirming the role of the individual within society. The Day of the Dead was inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2008.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "The celebration of Día de Muertos fosters strong community bonds and intergenerational connections through shared rituals, remembrance, and mutual support during a time of collective reflection on life and death. This enhanced social cohesion can indirectly contribute to community resilience, enabling better collective response and recovery in the face of various adversities, including disasters. The practice affirms the role of the individual within society, strengthening social fabric.",
+        "gemini_tags": [
+          "Mexican cultural heritage",
+          "Day of the Dead",
+          "Ofrendas",
+          "Ancestral veneration",
+          "Indigenous traditions",
+          "Catholic syncretism",
+          "Community celebration",
+          "Intangible Cultural Heritage",
+          "Mexican cuisine",
+          "Traditional crafts"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Ritual/Ceremonial Altar Construction and Culinary Preparation",
+        "materials_and_tools": [
+          "Photos of loved ones",
+          "Candles (white or yellow)",
+          "Marigold (cempasúchil) flowers",
+          "Copal incense",
+          "Papel picado (intricate paper banners)",
+          "Salt",
+          "Water",
+          "Pan de muerto (sweet bread)",
+          "Sugar skulls (calaveras)",
+          "Favorite foods and drinks of the deceased (e.g., tamales, mole, coffee, fruit)",
+          "Personal items/mementos",
+          "Tablecloths or colorful fabric",
+          "Boxes or crates (to create levels)"
+        ],
+        "step_by_step": [
+          "Choose a location and layout: Select a visible area in the home. Decide on the number of levels for the altar (traditionally 2, 3, or 7 levels, symbolizing different planes of existence like heaven, earth, and the underworld). Use tables, boxes, or crates to create these tiers.",
+          "Cover the altar: Drape the levels with tablecloths or colorful fabric, often using purple to symbolize mourning and white for purity. Hang papel picado (paper banners) above or across the altar, as they represent the wind and the fragility of life.",
+          "Place photos and mementos: Position framed photos of deceased loved ones on the top tier of the altar. Include personal belongings and objects that held special meaning to them or that they enjoyed in life.",
+          "Add candles: Arrange lighted candles, particularly white or yellow ones, on the altar to symbolize hope, faith, and to guide spirits on their journey. Four candles on the top tier can represent the four cardinal points.",
+          "Include elements of nature: Place a small dish of salt to symbolize purification and a glass of water as a welcoming refreshment for the spirits after their long journey. Scatter marigold (cempasúchil) flower petals to create a vibrant path from the cemetery to the home, helping to guide the souls.",
+          "Offer food and drinks: Place traditional foods such as *pan de muerto* (bread of the dead), sugar skulls (calaveras), and the deceased's favorite dishes and beverages (e.g., tamales, mole, coffee, seasonal fruits).",
+          "Burn incense: Light copal incense, an aromatic resin used in pre-Hispanic ceremonies, to purify the space and help attract the spirits to the altar.",
+          "Add decorative elements: Include colorful sugar skulls (calaveras), toy skeletons (calacas), and other traditional handicrafts to represent the 'sweet' side of death and to celebrate life."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "United States",
+            "element_name": "Day of the Dead celebrations",
+            "relationship_reason": "The festival is widely observed among people of Mexican heritage in the United States, maintaining cultural ties and ancestral memories."
+          },
+          {
+            "country": "Guatemala",
+            "element_name": "Fiambre (traditional cold salad)",
+            "relationship_reason": "Día de Muertos is observed in Guatemala, where a specific traditional dish called Fiambre is prepared for the holiday."
+          },
+          {
+            "country": "Other Latin American countries",
+            "element_name": "Day of the Dead celebrations (general)",
+            "relationship_reason": "The holiday is observed to a lesser extent in other areas of Latin America, stemming from shared Indigenous Mesoamerican roots and later Spanish influences."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-e9511bd6",
+      "element_name": "Hungarian Folk Pottery",
+      "categories": [
+        "Traditional Craftsmanship"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//hagyomanyokhaza.hu/en/node/221&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://hagyomanyokhaza.hu/en/node/221",
+        "https://mek.oszk.hu/02100/02115/html/3-1008.html",
+        "https://barakonyi.hu/en/manufactured-pottery",
+        "https://ceramicartsnetwork.org/daily/ceramic-art-and-artists/ceramic-artists/keeping-the-hungarian-folk-pottery-tradition-alive/",
+        "https://kongres-magazine.eu/2019/08/incentive-on-the-trail-of-hungarian-pottery-heritage/"
+      ],
+      "scraped_at": "2026-10-28T02:56:35.709814Z",
+      "location": {
+        "country": "Hungary",
+        "provinces": [
+          "Great Plain",
+          "Transdanubia",
+          "Upper Hungary",
+          "Őrség region"
+        ],
+        "lat": 46.75,
+        "lng": 20.15
+      },
+      "resume_analisa": {
+        "description": "Hungarian Folk Pottery is a rich branch of Hungarian ornamental folk art, characterized by a wide variety of pot shapes such as three-legged pots, jars, jugs, and crocks. These items were traditionally created for practical household use but also served to display regional identity and artistic talent. The pottery often features floral designs, bold colors, and hand-painted details.",
+        "cultural_significance": "This traditional craft is deeply tied to Hungary's cultural heritage, preserving regional identity and artistic expression. Potters historically obtained clay locally and were intimately familiar with its properties. The knowledge and techniques of pottery making were passed down through generations within communities. The potter's wheel was considered the most important tool and a symbol of the entire trade. Pottery centers developed wherever good quality and sufficient quantities of clay were available, becoming integral to local economies and cultural life.",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Traditional Craftsmanship",
+          "Folk Art",
+          "Hungary",
+          "Pottery"
+        ],
+        "drr_relevance": false
+      },
+      "resume_tata_cara": {
+        "type": "Wheel-thrown and Hand-painted Pottery",
+        "materials_and_tools": [
+          "Clay (locally obtained)",
+          "Water",
+          "Potter's wheel",
+          "Damp sponge",
+          "Paint brush",
+          "Lead glaze",
+          "Kiln"
+        ],
+        "step_by_step": [
+          "**Clay Preparation**: Clay deposits are repeatedly broken, mixed with water, and trampled with feet on a cloth or wooden board to soften, homogenize, and remove air bubbles. It must be thoroughly kneaded to prevent bursting during firing.",
+          "**Shaping (Wheel-throwing)**: With wet hands, the prepared clay is centered on the potter's wheel head into a solid ball. From this centered lump, the clay is shaped and pulled to the desired form and size.",
+          "**Drying and Retouching**: The newly thrown clay pot is wiped with a damp sponge during retouching. The shaped piece is then allowed to dry.",
+          "**Decorating**: The dried pottery is decorated. While some pieces were historically left unpainted or had simple undulating designs, the use of paint brushes for decoration became more common in the second half of the 19th century. Designs often include floral patterns and bold colors, applied by hand.",
+          "**First Firing (Terracotta Firing / Zsengélés)**: The decorated vessels undergo a first firing in a kiln, known as 'zsengélés' or terracotta firing, which sets the colors of the designs.",
+          "**Glazing**: For glazed pieces, lead glaze is poured over the entire vessel after the first firing. This step makes the products impermeable.",
+          "**Second Firing**: A final firing takes place after glazing, completing the pottery-making process."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Various",
+            "element_name": "Pottery making traditions globally",
+            "relationship_reason": "Pottery making is a fundamental human craft with ancient roots, practiced across diverse cultures worldwide, sharing basic techniques like clay preparation, shaping, and firing."
+          },
+          {
+            "country": "Turkey, Haban, Saxon regions",
+            "element_name": "Decorative elements and forms in pottery",
+            "relationship_reason": "The Turks, Habans, and Saxons had a significant influence on Hungarian folk pottery, introducing new decorative elements and forms."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-56185f65",
+      "element_name": "Doenjang (Korean Soybean Paste) Making",
+      "categories": [
+        "Culinary Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//folkency.nfm.go.kr/topic/detail/591&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://folkency.nfm.go.kr/topic/detail/591",
+        "https://www.seonhan.com/board/view.php?id=seonhan_01&no=13",
+        "https://10000recipe.com/recipe/6847844",
+        "https://10000recipe.com/recipe/6847844",
+        "https://note.com/nonnon_miso/n/n9a099852230b",
+        "https://10000recipe.com/recipe/6847844",
+        "https://namu.wiki/w/%EB%90%9C%EC%9E%A5",
+        "https://folkency.nfm.go.kr/topic/detail/591",
+        "https://encykorea.aks.ac.kr/Contents/Item/E0015509",
+        "https://koreastory.kr/traditional-doenjang-making-guide/",
+        "https://ko.wikipedia.org/wiki/%EB%90%9C%EC%9E%A5",
+        "https://www.youtube.com/watch?v=02283-x_48M",
+        "https://k-culture.kr/doenjang-origin-introduction-nutritional-benefits-cooking-methods/",
+        "https://www.youtube.com/watch?v=s5e1g494_9Y"
+      ],
+      "scraped_at": "2026-10-28T02:57:08.135575Z",
+      "location": {
+        "country": "South Korea",
+        "provinces": [
+          "Seoul",
+          "Gyeonggi-do",
+          "Chungcheong-do"
+        ],
+        "lat": 37.5666791,
+        "lng": 126.9782914
+      },
+      "resume_analisa": {
+        "description": "Doenjang is a traditional Korean fermented soybean paste, a fundamental staple in Korean cuisine. It is made primarily from fermented soybean blocks called meju and brine, undergoing a long maturation process. This fermented food has historically served as a crucial source of protein in the traditional Korean diet, which was often centered around rice and vegetables.",
+        "cultural_significance": "The practice of making doenjang has deep historical roots in Korea, dating back to the Three Kingdoms period (57 BCE–668 CE) and the Unified Silla period (668–935 CE). Beyond its culinary role, doenjang held significant cultural importance, being used as a staple food, a relief item during times of need, and even in ritualistic practices to ward off evil spirits and bad luck. The quality and taste of a household's doenjang were considered so vital that traditional sayings like 'If the taste of jang changes, the family will fall apart' and 'One gives their daughter in marriage after tasting their jang' emerged, highlighting its connection to a family's well-being and prosperity. Traditional customs also include adorning doenjang pots with straw ropes (geumjul), red peppers, charcoal, and jujubes, symbolizing sanctity, purification, and the warding off of negative influences.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "hazard_categories": [
+          "Drought",
+          "Flood"
+        ],
+        "drr_mechanism": "Doenjang, as a traditional fermented and preserved food, provides a stable and long-lasting source of protein and essential nutrients. This practice of food preservation contributes significantly to food security, making communities more resilient to periods of food scarcity that can arise from various disasters such as droughts or floods, by ensuring a sustained and accessible food supply.",
+        "gemini_tags": [
+          "Korean cuisine",
+          "fermentation",
+          "traditional food",
+          "food preservation",
+          "cultural heritage",
+          "soybean paste"
+        ],
+        "drr_relevance_level": "Directly Related to DRR",
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Traditional Fermentation",
+        "materials_and_tools": [
+          "Soybeans (백태콩)",
+          "Coarse sea salt (굵은소금)",
+          "Water (물)",
+          "Meju (메주 - fermented soybean blocks)",
+          "Large pot or pressure cooker",
+          "Large bowl",
+          "Sieve or colander",
+          "Masher or pestle",
+          "Large earthenware pot (옹기 - onggi)",
+          "Straw rope (금줄 - geumjul, optional)",
+          "Dried red peppers (마른홍고추, optional)",
+          "Charcoal (참숯, optional)",
+          "Jujubes (대추, optional)",
+          "Chili powder or chili seeds (고추씨가루, optional)"
+        ],
+        "step_by_step": [
+          "**1. Prepare Meju (Soybean Blocks):** Soak soybeans in water overnight. Boil the soaked soybeans until they are very soft (typically around 5 hours in a large pot). Mash the cooked soybeans thoroughly and shape them into compact blocks, which are called meju.",
+          "**2. Ferment Meju:** Hang the meju blocks in a warm, airy, and well-ventilated place, traditionally for about one to two months, to allow beneficial molds to grow and initiate fermentation. It is crucial to prevent them from becoming too damp or freezing, which can lead to undesirable mold growth.",
+          "**3. Clean Meju:** Once the meju blocks are adequately fermented, brush their surfaces clean to remove any loose molds or impurities.",
+          "**4. Prepare Brine:** Dissolve coarse sea salt in water. The traditional method to check the correct salinity is to float a fresh egg in the solution; it should float with a portion the size of a 500-won coin visible above the surface. The optimal time for preparing the brine and soaking the meju is traditionally during Jeongwol (the first month of the lunar calendar), as the colder temperatures inhibit the growth of harmful bacteria.",
+          "**5. Soak Meju in Brine:** Place the cleaned meju blocks into a large, clean earthenware pot (onggi). Pour the prepared brine over the meju, ensuring that the blocks are completely submerged. Traditionally, charcoal, dried red peppers, and jujubes are added to the pot for symbolic reasons of purification, flavor enhancement, and to ward off negative influences.",
+          "**6. Initial Fermentation (Jang Damgeugi):** Allow the meju to soak and ferment in the brine for approximately 40 to 60 days in a sunny location. During this period, the liquid portion of the mixture will develop into soy sauce (ganjang).",
+          "**7. Separate Ganjang and Doenjang (Jang Gareugi):** After the initial fermentation, carefully separate the liquid (ganjang) from the solid meju blocks. The ganjang is then typically boiled and further aged to develop its flavor.",
+          "**8. Prepare Doenjang:** Take the soaked meju solids and mash them thoroughly. Some recipes suggest adding additional boiled and mashed soybeans, chili powder, or chili seeds to enhance color and flavor. Adjust the salt content if necessary.",
+          "**9. Age Doenjang:** Pack the mashed doenjang into clean earthenware pots. To prevent mold growth, sprinkle a layer of coarse salt on the surface of the doenjang. Allow the doenjang to age for at least 6 months, or even a year or more, to achieve a deeper and richer flavor. It is important to regularly monitor the state of the doenjang, especially during the first two weeks of aging."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Miso (Japanese Soybean Paste)",
+            "relationship_reason": "Both Doenjang and Miso are traditional fermented soybean pastes, sharing common historical roots and similar production methods. While there are regional variations in ingredients (e.g., the use of rice koji or barley koji in miso) and resulting flavor profiles, historical records suggest a cultural exchange where the concept of carbohydrate-enhanced meju materials might have influenced Japanese miso production."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "category": "Culinary Traditions",
+      "category_valid": true,
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
     }
   ],
   "summary": {
-    "generated_at": "2026-10-27T02:48:28.516264Z",
-    "total_ich_elements": 346,
-    "complete_records": 346,
+    "generated_at": "2026-10-28T02:57:43.410559Z",
+    "total_ich_elements": 349,
+    "complete_records": 349,
     "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 122,
-      "Social Practices & Rituals": 90,
-      "Culinary Traditions": 57,
+      "Traditional Craftsmanship": 124,
+      "Social Practices & Rituals": 92,
+      "Culinary Traditions": 59,
       "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 40,
       "Social Practices & Rituals | Performing Arts": 5,
