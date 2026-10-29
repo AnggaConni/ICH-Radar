@@ -17478,78 +17478,170 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-29T03:21:12.893139Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Knowledge of Northern Athapaskan/Dene Survival Skills",
+            "description": "Oral history and generational knowledge connecting physical training and grip techniques to ice fishing and harvesting slippery fish.",
+            "evidence_urls": [
+              "https://www.denegames.ca/dene-games",
+              "https://teaandbannock.com/2016/03/02/dene-games-sportsmanship-and-respect/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Traditional and Standardized Stick Pull Equipment",
+            "description": "Tapered wooden sticks greased with traditional bear grease or modern shortening (Crisco) to replicate fish tail handling.",
+            "evidence_urls": [
+              "https://www.denegames.ca/dene-games"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Dene Athletes, Elders, and Knowledge Keepers",
+            "description": "Community members, cultural practitioners, and coaches who maintain, transmit, and officiate traditional Dene games.",
+            "evidence_urls": [
+              "https://www.denegames.ca/dene-games"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Community Halls and Regional Cultural Centres",
+            "description": "Gathering spaces across northern communities used for feasts, community celebrations, and athletic training.",
+            "evidence_urls": [
+              "https://teaandbannock.com/2016/03/02/dene-games-sportsmanship-and-respect/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Arctic Winter Games International Committee",
+            "description": "Circumpolar sporting body providing structured competitive platforms like the Arctic Winter Games for Dene Games disciplines.",
+            "evidence_urls": [
+              "https://www.denegames.ca/dene-games"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
+        "production": [
+          {
+            "name": "Crafting of Stick Pull Equipment",
+            "description": "Shaping and tapering wooden sticks used specifically for training and competitions.",
+            "evidence_urls": [
+              "https://www.denegames.ca/dene-games"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "products": [],
         "services": [],
-        "experience": [],
-        "education": []
+        "experience": [
+          {
+            "name": "Arctic Winter Games Cultural and Athletic Competitions",
+            "description": "Multi-sport circumpolar gatherings featuring competitive events, cultural exchanges, and spectator engagement.",
+            "evidence_urls": [
+              "https://www.denegames.ca/dene-games"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Community and Youth Sport Workshops",
+            "description": "Transmission of traditional rules, physical posture, and survival heritage by elders and experienced athletes to younger generations.",
+            "evidence_urls": [
+              "https://teaandbannock.com/2016/03/02/dene-games-sportsmanship-and-respect/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
+        "livelihood_potential": 10,
+        "tourism_potential": 20,
+        "education_potential": 70,
         "creative_industry_potential": 0,
-        "digital_potential": 0
+        "digital_potential": 15
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Dene Community Networks and Cultural Organizers",
+            "description": "Local communities across the Northwest Territories, Yukon, and northern regions upholding traditional governance, gatherings, and sport rules.",
+            "evidence_urls": [
+              "https://www.denegames.ca/dene-games",
+              "https://teaandbannock.com/2016/03/02/dene-games-sportsmanship-and-respect/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-29T03:21:12.893139Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The practice is culturally rooted in community wellness and heritage preservation rather than commercial monetization or wage labor.",
+          "evidence_urls": [
+            "https://www.denegames.ca/dene-games"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Showcased primarily through major periodic events like the Arctic Winter Games, drawing regional and cultural visitors rather than mass commercial tourism.",
+          "evidence_urls": [
+            "https://www.denegames.ca/dene-games"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High potential for transmitting Indigenous history, physical literacy, and survival heritage to youth in northern communities and school programs.",
+          "evidence_urls": [
+            "https://www.denegames.ca/dene-games",
+            "https://teaandbannock.com/2016/03/02/dene-games-sportsmanship-and-respect/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
+          "rationale": "No direct commercial creative industry application identified outside of traditional craft and community-based transmission.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited digital documentation exists via short instructional media and sports coverage, but the element relies fundamentally on in-person physical transmission.",
+          "evidence_urls": [
+            "https://www.denegames.ca/dene-games"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 2,
+        "evidence_item_count": 13,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 4,
+        "opportunity_scores_without_evidence": 1,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-10-29T03:21:12.893139Z",
         "last_error": null
       }
     },
@@ -17675,8 +17767,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-29T03:21:32.437235Z",
+      "resource_enrichment_status": "insufficient_evidence",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -17706,19 +17798,19 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "insufficient_evidence",
+        "validation_status": "passed_with_warnings",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
+        "uncited_item_count": 11,
+        "invalid_evidence_url_count": 17,
         "opportunity_scores_with_evidence": 0,
         "opportunity_scores_without_evidence": 5,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-29T03:21:32.437235Z",
+        "last_error": "resource_mapping.knowledge_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.material_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.human_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.place_resources[0] had no valid direct evidence URL and was excluded; resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; value_chain.production[0] had no valid direct evidence URL and was excluded; value_chain.services[0] had no valid direct evidence URL and was excluded; value_chain.education[0] had no valid direct evidence URL and was excluded"
       }
     },
     {
@@ -64013,7 +64105,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-28T02:57:43.410559Z",
+    "generated_at": "2026-10-29T03:21:56.113272Z",
     "total_ich_elements": 349,
     "complete_records": 349,
     "incomplete_records": 0,
