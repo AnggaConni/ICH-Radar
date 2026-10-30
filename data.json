@@ -64102,22 +64102,542 @@
         "last_checked_at": null,
         "last_error": null
       }
+    },
+    {
+      "id": "ich-3db0fc0b",
+      "element_name": "Hosokawa-shi (細川紙)",
+      "categories": [
+        "Traditional Craftsmanship"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.hosokawashi.jp/about/&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.hosokawashi.jp/about/",
+        "https://www.higashichichibu.jp/tourism/hosokawashi",
+        "https://www.hosokawashi.jp/process/",
+        "https://kilala.jp/culture/washi-making/",
+        "https://www.town.ogawa.saitama.jp/0000000961.html",
+        "https://www.futaba-ryokan.jp/sightseeing/hosokawashi/",
+        "https://www.higashichichibu.jp/tourism/hosokawashi/history",
+        "https://bunka.nii.ac.jp/heritages/detail/205634",
+        "https://www.higashichichibu.jp/tourism/hosokawashi/youken",
+        "https://otakara-aid.com/column/hosokawashi/",
+        "https://www.geo.jp/ogawa/ogawa2.html"
+      ],
+      "scraped_at": "2026-10-30T03:23:26.435451Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Saitama Prefecture"
+        ],
+        "lat": 35.9754168,
+        "lng": 139.4160114
+      },
+      "resume_analisa": {
+        "description": "Hosokawa-shi is a traditional Japanese handmade paper, primarily produced in Ogawa-machi and Higashichichibu-mura, Saitama Prefecture. It is characterized by its unbleached pure kozo paper, possessing both strength and a rustic yet lustrous sheen, with a tight texture that resists fuzzing, offering a rigid and tasteful quality. Made from the bark of the kozo (mulberry) plant using traditional methods and tools, it is known for its exceptional durability and high quality.",
+        "cultural_significance": "Hosokawa-shi represents a traditional papermaking technique passed down through generations, embodying craftsmanship and sustainable resource management. It was designated as a National Important Intangible Cultural Property in 1978 and inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2014 as part of 'Washi, craftsmanship of traditional Japanese hand-made paper,' alongside Honminoshi (Gifu Prefecture) and Sekishubanshi (Shimane Prefecture). Historically, it was highly valued as ledger paper for merchants and as a daily necessity for common people in Edo, appreciated for its aesthetic appeal and inherent strength. Today, it is utilized for various purposes including Japanese books, printmaking, and the conservation of cultural properties.",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Traditional Japanese Paper",
+          "Handmade Paper",
+          "Washi",
+          "Kozo Paper",
+          "Saitama Prefecture",
+          "Traditional Craft",
+          "Intangible Cultural Heritage",
+          "Papermaking"
+        ],
+        "drr_relevance": false
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "Kozo (mulberry) plant",
+          "Water",
+          "Soda ash (or plant ash)",
+          "Tororo-aoi (sunset hibiscus) root",
+          "Steaming pot (蒸し釜)",
+          "Knives (for peeling bark)",
+          "Beating sticks/mallets",
+          "Paper-making vat (漉き舟 - sukibune)",
+          "Bamboo screen (漉き簀 - sukisu)",
+          "Deckle (漉き桁 - sukiketa)",
+          "Press (for dewatering)",
+          "Drying boards (or iron plates)"
+        ],
+        "step_by_step": [
+          "**Harvesting Kozo**: Kozo branches are harvested, typically from late November to January, and cut to lengths of about 70-90 cm.",
+          "**Steaming**: The harvested kozo is steamed in a large pot for approximately two hours to soften the bark.",
+          "**Peeling Bark**: While still warm, the outer bark is carefully peeled off each kozo branch. The inner bast fiber is used for papermaking. The peeled bark is then dried and stored.",
+          "**Soaking and Peeling Black Bark (Kurokawa-hiki)**: The dried bark is soaked in water to soften it. The black outer skin is then scraped off using a small knife (楮引包丁 - kazuhiki bocho) to obtain the white inner bark (白皮 - shirokawa or white kozo).",
+          "**Boiling Kozo (Kazo-ni)**: The white kozo is boiled in a large pot with water and soda ash (or plant ash) to soften the fibers and remove impurities.",
+          "**Washing and Removing Impurities (Kazo-sarashi/Chiritori)**: After boiling, the kozo is thoroughly rinsed in flowing water to remove lye and impurities. Small specks of dirt and debris are meticulously picked out by hand.",
+          "**Beating Kozo (Kazo-uchi)**: The cleaned kozo fibers are beaten with wooden mallets (or machines in modern practice) to further separate and soften them, preparing them for papermaking.",
+          "**Preparing Neri (Tororo-tataki)**: The roots of the tororo-aoi (sunset hibiscus) plant are pounded to extract a viscous liquid called 'neri.' This neri acts as a dispersing agent, preventing the kozo fibers from clumping together in the water and allowing them to spread evenly during the papermaking process.",
+          "**Papermaking (Kamisuki)**: In a large vat called a 'sukibune,' the prepared kozo fibers, water, and neri are mixed. A bamboo screen (sukisu) fitted into a frame (sukiketa) is dipped into the mixture, scooping up the liquid. The papermaker repeatedly shakes the screen, allowing the fibers to interlock evenly. The newly formed sheet of paper is then transferred to a stack of wet sheets called 'kanda' or 'shishi.'",
+          "**Dewatering (Kanda-shibori)**: The stack of wet paper sheets (kanda) is pressed to remove excess water, often by placing weights on it or using a mechanical press.",
+          "**Drying (Kami-hoshi)**: Each dewatered sheet is carefully peeled off and attached to a drying board (or iron plate) to dry naturally in the sun. Drying on wooden boards can leave unique wood grain patterns on the paper.",
+          "**Sorting and Finishing (Kami-soroe/Kenpin)**: The dried paper sheets are inspected for any imperfections like holes, tears, or unevenness. High-quality sheets are sorted as 'ichi-no-kami' (first-grade paper), while those with slight irregularities are classified as 'ni-no-kami' (second-grade paper)."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Japan",
+            "element_name": "Hosokawa Hosho (細川奉書)",
+            "relationship_reason": "The papermaking technique for Hosokawa-shi originated from the 'Hosokawa Hosho' paper made in Hosokawa Village (present-day Koya Town, Wakayama Prefecture) and was introduced to the Ogawa/Higashichichibu area during the Edo period."
+          },
+          {
+            "country": "Japan",
+            "element_name": "Washi: craftsmanship of traditional Japanese hand-made paper (including Honminoshi and Sekishubanshi)",
+            "relationship_reason": "Hosokawa-shi is one of three traditional Japanese handmade paper techniques (along with Honminoshi from Gifu Prefecture and Sekishubanshi from Shimane Prefecture) collectively inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity as 'Washi: craftsmanship of traditional Japanese hand-made paper.'"
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-195dab1f",
+      "element_name": "Transhumance (Transumanza)",
+      "categories": [
+        "Social Practices & Rituals",
+        "Culinary Traditions",
+        "Oral Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.visitlazio.com/en/unesco-transhumance&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.visitlazio.com/en/unesco-transhumance",
+        "https://www.worldmonumentsfund.org/program/transhumance-cultural-landscape",
+        "https://www.alpinarena.com/en/val-senales/transhumance",
+        "https://www.spaghettiandmandolino.it/en/transhumance-unesco-heritage/",
+        "https://www.unesco.org/en/intangible-heritage/italy"
+      ],
+      "scraped_at": "2026-10-30T03:24:10.490127Z",
+      "location": {
+        "country": "Italy",
+        "provinces": [
+          "Molise",
+          "Abruzzo",
+          "Puglia",
+          "Campania",
+          "Basilicata",
+          "Lazio",
+          "Lombardy",
+          "Trentino-Alto Adige (Val Senales in South Tyrol)"
+        ],
+        "lat": 41.684672,
+        "lng": 14.595614
+      },
+      "resume_analisa": {
+        "description": "Transhumance is an ancient pastoral practice involving the seasonal migration of livestock, primarily sheep, but also cattle and goats, along with their shepherds, between different pastures. This movement occurs from lowland areas to high mountain pastures in spring (known as 'monticazione') and back to the lowlands in autumn ('demonticazione'). The journeys are undertaken along semi-natural paths called 'tratturi', often lasting for days with stops at designated 'post stations'.",
+        "cultural_significance": "This prehistoric tradition, dating back to at least the third century BCE in Italy, represents a fundamental piece of Italy's agricultural culture. It has preserved a balanced relationship between humans and nature, promoting the sustainable use of natural resources, respect for animal welfare, and adherence to seasonal rhythms. The practice has shaped landscapes and influenced social structures for millennia. Transhumance was inscribed as Intangible Cultural Heritage of Humanity by UNESCO in 2019, following a joint nomination by Italy, Greece, and Austria.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Drought",
+          "Flood"
+        ],
+        "drr_mechanism": "Transhumance contributes to resilient livelihoods and food security by ensuring livestock have access to varied pastures throughout the year, which is crucial for their health and productivity, thus sustaining communities. It embodies ecosystem-based disaster risk reduction by maintaining a balanced relationship with nature and promoting sustainable resource use, as the 'tratturi' function as ecological corridors. Furthermore, shepherds' deep traditional knowledge of the environment and climate change allows for adaptation to seasonal variations, such as moving to higher grounds during potential drought conditions or avoiding flood-prone areas, thereby demonstrating climate adaptation and resilience.",
+        "gemini_tags": [
+          "Traditional Knowledge",
+          "Pastoralism",
+          "Livestock Management",
+          "Seasonal Migration",
+          "Sustainable Agriculture",
+          "Cultural Landscape",
+          "UNESCO Heritage"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Seasonal Livestock Migration",
+        "materials_and_tools": [
+          "Livestock (sheep, cattle, goats)",
+          "Shepherds",
+          "Dogs",
+          "Horses",
+          "Tratturi (ancient sheep tracks)",
+          "Rest areas, fences, shelters, chapels, taverns, inns (historical infrastructure along tratturi)"
+        ],
+        "step_by_step": [
+          "**Monticazione (Spring):** Shepherds lead their flocks from lowland pastures to high mountain pastures as temperatures rise and mountain vegetation becomes available.",
+          "**Summer Grazing:** Livestock graze in the fertile mountain pastures during the warmer months.",
+          "**Demonticazione (Autumn):** As winter approaches, shepherds guide their animals back down from the high mountain pastures to the warmer lowland areas.",
+          "The migration involves traveling along established 'tratturi' (sheep tracks) for several days, with planned stops at 'post stations' for rest and sustenance."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Greece",
+            "element_name": "Transhumance",
+            "relationship_reason": "Greece, along with Italy and Austria, jointly proposed Transhumance for UNESCO Intangible Cultural Heritage recognition, as it is a shared traditional practice in the Mediterranean and Alpine regions."
+          },
+          {
+            "country": "Austria",
+            "element_name": "Transhumance",
+            "relationship_reason": "Austria, along with Italy and Greece, jointly proposed Transhumance for UNESCO Intangible Cultural Heritage recognition. The Val Senales transhumance in Italy is a cross-border and trans-glacial migration to pastures in Vent, Austria."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-6265f8e8",
+      "element_name": "Traditional Iranian-Islamic Medicine (TIIM)",
+      "categories": [
+        "Social Practices & Rituals",
+        "Oral Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://www.shutterstock.com/image-photo/medicinal-plant-native-northern-mountains-260nw-2309852237.jpg",
+      "source_urls": [
+        "https://www.gaiaherbs.com/blogs/seeds-of-knowledge/traditional-iranian-islamic-medicine",
+        "https://tabeebo.com/persian-traditional-medicine/",
+        "https://naturalhealthresearch.org/traditional-persian-medicine-and-commonly-used-herbs/",
+        "https://en.wikipedia.org/wiki/Iranian_traditional_medicine",
+        "https://naturalhealth.org/a-beginners-guide-to-traditional-persian-medicine/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5279969/",
+        "https://www.tehrantimes.com/news/414002/Traditional-medicine-clarifies-warmness-coldness-dryness-wetness",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4623773/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4700778/",
+        "https://www.shutterstock.com/image-photo/medicinal-plant-native-northern-mountains-260nw-2309852237.jpg",
+        "https://destinationiran.com/medicinal-herbs-in-iran.html",
+        "https://matinabad.com/en/blog/persian-herbs-and-spices",
+        "https://www.alamy.com/stock-photo-this-manuscript-of-avicennas-canon-of-medicine-is-a-foundational-176166468.html",
+        "https://persianmedicine.mui.ac.ir/en/content/about-persian-medicine-department",
+        "https://www.researchgate.net/publication/305481717_The_Persian_painting_and_the_Iranian_Traditional_Medicine",
+        "https://www.researchgate.net/publication/282404095_Iranian-Islamic_traditional_medicine_An_ancient_comprehensive_personalized_medicine",
+        "https://www.cabi.org/bookshop/book/9781789249767/chapter/978178924976700005"
+      ],
+      "scraped_at": "2026-10-30T03:24:56.578228Z",
+      "location": {
+        "country": "Iran",
+        "provinces": [],
+        "lat": 32.6475314,
+        "lng": 54.5643516
+      },
+      "resume_analisa": {
+        "description": "Traditional Iranian-Islamic Medicine (TIIM), also known as Persian Traditional Medicine (PTM), is a holistic system of healing that has been practiced for over 3,000 years. It integrates the traditional wellness practices of ancient Persia with Islamic doctrine related to health. TIIM emphasizes maintaining a balance between the body, mind, and spirit to achieve optimal health and well-being. It is rooted in the concept of 'Mizaj' (temperament) and the 'Humoral Theory,' which posits that the body is composed of four humors: blood, phlegm, yellow bile, and black bile. Health is believed to exist when these elements are in balance, and imbalances can lead to illness.",
+        "cultural_significance": "TIIM is deeply rooted in the cultural and historical heritage of Iran, with its origins predating Greek medicine. Influential figures such as Avicenna (Ibn Sina) and Al-Razi (Rhazes) played pivotal roles in its development, with Avicenna's 'The Canon of Medicine' serving as a foundational medical text for centuries in both Eastern and Western medical schools. The system is highly personalized, recognizing that each individual possesses a unique 'Mizaj' that influences their physical, mental, and emotional characteristics. Beyond physical treatments, TIIM incorporates spiritual aspects, believing that the therapist's esoteric intent and connection with the divine can influence the efficacy of treatment. Today, TIIM is recognized in Iran, with Ph.D. programs offered at several universities, integrating traditional concepts with modern medical procedures.",
+        "drr_category": "Traditional Healing & Health Resilience",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Drought"
+        ],
+        "drr_mechanism": "TIIM's 'Six Essential Principles' (Setah Zaroriah) for maintaining health include 'Nutrition' and 'Environment' (which encompasses 'Weather'). Dietary adjustments are considered the primary course of action for health, with careful consideration of food type, source, preparation, combinations, and timing. Recommendations for diet and lifestyle are adapted to individual temperament, age, seasons, and geographic conditions, such as consuming 'cold-nature' foods in summer and 'warm-nature' foods in winter. This emphasis on adapting diet and lifestyle to environmental conditions and seasonal changes directly contributes to climate adaptation and resilience. By promoting overall health and well-being through balanced temperaments and humors, TIIM enhances the body's ability to withstand various health challenges, including those exacerbated by environmental stressors like drought, which can impact food availability and quality. The focus on local and seasonal foods also fosters resilient livelihoods and food security within communities.",
+        "gemini_tags": [
+          "Traditional Medicine",
+          "Holistic Healing",
+          "Herbalism",
+          "Dietary Practices",
+          "Lifestyle Modification",
+          "Humoral Theory",
+          "Mizaj",
+          "Iran",
+          "Persia",
+          "Health Resilience",
+          "Climate Adaptation"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Holistic Medical System with Diagnostic and Therapeutic Modalities",
+        "materials_and_tools": [
+          "Herbal remedies (e.g., chamomile, lavender, licorice, pomegranates, honey, black seed, ginger, saffron, turmeric, rosemary, mint, Echium amoenum, fenugreek, thyme, pennyroyal, borage)",
+          "Specific foods (e.g., fruits, vegetables, whole grains, lean proteins, pomegranates, dates, saffron, almonds, lentils)",
+          "Water",
+          "Cupping tools",
+          "Leeches (for leech therapy)"
+        ],
+        "step_by_step": [
+          "**1. Diagnosis:** A comprehensive assessment of the patient's temperament (Mizaj), lifestyle, and symptoms is conducted. This involves taking a medical history, performing a physical examination, pulse diagnosis, and sometimes analyzing urine and stool to identify imbalances in the humors.",
+          "**2. Temperament Evaluation:** The individual's unique Mizaj (e.g., sanguine, phlegmatic, choleric, melancholic, or compound temperaments like hot-wet, cold-dry) is determined based on their physical, physiological, and psychological characteristics.",
+          "**3. Personalized Treatment Plan Development:** Based on the identified Mizaj and any existing imbalances, a tailored treatment plan is formulated.",
+          "**4. Dietary Therapy:** Adjustments in diet are the initial and often most crucial intervention. Specific foods are recommended or avoided based on the individual's Mizaj, the current season, and geographic conditions to restore humoral balance.",
+          "**5. Herbal Medicine:** Various herbs and plant-based medicines are prescribed and utilized for their specific medicinal properties to address particular conditions and help rebalance temperaments.",
+          "**6. Lifestyle Modifications:** Recommendations are provided for a balanced lifestyle, including regular physical activity, adequate sleep, stress management techniques, and fostering a harmonious work-life balance.",
+          "**7. Manual Therapies:** Practices such as massage (Dalk), cupping (Hijama), bloodletting (Fasd), and leech therapy (Hirudotherapy) are employed to improve circulation, alleviate pain, and facilitate the removal of toxins from the body.",
+          "**8. Spiritual Aspects:** The spiritual state and positive intent of the therapist, along with their connection to the divine, are considered to be significant factors influencing the effectiveness of the treatment process."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Greece",
+            "element_name": "Ancient Greek Medicine (Humoral Theory)",
+            "relationship_reason": "TIIM is rooted in ancient Persian traditions and shares foundational concepts like the Humoral Theory with Ancient Greek medicine. Key figures like Avicenna integrated and further developed these ideas."
+          },
+          {
+            "country": "India",
+            "element_name": "Ayurveda",
+            "relationship_reason": "TIIM shares similarities with Ayurveda, particularly in its holistic approach, emphasis on individualized treatment based on temperament (Mizaj in TIIM, Dosha in Ayurveda), and the extensive use of herbal medicine. There has been historical interaction and transmission of medical theories between Persia and India."
+          },
+          {
+            "country": "China",
+            "element_name": "Traditional Chinese Medicine (TCM)",
+            "relationship_reason": "TIIM exhibits common threads with TCM, such as a focus on balancing body energies, the use of herbs, and diagnostic systems that consider 'tempers' and 'humors' (e.g., 'excess wind,' 'damp spleen,' 'cooling or warming foods')."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
     }
   ],
   "summary": {
-    "generated_at": "2026-10-29T03:21:56.113272Z",
-    "total_ich_elements": 349,
-    "complete_records": 349,
+    "generated_at": "2026-10-30T03:25:36.027483Z",
+    "total_ich_elements": 352,
+    "complete_records": 352,
     "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 124,
-      "Social Practices & Rituals": 92,
-      "Culinary Traditions": 59,
+      "Traditional Craftsmanship": 125,
+      "Social Practices & Rituals": 94,
+      "Culinary Traditions": 60,
       "Culinary Traditions | Social Practices & Rituals": 4,
       "Performing Arts": 40,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 37,
+      "Oral Traditions": 39,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
