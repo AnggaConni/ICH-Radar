@@ -17912,26 +17912,102 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-10-31T03:07:56.920191Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
+        "knowledge_resources": [
+          {
+            "name": "Generational Heritage Transmission",
+            "description": "Indigenous knowledge regarding the meticulous selection of green coffee beans, roasting profiles, hand-grinding, and the tri-phase brewing sequence (Abol, Tona, Baraka) passed down through family and community structures.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea",
+              "https://www.dallmayr-academy.com/magazine/the-ethiopian-coffee-ceremony"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Ceremonial Utensils & Craft Artifacts",
+            "description": "Handmade clay pottery including the spherical jebena (coffee pot) with its straw lid, finjal (small cups), flat roasting pans (baret metad or menkeshkesh), and wooden mortars (mukecha) with pestles (zenezena).",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Women Household Practitioners and Elders",
+            "description": "Female heads of households and community elders who hold the authority, aesthetic skill, and social agency required to host the ritual, manage conflict resolution, and transmit cultural etiquette.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea",
+              "https://bunnacafe.com/the-coffee-ceremony/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Domestic and Communal Gathering Spaces",
+            "description": "Traditional domestic environments across provinces like Addis Ababa, Kaffa, Sidama, Yirgacheffe, and Harar, prepared with fresh grass, flowers, and herbs for welcoming guests.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "institutional_resources": []
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
+        "production": [
+          {
+            "name": "Artisanal Pottery and Utensil Crafting",
+            "description": "Local artisan production of clay jebenas, incense burners (mebetchiya), and wooden grinding equipment used directly within the ceremony.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea",
+              "https://www.dallmayr-academy.com/magazine/the-ethiopian-coffee-ceremony"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Indigenous Arabica Coffee Beans and Incense",
+            "description": "Sourcing and packaging of green coffee beans from regions like Kaffa, Sidama, and Yirgacheffe alongside frankincense and myrrh.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Community Mediation and Social Hosting",
+            "description": "Practicing the traditional ritual as a formal mechanism for neighborhood conflict resolution, reconciliation, and building social cohesion.",
+            "evidence_urls": [
+              "https://www.dallmayr-academy.com/magazine/the-ethiopian-coffee-ceremony"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Immersive Cultural Hospitality Experiences",
+            "description": "Sensory-rich hosting involving the wafting of roasting aromas, incense burning, floor ornamentation with fresh grass, and the three sequential rounds of Abol, Tona, and Baraka.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea",
+              "https://bunnacafe.com/the-coffee-ceremony/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "education": []
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
+        "livelihood_potential": 35,
+        "tourism_potential": 40,
         "education_potential": 0,
-        "creative_industry_potential": 0,
+        "creative_industry_potential": 30,
         "digital_potential": 0
       },
       "resource_mobilization": {
@@ -17941,50 +18017,56 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-31T03:07:56.920191Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Supports localized artisans and agricultural producers of coffee and incense, though primary practice is rooted in community hospitality rather than commercial wage labor.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Serves as a primary cultural touchstone for visitors experiencing Ethiopian heritage, though structured tourism must respect community consent and domestic boundaries.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
+          "rationale": "High potential for academic documentation, cultural workshops, and safeguarding initiatives that teach the historical roots and social symbolism of the ritual.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Involves traditional craftsmanship of ceramic jebenas and wooden tools, along with oral traditions, storytelling, and sensory artistry.",
+          "evidence_urls": [
+            "https://en.wikipedia.org/wiki/Coffee_ceremony_of_Ethiopia_and_Eritrea"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
+          "rationale": "Limited digital footprint focused primarily on online cultural articles, documentary media, and awareness initiatives regarding heritage recognition.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 3,
+        "evidence_item_count": 11,
+        "uncited_item_count": 6,
+        "invalid_evidence_url_count": 11,
+        "opportunity_scores_with_evidence": 3,
+        "opportunity_scores_without_evidence": 2,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-31T03:07:56.920191Z",
+        "last_error": "resource_mapping.institutional_resources[0] had no valid direct evidence URL and was excluded; value_chain.education[0] had no valid direct evidence URL and was excluded; resource_mobilization.public_sector[0] had no valid direct evidence URL and was excluded; resource_mobilization.private_sector[0] had no valid direct evidence URL and was excluded; resource_mobilization.academic[0] had no valid direct evidence URL and was excluded; resource_mobilization.community[0] had no valid direct evidence URL and was excluded; education_potential score reset to 0 because category-specific evidence URLs were absent; digital_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -18101,8 +18183,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-10-31T03:08:21.677682Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -18132,8 +18214,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -18143,8 +18225,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-10-31T03:08:21.677682Z",
+        "last_error": "resource_mapping must be an object; value_chain must be an object; resource_mobilization must be an object; opportunity_analysis must be an object; opportunity_score_evidence must be an object"
       }
     },
     {
@@ -64625,7 +64707,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-10-30T03:25:36.027483Z",
+    "generated_at": "2026-10-31T03:09:16.153249Z",
     "total_ich_elements": 352,
     "complete_records": 352,
     "incomplete_records": 0,
