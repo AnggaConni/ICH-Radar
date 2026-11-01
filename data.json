@@ -64704,22 +64704,556 @@
         "last_checked_at": null,
         "last_error": null
       }
+    },
+    {
+      "id": "ich-198b4a7e",
+      "element_name": "Ethiopian Coffee Ceremony (Buna Tetu)",
+      "categories": [
+        "Social Practices & Rituals",
+        "Culinary Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Social Practices & Rituals",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//opaqa.coffee/blogs/news/ethiopian-coffee-ceremony-rituals-culture-meaning&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://opaqa.coffee/blogs/news/ethiopian-coffee-ceremony-rituals-culture-meaning",
+        "https://awibethiopia.org/ethiopian-coffee-ceremony-a-neuropsychological-practice/",
+        "https://furtherafrica.com/2025/03/07/the-ethiopian-coffee-ceremony-a-rich-cultural-tradition-beyond-the-brew/",
+        "https://www.ethiopiaid.org.uk/how-to-host-an-ethiopian-coffee-ceremony",
+        "https://shebacoffee.com/blogs/news/the-heartbeat-of-ethiopia-the-cultural-significance-of-coffee",
+        "https://freshcup.com/ethiopian-coffee-ceremony-unesco-heritage-list/",
+        "https://specialtycoffee.shop/blogs/guides/ethiopian-coffee-ceremony",
+        "https://www.dallmayr.com/en/academy/magazine/ethiopian-coffee-ceremony/",
+        "https://www.bunnacafe.com/the-coffee-ceremony"
+      ],
+      "scraped_at": "2026-11-01T03:02:33.371139Z",
+      "location": {
+        "country": "Ethiopia",
+        "provinces": [
+          "Addis Ababa",
+          "Tigray"
+        ],
+        "lat": 9.0358119,
+        "lng": 38.7524315
+      },
+      "resume_analisa": {
+        "description": "The Ethiopian Coffee Ceremony, locally known as 'Buna Tetu' (drinking coffee), is a traditional social ritual deeply embedded in Ethiopian culture and practiced daily in homes and diaspora communities. It involves the meticulous process of roasting, grinding, and brewing green coffee beans, typically led by a woman, and served in three rounds to guests. This elaborate ritual emphasizes hospitality, community, and mindful preparation, often lasting for an hour or more.",
+        "cultural_significance": "The ceremony is far more than just preparing and drinking coffee; it is a profound cultural anchor that fosters community bonds, hospitality, and social cohesion. It serves as a space for dialogue, storytelling, and conflict resolution, strengthening relationships among family, friends, and neighbors. In diaspora communities, it acts as a vital bridge to heritage, preserving cultural identity and enriching multicultural environments. The ceremony is also recognized for its neuropsychological benefits, grounding emotions, reducing stress, and promoting mental well-being through its deliberate rhythms and sensory engagement. It is considered a therapeutic practice, creating safe psychological spaces for sharing and healing, particularly for survivors of trauma.",
+        "drr_category": "Traditional Healing & Health Resilience",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "The Ethiopian Coffee Ceremony contributes to traditional healing and health resilience by creating a structured, safe, and communal space for emotional support, dialogue, and conflict resolution. Its slow, mindful process helps regulate emotions, reduce stress, and foster a sense of belonging, which are crucial for mental well-being, especially in the face of social upheavals or personal trauma. For survivors of violence, the ceremony has been reclaimed as a therapeutic practice, offering a bridge between isolation and healing by providing a space to share stories and find solidarity.",
+        "gemini_tags": [
+          "hospitality",
+          "community building",
+          "ritual",
+          "coffee culture",
+          "diaspora",
+          "social cohesion",
+          "mental health",
+          "healing",
+          "conflict resolution"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Ritualistic Preparation and Serving",
+        "materials_and_tools": [
+          "Fresh green coffee beans",
+          "Frying pan (menkeskesha) with a thick base (avoid non-stick)",
+          "Charcoal stove or open flame",
+          "Mortar and pestle (mukecha and zenezena) or coffee grinder",
+          "Jebena (traditional clay coffee pot with a long neck and spout)",
+          "Sini (small, handleless cups)",
+          "Rekebot (serving tray or low wooden stand)",
+          "Incense (frankincense or myrrh)",
+          "Hot coals for incense",
+          "Fresh grass or flowers for decoration",
+          "Water",
+          "Sugar, salt, herbs (e.g., tenadam/Ethiopian rue), or butter (optional, to taste)",
+          "Snacks (e.g., popcorn, roasted barley/kolo, traditional bread/himbasha)"
+        ],
+        "step_by_step": [
+          "1. **Preparation of the Space:** The host, traditionally a woman, prepares a welcoming area by spreading fresh grass or flowers on the floor and arranging the sini cups on a rekebot. Incense, typically frankincense or myrrh, is lit over hot coals to fill the air with a calming aroma and purify the space.",
+          "2. **Washing and Roasting the Coffee Beans:** Green coffee beans are thoroughly washed to remove impurities. They are then roasted in a flat pan (menkeskesha) over a charcoal stove or open flame, with the host continuously stirring and shaking the beans for an even roast. As the beans turn dark brown and become aromatic, the pan is often passed around for guests to inhale the fragrant smoke.",
+          "3. **Grinding the Coffee Beans:** Once roasted, the beans are pounded into a fine powder using a traditional wooden mortar and pestle (mukecha and zenezena). In modern settings or for convenience, a coffee grinder may be used.",
+          "4. **Brewing in the Jebena:** The ground coffee is placed into the jebena, a traditional clay pot, which is then filled with water and placed on the hot coals to boil. The coffee simmers for a few minutes to allow the flavors to develop and the grounds to settle.",
+          "5. **Pouring and Serving:** The host pours the brewed coffee from the jebena into the small sini cups from a height, in a single, steady stream, ensuring the grounds remain at the bottom of the pot. Guests are offered sugar, and sometimes salt, herbs, or butter, to add to their coffee, often accompanied by snacks like popcorn or traditional bread.",
+          "6. **Completing the Three Rounds:** The ceremony traditionally involves three rounds of coffee, each brewed from the same grounds by adding more water to the jebena. The first round is called 'abol' (strongest), the second 'tona' (lighter), and the third 'baraka' (lightest, meaning 'blessing'). Guests are expected to stay for all three rounds, as leaving early can be considered impolite."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 1.0,
+        "related_elements": [
+          {
+            "country": "Eritrea",
+            "element_name": "Eritrean Coffee Ceremony",
+            "relationship_reason": "Shares close cultural roots and similar practices within Habesha culture, with variations in names for the coffee rounds."
+          },
+          {
+            "country": "Sudan",
+            "element_name": "Sudanese Coffee Ceremony (parts of)",
+            "relationship_reason": "The coffee ceremony is an integral part of social and cultural life in parts of Sudan."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-5f1b0deb",
+      "element_name": "Myanmar Lacquerware (Yun-de / Pan yun)",
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJYZ2-a7xZYBxW7kYY1jyAJReNP9weXLmE88XkgF8eCgpc-nlrl7nGd3bJGQhlhbP0XIfHcnSJH9bi8KmaADb_M09TNWJCDap56TsYTiBQq0VnDlx31sM1sV0sji0wALZJBsBYJmMEyw7RPxJz9uNCqz3Hce5wzTaim1B1V6IHSubq6MHv50gSvonqXWoiDFkZ7j9sipgBnyV0buPvuOf8bADV8bN9HQ%3D%3D&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJYZ2-a7xZYBxW7kYY1jyAJReNP9weXLmE88XkgF8eCgpc-nlrl7nGd3bJGQhlhbP0XIfHcnSJH9bi8KmaADb_M09TNWJCDap56TsYTiBQq0VnDlx31sM1sV0sji0wALZJBsBYJmMEyw7RPxJz9uNCqz3Hce5wzTaim1B1V6IHSubq6MHv50gSvonqXWoiDFkZ7j9sipgBnyV0buPvuOf8bADV8bN9HQ==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdGNbaKdYKQkTUNil8aPP71an7qkWiBd7uMrTQGGkexoF2REEYCkP3XXcduWcbAmHzcvyFVXYB72cLRQl1wtCcN5YkYIL9OdDRTf6C3X2YUsIuORrHTnjovqrZhms5npwB10AWCaMo-jealP4a",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWNEYgA2pW70oMqWQAf7kpzZGj6FnuGaSKne84WOeK-lKfVvjYhux3ApJeedTCkGTfqsieuFMxIs9qnqv-yzULQuy9vmMzdUEizJwUs2SkhKxI0fd1RW9JN_dAVSXpg5hglM5bKCOG64WZ2KlIu-knAI4H_s0MJZpmsQ==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDVRTfQg7_tf9BlQnMEA6luoKLxf3n0B05_qP9bS44ytXHJGEb6IldqW9QWYWAw6aNiROxMWjYYXD9CYKz6WIrsp4s00ICNR9Mg4V8WggwcadU04ja45N636RAeSMmBBehggcLlrJyFewxbFqizYkb1c_IUw3qOvOu1T6-B3yWCEcSRzsN1YqxLbCGAxOXfn-OSb5QI9GAWvzRv3ePNw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoZgdIo9LrJIg7BuMACGOeBxUkOLZDXfTSu0mJBm5eAlnbNi2k3duaHVhPPo1t9HYLtuftRqH7n9cq93iuRkBdfl6OuZ3m0sFHh5YM2Tha7XyMmPlJBjRaWIG1u8sm0-Mq7krzae6vLEC8X3b2",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETsBq_dWU393yqVRwQxX5-KDTVveWyjsv5iaVSYMm54rz-6G8kPMGPqMQnKBlza6VlxIwo8i10aGmNN_M8ewstshDWVAEAz-VQTquplEZTr5FTRZLchFNboOHLM8iRAYhddOkxrVM==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBxWoX8UIcgNqz6iyfUKYLj1Tsg0zdcFgsNWZ76KT--5qPfesGqBOXAm3SFB_I6qRnMbOZq40Y2jG7JqqzAFlXQBSg50nPZBBMApb7Queu1T7tQggXpl1_7byrggYZBlcvEokq",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGshq-IYXTjORqD0WMKtvcZk-ymUpWZCwln5LtpSp5g1Q5ZXghwx8lZrZlcdNNl7jXazh3-U4Yts6nOoeYug7WDlQ0kdR9YHVAr6SVVvLNBt2u_IqFneEubY0HoM3RIes0vwwE6G8xyj0OvkcSWss0=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHg13r3ATBtH2HLpl70mn_oD8LSa7z5QETJl5YaKhWVCa2v8K-GlcmuVj9BdfteF9UWiE8zCTx1fRwHCog9RyuqqzzkB-JtDmlntkOyalGRH4DyVBRW_Iy4eaRsRd25mTMpmTuDzoVCBya4iiOqfEYoxLM=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1gM_1JkCBpe9USVbTDtVYtJBD0BqB0pNx6bgaq5sL9lVjv-zPEl4qsmXpFanuSP6iKLpmHY_8jBdejzv9VNjGZpzFXBhsEnBRNxghNvfAnefj8pX8I9zp8dhGBlagJibny53Me58-Lzs=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFw6imgvildr3TohkCFBphmH1CnS5OFrVBrmKMFDepzhKyiK04ljlB3xg4DNYHitd79NhxvADk11rXfUSInJWNN4P4uBSbUZ1U-uNEzBZ5aVLdBinPGS3o2fYl73xYHrvZPbwZfgc3kubV-2N064_yT5joYcsnGf1XhNghUpww_rgFEoKmvGE3a_Bda0QBR",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkCXEa4ETbwfvuBxaPXzBtrAChuOwioaV1PHsxkSyPfxswZiunjUY_WHHB_1iwnwWb0vTAy2jPI3RufES6g87fH5_Memysh1ChjX_rT8yqQKWagsCoYYZkii0MdHTdU5dI2y_qMQT1TGSpIa_T2Bbjv9YFJ8sIFfPGsvrig0s1elnzD7C9gfV5obxjTSreTe-qhQ==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEldMt3QgXOoQNJWSmSQyquq83b_58nU2-pKH5Ya-MltdbTf_fssizu3eYdMiSoegNuhC8EaVmPwEdxyxn6-ttjk8SYEQO6HO5p1FA8m4FxxzSCayyLzG0CrddzPT44fWNrbrAx7sI=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBdIltKMsWem1XABS9WlP8znLtTN3eZzPMd-MDRA6g2IWDqcsADgrPxm0njsFz7W_6GlRkNIuQokJ8OjpyCE3TNg56qXMXmUXsxL34Yg6jy0yXvKCudrsXqEfhLzC87hUVaYZq6gY83M77Dhdsy65G1zmB3C9elRr2OB8RvlJvj8ytigRUeoDd27GgxiKmMS14lmMDeAZdzGaEBB1xRowDlnyv",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu4ilmoG-aJZoR1on7_jKvEqcS7I_ZcBIl4zJ2jSvjYHej1HLKU1dju1C9a3Gwyrbgik9zsZPoVD0qPVl0l0_7sF63pghJSwH8NlM40LYcyh708e1SpcKWzOvdBL5Cp7vI1cvC8pY1GisA6kqrx9tN-q3dUqsn3mUxtI_xbC-slozTSp2CfhJC2j761obiz5eXan4dXruUxdi54jjK",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyJh6k8DWWTN9s7KHn5wCBf0N7A8nJlMiDT0WM0BnKP7H8l0Ig7B4LDHJQVlHY6MlV-Yrhiuvcq94rSSjAda8pYbuXHIzarNz7jqAZNajgJdfzc0AKluYKicwx9zYi3uJeGortnydqbp2VdVfFNUTxyqhPhs9v",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLMDo4r8qyPnfTZ6HNP8QACeRD9ku7URi56z2iTHZIukz0yaOrcftGMCpjp4SzqSHVNtJOhkblRVwzYPQUyZQGtWUyNrcfsjYJ65i3nXU_ZDHoh_iK1UGeSyTk3iv6RdbGpJK47gk=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFy30EPDec9wNtFBHR73DZfc5BDw7puhrHZq6eNaDhruvkXuVUleDJmY0Hg2F3OMg606o2BDaa3L9Kb5FfqH5fc4ub_SSIDrbU96YTJRZ7rpWIk3KlhSu1R_941J6grrXKnc7pKoHgQpaJ2GRHgXX8rvDEq-KshH9X3aTJzYB2lkItIXjAbEq7d8PTWGac=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEe7Agd814mDQ7HBDq025UieNS5lse7RYsMxCvfjm72T33X4dvSRpqjSlJw_v8zgRMKRHe0nQ2fzvO-jFTFCYSqAq9iInVF8Tbo3zuO7ehyEFH3RULgpf2MxVEKba-QhZg2aDw0XruhYxdUY4-JRqXExwoIlL_jBliukA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3bIAkYtNjHOUkvhxcG4B9-sLm5_0bQJhwux6hcfcTjGG2Zp9-jt54Dz7XjWlTp7MMwFGKI7noxX6BxA1e4Pfb8NVaOoLXMs38G3NsHadPbXShqba01fRLIhCFo121oxlMtXl5f7oJwbZn2Rn3QvUJW04BnWudi_9N",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAHphHAPSxlmRKCXji3NDERAo7b2tTAWwBpdYJQih6JayFarjwAeqJ8D_Y5a1p1elKo0ifb1--Dv7a8p-DteG_SEKZa0cTj0Tls4HYgxUDIeZUT43cpmBy1WJX-lUj3V5Wzv4BM5lvWPsxKmdD4WMQarNjqhVMox2zDtVWbfQwi5Y5kqjXoVtioIy12TLbyfUM4OQVOLiopjqGGBUfNku1CW0AcUNDDGsVymm4vA4=",
+        "https://vertexaisearch.cloud.google.google.com/grounding-api-redirect/AUZIYQHkyE42iuAVJWTB8S-_Gz3Pf29vLx2NzMjRCXqn1ivhRkmmXWavC6QRlXkuc7HdPoxtBrS_Yx5Tcy99srdBxiWP12zIFCOobmwyJpU68HBPV5DUbEzbgOicKbj402XbSaGZwZbh0wzOSv2NCWTw9fMKeG4cFNO-DlvBkTirc8NO2QIhsPBKl9fqXzE0Iy9dO4e4_Daq1bZUP1aMdAcrDqvsXg==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVfCJPP0HsisTrjpdRrN7Z9zFqox9cf4VC55SruOBeQ33pyKRwju7Z5W2Zoh3bW0PNQCnLcu5plr3lVu3A5p4t3xGqdfRe1O5HnrBa2SMLmkVHJCGJwzeIcTvb3pxLQcNVD-zQ1QqNL89H3VmO63BrxUgnnZlbIitsB4h3uLkdhw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHq14GiEipYEdDTwyv-i7tLGR9pUBCJh_t0mAeGWAATdInSVf_9DP0cWLAEoOfeqk-fyUdU3wUUOCCxxuL1r9JRPSX2lykqHh1FwrieIWKehy0N_M_BLVC9RwDZP42_QVSDJ3w6I2KFoNDEBWjHEb-sSqUAHY363y88eS-Naw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDu5vubFrfmazMnKswZDKOdMB-3Kpi2wuAklKjhw9xERaWIJBqNrliFnMKGqoVQkFZGduZmMZbsKiaO3YNVZmjqbjuBIhM7ObESfT5kM6kfcN-46W4T27N0pKjp9QTxoNsG2f-HzQ4G9XkZXSyjzidyhAwYg=="
+      ],
+      "scraped_at": "2026-11-01T03:03:12.592886Z",
+      "location": {
+        "country": "Myanmar",
+        "provinces": [
+          "Mandalay Region",
+          "Sagaing Region",
+          "Shan State",
+          "Chin State",
+          "Mon State",
+          "Tanintharyi Region"
+        ],
+        "lat": 20.9872395,
+        "lng": 95.7656747
+      },
+      "resume_analisa": {
+        "description": "Myanmar Lacquerware, locally known as Yun-de or Pan yun, is an ancient and intricate traditional craft. It involves applying multiple layers of natural lacquer (Thit-si sap) onto a base, typically made of woven bamboo, horsehair, or wood. Each layer undergoes a meticulous process of drying, polishing, and then is adorned with elaborate hand-carved (yun engraving) or painted designs. This craft is renowned for its durability, intricate patterns, and vibrant colors. While the general art form is a cherished part of Myanmar's cultural identity, specific traditional techniques, particularly the highly challenging horse-tail hair weaving, are facing significant threats. These threats include a decline in skilled artisans, rising costs of raw materials, dwindling demand, and a lack of comprehensive documentation and specific safeguarding initiatives for these vulnerable aspects of the craft. The overall industry struggles with modernization, market challenges, and competition from cheaper, mass-produced alternatives, raising concerns about the intergenerational transmission of these specialized skills.",
+        "cultural_significance": "Myanmar Lacquerware holds profound cultural and religious significance, with a history spanning over a thousand years, tracing back to the Bagan period. It served the royal courts, monasteries (for offerings), and traditional households, storing precious items like jewels, letters, and sacred Buddhist manuscripts. The intricate designs, often featuring Buddhist motifs or mythical creatures, are not merely decorative but reflect Myanmar's spiritual and cultural soul. The craft embodies values of patience, resilience, and artistry, passed down through generations, making it a living testament to the country's cultural identity.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "The decline of traditional Myanmar Lacquerware, especially techniques like horse-tail hair weaving, due to economic pressures (rising costs, dwindling demand) and the loss of skilled artisans, directly impacts the livelihoods of artisan communities. Preserving and promoting this craft contributes to resilient livelihoods by sustaining traditional income sources and preventing economic displacement. The loss of these skills also erodes cultural identity and social cohesion, which are indirect aspects of community resilience.",
+        "gemini_tags": [
+          "Traditional Craft",
+          "Lacquerware",
+          "Myanmar",
+          "Bagan",
+          "Endangered Craft",
+          "Cultural Heritage",
+          "Artisan Livelihoods"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Crafting Process",
+        "materials_and_tools": [
+          "Thit-si (lacquer sap from Melanorrhoea usitata tree)",
+          "Bamboo strips",
+          "Horsehair",
+          "Wood (e.g., jackfruit wood)",
+          "Ash (from sawdust, charcoal, or animal bones)",
+          "Clay",
+          "Pigments (red from cinnabar, blue, green, yellow)",
+          "Gold leaf",
+          "Neem oil",
+          "Orpiment",
+          "Acacia sap",
+          "Tung oil",
+          "Hand-operated lathe",
+          "Fine metal tools/stylus",
+          "Soft brushes/cloth",
+          "L-shaped knife",
+          "Bamboo cups (for sap collection)",
+          "Coconut fiber brushes (for raw thit-si application)"
+        ],
+        "step_by_step": [
+          "**1. Sap Collection:** Thit-si sap is tapped from the Melanorrhoea usitata tree by making V-shaped incisions in the bark, allowing the viscous liquid to trickle into bamboo cups. The tapped area is left for 4-5 years to heal.",
+          "**2. Base Construction:** A base object is formed from finely cut and woven bamboo strips, often intertwined with horsehair for added flexibility and strength, or carved from wood.",
+          "**3. First Lacquer Coat (Sealing):** The raw Thit-si sap, sometimes mixed with cow bone ashes (Thayo) or finely sifted ground clay, is applied to the base to seal it and fill any interstices. This coating is often done by hand or with coconut fiber brushes.",
+          "**4. Drying (First Stage):** The object is placed in a humid, dark, dust-free underground cellar for 3-10 days (typically about a week) to allow the lacquer to dry and harden, preventing cracking.",
+          "**5. Polishing (Initial):** The hardened surface is smoothed and polished on a hand-operated lathe using materials like wet pumice stone, sandpaper, or dried dahat tree leaves.",
+          "**6. Multiple Lacquer Layers:** Successive layers (8 to 15, or even 12-20) of Thit-si, mixed with progressively finer fillers such as sawdust, cotton fibers, or powdered bone (Thayo), are applied. Each layer requires a separate drying period of several days to a week in the cellar, followed by polishing.",
+          "**7. Decoration (Yun Engraving / Pan Yun):** After the final lacquer coat is dried and polished to a smooth, glossy surface, intricate designs are hand-carved or etched into the lacquer using fine metal tools (stylus). These designs are typically freehand, without stencils.",
+          "**8. Color Application:** Pigments, traditionally red (from cinnabar), blue, green, and yellow, mixed with lacquer, are rubbed over the etched designs to fill the incisions. Only one color is applied at a time, followed by drying and carefully rubbing off the excess pigment with clay and water, leaving the color only within the incised lines. This process is repeated for each color. Gold leaf (Shwezawa) can also be applied.",
+          "**9. Final Sealing and Polishing:** A final coat of lacquer, sometimes mixed with a little tung oil, is applied to seal and protect the decorated surface. The object is then meticulously polished with materials like wet rice husks, ground fossil wood, or teak charcoal to achieve its characteristic lustrous finish. The entire process can take from six months to a year for a single intricate item."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Chinese Lacquerware",
+            "relationship_reason": "Lacquer art originated in China and spread to other Asian countries, including Myanmar."
+          },
+          {
+            "country": "Thailand",
+            "element_name": "Yun or Laos Shan Lacquerware",
+            "relationship_reason": "The Burmese style of lacquerware, Yun-de, is thought to have been introduced by Yun or Laos Shan artisans from northern Thailand (Chiang Mai region) in the mid-1500s."
+          },
+          {
+            "country": "India",
+            "element_name": "Neem oil and Orpiment use in traditional crafts",
+            "relationship_reason": "Neem oil, a vegetable oil from an evergreen tree found in the Indian subcontinent, is used in some lacquerware techniques."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-184d58d4",
+      "element_name": "Ainu Yukar",
+      "categories": [
+        "Oral Traditions",
+        "Performing Arts"
+      ],
+      "categories_valid": true,
+      "category": "Oral Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Yukar&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Yukar",
+        "https://mythologis.com/yukar-the-ainu-epic-tradition/",
+        "https://deeperjapan.com/culture/telling-tales-with-ainu/",
+        "https://www.vsocial.com/blog/discovering-the-ainu-japans-indigenous-people-and-their-unique-culture",
+        "https://u.osu.edu/ainu/introduction-who-are-the-ainu/",
+        "https://www.japantimes.co.jp/culture/2021/11/20/books/ainu-yukar-oral-tradition/",
+        "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/sharing-ainu-culture"
+      ],
+      "scraped_at": "2026-11-01T03:04:21.010189Z",
+      "location": {
+        "country": "Japan",
+        "provinces": [
+          "Hokkaido",
+          "Kuril Islands",
+          "Sakhalin"
+        ],
+        "lat": 43.4339536,
+        "lng": 142.9521222
+      },
+      "resume_analisa": {
+        "description": "Yukar are the traditional oral sagas and epic poems of the Ainu people, the indigenous inhabitants of Hokkaido, Japan, and historically the Kuril Islands and Sakhalin. These long, metrical sung narratives are a rich tradition of oral literature, performed using a distinctive chant-like voice, often by women. Yukar encompass various sub-categories, including 'kamuy yukar' (divine epics narrated by deities) and 'yukar proper' (hero epics narrated by humans). They tell stories of the Kamuy (divine spirits of animals, rivers, and mountains) and their interactions with humans, as well as the adventures of human heroes.",
+        "cultural_significance": "Yukar are central to Ainu culture, serving as a primary means of transmitting history, beliefs, and societal values across generations, especially given the historical absence of a writing system for the Ainu language. They provide an unrivaled window into the Ainu lifestyle, cosmology, and their deep animistic relationship with the natural world. Performing a yukar is considered a form of spiritual contact, allowing the voices of Kamuy to speak through the singer. The tradition also embeds crucial ecological knowledge, such as the behavior of animals and specific geographical features, which was essential for their traditional hunting, gathering, and fishing economy. The preservation of Yukar is vital for connecting the contemporary Ainu population with their ancestral heritage and raising global awareness of their unique culture.",
+        "drr_category": "Indigenous Knowledge & Early Warning",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Earthquake"
+        ],
+        "drr_mechanism": "The Ainu Yukar transmit traditional ecological knowledge about the environment, its resources, and natural phenomena. This knowledge, passed down through generations, informs the community's understanding of their surroundings, including traditional explanations for hazards like earthquakes (e.g., the world resting on a fish whose movements cause earthquakes). This collective awareness and understanding of their environment and its rhythms contribute to their ability to adapt and manage resources, thus enhancing their resilience to environmental changes and potential disruptions. The stories also contain ecological information crucial for their traditional livelihoods, which supports food security and adaptation to environmental shifts.",
+        "gemini_tags": [
+          "Ainu culture",
+          "oral literature",
+          "epic poetry",
+          "indigenous knowledge",
+          "Japan",
+          "Hokkaido",
+          "storytelling",
+          "traditional performance"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Oral Performance",
+        "materials_and_tools": [
+          "Rhythm stick (sometimes)",
+          "Tonkori zither (sometimes)",
+          "Mukkuri mouth harp (sometimes)"
+        ],
+        "step_by_step": [
+          "The performer, traditionally a woman, memorizes the yukar word for word from elders.",
+          "The yukar is performed using a distinctive chant-like voice, which is neither ordinary speech nor song.",
+          "Performers may rock gently back and forth, keeping time with a rhythm stick against a wooden plank.",
+          "Some performances may be accompanied by musical instruments such as the tonkori zither or mukkuri mouth harp.",
+          "The narrative often includes repeated rhythmic phrases that imitate the cries, screams, gnawing, or slithering sounds of animal spirits.",
+          "The performance can last for hours, sometimes a full night, and is considered a form of spiritual contact."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.7,
+        "related_elements": [
+          {
+            "country": "Finland",
+            "element_name": "Kalevala",
+            "relationship_reason": "Both are epic traditions from circumpolar cultural zones that share shamanic cosmology, animal-spirit relationships, and an intensely local geography."
+          },
+          {
+            "country": "United States/Canada",
+            "element_name": "Native American ceremonial robes",
+            "relationship_reason": "There are striking similarities in the shapes, designs, and colors of ceremonial robes between the Ainu and West Coast Native American nations, though the suggestion of a common link via the Bering Strait is contentious."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
     }
   ],
   "summary": {
-    "generated_at": "2026-10-31T03:09:16.153249Z",
-    "total_ich_elements": 352,
-    "complete_records": 352,
+    "generated_at": "2026-11-01T03:04:59.252549Z",
+    "total_ich_elements": 355,
+    "complete_records": 355,
     "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 125,
-      "Social Practices & Rituals": 94,
-      "Culinary Traditions": 60,
+      "Traditional Craftsmanship": 126,
+      "Social Practices & Rituals": 96,
+      "Culinary Traditions": 61,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 40,
+      "Performing Arts": 41,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 39,
+      "Oral Traditions": 40,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
