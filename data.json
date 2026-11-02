@@ -18303,78 +18303,232 @@
         "related_elements": []
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-11-02T03:13:05.745319Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Intergenerational transmission of Argan practices",
+            "description": "Ancestral know-how concerning argan tree management and manual oil extraction transmitted informally from mother to daughter by Berber women.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/argan-practices-and-know-how-concerning-the-argan-tree-00955"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Argania spinosa forest ecosystem",
+            "description": "Endemic argan woodland species serving as the ecological foundation within the Arganeraie Biosphere Reserve.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/argan-practices-and-know-how-concerning-the-argan-tree-00955"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional extraction tools and stones",
+            "description": "Natural river pebbles/stones used as hammers and bases, alongside traditional stone grinding mills (R'ha).",
+            "evidence_urls": [
+              "https://www.academia.edu/12061036/Liquid_Gold_Berber_Women_and_the_Argan_Oil_Co_operatives_in_Morocco"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Berber (Amazigh) women practitioners",
+            "description": "Local female artisans possessing specialized motor skills and technical expertise for manual nut cracking, paste kneading, and emulsion extraction.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/argan-practices-and-know-how-concerning-the-argan-tree-00955"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Arganeraie Biosphere Reserve",
+            "description": "Designated geographical zone across southwestern Morocco encompassing the Souss-Massa and Anti-Atlas regions.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/argan-practices-and-know-how-concerning-the-argan-tree-00955"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Women's Argan Oil Cooperatives",
+            "description": "Community-based collective structures organized to pool labor, share proceeds, and support female economic empowerment.",
+            "evidence_urls": [
+              "https://www.academia.edu/12061036/Liquid_Gold_Berber_Women_and_the_Argan_Oil_Co_operatives_in_Morocco"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Manual harvesting, sun-drying, and stone cracking",
+            "description": "The labor-intensive primary production phases executed by hand using traditional stone implements.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/argan-practices-and-know-how-concerning-the-argan-tree-00955"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Cosmetic and culinary Argan oil",
+            "description": "Pure unroasted oil for skin/hair care and roasted culinary oil with a hazelnut-like taste.",
+            "evidence_urls": [
+              "https://superscout.co/blogs/journal/argan-oil-extraction-an-innovation-from-morocco"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Amlou spread",
+            "description": "Traditional thick spread created by stone-milling argan oil together with roasted almonds and honey.",
+            "evidence_urls": [
+              "https://www.academia.edu/12061036/Liquid_Gold_Berber_Women_and_the_Argan_Oil_Co_operatives_in_Morocco"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Cooperative-based artisanal demonstrations",
+            "description": "Guided walkthroughs of the multi-step manual extraction process hosted by cooperative members.",
+            "evidence_urls": [
+              "https://www.morocco-escape.com/argan-oil-morocco-cooperatives.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Cultural heritage tourism in the Souss Valley",
+            "description": "Visitor engagement with rural Berber communities observing landscape stewardship and traditional craft practices.",
+            "evidence_urls": [
+              "https://www.academia.edu/12061036/Liquid_Gold_Berber_Women_and_the_Argan_Oil_Co_operatives_in_Morocco"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Informal transmission workshops",
+            "description": "Skill-sharing sessions focused on preserving traditional harvesting, sorting, and milling techniques for younger generations.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/argan-practices-and-know-how-concerning-the-argan-tree-00955"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 60,
+        "education_potential": 55,
+        "creative_industry_potential": 40,
+        "digital_potential": 25
       },
       "resource_mobilization": {
-        "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
+        "public_sector": [
+          {
+            "name": "Arganeraie Biosphere Reserve Management",
+            "description": "Institutional frameworks overseen via UNESCO recognition supporting ecological preservation and sustainable rural development.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/argan-practices-and-know-how-concerning-the-argan-tree-00955"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "private_sector": [
+          {
+            "name": "Fair trade and ethical cosmetic partnerships",
+            "description": "External social enterprises and brand partnerships engaging directly with verified cooperatives to secure traceable supply chains.",
+            "evidence_urls": [
+              "https://kahinagivingbeauty.com/blogs/kahina-giving-beauty/the-truth-about-argan-cooperatives"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "Collaborative ethnobotanical and social research initiatives",
+            "description": "University-led field studies examining complex social-ecological systems, sustainable production, and cooperative management.",
+            "evidence_urls": [
+              "https://culturalheritage.coop/blog/marjana-cooperative-sustainable-womens-argan-oil-production.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Local Berber women's associations and networks",
+            "description": "Grassroots community structures fostering solidarity, mutual aid, and collective stewardship of local resources.",
+            "evidence_urls": [
+              "https://culturalheritage.coop/blog/seeds-of-hope-women-argan-and-the-cooperative-spirit-of-morocco.html"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-11-02T03:13:05.745319Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Cooperatives provide important local income and social cohesion for rural Berber women, though margins face pressure from industrial scaling.",
+          "evidence_urls": [
+            "https://www.academia.edu/12061036/Liquid_Gold_Berber_Women_and_the_Argan_Oil_Co_operatives_in_Morocco",
+            "https://e360.yale.edu/features/moroccos-women-co-operatives-lose-out-as-argan-oil-becomes-global-cosmetic-must-have"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High visitor interest in rural routes across Souss-Massa and Essaouira engaging directly with women's cooperatives.",
+          "evidence_urls": [
+            "https://www.morocco-escape.com/argan-oil-morocco-cooperatives.html",
+            "https://culturalheritage.coop/blog/seeds-of-hope-women-argan-and-the-cooperative-spirit-of-morocco.html"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Inscribed on the UNESCO Representative List, offering clear frameworks for non-formal heritage transmission and environmental awareness.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/argan-practices-and-know-how-concerning-the-argan-tree-00955"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Traditional artifact creation is largely functional (millstones, basic tools), with limited crossover into wider contemporary design markets.",
+          "evidence_urls": [
+            "https://www.academia.edu/12061036/Liquid_Gold_Berber_Women_and_the_Argan_Oil_Co_operatives_in_Morocco"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Primarily grounded in tactile, place-based artisanal and agricultural practices with limited digital integration outside e-commerce storefronts.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/argan-practices-and-know-how-concerning-the-argan-tree-00955"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 8,
+        "evidence_item_count": 21,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-11-02T03:13:05.745319Z",
         "last_error": null
       }
     },
@@ -18451,78 +18605,254 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-11-02T03:13:27.802901Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Resist-Dyeing and Woodblock Carving Knowledge",
+            "description": "Historical techniques of carving pear or walnut woodblocks, applying wax-and-fat resist mixtures, and indigo cold vat dyeing preserved through historical research labs.",
+            "evidence_urls": [
+              "https://www.atinati.com/en/blue-tablecloth"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Supra Etiquette and Ritual Symbolism",
+            "description": "Cultural code linking the textile surface to ceremonial feasts, toasts, and the sacred order of Georgian hospitality.",
+            "evidence_urls": [
+              "https://www.orientotravel.com/the-azure-altar-secrets-of-the-georgian-tablecloth/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Woodblocks and Resist Compounds",
+            "description": "Carved pear or walnut woodblocks paired with wax and animal fat formulations used for block-printing motifs.",
+            "evidence_urls": [
+              "https://www.atinati.com/en/blue-tablecloth"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Historical Museum Archives",
+            "description": "Collections of antique Lurji Supra samples and original engraved wooden blocks preserved across Georgian institutions.",
+            "evidence_urls": [
+              "https://www.atinati.com/en/blue-tablecloth"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Academic Textile Researchers and Designers",
+            "description": "Design professors and researchers specializing in the revival of historical textile technologies at academic institutions.",
+            "evidence_urls": [
+              "https://bluetabla.ge/about-us"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Artisans and Block Printers",
+            "description": "Specialized craftspeople practicing negative grafting and block printing in small urban workshops.",
+            "evidence_urls": [
+              "https://www.orientotravel.com/the-azure-altar-secrets-of-the-georgian-tablecloth/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Tbilisi Production Workshops",
+            "description": "Small studios and workshops located in Tbilisi engaged in block printing and contemporary textile adaptations.",
+            "evidence_urls": [
+              "https://www.orientotravel.com/the-azure-altar-secrets-of-the-georgian-tablecloth/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Historical Centers of Eastern Georgia",
+            "description": "Historical production and cultural regions including Tbilisi, Telavi, and Sighnaghi linked to the heritage element.",
+            "evidence_urls": [
+              "https://www.atinati.com/en/blue-tablecloth"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Tbilisi State Academy of Arts Research Laboratory",
+            "description": "University-backed research initiative dedicated to restoring and studying the traditional technology of the blue tablecloth.",
+            "evidence_urls": [
+              "https://bluetabla.ge/about-us"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Woodblock Carving and Resist Application",
+            "description": "Hand-carving floral, animal, and geometric motifs into woodblocks and coating them with a wax-fat resist.",
+            "evidence_urls": [
+              "https://www.atinati.com/en/blue-tablecloth"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Indigo Vat Dyeing",
+            "description": "Applying cold vat dyeing methods using indigo to create the distinctive deep blue and white dual palette.",
+            "evidence_urls": [
+              "https://www.atinati.com/en/blue-tablecloth"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Authentic Lurji Supra Tablecloths",
+            "description": "Traditional cotton or linen tablecloths featuring characteristic blue and white symbolic motifs and inscriptions.",
+            "evidence_urls": [
+              "https://www.orientotravel.com/the-azure-altar-secrets-of-the-georgian-tablecloth/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Contemporary Textile Derivative Products",
+            "description": "Modern home decor adaptations including scarves, placemats, coasters, and lampshades drawing on traditional motifs.",
+            "evidence_urls": [
+              "https://bluetabla.ge/about-us"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Custom Heritage Textile Design",
+            "description": "Bespoke design services translating historical Georgian visual elements and alphabet forms into modern table textiles.",
+            "evidence_urls": [
+              "https://bluetabla.ge/about-us"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Supra Feast Gatherings and Ritual Hosting",
+            "description": "Traditional Georgian feasting experiences structured around the blue tablecloth as an altar of hospitality and memory.",
+            "evidence_urls": [
+              "https://www.orientotravel.com/the-azure-altar-secrets-of-the-georgian-tablecloth/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Academic Workshops and Revitalization Lectures",
+            "description": "Educational programs and studio demonstrations explaining the history and resist-dyeing mechanics of the blue tablecloth.",
+            "evidence_urls": [
+              "https://bluetabla.ge/about-us"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 60,
+        "tourism_potential": 65,
+        "education_potential": 70,
+        "creative_industry_potential": 75,
+        "digital_potential": 40
       },
       "resource_mobilization": {
         "public_sector": [],
-        "private_sector": [],
-        "academic": [],
-        "community": [],
+        "private_sector": [
+          {
+            "name": "Specialized Textile Brands and Studios",
+            "description": "Private entities and lifestyle brands producing and marketing heritage-inspired home textiles.",
+            "evidence_urls": [
+              "https://bluetabla.ge/about-us"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "academic": [
+          {
+            "name": "Tbilisi State Academy of Arts",
+            "description": "Academic institution hosting research laboratories and design initiatives dedicated to reviving antique textile methods.",
+            "evidence_urls": [
+              "https://bluetabla.ge/about-us"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "community": [
+          {
+            "name": "Fact-Finders and Heritage Revival Groups",
+            "description": "Informal and formal groups of researchers, designers, and local practitioners dedicated to safeguarding the tradition.",
+            "evidence_urls": [
+              "https://www.atinati.com/en/blue-tablecloth"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-11-02T03:13:27.802901Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Small artisan workshops and local micro-enterprises produce and sell handcrafted tablecloths and textile derivatives, generating supplementary income for specialized craftspeople.",
+          "evidence_urls": [
+            "https://www.atinati.com/en/blue-tablecloth"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The Lurji Supra serves as a prominent cultural souvenir for travelers exploring Georgia, connecting material craft purchases directly with cultural tourism in Tbilisi and eastern regions.",
+          "evidence_urls": [
+            "https://www.atinati.com/en/blue-tablecloth",
+            "https://www.orientotravel.com/the-azure-altar-secrets-of-the-georgian-tablecloth/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "University research labs, such as those at the Tbilisi State Academy of Arts, actively document and teach historical textile processing techniques to new generations.",
+          "evidence_urls": [
+            "https://bluetabla.ge/about-us"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Designers successfully bridge heritage motifs into contemporary home goods, fashion accessories, and interior decor lines distributed locally and internationally.",
+          "evidence_urls": [
+            "https://bluetabla.ge/about-us"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Digital platforms and e-commerce sites showcase historical documentation and market contemporary adaptations globally, though core craft transmission remains hands-on.",
+          "evidence_urls": [
+            "https://bluetabla.ge/about-us"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 24,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-11-02T03:13:27.802901Z",
         "last_error": null
       }
     },
@@ -65241,7 +65571,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-11-01T03:04:59.252549Z",
+    "generated_at": "2026-11-02T03:13:49.672445Z",
     "total_ich_elements": 355,
     "complete_records": 355,
     "incomplete_records": 0,
