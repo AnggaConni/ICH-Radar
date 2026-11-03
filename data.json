@@ -65568,22 +65568,371 @@
         "last_checked_at": null,
         "last_error": null
       }
+    },
+    {
+      "id": "ich-6d98e649",
+      "element_name": "Pengetahuan Navigasi Laut Tradisional Suku Bugis",
+      "categories": [
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Oral Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//nationalgeographic.co.id/sains/2024/11/kecerdasan-sistem-navigasi-suku-bugis-melaut-berpedoman-bintang&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://nationalgeographic.co.id/sains/2024/11/kecerdasan-sistem-navigasi-suku-bugis-melaut-berpedoman-bintang",
+        "https://www.kompasiana.com/andisyam/5518b01a81331131779de20e/navigasi-tradisional-ala-pelaut-sulawesi-selatan",
+        "https://rri.co.id/nunukan/iptek/337190/suku-bugis-merupakan-pelaut-paling-nekat-di-nusantara",
+        "https://indonesiana.id/read/127608/navigasi-bugis",
+        "https://palpres.com/2023/08/17/yuk-kenalan-dengan-suku-bugis-sukunya-pelaut-pelaut-ulung-indonesa/",
+        "https://www.kompas.id/baca/humaniora/2022/06/04/menggali-kembali-kearifan-lokal-kelautan",
+        "https://kumparan.com/kumparansains/angin-sebagai-sistem-navigasi-tradisional-1z823611Q7J",
+        "https://journal.uin-alauddin.ac.id/index.php/al-munir/article/view/13768",
+        "https://jurnal.ar-raniry.ac.id/index.php/islamica/article/view/1066",
+        "https://jimperium.wordpress.com/2016/03/30/navigasi-bugis/",
+        "https://doi.org/10.17509/historia.v8i2.90698",
+        "https://appisi.or.id/tradisi-pelayaran-suku-bajo-sebagai-warisan-maritim-indonesia/",
+        "https://kumparan.com/kumparannews/sejarah-pelayaran-tradisional-suku-bajo-1z823611Q7J",
+        "https://www.scribd.com/document/508688849/Navigasi-Tradisional-Maritim-Nusantara",
+        "https://www.scribd.com/document/494665360/Suku-Mandar-Sejarah-dan-Budaya-Laut",
+        "https://journal.unhas.ac.id/index.php/jpp/article/view/29037"
+      ],
+      "scraped_at": "2026-11-03T04:28:28.714050Z",
+      "location": {
+        "country": "Indonesia",
+        "provinces": [
+          "South Sulawesi",
+          "West Sulawesi"
+        ],
+        "lat": -3.6446718,
+        "lng": 119.9471906
+      },
+      "resume_analisa": {
+        "description": "The Bugis people, renowned seafarers from South Sulawesi, Indonesia, possess a sophisticated traditional sea navigation knowledge system. This system relies on interpreting natural phenomena such as stars, winds, currents, waves, and other environmental cues to determine direction, position, and safe routes during voyages. This empirical knowledge has been accumulated and refined over centuries, enabling them to traverse vast oceans long before modern navigation tools existed.",
+        "cultural_significance": "This navigation knowledge is a cornerstone of Bugis maritime culture and identity. It is deeply integrated into their way of life, supporting their historical roles as traders, explorers, and fishermen. The ability to navigate by natural signs is a source of pride and a testament to their deep connection with the sea. It is passed down through generations, often through direct apprenticeship on boats, reinforcing social cohesion and cultural continuity. The famous Pinisi ship, a symbol of Indonesian maritime heritage, was developed by the Bugis, relying heavily on this traditional navigation expertise.",
+        "drr_category": "Indigenous Knowledge & Early Warning",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Typhoon"
+        ],
+        "drr_mechanism": "The traditional navigation knowledge of the Bugis allows seafarers to interpret natural signs, such as specific star constellations, wind patterns, cloud formations, and ocean currents, to predict weather changes and identify safe passage. This ability serves as an early warning system, enabling them to avoid dangerous maritime conditions like storms or typhoons, thus reducing the risk of accidents and ensuring the safety of their voyages, especially when modern technology is unavailable or fails.",
+        "gemini_tags": [
+          "Traditional Navigation",
+          "Maritime Heritage",
+          "Bugis Culture",
+          "Indigenous Knowledge",
+          "Indonesia"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Non-instrumental navigation, passed down through oral tradition and apprenticeship.",
+        "materials_and_tools": [
+          "Traditional sailing vessels (e.g., Pinisi, baqo', lambo)",
+          "Natural indicators (stars, sun, moon, winds, currents, waves, clouds, birds, coastal landmarks)"
+        ],
+        "step_by_step": [
+          "**Star Observation (Navigasi Bintang):** At night, specific constellations are used to determine cardinal directions and control the ship's heading. Key stars include: *Bintoeng Balue* (widow star/single star) and *Bintoeng Kappala* for determining North; *Bintang Pari* (Crux) for the South; *Bintang Biduk* (Boyang Kepang) for the North; *Bintang Tiga* (Tallu-Tallu) for the Southeast; *Bintang Tujuh* (Balunus) for the East; Venus/Kejora and *Bittoeng Manuk* (chicken star) are also utilized. The height of stars above the horizon is read to estimate remaining travel time before dawn.",
+          "**Wind Interpretation (Navigasi Angin):** Bugis seafarers rely on monsoon winds for long-distance voyages and detect wind direction as a primary guide for sailing.",
+          "**Oceanographic Reading (Navigasi Oceanografis):** Reading ocean currents is crucial, involving observations of water movement, the color of the sea surface, and the patterns of marine animal movement. They are skilled in adapting to rough waves.",
+          "**Natural Sign Observation:** Observing specific bird behaviors (e.g., 'burung Jagong' in Mandar, indicating wind direction and land proximity) and cloud formations (e.g., white clouds indicating proximity to land) are used. Coastal landmarks are also utilized when sailing near the shore.",
+          "**Knowledge Transmission:** The knowledge is primarily passed down orally from elders to younger generations, often through direct experience and apprenticeship on board ships."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Indonesia",
+            "element_name": "Pengetahuan Navigasi Laut Tradisional Suku Mandar",
+            "relationship_reason": "Both Bugis and Mandar (and Makassar) share similar traditional navigation knowledge, including the use of stars, winds, and other natural signs, and have historical connections in maritime trade and shipbuilding."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Pengetahuan Navigasi Laut Tradisional Suku Bajo",
+            "relationship_reason": "The Bajo people, like the Bugis, are renowned seafarers in Indonesia and Southeast Asia, possessing extensive traditional navigation knowledge, including a sophisticated star navigation system ('pabbiritang') and deep ecological understanding of the sea."
+          },
+          {
+            "country": "Australia",
+            "element_name": "Macassan-Aboriginal cultural exchange (related to trepang trade)",
+            "relationship_reason": "Bugis (and other South Sulawesi) seafarers historically traveled to Northern Australia for trade (e.g., trepang), leaving cultural traces and demonstrating their extensive navigation capabilities across international waters."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-9a7e6644",
+      "element_name": "Pingshu (Chinese Storytelling)",
+      "categories": [
+        "Oral Traditions",
+        "Performing Arts"
+      ],
+      "categories_valid": true,
+      "category": "Oral Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.overdrive.com/blogs/pingshu-traditional-chinese-storytelling&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.overdrive.com/blogs/pingshu-traditional-chinese-storytelling",
+        "https://factsanddetails.com/china/cat2/sub7/entry-4444.html",
+        "https://www.dotdotnews.com/a/202502/14/AR202502140001.html",
+        "https://baike.baidu.com/item/%E8%AF%84%E4%B9%A6/10294",
+        "https://www.fantastichina.com/tianjin-pingshu-one-of-the-funniest-folk-art-forms-in-china/",
+        "https://en.wikipedia.org/wiki/Pingshu",
+        "https://zh.wikipedia.org/wiki/%E8%AF%84%E4%B9%A6",
+        "https://www.sohu.com/a/353907769_120042457",
+        "https://www.easc.indiana.edu/pages/easc/chinese/storytelling/storytelling.html",
+        "https://www.easc.indiana.edu/pages/easc/chinese/storytelling/chinese_storytelling.html",
+        "https://www.easc.indiana.edu/pages/easc/chinese/storytelling/professional_storytelling3.html",
+        "https://www.163.com/dy/article/I534063F0552718E.html"
+      ],
+      "scraped_at": "2026-11-03T04:29:03.829859Z",
+      "location": {
+        "country": "China",
+        "provinces": [
+          "Northern China",
+          "Southern China",
+          "Tianjin",
+          "Beijing",
+          "Yangzhou"
+        ],
+        "lat": 22.1535271,
+        "lng": 113.5594359
+      },
+      "resume_analisa": {
+        "description": "Pingshu (评书), also known as pinghua or shuoshu, is a traditional Han Chinese performing art of oral storytelling without musical accompaniment. It involves a single storyteller narrating long, episodic tales, often derived from classical Chinese novels, historical events, or folklore. Performers utilize their verbal ingenuity, varied voices, exaggerated gestures, and simple props to engage and captivate the audience.",
+        "cultural_significance": "Pingshu has a rich history dating back to the Song Dynasty (960-1279), with its form solidifying during the Ming and Qing dynasties. It traditionally served as a vital recreational and educational tool, allowing people to communicate information, share interests, and learn about Chinese history and cultural values. Pingshu stories frequently convey core Chinese cultural values such as patriotism, filial piety, philanthropy, honesty, and the eternal struggle between good and evil. The art form was inscribed on China's Intangible Cultural Heritage List in 2008. It experienced significant popularity in the 1980s, with radio broadcasts reaching millions across the country.",
+        "drr_category": "Not Directly Related to DRR",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Not Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": null,
+        "gemini_tags": [
+          "Oral Tradition",
+          "Storytelling",
+          "Performing Arts",
+          "Chinese Culture",
+          "Intangible Cultural Heritage",
+          "Folklore",
+          "Historical Narratives"
+        ],
+        "drr_relevance": false
+      },
+      "resume_tata_cara": {
+        "type": "Oral Performance and Transmission",
+        "materials_and_tools": [
+          "Table",
+          "Folding fan",
+          "Handkerchief",
+          "Gavel (xingmu)",
+          "Traditional gown (changshan)"
+        ],
+        "step_by_step": [
+          "**Performance Steps:**",
+          "1.  **Story Selection & Preparation**: The storyteller chooses a narrative, typically from classical Chinese epics, historical events, or folklore. This involves meticulous historical research and often adapting the original text by adding personal commentary, humor, suspense, and developing characters.",
+          "2.  **Setting the Scene**: The performer, often dressed in a traditional gown (changshan), positions themselves behind a table, which serves as their stage.",
+          "3.  **Opening the Performance**: The storyteller uses a gavel (xingmu) to strike the table, signaling the beginning of the performance and capturing the audience's attention.",
+          "4.  **Narrative Delivery**: The story is recounted from memory, with the storyteller employing a range of voices, exaggerated gestures, and relying heavily on verbal ingenuity and facial expressions to bring the characters and plot to life.",
+          "5.  **Prop Utilization**: Simple props like a folding fan are used to illustrate various physical actions, such as brandishing a sword or reading a book.",
+          "6.  **Audience Engagement & Commentary**: Performers often interject with their own commentaries on the subjects and characters, aiming not only to entertain but also to educate and enlighten the audience.",
+          "7.  **Building Suspense**: Each segment of the story, typically lasting around ten minutes, concludes with a suspenseful 'hook' (Kou'er) designed to keep the audience eager for the next installment.",
+          "**Transmission/Learning Steps:**",
+          "1.  **Apprenticeship**: Traditionally, aspiring storytellers would undergo a long apprenticeship under a master, which historically could involve years of performing basic chores.",
+          "2.  **Skill Development**: Apprentices must cultivate an exceptional memory, develop strong narrative crafting skills, and acquire a deep understanding of Chinese literature and history.",
+          "3.  **Observation & Practice**: Learning primarily occurs through observing and listening to older generations perform, followed by extensive practice and refinement of storytelling techniques.",
+          "4.  **Adaptation & Innovation**: Storytellers continuously polish their narratives by incorporating new materials or altering existing ones, drawing from real-life situations to ensure the stories remain engaging and relevant to contemporary audiences.",
+          "5.  **Modern Training**: In modern times, some individuals learn Pingshu by joining performing troupes that also function as informal training schools."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "China",
+            "element_name": "Pinghua (Southern Chinese Storytelling)",
+            "relationship_reason": "Pingshu is known as pinghua in southern China, representing regional variations of the same oral storytelling tradition."
+          },
+          {
+            "country": "China",
+            "element_name": "Shuohua (Ancient Chinese Storytelling)",
+            "relationship_reason": "The history of Pingshu can be traced back to 'shuohua' from the Tang and Song dynasties, indicating a direct historical lineage."
+          },
+          {
+            "country": "China",
+            "element_name": "Xiangsheng (Crosstalk)",
+            "relationship_reason": "Pingshu shares significant origins and performance techniques, particularly 'pianzi huo' (片子活) skills, with Xiangsheng, another traditional Chinese performing art."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
     }
   ],
   "summary": {
-    "generated_at": "2026-11-02T03:13:49.672445Z",
-    "total_ich_elements": 355,
-    "complete_records": 355,
+    "generated_at": "2026-11-03T04:29:46.018915Z",
+    "total_ich_elements": 357,
+    "complete_records": 357,
     "incomplete_records": 0,
     "categories_breakdown": {
       "Traditional Craftsmanship": 126,
-      "Social Practices & Rituals": 96,
+      "Social Practices & Rituals": 97,
       "Culinary Traditions": 61,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 41,
+      "Performing Arts": 42,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 40,
+      "Oral Traditions": 42,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
