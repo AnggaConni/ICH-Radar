@@ -18928,78 +18928,243 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-11-04T03:46:58.181686Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Woodcarving and Structural Mechanics Knowledge",
+            "description": "Master-level expertise in engineering the flexible lattice walls (khana), roof poles (uni), and crown ring (toono) to withstand high steppe winds.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Communal Felt-Making and Textile Mastery",
+            "description": "Traditional ecological knowledge regarding sheep's wool processing, moisture-heat-pressure application, and dense insulation manufacture.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Cosmological and Spatial Customary Knowledge",
+            "description": "Unwritten rules dictating the orientation, interior layout, etiquette, and symbolic spatial division of the ger relative to nature and astronomy.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Raw Sheep's Wool",
+            "description": "Locally sourced pastoral material utilized for dense felt insulation layers.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Timber and Wood Components",
+            "description": "Selected wood harvested and carved for structural frames, pillars, doors, and decorative furniture.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Natural Binders and Reinforcements",
+            "description": "Water, whey, leather thongs, and hair ropes used to bind and secure the dwelling components.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Master Woodcarvers and Senior Artisans",
+            "description": "Experienced practitioners who hold structural design skills and transmit techniques via direct mentorship.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Nomadic Household and Community Networks",
+            "description": "Families and neighbors practicing collective labor dynamics for seasonal assembly, felt-making, and maintenance.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Pastoral Steppe Landscapes",
+            "description": "The open rangelands of Mongolia where seasonal migration and nomadic dwelling setup occur in harmony with local ecosystems.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "UNESCO Intangible Cultural Heritage Framework",
+            "description": "International recognition status supporting safeguarding, documentation, and awareness under the 2003 Convention list.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
-        "services": [],
-        "experience": [],
-        "education": []
+        "production": [
+          {
+            "name": "Sustainable Pastoral Harvesting & Wood Preparation",
+            "description": "Shearing sheep, collecting natural fibers, and seasoning/carving timber elements using traditional hand tools.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Communal Felt-Making & Stitching",
+            "description": "Collaborative rolling, beating, wetting with whey or water, and stitching layers of canvas and felt.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "The Mongol Ger Dwelling System",
+            "description": "Complete portable circular dwelling structures including lattice walls, roof poles, toono crown, and protective felt covers.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Painted and Carved Wooden Furniture",
+            "description": "Traditional interior storage chests, beds, and structural pillars featuring auspicious and nature-inspired ornamentation.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "services": [
+          {
+            "name": "Traditional Assembly and Relocation Services",
+            "description": "Customary practices involving family and community cooperation to rapidly dismantle, transport, and re-erect gers.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "experience": [
+          {
+            "name": "Nomadic Living and Cultural Immersion",
+            "description": "Firsthand engagement with the socio-cultural customs, hospitality rituals, and daily routines centered within the ger.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Intergenerational Mentorship in Craftsmanship",
+            "description": "Traditional transmission model where senior craftspersons pass down woodworking, painting, and textile skills to younger community members.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 60,
+        "tourism_potential": 50,
+        "education_potential": 70,
+        "creative_industry_potential": 55,
+        "digital_potential": 30
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Nomadic Community Cooperatives and Household Networks",
+            "description": "Primary guardians of the element practicing collective peer-to-peer transmission, mutual aid during seasonal moves, and communal felt-making.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-11-04T03:46:58.181686Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Craftsmanship supports local pastoral economies and specialized makers of wood components and felt, though commercialization must respect nomadic lifestyle bounds.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The ger serves as a primary touchpoint for cultural heritage experiences, requiring careful community consent to prevent over-commercialization.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High potential for transmitting indigenous ecological knowledge, sustainable architecture design principles, and traditional woodworking and textile techniques.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Traditional ornamentation, wood carving motifs, and painted furniture offer rich aesthetics applicable to sustainable craft and design sectors.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited direct digital intervention due to the physical, tactile, and community-centric nature of construction, though documentation and archiving provide digital reach.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/traditional-craftsmanship-of-the-mongol-ger-and-its-associated-customs-00872"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 1,
+        "evidence_item_count": 23,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-11-04T03:46:58.181686Z",
         "last_error": null
       }
     },
@@ -19067,78 +19232,209 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-11-04T03:47:20.860175Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Kithul Tapping Knowledge System",
+            "description": "Generational indigenous expertise encompassing mature tree identification, inflorescence preparation, vine wrapping, and daily sap extraction techniques.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318",
+              "https://ceylonwire.lk/sri-lanka-kithul-madeema-unesco-intangible-cultural-heritage-list/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Kithul Palm (Caryota urens)",
+            "description": "Endemic palm trees thriving across home gardens, forests, and natural landscapes in districts across Southern, Central, Sabaragamuwa, and Uva provinces.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318",
+              "https://ceylonwire.lk/sri-lanka-kithul-madeema-unesco-intangible-cultural-heritage-list/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Traditional Tapping Tools and Forest Materials",
+            "description": "Specialized wooden/natural ladders, vines used for tying flower stalks, and sacred tapping knives utilized in daily processing.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318",
+              "https://rathuirapaper.com/unescos-list-of-intangible-cultural-sri-lanka-kithul-madeema-unescos-intangible-cultural-heritage-list/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Rural Tapping Practitioners and Village Cooperatives",
+            "description": "Generational family channels and informal local cooperatives practicing kithul tapping across multiple districts, transcending caste and ethnicity.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Rural Village Communities and Home Gardens",
+            "description": "Geographical distribution spanning over 13 districts across the Southern, Central, Sabaragamuwa, and Uva Provinces of Sri Lanka.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "UNESCO Intangible Cultural Heritage Framework",
+            "description": "Official inscription on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity providing international safeguarding context.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318",
+              "https://ceylonwire.lk/sri-lanka-kithul-madeema-unesco-intangible-cultural-heritage-list/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
+        "production": [
+          {
+            "name": "Sap Harvesting and Collection",
+            "description": "Climbing palms via ladders, securing flower stalks with vines, and utilizing sacred knives for daily raw sap collection.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Boiling and Processing",
+            "description": "Filtering and boiling fresh sap to formulate secondary derivatives like treacle (pani) and jaggery (hakuru).",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Kithul Treacle (Pani) and Jaggery (Hakuru)",
+            "description": "Traditional sweetening and culinary products derived from boiled kithul sap integral to local cuisine.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318",
+              "https://ceylonwire.lk/sri-lanka-kithul-madeema-unesco-intangible-cultural-heritage-list/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Derived Culinary and Medicinal Goods",
+            "description": "Kithul toddy, vinegar, sweets, and traditional indigenous medicine components shared during communal gatherings.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "services": [],
-        "experience": [],
-        "education": []
+        "experience": [
+          {
+            "name": "Communal Gatherings and Ceremonial Sharing",
+            "description": "Integration of kithul products and associated rituals within rural festivals, ceremonies, and community events.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "education": [
+          {
+            "name": "Informal Intergenerational Transmission",
+            "description": "Skill transfer passed down through informal family channels and village networks rather than formal academies.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "opportunity_analysis": {
-        "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "livelihood_potential": 65,
+        "tourism_potential": 40,
+        "education_potential": 60,
+        "creative_industry_potential": 35,
+        "digital_potential": 20
       },
       "resource_mobilization": {
         "public_sector": [],
         "private_sector": [],
         "academic": [],
-        "community": [],
+        "community": [
+          {
+            "name": "Village Tapping Cooperatives and Families",
+            "description": "Local practitioners and community groups maintaining informal transmission channels and safeguarding traditions across rural districts.",
+            "evidence_urls": [
+              "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-11-04T03:47:20.860175Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Vital to rural community sustenance across 13 districts, providing income streams via production of treacle, jaggery, and indigenous medicinal outputs, though threatened by practitioner decline.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318",
+            "https://ceylonwire.lk/sri-lanka-kithul-madeema-unesco-intangible-cultural-heritage-list/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "UNESCO inscription elevates global visibility, offering potential for localized cultural tourism focused on indigenous agricultural traditions, provided community consent guides scale.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "High relevance for documenting indigenous ecological knowledge, traditional craft transmission, and environmental sustainability practices for younger generations.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318",
+            "https://rathuirapaper.com/unescos-list-of-intangible-cultural-sri-lanka-kithul-madeema-unescos-intangible-cultural-heritage-list/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Involves traditional craftsmanship of tools (knives, ladders) and culinary arts rooted in indigenous gastronomy, though formal creative sector integration remains nascent.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited digital documentation exists beyond national library records and UNESCO listing entries, presenting minor scope for digital archiving or awareness campaigns.",
+          "evidence_urls": [
+            "https://ich.unesco.org/en/RL/kithul-madeema-kithul-kapeema-an-ancient-indigenous-technology-for-tapping-kithul-in-sri-lanka-02318"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
+        "status": "needs_review",
+        "validation_status": "passed",
+        "evidence_url_count": 3,
+        "evidence_item_count": 18,
         "uncited_item_count": 0,
         "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "opportunity_scores_with_evidence": 5,
+        "opportunity_scores_without_evidence": 0,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
+        "last_checked_at": "2026-11-04T03:47:20.860175Z",
         "last_error": null
       }
     },
@@ -65920,7 +66216,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-11-03T04:29:46.018915Z",
+    "generated_at": "2026-11-04T03:47:43.387117Z",
     "total_ich_elements": 357,
     "complete_records": 357,
     "incomplete_records": 0,
