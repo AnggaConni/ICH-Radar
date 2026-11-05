@@ -66213,22 +66213,550 @@
         "last_checked_at": null,
         "last_error": null
       }
+    },
+    {
+      "id": "ich-cea2ae3c",
+      "element_name": "Fish and Brewis",
+      "categories": [
+        "Culinary Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Culinary Traditions",
+      "category_valid": true,
+      "thumbnail_url": "https://www.rockrecipes.com/wp-content/uploads/2020/08/Fish-and-Brewis-Newfoundland-Recipe-image-with-title.jpg",
+      "source_urls": [
+        "https://www.bonitaskitchen.com/fish-and-brewis/",
+        "https://heritagenl.ca/labrador-fish-brewis/",
+        "https://rockrecipes.com/fish-and-brewis/",
+        "https://liveruralnl.com/2012/01/26/a-feed-of-fish-n-brewis/",
+        "https://delishglobe.com/canadian-fish-and-brewis/",
+        "https://www.thecanadianencyclopedia.ca/en/article/fish-and-brewis",
+        "https://www.britannica.com/topic/fish-and-brewis",
+        "https://en.wikipedia.org/wiki/Fish_and_brewis",
+        "https://www.newfoundlandlabrador.com/plan-and-book/food-and-drink/fish-and-brewis"
+      ],
+      "scraped_at": "2026-11-05T04:06:03.095364Z",
+      "location": {
+        "country": "Canada",
+        "provinces": [
+          "Newfoundland and Labrador"
+        ],
+        "lat": 53.8217327,
+        "lng": -61.2295532
+      },
+      "resume_analisa": {
+        "description": "Fish and Brewis (pronounced 'brews') is a traditional Newfoundland meal primarily composed of salt cod and hard bread (also known as hard tack or brewis). It is often accompanied by boiled potatoes and topped with 'scrunchions,' which are small pieces of salted pork fat fried until crisp, along with the rendered fat. The dish is a hearty and simple meal, reflecting the historical reliance on preserved ingredients in the region.",
+        "cultural_significance": "Deeply rooted in the history of Newfoundland and Labrador, Fish and Brewis emerged from the necessity of sustenance during long fishing voyages and harsh winters, when fresh provisions were scarce. The use of salt cod and hard bread, both non-perishable ingredients, highlights the ingenuity and resilience of the early inhabitants and fishermen. It has evolved from a practical survival food to a cherished cultural symbol, representing Newfoundland identity and heritage. The dish is a staple at family gatherings, community events, and cultural celebrations, and its preparation and consumption foster a sense of continuity and connection to the region's maritime past.",
+        "drr_category": "Resilient Livelihoods & Food Security",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [
+          "Drought",
+          "Flood",
+          "Typhoon"
+        ],
+        "drr_mechanism": "The traditional practice of preparing Fish and Brewis relies on ingredients with extended shelf lives, specifically salt cod and hard bread, which do not require refrigeration. This foodway provided a crucial and reliable source of sustenance for communities facing prolonged periods of isolation, such as those experienced during long sea voyages, harsh winters, or when access to fresh food was otherwise compromised. This historical reliance on preserved foods directly contributes to food security and resilient livelihoods by ensuring a stable food supply in challenging conditions, which can be exacerbated by various disaster hazards like droughts, floods, or typhoons that disrupt supply chains and agricultural production.",
+        "gemini_tags": [
+          "Traditional food",
+          "Newfoundland cuisine",
+          "Salt cod",
+          "Hard bread",
+          "Maritime heritage",
+          "Food preservation",
+          "Community identity",
+          "Canadian culinary heritage"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Recipe",
+        "materials_and_tools": [
+          "1 lb (approx. 450g) boneless salt cod fish",
+          "4-6 cakes (approx. 200-300g) Purity Hard Bread (hard tack)",
+          "3-4 medium potatoes, peeled and diced (optional, but common)",
+          "1 cup (approx. 240g) salt fat pork, diced (for scrunchions)",
+          "2 medium onions, chopped (for scrunchions and sometimes mixed in)",
+          "Water for soaking and boiling",
+          "Pepper to taste",
+          "Butter (optional, for drawn butter variation)",
+          "Flour (optional, for drawn butter variation)",
+          "Large saucepans/pots",
+          "Frying pan"
+        ],
+        "step_by_step": [
+          "**Preparation (Overnight):**",
+          "1. Soak the salt cod fish in a bowl of cold water overnight, changing the water several times to reduce saltiness.",
+          "2. In a separate bowl, soak the hard bread in cold water overnight until softened.",
+          "**Cooking (Next Day):**",
+          "3. Drain the water from both the soaked salt cod and hard bread.",
+          "4. **Cook the Cod:** Place the desalted cod in a saucepan with fresh water, bring to a boil, and simmer gently until tender and flaky (about 15-20 minutes). Drain and flake the fish, removing any remaining bones.",
+          "5. **Cook the Hard Bread:** Place the soaked hard bread in a saucepan with fresh water, bring to a boil, and cook until tender (about 10-15 minutes). Drain well.",
+          "6. **Cook the Potatoes (if using):** In another saucepan, boil the peeled and diced potatoes until fork-tender. Drain.",
+          "7. **Prepare Scrunchions:** In a frying pan, fry the diced salt fat pork over medium heat until golden brown and crisp. These crispy bits are called 'scrunchions'. Remove the scrunchions and set aside, keeping the rendered fat in the pan.",
+          "8. **Sauté Onions:** Add the chopped onions to the rendered pork fat in the frying pan and cook until golden brown and softened.",
+          "**Assembly:**",
+          "9. In a large bowl or directly on plates, combine the cooked flaked cod, drained hard bread, and boiled potatoes (if using). Gently mix.",
+          "10. Pour the hot rendered pork fat and sautéed onions over the mixture. Top with the crispy scrunchions.",
+          "11. Season with freshly ground black pepper to taste. Some variations also add a dash of molasses or serve with drawn butter (melted butter thickened with flour and onions) instead of scrunchions."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.8,
+        "related_elements": [
+          {
+            "country": "Canada",
+            "element_name": "Salt cod and pork scraps",
+            "relationship_reason": "A similar traditional dish found in Nova Scotia, also utilizing salt cod and pork."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-c39c4dcb",
+      "element_name": "Fado, urban popular song of Portugal",
+      "categories": [
+        "Performing Arts",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "categories_valid": true,
+      "category": "Performing Arts",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//en.wikipedia.org/wiki/Fado&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fado",
+        "https://www.britannica.com/art/fado",
+        "https://www.portugaltravel.org/fado-music-portugal",
+        "https://www.museudofado.pt/fado-history",
+        "https://explorepartsunknown.com/fado/",
+        "https://ich.unesco.org/en/RL/fado-urban-popular-song-of-portugal-00563",
+        "https://www.nationalgeographic.com/travel/article/fado-music-lisbon-portugal",
+        "https://ich.unesco.org/doc/src/6.COM_13.39_EN.pdf",
+        "https://www.cheeseandwine.pt/fado-in-lisbon-history-styles-singers-listening-spots/",
+        "https://dreamchiado.pt/en/the-importance-of-fado-in-lisbon/",
+        "https://soldomus.com/fado-classified-as-world-heritage-by-unesco/",
+        "https://www.luisapaixao.com/en/blog/portuguese-fado-soul-in-music",
+        "https://en.wikipedia.org/wiki/Portuguese_guitar",
+        "https://www.researchgate.net/publication/337890906_Lisbon_Fado_as_Heritage_of_Humanity",
+        "https://www.larkinthemorning.com/blogs/news/fado-guitars-from-portugal",
+        "https://www.fado.com/the-instruments-of-fado",
+        "https://www.asevera.com/en/the-impact-of-fado-on-emotional-well-being/"
+      ],
+      "scraped_at": "2026-11-05T04:06:36.827931Z",
+      "location": {
+        "country": "Portugal",
+        "provinces": [
+          "Lisbon",
+          "Coimbra"
+        ],
+        "lat": 38.7077507,
+        "lng": -9.1365919
+      },
+      "resume_analisa": {
+        "description": "Fado is a Portuguese music genre that emerged in the early 19th century in the working-class neighborhoods of Lisbon, such as Alfama, Mouraria, and Bairro Alto. It is a performance genre that integrates music and poetry, characterized by its expressive and often melancholic nature. The lyrics frequently explore themes of the sea, the lives of the poor, resignation, fate, and a profound sense of longing known as 'saudade,' a uniquely Portuguese concept. Fado is typically performed by a solo singer, known as a 'fadista,' accompanied by a Portuguese guitar (guitarra portuguesa) and a classical guitar (viola). It was inscribed on the UNESCO Representative List of the Intangible Cultural Heritage of Humanity in 2011.",
+        "cultural_significance": "Fado is considered a powerful symbol of Portuguese identity and a deep expression of the nation's emotional and artistic heritage. It fosters a strong sense of belonging and identity within the communities of Lisbon and beyond. The genre reflects a worldview shaped by centuries of maritime exploration and the resulting experiences of separation and longing. Fado's ability to evoke and process complex emotions, particularly 'saudade,' makes it a vital cultural outlet. Its preservation is a cultural priority in Portugal, with institutions like the Fado Museum in Lisbon dedicated to educating visitors and ensuring its transmission to future generations.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "Fado, through its expressive music and poetic lyrics, particularly the concept of 'saudade' (melancholic longing), provides a significant cultural mechanism for emotional catharsis and reflection within communities. This shared experience of processing profound emotions, including loss and adversity, strengthens social cohesion and a sense of community. By fostering deep personal reflection and a collective emotional outlet, Fado contributes to the psychological well-being and mutual support systems essential for communities to cope with challenging life circumstances and recover from the impacts of various adversities, including disasters.",
+        "gemini_tags": [
+          "Portuguese music",
+          "traditional song",
+          "saudade",
+          "Lisbon",
+          "Coimbra",
+          "cultural identity",
+          "performing arts",
+          "oral tradition",
+          "community",
+          "emotional expression"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Performance (Music and Poetry)",
+        "materials_and_tools": [
+          "Solo singer (fadista)",
+          "Portuguese guitar (guitarra portuguesa): A pear-shaped, 12-string instrument with steel strings, typically tuned in 6 courses (first 3 unison, last 3 octaves), and featuring watch-key tuners.",
+          "Classical guitar (viola): A 6-string acoustic guitar, typically with nylon strings, providing harmonic and rhythmic support.",
+          "Optional: Viola baixo (8-string bass viola) for a deeper bass line, more common in concert settings."
+        ],
+        "step_by_step": [
+          "**Setting the Scene**: Fado performances often take place in intimate venues known as 'casas de Fado' (Fado houses) in Lisbon's historic neighborhoods, creating a close connection between performers and audience. Coimbra Fado, by contrast, is often performed outdoors or in academic settings.",
+          "**Instrumental Introduction**: The performance typically begins with an instrumental introduction played by the guitarra portuguesa, often drawing on melodic elements that will be featured in the vocal piece.",
+          "**Vocal Delivery**: The fadista then begins to sing, delivering the lyrics with raw emotion and expressive gestures. The vocal style is characterized by its soulful and often mournful quality.",
+          "**Musical Interaction**: In Lisbon Fado, the guitarra portuguesa engages in a musical 'call-and-response' with the singer, playing short, expressive phrases that answer the fadista's vocal lines. In faster pieces, the guitarra may improvise virtuosically. The viola provides a stable harmonic and rhythmic foundation.",
+          "**Emotional Engagement**: The performance aims to evoke a deep emotional connection with the audience, fostering a shared experience of the themes of longing, fate, and daily life struggles.",
+          "**Audience Participation (Listening)**: Fado listening is a profound and social experience, often characterized by respectful silence, allowing listeners to collectively engage in a deeply interior emotional journey."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "Cape Verde",
+            "element_name": "Morna",
+            "relationship_reason": "Historically linked to Fado in its earlier form and shares rhythmic heritage."
+          },
+          {
+            "country": "Brazil",
+            "element_name": "Modinha, Brazilian Fado, Afro-Brazilian Lundum",
+            "relationship_reason": "Shares a connection to the music of a historic Portuguese urban and maritime proletariat; Afro-Brazilian sung dances and Brazilian Fado contributed to Fado's multicultural synthesis."
+          },
+          {
+            "country": "Indonesia",
+            "element_name": "Kroncong",
+            "relationship_reason": "Shares a connection to the music of a historic Portuguese urban and maritime proletariat."
+          },
+          {
+            "country": "Spain",
+            "element_name": "Fandango",
+            "relationship_reason": "Contributed to the emergence of Fado in Lisbon."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
+    },
+    {
+      "id": "ich-12054770",
+      "element_name": "Khanga (or Kanga) Fabric",
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals",
+        "Oral Traditions"
+      ],
+      "categories_valid": true,
+      "category": "Traditional Craftsmanship",
+      "category_valid": true,
+      "thumbnail_url": "https://api.microlink.io/?url=https%3A//www.folklife.si.edu/magazine/khangas-role-in-kenyan-culture&screenshot=true&meta=false&embed=screenshot.url",
+      "source_urls": [
+        "https://www.folklife.si.edu/magazine/khangas-role-in-kenyan-culture",
+        "https://africaspeaks4africa.org/the-kanga-an-artifact-of-swahili-culture/",
+        "https://digitalkhakhra.com/khanga-wax-printed-fabric/",
+        "https://artsandculture.google.com/story/the-kanga-a-cloth-that-unites-national-museums-of-kenya/LgXhB-0b-19oJg",
+        "https://lammuseum.uncg.edu/2020/02/03/swahili-khanga-cloth/",
+        "https://publications.waset.org/abstracts/173360/kanga-traditional-costume-as-a-tool-for-community-empowerment-in-tanzania-in-ubuntu-perspective-a-literature-review",
+        "https://www.trt.net.tr/afrika/culture/2023/12/23/khanga-the-enduring-fashion-style-of-east-africa-s-coast-1601007",
+        "https://voicesofkilimanjaro.com/khanga/",
+        "https://jreximport.com/blogs/news/traditional-african-clothing-a-guide-to-kanga",
+        "https://experimentalhumanities.org/textiles-that-talk-east-african-kangas-and-their-meanings/",
+        "https://omirenstyles.com/blogs/news/kanga-chronicles-the-living-language-of-east-africas-most-iconic-fabric",
+        "https://en.wikipedia.org/wiki/Kanga_(garment)",
+        "https://www.tanzania-experience.com/blog/khanga-clothing-for-africa/",
+        "https://www.simchasafaris.com/blog/guide-to-wearing-kanga-and-kitenge-fabrics"
+      ],
+      "scraped_at": "2026-11-05T04:07:07.415661Z",
+      "location": {
+        "country": "Tanzania",
+        "provinces": [
+          "Zanzibar"
+        ],
+        "lat": -6.0999709,
+        "lng": 39.3209535
+      },
+      "resume_analisa": {
+        "description": "Khanga, also spelled Kanga, is a vibrant, rectangular cotton fabric widely worn in East Africa, particularly by women in Tanzania and Kenya. It typically features a distinctive design composed of a border (pindo), a central motif (mji), and a Swahili proverb or message (jina) printed along the bottom edge. Khangas are usually sold in pairs and are highly versatile, used as skirts, shawls, headwraps, baby carriers, blankets, and even as decorative items. The name 'Kanga' is believed to originate from the Swahili word for guinea fowl, due to the early patterns resembling the bird's plumage.",
+        "cultural_significance": "The Khanga holds deep cultural, historical, and economic significance in East African Swahili culture. It serves as a powerful medium of communication, allowing women to convey messages, express feelings, and share social, political, religious, or health-related ideas through the proverbs and designs printed on the cloth. Khangas are integral to various life stages, given as gifts for births, weddings, and as inheritance from mother to daughter. They symbolize respect, dignity, and cultural identity, and have historically been used for self-empowerment, to voice social ills, and even to spread pro-independence messages during colonial times. The choice of design, color, and text is often influenced by the wearer's personality, beliefs, or current social issues.",
+        "drr_category": "Social Cohesion & Mutual Aid",
+        "drr_category_valid": true,
+        "drr_relevance_level": "Directly Related to DRR",
+        "hazard_categories": [],
+        "drr_mechanism": "The Khanga acts as a vital communication tool within communities, enabling the discreet and public dissemination of messages, including those related to health and development. This 'talking cloth' facilitates social cohesion by allowing individuals, particularly women, to express concerns, share wisdom, and mobilize support, which is crucial for community-led disaster preparedness and response. Its use in conveying messages, even political ones, demonstrates its capacity to share critical information and foster collective action. Additionally, women have historically used Khangas as a form of savings, selling them to overcome financial challenges, contributing to resilient livelihoods.",
+        "gemini_tags": [
+          "East African culture",
+          "Swahili textile",
+          "traditional clothing",
+          "communication",
+          "women's empowerment",
+          "cultural heritage",
+          "textile art",
+          "proverbs",
+          "social commentary"
+        ],
+        "drr_relevance": true
+      },
+      "resume_tata_cara": {
+        "type": "Textile Craft (Wax Printing)",
+        "materials_and_tools": [
+          "Cotton fabric",
+          "Hot wax",
+          "Wooden stamps or metal screens",
+          "Vibrant dyes",
+          "Boiling water or washing agents"
+        ],
+        "step_by_step": [
+          "Prepare the cotton fabric.",
+          "Apply hot wax to the fabric using wooden stamps or metal screens to create a resist pattern. This prevents dyes from penetrating certain areas.",
+          "Dip the fabric into vibrant dyes. The areas covered by wax will resist the dye, maintaining their original color or a lighter shade.",
+          "Remove the wax through boiling or washing, revealing the final printed pattern.",
+          "In modern production, large industrial rotary screen-printing machines are used, where designs are first created by hand, transferred to a computer, and then printed onto plastic screens for each color, which are then transferred to rollers for direct printing onto the cloth."
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": true,
+        "confidence_score": 0.9,
+        "related_elements": [
+          {
+            "country": "India",
+            "element_name": "Various printed cotton textiles",
+            "relationship_reason": "Historically, Khangas were designed and printed in India, China, Japan, and Europe before local production increased in East Africa."
+          },
+          {
+            "country": "Kenya",
+            "element_name": "Leso (another name for Khanga)",
+            "relationship_reason": "Khanga is also known as 'Leso' in Kenya and is widely worn and culturally significant across both Tanzania and Kenya, and the broader African Great Lakes region."
+          },
+          {
+            "country": "Various (African Great Lakes region)",
+            "element_name": "Similar printed fabrics and communication practices",
+            "relationship_reason": "The Khanga is worn by many people across Sub-Saharan Africa and the African Great Lakes region, and its communicative function resonates with other African textile traditions."
+          }
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "resource_enriched_at": null,
+      "resource_enrichment_attempted_at": null,
+      "resource_enrichment_status": "not_assessed",
+      "resource_mapping": {
+        "knowledge_resources": [],
+        "material_resources": [],
+        "human_resources": [],
+        "place_resources": [],
+        "institutional_resources": []
+      },
+      "value_chain": {
+        "production": [],
+        "products": [],
+        "services": [],
+        "experience": [],
+        "education": []
+      },
+      "opportunity_analysis": {
+        "livelihood_potential": 0,
+        "tourism_potential": 0,
+        "education_potential": 0,
+        "creative_industry_potential": 0,
+        "digital_potential": 0
+      },
+      "resource_mobilization": {
+        "public_sector": [],
+        "private_sector": [],
+        "academic": [],
+        "community": [],
+        "potential_funding": []
+      },
+      "opportunity_score_evidence": {
+        "livelihood_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "tourism_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "education_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "creative_industry_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        },
+        "digital_potential": {
+          "rationale": "",
+          "evidence_urls": [],
+          "evidence_status": "not_assessed"
+        }
+      },
+      "resource_intelligence_review": {
+        "schema_version": 2,
+        "status": "not_assessed",
+        "validation_status": "not_run",
+        "evidence_url_count": 0,
+        "evidence_item_count": 0,
+        "uncited_item_count": 0,
+        "invalid_evidence_url_count": 0,
+        "opportunity_scores_with_evidence": 0,
+        "opportunity_scores_without_evidence": 5,
+        "human_review_required": true,
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "last_checked_at": null,
+        "last_error": null
+      }
     }
   ],
   "summary": {
-    "generated_at": "2026-11-04T03:47:43.387117Z",
-    "total_ich_elements": 357,
-    "complete_records": 357,
+    "generated_at": "2026-11-05T04:07:35.453364Z",
+    "total_ich_elements": 360,
+    "complete_records": 360,
     "incomplete_records": 0,
     "categories_breakdown": {
-      "Traditional Craftsmanship": 126,
-      "Social Practices & Rituals": 97,
-      "Culinary Traditions": 61,
+      "Traditional Craftsmanship": 127,
+      "Social Practices & Rituals": 100,
+      "Culinary Traditions": 62,
       "Culinary Traditions | Social Practices & Rituals": 4,
-      "Performing Arts": 42,
+      "Performing Arts": 43,
       "Social Practices & Rituals | Performing Arts": 5,
       "Oral Traditions | Performing Arts": 3,
-      "Oral Traditions": 42,
+      "Oral Traditions": 44,
       "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions": 1,
       "Traditional Community Practice": 1,
       "Traditional Craftsmanship | Social Practices & Rituals": 3,
