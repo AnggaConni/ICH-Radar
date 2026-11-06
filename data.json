@@ -19551,8 +19551,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-11-06T04:02:36.215061Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -19582,8 +19582,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -19593,8 +19593,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-11-06T04:02:36.215061Z",
+        "last_error": "response must be a JSON object"
       }
     },
     {
@@ -19673,27 +19673,141 @@
         ]
       },
       "completion_status": "COMPLETE",
-      "resource_enriched_at": null,
+      "resource_enriched_at": "2026-11-06T04:03:27.791978Z",
       "resource_mapping": {
-        "knowledge_resources": [],
-        "material_resources": [],
-        "human_resources": [],
-        "place_resources": [],
-        "institutional_resources": []
+        "knowledge_resources": [
+          {
+            "name": "Traditional Reverse Appliqué Techniques",
+            "description": "Ancestral knowledge of stacking multiple colored cotton layers, cutting complex lines, and fine-stitching patterns passed down intergenerationally from Guna mothers and grandmothers.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+              "https://en.wikipedia.org/wiki/Mola_(art_form)"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Guna Iconography and Cosmovision",
+            "description": "Symbolic lexicon of geometric designs, fauna, flora, daily life scenes, and protective motifs rooted in historical body painting traditions.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+              "https://unframed.lacma.org/2012/08/06/mola-textiles-and-the-kuna-indians"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "material_resources": [
+          {
+            "name": "Cotton Fabrics and Sewing Implements",
+            "description": "Multi-colored cotton fabrics (typically 2 to 7 layers with a black base), appliqué needles, and milliners needles used in mola construction.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Mola_(art_form)",
+              "https://unframed.lacma.org/2012/08/06/mola-textiles-and-the-kuna-indians"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Dulemor Blouses and Textile Panels",
+            "description": "Traditional Guna women's blouses and individual paired mola panels representing high-craftsmanship wearable art.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+              "https://en.wikipedia.org/wiki/Mola_(art_form)"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "human_resources": [
+          {
+            "name": "Guna Women Artisans",
+            "description": "Exclusively female community of expert practitioners, designers, and cultural bearers who create, refine, and transmit mola textile art.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+              "https://unframed.lacma.org/2012/08/06/mola-textiles-and-the-kuna-indians"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "place_resources": [
+          {
+            "name": "Guna Yala and San Blas Islands",
+            "description": "The indigenous comarca and autonomous island archipelago off the Caribbean coast of Panama serving as the geographic heartland of Guna culture and mola production.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+              "https://unframed.lacma.org/2012/08/06/mola-textiles-and-the-kuna-indians"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "institutional_resources": [
+          {
+            "name": "Museo de la Mola (MUMO)",
+            "description": "Museum space located in Panama City's Casco Viejo dedicated to exhibiting and preserving the history, design evolution, and cultural importance of molas.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+              "https://www.americasquarterly.org/article/a-communitys-life-told-in-textiles/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ]
       },
       "value_chain": {
-        "production": [],
-        "products": [],
+        "production": [
+          {
+            "name": "Multi-Layer Fabric Stacking and Basting",
+            "description": "Layering 2 to 7 colored cotton fabrics (often with a black base layer) and temporarily stitching them together as the baseline for execution.",
+            "evidence_urls": [
+              "https://en.wikipedia.org/wiki/Mola_(art_form)"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Reverse Appliqué and Fine Stitching",
+            "description": "Hand-cutting intricate designs into fabric layers, folding edges under, and invisible-stitching them down to reveal underlying colors.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+              "https://en.wikipedia.org/wiki/Mola_(art_form)"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
+        "products": [
+          {
+            "name": "Dulemor (Mola Blouses)",
+            "description": "Traditional shirts worn by Guna women featuring paired front and back mola panels.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+              "https://en.wikipedia.org/wiki/Mola_(art_form)"
+            ],
+            "evidence_status": "url_present_needs_review"
+          },
+          {
+            "name": "Standalone Mola Textile Panels",
+            "description": "Individual or framed reverse appliqué panels depicting zoomorphic, floral, geometric, and modern themes.",
+            "evidence_urls": [
+              "https://unframed.lacma.org/2012/08/06/mola-textiles-and-the-kuna-indians"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "services": [],
-        "experience": [],
+        "experience": [
+          {
+            "name": "Museum Exhibitions and Cultural Interpretation",
+            "description": "Public displays at institutions like Museo de la Mola highlighting the connection between textiles, indigenous survival, and identity.",
+            "evidence_urls": [
+              "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+              "https://www.americasquarterly.org/article/a-communitys-life-told-in-textiles/"
+            ],
+            "evidence_status": "url_present_needs_review"
+          }
+        ],
         "education": []
       },
       "opportunity_analysis": {
         "livelihood_potential": 0,
-        "tourism_potential": 0,
-        "education_potential": 0,
-        "creative_industry_potential": 0,
-        "digital_potential": 0
+        "tourism_potential": 65,
+        "education_potential": 70,
+        "creative_industry_potential": 60,
+        "digital_potential": 20
       },
       "resource_mobilization": {
         "public_sector": [],
@@ -19702,50 +19816,59 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-11-06T04:03:27.791978Z",
+      "resource_enrichment_status": "needs_review",
       "opportunity_score_evidence": {
         "livelihood_potential": {
-          "rationale": "",
+          "rationale": "Molas function as a critical independent source of income and economic empowerment for Guna women through direct sales and commissions.",
           "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "evidence_status": "no_evidence"
         },
         "tourism_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "The San Blas Islands and specialized urban institutions like Museo de la Mola attract cultural visitors and textile enthusiasts interested in authentic indigenous arts.",
+          "evidence_urls": [
+            "https://www.smithsonianmag.com/travel/the-colorful-history-behind-panamas-mola-180980544/",
+            "https://www.americasquarterly.org/article/a-communitys-life-told-in-textiles/"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "education_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Extensive documentation in museums, academic exhibitions (such as the Cleveland Museum of Art and LACMA), and traditional transmission networks offer strong educational value regarding indigenous textile heritage.",
+          "evidence_urls": [
+            "https://unframed.lacma.org/2012/08/06/mola-textiles-and-the-kuna-indians"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "creative_industry_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Mola aesthetics inspire broader visual arts, fashion concepts, and international gallery collections, though commercial scale requires strict adherence to community intellectual property rights.",
+          "evidence_urls": [
+            "https://unframed.lacma.org/2012/08/06/mola-textiles-and-the-kuna-indians"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         },
         "digital_potential": {
-          "rationale": "",
-          "evidence_urls": [],
-          "evidence_status": "not_assessed"
+          "rationale": "Limited formal digital integration exists outside of online archival exhibitions and digital museum catalogs; traditional production relies almost exclusively on physical, hand-made transmission.",
+          "evidence_urls": [
+            "https://unframed.lacma.org/2012/08/06/mola-textiles-and-the-kuna-indians"
+          ],
+          "evidence_status": "source_backed_ai_signal_needs_human_review"
         }
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
-        "evidence_url_count": 0,
-        "evidence_item_count": 0,
-        "uncited_item_count": 0,
-        "invalid_evidence_url_count": 0,
-        "opportunity_scores_with_evidence": 0,
-        "opportunity_scores_without_evidence": 5,
+        "status": "needs_review",
+        "validation_status": "passed_with_warnings",
+        "evidence_url_count": 4,
+        "evidence_item_count": 16,
+        "uncited_item_count": 4,
+        "invalid_evidence_url_count": 7,
+        "opportunity_scores_with_evidence": 4,
+        "opportunity_scores_without_evidence": 1,
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-11-06T04:03:27.791978Z",
+        "last_error": "value_chain.services[0] had no valid direct evidence URL and was excluded; value_chain.education[0] had no valid direct evidence URL and was excluded; resource_mobilization.academic[0] had no valid direct evidence URL and was excluded; resource_mobilization.community[0] had no valid direct evidence URL and was excluded; livelihood_potential score reset to 0 because category-specific evidence URLs were absent"
       }
     },
     {
@@ -66744,7 +66867,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-11-05T04:07:35.453364Z",
+    "generated_at": "2026-11-06T04:03:51.768939Z",
     "total_ich_elements": 360,
     "complete_records": 360,
     "incomplete_records": 0,
