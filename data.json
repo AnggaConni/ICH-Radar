@@ -20984,8 +20984,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-11-14T03:56:37.164825Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -21015,8 +21015,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -21026,8 +21026,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-11-14T03:56:37.164825Z",
+        "last_error": "response must be a JSON object"
       }
     },
     {
@@ -21161,8 +21161,8 @@
         "community": [],
         "potential_funding": []
       },
-      "resource_enrichment_attempted_at": null,
-      "resource_enrichment_status": "not_assessed",
+      "resource_enrichment_attempted_at": "2026-11-14T03:56:53.068236Z",
+      "resource_enrichment_status": "validation_failed",
       "opportunity_score_evidence": {
         "livelihood_potential": {
           "rationale": "",
@@ -21192,8 +21192,8 @@
       },
       "resource_intelligence_review": {
         "schema_version": 2,
-        "status": "not_assessed",
-        "validation_status": "not_run",
+        "status": "validation_failed",
+        "validation_status": "failed",
         "evidence_url_count": 0,
         "evidence_item_count": 0,
         "uncited_item_count": 0,
@@ -21203,8 +21203,8 @@
         "human_review_required": true,
         "reviewed_by": null,
         "reviewed_at": null,
-        "last_checked_at": null,
-        "last_error": null
+        "last_checked_at": "2026-11-14T03:56:53.068236Z",
+        "last_error": "response must be a JSON object"
       }
     },
     {
@@ -66867,7 +66867,7 @@
     }
   ],
   "summary": {
-    "generated_at": "2026-11-12T04:48:00.261474Z",
+    "generated_at": "2026-11-14T03:57:08.389323Z",
     "total_ich_elements": 360,
     "complete_records": 360,
     "incomplete_records": 0,
