@@ -573,7 +573,7 @@ def call_gemini(api_key, prompt, model="gemini-2.5-flash", max_output_tokens=819
 # PHASE 1: ENRICHMENT (Fixing Incomplete Data)
 # ======================================================================
 
-def enrich_incomplete_items(api_key, inventory):
+def enrich_incomplete_items(api_key, inventory, max_items=None):
     incomplete_items = [item for item in inventory if item.get("completion_status") != "COMPLETE"]
     if not incomplete_items:
         log.info("No incomplete items found. Enrichment phase skipped.")
@@ -582,7 +582,9 @@ def enrich_incomplete_items(api_key, inventory):
     log.info(f"Found {len(incomplete_items)} incomplete items. Starting enrichment...")
     enriched_count = 0
     
-    for item in incomplete_items[:3]:
+    batch_limit = max(1, min(10, int(max_items or os.environ.get('DATA_ENRICH_LIMIT', '3'))))
+    log.info(f'Incomplete-data enrichment limit: {batch_limit} record(s).')
+    for item in incomplete_items[:batch_limit]:
         element_name = item.get("element_name")
         current_sources = item.get("source_urls", [])
         
@@ -732,9 +734,9 @@ def enrich_resource_data(api_key, inventory):
 # ======================================================================
 
 
-def discover_new_items(api_key, inventory):
+def discover_new_items(api_key, inventory, max_items=None):
     discovered_count = 0
-    max_discoveries_per_run = 3 
+    max_discoveries_per_run = max(1, min(10, int(max_items or os.environ.get('DATA_DISCOVERY_LIMIT', '3')))) 
     
     for i in range(max_discoveries_per_run):
         existing_names = [item.get("element_name", "").lower() for item in inventory]
@@ -888,10 +890,10 @@ def main():
             audited = audit_inventory(inventory)
 
             # PHASE 1: Enrich Incomplete Data First
-            enriched = enrich_incomplete_items(gemini_api_key, inventory)
+            enriched = enrich_incomplete_items(gemini_api_key, inventory, os.environ.get('DATA_ENRICH_LIMIT', '3'))
 
             # PHASE 2: Discover New Data
-            discovered = discover_new_items(gemini_api_key, inventory)
+            discovered = discover_new_items(gemini_api_key, inventory, os.environ.get('DATA_DISCOVERY_LIMIT', '3'))
 
             db["inventory"] = inventory
 
