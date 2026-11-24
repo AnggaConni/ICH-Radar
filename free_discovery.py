@@ -301,7 +301,7 @@ def main():
     session.headers.update({"User-Agent": USER_AGENT})
     all_records = load_shards()
     load_legacy_candidates(all_records)
-    existing_count = len({id(r) for r in all_records.values()})}
+    existing_count = len({id(r) for r in all_records.values()})
     feed_errors = []
     seen_this_run = {}
     article_fetch_count = 0
