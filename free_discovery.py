@@ -313,14 +313,17 @@ def normalize_main_name(value):
 def promote_candidate_with_deepseek(candidate, api_key, existing_inventory):
     """Convert an article-backed RSS lead into the main schema using DeepSeek."""
     article = (candidate.get("article_text") or "")[:14000]
+    rss_description = clean_text(candidate.get("description", ""))
     source_url = candidate.get("resolved_url") or candidate.get("url") or ""
-    evidence_text = (candidate.get("title", "") + "\n" + clean_text(candidate.get("description", "")) + "\n" + article).strip()
-    if not source_url or len(article.strip()) < 350:
-        return None, "insufficient_article_text"
+    evidence_text = (candidate.get("title", "") + "\nRSS DESCRIPTION:\n" + rss_description + "\nARTICLE EXTRACTION:\n" + article).strip()
+    # Gate the combined evidence, not article extraction alone. RSS descriptions
+    # often contain substantive details when publishers block or truncate scraping.
+    if not source_url or len(evidence_text) < 350:
+        return None, "insufficient_combined_evidence"
     prompt = """Using ONLY the supplied article and RSS metadata, create a detailed structured ICH record. Never invent missing facts, locations, steps, relationships, video URLs, or UNESCO status. Preserve original-language terms where present. Return blank/null/empty arrays when evidence is absent. Identify the primary heritage location at country, province/state, district, locality, and community levels only when explicitly supported. For each shared heritage candidate, include its own location hierarchy, relationship type, relationship_reason, and evidence excerpt/source URL; do not infer a relationship from generic similarities or common colonial/maritime context. Detailed process steps must retain chronological order and be source-grounded. Tools and materials should be distinct entries and retain names as given by sources. Extract any YouTube/video links from source text and include them in source_urls. If detailed process steps are not supported, resume_tata_cara=null and completion_status=INCOMPLETE. Return JSON only, matching:
 {"element_name":"specific name","categories":["one or more canonical categories"],"categories_valid":false,"category":"canonical category","category_valid":false,"thumbnail_url":"","source_urls":["direct source and video URLs"],"scraped_at":"ISO timestamp","location":{"country":"explicit country or blank","provinces":[],"districts":[],"localities":[],"communities":[],"lat":null,"lng":null},"resume_analisa":{"description":"evidence-based detailed description","cultural_significance":"","drr_category":"Not Directly Related to DRR","drr_category_valid":false,"drr_relevance_level":"Not Directly Related to DRR","hazard_categories":[],"drr_mechanism":null,"gemini_tags":[]},"resume_tata_cara":{"type":"","materials_and_tools":[],"step_by_step":[]},"shared_heritage_detection":{"is_shared":false,"confidence_score":0.0,"relationship_type":"","related_elements":[{"element_name":"","country":"","location":{"country":"","provinces":[],"districts":[],"localities":[],"communities":[],"lat":null,"lng":null},"relationship_type":"","relationship_reason":"","evidence_excerpt":"","source_urls":[]}]},"completion_status":"INCOMPLETE"}
 Canonical categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals. Leave unknowns blank/null. Only set country when article states it.
-ARTICLE:
+RSS DESCRIPTION AND ARTICLE EVIDENCE:
 """ + evidence_text + "\n\nSource URL: " + source_url
     try:
         response = requests.post("https://api.deepseek.com/chat/completions",
@@ -584,7 +587,7 @@ def main():
                     if id(record) in seen_ids:
                         continue
                     seen_ids.add(id(record))
-                    if record.get("article_fetch_status") == "success" and record.get("article_text"):
+                    if record.get("article_text") or record.get("description"):
                         eligible.append(record)
                 scan_cap = max(promotion_limit, min(30, promotion_limit * 5))
                 print(f"DeepSeek promotion queue: {len(eligible)} article-backed leads; successful promotion limit {promotion_limit}; scan cap {scan_cap}.")
