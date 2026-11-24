@@ -405,11 +405,11 @@ def main():
         "total_records_retained": archive_unique_count,
         "shard_size": SHARD_SIZE,
         "shard_count": max(1, (archive_unique_count + SHARD_SIZE - 1) // SHARD_SIZE),
-        "archive_files": [f"data{i}.json" for i in range(1, max(1, (len(all_records) + SHARD_SIZE - 1) // SHARD_SIZE) + 1)],
+        "archive_files": [f"data{i}.json" for i in range(1, max(1, (archive_unique_count + SHARD_SIZE - 1) // SHARD_SIZE) + 1)],
         "note": "This summary does not contain the full archive. Records live in numbered dataN.json files. Publisher article extraction is best-effort; failures preserve RSS records. data.json is untouched.",
     }
     SUMMARY_FILE.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Autonomous aggregator complete. New: {summary['new_records_this_run']}; retained: {len(all_records)}; shards: {summary['shard_count']}; feed errors: {len(feed_errors)}.")
+    print(f"Autonomous aggregator complete. New: {summary['new_records_this_run']}; retained: {archive_unique_count}; shards: {summary['shard_count']}; feed errors: {len(feed_errors)}.")
     print(f"Article extraction attempts: {article_fetch_count}. All records retained regardless of fetch/classification. data.json was not modified.")
 
 if __name__ == "__main__":
