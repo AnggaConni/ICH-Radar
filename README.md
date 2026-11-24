@@ -375,7 +375,7 @@ Go to **Settings → Pages → Source** and set it to **Deploy from a branch**, 
 
 Go to **Actions → ICH Radar Auto-Crawler → Run workflow**.
 
-Choose a run mode: `Data only`, `Resource enrichment`, `Resume only`, or `Both`. The workflow reads and writes JSON files committed in the repository (including `data.json`); it does not use a separate database. Changed files are committed by the GitHub Actions bot and can trigger the site deployment workflow.
+Choose a run mode: `Data only`, `Resource enrichment`, or `Free Discovery (Experimental)`. The workflow reads and writes JSON files committed in the repository (including `data.json`); it does not use a separate database. Free Discovery only writes `free_discovery_candidates.json` and never modifies `data.json`.
 
 ---
 
@@ -397,8 +397,7 @@ The workflow runs daily at 00:00 UTC (07:00 WIB). It alternates automatically be
 
 - `Data only`
 - `Resource enrichment`
-- `Resume only`
-- `Both`
+- `Free Discovery (Experimental)` — runs public RSS search feeds, saves reviewable leads to `free_discovery_candidates.json`, and does not require Gemini or alter the main inventory.
 
 The workflow commits updated JSON files back to the repository. The separate website deployment workflow publishes the updated static files. No separate database or in-app reviewer/approval queue is configured.
 
@@ -453,7 +452,6 @@ To change the crawl interval:
 | Component | Technology |
 |---|---|
 | AI Discovery & web-grounded enrichment (migration in progress) | Google Gemini Search Grounding |
-| Quarterly Resume / Journal generation | Deterministic Python (no AI API) |
 | Geocoding | OpenStreetMap Nominatim API |
 | Thumbnails | Microlink.io API + Wikimedia Commons fallback |
 | Automation | GitHub Actions |
