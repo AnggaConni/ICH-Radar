@@ -90,7 +90,10 @@ jobs:
           fi
 
       - name: Validate Python syntax
-        run: python -m py_compile scraper.py free_discovery.py
+        run: python -m py_compile scraper.py free_discovery.py test_free_discovery.py
+
+      - name: Run offline aggregator safety tests
+        run: python -m unittest -v test_free_discovery.py
 
       - name: Run Scraper or Free Discovery
         env:
