@@ -30,7 +30,6 @@ log = logging.getLogger("ICH_Radar")
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
 HISTORY_FILE = os.path.join(BASE_DIR, "history.json")
 DATA_FILE    = os.path.join(BASE_DIR, "data.json")
-RESUME_FILE  = os.path.join(BASE_DIR, "resume.json")
 
 # ======================================================================
 # GLOBAL KEYWORD DATABASE FOR DISCOVERY (Multi-Language)
