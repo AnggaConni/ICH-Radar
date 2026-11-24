@@ -16,8 +16,6 @@ on:
         options:
           - 'Data only'
           - 'Resource enrichment'
-          - 'Resume only'
-          - 'Both'
           - 'Free Discovery (Experimental)'
       resource_enrich_limit:
         description: 'Records to enrich in Resource enrichment mode (1–10)'
@@ -76,12 +74,6 @@ jobs:
               "Resource enrichment")
                 echo "CRAWL_MODE_INPUT=resource_enrich" >> "$GITHUB_ENV"
                 ;;
-              "Resume only")
-                echo "CRAWL_MODE_INPUT=resume_only" >> "$GITHUB_ENV"
-                ;;
-              "Both")
-                echo "CRAWL_MODE_INPUT=both" >> "$GITHUB_ENV"
-                ;;
               "Free Discovery (Experimental")
                 echo "CRAWL_MODE_INPUT=free_discovery" >> "$GITHUB_ENV"
                 ;;
@@ -124,7 +116,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add data.json history.json resume.json free_discovery_candidates.json || true
+          git add data.json history.json free_discovery_candidates.json || true
 
           if git diff --staged --quiet; then
             echo "No new data to commit."
