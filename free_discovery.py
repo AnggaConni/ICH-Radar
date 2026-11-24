@@ -10,7 +10,8 @@ import time
 import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import quote, urlsplit, urlunsplit\nfrom html.parser import HTMLParser
+from urllib.parse import quote, urlsplit, urlunsplit
+from html.parser import HTMLParser
 import xml.etree.ElementTree as ET
 from html import unescape
 
@@ -109,7 +110,9 @@ def parse_feed(xml_text):
                         get_text(item, "a:published", "a:updated")))
     return rows
 
-\n\nclass ArticleExtractor(HTMLParser):
+
+
+class ArticleExtractor(HTMLParser):
     SKIP = {"script", "style", "noscript", "svg", "nav", "footer", "header", "aside"}
     def __init__(self):
         super().__init__()
@@ -198,7 +201,7 @@ def merge_identity_record(existing, incoming, api_key=None):
     if existing.get("ai_merge_status") != "success":
         old, new = existing.get("description", ""), incoming.get("description", "")
         if new and new not in old:
-            existing["description"] = (old + "\\n\\nAdditional source: " + new).strip()
+            existing["description"] = (old + "\n\nAdditional source: " + new).strip()
         existing["ai_merge_status"] = "fallback_append"
     existing["last_seen_at"] = now_iso()
     existing["seen_count"] = int(existing.get("seen_count", 1)) + 1
@@ -357,8 +360,8 @@ def main():
                 if api_key and ai_identity_attempts < ai_identity_limit:
                     try:
                         prompt = ("Extract heritage element naming and geographic location from this text. " +
-                                 "If location is not explicit, use empty string. Do not guess. Output JSON with naming and location keys.\\n" +
-                                 (rec.get("title", "") + "\n" + rec.get("description", "") + "\\n" + rec.get("article_text", "")[:10000])[:12000])
+                                 "If location is not explicit, use empty string. Do not guess. Output JSON with naming and location keys.\n" +
+                                 (rec.get("title", "") + "\n" + rec.get("description", "") + "\n" + rec.get("article_text, "")[:10000])[:12000])
                         response = requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
                             params={"key": api_key}, timeout=REQUEST_TIMEOUT,
                             json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"temperature":0,"responseMimeType":"application/json"}})
