@@ -74,7 +74,7 @@ jobs:
               "Resource enrichment")
                 echo "CRAWL_MODE_INPUT=resource_enrich" >> "$GITHUB_ENV"
                 ;;
-              "Free Discovery (Experimental")
+              "Free Discovery (Experimental)")
                 echo "CRAWL_MODE_INPUT=free_discovery" >> "$GITHUB_ENV"
                 ;;
               *)
