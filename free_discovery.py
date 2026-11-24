@@ -300,7 +300,7 @@ def main():
     session.headers.update({"User-Agent": USER_AGENT})
     all_records = load_shards()
     load_legacy_candidates(all_records)
-    existing_count = len(all_records)
+    existing_count = len({id(r) for r in all_records.values()}
     feed_errors = []
     seen_this_run = {}
     article_fetch_count = 0
@@ -391,19 +391,20 @@ def main():
         time.sleep(1)
 
     save_shards(all_records)
+    archive_unique_count = len({id(r) for r in all_records.values()})
     summary = {
         "generated_at": now_iso(),
         "mode": "autonomous_preservation_first_aggregator_with_article_fetch",
         "principle": "Collect first, preserve records, let humans decide later. Classifier flags are informational only.",
         "feeds_checked": len(QUERIES),
         "feed_errors": feed_errors,
-        "new_records_this_run": max(0, len(all_records) - existing_count),
+        "new_records_this_run": max(0, archive_unique_count - existing_count),
         "records_seen_or_updated_this_run": len(seen_this_run),
         "article_fetch_attempts_this_run": article_fetch_count,
         "article_fetch_success_count": sum(1 for r in all_records.values() if r.get("article_fetch_status") == "success"),
-        "total_records_retained": len(all_records),
+        "total_records_retained": archive_unique_count,
         "shard_size": SHARD_SIZE,
-        "shard_count": max(1, (len(all_records) + SHARD_SIZE - 1) // SHARD_SIZE),
+        "shard_count": max(1, (archive_unique_count + SHARD_SIZE - 1) // SHARD_SIZE),
         "archive_files": [f"data{i}.json" for i in range(1, max(1, (len(all_records) + SHARD_SIZE - 1) // SHARD_SIZE) + 1)],
         "note": "This summary does not contain the full archive. Records live in numbered dataN.json files. Publisher article extraction is best-effort; failures preserve RSS records. data.json is untouched.",
     }
