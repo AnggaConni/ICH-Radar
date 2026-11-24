@@ -18,7 +18,7 @@ ICH Radar is a fully automated, free-tier-friendly discovery and collection pipe
 
 ## What it collects
 
-The current free collector uses public Google News RSS search feeds for multilingual ICH-related discovery. RSS is the discovery layer, not necessarily the final content: the pipeline retains the title, feed description/snippet, source link, publisher/source label, publication date, collection timestamp, and automated classification metadata where available.
+The current free collector uses public Google News RSS search feeds for multilingual ICH-related discovery. RSS is the discovery layer; the collector also attempts to follow article links and extract readable page text. Article extraction is best-effort (publisher blocks, paywalls, scripts, or unusual page structures may prevent extraction), and failures never discard the RSS record. A limited batch of up to 35 article fetch attempts is made per run to keep the workflow time and network use bounded. Records retain title, RSS description/snippet, source link, resolved URL when available, extracted article text, fetch status, publication date, collection timestamps, and informational classification metadata.
 
 The feed coverage is only a starting point. Sources and query coverage may be expanded over time. A collected record is a lead—not a verified heritage inventory entry.
 
@@ -63,7 +63,7 @@ Each record can contain fields such as:
 - `collection_method`, `category`, `relevance_score`, `confidence`
 - `possible_noise`, `matched_terms`, and classifier notes
 
-Fields may vary by source and by enrichment availability. Original source links are retained whenever provided.
+Fields may vary by source and by enrichment availability. Original source links are retained whenever provided. Article text extraction is not a complete web crawler and may return partial page text or no text.
 
 ## Schedule
 
@@ -90,7 +90,7 @@ Collected JSON shards are designed to be reused by downstream tools. Humans can 
 - Automated metadata, categories, scores, summaries, and locations can be wrong.
 - A noisy record is preferable to silently losing a possible ICH lead.
 - Duplicate handling is URL-based and can miss duplicates when the same story uses different URLs.
-- RSS feeds can change, become unavailable, or provide limited article text.
+- RSS feeds can change, become unavailable, or provide limited article text. Publisher full-text extraction is best-effort and is limited per run.
 - The collector does not guarantee complete web coverage, full article access, or permanent preservation of publisher content.
 - Collection respects reasonable request timeouts and avoids aggressive crawling. Publisher terms, robots policies, and copyright restrictions still apply; stored snippets/metadata and source links should be preferred over republishing entire copyrighted articles.
 
