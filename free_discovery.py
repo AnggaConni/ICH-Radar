@@ -317,9 +317,7 @@ def promote_candidate_with_deepseek(candidate, api_key, existing_inventory):
     evidence_text = (candidate.get("title", "") + "\n" + clean_text(candidate.get("description", "")) + "\n" + article).strip()
     if not source_url or len(article.strip()) < 350:
         return None, "insufficient_article_text"
-    prompt = """Using ONLY the supplied article and RSS metadata, create a detailed structured ICH record. Never invent missing facts, locations, steps, relationships, video URLs, or UNESCO status. Preserve original-language terms where present. Return blank/null/empty arrays when evidence is absent. Identify the primary heritage location at country, province/state, district, locality, and community levels only when explicitly supported. For each shared heritage candidate, include its own location hierarchy, relationship type, relationship_reason, and evidence excerpt/source URL; do not infer a relationship from generic similarities or common colonial/maritime context. Detailed process steps must retain chronological order and be source-grounded. Tools and materials should be distinct entries and retain names as given by sources. Extract any YouTube/video links from source text and include them in source_urls. Return JSON only, matching:
-If detailed process steps are not supported, resume_tata_cara=null and completion_status=INCOMPLETE.
-Return JSON only, matching:
+    prompt = """Using ONLY the supplied article and RSS metadata, create a detailed structured ICH record. Never invent missing facts, locations, steps, relationships, video URLs, or UNESCO status. Preserve original-language terms where present. Return blank/null/empty arrays when evidence is absent. Identify the primary heritage location at country, province/state, district, locality, and community levels only when explicitly supported. For each shared heritage candidate, include its own location hierarchy, relationship type, relationship_reason, and evidence excerpt/source URL; do not infer a relationship from generic similarities or common colonial/maritime context. Detailed process steps must retain chronological order and be source-grounded. Tools and materials should be distinct entries and retain names as given by sources. Extract any YouTube/video links from source text and include them in source_urls. If detailed process steps are not supported, resume_tata_cara=null and completion_status=INCOMPLETE. Return JSON only, matching:
 {"element_name":"specific name","categories":["one or more canonical categories"],"categories_valid":false,"category":"canonical category","category_valid":false,"thumbnail_url":"","source_urls":["direct source and video URLs"],"scraped_at":"ISO timestamp","location":{"country":"explicit country or blank","provinces":[],"districts":[],"localities":[],"communities":[],"lat":null,"lng":null},"resume_analisa":{"description":"evidence-based detailed description","cultural_significance":"","drr_category":"Not Directly Related to DRR","drr_category_valid":false,"drr_relevance_level":"Not Directly Related to DRR","hazard_categories":[],"drr_mechanism":null,"gemini_tags":[]},"resume_tata_cara":{"type":"","materials_and_tools":[],"step_by_step":[]},"shared_heritage_detection":{"is_shared":false,"confidence_score":0.0,"relationship_type":"","related_elements":[{"element_name":"","country":"","location":{"country":"","provinces":[],"districts":[],"localities":[],"communities":[],"lat":null,"lng":null},"relationship_type":"","relationship_reason":"","evidence_excerpt":"","source_urls":[]}]},"completion_status":"INCOMPLETE"}
 Canonical categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals. Leave unknowns blank/null. Only set country when article states it.
 ARTICLE:
@@ -416,8 +414,9 @@ ARTICLE:
     # Include discovered YouTube URLs in source_urls because radar.html extracts video links there.
     video_pattern = re.compile(r"(?:https?://)?(?:www\\.)?(?:youtube\\.com/(?:watch\\?v=|embed/)|youtu\\.be/)[A-Za-z0-9_-]{11}", re.I)
     media_text = "\\n".join([evidence_text, candidate.get("description", "")])
-    video_urls = ["https://" + match.group(0).lstrip("https://").lstrip("http://")
-                  for match in video_pattern.findall(media_text)]
+    video_urls = []
+    for match in video_pattern.findall(media_text):
+        video_urls.append(match if match.startswith("http") else "https://" + match)
     record.setdefault("video_urls", [])
     if not isinstance(record.get("video_urls"), list):
         record["video_urls"] = []
