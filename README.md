@@ -335,7 +335,8 @@ The interface supports **English** and **Bahasa Indonesia**, switchable at any t
 
 ### Prerequisites
 - A GitHub account
-- A free Google Gemini API key from [aistudio.google.com](https://aistudio.google.com)
+- A Google Gemini API key (used for web-grounded discovery and data enrichment until those stages are migrated)
+- A DeepSeek API key (used for quarterly resume/journal generation)
 - GitHub Pages enabled on your repository
 
 ### Step 1 — Fork or clone this repository
@@ -352,6 +353,7 @@ Go to your repository → **Settings → Secrets and variables → Actions → N
 | Secret name | Value |
 |---|---|
 | `GEMINI_API_KEY` | Your Google Gemini API key |
+| `DEEPSEEK_API_KEY` | Your DeepSeek API key |
 
 ### Step 3 — Verify file structure
 
@@ -452,7 +454,8 @@ To change the crawl interval:
 
 | Component | Technology |
 |---|---|
-| AI Discovery | Google Gemini 2.5 Flash (Search Grounding) |
+| AI Discovery & web-grounded enrichment (migration in progress) | Google Gemini Search Grounding |
+| Quarterly Resume / Journal generation | DeepSeek API |
 | Geocoding | OpenStreetMap Nominatim API |
 | Thumbnails | Microlink.io API + Wikimedia Commons fallback |
 | Automation | GitHub Actions |
