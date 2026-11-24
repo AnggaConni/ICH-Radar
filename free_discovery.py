@@ -185,7 +185,7 @@ def load_shards():
                 record.setdefault("record_id", "rss-" + key)
                 records_by_key[key] = record
         except Exception as exc:
-            read_errors.append(f"{path.name}: {exc")
+            read_errors.append(f"{path.name}: {exc}")
             print(f"ERROR: Could not read shard {path.name}: {exc}")
     if read_errors:
         raise RuntimeError("Archive safety stop: existing shard(s) failed to parse; refusing rewrite: " + "; ".join(read_errors))
