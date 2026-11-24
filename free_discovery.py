@@ -167,6 +167,7 @@ def fetch_article(session, url):
 
 def load_shards():
     records_by_key = {}
+    read_errors = []
     shard_files = sorted(
         [p for p in BASE.glob("data[0-9]*.json") if re.fullmatch(r"data[1-9][0-9]*\.json", p.name)],
         key=lambda p: int(re.search(r"(\d+)", p.stem).group(1))
@@ -184,7 +185,10 @@ def load_shards():
                 record.setdefault("record_id", "rss-" + key)
                 records_by_key[key] = record
         except Exception as exc:
-            print(f"WARNING: Could not read shard {path.name}: {exc}")
+            read_errors.append(f"{path.name}: {exc")
+            print(f"ERROR: Could not read shard {path.name}: {exc}")
+    if read_errors:
+        raise RuntimeError("Archive safety stop: existing shard(s) failed to parse; refusing rewrite: " + "; ".join(read_errors))
     return records_by_key
 
 def load_legacy_candidates(records_by_key):
