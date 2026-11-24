@@ -107,8 +107,10 @@ class AggregatorSafetyTests(unittest.TestCase):
                      "article_text": "", "url": "https://source.example"}
         self.assertGreaterEqual(len((candidate["title"] + "\nRSS DESCRIPTION:\n" + candidate["description"]).strip()), 350)
         # Combined evidence is eligible even if article extraction returned no text.
-        record, status = collector.promote_candidate_with_deepseek(candidate, "fake-key", [])
-        self.assertEqual(status, "ai_error")  # gate passed; mock API unavailable
+        from unittest.mock import patch
+        with patch.object(collector.requests, "post", side_effect=RuntimeError("mocked API")):
+            record, status = collector.promote_candidate_with_deepseek(candidate, "fake-key", [])
+        self.assertEqual(status, "ai_error")  # gate passed; API deliberately mocked
 
     def test_corrupt_shard_triggers_safety_stop(self):
         with tempfile.TemporaryDirectory() as temp:
