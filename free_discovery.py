@@ -4,6 +4,7 @@ Preservation-first: classification is informational and never filters records.
 Records are stored in numbered dataN.json shards (500 records per shard).
 """
 import json
+import os
 import re
 import time
 import hashlib
@@ -140,7 +141,70 @@ def fetch_article(session, url):
     except Exception as exc:
         return {"resolved_url": url, "article_text": "",
                 "article_fetch_status": "failed", "article_fetch_error": str(exc)[:200]}
-\ndef classify_metadata(title, description):
+\n
+# Strict identity merging: only merge when both heritage name and location are explicit.
+def normalize_identity(value):
+    value = clean_text(value or "").lower()
+    value = re.sub(r"[^\\w\\s-]", " ", value, flags=re.UNICODE)
+    return re.sub(r"\\s+", " ", value).strip()
+
+def identity_key(record):
+    name = normalize_identity(record.get("naming") or record.get("name") or record.get("title"))
+    location = normalize_identity(record.get("location"))
+    return (name, location) if name and location else None
+
+def find_identity_match(records, candidate):
+    target = identity_key(candidate)
+    if not target:
+        return None
+    seen = set()
+    for rec in records.values():
+        if id(rec) in seen:
+            continue
+        seen.add(id(rec))
+        if identity_key(rec) == target:
+            return rec
+    return None
+
+def merge_identity_record(existing, incoming, api_key=None):
+    sources = existing.setdefault("source_links", [])
+    incoming_url = incoming.get("url", "")
+    if incoming_url and incoming_url not in sources:
+        sources.append(incoming_url)
+    snapshots = existing.setdefault("source_records", [])
+    if incoming_url and not any(x.get("url") == incoming_url for x in snapshots):
+        snapshots.append({"title": incoming.get("title", ""), "url": incoming_url,
+                         "description": incoming.get("description", ""),
+                         "article_text": incoming.get("article_text", "")[:12000]})
+    if api_key:
+        combined = "\\n\\n".join(x for x in [existing.get("description", ""), incoming.get("description", ""),
+            existing.get("article_text", "")[:10000], incoming.get("article_text", "")[:10000]] if x)
+        prompt = ("Rewrite this into one concise, accurate heritage description. Combine non-duplicated details, "
+                  "do not invent facts, preserve uncertainty. Return only the description.\\n\\n" + combined[:22000])
+        try:
+            response = requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+                params={"key": api_key}, timeout=REQUEST_TIMEOUT,
+                json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"temperature":0.2,"maxOutputTokens":500}})
+            response.raise_for_status()
+            merged = response.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+            if merged:
+                existing["description"] = merged
+                existing["ai_merge_status"] = "success"
+                existing["ai_merged_at"] = now_iso()
+        except Exception as exc:
+            existing["ai_merge_status"] = "unavailable_fallback"
+            print(f"AI merge unavailable; preserving source descriptions: {str(exc)[:150]}")
+    # Non-AI fallback: append new description without losing the original.
+    if existing.get("ai_merge_status") != "success":
+        old, new = existing.get("description", ""), incoming.get("description", "")
+        if new and new not in old:
+            existing["description"] = (old + "\\n\\nAdditional source: " + new).strip()
+        existing["ai_merge_status"] = "fallback_append"
+    existing["last_seen_at"] = now_iso()
+    existing["seen_count"] = int(existing.get("seen_count", 1)) + 1
+    return existing
+
+def classify_metadata(title, description):
     text = clean_text(title + " " + description).lower()
     strong_hits = [term for term in STRONG_TERMS if term in text]
     context_hits = [term for term in CONTEXT_TERMS if term in text]
@@ -184,6 +248,8 @@ def load_shards():
                 key = record_key(record.get("url", ""), record.get("title", ""))
                 record.setdefault("record_id", "rss-" + key)
                 records_by_key[key] = record
+                for alias_url in record.get("source_links", []):
+                    records_by_key[record_key(alias_url, record.get("title", ""))] = record
         except Exception as exc:
             read_errors.append(f"{path.name}: {exc}")
             print(f"ERROR: Could not read shard {path.name}: {exc}")
@@ -209,7 +275,8 @@ def load_legacy_candidates(records_by_key):
 
 def save_shards(records):
     # Stable order and fixed-size chunks; never overwrite data.json.
-    ordered = sorted(records.values(), key=lambda r: (r.get("first_collected_at", ""), r.get("record_id", "")))
+    unique_records = {r.get("record_id") or record_key(r.get("url", ""), r.get("title", "")): r for r in records.values()}
+    ordered = sorted(unique_records.values(), key=lambda r: (r.get("first_collected_at", ""), r.get("record_id", "")))
     chunks = [ordered[i:i + SHARD_SIZE] for i in range(0, len(ordered), SHARD_SIZE)]
     if not chunks:
         chunks = [[]]
@@ -235,6 +302,8 @@ def main():
     seen_this_run = {}
     article_fetch_count = 0
     article_fetch_limit = 35
+    ai_identity_attempts = 0
+    ai_identity_limit = 20
 
     for query in QUERIES:
         feed_url = "https://news.google.com/rss/search?q=" + quote(query) + "&hl=en-US&gl=US&ceid=US:en"
@@ -271,6 +340,8 @@ def main():
                     "first_collected_at": timestamp,
                     "last_seen_at": timestamp,
                     "seen_count": 1,
+                    "source_links": [normalized],
+                    "source_records": [],
                 }
                 rec.update(classify_metadata(title, description))
                 if article_fetch_count < article_fetch_limit:
@@ -281,8 +352,37 @@ def main():
                     rec["article_fetch_status"] = "deferred"
                     rec["article_text"] = ""
                     rec["resolved_url"] = normalized
-                all_records[key] = rec
-                seen_this_run[key] = rec
+                # Optional Gemini identity extraction; bounded to 20 requests/run.
+                api_key = os.getenv("GEMINI_API_KEY", "")
+                if api_key and ai_identity_attempts < ai_identity_limit:
+                    try:
+                        prompt = ("Extract heritage element naming and geographic location from this text. " +
+                                 "If location is not explicit, use empty string. Do not guess. Output JSON with naming and location keys.\\n" +
+                                 (rec.get("title", "") + "\\n" + rec.get("description", "") + "\\n" + rec.get("article_text", "")[:10000])[:12000])
+                        response = requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+                            params={"key": api_key}, timeout=REQUEST_TIMEOUT,
+                            json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"temperature":0,"responseMimeType":"application/json"}})
+                        response.raise_for_status()
+                        identity = json.loads(response.json()["candidates"][0]["content"]["parts"][0]["text"])
+                        rec["naming"] = clean_text(identity.get("naming") or identity.get("name") or rec.get("title", ""))
+                        rec["location"] = clean_text(identity.get("location", ""))
+                    except Exception as exc:
+                        rec["identity_extraction_status"] = "unavailable"
+                        rec.setdefault("naming", clean_text(rec.get("title", "")))
+                        rec.setdefault("location", "")
+                        print(f"AI identity extraction unavailable: {str(exc)[:150]}")
+                    ai_identity_attempts += 1
+                else:
+                    rec.setdefault("naming", clean_text(rec.get("title", "")))
+                    rec.setdefault("location", "")
+                match = find_identity_match(all_records, rec)
+                if match is not None:
+                    merge_identity_record(match, rec, api_key or None)
+                    all_records[key] = match  # URL alias points to canonical merged record
+                    seen_this_run[key] = match
+                else:
+                    all_records[key] = rec
+                    seen_this_run[key] = rec
         except Exception as exc:
             feed_errors.append({"query": query, "error": str(exc)[:300]})
         time.sleep(1)
