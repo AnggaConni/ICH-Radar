@@ -9,7 +9,7 @@ import time
 import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import quote, urlsplit, urlunsplit
+from urllib.parse import quote, urlsplit, urlunsplit\nfrom html.parser import HTMLParser
 import xml.etree.ElementTree as ET
 from html import unescape
 
@@ -108,7 +108,39 @@ def parse_feed(xml_text):
                         get_text(item, "a:published", "a:updated")))
     return rows
 
-def classify_metadata(title, description):
+\n\nclass ArticleExtractor(HTMLParser):
+    SKIP = {"script", "style", "noscript", "svg", "nav", "footer", "header", "aside"}
+    def __init__(self):
+        super().__init__()
+        self.skip = 0
+        self.text_parts = []
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() in self.SKIP:
+            self.skip += 1
+    def handle_endtag(self, tag):
+        if tag.lower() in self.SKIP and self.skip:
+            self.skip -= 1
+    def handle_data(self, data):
+        if not self.skip:
+            txt = clean_text(data)
+            if txt:
+                self.text_parts.append(txt)
+    def extract(self):
+        return clean_text(" ".join(self.text_parts))[:50000]
+
+def fetch_article(session, url):
+    try:
+        response = session.get(url, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+        response.raise_for_status()
+        parser = ArticleExtractor()
+        parser.feed(response.text)
+        extracted = parser.extract()
+        return {"resolved_url": response.url, "article_text": extracted,
+                "article_fetch_status": "success" if extracted else "empty"}
+    except Exception as exc:
+        return {"resolved_url": url, "article_text": "",
+                "article_fetch_status": "failed", "article_fetch_error": str(exc)[:200}
+\ndef classify_metadata(title, description):
     text = clean_text(title + " " + description).lower()
     strong_hits = [term for term in STRONG_TERMS if term in text]
     context_hits = [term for term in CONTEXT_TERMS if term in text]
