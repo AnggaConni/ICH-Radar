@@ -496,6 +496,7 @@ def main():
                 main_db = json.loads(main_file.read_text(encoding="utf-8"))
                 inventory = main_db.get("inventory", [])
                 eligible, seen_ids = [], set()
+                staged_promotions = []
                 for record in all_records.values():
                     if id(record) in seen_ids:
                         continue
@@ -508,12 +509,14 @@ def main():
                     promotion_results[status] = promotion_results.get(status, 0) + 1
                     if new_record:
                         inventory.append(new_record)
-                        promoted_records.append(candidate)
+                        staged_promotions.append(candidate)
                         print(f"PROMOTED TO MAIN ARCHIVE: {new_record.get('element_name')} — {new_record.get('location',{}).get('country')}")
                 if promoted_records:
                     main_db["inventory"] = inventory
                     main_db["summary"] = calculate_main_summary(inventory)
                     main_file.write_text(json.dumps(main_db, ensure_ascii=False, indent=2), encoding="utf-8")
+                    # Deletion is authorized only after the main archive write succeeds.
+                    promoted_records.extend(staged_promotions)
             except Exception as exc:
                 print(f"Promotion failed safely; discovery records kept: {str(exc)[:250]}")
     # Delete Discovery records only after successful main-archive promotion.
