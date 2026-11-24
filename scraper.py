@@ -868,7 +868,7 @@ def generate_quarterly_resume(inventory):
 
     if quarter_str not in resume_db:
         resume_db[quarter_str] = {"status": "incomplete", "statistics": {}, "content": {}}
-    if resume_db[quarter_str].get("status") == "complete":
+    if resume_db[quarter_str].get("status") == "complete" and resume_db[quarter_str].get("generator") == "deterministic":
         log.info(f"Quarterly journal for {quarter_str} already complete. Skipping.")
         return
 
@@ -948,6 +948,7 @@ def generate_quarterly_resume(inventory):
         }
     }
     resume_db[quarter_str]["status"] = "complete"
+    resume_db[quarter_str]["generator"] = "deterministic"
     resume_db[quarter_str]["content"] = content
     with open(RESUME_FILE, 'w', encoding='utf-8') as f:
         json.dump(resume_db, f, indent=4, ensure_ascii=False)
