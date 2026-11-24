@@ -102,6 +102,14 @@ class AggregatorSafetyTests(unittest.TestCase):
         self.assertEqual(snapshot["description"], "RSS description")
         self.assertEqual(snapshot["url"], candidate["url"])
 
+    def test_promotion_uses_combined_rss_and_article_evidence_gate(self):
+        candidate = {"title": "Traditional heritage example", "description": "RSS details " * 35,
+                     "article_text": "", "url": "https://source.example"}
+        self.assertGreaterEqual(len((candidate["title"] + "\nRSS DESCRIPTION:\n" + candidate["description"]).strip()), 350)
+        # Combined evidence is eligible even if article extraction returned no text.
+        record, status = collector.promote_candidate_with_deepseek(candidate, "fake-key", [])
+        self.assertEqual(status, "ai_error")  # gate passed; mock API unavailable
+
     def test_corrupt_shard_triggers_safety_stop(self):
         with tempfile.TemporaryDirectory() as temp:
             old_base = collector.BASE
