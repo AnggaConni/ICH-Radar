@@ -307,7 +307,7 @@ def main():
     article_fetch_count = 0
     article_fetch_limit = 35
     ai_identity_attempts = 0
-    ai_identity_limit = 20
+    ai_identity_limit = max(0, min(20, int(os.getenv('FREE_DISCOVERY_AI_LIMIT', '20'))))
 
     for query in QUERIES:
         feed_url = "https://news.google.com/rss/search?q=" + quote(query) + "&hl=en-US&gl=US&ceid=US:en"
