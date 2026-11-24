@@ -412,7 +412,7 @@ ARTICLE:
             related["source_urls"] = []
 
     # Include discovered YouTube URLs in source_urls because radar.html extracts video links there.
-    video_pattern = re.compile(r"(?:https?://)?(?:www\.)?(?:youtube\.com/(?:watch\?v=|embed/)|youtu\.be/)[A-Za-z0-9_-]{11}", re.I)
+    video_pattern = re.compile(r"(?:https?://)?(?:www\.)?(?:youtube\.com/(?:watch\?v=|embed/|shorts/|live/)|youtu\.be/)[A-Za-z0-9_-]{11}", re.I)
     media_text = "\n".join([evidence_text, candidate.get("description", "")])
     video_urls = []
     for match in video_pattern.findall(media_text):
