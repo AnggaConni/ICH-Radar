@@ -144,7 +144,8 @@ def fetch_article(session, url):
     except Exception as exc:
         return {"resolved_url": url, "article_text": "",
                 "article_fetch_status": "failed", "article_fetch_error": str(exc)[:200]}
-\n
+
+
 # Strict identity merging: only merge when both heritage name and location are explicit.
 def normalize_identity(value):
     value = clean_text(value or "").lower()
@@ -300,7 +301,7 @@ def main():
     session.headers.update({"User-Agent": USER_AGENT})
     all_records = load_shards()
     load_legacy_candidates(all_records)
-    existing_count = len({id(r) for r in all_records.values()}
+    existing_count = len({id(r) for r in all_records.values()})}
     feed_errors = []
     seen_this_run = {}
     article_fetch_count = 0
@@ -361,7 +362,7 @@ def main():
                     try:
                         prompt = ("Extract heritage element naming and geographic location from this text. " +
                                  "If location is not explicit, use empty string. Do not guess. Output JSON with naming and location keys.\n" +
-                                 (rec.get("title", "") + "\n" + rec.get("description", "") + "\n" + rec.get("article_text, "")[:10000])[:12000])
+                                 (rec.get("title", "") + "\n" + rec.get("description", "") + "\n" + rec.get("article_text", "")[:10000])[:12000])
                         response = requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
                             params={"key": api_key}, timeout=REQUEST_TIMEOUT,
                             json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"temperature":0,"responseMimeType":"application/json"}})
