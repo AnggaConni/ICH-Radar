@@ -61,8 +61,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-ba64ab4827b6394bde63",
     "first_collected_at": "2026-11-24T12:53:46.145150+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.445893+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:22:43.268418+00:00",
+    "seen_count": 4,
     "relevance_score": 5,
     "confidence": "medium",
     "category": "Other / Unclassified",
@@ -75,7 +75,10 @@
       "culture"
     ],
     "negative_flags": [],
-    "classification_note": "Informational heuristic only; retained regardless of score or flags."
+    "classification_note": "Informational heuristic only; retained regardless of score or flags.",
+    "resolved_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNanFlQWZxUVVleGlxNGVPNm94cFpSZl9RUzQ4WERqamZ6WFktWDFWenoyV2RybzhXTGdTWGpEaFdoRkR2S1JtQlFyaHhhbVpQZHNBdVA4ejJTRG9qRTJIdE9hMnR6aEtVV2hBUWJMWWlhM3lsTkdEZGFiSU5Wd1EzWmFWWFpabUFPMVFTd21aZ2pCelRRdFVKbUI0bU1acElTOFJza3lOdHBUdmZnQ0U1Xw?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "article_text": "Google News",
+    "article_fetch_status": "success"
   },
   {
     "candidate_id": "rss-f4075fd3459351b0",
@@ -140,8 +143,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-f9c9ea3979bb3d44bb77",
     "first_collected_at": "2026-11-24T12:53:46.145209+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446018+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:22:45.114729+00:00",
+    "seen_count": 4,
     "relevance_score": 4,
     "confidence": "medium",
     "category": "Festive Events",
@@ -153,7 +156,10 @@
       "tradition"
     ],
     "negative_flags": [],
-    "classification_note": "Informational heuristic only; retained regardless of score or flags."
+    "classification_note": "Informational heuristic only; retained regardless of score or flags.",
+    "resolved_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9XY1lSTHFMY2RXTUNZdEpmMDhveGxqT3FlMlJDODBaWWxMYkp4YUxSV2N1QUcxcEZYdGVVbFJqVEZvSXI0eG9vcUNFNnVJMFhfRVNmSEw0dGgwQ2drTnlHT21aLWM?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "article_text": "Google News",
+    "article_fetch_status": "success"
   },
   {
     "candidate_id": "rss-daaf8083a948afb0",
@@ -169,8 +175,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-daaf8083a948afb049b7",
     "first_collected_at": "2026-11-24T12:53:46.145223+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.445962+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:22:44.202592+00:00",
+    "seen_count": 4,
     "relevance_score": 4,
     "confidence": "medium",
     "category": "Other / Unclassified",
@@ -182,7 +188,10 @@
       "tradition"
     ],
     "negative_flags": [],
-    "classification_note": "Informational heuristic only; retained regardless of score or flags."
+    "classification_note": "Informational heuristic only; retained regardless of score or flags.",
+    "resolved_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14NTFwZUpJRS00WG5JXzNoM3l1Mk5RUm9fZjdCNzZQZjBrcUpKZmw2YzF0anR5UWoteC1GY2ZVV1JCd1p1RUo4RE90ZTNIVnU2dS1ZOWpjYkFQN01DM3lLRW9wMGd4akFXOFpmcEFCeHAwSmhiNEQtQmYzSnQ3Umc?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "article_text": "Google News",
+    "article_fetch_status": "success"
   },
   {
     "candidate_id": "rss-e14768536405fd23",
@@ -198,8 +207,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-e14768536405fd2370da",
     "first_collected_at": "2026-11-24T12:53:46.145236+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446116+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:22:46.942184+00:00",
+    "seen_count": 4,
     "relevance_score": 4,
     "confidence": "medium",
     "category": "Other / Unclassified",
@@ -211,7 +220,10 @@
       "tradition"
     ],
     "negative_flags": [],
-    "classification_note": "Informational heuristic only; retained regardless of score or flags."
+    "classification_note": "Informational heuristic only; retained regardless of score or flags.",
+    "resolved_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOX2k5a0pUMnNmNWJjS3RyWHh2OTl1MC04YjJMc1dTSUY4OTBVeUx6aWZkVHEyOW9YY0gyMU1WajhSb1Y1bF9sbjVtZGI0QmstWVY1cUNnVUplRy0wOV9wUmRlSWZBbHVyLUxnVHNpMU1zdE5kejZNWEtVOUJ6QW1fSUJMNkJNMHdqdzJEUzlEVGw0NTRyeUZwV2VScUxnWm9BUWpnMHV3?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "article_text": "Google News",
+    "article_fetch_status": "success"
   },
   {
     "candidate_id": "rss-189684d92a2d1140",
@@ -227,8 +239,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-189684d92a2d11406930",
     "first_collected_at": "2026-11-24T12:53:46.145248+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446061+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:22:46.042501+00:00",
+    "seen_count": 4,
     "relevance_score": 4,
     "confidence": "medium",
     "category": "Other / Unclassified",
@@ -240,7 +252,10 @@
       "tradition"
     ],
     "negative_flags": [],
-    "classification_note": "Informational heuristic only; retained regardless of score or flags."
+    "classification_note": "Informational heuristic only; retained regardless of score or flags.",
+    "resolved_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeEcyc01PdllVNEU5dTdra3kwMzZOY092LWdfT0Q1WkplNElQcXZDeFNEZW5pNmdablpkc0hNQzdIbkgwT2xhSDFTNDBoZ0laeEVKUkdnWDBpZGpvYWJESkt6YzZKcDBlQWZPdGVnMl9vdUF0WU8wcmdtV2NSUXpoOA?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "article_text": "Google News",
+    "article_fetch_status": "success"
   },
   {
     "candidate_id": "rss-9c60f3de9073ec24",
@@ -559,8 +574,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-a7a633c2742affc06f16",
     "first_collected_at": "2026-11-24T12:53:46.145484+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446187+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:22:48.795092+00:00",
+    "seen_count": 4,
     "relevance_score": 3,
     "confidence": "low",
     "category": "Rituals and Social Practices",
@@ -572,7 +587,10 @@
       "tradition"
     ],
     "negative_flags": [],
-    "classification_note": "Informational heuristic only; retained regardless of score or flags."
+    "classification_note": "Informational heuristic only; retained regardless of score or flags.",
+    "resolved_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRkhtQ3BkeHFJUUdfTWRvRUpRSC1aV2xnTFFBem5YRG8teGsyRWZuZkFCN2dtdE1jTXNiemZjbloyazY3M1B1VVlrZThRQWIxQzJRM2piOGxYbzdjdms5SHhTbHBibV9rSmE5V3M5R2JFaGlVZVl4cWlsWUFGbXRRWEZmVnhfbEZRRzJ1UzZZZ3pTeHhmMG1QZXNGZG1Md0o2SFpoSXRPVVN5cTE4TjlRTlR0cGJsTnVLRzd1VWh2bW5KVDlsYTFYd093?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "article_text": "Google News",
+    "article_fetch_status": "success"
   },
   {
     "candidate_id": "rss-403fa40fe1297ab5",
@@ -751,8 +769,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-1d126d4b04c59b6c237d",
     "first_collected_at": "2026-11-24T12:53:46.145624+00:00",
-    "last_seen_at": "2026-11-24T13:12:11.347413+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:22:34.547111+00:00",
+    "seen_count": 4,
     "relevance_score": 2,
     "confidence": "low",
     "category": "Other / Unclassified",
@@ -815,8 +833,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-adf1656871df4827e22f",
     "first_collected_at": "2026-11-24T12:53:46.145660+00:00",
-    "last_seen_at": "2026-11-24T13:12:10.416748+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:22:34.547029+00:00",
+    "seen_count": 4,
     "relevance_score": 5,
     "confidence": "medium",
     "category": "Other / Unclassified",
@@ -896,8 +914,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-354edc1b1a09a195a164",
     "first_collected_at": "2026-11-24T12:53:46.145712+00:00",
-    "last_seen_at": "2026-11-24T13:12:19.665174+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:23:02.791333+00:00",
+    "seen_count": 4,
     "relevance_score": 4,
     "confidence": "medium",
     "category": "Oral Traditions",
@@ -909,7 +927,10 @@
       "tradition"
     ],
     "negative_flags": [],
-    "classification_note": "Informational heuristic only; retained regardless of score or flags."
+    "classification_note": "Informational heuristic only; retained regardless of score or flags.",
+    "resolved_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNekpQcDVsVzlyeXAwTEFhdy1qX01ZODIwVS04c3pXeGdybVhhd3ZNbUQxdUZfM2JiYXY2UW9pYWxsX3h2VlB1NG5GOVRJNWhvQmVSUlJsWHpTZy1PR2pIaFk4ZnhvNTZLdmpBNDNya3daM1dyMnBkTGt2Q2MtaFhGaXMzT083ZGhQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "article_text": "Google News",
+    "article_fetch_status": "success"
   },
   {
     "candidate_id": "rss-85425feec90b2b8e",
@@ -926,8 +947,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-85425feec90b2b8eae91",
     "first_collected_at": "2026-11-24T12:53:46.145724+00:00",
-    "last_seen_at": "2026-11-24T13:12:19.665403+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:23:04.602206+00:00",
+    "seen_count": 4,
     "relevance_score": 6,
     "confidence": "medium",
     "category": "Other / Unclassified",
@@ -957,8 +978,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-880e631fe5059c3240cc",
     "first_collected_at": "2026-11-24T12:53:46.145735+00:00",
-    "last_seen_at": "2026-11-24T13:12:19.665446+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:23:04.602302+00:00",
+    "seen_count": 4,
     "relevance_score": 2,
     "confidence": "low",
     "category": "Rituals and Social Practices",
@@ -1017,8 +1038,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-67d4aa15dca37d313bb7",
     "first_collected_at": "2026-11-24T12:53:46.145767+00:00",
-    "last_seen_at": "2026-11-24T13:12:19.665523+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:23:04.602460+00:00",
+    "seen_count": 4,
     "relevance_score": 1,
     "confidence": "low",
     "category": "Rituals and Social Practices",
@@ -1046,8 +1067,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-9bc41d48283a215a3204",
     "first_collected_at": "2026-11-24T12:53:46.145778+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975121+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:23:05.885822+00:00",
+    "seen_count": 4,
     "relevance_score": 7,
     "confidence": "high",
     "category": "Festive Events",
@@ -1083,8 +1104,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-1c2cd6a3290eb5db9281",
     "first_collected_at": "2026-11-24T12:53:46.145789+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975509+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.886369+00:00",
+    "seen_count": 3,
     "relevance_score": 7,
     "confidence": "high",
     "category": "Festive Events",
@@ -1161,8 +1182,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-9ad1a287c40bfb698cce",
     "first_collected_at": "2026-11-24T12:53:46.145842+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975619+00:00",
-    "seen_count": 3,
+    "last_seen_at": "2026-11-24T15:23:05.886504+00:00",
+    "seen_count": 4,
     "relevance_score": 4,
     "confidence": "medium",
     "category": "Festive Events",
@@ -1225,8 +1246,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-5599eb5db4d0c0347f77",
     "first_collected_at": "2026-11-24T12:53:46.145875+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975698+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.886607+00:00",
+    "seen_count": 3,
     "relevance_score": 7,
     "confidence": "high",
     "category": "Festive Events",
@@ -1259,8 +1280,8 @@
     "review_status": "UNREVIEWED",
     "record_id": "rss-3e10a16d29cc0345a37d",
     "first_collected_at": "2026-11-24T12:53:46.145889+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975730+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.886656+00:00",
+    "seen_count": 3,
     "relevance_score": 7,
     "confidence": "high",
     "category": "Festive Events",
@@ -1286,8 +1307,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:53:46.559711+00:00",
-    "last_seen_at": "2026-11-24T13:11:41.420181+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:27.001990+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMizgFBVV95cUxQR2FuNTJHWEhIQ2R1QjI0WTdpaUlYeTFlMU1tNE5aTG84OC1US0NXd25mN3ZSejE0VkVaTGpTWDFjUTd3TnB4NHp4cnpjbXFnbGVyYmRnNllFQ3AzRTRKVEJfbnoxT1VMb0pmQXNzVFYyVGw2MlcxcmxTSkRKNHdUNk9ja21JdHpuT3BJMTJHWGlLT1VyOEcxWlRzT0xINHJIbkx6MzExWWw2bGxudGNwZkZSMHA5ZU01c1p6TEZMNXE0ajhodVFzLXNmd1Fpdw?oc=5"
     ],
@@ -1321,8 +1342,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:53:47.659670+00:00",
-    "last_seen_at": "2026-11-24T13:11:41.420248+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:27.002092+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNUF6bWtnazh3SWFWbThHeUJsWTQtUFRicGxPamkxcEt3blpxdnZ1M0NZdF9seUNSX3d1Y19jT2daemVyZU1jOTBEdzVXVXRxNHkxNmdSdnBqM0gyQVJ5dU9xajJzQmUxaUhkTFhiclpZc0dQY2dHZ0Q3SGFDMFQ5Zm1KWE1NU1ZwN2JOYkZTQnkwQ05wQ3NRUWlJRlluTXdrbHh6alZWRmhPcmRKaWdNY19HcWhycTVWVk5RRm5wTE5sbmNCejVtUDdURWM3Y2JCZDlqZ2NmaUxuYUFCaXhwa0w0ZUpHQlpjUGRXWko3M2ZBa2M?oc=5"
     ],
@@ -1358,8 +1379,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:53:48.755783+00:00",
-    "last_seen_at": "2026-11-24T13:11:41.420289+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:27.002157+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMimAJBVV95cUxPeTVKWE1idmhKTElRckZlSWtkV21ZUWJZamV3RmZhX2UxYUx6VUU3bk9Kb2pidmExSkgwdVpHemlrUm5VWV9sbXFIeWxTQXY5UjJrdGQ3SE84bnhRakNmRF9LZkpKSGxBZkRqZ2VHZ1cyV01aMS1oNkxxQ1RrWnFfUUxnS25LUEZkVGJCVWhfMVpPNTBONlBIOFRoWHZXSnhrS2QtVUR3ZGVueHpWVnltUUhwVWJVeHFzM0hxRkRLbWJSRmdlZ0s4VXVETXZ4eEQ5TWY4MC1hemliUWgtb3VtNzZnejJhdjVfeVgxTGxla1JSZnlLc0RCUEo2dy0xUnZNTk4xMUJsc21YZFBLTGxxZXBNYkNsdHhE?oc=5"
     ],
@@ -1394,8 +1415,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:53:49.663308+00:00",
-    "last_seen_at": "2026-11-24T13:11:41.420325+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:27.002214+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMidkFVX3lxTE5nNHZHSkFWa2F4T3F4NnN0bVJldy1oQWxWYXYxWDh5TXlVbElfRlYtM3hFbWpkdThzb1U2THBpaDVqTVNvUlB2cjZqTTRWU2JqbjVIQW1JTzhybzNUUXVRcjFKQ0JPcWJMVGZ6Y1EyVklMRVJmelE?oc=5"
     ],
@@ -1462,8 +1483,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:53:51.518054+00:00",
-    "last_seen_at": "2026-11-24T13:11:41.420399+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:27.002314+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYzl3YnlJX0MxVWJhRHBZYlJpdVJ1T2dnOXlHeS1yRS1QbzNEVW1xSVZnTFFnUWhYaFpwVjZTR21aVU1lNnRPUmlLb2NEdmdmT193R0JDRkhJUVB0aHpDcVN5bFZhcjJIekc1WUhEZzg3UzFmeV9vZkZCX2NMQk1iOUpMd0NyMVlCRnJFbG1kU29zZDc2SHZibFYtUkt5V0FXRG9FOGNpVDJ5M2ZycFowQkgyRnhhX282blpKQTNBelhNM3RV?oc=5"
     ],
@@ -1496,8 +1517,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:53:52.431994+00:00",
-    "last_seen_at": "2026-11-24T13:11:41.420433+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:27.002367+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMicEFVX3lxTE5saGtzQ19qcC1hQUZBRktvRENZSEl1cTFfRjQ1Y2tTQ2RlV3FHTTIza2ZBSnV2R1N4YVpQZXdTOWRicTFsaGhaOHhMcElMalI3bHJtRHdOZ3ZlaTJpNmtaTGtiOXRfWmFrbHhOcWh4TGQ?oc=5"
     ],
@@ -1530,8 +1551,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:53:53.351797+00:00",
-    "last_seen_at": "2026-11-24T13:11:41.420483+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:27.002442+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQN3FITnp6VGRuZjJqNlhoTHRzMTVRLVhmSFBfcTAybm5LQkdxUVhUZzNxeGJPcUtHUTZOYnZSanpfRFhQbkFuXy1ORzVkUHFabS05QldkbHhGbUUwYjJIYVBLb2lER0FmMTU2TG5IQUh3cHBVUlZpY19CYUpKM1lVM0dUeFBOWXROd0VCXzZxRkllT3h0b1B2YVI0bU56MUI4SHJHU3J5WXRRMDAwdldNcFRUNUpOdTk3VHdTMUtRUy1YQQ?oc=5"
     ],
@@ -1564,8 +1585,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:53:54.279684+00:00",
-    "last_seen_at": "2026-11-24T13:11:41.420513+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:27.002490+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9zY040MlhCZEt0MTkwamFCQWFsU2pmWEtjdW5ONmpnc3dMX1RMcWFBdzNfZzFsZVhHVG00bnBjNEtwZGFaaER0bTZ5eTh5QTRJdFVPNE5VdmM1aU4wTl80Wmh3?oc=5"
     ],
@@ -1700,8 +1721,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:53:57.917670+00:00",
-    "last_seen_at": "2026-11-24T13:11:43.456367+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:27.002682+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5BNzRWVnAtNzlXUzlMbFBtb25neTl3Z0lVS2prRVotelZzY0QtaHk4YmUxYVVNTTBNaHlOMDZpQjVBTG1VODhhTmpSeC1ra1Q4OS05bmozbGhQOEFSU3pNSzBR?oc=5"
     ],
@@ -1834,8 +1855,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:01.629136+00:00",
-    "last_seen_at": "2026-11-24T13:11:43.456287+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:27.002636+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbng3eng0MHNva1RobTJ5TDJKN2dsQnpUejkwQVhPLU05Rkt2Q1dyek1RQlk0X3BFSHU0UFZpU3JXdmZialJKc2NnUmQ0LW05dWhXOV95VGNQZWlkdG5lNWhjZ01wUnZmWElVOTc1eWNvSW9pQU1yZHZwbDBrZXU5QU9kTTFuYnVNT0tEcVJkQllvQXczc2JMOWdaekp2UmlaVC1tS2tWZHhIbTIyS2xrMW5lcXI1Q2VKVWV0UEdQaVZtcTJ6ZGFqYWMtMHlESGc?oc=5"
     ],
@@ -1969,8 +1990,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:06.627255+00:00",
-    "last_seen_at": "2026-11-24T13:11:52.344166+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:28.345904+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRDYtZXBYZFFDVHlwODdEX2Z3Qm1yLXY4bU5wRDFqNGJtbGFPZU1MbmxYWUJoVTRGTEhOQ2xscW9CcDBBN0dmclBKV2hqczJwRi1mUHM5UDVsZDJ0OVIwYzYwVHdIOXVjQWtIOWZNNUZodGMwWks4OTR6VjJRM0pqZUsySlFZQUZmVXQ3ZzNoSDIzcEljQVNOc2NXVm9QeVFySUNrQlQ5TnlHLUwtRS03eGJn?oc=5"
     ],
@@ -2004,8 +2025,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:07.549414+00:00",
-    "last_seen_at": "2026-11-24T13:11:56.986986+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:28.345975+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQREUzVFUzQV9feGt0QWE3eHpwb0tSX2ZyQVc0T1dQUUpxOEtGR1FyQmlvM2NsaFNvcHFmWGIxQld5dDVQak1ucXBTU01mOVNSeC15SS16ZGtiWFJmeUZ3S1dGZ2VvSWRkaUNWenZodnpnMTRCZU5zT1R6dUl3LVh0ZTJDeWU5ckhGelFwUW91b05GbWhLYjNUWFJkajF0T21oMFpkTTdjeEVyNFVxWm9GU21PRTg4NHY4clo2UFUtS1RsSmlwUGlEbUFGRmdsSDRWcWxpVThadHBobWhk?oc=5"
     ],
@@ -2038,8 +2059,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:08.479471+00:00",
-    "last_seen_at": "2026-11-24T13:11:56.987061+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:28.346029+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdGRRQmd0eVN1Mk5TOFBrUEdpbTgxMlhRbXdfcDM4LWRDQTlqN284OVZvdVdQejJsamF1NDkyV2FFR0c0TTA3SFF1djl0N3kwUnlhay1SZ2pfMDZ6cVlVNUYxOExnZzRLY0h0QVlHQ3M4dE0weGxRM3BtckdlcEMwWENqSmhEbjVURk1zWkU4YjZudDYwOWphWlhJUDZ3MG1MWnRreHFQcEMxQXdSeHBmN193?oc=5"
     ],
@@ -2071,8 +2092,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:09.401932+00:00",
-    "last_seen_at": "2026-11-24T13:11:56.987126+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:28.346150+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUmhUT015aTBhdVBxbkJQbUxoQXRWdllSelpXS1ZZZkUzVFVNVGxRaHdIb1gteXpDN3dQTlVYN0dTNTFxcVBpS0VwZlAycGFid1Q3a082NUJ4OE1ZR2tScVJNSGdyc2tfcHhHd2tBN0ZBNTFEOS1IY1lfNndVeFhkZWpjNmszQVdkdk9LcTdBMmJQdVliR0d0X3BhMEtYVHFvQ2dLRG11ZTZnVzk3UFVHeWNR?oc=5"
     ],
@@ -2106,8 +2127,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:10.329258+00:00",
-    "last_seen_at": "2026-11-24T13:11:56.987205+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:28.346095+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2VlekxMVm5RYjMzcTZ2SGJjdm1meDJ0NUpZRG84ZGhBbHpWc09UNDg4ODRSNzlwZzZ1VFdEUmRZTFFkbE04U3NETTR5aWtPS3BtOTg0cEhVaW9xMGFpWjBmM1pKb3h6UW5KZDl5Z1JaYTlZbGp2VzE1eXA0R0kwbFZtdURPR19WUmFra3JpX1ZjWHVZT3ZLWWpDM0cxWU1iSlhhRXpnRWc?oc=5"
     ],
@@ -2140,8 +2161,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:11.246335+00:00",
-    "last_seen_at": "2026-11-24T13:11:56.987156+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:28.346192+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRmhmNXpCOVlIQjVkVGxweGo1eFpucW50d3dPTl9ZQ1JFazBlVm9oMmtRQlBNR3VFRUNZY3dWVXUycjhqTURHYUJTRXRjYzhqUjhheTNKem5OZ05UWkxYZUg5ZS1pMGUzZl81SzctRXg2RkdIb2oyRVVUa1hGV0FBQ3BFX1dWZ1lCbUg1ZVBTTTZkNi04ajRqQ2ZfQkhmM3ZkM1lmN1J1UEtESElWbGNhc2NzTmYzZw?oc=5"
     ],
@@ -2174,8 +2195,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:12.157450+00:00",
-    "last_seen_at": "2026-11-24T12:54:12.157450+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:28.346256+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWkhnX0hpN19CWmltLVpYekxvT1M2NDJ6elhYSEhDd2piR2tJS29tcktUVEJpMHpqRHllajBJMVFCbTlnRDQxVDhpeWZYcE05cGRpZTJ4eWl1MG1rRWpqMDRndnZLdm1pcnM4eElHaWZVem5zRHE1YTNaTEVpdkN1RjNUc3F4MEx3RjdKandsbXVCTU9kQ3dwYmJwbVc?oc=5"
     ],
@@ -2208,8 +2229,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:13.069200+00:00",
-    "last_seen_at": "2026-11-24T13:11:58.835485+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:28.346304+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcVJldVYtdlBfOTdxZWZJdzZscTVNOFdkYnZpdmVxVnNCT1RIS09jaEdiWmlyd0hqMnN6TTBXSFdwbHlYaGZzbG9pRG5iMTQzckJ4dnhGeURHYnhnMk1LSGJvQUx2YXRXODdoQmdrX0VseVFGWnFOaEhaY3RNQzJ2ZU1Sd3BTeGJTWDF4S1VXdURUNlRyQS02djFqMXExb3RSMlRZZU5DZGxyT1ZRTXNBbw?oc=5"
     ],
@@ -2242,8 +2263,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:13.977278+00:00",
-    "last_seen_at": "2026-11-24T12:54:13.977278+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:28.346402+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMid0FVX3lxTE83Uy1yUzM1TG40bkRwclZZakFmWlM5UGVIQ3BCeGJQSEZTTHBlTU1ucnY4UFNDYUlRMkZYbGhnN0cyMENsdVNUbnlOd3RJR2NmQ1FwbWlBUi1SOGZrM05SZ2xFRzRrYmJDLWNlRlNYMVYwcUtHQnpR?oc=5"
     ],
@@ -2276,8 +2297,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:14.896013+00:00",
-    "last_seen_at": "2026-11-24T12:54:14.896013+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:28.346347+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOGVydGNEOVhKanZLWDhsc3ZYd2puRzZxOFdpVDJyNlFGSUlRZ00wdk1HUnVwa05fRVQxenF0MXVyZnhBeVRER0pIQUV3eDM2aWZxdHZYM09ZUHFmR2VqY2tRU0Y3WjE2aE5CLXdVS3hGWVN3cTc2OTNTQV90NHJSLW5aYXZuTkpYdndtOEkxZ2JYaUIyRVlRRld1bEdNY09UV0R0OFFsajNwWktuM0hyRUNwZjI?oc=5"
     ],
@@ -2309,8 +2330,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:15.807141+00:00",
-    "last_seen_at": "2026-11-24T12:54:15.807141+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:28.346438+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUUx4WF9OQ3luX2IzaUFYNHFQbDNESGJ4ZDlqRU55UVBScUhqRjlXS29GaU5zUGhLamVZb1dGTjhVRFVieTVZOHJLLTlYWXlzemw0ODBrcmZUYU1oclRJdG9VaUZod01rdV9YNDQtQW9fczRBNnl1dzZfTGZfSHZ6NjJjdUprSWFNeTFF?oc=5"
     ],
@@ -2343,8 +2364,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:16.727555+00:00",
-    "last_seen_at": "2026-11-24T12:54:16.727555+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:28.346497+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb3dVcDBicjNsQXNOZmRiQUNRUUdjbUwtYlI5ZlBiNGkyUjFUX21xcWxZODFLSVhNenZpYU94RWFvYzFmZ3F3dG5iUGhud1JTZTFJY1RYWVFyVEQxRnItTFdxcVY0WGlwM3B3Rk12bjhVXzJrUUdmUTR1d2YzcTlTY3RCM2tJRUV5c1dOQzAtdDE0SVhtcU1tZEdpRHdZM0g4amE4NUdQYzFuSWJIQTVGVUNWcTFwR3p5WUE?oc=5"
     ],
@@ -2377,8 +2398,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:17.649054+00:00",
-    "last_seen_at": "2026-11-24T12:54:17.649054+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:28.346553+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNazVyOTJqTksxNTgxdUZndmZDVGh0TVJEckVOV3FDS3VzVThqUkp0YXdFOFNfVEtVek5jN0hEY29WNjNGT0hPNkZ6SThPUHFnRVRWc3dNRGpTal9aVHZRRlhGMDZPVG93a25QV3BZS1JGZHpvNzB2SmNkcGF1SEotSmpvZmtKbzlKRV9CZFhxVU1hSFB5UHlEdXNaQlJ2M2xNZjF4N0g0N0FvT1FzQjUtRUNFa2pkS3BhTGVmLW45eHBTNjdyZXB2WnVJLThvT0ZaTWpHRWs4OXpzZw?oc=5"
     ],
@@ -2412,8 +2433,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:18.570505+00:00",
-    "last_seen_at": "2026-11-24T12:54:18.570505+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:28.346594+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiakFVX3lxTFB2U3NFMGZzM1Q1d1lEaVJtS1V1NzRIdERKcDlzeXBMY3BHU2FwcVp2clVETHIyYlVDa3Q2Vkh0azk4QmlXX2c2SEJYWkdHSjVySHRJWDNXVmtnWm5qdTF3dU55QmlGV3VIdVE?oc=5"
     ],
@@ -2446,8 +2467,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:19.506031+00:00",
-    "last_seen_at": "2026-11-24T12:54:19.506031+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:29.352837+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi0wFBVV95cUxORHBGazdJd1d0NXFwV1g3aVlocnNIQTZBcERaREUzTExyMFcxYkZuSVVWT0pGdUhaT1ViUFhXMGJ3Sk9GRmI3RTdUMDFsSmt0elk0d2d0d1UycmlXMDctZUo0T1lJTTVxSzZGR1JCblJWNHdobEs0a0pJd1lLbnEyX0Q3UGZPNGJwNXVTdVRzaDh3em8wLXYwSXRnQ0pvUnQ3clprZFFuemtJdDRKbzYtLUNNTFdsREIyVExQb1RodEY2SVNlRVNjR1JiNXdIbFNLWnlV?oc=5"
     ],
@@ -2479,8 +2500,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:20.425800+00:00",
-    "last_seen_at": "2026-11-24T12:54:20.425800+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:29.352915+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMingFBVV95cUxQNjNudDhuWGhxbkx4LXFWYzJtd05wRlhGTjVwTlNXSWF0cHk0WHVxaXFtblBWR1hMbnJ6QUt0a3h2QnBINHgzMkJBMEthcFZUMkk2SDlUel9zQlF4LU1HUGptTEZlSURpdFVheTFSMjFRWDFvcnBaaFZvTmVkRC1FcTZvTDRYcmRuT29sb2hkMTFQRDJZdlBVUV9NR3ZnUQ?oc=5"
     ],
@@ -2499,9 +2520,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNjNudDhuWGhxbkx4LXFWYzJtd05wRlhGTjVwTlNXSWF0cHk0WHVxaXFtblBWR1hMbnJ6QUt0a3h2QnBINHgzMkJBMEthcFZUMkk2SDlUel9zQlF4LU1HUGptTEZlSURpdFVheTFSMjFRWDFvcnBaaFZvTmVkRC1FcTZvTDRYcmRuT29sb2hkMTFQRDJZdlBVUV9NR3ZnUQ?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNjNudDhuWGhxbkx4LXFWYzJtd05wRlhGTjVwTlNXSWF0cHk0WHVxaXFtblBWR1hMbnJ6QUt0a3h2QnBINHgzMkJBMEthcFZUMkk2SDlUel9zQlF4LU1HUGptTEZlSURpdFVheTFSMjFRWDFvcnBaaFZvTmVkRC1FcTZvTDRYcmRuT29sb2hkMTFQRDJZdlBVUV9NR3ZnUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Phu Xuyen Commune: Preserving and passing on the cultural beauty of traditional craft villages. - Vietnam.vn",
     "location": ""
   },
@@ -2514,8 +2535,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:20.425960+00:00",
-    "last_seen_at": "2026-11-24T12:54:20.425960+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:30.265525+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTV9ZeHhSc0FOR0p5TEkyWlZxM3YzU0JkYkFJZDhUWFZTTTZfVURmcTAtNktCNHAtN21CYmtoQnBMNHk0b2VNSFR5S2k4aVRpemowN0NkUTBhclJ6djgwZnV6N242dzRmMElhNFNVSkNBR2hid2VvSXFvbjFVaTE1RnE4cnlZcEdpbEdyWUtFYmJ2T0JuOEhLOU5B?oc=5"
     ],
@@ -2532,9 +2553,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTV9ZeHhSc0FOR0p5TEkyWlZxM3YzU0JkYkFJZDhUWFZTTTZfVURmcTAtNktCNHAtN21CYmtoQnBMNHk0b2VNSFR5S2k4aVRpemowN0NkUTBhclJ6djgwZnV6N242dzRmMElhNFNVSkNBR2hid2VvSXFvbjFVaTE1RnE4cnlZcEdpbEdyWUtFYmJ2T0JuOEhLOU5B?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTV9ZeHhSc0FOR0p5TEkyWlZxM3YzU0JkYkFJZDhUWFZTTTZfVURmcTAtNktCNHAtN21CYmtoQnBMNHk0b2VNSFR5S2k4aVRpemowN0NkUTBhclJ6djgwZnV6N242dzRmMElhNFNVSkNBR2hid2VvSXFvbjFVaTE1RnE4cnlZcEdpbEdyWUtFYmJ2T0JuOEhLOU5B?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "The oral tradition that built software may not survive AI - Fast Company",
     "location": ""
   },
@@ -2547,8 +2568,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:20.426057+00:00",
-    "last_seen_at": "2026-11-24T12:54:20.426057+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:31.186585+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdFpuWUtpZk5palRIeXZfRUNIc3ZVcnA3ZnI1bHJKNDJsYzNTUENSay1lUGdZaHRxc0NDazhmUXdSaG1GQ1RtYlB2eEhqOXp1YlZNYklnd0xMUUQtaGJ3ZmF6RU1uXzFscUNpMzZwcGVGNXFxelNLVTRQbngyekRMZlQ3amNBd1k?oc=5"
     ],
@@ -2566,9 +2587,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdFpuWUtpZk5palRIeXZfRUNIc3ZVcnA3ZnI1bHJKNDJsYzNTUENSay1lUGdZaHRxc0NDazhmUXdSaG1GQ1RtYlB2eEhqOXp1YlZNYklnd0xMUUQtaGJ3ZmF6RU1uXzFscUNpMzZwcGVGNXFxelNLVTRQbngyekRMZlQ3amNBd1k?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdFpuWUtpZk5palRIeXZfRUNIc3ZVcnA3ZnI1bHJKNDJsYzNTUENSay1lUGdZaHRxc0NDazhmUXdSaG1GQ1RtYlB2eEhqOXp1YlZNYklnd0xMUUQtaGJ3ZmF6RU1uXzFscUNpMzZwcGVGNXFxelNLVTRQbngyekRMZlQ3amNBd1k?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Hanoi's traditional craft villages come to the streets, captivating tourists with their unique experiences. - Vietnam.vn",
     "location": ""
   },
@@ -2581,8 +2602,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:20.426154+00:00",
-    "last_seen_at": "2026-11-24T12:54:20.426154+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:32.096661+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBtWjR5RV9OTkhWUVZjWFpPMFBmNllHRWoxX3VwMkpsdVo4YU1mTU8tNm1KTXY3THNjQmNoRVZMTjJTQUFpTG9QN1ZKejlRRFRndzdySDFXcUlDajB6OXE0?oc=5"
     ],
@@ -2600,9 +2621,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBtWjR5RV9OTkhWUVZjWFpPMFBmNllHRWoxX3VwMkpsdVo4YU1mTU8tNm1KTXY3THNjQmNoRVZMTjJTQUFpTG9QN1ZKejlRRFRndzdySDFXcUlDajB6OXE0?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBtWjR5RV9OTkhWUVZjWFpPMFBmNllHRWoxX3VwMkpsdVo4YU1mTU8tNm1KTXY3THNjQmNoRVZMTjJTQUFpTG9QN1ZKejlRRFRndzdySDFXcUlDajB6OXE0?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "From traditional craft to digital restoration: an intelligent rebirth of ancient Chinese painting restoration technique - Nature",
     "location": ""
   },
@@ -2648,8 +2669,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.858674+00:00",
-    "last_seen_at": "2026-11-24T13:12:06.728667+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.546799+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPckNmOWVPMGlHTnNmNjJLbEloUFZZbG1MVU96YnNJMTFOY1RKSktlM1FPcXBZazhyYVRCeVhGYjg2dFJIS1RkZDMzbGU0QnZoZEQ1NmY1NkgzejR1OXZRVm9KNnV5bGtpX1ZBbDlZVm1OaFRxTU55ODhIb2NhNnRMdGFEMWdCbk1WbDJMSHc2MkFzMlNWN3pmdXI2T2NZR25qSDNyVmJSb2ZqNU5JTndBcWFLVUVyMzYx?oc=5"
     ],
@@ -2680,8 +2701,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.858806+00:00",
-    "last_seen_at": "2026-11-24T13:12:05.799529+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.546700+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPV19YRWxwdlhTX0phMWMyc0VOZGVIMjRoNzVRY3Qtb29GZkx2Q3NnRTNTclZxWDRBVnQtVnl5N1hHb05taFBKbVF3dWFQSDN1a0JoZTBrMXNmNGVGVEsyT1Bvcl9EUExCbko0Nmh6R2gyb1F1elFfRkYtR0dYN2NBeUR4NjVlWXM5aU1jREtrZVlwTkJIV203ejZQMzlpTkhic3ZqMmctNjdmZ2VFa0VwUHJWVWx6ZmxVeTdsMVRMdTVTN3c?oc=5"
     ],
@@ -2712,8 +2733,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.858935+00:00",
-    "last_seen_at": "2026-11-24T13:12:08.572791+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.546911+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMipAFBVV95cUxPY2RBZTlncFhIU3g5b1JzRHFwaV92WEVweFNCVUlJVlBnYU9XSXFiLThqSE1YRWdsTmh2eVlpcExFWURrdVJoQVQwRkFYaXl5YlpFcmFsTVRZZXZVNkdDS3B5Ui03S2xHUUs4bEVBUDk4QzNqOFV3czZFNjVFTDlPbGJKYnh3cnE3T25FTnFibi0yTjhTQXF5dFJhMWRTbEd2ZjFYMQ?oc=5"
     ],
@@ -2744,8 +2765,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.859020+00:00",
-    "last_seen_at": "2026-11-24T13:12:07.645158+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.546860+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMikwFBVV95cUxOV1RTMFh3UTJsdVNodHZ6RnV4UTdPdzNVcW04STh6ekoybjd5ZlhzWFFDd2hnX09ZR1cxWDZFVGx3eTF1WU90ekRKcVJiMDNiY290NlE3ZXBZcXdnNUg2TjloS1pjYjQ3dXc2bVU1MzF1ZlcxNHpzMm5QWEMwQTY3bHJRRy0tVE9rV2R2SE90OGRUN0k?oc=5"
     ],
@@ -2779,8 +2800,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.859093+00:00",
-    "last_seen_at": "2026-11-24T13:12:09.489964+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.546967+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTUt0VkZuRWNyYmV5dS1hQmxGS19Tb2M2TXNBWnh0Qng4OHM5SEZ5b1NjNlFOSlJRNjlNVnpReS1KVnNWdjNoSGJ4d3U0RTQ3SXVmOC01dnhYa2E3U1RveDZmVkc3RFRQajdnLVZMVDNwWTlEY2F6SHV3SUNNdUlDZDIwODdPLVB3Q0NUUkdlTWtFNExwLW5QQmRxN2JrSlRqUmtuNXdMNnNyai1hUmNYWGREc2pTall2ZkgxWFllT3Bsa2pON0Y0d0pfM2FJRFlEVnVJ?oc=5"
     ],
@@ -2814,8 +2835,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.859299+00:00",
-    "last_seen_at": "2026-11-24T13:12:14.140687+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.547274+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMDRCTHZFRmt2dEFjaWVEUWo4R0ppR0x0bTVQTE9lOVpwV1dFell1NWdyemtlejQ5QzQxcE5hQzEwYU1jVnhNbWFtSXRfdzJyWEFvRkZDUzc3bndRZFJ4eDZydjVwNWRQeS1TR3EyME1zVkwxQ2Y5aWFNOUJ1LUprSWs3SUpSYU1qMmxDN05wV0U1bE9tdXRCRm9zWHNCR0k?oc=5"
     ],
@@ -2847,8 +2868,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.859373+00:00",
-    "last_seen_at": "2026-11-24T13:12:13.211287+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.547227+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiigFBVV95cUxPekJfT3NQWE9SV0J4MG5VWHA4MFNwUDc5RWpxY1ctNldxZXQ1RDI4RWk2ZG5fbjFEYzVST1BESXhqcUFaVGNrZTlUUkpFa1ZRWmxnUWJ3OVJsaW5aNzVGbVNZWGViNVctVFoxaWltTUxEa29QdGU3Z1IzalVhYnRjYjBMWlowdEoycXc?oc=5"
     ],
@@ -2878,8 +2899,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.859443+00:00",
-    "last_seen_at": "2026-11-24T13:12:12.293758+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.547179+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcWNjT0ZBZmduVDc4LWphZmRZQzNRMmtwNk1UWGZRNU1COFhCYnEyRXZFdVhjREdoOWJiU180WjBXWGtKUTBONGk3ay1rMTlDUFFRNGU5akdwUVVLYmFUU3k2R2M5UlVhb1hKNGlqSTVJN01nU19XTGxWbENXaERNX3NIbEdfZlg0dmw4Mkd2V0d2alB5UGxPcHpBMA?oc=5"
     ],
@@ -2912,8 +2933,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.859509+00:00",
-    "last_seen_at": "2026-11-24T13:12:15.067706+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.547323+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZ2VlY19PVEFld2NyU2o2WGZiTUhyQTQ2bW9TMHpDaXhJV3oyeWg4VFlURmlVZ29SS1dLTkk1Qlhfb1lGQURGMmhOMDBsTDhqOTFVWEd6RkVIX1NfNVZBWFhBeFY2M2tOMTc3MjM5cW9RNkpWb1dMeGZLdmtMV0h2SDA5cEljS3NUOVdSZWtxcDIxMms?oc=5"
     ],
@@ -2946,8 +2967,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.859578+00:00",
-    "last_seen_at": "2026-11-24T13:12:16.036248+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.547369+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSTBfUy1ORE52V2ZTdFRTWHNQR1lmcHlZMENsU0U5cl9uUVhNN3N4cVJnUXJZaGw5QWVKd1l0dmppYmlIcEs3VV96NjNSRVBvaHQ3WXhyeFlScm1NaWdrVE4wa0tabEExQktkVHR4OVB5dzhtY1RONEhRbTh5cVFHa1QtdXh6WnVKNEpabHJGMXRGMFc3d1VmUnA2Rmg3M29mNncwYnRBMVd1eVVER2Zj?oc=5"
     ],
@@ -2978,8 +2999,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.859680+00:00",
-    "last_seen_at": "2026-11-24T13:12:16.977181+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:34.547445+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQY3VxZ25Pc01kMHQ2NDRZRWdxRGttY2VaMUt3Q2FwY1hmVlMwRDdia001Tk1ZSXNIRTV5NTdvT2FhQW5jM2RHclVwTzhBT2xXNnFUOGQ5R3dYc0o3dkZzemtJTmVESnRvb3EzeVZFdlpmcVhTZk5Pd0xwZUJVbldjY2F5WXJJcXM0LVZqN1ZWdnR5RHB6U0EweTI1OXc3SUVOQno5TFBOX09WWVo3dk1ydVRDeUtfNkhRSUpuM0lRSEJkcTNZNnNmMjhKTkVkNTVEbDFhbkVIZmNkS05DN3F2dElLbTQ?oc=5"
     ],
@@ -2995,9 +3016,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQY3VxZ25Pc01kMHQ2NDRZRWdxRGttY2VaMUt3Q2FwY1hmVlMwRDdia001Tk1ZSXNIRTV5NTdvT2FhQW5jM2RHclVwTzhBT2xXNnFUOGQ5R3dYc0o3dkZzemtJTmVESnRvb3EzeVZFdlpmcVhTZk5Pd0xwZUJVbldjY2F5WXJJcXM0LVZqN1ZWdnR5RHB6U0EweTI1OXc3SUVOQno5TFBOX09WWVo3dk1ydVRDeUtfNkhRSUpuM0lRSEJkcTNZNnNmMjhKTkVkNTVEbDFhbkVIZmNkS05DN3F2dElLbTQ?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQY3VxZ25Pc01kMHQ2NDRZRWdxRGttY2VaMUt3Q2FwY1hmVlMwRDdia001Tk1ZSXNIRTV5NTdvT2FhQW5jM2RHclVwTzhBT2xXNnFUOGQ5R3dYc0o3dkZzemtJTmVESnRvb3EzeVZFdlpmcVhTZk5Pd0xwZUJVbldjY2F5WXJJcXM0LVZqN1ZWdnR5RHB6U0EweTI1OXc3SUVOQno5TFBOX09WWVo3dk1ydVRDeUtfNkhRSUpuM0lRSEJkcTNZNnNmMjhKTkVkNTVEbDFhbkVIZmNkS05DN3F2dElLbTQ?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "New reports on youth and Indigenous assemblies highlight community priorities for Seattle’s Climate Action Plan - Seattle.gov",
     "location": ""
   },
@@ -3010,8 +3031,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.859783+00:00",
-    "last_seen_at": "2026-11-24T13:12:16.977299+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:35.479451+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiygFBVV95cUxNanNKOTNTamR2NmxfbE1JZE1FRll6ZmZKR2pPbXBwMHZRY2U0dHBiakpwZU5jWks3dkQxV2xGVl92ZjRoR3pYS2ZLVU1tUXc4YklTMkdwTEdMS0NHQ0Njdm9veGJ3UEVCZ09uVktEM0pnRGQzZklxb25wMXpaRG04aF9MVzhSOTRYclZBaVo0eXhvLVc0ZGZOWnpILXRGYjFhZnV6VVlUbU1rMjNWWEpJTXVoN0Z1QUFWZDhaOHJoY1FGaWRpeXJwMTFB?oc=5"
     ],
@@ -3026,9 +3047,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNanNKOTNTamR2NmxfbE1JZE1FRll6ZmZKR2pPbXBwMHZRY2U0dHBiakpwZU5jWks3dkQxV2xGVl92ZjRoR3pYS2ZLVU1tUXc4YklTMkdwTEdMS0NHQ0Njdm9veGJ3UEVCZ09uVktEM0pnRGQzZklxb25wMXpaRG04aF9MVzhSOTRYclZBaVo0eXhvLVc0ZGZOWnpILXRGYjFhZnV6VVlUbU1rMjNWWEpJTXVoN0Z1QUFWZDhaOHJoY1FGaWRpeXJwMTFB?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNanNKOTNTamR2NmxfbE1JZE1FRll6ZmZKR2pPbXBwMHZRY2U0dHBiakpwZU5jWks3dkQxV2xGVl92ZjRoR3pYS2ZLVU1tUXc4YklTMkdwTEdMS0NHQ0Njdm9veGJ3UEVCZ09uVktEM0pnRGQzZklxb25wMXpaRG04aF9MVzhSOTRYclZBaVo0eXhvLVc0ZGZOWnpILXRGYjFhZnV6VVlUbU1rMjNWWEpJTXVoN0Z1QUFWZDhaOHJoY1FGaWRpeXJwMTFB?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Echoes of the Ancestors : Walking together – Renewing Indigenous Studies at Camosun - Nexus newspaper",
     "location": ""
   },
@@ -3041,8 +3062,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.859890+00:00",
-    "last_seen_at": "2026-11-24T13:12:16.977346+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:36.385677+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMie0FVX3lxTFB1aGpWUTc3RGpPYUpwNVVIVXFLZVpOc1dWNng1WXJBaEtWaXdFdm1qcTNXTml3MUlDYXU0cFJ4MWZkSEhFTGhRRHJMbU9Pb21uZ3Y5TmNJbEp3dkJONG9yWDM4d21qMVd0eGEzcXlRRURDeDVUa1QyMkxYYw?oc=5"
     ],
@@ -3060,9 +3081,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB1aGpWUTc3RGpPYUpwNVVIVXFLZVpOc1dWNng1WXJBaEtWaXdFdm1qcTNXTml3MUlDYXU0cFJ4MWZkSEhFTGhRRHJMbU9Pb21uZ3Y5TmNJbEp3dkJONG9yWDM4d21qMVd0eGEzcXlRRURDeDVUa1QyMkxYYw?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB1aGpWUTc3RGpPYUpwNVVIVXFLZVpOc1dWNng1WXJBaEtWaXdFdm1qcTNXTml3MUlDYXU0cFJ4MWZkSEhFTGhRRHJMbU9Pb21uZ3Y5TmNJbEp3dkJONG9yWDM4d21qMVd0eGEzcXlRRURDeDVUa1QyMkxYYw?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Rooted in Indigenous knowledge, three UH Hilo colleges collaborate on Medicinal Garden - University of Hawaii at Hilo",
     "location": ""
   },
@@ -3109,8 +3130,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.860063+00:00",
-    "last_seen_at": "2026-11-24T13:12:16.977462+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:38.249604+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVVhJVW1FRWVhaDcwRGVrX2NJZUM5NTI1OTAzdkhSaDA3SXpBS1k1UzNNWmdueUlZYUpYaHNlY3JPWWtSMjFzckNVckE3WG5NbmhabDF5aFpNellJN2ZFNXVsTnNOSTlINUhvMHc2a1pFVUNXSFVhYmItWU9OWTBEUjdpM0RmWjZhdmtLVGRrdmNocEp1cm9uRXdOaw?oc=5"
     ],
@@ -3128,9 +3149,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVVhJVW1FRWVhaDcwRGVrX2NJZUM5NTI1OTAzdkhSaDA3SXpBS1k1UzNNWmdueUlZYUpYaHNlY3JPWWtSMjFzckNVckE3WG5NbmhabDF5aFpNellJN2ZFNXVsTnNOSTlINUhvMHc2a1pFVUNXSFVhYmItWU9OWTBEUjdpM0RmWjZhdmtLVGRrdmNocEp1cm9uRXdOaw?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVVhJVW1FRWVhaDcwRGVrX2NJZUM5NTI1OTAzdkhSaDA3SXpBS1k1UzNNWmdueUlZYUpYaHNlY3JPWWtSMjFzckNVckE3WG5NbmhabDF5aFpNellJN2ZFNXVsTnNOSTlINUhvMHc2a1pFVUNXSFVhYmItWU9OWTBEUjdpM0RmWjZhdmtLVGRrdmNocEp1cm9uRXdOaw?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Indigenous Knowledge in the Digital Age: Learning, Preserving, Sharing - UNESCO",
     "location": ""
   },
@@ -3143,8 +3164,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.860130+00:00",
-    "last_seen_at": "2026-11-24T13:12:16.977496+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:39.158573+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTNXpLSy1OV0FPN2hIWW9PbUVJQVZvem05eFg0eXFWWTA1bGpYZzVKVnNSc1haanlrNnp2Yl9kdHFRSDlFYUZ5T0pnUzQ0WEZhUl8wNkZjRjhYTS1Pbzd3?oc=5"
     ],
@@ -3162,9 +3183,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTNXpLSy1OV0FPN2hIWW9PbUVJQVZvem05eFg0eXFWWTA1bGpYZzVKVnNSc1haanlrNnp2Yl9kdHFRSDlFYUZ5T0pnUzQ0WEZhUl8wNkZjRjhYTS1Pbzd3?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTNXpLSy1OV0FPN2hIWW9PbUVJQVZvem05eFg0eXFWWTA1bGpYZzVKVnNSc1haanlrNnp2Yl9kdHFRSDlFYUZ5T0pnUzQ0WEZhUl8wNkZjRjhYTS1Pbzd3?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Indigenous Knowledge and observations improve Arctic Ocean model skill and relevance - Nature",
     "location": ""
   },
@@ -3177,8 +3198,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.860211+00:00",
-    "last_seen_at": "2026-11-24T13:12:16.977528+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:40.060345+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX05HRGU0ZWN3MEJPWUtsQ2I3NXFDNzdzYV84bWRLdXpCNi1BT3FTVjVfc2ZUUkZKcWd2bl9mbjRzMHBFd1l1cXo5TUNVemhmQWRRR0J2RE9aelpaMWFDNW5ETFJVRHgySTFvTlpXVjM0OGNvbk8yNFZMY3J4UHRRVEJ6T3pOb1pJQm80RHU0aXhjY3R2NDZBS1FjdFFxVEpKNkxPZ0pteFh0S2NPQ0RkY2MxUHlrMkxlRmY3c0xpRE9EOTZZZGc?oc=5"
     ],
@@ -3196,9 +3217,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX05HRGU0ZWN3MEJPWUtsQ2I3NXFDNzdzYV84bWRLdXpCNi1BT3FTVjVfc2ZUUkZKcWd2bl9mbjRzMHBFd1l1cXo5TUNVemhmQWRRR0J2RE9aelpaMWFDNW5ETFJVRHgySTFvTlpXVjM0OGNvbk8yNFZMY3J4UHRRVEJ6T3pOb1pJQm80RHU0aXhjY3R2NDZBS1FjdFFxVEpKNkxPZ0pteFh0S2NPQ0RkY2MxUHlrMkxlRmY3c0xpRE9EOTZZZGc?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX05HRGU0ZWN3MEJPWUtsQ2I3NXFDNzdzYV84bWRLdXpCNi1BT3FTVjVfc2ZUUkZKcWd2bl9mbjRzMHBFd1l1cXo5TUNVemhmQWRRR0J2RE9aelpaMWFDNW5ETFJVRHgySTFvTlpXVjM0OGNvbk8yNFZMY3J4UHRRVEJ6T3pOb1pJQm80RHU0aXhjY3R2NDZBS1FjdFFxVEpKNkxPZ0pteFh0S2NPQ0RkY2MxUHlrMkxlRmY3c0xpRE9EOTZZZGc?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "When the forest speaks: Ogiek Indigenous Knowledge sustaining her - UNESCO",
     "location": ""
   },
@@ -3211,8 +3232,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:21.860281+00:00",
-    "last_seen_at": "2026-11-24T13:12:16.977557+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:40.964948+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMilwFBVV95cUxOX0V1ckJtWVFDUFVDQlV5Mm5IX1p2TXdKa3pxcDhSZzVONWt6LXk0cUxNRHh5QWt5SUthbXhtczYtbm51dTJ2bkdYYWtXTU1raE5Pdk41VFlDcEFoRjYtTnhPdU5DU1RaSEFMc0dfeWs3eDYway1SY2xrMnFZWDNPZlF0b3lJTDV6U0d2U3hVNy1JNFhvUEIw?oc=5"
     ],
@@ -3230,9 +3251,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOX0V1ckJtWVFDUFVDQlV5Mm5IX1p2TXdKa3pxcDhSZzVONWt6LXk0cUxNRHh5QWt5SUthbXhtczYtbm51dTJ2bkdYYWtXTU1raE5Pdk41VFlDcEFoRjYtTnhPdU5DU1RaSEFMc0dfeWs3eDYway1SY2xrMnFZWDNPZlF0b3lJTDV6U0d2U3hVNy1JNFhvUEIw?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOX0V1ckJtWVFDUFVDQlV5Mm5IX1p2TXdKa3pxcDhSZzVONWt6LXk0cUxNRHh5QWt5SUthbXhtczYtbm51dTJ2bkdYYWtXTU1raE5Pdk41VFlDcEFoRjYtTnhPdU5DU1RaSEFMc0dfeWs3eDYway1SY2xrMnFZWDNPZlF0b3lJTDV6U0d2U3hVNy1JNFhvUEIw?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Indigenous practitioners work with UNESCO to revitalize languages - UNESCO",
     "location": ""
   },
@@ -3245,8 +3266,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.251788+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446155+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:47.850883+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWUDd0YmpBWXhkTVFZXzJGTUQ2VTBIUzEyeE5ycFNmT0w4RTJXbk00TnJiWHhtTDd5aGNQNThqb1hWdUdHZEVWTXlkckkyUHB3ZVJhU0NjWWxuWkNjUnAybm55aWw?oc=5"
     ],
@@ -3264,9 +3285,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWUDd0YmpBWXhkTVFZXzJGTUQ2VTBIUzEyeE5ycFNmT0w4RTJXbk00TnJiWHhtTDd5aGNQNThqb1hWdUdHZEVWTXlkckkyUHB3ZVJhU0NjWWxuWkNjUnAybm55aWw?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWUDd0YmpBWXhkTVFZXzJGTUQ2VTBIUzEyeE5ycFNmT0w4RTJXbk00TnJiWHhtTDd5aGNQNThqb1hWdUdHZEVWTXlkckkyUHB3ZVJhU0NjWWxuWkNjUnAybm55aWw?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Green lion dance: Time-honored folk tradition in Jieyang - People's Daily Online",
     "location": ""
   },
@@ -3279,8 +3300,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.251950+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446225+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:49.700760+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbFNUbUFPSDItbWZHVVhyMTl3cmJYMEttSGM1Y3N5U0JCN1FKbkVVZ1AxYmxwbVFjY0xJNi1fdWZRcWJaNVRteTV6S2VEZzNEb2tZQmtzVHdWWVhRXy0wdXp0ZC1sRFQ0ejNueFdlVmo4MklhWDJMWG83MC1UYmFCQzQzY2ZoLVFlVVQzTlNibHpRb1ZKZ0dxQURSTUdDUVRvVF8yTS1hVnVrNDNrTmloXy1QWjRuV2V1X2dsWGN0TjRPY25SV3NxbEY1UzU3cFE0cVVZ?oc=5"
     ],
@@ -3298,9 +3319,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbFNUbUFPSDItbWZHVVhyMTl3cmJYMEttSGM1Y3N5U0JCN1FKbkVVZ1AxYmxwbVFjY0xJNi1fdWZRcWJaNVRteTV6S2VEZzNEb2tZQmtzVHdWWVhRXy0wdXp0ZC1sRFQ0ejNueFdlVmo4MklhWDJMWG83MC1UYmFCQzQzY2ZoLVFlVVQzTlNibHpRb1ZKZ0dxQURSTUdDUVRvVF8yTS1hVnVrNDNrTmloXy1QWjRuV2V1X2dsWGN0TjRPY25SV3NxbEY1UzU3cFE0cVVZ?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbFNUbUFPSDItbWZHVVhyMTl3cmJYMEttSGM1Y3N5U0JCN1FKbkVVZ1AxYmxwbVFjY0xJNi1fdWZRcWJaNVRteTV6S2VEZzNEb2tZQmtzVHdWWVhRXy0wdXp0ZC1sRFQ0ejNueFdlVmo4MklhWDJMWG83MC1UYmFCQzQzY2ZoLVFlVVQzTlNibHpRb1ZKZ0dxQURSTUdDUVRvVF8yTS1hVnVrNDNrTmloXy1QWjRuV2V1X2dsWGN0TjRPY25SV3NxbEY1UzU3cFE0cVVZ?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Viral Chinese Dance Move Turns Out to be Centuries-Old Folk Tradition - www.citynewsservice.cn",
     "location": ""
   },
@@ -3313,8 +3334,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252023+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446252+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:50.601170+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNHRtRGFZTmNkTlpWVFZDRV9BUE5oWVhVRldmSFRSQ3FmaTJ2QzRjMU4yQmFpVVk0RGZyeE1WYmJTVFRPY3A5ZHc3NmdGeWQzbmxrcVRGNHpvN1FEY0MyTUhCeFdmR0wzeWZaLUctU193dnd6dHlmc29KZXl0VEwxT1dTXzlRZHpHRDhpc2tVbVo0ZW8?oc=5"
     ],
@@ -3332,9 +3353,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNHRtRGFZTmNkTlpWVFZDRV9BUE5oWVhVRldmSFRSQ3FmaTJ2QzRjMU4yQmFpVVk0RGZyeE1WYmJTVFRPY3A5ZHc3NmdGeWQzbmxrcVRGNHpvN1FEY0MyTUhCeFdmR0wzeWZaLUctU193dnd6dHlmc29KZXl0VEwxT1dTXzlRZHpHRDhpc2tVbVo0ZW8?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNHRtRGFZTmNkTlpWVFZDRV9BUE5oWVhVRldmSFRSQ3FmaTJ2QzRjMU4yQmFpVVk0RGZyeE1WYmJTVFRPY3A5ZHc3NmdGeWQzbmxrcVRGNHpvN1FEY0MyTUhCeFdmR0wzeWZaLUctU193dnd6dHlmc29KZXl0VEwxT1dTXzlRZHpHRDhpc2tVbVo0ZW8?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Sephardic Musician Lily Henley Keeps Jewish Folk Tradition Alive - Hey Alma",
     "location": ""
   },
@@ -3347,8 +3368,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252087+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446278+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:51.501156+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMk8xOGgyaTZvRTBaTW1PbHRHbHVvSk12NE5jd2tUeDlsME1OZWk5ZXVSWW0wUW9veFVYYmMzaV9qTktaX3dJTU9odlBBUHB5VlhZOWpELW5iOEhTQ1pTWmVISGZHeVl6eFlzT0hxRmhERkliMjBUdjR5ZndYTldWS0NkV3E4TnV2bFZZY0RB?oc=5"
     ],
@@ -3365,9 +3386,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMk8xOGgyaTZvRTBaTW1PbHRHbHVvSk12NE5jd2tUeDlsME1OZWk5ZXVSWW0wUW9veFVYYmMzaV9qTktaX3dJTU9odlBBUHB5VlhZOWpELW5iOEhTQ1pTWmVISGZHeVl6eFlzT0hxRmhERkliMjBUdjR5ZndYTldWS0NkV3E4TnV2bFZZY0RB?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMk8xOGgyaTZvRTBaTW1PbHRHbHVvSk12NE5jd2tUeDlsME1OZWk5ZXVSWW0wUW9veFVYYmMzaV9qTktaX3dJTU9odlBBUHB5VlhZOWpELW5iOEhTQ1pTWmVISGZHeVl6eFlzT0hxRmhERkliMjBUdjR5ZndYTldWS0NkV3E4TnV2bFZZY0RB?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Caroline Shaw Offers Her Own Spin on Folk Tradition - San Francisco Classical Voice",
     "location": ""
   },
@@ -3380,8 +3401,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252157+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446309+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:52.403437+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMmFXVTJnSHcxYk96TlNsdUZicER3aTBWdWpNUUE0MFFFbWk3b2ZJNnVETWlEd1dnbk5CWjh4VzN4dndiNmUwall0OEZDLVdiNmE3bE5xVHJYSUdJV2lUT2JwYUFyRlhEaGprNkFKVUNYVUFvLU54M19vTHhFUmttU0pHZnNaVGhEQW5zSVpTRGVqZ2h1OGE1NWxmQklETi1wOGxubXEyMkNLblJHSFlnT1hn?oc=5"
     ],
@@ -3399,9 +3420,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMmFXVTJnSHcxYk96TlNsdUZicER3aTBWdWpNUUE0MFFFbWk3b2ZJNnVETWlEd1dnbk5CWjh4VzN4dndiNmUwall0OEZDLVdiNmE3bE5xVHJYSUdJV2lUT2JwYUFyRlhEaGprNkFKVUNYVUFvLU54M19vTHhFUmttU0pHZnNaVGhEQW5zSVpTRGVqZ2h1OGE1NWxmQklETi1wOGxubXEyMkNLblJHSFlnT1hn?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMmFXVTJnSHcxYk96TlNsdUZicER3aTBWdWpNUUE0MFFFbWk3b2ZJNnVETWlEd1dnbk5CWjh4VzN4dndiNmUwall0OEZDLVdiNmE3bE5xVHJYSUdJV2lUT2JwYUFyRlhEaGprNkFKVUNYVUFvLU54M19vTHhFUmttU0pHZnNaVGhEQW5zSVpTRGVqZ2h1OGE1NWxmQklETi1wOGxubXEyMkNLblJHSFlnT1hn?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Vice President releases book on Bhawaiya Folk Tradition, stresses cultural preservation - DD News",
     "location": ""
   },
@@ -3414,8 +3435,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252232+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446341+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:53.312907+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9yV3BWQm90ZU5uYmVTUDFfREF6dUk3emZ4cFFMVVA1QXNRczZkOHlFcUx0cW9ITE9ENV9fVnZieGFBaGV3aGlvNlEzWmVDbHpNaDBnX29qMGlmQXpa?oc=5"
     ],
@@ -3432,9 +3453,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9yV3BWQm90ZU5uYmVTUDFfREF6dUk3emZ4cFFMVVA1QXNRczZkOHlFcUx0cW9ITE9ENV9fVnZieGFBaGV3aGlvNlEzWmVDbHpNaDBnX29qMGlmQXpa?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9yV3BWQm90ZU5uYmVTUDFfREF6dUk3emZ4cFFMVVA1QXNRczZkOHlFcUx0cW9ITE9ENV9fVnZieGFBaGV3aGlvNlEzWmVDbHpNaDBnX29qMGlmQXpa?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Wassailing: The folk tradition enjoying a revival - BBC",
     "location": ""
   },
@@ -3447,8 +3468,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252294+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446366+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:54.215465+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMid0FVX3lxTE15TUJ4MzMzREFBYVJZcWdyOHVLZDM2X01vVGVidVdZM29pdTBYRmVERDlUWGpUa0lfblNKblZ3cC1tWjhqdUVOVHZnTjBVNzFZNk1mbTVWZWJ4eTFMV3VjTDZ1dklrMWF0TTVhM09uQmpHZDN5YkhJ?oc=5"
     ],
@@ -3465,9 +3486,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE15TUJ4MzMzREFBYVJZcWdyOHVLZDM2X01vVGVidVdZM29pdTBYRmVERDlUWGpUa0lfblNKblZ3cC1tWjhqdUVOVHZnTjBVNzFZNk1mbTVWZWJ4eTFMV3VjTDZ1dklrMWF0TTVhM09uQmpHZDN5YkhJ?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE15TUJ4MzMzREFBYVJZcWdyOHVLZDM2X01vVGVidVdZM29pdTBYRmVERDlUWGpUa0lfblNKblZ3cC1tWjhqdUVOVHZnTjBVNzFZNk1mbTVWZWJ4eTFMV3VjTDZ1dklrMWF0TTVhM09uQmpHZDN5YkhJ?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Pandavani Folk Tradition: History, Styles & Features - INSIGHTS IAS",
     "location": ""
   },
@@ -3480,8 +3501,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252361+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446393+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:55.128412+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ2pCdW84QmlBblI3MC1mQkljZ1NVdzNSWmZ3dE9HYzQ4UURVYzVxc0FMaDY3ZTRrS0pXd2FHXzB0aXFzdkxMeTB0UEhRT1IwcktVM0ppckhTbl9nRmlsVVVGWkUxcmFndmx5MHpZUm9jMUNvaTVvT3NNQUpSN1dKY0Y1a2ZybXY5MDNaeDVtNy1HbDBfek5jY3NCbmVRSmdVR3NkYm9iOUJFLTg?oc=5"
     ],
@@ -3498,9 +3519,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ2pCdW84QmlBblI3MC1mQkljZ1NVdzNSWmZ3dE9HYzQ4UURVYzVxc0FMaDY3ZTRrS0pXd2FHXzB0aXFzdkxMeTB0UEhRT1IwcktVM0ppckhTbl9nRmlsVVVGWkUxcmFndmx5MHpZUm9jMUNvaTVvT3NNQUpSN1dKY0Y1a2ZybXY5MDNaeDVtNy1HbDBfek5jY3NCbmVRSmdVR3NkYm9iOUJFLTg?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ2pCdW84QmlBblI3MC1mQkljZ1NVdzNSWmZ3dE9HYzQ4UURVYzVxc0FMaDY3ZTRrS0pXd2FHXzB0aXFzdkxMeTB0UEhRT1IwcktVM0ppckhTbl9nRmlsVVVGWkUxcmFndmx5MHpZUm9jMUNvaTVvT3NNQUpSN1dKY0Y1a2ZybXY5MDNaeDVtNy1HbDBfek5jY3NCbmVRSmdVR3NkYm9iOUJFLTg?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Badieh Keep a Dazzling Iranian Folk Tradition Alive on \"Yar Golakom\" - Everything Is Noise",
     "location": ""
   },
@@ -3513,8 +3534,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252433+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446425+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:56.946243+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRGJtRGUxOFJCbnZCNEtET05PVTlDZmw5Sm9FVEVET1BHaUpybXBpRmQ3UE1Vb0RuMGlFZHF2UnJHM2VGYVctTzJwZVIxTDRYX3NKQks4ZkJnWE0wd0M2RUgxR3dOaXRodVBTdFRZNkVFRm9vTXFINjlFWk0yTjNLQ0Nac1BEMXlhWTJpalAzVGZDNnFRUGRR?oc=5"
     ],
@@ -3531,9 +3552,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRGJtRGUxOFJCbnZCNEtET05PVTlDZmw5Sm9FVEVET1BHaUpybXBpRmQ3UE1Vb0RuMGlFZHF2UnJHM2VGYVctTzJwZVIxTDRYX3NKQks4ZkJnWE0wd0M2RUgxR3dOaXRodVBTdFRZNkVFRm9vTXFINjlFWk0yTjNLQ0Nac1BEMXlhWTJpalAzVGZDNnFRUGRR?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRGJtRGUxOFJCbnZCNEtET05PVTlDZmw5Sm9FVEVET1BHaUpybXBpRmQ3UE1Vb0RuMGlFZHF2UnJHM2VGYVctTzJwZVIxTDRYX3NKQks4ZkJnWE0wd0M2RUgxR3dOaXRodVBTdFRZNkVFRm9vTXFINjlFWk0yTjNLQ0Nac1BEMXlhWTJpalAzVGZDNnFRUGRR?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Paper cuttings for Shavuos — a Jewish folk tradition - The Forward",
     "location": ""
   },
@@ -3546,8 +3567,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252508+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446455+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:56.050519+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaG1fd1Zwc2RtNnFlUXA5VVUtbmhJc1FtS3FmQlYzV2FmRHN4R21zRm9kUVlPd2xjYnFFYlpzQWJ6SjlDNDBkdGtPYTZWaXZqVG8wVlRyNldXU0wzSGdwaVVlVVAyU2xZMXlUTXVHU1Uzek5DWks5X1RvRGJ3NXc5YWVxTlZxNkp1cTljVGF5Q3ZtblRqVlhYVzFYR25KOXNSd1h5R2JXNUdjWkRYeVE?oc=5"
     ],
@@ -3563,9 +3584,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaG1fd1Zwc2RtNnFlUXA5VVUtbmhJc1FtS3FmQlYzV2FmRHN4R21zRm9kUVlPd2xjYnFFYlpzQWJ6SjlDNDBkdGtPYTZWaXZqVG8wVlRyNldXU0wzSGdwaVVlVVAyU2xZMXlUTXVHU1Uzek5DWks5X1RvRGJ3NXc5YWVxTlZxNkp1cTljVGF5Q3ZtblRqVlhYVzFYR25KOXNSd1h5R2JXNUdjWkRYeVE?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaG1fd1Zwc2RtNnFlUXA5VVUtbmhJc1FtS3FmQlYzV2FmRHN4R21zRm9kUVlPd2xjYnFFYlpzQWJ6SjlDNDBkdGtPYTZWaXZqVG8wVlRyNldXU0wzSGdwaVVlVVAyU2xZMXlUTXVHU1Uzek5DWks5X1RvRGJ3NXc5YWVxTlZxNkp1cTljVGF5Q3ZtblRqVlhYVzFYR25KOXNSd1h5R2JXNUdjWkRYeVE?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "King Charles Shares Message of “Great Sadness” as He Misses Traditional Ritual - Vanity Fair",
     "location": ""
   },
@@ -3611,8 +3632,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252665+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446519+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:57.922255+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYUt4THVjRWs3VXlBVnR4TUkwM3RzLUpQU3JYMjdkQURqazhLcUhlcUlYcDBNbWEzemgzc2FZZUhQdlFpWmlIMzZsNFVxUzAxaXN4bkJVLWVxM1pxTGpEbHlfQmdaTVc3a2VadTQ3ZGg2am9wLXZyR0pZU0dKaEVwMlJJTHZiU1BaenhB?oc=5"
     ],
@@ -3629,9 +3650,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYUt4THVjRWs3VXlBVnR4TUkwM3RzLUpQU3JYMjdkQURqazhLcUhlcUlYcDBNbWEzemgzc2FZZUhQdlFpWmlIMzZsNFVxUzAxaXN4bkJVLWVxM1pxTGpEbHlfQmdaTVc3a2VadTQ3ZGg2am9wLXZyR0pZU0dKaEVwMlJJTHZiU1BaenhB?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYUt4THVjRWs3VXlBVnR4TUkwM3RzLUpQU3JYMjdkQURqazhLcUhlcUlYcDBNbWEzemgzc2FZZUhQdlFpWmlIMzZsNFVxUzAxaXN4bkJVLWVxM1pxTGpEbHlfQmdaTVc3a2VadTQ3ZGg2am9wLXZyR0pZU0dKaEVwMlJJTHZiU1BaenhB?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "TmbaTa Orchestra electrify Armenian folk tradition - Chicago Reader",
     "location": ""
   },
@@ -3644,8 +3665,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252733+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446547+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:58.850832+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMieEFVX3lxTE44TVJpb1dKUHVaNERlN0J3TC10OHhncFRUV0JzZVZXVm84Q3lNZ1JoaXhsMkNqVHIxYW1TTUJXSWh2eGpxUTlKOVRLOXVBaG9EcHpJWUtMX3JYYWYtOHA5a1JEckR4ejJrb1E3d0ZMQ09oVTZuaE5GLQ?oc=5"
     ],
@@ -3661,9 +3682,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE44TVJpb1dKUHVaNERlN0J3TC10OHhncFRUV0JzZVZXVm84Q3lNZ1JoaXhsMkNqVHIxYW1TTUJXSWh2eGpxUTlKOVRLOXVBaG9EcHpJWUtMX3JYYWYtOHA5a1JEckR4ejJrb1E3d0ZMQ09oVTZuaE5GLQ?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE44TVJpb1dKUHVaNERlN0J3TC10OHhncFRUV0JzZVZXVm84Q3lNZ1JoaXhsMkNqVHIxYW1TTUJXSWh2eGpxUTlKOVRLOXVBaG9EcHpJWUtMX3JYYWYtOHA5a1JEckR4ejJrb1E3d0ZMQ09oVTZuaE5GLQ?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Traditional ritual before first full moon of lunar year - Korea.net",
     "location": ""
   },
@@ -3676,8 +3697,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:23.252800+00:00",
-    "last_seen_at": "2026-11-24T13:12:18.446575+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:22:59.764274+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYWotOWtXV1BadXZWVU9VYW1CeHNOU1JVNUJKVDY3STQ0b29rLUg4VVEzQ2VQek1haThWQlBBOGZkVWJwQ1JLTmNHYlhrR0dvbWFjSjJ0d1F4RmlWWm15Z203NWxJVkd3M1Q5RU56QkdQSEt2YVYyU3RqUEI1UjVaVTRYMHhkWXVWemM0aFRhbTlZQ3VjcnZjSTJ2QVV2MlhvTmduNDdn0gGrAUFVX3lxTE9lelRocmJ6dGgzNWZnM1MyTjJOd1hQOEszNzljLWFEZ3UzYzl6M0t1eTlQaXlLakFBN0RFT3NyMnZLOTdwdHc3bmVzQnoxd0hQMHVKcDBUaGJ1RGhNNHZQWGlZVkk1R2txSDhYUGFLVEdBNkNrVHoyWHlydWNIRkpyWUtTVVFjRVRYdjF3OEs4TUFpRWgtM1IyeFRuY0VtVk5IU3huRDk5bzI2Yw?oc=5"
     ],
@@ -3693,9 +3714,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYWotOWtXV1BadXZWVU9VYW1CeHNOU1JVNUJKVDY3STQ0b29rLUg4VVEzQ2VQek1haThWQlBBOGZkVWJwQ1JLTmNHYlhrR0dvbWFjSjJ0d1F4RmlWWm15Z203NWxJVkd3M1Q5RU56QkdQSEt2YVYyU3RqUEI1UjVaVTRYMHhkWXVWemM0aFRhbTlZQ3VjcnZjSTJ2QVV2MlhvTmduNDdn0gGrAUFVX3lxTE9lelRocmJ6dGgzNWZnM1MyTjJOd1hQOEszNzljLWFEZ3UzYzl6M0t1eTlQaXlLakFBN0RFT3NyMnZLOTdwdHc3bmVzQnoxd0hQMHVKcDBUaGJ1RGhNNHZQWGlZVkk1R2txSDhYUGFLVEdBNkNrVHoyWHlydWNIRkpyWUtTVVFjRVRYdjF3OEs4TUFpRWgtM1IyeFRuY0VtVk5IU3huRDk5bzI2Yw?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYWotOWtXV1BadXZWVU9VYW1CeHNOU1JVNUJKVDY3STQ0b29rLUg4VVEzQ2VQek1haThWQlBBOGZkVWJwQ1JLTmNHYlhrR0dvbWFjSjJ0d1F4RmlWWm15Z203NWxJVkd3M1Q5RU56QkdQSEt2YVYyU3RqUEI1UjVaVTRYMHhkWXVWemM0aFRhbTlZQ3VjcnZjSTJ2QVV2MlhvTmduNDdn0gGrAUFVX3lxTE9lelRocmJ6dGgzNWZnM1MyTjJOd1hQOEszNzljLWFEZ3UzYzl6M0t1eTlQaXlLakFBN0RFT3NyMnZLOTdwdHc3bmVzQnoxd0hQMHVKcDBUaGJ1RGhNNHZQWGlZVkk1R2txSDhYUGFLVEdBNkNrVHoyWHlydWNIRkpyWUtTVVFjRVRYdjF3OEs4TUFpRWgtM1IyeFRuY0VtVk5IU3huRDk5bzI2Yw?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Mexican mayor happily marries female reptile in traditional ritual | Daily Sabah - Daily Sabah",
     "location": ""
   },
@@ -3708,8 +3729,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:24.443562+00:00",
-    "last_seen_at": "2026-11-24T13:12:19.665316+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:04.601930+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbXV1U1R4cVBfY01OQ2JFYWxNd3J4LUNTR2w1bU0zNk9fX1FNTVNQZXBDbUVaVnVRQVpoZTZIc2p6YTkySWdKR1lGLVZudHRFZ0gxVjZsQVYzYkZ6Wmw0RE1LajNoZmw1NkpRV2lub0djb2N1dWVNMXU0NE1rSXY0V0padkZTaDRDVDJ0TFNyYzJzdUdPcDlGdlR0N1NOTFE2RVc0?oc=5"
     ],
@@ -3739,8 +3760,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:24.443659+00:00",
-    "last_seen_at": "2026-11-24T13:12:19.665354+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:04.602086+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMieEFVX3lxTE84LTJUb3BuUGRpTjhZWHM3dTBZTm9kdEdTaUQtblhqcTZOZ2F3QmFtQ1RMQVZPRHd5a3p2bHF3Z3llNzg2N1owTnZXWUZTZVdlY210RnF5ajVMc1BPTjBfSGY5MU14aEhsUmtxZEJzNm5wSHpDdVB1WdIBfkFVX3lxTE51TFJrMnBLNDU1N0hONDNOTVRQdW83emk5MXlLV09NMDhXUEE5U0F2U3RXZVh4bWxDQzJBeEZXdG5kcDAyVXdJV0RGUm81WDJlTmdRbGRIbkczS1EwZENBOUVHWXFnVXNSVHVMaFFfZzUyVk9nYllQTDdGRWl3UQ?oc=5"
     ],
@@ -3770,8 +3791,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:24.443724+00:00",
-    "last_seen_at": "2026-11-24T13:12:19.665380+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:04.602151+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMif0FVX3lxTFByS2xmTnBUOENNeFhRRDFVMzlQMFk0bHRFVXVoajV5RDg0WGpxX2NsQnZJazhodWUyRXJhQW9TMjNiZXY3bDRyam5VNWhCLUd6dkM1OXZJTXNYa0UwakJ4blRzcDVtcm8zcDZETktGRENNbHZnaF9MX1JfUnRBVE0?oc=5"
     ],
@@ -3799,8 +3820,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:24.443987+00:00",
-    "last_seen_at": "2026-11-24T13:12:19.665473+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:04.602359+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYXFMVllaRUNEaFRyRGFDOXd1ZnotdGlBZU1xcVNrTENodmxFQjI2cWlsanc5N1BLY3N5UEt4bXRRQVBEbzRHM0xDcDZleThXcjZxTWxScXVsb1hSaXprQ1ZOYW84LXl2eHpBMnhYeUlBaVpFTkE5X0ZOS0UzS2NqT1BJTXB2d3V1Y1ZsTjFPcEZmMDRhSV9lc0sxX2dxam16MGJ3?oc=5"
     ],
@@ -3828,8 +3849,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:24.444059+00:00",
-    "last_seen_at": "2026-11-24T13:12:19.665502+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:04.602417+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMie0FVX3lxTFBoS3JsMDhoVmRQODZycnA2alo1cktiUThNc0FtSWRXdUZ4d1BTWWVfbC1BNjlOVlhkVEV6bDlwUGdodnBqVTFkdXVIQmpkVzZRX2xiVHh6ZEFpeVZ0OTJMSDhITHcyd0txMlgyU0EtejFxaFdZMjVrZXJnOA?oc=5"
     ],
@@ -3859,8 +3880,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.750298+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.974925+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.885570+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMib0FVX3lxTE8yOTQ2OHVzSDlDaG4yN2NXWkJQTGltZ2xVR2FNNW9FV2JPZ0JPcE5vQjhhb2lkQkJlSGR1N1NaX3E3TjZfTjRCMW54SDhiR2szYjAxUThMdFo1enVOdGdBRkNaNXhDRDI0N3UtUFNaNA?oc=5"
     ],
@@ -3892,8 +3913,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.750416+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.974987+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.885646+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMimgFBVV95cUxQS2F6LWVRdHV6ajhWanVwRktKT01ibXBWLUNhNS0zOEY1SGl6YW1rMVdZX0tWTzc2UnNLZ2JkNHJPdnJVazJhZ2ZrUWk3TU1iVko5Vk1qT0swM2VRSHVGa09jdllJM2lzdi1jRGxQem5BN0hveWpVTUxjQzVibU5aLTNfRl90Si1QVW9CbElQTF9NYWQxWWtCV2RB?oc=5"
     ],
@@ -3925,8 +3946,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.750513+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975033+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.885710+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWnM1VnhyVGljZFE2MzJWMkhralA2eHdJSEJETWpFMjhpdENzdl9yYWx4aTRQaUNRN25FVWJWWWxfM2dDaTNnWXdQdldYd1BtaHEySmloOGxsWWpQOXFsb1FVQjdsTGc4TnVYZ292SkFNYTVBeXd2bW5QcXBOSVQyTjQwTWJNbjdmZ1RQalN0Q2FQVHlVR2RNekJyN01aZGdPTVZYVzhOZ2ZUQzdDX2F6X3dSNXpuYVE?oc=5"
     ],
@@ -3957,8 +3978,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.750592+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975070+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.885765+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuQUhTYUtZaFZxTjJiMXVSeHM3SG9KdWN3QnVwRlhRY1V4dmVCTmNaUEtKN293RmFEMzlvaHZIZU9LeU5lWXpodXlOUjVvZUU1UnZDNG04NEJ0dGUx?oc=5"
     ],
@@ -3990,8 +4011,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.750776+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975177+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.885902+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNaTM0XzlZc3p1ZFNVSDNORXdIYnhRNXdHZmUwamd5d2V5OUM0NVk3cWtjTVRUc3J6VVNLT1hTR0h6RlpvSHpUMUJmQ1prcndZX1djNXBrMFlodVFDVVBUNUJyS3U5SlpQVlpScEZodVNGMWVUTi1nZFMzblAwQ0oyX3VwMmJoYThuV0tOYU85SEZjVTF0OEQxNUVic1pocTNyb0F5UVlsM2ljSi0yRUZOZDc4dGdJblFyb1Y3UXh3M1h2TTNVaVpEaWQ4ZWI4bEtyeTc5WWd30gHbAUFVX3lxTE1LZ25oYzQydkQyWUI4WThNOEUtVW16N0x6ekZJbl9zMm5uZ2ZnbVBqM1gtb1c3dzRtV3VjSFVNY29KZ1BqLU42Y1VINnJIc19iUDJxX3hHR2pQWC1Pb0lmSy1QbGZYeENveFpJTWZ5UXdTeVI1cExRVW5jSWNOcjZfN2N1TzNfVnFuSHp2WXl6SHAxcFdXWnN0TXNpaEpCNzVFWDhHYUpVQjlVd0RLMVhCYmp5am1keUZVMGpfZy1PbC12SnM5U1JzYzdJc2ZDajU5dUxvODdjLV9aSQ?oc=5"
     ],
@@ -4152,8 +4173,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.751195+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975217+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.885964+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQalI1ZGZrZkRsVGdLeE5JdmREaFZCOV9IOE5RRGlEOEFGVVZYMGJVQnVkbTF1Y09OZzB0c0gwaVZabTJGd1o3bk8zZGZqTHNVa2NGaWFYYVdRY0VKZlZ4aGVsUDcza1hza1o5SW9VOWFWbDE3TlRQYm5JTEFaUFBwSk9ETDh2cWZVbUpET0NZWGRoUmlZVHpQZ1Mwa0xYY2lOckZLRmdKaG9oMDE3TVBDV243ckFfTjNS?oc=5"
     ],
@@ -4184,8 +4205,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.751291+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975261+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.886028+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZ1FWZHUyZzF4RWljT3JFZFg5cW1MN1RUV0wybXQxcUxob0ZhZXRUajhaZWN0UHRjUlN6ekJFX1BlU0tWWmlua0lOSzJDeFBhbFlOTVZ3dkJGaVNLREJDaEtlMloxMFF2WENIdjNCSE5jZHBoM0xSMU1qVGlkSFZmZ3JNRGZvR1NmdENtOXRnWXJicGM?oc=5"
     ],
@@ -4217,8 +4238,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.751387+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975303+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.886108+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMib0FVX3lxTE9GZ1d1aWpwdnFucXNOeHhrOWd1QTdMbF9TSmpXMmxLM2xETnhYRUJjUUJCU01XUUNrYmpMNzdOR1RXc0tVUndhdzlkZ1k1VVU2ZVRycXZQMTR5QmdLMUtIalRIb3hJVmJ5emgxZExtWQ?oc=5"
     ],
@@ -4282,8 +4303,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.751549+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975334+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.886165+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMijgJBVV95cUxNYTJUMDN2VWV2Ym0xeTRyRlA0bmZmR1owenY0eVRIVFRYaXppUkItMlNtU0YxZWdfR1pvR3FJVktSb1RoN0lUdXkyVUFYMXhmUE5BOVV0UTNuWFZXZWNWY2ZnODVIZmlIQlFzTEJTc2VFNzN1WXEyZi10WnYxX1JrcVFfWHlDTkVvbnRSWFhDalptZUFHMnhYRVBkUUVvV1lJSHBrdDRQZ19PUnBsaV8xSTVBMVFRLXM5VklyVzVKcWFaTTkzSHVCbFpENXV6TVZXNFcybGtCaHlVaU9ZRkJnOTd2aUhTT2Y1dDJSTWFJLWZHZ2Z2TWV5VFozbW9NczZvcTZSREt0M3FIZFQ5cnc?oc=5"
     ],
@@ -4315,8 +4336,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.751618+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975364+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.886209+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VN0daRXpTckQzOUVjQkNxeXN3cnE2WGwwWC0zTjNqdDNuX0ltdXBiM2YtQmI1QmExUnctQVR0eHZEc2dwcFhLeFQtY1dGcHFKcDlTOEFIQkRIUDJTTWh5OTFodFBPUQ?oc=5"
     ],
@@ -4347,8 +4368,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:25.751685+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975401+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:05.886254+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdkZuWm4wc09jbUNONFNHNTZMOXZ5bTlJN1dGYkNNbVBBVmhpX2VtRDF3eVZUSzJ3YVp1eDljVjhGQnFJRkpLRUNLelotNEYxZ3dTb1QzdTJuei12SHhiNUhabUY0WFhtdDJLR0NiVmgyMW53OTdpc3RvV3FETFlsVDRQMXl5blFlWHVPcWJKY3VGZFg1d1lKdTBsLS1adC10dGYzb1dVQQ?oc=5"
     ],
@@ -4412,8 +4433,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.101415+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.101415+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.289203+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNZWZ0RWRwY011RFZqSUMxcUMwVWREcEY0NHNyS1JYcHhWTnRNOUNrZ1B5SGRvZEVSa1RYa2ZLaHhLU2J5dE9KUy04STl5a0hONGxibW5vX3J2WmtuV0xNV0hQM2RSbkpvem5DVUlPbEJPUUg2d0NLN2w4dHVMUVBoUWxnZ2R4UEIzV3ZLYWJiSWpwZC1GTzQ5ZkQ3RmpHZHRhVVk5cV9hYlBDMkh3Q05XeVNrVEgtM3RZTW14WHBiRjJMNnFzTzV4MTZmM0VxN3dqaE1UeFNaN2h3emx4LUxHbFNkOGhfaWtYMGNSRg?oc=5"
     ],
@@ -4445,8 +4466,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.101534+00:00",
-    "last_seen_at": "2026-11-24T13:12:22.258158+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:07.289290+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVks3T0pRa2E0NTUtWVBldWx5VmotMXlzMXJBZ1VndlhLdE5odTB0STdxY3RvSzFaWTJoOVJnendleWFPcjFBaWNNYWpMdENoT0t1WFJadGRxaldJWGd5SkY2cF9PNEVxN0c5YWJDbFF1VTBld1VfT09keDM1OXpOeklXNnRjSXUyMUQ2OS05X3JzdTNGbWdBX2pvOFRfQ2htWTVKWQ?oc=5"
     ],
@@ -4479,8 +4500,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.101614+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.101614+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.289345+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZ2IwUmduRHdOTUdWRXUyNXVla3JQS3VXWENoZE9PaXFOTTJER25JMGRBeUdscDhwMWlmVWZZWWY2T1dOLUNkbDJWTFB2eEpRWThwal9lMzhNcjlYWDFOUmJNN09RLXhfd1FaRU04SXZjeDNnano4MEV3MXM1UnBDTGNicGZzY1R3U05nVzdhRXRYblY2QUoxUFdJUDZ2UW8zSW95RWxVaHpyRWpFYnBtSWRYMEJPcGg1QUZfOGotRWYwaXVSRHVZQ3Byc0pTUERJYllzMUJ3?oc=5"
     ],
@@ -4512,8 +4533,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.101699+00:00",
-    "last_seen_at": "2026-11-24T13:12:22.258223+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:07.289411+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUkVDMUJlR25VV3NMcWs4Y3NiMTFEaGVoV3hVOFdXYUhLaHlJRGE4QjBSMktlWV9lamxqQ0hxNnBhZHp0cFFfWjl5RjhXTVVPNTRpV0xWbTc1Mk16bjNHdG9jNXIxYUdRVS05MzZ1eFlFNmF0V2hmZ0Z0ZHZzVm5NVEhfUW9lRU0wVkdKbmgtYVByQkJmbEE?oc=5"
     ],
@@ -4545,8 +4566,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.101776+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.101776+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.289457+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMVFWRkVwWDZObGt2S3g2cHBaRTNuLXNJdHhGYkZSUjJfeVlCVWdvMzdIbGZjOUxwTW45RU5xSXZjMHJIZG5sYVoyeURPM0FvUHR5MFd1WTRxY2lMYWxXVUhoQ0FKXzBPMDBoTklUNGc1ZHVfX1FhMHlrX3BaYXRSVVljRzZDUGdKaC1XUzBxaG5kYnBJVmtNRGVRWE1PckNLUjJjOE41X04xQzNWZk9pZlBTTFl3WFNTdEsyZENIdWxGN0hlZlE?oc=5"
     ],
@@ -4578,8 +4599,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.101878+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.101878+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.289514+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMic0FVX3lxTFB4TlkxMGE3QzBJcUh3T0lPSlN5aXhoMTA3bENJcnVzSXNqSjB1RjMzdzNUUkdTdTdhYzNFa2g2OXB3V1E0aHB4Y1cxbU9LUXM0Ui0zdWNpVE13N0pmOE43RndFbGk1elpjMFlhdEdLWldTYzA?oc=5"
     ],
@@ -4612,8 +4633,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.101944+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.101944+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.289556+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Ydy1oSFlOZkRfSUFWd0gzOWtfUFFicklnQjdrOVRKOFg5SEdKSVhCNmRkSjQ3QXJYX2tlaFFwR2c5eF93WGVMNkZIQ3NQeG05bldsNVRuelVFYTFZWGlPVHE0NnNUX1QzSTl3TXptdUV5Q1phZHc?oc=5"
     ],
@@ -4644,8 +4665,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102009+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.102009+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.289599+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTkhJaEFaZzZMWHRMT1psVWpveFdPQjhsSUdsUVJmYjAwMWhiYjFKS0FxWkJzTTUtY2tfZ3BKSGNib3JnaXFydmRVWmFRQnRlaTg4aDIzRlRfS2FtOU13SHRka1Y1d0NzNkhfRGM2X2RjNG0weG5oN091eEFpcy1vdTA4RXp5WENRTUF0MVllbF9GTGRfYVc1VVZDSXlKWEo1Qml5OW53MlRuMklTV1Vwb29PcjZhQ1d3Wmc?oc=5"
     ],
@@ -4673,8 +4694,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102090+00:00",
-    "last_seen_at": "2026-11-24T13:12:22.258258+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:07.289656+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUWpYb0FMUF9pbGFqR1kxRlF2Y1VMdGRwbklFZzI0Z092LUE4T19WTkNYbEZOWnRncUtDTk1Fb3FZQkREQkxaRGxWRnktRi1vRzBEVlJnRkJHUlp0QjFkbENxNW5vbmFLUTEyVWtGVk9OOU01a004TDZkejcwLUhwQU1lc1p6Q1F1bW9ZQXpwY3RMUndFRjlKdFB4Q0F6Wm8zeXIxeFNR?oc=5"
     ],
@@ -4706,8 +4727,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102160+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.102160+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.289703+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMihgJBVV95cUxQT3JUN2RyeERIOG5nZTBmd2NTeEd6RmNTZGdUenNITkFXYzNxQzk3dEt4VkhxejNCZVdxLWszRDc4cEJmOE50UGJxWVRBYVY5RUNoSkJZU2dFWktZWEhVSXJVOWFMemI4QzNVWHBpVXpNY1prN0ROX2hxWEltaGFyMkZXWmdNb1k4Y1FiZlctTkpOU3BWaGQwYW0yR1VNMl8yY0dHS1cyUVNHUmhvZ19BcUIyMFNoMHNuNzFIRDEwc2FxRlpKUE9oVDdXN0l1bWVXTHl0SUctUjU1V09fN3ExZXZuTzJRTTk3WlQ2WjhwckIxbzFjY0EwOWl6SlZJeW5IZldUblp3?oc=5"
     ],
@@ -4738,8 +4759,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102254+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.102254+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.289765+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMieEFVX3lxTE5mRDZzRWdWR0ZWTndMXzh3aEpabFFrUDJBSU5fTm1Sa0dwbDlhNEZtQ3BuODdMeDV3WDJuT0I5ejVncW1MTkpTQ0ZuYmZ3aUxNLUd4cGtjTXV1dFdINEVrVDZtMEVoamJxZjBoRnM0d05sN2VrQXg0Uw?oc=5"
     ],
@@ -4767,8 +4788,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102317+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.102317+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.289808+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNWZKb2NpMVJlMUM0bnhYMVIwRkkzQXNUM2wzNzBmNWNOZFFNd0xSSUVlUlNIckxXNW1vUmFqajUwZTg3cjY3eTRXN0Jua044MW9JdkROd2d5UW4xU0JsYkhKNVJSOTJnc3QtcmdnYkkwYldEWm4xYXpxUWp4UW1RcUJVSnVickFscktXaXBqeEN4Rl9UTk1aVGpwV3EyOFFHZGVqX0IyVWZBUWhRWWQtMlg5akpaRW9Gc3NBQWxUdk9rUVh0WXVERGdCdXNUSFNTUTYwb0d0WXVZNlZvZ0lNald3?oc=5"
     ],
@@ -4796,8 +4817,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102396+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.102396+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.289862+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNDNDYlQ4dnYwRU1Ba1Y3YlZhQ3RzQ0M1c3VGeUNTZ1hiZmljcHV6XzNMenVpX0JjbGxiZ21Lam1nbWdqRmRIVm9iTVZFcmdqczkwX0VaR0ZGRXNGNWFyQUpralR2MnhLM3lrWGtsSWJYMkJJc05CY3BKVzhONmhvYzExZDFYRHhn?oc=5"
     ],
@@ -4825,8 +4846,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102459+00:00",
-    "last_seen_at": "2026-11-24T13:12:22.258291+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:07.289902+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTnM1aUh4RFl6aHV3MmtvSmFrcjc1UEU5Z1N1R3Bfc1dzajNrS3ZOZ0F3OTMxRWRPUDJ6a1kydkRfUksycVYyZFdGOXBNRGtlcGhSQ2FHMWxBeTdqbnNIcWFRcWI1a2Y1T3lvNDh6LUhvN2lBbmNmZnR0NTdCWUoyQkp3R3FFMWNGZUNYRTBhM29pMHRtT3hBMTI3eU0xWnBKX3pDM3YyWFZaaEtFazZoNUp2OA?oc=5"
     ],
@@ -4858,8 +4879,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102527+00:00",
-    "last_seen_at": "2026-11-24T13:12:22.258326+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:07.289949+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVTRxdG5mVS1yLXl0Um5hdll3U0gxY0NGcGNPNWZrSlBTcDM2Zm8yRUh5M05qbUFxT01ELXZzenhYQlREV195S0QycERHRTFMUUJMaExCY0tSNV9UTDl0TmZ4OEUySGJCY3Z6VTZ3Y3RTVXRURVBBRk1JUTBjYS1yM0dpN3NOMXdoVndITQ?oc=5"
     ],
@@ -4892,8 +4913,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102593+00:00",
-    "last_seen_at": "2026-11-24T13:12:22.258356+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:07.289993+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQjNlNlp0cEt2dWQzblk5WE9pYmhYejN0eVR5V3BheUMwOWgydW95RUZXa2tOQVBKVDdSMmhoUFZFVkpQWWE5VVE1LUl4ZTN2amY1bGo0LWhkX3JrWmRQMEJ6WUhmUFM0cU94WGdRT0hMU0oyby1UYVRXWFZ5RW9KRXpnZDBiLW1ubHFNRnVvb25sRkFidEFxOGZYbTZXX2RRVERUeA?oc=5"
     ],
@@ -4925,8 +4946,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102665+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.102665+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.290054+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTVhYNTB2dGhEb2cySXdsZFlzSkxfbGx2WDF6OVdTU29xMWhGS2pWLWxFNFQtdWliNWhEczNTTXpmeldSTzNZOVR0b3ZLelFiaWw2MlVkWDIzVHFSdEl4bGtVOFNzWmxtMk42UUR6b0tTbGltMUFlbDFiZzRnWkZ0UE41MHhvNE5IYl9UWDE4aw?oc=5"
     ],
@@ -4954,8 +4975,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102741+00:00",
-    "last_seen_at": "2026-11-24T13:12:22.258508+00:00",
-    "seen_count": 2,
+    "last_seen_at": "2026-11-24T15:23:07.290109+00:00",
+    "seen_count": 3,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaVZXdmRuc3hNWGUwakhERTgyVmxpN2wzdEhEYmt4eG9zeWI2NVdodkFBcExkeUM1aThWZjJGZjNhenE5SmlzMENjZEQ2Wk93VG5UanN1UlV0YWtqSjN1Qm1lQVRwRFoyME9lbjRIX2EyS09DU3Y4Vm9RdC1vX0VlZzVZNlBYV3FjM29Tdk04cGZtWldGSXBwcEdMT2U0bHJWZ1BHazBkdjFoWjlfcnVJblFIcmtwZjVRS2hQcHZqUEY?oc=5"
     ],
@@ -4985,8 +5006,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102832+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.102832+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.290159+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVGRpRTd3aXl4OVNmUW1PYWE5TFg3Z1BaV2ZUaDA1ZUMxUEZ4UjVkLXY4QTFEaUxnWHdNNXo1ZjIwelh4LTVadHVpbTJmOUpjblJqWHUwNWhpdFhnOGttNW1NSHA5Nkk5cEhfYTNadm1uTXRtMFRqWTAwWXFPenI2Y0JWTnBMOUFQM1pwLW5VUG1RdGlHdlVzS1lWOGtTVWd0ejhQVEpOSkxJVENX?oc=5"
     ],
@@ -5014,8 +5035,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T12:54:27.102910+00:00",
-    "last_seen_at": "2026-11-24T12:54:27.102910+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:07.290213+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBnNzFKTFdwTTdob2RVZ2VoeU53UUZOYW5xU2hBV2pTdWxqVDNIVDNhcm1iczlsa0tWclBVS0Y4ZFcxc1J4VHhVdUpHdHY1UXlLUlJKTV9rTXRJY1ZSU0VzMWZhTQ?oc=5"
     ],
@@ -5043,8 +5064,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:11:41.420540+00:00",
-    "last_seen_at": "2026-11-24T13:11:41.420540+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:27.002534+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5VZngwWUVVRWZhOFRTcmxXZ21aMlVoZWVtczhDR2h6a1VDUjlrdTJpUHVNUjRWZEZNX1RyYjVMdkFqZklONWVMbEpxdmpZSkpzdF8wWDB0ZHVlUHk1Zmxwb9IBXEFVX3lxTE9QOVJvZm9feXNpWUFkQVJqZXJuV1lPQXQ3ZDhGUjlZdkJYak9oakJxUDNpZzRiaG85NndWT3JOclM0TF9jNFUyeFctbmVVN01hamcta1YtMzh5dXFh?oc=5"
     ],
@@ -5078,8 +5099,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:11:42.527842+00:00",
-    "last_seen_at": "2026-11-24T13:11:42.527842+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:27.002585+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiywFBVV95cUxPM3JCdDVIUGE2aC1VVzdUNFNIRGNaVGt1NjRTNC1SZzg5SEMxUnNqeTZoMlFFVl9XMnFaMWYxRjFzazB5a3JQSEVMbGVPdHZLVHF6VmNFcHVBRVRHQ0hoQkdNSkRKMGRBLWJnQ25kME9PbnlVbG5zMzJBT3VWdEQxbVdCNUVSc1pQYnhtaVJYUUpfU3lhT0xpR25oeDFXZ3pkLUI3Vk5QZDlqbERTU2c3OHgyaXRkb2syMW5nQzNBRVJqZlpVcTQ2NGNrMA?oc=5"
     ],
@@ -5112,8 +5133,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:11:43.456418+00:00",
-    "last_seen_at": "2026-11-24T13:11:43.456418+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:27.002735+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBaYVVXQjJaekdSU00wODU4c1NaQThtWGRsUVVCaWFIUlpnWklFekFRdVRpeERjUmNGQ3pQVGs5elJOQ3NFVTRlWDVn?oc=5"
     ],
@@ -5148,8 +5169,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:11:44.391203+00:00",
-    "last_seen_at": "2026-11-24T13:11:44.391203+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:27.002805+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMivgFBVV95cUxPclltYWJIbjVDZEpIT3VzWTZCU0RIUnhQOU9ScTZTcUNmaGJyTllVVjRVUFlmVkFRQkVEMG1uczhQbXFXTS1CejB1RzJxQXhKQUZmSjBqbUxGaWtXX1A0M0pUR2pXX0FvLVRLQlVpN1h4ZkJpTjNiQ0NoNGtaWk56bWI4Zk0zejh3Szl3akdrb3E4WFQyVGVycjdtSlMxMENqWVRUYVF3STVqT1ZXOGFkdWsxVTBSYk9udUgzQm53?oc=5"
     ],
@@ -5182,8 +5203,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:11:45.322251+00:00",
-    "last_seen_at": "2026-11-24T13:11:45.322251+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:27.002867+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMjBvS0RWMXBoYUkySWZ5NUF0XzRHdlQ3eTFPXzkzQS1HQ1lpX3dsdWw3R05nRktEUGozUTlVMkhTbHljeDZMaTlRbWtFck9JQ2Y5RURYT2QzbFVtUGhZZGlpSzdPSzktU1I5dTRRVVNRQ1VnbWlfQ3FMMVMwLWpCWVlGMnJxdVVVcFVSY09KbFQyYWxydHJxVTdpMjh0S0t3ME9uYUxjbFpYUkR1OVdyQkV3?oc=5"
     ],
@@ -5216,8 +5237,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:11:46.247421+00:00",
-    "last_seen_at": "2026-11-24T13:11:46.247421+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:27.002918+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdGprVEtUWW52ZU5YZ24zclBKNGQyZ2ZYOW9qX2FZZF9Wa19FcGJJalNkZVFON2ZDUE5SMndDMlFDUnpBVm1va1BoeDlyNjFRZXlaTlRSZDZnZHB3b0h2Qy1iM0ltdXZxUDhjUE9BZmxmeUdfS2h2Y3JsVEhQeTU5UjdRLW5ZdzFEeGZEbWVQRHZkMVdJbUZFNUVlSG1NbEROSU1qUUhWT2c?oc=5"
     ],
@@ -5249,8 +5270,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:11:47.182314+00:00",
-    "last_seen_at": "2026-11-24T13:11:47.182314+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:27.002965+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeENmQVNKUFdJQ0pUTHozMGw2TmVSMFVDUEtDRGJBU2Z1Z0RfRzZBT0JKZW5uM0VmbHF0VEc3N2hTOTNoeV9UOGxsRlVlbTNyZFFXMnlnNWFPVmtxZ0ljaWIzMk96MXl0alZCQTFGeHJsVWZxR3NpYW9rZ0V1SFZWazRUbmlUYW1LbzhKcHo1ajBtdjdkWkw4NUN5T1VYa1QxMnIwWjN2eHVnZw?oc=5"
     ],
@@ -5282,8 +5303,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:11:48.119971+00:00",
-    "last_seen_at": "2026-11-24T13:11:48.119971+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:27.003012+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRmVrM21ZME5tbTlVYWlob1hMdE9tNmJCakJzMzNYVEdvY1haWExkUlBiNHpieVhUMXZ2WmRQN1JuTjRaWjVwOEFjeDRvVkt4SVlCNllsaDFCYmNJX1BPMnZsUzhzZWxmcW11b004TlpXbGFRMkFXdVZZRGpwS3pialpONGxCTHBMdFNkYnhrQzlaenUydXc?oc=5"
     ],
@@ -5316,8 +5337,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:11:49.056585+00:00",
-    "last_seen_at": "2026-11-24T13:11:49.056585+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:27.003074+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMioAFBVV95cUxOc2NvQ3JXc040ejl5QUJCZWVVcVFRdnNBOXUzRGpzY3NFcXFmZEVic1hrc0ZDbVl1allYR2RoajRJR3dGZDhOdVJ6SmpsWUQxdWZfQ2VXRjFYclVGR0pZQkMwc1pOY1lPZjlPQjJ0QlZkVDBWUVJwNVRTbGhkWFlXTEN0UFg5b1V6T3hFLTlUTWcxN3pGdk00SGZwbmg2Mmpx?oc=5"
     ],
@@ -5350,8 +5371,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:11:49.984550+00:00",
-    "last_seen_at": "2026-11-24T13:11:49.984550+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:27.003128+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTGtqVFBNRkpHMFlVdEdEdVNXQ1dUOUV0eTQtb05YT0pYMXZ4cjc0a05uVEI5Q1pNaGtVQUhMTWthUXMtN2J1NmhqT3o0UW0ya0J0aGppMjZIc1g2VjI3RkJ5SVFNbUVURVphSm8wd1RQTHRDR3hzMnAwc1hURmJfTHRwRHhVcFh2Y0FaeTZEa0ZYUzFpX2oyY0NpaFFQb0E1SnVacg?oc=5"
     ],
@@ -5822,8 +5843,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:12:16.977390+00:00",
-    "last_seen_at": "2026-11-24T13:12:16.977390+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:22:37.327255+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMioAFBVV95cUxNXzFwbXpKX0NIOVFkYWQzY2hVenFkODJUNVVGdWFPX3BBQm16R2tOQUxEbFFnSmtleEc5eUlsR0ZmbUVES0JPWlMyc1JGYURkLU5YM0NTVW1VMU1meTA5cmlvMHhEN2JPSlhJd1hZRlRZbldRRnhjMFlQWVp4bFNwc2xFNWVDck1CREQ1ekF6WTAtNldkdlU3Z1l0Qi1vUXAy?oc=5"
     ],
@@ -5841,9 +5862,9 @@
     ],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNXzFwbXpKX0NIOVFkYWQzY2hVenFkODJUNVVGdWFPX3BBQm16R2tOQUxEbFFnSmtleEc5eUlsR0ZmbUVES0JPWlMyc1JGYURkLU5YM0NTVW1VMU1meTA5cmlvMHhEN2JPSlhJd1hZRlRZbldRRnhjMFlQWVp4bFNwc2xFNWVDck1CREQ1ekF6WTAtNldkdlU3Z1l0Qi1vUXAy?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNXzFwbXpKX0NIOVFkYWQzY2hVenFkODJUNVVGdWFPX3BBQm16R2tOQUxEbFFnSmtleEc5eUlsR0ZmbUVES0JPWlMyc1JGYURkLU5YM0NTVW1VMU1meTA5cmlvMHhEN2JPSlhJd1hZRlRZbldRRnhjMFlQWVp4bFNwc2xFNWVDck1CREQ1ekF6WTAtNldkdlU3Z1l0Qi1vUXAy?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Voices for resilience: integrating Indigenous knowledge into early warning systems - UNDRR",
     "location": ""
   },
@@ -5856,8 +5877,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:12:19.665231+00:00",
-    "last_seen_at": "2026-11-24T13:12:19.665231+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:03.705120+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSTN4ZmRMNFNaY0d3SEJRdHBZTm01Q3VIWFRCamhvLW1xcEd5Uld0eVNyUWt5TUZDTzlya3lnTjJpOEx1MXlJSWNkOFBuNll4RGdHN1VNYXJTX0hvOU9IR0k1WDNNRFYwMkczY3BjRFI3R3F3VThlOE5qdUV4U05TdVlyVU9Db3pVRkp0ejdEb1VEcEpBc1llbndZaXhSdE9HOVBhQkRxMUhOX20zZUl2b19WS2s?oc=5"
     ],
@@ -5870,9 +5891,9 @@
     "matched_context_terms": [],
     "negative_flags": [],
     "classification_note": "Informational heuristic only; retained regardless of score or flags.",
-    "article_fetch_status": "deferred",
-    "article_text": "",
-    "resolved_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSTN4ZmRMNFNaY0d3SEJRdHBZTm01Q3VIWFRCamhvLW1xcEd5Uld0eVNyUWt5TUZDTzlya3lnTjJpOEx1MXlJSWNkOFBuNll4RGdHN1VNYXJTX0hvOU9IR0k1WDNNRFYwMkczY3BjRFI3R3F3VThlOE5qdUV4U05TdVlyVU9Db3pVRkp0ejdEb1VEcEpBc1llbndZaXhSdE9HOVBhQkRxMUhOX20zZUl2b19WS2s?oc=5",
+    "article_fetch_status": "success",
+    "article_text": "Google News",
+    "resolved_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSTN4ZmRMNFNaY0d3SEJRdHBZTm01Q3VIWFRCamhvLW1xcEd5Uld0eVNyUWt5TUZDTzlya3lnTjJpOEx1MXlJSWNkOFBuNll4RGdHN1VNYXJTX0hvOU9IR0k1WDNNRFYwMkczY3BjRFI3R3F3VThlOE5qdUV4U05TdVlyVU9Db3pVRkp0ejdEb1VEcEpBc1llbndZaXhSdE9HOVBhQkRxMUhOX20zZUl2b19WS2s?oc=5&hl=en-US&gl=US&ceid=US:en",
     "naming": "Menbud Fadli Zon Dorong Dekolonisasi Sejarah dan Kolaborasi Arkeologi Lintas Disiplin - Universitas Gadjah Mada",
     "location": ""
   },
@@ -5885,8 +5906,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:12:20.975436+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975436+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:05.886307+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbXBxY21GS0RPMkEzLTl4TFc1R1k5Vy1IRTg3Z1ZjeXhzb1hpRGtPbGZuMUdQZmJOalNydlB3ajhieGkwN1oyRTZ6ejNjR00zSVR3RkpuTXEteHdXRU96S0lUNWwyZ2Q1WmhTUVNCT0RkQWRUV1JhT0cwX0lVQjBBTm1Yb0xzZEIzZmJYa0NGWXlaZmtUNWpUd0pSTUF4SGFVajJhSVVLWF9SUmRzSDlRTUZsYw?oc=5"
     ],
@@ -5917,8 +5938,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:12:20.975543+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975543+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:05.886421+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQ0haR0xjVERPM1p5UGZ2OXVUZ2NINWtxVjZKN0xVTHYyaEtESHNhYVVyLVE1Y0hIX1c1ajFEa25pR0NKelkzZUZLd1c1OHBNVUpyUGw2LXBTaFRrdHVnX0xQU2Z4SnFTRExKUHBFenJ1Wi1vUkJBNVpXWGx0cm9oQThON0VYcnM?oc=5"
     ],
@@ -5950,8 +5971,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:12:20.975581+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975581+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:05.886462+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1KTS1CVWZiRWpfRWFCckJnNWNlZ0xZa2tqNGFmOFZfRGwtaEJrakUzYUVUbU9QZjVCajhkNzV2MkZrQi1DZjR4WHZfbkN6YjVfeDBrZHNEN1NxOUIyWnJnMEVR?oc=5"
     ],
@@ -5982,8 +6003,8 @@
     "source": "Google News RSS",
     "collection_method": "automatic",
     "first_collected_at": "2026-11-24T13:12:20.975658+00:00",
-    "last_seen_at": "2026-11-24T13:12:20.975658+00:00",
-    "seen_count": 1,
+    "last_seen_at": "2026-11-24T15:23:05.886560+00:00",
+    "seen_count": 2,
     "source_links": [
       "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZm9NdUJfSEdvRzhvbEd3ODZkSGp4d2N6ZHVPTF9IYmwyVVRGVDJFeElVaEJ0cFdwSVhVR2tDbDBBemtaLUpDdTgxcUMtRjdNalFNSzktRHQzX3FFSGZFRTFzOER3dzhhS0xJZnMwV3FLZ1V0eHdMd2toRTNsTFhBUTVQNXQ?oc=5"
     ],
@@ -6066,6 +6087,75 @@
     "article_text": "",
     "resolved_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSTdRQWhfVGpkRmdJRktEeDM5RHlUc2xLSGZQbTVlNm95ODdmVjdHVkpxYmxmb2FsWkZMZ2NhTUowZ2M3UENlQzVkeWNuOUQwZWw3TEd5c0ZUQzR2X1M0UzVpbkkwb1Ytdk00ejZpdVk1blZ6ZmJ6c3NHWUVhYVgwTVQ4dXVhcDRGMnR6ZWJuQ05HS2d4RnZuYXhUbS1aYnRlQk1TRkltNmV0Nl9fOUxabHB4M3I?oc=5",
     "naming": "Deadly tradition of gum cutting: How cultural practice is killing babies - Daily Nation",
+    "location": ""
+  },
+  {
+    "record_id": "rss-ef70d1473332f76344b2",
+    "title": "Ecuadorian artisans working to preserve the traditional craft of weaving horsehair strainers - www.ap.org",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxObnVMRTF2cHRLb0xzYUlqVkFuMHNiRkZ3dzJ5VnpZdGx3NGR2ZjAwRmRLU1BTWTFXWi14TUJraUJlSDdUYXptd1FjOHNzcUEyeFREVzZOR3FCVS1mTFE1R05RV0kwMHJDZlkxWVl4UllhbTlmQXFJbVRNV3hQX3l4YWdnd2lvMGVhSUg4NXBOeUMtYUtDUVFkTW9kcjhZOWl0bFE0TWhqdmdNVTNSR0RReDZsc29VWlc3bnlTbFBjZ0pWa2RuNGkzMGtwS3RrOTRJM0p5NDZnM29Wb1J1?oc=5",
+    "description": "Ecuadorian artisans working to preserve the traditional craft of weaving horsehair strainers www.ap.org",
+    "published": "Tue, 09 Jun 2026 07:00:00 GMT",
+    "source": "Google News RSS",
+    "collection_method": "automatic",
+    "first_collected_at": "2026-11-24T15:22:28.346640+00:00",
+    "last_seen_at": "2026-11-24T15:22:28.346640+00:00",
+    "seen_count": 1,
+    "source_links": [
+      "https://news.google.com/rss/articles/CBMi3AFBVV95cUxObnVMRTF2cHRLb0xzYUlqVkFuMHNiRkZ3dzJ5VnpZdGx3NGR2ZjAwRmRLU1BTWTFXWi14TUJraUJlSDdUYXptd1FjOHNzcUEyeFREVzZOR3FCVS1mTFE1R05RV0kwMHJDZlkxWVl4UllhbTlmQXFJbVRNV3hQX3l4YWdnd2lvMGVhSUg4NXBOeUMtYUtDUVFkTW9kcjhZOWl0bFE0TWhqdmdNVTNSR0RReDZsc29VWlc3bnlTbFBjZ0pWa2RuNGkzMGtwS3RrOTRJM0p5NDZnM29Wb1J1?oc=5"
+    ],
+    "source_records": [],
+    "relevance_score": 6,
+    "confidence": "medium",
+    "category": "Traditional Craftsmanship",
+    "possible_noise": false,
+    "matched_strong_terms": [
+      "traditional craft"
+    ],
+    "matched_context_terms": [
+      "craft",
+      "weaving",
+      "tradition"
+    ],
+    "negative_flags": [],
+    "classification_note": "Informational heuristic only; retained regardless of score or flags.",
+    "resolved_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxObnVMRTF2cHRLb0xzYUlqVkFuMHNiRkZ3dzJ5VnpZdGx3NGR2ZjAwRmRLU1BTWTFXWi14TUJraUJlSDdUYXptd1FjOHNzcUEyeFREVzZOR3FCVS1mTFE1R05RV0kwMHJDZlkxWVl4UllhbTlmQXFJbVRNV3hQX3l4YWdnd2lvMGVhSUg4NXBOeUMtYUtDUVFkTW9kcjhZOWl0bFE0TWhqdmdNVTNSR0RReDZsc29VWlc3bnlTbFBjZ0pWa2RuNGkzMGtwS3RrOTRJM0p5NDZnM29Wb1J1?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "article_text": "Google News",
+    "article_fetch_status": "success",
+    "identity_extraction_status": "unavailable",
+    "naming": "Ecuadorian artisans working to preserve the traditional craft of weaving horsehair strainers - www.ap.org",
+    "location": ""
+  },
+  {
+    "record_id": "rss-5736baf831baaed96c46",
+    "title": "A Love Of Folk Tradition Helped Bring The Witcher: Blood Origin To Life [Exclusive] - SlashFilm",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeDJvT2dBemVGMUNzYWRJeUVwbVFpZFlrdENDYWR0ek45R2lBN25pR2NfeHZiUnJFc1BaRUdTV0ZqLUNkcS1kcEJ0TS1OWEZZaU05bmltU09GVEhnWUdDQUJ5SEoyWmJzZm93Q2hXV1R0WHBuNmFfOHRIR2VnQzRGQnVUdFplTHdGQXJfMzJLekF2cllGQjdrRWNYdEhqa0RnRnJkV3JhaldCNTdidS04V05iVnlGUQ?oc=5",
+    "description": "A Love Of Folk Tradition Helped Bring The Witcher: Blood Origin To Life [Exclusive] SlashFilm",
+    "published": "Tue, 06 Dec 2022 08:00:00 GMT",
+    "source": "Google News RSS",
+    "collection_method": "automatic",
+    "first_collected_at": "2026-11-24T15:23:00.669487+00:00",
+    "last_seen_at": "2026-11-24T15:23:00.669487+00:00",
+    "seen_count": 1,
+    "source_links": [
+      "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeDJvT2dBemVGMUNzYWRJeUVwbVFpZFlrdENDYWR0ek45R2lBN25pR2NfeHZiUnJFc1BaRUdTV0ZqLUNkcS1kcEJ0TS1OWEZZaU05bmltU09GVEhnWUdDQUJ5SEoyWmJzZm93Q2hXV1R0WHBuNmFfOHRIR2VnQzRGQnVUdFplTHdGQXJfMzJLekF2cllGQjdrRWNYdEhqa0RnRnJkV3JhaldCNTdidS04V05iVnlGUQ?oc=5"
+    ],
+    "source_records": [],
+    "relevance_score": 4,
+    "confidence": "medium",
+    "category": "Other / Unclassified",
+    "possible_noise": false,
+    "matched_strong_terms": [
+      "folk tradition"
+    ],
+    "matched_context_terms": [
+      "tradition"
+    ],
+    "negative_flags": [],
+    "classification_note": "Informational heuristic only; retained regardless of score or flags.",
+    "resolved_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeDJvT2dBemVGMUNzYWRJeUVwbVFpZFlrdENDYWR0ek45R2lBN25pR2NfeHZiUnJFc1BaRUdTV0ZqLUNkcS1kcEJ0TS1OWEZZaU05bmltU09GVEhnWUdDQUJ5SEoyWmJzZm93Q2hXV1R0WHBuNmFfOHRIR2VnQzRGQnVUdFplTHdGQXJfMzJLekF2cllGQjdrRWNYdEhqa0RnRnJkV3JhaldCNTdidS04V05iVnlGUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "article_text": "Google News",
+    "article_fetch_status": "success",
+    "naming": "A Love Of Folk Tradition Helped Bring The Witcher: Blood Origin To Life [Exclusive] - SlashFilm",
     "location": ""
   }
 ]

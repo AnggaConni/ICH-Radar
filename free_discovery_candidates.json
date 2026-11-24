@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-11-24T13:12:23.288845+00:00",
+  "generated_at": "2026-11-24T15:23:08.336252+00:00",
   "mode": "autonomous_preservation_first_aggregator_with_article_fetch",
   "principle": "Collect first, preserve records, let humans decide later. Classifier flags are informational only.",
   "feeds_checked": 7,
   "feed_errors": [],
-  "new_records_this_run": 31,
-  "records_seen_or_updated_this_run": 119,
+  "new_records_this_run": 2,
+  "records_seen_or_updated_this_run": 130,
   "article_fetch_attempts_this_run": 35,
   "main_archive_promotions_this_run": 0,
   "promotion_results": {
     "promoted": 0,
     "duplicate_main_archive": 0,
-    "insufficient_article_text": 2,
+    "insufficient_article_text": 10,
     "missing_identity_or_analysis": 0,
     "ai_error": 0
   },
-  "article_fetch_success_count": 70,
-  "total_records_retained": 206,
+  "article_fetch_success_count": 105,
+  "total_records_retained": 208,
   "shard_size": 500,
   "shard_count": 1,
   "archive_files": [
