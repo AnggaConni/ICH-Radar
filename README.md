@@ -352,7 +352,6 @@ Go to your repository → **Settings → Secrets and variables → Actions → N
 | Secret name | Value |
 |---|---|
 | `GEMINI_API_KEY` | Your Google Gemini API key |
-| `DEEPSEEK_API_KEY` | Your DeepSeek API key |
 
 ### Step 3 — Verify file structure
 
