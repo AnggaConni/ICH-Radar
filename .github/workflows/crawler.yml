@@ -111,6 +111,8 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
           git add data.json history.json free_discovery_candidates.json || true
+          # Numbered free-aggregator archive shards (data1.json ... data9999.json).
+          git add data[1-9]*.json 2>/dev/null || true
 
           if git diff --staged --quiet; then
             echo "No new data to commit."
