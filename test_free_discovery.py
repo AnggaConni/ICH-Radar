@@ -38,6 +38,31 @@ class AggregatorSafetyTests(unittest.TestCase):
             finally:
                 collector.BASE = old_base
 
+
+    def test_identity_merge_requires_exact_name_and_location(self):
+        base = {"naming": "Ngaben", "location": "Bali, Indonesia", "title": "Ngaben",
+                "url": "https://source-a.example", "description": "Description A",
+                "source_links": ["https://source-a.example"], "record_id": "r1", "seen_count": 1}
+        same = {"naming": " NGABEN! ", "location": "Bali, Indonesia", "title": "Ngaben update"}
+        different_location = {"naming": "Ngaben", "location": "Lombok, Indonesia"}
+        self.assertIsNotNone(collector.find_identity_match({"a": base}, same))
+        self.assertIsNone(collector.find_identity_match({"a": base}, different_location))
+        self.assertIsNone(collector.find_identity_match({"a": base}, {"naming": "Ngaben"}))
+
+    def test_identity_merge_preserves_sources_and_appends_fallback_description(self):
+        base = {"naming": "Ngaben", "location": "Bali, Indonesia", "title": "Ngaben",
+                "url": "https://source-a.example", "description": "Original description",
+                "source_links": ["https://source-a.example"], "source_records": [],
+                "record_id": "r1", "seen_count": 1}
+        incoming = {"title": "Ngaben article", "url": "https://source-b.example",
+                    "description": "New unique detail", "article_text": ""}
+        merged = collector.merge_identity_record(base, incoming, api_key=None)
+        self.assertEqual(len(merged["source_links"]), 2)
+        self.assertEqual(len(merged["source_records"]), 1)
+        self.assertIn("Original description", merged["description"])
+        self.assertIn("New unique detail", merged["description"])
+        self.assertEqual(merged["ai_merge_status"], "fallback_append")
+
     def test_corrupt_shard_triggers_safety_stop(self):
         with tempfile.TemporaryDirectory() as temp:
             old_base = collector.BASE
