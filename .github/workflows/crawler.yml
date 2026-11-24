@@ -18,6 +18,7 @@ on:
           - 'Resource enrichment'
           - 'Resume only'
           - 'Both'
+          - 'Free Discovery (Experimental)'
       resource_enrich_limit:
         description: 'Records to enrich in Resource enrichment mode (1–10)'
         required: true
@@ -81,6 +82,9 @@ jobs:
               "Both")
                 echo "CRAWL_MODE_INPUT=both" >> "$GITHUB_ENV"
                 ;;
+              "Free Discovery (Experimental")
+                echo "CRAWL_MODE_INPUT=free_discovery" >> "$GITHUB_ENV"
+                ;;
               *)
                 echo "Unknown manual crawl mode."
                 exit 1
@@ -100,22 +104,27 @@ jobs:
           fi
 
       - name: Validate Python syntax
-        run: python -m py_compile scraper.py
+        run: python -m py_compile scraper.py free_discovery.py
 
-      - name: Run Scraper & AI
+      - name: Run Scraper or Free Discovery
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          RESOURCE_ENRICH_LIMIT="${RESOURCE_ENRICH_LIMIT:-2}"
-          echo "Running scraper with CRAWL_MODE=$CRAWL_MODE_INPUT, RESOURCE_ENRICH_LIMIT=$RESOURCE_ENRICH_LIMIT"
-          CRAWL_MODE="$CRAWL_MODE_INPUT" RESOURCE_ENRICH_LIMIT="$RESOURCE_ENRICH_LIMIT" python scraper.py
+          if [ "$CRAWL_MODE_INPUT" = "free_discovery" ]; then
+            echo "Running experimental RSS-only discovery (no API key required)."
+            python free_discovery.py
+          else
+            RESOURCE_ENRICH_LIMIT="${RESOURCE_ENRICH_LIMIT:-2}"
+            echo "Running scraper with CRAWL_MODE=$CRAWL_MODE_INPUT, RESOURCE_ENRICH_LIMIT=$RESOURCE_ENRICH_LIMIT"
+            CRAWL_MODE="$CRAWL_MODE_INPUT" RESOURCE_ENRICH_LIMIT="$RESOURCE_ENRICH_LIMIT" python scraper.py
+          fi
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add data.json history.json resume.json || true
+          git add data.json history.json resume.json free_discovery_candidates.json || true
 
           if git diff --staged --quiet; then
             echo "No new data to commit."
