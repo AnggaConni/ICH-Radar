@@ -145,8 +145,8 @@ def fetch_article(session, url):
 # Strict identity merging: only merge when both heritage name and location are explicit.
 def normalize_identity(value):
     value = clean_text(value or "").lower()
-    value = re.sub(r"[^\\w\\s-]", " ", value, flags=re.UNICODE)
-    return re.sub(r"\\s+", " ", value).strip()
+    value = re.sub(r"[^\w\s-]", " ", value, flags=re.UNICODE)
+    return re.sub(r"\s+", " ", value).strip()
 
 def identity_key(record):
     name = normalize_identity(record.get("naming") or record.get("name") or record.get("title"))
@@ -177,7 +177,7 @@ def merge_identity_record(existing, incoming, api_key=None):
                          "description": incoming.get("description", ""),
                          "article_text": incoming.get("article_text", "")[:12000]})
     if api_key:
-        combined = "\\n\\n".join(x for x in [existing.get("description", ""), incoming.get("description", ""),
+        combined = "\n\n".join(x for x in [existing.get("description", ""), incoming.get("description", ""),
             existing.get("article_text", "")[:10000], incoming.get("article_text", "")[:10000]] if x)
         prompt = ("Rewrite this into one concise, accurate heritage description. Combine non-duplicated details, "
                   "do not invent facts, preserve uncertainty. Return only the description.\\n\\n" + combined[:22000])
@@ -358,7 +358,7 @@ def main():
                     try:
                         prompt = ("Extract heritage element naming and geographic location from this text. " +
                                  "If location is not explicit, use empty string. Do not guess. Output JSON with naming and location keys.\\n" +
-                                 (rec.get("title", "") + "\\n" + rec.get("description", "") + "\\n" + rec.get("article_text", "")[:10000])[:12000])
+                                 (rec.get("title", "") + "\n" + rec.get("description", "") + "\\n" + rec.get("article_text", "")[:10000])[:12000])
                         response = requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
                             params={"key": api_key}, timeout=REQUEST_TIMEOUT,
                             json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"temperature":0,"responseMimeType":"application/json"}})
