@@ -63,6 +63,45 @@ class AggregatorSafetyTests(unittest.TestCase):
         self.assertIn("New unique detail", merged["description"])
         self.assertEqual(merged["ai_merge_status"], "fallback_append")
 
+    def test_promotion_preserves_extended_fields_and_full_source_snapshot(self):
+        from unittest.mock import patch
+        article_text = "Long article text about heritage practice. " * 12 + " https://youtu.be/AbCdEfGhI12"
+        candidate = {
+            "record_id": "rss-test-1", "title": "Example heritage",
+            "url": "https://rss.example/item", "resolved_url": "https://source.example/article",
+            "description": "RSS description", "article_text": article_text,
+            "published": "2026-11-24", "source": "Google News RSS",
+            "first_collected_at": "2026-11-24T00:00:00Z", "last_seen_at": "2026-11-24T00:00:00Z",
+            "seen_count": 2, "article_fetch_status": "success"
+        }
+        response_payload = {
+            "element_name": "Example heritage", "categories": ["Performing Arts"],
+            "source_urls": ["https://source.example/article"],
+            "location": {"country": "Exampleland", "provinces": ["Example Province"], "districts": ["Example District"], "localities": ["Example Town"], "communities": ["Example Community"]},
+            "resume_analisa": {"description": "Article-grounded description"},
+            "resume_tata_cara": {"type": "performance", "materials_and_tools": ["Instrument"], "step_by_step": ["Step 1", "Step 2"]},
+            "shared_heritage_detection": {"is_shared": True, "confidence_score": 0.6, "related_elements": [
+                {"element_name": "Related tradition", "country": "Otherland", "relationship_type": "Influence", "relationship_reason": "Source-described connection", "evidence_excerpt": "Evidence sentence", "source_urls": ["https://source.example/article"],
+                 "location": {"country": "Otherland", "provinces": ["Related Province"], "districts": ["Related District"], "localities": ["Related City"], "communities": ["Related Community"]}}
+            ]}
+        }
+        fake_response = type("Response", (), {
+            "raise_for_status": lambda self: None,
+            "json": lambda self: {"choices": [{"message": {"content": json.dumps(response_payload)}}]}
+        })()
+        with patch.object(collector.requests, "post", return_value=fake_response):
+            record, status = collector.promote_candidate_with_deepseek(candidate, "fake-key", [])
+        self.assertEqual(status, "promoted")
+        self.assertEqual(record["location"]["districts"], ["Example District"])
+        self.assertEqual(record["resume_tata_cara"]["step_by_step"], ["Step 1", "Step 2"])
+        rel = record["shared_heritage_detection"]["related_elements"][0]
+        self.assertEqual(rel["location"]["communities"], ["Related Community"])
+        self.assertIn("https://youtu.be/AbCdEfGhI12", record["source_urls"])
+        snapshot = record["source_records"][0]
+        self.assertEqual(snapshot["article_text"], article_text)
+        self.assertEqual(snapshot["description"], "RSS description")
+        self.assertEqual(snapshot["url"], candidate["url"])
+
     def test_corrupt_shard_triggers_safety_stop(self):
         with tempfile.TemporaryDirectory() as temp:
             old_base = collector.BASE
