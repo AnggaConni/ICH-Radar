@@ -83,16 +83,10 @@ jobs:
                 ;;
             esac
           else
-            # Use absolute UTC days since Unix epoch so the pipeline keeps
-            # alternating correctly across month/year boundaries.
-            EPOCH_DAY=$(( $(date -u +%s) / 86400 ))
-            if (( EPOCH_DAY % 2 == 0 )); then
-              echo "CRAWL_MODE_INPUT=data_only" >> "$GITHUB_ENV"
-              echo "Scheduled mode: DATA DISCOVERY / STANDARD ENRICHMENT"
-            else
-              echo "CRAWL_MODE_INPUT=resource_enrich" >> "$GITHUB_ENV"
-              echo "Scheduled mode: RESOURCE & OPPORTUNITY ENRICHMENT"
-            fi
+            # Scheduled pipeline runs the zero-cost RSS aggregator by default.
+            # Gemini-backed data/resource modes remain available via manual dispatch.
+            echo "CRAWL_MODE_INPUT=free_discovery" >> "$GITHUB_ENV"
+            echo "Scheduled mode: FREE AUTOMATED ICH RSS AGGREGATOR"
           fi
 
       - name: Validate Python syntax
