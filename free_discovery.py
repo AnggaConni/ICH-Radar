@@ -381,7 +381,10 @@ def main():
                     rec.setdefault("location", "")
                 match = find_identity_match(all_records, rec)
                 if match is not None:
-                    merge_identity_record(match, rec, api_key or None)
+                    merge_api_key = api_key if api_key and ai_identity_attempts < ai_identity_limit else None
+                    if merge_api_key:
+                        ai_identity_attempts += 1
+                    merge_identity_record(match, rec, merge_api_key)
                     all_records[key] = match  # URL alias points to canonical merged record
                     seen_this_run[key] = match
                 else:
