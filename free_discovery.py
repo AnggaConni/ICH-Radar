@@ -308,13 +308,13 @@ def calculate_main_summary(inventory):
 
 def normalize_main_name(value):
     value = clean_text(value or "").lower()
-    return re.sub(r"[^\\w\\s]", " ", value, flags=re.UNICODE).strip().replace("  ", " ")
+    return re.sub(r"[^\w\s]", " ", value, flags=re.UNICODE).strip().replace("  ", " ")
 
 def promote_candidate_with_deepseek(candidate, api_key, existing_inventory):
     """Convert an article-backed RSS lead into the main schema using DeepSeek."""
     article = (candidate.get("article_text") or "")[:14000]
     source_url = candidate.get("resolved_url") or candidate.get("url") or ""
-    evidence_text = (candidate.get("title", "") + "\\n" + clean_text(candidate.get("description", "")) + "\\n" + article).strip()
+    evidence_text = (candidate.get("title", "") + "\n" + clean_text(candidate.get("description", "")) + "\n" + article).strip()
     if not source_url or len(article.strip()) < 350:
         return None, "insufficient_article_text"
     prompt = """Using ONLY the supplied article, create a structured ICH record. Do not invent facts or UNESCO status.
@@ -323,7 +323,7 @@ Return JSON only, matching:
 {"element_name":"specific name","categories":["one or more canonical categories"],"categories_valid":false,"category":"canonical category","category_valid":false,"thumbnail_url":"","source_urls":["direct URL"],"scraped_at":"ISO timestamp","location":{"country":"explicit country","provinces":[],"lat":null,"lng":null},"resume_analisa":{"description":"evidence-based description","cultural_significance":"","drr_category":"Not Directly Related to DRR","drr_category_valid":false,"drr_relevance_level":"Not Directly Related to DRR","hazard_categories":[],"drr_mechanism":null,"gemini_tags":[]},"resume_tata_cara":null,"shared_heritage_detection":{"is_shared":false,"confidence_score":0.0,"related_elements":[]},"completion_status":"INCOMPLETE"}
 Canonical categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals. Leave unknowns blank/null. Only set country when article states it.
 ARTICLE:
-""" + evidence_text + "\\n\\nSource URL: " + source_url
+""" + evidence_text + "\n\nSource URL: " + source_url
     try:
         response = requests.post("https://api.deepseek.com/chat/completions",
             headers={"Authorization": "Bearer " + api_key, "Content-Type": "application/json"},
