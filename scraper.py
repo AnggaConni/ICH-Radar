@@ -873,9 +873,8 @@ def main():
             log.warning(f"Unknown CRAWL_MODE='{crawl_mode}'. Falling back to data_only.")
             crawl_mode = "data_only"
 
-        run_data = crawl_mode in ("data_only", "both")
+        run_data = crawl_mode == "data_only"
         run_resource = crawl_mode == "resource_enrich"
-        run_resume = crawl_mode in ("resume_only", "both")
 
         if (run_data or run_resource) and not gemini_api_key:
             log.error("GEMINI_API_KEY is required for data discovery/enrichment modes.")
