@@ -70,7 +70,7 @@ def now_iso():
 
 def clean_text(value):
     value = re.sub(r"<[^>]+>", " ", value or "")
-    return re.sub(r"\\s+", " ", unescape(value)).strip()
+    return re.sub(r"\s+", " ", unescape(value)).strip()
 
 def normalize_url(url):
     url = (url or "").strip()
