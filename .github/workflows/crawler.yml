@@ -31,7 +31,7 @@ on:
         default: 1
         type: number
       free_discovery_ai_limit:
-        description: 'Gemini identity extraction attempts in Free Discovery (0–20; 0 = no Gemini calls)'
+        description: 'Maximum Gemini calls in Free Discovery (identity extraction + merging, 0–20)'
         required: true
         default: 2
         type: number
