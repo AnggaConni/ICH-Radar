@@ -159,6 +159,12 @@ def main():
     for record in collected.values():
         old_by_url[record["url"]] = record
     all_records = list(old_by_url.values())
+    # Refresh classification for every historical record and migrate the old schema.
+    for record in all_records:
+        record.pop("review_status", None)
+        refreshed = classify(record.get("title", ""), record.get("description", ""))
+        record.update(refreshed)
+        record.setdefault("collection_method", "automatic")
     aggregated = [r for r in all_records if r.get("auto_status") == "AUTO_AGGREGATED"]
     filtered = [r for r in all_records if r.get("auto_status") != "AUTO_AGGREGATED"]
     result = {
