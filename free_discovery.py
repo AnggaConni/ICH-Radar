@@ -296,6 +296,87 @@ def save_shards(records):
         if re.fullmatch(r"data[1-9][0-9]*\.json", path.name) and path.name not in target_names:
             path.unlink()
 
+def calculate_main_summary(inventory):
+    complete = sum(1 for item in inventory if item.get("completion_status") == "COMPLETE")
+    categories = {}
+    for item in inventory:
+        for category in item.get("categories") or [item.get("category", "Unknown")]:
+            categories[category] = categories.get(category, 0) + 1
+    return {"generated_at": now_iso(), "total_ich_elements": len(inventory),
+            "complete_records": complete, "incomplete_records": len(inventory) - complete,
+            "categories_breakdown": categories}
+
+def normalize_main_name(value):
+    value = clean_text(value or "").lower()
+    return re.sub(r"[^\\w\\s]", " ", value, flags=re.UNICODE).strip().replace("  ", " ")
+
+def promote_candidate_with_deepseek(candidate, api_key, existing_inventory):
+    """Convert an article-backed RSS lead into the main schema using DeepSeek."""
+    article = (candidate.get("article_text") or "")[:14000]
+    source_url = candidate.get("resolved_url") or candidate.get("url") or ""
+    evidence_text = (candidate.get("title", "") + "\\n" + clean_text(candidate.get("description", "")) + "\\n" + article).strip()
+    if not source_url or len(article.strip()) < 350:
+        return None, "insufficient_article_text"
+    prompt = """Using ONLY the supplied article, create a structured ICH record. Do not invent facts or UNESCO status.
+If detailed process steps are not supported, resume_tata_cara=null and completion_status=INCOMPLETE.
+Return JSON only, matching:
+{"element_name":"specific name","categories":["one or more canonical categories"],"categories_valid":false,"category":"canonical category","category_valid":false,"thumbnail_url":"","source_urls":["direct URL"],"scraped_at":"ISO timestamp","location":{"country":"explicit country","provinces":[],"lat":null,"lng":null},"resume_analisa":{"description":"evidence-based description","cultural_significance":"","drr_category":"Not Directly Related to DRR","drr_category_valid":false,"drr_relevance_level":"Not Directly Related to DRR","hazard_categories":[],"drr_mechanism":null,"gemini_tags":[]},"resume_tata_cara":null,"shared_heritage_detection":{"is_shared":false,"confidence_score":0.0,"related_elements":[]},"completion_status":"INCOMPLETE"}
+Canonical categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals. Leave unknowns blank/null. Only set country when article states it.
+ARTICLE:
+""" + evidence_text + "\\n\\nSource URL: " + source_url
+    try:
+        response = requests.post("https://api.deepseek.com/chat/completions",
+            headers={"Authorization": "Bearer " + api_key, "Content-Type": "application/json"},
+            timeout=60, json={"model":"deepseek-chat","messages":[{"role":"user","content":prompt}],
+                            "temperature":0.1,"response_format":{"type":"json_object"}})
+        response.raise_for_status()
+        record = json.loads(response.json()["choices"][0]["message"]["content"])
+    except Exception as exc:
+        print(f"DeepSeek promotion failed: {str(exc)[:180]}")
+        return None, "ai_error"
+    name = clean_text(record.get("element_name", ""))
+    country = clean_text((record.get("location") or {}).get("country", ""))
+    if not name or not country or not isinstance(record.get("resume_analisa"), dict):
+        return None, "missing_identity_or_analysis"
+    target = (normalize_main_name(name), normalize_main_name(country))
+    for old in existing_inventory:
+        old_name = normalize_main_name(old.get("element_name", ""))
+        old_country = normalize_main_name((old.get("location") or {}).get("country", ""))
+        if old_name and old_country and target == (old_name, old_country):
+            return None, "duplicate_main_archive"
+    urls = record.get("source_urls", [])
+    if not isinstance(urls, list):
+        urls = []
+    if source_url not in urls:
+        urls.append(source_url)
+    record["source_urls"] = list(dict.fromkeys(url for url in urls if isinstance(url, str) and url.startswith(("http://", "https://"))))
+    if not record["source_urls"]:
+        return None, "missing_source_url"
+    record["id"] = "ich-" + hashlib.md5(name.lower().encode()).hexdigest()[:8]
+    record.setdefault("scraped_at", now_iso())
+    record.setdefault("thumbnail_url", "")
+    if not isinstance(record.get("categories"), list):
+        record["categories"] = []
+    record.setdefault("categories_valid", False)
+    record.setdefault("category", record["categories"][0] if record["categories"] else "Other / Unclassified")
+    record.setdefault("category_valid", bool(record.get("categories_valid")))
+    location = record.setdefault("location", {})
+    location.setdefault("provinces", [])
+    location.setdefault("lat", None)
+    location.setdefault("lng", None)
+    analysis = record["resume_analisa"]
+    defaults = {"description":"","cultural_significance":"","drr_category":"Not Directly Related to DRR",
+                "drr_category_valid":False,"drr_relevance_level":"Not Directly Related to DRR",
+                "hazard_categories":[],"drr_mechanism":None,"gemini_tags":[]}
+    for key, value in defaults.items():
+        analysis.setdefault(key, value)
+    record.setdefault("shared_heritage_detection", {"is_shared":False,"confidence_score":0.0,"related_elements":[]})
+    record.setdefault("resume_tata_cara", None)
+    steps = (record.get("resume_tata_cara") or {}).get("step_by_step", [])
+    record["completion_status"] = "COMPLETE" if isinstance(steps, list) and len(steps) >= 2 else "INCOMPLETE"
+    return record, "promoted"
+
+
 def main():
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
@@ -307,6 +388,10 @@ def main():
     article_fetch_count = 0
     article_fetch_limit = 35
     ai_identity_attempts = 0
+    promotion_enabled = os.getenv('PROMOTE_TO_MAIN_ARCHIVE', '0') == '1'
+    promotion_limit = max(0, min(10, int(os.getenv('DEEPSEEK_PROMOTION_LIMIT', '3'))))
+    promoted_records = []
+    promotion_results = {'promoted': 0, 'duplicate_main_archive': 0, 'insufficient_article_text': 0, 'missing_identity_or_analysis': 0, 'ai_error': 0}
     ai_identity_limit = max(0, min(20, int(os.getenv('FREE_DISCOVERY_AI_LIMIT', '20'))))
 
     for query in QUERIES:
@@ -394,6 +479,42 @@ def main():
             feed_errors.append({"query": query, "error": str(exc)[:300]})
         time.sleep(1)
 
+    # Promote article-backed candidates in the ALL workflow only.
+    if promotion_enabled and promotion_limit > 0:
+        deepseek_key = os.getenv("DEEPSEEK_API_KEY", "").strip()
+        main_file = BASE / "data.json"
+        if not deepseek_key:
+            print("DeepSeek promotion skipped: DEEPSEEK_API_KEY is missing; candidates retained.")
+        else:
+            try:
+                main_db = json.loads(main_file.read_text(encoding="utf-8"))
+                inventory = main_db.get("inventory", [])
+                eligible, seen_ids = [], set()
+                for record in all_records.values():
+                    if id(record) in seen_ids:
+                        continue
+                    seen_ids.add(id(record))
+                    if record.get("article_fetch_status") == "success" and record.get("article_text"):
+                        eligible.append(record)
+                print(f"DeepSeek promotion queue: {len(eligible)} article-backed leads; limit {promotion_limit}.")
+                for candidate in eligible[:promotion_limit]:
+                    new_record, status = promote_candidate_with_deepseek(candidate, deepseek_key, inventory)
+                    promotion_results[status] = promotion_results.get(status, 0) + 1
+                    if new_record:
+                        inventory.append(new_record)
+                        promoted_records.append(candidate)
+                        print(f"PROMOTED TO MAIN ARCHIVE: {new_record.get('element_name')} — {new_record.get('location',{}).get('country')}")
+                if promoted_records:
+                    main_db["inventory"] = inventory
+                    main_db["summary"] = calculate_main_summary(inventory)
+                    main_file.write_text(json.dumps(main_db, ensure_ascii=False, indent=2), encoding="utf-8")
+            except Exception as exc:
+                print(f"Promotion failed safely; discovery records kept: {str(exc)[:250]}")
+    # Delete Discovery records only after successful main-archive promotion.
+    if promoted_records:
+        promoted_ids = {id(record) for record in promoted_records}
+        all_records = {key: record for key, record in all_records.items() if id(record) not in promoted_ids}
+        print(f"Deleted {len(promoted_records)} successfully promoted item(s) from Discovery Archive.")
     save_shards(all_records)
     archive_unique_count = len({id(r) for r in all_records.values()})
     summary = {
@@ -405,6 +526,8 @@ def main():
         "new_records_this_run": max(0, archive_unique_count - existing_count),
         "records_seen_or_updated_this_run": len(seen_this_run),
         "article_fetch_attempts_this_run": article_fetch_count,
+        "main_archive_promotions_this_run": promotion_results["promoted"],
+        "promotion_results": promotion_results,
         "article_fetch_success_count": sum(1 for r in all_records.values() if r.get("article_fetch_status") == "success"),
         "total_records_retained": archive_unique_count,
         "shard_size": SHARD_SIZE,
