@@ -335,8 +335,7 @@ The interface supports **English** and **Bahasa Indonesia**, switchable at any t
 
 ### Prerequisites
 - A GitHub account
-- A Google Gemini API key (used for web-grounded discovery and data enrichment until those stages are migrated)
-- A DeepSeek API key (used for quarterly resume/journal generation)
+- A Google Gemini API key (currently required for discovery and AI enrichment)
 - GitHub Pages enabled on your repository
 
 ### Step 1 — Fork or clone this repository
@@ -455,7 +454,7 @@ To change the crawl interval:
 | Component | Technology |
 |---|---|
 | AI Discovery & web-grounded enrichment (migration in progress) | Google Gemini Search Grounding |
-| Quarterly Resume / Journal generation | DeepSeek API |
+| Quarterly Resume / Journal generation | Deterministic Python (no AI API) |
 | Geocoding | OpenStreetMap Nominatim API |
 | Thumbnails | Microlink.io API + Wikimedia Commons fallback |
 | Automation | GitHub Actions |
