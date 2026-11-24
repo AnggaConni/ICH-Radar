@@ -116,23 +116,6 @@
   ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
   ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
 
-  /* Tombol Journal */
-  .btn-journal-glow {
-    background-color: #fff1f2;
-    color: #e11d48;
-    border: 1px solid #fda4af;
-    border-radius: 6px;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  .btn-journal-glow:hover {
-    background-color: #e11d48;
-    color: #ffffff;
-    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
-  }
-
   /* Style untuk Tombol Filter yang Sedang Aktif */
     .theme-filter-btn.active-pill {
     background-color: #0d9488 !important; /* warna aksen */
@@ -335,7 +318,6 @@
   .radar-action-btn--diffusion{width:104px}
   .radar-action-btn--export{width:90px}
   .radar-action-btn--print{width:70px}
-  .radar-action-btn--journal{width:94px}
   .radar-lang-wrap{
     flex:0 0 68px;
     width:68px;
@@ -354,7 +336,6 @@
     .radar-last-updated{flex-basis:210px;width:210px;min-width:210px;overflow:visible}
     .radar-action-btn--diffusion{width:96px}
     .radar-action-btn--export{width:84px}
-    .radar-action-btn--journal{width:90px}
   }
   @media (max-width: 980px){
     .radar-brand{flex-basis:215px;width:215px;min-width:215px}
@@ -375,7 +356,6 @@
     #translate-btn .ph-translate{font-size:13px !important}
     #translate-btn .ph-caret-down{font-size:8px !important}
     #translate-btn #lang-label{font-size:10px !important}
-    .btn-journal-glow{width:34px !important;height:34px !important;padding:0 !important}
 
     /* Keep the three primary tabs usable on narrow screens. */
     .radar-tabs{
@@ -835,11 +815,6 @@
           <i class="ph ph-printer text-base"></i>
           <span>Print</span>
         </a>
-
-        <button class="radar-action-btn radar-action-btn--journal btn-journal-glow flex items-center gap-1.5 rounded-lg font-bold" onclick="window.open('journal.html', '_blank')" title="Journal">
-          <i class="ph ph-book-open text-base"></i>
-          <span>Journal</span>
-        </button>
 
         <a href="discovery.html" target="_blank" class="radar-action-btn flex items-center gap-1.5 px-3 py-2 rounded-lg border border-teal-200 bg-teal-50 hover:bg-teal-100 text-teal-700 text-xs font-bold transition-colors" title="Browse autonomous RSS archive">
           <i class="ph ph-database text-base"></i><span>Discovery Archive</span>
