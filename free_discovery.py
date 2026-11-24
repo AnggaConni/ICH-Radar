@@ -317,10 +317,10 @@ def promote_candidate_with_deepseek(candidate, api_key, existing_inventory):
     evidence_text = (candidate.get("title", "") + "\n" + clean_text(candidate.get("description", "")) + "\n" + article).strip()
     if not source_url or len(article.strip()) < 350:
         return None, "insufficient_article_text"
-    prompt = """Using ONLY the supplied article, create a structured ICH record. Do not invent facts or UNESCO status.
+    prompt = """Using ONLY the supplied article and RSS metadata, create a detailed structured ICH record. Never invent missing facts, locations, steps, relationships, video URLs, or UNESCO status. Preserve original-language terms where present. Return blank/null/empty arrays when evidence is absent. Identify the primary heritage location at country, province/state, district, locality, and community levels only when explicitly supported. For each shared heritage candidate, include its own location hierarchy, relationship type, relationship_reason, and evidence excerpt/source URL; do not infer a relationship from generic similarities or common colonial/maritime context. Detailed process steps must retain chronological order and be source-grounded. Tools and materials should be distinct entries and retain names as given by sources. Extract any YouTube/video links from source text and include them in source_urls. Return JSON only, matching:
 If detailed process steps are not supported, resume_tata_cara=null and completion_status=INCOMPLETE.
 Return JSON only, matching:
-{"element_name":"specific name","categories":["one or more canonical categories"],"categories_valid":false,"category":"canonical category","category_valid":false,"thumbnail_url":"","source_urls":["direct URL"],"scraped_at":"ISO timestamp","location":{"country":"explicit country","provinces":[],"lat":null,"lng":null},"resume_analisa":{"description":"evidence-based description","cultural_significance":"","drr_category":"Not Directly Related to DRR","drr_category_valid":false,"drr_relevance_level":"Not Directly Related to DRR","hazard_categories":[],"drr_mechanism":null,"gemini_tags":[]},"resume_tata_cara":null,"shared_heritage_detection":{"is_shared":false,"confidence_score":0.0,"related_elements":[]},"completion_status":"INCOMPLETE"}
+{"element_name":"specific name","categories":["one or more canonical categories"],"categories_valid":false,"category":"canonical category","category_valid":false,"thumbnail_url":"","source_urls":["direct source and video URLs"],"scraped_at":"ISO timestamp","location":{"country":"explicit country or blank","provinces":[],"districts":[],"localities":[],"communities":[],"lat":null,"lng":null},"resume_analisa":{"description":"evidence-based detailed description","cultural_significance":"","drr_category":"Not Directly Related to DRR","drr_category_valid":false,"drr_relevance_level":"Not Directly Related to DRR","hazard_categories":[],"drr_mechanism":null,"gemini_tags":[]},"resume_tata_cara":{"type":"","materials_and_tools":[],"step_by_step":[]},"shared_heritage_detection":{"is_shared":false,"confidence_score":0.0,"relationship_type":"","related_elements":[{"element_name":"","country":"","location":{"country":"","provinces":[],"districts":[],"localities":[],"communities":[],"lat":null,"lng":null},"relationship_type":"","relationship_reason":"","evidence_excerpt":"","source_urls":[]}]},"completion_status":"INCOMPLETE"}
 Canonical categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals. Leave unknowns blank/null. Only set country when article states it.
 ARTICLE:
 """ + evidence_text + "\n\nSource URL: " + source_url
@@ -370,8 +370,89 @@ ARTICLE:
                 "hazard_categories":[],"drr_mechanism":None,"gemini_tags":[]}
     for key, value in defaults.items():
         analysis.setdefault(key, value)
-    record.setdefault("shared_heritage_detection", {"is_shared":False,"confidence_score":0.0,"related_elements":[]})
-    record.setdefault("resume_tata_cara", None)
+    # Normalize extended documentation fields while keeping compatibility with radar.html.
+    location = record.setdefault("location", {})
+    if not isinstance(location, dict):
+        location = record["location"] = {}
+    location.setdefault("country", "")
+    for field in ("provinces", "districts", "localities", "communities"):
+        if not isinstance(location.get(field), list):
+            location[field] = []
+    location.setdefault("lat", None)
+    location.setdefault("lng", None)
+
+    process = record.get("resume_tata_cara")
+    if not isinstance(process, dict):
+        process = {"type": "", "materials_and_tools": [], "step_by_step": []}
+        record["resume_tata_cara"] = process
+    for field in ("materials_and_tools", "step_by_step"):
+        if not isinstance(process.get(field), list):
+            process[field] = []
+
+    shared = record.setdefault("shared_heritage_detection", {"is_shared":False,"confidence_score":0.0,"related_elements":[]})
+    if not isinstance(shared, dict):
+        shared = record["shared_heritage_detection"] = {"is_shared":False,"confidence_score":0.0,"related_elements":[]}
+    if not isinstance(shared.get("related_elements"), list):
+        shared["related_elements"] = []
+    for related in shared["related_elements"]:
+        if not isinstance(related, dict):
+            continue
+        related.setdefault("country", (related.get("location") or {}).get("country", ""))
+        rel_location = related.setdefault("location", {})
+        if not isinstance(rel_location, dict):
+            rel_location = related["location"] = {}
+        rel_location.setdefault("country", related.get("country", ""))
+        for field in ("provinces", "districts", "localities", "communities"):
+            if not isinstance(rel_location.get(field), list):
+                rel_location[field] = []
+        rel_location.setdefault("lat", None)
+        rel_location.setdefault("lng", None)
+        related.setdefault("relationship_type", shared.get("relationship_type", ""))
+        related.setdefault("relationship_reason", "")
+        related.setdefault("evidence_excerpt", "")
+        if not isinstance(related.get("source_urls"), list):
+            related["source_urls"] = []
+
+    # Include discovered YouTube URLs in source_urls because radar.html extracts video links there.
+    video_pattern = re.compile(r"(?:https?://)?(?:www\\.)?(?:youtube\\.com/(?:watch\\?v=|embed/)|youtu\\.be/)[A-Za-z0-9_-]{11}", re.I)
+    media_text = "\\n".join([evidence_text, candidate.get("description", "")])
+    video_urls = ["https://" + match.group(0).lstrip("https://").lstrip("http://")
+                  for match in video_pattern.findall(media_text)]
+    record.setdefault("video_urls", [])
+    if not isinstance(record.get("video_urls"), list):
+        record["video_urls"] = []
+    record["video_urls"] = list(dict.fromkeys(record["video_urls"] + video_urls))
+    for video_url in record["video_urls"]:
+        if video_url not in record["source_urls"]:
+            record["source_urls"].append(video_url)
+
+    # Keep full Discovery source material in Main Archive before active Discovery deletion.
+    snapshot = {
+        "record_id": candidate.get("record_id"),
+        "title": candidate.get("title", ""),
+        "url": candidate.get("url", ""),
+        "resolved_url": candidate.get("resolved_url", ""),
+        "description": candidate.get("description", ""),
+        "article_text": candidate.get("article_text", ""),
+        "published": candidate.get("published", ""),
+        "source": candidate.get("source", ""),
+        "collection_method": candidate.get("collection_method", ""),
+        "first_collected_at": candidate.get("first_collected_at", ""),
+        "last_seen_at": candidate.get("last_seen_at", ""),
+        "seen_count": candidate.get("seen_count", 1),
+        "article_fetch_status": candidate.get("article_fetch_status", ""),
+        "article_fetch_error": candidate.get("article_fetch_error", ""),
+        "classification": {key: candidate.get(key) for key in (
+            "relevance_score", "confidence", "category", "possible_noise",
+            "matched_strong_terms", "matched_context_terms", "negative_flags"
+        ) if key in candidate}
+    }
+    snapshots = record.setdefault("source_records", [])
+    if not isinstance(snapshots, list):
+        snapshots = record["source_records"] = []
+    if not any(item.get("record_id") == snapshot.get("record_id") for item in snapshots if isinstance(item, dict)):
+        snapshots.append(snapshot)
+
     steps = (record.get("resume_tata_cara") or {}).get("step_by_step", [])
     record["completion_status"] = "COMPLETE" if isinstance(steps, list) and len(steps) >= 2 else "INCOMPLETE"
     return record, "promoted"
@@ -503,14 +584,23 @@ def main():
                     seen_ids.add(id(record))
                     if record.get("article_fetch_status") == "success" and record.get("article_text"):
                         eligible.append(record)
-                print(f"DeepSeek promotion queue: {len(eligible)} article-backed leads; limit {promotion_limit}.")
-                for candidate in eligible[:promotion_limit]:
+                scan_cap = max(promotion_limit, min(30, promotion_limit * 5))
+                print(f"DeepSeek promotion queue: {len(eligible)} article-backed leads; successful promotion limit {promotion_limit}; scan cap {scan_cap}.")
+                successes = 0
+                scanned = 0
+                for candidate in eligible:
+                    if successes >= promotion_limit or scanned >= scan_cap:
+                        break
+                    scanned += 1
                     new_record, status = promote_candidate_with_deepseek(candidate, deepseek_key, inventory)
                     promotion_results[status] = promotion_results.get(status, 0) + 1
+                    candidate_label = candidate.get("title", "Untitled")[:90]
+                    print(f"Promotion candidate {scanned}/{scan_cap}: {candidate_label} => {status}")
                     if new_record:
                         inventory.append(new_record)
                         staged_promotions.append(candidate)
-                        print(f"PROMOTED TO MAIN ARCHIVE: {new_record.get('element_name')} — {new_record.get('location',{}).get('country')}")
+                        successes += 1
+                        print(f"PROMOTED TO MAIN ARCHIVE ({successes}/{promotion_limit}): {new_record.get('element_name')} — {new_record.get('location',{}).get('country')})")
                 if staged_promotions:
                     main_db["inventory"] = inventory
                     main_db["summary"] = calculate_main_summary(inventory)
