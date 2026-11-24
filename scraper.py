@@ -17,7 +17,6 @@ import time
 from datetime import datetime
 import requests
 
-from deepseek_client import call_deepseek, DeepSeekAPIError
 
 # ── Logging Configuration ──
 logging.basicConfig(
@@ -854,119 +853,105 @@ Explain the mechanism in "drr_mechanism".
 # ======================================================================
 # QUARTERLY JOURNAL / RESUME GENERATOR (JSON ONLY - ENGLISH)
 # ======================================================================
-def generate_quarterly_resume(deepseek_api_key, inventory):
-    # Tentukan Kuartal Saat Ini
+def generate_quarterly_resume(inventory):
+    """Generate a deterministic quarterly journal without requiring any AI API."""
     now = datetime.now()
     quarter_str = f"{now.year}-Q{(now.month - 1) // 3 + 1}"
-    
+
     resume_db = {}
-    
-    # Load resume.json jika sudah ada
     if os.path.exists(RESUME_FILE):
         try:
             with open(RESUME_FILE, 'r', encoding='utf-8') as f:
                 resume_db = json.load(f)
         except Exception:
-            pass
-            
-    # Inisialisasi struktur untuk kuartal ini
+            log.warning("resume.json unreadable; starting a new journal index.")
+
     if quarter_str not in resume_db:
-        resume_db[quarter_str] = {
-            "status": "incomplete",
-            "statistics": {},
-            "content": {}
-        }
-        
-    # Jika sudah complete, lewati proses
-    if resume_db[quarter_str]["status"] == "complete":
-        log.info(f"⏭️ Resume Jurnal untuk {quarter_str} sudah COMPLETE. Skip generasi.")
+        resume_db[quarter_str] = {"status": "incomplete", "statistics": {}, "content": {}}
+    if resume_db[quarter_str].get("status") == "complete":
+        log.info(f"Quarterly journal for {quarter_str} already complete. Skipping.")
         return
-        
-    log.info(f"📝 Memulai penyusunan data Resume/Jurnal (Bahasa Inggris) untuk {quarter_str}...")
-    
-    # 1. Siapkan Statistik Data
-    total_items = len(inventory)
+
+    total = len(inventory)
     categories = {}
+    countries = set()
+    shared_count = 0
+    complete_count = 0
     for item in inventory:
-        item_categories = item.get("categories") or [item.get("category", "Unknown")]
-        for cat in item_categories:
-            categories[cat] = categories.get(cat, 0) + 1
-        
-    resume_db[quarter_str]["statistics"] = {
-        "total_items": total_items,
+        cats = item.get("categories") or [item.get("category", "Unknown")]
+        for cat in cats:
+            if cat and cat != "Unknown":
+                categories[cat] = categories.get(cat, 0) + 1
+        country = (item.get("location") or {}).get("country")
+        if country and country != "N/A":
+            countries.add(country.strip())
+        shared = (item.get("shared_heritage_detection") or {}).get("is_shared")
+        if shared:
+            shared_count += 1
+        if item.get("completion_status") == "COMPLETE":
+            complete_count += 1
+
+    stats = {
+        "total_items": total,
         "categories_distribution": categories,
-        "generated_at": now.strftime("%Y-%m-%d %H:%M:%S")
+        "countries_covered": len(countries),
+        "shared_heritage_records": shared_count,
+        "complete_records": complete_count,
+        "incomplete_records": total - complete_count,
+        "generated_at": now.strftime("%Y-%m-%d %H:%M:%S"),
     }
+    resume_db[quarter_str]["statistics"] = stats
 
-    # Cek komparasi tren (English Version)
-    previous_quarters = [q for q in resume_db.keys() if q != quarter_str]
-    tren_prompt = "Focus on narrating the current cultural data collection."
-    if previous_quarters:
-        last_q = sorted(previous_quarters)[-1]
-        tren_prompt = f"Compare with the previous quarter ({last_q}). Describe the data growth trend, focusing on developing categories and differences."
+    previous_quarters = sorted(q for q in resume_db if q != quarter_str)
+    previous_stats = resume_db.get(previous_quarters[-1], {}).get("statistics", {}) if previous_quarters else {}
+    previous_total = previous_stats.get("total_items")
+    growth_text = (
+        f"The previous saved journal reports {previous_total} records; "
+        f"the current inventory contains {total} records, a difference of {total - previous_total:+d}."
+        if isinstance(previous_total, int) else
+        "No previous quarterly statistics are available for a comparison."
+    )
 
-    # 2. PROMPT AI (Full English)
-    prompt = f"""
-    You are a Digital Anthropologist tasked with writing the Intangible Cultural Heritage Visual Journal for Quarter {quarter_str}.
-    Current Statistics: Total of {total_items} cultural entities. Category distribution: {json.dumps(categories)}.
-    {tren_prompt}
-    
-    Your task is to generate a structured narrative. Any discussion of institutional capacity, legislation, or Convention implementation MUST be explicitly framed as a data-based observation or limitation, never as verified institutional facts unless the source data supports them.
-    
-    The structure MUST exactly match this JSON format:
-    {{
-        "title": "Invisible Footprints: Visual Narrative of Cultural Heritage Quarter {quarter_str}",
-        "abstract": "Abstract paragraph summarizing the findings...",
-        "sections": {{
-            "prologue": {{
+    top_categories = sorted(categories.items(), key=lambda pair: (-pair[1], pair[0]))
+    category_text = ", ".join(f"{name} ({count})" for name, count in top_categories) or "No category data available"
+    coverage_text = ", ".join(sorted(countries)) if countries else "No country data available"
+    content = {
+        "title": f"Invisible Footprints: Visual Narrative of Cultural Heritage Quarter {quarter_str}",
+        "abstract": (
+            f"This quarterly snapshot records {total} cultural heritage entries across "
+            f"{len(countries)} countries. It includes {complete_count} complete and "
+            f"{total - complete_count} incomplete records. This is an automated inventory summary, "
+            "not a representative survey of living heritage."
+        ),
+        "sections": {
+            "prologue": {
                 "title": "1. Prologue: The Common Thread of Civilization",
-                "dropcap": "The first single letter of the prologue paragraph (e.g., 'W')",
-                "text": "The rest of the prologue paragraph text..."
-            }},
-            "anatomy": {{
+                "dropcap": "C",
+                "text": f"Cultural practices remain visible through community accounts and public sources. This snapshot documents {total} entries in the current inventory, while recognizing that online visibility does not measure cultural vitality or community priorities."
+            },
+            "anatomy": {
                 "title": "2. Anatomy of Tradition: Creativity, Craft, and Spirit",
-                "text": "Narrative regarding category dominance and data statistics..."
-            }},
-            "shared_heritage": {{
+                "text": f"The recorded category distribution is: {category_text}. Records may carry multiple categories, so category counts can exceed the number of individual entries."
+            },
+            "shared_heritage": {
                 "title": "3. Echoes Across Borders: Shared Heritage Network",
-                "text": "Narrative about relationships between countries (e.g., silk, indigo dyeing, migration routes)..."
-            }},
-            "periodic_report": {{
-                "title": "4. Status of Convention Implementation (Periodic Report)",
-                "text": "Official report style similar to UNESCO Periodic Report regarding safeguarding, legislation, etc..."
-            }},
-            "epilogue": {{
+                "text": f"The inventory currently marks {shared_count} records as having shared-heritage connections. These are machine-generated leads and should be reviewed against source evidence and community perspectives."
+            },
+            "periodic_report": {
+                "title": "4. Status of Documentation",
+                "text": f"The inventory covers {coverage_text}. {complete_count} records are marked complete and {total - complete_count} incomplete. {growth_text} The collection is not an official periodic report and cannot establish institutional implementation or safeguarding outcomes."
+            },
+            "epilogue": {
                 "title": "5. Epilogue",
-                "text": "Philosophical concluding thoughts..."
-            }}
-        }}
-    }}
-    """
-    
-    try:
-        ai_content = call_deepseek(
-            api_key=api_key,
-            prompt=prompt,
-            model=os.environ.get("DEEPSEEK_MODEL", "deepseek-flash"),
-            max_tokens=8192,
-            max_attempts=3,
-        )
-        if not isinstance(ai_content, dict):
-            raise ValueError("DeepSeek returned an unexpected non-object JSON response.")
-
-        # Simpan ke dalam Database Resume
-        resume_db[quarter_str]["status"] = "complete"
-        resume_db[quarter_str]["content"] = ai_content
-
-        with open(RESUME_FILE, 'w', encoding='utf-8') as f:
-            json.dump(resume_db, f, indent=4, ensure_ascii=False)
-
-        log.info(f"✅ Data Jurnal {quarter_str} berhasil digenerate dan disimpan ke resume.json via DeepSeek!")
-
-    except Exception as e:
-        log.error(f"❌ Gagal men-generate konten jurnal via DeepSeek: {e}")
-        with open(RESUME_FILE, 'w', encoding='utf-8') as f:
-            json.dump(resume_db, f, indent=4, ensure_ascii=False)
+                "text": "This journal is a transparent data snapshot. It highlights what the system has collected—not what communities necessarily consider most important, nor what remains undocumented offline."
+            }
+        }
+    }
+    resume_db[quarter_str]["status"] = "complete"
+    resume_db[quarter_str]["content"] = content
+    with open(RESUME_FILE, 'w', encoding='utf-8') as f:
+        json.dump(resume_db, f, indent=4, ensure_ascii=False)
+    log.info(f"Quarterly journal {quarter_str} generated deterministically (no AI API call).")
 
 # ======================================================================
 # MAIN EXECUTION
@@ -974,7 +959,6 @@ def generate_quarterly_resume(deepseek_api_key, inventory):
 
 def main():
     gemini_api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    deepseek_api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 
     try:
         db = load_db()
@@ -1057,7 +1041,7 @@ def main():
         if run_resume:
             # Quarterly Resume / Journal generation.
             # resume_only uses the current data.json without crawling new data.
-            generate_quarterly_resume(api_key, inventory)
+            generate_quarterly_resume(inventory)
             log.info("✅ Resume/Journal phase complete.")
         else:
             log.info("⏭️ Quarterly Resume skipped (not requested in this mode).")
