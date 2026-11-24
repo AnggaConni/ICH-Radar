@@ -148,7 +148,7 @@ def load_shards():
             for record in rows:
                 if not isinstance(record, dict):
                     continue
-                key = record.get("record_id") or record_key(record.get("url", ""), record.get("title", ""))
+                key = record_key(record.get("url", ""), record.get("title", ""))
                 record.setdefault("record_id", "rss-" + key)
                 records_by_key[key] = record
         except Exception as exc:
