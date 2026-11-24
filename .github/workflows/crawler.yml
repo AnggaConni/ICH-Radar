@@ -35,6 +35,11 @@ on:
         required: true
         default: 2
         type: number
+      deepseek_promotion_limit:
+        description: 'Maximum article-backed Discovery records to promote into Main Archive (1–10; ALL only)'
+        required: true
+        default: 2
+        type: number
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -68,6 +73,7 @@ jobs:
           DATA_DISCOVERY_INPUT: ${{ inputs.data_discovery_limit }}
           RESOURCE_ENRICH_INPUT: ${{ inputs.resource_enrich_limit }}
           FREE_AI_INPUT: ${{ inputs.free_discovery_ai_limit }}
+          DEEPSEEK_PROMOTE_INPUT: ${{ inputs.deepseek_promotion_limit }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             validate_range() {
@@ -81,10 +87,12 @@ jobs:
             DATA_DISCOVERY_LIMIT=$(validate_range "${DATA_DISCOVERY_INPUT:-1}" "Data discovery limit" 1 10)
             RESOURCE_ENRICH_LIMIT=$(validate_range "${RESOURCE_ENRICH_INPUT:-1}" "Resource enrichment limit" 1 10)
             FREE_DISCOVERY_AI_LIMIT=$(validate_range "${FREE_AI_INPUT:-2}" "Free Discovery AI limit" 0 20)
+            DEEPSEEK_PROMOTION_LIMIT=$(validate_range "${DEEPSEEK_PROMOTE_INPUT:-2}" "DeepSeek promotion limit" 1 10)
             echo "DATA_ENRICH_LIMIT=$DATA_ENRICH_LIMIT" >> "$GITHUB_ENV"
             echo "DATA_DISCOVERY_LIMIT=$DATA_DISCOVERY_LIMIT" >> "$GITHUB_ENV"
             echo "RESOURCE_ENRICH_LIMIT=$RESOURCE_ENRICH_LIMIT" >> "$GITHUB_ENV"
             echo "FREE_DISCOVERY_AI_LIMIT=$FREE_DISCOVERY_AI_LIMIT" >> "$GITHUB_ENV"
+            echo "DEEPSEEK_PROMOTION_LIMIT=$DEEPSEEK_PROMOTION_LIMIT" >> "$GITHUB_ENV"
             echo "Manual limits: data enrichment=$DATA_ENRICH_LIMIT; new discovery=$DATA_DISCOVERY_LIMIT; resource enrichment=$RESOURCE_ENRICH_LIMIT; free discovery Gemini identity attempts=$FREE_DISCOVERY_AI_LIMIT."
             case "$MODE_INPUT" in
               "Data only") echo "PIPELINE=data_only" >> "$GITHUB_ENV" ;;
@@ -99,6 +107,7 @@ jobs:
             echo "DATA_DISCOVERY_LIMIT=1" >> "$GITHUB_ENV"
             echo "RESOURCE_ENRICH_LIMIT=1" >> "$GITHUB_ENV"
             echo "FREE_DISCOVERY_AI_LIMIT=0" >> "$GITHUB_ENV"
+            echo "DEEPSEEK_PROMOTION_LIMIT=0" >> "$GITHUB_ENV"
             echo "Scheduled run: Free Discovery RSS only; no Gemini identity calls."
           fi
 
@@ -111,6 +120,7 @@ jobs:
       - name: Run selected pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         shell: bash
         run: |
           set -e
@@ -120,7 +130,7 @@ jobs:
             echo "=== STAGE 2/3: RESOURCE ENRICHMENT ==="
             CRAWL_MODE=resource_enrich RESOURCE_ENRICH_LIMIT="$RESOURCE_ENRICH_LIMIT" python scraper.py
             echo "=== STAGE 3/3: FREE DISCOVERY ==="
-            FREE_DISCOVERY_AI_LIMIT="$FREE_DISCOVERY_AI_LIMIT" python free_discovery.py
+            PROMOTE_TO_MAIN_ARCHIVE=1 DEEPSEEK_PROMOTION_LIMIT="$DEEPSEEK_PROMOTION_LIMIT" FREE_DISCOVERY_AI_LIMIT="$FREE_DISCOVERY_AI_LIMIT" python free_discovery.py
           elif [ "$PIPELINE" = "free_discovery" ]; then
             echo "Free Discovery RSS-only run."
             FREE_DISCOVERY_AI_LIMIT="$FREE_DISCOVERY_AI_LIMIT" python free_discovery.py
