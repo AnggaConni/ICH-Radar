@@ -102,9 +102,11 @@ jobs:
       - name: Validate Python syntax
         run: python -m py_compile scraper.py
 
-      - name: Run Scraper & Gemini AI
+      - name: Run Scraper & AI
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-flash
         run: |
           RESOURCE_ENRICH_LIMIT="${RESOURCE_ENRICH_LIMIT:-2}"
           echo "Running scraper with CRAWL_MODE=$CRAWL_MODE_INPUT, RESOURCE_ENRICH_LIMIT=$RESOURCE_ENRICH_LIMIT"
