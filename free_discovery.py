@@ -388,6 +388,7 @@ def main():
     article_fetch_count = 0
     article_fetch_limit = 35
     ai_identity_attempts = 0
+    gemini_identity_disabled = False
     promotion_enabled = os.getenv('PROMOTE_TO_MAIN_ARCHIVE', '0') == '1'
     promotion_limit = max(0, min(10, int(os.getenv('DEEPSEEK_PROMOTION_LIMIT', '3'))))
     promoted_records = []
@@ -443,7 +444,7 @@ def main():
                     rec["resolved_url"] = normalized
                 # Optional Gemini identity extraction; bounded to 20 requests/run.
                 api_key = os.getenv("GEMINI_API_KEY", "")
-                if api_key and ai_identity_attempts < ai_identity_limit:
+                if api_key and ai_identity_attempts < ai_identity_limit and not gemini_identity_disabled:
                     try:
                         prompt = ("Extract heritage element naming and geographic location from this text. " +
                                  "If location is not explicit, use empty string. Do not guess. Output JSON with naming and location keys.\n" +
@@ -459,14 +460,19 @@ def main():
                         rec["identity_extraction_status"] = "unavailable"
                         rec.setdefault("naming", clean_text(rec.get("title", "")))
                         rec.setdefault("location", "")
-                        print(f"AI identity extraction unavailable: {str(exc)[:150]}")
+                        status_code = getattr(getattr(exc, "response", None), "status_code", None)
+                        if status_code in (402, 429):
+                            gemini_identity_disabled = True
+                            print(f"Gemini identity AI disabled for remainder of run after HTTP {status_code} quota/payment response.")
+                        else:
+                            print(f"AI identity extraction unavailable: {str(exc)[:150]}")
                     ai_identity_attempts += 1
                 else:
                     rec.setdefault("naming", clean_text(rec.get("title", "")))
                     rec.setdefault("location", "")
                 match = find_identity_match(all_records, rec)
                 if match is not None:
-                    merge_api_key = api_key if api_key and ai_identity_attempts < ai_identity_limit else None
+                    merge_api_key = api_key if api_key and ai_identity_attempts < ai_identity_limit and not gemini_identity_disabled else None
                     if merge_api_key:
                         ai_identity_attempts += 1
                     merge_identity_record(match, rec, merge_api_key)
