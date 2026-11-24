@@ -985,9 +985,6 @@ def main():
         if (run_data or run_resource) and not gemini_api_key:
             log.error("GEMINI_API_KEY is required for data discovery/enrichment modes.")
             return
-        if run_resume and not deepseek_api_key:
-            log.error("DEEPSEEK_API_KEY is required for quarterly resume generation.")
-            return
 
         audited = 0
         enriched = 0
