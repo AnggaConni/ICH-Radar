@@ -2,9 +2,6 @@ name: ICH Shared Heritage Auto-Crawler
 
 on:
   schedule:
-    # Run every day. Scheduled runs alternate by absolute UTC day:
-    # One day -> discovery + standard data enrichment
-    # Next day -> Resource & Opportunity enrichment
     - cron: "0 0 * * *"
   workflow_dispatch:
     inputs:
@@ -17,8 +14,24 @@ on:
           - 'Data only'
           - 'Resource enrichment'
           - 'Free Discovery (Experimental)'
+          - 'ALL (Full Pipeline)'
+      data_enrich_limit:
+        description: 'Incomplete records to enrich in Data only mode (1–10)'
+        required: true
+        default: 1
+        type: number
+      data_discovery_limit:
+        description: 'New heritage records Gemini may discover in Data only mode (1–10)'
+        required: true
+        default: 1
+        type: number
       resource_enrich_limit:
         description: 'Records to enrich in Resource enrichment mode (1–10)'
+        required: true
+        default: 1
+        type: number
+      free_discovery_ai_limit:
+        description: 'Gemini identity extraction attempts in Free Discovery (0–20; 0 = no Gemini calls)'
         required: true
         default: 2
         type: number
@@ -29,10 +42,8 @@ env:
 jobs:
   run-scraper-and-ai:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -49,96 +60,89 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Select daily pipeline
+      - name: Validate inputs and select pipeline
         shell: bash
         env:
-          RESOURCE_ENRICH_LIMIT_INPUT: ${{ inputs.resource_enrich_limit }}
+          MODE_INPUT: ${{ inputs.crawl_mode }}
+          DATA_ENRICH_INPUT: ${{ inputs.data_enrich_limit }}
+          DATA_DISCOVERY_INPUT: ${{ inputs.data_discovery_limit }}
+          RESOURCE_ENRICH_INPUT: ${{ inputs.resource_enrich_limit }}
+          FREE_AI_INPUT: ${{ inputs.free_discovery_ai_limit }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            RESOURCE_ENRICH_LIMIT_INPUT="${RESOURCE_ENRICH_LIMIT_INPUT:-2}"
-            if ! [[ "$RESOURCE_ENRICH_LIMIT_INPUT" =~ ^[0-9]+$ ]]; then
-              echo "Resource enrichment record count must be a whole number from 1 to 10."
-              exit 1
-            fi
-            RESOURCE_ENRICH_LIMIT_INPUT=$((10#$RESOURCE_ENRICH_LIMIT_INPUT))
-            if (( RESOURCE_ENRICH_LIMIT_INPUT < 1 || RESOURCE_ENRICH_LIMIT_INPUT > 10 )); then
-              echo "Resource enrichment record count must be between 1 and 10."
-              exit 1
-            fi
-            echo "RESOURCE_ENRICH_LIMIT=$RESOURCE_ENRICH_LIMIT_INPUT" >> "$GITHUB_ENV"
-            echo "Manual resource enrichment batch size: $RESOURCE_ENRICH_LIMIT_INPUT record(s)."
-            case "${{ inputs.crawl_mode }}" in
-              "Data only")
-                echo "CRAWL_MODE_INPUT=data_only" >> "$GITHUB_ENV"
-                ;;
-              "Resource enrichment")
-                echo "CRAWL_MODE_INPUT=resource_enrich" >> "$GITHUB_ENV"
-                ;;
-              "Free Discovery (Experimental)")
-                echo "CRAWL_MODE_INPUT=free_discovery" >> "$GITHUB_ENV"
-                ;;
-              *)
-                echo "Unknown manual crawl mode."
-                exit 1
-                ;;
+            validate_range() {
+              local value="$1" name="$2" min="$3" max="$4"
+              if ! [[ "$value" =~ ^[0-9]+$ ]]; then echo "$name must be a whole number."; exit 1; fi
+              value=$((10#$value))
+              if (( value < min || value > max )); then echo "$name must be between $min and $max."; exit 1; fi
+              echo "$value"
+            }
+            DATA_ENRICH_LIMIT=$(validate_range "${DATA_ENRICH_INPUT:-1}" "Data enrichment limit" 1 10)
+            DATA_DISCOVERY_LIMIT=$(validate_range "${DATA_DISCOVERY_INPUT:-1}" "Data discovery limit" 1 10)
+            RESOURCE_ENRICH_LIMIT=$(validate_range "${RESOURCE_ENRICH_INPUT:-1}" "Resource enrichment limit" 1 10)
+            FREE_DISCOVERY_AI_LIMIT=$(validate_range "${FREE_AI_INPUT:-2}" "Free Discovery AI limit" 0 20)
+            echo "DATA_ENRICH_LIMIT=$DATA_ENRICH_LIMIT" >> "$GITHUB_ENV"
+            echo "DATA_DISCOVERY_LIMIT=$DATA_DISCOVERY_LIMIT" >> "$GITHUB_ENV"
+            echo "RESOURCE_ENRICH_LIMIT=$RESOURCE_ENRICH_LIMIT" >> "$GITHUB_ENV"
+            echo "FREE_DISCOVERY_AI_LIMIT=$FREE_DISCOVERY_AI_LIMIT" >> "$GITHUB_ENV"
+            echo "Manual limits: data enrichment=$DATA_ENRICH_LIMIT; new discovery=$DATA_DISCOVERY_LIMIT; resource enrichment=$RESOURCE_ENRICH_LIMIT; free discovery Gemini identity attempts=$FREE_DISCOVERY_AI_LIMIT."
+            case "$MODE_INPUT" in
+              "Data only") echo "PIPELINE=data_only" >> "$GITHUB_ENV" ;;
+              "Resource enrichment") echo "PIPELINE=resource_enrich" >> "$GITHUB_ENV" ;;
+              "Free Discovery (Experimental)") echo "PIPELINE=free_discovery" >> "$GITHUB_ENV" ;;
+              "ALL (Full Pipeline)") echo "PIPELINE=all" >> "$GITHUB_ENV" ;;
+              *) echo "Unknown mode."; exit 1 ;;
             esac
           else
-            # Scheduled pipeline runs the zero-cost RSS aggregator by default.
-            # Gemini-backed data/resource modes remain available via manual dispatch.
-            echo "CRAWL_MODE_INPUT=free_discovery" >> "$GITHUB_ENV"
-            echo "Scheduled mode: FREE AUTOMATED ICH RSS AGGREGATOR"
+            echo "PIPELINE=free_discovery" >> "$GITHUB_ENV"
+            echo "DATA_ENRICH_LIMIT=1" >> "$GITHUB_ENV"
+            echo "DATA_DISCOVERY_LIMIT=1" >> "$GITHUB_ENV"
+            echo "RESOURCE_ENRICH_LIMIT=1" >> "$GITHUB_ENV"
+            echo "FREE_DISCOVERY_AI_LIMIT=0" >> "$GITHUB_ENV"
+            echo "Scheduled run: Free Discovery RSS only; no Gemini identity calls."
           fi
 
       - name: Validate Python syntax
-        run: python -m py_compile scraper.py free_discovery.py test_free_discovery.py
+        run: python -m py_compile scraper.py free_discovery.py test_free_discovery.py resource_intelligence.py
 
       - name: Run offline aggregator safety tests
         run: python -m unittest -v test_free_discovery.py
 
-      - name: Run Scraper or Free Discovery
+      - name: Run selected pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        shell: bash
         run: |
-          if [ "$CRAWL_MODE_INPUT" = "free_discovery" ]; then
-            echo "Running experimental RSS-only discovery (no API key required)."
-            python free_discovery.py
+          set -e
+          if [ "$PIPELINE" = "all" ]; then
+            echo "=== STAGE 1/3: DATA ONLY ==="
+            CRAWL_MODE=data_only DATA_ENRICH_LIMIT="$DATA_ENRICH_LIMIT" DATA_DISCOVERY_LIMIT="$DATA_DISCOVERY_LIMIT" python scraper.py
+            echo "=== STAGE 2/3: RESOURCE ENRICHMENT ==="
+            CRAWL_MODE=resource_enrich RESOURCE_ENRICH_LIMIT="$RESOURCE_ENRICH_LIMIT" python scraper.py
+            echo "=== STAGE 3/3: FREE DISCOVERY ==="
+            FREE_DISCOVERY_AI_LIMIT="$FREE_DISCOVERY_AI_LIMIT" python free_discovery.py
+          elif [ "$PIPELINE" = "free_discovery" ]; then
+            echo "Free Discovery RSS-only run."
+            FREE_DISCOVERY_AI_LIMIT="$FREE_DISCOVERY_AI_LIMIT" python free_discovery.py
           else
-            RESOURCE_ENRICH_LIMIT="${RESOURCE_ENRICH_LIMIT:-2}"
-            echo "Running scraper with CRAWL_MODE=$CRAWL_MODE_INPUT, RESOURCE_ENRICH_LIMIT=$RESOURCE_ENRICH_LIMIT"
-            CRAWL_MODE="$CRAWL_MODE_INPUT" RESOURCE_ENRICH_LIMIT="$RESOURCE_ENRICH_LIMIT" python scraper.py
+            CRAWL_MODE="$PIPELINE" DATA_ENRICH_LIMIT="$DATA_ENRICH_LIMIT" DATA_DISCOVERY_LIMIT="$DATA_DISCOVERY_LIMIT" RESOURCE_ENRICH_LIMIT="$RESOURCE_ENRICH_LIMIT" python scraper.py
           fi
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
           git add data.json history.json free_discovery_candidates.json || true
-          # Numbered free-aggregator archive shards (data1.json ... data9999.json).
           git add data[1-9]*.json 2>/dev/null || true
-
           if git diff --staged --quiet; then
             echo "No new data to commit."
           else
-            git commit -m "ICH Update: alternating discovery & resource intelligence [skip ci]"
-
-            # Another workflow/manual edit can update main while this job is running.
-            # Rebase our generated commit on the latest remote main before pushing.
+            git commit -m "ICH Update: pipeline data changes [skip ci]"
             for attempt in 1 2 3; do
-              if git push origin HEAD:main; then
-                echo "Push succeeded on attempt $attempt."
-                exit 0
-              fi
-
-              echo "Push rejected; rebasing on latest origin/main (attempt $attempt)."
+              if git push origin HEAD:main; then echo "Push succeeded on attempt $attempt."; exit 0; fi
+              echo "Push rejected; rebasing (attempt $attempt)."
               git fetch origin main
-              git rebase origin/main || {
-                echo "Rebase conflict detected. The generated changes cannot be auto-merged safely."
-                git rebase --abort || true
-                exit 1
-              }
+              git rebase origin/main || { git rebase --abort || true; exit 1; }
             done
-
-            echo "Push failed after 3 attempts."
-            exit 1
+            echo "Push failed after 3 attempts."; exit 1
           fi
