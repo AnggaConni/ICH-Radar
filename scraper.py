@@ -17,6 +17,8 @@ import time
 from datetime import datetime
 import requests
 
+from deepseek_client import call_deepseek, DeepSeekAPIError
+
 # ── Logging Configuration ──
 logging.basicConfig(
     level=logging.INFO,
@@ -852,7 +854,7 @@ Explain the mechanism in "drr_mechanism".
 # ======================================================================
 # QUARTERLY JOURNAL / RESUME GENERATOR (JSON ONLY - ENGLISH)
 # ======================================================================
-def generate_quarterly_resume(api_key, inventory):
+def generate_quarterly_resume(deepseek_api_key, inventory):
     # Tentukan Kuartal Saat Ini
     now = datetime.now()
     quarter_str = f"{now.year}-Q{(now.month - 1) // 3 + 1}"
@@ -941,46 +943,28 @@ def generate_quarterly_resume(api_key, inventory):
     }}
     """
     
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
-    headers = {'Content-Type': 'application/json', 'x-goog-api-key': api_key}
-    
-    # Payload yang diperkuat (menggunakan responseMimeType untuk mencegah API bingung)
-    payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "temperature": 0.5, 
-            "maxOutputTokens": 8192,
-            "responseMimeType": "application/json"
-        }
-    }
-    
     try:
-        response = requests.post(url, json=payload, headers=headers)
-        response.raise_for_status()
-        result = response.json()
-        raw_text = result['candidates'][0]['content']['parts'][0]['text']
-        
-        # Karena menggunakan responseMimeType, AI sudah terjamin mengirim JSON bersih
-        ai_content = json.loads(raw_text)
-        
+        ai_content = call_deepseek(
+            api_key=api_key,
+            prompt=prompt,
+            model=os.environ.get("DEEPSEEK_MODEL", "deepseek-flash"),
+            max_tokens=8192,
+            max_attempts=3,
+        )
+        if not isinstance(ai_content, dict):
+            raise ValueError("DeepSeek returned an unexpected non-object JSON response.")
+
         # Simpan ke dalam Database Resume
         resume_db[quarter_str]["status"] = "complete"
         resume_db[quarter_str]["content"] = ai_content
-        
+
         with open(RESUME_FILE, 'w', encoding='utf-8') as f:
             json.dump(resume_db, f, indent=4, ensure_ascii=False)
-            
-        log.info(f"✅ Data Jurnal {quarter_str} berhasil digenerate dan disimpan ke resume.json!")
-        
-    except requests.exceptions.HTTPError as http_err:
-        log.error(f"❌ API Error HTTP: {http_err}")
-        # Menangkap alasan spesifik dari Google jika gagal lagi
-        log.error(f"Detail Penolakan Google Gemini: {response.text}") 
-        with open(RESUME_FILE, 'w', encoding='utf-8') as f:
-            json.dump(resume_db, f, indent=4, ensure_ascii=False)
-            
+
+        log.info(f"✅ Data Jurnal {quarter_str} berhasil digenerate dan disimpan ke resume.json via DeepSeek!")
+
     except Exception as e:
-        log.error(f"❌ Gagal men-generate konten jurnal: {e}")
+        log.error(f"❌ Gagal men-generate konten jurnal via DeepSeek: {e}")
         with open(RESUME_FILE, 'w', encoding='utf-8') as f:
             json.dump(resume_db, f, indent=4, ensure_ascii=False)
 
@@ -989,10 +973,8 @@ def generate_quarterly_resume(api_key, inventory):
 # ======================================================================
 
 def main():
-    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if not api_key:
-        log.error("GEMINI_API_KEY not found or empty!")
-        return
+    gemini_api_key = os.environ.get("GEMINI_API_KEY", "").strip()
+    deepseek_api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 
     try:
         db = load_db()
@@ -1016,6 +998,13 @@ def main():
         run_resource = crawl_mode == "resource_enrich"
         run_resume = crawl_mode in ("resume_only", "both")
 
+        if (run_data or run_resource) and not gemini_api_key:
+            log.error("GEMINI_API_KEY is required for data discovery/enrichment modes.")
+            return
+        if run_resume and not deepseek_api_key:
+            log.error("DEEPSEEK_API_KEY is required for quarterly resume generation.")
+            return
+
         audited = 0
         enriched = 0
         discovered = 0
@@ -1025,10 +1014,10 @@ def main():
             audited = audit_inventory(inventory)
 
             # PHASE 1: Enrich Incomplete Data First
-            enriched = enrich_incomplete_items(api_key, inventory)
+            enriched = enrich_incomplete_items(gemini_api_key, inventory)
 
             # PHASE 2: Discover New Data
-            discovered = discover_new_items(api_key, inventory)
+            discovered = discover_new_items(gemini_api_key, inventory)
 
             db["inventory"] = inventory
 
@@ -1048,7 +1037,7 @@ def main():
                 if resource_schema_defaults(item):
                     schema_changed += 1
 
-            resource_result = enrich_resource_data(api_key, inventory)
+            resource_result = enrich_resource_data(gemini_api_key, inventory)
             resource_enriched = resource_result["enriched"]
             resource_metadata_changed = resource_result["metadata_changed"]
 
