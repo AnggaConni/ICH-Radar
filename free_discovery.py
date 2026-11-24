@@ -37,7 +37,7 @@ TERMS = [
 ]
 
 def clean_text(value):
-    return re.sub(r"\\s+", " ", value or "").strip()
+    return re.sub(r"\s+", " ", value or "").strip()
 
 def get_text(node, *paths):
     for path in paths:
