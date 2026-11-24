@@ -421,7 +421,8 @@ ARTICLE:
     if not isinstance(record.get("video_urls"), list):
         record["video_urls"] = []
     record["video_urls"] = list(dict.fromkeys(
-        url for url in record["video_urls"] if isinstance(url, str) and url.startswith(("http://", "https://"))
+        url for url in (record["video_urls"] + video_urls)
+        if isinstance(url, str) and url.startswith(("http://", "https://"))
     ))
     for video_url in record["video_urls"]:
         if video_url not in record["source_urls"]:
