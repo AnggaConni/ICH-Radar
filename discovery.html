@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICH Radar — Discovery Archive</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>body{background:#f8fafc;color:#0f172a}a{color:#0f766e}button,input,select{font:inherit} .card{border:1px solid #e2e8f0;background:white;border-radius:14px}.muted{color:#64748b}</style>
+</head>
+<body class="min-h-screen">
+<header class="sticky top-0 bg-white/90 border-b border-slate-200 backdrop-blur z-10">
+<div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-3">
+<div><div class="font-bold text-xl">ICH Radar <span class="text-teal-700">Discovery Archive</span></div><div class="text-xs text-slate-500">Preservation-first · RSS candidates · Not yet validated inventory</div></div>
+<a href="radar.html" class="px-4 py-2 rounded-lg border border-slate-200 font-semibold text-sm">← Main Radar</a>
+</div></header>
+<main class="max-w-6xl mx-auto p-4 md:p-6 space-y-5">
+<section class="card p-4 md:p-5">
+<div class="flex flex-wrap items-start justify-between gap-3">
+<div><h1 class="text-2xl font-bold">Autonomous Discovery Archive</h1><p class="muted text-sm mt-1">Browse the RSS collector's accumulated records without changing the main inventory.</p></div>
+<button id="reload" class="px-4 py-2 rounded-lg bg-teal-700 text-white font-semibold text-sm">Refresh archive</button>
+</div>
+<div id="status" class="mt-3 text-sm muted">Loading archive index…</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
+<div class="bg-slate-50 border rounded-xl p-3"><div class="text-xs muted">Archive records</div><div id="total" class="text-2xl font-bold">—</div></div>
+<div class="bg-slate-50 border rounded-xl p-3"><div class="text-xs muted">Archive shards</div><div id="shards" class="text-2xl font-bold">—</div></div>
+<div class="bg-slate-50 border rounded-xl p-3"><div class="text-xs muted">Feeds checked last run</div><div id="feeds" class="text-2xl font-bold">—</div></div>
+<div class="bg-slate-50 border rounded-xl p-3"><div class="text-xs muted">New records last run</div><div id="new" class="text-2xl font-bold">—</div></div>
+</div>
+<div class="mt-4 flex flex-wrap gap-2">
+<button id="exportJson" class="px-3 py-2 border rounded-lg text-sm font-semibold">Export filtered JSON</button>
+<button id="exportCsv" class="px-3 py-2 border rounded-lg text-sm font-semibold">Export filtered CSV</button>
+</div>
+</section>
+<section class="card p-4 md:p-5">
+<div class="grid md:grid-cols-3 gap-3">
+<input id="search" type="search" placeholder="Search title, description, location, naming…" class="border rounded-lg px-3 py-2 text-sm md:col-span-2">
+<select id="noise" class="border rounded-lg px-3 py-2 text-sm"><option value="all">All records</option><option value="clean">Likely relevant</option><option value="noise">Possible noise flagged</option></select>
+<select id="sort" class="border rounded-lg px-3 py-2 text-sm"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="score">Relevance score high-low</option></select>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-2 mt-3 text-sm muted"><span id="results">Waiting for records…</span><div class="flex gap-2"><button id="prev" class="border rounded-lg px-3 py-1.5">← Previous</button><button id="next" class="border rounded-lg px-3 py-1.5">Next →</button></div></div>
+<div id="records" class="mt-4 space-y-3"></div>
+</section>
+<footer class="text-xs text-slate-500 pb-8">Archive records are automatically collected and may contain duplicates, false positives, or incomplete information. Human review is required before promoting records into the main inventory.</footer>
+</main>
+<script>
+const INDEX_URL='free_discovery_candidates.json';
+const PAGE_SIZE=50;
+let all=[],filtered=[],page=0,summary={};
+const el=id=>document.getElementById(id);
+function esc(v){return String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function formatDate(v){if(!v)return 'Date unknown';const d=new Date(v);return isNaN(d)?esc(v):d.toLocaleString();}
+async function loadArchive(){
+ el('status').textContent='Loading summary and archive shards…';el('records').innerHTML='';
+ try{
+  const sres=await fetch(INDEX_URL+'?t='+Date.now(),{cache:'no-store'});if(!sres.ok)throw new Error('Summary fetch failed: '+sres.status);
+  summary=await sres.json();const files=Array.isArray(summary.archive_files)?summary.archive_files:[];
+  if(!files.length)throw new Error('Summary contains no archive_files list. Collector may not have run successfully yet.');
+  const shardResults=await Promise.all(files.map(async f=>{const r=await fetch(f+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(f+' fetch failed ('+r.status+')');const data=await r.json();return Array.isArray(data)?data:[];}));
+  all=shardResults.flat();
+  el('total').textContent=all.length.toLocaleString();el('shards').textContent=files.length.toLocaleString();
+  el('feeds').textContent=summary.feeds_checked??'—';el('new').textContent=summary.new_records_this_run??'—';
+  el('status').textContent='Archive loaded · Last run: '+formatDate(summary.generated_at)+' · Feed errors: '+(summary.feed_errors?.length||0);
+  page=0;applyFilters();
+ }catch(e){el('status').textContent='Archive load error: '+e.message+' — check that GitHub Pages is publishing archive files.';el('total').textContent='—';el('records').innerHTML='<div class="border border-amber-200 bg-amber-50 rounded-xl p-4 text-sm text-amber-900">'+esc(e.message)+'</div>';}
+}
+function applyFilters(){
+ const q=el('search').value.trim().toLowerCase(),n=el('noise').value,sort=el('sort').value;
+ filtered=all.filter(r=>{const blob=[r.title,r.description,r.article_text,r.naming,r.location,r.category,r.source].join(' ').toLowerCase();if(q&&!blob.includes(q))return false;if(n==='clean'&&r.possible_noise)return false;if(n==='noise'&&!r.possible_noise)return false;return true;});
+ if(sort==='oldest')filtered.sort((a,b)=>String(a.first_collected_at||'').localeCompare(String(b.first_collected_at||'')));
+ else if(sort==='score')filtered.sort((a,b)=>(Number(b.relevance_score)||0)-(Number(a.relevance_score)||0));
+ else filtered.sort((a,b)=>String(b.first_collected_at||b.published||'').localeCompare(String(a.first_collected_at||a.published||'')));
+ page=0;renderPage();
+}
+function renderPage(){
+ const start=page*PAGE_SIZE,rows=filtered.slice(start,start+PAGE_SIZE);
+ el('results').textContent=filtered.length.toLocaleString()+' matching records · page '+(filtered.length? page+1:0)+' / '+Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
+ el('prev').disabled=page<=0;el('next').disabled=start+PAGE_SIZE>=filtered.length;
+ el('records').innerHTML=rows.map(r=>{
+ const title=r.naming||r.title||'Untitled candidate',desc=r.description||r.article_text||'No description available.';
+ const links=[...(r.source_links||[]),r.url].filter((u,i,a)=>u&&a.indexOf(u)===i);
+ return '<article class="border rounded-xl p-4 bg-white"><div class="flex flex-wrap justify-between gap-2 items-start"><h3 class="font-bold text-slate-900">'+esc(title)+'</h3><span class="text-xs px-2 py-1 rounded-full '+(r.possible_noise?'bg-amber-100 text-amber-800':'bg-emerald-100 text-emerald-800')+'">'+(r.possible_noise?'Possible noise':'Relevant signal')+'</span></div>'+
+ '<div class="text-xs text-slate-500 mt-1">'+esc(r.location||'Location not extracted')+' · '+esc(r.category||'Unclassified')+' · score '+esc(r.relevance_score??'—')+' · collected '+esc(formatDate(r.first_collected_at))+'</div>'+
+ '<p class="text-sm leading-relaxed mt-3 text-slate-700">'+esc(desc)+'</p>'+
+ (r.article_fetch_status?'<div class="text-xs muted mt-2">Article fetch: '+esc(r.article_fetch_status)+'</div>':'')+
+ '<div class="mt-3 flex flex-wrap gap-2">'+links.map(u=>'<a class="text-xs font-semibold border border-teal-100 bg-teal-50 px-2 py-1 rounded" href="'+esc(u)+'" target="_blank" rel="noopener">Source ↗</a>').join('')+'</div></article>';
+ }).join('')||'<div class="text-sm muted py-8 text-center">No records match this filter.</div>';
+}
+function download(name,mime,content){const blob=new Blob([content],{type:mime});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();URL.revokeObjectURL(url);}
+function exportJSON(){download('ich-discovery-filtered.json','application/json;charset=utf-8',JSON.stringify(filtered,null,2));}
+function exportCSV(){const cols=['title','naming','location','description','url','source_links','first_collected_at','category','relevance_score','possible_noise','seen_count'];const csv=[cols.join(','),...filtered.map(r=>cols.map(c=>{let v=c==='source_links'?(r[c]||[]).join(' | '):(r[c]??'');return '"'+String(v).replace(/"/g,'""')+'"';}).join(','))].join('\r\n');download('ich-discovery-filtered.csv','text/csv;charset=utf-8',csv);}
+el('search').addEventListener('input',applyFilters);el('noise').addEventListener('change',applyFilters);el('sort').addEventListener('change',applyFilters);el('reload').addEventListener('click',loadArchive);el('prev').addEventListener('click',()=>{if(page>0){page--;renderPage();}});el('next').addEventListener('click',()=>{if((page+1)*PAGE_SIZE<filtered.length){page++;renderPage();}});el('exportJson').addEventListener('click',exportJSON);el('exportCsv').addEventListener('click',exportCSV);loadArchive();
+</script>
+</body>
+</html>
