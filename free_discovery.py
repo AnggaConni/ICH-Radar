@@ -127,8 +127,8 @@ def main():
         "candidates": list(old_by_url.values()),
     }
     OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Free RSS discovery complete: {len(collected)} candidates this run; {len(result['candidates']) retained.")
+    print(f"Free RSS discovery complete: {len(collected)} candidates this run; {len(result['candidates'])} retained.")
     print(f"Feed errors: {len(feed_errors)}. data.json was not modified.")
 
-if ____ == "__main__":
+if __name__ == "__main__":
     main()
