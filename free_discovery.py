@@ -297,6 +297,7 @@ def main():
         "new_records_this_run": max(0, len(all_records) - existing_count),
         "records_seen_or_updated_this_run": len(seen_this_run),
         "article_fetch_attempts_this_run": article_fetch_count,
+        "article_fetch_success_count": sum(1 for r in all_records.values() if r.get("article_fetch_status") == "success"),
         "total_records_retained": len(all_records),
         "shard_size": SHARD_SIZE,
         "shard_count": max(1, (len(all_records) + SHARD_SIZE - 1) // SHARD_SIZE),
