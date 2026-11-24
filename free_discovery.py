@@ -139,7 +139,7 @@ def fetch_article(session, url):
                 "article_fetch_status": "success" if extracted else "empty"}
     except Exception as exc:
         return {"resolved_url": url, "article_text": "",
-                "article_fetch_status": "failed", "article_fetch_error": str(exc)[:200}
+                "article_fetch_status": "failed", "article_fetch_error": str(exc)[:200]}
 \ndef classify_metadata(title, description):
     text = clean_text(title + " " + description).lower()
     strong_hits = [term for term in STRONG_TERMS if term in text]
