@@ -511,7 +511,7 @@ def main():
                         inventory.append(new_record)
                         staged_promotions.append(candidate)
                         print(f"PROMOTED TO MAIN ARCHIVE: {new_record.get('element_name')} — {new_record.get('location',{}).get('country')}")
-                if promoted_records:
+                if staged_promotions:
                     main_db["inventory"] = inventory
                     main_db["summary"] = calculate_main_summary(inventory)
                     main_file.write_text(json.dumps(main_db, ensure_ascii=False, indent=2), encoding="utf-8")
