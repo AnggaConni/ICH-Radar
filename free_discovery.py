@@ -229,6 +229,8 @@ def main():
     existing_count = len(all_records)
     feed_errors = []
     seen_this_run = {}
+    article_fetch_count = 0
+    article_fetch_limit = 35
 
     for query in QUERIES:
         feed_url = "https://news.google.com/rss/search?q=" + quote(query) + "&hl=en-US&gl=US&ceid=US:en"
@@ -248,6 +250,10 @@ def main():
                     if description and len(description) > len(record.get("description", "")):
                         record["description"] = description
                     record.update(classify_metadata(record.get("title", title), record.get("description", "")))
+                    if article_fetch_count < article_fetch_limit and not record.get("article_text"):
+                        record.update(fetch_article(session, record.get("resolved_url") or record.get("url", "")))
+                        article_fetch_count += 1
+                        time.sleep(0.8)
                     seen_this_run[key] = record
                     continue
                 rec = {
@@ -263,6 +269,14 @@ def main():
                     "seen_count": 1,
                 }
                 rec.update(classify_metadata(title, description))
+                if article_fetch_count < article_fetch_limit:
+                    rec.update(fetch_article(session, normalized))
+                    article_fetch_count += 1
+                    time.sleep(0.8)
+                else:
+                    rec["article_fetch_status"] = "deferred"
+                    rec["article_text"] = ""
+                    rec["resolved_url"] = normalized
                 all_records[key] = rec
                 seen_this_run[key] = rec
         except Exception as exc:
@@ -277,7 +291,9 @@ def main():
         "feeds_checked": len(QUERIES),
         "feed_errors": feed_errors,
         "new_records_this_run": max(0, len(all_records) - existing_count),
-        "records_seen_or_updated_this_run": len(seen_this_run),\n        "article_fetch_attempts_this_run": article_fetch_count,\n        "article_fetch_success_count": sum(1 for r in all_records.values() if r.get("article_fetch_status") == "success"),
+        "records_seen_or_updated_this_run": len(seen_this_run),
+        "article_fetch_attempts_this_run": article_fetch_count,
+        "article_fetch_success_count": sum(1 for r in all_records.values() if r.get("article_fetch_status") == "success"),\n        "article_fetch_attempts_this_run": article_fetch_count,\n        "article_fetch_success_count": sum(1 for r in all_records.values() if r.get("article_fetch_status") == "success"),
         "total_records_retained": len(all_records),
         "shard_size": SHARD_SIZE,
         "shard_count": max(1, (len(all_records) + SHARD_SIZE - 1) // SHARD_SIZE),
