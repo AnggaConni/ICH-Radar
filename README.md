@@ -12,6 +12,10 @@ ICH Radar is a fully automated, free-tier-friendly discovery and collection pipe
 - **Recall-first:** when in doubt, retain the record and flag it as possible noise.
 - **Append-first:** new information is added; existing records are not automatically deleted.
 - **Deduplicate carefully:** repeated discovery of the same URL updates/merges the record rather than creating endless duplicates.
+- **Identity-based merging:** records merge only when normalized heritage naming and explicit geographic location match exactly. Different locations remain separate; missing locations are never guessed into a merge.
+- **Source preservation:** merged records retain unique source links and source-level snapshots, so enrichment does not erase provenance.
+- **Optional free-tier AI:** Gemini identity extraction is capped at 20 attempts per run and merge-description calls happen only for matched records. If AI is unavailable or quota is exhausted, the crawler keeps records and appends distinct source descriptions instead.
+
 - **Enrichment is optional:** AI/classification failure must not block collection.
 - **Free by default:** scheduled aggregation does not require paid AI APIs or API-key top-ups.
 - **Human decisions happen downstream:** ICH Radar is not a review, approval, or correction workflow. Use the collected data in other tools, then select/copy records as needed.
@@ -89,7 +93,7 @@ Collected JSON shards are designed to be reused by downstream tools. Humans can 
 - This is a **discovery archive**, not a verified or official ICH inventory.
 - Automated metadata, categories, scores, summaries, and locations can be wrong.
 - A noisy record is preferable to silently losing a possible ICH lead.
-- Duplicate handling is URL-based and can miss duplicates when the same story uses different URLs.
+- URL duplicates are merged first. Heritage identity merging additionally requires exact normalized naming and location, and depends on AI extracting both fields; if either is missing, the records remain separate. This intentionally avoids risky merges.
 - RSS feeds can change, become unavailable, or provide limited article text. Publisher full-text extraction is best-effort and is limited per run.
 - The collector does not guarantee complete web coverage, full article access, or permanent preservation of publisher content.
 - Collection respects reasonable request timeouts and avoids aggressive crawling. Publisher terms, robots policies, and copyright restrictions still apply; stored snippets/metadata and source links should be preferred over republishing entire copyrighted articles.
