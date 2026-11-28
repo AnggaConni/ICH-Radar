@@ -581,7 +581,7 @@ def call_ai(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=8192):
         response = requests.post("https://api.deepseek.com/chat/completions",
             headers={"Authorization": "Bearer " + deepseek_key, "Content-Type": "application/json"},
             json={"model": "deepseek-flash", "messages": [{"role": "user", "content": prompt}],
-                  "temperature": 0, "response_format": {"type": "json_object"}},
+                  "temperature": 0},
             timeout=120)
         response.raise_for_status()
         return json.loads(response.json()["choices"][0]["message"]["content"])
@@ -623,7 +623,7 @@ def enrich_incomplete_items(api_key, inventory, max_items=None):
         You are a Cultural Heritage expert. I have an incomplete record for the Cultural Heritage practice/tradition: "{element_name}".
         Current known sources: {current_sources}.
         
-        Use only the retrieved evidence below to fill missing information. Do not search independently or invent source URLs. If evidence is insufficient, leave fields incomplete.\n        Retrieved evidence:\n        {evidence_block}\n        Source URLs must come from this evidence or existing sources.Find AT LEAST ONE NEW source URL to add to the existing ones.
+        Use only the retrieved evidence below to fill missing information. Do not search independently or invent source URLs. If evidence is insufficient, leave fields incomplete.\n        Retrieved evidence:\n        {evidence_block}\n        Source URLs must come from this evidence or existing sources.
         {image_instruction}
         
         IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
