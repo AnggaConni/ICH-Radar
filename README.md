@@ -82,6 +82,14 @@ The scheduled workflow:
 
 Manual workflow dispatch remains available for legacy Gemini-backed modes, but those are optional and are not required for scheduled collection.
 
+## Direct thumbnail enrichment
+
+Manual workflow mode **Thumbnail Enrichment (Direct URLs)** processes a bounded batch from the existing `data.json` inventory (default 5 records, configurable 1–25). It does not call AI APIs.
+
+For each record missing a thumbnail, carrying a placeholder, or using a Microlink screenshot URL, the script tries source article pages in order and extracts representative image URLs from Open Graph/social metadata, JSON-LD, and HTML image attributes (including lazy-loaded and srcset variants). It validates candidate URLs with streamed HTTP requests, then falls back to Wikimedia Commons API search. Successful records retain the direct image URL, source page, extraction method, and checked timestamp. Existing direct thumbnail URLs are not overwritten. Records without a suitable image are marked `thumbnail_status=incomplete` and remain eligible for future retry.
+
+The mode updates the existing main inventory without changing its summary counts or unrelated record fields. Image URLs are direct external links; availability and licensing remain source-dependent.
+
 ## Dashboard and exports
 
 The dashboard is hosted through GitHub Pages. Existing dashboard features and legacy `data.json` inventory remain separate from the numbered collector archive unless explicitly integrated.

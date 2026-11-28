@@ -41,6 +41,11 @@ on:
         required: true
         default: 2
         type: number
+      thumbnail_enrich_limit:
+        description: 'Existing main inventory records to enrich with direct thumbnail URLs (1–25)'
+        required: true
+        default: 5
+        type: number
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -75,6 +80,7 @@ jobs:
           RESOURCE_ENRICH_INPUT: ${{ inputs.resource_enrich_limit }}
           FREE_AI_INPUT: ${{ inputs.free_discovery_ai_limit }}
           DEEPSEEK_PROMOTE_INPUT: ${{ inputs.deepseek_promotion_limit }}
+          THUMBNAIL_LIMIT_INPUT: ${{ inputs.thumbnail_enrich_limit }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             validate_range() {
@@ -89,17 +95,20 @@ jobs:
             RESOURCE_ENRICH_LIMIT=$(validate_range "${RESOURCE_ENRICH_INPUT:-1}" "Resource enrichment limit" 1 10)
             FREE_DISCOVERY_AI_LIMIT=$(validate_range "${FREE_AI_INPUT:-2}" "Free Discovery AI limit" 0 20)
             DEEPSEEK_PROMOTION_LIMIT=$(validate_range "${DEEPSEEK_PROMOTE_INPUT:-2}" "DeepSeek promotion limit" 1 10)
+            THUMBNAIL_ENRICH_LIMIT=$(validate_range "${THUMBNAIL_LIMIT_INPUT:-5}" "Thumbnail enrichment limit" 1 25)
             echo "DATA_ENRICH_LIMIT=$DATA_ENRICH_LIMIT" >> "$GITHUB_ENV"
             echo "DATA_DISCOVERY_LIMIT=$DATA_DISCOVERY_LIMIT" >> "$GITHUB_ENV"
             echo "RESOURCE_ENRICH_LIMIT=$RESOURCE_ENRICH_LIMIT" >> "$GITHUB_ENV"
             echo "FREE_DISCOVERY_AI_LIMIT=$FREE_DISCOVERY_AI_LIMIT" >> "$GITHUB_ENV"
             echo "DEEPSEEK_PROMOTION_LIMIT=$DEEPSEEK_PROMOTION_LIMIT" >> "$GITHUB_ENV"
+            echo "THUMBNAIL_ENRICH_LIMIT=$THUMBNAIL_ENRICH_LIMIT" >> "$GITHUB_ENV"
             echo "Manual limits: data enrichment=$DATA_ENRICH_LIMIT; new discovery=$DATA_DISCOVERY_LIMIT; resource enrichment=$RESOURCE_ENRICH_LIMIT; free discovery Gemini identity attempts=$FREE_DISCOVERY_AI_LIMIT."
             case "$MODE_INPUT" in
               "Data only") echo "PIPELINE=data_only" >> "$GITHUB_ENV" ;;
               "Resource enrichment") echo "PIPELINE=resource_enrich" >> "$GITHUB_ENV" ;;
               "Free Discovery (Experimental)") echo "PIPELINE=free_discovery" >> "$GITHUB_ENV" ;;
               "Inventory Quality Audit (Read-only)") echo "PIPELINE=inventory_audit" >> "$GITHUB_ENV" ;;
+              "Thumbnail Enrichment (Direct URLs)") echo "PIPELINE=thumbnail_enrich" >> "$GITHUB_ENV" ;;
               "ALL (Full Pipeline)") echo "PIPELINE=all" >> "$GITHUB_ENV" ;;
               *) echo "Unknown mode."; exit 1 ;;
             esac
@@ -114,10 +123,10 @@ jobs:
           fi
 
       - name: Validate Python syntax
-        run: python -m py_compile scraper.py free_discovery.py web_search_discovery.py test_free_discovery.py test_web_search_discovery.py resource_intelligence.py inventory_quality_audit.py test_inventory_quality_audit.py
+        run: python -m py_compile scraper.py free_discovery.py web_search_discovery.py test_free_discovery.py test_web_search_discovery.py resource_intelligence.py inventory_quality_audit.py test_inventory_quality_audit.py thumbnail_enrichment.py test_thumbnail_enrichment.py
 
       - name: Run offline aggregator safety tests
-        run: python -m unittest -v test_free_discovery.py test_web_search_discovery.py test_inventory_quality_audit.py
+        run: python -m unittest -v test_free_discovery.py test_web_search_discovery.py test_inventory_quality_audit.py test_thumbnail_enrichment.py
 
       - name: Run selected pipeline
         env:
@@ -139,6 +148,9 @@ jobs:
             python web_search_discovery.py
             echo "=== STAGE 4/4: RSS PRESERVATION + PROMOTION ==="
             PROMOTE_TO_MAIN_ARCHIVE=1 DEEPSEEK_PROMOTION_LIMIT="$DEEPSEEK_PROMOTION_LIMIT" FREE_DISCOVERY_AI_LIMIT="$FREE_DISCOVERY_AI_LIMIT" python free_discovery.py
+          elif [ "$PIPELINE" = "thumbnail_enrich" ]; then
+            echo "Direct-thumbnail enrichment for existing main inventory (no AI calls)."
+            THUMBNAIL_ENRICH_LIMIT="$THUMBNAIL_ENRICH_LIMIT" python thumbnail_enrichment.py
           elif [ "$PIPELINE" = "inventory_audit" ]; then
             echo "Read-only quality audit of existing data.json inventory."
             python inventory_quality_audit.py
