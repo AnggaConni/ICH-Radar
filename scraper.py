@@ -35,6 +35,7 @@ DATA_FILE    = os.path.join(BASE_DIR, "data.json")
 # GLOBAL KEYWORD DATABASE FOR DISCOVERY (Multi-Language)
 # ======================================================================
 from keyword_database import KEYWORDS
+from evidence_search import search_evidence
 
 # ======================================================================
 # DATA PERSISTENCE & MIGRATION
@@ -427,12 +428,8 @@ class GeminiQuotaExhausted(RuntimeError):
 
 
 def call_gemini(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=8192):
-    """Call Gemini with Google Search grounding and resilient transient-error handling."""
+    """Call Gemini text-only; external search providers supply evidence."""
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-
-    # Gemini 3.x uses the current google_search tool name.
-    # Gemini 2.5 keeps the legacy camelCase tool name already used by this repo.
-    search_tool = {"google_search": {}} if model.startswith("gemini-3") else {"googleSearch": {}}
 
     generation_config = {
         "maxOutputTokens": max_output_tokens
@@ -444,7 +441,6 @@ def call_gemini(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=819
 
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "tools": [search_tool],
         "generationConfig": generation_config
     }
 
@@ -569,6 +565,30 @@ def call_gemini(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=819
 
     return None
 
+def call_ai(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=8192):
+    """Gemini text-only primary with DeepSeek text-only JSON fallback."""
+    try:
+        result = call_gemini(api_key, prompt, model=model, max_output_tokens=max_output_tokens)
+        if result is not None:
+            return result
+    except GeminiQuotaExhausted as exc:
+        log.warning("Gemini quota unavailable; switching to DeepSeek: %s", str(exc)[:180])
+    deepseek_key = os.getenv("DEEPSEEK_API_KEY", "").strip()
+    if not deepseek_key:
+        log.warning("DeepSeek fallback unavailable: key not configured.")
+        return None
+    try:
+        response = requests.post("https://api.deepseek.com/chat/completions",
+            headers={"Authorization": "Bearer " + deepseek_key, "Content-Type": "application/json"},
+            json={"model": "deepseek-flash", "messages": [{"role": "user", "content": prompt}],
+                  "temperature": 0, "response_format": {"type": "json_object"}},
+            timeout=120)
+        response.raise_for_status()
+        return json.loads(response.json()["choices"][0]["message"]["content"])
+    except Exception as exc:
+        log.error("DeepSeek fallback failed: %s", str(exc)[:200])
+        return None
+
 # ======================================================================
 # PHASE 1: ENRICHMENT (Fixing Incomplete Data)
 # ======================================================================
@@ -593,14 +613,17 @@ def enrich_incomplete_items(api_key, inventory, max_items=None):
         image_instruction = "Crucially, this record lacks a valid image. You MUST find a new source URL (like a news article, official site, or Wikipedia) that contains a clear, high-quality image of this heritage." if needs_image else ""
         
         log.info(f"Enriching: {element_name}")
+        evidence, evidence_errors = search_evidence(f"{element_name} cultural heritage {item.get('location', {}).get('country', '')}", max_items=6)
+        evidence_block = "\n".join(f"- {entry.get('title','')} | {entry.get('provider','')} | {entry.get('url','')}\n{entry.get('text','')[:2500]}" for entry in evidence)
+        if evidence_errors:
+            log.warning("Evidence search issues: %s", "; ".join(evidence_errors[:3]))
+
         
         prompt = f"""
         You are a Cultural Heritage expert. I have an incomplete record for the Cultural Heritage practice/tradition: "{element_name}".
         Current known sources: {current_sources}.
         
-        Please use Google Search to find the missing information (e.g., specific step-by-step crafting process, authentic recipe, or detailed history). 
-        You can search through local news, community blogs, and social media.
-        Find AT LEAST ONE NEW source URL to add to the existing ones.
+        Use only the retrieved evidence below to fill missing information. Do not search independently or invent source URLs. If evidence is insufficient, leave fields incomplete.\n        Retrieved evidence:\n        {evidence_block}\n        Source URLs must come from this evidence or existing sources.Find AT LEAST ONE NEW source URL to add to the existing ones.
         {image_instruction}
         
         IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
@@ -682,7 +705,7 @@ Set "categories_valid" to true only when at least one selected category is clear
         """
         
 # BARIS DI BAWAH INI SEKARANG SUDAH MASUK KE DALAM LOOP (Indentasi Benar)
-        updated_item = call_gemini(api_key, prompt, model="gemini-3.8-flash")
+        updated_item = call_ai(api_key, prompt, model="gemini-3.8-flash")
         if updated_item and isinstance(updated_item, dict):
             normalize_ai_classification(updated_item)
             resource_schema_defaults(updated_item)
@@ -722,7 +745,7 @@ def enrich_resource_data(api_key, inventory):
     return _enrich_resource_data(
         api_key,
         inventory,
-        call_gemini=call_gemini,
+        call_gemini=call_ai,
         quota_exception=GeminiQuotaExhausted,
         logger=log,
         max_items=os.environ.get("RESOURCE_ENRICH_LIMIT", "2"),
@@ -742,9 +765,19 @@ def discover_new_items(api_key, inventory, max_items=None):
         existing_names = [item.get("element_name", "").lower() for item in inventory]
         target = random.choice(KEYWORDS)
         log.info(f"Discovery Phase [{i+1}/{max_discoveries_per_run}] Targeting: {target}")
+        evidence, evidence_errors = search_evidence(f"{target} intangible cultural heritage tradition", max_items=6)
+        evidence_block = "\n".join(f"- {entry.get('title','')} | {entry.get('provider','')} | {entry.get('url','')}\n{entry.get('text','')[:2500]}" for entry in evidence)
+        if not evidence:
+            log.warning("No evidence returned for keyword '%s'; skipping AI discovery.", target)
+            continue
+        if evidence_errors:
+            log.warning("Discovery evidence issues: %s", "; ".join(evidence_errors[:3]))
+
         prompt = f"""
-        Use Google Search to find detailed information about ONE specific Cultural Heritage, local folklore, or traditional community practice using this keyword/concept: "{target}".
+        Identify ONE specific heritage element from the retrieved evidence related to this keyword/concept: "{target}". Do not search independently.
         Ignore these already known elements: {existing_names[:15]}...
+        Retrieved evidence (use only these source URLs):
+        {evidence_block}
         
         IMPORTANT INSTRUCTIONS:
         1. The element DOES NOT need to be officially recognized by UNESCO. It can be a local tradition, unregistered heritage, rare recipe, or community practice found on local blogs or regional news.
@@ -814,13 +847,15 @@ Explain the mechanism in "drr_mechanism".
         ]
         """
         
-        new_items = call_gemini(api_key, prompt, model="gemini-3.8-flash")
+        new_items = call_ai(api_key, prompt, model="gemini-3.8-flash")
         
        # PERBAIKAN: Jarak spasi di bawah ini sudah sejajar dengan 'new_items'
         if isinstance(new_items, list):
             for item in new_items:
                 name = item.get("element_name", "Unknown")
-                if name.lower() not in existing_names:
+                location_country = str((item.get("location") or {}).get("country", "")).lower().strip()
+                identity_exists = any(name.lower().strip() == old.get("element_name", "").lower().strip() and location_country == str((old.get("location") or {}).get("country", "")).lower().strip() for old in inventory)
+                if not identity_exists:
                     normalize_ai_classification(item)
                     item["id"] = generate_id(name)
                     
