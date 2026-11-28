@@ -34,7 +34,7 @@ class MultiProviderTests(unittest.TestCase):
         rows = web.youcom_search(None, "heritage query", "fake")
         self.assertEqual(rows[0]["provider"], "YOU.com")
         self.assertEqual(rows[0]["url"], "https://example.org/you")
-        self.assertIn("ritual", rows[0]["description"])
+        self.assertIn("Community performance", rows[0]["description"])
 
     @patch("web_search_discovery.request_json")
     def test_firecrawl_v2_web_results(self, mocked):
