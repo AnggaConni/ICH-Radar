@@ -33,7 +33,7 @@ def now_iso():
     return datetime.now(timezone.utc).isoformat()
 
 def clean(value):
-    return re.sub(r"\\s+", " ", str(value or "")).strip()
+    return re.sub(r"\s+", " ", str(value or "")).strip()
 
 def request_json(session, url, headers, payload, timeout=REQUEST_TIMEOUT):
     response = session.post(url, headers=headers, json=payload, timeout=timeout)
