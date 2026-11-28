@@ -59,6 +59,25 @@ def exa_search(session, query, api_key):
              "published": r.get("publishedDate"), "provider": "Exa"}
             for r in data.get("results", [])]
 
+def youcom_search(session, query, api_key):
+    data = request_json(session, "https://ydc-index.io/v1/search",
+        {"X-API-Key": api_key, "Content-Type": "application/json"},
+        {"query": query, "count": PROVIDER_MAX_RESULTS,
+         "extraction": {"extraction_mode": "highlights"}})
+    rows = (data.get("results") or {}).get("web", [])
+    normalized = []
+    for r in rows:
+        contents = r.get("contents") or {}
+        highlights = contents.get("highlights") or []
+        snippets = r.get("snippets") or []
+        text_content = " ".join(str(x) for x in (highlights or snippets) if x)
+        normalized.append({
+            "url": r.get("url"), "title": r.get("title"),
+            "description": r.get("description") or text_content,
+            "published": r.get("page_age"), "provider": "YOU.com"
+        })
+    return normalized
+
 def firecrawl_search(session, query, api_key):
     data = request_json(session, "https://api.firecrawl.dev/v2/search",
         {"Authorization": "Bearer " + api_key, "Content-Type": "application/json"},
@@ -101,25 +120,30 @@ def main():
         ("Tavily", tavily_search, os.getenv("TAVILY_API_KEY", "").strip()),
         ("Exa", exa_search, os.getenv("EXA_API_KEY", "").strip()),
         ("Firecrawl", firecrawl_search, os.getenv("FIRECRAWL_API_KEY", "").strip()),
+        ("YOU.com", youcom_search, os.getenv("YOUCOM_API_KEY", "").strip()),
     ]
     providers = [p for p in providers if p[2]]
     if not providers:
-        print("Web search skipped: no Tavily, Exa, or Firecrawl API key is configured.")
+        print("Web search skipped: no Tavily, Exa, Firecrawl, or YOU.com API key is configured.")
         return
 
     records = load_shards()
     before = len({id(r) for r in records.values()})
     collected, stats, provider_errors = {}, {}, {}
+    def new_unique_count():
+        return sum(1 for key_id in collected if key_id not in records)
+
     for name, func, key in providers:
         stats[name] = 0
-        # Cost-aware fallback: once coverage is adequate, stop invoking later providers.
-        if len(collected) >= PROVIDER_TARGET_UNIQUE and name != "Tavily":
-            print(f"Coverage target reached ({len(collected)} unique results); skipping {name}.")
+        # Only use later providers when the archive still needs NEW candidates.
+        if new_unique_count() >= PROVIDER_TARGET_UNIQUE:
+            print(f"New-candidate coverage target reached ({new_unique_count()}); skipping {name}.")
             continue
         for query in SEARCH_QUERIES:
             if len(collected) >= TOTAL_SEARCH_RESULT_CAP:
                 break
-            if len(collected) >= PROVIDER_TARGET_UNIQUE and name != "Tavily":
+            if new_unique_count() >= PROVIDER_TARGET_UNIQUE:
+                print(f"Coverage target reached during {name}; stopping this provider.")
                 break
             results, error = call_provider(session, func, query, key)
             if error:
@@ -186,7 +210,7 @@ def main():
     summary = {
         "run_at": now_iso(), "providers_enabled": [p[0] for p in providers],
         "provider_new_results": stats, "provider_errors": provider_errors,
-        "unique_search_results": len(collected), "new_candidates_preserved": new_count,
+        "unique_search_results": len(collected), "new_unique_archive_candidates_before_fetch": new_unique_count(), "new_candidates_preserved": new_count,
         "article_fetches_attempted": fetched, "archive_total": after,
         "target_unique": PROVIDER_TARGET_UNIQUE, "total_cap": TOTAL_SEARCH_RESULT_CAP,
         "mode": "cost_aware_fallback_search"
