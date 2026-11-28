@@ -610,7 +610,7 @@ def enrich_incomplete_items(api_key, inventory, max_items=None):
         
         # Deteksi apakah item ini masuk antrean karena gambarnya hilang
         needs_image = not item.get("thumbnail_url") or item.get("thumbnail_url") == "N/A"
-        image_instruction = "Crucially, this record lacks a valid image. You MUST find a new source URL (like a news article, official site, or Wikipedia) that contains a clear, high-quality image of this heritage." if needs_image else ""
+        image_instruction = "Use the retrieved evidence to identify a relevant image source if available; otherwise leave the thumbnail incomplete for the direct-thumbnail pipeline." if needs_image else ""
         
         log.info(f"Enriching: {element_name}")
         evidence, evidence_errors = search_evidence(f"{element_name} cultural heritage {item.get('location', {}).get('country', '')}", max_items=6)
@@ -623,7 +623,10 @@ def enrich_incomplete_items(api_key, inventory, max_items=None):
         You are a Cultural Heritage expert. I have an incomplete record for the Cultural Heritage practice/tradition: "{element_name}".
         Current known sources: {current_sources}.
         
-        Use only the retrieved evidence below to fill missing information. Do not search independently or invent source URLs. If evidence is insufficient, leave fields incomplete.\n        Retrieved evidence:\n        {evidence_block}\n        Source URLs must come from this evidence or existing sources.
+        Use only the retrieved evidence below to fill missing information. Do not search independently or invent source URLs. If evidence is insufficient, leave fields incomplete.
+        Retrieved evidence:
+        {evidence_block}
+        Source URLs must come from this evidence or existing sources.
         {image_instruction}
         
         IMPORTANT: DO NOT output any links containing 'vertexaisearch.cloud.google.com' or 'grounding-api-redirect'. Output the direct, true website URL.
@@ -705,8 +708,18 @@ Set "categories_valid" to true only when at least one selected category is clear
         """
         
 # BARIS DI BAWAH INI SEKARANG SUDAH MASUK KE DALAM LOOP (Indentasi Benar)
+        if not evidence:
+            log.warning("No retrieved evidence for %s; preserving the existing record without AI enrichment.", element_name)
+            continue
         updated_item = call_ai(api_key, prompt, model="gemini-3.8-flash")
         if updated_item and isinstance(updated_item, dict):
+            allowed_sources = set(current_sources) | {entry.get("url") for entry in evidence if entry.get("url")}
+            proposed_sources = updated_item.get("source_urls", [])
+            if not isinstance(proposed_sources, list):
+                proposed_sources = []
+            updated_item["source_urls"] = list(dict.fromkeys(url for url in proposed_sources if url in allowed_sources))
+            if not updated_item["source_urls"]:
+                updated_item["source_urls"] = list(current_sources)
             normalize_ai_classification(updated_item)
             resource_schema_defaults(updated_item)
             # --- LOGIKA KOORDINAT ---
@@ -851,8 +864,16 @@ Explain the mechanism in "drr_mechanism".
         
        # PERBAIKAN: Jarak spasi di bawah ini sudah sejajar dengan 'new_items'
         if isinstance(new_items, list):
+            allowed_evidence_urls = {entry.get("url") for entry in evidence if entry.get("url")}
             for item in new_items:
                 name = item.get("element_name", "Unknown")
+                proposed_urls = item.get("source_urls", [])
+                if not isinstance(proposed_urls, list):
+                    proposed_urls = []
+                item["source_urls"] = [url for url in proposed_urls if url in allowed_evidence_urls]
+                if not item["source_urls"]:
+                    log.warning("Skipping candidate %s because it lacks an evidence-backed source URL.", name)
+                    continue
                 location_country = str((item.get("location") or {}).get("country", "")).lower().strip()
                 identity_exists = any(name.lower().strip() == old.get("element_name", "").lower().strip() and location_country == str((old.get("location") or {}).get("country", "")).lower().strip() for old in inventory)
                 if not identity_exists:
