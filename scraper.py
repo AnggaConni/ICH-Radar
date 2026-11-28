@@ -814,7 +814,7 @@ Explain the mechanism in "drr_mechanism".
         ]
         """
         
-        new_items = call_gemini(api_key, prompt, model="gemini-2.5-flash")
+        new_items = call_gemini(api_key, prompt, model="gemini-3.8-flash")
         
        # PERBAIKAN: Jarak spasi di bawah ini sudah sejajar dengan 'new_items'
         if isinstance(new_items, list):
