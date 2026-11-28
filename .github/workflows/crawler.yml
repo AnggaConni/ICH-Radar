@@ -112,15 +112,18 @@ jobs:
           fi
 
       - name: Validate Python syntax
-        run: python -m py_compile scraper.py free_discovery.py test_free_discovery.py resource_intelligence.py
+        run: python -m py_compile scraper.py free_discovery.py web_search_discovery.py test_free_discovery.py test_web_search_discovery.py resource_intelligence.py
 
       - name: Run offline aggregator safety tests
-        run: python -m unittest -v test_free_discovery.py
+        run: python -m unittest -v test_free_discovery.py test_web_search_discovery.py
 
       - name: Run selected pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         shell: bash
         run: |
           set -e
@@ -129,15 +132,20 @@ jobs:
             CRAWL_MODE=data_only DATA_ENRICH_LIMIT="$DATA_ENRICH_LIMIT" DATA_DISCOVERY_LIMIT="$DATA_DISCOVERY_LIMIT" python scraper.py
             echo "=== STAGE 2/3: RESOURCE ENRICHMENT ==="
             CRAWL_MODE=resource_enrich RESOURCE_ENRICH_LIMIT="$RESOURCE_ENRICH_LIMIT" python scraper.py
-            echo "=== STAGE 3/3: FREE DISCOVERY ==="
+            echo "=== STAGE 3/4: MULTI-PROVIDER WEB SEARCH ==="
+            python web_search_discovery.py
+            echo "=== STAGE 4/4: RSS PRESERVATION + PROMOTION ==="
             PROMOTE_TO_MAIN_ARCHIVE=1 DEEPSEEK_PROMOTION_LIMIT="$DEEPSEEK_PROMOTION_LIMIT" FREE_DISCOVERY_AI_LIMIT="$FREE_DISCOVERY_AI_LIMIT" python free_discovery.py
           elif [ "$PIPELINE" = "free_discovery" ]; then
-            echo "Free Discovery RSS-only run."
+            echo "Free Discovery: multi-provider web search + RSS feeds."
+            python web_search_discovery.py
             FREE_DISCOVERY_AI_LIMIT="$FREE_DISCOVERY_AI_LIMIT" python free_discovery.py
           elif [ "$PIPELINE" = "scheduled_auto" ]; then
             echo "=== SCHEDULED STAGE 1/2: MAIN ICH DISCOVERY + ENRICHMENT ==="
             CRAWL_MODE=data_only DATA_ENRICH_LIMIT="$DATA_ENRICH_LIMIT" DATA_DISCOVERY_LIMIT="$DATA_DISCOVERY_LIMIT" python scraper.py
-            echo "=== SCHEDULED STAGE 2/2: PRESERVATION RSS DISCOVERY ==="
+            echo "=== SCHEDULED STAGE 2/3: MULTI-PROVIDER WEB DISCOVERY ==="
+            python web_search_discovery.py
+            echo "=== SCHEDULED STAGE 3/3: RSS PRESERVATION + PROMOTION ==="
             PROMOTE_TO_MAIN_ARCHIVE=1 DEEPSEEK_PROMOTION_LIMIT="$DEEPSEEK_PROMOTION_LIMIT" FREE_DISCOVERY_AI_LIMIT=0 python free_discovery.py
           else
             CRAWL_MODE="$PIPELINE" DATA_ENRICH_LIMIT="$DATA_ENRICH_LIMIT" DATA_DISCOVERY_LIMIT="$DATA_DISCOVERY_LIMIT" RESOURCE_ENRICH_LIMIT="$RESOURCE_ENRICH_LIMIT" python scraper.py
@@ -147,7 +155,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json history.json free_discovery_candidates.json || true
+          git add data.json history.json free_discovery_candidates.json web_search_discovery_summary.json || true
           git add data[1-9]*.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No new data to commit."
