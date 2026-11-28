@@ -124,10 +124,10 @@ jobs:
           fi
 
       - name: Validate Python syntax
-        run: python -m py_compile scraper.py free_discovery.py web_search_discovery.py evidence_search.py test_scraper_no_grounding.py test_free_discovery.py test_web_search_discovery.py test_groq_primary.py resource_intelligence.py inventory_quality_audit.py test_inventory_quality_audit.py thumbnail_enrichment.py test_thumbnail_enrichment.py test_discovery_response_normalization.py
+        run: python -m py_compile scraper.py free_discovery.py web_search_discovery.py evidence_search.py test_scraper_no_grounding.py test_free_discovery.py test_web_search_discovery.py test_groq_primary.py resource_intelligence.py inventory_quality_audit.py test_inventory_quality_audit.py thumbnail_enrichment.py test_thumbnail_enrichment.py test_discovery_response_normalization.py smart_enrichment.py test_smart_enrichment.py
 
       - name: Run offline aggregator safety tests
-        run: python -m unittest -v test_scraper_no_grounding.py test_free_discovery.py test_web_search_discovery.py test_inventory_quality_audit.py test_thumbnail_enrichment.py test_discovery_response_normalization.py test_groq_primary.py
+        run: python -m unittest -v test_scraper_no_grounding.py test_free_discovery.py test_web_search_discovery.py test_inventory_quality_audit.py test_thumbnail_enrichment.py test_discovery_response_normalization.py test_groq_primary.py test_smart_enrichment.py
 
       - name: Run selected pipeline
         env:
