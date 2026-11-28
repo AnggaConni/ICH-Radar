@@ -36,7 +36,7 @@ DATA_FILE    = os.path.join(BASE_DIR, "data.json")
 # ======================================================================
 from keyword_database import KEYWORDS
 from evidence_search import search_evidence
-from smart_enrichment import build_priority_queue, get_missing_fields, merge_enrichment
+from smart_enrichment import build_priority_queue, get_missing_fields, merge_enrichment, evaluate_enrichment
 
 # ======================================================================
 # DATA PERSISTENCE & MIGRATION
@@ -592,28 +592,34 @@ def call_gemini(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=819
     return None
 
 def call_ai(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=8192):
-    """Gemini text-only primary with DeepSeek text-only JSON fallback."""
+    """Groq/Gemini inference with OrcaRouter automatic-routing fallback."""
     try:
         result = call_gemini(api_key, prompt, model=model, max_output_tokens=max_output_tokens)
         if result is not None:
             return result
     except GeminiQuotaExhausted as exc:
-        log.warning("Gemini quota unavailable; switching to DeepSeek: %s", str(exc)[:180])
-    deepseek_key = os.getenv("DEEPSEEK_API_KEY", "").strip()
-    if not deepseek_key:
-        log.warning("DeepSeek fallback unavailable: key not configured.")
-        return None
-    try:
-        response = requests.post("https://api.deepseek.com/chat/completions",
-            headers={"Authorization": "Bearer " + deepseek_key, "Content-Type": "application/json"},
-            json={"model": "deepseek-flash", "messages": [{"role": "user", "content": prompt}],
-                  "temperature": 0},
-            timeout=120)
-        response.raise_for_status()
-        return json.loads(response.json()["choices"][0]["message"]["content"])
-    except Exception as exc:
-        log.error("DeepSeek fallback failed: %s", str(exc)[:200])
-        return None
+        log.warning("Gemini quota unavailable; switching to OrcaRouter: %s", str(exc)[:180])
+
+    orca_key = os.getenv("ORCA_KEY", "").strip()
+    if not orca_key:
+        try:
+            response = requests.post(
+                "https://api.orcarouter.ai/v1/chat/completions",
+                headers={"Authorization": "Bearer " + orca_key, "Content-Type": "application/json"},
+                json={"model": "orcarouter/auto", "messages": [{"role": "user", "content": prompt}],
+                      "temperature": 0, "response_format": {"type": "json_object"},
+                      "max_tokens": max_output_tokens},
+                timeout=120)
+            response.raise_for_status()
+            content = response.json()["choices"][0]["message"]["content"]
+            result = json.loads(content)
+            log.info("AI inference succeeded with OrcaRouter (orcarouter/auto).")
+            return result
+        except Exception as exc:
+            log.error("OrcaRouter fallback failed: %s", str(exc)[:250])
+    else:
+        log.warning("OrcaRouter fallback unavailable: ORCA_KEY not configured.")
+    return None
 
 # ======================================================================
 # PHASE 1: ENRICHMENT (Fixing Incomplete Data)
@@ -645,8 +651,8 @@ def enrich_incomplete_items(api_key, inventory, max_items=None):
         
         log.info(f"Enriching: {element_name}")
         targeted_query = f"{element_name} cultural heritage {item.get('location', {}).get('country', '')} " + " ".join(missing_fields)
-        evidence, evidence_errors = search_evidence(targeted_query, max_items=6)
-        evidence_block = "\n".join(f"- {entry.get('title','')} | {entry.get('provider','')} | {entry.get('url','')}\n{entry.get('text','')[:2500]}" for entry in evidence)
+        evidence, evidence_errors = search_evidence(targeted_query, max_items=4)
+        evidence_block = "\n".join(f"- {entry.get('title','')} | {entry.get('provider','')} | {entry.get('url','')}\n{entry.get('text','')[:1000]}" for entry in evidence)
         if evidence_errors:
             log.warning("Evidence search issues: %s", "; ".join(evidence_errors[:3]))
 
@@ -745,7 +751,7 @@ Set "categories_valid" to true only when at least one selected category is clear
         if not evidence:
             log.warning("No retrieved evidence for %s; preserving the existing record without AI enrichment.", element_name)
             continue
-        updated_item = call_ai(api_key, prompt, model="gemini-3.8-flash")
+        updated_item = call_ai(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=4096)
         if updated_item and isinstance(updated_item, dict):
             allowed_sources = set(current_sources) | {entry.get("url") for entry in evidence if entry.get("url")}
             proposed_sources = updated_item.get("source_urls", [])
@@ -755,6 +761,19 @@ Set "categories_valid" to true only when at least one selected category is clear
             updated_item = merge_enrichment(item, updated_item, allowed_sources)
             normalize_ai_classification(updated_item)
             resource_schema_defaults(updated_item)
+            quality = evaluate_enrichment(item, updated_item, missing_fields)
+            log.info("Enrichment quality gate for '%s': %s | filled=%s | remaining=%s",
+                     element_name, quality["status"], quality["filled_fields"], quality["still_missing"])
+            if quality["status"] == "UNCHANGED":
+                log.warning("AI response did not fill any targeted fields for '%s'; preserving existing record.", element_name)
+                continue
+            updated_item["enrichment_quality"] = {
+                "status": quality["status"],
+                "targeted_fields": quality["targeted_missing_before"],
+                "filled_fields": quality["filled_fields"],
+                "remaining_fields": quality["still_missing"],
+                "checked_at": datetime.now().isoformat() + "Z"
+            }
             # --- LOGIKA KOORDINAT ---
             country = updated_item.get("location", {}).get("country", "")
             lat, lng = get_coordinates(country)
@@ -767,7 +786,7 @@ Set "categories_valid" to true only when at least one selected category is clear
             index = inventory.index(item)
             inventory[index] = updated_item
             enriched_count += 1
-            log.info(f"Successfully enriched {element_name} (Coords: {lat}, {lng})")
+            log.info("Enrichment applied for %s: quality=%s, filled=%d/%d (Coords: %s, %s)", element_name, quality["status"], len(quality["filled_fields"]), len(quality["targeted_missing_before"]), lat, lng)
         
         time.sleep(5) 
         
