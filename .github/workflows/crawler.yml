@@ -124,6 +124,7 @@ jobs:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          YOUCOM_API_KEY: ${{ secrets.YOUCOM_API_KEY }}
         shell: bash
         run: |
           set -e
