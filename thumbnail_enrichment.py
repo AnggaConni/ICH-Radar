@@ -134,20 +134,23 @@ def extract_direct_image(session, article_url):
         response.raise_for_status()
         parser = ImageParser()
         parser.feed(response.text)
-        candidates = _candidate_list(parser, response.url)
-        # Metadata is generally the publisher's representative image; skip logos.
-        for candidate in candidates:
-            if _looks_like_icon_or_logo(candidate):
+        base = response.url
+        meta_candidates = [_normalize_candidate(x, base) for x in parser.meta]
+        jsonld_candidates = []
+        for raw in parser.jsonld:
+            try:
+                jsonld_candidates.extend(_normalize_candidate(x, base) for x in _flatten_json_images(json.loads(raw)))
+            except (json.JSONDecodeError, TypeError):
                 continue
-            valid = validate_image_url(session, candidate)
-            if valid:
-                method = "metadata" if candidate in parser.meta else ("jsonld" if any(candidate in _candidate_list(ImageParser(), response.url) for _ in []) else "html_image")
-                # Determine source class by original candidate list.
-                if candidate in [_normalize_candidate(x, response.url) for x in parser.meta]:
-                    method = "og_or_social_meta"
-                elif candidate in [x for raw in parser.jsonld for x in _candidate_list(ImageParser(), response.url)]:
-                    method = "jsonld"
-                return {"thumbnail_url": valid, "thumbnail_source_url": response.url, "thumbnail_method": method}
+        image_candidates = [_normalize_candidate(x, base) for x in parser.images]
+        ordered = []
+        for method, candidates in (("og_or_social_meta", meta_candidates), ("jsonld", jsonld_candidates), ("html_image", image_candidates)):
+            for candidate in candidates:
+                if candidate and candidate not in ordered and not _looks_like_icon_or_logo(candidate):
+                    ordered.append(candidate)
+                    valid = validate_image_url(session, candidate)
+                    if valid:
+                        return {"thumbnail_url": valid, "thumbnail_source_url": base, "thumbnail_method": method}
     except requests.RequestException as exc:
         return {"thumbnail_error": str(exc)[:200]}
     return None
@@ -224,7 +227,6 @@ def run(max_items=None):
             else:
                 print("  INCOMPLETE: no validated direct image URL found; will retry next run.")
             time.sleep(1)
-    db["summary"] = calculate_summary(db.get("inventory", [])) if "calculate_summary" in globals() else db.get("summary", {})
     DATA_FILE.write_text(json.dumps(db, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Thumbnail enrichment complete: processed={len(batch)}, found={found}, remaining={max(0,len(pending)-len(batch))}")
     return {"processed": len(batch), "found": found, "pending": max(0, len(pending)-len(batch))}
