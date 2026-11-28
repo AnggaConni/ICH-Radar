@@ -102,13 +102,13 @@ jobs:
               *) echo "Unknown mode."; exit 1 ;;
             esac
           else
-            echo "PIPELINE=free_discovery" >> "$GITHUB_ENV"
-            echo "DATA_ENRICH_LIMIT=1" >> "$GITHUB_ENV"
-            echo "DATA_DISCOVERY_LIMIT=1" >> "$GITHUB_ENV"
+            echo "PIPELINE=scheduled_auto" >> "$GITHUB_ENV"
+            echo "DATA_ENRICH_LIMIT=2" >> "$GITHUB_ENV"
+            echo "DATA_DISCOVERY_LIMIT=3" >> "$GITHUB_ENV"
             echo "RESOURCE_ENRICH_LIMIT=1" >> "$GITHUB_ENV"
             echo "FREE_DISCOVERY_AI_LIMIT=0" >> "$GITHUB_ENV"
             echo "DEEPSEEK_PROMOTION_LIMIT=0" >> "$GITHUB_ENV"
-            echo "Scheduled run: Free Discovery RSS only; no Gemini identity calls."
+            echo "Scheduled run: Main ICH discovery/enrichment + autonomous RSS preservation."
           fi
 
       - name: Validate Python syntax
@@ -134,6 +134,11 @@ jobs:
           elif [ "$PIPELINE" = "free_discovery" ]; then
             echo "Free Discovery RSS-only run."
             FREE_DISCOVERY_AI_LIMIT="$FREE_DISCOVERY_AI_LIMIT" python free_discovery.py
+          elif [ "$PIPELINE" = "scheduled_auto" ]; then
+            echo "=== SCHEDULED STAGE 1/2: MAIN ICH DISCOVERY + ENRICHMENT ==="
+            CRAWL_MODE=data_only DATA_ENRICH_LIMIT="$DATA_ENRICH_LIMIT" DATA_DISCOVERY_LIMIT="$DATA_DISCOVERY_LIMIT" python scraper.py
+            echo "=== SCHEDULED STAGE 2/2: PRESERVATION RSS DISCOVERY ==="
+            FREE_DISCOVERY_AI_LIMIT=0 python free_discovery.py
           else
             CRAWL_MODE="$PIPELINE" DATA_ENRICH_LIMIT="$DATA_ENRICH_LIMIT" DATA_DISCOVERY_LIMIT="$DATA_DISCOVERY_LIMIT" RESOURCE_ENRICH_LIMIT="$RESOURCE_ENRICH_LIMIT" python scraper.py
           fi
