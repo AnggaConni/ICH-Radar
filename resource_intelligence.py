@@ -3,6 +3,7 @@
 import logging
 import time
 from datetime import datetime
+from evidence_search import search_evidence
 from urllib.parse import urlparse
 
 RESOURCE_LIST_FIELDS = {
@@ -479,11 +480,16 @@ def enrich_resource_data(api_key, inventory, call_gemini, quota_exception, logge
         checked_at = datetime.now().isoformat() + "Z"
         item["resource_enrichment_attempted_at"] = checked_at
         metadata_changed += 1
+        evidence, evidence_errors = search_evidence(f"{name} heritage resources opportunities {location.get('country', '')}", max_items=6)
+        evidence_block = "\n".join(f"- {entry.get('title','')} | {entry.get('provider','')} | {entry.get('url','')}\n{entry.get('text','')[:2500]}" for entry in evidence)
+        if evidence_errors:
+            logger.warning("Resource evidence search issues: %s", "; ".join(evidence_errors[:3]))
 
         prompt = f"""
 You are a heritage development and cultural economy intelligence analyst.
 
-Use Google Search for this existing Intangible Cultural Heritage element:
+Use only the retrieved evidence below. Do not search the web yourself:
+{evidence_block}
 - Element: {name}
 - Country: {location.get("country", "") if isinstance(location, dict) else ""}
 - Province(s): {location.get("provinces", []) if isinstance(location, dict) else []}
@@ -500,7 +506,7 @@ EVIDENCE RULES
 1. Prefer credible sources directly related to this heritage element and location.
 2. Every resource/value-chain/mobilization entry MUST include a direct evidence_urls array with at least one relevant URL.
 3. Omit unsupported entries. Never invent sources, grant availability, market demand, or stakeholder commitments.
-4. Do not return search redirects such as vertexaisearch or grounding-api-redirect links.
+4. Do not invent URLs; use only URLs present in the retrieved evidence.
 5. Opportunity scores (0-100) are AI research signals, not market validation or proof of financial viability.
 6. Every non-zero score needs its own rationale and category-specific evidence URLs. Without evidence, use score 0 and an empty evidence_urls array.
 7. Consider community agency, consent, safeguarding, transmission, and fair benefit-sharing. Do not assume that commercial use is desirable or authorized.
