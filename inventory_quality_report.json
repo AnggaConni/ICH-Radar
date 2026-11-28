@@ -1,0 +1,4517 @@
+{
+  "generated_at": "2026-11-28T09:06:14.499862+00:00",
+  "inventory_total": 360,
+  "completion_status_counts": {
+    "COMPLETE": 360
+  },
+  "missing_field_counts": {
+    "drr_classification": 311,
+    "hazard_categories": 311,
+    "province_or_region": 33,
+    "shared_heritage_metadata": 32,
+    "coordinates": 3,
+    "materials_or_tools": 2,
+    "process_or_recipe": 1
+  },
+  "average_completeness_percent": 86.51,
+  "records_with_gaps": 326,
+  "gap_patterns_top_20": [
+    {
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "count": 261
+    },
+    {
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "count": 22
+    },
+    {
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "count": 21
+    },
+    {
+      "missing_fields": [
+        "province_or_region"
+      ],
+      "count": 7
+    },
+    {
+      "missing_fields": [
+        "shared_heritage_metadata"
+      ],
+      "count": 7
+    },
+    {
+      "missing_fields": [
+        "province_or_region",
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "count": 3
+    },
+    {
+      "missing_fields": [
+        "coordinates",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "count": 2
+    },
+    {
+      "missing_fields": [
+        "province_or_region",
+        "coordinates",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "count": 1
+    },
+    {
+      "missing_fields": [
+        "materials_or_tools",
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "count": 1
+    },
+    {
+      "missing_fields": [
+        "process_or_recipe",
+        "materials_or_tools"
+      ],
+      "count": 1
+    }
+  ],
+  "records": [
+    {
+      "id": "ich-364a4afb",
+      "element_name": "Yuki-tsumugi",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-b0f059df",
+      "element_name": "Thanaka Face Painting",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "Myanmar"
+    },
+    {
+      "id": "ich-ec6118ad",
+      "element_name": "Thai Silk Weaving",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Thailand"
+    },
+    {
+      "id": "ich-2d42af22",
+      "element_name": "Hadza Hunter-Gatherer Practices",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Tanzania"
+    },
+    {
+      "id": "ich-24ffc441",
+      "element_name": "Blue Cornmeal Dumplings (kʼíneeshbízhii)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "USA"
+    },
+    {
+      "id": "ich-2c75579d",
+      "element_name": "Bunya Nut Festival",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Australia"
+    },
+    {
+      "id": "ich-df8d78b4",
+      "element_name": "Khokhloma Painting (Хохломская роспись)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Russia"
+    },
+    {
+      "id": "ich-86fa28f5",
+      "element_name": "Folk art of the Matyó, embroidery of a traditional community",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Hungary"
+    },
+    {
+      "id": "ich-eee8675e",
+      "element_name": "Árbol de la Vida de Metepec (Tree of Life from Metepec)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-939c84e6",
+      "element_name": "Kanchipuram Silk Weaving (Kanjivaram Sarees)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "India"
+    },
+    {
+      "id": "ich-94b831fe",
+      "element_name": "Tejate",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-5a6ba7da",
+      "element_name": "La Chandeleur and Crêpes",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions | Social Practices & Rituals",
+      "country": "France"
+    },
+    {
+      "id": "ich-b30ec0fe",
+      "element_name": "Hahoe Byeolsingut Talnori",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-aed11b6b",
+      "element_name": "Pysanka (Ukrainian Easter Egg Decoration)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Ukraine"
+    },
+    {
+      "id": "ich-0f32e75e",
+      "element_name": "Sardana",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Spain"
+    },
+    {
+      "id": "ich-c88576fc",
+      "element_name": "Barro Negro Pottery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-c01d788f",
+      "element_name": "Sindhi Ajrak",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Pakistan"
+    },
+    {
+      "id": "ich-2d00544f",
+      "element_name": "Khatamkari (Persian Marquetry)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Iran"
+    },
+    {
+      "id": "ich-680a4062",
+      "element_name": "Chicha de Año from Magdalena de Cao",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Peru"
+    },
+    {
+      "id": "ich-9cffa5eb",
+      "element_name": "Teko Porã (Guarani concept of Good Living)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "South America"
+    },
+    {
+      "id": "ich-0637c01d",
+      "element_name": "Varenyky (Ukrainian Dumplings)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Ukraine"
+    },
+    {
+      "id": "ich-16ef557c",
+      "element_name": "Kānga pirau",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions",
+      "country": "New Zealand"
+    },
+    {
+      "id": "ich-2ba6c99b",
+      "element_name": "Wayuu Normative System, applied by the Pütchipü'üi (Palabrero)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Colombia"
+    },
+    {
+      "id": "ich-9996e8fc",
+      "element_name": "Artisanal Talavera Pottery of Puebla and Tlaxcala (Mexico)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-fa353432",
+      "element_name": "Reog Ponorogo",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Performing Arts",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-41c80d1d",
+      "element_name": "Les Soufflaculs",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "France"
+    },
+    {
+      "id": "ich-ec3ba85b",
+      "element_name": "Ajrak (Block Printing)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Pakistan"
+    },
+    {
+      "id": "ich-f2cfba96",
+      "element_name": "Pinisi Boat Building",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-7afdf052",
+      "element_name": "Traditional Knowledge and Practices Associated with Cassava Flour Mills in Santa Catarina",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-c3f0e05a",
+      "element_name": "Sichuan Opera Face-Changing (Bian Lian)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "China"
+    },
+    {
+      "id": "ich-dabd953b",
+      "element_name": "Harvest ceremony of Saghay village",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Iran"
+    },
+    {
+      "id": "ich-4e044712",
+      "element_name": "Festividad de la Virgen de la Candelaria de Puno",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals | Performing Arts",
+      "country": "Peru"
+    },
+    {
+      "id": "ich-ceb08f09",
+      "element_name": "Traditional Medicinal Knowledge and Healing Practices of the Batek People",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Malaysia"
+    },
+    {
+      "id": "ich-7c3c1098",
+      "element_name": "Traditional Couscous-Making in Kalampaki, Drama",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Greece"
+    },
+    {
+      "id": "ich-35d727fa",
+      "element_name": "Kofar Mata Dye Pits (Kano Indigo Dyeing Tradition)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Nigeria"
+    },
+    {
+      "id": "ich-47af1ec4",
+      "element_name": "Suguidanon (Epic Chanting)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions | Performing Arts",
+      "country": "Philippines"
+    },
+    {
+      "id": "ich-e8c9a11f",
+      "element_name": "Nanjing Yunjin Brocade",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "China"
+    },
+    {
+      "id": "ich-d96694fb",
+      "element_name": "Ainu Oral Literature (Yukara)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-0153cc3a",
+      "element_name": "Pathein Hti (Pathein Umbrella)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Myanmar"
+    },
+    {
+      "id": "ich-1e397911",
+      "element_name": "Arancini (Sicilian Rice Balls)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-c1365c80",
+      "element_name": "Ka Nua Ritual",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-564ced8e",
+      "element_name": "Anshun Dixi Opera (安顺地戏)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "China"
+    },
+    {
+      "id": "ich-33f8cdfc",
+      "element_name": "Nakshi Kantha",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Bangladesh"
+    },
+    {
+      "id": "ich-07c38d60",
+      "element_name": "Nón lá (Vietnamese Conical Hat)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Vietnam"
+    },
+    {
+      "id": "ich-7f7c0ceb",
+      "element_name": "Nanjing Yunjin Brocade Weaving Skills",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "China"
+    },
+    {
+      "id": "ich-8cc8dba2",
+      "element_name": "Yoga (Yoga Asanas/Postures)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "India"
+    },
+    {
+      "id": "ich-c28d942e",
+      "element_name": "Hanji (Korean Traditional Handmade Paper)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-dbde646d",
+      "element_name": "Sangkhalok Ceramic Ware",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Thailand"
+    },
+    {
+      "id": "ich-d678026c",
+      "element_name": "Apple Dumplings",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "United States"
+    },
+    {
+      "id": "ich-c03661a4",
+      "element_name": "Paiwan Millet Harvest Thanksgiving Festival (Masalut)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Taiwan"
+    },
+    {
+      "id": "ich-e8d329f9",
+      "element_name": "Aggadah - House of Jewish Folk Tales",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Israel"
+    },
+    {
+      "id": "ich-528f0df2",
+      "element_name": "Matoborwa (Processed Sweet Potatoes)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Tanzania"
+    },
+    {
+      "id": "ich-05ceeeb6",
+      "element_name": "Ohaguro",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-382aba0a",
+      "element_name": "Thanjavur Art Plate (தஞ்சாவூர் கலைத் தட்டு)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "India"
+    },
+    {
+      "id": "ich-a78124bd",
+      "element_name": "Zellige (Moroccan Mosaic Tiles)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Morocco"
+    },
+    {
+      "id": "ich-bbde7b94",
+      "element_name": "Dreamtime Stories (The Dreaming)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Oral Traditions",
+      "country": "Australia"
+    },
+    {
+      "id": "ich-e741b517",
+      "element_name": "Andean Backstrap Weaving",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Peru"
+    },
+    {
+      "id": "ich-ac66e7fb",
+      "element_name": "Epic of Manas and Manaschi Tradition",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Kyrgyzstan"
+    },
+    {
+      "id": "ich-0d9aca90",
+      "element_name": "Chakan Embroidery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Tajikistan"
+    },
+    {
+      "id": "ich-b7daf62a",
+      "element_name": "Mudmee Silk Weaving",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Thailand"
+    },
+    {
+      "id": "ich-ad24bf9c",
+      "element_name": "Ainu's Kamuy (Spirit-Deity) Worldview and Traditional Ecological Knowledge",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-05d91027",
+      "element_name": "Silat Cingkrik",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-bb711f45",
+      "element_name": "Gzhel Ceramics",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Russia"
+    },
+    {
+      "id": "ich-295bc5db",
+      "element_name": "Pachamama Ritual (Offering to Mother Earth)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "South America"
+    },
+    {
+      "id": "ich-edb6be5c",
+      "element_name": "Inuit Traditional Knowledge of Arctic Navigation and Environmental Stewardship (Inuit Qaujimajatuqangit)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Canada"
+    },
+    {
+      "id": "ich-9881a3c9",
+      "element_name": "Gold Laminating and Gilding Craft of Kieu Ky Village",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Vietnam"
+    },
+    {
+      "id": "ich-cbedde3a",
+      "element_name": "Dene Stick Pull",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Canada"
+    },
+    {
+      "id": "ich-0467aec8",
+      "element_name": "Kogi Mamo Training (Spiritual Leadership Training)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Colombia"
+    },
+    {
+      "id": "ich-60ed8367",
+      "element_name": "Ethiopian Coffee Ceremony",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Ethiopia"
+    },
+    {
+      "id": "ich-dc9e27d5",
+      "element_name": "Pane Carasau",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-93e9fd61",
+      "element_name": "Traditional Argan Oil Extraction by Berber Women",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship | Social Practices & Rituals | Culinary Traditions",
+      "country": "Morocco"
+    },
+    {
+      "id": "ich-245032f1",
+      "element_name": "Lurji Supra (Georgian Blue Tablecloth)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Georgia"
+    },
+    {
+      "id": "ich-71ec307e",
+      "element_name": "Traditional craftsmanship of the Mongol Ger and its associated customs",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Mongolia"
+    },
+    {
+      "id": "ich-f5315716",
+      "element_name": "Kithul Madeema / Kithul Kapeema (Tapping Kithul Palm Sap)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Community Practice",
+      "country": "Sri Lanka"
+    },
+    {
+      "id": "ich-c05f3095",
+      "element_name": "Aboriginal Firestick Farming (Cultural Burning)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Australia"
+    },
+    {
+      "id": "ich-c2f5c04c",
+      "element_name": "Mola Textile Art",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Panama"
+    },
+    {
+      "id": "ich-16a44444",
+      "element_name": "Lakhon Nang Sbek Thom (Khmer Shadow Theatre)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Cambodia"
+    },
+    {
+      "id": "ich-d5ab8573",
+      "element_name": "Gzhel Painting",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Russia"
+    },
+    {
+      "id": "ich-39c23ecb",
+      "element_name": "Byliny (Russian Oral Epic Poems)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Russia"
+    },
+    {
+      "id": "ich-d47c6240",
+      "element_name": "Traditional Ways of Making Artisanal Minas Cheese (Modo de Fazer Queijo Minas Artesanal)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-c0d8f5ea",
+      "element_name": "Drowning of Marzanna (Topienie Marzanny)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Poland"
+    },
+    {
+      "id": "ich-532905a0",
+      "element_name": "Maasai Beadwork",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Kenya"
+    },
+    {
+      "id": "ich-f13a3d5b",
+      "element_name": "Kunqu Opera",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "China"
+    },
+    {
+      "id": "ich-12e63937",
+      "element_name": "Couscous",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "North Africa"
+    },
+    {
+      "id": "ich-5d8f129a",
+      "element_name": "Khao Lam (ข้าวหลาม)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Thailand"
+    },
+    {
+      "id": "ich-bff34950",
+      "element_name": "Sichuan Opera Face-Changing (川剧变脸)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Performing Arts",
+      "country": "China"
+    },
+    {
+      "id": "ich-1e324eb7",
+      "element_name": "Gerabah Kasongan (Kasongan Pottery)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-8ebb50f6",
+      "element_name": "Arabic Coffee Rituals (Qahwa)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "coordinates",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "Arabian Peninsula and Levant"
+    },
+    {
+      "id": "ich-67344c5f",
+      "element_name": "Maasai Adumu (Jumping Dance)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Kenya"
+    },
+    {
+      "id": "ich-465fde21",
+      "element_name": "Myanmar Traditional Puppetry (Yoke Thé)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Myanmar"
+    },
+    {
+      "id": "ich-e9076fee",
+      "element_name": "Besale Ritual Healing of the Suku Anak Dalam",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-42342292",
+      "element_name": "Suri (Palm Weevil Larvae)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Peru"
+    },
+    {
+      "id": "ich-6af150a3",
+      "element_name": "Dough Sculpture (Miansu)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "China"
+    },
+    {
+      "id": "ich-7e5c4e9c",
+      "element_name": "The Art of Dry Stone Walling, Knowledge and Techniques",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Multiple (primarily European countries, also global presence)"
+    },
+    {
+      "id": "ich-41bac63e",
+      "element_name": "Burmese Proverbs and Maxims (စကားပုံ - sagabaunj)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Myanmar"
+    },
+    {
+      "id": "ich-44a4e554",
+      "element_name": "Moroccan Zellige Tile Art",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Morocco"
+    },
+    {
+      "id": "ich-c6c5cfda",
+      "element_name": "Makonde Wood Carving (Ujamaa / Tree of Life)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Tanzania"
+    },
+    {
+      "id": "ich-37d39c7b",
+      "element_name": "Kimjang (Kimchi-making)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-1bfc643c",
+      "element_name": "Noken (Multifunctional Knotted or Woven Bag)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-27240bd6",
+      "element_name": "Zapotec Weaving of Oaxaca",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-9274f9a4",
+      "element_name": "Čičmany Painted Houses and Embroidery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship | Social Practices & Rituals",
+      "country": "Slovakia"
+    },
+    {
+      "id": "ich-a8c404db",
+      "element_name": "Vedic Chanting",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "India"
+    },
+    {
+      "id": "ich-ebf47c04",
+      "element_name": "Bun Bang Fai (Rocket Festival)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Thailand"
+    },
+    {
+      "id": "ich-99dd6ebc",
+      "element_name": "Mole Poblano",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-6ddf23d7",
+      "element_name": "Hilot",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "Philippines"
+    },
+    {
+      "id": "ich-cf379dcb",
+      "element_name": "Ciptagelar Rice Cultivation and Seren Taun Harvest Festival",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-5782a6f3",
+      "element_name": "Traditional weaving of Al Sadu",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "coordinates",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 71,
+      "categories": "Traditional Craftsmanship",
+      "country": "Saudi Arabia, Kuwait, Qatar, United Arab Emirates"
+    },
+    {
+      "id": "ich-c6d2b27e",
+      "element_name": "Pancutra (Pantrucas)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Chile"
+    },
+    {
+      "id": "ich-56a24cc4",
+      "element_name": "Anishinaabe Traditional Wild Rice Harvesting (Manoominikewin)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "United States, Canada"
+    },
+    {
+      "id": "ich-931b73e6",
+      "element_name": "Traditional ways of making Artisan Minas Cheese in Minas Gerais",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-ddb43183",
+      "element_name": "Obon Festival",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-5d89f1fc",
+      "element_name": "Pinisi Boat Building Tradition",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-b09e3ce8",
+      "element_name": "Wedang Uwuh",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-b30ae6f3",
+      "element_name": "Asin Tibuok artisanal sea salt",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Philippines"
+    },
+    {
+      "id": "ich-45cd34a4",
+      "element_name": "Sifnian Pottery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Greece"
+    },
+    {
+      "id": "ich-37f54957",
+      "element_name": "Amazonian Chagra Traditional Agricultural System",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals | Culinary Traditions",
+      "country": "Colombia"
+    },
+    {
+      "id": "ich-cfd25214",
+      "element_name": "Despacho Ceremony (Pachamama Offering)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Peru"
+    },
+    {
+      "id": "ich-8989ffdd",
+      "element_name": "Tagurabong",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "Philippines"
+    },
+    {
+      "id": "ich-ca7fb255",
+      "element_name": "Tunu Ahi Ika",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Chile"
+    },
+    {
+      "id": "ich-362bbc5d",
+      "element_name": "Indigenous Oral Storytelling by Elders",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Worldwide"
+    },
+    {
+      "id": "ich-99cd846e",
+      "element_name": "Lucha Canaria",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Spain"
+    },
+    {
+      "id": "ich-e1f6e94b",
+      "element_name": "Batik",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-447b4a7f",
+      "element_name": "Smudging Ceremony",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "Canada, United States"
+    },
+    {
+      "id": "ich-2518d8bd",
+      "element_name": "Yerushalmi Kugel",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Israel"
+    },
+    {
+      "id": "ich-0a09a457",
+      "element_name": "Noken multifunctional knotted or woven bag, handcraft of the people of Papua",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-58bbd176",
+      "element_name": "Myanmar Lacquerware (Bagan Lacquerware)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Myanmar"
+    },
+    {
+      "id": "ich-a1716961",
+      "element_name": "Ramman Festival",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals | Performing Arts",
+      "country": "India"
+    },
+    {
+      "id": "ich-798c1804",
+      "element_name": "Traditional skills, techniques and knowledge for the conservation and transmission of wooden architecture in Japan",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-9bf6664b",
+      "element_name": "Kyo-Yuzen",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-13951cec",
+      "element_name": "Vanuatu Sand Drawing (Sandroing)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Vanuatu"
+    },
+    {
+      "id": "ich-0d391b67",
+      "element_name": "Opera dei Pupi (Sicilian Puppets)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-79c4c9a9",
+      "element_name": "The know-how and practice of simples in Réunion (Les savoir-faire et la pratique des simples à la Réunion)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals | Traditional Craftsmanship",
+      "country": "France"
+    },
+    {
+      "id": "ich-5a07be24",
+      "element_name": "Cinavu (Abai)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Taiwan"
+    },
+    {
+      "id": "ich-b1961bbc",
+      "element_name": "Ukrainian Borscht",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions",
+      "country": "Ukraine"
+    },
+    {
+      "id": "ich-89555cd9",
+      "element_name": "Al-Hakawati Storytelling",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Arab World"
+    },
+    {
+      "id": "ich-32855744",
+      "element_name": "Dong Ho Folk Painting (Nghệ thuật làm tranh dân gian Đông Hồ)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Vietnam"
+    },
+    {
+      "id": "ich-bdaf6663",
+      "element_name": "Maasai Cow Blood Drinking (Osaroi)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions | Social Practices & Rituals",
+      "country": "Kenya"
+    },
+    {
+      "id": "ich-2ddcae62",
+      "element_name": "Festa do Divino Espírito Santo (Festival of the Holy Spirit)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-eaf54114",
+      "element_name": "Ceramica di Grottaglie",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-a386b976",
+      "element_name": "Timbila",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts | Traditional Craftsmanship",
+      "country": "Mozambique"
+    },
+    {
+      "id": "ich-466b6167",
+      "element_name": "Santons de Provence",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "France"
+    },
+    {
+      "id": "ich-6bf7eba4",
+      "element_name": "Obushera (Fermented Millet/Sorghum Drink)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Uganda"
+    },
+    {
+      "id": "ich-ae617db7",
+      "element_name": "Pão de Ló de Ovar",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Portugal"
+    },
+    {
+      "id": "ich-fece2976",
+      "element_name": "Jia (or Jaxlil) Oral Tradition of the Miao Ethnic Group",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "China"
+    },
+    {
+      "id": "ich-b3ea700c",
+      "element_name": "Ceebu Jën",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Senegal"
+    },
+    {
+      "id": "ich-287f3320",
+      "element_name": "Upacara Adat Ngaben",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-0478cd87",
+      "element_name": "Ajrak",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Pakistan"
+    },
+    {
+      "id": "ich-87ddd5e2",
+      "element_name": "Tradisi Turun Mandi (Minangkabau Newborn Bathing Tradition)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-ef2e7194",
+      "element_name": "Know-how of cultivating mastic on the island of Chios",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship | Social Practices & Rituals",
+      "country": "Greece"
+    },
+    {
+      "id": "ich-05d3f9db",
+      "element_name": "Traditional Syrian Glassblowing",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Syria"
+    },
+    {
+      "id": "ich-88db68d3",
+      "element_name": "Seblang Bakungan",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-2cb9d495",
+      "element_name": "Taijiquan (太极拳)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "China"
+    },
+    {
+      "id": "ich-8827cc66",
+      "element_name": "Kōauau (Māori Flute)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 71,
+      "categories": "Traditional Craftsmanship",
+      "country": "New Zealand"
+    },
+    {
+      "id": "ich-f703fbae",
+      "element_name": "Coppa dell'Amicizia and Caffè alla Valdostana",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals | Traditional Craftsmanship | Culinary Traditions",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-b814ddb6",
+      "element_name": "Myanmar Lacquerware (Yun-de / Pan-yun)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Myanmar"
+    },
+    {
+      "id": "ich-060d514a",
+      "element_name": "Anishinaabe Traditional Wild Rice Harvesting (Manoomin Gaa-miinigoowizid)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "United States | Canada"
+    },
+    {
+      "id": "ich-4c1f702a",
+      "element_name": "Naqqali (Iranian Dramatic Storytelling)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Performing Arts",
+      "country": "Iran"
+    },
+    {
+      "id": "ich-fdcc9973",
+      "element_name": "Busó festivities at Mohács (Busójárás)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Hungary"
+    },
+    {
+      "id": "ich-3e874b13",
+      "element_name": "Hekaya za Abunuwasi (Tales of Abunuwasi)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Kenya"
+    },
+    {
+      "id": "ich-72fd6d50",
+      "element_name": "Dastangoi",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "India"
+    },
+    {
+      "id": "ich-69c85fd1",
+      "element_name": "Handmade Weaving in Upper Egypt (Sa'eed)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Egypt"
+    },
+    {
+      "id": "ich-a309a1b4",
+      "element_name": "Melekouni of Rhodes",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Greece"
+    },
+    {
+      "id": "ich-227238ff",
+      "element_name": "Anyaman Bambu (Bamboo Weaving)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-746e9986",
+      "element_name": "Longzhou Shehuo (陇州社火)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals | Performing Arts",
+      "country": "China"
+    },
+    {
+      "id": "ich-eea51846",
+      "element_name": "Hospitality Rituals for a Son-in-Law (Ikirunguri cha Bhairwa and Ubhusara)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions | Social Practices & Rituals",
+      "country": "Tanzania"
+    },
+    {
+      "id": "ich-92077eef",
+      "element_name": "Griot Storytelling",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions | Performing Arts | Social Practices & Rituals",
+      "country": "West Africa"
+    },
+    {
+      "id": "ich-3abdf822",
+      "element_name": "Ayam Betutu",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-c87399c8",
+      "element_name": "Kora",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "West Africa"
+    },
+    {
+      "id": "ich-ec967a31",
+      "element_name": "Bullet Ant Initiation Ritual (Waumat)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-aee32318",
+      "element_name": "Dziady (Forefathers' Eve)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Poland"
+    },
+    {
+      "id": "ich-3666f3cc",
+      "element_name": "Bidriware",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "India"
+    },
+    {
+      "id": "ich-714b7ded",
+      "element_name": "Perepechi",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Russia"
+    },
+    {
+      "id": "ich-692a0a32",
+      "element_name": "Rite of the Kalyady Tsars (Christmas Tsars)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Belarus"
+    },
+    {
+      "id": "ich-b459ac99",
+      "element_name": "Ayyanar and Mariamman Village Folk Worship with Terracotta Offerings",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "India"
+    },
+    {
+      "id": "ich-cf9d690f",
+      "element_name": "Huishan Clay Figures",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "China"
+    },
+    {
+      "id": "ich-bc1a4553",
+      "element_name": "Traditional Sea Salt Farming in Phetchaburi, Thailand",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Thailand"
+    },
+    {
+      "id": "ich-eda271cc",
+      "element_name": "Bakar Batu (Stone Cooking) Ritual",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-d3f94d8f",
+      "element_name": "Ashik Art of Azerbaijan",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Azerbaijan"
+    },
+    {
+      "id": "ich-26f1737d",
+      "element_name": "Karagattam",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "India"
+    },
+    {
+      "id": "ich-d5180b69",
+      "element_name": "German Bread Culture",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Germany"
+    },
+    {
+      "id": "ich-d9f5150a",
+      "element_name": "Al-Qatt Al-Asiri",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Saudi Arabia"
+    },
+    {
+      "id": "ich-16c1dae7",
+      "element_name": "Àgbéjọ́ró: Communal Decision-Making and Conflict Resolution",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Nigeria"
+    },
+    {
+      "id": "ich-4e98db75",
+      "element_name": "Paper Crafting Technique (紮作技藝)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Hong Kong"
+    },
+    {
+      "id": "ich-8553b0cb",
+      "element_name": "Cob Building",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "United Kingdom"
+    },
+    {
+      "id": "ich-a35aaa84",
+      "element_name": "Mangú",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions",
+      "country": "Dominican Republic"
+    },
+    {
+      "id": "ich-5383c2e0",
+      "element_name": "Altai Magtaal (Praise of the Altai Mountains)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Mongolia"
+    },
+    {
+      "id": "ich-a0406853",
+      "element_name": "La Danza de los Diablos (The Dance of the Devils)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts | Social Practices & Rituals",
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-6112d7f7",
+      "element_name": "Makonde Carvings",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Tanzania"
+    },
+    {
+      "id": "ich-2b60e6c3",
+      "element_name": "Minangkabau Matrilineal System and Adat",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-86994698",
+      "element_name": "Ghalamzani (Persian Metal Engraving)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Iran"
+    },
+    {
+      "id": "ich-7a5a9dce",
+      "element_name": "Koh Kret Pottery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Thailand"
+    },
+    {
+      "id": "ich-a5fe29c9",
+      "element_name": "Rare Dutch Domestic Animal Breeds (Zeldzame Nederlandse Huisdierrassen)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Netherlands"
+    },
+    {
+      "id": "ich-963db1e3",
+      "element_name": "Wiwitan",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-149251ce",
+      "element_name": "Kiyiz Basuu (Felt Making)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Kyrgyzstan"
+    },
+    {
+      "id": "ich-5cbab8ea",
+      "element_name": "Artesanato em barro do Vale do Jequitinhonha (Clay craftsmanship of the Jequitinhonha Valley)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-27d3f610",
+      "element_name": "Kuna Mola",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Panama"
+    },
+    {
+      "id": "ich-004ea646",
+      "element_name": "Saw U (ซออู้)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Thailand"
+    },
+    {
+      "id": "ich-0baf7489",
+      "element_name": "Griot Oral Tradition of West Africa",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions | Performing Arts | Social Practices & Rituals",
+      "country": "West Africa"
+    },
+    {
+      "id": "ich-4bb465e2",
+      "element_name": "The Legend of Lake Toba",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "materials_or_tools",
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 71,
+      "categories": "Oral Traditions",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-51547efd",
+      "element_name": "Gamelan",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-4481f7a1",
+      "element_name": "Nahuatl Traditional Pottery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-a5f5da51",
+      "element_name": "Injera Making",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions",
+      "country": "Ethiopia"
+    },
+    {
+      "id": "ich-e59d10d4",
+      "element_name": "Dreamtime Stories (The Dreaming / Tjukurrpa)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 71,
+      "categories": "Oral Traditions",
+      "country": "Australia"
+    },
+    {
+      "id": "ich-86853e92",
+      "element_name": "Akutaq (Eskimo Ice Cream)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "United States"
+    },
+    {
+      "id": "ich-ed758c4a",
+      "element_name": "Art of Pottery-making of Chăm People",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Vietnam"
+    },
+    {
+      "id": "ich-0d7796d1",
+      "element_name": "Sumba Ikat Weaving",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-a92bc73a",
+      "element_name": "Jesa (Ancestral Rites)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-697fb1c1",
+      "element_name": "Okinoshima Sacred Entry Taboos and Rituals",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-799f6de8",
+      "element_name": "Busójárás",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Hungary"
+    },
+    {
+      "id": "ich-b129f51e",
+      "element_name": "Nohgaku (Noh and Kyogen Theater)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-bf8ad8dd",
+      "element_name": "Traditional skills of carpet weaving in Kashan",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Iran"
+    },
+    {
+      "id": "ich-30a2545f",
+      "element_name": "La Danza de los Viejitos (Dance of the Little Old Men)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-8ba24504",
+      "element_name": "Chopi Timbila Music and Dance",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts | Traditional Craftsmanship",
+      "country": "Mozambique"
+    },
+    {
+      "id": "ich-ac402b07",
+      "element_name": "Levantine Arabic Music",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Syria"
+    },
+    {
+      "id": "ich-328e8cf3",
+      "element_name": "Adire Fabric Making",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Nigeria"
+    },
+    {
+      "id": "ich-8ed3db4b",
+      "element_name": "Indigenous Australian Oral Traditions",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Oral Traditions",
+      "country": "Australia"
+    },
+    {
+      "id": "ich-2bc2f811",
+      "element_name": "Ulos weaving (Batak Ulos)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-c6ae54c5",
+      "element_name": "Zulu Ilala Palm Basket Weaving",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "South Africa"
+    },
+    {
+      "id": "ich-ee09beb4",
+      "element_name": "Makonde Wood Carving",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Tanzania"
+    },
+    {
+      "id": "ich-5dacb98b",
+      "element_name": "Silat Harimau Minangkabau",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-83146635",
+      "element_name": "Zanzibar Carved Doors",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Tanzania"
+    },
+    {
+      "id": "ich-3e8bda74",
+      "element_name": "African Oral Storytelling (Contes Africains)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Africa"
+    },
+    {
+      "id": "ich-e91b811c",
+      "element_name": "Wianki (Wreaths Festival / Midsummer's Eve)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Poland"
+    },
+    {
+      "id": "ich-3592f89e",
+      "element_name": "Chinese Paper Cutting (剪纸, Jiǎnzhǐ)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "China"
+    },
+    {
+      "id": "ich-a56c26d2",
+      "element_name": "Pansori (판소리)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-f77abc7e",
+      "element_name": "Jang-making (Korean Fermented Sauces and Pastes)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-84e22b6b",
+      "element_name": "Yeye (Fayeye)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-5a840579",
+      "element_name": "Kimjang, making and sharing kimchi",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals | Culinary Traditions",
+      "country": "Republic of Korea"
+    },
+    {
+      "id": "ich-2e56baea",
+      "element_name": "Al-Sirah Al-Hilaliyyah (Sirat Bani Hilal)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions | Performing Arts",
+      "country": "Egypt"
+    },
+    {
+      "id": "ich-47280b61",
+      "element_name": "Shyrdak Felt Carpets",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Kyrgyzstan"
+    },
+    {
+      "id": "ich-7c942f86",
+      "element_name": "Adat Pernikahan di Desa Diwet (Traditional Wedding in Diwet Village)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-cb9848ca",
+      "element_name": "Bat Trang Pottery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Vietnam"
+    },
+    {
+      "id": "ich-8f2c6112",
+      "element_name": "Cud mniemany, czyli Krakowiacy i Górale (The Pretended Miracle, or Cracovians and Highlanders)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Poland"
+    },
+    {
+      "id": "ich-8f0efdd1",
+      "element_name": "Sephardic Piyyut Tradition",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts | Oral Traditions",
+      "country": "Israel"
+    },
+    {
+      "id": "ich-5e2f53fa",
+      "element_name": "T'nalak Weaving",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Philippines"
+    },
+    {
+      "id": "ich-6fe5a168",
+      "element_name": "Al-Hakawati (The Storyteller)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions | Performing Arts | Social Practices & Rituals",
+      "country": "Middle East"
+    },
+    {
+      "id": "ich-135130e6",
+      "element_name": "Mudhif (Al-Mudhif)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship | Social Practices & Rituals",
+      "country": "Iraq"
+    },
+    {
+      "id": "ich-7e704bea",
+      "element_name": "Carrickmacross Lace Making",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Ireland"
+    },
+    {
+      "id": "ich-c1a3e0c7",
+      "element_name": "Teko Porã (The Philosophy of Good Living)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-53244d40",
+      "element_name": "Bakhshi Art",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts | Oral Traditions",
+      "country": "Uzbekistan"
+    },
+    {
+      "id": "ich-79322569",
+      "element_name": "Hakka Abacus Seeds (Suan Pan Zi)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "China"
+    },
+    {
+      "id": "ich-69f98126",
+      "element_name": "Semba",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Angola"
+    },
+    {
+      "id": "ich-d50afdec",
+      "element_name": "Moroccan Zellige Tilework",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Morocco"
+    },
+    {
+      "id": "ich-78139f48",
+      "element_name": "Diablos y Congos Festival",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals | Performing Arts",
+      "country": "Panama"
+    },
+    {
+      "id": "ich-06f794a5",
+      "element_name": "Família Vitalino's Clay Figurines (Arte em Barro da Família Vitalino)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-f2bd4568",
+      "element_name": "Horezu Ceramics",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Romania"
+    },
+    {
+      "id": "ich-01fd7053",
+      "element_name": "Oral Heritage of Gelede",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts | Social Practices & Rituals",
+      "country": "Nigeria"
+    },
+    {
+      "id": "ich-1ff653c0",
+      "element_name": "Atole de Pinole",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-b5294cd2",
+      "element_name": "Iyomante (Ainu Bear Sending Ceremony)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-30933539",
+      "element_name": "Fried Wheat Gluten (Mianjin)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions",
+      "country": "China"
+    },
+    {
+      "id": "ich-18349328",
+      "element_name": "Course Camarguaise",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals | Performing Arts",
+      "country": "France"
+    },
+    {
+      "id": "ich-eaa39f5e",
+      "element_name": "Duma (Ukrainian Epic Poem)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "Ukraine"
+    },
+    {
+      "id": "ich-e3528947",
+      "element_name": "Jaipur Blue Pottery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "India"
+    },
+    {
+      "id": "ich-0638b24c",
+      "element_name": "Engklek",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-42ec59ba",
+      "element_name": "Shuoshu (Chinese Storytelling)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "China"
+    },
+    {
+      "id": "ich-58aabffd",
+      "element_name": "Filoxenia (Greek Hospitality)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Social Practices & Rituals",
+      "country": "Greece"
+    },
+    {
+      "id": "ich-bec79a14",
+      "element_name": "Primitive Pottery Making",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Global"
+    },
+    {
+      "id": "ich-cf056ba0",
+      "element_name": "Aksara Ka Ga Nga",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-a9f137fb",
+      "element_name": "Festa dei Ceri (Festival of the Candles)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-7fe15f21",
+      "element_name": "Hudhud Chants of the Ifugao",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions | Social Practices & Rituals",
+      "country": "Philippines"
+    },
+    {
+      "id": "ich-63447295",
+      "element_name": "L'arte dei pizzaiuoli napoletani (The Art of Neapolitan Pizzamakers)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-drr-01-smong",
+      "element_name": "Oral Tradition of Smong (Simeulue Indigenous Tsunami Early Warning)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions and Expressions",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-drr-02-dry-stone-walling",
+      "element_name": "Art of Dry Stone Walling, Knowledge and Techniques",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Multi-National (Croatia, Cyprus, France, Greece, Italy, Slovenia, Spain, Switzerland, Andorra, Austria, Belgium, Ireland, Luxembourg)"
+    },
+    {
+      "id": "ich-drr-03-kigumi-woodcraft",
+      "element_name": "Traditional Skills and Knowledge of Wooden Architecture and Kigumi Joinery in Japan",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-drr-04-waru-waru",
+      "element_name": "Waru Waru (Camellones) Indigenous Flood, Drought and Frost Mitigation Agriculture",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Knowledge and Practices Concerning Nature and the Universe",
+      "country": "Peru & Bolivia"
+    },
+    {
+      "id": "ich-drr-05-aflaj",
+      "element_name": "Al Aflaj Traditional Irrigation System and Water Distribution Knowledge",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Knowledge and Practices Concerning Nature and the Universe",
+      "country": "United Arab Emirates & Oman"
+    },
+    {
+      "id": "ich-drr-06-irrigation-tribunals",
+      "element_name": "Irrigation Tribunals of the Spanish Mediterranean Coast: Water Tribunal of Valencia and Council of Wise Men of Murcia",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices, Rituals and Festive Events",
+      "country": "Spain"
+    },
+    {
+      "id": "ich-drr-07-baira-floating-gardens",
+      "element_name": "Baira Traditional Floating Agricultural System (Hydroponic Wetland Resilience)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Knowledge and Practices Concerning Nature and the Universe",
+      "country": "Bangladesh"
+    },
+    {
+      "id": "ich-drr-08-subak-bali",
+      "element_name": "Subak Socio-Ecological Water Management and Synchronized Agro-Ritual System",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices, Rituals and Festive Events",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-drr-09-cultural-burning",
+      "element_name": "Aboriginal Cultural Burning and Traditional Fire Management (Cool Burning)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Knowledge and Practices Concerning Nature and the Universe",
+      "country": "Australia"
+    },
+    {
+      "id": "ich-drr-10-living-root-bridges",
+      "element_name": "Jingkieng Jri (Living Root Bridge Vernacular Bio-Engineering)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "India"
+    },
+    {
+      "id": "ich-drr-11-tanka-baori-harvesting",
+      "element_name": "Tanka and Baori Ancestral Rainwater Harvesting and Micro-Aquifer Systems",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "India"
+    },
+    {
+      "id": "ich-drr-12-albarradas-ecuador",
+      "element_name": "Albarradas Ancestral Rainwater Catchment and El Niño Flood Resilience System",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Knowledge and Practices Concerning Nature and the Universe",
+      "country": "Ecuador"
+    },
+    {
+      "id": "ich-drr-13-zai-planting-pits",
+      "element_name": "Zaï Ancestral Planting Pits and Contour Stone Bunds (Sahelian Drought and Desertification Resilience)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Knowledge and Practices Concerning Nature and the Universe",
+      "country": "Burkina Faso, Mali & Niger"
+    },
+    {
+      "id": "ich-drr-14-ivatan-typhoon-craft",
+      "element_name": "Ivatan Vernacular Architecture and Typhoon-Resilient Craftsmanship (Sinadumparan and Maytuab)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Philippines"
+    },
+    {
+      "id": "ich-drr-15-transhumance-pastoralism",
+      "element_name": "Transhumance: Seasonal Droving of Livestock and Pastoral Landscape Stewardship",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Knowledge and Practices Concerning Nature and the Universe",
+      "country": "Multi-National (Albania, Andorra, Austria, Croatia, France, Greece, Italy, Luxembourg, Romania, Spain)"
+    },
+    {
+      "id": "ich-drr-16-badgir-windcatcher",
+      "element_name": "Badgir Vernacular Windcatcher Craftsmanship and Passive Desert Thermal Regulation",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Iran"
+    },
+    {
+      "id": "ich-drr-17-pranata-mangsa",
+      "element_name": "Pranata Mangsa Traditional Agro-Climatic Almanac and Disaster Forecasting System",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Knowledge and Practices Concerning Nature and the Universe",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-drr-18-carolinian-wayfinding",
+      "element_name": "Carolinian Wayfinding, Canoe Building, and Oceanic Storm Evasion Traditions",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Knowledge and Practices Concerning Nature and the Universe",
+      "country": "Federated States of Micronesia"
+    },
+    {
+      "id": "ich-drr-19-sanke-mon",
+      "element_name": "Sanké Mon: Collective Fishing Rite and Seasonal Floodplain Hydrological Stewardship",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices, Rituals and Festive Events",
+      "country": "Mali"
+    },
+    {
+      "id": "ich-drr-20-johad-check-dams",
+      "element_name": "Johad Ancestral Crescent Earthen Check Dams and River Basin Rejuvenation",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "India"
+    },
+    {
+      "id": "ich-eeb9276d",
+      "element_name": "Falaj Irrigation Systems",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Oman"
+    },
+    {
+      "id": "ich-03f06897",
+      "element_name": "Queijo Artesanal da Serra da Canastra",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-3b5cb178",
+      "element_name": "Hanji Papermaking (한지 제작)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-7d5a05d4",
+      "element_name": "Pingshu (评书)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions | Performing Arts",
+      "country": "China"
+    },
+    {
+      "id": "ich-456a2507",
+      "element_name": "Warli Painting",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "India"
+    },
+    {
+      "id": "ich-492577ef",
+      "element_name": "Korean Jang-making Culture",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-fb21d73e",
+      "element_name": "Olaria Pedrada de Nisa",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Portugal"
+    },
+    {
+      "id": "ich-24d8eedf",
+      "element_name": "Tuvan Throat Singing (Khoomei)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Performing Arts",
+      "country": "Russia"
+    },
+    {
+      "id": "ich-7b2a7753",
+      "element_name": "The Art of the Neapolitan Pizzaiuolo",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-893ece71",
+      "element_name": "Hungarian Traditional Pottery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Hungary"
+    },
+    {
+      "id": "ich-9603bca3",
+      "element_name": "Kimjang (Kimchi-making and sharing culture)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "shared_heritage_metadata",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 71,
+      "categories": "Social Practices & Rituals",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-0e093f24",
+      "element_name": "Kimjang (Kimchi-making and storage in Jangdokdae/Onggi)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions | Social Practices & Rituals",
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-3e60931e",
+      "element_name": "Armenian Carpet Weaving",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Armenia"
+    },
+    {
+      "id": "ich-fdc2e115",
+      "element_name": "Yangliuqing Nianhua (Yangliuqing New Year Pictures)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "China"
+    },
+    {
+      "id": "ich-89cebf1b",
+      "element_name": "Griot Tradition",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions",
+      "country": "West Africa"
+    },
+    {
+      "id": "ich-cd85a7fc",
+      "element_name": "Dokra Metal Craft",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "India"
+    },
+    {
+      "id": "ich-5e06233b",
+      "element_name": "Raranga (Māori Weaving)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "New Zealand"
+    },
+    {
+      "id": "ich-a0aaed98",
+      "element_name": "Madhubani Painting",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "India"
+    },
+    {
+      "id": "ich-ca15aa70",
+      "element_name": "Kubaneh (כֻּבַּאנֶה)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions",
+      "country": "Israel"
+    },
+    {
+      "id": "ich-20ec156a",
+      "element_name": "Ajrak (Block Printing and Resist Dyeing)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Pakistan"
+    },
+    {
+      "id": "ich-70c6fc86",
+      "element_name": "Traditional Maya Chocolate Making",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "coordinates",
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 79,
+      "categories": "Culinary Traditions",
+      "country": "Mexico, Guatemala, Belize, Honduras, El Salvador"
+    },
+    {
+      "id": "ich-47bbd5ad",
+      "element_name": "Cultivation of Pantelleria Capers (Cappero di Pantelleria IGP)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Culinary Traditions",
+      "country": "Italy"
+    },
+    {
+      "id": "ich-b645b0c6",
+      "element_name": "Namahage (なまはげ)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Japan"
+    },
+    {
+      "id": "ich-7a9ef14a",
+      "element_name": "Acoma Pueblo Pottery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "United States"
+    },
+    {
+      "id": "ich-d8b4276c",
+      "element_name": "Mummering (or Mumming, Janneying)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Canada"
+    },
+    {
+      "id": "ich-fa560e1c",
+      "element_name": "Transhumance and the Treaty of Astun Pass (Traité de la Vesiau)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "France"
+    },
+    {
+      "id": "ich-bad67403",
+      "element_name": "Nanjing Yunjin Brocade Weaving Technique",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "China"
+    },
+    {
+      "id": "ich-7a03be1f",
+      "element_name": "Batik Tulis Lasem",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Traditional Craftsmanship",
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-9a80ca25",
+      "element_name": "Patachitra (Bengal Patachitra)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Oral Traditions | Traditional Craftsmanship | Performing Arts",
+      "country": "India"
+    },
+    {
+      "id": "ich-c84ebf9b",
+      "element_name": "Sateré-Mawé Bullet Ant Initiation Ritual (Waumat / Tucandeira Dance)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "drr_classification",
+        "hazard_categories"
+      ],
+      "completeness_percent": 86,
+      "categories": "Social Practices & Rituals",
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-dd17b606",
+      "element_name": "Cantonese Opera (粵劇)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals",
+        "Oral Traditions"
+      ],
+      "country": "China"
+    },
+    {
+      "id": "ich-7f6074e0",
+      "element_name": "Nazri (نذری)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Culinary Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "Iran"
+    },
+    {
+      "id": "ich-711ad44f",
+      "element_name": "Pencak Silat Cimande",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals"
+      ],
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-43fdb009",
+      "element_name": "Katta Ashula",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Performing Arts",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "Uzbekistan"
+    },
+    {
+      "id": "ich-c2a3960e",
+      "element_name": "Seni Pembuatan Perahu Pinisi",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-45b96e31",
+      "element_name": "Le Maloya",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Performing Arts",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "France"
+    },
+    {
+      "id": "ich-bb9c05f4",
+      "element_name": "Adumu (Maasai Jumping Dance)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals"
+      ],
+      "country": "Kenya, Tanzania"
+    },
+    {
+      "id": "ich-937a88d2",
+      "element_name": "Kintsugi (Golden Repair)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "country": "Japan"
+    },
+    {
+      "id": "ich-a3b23df1",
+      "element_name": "Maasai Oral Tradition",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Oral Traditions",
+        "Social Practices & Rituals",
+        "Performing Arts"
+      ],
+      "country": "Kenya"
+    },
+    {
+      "id": "ich-d2da9424",
+      "element_name": "Jamu Wellness Culture",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Culinary Traditions",
+        "Social Practices & Rituals",
+        "Traditional Craftsmanship"
+      ],
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-aabe659e",
+      "element_name": "Fête de la Saint-Jean",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Social Practices & Rituals",
+        "Performing Arts",
+        "Oral Traditions"
+      ],
+      "country": "France"
+    },
+    {
+      "id": "ich-2dc82dac",
+      "element_name": "Rendas de Bilro",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "country": "Portugal"
+    },
+    {
+      "id": "ich-6b81b0c9",
+      "element_name": "Kearifan Lokal Masyarakat Adat Kampung Naga (Local Wisdom of Kampung Naga Indigenous Community)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Social Practices & Rituals",
+        "Traditional Craftsmanship",
+        "Oral Traditions"
+      ],
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-7e93f9bc",
+      "element_name": "Hát Xoan Phú Thọ",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Performing Arts",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "Vietnam"
+    },
+    {
+      "id": "ich-e7310a34",
+      "element_name": "Wycinanki (Polish Paper Cut-Outs)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "country": "Poland"
+    },
+    {
+      "id": "ich-5d64cbf7",
+      "element_name": "Merantau (Minangkabau Out-migration Tradition)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "process_or_recipe",
+        "materials_or_tools"
+      ],
+      "completeness_percent": 86,
+      "categories": [
+        "Social Practices & Rituals",
+        "Oral Traditions",
+        "Culinary Traditions"
+      ],
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-4636fb6f",
+      "element_name": "Ama Divers",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "country": "Japan"
+    },
+    {
+      "id": "ich-96fbb46a",
+      "element_name": "'Yan Kama Musical Tradition",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals"
+      ],
+      "country": "Nigeria"
+    },
+    {
+      "id": "ich-d12e7c3e",
+      "element_name": "Yodeling (Jodeln)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Oral Traditions",
+        "Performing Arts"
+      ],
+      "country": "Switzerland"
+    },
+    {
+      "id": "ich-25c9680c",
+      "element_name": "Koniaków Lace",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "country": "Poland"
+    },
+    {
+      "id": "ich-c14e08cb",
+      "element_name": "Kunqu Opera (崑曲)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Performing Arts",
+        "Oral Traditions"
+      ],
+      "country": "China"
+    },
+    {
+      "id": "ich-2b6f1305",
+      "element_name": "Traditional Kazakh Felt Making (Tekemet and Syrmak)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Traditional Craftsmanship"
+      ],
+      "country": "Kazakhstan"
+    },
+    {
+      "id": "ich-e4496027",
+      "element_name": "Shishi-Odori (Deer Dance)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals"
+      ],
+      "country": "Japan"
+    },
+    {
+      "id": "ich-bf5a27e8",
+      "element_name": "Ayam Pallu Cuka (Nasu Cukka)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Culinary Traditions"
+      ],
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-15eaea47",
+      "element_name": "Filete Porteño",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "shared_heritage_metadata"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Traditional Craftsmanship",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "Argentina"
+    },
+    {
+      "id": "ich-67fd69cc",
+      "element_name": "Ryukyuan Traditional Knowledge of Fengshui and Environmental Observation",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Social Practices & Rituals",
+        "Oral Traditions"
+      ],
+      "country": "Japan"
+    },
+    {
+      "id": "ich-9fc26894",
+      "element_name": "Nepali Folk Tales and Oral Storytelling",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "Nepal"
+    },
+    {
+      "id": "ich-7d0b4216",
+      "element_name": "Zuni Waffle Garden",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Culinary Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "United States"
+    },
+    {
+      "id": "ich-ad6d707b",
+      "element_name": "Diablada Puneña",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Performing Arts",
+        "Social Practices & Rituals",
+        "Traditional Craftsmanship"
+      ],
+      "country": "Peru"
+    },
+    {
+      "id": "ich-95f0b011",
+      "element_name": "Practices and traditional knowledge of Terere in the culture of Pohã Ñana, Guaraní ancestral drink in Paraguay",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Social Practices & Rituals",
+        "Culinary Traditions",
+        "Oral Traditions"
+      ],
+      "country": "Paraguay"
+    },
+    {
+      "id": "ich-15b233a5",
+      "element_name": "Ofício das Paneleiras de Goiabeiras",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Traditional Craftsmanship",
+        "Culinary Traditions"
+      ],
+      "country": "Brazil"
+    },
+    {
+      "id": "ich-d29bffa4",
+      "element_name": "Ox's Birthday Festival (牛生日节)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Social Practices & Rituals",
+        "Culinary Traditions"
+      ],
+      "country": "China"
+    },
+    {
+      "id": "ich-66e4e158",
+      "element_name": "Indigenous Cultural Burning Practices",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Social Practices & Rituals",
+        "Oral Traditions"
+      ],
+      "country": "Multiple"
+    },
+    {
+      "id": "ich-9a24e01f",
+      "element_name": "Aboriginal Songlines (Dreaming Tracks)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Oral Traditions",
+        "Social Practices & Rituals",
+        "Performing Arts"
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "ich-fb2dc603",
+      "element_name": "Laksa",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Culinary Traditions"
+      ],
+      "country": "Southeast Asia"
+    },
+    {
+      "id": "ich-8ebd218e",
+      "element_name": "Día de Muertos (Day of the Dead)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Social Practices & Rituals",
+        "Culinary Traditions",
+        "Traditional Craftsmanship"
+      ],
+      "country": "Mexico"
+    },
+    {
+      "id": "ich-e9511bd6",
+      "element_name": "Hungarian Folk Pottery",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Traditional Craftsmanship"
+      ],
+      "country": "Hungary"
+    },
+    {
+      "id": "ich-56185f65",
+      "element_name": "Doenjang (Korean Soybean Paste) Making",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Culinary Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "South Korea"
+    },
+    {
+      "id": "ich-3db0fc0b",
+      "element_name": "Hosokawa-shi (細川紙)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Traditional Craftsmanship"
+      ],
+      "country": "Japan"
+    },
+    {
+      "id": "ich-195dab1f",
+      "element_name": "Transhumance (Transumanza)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Social Practices & Rituals",
+        "Culinary Traditions",
+        "Oral Traditions"
+      ],
+      "country": "Italy"
+    },
+    {
+      "id": "ich-6265f8e8",
+      "element_name": "Traditional Iranian-Islamic Medicine (TIIM)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [
+        "province_or_region"
+      ],
+      "completeness_percent": 93,
+      "categories": [
+        "Social Practices & Rituals",
+        "Oral Traditions"
+      ],
+      "country": "Iran"
+    },
+    {
+      "id": "ich-198b4a7e",
+      "element_name": "Ethiopian Coffee Ceremony (Buna Tetu)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Social Practices & Rituals",
+        "Culinary Traditions"
+      ],
+      "country": "Ethiopia"
+    },
+    {
+      "id": "ich-5f1b0deb",
+      "element_name": "Myanmar Lacquerware (Yun-de / Pan yun)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals"
+      ],
+      "country": "Myanmar"
+    },
+    {
+      "id": "ich-184d58d4",
+      "element_name": "Ainu Yukar",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Oral Traditions",
+        "Performing Arts"
+      ],
+      "country": "Japan"
+    },
+    {
+      "id": "ich-6d98e649",
+      "element_name": "Pengetahuan Navigasi Laut Tradisional Suku Bugis",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "Indonesia"
+    },
+    {
+      "id": "ich-9a7e6644",
+      "element_name": "Pingshu (Chinese Storytelling)",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Oral Traditions",
+        "Performing Arts"
+      ],
+      "country": "China"
+    },
+    {
+      "id": "ich-cea2ae3c",
+      "element_name": "Fish and Brewis",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Culinary Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "ich-c39c4dcb",
+      "element_name": "Fado, urban popular song of Portugal",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Performing Arts",
+        "Oral Traditions",
+        "Social Practices & Rituals"
+      ],
+      "country": "Portugal"
+    },
+    {
+      "id": "ich-12054770",
+      "element_name": "Khanga (or Kanga) Fabric",
+      "completion_status": "COMPLETE",
+      "missing_fields": [],
+      "completeness_percent": 100,
+      "categories": [
+        "Traditional Craftsmanship",
+        "Social Practices & Rituals",
+        "Oral Traditions"
+      ],
+      "country": "Tanzania"
+    }
+  ]
+}
