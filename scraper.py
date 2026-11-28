@@ -1,7 +1,7 @@
 """
 =======================================================================
   ICH SHARED HERITAGE RADAR v6.3 — Global Intelligence Engine
-  AI Engine : Gemini 2.5 Flash (data pipeline) + Gemini 3.5 Flash-Lite (resource intelligence)
+  AI Engine : Gemini 3.8 Flash (data pipeline) + Gemini 3.5 Flash-Lite (resource intelligence)
   Mode      : Alternating daily pipeline (Discovery/Data -> Resource & Opportunity)
   Feature   : Quality over Quantity (Iterative Looping), Anti-Redundancy, Wikimedia Fallback
 =======================================================================
@@ -426,7 +426,7 @@ class GeminiQuotaExhausted(RuntimeError):
     """Project quota/billing allowance is exhausted; stop this run cleanly."""
 
 
-def call_gemini(api_key, prompt, model="gemini-2.5-flash", max_output_tokens=8192):
+def call_gemini(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=8192):
     """Call Gemini with Google Search grounding and resilient transient-error handling."""
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
@@ -682,7 +682,7 @@ Set "categories_valid" to true only when at least one selected category is clear
         """
         
 # BARIS DI BAWAH INI SEKARANG SUDAH MASUK KE DALAM LOOP (Indentasi Benar)
-        updated_item = call_gemini(api_key, prompt, model="gemini-2.5-flash")
+        updated_item = call_gemini(api_key, prompt, model="gemini-3.8-flash")
         if updated_item and isinstance(updated_item, dict):
             normalize_ai_classification(updated_item)
             resource_schema_defaults(updated_item)
@@ -814,7 +814,7 @@ Explain the mechanism in "drr_mechanism".
         ]
         """
         
-        new_items = call_gemini(api_key, prompt, model="gemini-2.5-flash")
+        new_items = call_gemini(api_key, prompt, model="gemini-3.8-flash")
         
        # PERBAIKAN: Jarak spasi di bawah ini sudah sejajar dengan 'new_items'
         if isinstance(new_items, list):
