@@ -14,6 +14,7 @@ on:
           - 'Data only'
           - 'Resource enrichment'
           - 'Free Discovery (Experimental)'
+          - 'Inventory Quality Audit (Read-only)'
           - 'ALL (Full Pipeline)'
       data_enrich_limit:
         description: 'Incomplete records to enrich in Data only mode (1–10)'
@@ -98,6 +99,7 @@ jobs:
               "Data only") echo "PIPELINE=data_only" >> "$GITHUB_ENV" ;;
               "Resource enrichment") echo "PIPELINE=resource_enrich" >> "$GITHUB_ENV" ;;
               "Free Discovery (Experimental)") echo "PIPELINE=free_discovery" >> "$GITHUB_ENV" ;;
+              "Inventory Quality Audit (Read-only)") echo "PIPELINE=inventory_audit" >> "$GITHUB_ENV" ;;
               "ALL (Full Pipeline)") echo "PIPELINE=all" >> "$GITHUB_ENV" ;;
               *) echo "Unknown mode."; exit 1 ;;
             esac
@@ -112,10 +114,10 @@ jobs:
           fi
 
       - name: Validate Python syntax
-        run: python -m py_compile scraper.py free_discovery.py web_search_discovery.py test_free_discovery.py test_web_search_discovery.py resource_intelligence.py
+        run: python -m py_compile scraper.py free_discovery.py web_search_discovery.py test_free_discovery.py test_web_search_discovery.py resource_intelligence.py inventory_quality_audit.py test_inventory_quality_audit.py
 
       - name: Run offline aggregator safety tests
-        run: python -m unittest -v test_free_discovery.py test_web_search_discovery.py
+        run: python -m unittest -v test_free_discovery.py test_web_search_discovery.py test_inventory_quality_audit.py
 
       - name: Run selected pipeline
         env:
@@ -137,6 +139,9 @@ jobs:
             python web_search_discovery.py
             echo "=== STAGE 4/4: RSS PRESERVATION + PROMOTION ==="
             PROMOTE_TO_MAIN_ARCHIVE=1 DEEPSEEK_PROMOTION_LIMIT="$DEEPSEEK_PROMOTION_LIMIT" FREE_DISCOVERY_AI_LIMIT="$FREE_DISCOVERY_AI_LIMIT" python free_discovery.py
+          elif [ "$PIPELINE" = "inventory_audit" ]; then
+            echo "Read-only quality audit of existing data.json inventory."
+            python inventory_quality_audit.py
           elif [ "$PIPELINE" = "free_discovery" ]; then
             echo "Free Discovery: multi-provider web search + RSS feeds."
             python web_search_discovery.py
@@ -156,7 +161,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json history.json free_discovery_candidates.json web_search_discovery_summary.json || true
+          git add data.json history.json free_discovery_candidates.json web_search_discovery_summary.json inventory_quality_report.json || true
           git add data[1-9]*.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No new data to commit."
