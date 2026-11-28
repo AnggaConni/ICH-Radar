@@ -15,6 +15,7 @@ on:
           - 'Resource enrichment'
           - 'Free Discovery (Experimental)'
           - 'Inventory Quality Audit (Read-only)'
+          - 'Thumbnail Enrichment (Direct URLs)'
           - 'ALL (Full Pipeline)'
       data_enrich_limit:
         description: 'Incomplete records to enrich in Data only mode (1–10)'
