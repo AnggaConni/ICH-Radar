@@ -17,7 +17,7 @@ BASE = Path(__file__).resolve().parent
 DATA_FILE = BASE / "data.json"
 USER_AGENT = "ICH-Radar-Thumbnail-Enrichment/1.0 (+https://github.com/AnggaConni/ICH-Radar)"
 TIMEOUT = 15
-RETRYABLE_THUMBNAIL = {"", "N/A", "null", "none", "placeholder"}
+RETRYABLE_THUMBNAIL = {"", "n/a", "null", "none", "placeholder"}
 
 class ImageParser(HTMLParser):
     """Collect image candidates from HTML metadata, JSON-LD, and image tags."""
@@ -65,8 +65,10 @@ class ImageParser(HTMLParser):
 def _flatten_json_images(value):
     found = []
     if isinstance(value, dict):
+        # JSON-LD image objects often wrap the direct URL in "url" or "contentUrl".
         for key, val in value.items():
-            if key.lower() in {"image", "images", "thumbnail", "thumbnailurl", "contenturl"}:
+            key_lower = key.lower()
+            if key_lower in {"image", "images", "thumbnail", "thumbnailurl", "contenturl", "url"}:
                 found.extend(_flatten_json_images(val))
             elif isinstance(val, (dict, list)):
                 found.extend(_flatten_json_images(val))
