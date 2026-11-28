@@ -66893,7 +66893,10 @@
       "thumbnail_url": "https://api.microlink.io/?url=https%3A//ich.unesco.org/doc/download.php%3FversionID%3D70793&screenshot=true&meta=false&embed=screenshot.url",
       "source_urls": [
         "https://ich.unesco.org/doc/download.php?versionID=70793",
-        "https://preparecenter.org/wp-content/sites/default/files/cultural_heritage_burmese.pdf"
+        "https://preparecenter.org/wp-content/sites/default/files/cultural_heritage_burmese.pdf",
+        "https://theculturalatlas.org/myanmar-burmese-culture/burmese-myanmar-culture-greetings",
+        "https://shunculture.com/article/how-do-people-greet-each-other-in-burma",
+        "https://shunculture.com/article/how-to-say-hello-in-burma"
       ],
       "scraped_at": "2026-11-28T09:31:26.553465Z",
       "location": {
@@ -67000,14 +67003,32 @@
         "reviewed_at": null,
         "last_checked_at": null,
         "last_error": null
-      }
+      },
+      "resume_tata_cara": {
+        "type": "ritual_sequence",
+        "materials_and_tools": [
+          "hands"
+        ],
+        "step_by_step": [
+          "Place both hands together on the stomach",
+          "Bow forward slightly",
+          "For monks, bring hands together in prayer position at face level and bow deeply",
+          "If deeper respect is required, kneel and touch palms and forehead to the floor three times"
+        ]
+      },
+      "shared_heritage_detection": {
+        "is_shared": false,
+        "confidence_score": 0.0,
+        "related_elements": []
+      },
+      "completion_status": "COMPLETE"
     }
   ],
   "summary": {
-    "generated_at": "2026-11-28T09:31:34.928266Z",
+    "generated_at": "2026-11-28T10:04:44.687808Z",
     "total_ich_elements": 361,
-    "complete_records": 360,
-    "incomplete_records": 1,
+    "complete_records": 361,
+    "incomplete_records": 0,
     "categories_breakdown": {
       "Traditional Craftsmanship": 127,
       "Social Practices & Rituals": 101,
