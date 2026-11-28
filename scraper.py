@@ -795,6 +795,20 @@ def enrich_resource_data(api_key, inventory):
 # ======================================================================
 
 
+def normalize_discovery_candidates(response):
+    """Accept the array requested by Discovery and common JSON-object wrappers."""
+    if isinstance(response, list):
+        return response
+    if isinstance(response, dict):
+        for key in ("candidates", "items", "results", "heritage_elements"):
+            value = response.get(key)
+            if isinstance(value, list):
+                return value
+        if response.get("element_name"):
+            return [response]
+    return None
+
+
 def discover_new_items(api_key, inventory, max_items=None):
     discovered_count = 0
     max_discoveries_per_run = max(1, min(10, int(max_items or os.environ.get('DATA_DISCOVERY_LIMIT', '3')))) 
