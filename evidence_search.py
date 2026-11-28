@@ -32,7 +32,7 @@ def _search(session, provider, query, key):
 def search_evidence(query, max_items=6):
     """Search providers in sequence, then fetch article text and Jina fallback."""
     session=requests.Session()
-    provider_keys=[("Tavily",os.getenv("TAVILY_API_KEY","").strip()),("Exa",os.getenv("EXA_API_KEY","").strip()),("Firecrawl",os.getenv("FIRECRAWL_API_KEY","").strip()),("YOU.com",os.getenv("YOUCOM_API_KEY","").strip()))]
+    provider_keys=[("Tavily",os.getenv("TAVILY_API_KEY","").strip()),("Exa",os.getenv("EXA_API_KEY","").strip()),("Firecrawl",os.getenv("FIRECRAWL_API_KEY","").strip()),("YOU.com",os.getenv("YOUCOM_API_KEY","").strip()),]
     results,seen,errors=[],set(),[]
     for provider,key in provider_keys:
         if not key: continue
