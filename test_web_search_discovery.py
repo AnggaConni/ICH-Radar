@@ -4,6 +4,12 @@ import web_search_discovery as web
 
 
 class MultiProviderTests(unittest.TestCase):
+    def test_provider_health_status_classification(self):
+        self.assertEqual(web.provider_status(0, 0, [], "coverage reached"), "skipped")
+        self.assertEqual(web.provider_status(3, 0, ["error", "error", "error"]), "failed")
+        self.assertEqual(web.provider_status(3, 2, ["error"]), "partial")
+        self.assertEqual(web.provider_status(3, 3, []), "success")
+
     @patch("web_search_discovery.request_json")
     def test_tavily_result_normalization(self, mocked):
         mocked.return_value = {"results": [{
