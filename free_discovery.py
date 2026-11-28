@@ -325,15 +325,39 @@ def promote_candidate_with_deepseek(candidate, api_key, existing_inventory):
 Canonical categories: Culinary Traditions, Traditional Craftsmanship, Performing Arts, Oral Traditions, Social Practices & Rituals. Leave unknowns blank/null. Only set country when article states it.
 RSS DESCRIPTION AND ARTICLE EVIDENCE:
 """ + evidence_text + "\n\nSource URL: " + source_url
-    try:
-        response = requests.post("https://api.deepseek.com/chat/completions",
+    record = None
+    provider_errors = []
+    providers = []
+    if api_key:
+        providers.append(("DeepSeek", lambda: requests.post(
+            "https://api.deepseek.com/chat/completions",
             headers={"Authorization": "Bearer " + api_key, "Content-Type": "application/json"},
-            timeout=60, json={"model":"deepseek-chat","messages":[{"role":"user","content":prompt}],
-                            "temperature":0.1,"response_format":{"type":"json_object"}})
-        response.raise_for_status()
-        record = json.loads(response.json()["choices"][0]["message"]["content"])
-    except Exception as exc:
-        print(f"DeepSeek promotion failed: {str(exc)[:180]}")
+            timeout=60, json={"model":"deepseek-flash","messages":[{"role":"user","content":prompt}],
+                            "temperature":0.1,"response_format":{"type":"json_object"}})))
+    gemini_key = os.getenv("GEMINI_API_KEY", "").strip()
+    if gemini_key:
+        providers.append(("Gemini", lambda: requests.post(
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+            params={"key": gemini_key}, timeout=REQUEST_TIMEOUT,
+            json={"contents":[{"parts":[{"text":prompt}]}],
+                  "generationConfig":{"temperature":0.1,"responseMimeType":"application/json"}})))
+    for provider_name, request_fn in providers:
+        try:
+            response = request_fn()
+            response.raise_for_status()
+            if provider_name == "DeepSeek":
+                record = json.loads(response.json()["choices"][0]["message"]["content"])
+            else:
+                record = json.loads(response.json()["candidates"][0]["content"]["parts"][0]["text"])
+            if isinstance(record, dict):
+                print(f"Promotion AI succeeded with {provider_name}.")
+                break
+            record = None
+        except Exception as exc:
+            provider_errors.append(f"{provider_name}: {str(exc)[:140]}")
+            print(f"{provider_name} promotion failed; trying fallback: {str(exc)[:140]}")
+    if not isinstance(record, dict):
+        print("Promotion AI providers exhausted: " + " | ".join(provider_errors))
         return None, "ai_error"
     name = clean_text(record.get("element_name", ""))
     country = clean_text((record.get("location") or {}).get("country", ""))
@@ -475,6 +499,7 @@ def main():
     article_fetch_limit = 35
     ai_identity_attempts = 0
     gemini_identity_disabled = False
+    deepseek_identity_disabled = False
     promotion_enabled = os.getenv('PROMOTE_TO_MAIN_ARCHIVE', '0') == '1'
     promotion_limit = max(0, min(10, int(os.getenv('DEEPSEEK_PROMOTION_LIMIT', '3'))))
     promoted_records = []
@@ -535,11 +560,27 @@ def main():
                         prompt = ("Extract heritage element naming and geographic location from this text. " +
                                  "If location is not explicit, use empty string. Do not guess. Output JSON with naming and location keys.\n" +
                                  (rec.get("title", "") + "\n" + rec.get("description", "") + "\n" + rec.get("article_text", "")[:10000])[:12000])
-                        response = requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
-                            params={"key": api_key}, timeout=REQUEST_TIMEOUT,
-                            json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"temperature":0,"responseMimeType":"application/json"}})
-                        response.raise_for_status()
-                        identity = json.loads(response.json()["candidates"][0]["content"]["parts"][0]["text"])
+                        identity = None
+                        try:
+                            response = requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+                                params={"key": api_key}, timeout=REQUEST_TIMEOUT,
+                                json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"temperature":0,"responseMimeType":"application/json"}})
+                            response.raise_for_status()
+                            identity = json.loads(response.json()["candidates"][0]["content"]["parts"][0]["text"])
+                            print("RSS identity extraction succeeded with Gemini 3.8 Flash.")
+                        except Exception as gemini_exc:
+                            print(f"Gemini identity extraction failed; trying DeepSeek fallback: {str(gemini_exc)[:150]}")
+                            deepseek_key = os.getenv("DEEPSEEK_API_KEY", "").strip()
+                            if deepseek_key and not deepseek_identity_disabled:
+                                ds_response = requests.post("https://api.deepseek.com/chat/completions",
+                                    headers={"Authorization":"Bearer "+deepseek_key,"Content-Type":"application/json"},
+                                    timeout=60, json={"model":"deepseek-flash","messages":[{"role":"user","content":prompt}],
+                                                       "temperature":0,"response_format":{"type":"json_object"}})
+                                ds_response.raise_for_status()
+                                identity = json.loads(ds_response.json()["choices"][0]["message"]["content"])
+                                print("RSS identity extraction succeeded with DeepSeek fallback.")
+                            else:
+                                raise gemini_exc
                         rec["naming"] = clean_text(identity.get("naming") or identity.get("name") or rec.get("title", ""))
                         rec["location"] = clean_text(identity.get("location", ""))
                     except Exception as exc:
