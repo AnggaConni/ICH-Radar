@@ -5,6 +5,16 @@
 
 ICH Radar is a fully automated, free-tier-friendly discovery and collection pipeline for online information about Intangible Cultural Heritage (ICH). It continuously discovers sources, stores records, and enriches them when possible. It is intentionally **recall-first**: possible noise is acceptable; losing a potentially valuable heritage lead is not.
 
+## Important notice: AI-assisted data mining, not verified facts
+
+ICH Radar is an **automated AI-assisted scraper/data-mining and discovery tool**. It is intended to help users find, collect, organize, and enrich possible Intangible Cultural Heritage (ICH) information from publicly available web sources. It is **not a factual authority, official inventory, validation system, or substitute for expert/local knowledge**.
+
+> **Use with caution. Extract the data, review the original source links, and manually select and verify what you intend to reuse.**
+
+Records may be incomplete, inaccurate, duplicated, incorrectly located, misclassified, or generated/expanded by AI. A record's presence does not prove that the heritage element exists, is accurately described, is officially recognized, or is correctly attributed to a country or community. Direct thumbnail URLs may point to unrelated images, change, or have licensing/reuse restrictions.
+
+The scraper operates autonomously without human approval. Human selection and verification happen downstream, outside this crawler. Treat all collected material as **research leads and raw data for further checking**, not ready-to-publish facts.
+
 ## Core principles
 
 - **Autonomous:** scheduled collection runs without manual review or approval.
