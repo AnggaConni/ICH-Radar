@@ -186,7 +186,7 @@ def merge_identity_record(existing, incoming, api_key=None):
         prompt = ("Rewrite this into one concise, accurate heritage description. Combine non-duplicated details, "
                   "do not invent facts, preserve uncertainty. Return only the description.\\n\\n" + combined[:22000])
         try:
-            response = requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+            response = requests.post("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
                 params={"key": api_key}, timeout=REQUEST_TIMEOUT,
                 json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"temperature":0.2,"maxOutputTokens":500}})
             response.raise_for_status()
@@ -616,8 +616,9 @@ def main():
     if promotion_enabled and promotion_limit > 0:
         deepseek_key = os.getenv("DEEPSEEK_API_KEY", "").strip()
         main_file = BASE / "data.json"
-        if not deepseek_key:
-            print("DeepSeek promotion skipped: DEEPSEEK_API_KEY is missing; candidates retained.")
+        gemini_key = os.getenv("GEMINI_API_KEY", "").strip()
+        if not deepseek_key and not gemini_key:
+            print("AI promotion skipped: both DEEPSEEK_API_KEY and GEMINI_API_KEY are missing; candidates retained.")
         else:
             try:
                 main_db = json.loads(main_file.read_text(encoding="utf-8"))
