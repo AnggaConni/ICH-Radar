@@ -217,6 +217,8 @@ def run(max_items=None):
     inventory = db.get("inventory", [])
     limit = max(1, min(25, int(max_items or os.environ.get("THUMBNAIL_ENRICH_LIMIT", "5"))))
     pending = [item for item in inventory if needs_thumbnail(item)]
+    # Prioritize never-checked records; rotate checked-but-incomplete records to the back.
+    pending.sort(key=lambda item: item.get("thumbnail_last_checked") or "")
     batch = pending[:limit]
     print(f"Thumbnail enrichment: missing/placeholder={len(pending)}; batch limit={limit}; selected={len(batch)}")
     found = 0

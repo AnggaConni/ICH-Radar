@@ -174,8 +174,13 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json history.json free_discovery_candidates.json web_search_discovery_summary.json inventory_quality_report.json || true
-          git add data[1-9]*.json 2>/dev/null || true
+          # Stage optional outputs only when they exist; missing report files must not abort git add.
+          for file in data.json history.json free_discovery_candidates.json web_search_discovery_summary.json inventory_quality_report.json; do
+            if [ -f "$file" ]; then git add "$file"; fi
+          done
+          for file in data[1-9]*.json; do
+            if [ -f "$file" ]; then git add "$file"; fi
+          done
           if git diff --staged --quiet; then
             echo "No new data to commit."
           else
