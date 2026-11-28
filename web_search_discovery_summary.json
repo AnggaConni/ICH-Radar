@@ -1,0 +1,22 @@
+{
+  "run_at": "2026-11-28T07:55:23.883299+00:00",
+  "providers_enabled": [
+    "Tavily",
+    "Exa",
+    "Firecrawl"
+  ],
+  "provider_new_results": {
+    "Tavily": 15,
+    "Exa": 0,
+    "Firecrawl": 0
+  },
+  "provider_errors": {},
+  "unique_search_results": 15,
+  "new_unique_archive_candidates_before_fetch": 0,
+  "new_candidates_preserved": 15,
+  "article_fetches_attempted": 15,
+  "archive_total": 319,
+  "target_unique": 12,
+  "total_cap": 30,
+  "mode": "cost_aware_fallback_search"
+}
