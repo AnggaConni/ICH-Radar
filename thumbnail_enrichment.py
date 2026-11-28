@@ -120,7 +120,7 @@ def validate_image_url(session, url):
             if content_type.startswith("image/"):
                 return response.url
             # A few hosts omit or mislabel Content-Type; accept recognizable image suffixes.
-            if re.search(r"\\.(jpe?g|png|webp|gif|bmp)(?:$|[?#])", response.url.lower()):
+            if re.search(r"\.(jpe?g|png|webp|gif|bmp)(?:$|[?#])", response.url.lower()):
                 return response.url
             return None
         finally:
@@ -187,6 +187,7 @@ def enrich_item(session, item):
     country = loc.get("country", "")
     existing_sources = item.get("source_urls") or []
     sources = [x for x in existing_sources if isinstance(x, str) and x.startswith(("http://", "https://"))]
+    result = None
     for source in sources:
         result = extract_direct_image(session, source)
         if result and result.get("thumbnail_url"):
