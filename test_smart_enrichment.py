@@ -15,4 +15,18 @@ class SmartEnrichmentTests(unittest.TestCase):
         high={"element_name":"High"}
         self.assertEqual(build_priority_queue([low,high])[0]["element_name"],"High")
         self.assertEqual(get_missing_fields(high),build_priority_queue([high])[0]["missing_fields"])
+    def test_quality_gate_partial_and_success(self):
+        existing={"resume_tata_cara":{"step_by_step":[],"materials_and_tools":[]}}
+        partial={"resume_tata_cara":{"step_by_step":["Step 1"],"materials_and_tools":[]}}
+        q=evaluate_enrichment(existing,partial,["process_or_recipe","materials_or_tools"])
+        self.assertEqual(q["status"],"PARTIAL")
+        self.assertEqual(q["filled_fields"],["process_or_recipe"])
+        complete={"resume_tata_cara":{"step_by_step":["Step 1"],"materials_and_tools":["Tool"]}}
+        q=evaluate_enrichment(existing,complete,["process_or_recipe","materials_or_tools"])
+        self.assertEqual(q["status"],"SUCCESS")
+    def test_false_shared_heritage_is_valid(self):
+        existing={}
+        updated={"shared_heritage_detection":{"is_shared":False,"related_elements":[]}}
+        q=evaluate_enrichment(existing,updated,["shared_heritage_metadata"])
+        self.assertEqual(q["status"],"SUCCESS")
 if __name__=="__main__":unittest.main()
