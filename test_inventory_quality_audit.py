@@ -22,5 +22,5 @@ class InventoryAuditTests(unittest.TestCase):
         self.assertEqual(r["evidence_coverage_percent"],50)
     def test_prioritized_fields(self):
         r=audit.audit_record({"element_name":"Test","location":{"country":"X"},"resume_analisa":{"description":"x","cultural_significance":"y"},"source_urls":["https://source.test"],"resume_tata_cara":{"step_by_step":["one"]}})
-        self.assertEqual(r["priority_fields"][0],"materials_or_tools")
+        self.assertEqual(r["priority_fields"][0],"shared_heritage_metadata")
 if __name__=="__main__": unittest.main()
