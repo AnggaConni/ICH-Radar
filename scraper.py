@@ -899,49 +899,58 @@ Explain the mechanism in "drr_mechanism".
         ]
         """
         
-        new_items = call_ai(api_key, prompt, model="gemini-3.8-flash")
-        
-       # PERBAIKAN: Jarak spasi di bawah ini sudah sejajar dengan 'new_items'
-        if isinstance(new_items, list):
-            allowed_evidence_urls = {entry.get("url") for entry in evidence if entry.get("url")}
-            for item in new_items:
-                name = item.get("element_name", "Unknown")
-                proposed_urls = item.get("source_urls", [])
-                if not isinstance(proposed_urls, list):
-                    proposed_urls = []
-                item["source_urls"] = [url for url in proposed_urls if url in allowed_evidence_urls]
-                if not item["source_urls"]:
-                    log.warning("Skipping candidate %s because it lacks an evidence-backed source URL.", name)
-                    continue
-                location_country = str((item.get("location") or {}).get("country", "")).lower().strip()
-                identity_exists = any(name.lower().strip() == old.get("element_name", "").lower().strip() and location_country == str((old.get("location") or {}).get("country", "")).lower().strip() for old in inventory)
-                if not identity_exists:
-                    normalize_ai_classification(item)
-                    item["id"] = generate_id(name)
-                    
-                    # --- LOGIKA KOORDINAT ---
-                    loc = item.get("location", {})
-                    country = loc.get("country", "")
-                    provinces = loc.get("provinces", [])
-                    search_query = f"{provinces[0]}, {country}" if provinces else country
-                    
-                    lat, lng = get_coordinates(search_query)
-                    if lat is None:
-                        lat, lng = get_coordinates(country)
-                    
-                    item["location"]["lat"] = lat
-                    item["location"]["lng"] = lng
-                    
-                    # Logika thumbnail
-                    url_to_screenshot = item.get("source_urls", [""])[0] if item.get("source_urls") else ""
-                    if not item.get("thumbnail_url"):
-                        item["thumbnail_url"] = get_screenshot_url(url_to_screenshot, name)
-                    
-                    resource_schema_defaults(item)
-                    inventory.append(item)
-                    discovered_count += 1
-                    log.info(f"Discovered: {name} (Coords: {lat}, {lng})")
-        
+        raw_response = call_ai(api_key, prompt, model="gemini-3.8-flash")
+        new_items = normalize_discovery_candidates(raw_response)
+        if new_items is None:
+            log.warning("Discovery response format mismatch: expected candidate array/object; got %s. Preview: %s",
+                        type(raw_response).__name__, str(raw_response)[:800])
+            time.sleep(5)
+            continue
+        log.info("Discovery AI returned %d candidate(s).", len(new_items))
+        added_target = rejected_no_source = duplicate_count = malformed_count = 0
+        allowed_evidence_urls = {entry.get("url") for entry in evidence if entry.get("url")}
+        for item in new_items:
+            if not isinstance(item, dict):
+                malformed_count += 1
+                log.warning("Skipping malformed candidate type=%s.", type(item).__name__)
+                continue
+            name = item.get("element_name", "Unknown")
+            proposed_urls = item.get("source_urls", [])
+            if not isinstance(proposed_urls, list):
+                proposed_urls = []
+            item["source_urls"] = [url for url in proposed_urls if url in allowed_evidence_urls]
+            if not item["source_urls"]:
+                rejected_no_source += 1
+                log.warning("Skipping candidate '%s': no evidence-backed source URL.", name)
+                continue
+            location_country = str((item.get("location") or {}).get("country", "")).lower().strip()
+            identity_exists = any(name.lower().strip() == old.get("element_name", "").lower().strip() and location_country == str((old.get("location") or {}).get("country", "")).lower().strip() for old in inventory)
+            if identity_exists:
+                duplicate_count += 1
+                log.info("Skipping duplicate: %s (%s).", name, location_country or "country unknown")
+                continue
+            normalize_ai_classification(item)
+            item["id"] = generate_id(name)
+            loc = item.get("location") or {}
+            country = loc.get("country", "")
+            provinces = loc.get("provinces", [])
+            search_query = f"{provinces[0]}, {country}" if provinces else country
+            lat, lng = get_coordinates(search_query)
+            if lat is None:
+                lat, lng = get_coordinates(country)
+            item.setdefault("location", {})
+            item["location"]["lat"] = lat
+            item["location"]["lng"] = lng
+            source_url = item["source_urls"][0] if item["source_urls"] else ""
+            if not item.get("thumbnail_url"):
+                item["thumbnail_url"] = get_screenshot_url(source_url, name)
+            resource_schema_defaults(item)
+            inventory.append(item)
+            discovered_count += 1
+            added_target += 1
+            log.info("Discovered: %s (Coords: %s, %s)", name, lat, lng)
+        log.info("Discovery target summary '%s': returned=%d added=%d duplicates=%d rejected_no_source=%d malformed=%d",
+                 target, len(new_items), added_target, duplicate_count, rejected_no_source, malformed_count)
         time.sleep(5) 
                 
     return discovered_count
