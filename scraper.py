@@ -36,6 +36,7 @@ DATA_FILE    = os.path.join(BASE_DIR, "data.json")
 # ======================================================================
 from keyword_database import KEYWORDS
 from evidence_search import search_evidence
+from smart_enrichment import build_priority_queue, get_missing_fields, merge_enrichment
 
 # ======================================================================
 # DATA PERSISTENCE & MIGRATION
@@ -619,12 +620,15 @@ def call_ai(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=8192):
 # ======================================================================
 
 def enrich_incomplete_items(api_key, inventory, max_items=None):
-    incomplete_items = [item for item in inventory if item.get("completion_status") != "COMPLETE"]
+    incomplete_items = [item for item in inventory if get_missing_fields(item)]
     if not incomplete_items:
         log.info("No incomplete items found. Enrichment phase skipped.")
         return 0
     
-    log.info(f"Found {len(incomplete_items)} incomplete items. Starting enrichment...")
+    priority_rows = build_priority_queue(inventory)
+    priority_by_id = {row.get("id"): row for row in priority_rows}
+    incomplete_items.sort(key=lambda item: (-priority_by_id.get(item.get("id"), {}).get("enrichment_priority_score", 0), priority_by_id.get(item.get("id"), {}).get("content_completeness_percent", 100)))
+    log.info(f"Found {len(incomplete_items)} records with quality gaps. Starting prioritized enrichment...")
     enriched_count = 0
     
     batch_limit = max(1, min(10, int(max_items or os.environ.get('DATA_ENRICH_LIMIT', '3'))))
@@ -632,13 +636,16 @@ def enrich_incomplete_items(api_key, inventory, max_items=None):
     for item in incomplete_items[:batch_limit]:
         element_name = item.get("element_name")
         current_sources = item.get("source_urls", [])
+        missing_fields = get_missing_fields(item)
+        log.info("Targeted enrichment fields for '%s': %s", element_name, ", ".join(missing_fields))
         
         # Deteksi apakah item ini masuk antrean karena gambarnya hilang
         needs_image = not item.get("thumbnail_url") or item.get("thumbnail_url") == "N/A"
         image_instruction = "Use the retrieved evidence to identify a relevant image source if available; otherwise leave the thumbnail incomplete for the direct-thumbnail pipeline." if needs_image else ""
         
         log.info(f"Enriching: {element_name}")
-        evidence, evidence_errors = search_evidence(f"{element_name} cultural heritage {item.get('location', {}).get('country', '')}", max_items=6)
+        targeted_query = f"{element_name} cultural heritage {item.get('location', {}).get('country', '')} " + " ".join(missing_fields)
+        evidence, evidence_errors = search_evidence(targeted_query, max_items=6)
         evidence_block = "\n".join(f"- {entry.get('title','')} | {entry.get('provider','')} | {entry.get('url','')}\n{entry.get('text','')[:2500]}" for entry in evidence)
         if evidence_errors:
             log.warning("Evidence search issues: %s", "; ".join(evidence_errors[:3]))
@@ -649,6 +656,8 @@ def enrich_incomplete_items(api_key, inventory, max_items=None):
         Current known sources: {current_sources}.
         
         Use only the retrieved evidence below to fill missing information. Do not search independently or invent source URLs. If evidence is insufficient, leave fields incomplete.
+
+PRIORITY: Only research these missing fields: {missing_fields}. Do not rewrite populated fields. The merge logic preserves existing content even if your response attempts to replace it.
         Retrieved evidence:
         {evidence_block}
         Source URLs must come from this evidence or existing sources.
@@ -743,8 +752,7 @@ Set "categories_valid" to true only when at least one selected category is clear
             if not isinstance(proposed_sources, list):
                 proposed_sources = []
             updated_item["source_urls"] = list(dict.fromkeys(url for url in proposed_sources if url in allowed_sources))
-            if not updated_item["source_urls"]:
-                updated_item["source_urls"] = list(current_sources)
+            updated_item = merge_enrichment(item, updated_item, allowed_sources)
             normalize_ai_classification(updated_item)
             resource_schema_defaults(updated_item)
             # --- LOGIKA KOORDINAT ---
