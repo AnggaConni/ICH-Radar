@@ -328,6 +328,14 @@ RSS DESCRIPTION AND ARTICLE EVIDENCE:
     record = None
     provider_errors = []
     providers = []
+    groq_key = os.getenv("GROQ_API_KEY", "").strip()
+    if groq_key:
+        groq_model = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b").strip()
+        providers.append(("Groq", lambda: requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers={"Authorization": "Bearer " + groq_key, "Content-Type": "application/json"},
+            timeout=120, json={"model": groq_model, "messages": [{"role": "user", "content": prompt}],
+                              "temperature": 0, "response_format": {"type": "json_object"}})))
     if api_key:
         providers.append(("DeepSeek", lambda: requests.post(
             "https://api.deepseek.com/chat/completions",

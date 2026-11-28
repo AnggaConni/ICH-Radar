@@ -429,6 +429,31 @@ class GeminiQuotaExhausted(RuntimeError):
 
 def call_gemini(api_key, prompt, model="gemini-3.8-flash", max_output_tokens=8192):
     """Call Gemini text-only; external search providers supply evidence."""
+    # Groq is the primary inference provider; Gemini remains a fallback.
+    groq_key = os.getenv("GROQ_API_KEY", "").strip()
+    if groq_key:
+        try:
+            groq_model = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b").strip()
+            groq_response = requests.post(
+                "https://api.groq.com/openai/v1/chat/completions",
+                headers={"Authorization": "Bearer " + groq_key, "Content-Type": "application/json"},
+                json={"model": groq_model, "messages": [{"role": "user", "content": prompt}],
+                      "temperature": 0, "response_format": {"type": "json_object"},
+                      "max_tokens": max_output_tokens}, timeout=120)
+            if groq_response.status_code == 200:
+                groq_text = groq_response.json()["choices"][0]["message"]["content"]
+                try:
+                    groq_result = json.loads(groq_text)
+                except json.JSONDecodeError:
+                    groq_result = None
+                if groq_result is not None:
+                    log.info("AI inference succeeded with Groq (%s).", groq_model)
+                    return groq_result
+                log.warning("Groq returned invalid JSON; falling back to Gemini.")
+            else:
+                log.warning("Groq primary failed HTTP %s; falling back to Gemini: %s", groq_response.status_code, groq_response.text[:300])
+        except Exception as groq_exc:
+            log.warning("Groq primary unavailable; falling back to Gemini: %s", str(groq_exc)[:200])
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
     generation_config = {
