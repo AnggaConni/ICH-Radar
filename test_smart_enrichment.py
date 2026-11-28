@@ -1,5 +1,5 @@
 import unittest
-from smart_enrichment import get_missing_fields,merge_only_missing,merge_enrichment,build_priority_queue
+from smart_enrichment import get_missing_fields,merge_only_missing,merge_enrichment,build_priority_queue,evaluate_enrichment
 class SmartEnrichmentTests(unittest.TestCase):
     def test_fill_blanks_only(self):
         x=merge_only_missing({"a":{"old":"kept","blank":""}},{"a":{"old":"overwrite","blank":"filled"}})
