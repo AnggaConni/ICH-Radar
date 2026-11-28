@@ -107,7 +107,7 @@ jobs:
             echo "DATA_DISCOVERY_LIMIT=3" >> "$GITHUB_ENV"
             echo "RESOURCE_ENRICH_LIMIT=1" >> "$GITHUB_ENV"
             echo "FREE_DISCOVERY_AI_LIMIT=0" >> "$GITHUB_ENV"
-            echo "DEEPSEEK_PROMOTION_LIMIT=0" >> "$GITHUB_ENV"
+            echo "DEEPSEEK_PROMOTION_LIMIT=1" >> "$GITHUB_ENV"
             echo "Scheduled run: Main ICH discovery/enrichment + autonomous RSS preservation."
           fi
 
@@ -138,7 +138,7 @@ jobs:
             echo "=== SCHEDULED STAGE 1/2: MAIN ICH DISCOVERY + ENRICHMENT ==="
             CRAWL_MODE=data_only DATA_ENRICH_LIMIT="$DATA_ENRICH_LIMIT" DATA_DISCOVERY_LIMIT="$DATA_DISCOVERY_LIMIT" python scraper.py
             echo "=== SCHEDULED STAGE 2/2: PRESERVATION RSS DISCOVERY ==="
-            FREE_DISCOVERY_AI_LIMIT=0 python free_discovery.py
+            PROMOTE_TO_MAIN_ARCHIVE=1 DEEPSEEK_PROMOTION_LIMIT="$DEEPSEEK_PROMOTION_LIMIT" FREE_DISCOVERY_AI_LIMIT=0 python free_discovery.py
           else
             CRAWL_MODE="$PIPELINE" DATA_ENRICH_LIMIT="$DATA_ENRICH_LIMIT" DATA_DISCOVERY_LIMIT="$DATA_DISCOVERY_LIMIT" RESOURCE_ENRICH_LIMIT="$RESOURCE_ENRICH_LIMIT" python scraper.py
           fi
