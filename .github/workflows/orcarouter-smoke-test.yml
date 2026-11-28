@@ -1,0 +1,69 @@
+name: OrcaRouter Authentication Smoke Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Test OrcaRouter API authentication
+        env:
+          ORCA_KEY: ${{ secrets.ORCA_KEY }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.request
+          import urllib.error
+
+          key = os.environ.get("ORCA_KEY", "").strip()
+          if not key:
+              print("FAIL: ORCA_KEY secret is missing or empty.")
+              sys.exit(1)
+
+          payload = {
+              "model": "orcarouter/auto",
+              "messages": [
+                  {"role": "user", "content": "Reply with exactly: ORCA_OK"}
+              ],
+              "temperature": 0,
+              "max_tokens": 20
+          }
+
+          request = urllib.request.Request(
+              "https://api.orcarouter.ai/v1/chat/completions",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={
+                  "Authorization": f"Bearer {key}",
+                  "Content-Type": "application/json"
+              },
+              method="POST"
+          )
+
+          try:
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  status = response.status
+                  body = response.read().decode("utf-8", errors="replace")
+          except urllib.error.HTTPError as exc:
+              print(f"FAIL: OrcaRouter returned HTTP {exc.code}.")
+              sys.exit(1)
+          except Exception as exc:
+              print(f"FAIL: Request error ({type(exc).__name__}).")
+              sys.exit(1)
+
+          print(f"HTTP status: {status}")
+          try:
+              data = json.loads(body)
+              text = data.get("choices", [{}])[0].get("message", {}).get("content", "")
+              print("API response received successfully.")
+              print(f"Model reply: {str(text)[:100]}")
+          except Exception:
+              print("FAIL: Response received but could not parse expected chat-completions format.")
+              sys.exit(1)
+          PY
