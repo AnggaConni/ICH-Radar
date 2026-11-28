@@ -299,7 +299,10 @@
         "reviewed_at": null,
         "last_checked_at": "2026-10-09T11:47:40.372012Z",
         "last_error": null
-      }
+      },
+      "thumbnail_status": "incomplete",
+      "thumbnail_last_checked": "2026-11-28T08:24:51.670671+00:00",
+      "thumbnail_error": "404 Client Error: Not Found for url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEm-9217fpLJsftwThiKDzM22vZSiUW6RyPbjhOD5IplAL3Dg4QIbEvwB9WiWQ3n8f65aYgLjmuqpMP1649TW2tD2MAt5gt"
     },
     {
       "id": "ich-b0f059df",
@@ -644,7 +647,10 @@
         "reviewed_at": null,
         "last_checked_at": "2026-10-09T11:48:02.642764Z",
         "last_error": null
-      }
+      },
+      "thumbnail_status": "incomplete",
+      "thumbnail_last_checked": "2026-11-28T08:24:53.241318+00:00",
+      "thumbnail_error": "404 Client Error: Not Found for url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgeY6gaBusZ3rWGe6Q-SqsKBUOZsgqFyDJmvKMfYz2NycSew2KZXE2sfQcIXwDyQYXETTZsn70aMu0d0u-LVXuncaee4It"
     },
     {
       "id": "ich-ec6118ad",
@@ -993,7 +999,10 @@
         "reviewed_at": null,
         "last_checked_at": "2026-10-09T11:50:02.727856Z",
         "last_error": null
-      }
+      },
+      "thumbnail_status": "incomplete",
+      "thumbnail_last_checked": "2026-11-28T08:24:54.935039+00:00",
+      "thumbnail_error": "404 Client Error: Not Found for url: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPvWpVqrGi8gBcL9vOzX4PhOJZ-mJzGDqdYRuiyyGWajZQXFamshdMYDyY2BYxoQo25R4cbiiElFHFF7ZRxX4yOSzi5PBn"
     },
     {
       "id": "ich-2d42af22",
@@ -1413,7 +1422,10 @@
         "reviewed_at": null,
         "last_checked_at": "2026-10-09T11:53:29.711733Z",
         "last_error": "resource_mapping.place_resources[0] had no valid direct evidence URL and was excluded"
-      }
+      },
+      "thumbnail_status": "incomplete",
+      "thumbnail_last_checked": "2026-11-28T08:24:57.286013+00:00",
+      "thumbnail_error": "HTTPSConnectionPool(host='internationalrecipes.net', port=443): Max retries exceeded with url: /blue-corn-mush-navajo-nation/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EO"
     },
     {
       "id": "ich-2c75579d",
@@ -1690,7 +1702,7 @@
       "id": "ich-df8d78b4",
       "element_name": "Khokhloma Painting (Хохломская роспись)",
       "category": "Traditional Craftsmanship",
-      "thumbnail_url": "https://api.microlink.io/?url=https%3A//gw2.ru/en/khokhloma-all-you-need-to-know-about-the-gold-painted-tableware/&screenshot=true&meta=false&embed=screenshot.url",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Khohloma_set_1996.JPG/1280px-Khohloma_set_1996.JPG?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
       "source_urls": [
         "https://gw2.ru/en/khokhloma-all-you-need-to-know-about-the-gold-painted-tableware/",
         "https://antiquevintage.co/the-timeless-beauty-of-russian-khokhloma-painting-exploring-the-techniques-behind-hand-painted-wooden-spoons/",
@@ -1822,7 +1834,11 @@
         "reviewed_at": null,
         "last_checked_at": "2026-10-09T12:37:48.919259Z",
         "last_error": "response must be a JSON object"
-      }
+      },
+      "thumbnail_source_url": "https://en.wikipedia.org/wiki/Khokhloma",
+      "thumbnail_method": "og_or_social_meta",
+      "thumbnail_status": "found",
+      "thumbnail_last_checked": "2026-11-28T08:25:14.174684+00:00"
     },
     {
       "id": "ich-86fa28f5",
