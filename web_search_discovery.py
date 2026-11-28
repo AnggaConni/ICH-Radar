@@ -101,6 +101,17 @@ def call_provider(session, provider, query, key):
         status = getattr(getattr(exc, "response", None), "status_code", "")
         print(f"{provider.__name__} search failed (HTTP {status or 'network'}): {str(exc)[:160]}")
         return [], str(exc)[:180]
+def provider_status(attempts, successful_queries, errors, skip_reason=None):
+    if skip_reason:
+        return "skipped"
+    if attempts == 0:
+        return "not_attempted"
+    if successful_queries == 0:
+        return "failed"
+    if errors:
+        return "partial"
+    return "success"
+
 
 def jina_read(session, url):
     if not JINA_READER_ENABLED:
@@ -116,39 +127,54 @@ def jina_read(session, url):
 def main():
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
-    providers = [
+    provider_config = [
         ("Tavily", tavily_search, os.getenv("TAVILY_API_KEY", "").strip()),
         ("Exa", exa_search, os.getenv("EXA_API_KEY", "").strip()),
         ("Firecrawl", firecrawl_search, os.getenv("FIRECRAWL_API_KEY", "").strip()),
         ("YOU.com", youcom_search, os.getenv("YOUCOM_API_KEY", "").strip()),
     ]
-    providers = [p for p in providers if p[2]]
+    providers = [p for p in provider_config if p[2]]
     if not providers:
-        print("Web search skipped: no Tavily, Exa, Firecrawl, or YOU.com API key is configured.")
+        print("Web search skipped: no search API key is configured.")
         return
 
     records = load_shards()
-    before = len({id(r) for r in records.values()})
-    collected, stats, provider_errors = {}, {}, {}
+    collected, stats, provider_errors, provider_health = {}, {}, {}, {}
     def new_unique_count():
         return sum(1 for key_id in collected if key_id not in records)
 
-    for name, func, key in providers:
+    for name, func, key in provider_config:
         stats[name] = 0
-        # Only use later providers when the archive still needs NEW candidates.
+        health = {"status": "not_attempted", "configured": bool(key), "attempts": 0,
+            "successful_queries": 0, "failed_queries": 0, "raw_results": 0,
+            "accepted_unique_results": 0, "new_archive_candidates": 0,
+            "skip_reason": None, "errors": []}
+        provider_health[name] = health
+        if not key:
+            health.update({"status": "skipped", "skip_reason": "API key not configured"})
+            print(f"{name}: SKIPPED — API key not configured.")
+            continue
         if new_unique_count() >= PROVIDER_TARGET_UNIQUE:
-            print(f"New-candidate coverage target reached ({new_unique_count()}); skipping {name}.")
+            health.update({"status": "skipped", "skip_reason": "New-candidate coverage target already reached"})
+            print(f"{name}: SKIPPED — new-candidate coverage target reached ({new_unique_count()}).")
             continue
         for query in SEARCH_QUERIES:
             if len(collected) >= TOTAL_SEARCH_RESULT_CAP:
+                health["skip_reason"] = "Global search result cap reached"
                 break
             if new_unique_count() >= PROVIDER_TARGET_UNIQUE:
+                health["skip_reason"] = "New-candidate coverage target reached during provider"
                 print(f"Coverage target reached during {name}; stopping this provider.")
                 break
+            health["attempts"] += 1
             results, error = call_provider(session, func, query, key)
             if error:
-                provider_errors[name] = error
+                health["failed_queries"] += 1
+                health["errors"].append(error)
+                provider_errors.setdefault(name, []).append(error)
                 continue
+            health["successful_queries"] += 1
+            health["raw_results"] += len(results)
             for result in results:
                 url = normalize_url(result.get("url", ""))
                 title = clean(result.get("title", ""))
@@ -160,8 +186,18 @@ def main():
                 result.update({"url": url, "title": title, "key": key_id})
                 collected[key_id] = result
                 stats[name] += 1
+                health["accepted_unique_results"] += 1
+                if key_id not in records:
+                    health["new_archive_candidates"] += 1
             time.sleep(0.25)
-
+        health["status"] = provider_status(health["attempts"], health["successful_queries"], health["errors"])
+        if health["status"] == "not_attempted":
+            health["status"] = "skipped"
+            health["skip_reason"] = health["skip_reason"] or "No queries attempted"
+        print("{}: HEALTH={} | successful={}/{} | accepted={} | new_candidates={}".format(
+            name, health["status"], health["successful_queries"], health["attempts"],
+            health["accepted_unique_results"], health["new_archive_candidates"]))
+    new_unique_candidates_found = new_unique_count()
     new_count, fetched = 0, 0
     for key_id, result in collected.items():
         if key_id in records:
@@ -208,9 +244,10 @@ def main():
         save_shards(records)
     after = len({id(r) for r in records.values()})
     summary = {
-        "run_at": now_iso(), "providers_enabled": [p[0] for p in providers],
+        "run_at": now_iso(), "providers_configured": [p[0] for p in providers],
+        "provider_health": provider_health,
         "provider_new_results": stats, "provider_errors": provider_errors,
-        "unique_search_results": len(collected), "new_unique_archive_candidates_before_fetch": new_unique_count(), "new_candidates_preserved": new_count,
+        "unique_search_results": len(collected), "new_unique_archive_candidates_before_fetch": new_unique_candidates_found, "new_candidates_preserved": new_count,
         "article_fetches_attempted": fetched, "archive_total": after,
         "target_unique": PROVIDER_TARGET_UNIQUE, "total_cap": TOTAL_SEARCH_RESULT_CAP,
         "mode": "cost_aware_fallback_search"
